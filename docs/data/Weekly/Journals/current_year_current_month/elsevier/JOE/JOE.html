@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JOE</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="joe">JOE - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). High dimensional factor analysis with weak factors. <em>JOE</em>, <em>252</em>, 106086. (<a href='https://doi.org/10.1016/j.jeconom.2025.106086'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper studies the principal components (PC) estimator for high dimensional approximate factor models with weak factors in that the factor loading ( Λ 0 ) scales sublinearly in the number N of cross-section units, i.e., Λ 0 ⊤ Λ 0 / N α is positive definite in the limit for some α ∈ ( 0 , 1 ) . While the consistency and asymptotic normality of these estimates are by now well known when the factors are strong, i.e., α = 1 , the statistical properties for weak factors remain less explored. Here, we show that the PC estimator maintains consistency and asymptotic normality for any α ∈ ( 0 , 1 ) , provided suitable conditions regarding the dependence structure in the noise are met. This complements earlier result by Onatski (2012) that the PC estimator is inconsistent when α = 0 , and the more recent work by Bai and Ng (2023) who established the asymptotic normality of the PC estimator when α ∈ ( 1 / 2 , 1 ) . Our proof strategy integrates the traditional eigendecomposition-based approach for factor models with leave-one-out analysis similar in spirit to those used in matrix completion and other settings. This combination allows us to deal with factors weaker than the former and at the same time relax the incoherence and independence assumptions often associated with the later.},
+  archive      = {J_JOE},
+  author       = {Jungjun Choi and Ming Yuan},
+  doi          = {10.1016/j.jeconom.2025.106086},
+  journal      = {Journal of Econometrics},
+  month        = {11},
+  pages        = {106086},
+  shortjournal = {J. Econ.},
+  title        = {High dimensional factor analysis with weak factors},
+  volume       = {252},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

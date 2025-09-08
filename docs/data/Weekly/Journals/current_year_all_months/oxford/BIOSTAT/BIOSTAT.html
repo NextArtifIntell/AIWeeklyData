@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BIOSTAT</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="biostat">BIOSTAT - 58</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Mediation with external summary statistic information. <em>BIOSTAT</em>, <em>26</em>(1), kxaf020. (<a href='https://doi.org/10.1093/biostatistics/kxaf020'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Environmental health studies are increasingly measuring endogenous omics data ( ⁠|$ \boldsymbol{M} $|⁠ ) to study intermediary biological pathways by which an exogenous exposure ( ⁠|$ \boldsymbol{A} $|⁠ ) affects a health outcome ( ⁠|$ \boldsymbol{Y} $|⁠ ), given confounders ( ⁠|$ \boldsymbol{C} $|⁠ ). Mediation analysis is frequently performed to understand such mechanisms. If intermediary pathways are of interest, then there is likely literature establishing statistical and biological significance of the total effect, defined as the effect of |$ \boldsymbol{A} $| on |$ \boldsymbol{Y} $| given |$ \boldsymbol{C} $|⁠ . For mediation models with continuous outcomes and mediators, we show that leveraging external summary-level information on the total effect can improve estimation efficiency of the direct and indirect effects. Moreover, the efficiency gain depends on the asymptotic partial |$ R^{2} $| between the outcome ( ⁠|$ \boldsymbol{Y}\mid\boldsymbol{M},\boldsymbol{A},\boldsymbol{C} $|⁠ ) and total effect ( ⁠|$ \boldsymbol{Y}\mid\boldsymbol{A},\boldsymbol{C} $|⁠ ) models, with smaller (larger) values benefiting direct (indirect) effect estimation. We propose a robust data-adaptive estimation procedure, Mediation with External Summary Statistic Information, to improve estimation efficiency in settings with congenial external information, while simultaneously protecting against bias in settings with incongenial external information. In congenial simulation scenarios, we observe relative efficiency gains for mediation effect estimation of up to 40%. We illustrate our methodology using data from the Puerto Rico Testsite for Exploring Contamination Threats, where Cytochrome p450 metabolites are hypothesized to mediate the effect of phthalate exposure on gestational age at delivery. External summary information on the total effect comes from a recently published pooled analysis of 16 studies. The proposed framework blends mediation analysis with emerging data integration techniques.},
+  archive      = {J_BIOSTAT},
+  author       = {Boss, Jonathan and Hao, Wei and Cathey, Amber and Welch, Barrett M and Ferguson, Kelly K and Meeker, John D and Zhou, Xiang and Kang, Jian and Mukherjee, Bhramar},
+  doi          = {10.1093/biostatistics/kxaf020},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf020},
+  shortjournal = {Biostatistics},
+  title        = {Mediation with external summary statistic information},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Causal functional mediation analysis with an application to functional magnetic resonance imaging data. <em>BIOSTAT</em>, <em>26</em>(1), kxaf019. (<a href='https://doi.org/10.1093/biostatistics/kxaf019'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A primary goal of task-based functional magnetic resonance imaging (fMRI) studies is to quantify the effective connectivity between brain regions when stimuli are presented. Assessing the dynamics of effective connectivity has attracted increasing attention. Causal mediation analysis serves as a widely implemented tool aiming to delineate the mechanism between task stimuli and brain activations. However, the case, where the treatment, mediator, and outcome are continuous functions, has not been studied. Causal mediation analysis for functional data is considered. Semiparametric functional linear structural equation models are introduced and causal assumptions are discussed. The proposed models allow for the estimation of individual effect curves. The models are applied to a task-based fMRI study, providing a new perspective of studying dynamic brain connectivity. The R package cfma for implementation is available on CRAN.},
+  archive      = {J_BIOSTAT},
+  author       = {Zhao, Yi and Luo, Xi and Sobel, Michael E and Lindquist, Martin A and Caffo, Brian S},
+  doi          = {10.1093/biostatistics/kxaf019},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf019},
+  shortjournal = {Biostatistics},
+  title        = {Causal functional mediation analysis with an application to functional magnetic resonance imaging data},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A surrogate endpoint-based provisional approval causal roadmap, illustrated by vaccine development. <em>BIOSTAT</em>, <em>26</em>(1), kxaf018. (<a href='https://doi.org/10.1093/biostatistics/kxaf018'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For many rare diseases with no approved preventive interventions, promising interventions exist. However, it has proven difficult to conduct a pivotal phase 3 trial that could provide direct evidence demonstrating a beneficial effect of the intervention on the target disease outcome. When a promising putative surrogate endpoint(s) for the target outcome is available, surrogate-based provisional approval of an intervention may be pursued. Following the general Causal Roadmap rubric, we describe a surrogate endpoint-based provisional approval causal roadmap. Based on an observational study data set and a phase 3 randomized trial data set, this roadmap defines an approach to analyze the combined data set to draw a conservative inference about the treatment effect (TE) on the target outcome in the phase 3 study population. The observational study enrolls untreated individuals and collects baseline covariates, surrogate endpoints, and the target outcome, and is used to estimate the surrogate index—the regression of the target outcome on the surrogate endpoints and baseline covariates. The phase 3 trial randomizes participants to treated vs. untreated and collects the same data but is much smaller and hence very underpowered to directly assess TE, such that inference on TE is based on the surrogate index. This inference is made conservative by specifying 2 bias functions: one that expresses an imperfection of the surrogate index as a surrogate endpoint in the phase 3 study, and the other that expresses imperfect transport of the surrogate index in the untreated from the observational to the phase 3 study. Plug-in and nonparametric efficient one-step estimators of TE, with inferential procedures, are developed. The finite-sample performance of the estimators is evaluated in simulation studies. The causal roadmap is motivated by and illustrated with contemporary Group B Streptococcus vaccine development.},
+  archive      = {J_BIOSTAT},
+  author       = {Gilbert, Peter B and Peng, James and Han, Larry and Lange, Theis and Lu, Yun and Nie, Lei and Shih, Mei-Chiung and Waddy, Salina P and Wiley, Ken and Yann, Margot and Zafari, Zafar and Ghosh, Debashis and Follmann, Dean and Juraska, Michal and Díaz, Iván},
+  doi          = {10.1093/biostatistics/kxaf018},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf018},
+  shortjournal = {Biostatistics},
+  title        = {A surrogate endpoint-based provisional approval causal roadmap, illustrated by vaccine development},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Distributed lag interaction model with index modification. <em>BIOSTAT</em>, <em>26</em>(1), kxaf017. (<a href='https://doi.org/10.1093/biostatistics/kxaf017'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Epidemiological evidence supports an association between exposure to air pollution during pregnancy and birth and child health outcomes. Typically, such associations are estimated by regressing an outcome on daily or weekly measures of exposure during pregnancy using a distributed lag model. However, these associations may be modified by multiple factors. We propose a distributed lag interaction model with index modification that allows for effect modification of a functional predictor by a weighted average of multiple modifiers. Our model allows for simultaneous estimation of modifier index weights and the exposure–time–response function via a spline cross-basis in a Bayesian hierarchical framework. Through simulations, we showed that our model out-performs competing methods when there are multiple modifiers of unknown importance. We applied our proposed method to a Colorado birth cohort to estimate the association between birth weight and air pollution modified by a neighborhood-vulnerability index and to a Mexican birth cohort to estimate the association between birthing-parent cardio-metabolic endpoints and air pollution modified by a birthing-parent lifetime stress index.},
+  archive      = {J_BIOSTAT},
+  author       = {Demateis, Danielle and India-Aldana, Sandra and Wright, Robert O and Wright, Rosalind J and Baccarelli, Andrea and Colicino, Elena and Wilson, Ander and Keller, Kayleigh P},
+  doi          = {10.1093/biostatistics/kxaf017},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf017},
+  shortjournal = {Biostatistics},
+  title        = {Distributed lag interaction model with index modification},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Incorporating historic information to further improve power when conducting bayesian information borrowing in basket trials. <em>BIOSTAT</em>, <em>26</em>(1), kxaf016. (<a href='https://doi.org/10.1093/biostatistics/kxaf016'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In basket trials a single therapeutic treatment is tested on several patient populations simultaneously, each of which forming a basket, where patients across all baskets on the trial share a common genetic aberration. These trials allow testing of treatments on small groups of patients, however, limited basket sample sizes can result in inadequate precision and power of estimates. It is well known that Bayesian information borrowing models such as the exchangeability-nonexchangeability (EXNEX) model can be implemented to tackle such a problem, drawing on information from one basket when making inference in another. An alternative approach to improve power of estimates, is to incorporate any historical or external information available. This paper considers models that amalgamate both forms of information borrowing, allowing borrowing between baskets in the ongoing trial whilst also drawing on response data from historical sources, with the aim to further improve treatment effect estimates. We propose several Bayesian information borrowing approaches that incorporate historical information into the model. These methods are data-driven, updating the degree of borrowing based on the level of homogeneity between information sources. A thorough simulation study is presented to draw comparisons between the proposed approaches, whilst also comparing to the standard EXNEX model in which no historical information is utilized. The models are also applied to a real-life trial example to demonstrate their performance in practice. We show that the incorporation of historic data under the novel approaches can lead to a substantial improvement in precision and power of treatment effect estimates when such data is homogeneous to the responses in the ongoing trial. Under some approaches, this came alongside an inflation in type I error rate in cases of heterogeneity. However, the use of a power prior in the EXNEX model is shown to increase power and precision, whilst maintaining similar error rates to the standard EXNEX model.},
+  archive      = {J_BIOSTAT},
+  author       = {Daniells, Libby and Mozgunov, Pavel and Barnett, Helen and Bedding, Alun and Jaki, Thomas},
+  doi          = {10.1093/biostatistics/kxaf016},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf016},
+  shortjournal = {Biostatistics},
+  title        = {Incorporating historic information to further improve power when conducting bayesian information borrowing in basket trials},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Identification and estimation of causal effects with confounders missing not at random. <em>BIOSTAT</em>, <em>26</em>(1), kxaf015. (<a href='https://doi.org/10.1093/biostatistics/kxaf015'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Making causal inferences from observational studies can be challenging when confounders are missing not at random. In such cases, identifying causal effects is often not guaranteed. Motivated by a real example, we consider a treatment-independent missingness assumption under which we establish the identification of causal effects when confounders are missing not at random. We propose a weighted estimating equation approach for estimating model parameters and introduce three estimators for the average causal effect, based on regression, propensity score weighting, and doubly robust estimation. We evaluate the performance of these estimators through simulations, and provide a real data analysis to illustrate our proposed method.},
+  archive      = {J_BIOSTAT},
+  author       = {Sun, Jian and Fu, Bo},
+  doi          = {10.1093/biostatistics/kxaf015},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf015},
+  shortjournal = {Biostatistics},
+  title        = {Identification and estimation of causal effects with confounders missing not at random},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Biomarker-assisted reporting in nutritional epidemiology: Addressing measurement error in exposure–disease associations. <em>BIOSTAT</em>, <em>26</em>(1), kxaf014. (<a href='https://doi.org/10.1093/biostatistics/kxaf014'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In nutritional epidemiology, self-reported dietary data are commonly used to investigate diet–disease relationships. However, the resulting association estimates are often subject to biases due to random and systematic measurement errors. Regression calibration has emerged as a crucial method for addressing these biases by refining self-reported nutrient intake with objective biomarkers, which differ from the true values only by a random “noise” component. This paper presents methodological tools for analyzing nutritional epidemiology cohort studies involving time-to-event data when a biomarker subsample is available alongside dietary assessments. We introduce novel regression calibration methods to tackle two common challenges in this field. First, a widely used approach assumes that the log hazard ratio (HR) follows a linear function of dietary exposure. However, assessing whether this assumption holds—or if a more flexible model is needed to capture potential deviations from linearity—is often necessary. Second, another prevalent analytical strategy involves estimating HRs based on categorized dietary exposure variables. New methods are critically needed to minimize bias in defining category boundaries and estimating hazard ratios within exposure categories, both of which can be distorted by measurement error. We apply these methods to reassess the relationship between sodium and potassium intake and cardiovascular disease risk using data from the Women’s Health Initiative.},
+  archive      = {J_BIOSTAT},
+  author       = {Huang, Ying and Prentice, Ross L},
+  doi          = {10.1093/biostatistics/kxaf014},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf014},
+  shortjournal = {Biostatistics},
+  title        = {Biomarker-assisted reporting in nutritional epidemiology: Addressing measurement error in exposure–disease associations},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Predicting distributions of physical activity profiles in the national health and nutrition examination survey database using a partially linear fréchet single index model. <em>BIOSTAT</em>, <em>26</em>(1), kxaf013. (<a href='https://doi.org/10.1093/biostatistics/kxaf013'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Object-oriented data analysis is a fascinating and evolving field in modern statistical science, with the potential to make significant contributions to biomedical applications. This statistical framework facilitates the development of new methods to analyze complex data objects that capture more information than traditional clinical biomarkers. This paper applies the object-oriented framework to analyze physical activity levels, measured by accelerometers, as response objects in a regression model. Unlike traditional summary metrics, we utilize a recently proposed representation of physical activity data as a distributional object, providing a more nuanced and complete profile of individual energy expenditure across all ranges of monitoring intensity. A novel hybrid Fréchet regression model is proposed and applied to US population accelerometer data from National Health and Nutrition Examination Survey (NHANES) 2011 to 2014. The semi-parametric nature of the model allows for the inclusion of nonlinear effects for critical variables, such as age, which are biologically known to have subtle impacts on physical activity. Simultaneously, the inclusion of linear effects preserves interpretability for other variables, particularly categorical covariates such as ethnicity and sex. The results obtained are valuable from a public health perspective and could lead to new strategies for optimizing physical activity interventions in specific American subpopulations.},
+  archive      = {J_BIOSTAT},
+  author       = {Matabuena, Marcos and Ghosal, Aritra and Meiring, Wendy and Petersen, Alexander},
+  doi          = {10.1093/biostatistics/kxaf013},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf013},
+  shortjournal = {Biostatistics},
+  title        = {Predicting distributions of physical activity profiles in the national health and nutrition examination survey database using a partially linear fréchet single index model},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Addressing the mean–variance relationship in spatially resolved transcriptomics data with spoon. <em>BIOSTAT</em>, <em>26</em>(1), kxaf012. (<a href='https://doi.org/10.1093/biostatistics/kxaf012'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {An important task in the analysis of spatially resolved transcriptomics (SRT) data is to identify spatially variable genes (SVGs), or genes that vary in a 2D space. Current approaches rank SVGs based on either |$ P $| -values or an effect size, such as the proportion of spatial variance. However, previous work in the analysis of RNA-sequencing data identified a technical bias with log-transformation, violating the “mean–variance relationship” of gene counts, where highly expressed genes are more likely to have a higher variance in counts but lower variance after log-transformation. Here, we demonstrate the mean–variance relationship in SRT data. Furthermore, we propose spoon , a statistical framework using empirical Bayes techniques to remove this bias, leading to more accurate prioritization of SVGs. We demonstrate the performance of spoon in both simulated and real SRT data. A software implementation of our method is available at https://bioconductor.org/packages/spoon .},
+  archive      = {J_BIOSTAT},
+  author       = {Shah, Kinnary and Guo, Boyi and Hicks, Stephanie C},
+  doi          = {10.1093/biostatistics/kxaf012},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf012},
+  shortjournal = {Biostatistics},
+  title        = {Addressing the mean–variance relationship in spatially resolved transcriptomics data with spoon},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Sensitivity analysis for the probability of benefit in randomized controlled trials with a binary treatment and a binary outcome. <em>BIOSTAT</em>, <em>26</em>(1), kxaf011. (<a href='https://doi.org/10.1093/biostatistics/kxaf011'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For a comprehensive understanding of the effect of a given treatment on an outcome of interest, quantification of individual treatment heterogeneity is essential, alongside estimation of the average causal effect. However, even in randomized controlled trials, quantities such as the probability of benefit or the probability of harm are not identifiable, since multiple potential outcomes cannot be observed simultaneously for the same individual. We propose a sensitivity analysis for the probability of benefit in randomized controlled trial settings with a binary treatment and a binary outcome, by quantifying the deviation from conditional independence of the two potential outcomes, given a set of measured prognostic baseline covariates. We do this using a marginal sensitivity analysis parameter that does not depend on the number or complexity of the measured covariates. We provide a guide to estimation and interpretation, and illustrate our method in simulations, as well as using a real data example from a randomized controlled trial studying the effect of umbilical vein oxytocin administration on the need for manual removal of the placenta during birth.},
+  archive      = {J_BIOSTAT},
+  author       = {Ciocănea-Teodorescu, Iuliana and Gabriel, Erin E and Sjölander, Arvid},
+  doi          = {10.1093/biostatistics/kxaf011},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf011},
+  shortjournal = {Biostatistics},
+  title        = {Sensitivity analysis for the probability of benefit in randomized controlled trials with a binary treatment and a binary outcome},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Probabilistic clustering using shared latent variable model for assessing alzheimer’s disease biomarkers. <em>BIOSTAT</em>, <em>26</em>(1), kxaf010. (<a href='https://doi.org/10.1093/biostatistics/kxaf010'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The preclinical stage of many neurodegenerative diseases can span decades before symptoms become apparent. Understanding the sequence of preclinical biomarker changes provides a critical opportunity for early diagnosis and effective intervention prior to significant loss of patients’ brain functions. The main challenge to early detection lies in the absence of direct observation of the disease state and the considerable variability in both biomarkers and disease dynamics among individuals. Recent research hypothesized the existence of subgroups with distinct biomarker patterns due to co-morbidities and degrees of brain resilience. Our ability to diagnose early and intervene during the preclinical stage of neurodegenerative diseases will be enhanced by further insights into heterogeneity in the biomarker–disease relationship. In this article, we focus on Alzheimer’s disease (AD) and attempt to identify the systematic patterns within the heterogeneous AD biomarker–disease cascade. Specifically, we quantify the disease progression using a dynamic latent variable whose mixture distribution represents patient subgroups. Model estimation uses Hamiltonian Monte Carlo with the number of clusters determined by the Bayesian Information Criterion. We report simulation studies that investigate the performance of the proposed model in finite sample settings that are similar to our motivating application. We apply the proposed model to the Biomarkers of Cognitive Decline Among Normal Individuals data, a longitudinal study that was conducted over 2 decades among individuals who were initially cognitively normal. Our application yields evidence consistent with the hypothetical model of biomarker dynamics presented in Jack Jr et al. In addition, our analysis identified 2 subgroups with distinct disease-onset patterns. Finally, we develop a dynamic prediction approach to improve the precision of prognoses.},
+  archive      = {J_BIOSTAT},
+  author       = {Xu, Yizhen and Zeger, Scott and Wang, Zheyu},
+  doi          = {10.1093/biostatistics/kxaf010},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf010},
+  shortjournal = {Biostatistics},
+  title        = {Probabilistic clustering using shared latent variable model for assessing alzheimer’s disease biomarkers},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Estimation and inference for causal spillover effects in egocentric-network randomized trials in the presence of network membership misclassification. <em>BIOSTAT</em>, <em>26</em>(1), kxaf009. (<a href='https://doi.org/10.1093/biostatistics/kxaf009'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To leverage peer influence and increase population behavioral changes, behavioral interventions often rely on peer-based strategies. A common study design that assesses such strategies is the egocentric-network randomized trial (ENRT), where index participants receive a behavioral training and are encouraged to disseminate information to their peers. Under this design, a crucial estimand of interest is the Average Spillover Effect (ASpE), which measures the impact of the intervention on participants who do not receive it, but whose outcomes may be affected by others who do. The assessment of the ASpE relies on assumptions about, and correct measurement of, interference sets within which individuals may influence one another’s outcomes. It can be challenging to properly specify interference sets, such as networks in ENRTs, and when mismeasured, intervention effects estimated by existing methods will be biased. In studies where social networks play an important role in disease transmission or behavior change, correcting ASpE estimates for bias due to network misclassification is critical for accurately evaluating the full impact of interventions. We combined measurement error and causal inference methods to bias-correct the ASpE estimate for network misclassification in ENRTs, when surrogate networks are recorded in place of true ones, and validation data that relate the misclassified to the true networks are available. We investigated finite sample properties of our methods in an extensive simulation study and illustrated our methods in the HIV Prevention Trials Network (HPTN) 037 study.},
+  archive      = {J_BIOSTAT},
+  author       = {Chao, Ariel and Spiegelman, Donna and Buchanan, Ashley and Forastiere, Laura},
+  doi          = {10.1093/biostatistics/kxaf009},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf009},
+  shortjournal = {Biostatistics},
+  title        = {Estimation and inference for causal spillover effects in egocentric-network randomized trials in the presence of network membership misclassification},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Semiparametric mixture regression for asynchronous longitudinal data using multivariate functional principal component analysis. <em>BIOSTAT</em>, <em>26</em>(1), kxaf008. (<a href='https://doi.org/10.1093/biostatistics/kxaf008'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The transitional phase of menopause induces significant hormonal fluctuations, exerting a profound influence on the long-term well-being of women. In an extensive longitudinal investigation of women’s health during mid-life and beyond, known as the Study of Women’s Health Across the Nation (SWAN), hormonal biomarkers are repeatedly assessed, following an asynchronous schedule compared to other error-prone covariates, such as physical and cardiovascular measurements. We conduct a subgroup analysis of the SWAN data employing a semiparametric mixture regression model, which allows us to explore how the relationship between hormonal responses and other time-varying or time-invariant covariates varies across subgroups. To address the challenges posed by asynchronous scheduling and measurement errors, we model the time-varying covariate trajectories as functional data with reduced-rank Karhunen–Loéve expansions, where splines are employed to capture the mean and eigenfunctions. Treating the latent subgroup membership and the functional principal component (FPC) scores as missing data, we propose an Expectation-Maximization algorithm to effectively fit the joint model, combining the mixture regression for the hormonal response and the FPC model for the asynchronous, time-varying covariates. In addition, we explore data-driven methods to determine the optimal number of subgroups within the population. Through our comprehensive analysis of the SWAN data, we unveil a crucial subgroup structure within the aging female population, shedding light on important distinctions and patterns among women undergoing menopause.},
+  archive      = {J_BIOSTAT},
+  author       = {Lu, Ruihan and Li, Yehua and Yao, Weixin},
+  doi          = {10.1093/biostatistics/kxaf008},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf008},
+  shortjournal = {Biostatistics},
+  title        = {Semiparametric mixture regression for asynchronous longitudinal data using multivariate functional principal component analysis},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Random forest for dynamic risk prediction of recurrent events: A pseudo-observation approach. <em>BIOSTAT</em>, <em>26</em>(1), kxaf007. (<a href='https://doi.org/10.1093/biostatistics/kxaf007'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recurrent events are common in clinical, healthcare, social, and behavioral studies, yet methods for dynamic risk prediction of these events are limited. To overcome some long-standing challenges in analyzing censored recurrent event data, a recent regression analysis framework constructs a censored longitudinal dataset consisting of times to the first recurrent event in multiple pre-specified follow-up windows of length |$ \tau $| (XMT models). Traditional regression models struggle with nonlinear and multiway interactions, with success depending on the skill of the statistical programmer. With a staggering number of potential predictors being generated from genetic, -omic, and electronic health records sources, machine learning approaches such as the random forest regression are growing in popularity, as they can nonparametrically incorporate information from many predictors with nonlinear and multiway interactions involved in prediction. In this article, we (i) develop a random forest approach for dynamically predicting probabilities of remaining event-free during a subsequent |$ \tau $| -duration follow-up period from a reconstructed censored longitudinal data set, (ii) modify the XMT regression approach to predict these same probabilities, subject to the limitations that traditional regression models typically have, and (iii) demonstrate how to incorporate patient-specific history of recurrent events for prediction in settings where this information may be partially missing. We show the increased ability of our random forest algorithm for predicting the probability of remaining event-free over a |$ \tau $| -duration follow-up window when compared to our modified XMT method for prediction in settings where association between predictors and recurrent event outcomes is complex in nature. We also show the importance of incorporating past recurrent event history in prediction algorithms when event times are correlated within a subject. The proposed random forest algorithm is demonstrated using recurrent exacerbation data from the trial of Azithromycin for the Prevention of Exacerbations of Chronic Obstructive Pulmonary Disease.},
+  archive      = {J_BIOSTAT},
+  author       = {Loe, Abigail and Murray, Susan and Wu, Zhenke},
+  doi          = {10.1093/biostatistics/kxaf007},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf007},
+  shortjournal = {Biostatistics},
+  title        = {Random forest for dynamic risk prediction of recurrent events: A pseudo-observation approach},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Penalized likelihood optimization for censored missing value imputation in proteomics. <em>BIOSTAT</em>, <em>26</em>(1), kxaf006. (<a href='https://doi.org/10.1093/biostatistics/kxaf006'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Label-free bottom-up proteomics using mass spectrometry and liquid chromatography has long been established as one of the most popular high-throughput analysis workflows for proteome characterization. However, it produces data hindered by complex and heterogeneous missing values, which imputation has long remained problematic. To cope with this, we introduce Pirat, an algorithm that harnesses this challenge using an original likelihood maximization strategy. Notably, it models the instrument limit by learning a global censoring mechanism from the data available. Moreover, it estimates the covariance matrix between enzymatic cleavage products (ie peptides or precursor ions), while offering a natural way to integrate complementary transcriptomic information when multi-omic assays are available. Our benchmarking on several datasets covering a variety of experimental designs (number of samples, acquisition mode, missingness patterns, etc.) and using a variety of metrics (differential analysis ground truth or imputation errors) shows that Pirat outperforms all pre-existing imputation methods. Beyond the interest of Pirat as an imputation tool, these results pinpoint the need for a paradigm change in proteomics imputation, as most pre-existing strategies could be boosted by incorporating similar models to account for the instrument censorship or for the correlation structures, either grounded to the analytical pipeline or arising from a multi-omic approach.},
+  archive      = {J_BIOSTAT},
+  author       = {Etourneau, Lucas and Fancello, Laura and Wieczorek, Samuel and Varoquaux, Nelle and Burger, Thomas},
+  doi          = {10.1093/biostatistics/kxaf006},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf006},
+  shortjournal = {Biostatistics},
+  title        = {Penalized likelihood optimization for censored missing value imputation in proteomics},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Covariate-adjusted estimators of diagnostic accuracy in randomized trials. <em>BIOSTAT</em>, <em>26</em>(1), kxaf005. (<a href='https://doi.org/10.1093/biostatistics/kxaf005'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Randomized controlled trials evaluating the diagnostic accuracy of a marker frequently collect information on baseline covariates in addition to information on the marker and the reference standard. However, standard estimators of sensitivity and specificity do not use data on baseline covariates and restrict the analysis to data from participants with a positive reference standard in the intervention arm being evaluated. Covariate-adjusted estimators for marginal treatment effects have been developed and been advocated for by regulatory agencies because they can improve power compared to unadjusted estimators. Despite this, similar covariate-adjusted estimators for marginal sensitivity and specificity have not yet been developed. In this manuscript, we address this gap by developing covariate-adjusted estimators for marginal sensitivity and specificity of a diagnostic test that leverage baseline covariate information. The estimators also use data from all participants, not just participants with a positive reference standard in the intervention arm being evaluated. We derive the asymptotic properties of the estimators and evaluate the finite sample properties of the estimators using simulations and by analyzing data on lung cancer screening.},
+  archive      = {J_BIOSTAT},
+  author       = {Steingrimsson, Jon A},
+  doi          = {10.1093/biostatistics/kxaf005},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf005},
+  shortjournal = {Biostatistics},
+  title        = {Covariate-adjusted estimators of diagnostic accuracy in randomized trials},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mediation analysis with graph mediator. <em>BIOSTAT</em>, <em>26</em>(1), kxaf004. (<a href='https://doi.org/10.1093/biostatistics/kxaf004'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study introduces a mediation analysis framework when the mediator is a graph. A Gaussian covariance graph model is assumed for graph presentation. Causal estimands and assumptions are discussed under this presentation. With a covariance matrix as the mediator, a low-rank representation is introduced and parametric mediation models are considered under the structural equation modeling framework. Assuming Gaussian random errors, likelihood-based estimators are introduced to simultaneously identify the low-rank representation and causal parameters. An efficient computational algorithm is proposed and asymptotic properties of the estimators are investigated. Via simulation studies, the performance of the proposed approach is evaluated. Applying to a resting-state fMRI study, a brain network is identified within which functional connectivity mediates the sex difference in the performance of a motor task.},
+  archive      = {J_BIOSTAT},
+  author       = {Xu, Yixi and Zhao, Yi},
+  doi          = {10.1093/biostatistics/kxaf004},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf004},
+  shortjournal = {Biostatistics},
+  title        = {Mediation analysis with graph mediator},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Within-trial data borrowing for sequential multiple assignment randomized trials. <em>BIOSTAT</em>, <em>26</em>(1), kxaf003. (<a href='https://doi.org/10.1093/biostatistics/kxaf003'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Sequential Multiple Assignment Randomized Trial (SMART) is a complex trial design that involves randomizing a single participant multiple times in a sequential manner. This results in the branching nature of a SMART, which represents several distinct groups defined by different combinations of treatments, response statuses, etc. A SMART can then answer various scientific questions of interest, eg, the optimal dynamic treatment regime (DTR) for treating a chronic illness, what intervention to offer first, and what intervention to offer to nonresponders (or suboptimal responders). However, the analysis of a SMART can suffer from low precision, as the potentially widely branching structure can lead to reduced sample sizes in some groups of interest. In this paper, we propose a novel analysis method for a SMART in which dynamic borrowing is used to borrow strength across groups with similar expected outcomes, thus providing increased precision for the estimation of the expected outcomes of DTRs. We apply our method to a SMART evaluating various weight loss strategies using a binary endpoint of clinically significant weight loss and show by simulation that our method can improve the precision of the estimated expected outcome of a DTR, aid in the identification of the optimal DTR, and produce a clustering analysis of DTRs embedded in a SMART.},
+  archive      = {J_BIOSTAT},
+  author       = {Kotalik, Ales and Vock, David M and Sherwood, Nancy E and Hobbs, Brian P and Koopmeiners, Joseph S},
+  doi          = {10.1093/biostatistics/kxaf003},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf003},
+  shortjournal = {Biostatistics},
+  title        = {Within-trial data borrowing for sequential multiple assignment randomized trials},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Connectivity regression. <em>BIOSTAT</em>, <em>26</em>(1), kxaf002. (<a href='https://doi.org/10.1093/biostatistics/kxaf002'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Assessing how brain functional connectivity networks vary across individuals promises to uncover important scientific questions such as patterns of healthy brain aging through the lifespan or dysconnectivity associated with disease. In this article, we introduce a general regression framework, Connectivity Regression ( ConnReg ), for regressing subject-specific functional connectivity networks on covariates while accounting for within-network inter-edge dependence. ConnReg utilizes a multivariate generalization of Fisher’s transformation to project network objects into an alternative space where Gaussian assumptions are justified and positive semidefinite constraints are automatically satisfied. Penalized multivariate regression is fit in the transformed space to simultaneously induce sparsity in regression coefficients and in covariance elements, which capture within network inter-edge dependence. We use permutation tests to perform multiplicity-adjusted inference to identify covariates associated with connectivity, and stability selection scores to identify network edges that vary with selected covariates. Simulation studies validate the inferential properties of our proposed method and demonstrate how estimating and accounting for within-network inter-edge dependence leads to more efficient estimation, more powerful inference, and more accurate selection of covariate-dependent network edges. We apply ConnReg to the Human Connectome Project Young Adult study, revealing insights into how connectivity varies with language processing covariates and structural brain features.},
+  archive      = {J_BIOSTAT},
+  author       = {Desai, Neel and Baladandayuthapani, Veera and Shinohara, Russell T and Morris, Jeffrey S},
+  doi          = {10.1093/biostatistics/kxaf002},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf002},
+  shortjournal = {Biostatistics},
+  title        = {Connectivity regression},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scalable randomized kernel methods for multiview data integration and prediction with application to coronavirus disease. <em>BIOSTAT</em>, <em>26</em>(1), kxaf001. (<a href='https://doi.org/10.1093/biostatistics/kxaf001'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {There is still more to learn about the pathobiology of coronavirus disease (COVID-19) despite 4 years of the pandemic. A multiomics approach offers a comprehensive view of the disease and has the potential to yield deeper insight into the pathogenesis of the disease. Previous multiomics integrative analysis and prediction studies for COVID-19 severity and status have assumed simple relationships (ie linear relationships) between omics data and between omics and COVID-19 outcomes. However, these linear methods do not account for the inherent underlying nonlinear structure associated with these different types of data. The motivation behind this work is to model nonlinear relationships in multiomics and COVID-19 outcomes, and to determine key multidimensional molecules associated with the disease. Toward this goal, we develop scalable randomized kernel methods for jointly associating data from multiple sources or views and simultaneously predicting an outcome or classifying a unit into one of 2 or more classes. We also determine variables or groups of variables that best contribute to the relationships among the views. We use the idea that random Fourier bases can approximate shift-invariant kernel functions to construct nonlinear mappings of each view and we use these mappings and the outcome variable to learn view-independent low-dimensional representations. We demonstrate the effectiveness of the proposed methods through extensive simulations. When the proposed methods were applied to gene expression, metabolomics, proteomics, and lipidomics data pertaining to COVID-19, we identified several molecular signatures for COVID-19 status and severity. Our results agree with previous findings and suggest potential avenues for future research. Our algorithms are implemented in Pytorch and interfaced in R and available at: https://github.com/lasandrall/RandMVLearn .},
+  archive      = {J_BIOSTAT},
+  author       = {Safo, Sandra E and Lu, Han},
+  doi          = {10.1093/biostatistics/kxaf001},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxaf001},
+  shortjournal = {Biostatistics},
+  title        = {Scalable randomized kernel methods for multiview data integration and prediction with application to coronavirus disease},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Unlocking the power of time-since-infection models: Data augmentation for improved instantaneous reproduction number estimation. <em>BIOSTAT</em>, <em>26</em>(1), kxae054. (<a href='https://doi.org/10.1093/biostatistics/kxae054'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The time-since-infection (TSI) models, which use disease surveillance data to model infectious diseases, have become increasingly popular due to their flexibility and capacity to address complex disease control questions. However, a notable limitation of TSI models is their primary reliance on incidence data. Even when hospitalization data are available, existing TSI models have not been crafted to improve the estimation of disease transmission or to estimate hospitalization-related parameters—metrics crucial for understanding a pandemic and planning hospital resources. Moreover, their dependence on reported infection data makes them vulnerable to variations in data quality. In this study, we advance TSI models by integrating hospitalization data, marking a significant step forward in modeling with TSI models. We introduce hospitalization propensity parameters to jointly model incidence and hospitalization data. We use a composite likelihood function to accommodate complex data structure and a Monte Carlo expectation–maximization algorithm to estimate model parameters. We analyze COVID-19 data to estimate disease transmission, assess risk factor impacts, and calculate hospitalization propensity. Our model improves the accuracy of estimating the instantaneous reproduction number in TSI models, particularly when hospitalization data is of higher quality than incidence data. It enables the estimation of key infectious disease parameters without relying on contact tracing data and provides a foundation for integrating TSI models with other infectious disease models.},
+  archive      = {J_BIOSTAT},
+  author       = {Shi, Jiasheng and Zhou, Yizhao and Huang, Jing},
+  doi          = {10.1093/biostatistics/kxae054},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae054},
+  shortjournal = {Biostatistics},
+  title        = {Unlocking the power of time-since-infection models: Data augmentation for improved instantaneous reproduction number estimation},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Recurrent events modeling based on a reflected brownian motion with application to hypoglycemia. <em>BIOSTAT</em>, <em>26</em>(1), kxae053. (<a href='https://doi.org/10.1093/biostatistics/kxae053'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Patients with type 2 diabetes need to closely monitor blood sugar levels as their routine diabetes self-management. Although many treatment agents aim to tightly control blood sugar, hypoglycemia often stands as an adverse event. In practice, patients can observe hypoglycemic events more easily than hyperglycemic events due to the perception of neurogenic symptoms. We propose to model each patient’s observed hypoglycemic event as a lower boundary crossing event for a reflected Brownian motion with an upper reflection barrier. The lower boundary is set by clinical standards. To capture patient heterogeneity and within-patient dependence, covariates and a patient level frailty are incorporated into the volatility and the upper reflection barrier. This framework provides quantification for the underlying glucose level variability, patients heterogeneity, and risk factors’ impact on glucose. We make inferences based on a Bayesian framework using Markov chain Monte Carlo. Two model comparison criteria, the deviance information criterion and the logarithm of the pseudo-marginal likelihood, are used for model selection. The methodology is validated in simulation studies. In analyzing a dataset from the diabetic patients in the DURABLE trial, our model provides adequate fit, generates data similar to the observed data, and offers insights that could be missed by other models.},
+  archive      = {J_BIOSTAT},
+  author       = {Xie, Yingfa and Fu, Haoda and Huang, Yuan and Pozdnyakov, Vladimir and Yan, Jun},
+  doi          = {10.1093/biostatistics/kxae053},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae053},
+  shortjournal = {Biostatistics},
+  title        = {Recurrent events modeling based on a reflected brownian motion with application to hypoglycemia},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Understanding the opioid syndemic in north carolina: A novel approach to modeling and identifying factors. <em>BIOSTAT</em>, <em>26</em>(1), kxae052. (<a href='https://doi.org/10.1093/biostatistics/kxae052'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The opioid epidemic is a significant public health challenge in North Carolina, but limited data restrict our understanding of its complexity. Examining trends and relationships among different outcomes believed to reflect opioid misuse provides an alternative perspective to understand the opioid epidemic. We use a Bayesian dynamic spatial factor model to capture the interrelated dynamics within six different county-level outcomes, such as illicit opioid overdose deaths, emergency department visits related to drug overdose, treatment counts for opioid use disorder, patients receiving prescriptions for buprenorphine, and newly diagnosed cases of acute and chronic hepatitis C virus and human immunodeficiency virus. We design the factor model to yield meaningful interactions among predefined subsets of these outcomes, causing a departure from the conventional lower triangular structure in the loadings matrix and leading to familiar identifiability issues. To address this challenge, we propose a novel approach that involves decomposing the loadings matrix within a Markov chain Monte Carlo algorithm, allowing us to estimate the loadings and factors uniquely. As a result, we gain a better understanding of the spatio-temporal dynamics of the opioid epidemic in North Carolina.},
+  archive      = {J_BIOSTAT},
+  author       = {Murphy, Eva and Kline, David and Egan, Kathleen L and Lancaster, Kathryn E and Miller, William C and Waller, Lance A and Hepler, Staci A},
+  doi          = {10.1093/biostatistics/kxae052},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae052},
+  shortjournal = {Biostatistics},
+  title        = {Understanding the opioid syndemic in north carolina: A novel approach to modeling and identifying factors},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Bipartite interference and air pollution transport: Estimating health effects of power plant interventions. <em>BIOSTAT</em>, <em>26</em>(1), kxae051. (<a href='https://doi.org/10.1093/biostatistics/kxae051'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Evaluating air quality interventions is confronted with the challenge of interference since interventions at a particular pollution source likely impact air quality and health at distant locations, and air quality and health at any given location are likely impacted by interventions at many sources. The structure of interference in this context is dictated by complex atmospheric processes governing how pollution emitted from a particular source is transformed and transported across space and can be cast with a bipartite structure reflecting the two distinct types of units: (i) interventional units on which treatments are applied or withheld to change pollution emissions; and (ii) outcome units on which outcomes of primary interest are measured. We propose new estimands for bipartite causal inference with interference that construe two components of treatment: a “key-associated” (or “individual”) treatment and an “upwind” (or “neighborhood”) treatment. Estimation is carried out using a covariate adjustment approach based on a joint propensity score. A reduced-complexity atmospheric model characterizes the structure of the interference network by modeling the movement of air parcels through time and space. The new methods are deployed to evaluate the effectiveness of installing flue-gas desulfurization scrubbers on 472 coal-burning power plants (the interventional units) in reducing Medicare hospitalizations among 21,577,552 Medicare beneficiaries residing across 25,553 ZIP codes in the United States (the outcome units).},
+  archive      = {J_BIOSTAT},
+  author       = {Zigler, Corwin and Liu, Vera and Mealli, Fabrizia and Forastiere, Laura},
+  doi          = {10.1093/biostatistics/kxae051},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae051},
+  shortjournal = {Biostatistics},
+  title        = {Bipartite interference and air pollution transport: Estimating health effects of power plant interventions},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Correction to: Scalable kernel balancing weights in a nationwide observational study of hospital profit status and heart attack outcomes. <em>BIOSTAT</em>, <em>26</em>(1), kxae050. (<a href='https://doi.org/10.1093/biostatistics/kxae050'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_BIOSTAT},
+  doi          = {10.1093/biostatistics/kxae050},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae050},
+  shortjournal = {Biostatistics},
+  title        = {Correction to: Scalable kernel balancing weights in a nationwide observational study of hospital profit status and heart attack outcomes},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Unveiling schizophrenia: A study with generalized functional linear mixed model via the investigation of functional random effects. <em>BIOSTAT</em>, <em>26</em>(1), kxae049. (<a href='https://doi.org/10.1093/biostatistics/kxae049'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Previous studies have identified attenuated pre-speech activity and speech sound suppression in individuals with Schizophrenia, with similar patterns observed in basic tasks entailing button-pressing to perceive a tone. However, it remains unclear whether these patterns are uniform across individuals or vary from person to person. Motivated by electroencephalographic (EEG) data from a Schizophrenia study, we develop a generalized functional linear mixed model (GFLMM) for repeated measurements by incorporating subject-specific functional random effects associated with multiple functional predictors. To assess the significance of these functional effects, we employ two different multivariate functional principal component analysis methods, which transform the GFLMM into a conventional generalized linear mixed model, thereby facilitating its implementation with standard software. Furthermore, we introduce a cutting-edge testing approach utilizing working responses to detect both subject-specific and predictor-specific functional random effects. Monte Carlo simulation studies demonstrate the effectiveness of our proposed testing method. Application of the proposed methods to the Schizophrenia data reveals significant subject-specific effects of human brain activity in the frontal zone (Fz) and the central zone (Cz), providing valuable insights into the potential variations among individuals, from healthy controls to those diagnosed with Schizophrenia.},
+  archive      = {J_BIOSTAT},
+  author       = {Rui, Rongxiang and Xiong, Wei and Pan, Jianxin and Tian, Maozai},
+  doi          = {10.1093/biostatistics/kxae049},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae049},
+  shortjournal = {Biostatistics},
+  title        = {Unveiling schizophrenia: A study with generalized functional linear mixed model via the investigation of functional random effects},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Bayesian thresholded modeling for integrating brain node and network predictors. <em>BIOSTAT</em>, <em>26</em>(1), kxae048. (<a href='https://doi.org/10.1093/biostatistics/kxae048'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Progress in neuroscience has provided unprecedented opportunities to advance our understanding of brain alterations and their correspondence to phenotypic profiles. With data collected from various imaging techniques, studies have integrated different types of information ranging from brain structure, function, or metabolism. More recently, an emerging way to categorize imaging traits is through a metric hierarchy, including localized node-level measurements and interactive network-level metrics. However, limited research has been conducted to integrate these different hierarchies and achieve a better understanding of the neurobiological mechanisms and communications. In this work, we address this literature gap by proposing a Bayesian regression model under both vector-variate and matrix-variate predictors. To characterize the interplay between different predicting components, we propose a set of biologically plausible prior models centered on an innovative joint thresholded prior. This captures the coupling and grouping effect of signal patterns, as well as their spatial contiguity across brain anatomy. By developing a posterior inference, we can identify and quantify the uncertainty of signaling node- and network-level neuromarkers, as well as their predictive mechanism for phenotypic outcomes. Through extensive simulations, we demonstrate that our proposed method outperforms the alternative approaches substantially in both out-of-sample prediction and feature selection. By implementing the model to study children’s general mental abilities, we establish a powerful predictive mechanism based on the identified task contrast traits and resting-state sub-networks.},
+  archive      = {J_BIOSTAT},
+  author       = {Sun, Zhe and Xu, Wanwan and Li, Tianxi and Kang, Jian and Alanis-Lobato, Gregorio and Zhao, Yize},
+  doi          = {10.1093/biostatistics/kxae048},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae048},
+  shortjournal = {Biostatistics},
+  title        = {Bayesian thresholded modeling for integrating brain node and network predictors},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BAMITA: Bayesian multiple imputation for tensor arrays. <em>BIOSTAT</em>, <em>26</em>(1), kxae047. (<a href='https://doi.org/10.1093/biostatistics/kxae047'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data increasingly take the form of a multi-way array, or tensor, in several biomedical domains. Such tensors are often incompletely observed. For example, we are motivated by longitudinal microbiome studies in which several timepoints are missing for several subjects. There is a growing literature on missing data imputation for tensors. However, existing methods give a point estimate for missing values without capturing uncertainty. We propose a multiple imputation approach for tensors in a flexible Bayesian framework, that yields realistic simulated values for missing entries and can propagate uncertainty through subsequent analyses. Our model uses efficient and widely applicable conjugate priors for a CANDECOMP/PARAFAC (CP) factorization, with a separable residual covariance structure. This approach is shown to perform well with respect to both imputation accuracy and uncertainty calibration, for scenarios in which either single entries or entire fibers of the tensor are missing. For two microbiome applications, it is shown to accurately capture uncertainty in the full microbiome profile at missing timepoints and used to infer trends in species diversity for the population. Documented R code to perform our multiple imputation approach is available at https://github.com/lockEF/MultiwayImputation .},
+  archive      = {J_BIOSTAT},
+  author       = {Jiang, Ziren and Li, Gen and Lock, Eric F},
+  doi          = {10.1093/biostatistics/kxae047},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae047},
+  shortjournal = {Biostatistics},
+  title        = {BAMITA: Bayesian multiple imputation for tensor arrays},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Testing for a difference in means of a single feature after clustering. <em>BIOSTAT</em>, <em>26</em>(1), kxae046. (<a href='https://doi.org/10.1093/biostatistics/kxae046'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For many applications, it is critical to interpret and validate groups of observations obtained via clustering. A common interpretation and validation approach involves testing differences in feature means between observations in two estimated clusters. In this setting, classical hypothesis tests lead to an inflated Type I error rate. To overcome this problem, we propose a new test for the difference in means in a single feature between a pair of clusters obtained using hierarchical or k -means clustering. The test controls the selective Type I error rate in finite samples and can be efficiently computed. We further illustrate the validity and power of our proposal in simulation and demonstrate its use on single-cell RNA-sequencing data.},
+  archive      = {J_BIOSTAT},
+  author       = {Chen, Yiqun T and Gao, Lucy L},
+  doi          = {10.1093/biostatistics/kxae046},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae046},
+  shortjournal = {Biostatistics},
+  title        = {Testing for a difference in means of a single feature after clustering},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Bayesian subtyping for multi-state brain functional connectome with application on preadolescent brain cognition. <em>BIOSTAT</em>, <em>26</em>(1), kxae045. (<a href='https://doi.org/10.1093/biostatistics/kxae045'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Converging evidence indicates that the heterogeneity of cognitive profiles may arise through detectable alternations in brain functional connectivity. Despite an unprecedented opportunity to uncover neurobiological subtypes through clustering or subtyping analyses on multi-state functional connectivity, few existing approaches are applicable to accommodate the network topology and unique biological architecture. To address this issue, we propose an innovative Bayesian nonparametric network-variate clustering analysis to uncover subgroups of individuals with homogeneous brain functional network patterns under multiple cognitive states. In light of the existing neuroscience literature, we assume there are unknown state-specific modular structures within functional connectivity. Concurrently, we identify informative network features essential for defining subtypes. To further facilitate practical use, we develop a computationally efficient variational inference algorithm to approximate posterior inference with satisfactory estimation accuracy. Extensive simulations show the superiority of our method. We apply the method to the Adolescent Brain Cognitive Development (ABCD) study, and identify neurodevelopmental subtypes and brain sub-network phenotypes under each state to signal neurobiological heterogeneity, suggesting promising directions for further exploration and investigation in neuroscience.},
+  archive      = {J_BIOSTAT},
+  author       = {Chen, Tianqi and Zhao, Hongyu and Tan, Chichun and Constable, Todd and Yip, Sarah and Zhao, Yize},
+  doi          = {10.1093/biostatistics/kxae045},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae045},
+  shortjournal = {Biostatistics},
+  title        = {Bayesian subtyping for multi-state brain functional connectome with application on preadolescent brain cognition},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Recoverability of causal effects under presence of missing data: A longitudinal case study. <em>BIOSTAT</em>, <em>26</em>(1), kxae044. (<a href='https://doi.org/10.1093/biostatistics/kxae044'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Missing data in multiple variables is a common issue. We investigate the applicability of the framework of graphical models for handling missing data to a complex longitudinal pharmacological study of children with HIV treated with an efavirenz-based regimen as part of the CHAPAS-3 trial. Specifically, we examine whether the causal effects of interest, defined through static interventions on multiple continuous variables, can be recovered (estimated consistently) from the available data only. So far, no general algorithms are available to decide on recoverability, and decisions have to be made on a case-by-case basis. We emphasize the sensitivity of recoverability to even the smallest changes in the graph structure, and present recoverability results for three plausible missingness-directed acyclic graphs (m-DAGs) in the CHAPAS-3 study, informed by clinical knowledge. Furthermore, we propose the concept of a “closed missingness mechanism”: if missing data are generated based on this mechanism, an available case analysis is admissible for consistent estimation of any statistical or causal estimand, even if data are missing not at random. Both simulations and theoretical considerations demonstrate how, in the assumed MNAR setting of our study, a complete or available case analysis can be superior to multiple imputation, and estimation results vary depending on the assumed missingness DAG. Our analyses demonstrate an innovative application of missingness DAGs to complex longitudinal real-world data, while highlighting the sensitivity of the results with respect to the assumed causal model.},
+  archive      = {J_BIOSTAT},
+  author       = {Holovchak, Anastasiia and McIlleron, Helen and Denti, Paolo and Schomaker, Michael},
+  doi          = {10.1093/biostatistics/kxae044},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae044},
+  shortjournal = {Biostatistics},
+  title        = {Recoverability of causal effects under presence of missing data: A longitudinal case study},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fast standard error estimation for joint models of longitudinal and time-to-event data based on stochastic EM algorithms. <em>BIOSTAT</em>, <em>26</em>(1), kxae043. (<a href='https://doi.org/10.1093/biostatistics/kxae043'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Maximum likelihood inference can often become computationally intensive when performing joint modeling of longitudinal and time-to-event data, due to the intractable integrals in the joint likelihood function. The computational challenges escalate further when modeling HIV-1 viral load data, owing to the nonlinear trajectories and the presence of left-censored data resulting from the assay’s lower limit of quantification. In this paper, for a joint model comprising a nonlinear mixed-effect model and a Cox Proportional Hazards model, we develop a computationally efficient Stochastic EM (StEM) algorithm for parameter estimation. Furthermore, we propose a novel technique for fast standard error estimation, which directly estimates standard errors from the results of StEM iterations and is broadly applicable to various joint modeling settings, such as those containing generalized linear mixed-effect models, parametric survival models, or joint models with more than two submodels. We evaluate the performance of the proposed methods through simulation studies and apply them to HIV-1 viral load data from six AIDS Clinical Trials Group studies to characterize viral rebound trajectories following the interruption of antiretroviral therapy (ART), accounting for the informative duration of off-ART periods.},
+  archive      = {J_BIOSTAT},
+  author       = {Yu, Tingting and Wu, Lang and Bosch, Ronald J and Smith, Davey M and Wang, Rui},
+  doi          = {10.1093/biostatistics/kxae043},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae043},
+  shortjournal = {Biostatistics},
+  title        = {Fast standard error estimation for joint models of longitudinal and time-to-event data based on stochastic EM algorithms},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The impact of coarsening an exposure on partial identifiability in instrumental variable settings. <em>BIOSTAT</em>, <em>26</em>(1), kxae042. (<a href='https://doi.org/10.1093/biostatistics/kxae042'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In instrumental variable (IV) settings, such as imperfect randomized trials and observational studies with Mendelian randomization, one may encounter a continuous exposure, the causal effect of which is not of true interest. Instead, scientific interest may lie in a coarsened version of this exposure. Although there is a lengthy literature on the impact of coarsening of an exposure with several works focusing specifically on IV settings, all methods proposed in this literature require parametric assumptions. Instead, just as in the standard IV setting, one can consider partial identification via bounds making no parametric assumptions. This was first pointed out in Alexander Balke’s PhD dissertation. We extend and clarify his work and derive novel bounds in several settings, including for a three-level IV, which will most likely be the case in Mendelian randomization. We demonstrate our findings in two real data examples, a randomized trial for peanut allergy in infants and a Mendelian randomization setting investigating the effect of homocysteine on cardiovascular disease.},
+  archive      = {J_BIOSTAT},
+  author       = {Gabriel, Erin E and Sachs, Michael C and Sjölander, Arvid},
+  doi          = {10.1093/biostatistics/kxae042},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae042},
+  shortjournal = {Biostatistics},
+  title        = {The impact of coarsening an exposure on partial identifiability in instrumental variable settings},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Shared parameter modeling of longitudinal data allowing for possibly informative visiting process and terminal event. <em>BIOSTAT</em>, <em>26</em>(1), kxae041. (<a href='https://doi.org/10.1093/biostatistics/kxae041'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Joint modeling of longitudinal and time-to-event data, particularly through shared parameter models (SPMs), is a common approach for handling longitudinal marker data with an informative terminal event. A critical but often neglected assumption in this context is that the visiting/observation process is noninformative, depending solely on past marker values and visit times. When this assumption fails, the visiting process becomes informative, resulting potentially to biased SPM estimates. Existing methods generally rely on a conditional independence assumption, positing that the marker model, visiting process, and time-to-event model are independent given shared or correlated random effects. Moreover, they are typically built on an intensity-based visiting process using calendar time. This study introduces a unified approach for jointly modeling a normally distributed marker, the visiting process, and time-to-event data in the form of competing risks. Our model conditions on the history of observed marker values, prior visit times, the marker’s random effects, and possibly a frailty term independent of the random effects. While our approach aligns with the shared-parameter framework, it does not presume conditional independence between the processes. Additionally, the visiting process can be defined on either a gap time scale, via proportional hazard models, or a calendar time scale, via proportional intensity models. Through extensive simulation studies, we assess the performance of our proposed methodology. We demonstrate that disregarding an informative visiting process can yield significantly biased marker estimates. However, misspecification of the visiting process can also lead to biased estimates. The gap time formulation exhibits greater robustness compared to the intensity-based model when the visiting process is misspecified. In general, enriching the visiting process with prior visit history enhances performance. We further apply our methodology to real longitudinal data from HIV, where visit frequency varies substantially among individuals.},
+  archive      = {J_BIOSTAT},
+  author       = {Thomadakis, Christos and Meligkotsidou, Loukia and Pantazis, Nikos and Touloumi, Giota},
+  doi          = {10.1093/biostatistics/kxae041},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae041},
+  shortjournal = {Biostatistics},
+  title        = {Shared parameter modeling of longitudinal data allowing for possibly informative visiting process and terminal event},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Functional quantile principal component analysis. <em>BIOSTAT</em>, <em>26</em>(1), kxae040. (<a href='https://doi.org/10.1093/biostatistics/kxae040'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper introduces functional quantile principal component analysis (FQPCA), a dimensionality reduction technique that extends the concept of functional principal components analysis (FPCA) to the examination of participant-specific quantiles curves. Our approach borrows strength across participants to estimate patterns in quantiles, and uses participant-level data to estimate loadings on those patterns. As a result, FQPCA is able to capture shifts in the scale and distribution of data that affect participant-level quantile curves, and is also a robust methodology suitable for dealing with outliers, heteroscedastic data or skewed data. The need for such methodology is exemplified by physical activity data collected using wearable devices. Participants often differ in the timing and intensity of physical activity behaviors, and capturing information beyond the participant-level expected value curves produced by FPCA is necessary for a robust quantification of diurnal patterns of activity. We illustrate our methods using accelerometer data from the National Health and Nutrition Examination Survey, and produce participant-level 10%, 50%, and 90% quantile curves over 24 h of activity. The proposed methodology is supported by simulation results, and is available as an R package.},
+  archive      = {J_BIOSTAT},
+  author       = {Méndez-Civieta, Álvaro and Wei, Ying and Diaz, Keith M. and Goldsmith, Jeff},
+  doi          = {10.1093/biostatistics/kxae040},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae040},
+  shortjournal = {Biostatistics},
+  title        = {Functional quantile principal component analysis},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Selection processes, transportability, and failure time analysis in life history studies. <em>BIOSTAT</em>, <em>26</em>(1), kxae039. (<a href='https://doi.org/10.1093/biostatistics/kxae039'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In life history analysis of data from cohort studies, it is important to address the process by which participants are identified and selected. Many health studies select or enrol individuals based on whether they have experienced certain health related events, for example, disease diagnosis or some complication from disease. Standard methods of analysis rely on assumptions concerning the independence of selection and a person’s prospective life history process, given their prior history. Violations of such assumptions are common, however, and can bias estimation of process features. This has implications for the internal and external validity of cohort studies, and for the transportabilty of results to a population. In this paper, we study failure time analysis by proposing a joint model for the cohort selection process and the failure process of interest. This allows us to address both independence assumptions and the transportability of study results. It is shown that transportability cannot be guaranteed in the absence of auxiliary information on the population. Conditions that produce dependent selection and types of auxiliary data are discussed and illustrated in numerical studies. The proposed framework is applied to a study of the risk of psoriatic arthritis in persons with psoriasis.},
+  archive      = {J_BIOSTAT},
+  author       = {Cook, Richard J and Lawless, Jerald F},
+  doi          = {10.1093/biostatistics/kxae039},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae039},
+  shortjournal = {Biostatistics},
+  title        = {Selection processes, transportability, and failure time analysis in life history studies},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A scalable two-stage bayesian approach accounting for exposure measurement error in environmental epidemiology. <em>BIOSTAT</em>, <em>26</em>(1), kxae038. (<a href='https://doi.org/10.1093/biostatistics/kxae038'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accounting for exposure measurement errors has been recognized as a crucial problem in environmental epidemiology for over two decades. Bayesian hierarchical models offer a coherent probabilistic framework for evaluating associations between environmental exposures and health effects, which take into account exposure measurement errors introduced by uncertainty in the estimated exposure as well as spatial misalignment between the exposure and health outcome data. While two-stage Bayesian analyses are often regarded as a good alternative to fully Bayesian analyses when joint estimation is not feasible, there has been minimal research on how to properly propagate uncertainty from the first-stage exposure model to the second-stage health model, especially in the case of a large number of participant locations along with spatially correlated exposures. We propose a scalable two-stage Bayesian approach, called a sparse multivariate normal (sparse MVN) prior approach, based on the Vecchia approximation for assessing associations between exposure and health outcomes in environmental epidemiology. We compare its performance with existing approaches through simulation. Our sparse MVN prior approach shows comparable performance with the fully Bayesian approach, which is a gold standard but is impossible to implement in some cases. We investigate the association between source-specific exposures and pollutant (nitrogen dioxide [NO 2 ])-specific exposures and birth weight of full-term infants born in 2012 in Harris County, Texas, using several approaches, including the newly developed method.},
+  archive      = {J_BIOSTAT},
+  author       = {Lee, Changwoo J and Symanski, Elaine and Rammah, Amal and Kang, Dong Hun and Hopke, Philip K and Park, Eun Sug},
+  doi          = {10.1093/biostatistics/kxae038},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae038},
+  shortjournal = {Biostatistics},
+  title        = {A scalable two-stage bayesian approach accounting for exposure measurement error in environmental epidemiology},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Speeding up interval estimation for r2-based mediation effect of high-dimensional mediators via cross-fitting. <em>BIOSTAT</em>, <em>26</em>(1), kxae037. (<a href='https://doi.org/10.1093/biostatistics/kxae037'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mediation analysis is a useful tool in investigating how molecular phenotypes such as gene expression mediate the effect of exposure on health outcomes. However, commonly used mean-based total mediation effect measures may suffer from cancellation of component-wise mediation effects in opposite directions in the presence of high-dimensional omics mediators. To overcome this limitation, we recently proposed a variance-based R-squared total mediation effect measure that relies on the computationally intensive nonparametric bootstrap for confidence interval estimation. In the work described herein, we formulated a more efficient two-stage, cross-fitted estimation procedure for the R 2 measure. To avoid potential bias, we performed iterative Sure Independence Screening (iSIS) in two subsamples to exclude the non-mediators, followed by ordinary least squares regressions for the variance estimation. We then constructed confidence intervals based on the newly derived closed-form asymptotic distribution of the R 2 measure. Extensive simulation studies demonstrated that this proposed procedure is much more computationally efficient than the resampling-based method, with comparable coverage probability. Furthermore, when applied to the Framingham Heart Study, the proposed method replicated the established finding of gene expression mediating age-related variation in systolic blood pressure and identified the role of gene expression profiles in the relationship between sex and high-density lipoprotein cholesterol level. The proposed estimation procedure is implemented in R package CFR2M .},
+  archive      = {J_BIOSTAT},
+  author       = {Xu, Zhichao and Li, Chunlin and Chi, Sunyi and Yang, Tianzhong and Wei, Peng},
+  doi          = {10.1093/biostatistics/kxae037},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae037},
+  shortjournal = {Biostatistics},
+  title        = {Speeding up interval estimation for r2-based mediation effect of high-dimensional mediators via cross-fitting},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic and concordance-assisted learning for risk stratification with application to alzheimer’s disease. <em>BIOSTAT</em>, <em>26</em>(1), kxae036. (<a href='https://doi.org/10.1093/biostatistics/kxae036'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dynamic prediction models capable of retaining accuracy by evolving over time could play a significant role for monitoring disease progression in clinical practice. In biomedical studies with long-term follow up, participants are often monitored through periodic clinical visits with repeat measurements until an occurrence of the event of interest (e.g. disease onset) or the study end. Acknowledging the dynamic nature of disease risk and clinical information contained in the longitudinal markers, we propose an innovative concordance-assisted learning algorithm to derive a real-time risk stratification score. The proposed approach bypasses the need to fit regression models, such as joint models of the longitudinal markers and time-to-event outcome, and hence enjoys the desirable property of model robustness. Simulation studies confirmed that the proposed method has satisfactory performance in dynamically monitoring the risk of developing disease and differentiating high-risk and low-risk population over time. We apply the proposed method to the Alzheimer’s Disease Neuroimaging Initiative data and develop a dynamic risk score of Alzheimer’s Disease for patients with mild cognitive impairment using multiple longitudinal markers and baseline prognostic factors.},
+  archive      = {J_BIOSTAT},
+  author       = {Li, Wen and Li, Ruosha and Feng, Ziding and Ning, Jing and For the Alzheimer’s Disease Neuroimaging Initiative},
+  doi          = {10.1093/biostatistics/kxae036},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae036},
+  shortjournal = {Biostatistics},
+  title        = {Dynamic and concordance-assisted learning for risk stratification with application to alzheimer’s disease},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the addams family of discrete frailty distributions for modeling multivariate case i interval-censored data. <em>BIOSTAT</em>, <em>26</em>(1), kxae035. (<a href='https://doi.org/10.1093/biostatistics/kxae035'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Random effect models for time-to-event data, also known as frailty models, provide a conceptually appealing way of quantifying association between survival times and of representing heterogeneities resulting from factors which may be difficult or impossible to measure. In the literature, the random effect is usually assumed to have a continuous distribution. However, in some areas of application, discrete frailty distributions may be more appropriate. The present paper is about the implementation and interpretation of the Addams family of discrete frailty distributions. We propose methods of estimation for this family of densities in the context of shared frailty models for the hazard rates for case I interval-censored data. Our optimization framework allows for stratification of random effect distributions by covariates. We highlight interpretational advantages of the Addams family of discrete frailty distributions and the K -point distribution as compared to other frailty distributions. A unique feature of the Addams family and the K -point distribution is that the support of the frailty distribution depends on its parameters. This feature is best exploited by imposing a model on the distributional parameters, resulting in a model with non-homogeneous covariate effects that can be analyzed using standard measures such as the hazard ratio. Our methods are illustrated with applications to multivariate case I interval-censored infection data.},
+  archive      = {J_BIOSTAT},
+  author       = {Bardo, Maximilian and Hens, Niel and Unkel, Steffen},
+  doi          = {10.1093/biostatistics/kxae035},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae035},
+  shortjournal = {Biostatistics},
+  title        = {On the addams family of discrete frailty distributions for modeling multivariate case i interval-censored data},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A bayesian pharmacokinetics integrated phase I–II design to optimize dose-schedule regimes. <em>BIOSTAT</em>, <em>26</em>(1), kxae034. (<a href='https://doi.org/10.1093/biostatistics/kxae034'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The schedule of administering a drug has profound impact on the toxicity and efficacy profiles of the drug through changing its pharmacokinetics (PK). PK is an innate and indispensable component of the dose-schedule optimization. Motivated by this, we propose a Bayesian PK integrated dose-schedule finding (PKIDS) design to identify the optimal dose-schedule regime by integrating PK, toxicity, and efficacy data. Based on the causal pathway that dose and schedule affect PK, which in turn affects efficacy and toxicity, we jointly model the three endpoints by first specifying a Bayesian hierarchical model for the marginal distribution of the longitudinal dose-concentration process. Conditional on the drug concentration in plasma, we jointly model toxicity and efficacy as a function of the concentration. We quantify the risk-benefit of regimes using utility—continuously updating the estimates of PK, toxicity, and efficacy based on interim data—and make adaptive decisions to assign new patients to appropriate dose-schedule regimes via adaptive randomization. The simulation study shows that the PKIDS design has desirable operating characteristics.},
+  archive      = {J_BIOSTAT},
+  author       = {Lu, Mengyi and Yuan, Ying and Liu, Suyu},
+  doi          = {10.1093/biostatistics/kxae034},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae034},
+  shortjournal = {Biostatistics},
+  title        = {A bayesian pharmacokinetics integrated phase I–II design to optimize dose-schedule regimes},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HMM for discovering decision-making dynamics using reinforcement learning experiments. <em>BIOSTAT</em>, <em>26</em>(1), kxae033. (<a href='https://doi.org/10.1093/biostatistics/kxae033'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Major depressive disorder (MDD), a leading cause of years of life lived with disability, presents challenges in diagnosis and treatment due to its complex and heterogeneous nature. Emerging evidence indicates that reward processing abnormalities may serve as a behavioral marker for MDD. To measure reward processing, patients perform computer-based behavioral tasks that involve making choices or responding to stimulants that are associated with different outcomes, such as gains or losses in the laboratory. Reinforcement learning (RL) models are fitted to extract parameters that measure various aspects of reward processing (e.g. reward sensitivity) to characterize how patients make decisions in behavioral tasks. Recent findings suggest the inadequacy of characterizing reward learning solely based on a single RL model; instead, there may be a switching of decision-making processes between multiple strategies. An important scientific question is how the dynamics of strategies in decision-making affect the reward learning ability of individuals with MDD. Motivated by the probabilistic reward task within the Establishing Moderators and Biosignatures of Antidepressant Response in Clinical Care (EMBARC) study, we propose a novel RL-HMM (hidden Markov model) framework for analyzing reward-based decision-making. Our model accommodates decision-making strategy switching between two distinct approaches under an HMM: subjects making decisions based on the RL model or opting for random choices. We account for continuous RL state space and allow time-varying transition probabilities in the HMM. We introduce a computationally efficient Expectation-maximization (EM) algorithm for parameter estimation and use a nonparametric bootstrap for inference. Extensive simulation studies validate the finite-sample performance of our method. We apply our approach to the EMBARC study to show that MDD patients are less engaged in RL compared to the healthy controls, and engagement is associated with brain activities in the negative affect circuitry during an emotional conflict task.},
+  archive      = {J_BIOSTAT},
+  author       = {Guo, Xingche and Zeng, Donglin and Wang, Yuanjia},
+  doi          = {10.1093/biostatistics/kxae033},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae033},
+  shortjournal = {Biostatistics},
+  title        = {HMM for discovering decision-making dynamics using reinforcement learning experiments},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Pooling controls from nested case–control studies with the proportional risks model. <em>BIOSTAT</em>, <em>26</em>(1), kxae032. (<a href='https://doi.org/10.1093/biostatistics/kxae032'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The standard approach to regression modeling for cause-specific hazards with prospective competing risks data specifies separate models for each failure type. An alternative proposed by Lunn and McNeil (1995) assumes the cause-specific hazards are proportional across causes. This may be more efficient than the standard approach, and allows the comparison of covariate effects across causes. In this paper, we extend Lunn and McNeil (1995) to nested case–control studies, accommodating scenarios with additional matching and non-proportionality. We also consider the case where data for different causes are obtained from different studies conducted in the same cohort. It is demonstrated that while only modest gains in efficiency are possible in full cohort analyses, substantial gains may be attained in nested case–control analyses for failure types that are relatively rare. Extensive simulation studies are conducted and real data analyses are provided using the Prostate, Lung, Colorectal, and Ovarian Cancer Screening Trial (PLCO) study.},
+  archive      = {J_BIOSTAT},
+  author       = {Chang, Yen and Ivanova, Anastasia and Albanes, Demetrius and Fine, Jason P and Shin, Yei Eun},
+  doi          = {10.1093/biostatistics/kxae032},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae032},
+  shortjournal = {Biostatistics},
+  title        = {Pooling controls from nested case–control studies with the proportional risks model},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exposure proximal immune correlates analysis. <em>BIOSTAT</em>, <em>26</em>(1), kxae031. (<a href='https://doi.org/10.1093/biostatistics/kxae031'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Immune response decays over time, and vaccine-induced protection often wanes. Understanding how vaccine efficacy changes over time is critical to guiding the development and application of vaccines in preventing infectious diseases. The objective of this article is to develop statistical methods that assess the effect of decaying immune responses on the risk of disease and on vaccine efficacy, within the context of Cox regression with sparse sampling of immune responses, in a baseline-naive population. We aim to further disentangle the various aspects of the time-varying vaccine effect, whether direct on disease or mediated through immune responses. Based on time-to-event data from a vaccine efficacy trial and sparse sampling of longitudinal immune responses, we propose a weighted estimated induced likelihood approach that models the longitudinal immune response trajectory and the time to event separately. This approach assesses the effects of the decaying immune response, the peak immune response, and/or the waning vaccine effect on the risk of disease. The proposed method is applicable not only to standard randomized trial designs but also to augmented vaccine trial designs that re-vaccinate uninfected placebo recipients at the end of the standard trial period. We conducted simulation studies to evaluate the performance of our method and applied the method to analyze immune correlates from a phase III SARS-CoV-2 vaccine trial.},
+  archive      = {J_BIOSTAT},
+  author       = {Huang, Ying and Follmann, Dean},
+  doi          = {10.1093/biostatistics/kxae031},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae031},
+  shortjournal = {Biostatistics},
+  title        = {Exposure proximal immune correlates analysis},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive gaussian markov random fields for child mortality estimation. <em>BIOSTAT</em>, <em>26</em>(1), kxae030. (<a href='https://doi.org/10.1093/biostatistics/kxae030'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The under-5 mortality rate (U5MR), a critical health indicator, is typically estimated from household surveys in lower and middle income countries. Spatio-temporal disaggregation of household survey data can lead to highly variable estimates of U5MR, necessitating the usage of smoothing models which borrow information across space and time. The assumptions of common smoothing models may be unrealistic when certain time periods or regions are expected to have shocks in mortality relative to their neighbors, which can lead to oversmoothing of U5MR estimates. In this paper, we develop a spatial and temporal smoothing approach based on Gaussian Markov random field models which incorporate knowledge of these expected shocks in mortality. We demonstrate the potential for these models to improve upon alternatives not incorporating knowledge of expected shocks in a simulation study. We apply these models to estimate U5MR in Rwanda at the national level from 1985 to 2019, a time period which includes the Rwandan civil war and genocide.},
+  archive      = {J_BIOSTAT},
+  author       = {Aleshin-Guendel, Serge and Wakefield, Jon},
+  doi          = {10.1093/biostatistics/kxae030},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae030},
+  shortjournal = {Biostatistics},
+  title        = {Adaptive gaussian markov random fields for child mortality estimation},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Correction. <em>BIOSTAT</em>, <em>26</em>(1), kxae029. (<a href='https://doi.org/10.1093/biostatistics/kxae029'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_BIOSTAT},
+  doi          = {10.1093/biostatistics/kxae029},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae029},
+  shortjournal = {Biostatistics},
+  title        = {Correction},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Incorporating prior information in gene expression network-based cancer heterogeneity analysis. <em>BIOSTAT</em>, <em>26</em>(1), kxae028. (<a href='https://doi.org/10.1093/biostatistics/kxae028'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cancer is molecularly heterogeneous, with seemingly similar patients having different molecular landscapes and accordingly different clinical behaviors. In recent studies, gene expression networks have been shown as more effective/informative for cancer heterogeneity analysis than some simpler measures. Gene interconnections can be classified as “direct” and “indirect,” where the latter can be caused by shared genomic regulators (such as transcription factors, microRNAs, and other regulatory molecules) and other mechanisms. It has been suggested that incorporating the regulators of gene expressions in network analysis and focusing on the direct interconnections can lead to a deeper understanding of the more essential gene interconnections. Such analysis can be seriously challenged by the large number of parameters (jointly caused by network analysis, incorporation of regulators, and heterogeneity) and often weak signals. To effectively tackle this problem, we propose incorporating prior information contained in the published literature. A key challenge is that such prior information can be partial or even wrong. We develop a two-step procedure that can flexibly accommodate different levels of prior information quality. Simulation demonstrates the effectiveness of the proposed approach and its superiority over relevant competitors. In the analysis of a breast cancer dataset, findings different from the alternatives are made, and the identified sample subgroups have important clinical differences.},
+  archive      = {J_BIOSTAT},
+  author       = {Li, Rong and Xu, Shaodong and Li, Yang and Tang, Zuojian and Feng, Di and Cai, James and Ma, Shuangge},
+  doi          = {10.1093/biostatistics/kxae028},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae028},
+  shortjournal = {Biostatistics},
+  title        = {Incorporating prior information in gene expression network-based cancer heterogeneity analysis},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Direct estimation and inference of higher-level correlations from lower-level measurements with applications in gene-pathway and proteomics studies. <em>BIOSTAT</em>, <em>26</em>(1), kxae027. (<a href='https://doi.org/10.1093/biostatistics/kxae027'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper tackles the challenge of estimating correlations between higher-level biological variables (e.g. proteins and gene pathways) when only lower-level measurements are directly observed (e.g. peptides and individual genes). Existing methods typically aggregate lower-level data into higher-level variables and then estimate correlations based on the aggregated data. However, different data aggregation methods can yield varying correlation estimates as they target different higher-level quantities. Our solution is a latent factor model that directly estimates these higher-level correlations from lower-level data without the need for data aggregation. We further introduce a shrinkage estimator to ensure the positive definiteness and improve the accuracy of the estimated correlation matrix. Furthermore, we establish the asymptotic normality of our estimator, enabling efficient computation of P -values for the identification of significant correlations. The effectiveness of our approach is demonstrated through comprehensive simulations and the analysis of proteomics and gene expression datasets. We develop the R package highcor for implementing our method.},
+  archive      = {J_BIOSTAT},
+  author       = {Wang, Yue and Shi, Haoran},
+  doi          = {10.1093/biostatistics/kxae027},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae027},
+  shortjournal = {Biostatistics},
+  title        = {Direct estimation and inference of higher-level correlations from lower-level measurements with applications in gene-pathway and proteomics studies},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Regression and alignment for functional data and network topology. <em>BIOSTAT</em>, <em>26</em>(1), kxae026. (<a href='https://doi.org/10.1093/biostatistics/kxae026'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the brain, functional connections form a network whose topological organization can be described by graph-theoretic network diagnostics. These include characterizations of the community structure, such as modularity and participation coefficient, which have been shown to change over the course of childhood and adolescence. To investigate if such changes in the functional network are associated with changes in cognitive performance during development, network studies often rely on an arbitrary choice of preprocessing parameters, in particular the proportional threshold of network edges. Because the choice of parameter can impact the value of the network diagnostic, and therefore downstream conclusions, we propose to circumvent that choice by conceptualizing the network diagnostic as a function of the parameter. As opposed to a single value, a network diagnostic curve describes the connectome topology at multiple scales—from the sparsest group of the strongest edges to the entire edge set. To relate these curves to executive function and other covariates, we use scalar-on-function regression, which is more flexible than previous functional data-based models used in network neuroscience. We then consider how systematic differences between networks can manifest in misalignment of diagnostic curves, and consequently propose a supervised curve alignment method that incorporates auxiliary information from other variables. Our algorithm performs both functional regression and alignment via an iterative, penalized, and nonlinear likelihood optimization. The illustrated method has the potential to improve the interpretability and generalizability of neuroscience studies where the goal is to study heterogeneity among a mixture of function- and scalar-valued measures.},
+  archive      = {J_BIOSTAT},
+  author       = {Tu, Danni and Wrobel, Julia and Satterthwaite, Theodore D and Goldsmith, Jeff and Gur, Ruben C and Gur, Raquel E and Gertheiss, Jan and Bassett, Dani S and Shinohara, Russell T},
+  doi          = {10.1093/biostatistics/kxae026},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae026},
+  shortjournal = {Biostatistics},
+  title        = {Regression and alignment for functional data and network topology},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Estimating causal effects for binary outcomes using per-decision inverse probability weighting. <em>BIOSTAT</em>, <em>26</em>(1), kxae025. (<a href='https://doi.org/10.1093/biostatistics/kxae025'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Micro-randomized trials are commonly conducted for optimizing mobile health interventions such as push notifications for behavior change. In analyzing such trials, causal excursion effects are often of primary interest, and their estimation typically involves inverse probability weighting (IPW). However, in a micro-randomized trial, additional treatments can often occur during the time window over which an outcome is defined, and this can greatly inflate the variance of the causal effect estimator because IPW would involve a product of numerous weights. To reduce variance and improve estimation efficiency, we propose two new estimators using a modified version of IPW, which we call “per-decision IPW.” The second estimator further improves efficiency using the projection idea from the semiparametric efficiency theory. These estimators are applicable when the outcome is binary and can be expressed as the maximum of a series of sub-outcomes defined over sub-intervals of time. We establish the estimators’ consistency and asymptotic normality. Through simulation studies and real data applications, we demonstrate substantial efficiency improvement of the proposed estimator over existing estimators. The new estimators can be used to improve the precision of primary and secondary analyses for micro-randomized trials with binary outcomes.},
+  archive      = {J_BIOSTAT},
+  author       = {Bao, Yihan and Bell, Lauren and Williamson, Elizabeth and Garnett, Claire and Qian, Tianchen},
+  doi          = {10.1093/biostatistics/kxae025},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae025},
+  shortjournal = {Biostatistics},
+  title        = {Estimating causal effects for binary outcomes using per-decision inverse probability weighting},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Bayesian estimation of covariate assisted principal regression for brain functional connectivity. <em>BIOSTAT</em>, <em>26</em>(1), kxae023. (<a href='https://doi.org/10.1093/biostatistics/kxae023'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a Bayesian reformulation of covariate-assisted principal regression for covariance matrix outcomes to identify low-dimensional components in the covariance associated with covariates. By introducing a geometric approach to the covariance matrices and leveraging Euclidean geometry, we estimate dimension reduction parameters and model covariance heterogeneity based on covariates. This method enables joint estimation and uncertainty quantification of relevant model parameters associated with heteroscedasticity. We demonstrate our approach through simulation studies and apply it to analyze associations between covariates and brain functional connectivity using data from the Human Connectome Project.},
+  archive      = {J_BIOSTAT},
+  author       = {Park, Hyung G},
+  doi          = {10.1093/biostatistics/kxae023},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae023},
+  shortjournal = {Biostatistics},
+  title        = {Bayesian estimation of covariate assisted principal regression for brain functional connectivity},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A modeling framework for detecting and leveraging node-level information in bayesian network inference. <em>BIOSTAT</em>, <em>26</em>(1), kxae021. (<a href='https://doi.org/10.1093/biostatistics/kxae021'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Bayesian graphical models are powerful tools to infer complex relationships in high dimension, yet are often fraught with computational and statistical challenges. If exploited in a principled way, the increasing information collected alongside the data of primary interest constitutes an opportunity to mitigate these difficulties by guiding the detection of dependence structures. For instance, gene network inference may be informed by the use of publicly available summary statistics on the regulation of genes by genetic variants. Here we present a novel Gaussian graphical modeling framework to identify and leverage information on the centrality of nodes in conditional independence graphs. Specifically, we consider a fully joint hierarchical model to simultaneously infer (i) sparse precision matrices and (ii) the relevance of node-level information for uncovering the sought-after network structure. We encode such information as candidate auxiliary variables using a spike-and-slab submodel on the propensity of nodes to be hubs, which allows hypothesis-free selection and interpretation of a sparse subset of relevant variables. As efficient exploration of large posterior spaces is needed for real-world applications, we develop a variational expectation conditional maximization algorithm that scales inference to hundreds of samples, nodes and auxiliary variables. We illustrate and exploit the advantages of our approach in simulations and in a gene network study which identifies hub genes involved in biological pathways relevant to immune-mediated diseases.},
+  archive      = {J_BIOSTAT},
+  author       = {Xi, Xiaoyue and Ruffieux, Hélène},
+  doi          = {10.1093/biostatistics/kxae021},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae021},
+  shortjournal = {Biostatistics},
+  title        = {A modeling framework for detecting and leveraging node-level information in bayesian network inference},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Model-based multifacet clustering with high-dimensional omics applications. <em>BIOSTAT</em>, <em>26</em>(1), kxae020. (<a href='https://doi.org/10.1093/biostatistics/kxae020'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High-dimensional omics data often contain intricate and multifaceted information, resulting in the coexistence of multiple plausible sample partitions based on different subsets of selected features. Conventional clustering methods typically yield only one clustering solution, limiting their capacity to fully capture all facets of cluster structures in high-dimensional data. To address this challenge, we propose a model-based multifacet clustering (MFClust) method based on a mixture of Gaussian mixture models, where the former mixture achieves facet assignment for gene features and the latter mixture determines cluster assignment of samples. We demonstrate superior facet and cluster assignment accuracy of MFClust through simulation studies. The proposed method is applied to three transcriptomic applications from postmortem brain and lung disease studies. The result captures multifacet clustering structures associated with critical clinical variables and provides intriguing biological insights for further hypothesis generation and discovery.},
+  archive      = {J_BIOSTAT},
+  author       = {Zong, Wei and Li, Danyang and Seney, Marianne L and Mcclung, Colleen A and Tseng, George C},
+  doi          = {10.1093/biostatistics/kxae020},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae020},
+  shortjournal = {Biostatistics},
+  title        = {Model-based multifacet clustering with high-dimensional omics applications},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A marginal structural model for normal tissue complication probability. <em>BIOSTAT</em>, <em>26</em>(1), kxae019. (<a href='https://doi.org/10.1093/biostatistics/kxae019'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The goal of radiation therapy for cancer is to deliver prescribed radiation dose to the tumor while minimizing dose to the surrounding healthy tissues. To evaluate treatment plans, the dose distribution to healthy organs is commonly summarized as dose-volume histograms (DVHs). Normal tissue complication probability (NTCP) modeling has centered around making patient-level risk predictions with features extracted from the DVHs, but few have considered adapting a causal framework to evaluate the safety of alternative treatment plans. We propose causal estimands for NTCP based on deterministic and stochastic interventions, as well as propose estimators based on marginal structural models that impose bivariable monotonicity between dose, volume, and toxicity risk. The properties of these estimators are studied through simulations, and their use is illustrated in the context of radiotherapy treatment of anal canal cancer patients.},
+  archive      = {J_BIOSTAT},
+  author       = {Tang, Thai-Son and Liu, Zhihui and Hosni, Ali and Kim, John and Saarela, Olli},
+  doi          = {10.1093/biostatistics/kxae019},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae019},
+  shortjournal = {Biostatistics},
+  title        = {A marginal structural model for normal tissue complication probability},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Stochastic EM algorithm for partially observed stochastic epidemics with individual heterogeneity. <em>BIOSTAT</em>, <em>26</em>(1), kxae018. (<a href='https://doi.org/10.1093/biostatistics/kxae018'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We develop a stochastic epidemic model progressing over dynamic networks, where infection rates are heterogeneous and may vary with individual-level covariates. The joint dynamics are modeled as a continuous-time Markov chain such that disease transmission is constrained by the contact network structure, and network evolution is in turn influenced by individual disease statuses. To accommodate partial epidemic observations commonly seen in real-world data, we propose a stochastic EM algorithm for inference, introducing key innovations that include efficient conditional samplers for imputing missing infection and recovery times which respect the dynamic contact network. Experiments on both synthetic and real datasets demonstrate that our inference method can accurately and efficiently recover model parameters and provide valuable insight at the presence of unobserved disease episodes in epidemic data.},
+  archive      = {J_BIOSTAT},
+  author       = {Bu, Fan and Aiello, Allison E and Volfovsky, Alexander and Xu, Jason},
+  doi          = {10.1093/biostatistics/kxae018},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae018},
+  shortjournal = {Biostatistics},
+  title        = {Stochastic EM algorithm for partially observed stochastic epidemics with individual heterogeneity},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Simultaneous clustering and estimation of networks in multiple graphical models. <em>BIOSTAT</em>, <em>26</em>(1), kxae015. (<a href='https://doi.org/10.1093/biostatistics/kxae015'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Gaussian graphical models are widely used to study the dependence structure among variables. When samples are obtained from multiple conditions or populations, joint analysis of multiple graphical models are desired due to their capacity to borrow strength across populations. Nonetheless, existing methods often overlook the varying levels of similarity between populations, leading to unsatisfactory results. Moreover, in many applications, learning the population-level clustering structure itself is of particular interest. In this article, we develop a novel method, called S imultaneous C lustering and E stimation of N etworks via T ensor decomposition (SCENT), that simultaneously clusters and estimates graphical models from multiple populations. Precision matrices from different populations are uniquely organized as a three-way tensor array, and a low-rank sparse model is proposed for joint population clustering and network estimation. We develop a penalized likelihood method and an augmented Lagrangian algorithm for model fitting. We also establish the clustering accuracy and norm consistency of the estimated precision matrices. We demonstrate the efficacy of the proposed method with comprehensive simulation studies. The application to the Genotype-Tissue Expression multi-tissue gene expression data provides important insights into tissue clustering and gene coexpression patterns in multiple brain tissues.},
+  archive      = {J_BIOSTAT},
+  author       = {Li, Gen and Wang, Miaoyan},
+  doi          = {10.1093/biostatistics/kxae015},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae015},
+  shortjournal = {Biostatistics},
+  title        = {Simultaneous clustering and estimation of networks in multiple graphical models},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A joint normal-ordinal (probit) model for ordinal and continuous longitudinal data. <em>BIOSTAT</em>, <em>26</em>(1), kxae014. (<a href='https://doi.org/10.1093/biostatistics/kxae014'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In biomedical studies, continuous and ordinal longitudinal variables are frequently encountered. In many of these studies it is of interest to estimate the effect of one of these longitudinal variables on the other. Time-dependent covariates have, however, several limitations; they can, for example, not be included when the data is not collected at fixed intervals. The issues can be circumvented by implementing joint models, where two or more longitudinal variables are treated as a response and modeled with a correlated random effect. Next, by conditioning on these response(s), we can study the effect of one or more longitudinal variables on another. We propose a normal-ordinal(probit) joint model. First, we derive closed-form formulas to estimate the model-based correlations between the responses on their original scale. In addition, we derive the marginal model, where the interpretation is no longer conditional on the random effects. As a consequence, we can make predictions for a subvector of one response conditional on the other response and potentially a subvector of the history of the response. Next, we extend the approach to a high-dimensional case with more than two ordinal and/or continuous longitudinal variables. The methodology is applied to a case study where, among others, a longitudinal ordinal response is predicted with a longitudinal continuous variable.},
+  archive      = {J_BIOSTAT},
+  author       = {Delporte, Margaux and Molenberghs, Geert and Fieuws, Steffen and Verbeke, Geert},
+  doi          = {10.1093/biostatistics/kxae014},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae014},
+  shortjournal = {Biostatistics},
+  title        = {A joint normal-ordinal (probit) model for ordinal and continuous longitudinal data},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A semiparametric gaussian mixture model for chest CT-based 3D blood vessel reconstruction. <em>BIOSTAT</em>, <em>26</em>(1), kxae013. (<a href='https://doi.org/10.1093/biostatistics/kxae013'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Computed tomography (CT) has been a powerful diagnostic tool since its emergence in the 1970s. Using CT data, 3D structures of human internal organs and tissues, such as blood vessels, can be reconstructed using professional software. This 3D reconstruction is crucial for surgical operations and can serve as a vivid medical teaching example. However, traditional 3D reconstruction heavily relies on manual operations, which are time-consuming, subjective, and require substantial experience. To address this problem, we develop a novel semiparametric Gaussian mixture model tailored for the 3D reconstruction of blood vessels. This model extends the classical Gaussian mixture model by enabling nonparametric variations in the component-wise parameters of interest according to voxel positions. We develop a kernel-based expectation–maximization algorithm for estimating the model parameters, accompanied by a supporting asymptotic theory. Furthermore, we propose a novel regression method for optimal bandwidth selection. Compared to the conventional cross-validation-based (CV) method, the regression method outperforms the CV method in terms of computational and statistical efficiency. In application, this methodology facilitates the fully automated reconstruction of 3D blood vessel structures with remarkable accuracy.},
+  archive      = {J_BIOSTAT},
+  author       = {Zeng, Qianhan and Zhou, Jing and Ji, Ying and Wang, Hansheng},
+  doi          = {10.1093/biostatistics/kxae013},
+  journal      = {Biostatistics},
+  number       = {1},
+  pages        = {kxae013},
+  shortjournal = {Biostatistics},
+  title        = {A semiparametric gaussian mixture model for chest CT-based 3D blood vessel reconstruction},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BIMJ</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="bimj">BIMJ - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Unified estimation method for partially linear models with nonmonotone missing at random data. <em>BIMJ</em>, <em>67</em>(5), e70070. (<a href='https://doi.org/10.1002/bimj.70070'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Partially linear models are commonly used in observational studies of the causal effect of treatment and/or exposure when there are observed confounding variables. The models are robust and asymptotically distribution-free for testing the causal null hypothesis. In this research, we investigate methods for estimating the partially linear models with data missing at random in all the variables, including the response, the treatment, and the confounding variables. We develop a general estimation method for inference in partially linear models with nonmonotone missing at random data. It proposes using partially linear working models to improve the estimation efficiency of the standard complete case method. It can be shown that the new estimator is consistent, which does not depend on the correctness of the working models. In addition, we recommend bootstrap estimates for the asymptotic variances and semiparametric models for the missing data probabilities. It is computationally simple and can be directly implemented in standard software. Simulation studies are provided to examine its performance. A real data example with sparsely observed missingness patterns is used to illustrate the method.},
+  archive      = {J_BIMJ},
+  author       = {Yang Zhao},
+  doi          = {10.1002/bimj.70070},
+  journal      = {Biometrical Journal},
+  month        = {10},
+  number       = {5},
+  pages        = {e70070},
+  shortjournal = {Bio. J.},
+  title        = {Unified estimation method for partially linear models with nonmonotone missing at random data},
+  volume       = {67},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

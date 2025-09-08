@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IJIS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ijis">IJIS - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Space ground collaborative SFC flow scheduling strategy in Satellite–Terrestrial integrated Network–Enabled internet of vehicles rescuing based on Computation–Space–Time graph. <em>IJIS</em>, <em>2025</em>(1), 9914571. (<a href='https://doi.org/10.1155/int/9914571'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The extensive coverage of satellite constellations has rendered the satellite–terrestrial integrated network (STIN) a pivotal solution for communication and computation services in internet of vehicles (IoVs) rescuing in remote or disaster areas with limited terrestrial networks. To optimise network resource utilisation and service quality, the integration of the service function chain (SFC) into STIN-enabled IoV rescuing systems has become essential. However, traditional SFC-based STIN systems encounter challenges in flow scheduling flexibility, stemming from the sequential execution of subtasks on satellites equipped with virtual network functions (VNFs). This leads to a trade-off between data volume reduction and the additional communication and computation energy costs incurred in the orbit. To address this issue, this paper introduces a space ground collaborative SFC (SGC-SFC) flow scheduling strategy. This strategy enables the execution of subtasks on either VNF-equipped satellites or the ground vehicle formation, contingent on network conditions. Firstly, we carry out a computation–space–time graph (CSTG) model specifically for the STIN-enabled IoV rescuing system with SFC. This model integrates the computational layer into the space–time graph (STG), accurately capturing the data volume reduction characteristics and sequential execution constraints of SFC in the STIN-enabled IoV rescuing system. Secondly, a SGC-SFC flow scheduling algorithm is designed to identify a set of feasible paths with minimal energy cost and maximum processable data volume. Simulation results validate the effectiveness and robustness of our proposed SGC-SFC under diverse conditions.},
+  archive      = {J_IJIS},
+  author       = {Yingjie Deng and Yu Liu and Yumei Wang and Konglin Zhu and Peng Wu and Lu Cao and Wen Sun and Jingwen Xu},
+  doi          = {10.1155/int/9914571},
+  journal      = {International Journal of Intelligent Systems},
+  month        = {6},
+  number       = {1},
+  pages        = {9914571},
+  shortjournal = {Int. J. Intell. Syst.},
+  title        = {Space ground collaborative SFC flow scheduling strategy in Satellite–Terrestrial integrated Network–Enabled internet of vehicles rescuing based on Computation–Space–Time graph},
+  volume       = {2025},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

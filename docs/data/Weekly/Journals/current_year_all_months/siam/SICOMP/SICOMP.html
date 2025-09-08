@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SICOMP</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="sicomp">SICOMP - 38</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Toward better depth lower bounds: A KRW-like theorem for strong composition. <em>SICOMP</em>, <em>54</em>(5), 1193-1240. (<a href='https://doi.org/10.1137/23M158615X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. One of the major open problems in complexity theory is proving superlogarithmic lower bounds on the depth of circuits (i.e., ). [Karchmer, Raz, and Wigderson Super-logarithmic depth lower bounds via direct sum in communication complexity, in Proceedings of the Sixth Annual Structure in Complexity Theory Conference, IEEE Computer Society, Chicago, 1991, pp. 299–304] suggested approaching this problem by proving that the depth complexity of a composition of functions is roughly the sum of the depth complexities of and . They showed that the validity of this conjecture would imply that . The intuition that underlies the Karchmer, Raz, and Wigderson (KRW) conjecture is that the composition should behave like a “direct-sum problem”, in a certain sense, and, therefore, the depth complexity of should be the sum of the individual depth complexities. Nevertheless, there are two obstacles toward turning this intuition into a proof: first, we do not know how to prove that must behave like a direct-sum problem; second, we do not know how to prove that the complexity of the latter direct-sum problem is indeed the sum of the individual complexities. In this work, we focus on the second obstacle. To this end, we study a notion called “strong composition”, which is the same as except that it is forced to behave like a direct-sum problem. We prove a variant of the KRW conjecture for strong composition, thus overcoming the above second obstacle. This result demonstrates that the first obstacle above is the crucial barrier toward resolving the KRW conjecture. Along the way, we develop some general techniques that might be of independent interest.},
+  archive      = {J_SICOMP},
+  author       = {Or Meir},
+  doi          = {10.1137/23M158615X},
+  journal      = {SIAM Journal on Computing},
+  month        = {10},
+  number       = {5},
+  pages        = {1193-1240},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Toward better depth lower bounds: A KRW-like theorem for strong composition},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A tight analysis of bethe approximation for permanent. <em>SICOMP</em>, <em>54</em>(4), FOCS19-81-101. (<a href='https://doi.org/10.1137/19M1306142'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We prove that the permanent of nonnegative matrices can be deterministically approximated within a factor of $\sqrt{2}^n$ in polynomial time, improving upon previous deterministic approximations. We show this by proving that the Bethe approximation of the permanent, a quantity computable in polynomial time, is at least as large as the permanent divided by $\sqrt{2}^{n}$. This resolves a conjecture of [L. Gurvits, Unleashing the Power of Schrijver's Permanental Inequality with the Help of the Bethe Approximation, preprint, arxiv 1106.2844, 2011]. Our bound is tight and, when combined with previously known inequalities lower bounding the permanent, fully resolves the quality of Bethe approximation for the permanent. As an additional corollary of our methods, we resolve a conjecture of [M. Chertkov and A. B. Yedidia, J. Mach. Learn. Res., 14 (2013), pp. 2029--2066], proving that fractional belief propagation with fractional parameter $\gamma=-1/2$ yields an upper bound on the permanent.},
+  archive      = {J_SICOMP},
+  author       = {Nima Anari and Alireza Rezaei},
+  doi          = {10.1137/19M1306142},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {FOCS19-81-101},
+  shortjournal = {SIAM J. Comput.},
+  title        = {A tight analysis of bethe approximation for permanent},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimization of the sherrington--kirkpatrick hamiltonian. <em>SICOMP</em>, <em>54</em>(4), FOCS19-1-38. (<a href='https://doi.org/10.1137/20M132016X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Let ${A}\in{\mathbb R}^{n\times n}$ be a symmetric random matrix with independent and identically distributed (i.i.d.) Gaussian entries above the diagonal. We consider the problem of maximizing $\langle{\sigma},{A}{\sigma}\rangle$ over binary vectors ${\sigma}\in\{+1,-1\}^n$. In the language of statistical physics, this amounts to finding the ground state of the Sherrington--Kirkpatrick model of spin glasses. The asymptotic value of this optimization problem was characterized by Parisi via a celebrated variational principle, subsequently proved by Talagrand. We give an algorithm that, for any $\varepsilon>0$, outputs ${\sigma}_*\in\{-1,+1\}^n$ such that $\langle{\sigma}_*,\boldsymbol{A}{\sigma}_*\rangle$ is at least $(1-\varepsilon)$ of the optimum value, with probability converging to one as $n\to\infty$. The algorithm's time complexity is $C(\varepsilon)\, n^2$. We generalize it to matrices with i.i.d., but not necessarily Gaussian, entries, and obtain an algorithm that computes the MAXCUT of a dense Erdös--Renyi random graph to within a factor $(1-\varepsilon\cdot n^{-1/2})$. As a side result, we prove that, at (low) nonzero temperature, the algorithm constructs approximate solutions of the Thouless--Anderson--Palmer equations.},
+  archive      = {J_SICOMP},
+  author       = {Andrea Montanari},
+  doi          = {10.1137/20M132016X},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {FOCS19-1-38},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Optimization of the sherrington--kirkpatrick hamiltonian},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The average-case complexity of counting cliques in erdös--rényi hypergraphs. <em>SICOMP</em>, <em>54</em>(4), FOCS19-39-80. (<a href='https://doi.org/10.1137/20M1316044'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the problem of counting $k$-cliques in $s$-uniform Erdös--Rényi hypergraphs $G(n,c,s)$ with edge density $c$ and show that its fine-grained average-case complexity can be based on its worst-case complexity. We prove the following: (1) Dense Erdös--Rényi graphs and hypergraphs: Counting $k$-cliques on $G(n,c,s)$ with $k$ and $c$ constant matches its worst-case complexity up to a polylog$(n)$ factor. Assuming randomized ETH, it takes $n^{\Omega(k)}$ time to count $k$-cliques in $G(n,c,s)$ if $k$ and $c$ are constant. (2) Sparse Erdös--Rényi graphs and hypergraphs: When $c = \Theta(n^{-\alpha})$, we give several algorithms exploiting the sparsity of $G(n, c, s)$ that are faster than the best known worst-case algorithms. Complementing this, based on a fine-grained worst-case assumption, our reduction implies a different average-case phase diagram for each fixed $\alpha$ depicting a tradeoff between a runtime lower bound and $k$. Surprisingly, in the hypergraph case ($s \ge 3$), these lower bounds are tight against our algorithms exactly when $c$ is above the Erdös--Rényi $k$-clique percolation threshold. Our reduction yields the first known average-case hardness result on Erdös--Rényi hypergraphs based on worst-case hardness conjectures. We also give a variant of our worst-case to average-case reduction for computing the parity of the $k$-clique count that requires a milder assumption on the error probability of the blackbox solving the problem on $G(n, c, s)$.},
+  archive      = {J_SICOMP},
+  author       = {Enric Boix-Adserà and Matthew Brennan and Guy Bresler},
+  doi          = {10.1137/20M1316044},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {FOCS19-39-80},
+  shortjournal = {SIAM J. Comput.},
+  title        = {The average-case complexity of counting cliques in erdös--rényi hypergraphs},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improved truthful mechanisms for combinatorial auctions with submodular bidders. <em>SICOMP</em>, <em>54</em>(4), FOCS19-253-275. (<a href='https://doi.org/10.1137/20M1316068'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. A longstanding open problem in algorithmic mechanism design is to design truthful mechanisms that are computationally efficient and (approximately) maximize welfare in combinatorial auctions with submodular bidders. The first such mechanism was obtained by Dobzinski, Nisan, and Schapira [Proceedings of the 37th Annual ACM Symposium on Theory of Computing, Baltimore, MD, ACM, New York, 2005, pp. 610–618] who gave an -approximation, where is the number of items. This problem has been studied extensively since, culminating in an -approximation mechanism by Dobzinski [Proceedings of the 48th Annual ACM SIGACT Symposium on Theory of Computing, STOC 2016, Cambridge, MA, ACM, New York, 2016, pp. 940–948]. We present a computationally-efficient truthful mechanism with an approximation ratio that improves upon the state-of-the-art by an exponential factor. In particular, our mechanism achieves an -approximation in expectation, uses only demand queries, and has universal truthfulness guarantee. This settles an open question of Dobzinski on whether is the best approximation ratio in this setting in the negative.},
+  archive      = {J_SICOMP},
+  author       = {Sepehr Assadi and Sahil Singla},
+  doi          = {10.1137/20M1316068},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {FOCS19-253-275},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Improved truthful mechanisms for combinatorial auctions with submodular bidders},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fast generalized DFTs for all finite groups. <em>SICOMP</em>, <em>54</em>(4), FOCS19-398-419. (<a href='https://doi.org/10.1137/20M1316342'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. For any finite group , we give an algebraic algorithm to compute the generalized discrete Fourier transform with respect to , using operations, for any . Here, is the exponent of matrix multiplication.},
+  archive      = {J_SICOMP},
+  author       = {Chris Umans},
+  doi          = {10.1137/20M1316342},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {FOCS19-398-419},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Fast generalized DFTs for all finite groups},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Approximation algorithms for LCS and LIS with truly improved running times. <em>SICOMP</em>, <em>54</em>(4), FOCS19-276-331. (<a href='https://doi.org/10.1137/20M1316500'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Longest common subsequence (LCS) is a classic and central problem in combinatorial optimization. While LCS admits a quadratic time solution, recent evidence suggests that solving the problem may be impossible in truly subquadratic time. A special case of LCS wherein each character appears at most once in every string is equivalent to the longest increasing subsequence (LIS) problem which can be solved in quasilinear time. In this work, we present novel algorithms for approximating LCS in truly subquadratic time and LIS in truly sublinear time. Our approximation factors depend on the ratio of the optimal solution size to the input size. We denote this ratio by and obtain the following results for LCS and LIS without any prior knowledge of : a truly subquadratic time algorithm for LCS with approximation factor and a truly sublinear time algorithm for LIS with approximation factor . The triangle inequality was recently used by M. Boroujeni, S. Ehsani, M. Ghodsi, M. HajiAghayi, and S. Seddingham [Proceedings of the 29th Annual ACM-SIAM Symposium on Discrete Algorithms, 2018, pp. 1170–1189] and D. Chakraborty, D. Das, E. Goldenberg, M. Koucky, and M. Saks [Proceedings of the 59th Annual IEEE Symposium on Foundations of Computer Science, 2018, pp. 979–990] to present new approximation algorithms for edit distance. Our techniques for LCS extend the notion of the triangle inequality to nonmetric settings.},
+  archive      = {J_SICOMP},
+  author       = {Aviad Rubinstein and Saeed Seddighin and Zhao Song and Xiaorui Sun},
+  doi          = {10.1137/20M1316500},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {FOCS19-276-331},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Approximation algorithms for LCS and LIS with truly improved running times},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Correlation decay and partition function zeros: Algorithms and phase transitions. <em>SICOMP</em>, <em>54</em>(4), FOCS19-200-252. (<a href='https://doi.org/10.1137/20M1317384'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We explore connections between the phenomenon of correlation decay (more precisely, strong spatial mixing) and the location of Lee--Yang and Fisher zeros for various spin systems. In particular we show that, in many instances, proofs showing that weak spatial mixing on the Bethe lattice (infinite $\Delta$-regular tree) implies that strong spatial mixing on all graphs of maximum degree $\Delta$ can be lifted to the complex plane, establishing the absence of zeros of the associated partition function in a complex neighborhood of the region in parameter space corresponding to strong spatial mixing. This allows us to give unified proofs of several recent results of this kind, including the resolution by Peters and Regts of the Sokal conjecture for the partition function of the hard-core lattice gas. It also allows us to prove new results on the location of Lee--Yang zeros of the antiferromagnetic Ising model. We show further that our methods extend to the case when weak spatial mixing on the Bethe lattice is not known to be equivalent to strong spatial mixing on all graphs. In particular, we show that results on strong spatial mixing in the antiferromagnetic Potts model can be lifted to the complex plane to give new zero-freeness results for the associated partition function, significantly sharpening previous results of Sokal and others. This new extension is also of independent algorithmic interest: it allows us to give the first polynomial time deterministic approximation algorithm (a fully polynomial time approximation scheme (FPTAS)) for counting the number of $q$-colorings of a graph of maximum degree $\Delta$ provided only that $q\ge 2\Delta$, a question that has been studied intensively. This matches the natural bound for randomized algorithms obtained by a straightforward application of Markov chain Monte Carlo. In the case when the graph is also triangle-free, we show that our algorithm applies under the weaker condition $q \geq \alpha\Delta + \beta$, where $\alpha \approx 1.764$ and $\beta = \beta(\alpha)$ are absolute constants.},
+  archive      = {J_SICOMP},
+  author       = {Jingcheng Liu and Alistair Sinclair and Piyush Srivastava},
+  doi          = {10.1137/20M1317384},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {FOCS19-200-252},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Correlation decay and partition function zeros: Algorithms and phase transitions},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Truly optimal euclidean spanners. <em>SICOMP</em>, <em>54</em>(4), FOCS19-135-199. (<a href='https://doi.org/10.1137/20M1317906'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Euclidean spanners are important geometric structures, having found numerous applications over the years. Cornerstone results in this area from the late 1980s and early 1990s state that for any $d$-dimensional $n$-point Euclidean space, there exists a $(1+\epsilon)$-spanner with $n \cdot O(\epsilon^{-d+1})$ edges and lightness (normalized weight) $O(\epsilon^{-2d})$. Surprisingly, the fundamental question of whether or not these dependencies on $\epsilon$ and $d$ for small $d$ can be improved has remained elusive, even for $d = 2$. This question naturally arises in any application of Euclidean spanners where precision is a necessity (thus $\epsilon$ is tiny). In the most extreme case $\epsilon$ is inverse polynomial in $n$, and then one could potentially improve the size and lightness bounds by factors that are polynomial in $n$. The state-of-the-art bounds $n \cdot O(\epsilon^{-d+1})$ and $O(\epsilon^{-2d})$ on the size and lightness of spanners are realized by the greedy spanner. In 2016, in a preliminary version, Filtser and Solomon [SIAM J. Comput., 49 (2020), pp. 429--447] proved that, in low-dimensional spaces, the greedy spanner is “near-optimal''; informally, their result states that the greedy spanner for dimension $d$ is just as sparse and light as any other spanner but for dimension larger by a constant factor. Hence the question of whether the greedy spanner is truly optimal remained open to date. The contribution of this paper is twofold: (1) We resolve these longstanding questions by nailing down the dependencies on $\epsilon$ and $d$ and showing that the greedy spanner is truly optimal. Specifically, for any $d= O(1), \epsilon = \Omega({n}^{-\frac{1}{d-1}})$, (a) we show that there are $n$-point sets in $\mathbb{R}^d$ for which any $(1+\epsilon)$-spanner must have $n \cdot \Omega(\epsilon^{-d+1})$ edges, implying that the greedy (and other) spanners achieve the optimal size; (b) we show that there are $n$-point sets in $\mathbb{R}^d$ for which any $(1+\epsilon)$-spanner must have lightness $\Omega(\epsilon^{-d})$, and then improve the upper bound on the lightness of the greedy spanner from $O(\epsilon^{-2d})$ to $O(\epsilon^{-d} \log(\epsilon^{-1}))$. (The lightness upper and lower bounds match up to a lower-order term.) (2) We then complement our negative result for the size of spanners with a rather counterintuitive positive result: Steiner points lead to a quadratic improvement in the size of spanners! Our bound for the size of Steiner spanners in $\mathbb{R}^2$ is tight as well (up to a lower-order term).},
+  archive      = {J_SICOMP},
+  author       = {Hung Le and Shay Solomon},
+  doi          = {10.1137/20M1317906},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {FOCS19-135-199},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Truly optimal euclidean spanners},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Nondeterministic quasi-polynomial time is average-case hard for \(\textsf{ACC}\) circuits. <em>SICOMP</em>, <em>54</em>(4), FOCS19-332-397. (<a href='https://doi.org/10.1137/20M1321231'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Following the seminal work of [R. R. Williams, J. ACM, 61 (2014)], in a recent breakthrough, [C. D. Murray and R. R. Williams, STOC 2018] proved that (nondeterministic quasi-polynomial time) does not have polynomial-size circuits (constant depth circuits consisting of // gates for a fixed constant , a frontier class in circuit complexity). We strengthen the above lower bound to an average-case one, by proving that for all constants , there is a language in that cannot be -approximated by polynomial-size circuits. Our work also improves the average-case lower bound for against polynomial-size circuits by [R. Chen, I. C. Oliveira, and R. Santhanam, LATIN 2018, pp. 317–330]. Our new lower bound builds on several interesting components, including the following: 1. Barrington’s theorem and the existence of an -complete language that is random self-reducible. 2. The subexponential witness-size lower bound for against and the conditional nondeterministic pseudorandom generator (PRG) construction in [R. R. Williams, SIAM J. Comput., 45 (2016), pp. 497–529]. 3. An “almost” almost-everywhere average-case lower bound (which strengthens the corresponding worst-case lower bound in [C. D. Murray and R. R. Williams, STOC 2018]). 4. A -complete language that is downward self-reducible, same-length checkable, error-correctable, and paddable. Moreover, all its reducibility properties have corresponding low-depth nonadaptive oracle circuits. Our construction builds on [L. Trevisan and S. P. Vadhan, Comput. Complexity, 16 (2007), pp. 331–364]. Like other lower bounds proved via the “algorithmic approach,” the only property of exploited by us is the existence of a nontrivial algorithm for [R. R. Williams, J. ACM, 61 (2014)]. Therefore, for any typical circuit class , our results apply to as well if a nontrivial (in fact, ) algorithm for is discovered.},
+  archive      = {J_SICOMP},
+  author       = {Lijie Chen},
+  doi          = {10.1137/20M1321231},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {FOCS19-332-397},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Nondeterministic quasi-polynomial time is average-case hard for \(\textsf{ACC}\) circuits},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient construction of rigid matrices using an NP oracle. <em>SICOMP</em>, <em>54</em>(4), FOCS19-102-134. (<a href='https://doi.org/10.1137/20M1322297'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For a matrix $H$ over a field $\mathbb{F}$, its rank-$r$ rigidity, denoted by $\mathscr{R}_{H}(r)$, is the minimum Hamming distance from $H$ to a matrix of rank at most $r$ over $\mathbb{F}$. A central open challenge in complexity theory is to give explicit constructions of rigid matrices for a variety of parameter settings. In this work, building on Williams' seminal connection between circuit-analysis algorithms and lower bounds [J. ACM, 61 (2014), 2], we give a construction of rigid matrices in ${{P}^{NP}}$. Letting $q = p^r$ be a prime power, we show that there is an absolute constant $\delta>0$ such that, for all constants $\varepsilon >0$, there is a ${{P}^{NP}}$ machine $M$ such that, for infinitely many $N$'s, $M(1^N)$ outputs a matrix $H_N \in \{0,1\}^{N \times N}$ with $\mathscr{R}_{H_N}(2^{(\log N)^{1/4 - \varepsilon}}) \ge \delta \cdot N^2$ over $\mathbb{F}_q$. Using known connections between matrix rigidity and other topics in complexity theory, we derive several consequences of our constructions, including that there is a function ${{f \in TIME}[2^{(\log n)^{\omega(1)}}]^{NP}}$ such that ${{f \notin PH}^{cc}}$. Previously, it was open whether ${{E}^{NP}} \subset {{PH}^{cc}}$. For all $\varepsilon >0$, there is a ${{P}^{NP}}$ machine $M$ such that, for infinitely many $N$'s, $M(1^N)$ outputs an $N \times N$ matrix $H_N \in \{0,1\}^{N \times N}$ whose linear transformation requires depth-2 $\mathbb{F}_q$-linear circuits of size $\Omega(N \cdot 2^{(\log N)^{1/4 - \varepsilon}})$. The previous best lower bound for an explicit family of $N \times N$ matrices over $\mathbb{F}_q$ was only $\Omega(N \log^2 N / (\log\log N)^2)$, for asymptotically good error correcting codes.},
+  archive      = {J_SICOMP},
+  author       = {Josh Alman and Lijie Chen},
+  doi          = {10.1137/20M1322297},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {FOCS19-102-134},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Efficient construction of rigid matrices using an NP oracle},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Polynomial-time approximation schemes for facility location on planar graphs. <em>SICOMP</em>, <em>54</em>(4), FOCS19-420-471. (<a href='https://doi.org/10.1137/20M1350856'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We consider the classic Facility Location problem on planar graphs, in both the uniform and the nonuniform versions. Given an edge-weighted planar graph , a set of clients , a set of facilities , and opening costs , the goal of the nonuniform facility location is to find a subset of that minimizes . In the uniform case, is the same for all . The (nonuniform) Facility Location problem remains one of the most classic and fundamental optimization problem for which it was not known whether it admits a polynomial-time approximation scheme on planar graphs. We solve this open problem by giving an algorithm that, for any , computes a solution of cost at most times the optimum in time . Moreover, for the -Median problem we propose an Efficient Bicriteria Approximation Scheme: for any , in time we can compute a set of at most facilities whose opening yields connection cost at most times the optimum connection cost for opening at most facilities, with high probability. This immediately implies the first efficient approximation scheme for Uniform Facility Location.},
+  archive      = {J_SICOMP},
+  author       = {Vincent Cohen-Addad and Marcin Pilipczuk and Michał Pilipczuk},
+  doi          = {10.1137/20M1350856},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {FOCS19-420-471},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Polynomial-time approximation schemes for facility location on planar graphs},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Special section on the sixtieth annual symposium on foundations of computer science (FOCS 2019). <em>SICOMP</em>, <em>54</em>(4), FOCS19-i. (<a href='https://doi.org/10.1137/25M176249X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_SICOMP},
+  author       = {Yuval Filmus and Debmalya Panigrahi and Daniel Štefankovič and Avishay Tal},
+  doi          = {10.1137/25M176249X},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {FOCS19-i},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Special section on the sixtieth annual symposium on foundations of computer science (FOCS 2019)},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Approximate graph coloring and the crystal with a hollow shadow. <em>SICOMP</em>, <em>54</em>(4), 1138-1192. (<a href='https://doi.org/10.1137/24M1691594'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We show that approximate graph coloring is not solved by the lift-and-project hierarchy for the combination of linear programming and linear Diophantine equations. The proof is based on combinatorial tensor theory.},
+  archive      = {J_SICOMP},
+  author       = {Lorenzo Ciardo and Stanislav Živný},
+  doi          = {10.1137/24M1691594},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {1138-1192},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Approximate graph coloring and the crystal with a hollow shadow},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Flow-augmentation III: Complexity dichotomy for boolean CSPs parameterized by the number of unsatisfied constraints. <em>SICOMP</em>, <em>54</em>(4), 1065-1137. (<a href='https://doi.org/10.1137/23M1553698'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We study the parameterized problem of satisfying “almost all” constraints of a given formula over a fixed, finite Boolean constraint language , with or without weights. More precisely, for each finite Boolean constraint language , we consider the following two problems. In Min SAT, the input is a formula over and an integer , and the task is to find an assignment that satisfies all but at most constraints of , or determine that no such assignment exists. In Weighted Min SAT, the input additionally contains a weight function and an integer , and the task is to find an assignment such that (1) satisfies all but at most constraints of , and (2) the total weight of the violated constraints is at most . We give a complete dichotomy for the fixed-parameter tractability of these problems: We show that for every Boolean constraint language , either Weighted Min SAT is ; or Weighted Min SAT is -hard but Min SAT is ; or Min SAT is -hard. This generalizes recent work of Kim et al. [in SODA 2021, SIAM, Philadelphia, 2021, pp. 149–168], which did not consider weighted problems and only considered languages that cannot express implications (as is used to, e.g., model digraph cut problems). Our result generalizes and subsumes multiple previous results, including the FPT algorithms for Weighted Almost 2-SAT, weighted and unweighted -Chain SAT, and Coupled Min-Cut, as well as weighted and directed versions of the latter. The main tool used in our algorithms is the recently developed method of directed flow-augmentation [E. J. Kim et al., in STOC 2022, ACM, 2022, pp. 938–947].},
+  archive      = {J_SICOMP},
+  author       = {Eun Jung Kim and Stefan Kratsch and Marcin Pilipczuk and Magnus Wahlström},
+  doi          = {10.1137/23M1553698},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {1065-1137},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Flow-augmentation III: Complexity dichotomy for boolean CSPs parameterized by the number of unsatisfied constraints},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the Nisan–Ronen conjecture for submodular valuations. <em>SICOMP</em>, <em>54</em>(4), 1021-1064. (<a href='https://doi.org/10.1137/22M1483141'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We consider mechanisms for scheduling unrelated machines when the valuations of the players (i.e., machines) are submodular. We give a lower bound of on the approximation ratio of incentive compatible deterministic mechanisms. This lower bound holds for supermodular valuations and also when all players, except for one, have additive valuations. This is an information-theoretic impossibility result on the approximation ratio of mechanisms that provides strong evidence for the Nisan–Ronen conjecture, which states that the approximation ratio is when the valuations of all machines are additive. Our approach is based on a novel multiplayer characterization of appropriately selected instances that allows us to focus on a particular type of algorithm, linear mechanisms, and it is a potential stepping stone towards the full resolution of the Nisan–Ronen conjecture.},
+  archive      = {J_SICOMP},
+  author       = {George Christodoulou and Elias Koutsoupias and Annamária Kovács},
+  doi          = {10.1137/22M1483141},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {1021-1064},
+  shortjournal = {SIAM J. Comput.},
+  title        = {On the Nisan–Ronen conjecture for submodular valuations},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A direct product theorem for quantum communication complexity with applications to device-independent cryptography. <em>SICOMP</em>, <em>54</em>(4), 964-1020. (<a href='https://doi.org/10.1137/23M1549353'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We give a direct product theorem for the entanglement-assisted interactive quantum communication complexity of an -player predicate . In particular, we show that for a distribution that is product across the input sets of the players, the success probability of any entanglement-assisted quantum communication protocol for computing copies of , whose communication is , goes down exponentially in . Here is a distributional version of the quantum efficiency or partition bound introduced in [S. Laplante, V. Lerays, and J. Roland, Classical and quantum partition bound and detector inefficiency, in Automata, Languages, and  Programming, Springer, Berlin, Heidelberg, 2012, pp. 617–628], which is a lower bound on the distributional quantum communication complexity of computing a single copy of with respect to . Applying our direct product theorem for small communication, and techniques related to , we show that it is possible to do device-independent (DI) quantum cryptography without the assumption that devices do not leak any information. We analyze parallel and sequential versions of the DI quantum key distribution protocol given in [R. Jain, C. A. Miller, and Y. Shi [IEEE Trans. Inform. Theory, 66 (2020), pp. 5567–5584], and show that it is possible to extract bits of key from it, even in the presence of bits of leakage. Finally, we show that proofs of quantumness with two entangled provers are resistant to leakage, i.e., classical players who communicate bits with each other cannot convince the verifier that they share entanglement.},
+  archive      = {J_SICOMP},
+  author       = {Rahul Jain and Srijita Kundu},
+  doi          = {10.1137/23M1549353},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {964-1020},
+  shortjournal = {SIAM J. Comput.},
+  title        = {A direct product theorem for quantum communication complexity with applications to device-independent cryptography},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Locally consistent parsing for text indexing in small space. <em>SICOMP</em>, <em>54</em>(4), 916-963. (<a href='https://doi.org/10.1137/21M1465706'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We consider two closely related problems of text indexing in a sublinear working space. The first problem is the sparse suffix tree construction, where a text is given in read-only memory, along with a set of suffixes , and the goal is to construct the compressed trie of all these suffixes ordered lexicographically, using only words of space. The second problem is the longest common extension problem, where again a text of length is given in read-only memory with some trade-off parameter , and the goal is to construct a data structure that uses words of space and can compute for any pair of suffixes their longest common prefix length as fast as possible as a function of ( time for a randomized Las Vegas data structure or time for a deterministic data structure). We show how to use ideas based on the locally consistent parsing technique, that were introduced by Sahinalp and Vishkin [Proceedings of the 26th Annual ACM Symposium on Theory of Computing, 1994, pp. 300–309], in some nontrivial ways in order to improve the known results for the above problems under the space constraints. We introduce the first almost-linear, deterministic construction for both problems, where all previous algorithms take at least time. We also introduce the first linear-time Las Vegas algorithms for both problems, achieving construction time with high probability. This is an improvement over the last result of Gawrychowski and Kociumaka [Proceedings of the 28th Annual ACM-SIAM Symposium on Discrete Algorithms, 2017, pp. 425–439], which obtained time for the Monte Carlo algorithm and time with high probability for the Las Vegas algorithm.},
+  archive      = {J_SICOMP},
+  author       = {Or Birenzwige and Shay Golan and Ely Porat},
+  doi          = {10.1137/21M1465706},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {916-963},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Locally consistent parsing for text indexing in small space},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Lower bounds for regular resolution over parities. <em>SICOMP</em>, <em>54</em>(4), 887-915. (<a href='https://doi.org/10.1137/24M1696640'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The proof system resolution over parities operates with disjunctions of linear equations (linear clauses) over ; it extends the resolution proof system by incorporating linear algebra over . Over the years, several exponential lower bounds on the size of tree-like refutations have been established. However, proving a superpolynomial lower bound on the size of dag-like refutations remains a highly challenging open question. We prove an exponential lower bound for regular . Regular is a subsystem of dag-like that naturally extends regular resolution. This is the first known superpolynomial lower bound for a fragment of dag-like which is exponentially stronger than tree-like . In the regular regime, resolving linear clauses and on a linear form is permitted only if, for both , the linear form does not lie within the linear span of all linear forms that were used in resolution rules during the derivation of . Namely, we show that the size of any regular refutation of the binary pigeonhole principle is at least . A corollary of our result is an exponential lower bound on the size of a strongly read-once linear branching program solving a search problem. This resolves an open question raised by Gryaznov, Pudlák, and Talebanfard [Proceedings of the 37th Computational Complexity Conference, LIPIcs Leibniz Int. Proc. Inform. 234, S. Lovett, ed., Schloss Dagstuhl – Leibniz-Zentrum für Informatik, 2022, pp. 1–16]. As a byproduct of our technique, we prove that the size of any tree-like refutation of the weak binary pigeonhole principle is at least using Prover-Delayer games. We also give a direct proof of a width lower bound: we show that any dag-like refutation of contains a linear clause with linearly independent equations.},
+  archive      = {J_SICOMP},
+  author       = {Klim Efremenko and Michal Garlík and Dmitry Itsykson},
+  doi          = {10.1137/24M1696640},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {887-915},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Lower bounds for regular resolution over parities},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). NP-hardness of approximating meta-complexity: A cryptographic approach. <em>SICOMP</em>, <em>54</em>(4), 819-886. (<a href='https://doi.org/10.1137/23M1608483'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. It is a longstanding open problem whether the Minimum Circuit Size Problem and related meta-complexity problems are -complete and hard to approximate. In this work, we prove NP-hardness of approximating meta-complexity with nearly optimal approximation gaps. Our key idea is to use cryptographic constructions in our reductions, where the security of the cryptographic construction implies the correctness of the reduction. We present three results that give both conditional and unconditional hardness of approximation. First, assuming subexponentially-secure witness encryption exists, we prove essentially optimal NP-hardness of approximating conditional time-bounded Kolmogorov complexity in the regime where . Second, we unconditionally show near-optimal NP-hardness of approximation for the minimum oracle circuit size problem where Yes instances have circuit complexity at most , and No instances are essentially as hard as random truth tables. Finally, we define a “multivalued” version of , called , and show that with probability 1 over a random oracle , is NP-hard to approximate under quasi-polynomial-time reductions with oracle access.},
+  archive      = {J_SICOMP},
+  author       = {Yizhi Huang and Rahul Ilango and Hanlin Ren},
+  doi          = {10.1137/23M1608483},
+  journal      = {SIAM Journal on Computing},
+  month        = {8},
+  number       = {4},
+  pages        = {819-886},
+  shortjournal = {SIAM J. Comput.},
+  title        = {NP-hardness of approximating meta-complexity: A cryptographic approach},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Erratum: A full dichotomy for \(\textsf{Holant}^\mathbf{c}\), inspired by quantum computation. <em>SICOMP</em>, <em>54</em>(3), 814-818. (<a href='https://doi.org/10.1137/24M167723X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This erratum adds a missing case to the proof of Lemma 5.8 in [SIAM J. Comput., 50 (2021), pp. 1739–1799].},
+  archive      = {J_SICOMP},
+  author       = {Miriam Backens},
+  doi          = {10.1137/24M167723X},
+  journal      = {SIAM Journal on Computing},
+  month        = {6},
+  number       = {3},
+  pages        = {814-818},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Erratum: A full dichotomy for \(\textsf{Holant}^\mathbf{c}\), inspired by quantum computation},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Toward derandomizing markov chain monte carlo. <em>SICOMP</em>, <em>54</em>(3), 775-813. (<a href='https://doi.org/10.1137/24M1663806'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We present a new framework to derandomize certain Markov chain Monte Carlo (MCMC) algorithms. As in MCMC, we first reduce counting problems to sampling from a sequence of marginal distributions. For the latter task, we introduce a method called coupling toward the past that can, in logarithmic time, evaluate one or a constant number of variables from a stationary Markov chain state. Since there are at most logarithmic random choices, this leads to very simple derandomization. As an application, we provide an efficient deterministic approximate counting algorithm for hypergraph independent sets, under local lemma type conditions matching, up to lower-order factors, their state-of-the-art randomized counterparts.},
+  archive      = {J_SICOMP},
+  author       = {Weiming Feng and Heng Guo and Chunyang Wang and Jiaheng Wang and Yitong Yin},
+  doi          = {10.1137/24M1663806},
+  journal      = {SIAM Journal on Computing},
+  month        = {6},
+  number       = {3},
+  pages        = {775-813},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Toward derandomizing markov chain monte carlo},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The approximate degree of DNF and CNF formulas. <em>SICOMP</em>, <em>54</em>(3), 702-774. (<a href='https://doi.org/10.1137/23M1557593'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The approximate degree of a Boolean function is the minimum degree of a real polynomial that approximates pointwise: for all . For every we construct conjunctive normal form (CNF) and disjunctive normal form (DNF) formulas of polynomial size with approximate degree essentially matching the trivial upper bound of . This improves polynomially on previous lower bounds and fully resolves the approximate degree of constant-depth circuits a question that has seen extensive research over the past 10 years. Prior to our work, an lower bound was known only for circuits of depth that grows with (M. Bun and J. Thaler, SIAM J. Comput., 49 (2020), pp. FOCS17-59–FOCS17-96). Furthermore, the CNF and DNF formulas that we construct are the simplest possible in that they have constant width. Our proof departs significantly from previous approaches and contributes a novel, number-theoretic method for amplifying approximate degree. Our main result remains valid even for one-sided approximation: for any , we construct a polynomial-size constant-width CNF formula with one-sided approximate degree . We thus obtain the following nearly tight separations: versus for the one-sided versus two-sided approximate degree of a function and versus for the one-sided approximate degree of a function versus its negation . As an application, we essentially settle the communication complexity of circuits in the bounded-error quantum model, -party number-on-the-forehead randomized model, and -party number-on-the-forehead nondeterministic model: we prove that for every , these models require , and , respectively, bits of communication even for polynomial-size constant-width CNF formulas. In particular, we show that the multiparty communication class can be separated near-optimally from and by a particularly simple function, a polynomial-size constant-width CNF formula.},
+  archive      = {J_SICOMP},
+  author       = {Alexander A. Sherstov},
+  doi          = {10.1137/23M1557593},
+  journal      = {SIAM Journal on Computing},
+  month        = {6},
+  number       = {3},
+  pages        = {702-774},
+  shortjournal = {SIAM J. Comput.},
+  title        = {The approximate degree of DNF and CNF formulas},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic geometric set cover, revisited. <em>SICOMP</em>, <em>54</em>(3), 664-701. (<a href='https://doi.org/10.1137/23M1596582'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Geometric set cover is a classical problem in computational geometry, which has been extensively studied in the past. In the dynamic version of the problem, points and ranges may be inserted and deleted, and our goal is to efficiently maintain a set cover solution (satisfying certain quality requirements) for the dynamic problem instance. In this paper, we give a plethora of new dynamic geometric set cover data structures in one and two dimensions, which significantly improve and extend the previous results. Our results include the following: (1) The first data structure for -approximate dynamic interval set cover with polylogarithmic amortized update time. Specifically, we achieve an update time of , improving the bound of Agarwal et al. [Proceedings of the 36th Symposium on Computational Geometry, LIPIcs. Leibniz Int. Proc. Inform. 164, Schloss Dagstuhl - Leibniz Center for Informatics, 2020, 27; ACM Trans. Algorithms, 18 (2022), 40], where denotes an arbitrarily small constant. (2) A data structure for -approximate dynamic unit-square set cover with amortized update time, substantially improving the update time of Agarwal et al. (3) A data structure for -approximate dynamic square set cover with randomized amortized update time, improving the update time of Chan and He [Proceedings of the 36th Symposium on Computational Geometry, LIPIcs. Leibniz Int. Proc. Inform. 164, Schloss Dagstuhl - Leibniz Center for Informatics, 2020; J. Comput. Geom., 13 (2022), pp. 90–114]. (4) A data structure for -approximate dynamic two-dimensional half-plane set cover with randomized amortized update time. The previous solution for a half-plane set cover by Chan and He [Proceedings of the 37th International Symposium on Computational Geometry, LIPIcs. Leibniz Int. Proc. Inform. 189, Schloss Dagstuhl - Leibniz Center for Informatics, 2021, 25; J. Comput. Geom., 13 (2022), pp. 90–114] is slower and can only report the size of the approximate solution. (5) The first sublinear results for the weighted version of dynamic geometric set cover. Specifically, we give a data structure for -approximate dynamic weighted interval set cover with amortized update time and a data structure for -approximate dynamic weighted unit-square set cover with amortized update time.},
+  archive      = {J_SICOMP},
+  author       = {Timothy M. Chan and Qizheng He and Subhash Suri and Jie Xue},
+  doi          = {10.1137/23M1596582},
+  journal      = {SIAM Journal on Computing},
+  month        = {6},
+  number       = {3},
+  pages        = {664-701},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Dynamic geometric set cover, revisited},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improved optimal testing results from global hypercontractivity. <em>SICOMP</em>, <em>54</em>(3), 625-663. (<a href='https://doi.org/10.1137/23M1571022'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The problem of testing low-degree polynomials has received significant attention over the years due to its importance in theoretical computer science. The problem is specified by three parameters, the field size , the degree , and the proximity parameter , and the goal is to design a test that makes as few queries as possible to a given function and distinguishes between the case the function has degree at most and the case it is -far from any degree function. We say that a test is optimal if it makes queries and rejects any function which is -far from degree with probability . The most natural tester to consider is the -flat test, wherein one picks an affine subspace of dimension (chosen appropriately) uniformly at random, and checks that . The -flat test was shown to be optimal by Bhattacharyya et al. [Proceedings of FOCS, 2010, pp. 488–497] for , and later by Haramaty, Shpilka, and Sudan [SIAM J. Comput., 42 (2013), pp. 536–562] for all prime powers . Their analyses, however, has a tower type dependency on the field size (i.e., in the hidden constant in the big notation). We improve the result of Haramaty, Shpilka, and Sudan, showing that the dependency on the field size is polynomial in . Our technique also applies in the more general setting of lifted affine invariant codes and gives the same polynomial dependency on the field size. This answers a problem raised by Haramaty, Ron-Zewi, and Sudan [Theory Comput., 11 (2015), pp. 299–338]. Our approach significantly deviates from the strategy taken in earlier works and is based on studying the structure of the collection of erroneous subspaces, i.e., subspaces such that has degree greater than . Toward this end, we observe that these sets are poorly expanding in the affine Grassmann graph and use that to establish structural results on them via global hypercontractivity. We then use this structure to perform local correction on .},
+  archive      = {J_SICOMP},
+  author       = {Tali Kaufman and Dor Minzer},
+  doi          = {10.1137/23M1571022},
+  journal      = {SIAM Journal on Computing},
+  month        = {6},
+  number       = {3},
+  pages        = {625-663},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Improved optimal testing results from global hypercontractivity},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). From contention resolution to matroid secretary and back. <em>SICOMP</em>, <em>54</em>(3), 585-624. (<a href='https://doi.org/10.1137/24M1630207'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We show that the matroid secretary problem is equivalent to correlated contention resolution in the online random-order model. Specifically, the matroid secretary conjecture is true if and only if every matroid admits an online random-order contention resolution scheme which, given an arbitrary (possibly correlated) prior distribution over subsets of the ground set, matches the balance ratio of the best offline scheme for that distribution up to a constant. Integral to our result is a polyhedral characterization of the (correlated) distributions permitting offline contention resolution over a given matroid—we refer to these distributions as uncontentious. Our characterization can be viewed as a distributional generalization of the matroid covering theorem and isolates the kind and degree of positive correlation that is benign for offline contention resolution. Using this characterization, we are able to show that the set of improving elements for a subsample of a weighted matroid is uncontentious—a fact that serves as a key technical component of our result. One direction of our equivalence is relatively straightforward: a competitive secretary algorithm yields a random-order contention resolution scheme—one which approximately matches the best possible offline balance ratio—by providing an approximate solution to its dual. The other direction is more technical and involves a composition of three reductions each of which isolates a technical hurdle: from the secretary problem to the (correlated) prophet secretary problem, then from that to a labeled generalization of (random-order) contention resolution, and finally from labeled contention resolution to its unlabeled counterpart. The uncontentiousness of the set of improving elements implies that the resulting contention resolution problem features an (offline) uncontentious distribution, which therefore implies our main result. One interpretation of our result is that handling the positive correlation inherent to uncontentious distributions is the key technical barrier to resolving the matroid secretary conjecture.},
+  archive      = {J_SICOMP},
+  author       = {Shaddin Dughmi},
+  doi          = {10.1137/24M1630207},
+  journal      = {SIAM Journal on Computing},
+  month        = {6},
+  number       = {3},
+  pages        = {585-624},
+  shortjournal = {SIAM J. Comput.},
+  title        = {From contention resolution to matroid secretary and back},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Semidefinite programming and linear equations vs. homomorphism problems. <em>SICOMP</em>, <em>54</em>(3), 545-584. (<a href='https://doi.org/10.1137/24M1638628'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We introduce a relaxation for homomorphism problems that combines semidefinite programming with linear Diophantine equations and propose a framework for the analysis of its power based on the spectral theory of association schemes. We use this framework to establish an unconditional lower bound against the semidefinite programming + linear equations model by showing that the relaxation does not solve the approximate graph homomorphism problem and thus, in particular, the approximate graph coloring problem.},
+  archive      = {J_SICOMP},
+  author       = {Lorenzo Ciardo and Stanislav Živný},
+  doi          = {10.1137/24M1638628},
+  journal      = {SIAM Journal on Computing},
+  month        = {6},
+  number       = {3},
+  pages        = {545-584},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Semidefinite programming and linear equations vs. homomorphism problems},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A logarithmic lower bound for oblivious RAM (For all parameters). <em>SICOMP</em>, <em>54</em>(2), 503-544. (<a href='https://doi.org/10.1137/21M1428431'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. An oblivious RAM (ORAM), introduced by Goldreich and Ostrovsky [J. ACM, 43 (1996), pp. 431–473] is a (probabilistic) RAM that hides its access pattern; i.e., for every input the observed locations accessed are similarly distributed. In recent years there has been great progress both in terms of upper bounds and in terms of lower bounds, essentially pinning down the smallest overhead possible in various settings of parameters. We observe that there is a very natural setting of parameters in which no nontrivial lower bound is known—not even those in restricted models of computation (like the so-called balls and bins model). Let and be the number of cells and bit-size of cells, respectively, in the RAM that we wish to simulate obliviously. Denote by the cell bit-size of the ORAM. All previous ORAM lower bounds have a multiplicative factor which makes them trivial in many settings of parameters of interest. In this work, we prove a new ORAM lower bound that captures this setting (and in all other settings it is at least as good as previous ones, quantitatively). We show that any ORAM must make (amortized) memory probes for every logical operation. Here, denotes the bit-size of the local storage of the ORAM. Our lower bound implies that logarithmic overhead in accesses is necessary, even if . Our lower bound is tight for all settings of parameters, up to the factor. Our bound also extends to the noncolluding multiserver setting. As an application, we derive the first (unconditional) separation between the overhead needed for ORAMs in the online versus offline models. Specifically, we show that when and , there exists an offline ORAM that makes (on average) memory probes per logical operation, while every online one must make memory probes per logical operation. No such previous separation was known for any setting of parameters—not even in the balls and bins model.},
+  archive      = {J_SICOMP},
+  author       = {Ilan Komargodski and Wei-Kai Lin},
+  doi          = {10.1137/21M1428431},
+  journal      = {SIAM Journal on Computing},
+  month        = {4},
+  number       = {2},
+  pages        = {503-544},
+  shortjournal = {SIAM J. Comput.},
+  title        = {A logarithmic lower bound for oblivious RAM (For all parameters)},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Packing cycles in planar and bounded-genus graphs. <em>SICOMP</em>, <em>54</em>(2), 469-502. (<a href='https://doi.org/10.1137/23M157020X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We devise constant-factor approximation algorithms for finding as many disjoint cycles as possible from a certain family of cycles in a given planar or bounded-genus graph. Here disjoint can mean vertex-disjoint or edge-disjoint, and the graph can be undirected or directed. The family of cycles under consideration must satisfy two properties: it must be uncrossable and allow for an oracle access that finds a weight-minimal cycle in that family for given nonnegative edge weights or (in planar graphs) the union of all remaining cycles in that family after deleting a given subset of edges. Our setting generalizes many problems that were studied separately in the past. For example, three families that satisfy the above properties are (i) all cycles in a directed or undirected graph, (ii) all odd cycles in an undirected graph, and (iii) all cycles in an undirected graph that contain precisely one demand edge, where the demand edges form a subset of the edge set. The latter family (iii) corresponds to the classical disjoint paths problem in fully planar and bounded-genus instances. While constant-factor approximation algorithms were known for edge-disjoint paths in such instances, we improve the constant in the planar case and obtain the first such algorithms for vertex-disjoint paths. We also obtain approximate min-max theorems of Erdős–Pósa type. For example, the minimum feedback vertex set in a planar digraph is at most 12 times the maximum number of vertex-disjoint cycles.},
+  archive      = {J_SICOMP},
+  author       = {Niklas Schlomberg and Hanjo Thiele and Jens Vygen},
+  doi          = {10.1137/23M157020X},
+  journal      = {SIAM Journal on Computing},
+  month        = {4},
+  number       = {2},
+  pages        = {469-502},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Packing cycles in planar and bounded-genus graphs},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Differentially private sampling from distributions. <em>SICOMP</em>, <em>54</em>(2), 419-468. (<a href='https://doi.org/10.1137/22M1538703'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We initiate an investigation of private sampling from distributions. Given a dataset with independent observations from an unknown distribution , a sampling algorithm must output a single observation from a distribution that is close in total variation distance to while satisfying differential privacy. Sampling abstracts the goal of generating small amounts of realistic-looking data. We provide tight upper and lower bounds for the dataset size needed for this task for three natural families of distributions: arbitrary distributions on , arbitrary product distributions on , and product distributions on with bias in each coordinate bounded away from 0 and 1. We demonstrate that, in some parameter regimes, private sampling requires asymptotically fewer observations than learning a description of nonprivately; in other regimes, however, private sampling proves to be as difficult as private learning. Notably, for some classes of distributions, the overhead in the number of observations needed for private learning compared to nonprivate learning is completely captured by the number of observations needed for private sampling.},
+  archive      = {J_SICOMP},
+  author       = {Sofya Raskhodnikova and Satchit Sivakumar and Adam Smith and Marika Swanberg},
+  doi          = {10.1137/22M1538703},
+  journal      = {SIAM Journal on Computing},
+  month        = {4},
+  number       = {2},
+  pages        = {419-468},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Differentially private sampling from distributions},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An exponential time parameterized algorithm for planar disjoint paths. <em>SICOMP</em>, <em>54</em>(2), 321-418. (<a href='https://doi.org/10.1137/20M1355902'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In the disjoint paths problem, the input is an undirected graph on vertices and a set of vertex pairs, and the task is to find pairwise vertex-disjoint paths such that the ’th path connects to . In this paper, we give a parameterized algorithm with running time for planar disjoint paths, the variant of the problem where the input graph is required to be planar. Our algorithm is based on the unique linkage/treewidth reduction theorem for planar graphs by Adler et al. [J. Combin. Theory Ser. B, 122 (2017), pp. 815–843], the algebraic cohomology based technique of Schrijver [SIAM J. Comput., 23 (1994), pp. 780–788], and one of the key combinatorial insights developed by Cygan et al. [Proceedings of the 2013 IEEE 54th Annual Symposium on Foundations of Computer Science, 2013, pp. 197–206] in their algorithm for disjoint paths on directed planar graphs. To the best of our knowledge, our algorithm is the first parameterized algorithm to exploit the fact that the treewidth of the input graph is small, and it does so in a way that is completely different from the use of dynamic programming.},
+  archive      = {J_SICOMP},
+  author       = {Daniel Lokshtanov and Pranabendu Misra and Michal Pilipczuk and Saket Saurabh and Meirav Zehavi},
+  doi          = {10.1137/20M1355902},
+  journal      = {SIAM Journal on Computing},
+  month        = {4},
+  number       = {2},
+  pages        = {321-418},
+  shortjournal = {SIAM J. Comput.},
+  title        = {An exponential time parameterized algorithm for planar disjoint paths},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Agreement tests on graphs and hypergraphs. <em>SICOMP</em>, <em>54</em>(2), 279-320. (<a href='https://doi.org/10.1137/21M1397684'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Agreement tests are a generalization of low degree tests that capture a local-to-global phenomenon, which forms the combinatorial backbone of most probabilistically checkable proof (PCP) constructions. In an agreement test, a function is given by an ensemble of local restrictions. The agreement test checks that the restrictions agree when they overlap, and the main question is whether average agreement of the local pieces implies that there exists a global function that agrees with most local restrictions. There are very few structures that support agreement tests, essentially either coming from algebraic low degree tests or from direct product tests (and recently also from high-dimensional expanders). In this work, we prove a new agreement theorem which extends direct product tests to higher dimensions, analogously to how low degree tests extend linearity testing. As a corollary of our main theorem, it follows that an ensemble of small graphs on overlapping sets of vertices can be glued together to one global graph assuming they agree with each other on average. We prove the agreement theorem by (re)proving the agreement theorem for dimension 1, and then generalizing it to higher dimensions (with the dimension 1 case being the direct product test and dimension 2 being the graph case). A key technical step in our proof is the reverse union bound, which allows us to treat dependent events as if they are disjoint, and may be of independent interest. An added benefit of the reverse union bound is that it can be used to show that the “majority decoded” function also serves as a global function that explains the local consistency of the agreement theorem, a fact that was not known even in the direct product setting (dimension 1) prior to our work. Beyond the motivation to understand fundamental local-to-global structures, our main theorem allows us to lift structure theorems from the standard uniform distribution to the -biased distribution . As a simple demonstration of this paradigm, we show how the low degree testing result of Alon et al. [IEEE Trans. Inform. Theory, 51 (2005), pp. 4032–4039,] and Bhattacharyya et al. [Proc. 51st FOCS, IEEE, 2010, pp. 488–497], originally proved for , can be extended to the -biased hypercube , even for very small subconstant .},
+  archive      = {J_SICOMP},
+  author       = {Irit Dinur and Yuval Filmus and Prahladh Harsha},
+  doi          = {10.1137/21M1397684},
+  journal      = {SIAM Journal on Computing},
+  month        = {4},
+  number       = {2},
+  pages        = {279-320},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Agreement tests on graphs and hypergraphs},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improved classical and quantum algorithms for the shortest vector problem via bounded distance decoding. <em>SICOMP</em>, <em>54</em>(2), 233-278. (<a href='https://doi.org/10.1137/22M1486959'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The most important computational problem on lattices is the shortest vector problem . In this paper, we present new algorithms that improve the state-of-the-art for provable classical/quantum algorithms for . We present the following results: (1) A new algorithm for that provides a smooth tradeoff between time complexity and memory requirement. For any positive integer , our algorithm takes time and requires memory. This tradeoff, which ranges from enumeration to sieving ( constant), is a consequence of a new time-memory tradeoff for discrete Gaussian sampling above the smoothing parameter. (2) A quantum algorithm for that runs in time and requires classical memory and qubits. In a quantum random access memory (QRAM) model, this algorithm takes only time and requires a QRAM of size , qubits and classical space. This improves over the previously fastest classical (which is also the fastest quantum) algorithm due to [D. Aggarwal et al., Solving the shortest vector problem in 2n time using discrete Gaussian sampling: Extended abstract, in Proceedings of the Forty-Seventh Annual ACM on Symposium on Theory of Computing (STOC), 2015, pp. 733–742] that has a time and space complexity . (3) A classical algorithm for that runs in time time and space. This improves over an algorithm of [Y. Chen, K. Chung, and C. Lai, Quantum Inf. Comput., 18 (2018), pp. 285–306] that has the same space complexity. The time complexity of our classical and quantum algorithms are obtained using a known upper bound on a quantity related to the lattice kissing number, which is . We conjecture that for most lattices this quantity is a . Assuming that this is the case, our classical algorithm runs in time , our quantum algorithm runs in time , and our quantum algorithm in a QRAM model runs in time . As a direct application of our result, using the reduction in [L. Ducas, Des. Codes. Cryptogr., 92 (2024), pp. 909–916], we obtain a provable quantum algorithm for the lattice isomorphism problem in the case of the trivial lattice (LIP) that runs in time . Our algorithm requires a QRAM of size , qubits and classical space.},
+  archive      = {J_SICOMP},
+  author       = {Divesh Aggarwal and Yanlin Chen and Rajendra Kumar and Yixin Shen},
+  doi          = {10.1137/22M1486959},
+  journal      = {SIAM Journal on Computing},
+  month        = {4},
+  number       = {2},
+  pages        = {233-278},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Improved classical and quantum algorithms for the shortest vector problem via bounded distance decoding},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Computational complexity of the Hylland–Zeckhauser mechanism for one-sided matching markets. <em>SICOMP</em>, <em>54</em>(2), 193-232. (<a href='https://doi.org/10.1137/23M157586X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In 1979, Hylland and Zeckhauser [J. Polit. Econ., 87 (1979), pp. 293–314] gave a simple and general mechanism for a one-sided matching market, given cardinal utilities of agents over goods. They use the power of a pricing mechanism, which endows their mechanism with several desirable properties—it produces an allocation that is Pareto optimal and envy free, and the mechanism is incentive compatible in the large. It therefore provides an attractive, off-the-shelf method for running an application involving such a market. With matching markets becoming ever more prevalent and impactful, it is imperative to characterize the computational complexity of this mechanism. We present the following results: (1) A combinatorial, strongly polynomial time algorithm for the dichotomous case, i.e., utilities, and more generally, when each agent’s utilities come from a bivalued set. (2) An example that has only irrational equilibria; hence this problem is not in PPAD. (3) A proof of membership of the problem in the class FIXP; as a corollary we get that a Hylland–Zeckhauser (HZ) equilibrium can always be expressed via algebraic numbers. For this purpose, we give a new proof of the existence of an HZ equilibrium using Brouwer’s fixed point theorem; the proof of Hylland and Zeckhauser used Kakutani’s fixed point theorem, which is more involved. (4) A proof of membership of the problem of computing an approximate HZ equilibrium in the class PPAD. In subsequent work [T. Chen et al., SODA 2022, SIAM, Philadelphia, pp. 2253–2268], the problem of computing an approximate HZ equilibrium was shown to be PPAD-hard, thereby establishing it to be PPAD-complete. We leave open the (difficult) question of determining if computing an exact HZ equilibrium is FIXP-hard. We also give pointers to the substantial body of work on cardinal-utility matching markets which followed [V. V. Vazirani and M. Yannakakis, LIPIcs. Leibniz Int. Proc. Inform. 185, Schloss Dagstuhl, Wadern Germany, 59].},
+  archive      = {J_SICOMP},
+  author       = {Vijay V. Vazirani and Mihalis Yannakakis},
+  doi          = {10.1137/23M157586X},
+  journal      = {SIAM Journal on Computing},
+  month        = {4},
+  number       = {2},
+  pages        = {193-232},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Computational complexity of the Hylland–Zeckhauser mechanism for one-sided matching markets},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Constant inapproximability for PPA. <em>SICOMP</em>, <em>54</em>(1), 163-192. (<a href='https://doi.org/10.1137/22M1536613'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In the -Consensus-Halving problem, we are given probability measures on the interval , and the goal is to partition into two parts and using at most cuts, so that for all . This fundamental fair division problem was the first natural problem shown to be complete for the class PPA, and all subsequent PPA-completeness results for other natural problems have been obtained by reducing from it. We show that -Consensus-Halving is PPA-complete even when the parameter is a constant. In fact, we prove that this holds for any constant . As a result, we obtain constant inapproximability results for all known natural PPA-complete problems, including necklace splitting, the discrete ham sandwich problem, two variants of the pizza sharing problem, and for finding fair independent sets in cycles and paths.},
+  archive      = {J_SICOMP},
+  author       = {Argyrios Deligkas and John Fearnley and Alexandros Hollender and Themistoklis Melissourgos},
+  doi          = {10.1137/22M1536613},
+  journal      = {SIAM Journal on Computing},
+  month        = {2},
+  number       = {1},
+  pages        = {163-192},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Constant inapproximability for PPA},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Algebraic algorithms for fractional linear matroid parity via noncommutative rank. <em>SICOMP</em>, <em>54</em>(1), 134-162. (<a href='https://doi.org/10.1137/22M1537096'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Matrix representations are a powerful tool for designing efficient algorithms for combinatorial optimization problems such as matching, and linear matroid intersection and parity. In this paper, we initiate the study of matrix representations using the concept of noncommutative rank (nc-rank), which has recently attracted attention in the research of Edmonds’ problem. We reveal that the nc-rank of the matrix representation of linear matroid parity corresponds to the optimal value of fractional linear matroid parity: a half-integral relaxation of linear matroid parity. Based on our representation, we present an algebraic algorithm for the fractional linear matroid parity problem by building a new technique to incorporate the search-to-decision reduction into the half-integral problem represented via the nc-rank. We further present a faster divide-and-conquer algorithm for finding a maximum fractional matroid matching and an algebraic algorithm for finding a dual optimal solution. They together lead to an algebraic algorithm for the weighted fractional linear matroid parity problem. Our algorithms are significantly simpler and faster than the existing algorithms.},
+  archive      = {J_SICOMP},
+  author       = {Taihei Oki and Tasuku Soma},
+  doi          = {10.1137/22M1537096},
+  journal      = {SIAM Journal on Computing},
+  month        = {2},
+  number       = {1},
+  pages        = {134-162},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Algebraic algorithms for fractional linear matroid parity via noncommutative rank},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fitting metrics and ultrametrics with minimum disagreements. <em>SICOMP</em>, <em>54</em>(1), 92-133. (<a href='https://doi.org/10.1137/22M1520190'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Given recording pairwise distances, the Metric Violation Distance problem asks to compute the distance between and the metric cone; i.e., modify the minimum number of entries of to make it a metric. Due to its large number of applications in various data analysis and optimization tasks, this problem has been actively studied recently. We present an -approximation algorithm for Metric Violation Distance, exponentially improving the previous best approximation ratio of of Fan, Raichel, and Van Buskirk [SODA, 2018]. Furthermore, a major strength of our algorithm is its simplicity and running time. We also study the related problem of Ultrametric Violation Distance, where the goal is to compute the distance to the cone of ultrametrics, and achieve a constant factor approximation algorithm. The Ultrametric Violation Distance problem can be regarded as an extension of the problem of fitting ultrametrics studied by Ailon and Charikar [SIAM J. Comput., 2011] and by Cohen-Addad, Das, Kipouridis, Parotsidis, and Thorup [FOCS, 2021] from norm to norm. We show that this problem can be favorably interpreted as an instance of Correlation Clustering with an additional hierarchical structure, which we solve using a new -approximation algorithm for correlation clustering that has the structural property that it outputs a refinement of the optimum clusters. An algorithm satisfying such a property can be considered of independent interest. We also provide an -approximation algorithm for a weighted version of Ultrametric Violation Distance. Finally, we investigate the complementary version of these problems where one aims at choosing a maximum number of entries of forming an (ultra)metric. In stark contrast to the minimization versions, we prove that these maximization versions are hard to approximate within any constant factor assuming the Unique Games Conjecture.},
+  archive      = {J_SICOMP},
+  author       = {Vincent Cohen-Addad and Chenglin Fan and Euiwoong Lee and Arnaud de Mesmay},
+  doi          = {10.1137/22M1520190},
+  journal      = {SIAM Journal on Computing},
+  month        = {2},
+  number       = {1},
+  pages        = {92-133},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Fitting metrics and ultrametrics with minimum disagreements},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Lossy planarization: A constant-factor approximate kernelization for planar vertex deletion. <em>SICOMP</em>, <em>54</em>(1), 1-91. (<a href='https://doi.org/10.1137/22M152058X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In the -minor-free deletion problem we are given an undirected graph and the goal is to find a minimum vertex set that intersects all minor models of graphs from the family . This captures numerous important problems including Vertex cover, Feedback vertex set, Treewidth- modulator, and Vertex planarization. In the latter one, we ask for a minimum vertex set whose removal makes the graph planar. This is a special case of -minor-free deletion for the family . Whenever the family contains at least one planar graph, then -minor-free deletion is known to admit a constant-factor approximation algorithm and a polynomial kernelization [F. Fomin et al., Proceedings of the 53rd Annual Symposium on Foundations of Computer Science, IEEE, 2012, pp. 470–479]. A polynomial kernelization is a polynomial-time algorithm that, given a graph and integer , outputs a graph on vertices and integer , so that if and only if . The Vertex planarization problem is arguably the simplest setting for which does not contain a planar graph and the existence of a constant-factor approximation or a polynomial kernelization remains a major open problem. In this work we show that Vertex planarization admits an algorithm which is a combination of both approaches. Namely, we present a polynomial -approximate kernelization, for some constant , based on the framework of lossy kernelization [D. Lokshtanov et al., Proceedings of the 49th Annual ACM SIGACT Symposium on Theory of Computing, ACM, 2017, pp. 224–237]. Simply speaking, when given a graph and integer , we show how to compute a graph on vertices so that any -approximate solution to can be lifted to an -approximate solution to , as long as . In order to achieve this, we develop a toolkit for sparsification of planar graphs which approximately preserves all separators and near-separators between subsets of the given terminal set. Our result yields an improvement over the state-of-the-art approximation algorithms for Vertex planarization. The problem admits a polynomial-time -approximation algorithm, for any , and a quasi-polynomial-time -approximation algorithm, where is the input size, both randomized [K. Kawarabayashi and A. Sidiropoulos, Proceedings of the 51st Annual ACM SIGACT Symposium on Theory of Computing, ACM, 2019, pp. 164–175]. By pipelining these algorithms with our approximate kernelization, we improve the approximation factors to respectively and .},
+  archive      = {J_SICOMP},
+  author       = {Bart M. P. Jansen and Michał Włodarczyk},
+  doi          = {10.1137/22M152058X},
+  journal      = {SIAM Journal on Computing},
+  month        = {2},
+  number       = {1},
+  pages        = {1-91},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Lossy planarization: A constant-factor approximate kernelization for planar vertex deletion},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

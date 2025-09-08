@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TOMS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="toms">TOMS - 7</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Algorithm 1055: HDSDP: Software for semidefinite programming. <em>TOMS</em>, <em>51</em>(2), 1-30. (<a href='https://doi.org/10.1145/3721123'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {HDSDP is a numerical software solving semidefinite programming problems. The main framework of HDSDP resembles the dual-scaling interior point solver DSDP and several new features, including a dual method based on the simplified homogeneous self-dual embedding, have been implemented. The embedding technique enhances the stability of the dual method, and several new heuristics and computational techniques are designed to accelerate its convergence. HDSDP aims to show how the dual-scaling algorithm benefits from the self-dual embedding, and it is developed in parallel to DSDP 5.8. Numerical experiments over several classical benchmark datasets exhibit their robustness and efficiency, particularly their advantages on SDP instances featuring low-rank structure and sparsity. HDSDP is open sourced under an MIT license and available at https://github.com/Gwzwpxz/HDSDP .},
+  archive      = {J_TOMS},
+  author       = {Wenzhi Gao and Dongdong Ge and Yinyu Ye},
+  doi          = {10.1145/3721123},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-30},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1055: HDSDP: Software for semidefinite programming},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Approximating large-scale hessian matrices using secant equations. <em>TOMS</em>, <em>51</em>(2), 1-21. (<a href='https://doi.org/10.1145/3728460'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large-scale optimization algorithms frequently require sparse Hessian matrices that are not readily available. Existing methods for approximating large sparse Hessian matrices either do not impose sparsity or are computationally prohibitive. To try and overcome these limitations, we propose a novel approach that seeks to satisfy as many componentwise secant equations as necessary to define each row of the Hessian matrix. A naive application of this approach is too expensive for Hessian matrices that have some relatively dense rows but, by carefully taking into account the symmetry and connectivity of the Hessian matrix, we are able devise an approximation algorithm that is fast and efficient with scope for parallelism. Example sparse Hessian matrices from the CUTEst test collection for optimization illustrate the effectiveness and robustness of our proposed method.},
+  archive      = {J_TOMS},
+  author       = {Jaroslav M. Fowkes and Nicholas I. M. Gould and Jennifer A. Scott},
+  doi          = {10.1145/3728460},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-21},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Approximating large-scale hessian matrices using secant equations},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Intersection of tetrahedra. <em>TOMS</em>, <em>51</em>(2), 1-26. (<a href='https://doi.org/10.1145/3729532'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {When intersecting non-matching three-dimensional lattices, one needs to calculate the intersections of tetrahedra. The authors’ previously published two-dimensional triangle–triangle intersection algorithm suggests a novel approach in three dimensions based on parsimony. The algorithm presented here expands on this two-dimensional algorithm and introduces new strategies necessitated by the increase in dimension. An extensive proof is given for the consistency of the algorithm. Thus, the algorithm is shown to be robust to numerical error arising from floating-point arithmetic. Example problems demonstrate its use and effectiveness.},
+  archive      = {J_TOMS},
+  author       = {Conor McCoid and Martin J. Gander},
+  doi          = {10.1145/3729532},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Intersection of tetrahedra},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LevelSetPy: A GPU-accelerated package for hyperbolic Hamilton–Jacobi partial differential equations. <em>TOMS</em>, <em>51</em>(2), 1-14. (<a href='https://doi.org/10.1145/3730407'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article introduces a software package release for geometrically reasoning about the safety desiderata of (complex) dynamical systems via level set methods. In emphasis, safety is analyzed with the Hamilton–Jacobi equations. In scope, we provide implementations of numerical algorithms for the resolution of Hamilton–Jacobi–Isaacs equations: the spatial derivatives of the associated value function via upwinding, the Hamiltonian via Lax–Friedrichs schemes, and the integration of the Hamilton–Jacobi equation altogether via total variation diminishing Runge–Kutta schemes. Since computational speed and interoperability with other modern scientific computing libraries (typically written in the Python language) are of essence, we capitalize on modern computational frameworks such as CUPY and NUMPY and move heavy computations to GPU devices to aid parallelization and improve bring-up time in safety analysis. We hope that this package can aid users to quickly iterate on ideas and evaluate all possible safety desiderata of a system via geometrical simulation in modern engineering problems.},
+  archive      = {J_TOMS},
+  author       = {Lekan Molu},
+  doi          = {10.1145/3730407},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-14},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {LevelSetPy: A GPU-accelerated package for hyperbolic Hamilton–Jacobi partial differential equations},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Algorithm 1056: QPoly—A magma package for working with quaternionic polynomials. <em>TOMS</em>, <em>51</em>(2), 1-14. (<a href='https://doi.org/10.1145/3731677'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The article presents the package for the computer algebra system Magma . It is a collection of functions for manipulating quaternionic polynomials over number fields. It provides nearly the same functionality for quaternionic polynomials as the ones provided by Magma for polynomials over fields.},
+  archive      = {J_TOMS},
+  author       = {Przemysław Koprowski},
+  doi          = {10.1145/3731677},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-14},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1056: QPoly—A magma package for working with quaternionic polynomials},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Algorithm 1057: FunC: A minimally invasive c++ library for the generation and analysis of univariate lookup tables. <em>TOMS</em>, <em>51</em>(2), 1-30. (<a href='https://doi.org/10.1145/3734692'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A Lookup Table (LUT) is a computationally inexpensive piecewise function used to approximate computationally expensive mathematical functions. Evaluating a LUT can be as quick as using Horner’s method to evaluate a polynomial after looking up its coefficients. A common choice of LUT is a piecewise constant or piecewise linear function; however, high-degree interpolating polynomials can also be valuable. Here, we describe the functionality of FunC 2.0, a C++ library designed to streamline the process of building, comparing, and implementing univariate LUTs in practical applications. In particular, FunC 2.0 can build relatively small LUTs satisfying user-provided absolute and relative tolerances for error. Furthermore, FunC 2.0 can build nonuniform LUTs, it provides utilities to quickly determine reasonable LUT bounds and tolerances for error, and it provides a way to quickly profile a set of LUTs. We demonstrate FunC ’s utility in application by reducing the total runtime of a simulation performed by the Canadian Hydrological Model (CHM). This simulation modeled the snow mass distribution across Western Canada over 1 month. Now, the CHM can evaluate the mathematical function of interest about 28 times faster, allowing the necessary algorithm to finish two times faster, and the overall simulation is about 9% faster.},
+  archive      = {J_TOMS},
+  author       = {Shawn S. C. McAdam and Raymond J. Spiteri},
+  doi          = {10.1145/3734692},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-30},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1057: FunC: A minimally invasive c++ library for the generation and analysis of univariate lookup tables},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Symbolic and user-friendly geometric algebra routines (SUGAR) for computations in matlab. <em>TOMS</em>, <em>51</em>(2), 1-31. (<a href='https://doi.org/10.1145/3734693'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Geometric Algebra (GA) provides a unified, compact mathematical framework for geometric computing, simplifying relations typically handled with more complex tools like matrix multiplication. In fields like robotics, GA replaces conventional coordinate-based approaches with the multiplication of special elements called rotors, offering greater efficiency. Despite its advantages, GA’s complexity and the lack of symbolic tools hinder its broader adoption among applied mathematicians and engineers. To address this, this article introduces Symbolic and User-friendly Geometric Algebra Routines (SUGAR), an open source Matlab toolbox. SUGAR streamlines GA usage in Matlab through a collection of user-friendly functions that support both numeric and symbolic computations, even in high-dimensional algebras. Designed for applied mathematics and engineering, it enables intuitive manipulation of geometric elements and transformations in two- and three-dimensional projective and conformal GAs, consistent with established computational methods. Moreover, SUGAR manages multivector functions such as exponential, logarithmic, sinusoidal, and cosine operations, enhancing its applicability in domains like robotics, control systems, and power electronics. Finally, this article also presents three validation examples across these fields, showcasing SUGAR’s practical utility in solving real-world engineering and applied mathematics problems.},
+  archive      = {J_TOMS},
+  author       = {Manel Velasco and Isiah Zaplana and Arnau Dòria-Cerezo and Pau Martí},
+  doi          = {10.1145/3734693},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-31},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Symbolic and user-friendly geometric algebra routines (SUGAR) for computations in matlab},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

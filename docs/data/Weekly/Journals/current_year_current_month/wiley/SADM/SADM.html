@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SADM</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="sadm">SADM - 3</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Triangulation-based spatial clustering for adjacent data with heterogeneous density. <em>SADM</em>, <em>18</em>(2), e70017. (<a href='https://doi.org/10.1002/sam.70017'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In diverse fields such as geography, meteorology, and economics, data often exhibit complex, nonlinear relationships, irregular structures, and are frequently collected over intricate domains. While effectively identifying regularly shaped clusters (e.g., ellipsoidal or spherical) within regular domains, traditional clustering algorithms often struggle with irregular cluster shapes, heterogeneous densities, noisy inter-cluster boundaries, and datasets spread across complex spatial domains. To address these challenges, we introduce a novel Density and Triangulation-based Clustering (DTC) framework, designed to excel in these complex scenarios through three key innovations: (1) density-based separation using an advanced density estimation method tailored for complex domains, (2) Delaunay triangulation-based spatial clustering, effectively managing nonlinear geometries and resolving adjacency issues, and (3) noise mitigation through proximity analysis leveraging nearest neighbors. The DTC framework uniquely integrates graph-based methods with robust density estimation methods, enabling it to handle cases where traditional algorithms fail. Extensive experiments on both synthetic and real-world datasets demonstrate its superior capability to identify nested and contiguous clusters with heterogeneous densities, even in the presence of noise and over complex domains. These findings underscore the practical applicability and versatility of DTC in extracting meaningful insights from challenging datasets.},
+  archive  = {J},
+  author   = {Sihan Zhou and Daniel Vasiliu and Shi Qi and Guannan Wang},
+  doi      = {10.1002/sam.70017},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  number   = {2},
+  pages    = {e70017},
+  title    = {Triangulation-based spatial clustering for adjacent data with heterogeneous density},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Online variable selection and parameter estimation for massive data via square root lasso. <em>SADM</em>, <em>18</em>(2), e70016. (<a href='https://doi.org/10.1002/sam.70016'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Online learning demonstrates significant advantages in handling massive data. In this paper, online variable selection and parameter estimation for massive data are implemented via square root lasso. Specifically, the objective function of the square root lasso is replaced with an online loss function that depends only on the current batch of data and the summary statistics obtained from historical data. An online solution algorithm is then proposed. Moreover, we propose a novel online penalty parameter selection method based on rolling cross-validation and quantile universal threshold. This method is neither as dependent on all data as cross-validation nor as computationally intensive as existing online selection methods. Theoretically, the and prediction estimation error upper bounds are established. Moreover, these properties are always satisfied, regardless of the number of data batches, indicating that our method is adaptive to scenarios where the number of batches continuously increases. We conduct simulation studies to assess the performance of the proposed estimator. And at last, our method is applied to analyze some real datasets for illustration.},
+  archive  = {J},
+  author   = {Yujie Gai and Kang Meng and Xinyi Xu},
+  doi      = {10.1002/sam.70016},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  number   = {2},
+  pages    = {e70016},
+  title    = {Online variable selection and parameter estimation for massive data via square root lasso},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BOSTON-PUPA: A bayesian online spatio-temporal outbreak detection framework with prior updating and p-value adaptation. <em>SADM</em>, <em>18</em>(2), e70015. (<a href='https://doi.org/10.1002/sam.70015'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Early online outbreak detection for an epidemic is vital for disease-control authorities to make policies for the protection of public health and normal socioeconomic functions. Modern public health streaming surveillance data are often collected from multiple data sources, exhibiting spatio-temporal interdependence and imbalance issues. To address those issues, we propose a Bayesian online spatio-temporal outbreak detection with prior updating and p -value adaptation (BOSTON-PUPA) procedure. Using sequential p -value combinations, this iterative procedure involves the generalized Poisson distribution (GPD) model and supports synchronous surveillance over multiple locations, with a controlled false detection rate as well as high sensitivity against outbreaks in a wide range of signal-to-noise ratios. In the simulation study, we employed and compared several popular combined p -value methods in the BOSTON-PUPA procedure based on sensitivity, specificity, false detection rate and delay before making recommendations. We illustrated our method by detecting the outbreaks in the real COVID-19 daily case count data in Massachusetts counties in 2020.},
+  archive  = {J},
+  author   = {Yanzhao Wang and I. M. L. Nadeesha Jayaweera and Jian Zou},
+  doi      = {10.1002/sam.70015},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  number   = {2},
+  pages    = {e70015},
+  title    = {BOSTON-PUPA: A bayesian online spatio-temporal outbreak detection framework with prior updating and p-value adaptation},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SISC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="sisc">SISC - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Coupled input-output dimension reduction: Application to goal-oriented bayesian experimental design and global sensitivity analysis. <em>SISC</em>, <em>47</em>(5), A2403-A2430. (<a href='https://doi.org/10.1137/24M1670421'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We introduce a new method to jointly reduce the dimension of the input and output space of a function between high-dimensional spaces. Choosing a reduced input subspace influences which output subspace is relevant and vice versa. Conventional methods focus on reducing either the input or output space, even though both are often reduced simultaneously in practice. Our coupled approach naturally supports goal-oriented dimension reduction, where either an input or output quantity of interest is prescribed. We consider, in particular, goal-oriented sensor placement and goal-oriented sensitivity analysis, which can be viewed as dimension reduction where the most important output or, respectively, input components are chosen. Both applications present difficult combinatorial optimization problems with expensive objectives such as the expected information gain and Sobol’ indices. By optimizing gradient-based bounds, we can determine the most informative sensors and most influential parameters as the largest diagonal entries of some diagnostic matrices, thus bypassing the combinatorial optimization and objective evaluation. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/qchen95/Coupled-input-output-DR and in the Supplementary Materials (Coupled-input-output-DR-master.zip [49.1KB]).},
+  archive      = {J_SISC},
+  author       = {Qiao Chen and Élise Arnaud and Ricardo Baptista and Olivier Zahm},
+  doi          = {10.1137/24M1670421},
+  journal      = {SIAM Journal on Scientific Computing},
+  month        = {10},
+  number       = {5},
+  pages        = {A2403-A2430},
+  shortjournal = {SIAM J. Sci. Comput.},
+  title        = {Coupled input-output dimension reduction: Application to goal-oriented bayesian experimental design and global sensitivity analysis},
+  volume       = {47},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

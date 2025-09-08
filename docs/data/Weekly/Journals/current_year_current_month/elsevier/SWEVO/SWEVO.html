@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SWEVO</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="swevo">SWEVO - 75</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Non-probabilistic set-based selection strategy for multi-objective optimization with interval uncertainties. <em>SWEVO</em>, <em>98</em>, 102153. (<a href='https://doi.org/10.1016/j.swevo.2025.102153'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Uncertainty introduces great challenges for multi-objective optimization, as the solutions are no longer deterministic values, complicating both the accurate evaluation of solution quality and the selection of elite solutions. Misjudging the dominance relationship among uncertain solutions may result in the loss of superior solutions, and imprecise crowding distance quantification may fail to maintain population diversity. Therefore, a novel non-probabilistic set-based selection strategy (NPS) is developed to balance the convergence and diversity of uncertain populations. It employs a novel two-dimensional interval dominance relationship and an interval crowding distance model to determine the new parent population. Additionally, a dimension-wise approach (DWA), a non-intrusive uncertainty analysis model, is used to quantify the bounds of uncertain optimization objectives. Furthermore, a novel interval crowding distance-based sample standard deviation metric is proposed to enhance the accuracy of diversity evaluation for uncertain populations. The proposed NPS is integrated into two classical multi-objective optimization frameworks and is compared with other selection strategies across multiple groups of benchmarks. The results indicate that algorithms incorporating NPS and DWA can not only effectively explore the Pareto Front under uncertainties but also directly evaluate uncertain solutions with limited samples. Compared with other selection strategies, NPS can explore an optimal solution set with superior convergence, higher diversity, and lower uncertainty.},
+  archive      = {J_SWEVO},
+  author       = {Qianqian Yu and Chen Yang and Guangming Dai and Lei Peng},
+  doi          = {10.1016/j.swevo.2025.102153},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102153},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Non-probabilistic set-based selection strategy for multi-objective optimization with interval uncertainties},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Block optimization and switchable hybrid clustering for multimodal multiobjective evolutionary optimization with shifted local pareto front. <em>SWEVO</em>, <em>98</em>, 102151. (<a href='https://doi.org/10.1016/j.swevo.2025.102151'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing multimodal multiobjective evolutionary algorithms (MMOEAs) often struggle with translated test functions and fail to effectively identify and maintain local Pareto fronts (PFs) due to the lack of niche-based strategies. To overcome these limitations, a novel two-stage MMOEA termed MMOEA-BH is proposed with block optimization and switchable hybrid clustering. Key innovations include a block optimization strategy utilizing adaptive region stretching and regression-based dimensional analysis, and a switchable hybrid clustering method combining affinity propagation, k-means, and density-based spatial clustering of applications with noise (DBSCAN). These innovations enable MMOEA-BH to effectively address translated test functions and maintain both global and local niches in decision and objective spaces. To address the lack of robust evaluation methods for MMOEAs when solving translated MMOPs, a new set of shifted multimodal multiobjective functions (SMMF) is introduced by translating the existing MMOPs. Experimental results, including comparisons with state-of-the-art algorithms, ablation studies on block optimization, and sensitivity analyses on key parameters, demonstrate that MMOEA-BH outperforms existing algorithms on these SMMF functions. This highlights the efficacy of the proposed block optimization and switchable hybrid clustering strategies in solving MMOPs with translation characteristics.},
+  archive      = {J_SWEVO},
+  author       = {Yu Zhang and Wang Hu},
+  doi          = {10.1016/j.swevo.2025.102151},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102151},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Block optimization and switchable hybrid clustering for multimodal multiobjective evolutionary optimization with shifted local pareto front},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive information fusion–driven evolutionary algorithm via balancing the information from unconstrained and constrained pareto fronts. <em>SWEVO</em>, <em>98</em>, 102150. (<a href='https://doi.org/10.1016/j.swevo.2025.102150'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Obtaining well–converged and well–distributed constrained Pareto fronts (CPFs) is the ultimate goal of solving constrained multi–objective optimization problems (CMOPs). In recent years, leveraging information from the unconstrained Pareto front (UPF) has become a prevalent method for CMOPs. However, the equilibrium and representation of information from CPF and UPF are crucial to the performance of evolutionary algorithms. To balance the information from CPF and UPF adaptively, this paper proposes an adaptive information fusion–driven evolutionary algorithm, referred to as AIFDEA. Specifically, the evolutionary process of AIFDEA is divided into infeasible and feasible stages. During the infeasible stage, a clustering–based individual selection strategy is proposed to balance diversity and feasibility. Furthermore, a novel fitness function that integrates UPF, CPF, and diversity information adaptively is designed to balance convergence, feasibility, and diversity in the feasible stage. The superiority of the proposed method is substantiated throught extensive comparison experiments across 34 benchmark functions and parameter analysis experiments. Additionally, application experiments on 16 real–world benchmark CMOPs and an energy consumption optimization problem in copper electrolysis process are conducted, to validate the practical applicability of AIFDEA in diverse real–world and complex industrial environments. Moreover, this paper demonstrates that fusing UPF, CPF, and diversity information adaptively is promising for CMOPs.},
+  archive      = {J_SWEVO},
+  author       = {Xujie Tan and Yalin Wang and Chenliang Liu and Jing Liao and Yong Wang and Weihua Gui},
+  doi          = {10.1016/j.swevo.2025.102150},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102150},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Adaptive information fusion–driven evolutionary algorithm via balancing the information from unconstrained and constrained pareto fronts},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A bi-objective routing problem for cooperated trucks and drones in river water quality monitoring. <em>SWEVO</em>, <em>98</em>, 102148. (<a href='https://doi.org/10.1016/j.swevo.2025.102148'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The preservation of urban river ecosystems constitutes a fundamental component in sustainable water resource management. Effective water quality evaluation relies on systematic sampling approaches that encompass diverse aquatic environments. Traditional vessel-based sampling methods are often time-consuming, labor-intensive, and pose a risk of contamination to the aquatic ecosystem. In contrast, the cooperation between ground vehicles (referred to as trucks) and drones offers an efficient and environmentally friendly sampling method. This paper presents a novel approach to water sampling in which drones serve as the primary tools for collecting water samples while trucks extend the flight range of drones by acting as mobile depots. A Mixed Integer Quadratic Programming (MIQP) model is formulated which considers the influence of payload variations of drones on energy consumption during the sampling process. To synchronize the routing of drones and trucks, an improved Non-dominated Sorting Genetic Algorithm-II (NSGA-II) is developed, incorporating an iterative front optimization strategy to enhance the solution diversity. Furthermore, three specialized genetic operators tailored to the specific problem scenario are designed to improve the quality of the population. The practicality and efficiency of the proposed algorithm are validated using real-world case studies, highlighting the transformative potential of truck-drone cooperation in urban river water quality monitoring.},
+  archive      = {J_SWEVO},
+  author       = {Shuo Dang and Zhihao Luo and Zhong Liu and Yuzhen Zhou and Jianmai Shi},
+  doi          = {10.1016/j.swevo.2025.102148},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102148},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A bi-objective routing problem for cooperated trucks and drones in river water quality monitoring},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A population game-based knowledge transfer strategy for constrained multi-objective optimization. <em>SWEVO</em>, <em>98</em>, 102146. (<a href='https://doi.org/10.1016/j.swevo.2025.102146'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In constrained multi-objective optimization problems (CMOPs), complex constraints may result in narrow feasible regions or cause the Pareto front to lie on constraint boundaries, which significantly increases the difficulty of locating feasible solutions within limited computational resources. Evolutionary multitasking optimization algorithms promote the optimization of the main task by introducing auxiliary tasks. However, even when the contributions of these auxiliary tasks diminish, they continue to consume computational resources. To address this issue, this study proposes a population game-based multitasking coevolutionary algorithm. The algorithm models the original CMOP as a multitasking optimization problem comprising two tasks. Specifically, the target task explores the feasible region of the original CMOP by evolving a population. Meanwhile, the source task is activated dynamically through a population game mechanism, aiming to explore potential feasible regions by relaxing the constraints. Through knowledge transfer, the supplementary evolutionary directions obtained from the source task provide unexplored paths for the target task, guiding the population to approach the Pareto front from both feasible and infeasible directions. Comprehensive experiments were performed on four benchmark suites. The experimental results demonstrated that the proposed algorithm exhibited competitive or superior performance compared with eight state-of-the-art algorithms.},
+  archive      = {J_SWEVO},
+  author       = {Shaoning Liu and Jian Feng and Shengxiang Yang and Jun Zheng},
+  doi          = {10.1016/j.swevo.2025.102146},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102146},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A population game-based knowledge transfer strategy for constrained multi-objective optimization},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Asynchronous storming-norming ant colony system for project scheduling under scenario perturbation of activity attributes. <em>SWEVO</em>, <em>98</em>, 102141. (<a href='https://doi.org/10.1016/j.swevo.2025.102141'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Project scheduling is essential in complex fields like infrastructure and healthcare, but current methods often fail to capture the subtle interplay between different activity attributes, such as cost and duration. These factors, fraught with uncertainty, can lead to unpredictable changes and unreliable assessments. To alleviate these issues, we introduce a novel approach called Asynchronous Storming-Norming Ant Colony System based on Scenario Unification simulation(ASN-ACS-SU). Firstly, we introduce a scenario unification framework, ensuring simulations are consistent across scenarios, thus greatly enhancing stability. Next, we integrate a storming-norming strategy, adapting different tactics based on the evolution stage, effectively accelerating convergence. Lastly, an asynchronous scheme, tailored for handling various activity attributes asynchronously, is incorporated to improve the effectiveness of the solution. These components are skillfully integrated into the Ant Colony System framework, ensuring a harmonious combination of their individual strengths. Comprehensive tests using simulation datasets and demonstrate that ASN-ACS-SU significantly outperforms existing algorithms, including CH-GA, LRBH, Hybrid DE and Two-stage GA, which are state-of-the-art algorithms for multi-mode resource-constrained project scheduling problems. The proposed method demonstrates non-inferiority to CH-GA and Hybrid DE in at least 90% of scenarios, to Two-stage GA in at least 80% of scenarios and to LRBH in at least 70% of scenarios in all datasets. Thus, the validity and reliability of the ASN-ACS-SU can be demonstrated.},
+  archive      = {J_SWEVO},
+  author       = {Wen Shi and Feng-Feng Wei and Xiaolin Bo and Zhisheng Bi and Jianing Xi and Wei-Neng Chen},
+  doi          = {10.1016/j.swevo.2025.102141},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102141},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Asynchronous storming-norming ant colony system for project scheduling under scenario perturbation of activity attributes},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reinforcement knowledge sharing assisted two-archive evolutionary algorithm for many-objective optimization. <em>SWEVO</em>, <em>98</em>, 102139. (<a href='https://doi.org/10.1016/j.swevo.2025.102139'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In many-objective optimization problems (MaOPs), algorithms are challenged in terms of convergence pressure and exploration of the complete Pareto front (PF) as the number of objectives increases. The two-archive mechanism currently offers a novel perspective to address this issue. However, most existing two-archive-based many-objective optimization algorithms focus on independently updating the convergence archive (CA) and diversity archive (DA), while paying less attention to deeper cooperation between the two archives. To facilitate deeper cooperation, this paper proposes a reinforcement knowledge sharing assisted two-archive evolutionary algorithm for many-objective optimization (RKS-TAEA). In RKS-TAEA, a generalized SDE indicator (SDEp) and a new shift-based indicator (SBI) are proposed respectively for the update of CA and DA. SDEp could well maintain the properties of the original SDE indicator on estimating population convergence, while SBI could comprehensively assess not only diversity but also convergence of candidate solutions. Both SDEp and SBI could flexibly fit MaOPs with different PF geometries once the p -value is properly set for the Minkowski distance calculated in the two indicators. Thereafter, a reinforcement knowledge-sharing mechanism is proposed to derive the p -value from the knowledge factor that is learnt by fitting the PF geometry of the MaOP generation by generation. The reinforcement knowledge-sharing mechanism achieves deeper cooperation between the two archives, which ensures that RKS-TAEA could adaptively fit complex MaOPs that have different PF geometries. Comprehensive experiments on four benchmark test suites and five real-world MaOPs demonstrate that RKS-TAEA is more competitive in comparison with some state-of-the-art many-objective evolutionary algorithms.},
+  archive      = {J_SWEVO},
+  author       = {Qing Xu and Shuzheng Xie and Ning Yang and Ying Huang and Shaochang Nie and Wei Li},
+  doi          = {10.1016/j.swevo.2025.102139},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102139},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Reinforcement knowledge sharing assisted two-archive evolutionary algorithm for many-objective optimization},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hybrid artificial bee colony algorithm with Q-learning for distributed heterogeneous flexible job shop scheduling problem considering machine preventive maintenance. <em>SWEVO</em>, <em>98</em>, 102134. (<a href='https://doi.org/10.1016/j.swevo.2025.102134'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Current research on preventive maintenance in the scheduling domain predominantly focuses on machine degradation under stable operating conditions. However, the machine works under varying operating conditions (cutting depth, feed rate, etc.) when processing different jobs, and much research ignores the influence of these diverse operating conditions on machine degradation. To address this gap, this paper proposes a novel machine degradation model tailored to various operating conditions and introduces a dual-threshold preventive maintenance strategy, which is integrated with the scheduling problem. To effectively solve this integrated problem, a mixed-integer programming (MIP) framework targeting makespan minimization is constructed, coupled with a hybrid artificial bee colony (ABC) algorithm incorporating a neighborhood search mechanism. First, a three-layer encoding scheme based on factory-machine-operation is designed, and preventive maintenance decisions are incorporated into the decoding strategy. Furthermore, a hybrid population initialization strategy is developed to enhance population diversity. Third, multiple crossover and mutation operators are developed during the employed bee phase, and a simple yet effective operator selection mechanism is employed to improve global search efficiency. In the onlooker bee phase, five neighborhood search operators are proposed to address the local search limitations of traditional ABC algorithms. These operators are adaptively selected via a Q-learning algorithm to strengthen local search performance. Finally, extended computational instances are designed, and comparative experiments validate the effectiveness of the proposed algorithm in solving scheduling problems across different job scales and factory scales.},
+  archive      = {J_SWEVO},
+  author       = {Rui Wu and Enzhuang Luo and Xixing Li and Hongtao Tang and Yibing Li},
+  doi          = {10.1016/j.swevo.2025.102134},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102134},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Hybrid artificial bee colony algorithm with Q-learning for distributed heterogeneous flexible job shop scheduling problem considering machine preventive maintenance},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Incremental learning-enhanced ensemble surrogate-assisted evolutionary algorithm for lifelong berth allocation and quay crane assignment problems. <em>SWEVO</em>, <em>98</em>, 102133. (<a href='https://doi.org/10.1016/j.swevo.2025.102133'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The berth allocation and quay crane assignment problem (BACAP) is a critical challenge in maritime transport, especially in lifelong scenarios that are rarely addressed in the current literature but essential for practical applications. The Lifelong BACAP (LBACAP) presents new challenges, such as the uncertain arrival of vessels, limited resources, and inter-dependencies between vessels. To address these challenges, we propose an incremental learning-enhanced ensemble surrogate-assisted evolutionary algorithm, named IL-ESAEA, with three core designs. (1) The adaptive rolling-horizon strategy divides the LBACAP into consecutive time windows, each corresponding to an interconnected sub-LBACAP. (2) The ensemble surrogate-assisted evolutionary algorithm (ESAEA) approximates the computationally intensive and intricately designed decoding method for optimization, reducing computational costs while maintaining robust search capabilities for solving various BACAPs. (3) The incremental learning mechanism identifies connections between sub-LBACAPs in successive time windows, utilizing historical decisions to guide the optimization effectively. Experimental results demonstrate that IL-ESAEA consistently outperforms state-of-the-art algorithms and provides superior solutions with increased computational efficiency over time. This highlights the strong competitive edge of IL-ESAEA in solving LBACAPs.},
+  archive      = {J_SWEVO},
+  author       = {Li-Sha Xu and Yi-Ming Wang and Ting Huang and Yue-Jiao Gong and Jing Liu},
+  doi          = {10.1016/j.swevo.2025.102133},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102133},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Incremental learning-enhanced ensemble surrogate-assisted evolutionary algorithm for lifelong berth allocation and quay crane assignment problems},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Secure key based cloud security utilizing three-way protection with martino homomorphic encryption for preventing unauthorized data access. <em>SWEVO</em>, <em>98</em>, 102131. (<a href='https://doi.org/10.1016/j.swevo.2025.102131'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cloud computing has transformed data storage and access by providing scalable and on-demand services. Nevertheless, it remains a priority issue to ensure the protection of sensitive data in cloud environments. Several existing security methods has fundamental shortcomings like poor threat prediction features, a failure to process encrypted data securely and high encryption time. To overcome these issues, this study proposes a novel secure key based cloud security utilizing Three-Way Protection with Martino Homomorphic Encryption for preventing unauthorized data access (SKCS-TWP-MHE-PUDA). Initially, the data are collected from Enron Email dataset. Then the input data is given to Reverse Lognormal Kalman Filter (RLKF) for data cleaning and normalization. Next, Koopman Theory Graph Convolutional Network (KTGCN) is used to analyze packet status, predict potential threats and prevent unauthorized cloud access. This real-time intrusion detection mechanism enables early anticipation of malicious activity. Meanwhile, Martino Homomorphic Encryption (MHE) is used to ensure data confidentiality by encrypting cloud-stored data such that only legitimate users decrypt and access it. The three-way security mechanism comprising user registration, intrusion detection and intrusion prevention strengthens overall protection. The performance of the proposed SKCS-TWP-MHE-PUDA method provides 26.68%, 25.75%, and 26.16% higher accuracy 29.08%, 30.70% and 16.26% higher precision when compared with existing techniques: Stochastic Gradient Descent long short-term memory dependent secure encryption approach for cloud data storage and retrieval in cloud computing environs (SGDLSTM-CDS-CCE), Blockchain Key Management: A Solution for Cloud Data Security (AES-BKY-CDS) and deep learning method with cryptographic transformation for enhancing data security in cloud environs (SqueezeNet-DS-CE) respectively.},
+  archive      = {J_SWEVO},
+  author       = {Ganji Ramanjaiah and Tummala Srinivasa Ravi Kiran and Ampalam Srisaila and Annemneedi Lakshmanarao and Komanduri Venkata Sesha Sai Ramakrishna and Katakam Venkateswara Rao},
+  doi          = {10.1016/j.swevo.2025.102131},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102131},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Secure key based cloud security utilizing three-way protection with martino homomorphic encryption for preventing unauthorized data access},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-pass planning for multi-vehicle cooperative urban demining: A knowledge-driven evolutionary approach with RL-enhanced neighborhood search. <em>SWEVO</em>, <em>98</em>, 102129. (<a href='https://doi.org/10.1016/j.swevo.2025.102129'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {It has become increasingly urgent and necessary to coordinate multiple unmanned systems to efficiently execute a variety of complex tasks in place of humans. This paper focus on the problem of multi-vehicle demining in urban road networks (MVDMP). First, a mixed-integer programming model is established, taking into account both the topological connectivity of the road network and the demining width of the vehicles. Second, an evolutionary learning algorithm incorporating Q-learning (QEA) is proposed to effectively solve this problem. In the initialization phase, a hybrid initialization strategy, which includes two heuristic rules, is introduced to generate high-quality initial solutions. During the local search phase, six neighborhood search operators are proposed based on problem characteristics, and Q-learning is used to adaptively customize perturbation schemes for individuals. Additionally, the Metropolis acceptance criterion is employed to balance exploration and exploitation. Finally, extensive experiments on instances of varying sizes derived from urban road networks (Sioux Falls, Sydney, etc.) demonstrate the efficiency and superiority of the proposed method compared to other four state-of-the-art approaches.},
+  archive      = {J_SWEVO},
+  author       = {Hao Cheng and Jin Yi and Huayan Pu and Jun Luo and Chao Lu},
+  doi          = {10.1016/j.swevo.2025.102129},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102129},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Multi-pass planning for multi-vehicle cooperative urban demining: A knowledge-driven evolutionary approach with RL-enhanced neighborhood search},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Metaheuristic-optimized TabNet ensemble for accurate and interpretable obesity classification. <em>SWEVO</em>, <em>98</em>, 102128. (<a href='https://doi.org/10.1016/j.swevo.2025.102128'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Obesity is a complex global health issue with severe implications for both individual well-being and public health systems. It has been traditionally challenging to predict and diagnose due to its multifactorial nature, involving genetic, behavioral, and environmental factors. While classical regression models have been extensively used for obesity prediction, their limitations have prompted the exploration of more advanced methodologies. In this study, we leverage Deep Learning (DL) techniques, particularly TabNet, to address the challenges of obesity classification in tabular data—a domain where DL’s potential has often been underutilized. Our approach enhances the TabNet architecture through effective hyperparameter tuning, utilizing Particle Swarm Optimization (PSO), Grey Wolf Optimizer (GWO), and Hunger Games Search (HGS). The resulting models, TabNet-PSO, TabNet-GWO, and TabNet-HGS are combined into a novel ensemble that demonstrates superior performance in obesity classification compared to conventional machine-learning models and recent studies. Additionally, Explainable Artificial Intelligence techniques are employed to provide both local and global interpretability of model predictions, using SHapley Additive exPlanations (SHAP). This interpretability is crucial in clinical settings, where understanding the underlying factors influencing predictions is essential. The study’s findings offer significant contributions to the early detection and management of obesity, providing healthcare professionals with precise and interpretable predictions to guide intervention strategies.},
+  archive      = {J_SWEVO},
+  author       = {Zarindokht Helforoush and Mitra Shojaie and Sahel Arghamiri},
+  doi          = {10.1016/j.swevo.2025.102128},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102128},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Metaheuristic-optimized TabNet ensemble for accurate and interpretable obesity classification},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An intelligent automated guided vehicle scheduling framework for manufacturing: Balancing energy, efficiency, and task completion. <em>SWEVO</em>, <em>98</em>, 102127. (<a href='https://doi.org/10.1016/j.swevo.2025.102127'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, the widespread usage of Automated Guided Vehicles (AGVs) has become prevalent in material transportation systems of industries. The AGVs are known for their operational flexibility and efficiency, but efficient scheduling remains a crucial issue due to the conflicting factors, including deviation penalties for task execution times, power consumption, overall task completion time, collision risk, and utilization efficiency. To address this, this research employs a multi-objective mixed-integer programming model (MO-MIP) to formulate the scheduling problem of AGVs. The optimization algorithms, such as Non-dominated Sorting Genetic Algorithm II (NSGA-II) and the Reference Point-based Non-dominated Sorting Genetic Algorithm (NSGA-III) are utilized to obtain the Pareto optimal solutions in solving the scheduling problem. The simulation experiment on three distinct manufacturing workshop scenarios was conducted to examine the effectiveness of the model. The outcomes illustrated that the NSGA-II and NSGA-III exhibit reduced penalty cost, power consumption, collision risk, task completion time, and higher utilization efficiency. These algorithms also showed better computational efficiency and outperformed baseline algorithms under three manufacturing scenarios. These outcomes indicate that the proposed method is a promising solution for the industrial sector to perform material transportation in an efficient manner.},
+  archive      = {J_SWEVO},
+  author       = {Xiang Huo and Lei Nie},
+  doi          = {10.1016/j.swevo.2025.102127},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102127},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {An intelligent automated guided vehicle scheduling framework for manufacturing: Balancing energy, efficiency, and task completion},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multitree genetic programming with spherical-based operators for synthetic minority over-sampling technique in unbalanced data. <em>SWEVO</em>, <em>98</em>, 102126. (<a href='https://doi.org/10.1016/j.swevo.2025.102126'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unbalanced classification is a critical challenge in machine learning, with broad applications in real-world scenarios. Recent studies have emphasized the potential of Evolutionary Computation (EC)-based approaches, particularly Genetic Programming (GP), as an effective sampling strategy for addressing class imbalance. In contrast to traditional oversampling methods that rely on neighborhood information and predefined structures, GP autonomously selects high-quality instances and evolves structures to generate new ones. However, existing GP-based approaches primarily focus on undersampling, with limited exploration of instance generation. Additionally, the traditional Single-Tree Genetic Programming (STGP) structure struggles to adapt to tasks requiring the generation of multiple candidate datasets. To address these challenges, this paper introduces MTGP-SMOTE, a novel oversampling method based on Multi-Tree Genetic Programming (MTGP). Unlike STGP, which evolves a single tree per individual, MTGP evolves multiple trees within an individual, enabling the generation of diverse new instances while evolving as a complete dataset. The method also incorporates innovative MTGP crossover and mutation operators, designed to enhance exploration by focusing on trees beyond the hemispheres of the target minority class while preserving high-quality individuals throughout the evolutionary process. Experiments on 20 unbalanced datasets demonstrate that MTGP-SMOTE significantly outperforms traditional sampling methods in reducing classifier bias and improving classification accuracy. These results underscore MTGP-SMOTE as a powerful and effective solution for addressing unbalanced classification in machine learning.},
+  archive      = {J_SWEVO},
+  author       = {Yuyang Cui and Ziliang Du and Hongwei Ge and Guangyu Zou and Yaqing Hou},
+  doi          = {10.1016/j.swevo.2025.102126},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102126},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Multitree genetic programming with spherical-based operators for synthetic minority over-sampling technique in unbalanced data},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Differential evolution algorithm with local and global parameter adaptation. <em>SWEVO</em>, <em>98</em>, 102125. (<a href='https://doi.org/10.1016/j.swevo.2025.102125'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Differential Evolution (DE) is an effective meta-heuristic algorithm for numerical optimization. However, it suffers from persistent limitations such as sensitivity to parameter settings and premature convergence tendencies. This paper presents a novel Local and Global Parameter Adaptation (LGP) mechanism to mitigate these deficiencies through two key innovations. First, we develop a dual historical memory strategy that dynamically classifies successful control parameters into local or global historical record based on the Euclidean distance between parent-offspring vector pairs, the local and global historical memory are updated accordingly at each generation. Second, we introduce a parameter adaptation strategy that adaptively selects elements from appropriate historical memory for the generation of new control parameters to maintain exploitation-exploration balance. Extensive experimental validation demonstrates LGP’s effectiveness. When integrated with four DE variants, LGP consistently improves their performance, and the LGP-enhanced algorithm demonstrates remarkable performance compared with seven State-of-the-Art DE algorithms. Results confirm that LGP improves solution accuracy and prevents premature convergence simultaneously.},
+  archive      = {J_SWEVO},
+  author       = {Xiao Lin Jin and Sheng Xin Zhang and Li Ming Zheng and Shao Yong Zheng},
+  doi          = {10.1016/j.swevo.2025.102125},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102125},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Differential evolution algorithm with local and global parameter adaptation},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A robust counterpart model and matheuristic-oriented evolutionary algorithm for evaluating energy consumption of project scheduling with uncertainty. <em>SWEVO</em>, <em>98</em>, 102124. (<a href='https://doi.org/10.1016/j.swevo.2025.102124'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Makespan is a key metric for evaluating project progress, while energy consumption directly impacts green performance metrics. These are the key metrics that managers focus on. Based on this, an energy-aware multi-mode resource-constrained project scheduling problem is proposed. However, activity durations in real project scheduling are often uncertain. Energy consumption and makespan cannot be accurately evaluated due to uncertain activity durations. In response to this, a multi-objective mixed-integer linear programming (MILP) model is proposed to trade off makespan and total energy consumption with uncertainty. Then, the uncertainty level and reliability level are introduced to quantify uncertain activity durations. Finally, the MILP model is transformed into a robust counterpart model to obtain robust non-dominated solutions for small-scale instances. Additionally, a matheuristic-oriented multi-objective evolutionary algorithm is designed to address large-scale instances. Finally, extensive numerical experiments are conducted to validate the proposed model and algorithm. The experimental results demonstrate that the robust counterpart model can quickly obtain a set of robust non-dominated solutions for small-scale instances. The matheuristic local optimization approach can indeed rapidly improve the quality of robust non-dominated solutions. Furthermore, the matheuristic-oriented multi-objective evolutionary algorithm outperforms state-of-the-art algorithms in terms of several multi-objective evaluation indicators.},
+  archive      = {J_SWEVO},
+  author       = {Zheng Gao and Liping Zhang and Zikai Zhang and Zixiang Li and Yingli Li},
+  doi          = {10.1016/j.swevo.2025.102124},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102124},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A robust counterpart model and matheuristic-oriented evolutionary algorithm for evaluating energy consumption of project scheduling with uncertainty},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive hybrid response mechanism for dynamic multi-objective optimization and its application in multi-robot task allocation. <em>SWEVO</em>, <em>98</em>, 102123. (<a href='https://doi.org/10.1016/j.swevo.2025.102123'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The dynamic changes in task requirements and real-time fluctuations in robot states in multi-robot task allocation (MRTA) increase the complexity of algorithm design. This paper presents an Adaptive Multi-Objective Evolutionary Algorithm with Hybrid Response Mechanism (AMOEAD-HRM) for dynamic multi-objective MRTA, addressing environmental uncertainty through innovative mechanisms. AMOEAD-HRM proposes a GNG-based prediction response mechanism, leveraging Growing Neural Gas (GNG) networks to model the time-varying nature of tasks and robot states. Unlike fixed-architecture predictors, GNG captures data topological structures to construct adaptive predictive models, dynamically adjusting to fluctuations and uncertainties by iteratively optimizing network topology. This enables effective characterization of complex temporal patterns without prior distribution assumptions, providing a robust foundation for predicting dynamic changes. To enhance responsiveness, the algorithm integrates a memory-based response mechanism and a Gaussian polynomial mixture mutation strategy. A dynamic adaptive weight adjustment strategy selects optimal response mechanisms according to environmental variation degrees, balancing prediction accuracy and real-time adaptability to improve system robustness and flexibility. Experimental validation on 19 benchmark problems shows AMOEAD-HRM’s superiority. In dynamic scenarios, it responds 46.1% faster than DNSGA-II. Under high dynamics, its solution sets have 3.4% higher MHV than DNSGA-II. With moderate changes, MHV is 0.34% higher than SGEA.},
+  archive      = {J_SWEVO},
+  author       = {Tingting Dong and Peiwen Wang and Fei Xue and Yuge Geng and Zhihua Cui},
+  doi          = {10.1016/j.swevo.2025.102123},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102123},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Adaptive hybrid response mechanism for dynamic multi-objective optimization and its application in multi-robot task allocation},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic cooperative scheduling toward distributed and reconfigurable manufacturing via multi-agent deep reinforcement learning. <em>SWEVO</em>, <em>98</em>, 102122. (<a href='https://doi.org/10.1016/j.swevo.2025.102122'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Distributed production and reconfigurable manufacturing have become increasingly prevalent in globalized and customized manufacturing environments. In distributed production systems with dynamic events, deep reinforcement learning (DRL) has shown promise in achieving real-time and near-optimal scheduling due to its learning and generalization capabilities. However, two key challenges arise in solving the distributed reconfiguration scheduling problem using DRL: coordinating scheduling and reconfiguration processes, and managing reconfiguration decisions across heterogeneous workshops. To address these challenges, this study integrates multi-agent reinforcement learning (MARL) and DRL, forming a multi-agent DRL (MADRL) framework to enable real-time scheduling and dynamic coordination in distributed reconfigurable flowshops with dynamic job arrivals. The system architecture of intelligent scheduling and reconfiguration is proposed by designing training and execution processes for both DRL-based scheduling and MARL-based reconfiguration agents. In addition, intelligent reconfiguration and scheduling systems are modeled by designing novel rewards, action spaces, and state representations. A reconfiguration judgment mechanism is introduced to reduce unnecessary reconfigurations, ensuring effective coordination between scheduling and reconfiguration processes. Furthermore, the cooperative MARL paradigm is employed to train reconfiguration agents across heterogeneous workshops, enabling collaborative decision-making guided by a global joint reward. Extensive training and comparison experiments on 140 test instances demonstrate that the proposed MADRL algorithms significantly outperform four widely used DRL algorithms and three efficient meta-heuristics in terms of learning efficiency and solution quality. This study contributes to real-time and cooperative scheduling in distributed and reconfigurable manufacturing systems.},
+  archive      = {J_SWEVO},
+  author       = {Shengluo Yang and Zhigang Xu and Fangfang Zhang and Yi Mei and Quanke Pan and Mengjie Zhang},
+  doi          = {10.1016/j.swevo.2025.102122},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102122},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Dynamic cooperative scheduling toward distributed and reconfigurable manufacturing via multi-agent deep reinforcement learning},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Swarm intelligence optimization-based fusion of ConvMixer-enhanced deep neural networks for brain tumor detection. <em>SWEVO</em>, <em>98</em>, 102121. (<a href='https://doi.org/10.1016/j.swevo.2025.102121'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate identification of brain tumors is crucial for early diagnosis and the development of effective treatment strategies. Deep learning models and ensemble techniques have been widely used for brain tumor detection, though many existing methods rely on simple ensemble approaches without utilizing advanced optimization techniques. This study proposes SwarmFusionDNN, a novel ensemble approach for brain tumor detection based on a weighted average ensemble. Our method incorporates ConvMixer block into popular pre-trained models, including MobileNet, DenseNet121, MobileNetV2, and Xception, to enhance feature extraction from brain MRI scans. The ConvMixer blocks improve the models ability to capture spatial and channel-wise information, leading to enhanced tumor detection performance. To enhance the ensemble's performance, a Particle Swarm Optimization (PSO) algorithm based on swarm intelligence is utilized to optimize the weights assigned to each model. The objective function for the optimization process is the minimization of classifier error rate, which ensures that the ensemble achieves the best possible performance. By assigning appropriate weights to each model, SwarmFusionDNN effectively combines their individual predictions, resulting in improved overall accuracy and robustness. The effectiveness of the proposed SwarmFusionDNN was evaluated through comprehensive experiments on three widely recognized benchmark MRI datasets: Br35H dataset (3000 images across 2 classes), Figshare dataset (3064 images across 3 classes), and the Brain Cancer MRI dataset from Mendeley (6056 images across 3 classes). The experiments show that SwarmFusionDNN achieved 99.66 % accuracy on the Br35H dataset, 96.14 % accuracy on the Figshare dataset, and 98.22 % accuracy on the Brain Cancer MRI dataset from Mendeley, demonstrating its strong performance across all three MRI datasets. Furthermore, Grad-CAM visualization confirms that the model focuses on tumor regions, providing additional insights into its robustness and accuracy. SwarmFusionDNN outperforms individual models, state-of-the-art optimization algorithms, and traditional ensemble methods in accuracy, demonstrating its effectiveness in brain tumor detection. By integrating ConvMixer blocks, weighted averaging, and swarm intelligence-based optimization, it shows significant potential to enhance medical diagnosis and treatment strategies for brain tumor detection.},
+  archive      = {J_SWEVO},
+  author       = {Sohaib Asif and Rongbiao Ying and Enyu Wang},
+  doi          = {10.1016/j.swevo.2025.102121},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102121},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Swarm intelligence optimization-based fusion of ConvMixer-enhanced deep neural networks for brain tumor detection},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A constrained multi-objective evolutionary algorithm for multi-class instance selection. <em>SWEVO</em>, <em>98</em>, 102120. (<a href='https://doi.org/10.1016/j.swevo.2025.102120'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As a data processing technology, instance selection (IS) aims to select a small number of instances with the same (or even higher) classification capability. Due to its widely applications, many IS algorithms with promising performance have been suggested. Despite that, most of existing algorithms focus on designing new IS algorithms by using different optimizing techniques, and few of them consider the imbalance among different classes in multi-class IS. To address the problem, in this paper, a constrained optimization problem is firstly formulated for multi-class IS, where the “hard constraint” and the “soft constraint” are defined to model the multi-class IS problem more accurately. Then, to solve the constrained optimization problem, a multi-objective evolutionary algorithm termed as CMOEA-MIS is proposed, by which the instance subsets with high quality could be achieved. Specifically, in CMOEA-MIS, a constraint-based solution selection strategy is developed based on the dominance relationship that considers both constraint violation and the quality of solution, and is introduced to choose the individuals in the mating pool. In addition, a two-stage based mutation strategy is also suggested in CMOEA-MIS, by which the quality of the final obtained instance subsets is further improved. Experimental results on the multi-class datasets with different characteristics have demonstrated that CMOEA-MIS can obtain multi-class instance subsets with more than 50% reduction rate, and can ensure the accuracy of each class, and can be used to train the classifiers with comparable or better performance than the state-of-the-art IS algorithms.},
+  archive      = {J_SWEVO},
+  author       = {Qijun Wang and Yujie Ge and Lei Zhang and Fan Cheng},
+  doi          = {10.1016/j.swevo.2025.102120},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102120},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A constrained multi-objective evolutionary algorithm for multi-class instance selection},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Clustering mixed data using multi-objective bacterial colony optimization with diverse learning mechanisms. <em>SWEVO</em>, <em>98</em>, 102119. (<a href='https://doi.org/10.1016/j.swevo.2025.102119'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mixed datasets, which contain both numeric and categorical attributes, are common in real-world applications. However, most classical clustering techniques struggle to effectively handle such data owing to limitations in conventional similarity metrics and cluster center representation. Although various clustering algorithms have been proposed to improve similarity measures or cluster representation for mixed datasets, these algorithms often suffer from information loss or lack adaptability to new algorithms. To address this challenge, a multi-objective bacterial colony optimization algorithm with diverse learning mechanisms (DLMs) is proposed for clustering mixed datasets. DLMs, including multi-ranking and multi-probability learning mechanisms, are designed to process numeric and categorical attributes separately. Specifically, the numeric attributes are updated based on information from the top-ranked individuals in the external archive and neighbors. The categorical attributes are updated based on occurrence probability and a learning automata-based feedback probability. The proposed updating strategy ensures an effective cluster center representation, particularly for categorical cluster centers, making it readily adaptable to other clustering algorithms for mixed datasets. Furthermore, the proposed algorithm can be easily integrated with other evolutionary computation techniques involving mixed variables. Experimental results show that the proposed algorithm outperforms six representative algorithms in terms of validity indexes, nondominated solutions, clustering partition quality, and running time across most benchmark datasets. Additionally, on two real-world clustering problems, the proposed algorithm exhibits certain advantages in validity indexes, multi-objective performance evaluation indexes, and solution quality, indicating its practical capability to address real-world challenges.},
+  archive      = {J_SWEVO},
+  author       = {Chen Guo and Heng Tang and Ben Niu and Huifen Zhong},
+  doi          = {10.1016/j.swevo.2025.102119},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102119},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Clustering mixed data using multi-objective bacterial colony optimization with diverse learning mechanisms},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dual-metric guided multi-strategy hybrid optimization for feature selection on high-dimensional medical data. <em>SWEVO</em>, <em>98</em>, 102118. (<a href='https://doi.org/10.1016/j.swevo.2025.102118'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The high-dimensional feature selection (FS) problem is challenging in medical fields due to the “curse of dimensionality” and the intricate relationships among various features. Although hybrid FS methods achieve high-performance solutions according to various mutual information metrics, such as symmetrical uncertainty (SU) and maximal information coefficient (MIC), they often overlook the differences between these metrics, and are still need to improve search strategies to escape from local optima. To address these challenges, we propose a dual-metric guided multi-strategy hybrid FS method (DGM) for high-dimensional medical datasets. The importance of features are first evaluated based on the SU and MIC metrics, and then the redundancy between features are reduced by fast clustering and grouping strategies. Furthermore, a two-level sampling strategy is proposed to guarantee the diversity and complementarity of population by considering the Jaccard Similarity and the correlation between features. A novel set-based multi-population PSO is designed to collaboratively search the optimal feature subset while obtaining feature importance during the evaluation process by a tri-archive assisted evolution approach. Specifically, two local archives help individuals escape from local optima, while the global archive optimizes the population. Finally, we develop various squeeze-expand mechanisms to dynamically adjust both the search space and the length of individuals to effectively balance exploration and exploitation. The experimental results on 13 medical datasets show that DGM significantly improves classification performance while selecting fewer features. The T-test results further indicate that DGM significantly outperforms all comparison methods in classification performance on 10 datasets, highlighting its strong competitiveness.},
+  archive      = {J_SWEVO},
+  author       = {Yan Kang and Dongsheng Zheng and Haining Wang and Yue Peng and Shixuan Zhou},
+  doi          = {10.1016/j.swevo.2025.102118},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102118},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Dual-metric guided multi-strategy hybrid optimization for feature selection on high-dimensional medical data},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Automatic entity matcher combination for heterogeneous entity alignment via multi-chromosome genetic algorithm. <em>SWEVO</em>, <em>98</em>, 102117. (<a href='https://doi.org/10.1016/j.swevo.2025.102117'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ontology Matching (OM) plays a critical role in enabling seamless data interoperability and automated reasoning by discovering semantic correspondences between heterogeneous ontologies. Because no single Entity Matcher (EM) can fully capture lexical, structural, and semantic variations among diverse ontologies, aggregating multiple EMs is essential to achieve accurate matching results. To enhance the effectiveness and efficiency of OM, we propose a novel Multi-chromosome Genetic Algorithm (MGA), which includes three new components. First, a new multi-chromosome encoding mechanism is designed to simultaneously optimize aggregation weights and thresholds, thereby enhancing matching accuracy. Second, to improve search efficiency, a novel breeding crossover operator is developed to capture complex interrelations among multiple chromosomes within an individual. Finally, a multi-chromosome local search strategy is presented to refine elite solutions to further boost optimization performance. Extensive experiments conducted on the Ontology Alignment Evaluation Initiative (OAEI) Benchmark and Conference datasets demonstrate that MGA consistently outperforms state-of-the-art methods. Specifically, MGA achieves substantial improvements in f-measure scores, achieving an average f-measure of 0.87 on the Benchmark dataset and 0.70 on the Conference dataset, and outperforming the best matching methods by 2.5% and 3.8%, respectively, which confirms its robustness and effectiveness in matching heterogeneous ontologies.},
+  archive      = {J_SWEVO},
+  author       = {Chengsheng Chi and Xingsi Xue and Pei-Wei Tsai and Himanshu Dhumras and Guojun Mao},
+  doi          = {10.1016/j.swevo.2025.102117},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102117},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Automatic entity matcher combination for heterogeneous entity alignment via multi-chromosome genetic algorithm},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exploring module interactions in modular CMA-ES across problem classes. <em>SWEVO</em>, <em>98</em>, 102116. (<a href='https://doi.org/10.1016/j.swevo.2025.102116'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study presents an in-depth analysis of module importance within the modular CMA-ES (modCMA-ES) algorithm using exploratory data analysis and large-scale benchmarking across the BBOB suite. Rather than introducing new algorithms, our contribution lies in uncovering how individual modules and their interactions influence optimization performance across diverse black-box problem classes. We evaluate 324 modCMA-ES variants across 24 problem classes using functional ANOVA (f-ANOVA) to quantify the variance in performance attributable to individual, pairwise, and triplet module interactions. Results reveal substantial variation in module importance across problem classes and highlight strong alignment between module interaction patterns and high-level landscape features, particularly multi-modality. Further, we demonstrate that configuring only the most important modules — identified via f-ANOVA — achieves performance comparable to or better than the single-best solver, especially in high-dimensional settings. This analysis, conducted at both low (5D) and high (30D) dimensions, offers actionable insights into module interactions within the mod-CMA-ES framework.},
+  archive      = {J_SWEVO},
+  author       = {Ana Nikolikj and Tome Eftimov},
+  doi          = {10.1016/j.swevo.2025.102116},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102116},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Exploring module interactions in modular CMA-ES across problem classes},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Collaborative knowledge transfer-based multiobjective multitask particle swarm optimization. <em>SWEVO</em>, <em>98</em>, 102115. (<a href='https://doi.org/10.1016/j.swevo.2025.102115'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Evolutionary multitask optimization (EMTO) has been an emerging optimization paradigm to handle several different optimization problems in parallel by utilizing knowledge transfer. However, most existing EMTO algorithms focus only on facilitating knowledge transfer in the search space to deal with multiple optimization tasks, while ignoring the potential relationship problem in the objective space, which may lead to the degradation of knowledge transfer performance, especially for multiobjective EMTO. To address this problem, a collaborative knowledge transfer-based multiobjective multitask particle swarm optimization (CKT-MMPSO) is designed in this paper. First, a CKT-MMPSO scheme is introduced to comprehensively exploit the knowledge from different spaces to solve multiple optimization problems. Then, the knowledge transfer can be effectively implemented to improve the quality of solutions. Second, a bi-space knowledge reasoning method is developed to make full use of population distribution information in the search space and particle evolutionary information in the objective space. Then, the search space knowledge and the objective space knowledge can be acquired to assist in the knowledge transfer. Third, an information entropy-based collaborative knowledge transfer mechanism is designed to balance convergence and diversity. Then, knowledge transfer patterns can be adaptively performed in different evolutionary stages to generate promising solutions. Finally, CKT-MMPSO is applied to some benchmark problems to verify its effectiveness. Furthermore, compared with other state-of-the-art algorithms, several experiments demonstrate that CKT-MMPSO can achieve the desirable performance.},
+  archive      = {J_SWEVO},
+  author       = {Yushuang Wang and Zheng Liu and Honggui Han},
+  doi          = {10.1016/j.swevo.2025.102115},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102115},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Collaborative knowledge transfer-based multiobjective multitask particle swarm optimization},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic flexible job shop scheduling algorithm for multi-task collaborative optimization. <em>SWEVO</em>, <em>98</em>, 102114. (<a href='https://doi.org/10.1016/j.swevo.2025.102114'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Due to customer demand or market changes, production orders in intelligent manufacturing workshops become uncertain. Based on the above issues, an order detection framework is constructed to detect different types of order changes. Different dynamic response mechanisms are designed for different types of order changes. The scheduling of jobs in discrete manufacturing has composability, resulting in a huge search space. Previous research methods that used a single population to solve scheduling schemes could not fully explore the search space. Considering the characteristics of multitasking in job shop scheduling, this study designs an auxiliary task collaborative optimization algorithm (ATCOA) to solve the optimal rescheduling schemes. To escape from the situation of optimizing local optima in the main task, a knowledge transfer probability model based on the main task is adopted to determine population communication between tasks. A multitask knowledge transfer strategy is proposed for exchanging individual information between tasks to improve the diversity distribution ability of optimization algorithm. To evaluate the effectiveness of the ATCOA algorithm, it is compared with other algorithms on the constructed dynamic order test cases. In the case of order cancellation and insertion, ATCOA obtained 10 minimum inverted generation distance and maximum spread metric values and 9 hypervolume values, respectively. ATCOA has improved completion efficiency by 8.9% compared to scheduling rules. In engineering simulation cases, the ATCOA algorithm improved workload deviation by 41.9% compared to other algorithms. The experimental results show that the ATCOA algorithm is more efficient and stable than other algorithms.},
+  archive      = {J_SWEVO},
+  author       = {Zeyin Guo and Lixin Wei and Xin Li and Rui Fan},
+  doi          = {10.1016/j.swevo.2025.102114},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102114},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Dynamic flexible job shop scheduling algorithm for multi-task collaborative optimization},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Genetically-modified multi-population particle swarm optimization for workflow scheduling in cloud environment. <em>SWEVO</em>, <em>98</em>, 102113. (<a href='https://doi.org/10.1016/j.swevo.2025.102113'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As the dominant computing paradigm, cloud computing has become an ideal solution for processing large-scale computing applications, which are often decomposed into massive workflows. However, efficiently scheduling workflow tasks with complex dependencies and allocating appropriate virtual execution units on dynamically fluctuating resources remain significant challenges. Traditional heuristic algorithms often struggle to balance convergence speed and solution diversity when addressing such large-scale multi-objective optimization problems. In this paper, we propose a genetically-modified multi-population particle swarm optimization approach (GMPSO) for workflow scheduling in cloud environments, aiming to achieve a comprehensive optimization of makespan and energy consumption. GMPSO divides the swarm into fitness-based sub-populations and applies distinct genetic operators to each, combining the global search ability of genetic algorithms with the local refinement strength of particle swarm optimization. The (1) load-aware population initialization method, (2) differentiated multi-population search mechanism, and (3) adaptive genetic operator perturbation strategy significantly improve the search quality of GMPSO. We evaluate GMPSO on eight different scales of four types of workflows, and compare its performance with four state-of-the-art algorithms. Experimental results show that GMPSO achieves average improvements of 23.88% in inverted generational distance (IGD), 15.77% in hypervolume (HV) ratio , and 26.01% in spread, demonstrating the excellent overall performance in makespan-energy optimization.},
+  archive      = {J_SWEVO},
+  author       = {Peiying Zhang and Jingfei Gao and Lizhuang Tan and Kai Liu and Konstantin Igorevich Kostromitin and Neeraj Kumar},
+  doi          = {10.1016/j.swevo.2025.102113},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102113},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Genetically-modified multi-population particle swarm optimization for workflow scheduling in cloud environment},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DGS-EDA: A double-guided sampling estimation of distribution algorithm for multi-robot task assignment as a permutation optimization problem. <em>SWEVO</em>, <em>98</em>, 102112. (<a href='https://doi.org/10.1016/j.swevo.2025.102112'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Task assignment refers to the challenge of efficiently allocating tasks, duties, or resources among members of a system. This work investigates the multi-robot task assignment (MRTA) problem, modeled as a variation of the multiple traveling salesman problem (mTSP), and proposes novel approaches based on permutation optimization. An initial study evaluates state-of-the-art evolutionary algorithms (EAs), particularly focusing on estimation of distribution algorithms (EDAs), for their suitability in handling both A-permutation problems, where absolute positioning of the elements within the permutations mostly impact the quality of the solutions, like in the quadratic assignment problem (QAP); and R-permutation problems, where relative positioning dominates, like in the traveling salesman problem (TSP). The adaptation of these algorithms to B-permutation challenges, where both absolute and relative positioning are relevant, such as those presented by the mTSP, has received comparatively limited attention. In this work, addressing this gap led to the creation of a novel double-guided sampling estimation of distribution algorithm (DGS-EDA). The proposed methodologies strategically utilize adjacency relations and consecutive position sampling, guiding the search toward both the least and most observed edges and gene absolute positions to optimize solution paths. Their effectiveness is validated across both problem types; DGS-EDA ew improves mTSP results by targeting least observed edges, while DGS-EDA eb enhances TSP outcomes by focusing on the most observed edges. Comprehensive testing using TSPLIB instances demonstrates that the proposed DGS-EDA surpasses existing methods, effectively enhancing the exploration and exploitation of the solution space.},
+  archive      = {J_SWEVO},
+  author       = {Blanca López and Luis Moreno and Concepción A. Monje},
+  doi          = {10.1016/j.swevo.2025.102112},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102112},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {DGS-EDA: A double-guided sampling estimation of distribution algorithm for multi-robot task assignment as a permutation optimization problem},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A knowledge transfer-based strategy for constrained multiobjective optimization. <em>SWEVO</em>, <em>98</em>, 102111. (<a href='https://doi.org/10.1016/j.swevo.2025.102111'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The complex constraints in constrained multiobjective optimization problems may cause the Pareto front to be distributed on disconnected feasible boundaries. Most existing evolutionary algorithms encounter challenges in obtaining the entire Pareto front due to inappropriate cooperation between the populations. The ideology of knowledge transfer provides inspiration for addressing complex optimization problems. Based on this, this paper proposes a knowledge transfer-based coevolutionary algorithm, which adopts the idea of divide-and-conquer and two combined into one. The algorithm derives the original constrained multiobjective optimization problem into two problems, both of which share the same optimization objective but follow distinct search trajectories. Specifically, one problem focuses on global search, while the other emphasizes local search. A knowledge transfer strategy is proposed to achieve the exchange of complementary information between these two problems in the evolutionary directions. This strategy assists in solving the derived problem by transferring promising individuals that remain undiscovered in the search trajectories. The optimal solution of the original constrained multiobjective optimization problem is obtained. Experiments conducted on 56 benchmark problems show superior or competitive performance compared with 11 state-of-the-art algorithms.},
+  archive      = {J_SWEVO},
+  author       = {Shaoning Liu and Jian Feng and Shengxiang Yang and Jun Zheng and Yu Yao},
+  doi          = {10.1016/j.swevo.2025.102111},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102111},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A knowledge transfer-based strategy for constrained multiobjective optimization},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Parallel genetic algorithms on hybrid servers: Design, implementation, and optimization for performance and energy. <em>SWEVO</em>, <em>98</em>, 102110. (<a href='https://doi.org/10.1016/j.swevo.2025.102110'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Parallel Genetic Algorithms (PGAs) have been widely applied to accelerate solutions for real-world problems such as energy optimization in building constructions, data preprocessing and model selection steps in data mining, real-time control of multilevel inverters in electronics, land-use planning, nanoscience, optimal power flow in power systems, and road traffic management. The state-of-the-art research proposes PGAs optimized solely for performance and for solving optimization problems on a multicore CPU, GPU, or clusters of multicore CPUs. However, no research has analyzed PGAs for heterogeneous hybrid platforms comprising multicore CPUs and multiple accelerators that utilize all computing devices in parallel. Furthermore, no definitive comparative research comprehensively investigates the energy consumption of PGAs in hybrid systems versus multicore CPUs or GPUs. We address the above gaps in the prior art in this work. First, we present a novel parallelization approach (HPIGA) tailored for heterogeneous hybrid platforms, featuring a portable implementation that utilizes all available computational devices, including multicore CPUs and GPUs. We conduct a comprehensive investigation into the performance and energy profiles of this approach. We compare it with three other traditional parallel approaches across a range of dimensions, varying from 100 dimensions and up to 5000 dimensions. The results showed HPIGA’s competitive energy consumption behavior and promising performance compared to other traditional approaches under the study. Moreover, we formulate a bi-objective optimization problem of a PGA employing a parallel island model and executing on a hybrid server comprising p compute devices. The problem has two objectives: performance and energy. The decision variable used in our bi-objective optimization problem is workload distribution, which is proportional to the number of islands. We study the efficacy of our proposed PGA on a hybrid server platform with an Intel Icelake multicore CPU and two Nvidia A40 GPUs, analyzing execution time and dynamic energy profiles under two power governors. The resulting Pareto front graphs provide valuable insights, serving as crucial benchmarks for the future development and use of efficient, energy-aware optimization techniques across diverse computational devices.},
+  archive      = {J_SWEVO},
+  author       = {Amr Abdelhafez and Ravi Reddy Manumachu and Alexey Lastovetsky},
+  doi          = {10.1016/j.swevo.2025.102110},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102110},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Parallel genetic algorithms on hybrid servers: Design, implementation, and optimization for performance and energy},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic integrated optimization of batching and routing in narrow-aisle order picking systems with congestion consideration. <em>SWEVO</em>, <em>98</em>, 102109. (<a href='https://doi.org/10.1016/j.swevo.2025.102109'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The e-commerce industry has driven logistics centers to process massive and time sensitive orders more efficiently and effectively. However, the high land and construction costs have forced the warehouse to adopt a narrow channel layout to increase its capacity, which in turn has caused congestion and further reduced its operational efficiency. Therefore, how to carry out optimization of order batching and picking paths in narrow channels to avoid channel congestion and pursue a lowest total cost has become the problem that this article aims to solve. This article develops a Markov decision process model to address the online order multi-period picking planning optimization challenge, and proposes the Genetic Algorithm-Ratliff Rosenthal-Time Weighted Similarity (GA-RR-MTWS) algorithm which innovatively integrates congestion considerations into the optimization process. A myopic cost function approximation strategy is introduced aiming at minimizing the total cost of a whole working day. Comparative experimental analysis demonstrates the modified cost function GA-RR-MTWS's superior performance in reducing total picking cost and congestion, particularly in complex, multi-aisle environments with multiple pickers. The method's ability to manage congestion and optimize routing significantly improves overall warehouse efficiency.},
+  archive      = {J_SWEVO},
+  author       = {Yanghua Pan and Shanshan Li and Ting Qu and Liqiang Ding and Naiqi Wu and George Q. Huang},
+  doi          = {10.1016/j.swevo.2025.102109},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102109},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Dynamic integrated optimization of batching and routing in narrow-aisle order picking systems with congestion consideration},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A multi-objective metaheuristic approach for generating cell type marker panels from single-cell transcriptomics. <em>SWEVO</em>, <em>98</em>, 102108. (<a href='https://doi.org/10.1016/j.swevo.2025.102108'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rise of single-cell RNA sequencing (scRNA-seq) technologies has significantly advanced our understanding of cellular processes by providing insights into gene expression at the single-cell level. However, due to the heterogeneity of cells within a biological sample, the generation of specific marker panels for populations of interest is critical for downstream analysis in isolation, particularly in rare cell populations. In this context, addressing the problem from a multi-objective optimization perspective is essential for generating cell type marker panels that simultaneously minimize the number of markers required and maximize the panel’s isolation power. We propose a multi-objective metaheuristic approach called scMOCTYM (single-cell Multi-Objective approach for Cell TYpe Markers) for generating cell type marker panels from single-cell transcriptomic data. This approach integrates various algorithmic strategies, including variable neighborhood search, intelligent evolutionary operators, and a tabu list, to enhance the optimization process. The performance of scMOCTYM is evaluated across 34 distinct biological scenarios from real scRNA-seq datasets and compared against seven state-of-the-art methods, consistently outperforming all of them. The multi-objective assessment of scMOCTYM highlights the attainment of statistically significant improvements of up to 77.3% in terms of hypervolume and set coverage values of 100% against competing methods in 97.5% of the comparisons. Furthermore, an analysis of the markers composing the panels generated by scMOCTYM manifests its ability to identify biologically relevant genes within complex transcriptomic landscapes. Thus, scMOCTYM effectively generates high-quality marker panels for isolating target cell types, evaluated from both multi-objective and biological perspectives.},
+  archive      = {J_SWEVO},
+  author       = {Fernando M. Rodríguez-Bejarano and Sergio Santander-Jiménez and Miguel A. Vega-Rodríguez},
+  doi          = {10.1016/j.swevo.2025.102108},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102108},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A multi-objective metaheuristic approach for generating cell type marker panels from single-cell transcriptomics},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Knowledge-assisted evolutionary task scheduling for hierarchical multiagent systems with transferable surrogates. <em>SWEVO</em>, <em>98</em>, 102107. (<a href='https://doi.org/10.1016/j.swevo.2025.102107'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Task scheduling is a primary step of a hierarchical multiagent system (HMAS) before solving tasks, presenting significant challenges due to its NP-hard complexity and variable-size decision space with different numbers of decision variables. This variability arises because a key decision is determining the number of agents to deploy, which directly affects the dimension of the decision vector. Evolutionary algorithms (EAs) have been widely adopted in addressing the task scheduling problem for HMAS due to their ability to solve NP-hard problems. However, applying conventional fixed-length EAs to such problems often necessitates techniques like expanding the decision space, which negatively impacts search efficiency. Meanwhile, the evaluations of the candidate solutions need physics-based simulations with complex dynamics, which require high computational costs. To solve the HMAS task scheduling problem efficiently, our approach leverages domain knowledge by a genetic programming framework alongside a knowledge-data dual-driven surrogate, which avoids searching in expanded decision spaces and facilitates low-cost evaluation. Notably, the proposed surrogate model can be easily transferred among different task settings, further decreasing the computational load in deploying the HMAS in real-world applications. The effectiveness of the proposed algorithm is validated through extensive simulations on an unmanned ground vehicle/unmanned aerial vehicle (UGV/UAV) cooperation system, showcasing superior efficiency and efficacy. Moreover, the proposed algorithm is also validated in a real-world multi-robot system, further demonstrating the efficacy and efficiency of the method, as well as the transferability of the proposed surrogate model.},
+  archive      = {J_SWEVO},
+  author       = {Tonghao Wang and Xingguang Peng and Xiaokang Lei and Handing Wang and Yaochu Jin},
+  doi          = {10.1016/j.swevo.2025.102107},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102107},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Knowledge-assisted evolutionary task scheduling for hierarchical multiagent systems with transferable surrogates},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Data-driven control law optimization via kriging surrogate model with adaptive domain reconstruction. <em>SWEVO</em>, <em>98</em>, 102106. (<a href='https://doi.org/10.1016/j.swevo.2025.102106'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data-driven control parameter design methods rely on an appropriate initial design domain, which is challenging to define for complex systems with poorly understood dynamics. This reliance creates a dilemma: overly large domains risk instability and high computational costs, while conservative domains may exclude global optimal solutions. To address this issue, a new data-driven control law design method is proposed, combining Kriging surrogate optimization with a dual-mode design domain adaptive reconstruction (DAR) strategy. Taking Active Disturbance Rejection Control (ADRC) as an example, a data-driven Kriging surrogate-based design framework is constructed with control parameters as inputs and control performance index as output. The proposed method dynamically relocates and resizes the search space through stability-constrained boundary adjustments, eliminating dependence on empirical domain settings. Experimental validation on several numerical benchmark problems and two control system applications reveals that the proposed method offers enhanced optimization efficiency and superior global convergence. Its robust adaptability to diverse extreme initial domains effectively lowers the barriers to engineering applications of control law design. This work provides a new reference for future control system design with high-dimensional nonlinear dynamics by bridging the gap between data-driven exploration and deterministic control approaches.},
+  archive      = {J_SWEVO},
+  author       = {Xinhan Hu and Wenya Zhou and Xiaoming Wang and Zongyu Zhang and Xing Chen and Tianao Zhang},
+  doi          = {10.1016/j.swevo.2025.102106},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102106},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Data-driven control law optimization via kriging surrogate model with adaptive domain reconstruction},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A review of static and dynamic charging in electric vehicle routing: Transition, algorithms and future directions. <em>SWEVO</em>, <em>98</em>, 102105. (<a href='https://doi.org/10.1016/j.swevo.2025.102105'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Electric vehicles (EVs) have significant potential to reduce emissions and revolutionise transportation. This paper provides the first comprehensive review of Electric Vehicle Routing Problems (EVRPs) explicitly emphasising dynamic charging (DC-EVRP) methodologies, contrasting with conventional static charging (SC-EVRP). By systematically analysing 140 studies, we identify critical transitions from static to dynamic charging paradigms, highlighting dynamic wireless and overhead catenary systems that enable continuous vehicle operation, reduced battery capacity needs, and enhanced operational flexibility. From an algorithmic perspective, this review rigorously analyses heuristic, meta-heuristic, and deep reinforcement learning (DRL) methods employed across EVRP variants. While classical algorithms have been extensively developed for SC-EVRP, their adaptation to DC-EVRP remains limited, presenting unique challenges in real-time decision-making and energy management. Conversely, DRL and data-driven approaches show promise for integrating traffic, grid, and vehicle states, but remain under-explored in large-scale, dynamic charging contexts. To bridge existing research gaps, we propose future directions, including the design of resilient hybrid-charging strategies, the development of unified digital frameworks and benchmark datasets, and the advancement of transferable DRL/GNN models tailored to the complexities of DC-EVRP. By combining algorithmic innovation with integrated dynamic charging infrastructure, this review outlines a pathway for advancing EVRP solutions towards scalable, sustainable, and system-wide intelligent electric mobility.},
+  archive      = {J_SWEVO},
+  author       = {Yunlong Wang and Minh Kieu and Avishai (Avi) Ceder and Prakash Ranjitkar},
+  doi          = {10.1016/j.swevo.2025.102105},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102105},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A review of static and dynamic charging in electric vehicle routing: Transition, algorithms and future directions},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reinforcement learning-based particle swarm optimization with adaptive scoring mechanism for high-dimensional feature selection. <em>SWEVO</em>, <em>98</em>, 102104. (<a href='https://doi.org/10.1016/j.swevo.2025.102104'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Feature selection (FS) serves as a crucial preprocessing step in machine learning and data mining applications. Nevertheless, with the ever-increasing dimensionality of modern datasets, most FS methods based on evolutionary computation (EC) tend to be insufficient, primarily due to the enormous search space and intricate interdependencies among features in high-dimensional ( > 1000D) settings. To address this challenge, a reinforcement learning-based particle swarm optimization with an adaptive scoring mechanism (RLPSO-ASM) is proposed in this paper. Firstly, an adaptive scoring mechanism that synergistically integrates symmetrical uncertainty and ReliefF methods is proposed to identify key features, which can contribute to eliminating redundant or low-correlation attributes. Secondly, an elite crossing-based hybrid initialization method (EC-HIM) is proposed to achieve a population with diversity. In EC-HIM, by taking advantage of the complementary nature of random and chaotic initialization strategies, the elite particle-guided crossover operations are systematically carried out to obtain superior initial particles. Finally, a reinforcement learning-driven learning framework is designed to enhance the exploration capability of population. Our experimental evaluation compares RLPSO-ASM against 7 state-of-the-art feature selection methods across 18 high-dimensional datasets. Results demonstrate that RLPSO-ASM achieves superior classification accuracy with more compact feature subsets, outperforming competitors on 17 of 18 datasets.},
+  archive      = {J_SWEVO},
+  author       = {Bo Wei and Jiangyi Huang and Li Deng and Shanshan Yang and Junbao Zheng and Yanrong Huang},
+  doi          = {10.1016/j.swevo.2025.102104},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102104},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Reinforcement learning-based particle swarm optimization with adaptive scoring mechanism for high-dimensional feature selection},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A manifold prediction strategy for evolutionary dynamic multiobjective optimization. <em>SWEVO</em>, <em>98</em>, 102103. (<a href='https://doi.org/10.1016/j.swevo.2025.102103'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Prediction-based evolutionary algorithms have shown impressive effectiveness in solving dynamic multiobjective optimization problems (DMOPs). Typically, these algorithms utilize the historical information of specific representative points, such as center and knee points, to predict the moving trend of the Pareto-optimal set (PS). However, the changing pattern of PS may be inconsistent with that of the representative points, potentially leading to inaccurate prediction of the new PS. Manifold learning captures the overall distribution of PS. Therefore, the changing trend of the manifold reflects the changing pattern of PS. This work introduces a manifold prediction strategy (MPS) for evolutionary dynamic multiobjective optimization algorithms. The MPS predicts the manifold of the PS in a new environment based on the trend observed in historical PSs. Specifically, the Local Principal Component Analysis (LPCA) algorithm is enhanced to learn the manifolds of historical PSs. Using these learned manifolds, MPS estimates the manifold of the PS in the new environment with a linear prediction model. Recognizing that the accuracy of manifold learning results will affect the accuracy of manifold prediction, two methods are proposed to improve the learning results. These methods focus on determining an appropriate number of local manifolds and reducing the randomness during the modeling process. The proposed MPS is tested and compared with several state-of-the-art dynamic multiobjective evolutionary algorithms on various benchmark test instances. Experimental results indicate that MPS outperforms other algorithms on most instances.},
+  archive      = {J_SWEVO},
+  author       = {Huaqiang Xu and Zhen Xu and Yumeng Wang and Lijun Li and Yuefeng Zhao and Jingjing Wang},
+  doi          = {10.1016/j.swevo.2025.102103},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102103},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A manifold prediction strategy for evolutionary dynamic multiobjective optimization},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A tree neural network deep reinforcement learning for flexible job shop scheduling with transportation constraints. <em>SWEVO</em>, <em>98</em>, 102102. (<a href='https://doi.org/10.1016/j.swevo.2025.102102'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Flexible Job Shop Scheduling Problem with Transportation Constraints (FJSP-T) is critical for improving productivity in flexible manufacturing systems, particularly when automated guided vehicles (AGVs) are involved. This study focuses on minimizing the makespan by formulating the FJSP-T as a mixed-integer linear programming (MILP) model with explicitly defined constraints and objective functions. To solve large-scale instances efficiently, the problem is further modeled as a Markov Decision Process (MDP), where an agent sequentially selects operations, assigns machines, and allocates AGVs based on the current production state. A key contribution of this work is the development of a novel tree-based deep reinforcement learning algorithm, Hierarchical Scheduling and Transportation Tree (HSTT). Built on the dual deep Q-network (DDQN) framework, HSTT leverages the hierarchical structure of scheduling decisions to reduce encoding complexity and improve learning efficiency. Additionally, a local attention mechanism is integrated into the tree search process to constrain the decision space and enhance policy accuracy. Experimental results on benchmark datasets demonstrate that HSTT significantly outperforms traditional dispatching rules, metaheuristic methods, and existing deep reinforcement learning approaches in terms of makespan, runtime, and generalization performance.},
+  archive      = {J_SWEVO},
+  author       = {Yadian Geng and Ning Zhao},
+  doi          = {10.1016/j.swevo.2025.102102},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102102},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A tree neural network deep reinforcement learning for flexible job shop scheduling with transportation constraints},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Discrete optimization algorithms for distributed bi-agent flowshop scheduling with release dates. <em>SWEVO</em>, <em>98</em>, 102101. (<a href='https://doi.org/10.1016/j.swevo.2025.102101'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The globalization of production has accelerated the growth of contract manufacturing, as brand firms increasingly outsource production to specialized manufacturers to reduce costs and improve efficiency. To meet rising production demands, contract manufacturers establish production facilities across global regions, leveraging localized advantages in labor costs, raw material access, and logistics infrastructure. Contract manufacturers in distributed assembly-line systems face the critical challenge of dynamically coordinating order allocation across decentralized facilities to satisfy multi-client requirements. This study introduces a distributed bi-agent permutation flowshop scheduling for minimizing the makespans of both agents while considering release dates to simulate real-world production scenarios. An exact branch-and-bound algorithm is proposed for optimizing the weighted sum of two objectives. A novel Q-learning-based artificial bee colony algorithm is presented to construct high-quality Pareto frontiers for the bi-objective optimization problem. The effectiveness of the proposed algorithms is validated through a comprehensive set of numerical experiments.},
+  archive      = {J_SWEVO},
+  author       = {Danyu Bai and Wenjia Zheng and Chenbo Zang and Jie Yang and Chin-Chia Wu and Hu Qin},
+  doi          = {10.1016/j.swevo.2025.102101},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102101},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Discrete optimization algorithms for distributed bi-agent flowshop scheduling with release dates},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dimensional window method: A plug-in-style large-scale handling technique for evolutionary algorithm. <em>SWEVO</em>, <em>98</em>, 102100. (<a href='https://doi.org/10.1016/j.swevo.2025.102100'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large-scale optimization constitutes a pivotal characteristic of numerous real-world problems, where large-scale evolutionary algorithms emerge as a potent instrument for addressing such intricacies. However, existing methods are typically tailored to address only a particular class of problems and lack the versatility to be readily adapted to other evolutionary algorithms or generalized across diverse problem domains. To address the issue above, this paper proposes the dimensional window method, a simple yet effective enhancement that can be seamlessly integrated into low-dimensional evolutionary algorithms to bolster their performance in large-scale optimization. Specifically, the dimensional window method involves grouping a subset of randomly selected dimensions into a window during each iteration, restricting the population’s evolution to the dimensions within this window. Furthermore, the effectiveness of the dimensional window method is analyzed, and the window is improved based on the insights gained, including the isometric segmentation individual-level window length and the neural network-guided window element. Extensive experiments on single-objective, multi-objective, constrained multi-objective, and discrete test problems with large-scale attributes demonstrate that the proposed method significantly mitigates the curse of dimensionality and enhances the performance of evolutionary algorithms in large-scale settings. A more significant advantage lies in the fact that the proposed plug-ins not only demonstrate remarkable performance when tackling real-world challenges, such as ratio error estimation problems, but also offer easily integration into existing evolutionary algorithm platforms, all while being highly user-friendly for evolutionary algorithm users.},
+  archive      = {J_SWEVO},
+  author       = {Yafeng Sun and Xingwang Wang and Junhong Huang and Bo Sun and Peng Liang},
+  doi          = {10.1016/j.swevo.2025.102100},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102100},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Dimensional window method: A plug-in-style large-scale handling technique for evolutionary algorithm},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An adaptive hybrid MEMD-transformer-BiGRU model using MPA algorithm for air quality prediction. <em>SWEVO</em>, <em>98</em>, 102099. (<a href='https://doi.org/10.1016/j.swevo.2025.102099'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate air quality prediction is usually difficult to achieve because of multiple influencing factors, complex interrelationships and multi-scale processing behaviors. In this study, an adaptive hybrid modelling framework was proposed, which combines Multivariate Empirical Mode Decomposition (MEMD), and Transformer-Bidirectional Gated Recurrent Unit (BiGRU) architectures optimized by the Marine Predators (MPA) Algorithm. Firstly, a multi-dimensional feature matrix is constructed considering the multiple input variables such as various pollutants, meteorological factors and air quality indices (AQI). And the MEMD method is used for the matrix decomposition and nonlinear coupling features effective extraction, which could reveal deep coupling relationships and spatiotemporal variation patterns from the multi-source heterogeneous data and the Intrinsic Mode Functions (IMFs) could be obtained. Subsequently, a heterogeneous prediction model combining Transformer and BiGRU networks is designed to capture the overall trends and features of the IMFs. In which, the MPA is utilized for the parameters optimization and an adaptive BiGRU network is employed for the weights dynamical adjusting to emphasize the relative importance of each IMF over time. Finally, the experiments were given and analyzed with the air quality datasets in Beijing,Tianjin and Shijiazhuang. The results demonstrated that the proposed hybrid model exhibits remarkable efficacy in features extraction, with a root mean square error (RMSE) of 3.1175, mean absolute percentage error (MAPE) of 1.8731 %, and mean absolute error (MAE) of 2.0258, outperforming other comparative models in all comprehensive metrics. Consequently, this hybrid model can effectively improve prediction accuracy and better capture important characteristic information with meteorological factors.},
+  archive      = {J_SWEVO},
+  author       = {Yong Zhang and Wentao Cheng and Jie Sun and Li Wang and Shurui Fan and Jingyu Zhang and Shuhao Jiang},
+  doi          = {10.1016/j.swevo.2025.102099},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102099},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {An adaptive hybrid MEMD-transformer-BiGRU model using MPA algorithm for air quality prediction},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Heterogeneous sensor integration through co-evolutionary genetic programming with multiple individual representations. <em>SWEVO</em>, <em>98</em>, 102098. (<a href='https://doi.org/10.1016/j.swevo.2025.102098'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Efficient integration of heterogeneous sensors is essential for optimizing complex sensor systems, however, variations in sensor types, data formats, and measurement units create significant challenges for seamless data integration and interoperability. Similarity Features (SFs) are commonly used to quantify relationships across diverse sensor data, yet no single SF is universally effective due to the inherent complexity of sensor data. Thus, combining multiple SFs is necessary for accurate integration. Although Genetic Programming (GP) offers a powerful solution for constructing SF combinations, it often encounters difficulties with the complex interactions in heterogeneous data, leading to local optima. To overcome these challenges, this paper introduces Co-Evolutionary Genetic Programming with Multiple Individual Representations (CEGP-MIR), which combines tree-based and linear GP representations to enhance the search and optimization process through dynamic population interaction. This approach includes a novel interaction mechanism for adaptive cooperation between representations and new crossover operators to prevent stagnation in local optima. Experiments use OAEI’s Benchmark, Conference datasets and ten real-world sensor datasets to test the performance of CEGP-MIR. Results demonstrate that the designed CEGP-MIR enhances sensor entity alignment and improves overall efficiency in heterogeneous sensor data integration.},
+  archive      = {J_SWEVO},
+  author       = {Xingsi Xue and Jerry Chun-Wei Lin},
+  doi          = {10.1016/j.swevo.2025.102098},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102098},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Heterogeneous sensor integration through co-evolutionary genetic programming with multiple individual representations},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Elite knowledge transfer within lower-level searches for bilevel optimization. <em>SWEVO</em>, <em>98</em>, 102097. (<a href='https://doi.org/10.1016/j.swevo.2025.102097'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Bilevel optimization problems pose significant challenges for evolutionary algorithms (EAs) due to their nested structure. This paper introduces an efficient evolutionary bilevel algorithm that leverages elite knowledge transfer to tackle these challenges. Firstly, this paper employs a biobjective source selection strategy to balance convergence quality with relevance to the target lower-level problem. Building on this, a multi-source elite knowledge transfer mechanism constructs an elite Gaussian distribution model from source lower-level solutions, facilitating efficient parameterized knowledge transfer to accelerate the optimization of the target lower-level problem. Additionally, an adaptive strategy for reducing the lower-level population size further enhances algorithmic efficiency. Evaluated on benchmark test suites and real-world problems, the proposed algorithm demonstrates superior efficiency and accuracy compared to state-of-the-art bilevel optimization algorithms, underscoring the effectiveness of the elite knowledge transfer and adaptive reduction strategies. The source code for EKTBO has been publicly released at the following link: https://github.com/tg980515/EKTBO},
+  archive      = {J_SWEVO},
+  author       = {Yutao Lai and Hai-Lin Liu and Yukai Xu and Lei Chen},
+  doi          = {10.1016/j.swevo.2025.102097},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102097},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Elite knowledge transfer within lower-level searches for bilevel optimization},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-objective dynamic economic emission dispatch considering the risk of wind power-electric vehicle interaction using teaching-learning-based optimization algorithm. <em>SWEVO</em>, <em>98</em>, 102096. (<a href='https://doi.org/10.1016/j.swevo.2025.102096'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As the traditional energy systems dominated by fossil fuels transform into renewable energy, more and more renewable energy, such as wind power, are being integrated into the power system. However, due to the strong randomness of wind power, it will extremely affect the security of the power grid. Electric vehicles (EVs) can mitigate the instability of wind power through their energy storage capabilities, but the charging/discharging behavior of large-scale EVs is intensely unstable. Therefore, to assess the uncertainty of the interaction between wind power and EV (IWEv), a dynamic economic emission dispatch (DEED) model based on the conditional value at risk (CVaR) of IWEv (DEED R-IWEv ) is proposed considering the pollution emission, fuel cost and the system operation risk. Besides, some practical constraints such as the power balance, the residual power of the EVs, travel constraints for EVs owners, charging and discharging power, and climbing rate are included in DEED R-IWEv . To obtain a satisfactory dispatching solution, a self-adaptive multi-mode teaching-learning-based optimization (SaMmTLBO) algorithm is proposed. In SaMmTLBO, the teaching factors in the teacher phase is improved to enhance the diversity, and then a parameter self-adaptive mechanism and multi-model learning are developed in learn phase to increase the efficiency. Finally, the feasibility and effectiveness of the proposed model and algorithm are validated on a 10-unit system.},
+  archive      = {J_SWEVO},
+  author       = {Baihao Qiao and Ziru Feng and Zhengyu Zhu and Li Yan and Boyang Qu and Xuzhao Chai and Jiajia Huan},
+  doi          = {10.1016/j.swevo.2025.102096},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102096},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Multi-objective dynamic economic emission dispatch considering the risk of wind power-electric vehicle interaction using teaching-learning-based optimization algorithm},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A dynamic evolution of graph structure-based algorithm for multi-modal multi-objective optimization. <em>SWEVO</em>, <em>98</em>, 102095. (<a href='https://doi.org/10.1016/j.swevo.2025.102095'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the field of multi-modal multi-objective optimization problems (MMOPs), the challenge lies in simultaneously identifying multiple Pareto-optimal solution sets within the decision space and accurately locating the Pareto front in the objective space. Therefore, it is particularly important to develop a method that can effectively represent and utilize the complex relationships and dependencies between variables. Considering that graph structures have unique advantages in capturing complex relationships and dependencies, it is necessary to explore graph-theoretic methods to solve the problem. Inspired by this, a dynamic evolution of graph structure-based algorithm is proposed in this paper. Specifically, a historical data-driven graph generation strategy is proposed to construct the initial population as graph-structured data. Then, the node2vec strategy is applied to perform random walks based on the weights on the edges, avoiding repeating the same mistakes in the search process, to enable more rapid and effective population evolution on the graph. Furthermore, a dynamic modal-labeling mechanism based on an adaptive density-based spatial clustering of applications with noise of the graph structure is proposed to prevent the mixing of information from different modalities while enabling the timely detection and optimization of initially unrecognized modalities. Moreover, a dynamic link node prediction mechanism is proposed to update the graph structure, enabling the network to adapt to changes in the data. Experiments on 28 MMOPs and the multiline distance minimization problem demonstrate that the proposed algorithm performs better than seven state-of-the-art representatives, including 22 MMOPs in CEC2020 and 6 MMMOPs.},
+  archive      = {J_SWEVO},
+  author       = {Pengguo Yan and Ye Tian and Yu Liu},
+  doi          = {10.1016/j.swevo.2025.102095},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102095},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A dynamic evolution of graph structure-based algorithm for multi-modal multi-objective optimization},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deep crossover schemes for genetic algorithms: Investigations on the travel salesman problem. <em>SWEVO</em>, <em>98</em>, 102094. (<a href='https://doi.org/10.1016/j.swevo.2025.102094'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For over fifty years, evolutionary algorithms have been pivotal in solving diverse optimization problems across numerous domains. Among these, Genetic Algorithms (GAs) stand out for their adaptability and performance. The core operators of GAs are selection, crossover, and mutation, with crossover primarily responsible for gene inheritance. Traditionally, crossover is applied only once per parent pair, which may not adequately ensure the inheritance of good genes and can lead to undesirable gene propagation. Hence, applying the crossover many times starting from a single pair of parents could allow the search process to go deeper in the exploitation phase; thereby, increasing the probability of finding good genes. This paper challenges this limitation by proposing five novel deep crossover schemes for GAs: (1) In-Breadth, (2) In-Depth, and (3) Mixed-Breadth–Depth (MBD) with three variants. These schemes apply multiple crossover operations per parent pair, enabling a deeper search for high-quality genes, enhancing both exploration and exploitation capabilities. We integrate these schemes into the canonical GA and investigate their performance through two set of comparisons against the baseline GA and two state-of-the-art algorithms on multiple Traveling Salesman Problem (TSP) instances of varying sizes. Comparative analyses reveal that all the proposed GAs based deep crossover schemes outperform the canonical GA, while the GA-MBD (Fittest Historical Levels, Fittest All) succeeds to obtain the best performance when compared against the other peer approaches based on the Gap metric. Such results could encourage researchers to open the door towards a new field of computational intelligence coined as “Deep Evolutionary Computation”.},
+  archive      = {J_SWEVO},
+  author       = {Hana Derouiche and Maha Elarbi and Slim Bechikh},
+  doi          = {10.1016/j.swevo.2025.102094},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102094},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Deep crossover schemes for genetic algorithms: Investigations on the travel salesman problem},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient three-stage surrogate-assisted differential evolution for expensive optimization problems. <em>SWEVO</em>, <em>98</em>, 102093. (<a href='https://doi.org/10.1016/j.swevo.2025.102093'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Surrogate-assisted evolutionary algorithms (SAEAs) have received significant acclaim for dealing with intricate and computationally demanding optimization problems. However, a prevalent challenge in many existing algorithms lies in their relatively sluggish convergence in the later stages of optimization. This study introduces an innovative three-stage surrogate-assisted differential evolution (DE) approach that adeptly addresses the demands of early exploration and subsequent exploitation by employing distinct mutation operators and surrogate models. In the initial stage, a combination of radial basis function and multi-dimensional Lipschitz function-assisted DE efficiently identifies a promising region within the complete decision space. After that, the subsequent stage employs a hybrid approach of local and global surrogate-assisted DE, renowned for its robust exploitation capabilities, to hasten the optimization process. This stage incorporates an on-the-fly update approach for both populations and surrogate models, utilizing a pre-set quantity of top-ranked individuals to facilitate updates. Additionally, a sampling technique based on a full-mutation operator is employed to incorporate the best genotypes in the population effectively. A surrogate-assisted local search operator is leveraged in the final stage to optimize the ultimate solution. This stage integrates a radial basis function-based local surrogate function and an interior-point method, enhancing sampling efficiency within the designated local region of interest. The efficacy of the three-stage framework and the proposed strategy is thoroughly validated through simulation experiments, empirical analyses, and ablation studies. Furthermore, we compare the proposed algorithm against other state-of-the-art surrogate-assisted evolutionary algorithms (SAEAs) on a diverse set of expensive benchmark functions and a real-world problem, demonstrating superior performance in terms of both robustness and effectiveness.},
+  archive      = {J_SWEVO},
+  author       = {Abhishek Kumar and Swagatam Das and Václav Snášel},
+  doi          = {10.1016/j.swevo.2025.102093},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102093},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Efficient three-stage surrogate-assisted differential evolution for expensive optimization problems},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An adaptive response algorithm based on dual-space detection for dynamic multiobjective optimization. <em>SWEVO</em>, <em>98</em>, 102092. (<a href='https://doi.org/10.1016/j.swevo.2025.102092'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Efficiently tracking the dynamically changing Pareto-optimal set (POS) or Pareto-optimal front (POF) is a core task in dynamic multiobjective optimization. Most dynamic multi-objective evolutionary algorithms (DMOEAs) implement dedicated response mechanisms to mitigate the impact of environmental changes. To address the critical yet underexplored impact of varying change severities in both the POS and the POF, we propose an adaptive response algorithm based on dual-space detection, named ARA-DMOEA. Our approach incorporates a dual-space change severity detection mechanism that quantifies POS and POF variations, dynamically classifying changes as minor or significant. Based on this real-time assessment, ARA-DMOEA adaptively activates tailored response strategies. Specifically, when significant changes are detected in either space, a Gated Recurrent Unit (GRU) prediction model generates high-quality initial populations by leveraging historical solution patterns. For minor POS changes, a Centroid-guided Differential Prediction (CDP) strategy exploits population shift trends to maintain solution diversity. For minor POF changes, a Random Solution Generation (RSG) strategy enhances diversity by expanding sampling ranges around predicted ideal and nadir points. By synergistically combining these strategies according to dual-space severity detection, ARA-DMOEA dynamically optimizes its response to environmental shifts. In comparison with six state-of-the-art algorithms on a series of dynamic multiobjective problems, ARA-DMOEA demonstrates superior adaptability to environmental changes while achieving better convergence and diversity.},
+  archive      = {J_SWEVO},
+  author       = {Xiaozhong Yu and Jinhua Zheng and Yaru Hu and Junwei Ou and Juan Zou},
+  doi          = {10.1016/j.swevo.2025.102092},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102092},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {An adaptive response algorithm based on dual-space detection for dynamic multiobjective optimization},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Simultaneous optimization for berth and quay crane scheduling in container terminals. <em>SWEVO</em>, <em>98</em>, 102091. (<a href='https://doi.org/10.1016/j.swevo.2025.102091'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rising growth of the global economy along with maritime trade prosperity highlight the resilience of this industry despite challenges. Seaports, as prominent hubs of the international supply chain, handle approximately 80 % of global freight volume which necessitates the efficient planning and scheduling of operations. This study addresses the functional and deep integrated planning of the berth allocation problem (BAP), quay crane assignment problem (QCAP), and quay crane scheduling problem (QCSP). Also, a novel algorithm for scheduling the QCs within the deep integrated scheme was developed. A comprehensive comparison of integration approaches for the three problems’ MILP model was proposed utilizing hybrid solution algorithms with Particle Swarm Optimization (PSO) and Dynamic Programming (DP) methods. The objective functions aimed at minimizing the costs of berth position deviation from the best berth location, deviation of end time from departure time, costs of services during berth time, and the setup number of QCs. Findings demonstrated that the deep integrated model with developed QCSP algorithm and classic PSO solution demonstrates superior cost optimization compared to hybrid methods which prioritize computational efficiency at the expense of solution quality, particularly in large-scale scenarios. The trade-off between solution quality and runtime of the classic PSO, underscores the algorithm's strengths for offline optimization and significant cost savings in strategic planning but highlights challenges in dynamic, real-time applications. The effectiveness and practicality of the proposed algorithms were also validated and future research suggestions provided for more developments.},
+  archive      = {J_SWEVO},
+  author       = {Saeideh Amirifar and Ali Tavakoli Kashani and Ali Omidvarpanah Ahmadabadi and Erfan Hassannayebi},
+  doi          = {10.1016/j.swevo.2025.102091},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102091},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Simultaneous optimization for berth and quay crane scheduling in container terminals},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MOHFDQ: A metaheuristic approach to optimizing hospital patient registration with a fuzzy double-orbit queueing model. <em>SWEVO</em>, <em>98</em>, 102090. (<a href='https://doi.org/10.1016/j.swevo.2025.102090'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Queueing management is applied across sectors such as airlines, banking, healthcare, and telecommunications. However, there are very few queueing model-based approaches to managing patient waiting times, particularly in healthcare systems. Patients often reattempt to access services when they are initially unable to receive care upon arrival. If the registration desk is busy, an arriving patient may choose to join either the regulaor execuwaiting area. In this study, we consider two types of patients: premium/emergency patients who receive additional services based on payment and ordinary/non-emergency patients, who do not pay extra. However, if an ordinary patient becomes dissatisfied with the service, the registration desk may provide additional support. To address this, the MOHFDQ framework a three-phase approach integrating queueing theory, fuzzy theory, and stochastic optimization developed. In the first phase, the MOHFDQ model is analyzed and key performance metrics such as patient queue length, waiting time, and throughput are established. In the second phase, the crisp model is extended to a fuzzy model for a double orbit system, and α-cut and parametric nonlinear programming (PNLP) techniques are used to derive various fuzzified metrics. Finally, in the third phase, to enhance productivity and ensure high quality of service (QoS), a metaheuristic genetic algorithm (GA) and a deterministic golden section search (GSS) method are implemented to determine the optimal service parameters by minimizing the total system cost.},
+  archive      = {J_SWEVO},
+  author       = {Sibasish Dhibar},
+  doi          = {10.1016/j.swevo.2025.102090},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102090},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {MOHFDQ: A metaheuristic approach to optimizing hospital patient registration with a fuzzy double-orbit queueing model},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Heuristic-guided scatter search for X-architecture steiner minimum tree problems in VLSI design. <em>SWEVO</em>, <em>98</em>, 102088. (<a href='https://doi.org/10.1016/j.swevo.2025.102088'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Constructing Steiner Minimum Trees (SMT) remains a critical challenge in Very Large Scale Integration (VLSI) global routing, where minimizing wirelength is essential for optimizing circuit performance. While traditional Manhattan-based SMTs are constrained to two orthogonal routing directions, resulting in suboptimal interconnects, the X architecture, with its eight-directional (four rectilinear, four diagonal) routing, enables significant wirelength reductions. This paper introduces a Heuristic-Guided Scatter Search (HGSS) algorithm to efficiently solve the X-architecture SMT (XSMT) problem. The HGSS integrates a short-edge-first heuristic to prioritize compact routing solutions and reengineers three core Scatter Search modules: (1) a Dynamic Reference Set Update Module (DRSUM) that maintains elite and diverse solutions through iterative replacement, (2) a Semi-systematic Subset Generation Module (SSGM) pairing diverse and random elite solutions to reduce computational overhead, and (3) a Heuristic-Guided Solution Combination Module (HGSCM) employing crossover and mutation to generate high-quality offspring. Evaluations of GEO and ISPD98 benchmark circuits demonstrate average wirelength reductions of 1.04% and 2.86%, respectively, along with superior computational efficiency compared to state-of-the-art methods. By advancing XSMT optimization, this work demonstrates that incorporating heuristic information is valuable for solving large, complex routing tree problems, offering guidance for further research in this area.},
+  archive      = {J_SWEVO},
+  author       = {Kai Yang and Fuyuan Zheng and Qingjin Ji and Juan Lin and Yiwen Zhong and Yu Lin},
+  doi          = {10.1016/j.swevo.2025.102088},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102088},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Heuristic-guided scatter search for X-architecture steiner minimum tree problems in VLSI design},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A dynamic task-assisted constrained multimodal multi-objective optimization algorithm based on reinforcement learning. <em>SWEVO</em>, <em>98</em>, 102087. (<a href='https://doi.org/10.1016/j.swevo.2025.102087'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Constrained multimodal optimization problems (CMMOPs) are required to satisfy constraint limitations and ensure the convergence and diversity of the solutions in the objective and decision spaces. It increases the difficulty of solving the optimization problems. To design efficient constrained multimodal multi-objective optimization evolutionary algorithms (CMMOEAs) to solve them is a hot topic today. A novel dynamic auxiliary task selection algorithm (DTCMMO-RL) is designed based on the multi-task framework and reinforcement learning. The algorithm designs three auxiliary tasks to optimize constrained multi-objective problems, simple multi-objective problems and multimodal optimization problems, respectively. At the same time, Q-learning in reinforcement learning is employed to dynamically select the current optimal auxiliary task to utilize the useful information obtained rationally. In addition, an indicator (IGDXp) capable of evaluating the comprehensive performance of the solutions in the objective space and decision space is designed. To verify the excellence of DTCMMO-RL, a series of experiments with 11 comparison algorithms on CMMF and CMMOP are conducted to verify the feasibility and effectiveness of multiple strategies.},
+  archive      = {J_SWEVO},
+  author       = {Zheng Wang and Qianlin Ye and Wanliang Wang and Guoqing Li and Rui Dai},
+  doi          = {10.1016/j.swevo.2025.102087},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102087},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A dynamic task-assisted constrained multimodal multi-objective optimization algorithm based on reinforcement learning},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Distributed assembly flexible job shop scheduling with dual-resource constraints via a deep Q-network based memetic algorithm. <em>SWEVO</em>, <em>98</em>, 102086. (<a href='https://doi.org/10.1016/j.swevo.2025.102086'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The distributed flexible job shop scheduling problem (DFJSP) has garnered significant attention due to the shift of production paradigms. However, existing research of DFJSP primarily focuses on machine resources while neglecting worker resources, which play a crucial role in enhancing productivity. Furthermore, manufacturing processes often involve both processing and assembly stages. An integrated approach to scheduling the two stages can significantly enhance efficiency and reduce costs. This study addresses the distributed assembly flexible job shop scheduling problem with dual resource constraints (DAFJSP-DRC), aiming to minimize total product tardiness (TPT), total energy consumption (TEC), and total cost (TCO). To tackle this problem, we develop a mixed-integer programming (MIP) model and propose a deep Q-network-based memetic algorithm (DQNMA). In DQNMA, high-quality initial solutions are generated based on processing resources, and a two-stage decoding mechanism is designed to get efficient scheduling schemes. Then, crossover and mutation operators for critical factories are proposed, and a deep Q-network is designed to dynamically adjust the crossover and mutation rates. Furthermore, eight neighborhood structures are designed to enhance solution diversity, while a tabu search-based local search strategy improves the algorithm's exploration and exploitation capabilities. Eventually, extensive experimental results demonstrate the effectiveness of the proposed strategies in enhancing the performance of DQNMA. Comparative analysis against four state-of-the-art multi-objective algorithms validates the superiority and effectiveness of the designed algorithm.},
+  archive      = {J_SWEVO},
+  author       = {Hongliang Zhang and Yi Chen and Gongjie Xu and Yuteng Zhang},
+  doi          = {10.1016/j.swevo.2025.102086},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102086},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Distributed assembly flexible job shop scheduling with dual-resource constraints via a deep Q-network based memetic algorithm},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A constrained multi-objective coevolutionary algorithm with adaptive operator selection for efficient test scheduling in interposer-based 2.5D ICs. <em>SWEVO</em>, <em>98</em>, 102085. (<a href='https://doi.org/10.1016/j.swevo.2025.102085'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Interposer-based 2.5-dimensional integrated circuits (2.5D ICs) have emerged as a promising solution to address wire delay and power consumption challenges in modern semiconductor design. However, the increasing complexity and density of 2.5D ICs introduces critical test scheduling challenges, where existing methods fail to effectively optimize hardware cost and test time while satisfying strict power and duration constraints. To overcome these limitations, this paper models the test scheduling problem in 2.5D ICs as a constrained multi-objective optimization problem (CMOP) and proposes a constrained multi-objective coevolutionary algorithm (termed AOSCEA) with adaptive operator selection. The algorithm introduces a two-chromosome-based encoding method paired with a matching-level-based decoding strategy to effectively map the discrete scheduling problem to continuous evolutionary algorithm frameworks, enabling efficient exploration of the search space. A coevolutionary mechanism is incorporated into the algorithm with two populations: a main population that solves the CMOP and an auxiliary population that ignores constraints to enhance exploration. Additionally, targeting to enhance the versatility of the algorithm across different test scheduling problems, AOSCEA employs two deep Q -networks to adaptively select genetic operators and constraint handling techniques for the main population during the optimization process. Extensive experiments on various test scheduling instances in 2.5D ICs with different scales demonstrate that AOSCEA outperforms several state-of-the-art algorithms in terms of solution quality, convergence speed, and robustness.},
+  archive      = {J_SWEVO},
+  author       = {Chunlei Li and Libao Deng and Liyan Qiao and Lili Zhang},
+  doi          = {10.1016/j.swevo.2025.102085},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102085},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A constrained multi-objective coevolutionary algorithm with adaptive operator selection for efficient test scheduling in interposer-based 2.5D ICs},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A self-adjusting representation-based multitask PSO for high-dimensional feature selection. <em>SWEVO</em>, <em>98</em>, 102084. (<a href='https://doi.org/10.1016/j.swevo.2025.102084'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As a critical preprocessing step in machine learning tasks, feature selection (FS) aims to identify informative features from the original datasets. However, FS is commonly formulated as an NP-hard combinatorial optimization problem, particularly when compounded by exponentially expanding search spaces and complex feature interactions. Due to its simplicity of implementation, Particle Swarm Optimization (PSO) has been extensively utilized in FS tasks. Concurrently, the optimization process frequently converges to local optima when handling high-dimensional ( > 1000D) datasets. To address this issue, a self-adjusting representation-based multitask PSO (SAR-MTPSO) is proposed in this paper. Firstly, the knee point strategy and an elite feature-preserving strategy are employed to obtain promising particles with key features. Based on these particles, a new multitask framework is introduced, where two tasks are constructed by using a self-adjusting representation strategy. Secondly, a two-layer knowledge transfer strategy is proposed to promote the useful information sharing and exchanging between two tasks dynamically. Finally, an adaptive re-initialization strategy is proposed to enhance the exploitation and exploration capabilities of the two tasks respectively. SAR-MTPSO was compared with 10 representative FS algorithms on 21 high-dimensional datasets. Experimental results show that SAR-MTPSO can achieve the highest classification accuracies with smaller sizes of feature subsets on 17 out of 21 datasets.},
+  archive      = {J_SWEVO},
+  author       = {Li Deng and Xiaohui Su and Bo Wei},
+  doi          = {10.1016/j.swevo.2025.102084},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102084},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A self-adjusting representation-based multitask PSO for high-dimensional feature selection},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Experience exchange strategy: An evolutionary strategy for meta-heuristic optimization algorithms. <em>SWEVO</em>, <em>98</em>, 102082. (<a href='https://doi.org/10.1016/j.swevo.2025.102082'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Meta-heuristic optimization algorithms typically change individual positions based on iterations, causing the population to switch search regions. This may result in the original search area not being explored in depth, thereby reducing the optimization performance of the algorithm. To deepen the connection between populations and individuals, this article proposes an evolutionary strategy called Experience Exchange Strategy (EES). EES considers the relationship between individuals and populations, deepening the connection between individuals and populations. EES has structured into three distinct stages: the experience scarcity stage (ESC), the experience crossover stage (ECR), the experience sharing stage (ESH). In the ESC, due to many areas not being searched, the population lacks search experience and mainly relies on primitive algorithms to find positions. This can preserve the optimization effect of the original algorithm and explore more positions. In the ECR, due to the accumulation of more experience in the population, individuals will update their positions based on more reference population experience. This can improve the accuracy of the search range and conduct more detailed searches. In the ESH, the population accumulates a large amount of experience, and individuals conduct more detailed searches based on the population’s experience. Through ESH, the population can search intensively to find a better position more finely. To verify the performance of EES, this article conducted optimization tests using IEEE CEC2014 and IEEE CEC2020 functions. And 15 algorithms were selected for improvement and compared with the original algorithm. Then, 57 single objective constrained engineering problems were used for testing experiments. The experimental results demonstrate that EES significantly improves the performance of meta-heuristic optimization algorithms.},
+  archive      = {J_SWEVO},
+  author       = {Heming Jia and Honghua Rao},
+  doi          = {10.1016/j.swevo.2025.102082},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102082},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Experience exchange strategy: An evolutionary strategy for meta-heuristic optimization algorithms},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A comprehensive survey of adaptive strategies in differential evolutionary algorithms. <em>SWEVO</em>, <em>98</em>, 102081. (<a href='https://doi.org/10.1016/j.swevo.2025.102081'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Classical differential evolution (DE) encounters premature convergence when dealing with diverse optimization problems. This challenge has encouraged extensive research efforts aimed at improving and enhancing the original methodologies. Among the various improvement techniques, adaptive strategies have been universally employed. However, there is a lack of systematic research on the adaptation mechanisms. This work comprehensively investigates the adaptive strategies adopted in DE algorithms. Typical adaptation strategies employed in DE algorithms are refined and summarized, highlighting their characteristics. A new taxonomy of adaptation strategies is proposed, categorizing them based on their primary properties, which include adaptations of control parameters, mutation strategies, population size, search space, learning schemes, and composite adaptations. The advantages and disadvantages of these adaptation strategies are summarized, elucidating their unique characteristics. Additionally, a general framework with an adaptive updating engine is proposed, which can serve as a reference for developing new DE algorithms or improving existing ones. The paper also highlights the challenges and open issues of adaptive strategies, suggesting several promising research directions.},
+  archive      = {J_SWEVO},
+  author       = {Xinggui Ye and Jianping Li and Peng Wang and Ponnuthurai Nagaratnam Suganthan},
+  doi          = {10.1016/j.swevo.2025.102081},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102081},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A comprehensive survey of adaptive strategies in differential evolutionary algorithms},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Lightweight bi-level optimization algorithm for synchronized scheduling of production and transportation in a reconfigurable flexible job shop. <em>SWEVO</em>, <em>98</em>, 102080. (<a href='https://doi.org/10.1016/j.swevo.2025.102080'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In reconfigurable flexible job shops, jobs have flexible processing routes and machine configurations change dynamically. This makes the transportation scheduling of Work-in-Progress (WIP) between machines highly complex and crucial to the production process. Coordinating production and transportation can significantly boost workshop efficiency. Thus, the synchronization of production and transportation scheduling is addressed. A bi-level scheduling model is developed. The upper-level minimizes production costs in production scheduling, considering flexibility and reconfigurability. The lower-level minimizes transportation costs in transportation scheduling, considering speed-adjustable Automated Guided Vehicles (AGVs). To solve this complex problem efficiently, a lightweight bi-level optimization algorithm is designed. In it, an accurate surrogate model and an improved metaheuristic are performed sequentially to achieve the lightweight evaluation and high-fidelity evaluation of the lower-level optima. Ten rules that contain problem-related knowledge are discovered by rule mining technologies including gene expression programming and Q-learning. Since these rules can better reflect problem characteristics, rule-based features are extracted to improve the accuracy of the surrogate model. Experimental results show that all discovered rules, especially the dynamic adaptive rule, are highly effective in generating high-performance solutions. The rule-based surrogate model can quickly and accurately estimate the lower-level optima. By incorporating this surrogate model, the proposed lightweight algorithm cuts down on computing budget without sacrificing accuracy, outperforming other bi-level optimization algorithms.},
+  archive      = {J_SWEVO},
+  author       = {Lixin Cheng and Qiuhua Tang and Zikai Zhang and Jing Wang},
+  doi          = {10.1016/j.swevo.2025.102080},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102080},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Lightweight bi-level optimization algorithm for synchronized scheduling of production and transportation in a reconfigurable flexible job shop},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A generational difference vector based tri-entropy structure optimizer for large-scale multiobjective optimization. <em>SWEVO</em>, <em>98</em>, 102079. (<a href='https://doi.org/10.1016/j.swevo.2025.102079'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The increasing complexity of large-scale multiobjective optimization problems in engineering and scientific fields in recent years has imposed higher demands on the computational efficiency of algorithms. This paper introduces a novel algorithm named the Generational Difference Vector based Tri-Entropy Structure Optimizer (GDVTSO), which is designed for the efficient execution of large-scale multi-objective optimization tasks. The core idea is to determine a more effective search direction by calculating the local information entropy within the decision space and analyzing the changes in clusters before and after iterations. To this end, the Tri-Entropy Structure Optimizer (TSO) has been designed to more efficiently utilize information entropy for vector updates. Furthermore, the Generational Difference Vector (GDV) mechanism is introduced to provide guidance on search direction for vectors within each cluster. The GDVTSO algorithm demonstrates exceptional compatibility and extensive application potential. In this study, GDVTSO is integrated with two established large-scale optimization techniques, and a hybrid algorithm designated as GDVTSF is proposed through this methodological fusion. Moreover, GDVTSF’s performance exhibits a lower sensitivity to the dimensionality of optimization problems. Experimental results on standard large-scale multiobjective optimization benchmarks demonstrate that GDVTSF outperforms the current state-of-the-art optimization algorithms. Furthermore, it remarkably maintains its superior performance even when applied to high-dimensional problems with up to 10,000 decision variables.},
+  archive      = {J_SWEVO},
+  author       = {Yuhan Xu and Yu Zhang and Wang Hu},
+  doi          = {10.1016/j.swevo.2025.102079},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102079},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A generational difference vector based tri-entropy structure optimizer for large-scale multiobjective optimization},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A hybrid intelligent optimization algorithm for long-term production planning of open-pit mine considering carbon reduction plan. <em>SWEVO</em>, <em>98</em>, 102078. (<a href='https://doi.org/10.1016/j.swevo.2025.102078'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study quantifies the carbon emission and its cost in the production process of open-pit mines, explores the influence of carbon emission reduction on the long-term production planning, and provides an optimal long-term production plan for open-pit mines under the background of carbon neutrality. It aims to maximize the total net present value of the mine and constructs a mathematical model for long-term production planning that integrates the carbon emission reduction plan and its associated costs. A hybrid intelligent optimization algorithm (PSBKA), based on the Particle Swarm Optimization Algorithm (PSO) and the Black-Winged Kite Optimization Algorithm (BKA), is developed. The algorithm first uses PSO to optimize the model for the primary objective and then utilizes a set of new solutions generated through a random disturbance strategy as the initial solution for BKA, performing secondary optimization on the model. An application study is conducted using a copper mine located in Arizona, USA. The results indicated that formulating and implementing a carbon emission reduction plan significantly influences long-term production planning in open-pit mining. The carbon emission reduction cost represents approximately 7 % of the mine's overall economic benefits. Compared to traditional methods, the proposed planning approach reduces the carbon emission reduction cost by $15,805 and increases the net present value by $253,811, providing an improved long-term production planning scheme for the mine.},
+  archive      = {J_SWEVO},
+  author       = {Ning Li and Jinxin Liu and Liguan Wang and Bibo Dai and Shugang Zhao and Jian Chang and Haiwang Ye and Dairong Yan},
+  doi          = {10.1016/j.swevo.2025.102078},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102078},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A hybrid intelligent optimization algorithm for long-term production planning of open-pit mine considering carbon reduction plan},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A frequent pattern-based coevolutionary framework for multi-component spectral feature selection. <em>SWEVO</em>, <em>98</em>, 102077. (<a href='https://doi.org/10.1016/j.swevo.2025.102077'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Spectral feature selection plays a crucial role in spectral analysis as it aims to identify the most effective features from the original high-dimensional wavelength variables, thereby enhancing the accuracy of concentration prediction models. In multi-component spectral feature selection (MCSFS) problems, diverse composition and concentration of samples result in complex overlapping peaks and correlations among variables. This complexity poses challenges in finding optimal subsets of features efficiently. To address this issue, this paper proposes a frequent pattern-based coevolutionary framework for solving MCSFS problems. Specifically, the algorithm starts by generating a main population for multi-component spectral feature selection and multiple auxiliary populations for single-component spectral feature selection. Furthermore, it introduces a frequent pattern mining strategy to identify dynamic superior feature combinations and their updated weights in each population, dealing with the complexity of variables to accelerate the search for effective features. The proposed coevolutionary framework facilitates interactions between populations by sharing the identified feature combinations and offspring information, leading to the acquisition of high-quality feature selection results. Experimental results on twelve MCSFS problems, based on three high-dimensional spectral datasets, demonstrate that the proposed algorithm outperforms six state-of-the-art evolutionary algorithms.},
+  archive      = {J_SWEVO},
+  author       = {Panpan Zhang and Jing Rong and Ye Tian and Yajie Zhang and Shangshang Yang and Xingyi Zhang},
+  doi          = {10.1016/j.swevo.2025.102077},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102077},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A frequent pattern-based coevolutionary framework for multi-component spectral feature selection},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-objective energy-efficient scheduling of distributed heterogeneous hybrid flow shops via multi-agent double deep Q-network. <em>SWEVO</em>, <em>98</em>, 102076. (<a href='https://doi.org/10.1016/j.swevo.2025.102076'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Distributed Heterogeneous Hybrid Flow Shop Scheduling Problem (DHHFSP) poses a highly complex NP-hard combinatorial optimization challenge, particularly under the dual pressures of green manufacturing and distributed production. To address the limitations of conventional optimization algorithms in handling large-scale multi-objective scheduling with dynamic constraints, this paper proposes a novel Multi-Agent Double Deep Q-Network (MADDQN) based energy-efficient scheduling framework. The DHHFSP is formulated as a Markov Decision Process (MDP), where hierarchical agents representing jobs, workshops, and machines collaboratively learn optimal scheduling policies through a shared state representation and discrete rule-based action spaces. A hybrid reward mechanism combining delayed immediate rewards and global rewards is designed to efficiently guide the agents toward minimizing due time error (DTE) and total energy consumption (TEC). In addition, an adaptive energy-saving strategy is introduced to further reduce standby energy consumption without compromising delivery deadlines. Extensive computational experiments demonstrate that the proposed MADDQN achieves superior performance over state-of-the-art algorithms such as NSGA-II and optimal single rule methods in terms of convergence, solution diversity, and computational efficiency, with average improvements of 59.76%, 67.25%, and 99.72%, respectively. Furthermore, Pareto-based multi-objective evaluation metrics are utilized to comprehensively assess the balance between conflicting objectives. An industrial case study validates the practical applicability of the proposed method within real-world manufacturing execution systems (MES), offering a scalable and intelligent solution for energy-efficient scheduling in distributed heterogeneous manufacturing environments.},
+  archive      = {J_SWEVO},
+  author       = {Minghai Yuan and Yang Ye and Hanyu Huang and Zhen Zhang and Fengque Pei and Wenbin Gu},
+  doi          = {10.1016/j.swevo.2025.102076},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102076},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Multi-objective energy-efficient scheduling of distributed heterogeneous hybrid flow shops via multi-agent double deep Q-network},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-objective optimization for distributed flexible job shop scheduling problem with job priority. <em>SWEVO</em>, <em>98</em>, 102075. (<a href='https://doi.org/10.1016/j.swevo.2025.102075'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For the distributed flexible job shop scheduling problem (DFJSP), the existing researches have predominantly focused on operation sequence, machine selection and factory assignment, and assuming that the jobs have no priority. However, in real-world manufacturing systems, production scheduling with job priority is very common and is of concern to production managers. The paper presents a DFJSP with job priority (DFJSPJP) for the first time, aiming at minimizing the makespan, total energy consumption and the weighted average time of jobs with priority. A new memetic algorithm (NMA) is designed to solve the proposed DFJSPJP. In the proposed NMA, a well-designed chromosome encoding method (CEM) is constructed to obtain a high-quality initial population. An effective local search approach (LSO) is proposed to improve the NMA’s convergence speed and fully exploit its solution space. Computational experiments conducted confirm the effectiveness of the CEM and LSO, and show that the NMA is able to easily obtain better solutions for about 90 % of the tested 60 challenging problem instances compared to other three well-known algorithms, demonstrating its superior performance on both solution quality and computational efficiency. This research will provide a theoretical basis for considering job priority issues in distributed production environments and assist manufacturers in conducting accurate production scheduling, thereby reducing resource waste and time loss caused by unreasonable production plans.},
+  archive      = {J_SWEVO},
+  author       = {Ao He and Xiahui Liu and Guiliang Gong and Zhipeng Yuan and Hongbo Huang and Yang Zhou and Jie Li},
+  doi          = {10.1016/j.swevo.2025.102075},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102075},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Multi-objective optimization for distributed flexible job shop scheduling problem with job priority},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A non-index mixed-asset portfolio optimization approach. <em>SWEVO</em>, <em>98</em>, 102074. (<a href='https://doi.org/10.1016/j.swevo.2025.102074'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As the financial industry shifts from divided operations to mixed operations, mixed-asset portfolios have gradually gained ground in investment portfolios. Existing mixed-asset portfolio optimization approaches frequently introduce indices for representing asset classes to eliminate heterogeneity among asset classes. However, few introduced indices comprehensively and realistically represent asset classes, leading to a loss of feasible solutions and practical reliability. To address these limitations, this paper proposes a non-index mixed-asset portfolio optimization approach consisting of problem modeling and problem solving. For problem modeling, our approach models the mixed-asset portfolio optimization as a multi-objective bi-level optimization problem. In the inner-level optimization, optimal portfolios within each asset class are constructed to represent the corresponding asset class. These optimal portfolios contain more information and are constructed from realistically available products, thus representing the asset class more comprehensively and practically. In the outer-level optimization, the allocation among the asset classes is optimized to obtain an optimal mixed-asset portfolio. For problem solving, a multi-swarm dynamic cooperative optimization method is proposed to solve the modeled problem. Considering that obtaining the complete inner-level optimization of the modeled problem is challenging and time-consuming, a dynamic collaboration mechanism is designed to obtain the optimal subset of the inner-level optimization, thus solving the problem efficiently and effectively. To verify the effectiveness of our proposed non-index approach, an experiment is conducted to compare our proposed approach with four state-of-the-art approaches. Our proposed non-index approach problem outperforms competitors in 27 of 30 scenarios on both the Pareto optimality and the realistic performance.},
+  archive      = {J_SWEVO},
+  author       = {Yuyang Bai and Changsheng Zhang and Baiqing Sun and Bin Zhang},
+  doi          = {10.1016/j.swevo.2025.102074},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102074},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A non-index mixed-asset portfolio optimization approach},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Bi-objective evolutionary hyper-heuristics in automated machine learning for text classification tasks. <em>SWEVO</em>, <em>98</em>, 102073. (<a href='https://doi.org/10.1016/j.swevo.2025.102073'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes an evolutionary model based on hyper-heuristics to automate the selection of classification methods for text datasets under a bi-objective approach. The model has three nested levels. At the first level, individual methods classify datasets, recording two performances: the number of misclassifications and computational time, which are often in conflict. At the second level, hyper-heuristics, as a set of rules of the form i f → t h e n , select classification methods for datasets based on 16 meta-features representing the data distribution. The fitness for a hyper-heuristic is evaluated on a training group of datasets by aggregating the two low-level performances of the chosen methods. At the third level, the multi-objective evolutionary algorithm Strength Pareto Evolutionary Algorithm 2 evolves hyper-heuristic populations considering the bi-objective of minimizing the two aggregated performances. The result is a Pareto-approximated front of hyper-heuristics, which offers a range of solutions from computationally efficient to high classification performance. Finally, the model evaluates the front with an independent test group of datasets and selects those hyper-heuristics that are not dominated. We evaluated the resulting fronts through extensive experiments, measuring several quality indicators. We compare the model’s fronts with a front baseline consisting of non-dominated individual classification methods and four state-of-the-art automated machine learning tools (AutoKeras, AutoGluon, H2O, and TPOT). The proposed model yields larger, more diverse Pareto-approximated fronts that outperform the baseline front, allowing solution selection based on available resources and trade-offs between performance and cost.},
+  archive      = {J_SWEVO},
+  author       = {Jonathan Estrella-Ramírez and Jorge de la Calleja and Juan Carlos Gómez Carranza},
+  doi          = {10.1016/j.swevo.2025.102073},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102073},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Bi-objective evolutionary hyper-heuristics in automated machine learning for text classification tasks},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Automated algorithm selection for black-box optimization using light gradient boosting machine. <em>SWEVO</em>, <em>98</em>, 102071. (<a href='https://doi.org/10.1016/j.swevo.2025.102071'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many evolutionary algorithms have been designed to address industrial black-box optimization problems in the real world. No single algorithm can outperform others across all problem instances. Algorithm selection methods aim to help users to automatically choose the best algorithm for new problems without expertise in evolutionary algorithm. However, the existing methods are implemented on a limited number of handcrafted benchmarks which lack practicality, and there is no general metric for measuring the best algorithm for black-box problems with unknown optimum. To tackle these issues, we propose an algorithm selection method for black-box optimization using light gradient boosting machine, where a tree-based random instance generation method is introduced to create diverse problem instances simulating real-world cases, and a metric is proposed to evaluate the performance of evolutionary algorithms on real-world black-box optimization considering both convergence speed and value. Experimental results show that our method achieves an accuracy of 72.23% on our generated dataset, and has lower computational cost compared to existing methods.},
+  archive      = {J_SWEVO},
+  author       = {Qingbin Guo and Handing Wang and Ye Tian},
+  doi          = {10.1016/j.swevo.2025.102071},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102071},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Automated algorithm selection for black-box optimization using light gradient boosting machine},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Surrogate-assisted evolutionary algorithm with stage-adaptive infill sampling criterion for expensive multimodal multi-objective optimization. <em>SWEVO</em>, <em>98</em>, 102068. (<a href='https://doi.org/10.1016/j.swevo.2025.102068'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The key issue in handling expensive multimodal multi-objective optimization problems is to balance convergence and diversity in both the decision and objective spaces with limited function evaluations available. To tackle this issue, this paper proposes a surrogate-assisted multimodal multi-objective evolutionary algorithm with stage-adaptive infill sampling criterion. In the proposed algorithm, a multi-surrogate cooperative framework is developed, where multiple extreme gradient boosting models are used to approximate the objective functions for replacing real function evaluations, and a self-organizing map (SOM) network is used to learn the topologies of Pareto sets in the decision space and corresponding features in the objective space for reducing the approximation errors. Then, a stage-adaptive infill sampling criterion is designed to select the most suitable candidates for expensive function evaluations. Specifically, in the first stage, a convergence-first infill sampling criterion is used to accelerate convergence to the global Pareto front; In the second stage, an indicator-based infill sampling criterion according to neuron weights of the SOM network and a diversity-based infill sampling criterion are used to improve diversity in decision and objective spaces. Experimental results on two benchmark test suites demonstrate the competitiveness of the proposed algorithm against eight state-of-the-art methods.},
+  archive      = {J_SWEVO},
+  author       = {Yufei Yang and Changsheng Zhang and Yi Liu and Haitong Zhao},
+  doi          = {10.1016/j.swevo.2025.102068},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102068},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Surrogate-assisted evolutionary algorithm with stage-adaptive infill sampling criterion for expensive multimodal multi-objective optimization},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic multi-objective optimization algorithm based on incremental gaussian mixture model. <em>SWEVO</em>, <em>98</em>, 102067. (<a href='https://doi.org/10.1016/j.swevo.2025.102067'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, prediction-based algorithms have made significant progress in solving dynamic multi-objective optimization problems (DMOPs). However, most existing methods only consider information from several consecutive environments and ignore past search experiences. To address the issue, this paper proposes a novel dynamic multi-objective evolutionary algorithm (DMOEA) based on an incremental Gaussian mixture model (IGMM). When environmental changes occurred, the initial population in the new environment is composed of two parts. The one part includes a few predicted individuals generated by IGMM aiming to explore the potential correlation between environments. To ensure quality of the individuals generated by IGMM, a feature-based augmentation strategy is employed to generate representative training data before the training process of IGMM. The other part consists of some individuals created via polynomial mutation operator based on randomly selected solutions from the previous environment. Based on the hybrid initial population, IGMM-DMOEA can quickly respond to environmental changes. To testify the performance of IGMM-DMOEA, twenty widely used benchmark functions and three real-world applications are adopted in this study. Extensive experimental results verify that IGMM-DMOEA can exhibit effective response to environmental changes. Comparisons results between it and other seven peer algorithms suggest that IGMM-DMOEA attains more reliable performance, measured by three popular metrics. Moreover, the effectiveness and efficiency of the new proposed strategies are discussed based on extensive experiments.},
+  archive      = {J_SWEVO},
+  author       = {Xuewen Xia and Yi Zeng and Xing Xu and Yinglong Zhang},
+  doi          = {10.1016/j.swevo.2025.102067},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102067},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Dynamic multi-objective optimization algorithm based on incremental gaussian mixture model},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Weak-prior medical image matting based on microscale-searching evolutionary optimization. <em>SWEVO</em>, <em>98</em>, 102065. (<a href='https://doi.org/10.1016/j.swevo.2025.102065'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Image matting is to predict alpha mattes that reflects the opacity of images, recently showing potential in identifying transition regions of lesions in computer aided diagnosis. Image matting can be modeled as a large-scale combinatorial optimization problem that has numerous subproblems. Evolutionary algorithms (EAs) have been applied to predict accurate alpha mattes. The advantage of EAs-based methods is the ability to predict alpha mattes with weak prior like trimaps that provide value of opacity for pixels effortless to annotate compared to recent deep learning-based methods. However, it is challenging for EAs to solve the problem efficiently due to numerous subproblems and the large size of the decision set. Based on the observation that the similarity of subproblems correlates with the similarity of their objective spaces, this paper proposes a method for estimating a microscale subset of the decision set from the solving process of similar subproblems. A framework is designed to reduce the exploration cost of EAs in the large-scale decision set by guiding EAs to search in this estimated microscale subsets. Three medical image matting datasets are used to validate our method’s improvement in the efficiency of evolutionary algorithms. Experimental results demonstrate that EAs embedded in the proposed framework obtain the best prediction of alpha mattes on medical images and also in weak scenarios involving natural images. Comparative experimental results on multi-objective performance metrics indicate that our method is capable of finding superior solutions using fewer fitness evaluations. The contribution of our work is to make EAs an efficient approach to solving the medical image matting problem with weak prior.},
+  archive      = {J_SWEVO},
+  author       = {Li Kang and Han Huang and Yihui Liang and Baoxiong Zhuang},
+  doi          = {10.1016/j.swevo.2025.102065},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102065},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Weak-prior medical image matting based on microscale-searching evolutionary optimization},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The paradox of success in evolutionary and bioinspired optimization: Revisiting critical issues, key studies, and methodological pathways. <em>SWEVO</em>, <em>98</em>, 102063. (<a href='https://doi.org/10.1016/j.swevo.2025.102063'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Evolutionary and bioinspired computation are crucial for efficiently addressing complex optimization problems across diverse application domains. By mimicking processes observed in nature, like evolution itself, these algorithms offer innovative solutions beyond the reach of traditional optimization methods. They excel at finding near-optimal solutions in large, complex search spaces, making them invaluable in numerous fields. However, both areas are plagued by challenges at their core, including inadequate benchmarking, problem-specific overfitting, insufficient theoretical grounding, and superfluous proposals justified only by their biological metaphor. This overview recapitulates and analyzes in depth the criticisms concerning the lack of innovation and rigor in experimental studies within the field. To this end, we examine the judgmental positions of the existing literature in an informed attempt to guide the research community toward directions of solid contribution and advancement in these areas. We summarize guidelines for the design of evolutionary and bioinspired optimizers, the development of experimental comparisons, and the derivation of novel proposals that take a step further in the field. We provide a brief note on automating the process of creating these algorithms, which may help align metaheuristic optimization research with its primary objective (solving real-world problems), provided that our identified pathways are followed. Our conclusions underscore the need for a sustained push towards innovation and the enforcement of methodological rigor in prospective studies to fully realize the potential of these advanced computational techniques.},
+  archive      = {J_SWEVO},
+  author       = {Daniel Molina and Javier Del Ser and Javier Poyatos and Francisco Herrera},
+  doi          = {10.1016/j.swevo.2025.102063},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102063},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {The paradox of success in evolutionary and bioinspired optimization: Revisiting critical issues, key studies, and methodological pathways},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). When robots learn from nature: GLWOA-RRT*, a nature-inspired motion planning approach. <em>SWEVO</em>, <em>98</em>, 102062. (<a href='https://doi.org/10.1016/j.swevo.2025.102062'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Optimal motion planning for autonomous mobile robots remains still an open issue, with the classical approaches often struggle to address real-world conditions imposed on the system. In recent years, there has been a surge of interest in nature-inspired approaches in solving different technological problems by imitating natural processes. In this context, the present paper concerns the development of a motion planner based on a nature-inspired approach, which is dubbed GLWOA-RRT*. It is based on the Rapidly Exploring Random Tree Star (RRT*), offering an efficient exploration of the search space for a good initialisation of agents, and the Whale Optimisation Algorithm (WOA), one of the most efficient nature-based approaches thanks to its fast convergence, high calculation accuracy, efficiency in balancing exploration and exploitation to avoid falling into a local optimum, and demonstrated remarkable performance in tackling real-world challenges in different fields. GLWOA-RRT* is conceptually built as a global approach, solving the motion planning problem by encoding each agent in the swarm by the robot’s motion. The problem is solved by determining the optimal and safe motion to be executed by the robot. GLWOA-RRT* has been applied first in simulation in both static and dynamic environments, where a detailed experimental analysis of WOA parameters in a motion planning context has been performed. Furthermore, it has been tested in a range of challenging scenarios, where the results demonstrate the efficiency of the algorithm in finding a valid and optimal motion in a reasonable time. The obtained results also exhibit the performance of GLWOA-RRT* in improving RRT* by offering better results, especially in challenging scenarios. Finally, GLWOA-RRT* has been implemented and validated in real-world scenarios using the Robot Operating System (ROS), both in 3D Gazebo-based simulation environments and in physical environments. The outcomes demonstrate its efficacy and applicability in real-world settings.},
+  archive      = {J_SWEVO},
+  author       = {Sara Bouraine and Yassine Bellalia and Ilyes Chaabeni and Djamila Naceur},
+  doi          = {10.1016/j.swevo.2025.102062},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102062},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {When robots learn from nature: GLWOA-RRT*, a nature-inspired motion planning approach},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A surrogate-assisted memetic algorithm for permutation-based combinatorial optimization problems. <em>SWEVO</em>, <em>98</em>, 102060. (<a href='https://doi.org/10.1016/j.swevo.2025.102060'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Real-world applications often encounter expensive permutation-based combinatorial optimization problems (PCOPs), where solution evaluation processes become time-consuming. Although many surrogate-assisted evolutionary algorithms have been developed for expensive optimization problems, most of them are designed for expensive continuous optimization problems, not for expensive PCOPs, due to the difficulty of constructing surrogate models effective for permutation spaces. This paper presents a surrogate-assisted memetic algorithm for expensive PCOPs, designed with the following two key insights. First, Gradient Boosting Decision Tree (GBDT) regression models are adopted as surrogates tailored to discrete spaces. Because decision trees do not require distance metrics between training samples, they are well-suited to such spaces, and the boosting mechanism helps improve prediction accuracy. Additionally, we employ memetic algorithms for the search strategy to enhance both global and local search capabilities. Experiments show that the proposed method outperforms state-of-the-art algorithms for at least 41 out of all 42 PCOP instances under a limited budget of 1000 function evaluations, with improved robustness through our memetic algorithm. Furthermore, the GBDT model achieves higher prediction accuracy than other popular models, Radial Basis Function Network and Random Forest, outperforming them on more than 35 instances. These results highlight that our approach effectively enhances the synergy between surrogate models and search strategies in permutation spaces.},
+  archive      = {J_SWEVO},
+  author       = {Takashi Ikeguchi and Kei Nishihara and Yo Kawauchi and Yuji Koguma and Masaya Nakata},
+  doi          = {10.1016/j.swevo.2025.102060},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102060},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {A surrogate-assisted memetic algorithm for permutation-based combinatorial optimization problems},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An offline data-driven process for learning operator selection from metaheuristic search traces. <em>SWEVO</em>, <em>98</em>, 102058. (<a href='https://doi.org/10.1016/j.swevo.2025.102058'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Trained Reward-based Action Classification Engine (TRACE) is a general process for capturing operator outcome data during metaheuristic search, training classifiers to predict whether an operator will yield an improved solution, and deploying those models to guide neighborhood selection during future search runs. This study introduces TRACE-VNS, a modular extension of General Variable Neighborhood Search (GVNS) applied to the Capacitated Vehicle Routing Problem (CVRP), where neighborhood selection is driven by these offline-trained models. Classifiers are trained on features extracted from GVNS traces, including action history, graph metrics, temporal state, and Upper Confidence Bound (UCB) indicators. Twelve classifiers, including tree ensembles, neural networks, and kernel-based models, are benchmarked using the Precision–Recall Area Under the Curve (PR-AUC) to evaluate predictive quality. Empirical results show that TRACE-VNS improves convergence speed and final solution quality over conventional GVNS across 84 CVRP instances. A detailed feature importance analysis identifies strong contributors, offering insights into the effective selection of operators. TRACE requires no runtime exploration or feedback loops and can generalize to other metaheuristics through minimal structural adaptation.},
+  archive      = {J_SWEVO},
+  author       = {Panagiotis Kalatzantonakis and Angelo Sifaleras and Nikolaos Samaras},
+  doi          = {10.1016/j.swevo.2025.102058},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102058},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {An offline data-driven process for learning operator selection from metaheuristic search traces},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Solving dynamic multi-objective engineering design problems via fuzzy c-means prediction algorithm. <em>SWEVO</em>, <em>98</em>, 102057. (<a href='https://doi.org/10.1016/j.swevo.2025.102057'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes a new prediction algorithm by integrating the fuzzy c-means and regression analysis fitting techniques with multi-objective differential evolution (FRMODE) to solve dynamic multi-objective optimization problems. When environmental changes are detected, the main purpose of FRMODE is to predict high-quality populations that can effectively track the moving Pareto-optimal set. Specifically, the fuzzy c-means (FCM) algorithm clusters the populations obtained from the past two adjacent environments. The center points of populations are utilized to define the moving direction, which is used to predict high-quality agents based on previous non-dominated individuals. Then, linear and non-linear regression analysis fitting strategies are developed to model the distribution of variables according to the variables’ characteristics. Besides that, the partial mutation strategy is also utilized to guide individuals toward more promising regions by intensifying the search around current agents. To evaluate the performance of the proposed algorithm, experiments are conducted on a set of benchmark functions with various dynamic difficulties, as well as on two classical dynamic engineering design problems. The experimental results demonstrate that FRMODE is more competitive compared with several state-of-the-art algorithms.},
+  archive      = {J_SWEVO},
+  author       = {Qingyang Zhang and Xueliang Fu and Shengxiang Yang and Shouyong Jiang and Miqing Li and Zedong Zheng},
+  doi          = {10.1016/j.swevo.2025.102057},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102057},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Solving dynamic multi-objective engineering design problems via fuzzy c-means prediction algorithm},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning strategies for particle swarm optimizer: A critical review and performance analysis. <em>SWEVO</em>, <em>98</em>, 102048. (<a href='https://doi.org/10.1016/j.swevo.2025.102048'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Nature has long inspired the development of swarm intelligence (SI), a key branch of artificial intelligence that models collective behaviors observed in biological systems for solving complex optimization problems. Particle swarm optimization (PSO) is widely adopted among SI algorithms due to its simplicity and efficiency. Despite numerous learning strategies proposed to enhance PSO’s performance in terms of convergence speed, robustness, and adaptability, no comprehensive and systematic analysis of these strategies exists. We review and classify various learning strategies to address this gap, assessing their impact on optimization performance. Additionally, a comparative experimental evaluation is conducted to examine how these strategies influence PSO’s search dynamics. Our analysis reveals that multi-swarm strategies consistently outperform other PSO strategies in high-dimensional and multimodal problems, offering better exploration and convergence trade-offs. Finally, we discuss open challenges and future directions, emphasizing the need for self-adaptive, intelligent PSO variants capable of addressing increasingly complex real-world problems. This survey not only synthesizes the current landscape of learning-enhanced PSO but also provides actionable insights for future research and algorithmic design.},
+  archive      = {J_SWEVO},
+  author       = {Dikshit Chauhan and Shivani and Ponnuthurai N. Suganthan},
+  doi          = {10.1016/j.swevo.2025.102048},
+  journal      = {Swarm and Evolutionary Computation},
+  month        = {10},
+  pages        = {102048},
+  shortjournal = {Swarm Evol. Comput.},
+  title        = {Learning strategies for particle swarm optimizer: A critical review and performance analysis},
+  volume       = {98},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

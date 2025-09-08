@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JSYST</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="jsyst">JSYST - 2</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Multipopulation grey wolf optimization for cooperative multi-AUV path planning in complex underwater environments. <em>JSYST</em>, 1-11. (<a href='https://doi.org/10.1109/JSYST.2025.3593315'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article presents an innovative approach, termed the improved multiobjective multiple populations grey wolf optimization algorithm (IMMP-GWO), to address the cooperative planning problem of multiple autonomous underwater vehicles (multi-AUVs) in complex underwater environments with multiple target points. The algorithm comprehensively considers factors, such as AUV maneuverability, energy consumption, seabed topography, and obstacle avoidance. A key innovation is the hybrid enhancement using the greedy algorithm and the Cauchy mutation operator, which significantly boosts the algorithm’s evolutionary capabilities. In addition, the convergence factor of the traditional GWO algorithm is improved through the incorporation of the cosine law, addressing its inherent convergence limitations. A position update strategy, based on the sine cosine algorithm and iterative correlation of dynamic and static elements, is also introduced to better balance exploration and accelerate convergence. To tackle the orientation problem during GWO boundary processing, a novel approach is proposed that generates new individuals based on the minimum distance optimal weights. Simulation results demonstrate the superior performance of the IMMP-GWO algorithm in terms of computational complexity, convergence speed, and stability, validated through ablation studies and sensitivity analyses of key parameters. Overall, IMMP-GWO fulfills multi-AUV planning requirements and outperforms existing methods in various performance metrics.},
+  archive      = {J_JSYST},
+  author       = {Bing Sun and Yingyao Li and Wei Zhang},
+  doi          = {10.1109/JSYST.2025.3593315},
+  journal      = {IEEE Systems Journal},
+  month        = {8},
+  pages        = {1-11},
+  shortjournal = {IEEE Syst. J.},
+  title        = {Multipopulation grey wolf optimization for cooperative multi-AUV path planning in complex underwater environments},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Distributed consensus-based control of multiquadcopter systems for formation producing under cloud access. <em>JSYST</em>, 1-11. (<a href='https://doi.org/10.1109/JSYST.2025.3598972'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large-scale cooperative environmental monitoring has introduced various challenges, such as intermittent links, power and bandwidth constraints, and interdicted interagent communication to the robotics community. Mobile cloud computing has recently been introduced to tackle these problems, especially in the context of the formation control problem. Therefore, in this article, the problem of formation producing control of multiquadcopter systems under asynchronous access to the cloud is investigated. Here, it is assumed that the quadcopters exchange the information fully through the cloud storage service while the calculation for motion control is carried out on the edge. The scheduling rule is also designed to make cloud access more efficient without the need for constant communication. The formation producing is achieved by designing consensus-based control laws for the altitude and the translational subsystems while guaranteeing the asymptotic convergence of the quadcopters’ positions to the biased average of the initial values. The results show that the modified controller after being applied through cloud access guarantees practical consensus with a calculated bounded error. The access to the cloud is achieved by designing a Zeno behavior-free scheduling rule.},
+  archive      = {J_JSYST},
+  author       = {Nargess Sadeghzadeh-Nokhodberiz and Allahyar Montazeri},
+  doi          = {10.1109/JSYST.2025.3598972},
+  journal      = {IEEE Systems Journal},
+  month        = {8},
+  pages        = {1-11},
+  shortjournal = {IEEE Syst. J.},
+  title        = {Distributed consensus-based control of multiquadcopter systems for formation producing under cloud access},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

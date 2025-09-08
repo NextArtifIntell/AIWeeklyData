@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SICOMP</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="sicomp">SICOMP - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Toward better depth lower bounds: A KRW-like theorem for strong composition. <em>SICOMP</em>, <em>54</em>(5), 1193-1240. (<a href='https://doi.org/10.1137/23M158615X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. One of the major open problems in complexity theory is proving superlogarithmic lower bounds on the depth of circuits (i.e., ). [Karchmer, Raz, and Wigderson Super-logarithmic depth lower bounds via direct sum in communication complexity, in Proceedings of the Sixth Annual Structure in Complexity Theory Conference, IEEE Computer Society, Chicago, 1991, pp. 299–304] suggested approaching this problem by proving that the depth complexity of a composition of functions is roughly the sum of the depth complexities of and . They showed that the validity of this conjecture would imply that . The intuition that underlies the Karchmer, Raz, and Wigderson (KRW) conjecture is that the composition should behave like a “direct-sum problem”, in a certain sense, and, therefore, the depth complexity of should be the sum of the individual depth complexities. Nevertheless, there are two obstacles toward turning this intuition into a proof: first, we do not know how to prove that must behave like a direct-sum problem; second, we do not know how to prove that the complexity of the latter direct-sum problem is indeed the sum of the individual complexities. In this work, we focus on the second obstacle. To this end, we study a notion called “strong composition”, which is the same as except that it is forced to behave like a direct-sum problem. We prove a variant of the KRW conjecture for strong composition, thus overcoming the above second obstacle. This result demonstrates that the first obstacle above is the crucial barrier toward resolving the KRW conjecture. Along the way, we develop some general techniques that might be of independent interest.},
+  archive      = {J_SICOMP},
+  author       = {Or Meir},
+  doi          = {10.1137/23M158615X},
+  journal      = {SIAM Journal on Computing},
+  month        = {10},
+  number       = {5},
+  pages        = {1193-1240},
+  shortjournal = {SIAM J. Comput.},
+  title        = {Toward better depth lower bounds: A KRW-like theorem for strong composition},
+  volume       = {54},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>RMP</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="rmp">RMP - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Solar fusion III: New data and theory for hydrogen-burning stars. <em>RMP</em>, <em>97</em>(3), 035002. (<a href='https://doi.org/10.1103/8lm7-gs18'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In stars that lie on the main sequence in the Hertzsprung-Russell diagram, like our Sun, hydrogen is fused to helium in a number of nuclear reaction chains and series, such as the proton-proton chain and the carbon-nitrogen-oxygen cycles. Precisely determined thermonuclear rates of these reactions lie at the foundation of the standard solar model. This review, the third decadal evaluation of the nuclear physics of hydrogen-burning stars, is motivated by the great advances made in recent years by solar neutrino observatories, putting experimental knowledge of the proton-proton ( )-chain neutrino fluxes in the few-percent precision range. The basis of the review is a one-week community meeting held in July 2022 in Berkeley, California, and many subsequent digital meetings and exchanges. The relevant reactions of solar and stellar hydrogen burning are reviewed here from both theoretical and experimental perspectives. Recommendations for the state of the art of the astrophysical factor and its uncertainty are formulated for each of them. Several other topics of paramount importance for the solar model are reviewed as well: recent and future neutrino experiments, electron screening, radiative opacities, and current and upcoming experimental facilities. In addition to reaction-specific recommendations, general recommendations are also formed.},
+  archive  = {J},
+  author   = {B. Acharya and M. Aliotta and A. B. Balantekin and D. Bemmerer and C. A. Bertulani and A. Best and C. R. Brune and R. Buompane and L. Gialanella and F. Cavanna and J. W. Chen and J. Colgan and A. Czarnecki and B. Davids and R. J. deBoer and F. Delahaye and R. Depalo and A. Guglielmetti and A. García and R. G. H. Robertson and M. Gatu Johnson and D. Gazit and U. Greife and D. Guffanti and K. Hambleton and W. C. Haxton and Y. Herrera and A. Serenelli and M. Huang and C. Iliadis and K. Kravvaris and M. La Cognata and K. Langanke and L. E. Marcucci and T. Nagayama and K. M. Nollett and D. Odell and G. D. Orebi Gann and D. Piatti and M. Pinsonneault and L. Platter and G. Rupak and M. Sferrazza and T. Szücs and X. Tang and A. Tumino and F. L. Villante and A. Walker-Loud and X. Zhang and K. Zuber},
+  doi      = {10.1103/8lm7-gs18},
+  journal  = {Reviews of Modern Physics},
+  month    = {9},
+  number   = {3},
+  pages    = {035002},
+  title    = {Solar fusion III: New data and theory for hydrogen-burning stars},
+  volume   = {97},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

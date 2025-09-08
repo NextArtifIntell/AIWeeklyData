@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JPDC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="jpdc">JPDC - 8</h2>
+<ul>
+<li><details>
+<summary>
+(2025). SEDViN: Secure embedding for dynamic virtual network requests using a multi-attribute matching game. <em>JPDC</em>, <em>206</em>, 105171. (<a href='https://doi.org/10.1016/j.jpdc.2025.105171'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Network virtualization (NV) has gained significant attention as it allows service providers (SP) to share substrate network (SN) resources. It is achieved by partitioning them into isolated virtual network requests (VNRs) comprising interrelated virtual machines (VMs) and virtual links (VLs). Although NV provides various advantages, such as service separation, enhanced quality-of-service, reliability, and improved SN utilization, it also presents multiple scientific challenges. In this context, one pivotal challenge encountered by the researchers is secure virtual network embedding (SVNE). The SVNE encompasses assigning SN resources to components of VNR, i.e., VMs and VLs, adhering to the security demands, which is a computationally intractable problem, as it is proven to be NP -Hard. In this context, maximizing the acceptance and revenue-to-cost ratios remains of utmost priority for SPs as it not only increases the revenue but also effectively utilizes the large pool of SN resources. Though VNE is a well-researched problem, the existing literature has the following flaws: ( i .) security features of VMs and VLs are ignored, ( ii .) limited consideration of topological attributes, and ( iii .) restricted to static VNRs. However, SPs need to develop an embedding framework that overcomes the abovementioned pitfalls. Therefore, this work proposes a framework S ecure E mbedding for D ynamic Vi rtual N etwork requests using a multi-attribute matching game (SEDViN). In SedViN, the deferred acceptance algorithm (DAA) based matching game is used for effective embedding. SEDViN operates primarily in two steps to obtain a secure embedding of dynamic VNRs. Firstly, it generates a unified ranking for VMs and servers using a combination of entropy and a technique for order of preference by similarity to the ideal solution (TOPSIS), considering network, security, and system attributes. Taking these as inputs, in the second step, VNR embedding is conducted using the deferred acceptance approach based on a one-to-many matching strategy for VM embedding and VL embedding using the shortest path algorithm. The performance of SEDViN is evaluated through simulations and compared against different baseline approaches. The simulation outcomes exhibit that SEDViN surpasses the baselines with a gain of 56% in the acceptance and 44% in the revenue-to-cost ratios.},
+  archive      = {J_JPDC},
+  author       = {T.G. Keerthan Kumar and Rahul Kumar and Anirudh Munnur Achal and Anurag Satpathy and Sourav Kanti Addya},
+  doi          = {10.1016/j.jpdc.2025.105171},
+  journal      = {Journal of Parallel and Distributed Computing},
+  month        = {12},
+  pages        = {105171},
+  shortjournal = {J. Parallel Distrib. Comput.},
+  title        = {SEDViN: Secure embedding for dynamic virtual network requests using a multi-attribute matching game},
+  volume       = {206},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A scheduler to foster data locality for GPU and out-of-core task-based linear algebra applications. <em>JPDC</em>, <em>206</em>, 105170. (<a href='https://doi.org/10.1016/j.jpdc.2025.105170'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hardware accelerators like GPUs now provide a large part of the computational power used for scientific simulations. Despite their efficacy, GPUs possess limited memory and are connected to the main memory of the machine via a bandwidth limited bus. Scientific simulations often operate on very large data, that surpasses the GPU's memory capacity. Therefore, one has to turn to out-of-core computing: data is kept in a remote, slower memory (CPU memory), and moved back and forth from/to the device memory (GPU memory), a process also present for multicore CPUs with limited memory. In both cases, data movement quickly becomes a performance bottleneck. Task-based runtime schedulers have emerged as a convenient and efficient way to manage large applications on such heterogeneous platforms. We propose a scheduler for task-based runtimes that improves data locality for out-of-core linear algebra computations, to reduce data movement. We design a data-aware strategy for both task scheduling and data eviction from limited memories. We compare this scheduler to existing schedulers in runtime systems. Using StarPU , we show that our new scheduling strategy achieves comparable performance when memory is not a constraint, and significantly better performance when application input data exceeds memory, on both GPUs and CPU cores.},
+  archive      = {J_JPDC},
+  author       = {Maxime Gonthier and Loris Marchal and Samuel Thibault},
+  doi          = {10.1016/j.jpdc.2025.105170},
+  journal      = {Journal of Parallel and Distributed Computing},
+  month        = {12},
+  pages        = {105170},
+  shortjournal = {J. Parallel Distrib. Comput.},
+  title        = {A scheduler to foster data locality for GPU and out-of-core task-based linear algebra applications},
+  volume       = {206},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimization of single node load balancing for lattice boltzmann method on heterogeneous high performance computers. <em>JPDC</em>, <em>206</em>, 105169. (<a href='https://doi.org/10.1016/j.jpdc.2025.105169'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Lattice Boltzmann Methods (LBM) are particularly suited for highly parallel computational fluid dynamics simulations on heterogeneous HPC systems combining CPUs and GPUs. However, the computationally dominant collide-and-stream loops commonly utilize only GPUs, leaving CPU resources underutilized. To overcome this limitation, this article proposes a novel load balancing strategy based on a genetic algorithm for bottom-up, cost-aware optimization of spatial domain decompositions. This approach generates subdomains and rank assignments inherently suited for cooperative execution on both CPUs and GPUs. Implemented in the open source framework OpenLB, the strategy is applied to turbulent flow reference cases, including a multi-physics reactive mixer. A detailed evaluation on heterogeneous HPC nodes demonstrates significant performance gains, achieving speedups of up to 87% compared to traditional GPU-only execution. This work therefore establishes cost-aware, bottom-up decomposition as a suitable strategy for exploiting the native heterogeneity of modern compute nodes.},
+  archive      = {J_JPDC},
+  author       = {Adrian Kummerländer and Fedor Bukreev and Dennis Teutscher and Marcio Dorn and Mathias J. Krause},
+  doi          = {10.1016/j.jpdc.2025.105169},
+  journal      = {Journal of Parallel and Distributed Computing},
+  month        = {12},
+  pages        = {105169},
+  shortjournal = {J. Parallel Distrib. Comput.},
+  title        = {Optimization of single node load balancing for lattice boltzmann method on heterogeneous high performance computers},
+  volume       = {206},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HeaPS: Heterogeneity-aware participant selection for efficient federated learning. <em>JPDC</em>, <em>206</em>, 105168. (<a href='https://doi.org/10.1016/j.jpdc.2025.105168'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated learning enables collaborative model training among numerous clients. However, existing participant/client selection methods fail to fully leverage the advantages of clients with excellent computational or communication capabilities. In this paper, we propose HeaPS, a novel Heterogeneity-aware Participant Selection framework for efficient federated learning. We introduce a finer-grained global selection algorithm to select communication-strong leaders and computation-strong members from candidate clients. The leaders are responsible for communicating with the server to reduce per-round duration, as well as contributing gradients; while the members communicate with the leaders to contribute more gradients obtained from high-utility data to the global model and improve the final model accuracy. Meanwhile, we develop a gradient migration path generation algorithm to match the optimal leader for each member. We also design the client scheduler to facilitate parallel local training of leaders and members based on gradient migration. Experimental results show that, in comparison with state-of-the-art methods, HeaPS achieves a speedup of up to 3.20× in time-to-accuracy performance and improves the final accuracy by up to 3.57%. The code for HeaPS is available at https://github.com/Dora233/HeaPS .},
+  archive      = {J_JPDC},
+  author       = {Duo Yang and Bing Hu and Yunqi Gao and A-Long Jin and An Liu and Kwan L. Yeung and Yang You},
+  doi          = {10.1016/j.jpdc.2025.105168},
+  journal      = {Journal of Parallel and Distributed Computing},
+  month        = {12},
+  pages        = {105168},
+  shortjournal = {J. Parallel Distrib. Comput.},
+  title        = {HeaPS: Heterogeneity-aware participant selection for efficient federated learning},
+  volume       = {206},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Sensor failure mitigation in RTOS based internet of things (IoT) systems using machine learning. <em>JPDC</em>, <em>206</em>, 105161. (<a href='https://doi.org/10.1016/j.jpdc.2025.105161'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In IoT systems, issues like data loss can severely impact application performance, often resulting in missed deadlines in real-time operating systems (RTOS). Missed deadlines can lead to incomplete or delayed data, compromising system reliability and user safety. To address these challenges, this paper proposes a solution that reduces missed deadlines and effectively manages data gaps when they occur. This paper presents a novel approach, FP-DVFS-CC, which combines Fixed Priority (FP) scheduling with Dynamic Voltage and Frequency Scaling (DVFS) and Cycle Conserving (CC) to dynamically adjust CPU speeds in RTOS-based IoT systems. This method optimizes deadline adherence by adapting processing power based on task priority and system load, significantly reducing missed deadlines and energy consumption in real-time applications. Additionally, it proposes a MQTT-based cache to handle the delivery of missed messages with sensor data and suggests using machine learning to provide synthetic data to the system in case of data absence. Further, for addressing data gaps due to sensor malfunctions or delays, we introduce FeatureSync, an imputation technique that utilizes only highly correlated features integrating with machine learning algorithms to generate synthetic data. Experimental validation demonstrates enhanced performance with machine learning integration. If missing data is treated as zero instead of performing data imputation, it will lower accuracy, as seen in the case analysis, and increase prediction error. However, using data imputation can reduce the errors caused by treating missing values as zero. Testing on datasets with varied missing data reaffirms the approach's effectiveness.},
+  archive      = {J_JPDC},
+  author       = {Saugat Sharma and Grzegorz Chmaj and Henry Selvaraj},
+  doi          = {10.1016/j.jpdc.2025.105161},
+  journal      = {Journal of Parallel and Distributed Computing},
+  month        = {12},
+  pages        = {105161},
+  shortjournal = {J. Parallel Distrib. Comput.},
+  title        = {Sensor failure mitigation in RTOS based internet of things (IoT) systems using machine learning},
+  volume       = {206},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SoRCS: A scalable blockchain model with separation of role, chain and storage. <em>JPDC</em>, <em>206</em>, 105160. (<a href='https://doi.org/10.1016/j.jpdc.2025.105160'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The industrial use of blockchain technology is becoming more widespread, the scalability of blockchain is still one of the primary challenges in large-scale practical applications. Separation schemes are being introduced by many blockchain projects to solve their scalability problems. In this paper, we propose a comprehensive separation scheme SoRCS, which separates the node role, the chain, and the data storage. It makes full use of the resources of each node, reduces the load on the nodes, and improves the degree of decentralization. Ordering of verified transactions, execution of ordered transactions, confirmation of ordering and execution blocks run concurrently within different sub-networks to improve blockchain performance. Based on the results of the block consensus, we provide a three-phase response: documented, executed, and confirmed. Based on the SoRCS architecture, we also implement a prototype system that consists of 1200 nodes to evaluate our separation schemes. Its peak throughput is 14.7 Ktps and its latency is around 0.5 s. We use the three-phase response time to avoid the issue of higher latency, and the first response time is around 0.15 s.},
+  archive      = {J_JPDC},
+  author       = {Bin Yu and Lei Chen and He Zhao and Zhiyu Ma and Haotian Cheng and Xiaoting Zhang and Liang Sun and Tong Zhou and Nianzu Sheng},
+  doi          = {10.1016/j.jpdc.2025.105160},
+  journal      = {Journal of Parallel and Distributed Computing},
+  month        = {12},
+  pages        = {105160},
+  shortjournal = {J. Parallel Distrib. Comput.},
+  title        = {SoRCS: A scalable blockchain model with separation of role, chain and storage},
+  volume       = {206},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FSCD: File system controlled coupled defragmenter for mobile storage systems. <em>JPDC</em>, <em>206</em>, 105159. (<a href='https://doi.org/10.1016/j.jpdc.2025.105159'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {NAND-Flash-based mobile devices have gained increasing popularity. However, fragmentation in flash storage significantly impedes the I/O performance of the system, which leads to a poor user experience. Currently, the logical fragmentation is decoupled from the physical fragmentation and garbage collection is typically controlled by the Flash Translation Layer (FTL), degrading the garbage collection efficiency. In this paper, a novel fragmentation handling strategy, namely the File System controlled Coupled Defragmenter (FSCD), is proposed in which the file system is used to control the garbage collection, and couple the logical and physical fragmentations, synchronizing between the logical and physical defragmentation. As a result, FSCD can significantly reduce fragmentation and improve system performance in the fragmented state. Experimental results showed that the performance of Sequential Read/Sequential Write and Random Read/Random Write had been improved by 393.7%, 356.2% and 126.0%, 296.0% over the conventional FTL, respectively. FSCD alleviates fragmentation, improves I/O performance, and enables a better user experience, which provides a solution for the next generation of the NAND-flash-based mobile storage system.},
+  archive      = {J_JPDC},
+  author       = {Pingyang Huang and Chenxi Liu and Jilong Yang and Ting Chen and Zhiyuan Cheng},
+  doi          = {10.1016/j.jpdc.2025.105159},
+  journal      = {Journal of Parallel and Distributed Computing},
+  month        = {12},
+  pages        = {105159},
+  shortjournal = {J. Parallel Distrib. Comput.},
+  title        = {FSCD: File system controlled coupled defragmenter for mobile storage systems},
+  volume       = {206},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SPSRR: An effective streaming multiprocessor partitioning based on on-chip storage resource requirement of kernels. <em>JPDC</em>, <em>206</em>, 105158. (<a href='https://doi.org/10.1016/j.jpdc.2025.105158'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rapid development and continuous improvement of the parallel computing architectures of general purpose graphic processing unit (GPGPU), their computing capabilities have significantly increased, making them indispensable computing acceleration resources in high-performance computing and high-throughput application domains. However, the current GPGPU supports more concurrent execution of multiple kernels, which exacerbates the competition for on-chip resource usage. Therefore, research on performance optimization of GPGPU in multi-kernel concurrent execution environments has become essential. Many researchers have conducted related studies around spatial multitasking, achieving some success by allocating different numbers of streaming multiprocessor (SM) for concurrently executing kernels. However, the number of SM allocated to concurrent kernels is often not precise enough, affecting the overall performance improvement of the system. In light of this, this paper proposes an SM partitioning strategy based on-chip storage resource requirements (SPSRR). SPSRR analyzes the storage resource demands of different kernels before execution to calculate the SM partitioning results. Additionally, SPSRR adopts ordered preemption and non-compulsory preemption strategies to achieve dynamic allocation of SM resources. Experimental results indicate that, compared to the baseline Even partitioning strategy, this approach improves the average system throughput by 18.2 %, with a maximum increase of 62.8 %. Compared to the Dynamic Optimizations strategy, the average system throughput is improved by 7.3 %, with a maximum increase of 31.3 %.},
+  archive      = {J_JPDC},
+  author       = {Jun Zhang and Jizhen Wei and Fanfan Shen and Hai Tan and Yanxiang He},
+  doi          = {10.1016/j.jpdc.2025.105158},
+  journal      = {Journal of Parallel and Distributed Computing},
+  month        = {12},
+  pages        = {105158},
+  shortjournal = {J. Parallel Distrib. Comput.},
+  title        = {SPSRR: An effective streaming multiprocessor partitioning based on on-chip storage resource requirement of kernels},
+  volume       = {206},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

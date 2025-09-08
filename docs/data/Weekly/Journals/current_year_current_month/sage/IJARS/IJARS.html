@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IJARS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ijars">IJARS - 2</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Composite adaptive-based trajectory tracking for unmanned surface vessels under unknown dynamics parameters. <em>IJARS</em>, <em>22</em>(5). (<a href='https://doi.org/10.1177/17298806251359453'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To address the trajectory tracking problem of unmanned surface vessels (USVs) when all dynamics parameters are unknown. This study designs a trajectory tracking controller for USVs based on Lyapunov theory and composite adaptive control technology. And based on dual feedback signals from tracking error and forecast error, an adaptive update law for dynamics parameters is designed using the Bounded Gain Forgetting Least Squares method. The adaptive update law enables the online identification of all dynamics parameters of USVs. Next, a concise nonlinear disturbance observer is designed based on error feedback signals to compensate for unknown time-varying environmental disturbances. A control law incorporating dynamics parameters adaptive update law and disturbance estimation is developed using composite adaptive control techniques. Subsequently, the convergence of trajectory tracking errors and dynamics parameters estimation errors is proven based on Lyapunov theory. Finally, numerical simulation experiments are conducted. The results of simulation experiments demonstrate that the proposed controller achieves precise trajectory tracking for the USV even when all dynamics parameters are completely unknown. Additionally, the controller exhibits robust disturbance rejection capabilities.},
+  archive      = {J_IJARS},
+  author       = {Ziming Wang and Shunhuai Chen and Zaopeng Dong and Haijun Jiang},
+  doi          = {10.1177/17298806251359453},
+  journal      = {International Journal of Advanced Robotic Systems},
+  month        = {9-10},
+  number       = {5},
+  shortjournal = {Int. J. Adv. Robot. Syst.},
+  title        = {Composite adaptive-based trajectory tracking for unmanned surface vessels under unknown dynamics parameters},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Advances in industrial bin picking through sim-to-real transfer and cycle optimization. <em>IJARS</em>, <em>22</em>(5). (<a href='https://doi.org/10.1177/17298806251374367'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work presents a novel method for addressing the bin picking problem with two significant contributions. First, we propose a specialized generator for synthetic labelled data tailored for bin picking applications. This synthetic data facilitates the training of deep learning models for detecting objects. Second, a parallel workflow to optimize cycle time is presented; this workflow leverages the robot’s motion to perform all cognitive computations. Experimental results demonstrate that models trained exclusively on virtual data achieve comparable performance when applied to real-world scenarios. Additionally, the proposed workflow effectively optimizes cycle time by ensuring uninterrupted robot movement throughout the process.},
+  archive      = {J_IJARS},
+  author       = {Marco Ojer and Hugo Alvarez and Xiao Lin and Elena Lazkano},
+  doi          = {10.1177/17298806251374367},
+  journal      = {International Journal of Advanced Robotic Systems},
+  month        = {9-10},
+  number       = {5},
+  shortjournal = {Int. J. Adv. Robot. Syst.},
+  title        = {Advances in industrial bin picking through sim-to-real transfer and cycle optimization},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

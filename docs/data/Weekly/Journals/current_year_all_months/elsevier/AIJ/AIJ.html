@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AIJ</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="aij">AIJ - 87</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Abstracting situation calculus action theories. <em>AIJ</em>, <em>348</em>, 104407. (<a href='https://doi.org/10.1016/j.artint.2025.104407'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We develop a general framework for agent abstraction based on the situation calculus and the ConGolog agent programming language. We assume that we have a high-level specification and a low-level specification of the agent, both represented as basic action theories. A refinement mapping specifies how each high-level action is implemented by a low-level ConGolog program and how each high-level fluent can be translated into a low-level formula. We define a notion of sound abstraction between such action theories in terms of the existence of a suitable bisimulation between their respective models. Sound abstractions have many useful properties that ensure that we can reason about the agent's actions (e.g., executability, projection, and planning) at the abstract level, and refine and concretely execute them at the low level. We also characterize the notion of complete abstraction where all actions (including exogenous ones) that the high level thinks can happen can in fact occur at the low level. To facilitate verifying that one has a sound/complete abstraction relative to a mapping, we provide a set of necessary and sufficient conditions. Finally, we identify a set of basic action theory constraints that ensure that for any low-level action sequence, there is a unique high-level action sequence that it refines. This allows us to track/monitor what the low-level agent is doing and describe it in abstract terms (i.e., provide high-level explanations, for instance, to a client or manager).},
+  archive      = {J_AIJ},
+  author       = {Bita Banihashemi and Giuseppe De Giacomo and Yves Lespérance},
+  doi          = {10.1016/j.artint.2025.104407},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104407},
+  shortjournal = {Artif. Intell.},
+  title        = {Abstracting situation calculus action theories},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards optimal subsidy bounds for envy-freeable allocations. <em>AIJ</em>, <em>348</em>, 104406. (<a href='https://doi.org/10.1016/j.artint.2025.104406'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the fair division of indivisible items with subsidies among n agents, where the absolute marginal valuation of each item is at most one. Under monotone nondecreasing valuations (where each item is a good), Brustle et al. [9] demonstrated that a maximum subsidy of 2 ( n − 1 ) and a total subsidy of 2 ( n − 1 ) 2 are sufficient to guarantee the existence of an envy-freeable allocation. In this paper, we improve upon these bounds, even in a wider model. Namely, we show that, given an EF1 allocation, we can compute in polynomial time an envy-free allocation with a subsidy of at most n − 1 per agent and a total subsidy of at most n ( n − 1 ) / 2 . Moreover, when the valuations are monotone nondecreasing, we provide a polynomial-time algorithm that computes an envy-free allocation with a subsidy of at most n − 1.5 per agent and a total subsidy of at most ( n 2 − n − 1 ) / 2 .},
+  archive      = {J_AIJ},
+  author       = {Yasushi Kawase and Kazuhisa Makino and Hanna Sumita and Akihisa Tamura and Makoto Yokoo},
+  doi          = {10.1016/j.artint.2025.104406},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104406},
+  shortjournal = {Artif. Intell.},
+  title        = {Towards optimal subsidy bounds for envy-freeable allocations},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Local-MIP: Efficient local search for mixed integer programming. <em>AIJ</em>, <em>348</em>, 104405. (<a href='https://doi.org/10.1016/j.artint.2025.104405'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mixed Integer Programming (MIP) is a fundamental model in operations research with broad industrial applications. Local search is a powerful methodology for solving complex optimization problems; however, the development of local search algorithms for MIP still needs exploration. In this work, we propose Local-MIP , an efficient local search algorithm tailored for MIP that integrates novel operators and employs a two-mode architecture to adaptively apply operators based on the current solution's feasibility. For the feasible mode, we propose the lift move operator and a corresponding lift process to improve the objective value while maintaining feasibility. For the infeasible mode, we propose the breakthrough move and mixed tight move operators to respectively optimize the objective function and satisfy constraints. To apply operators intelligently, we develop a dynamic weighting scheme that balances the priorities of the objective function and constraints. Furthermore, we propose a two-level scoring function structure that hierarchically selects operations, guiding the search toward high-quality feasible solutions. Experiments are conducted on public benchmarks to compare Local-MIP with state-of-the-art MIP solvers in finding high-quality solutions. The results show that Local-MIP significantly outperforms CPLEX , HiGHS , SCIP , and Feasibility Jump while remaining competitive with the commercial solver Gurobi on challenging problems within short time limits. Moreover, Local-MIP establishes 10 new records on MIPLIB open instances.},
+  archive      = {J_AIJ},
+  author       = {Peng Lin and Shaowei Cai and Mengchuan Zou and Jinkun Lin},
+  doi          = {10.1016/j.artint.2025.104405},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104405},
+  shortjournal = {Artif. Intell.},
+  title        = {Local-MIP: Efficient local search for mixed integer programming},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Algebras of actions in an agent's representations of the world. <em>AIJ</em>, <em>348</em>, 104403. (<a href='https://doi.org/10.1016/j.artint.2025.104403'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Learning efficient representations allows robust processing of data, data that can then be generalised across different tasks and domains, and it is thus paramount in various areas of Artificial Intelligence, including computer vision, natural language processing and reinforcement learning, among others. Within the context of reinforcement learning, we propose in this paper a mathematical framework to learn representations by extracting the algebra of the transformations of worlds from the perspective of an agent. As a starting point, we use our framework to reproduce representations from the symmetry-based disentangled representation learning (SBDRL) formalism proposed by [1] and prove that, although useful, they are restricted to transformations that respond to the properties of algebraic groups. We then generalise two important results of SBDRL –the equivariance condition and the disentangling definition– from only working with group-based symmetry representations to working with representations capturing the transformation properties of worlds for any algebra, using examples common in reinforcement learning and generated by an algorithm that computes their corresponding Cayley tables. Finally, we combine our generalised equivariance condition and our generalised disentangling definition to show that disentangled sub-algebras can each have their own individual equivariance conditions, which can be treated independently, using category theory. In so doing, our framework offers a rich formal tool to represent different types of symmetry transformations in reinforcement learning, extending the scope of previous proposals and providing Artificial Intelligence developers with a sound foundation to implement efficient applications.},
+  archive      = {J_AIJ},
+  author       = {Alexander Dean and Eduardo Alonso and Esther Mondragón},
+  doi          = {10.1016/j.artint.2025.104403},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104403},
+  shortjournal = {Artif. Intell.},
+  title        = {Algebras of actions in an agent's representations of the world},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhancing cooperativity in controlled query evaluation over ontologies. <em>AIJ</em>, <em>348</em>, 104402. (<a href='https://doi.org/10.1016/j.artint.2025.104402'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Controlled Query Evaluation (CQE) is a methodology designed to maintain confidentiality by either rejecting specific queries or adjusting responses to safeguard sensitive information. In this investigation, our focus centers on CQE within Description Logic ontologies, aiming to ensure that queries are answered truthfully as long as possible before resorting to deceptive responses, a cooperativity property which is called the “longest honeymoon”. Our work introduces new semantics for CQE, denoted as MC-CQE, which enjoys the longest honeymoon property and outperforms previous methodologies in terms of cooperativity. We study the complexity of query answering in this new framework for ontologies expressed in the Description Logic DL-Lite R . Specifically, we establish data complexity results under different maximally cooperative semantics and for different classes of queries. Our results identify both tractable and intractable cases. In particular, we show that the evaluation of Boolean unions of conjunctive queries is the same under all the above semantics and its data complexity is in . This result makes query answering amenable to SQL query rewriting. However, this favorable property does not extend to open queries, even with a restricted query language limited to conjunctions of atoms. While, in general, answering open queries in the MC-CQE framework is intractable, we identify a sub-family of semantics under which answering full conjunctive queries is tractable.},
+  archive      = {J_AIJ},
+  author       = {Piero Bonatti and Gianluca Cima and Domenico Lembo and Francesco Magliocca and Lorenzo Marconi and Riccardo Rosati and Luigi Sauro and Domenico Fabio Savo},
+  doi          = {10.1016/j.artint.2025.104402},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104402},
+  shortjournal = {Artif. Intell.},
+  title        = {Enhancing cooperativity in controlled query evaluation over ontologies},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BATED: Learning fair representation for pre-trained language models via biased teacher-guided disentanglement. <em>AIJ</em>, <em>348</em>, 104401. (<a href='https://doi.org/10.1016/j.artint.2025.104401'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rapid development of Pre-trained Language Models (PLMs) and their widespread deployment in various real-world applications, social biases of PLMs have attracted increasing attention, especially the fairness of downstream tasks, which potentially affects the development and stability of society. Among existing debiasing methods, intrinsic debiasing methods are not necessarily effective when applied to downstream tasks, and the downstream fine-tuning process may introduce new biases or catastrophic forgetting. Most extrinsic debiasing methods rely on sensitive attribute words as prior knowledge to supervise debiasing training. However, it is difficult to collect sensitive attribute information of real data due to privacy and regulation. Moreover, limited sensitive attribute words may lead to inadequate debiasing training. To this end, this paper proposes a debiasing method to learn fair representation for PLMs via B i A sed TE acher-guided D isentanglement (called BATED ). Specific to downstream tasks, BATED performs debiasing training under the guidance of a biased teacher model rather than relying on sensitive attribute information of the training data. First, we leverage causal contrastive learning to train a task-agnostic general biased teacher model. We then employ Variational Auto-Encoder (VAE) to disentangle the PLM-encoded representation into the fair representation and the biased representation. The Biased representation is further decoupled via biased teacher-guided disentanglement, while the fair representation learn downstream tasks. Therefore, BATED guarantees the performance of downstream tasks while improving the fairness. Experimental results on seven PLMs testing three downstream tasks demonstrate that BATED outperforms the state-of-the-art overall in terms of fairness and performance on downstream tasks.},
+  archive      = {J_AIJ},
+  author       = {Yingji Li and Mengnan Du and Rui Song and Mu Liu and Ying Wang},
+  doi          = {10.1016/j.artint.2025.104401},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104401},
+  shortjournal = {Artif. Intell.},
+  title        = {BATED: Learning fair representation for pre-trained language models via biased teacher-guided disentanglement},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Choosing abstraction levels for model-based software debugging: A theoretical and empirical analysis for spreadsheet programs. <em>AIJ</em>, <em>348</em>, 104399. (<a href='https://doi.org/10.1016/j.artint.2025.104399'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Model-based diagnosis is a generally applicable, principled approach to the systematic debugging of a wide range of system types such as circuits, knowledge bases, physical devices, or software. Based on a formal description of the system, it enables precise and deterministic reasoning about potential faults responsible for observed misbehavior. In software, such a formal system description can often even be extracted from the buggy program fully automatically. As logical reasoning is central to diagnosis, the performance of model-based debuggers is largely influenced by reasoning efficiency, which in turn depends on the complexity and expressivity of the system description. Since highly detailed models capturing exact semantics often exceed the capabilities of current reasoning tools, researchers have proposed more abstract representations. In this work, we thoroughly analyze system modeling techniques with a focus on fault localization in spreadsheets—one of the most widely used end-user programming paradigms. Specifically, we present three constraint model types characterizing spreadsheets at different abstraction levels, show how to extract them automatically from faulty spreadsheets, and provide theoretical and empirical investigations of the impact of abstraction on both diagnostic output and computational performance. Our main conclusions are that (i) for the model types, there is a trade-off between the conciseness of generated fault candidates and computation time, (ii) the exact model is often impractical, and (iii) a new model based on qualitative reasoning yields the same solutions as the exact one in up to more than half the cases while being orders of magnitude faster. Due to their ability to restrict the solution space in a sound way, the explored model-based techniques, rather than being used as standalone approaches, are expected to realize their full potential in combination with iterative sequential diagnosis or indeterministic but more performant statistical debugging methods.},
+  archive      = {J_AIJ},
+  author       = {Patrick Rodler and Birgit Hofer and Dietmar Jannach and Iulia Nica and Franz Wotawa},
+  doi          = {10.1016/j.artint.2025.104399},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104399},
+  shortjournal = {Artif. Intell.},
+  title        = {Choosing abstraction levels for model-based software debugging: A theoretical and empirical analysis for spreadsheet programs},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Argus: Programming with communication protocols in a belief-desire-intention architecture. <em>AIJ</em>, <em>348</em>, 104398. (<a href='https://doi.org/10.1016/j.artint.2025.104398'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Protocols model multiagent systems (MAS) by capturing the communications between its agents. Belief-Desire-Intention (BDI) architectures provide an attractive way for organizing an agent in terms of cognitive concepts. Current BDI approaches, however, lack adequate support for engineering protocol-based agents. We describe Argus, an approach that melds recent advances in flexible, declarative communication protocols with BDI architectures. For concreteness, we adopt Jason as an exemplar of the BDI paradigm and show how to support protocol-based reasoning in it. Specifically, Argus contributes (1) a novel architecture and formal operational semantics combining protocols and BDI; (2) a code generation-based programming model that guides the implementation of agents; and (3) integrity checking for incoming and outgoing messages that help ensure that the agents are well-behaved. The Argus conceptual architecture builds quite naturally on top of Jason. Thus, Argus enables building more flexible multiagent systems while using a BDI architecture than is currently possible.},
+  archive      = {J_AIJ},
+  author       = {Samuel H. Christie V and Munindar P. Singh and Amit K. Chopra},
+  doi          = {10.1016/j.artint.2025.104398},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104398},
+  shortjournal = {Artif. Intell.},
+  title        = {Argus: Programming with communication protocols in a belief-desire-intention architecture},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Social behavior as a key to learning-based multi-agent pathfinding dilemmas. <em>AIJ</em>, <em>348</em>, 104397. (<a href='https://doi.org/10.1016/j.artint.2025.104397'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Multi-agent Path Finding (MAPF) problem involves finding collision-free paths for a team of agents in a known, static environment, with important applications in warehouse automation, logistics, or last-mile delivery. To meet the needs of these large-scale applications, current learning-based methods often deploy the same fully trained, decentralized network to all agents to improve scalability. However, such parameter sharing typically results in homogeneous behaviors among agents, which may prevent agents from breaking ties around symmetric conflict (e.g., bottlenecks) and might lead to live-/deadlocks. In this paper, we propose SYLPH, a novel learning-based MAPF framework aimed to mitigate the adverse effects of homogeneity by allowing agents to learn and dynamically select different social behaviors (akin to individual, dynamic roles), without affecting the scalability offered by parameter sharing. Specifically, SYLPH offers a novel hierarchical mechanism by introducing Social Value Orientation (SVO) as a temporally extended latent variable that plays a central role in both policy generation and reward assignment. To support this hierarchical decision-making process, we introduce Social-aware Multi-Policy PPO (SMP3O), a reinforcement learning method that ensures stable and effective training through a mechanism for the cross-utilization of advantages. Moreover, we design an SVO-based learning tie-breaking algorithm, allowing agents to proactively avoid collisions, rather than relying solely on post-processing techniques. As a result of this hierarchical decision-making and exchange of social preferences, SYLPH endows agents with the ability to reason about the MAPF task through more latent spaces and nuanced contexts, leading to varied responses that can help break ties around symmetric conflicts. Our comparative experiments show that SYLPH achieves state-of-the-art performance, surpassing other learning-based MAPF planners in random, room-like, and maze-like maps, while our ablation studies demonstrate the advantages of each component in SYLPH. We finally experimentally validate our trained policies on hardware in three types of maps, showing how SYLPH allows agents to find high-quality paths under real-life conditions. Our code and videos are available at: marmotlab.github.io/mapf_sylph .},
+  archive      = {J_AIJ},
+  author       = {Chengyang He and Tanishq Duhan and Parth Tulsyan and Patrick Kim and Guillaume Sartoretti},
+  doi          = {10.1016/j.artint.2025.104397},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104397},
+  shortjournal = {Artif. Intell.},
+  title        = {Social behavior as a key to learning-based multi-agent pathfinding dilemmas},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MATE: Masked optimal transport with dynamic selection for partial label graph learning. <em>AIJ</em>, <em>348</em>, 104396. (<a href='https://doi.org/10.1016/j.artint.2025.104396'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper investigates the problem of partial label graph learning, in which every graph is associated with a set of candidate labels. Previous methods for weakly supervised graph classification often provide pseudo-labels for graph samples that could be overconfident and biased towards the dominant classes, thus resulting in substantial error accumulation. In this paper, we introduce a new framework named M asked Optim a l T ransport with Dynamic S e lection (MATE) for partial label graph learning, which improves the quality of graph assignments from the perspectives of class balancing and uncertainty mining. In particular, our MATE masks probabilities out of candidate sets and then adopts optimal transport to optimize the assignments without class biases. This design is based on the assumption that the true label distribution is class-balanced or nearly balanced, which is common in various training datasets and real-world scenarios. To further reduce potential noise, we propose a novel scoring metric termed partial energy discrepancy (PED) to evaluate the uncertainty of assignments, and then introduce a dynamic selection strategy that modifies the sample-specific thresholds via momentum updating. Finally, these samples are divided into three levels, i.e., confident, less-confident, and unconfident and each group is trained separately in our collaborative optimization framework. Extensive experiments on various benchmarks demonstrate the superiority of our MATE compared to various state-of-the-art baselines.},
+  archive      = {J_AIJ},
+  author       = {Yiyang Gu and Binqi Chen and Zihao Chen and Ziyue Qiao and Xiao Luo and Junyu Luo and Zhiping Xiao and Wei Ju and Ming Zhang},
+  doi          = {10.1016/j.artint.2025.104396},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104396},
+  shortjournal = {Artif. Intell.},
+  title        = {MATE: Masked optimal transport with dynamic selection for partial label graph learning},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Interpreting capsule networks for image classification by routing path visualization. <em>AIJ</em>, <em>348</em>, 104395. (<a href='https://doi.org/10.1016/j.artint.2025.104395'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Artificial neural networks are popular for computer vision as they often give state-of-the-art performance, but are difficult to interpret because of their complexity. This black box modeling is especially troubling when the application concerns human well-being such as in medical image analysis or autonomous driving. In this work, we propose a technique called routing path visualization for capsule networks, which reveals how much of each region in an image is routed to each capsule. In turn, this technique can be used to interpret the entity that a given capsule detects, and speculate how the network makes a prediction. We demonstrate our new visualization technique on several real world datasets. Experimental results suggest that routing path visualization can precisely localize the predicted class from an image, even though the capsule networks are trained using just images and their respective class labels, without additional information defining the location of the class in the image.},
+  archive      = {J_AIJ},
+  author       = {Amanjot Bhullar and Michael Czomko and R. Ayesha Ali and Douglas L. Welch},
+  doi          = {10.1016/j.artint.2025.104395},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104395},
+  shortjournal = {Artif. Intell.},
+  title        = {Interpreting capsule networks for image classification by routing path visualization},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Relaxed core stability in hedonic games. <em>AIJ</em>, <em>348</em>, 104394. (<a href='https://doi.org/10.1016/j.artint.2025.104394'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The core is a well-known and fundamental notion of stability in games intended to model coalition formation such as hedonic games: an outcome is core stable if there exists no blocking coalition , i.e., no set of agents that may profit by forming a coalition together. The fact that the cardinality of a blocking coalition, i.e., the number of deviating agents that have to coordinate themselves, can be arbitrarily high, and the fact that agents may benefit only by a tiny amount from their deviation, while they could incur in a higher cost for deviating, suggest that the core is not able to suitably model practical scenarios in large and highly distributed multi-agent systems. For this reason, we consider relaxed core stable outcomes where the notion of permissible deviations is modified along two orthogonal directions: the former takes into account the size q of the deviating coalition, and the latter the amount of utility gain, in terms of a multiplicative factor k , for each member of the deviating coalition. These changes result in two different notions of stability, namely, the q-size core and k-improvement core . We consider fractional hedonic games, that is a well-known subclass of hedonic games for which core stable outcomes are not guaranteed to exist and it is computationally hard to decide non-emptiness of the core; we investigate these relaxed concepts of stability with respect to their existence, computability and performance in terms of price of anarchy and price of stability, by providing in many cases tight or almost tight bounds. Interestingly, the considered relaxed notions of core also possess the appealing property of recovering, in some notable cases, the convergence, the existence and the possibility of computing stable solutions in polynomial time.},
+  archive      = {J_AIJ},
+  author       = {Angelo Fanelli and Gianpiero Monaco and Luca Moscardelli},
+  doi          = {10.1016/j.artint.2025.104394},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104394},
+  shortjournal = {Artif. Intell.},
+  title        = {Relaxed core stability in hedonic games},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Provably efficient information-directed sampling algorithms for multi-agent reinforcement learning. <em>AIJ</em>, <em>348</em>, 104392. (<a href='https://doi.org/10.1016/j.artint.2025.104392'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work designs and analyzes a novel set of algorithms for multi-agent reinforcement learning (MARL) based on the principle of information-directed sampling (IDS). These algorithms draw inspiration from foundational concepts in information theory, and are proven to be sample efficient in MARL settings such as two-player zero-sum Markov games (MGs) and multi-player general-sum MGs. For episodic two-player zero-sum MGs, we present three sample-efficient algorithms for learning Nash equilibrium. The basic algorithm, referred to as MAIDS , employs an asymmetric learning structure where the max-player first solves a minimax optimization problem based on the joint information ratio of the joint policy, and the min-player then minimizes the marginal information ratio with the max-player's policy fixed. Theoretical analyses show that it achieves a Bayesian regret of O ˜ ( K ) for K episodes. To reduce the computational load of MAIDS , we develop an improved algorithm called Reg-MAIDS , which has the same Bayesian regret bound while enjoying less computational complexity. Moreover, by leveraging the flexibility of IDS principle in choosing the learning target, we propose two methods for constructing compressed environments based on rate-distortion theory, upon which we develop an algorithm Compressed-MAIDS wherein the learning target is a compressed environment. Finally, we extend Reg-MAIDS to multi-player general-sum MGs and prove that it can learn either the Nash equilibrium or coarse correlated equilibrium in a sample-efficient manner.},
+  archive      = {J_AIJ},
+  author       = {Qiaosheng Zhang and Chenjia Bai and Shuyue Hu and Zhen Wang and Xuelong Li},
+  doi          = {10.1016/j.artint.2025.104392},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104392},
+  shortjournal = {Artif. Intell.},
+  title        = {Provably efficient information-directed sampling algorithms for multi-agent reinforcement learning},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the design of truthful mechanisms for the capacitated facility location problem with two and more facilities. <em>AIJ</em>, <em>348</em>, 104390. (<a href='https://doi.org/10.1016/j.artint.2025.104390'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we explore the Mechanism Design aspects of the m -Capacitated Facility Location Problem ( m -CFLP) on a line, focusing on two frameworks. In the first framework, the number of facilities is arbitrary, all facilities share the same capacity, and the number of agents matches the total capacity of the facilities. In the second framework, we need to locate two facilities, each with a capacity equal to at least half the number of agents. For both frameworks, we propose truthful mechanisms with bounded approximation ratios in terms of Social Cost (SC) and Maximum Cost (MC). When m > 2 , our results stand in contrast to the impossibility results known for the classical m -Facility Location Problem, where capacity constraints are absent. Moreover, all the proposed mechanisms are optimal with respect to MC and either optimal or near-optimal with respect to the SC among anonymous mechanisms. We then establish lower bounds on the approximation ratios that any truthful and deterministic mechanism achieves with respect to SC and MC for both frameworks. Lastly, we run several numerical experiments to empirically evaluate the performances of our mechanisms with respect to the SC or the MC. Our empirical analysis shows that our proposed mechanisms outperform all previously proposed mechanisms applicable in this setting.},
+  archive      = {J_AIJ},
+  author       = {Gennaro Auricchio and Zihe Wang and Jie Zhang},
+  doi          = {10.1016/j.artint.2025.104390},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104390},
+  shortjournal = {Artif. Intell.},
+  title        = {On the design of truthful mechanisms for the capacitated facility location problem with two and more facilities},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Introduction to open-world AI. <em>AIJ</em>, <em>347</em>, 104393. (<a href='https://doi.org/10.1016/j.artint.2025.104393'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Open-world AI is characterized by sudden novel changes in a domain that are outside the scope of the training data, or the deployment of an agent in conditions that violate the implicit or explicit assumptions of the designer. In such situations, the AI system must detect the novelty and adapt in a short time frame. In this introduction to the special issue on open-world AI, we discuss the background and motivation for this new research area and define the field in the context of similar AI challenges. We then discuss recent research in the area that has made significant contributions to the field. Many of those contributions are reflected in the papers of this special issue, which we summarize alongside more traditional approaches to open-world AI. Finally, we discuss future directions for the field.},
+  archive      = {J_AIJ},
+  author       = {Lawrence Holder and Pat Langley and Bryan Loyall and Ted Senator},
+  doi          = {10.1016/j.artint.2025.104393},
+  journal      = {Artificial Intelligence},
+  month        = {10},
+  pages        = {104393},
+  shortjournal = {Artif. Intell.},
+  title        = {Introduction to open-world AI},
+  volume       = {347},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Regression-based conditional independence test with adaptive kernels. <em>AIJ</em>, <em>347</em>, 104391. (<a href='https://doi.org/10.1016/j.artint.2025.104391'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a novel framework for regression-based conditional independence (CI) test with adaptive kernels, where the task of CI test is reduced to regression and statistical independence test while proving that the test power of CI can be maximized by adaptively learning parameterized kernels of the independence test if the consistency of regression can be guaranteed. For the adaptively learning kernel of independence test, we first address the pitfall inherent in the existing signal-to-noise ratio criterion by modeling the change of the null distribution during the learning process, then design a new class of kernels that can adaptively focus on the significant dimensions of variables to judge independence, which makes the tests more flexible than using simple kernels that are adaptive only in length-scale, and especially suitable for high-dimensional complex data. Theoretically, we demonstrate the consistency of the proposed tests, and show that the non-convex objective function used for learning fits the L-smoothing condition, thus benefiting the optimization. Experimental results on both synthetic and real data show the superiority of our method. The source code and datasets are available at https://github.com/hzsiat/AdaRCIT .},
+  archive      = {J_AIJ},
+  author       = {Yixin Ren and Juncai Zhang and Yewei Xia and Ruxin Wang and Feng Xie and Jihong Guan and Hao Zhang and Shuigeng Zhou},
+  doi          = {10.1016/j.artint.2025.104391},
+  journal      = {Artificial Intelligence},
+  month        = {10},
+  pages        = {104391},
+  shortjournal = {Artif. Intell.},
+  title        = {Regression-based conditional independence test with adaptive kernels},
+  volume       = {347},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fair distribution of delivery orders. <em>AIJ</em>, <em>347</em>, 104389. (<a href='https://doi.org/10.1016/j.artint.2025.104389'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We initiate the study of fair distribution of delivery tasks among a set of agents wherein delivery jobs are placed along the vertices of a graph. Our goal is to fairly distribute delivery costs (distance traveled to complete the deliveries) among a fixed set of agents while satisfying some desirable notions of economic efficiency. We adopt well-established fairness concepts—such as envy-freeness up to one item (EF1) and minimax share (MMS)—to our setting and show that fairness is often incompatible with the efficiency notion of social optimality . We then characterize instances that admit fair and socially optimal solutions by exploiting graph structures. We further show that achieving fairness along with Pareto optimality is computationally intractable. We complement this by designing an XP algorithm (parameterized by the number of agents) for finding MMS and Pareto optimal solutions on every tree instance, and show that the same algorithm can be modified to find efficient solutions along with EF1, when such solutions exist. The latter crucially relies on an intriguing result that in our setting EF1 and Pareto optimality jointly imply MMS. We conclude by theoretically and experimentally analyzing the price of fairness.},
+  archive      = {J_AIJ},
+  author       = {Hadi Hosseini and Shivika Narang and Tomasz Wąs},
+  doi          = {10.1016/j.artint.2025.104389},
+  journal      = {Artificial Intelligence},
+  month        = {10},
+  pages        = {104389},
+  shortjournal = {Artif. Intell.},
+  title        = {Fair distribution of delivery orders},
+  volume       = {347},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A scalable multi-robot goal assignment algorithm for minimizing mission time followed by total movement cost. <em>AIJ</em>, <em>347</em>, 104388. (<a href='https://doi.org/10.1016/j.artint.2025.104388'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study a variant of the multi-robot goal assignment problem where a unique goal for each robot needs to be assigned while minimizing the largest cost of movement among the robots, called makespan, and then minimizing the total movement cost of all the robots without exceeding the optimal makespan. A significant step in solving this problem is to find the cost associated with each robot-goal pair, which requires solving several complex path planning problems, thus, limiting the scalability. We present an algorithm that solves the multi-robot goal assignment problem by computing the paths for a significantly smaller number of robot-goal pairs compared to state-of-the-art algorithms, leading to a computationally superior mechanism to solve the problem. We perform theoretical analysis to establish the correctness and optimality of the proposed algorithm, as well as its worst-case polynomial time complexity. We extensively evaluate our algorithm for hundreds of robots on randomly generated and standard workspaces. Our experimental results demonstrate that the proposed algorithm achieves a noticeable speedup over two state-of-the-art baseline algorithms.},
+  archive      = {J_AIJ},
+  author       = {Aakash and Indranil Saha},
+  doi          = {10.1016/j.artint.2025.104388},
+  journal      = {Artificial Intelligence},
+  month        = {10},
+  pages        = {104388},
+  shortjournal = {Artif. Intell.},
+  title        = {A scalable multi-robot goal assignment algorithm for minimizing mission time followed by total movement cost},
+  volume       = {347},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Estimating possible causal effects with latent variables via adjustment and novel rule orientation. <em>AIJ</em>, <em>347</em>, 104387. (<a href='https://doi.org/10.1016/j.artint.2025.104387'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Causal effect estimation from observational data is a fundamental task in artificial intelligence and has been widely studied given known causal relations. However, in the presence of latent confounders, only a part of causal relations can be identified from observational data, characterized by a partial ancestral graph (PAG), where some causal relations are indeterminate. In such cases, the causal effect is often unidentifiable, as there could be super-exponential number of potential causal graphs consistent with the identified PAG but associated with different causal effects. In this paper, we target on set determination within a PAG, i.e. , determining the set of possible causal effects of a specified variable X on another variable Y via covariate adjustment. We develop the first set determination method that does not require enumerating any causal graphs. Furthermore, we present two novel orientation rules for incorporating structural background knowledge (BK) into a PAG, which facilitate the identification of additional causal relations given BK. Notably, we show that these rules can further enhance the efficiency of our set determination method, as certain transformed edges during the procedure can be interpreted as BK and enable the rules to reveal further causal information. Theoretically and empirically, we demonstrate that our set determination methods can yield the same results as the enumeration-based method with super-exponentially less computational complexity.},
+  archive      = {J_AIJ},
+  author       = {Tian-Zuo Wang and Lue Tao and Tian Qin and Zhi-Hua Zhou},
+  doi          = {10.1016/j.artint.2025.104387},
+  journal      = {Artificial Intelligence},
+  month        = {10},
+  pages        = {104387},
+  shortjournal = {Artif. Intell.},
+  title        = {Estimating possible causal effects with latent variables via adjustment and novel rule orientation},
+  volume       = {347},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Weighted EF1 allocations for indivisible chores. <em>AIJ</em>, <em>347</em>, 104386. (<a href='https://doi.org/10.1016/j.artint.2025.104386'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study how to fairly allocate a set of indivisible chores to a group of agents, where each agent i has a non-negative weight w i that represents her obligation for undertaking the chores. We consider the fairness notion of weighted envy-freeness up to one item (WEF1) and propose an efficient picking sequence algorithm for computing WEF1 allocations. Our analysis is based on a natural and powerful continuous interpretation for the picking sequence algorithms in the weighted setting, which might be of independent interest. Using this interpretation, we establish the necessary and sufficient conditions under which picking sequence algorithms can guarantee other fairness notions in the weighted setting. We also study the best-of-both-worlds setting and propose a lottery that guarantees ex-ante WEF and ex-post WEF( 1 , 1 ). Then we study the existence of fair and efficient allocations and propose efficient algorithms for computing WEF1 and PO allocations for bi-valued instances. Our result generalizes that of Garg et al. (AAAI 2022) and Ebadian et al. (AAMAS 2022) to the weighted setting. Our work also studies the price of fairness for WEF1, and the implications of WEF1 to other fairness notions.},
+  archive      = {J_AIJ},
+  author       = {Xiaowei Wu and Cong Zhang and Shengwei Zhou},
+  doi          = {10.1016/j.artint.2025.104386},
+  journal      = {Artificial Intelligence},
+  month        = {10},
+  pages        = {104386},
+  shortjournal = {Artif. Intell.},
+  title        = {Weighted EF1 allocations for indivisible chores},
+  volume       = {347},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Differentially private fair division. <em>AIJ</em>, <em>347</em>, 104385. (<a href='https://doi.org/10.1016/j.artint.2025.104385'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fairness and privacy are two important concerns in social decision-making processes such as resource allocation. We initiate the study of privacy in fair division by investigating the fair allocation of indivisible resources using the well-established framework of differential privacy. We present algorithms for approximate envy-freeness and proportionality when two instances are considered to be adjacent if they differ only on the utility of a single agent for a single item. On the other hand, we provide strong negative results for both fairness criteria when the adjacency notion allows the entire utility function of a single agent to change.},
+  archive      = {J_AIJ},
+  author       = {Pasin Manurangsi and Warut Suksompong},
+  doi          = {10.1016/j.artint.2025.104385},
+  journal      = {Artificial Intelligence},
+  month        = {10},
+  pages        = {104385},
+  shortjournal = {Artif. Intell.},
+  title        = {Differentially private fair division},
+  volume       = {347},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Configurable hyperdimensional graph representation. <em>AIJ</em>, <em>347</em>, 104384. (<a href='https://doi.org/10.1016/j.artint.2025.104384'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph analysis has emerged as a crucial field, offering versatile solutions for real-world data representation, from social networks to biological systems. However, the intricate nature of graphs often necessitates a degree of processing, such as learning mappings to a vector space, to perform analysis tasks like node classification and link prediction. A promising approach to this is Hyperdimensional Computing (HDC), inspired by neuroscience and mathematics. HDC utilizes high-dimensional vectors to efficiently manipulate complex data structures and perform operations like superposition and association, enhancing knowledge graph representations with contextual and semantic information. Nevertheless, addressing limitations in existing HDC-based approaches to graph representation is essential. This paper thoroughly explores these methods and presents ConfiGR: Configurable Graph Representation, a novel framework that introduces an adjustable design, enhancing its versatility across various graph types and tasks, ultimately boosting performance in multiple graph-related tasks.},
+  archive      = {J_AIJ},
+  author       = {Ali Zakeri and Zhuowen Zou and Hanning Chen and Mohsen Imani},
+  doi          = {10.1016/j.artint.2025.104384},
+  journal      = {Artificial Intelligence},
+  month        = {10},
+  pages        = {104384},
+  shortjournal = {Artif. Intell.},
+  title        = {Configurable hyperdimensional graph representation},
+  volume       = {347},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adversarially robust unsupervised domain adaptation. <em>AIJ</em>, <em>347</em>, 104383. (<a href='https://doi.org/10.1016/j.artint.2025.104383'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unsupervised domain adaptation (UDA) has been successfully applied in many contexts with domain shifts. However, we find that existing UDA methods are vulnerable to adversarial attacks. A direct modification of the existing UDA methods to improve adversarial robustness is to feed the algorithms with adversarial source examples. However, empirical results show that traditional discrepancy fails to measure the distance between adversarial examples, leading to poor alignment between adversarial examples of source and target domains and inefficient transfer of the robustness from source domain to target domain. And the traditional theoretical bounds do not always hold in adversarial scenarios. Accordingly, we first propose a novel adversarial discrepancy (AD) to narrow the gap between adversarial robustness and UDA. Based on AD, this paper provides a generalization error bound for adversarially robust unsupervised domain adaptation through the lens of Rademacher complexity, theoretically demonstrating that the expected adversarial target error can be bounded by empirical adversarial source error and AD. We also present the upper bounds of Rademacher complexity, with a particular focus on linear models and multi-layer neural networks under ℓ r attack ( r ≥ 1 ). Inspired by this theory, we go on to develop an adversarially robust algorithm for UDA. We further conduct comprehensive experiments to support our theory and validate the robustness improvement of our proposed method on challenging domain adaptation tasks.},
+  archive      = {J_AIJ},
+  author       = {Lianghe Shi and Weiwei Liu},
+  doi          = {10.1016/j.artint.2025.104383},
+  journal      = {Artificial Intelligence},
+  month        = {10},
+  pages        = {104383},
+  shortjournal = {Artif. Intell.},
+  title        = {Adversarially robust unsupervised domain adaptation},
+  volume       = {347},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reinforcement learning in convergently non-stationary environments: Feudal hierarchies and learned representations. <em>AIJ</em>, <em>347</em>, 104382. (<a href='https://doi.org/10.1016/j.artint.2025.104382'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the convergence of Q -learning-based methods in convergently non-stationary environments, particularly in the context of hierarchical reinforcement learning and of dynamic features encountered in deep reinforcement learning. We demonstrate that Q -learning achieves convergence in tabular representations when applied to convergently non-stationary dynamics, such as the ones arising in a feudal hierarchical setting. Additionally, we establish convergence for Q -learning-based deep reinforcement learning methods with convergently non-stationary features, such as the ones arising in representation-based settings. Our findings offer theoretical support for the application of Q -learning in these complex scenarios and present methodologies for extending established theoretical results from standard cases to their convergently non-stationary counterparts.},
+  archive      = {J_AIJ},
+  author       = {Diogo S. Carvalho and Pedro A. Santos and Francisco S. Melo},
+  doi          = {10.1016/j.artint.2025.104382},
+  journal      = {Artificial Intelligence},
+  month        = {10},
+  pages        = {104382},
+  shortjournal = {Artif. Intell.},
+  title        = {Reinforcement learning in convergently non-stationary environments: Feudal hierarchies and learned representations},
+  volume       = {347},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Approval-based committee voting under incomplete information. <em>AIJ</em>, <em>347</em>, 104381. (<a href='https://doi.org/10.1016/j.artint.2025.104381'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We investigate approval-based committee voting with incomplete information about the approval preferences of voters. We consider several models of incompleteness where each voter partitions the set of candidates into approved , disapproved , and unknown candidates, possibly with ordinal preference constraints among candidates in the latter category. This captures scenarios where voters have not evaluated all candidates and/or it is unknown where voters draw the threshold between approved and disapproved candidates. We study the complexity of some fundamental computational problems for a number of classic approval-based committee voting rules including Proportional Approval Voting and Chamberlin–Courant. These problems include determining whether a given set of candidates is a possible or necessary winning committee and whether a given candidate is possibly or necessarily a member of the winning committee. We also consider proportional representation axioms and the problem of deciding whether a given committee is possibly or necessarily representative.},
+  archive      = {J_AIJ},
+  author       = {Aviram Imber and Jonas Israel and Markus Brill and Benny Kimelfeld},
+  doi          = {10.1016/j.artint.2025.104381},
+  journal      = {Artificial Intelligence},
+  month        = {10},
+  pages        = {104381},
+  shortjournal = {Artif. Intell.},
+  title        = {Approval-based committee voting under incomplete information},
+  volume       = {347},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-agent pathfinding on strongly connected digraphs: Feasibility and solution algorithms. <em>AIJ</em>, <em>347</em>, 104372. (<a href='https://doi.org/10.1016/j.artint.2025.104372'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {On an assigned graph, the problem of Multi-Agent Pathfinding (MAPF) consists in finding paths for multiple agents, avoiding collisions. Finding the minimum-length solution is known to be NP-hard, and computation times grows exponentially with the number of agents. However, in industrial applications, it is important to find feasible, suboptimal solutions, in a time that grows polynomially with the number of agents. Such algorithms exist for undirected and biconnected directed graphs. Our main contribution is to generalize these algorithms to the more general case of strongly connected directed graphs. In particular, we describe a procedure that checks the problem feasibility in linear time with respect to the number of vertices n , and we find a necessary and sufficient condition for feasibility of any MAPF instance. Moreover, we present an algorithm (diSC) that provides a feasible solution of length O ( k n 2 c ) , where k is the number of agents and c the maximum length of the corridors of the graph.},
+  archive      = {J_AIJ},
+  author       = {S. Ardizzoni and L. Consolini and M. Locatelli and B. Nebel and I. Saccani},
+  doi          = {10.1016/j.artint.2025.104372},
+  journal      = {Artificial Intelligence},
+  month        = {10},
+  pages        = {104372},
+  shortjournal = {Artif. Intell.},
+  title        = {Multi-agent pathfinding on strongly connected digraphs: Feasibility and solution algorithms},
+  volume       = {347},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Factored-reward bandits with intermediate observations: Regret minimization and best arm identification. <em>AIJ</em>, <em>347</em>, 104362. (<a href='https://doi.org/10.1016/j.artint.2025.104362'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In several real-world sequential decision problems, at every step, the learner is required to select different actions. Every action affects a specific part of the system and generates an observable intermediate effect. In this paper, we introduce the Factored-Reward Bandits (FRBs), a novel setting able to effectively capture and exploit the structure of this class of scenarios, where the reward is computed as the product of the action intermediate observations. We characterize the statistical complexity of the learning problem in the FRBs, by deriving worst-case and asymptotic instance-dependent regret lower bounds. Then, we devise and analyze two regret minimization algorithms. The former, F-UCB , is an anytime optimistic approach matching the worst-case lower bound (up to logarithmic factors) but fails to perform optimally from the instance-dependent perspective. The latter, F-Track , is a bound-tracking approach, that enjoys optimal asymptotic instance-dependent regret guarantees. Finally, we study the problem of performing best arm identification in this setting. We derive an error probability lower bound, and we develop F-SR , a nearly optimal rejection-based algorithm for identifying the best action vector, given a time budget. 2},
+  archive      = {J_AIJ},
+  author       = {Marco Mussi and Simone Drago and Marcello Restelli and Alberto Maria Metelli},
+  doi          = {10.1016/j.artint.2025.104362},
+  journal      = {Artificial Intelligence},
+  month        = {10},
+  pages        = {104362},
+  shortjournal = {Artif. Intell.},
+  title        = {Factored-reward bandits with intermediate observations: Regret minimization and best arm identification},
+  volume       = {347},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RelBERT: Embedding relations with language models. <em>AIJ</em>, <em>347</em>, 104359. (<a href='https://doi.org/10.1016/j.artint.2025.104359'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many applications need access to background knowledge about how different concepts and entities are related. Although Large Language Models (LLM) can address this need to some extent, LLMs are inefficient and difficult to control. As an alternative, we propose to extract relation embeddings from relatively small language models. In particular, we show that masked language models such as RoBERTa can be straightforwardly fine-tuned for this purpose, using only a small amount of training data. The resulting model, which we call RelBERT, captures relational similarity in a surprisingly fine-grained way, allowing us to set a new state-of-the-art in analogy benchmarks. Crucially, RelBERT is capable of modelling relations that go well beyond what the model has seen during training. For instance, we obtained strong results on relations between named entities with a model that was only trained on lexical relations between concepts, and we observed that RelBERT can recognise morphological analogies despite not being trained on such examples. Overall, we find that RelBERT significantly outperforms strategies based on prompting language models that are several orders of magnitude larger, including recent GPT-based models and open source models. 1},
+  archive      = {J_AIJ},
+  author       = {Asahi Ushio and Jose Camacho-Collados and Steven Schockaert},
+  doi          = {10.1016/j.artint.2025.104359},
+  journal      = {Artificial Intelligence},
+  month        = {10},
+  pages        = {104359},
+  shortjournal = {Artif. Intell.},
+  title        = {RelBERT: Embedding relations with language models},
+  volume       = {347},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). NT-FAN: A simple yet effective noise-tolerant few-shot adaptation network. <em>AIJ</em>, <em>346</em>, 104363. (<a href='https://doi.org/10.1016/j.artint.2025.104363'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Few-shot domain adaptation (FDA) aims to train a target model with clean labeled data from the source domain and few labeled data from the target domain. Given a limited annotation budget, source data may contain many noisy labels, which can detrimentally impact the performance of models in real-world applications. This problem setting is denoted as wildly few-shot domain adaptation (WFDA), simultaneously taking care of label noise and data shortage. While previous studies have achieved some success, they typically rely on multiple adaptation models to collaboratively filter noisy labels, resulting in substantial computational overhead. To address WFDA more simply and elegantly, we offer a theoretical analysis of this problem and propose a comprehensive upper bound for the excess risk on the target domain. Our theoretical result reveals that correct domain-invariant representations can be obtained even in the presence of source noise and limited target data without incurring additional costs. In response, we propose a simple yet effective WFDA method, referred to as noise-tolerant few-shot adaptation network (NT-FAN). Experiments demonstrate that our method significantly outperforms all the state-of-the-art competitors while maintaining a more lightweight architecture. Notably, NT-FAN consistently exhibits robust performance when dealing with more realistic and intractable source noise (e.g., instance-dependent label noise) and severe source noise (e.g., a 40% noise rate) in the source domain.},
+  archive      = {J_AIJ},
+  author       = {Wenjing Yang and Haoang Chi and Yibing Zhan and Bowen Hu and Xiaoguang Ren and Dapeng Tao and Long Lan},
+  doi          = {10.1016/j.artint.2025.104363},
+  journal      = {Artificial Intelligence},
+  month        = {9},
+  pages        = {104363},
+  shortjournal = {Artif. Intell.},
+  title        = {NT-FAN: A simple yet effective noise-tolerant few-shot adaptation network},
+  volume       = {346},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A semantics for probabilistic hybrid knowledge bases with function symbols. <em>AIJ</em>, <em>346</em>, 104361. (<a href='https://doi.org/10.1016/j.artint.2025.104361'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hybrid Knowledge Bases (HKBs) successfully integrate Logic Programming (LP) and Description Logics (DL) under the Minimal Knowledge with Negation as Failure semantics. Both world closure assumptions (open and closed) can be used in the same HKB, a feature required in many domains, such as the legal and health-care ones. In previous work, we proposed (function-free) Probabilistic HKBs, whose semantics applied Sato's distribution semantics approach to the well-founded HKB semantics proposed by Knorr et al. and Lyu and You. This semantics relied on the fact that the grounding of a function-free Probabilistic HKB (PHKB) is finite. In this article, we extend the PHKB language to allow function symbols, obtaining PHKB FS . Because the grounding of a PHKB FS can be infinite, we propose a novel semantics which does not require the PHKB FS 's grounding to be finite. We show that the proposed semantics extends the previously proposed semantics and that, for a large class of PHKB FS , every query can be assigned a probability.},
+  archive      = {J_AIJ},
+  author       = {Marco Alberti and Evelina Lamma and Fabrizio Riguzzi and Riccardo Zese},
+  doi          = {10.1016/j.artint.2025.104361},
+  journal      = {Artificial Intelligence},
+  month        = {9},
+  pages        = {104361},
+  shortjournal = {Artif. Intell.},
+  title        = {A semantics for probabilistic hybrid knowledge bases with function symbols},
+  volume       = {346},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A theory of synaptic neural balance: From local to global order. <em>AIJ</em>, <em>346</em>, 104360. (<a href='https://doi.org/10.1016/j.artint.2025.104360'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We develop a general theory of synaptic neural balance and how it can emerge or be enforced in neural networks. For a given additive cost function R (regularizer), a neuron is said to be in balance if the total cost of its input weights is equal to the total cost of its output weights. The basic example is provided by feedforward networks of ReLU units trained with L 2 regularizers, which exhibit balance after proper training. The theory explains this phenomenon and extends it in several directions. The first direction is the extension to bilinear and other activation functions. The second direction is the extension to more general regularizers, including all L p ( p > 0 ) regularizers. The third direction is the extension to non-layered architectures, recurrent architectures, convolutional architectures, as well as architectures with mixed activation functions and to different balancing algorithms. Gradient descent on the error function alone does not converge in general to a balanced state, where every neuron is in balance, even when starting from a balanced state. However, gradient descent on the regularized error function ought to converge to a balanced state, and thus network balance can be used to assess learning progress. The theory is based on two local neuronal operations: scaling which is commutative, and balancing which is not commutative. Finally, and most importantly, given any set of weights, when local balancing operations are applied to each neuron in a stochastic manner, global order always emerges through the convergence of the stochastic balancing algorithm to the same unique set of balanced weights. The reason for this convergence is the existence of an underlying strictly convex optimization problem where the relevant variables are constrained to a linear, only architecture-dependent, manifold. Simulations show that balancing neurons prior to learning, or during learning in alternation with gradient descent steps, can improve learning speed and performance thereby expanding the arsenal of available training tools. Scaling and balancing operations are entirely local and thus physically plausible in biological and neuromorphic neural networks.},
+  archive      = {J_AIJ},
+  author       = {Pierre Baldi and Antonios Alexos and Ian Domingo and Alireza Rahmansetayesh},
+  doi          = {10.1016/j.artint.2025.104360},
+  journal      = {Artificial Intelligence},
+  month        = {9},
+  pages        = {104360},
+  shortjournal = {Artif. Intell.},
+  title        = {A theory of synaptic neural balance: From local to global order},
+  volume       = {346},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Active legibility in multiagent reinforcement learning. <em>AIJ</em>, <em>346</em>, 104357. (<a href='https://doi.org/10.1016/j.artint.2025.104357'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A multiagent sequential decision problem has been seen in many critical applications including urban transportation, autonomous driving cars, military operations, etc. Its widely known solution, namely multiagent reinforcement learning, has evolved tremendously in recent years. Among them, the solution paradigm of modeling other agents attracts our interest, which is different from traditional value decomposition or communication mechanisms. It enables agents to understand and anticipate others' behaviors and facilitates their collaboration. Inspired by recent research on the legibility that allows agents to reveal their intentions through their behavior, we propose a multiagent active legibility framework to improve their performance. The legibility-oriented framework drives agents to conduct legible actions so as to help others optimize their behaviors. In addition, we design a series of problem domains that emulate a common legibility-needed scenario and effectively characterize the legibility in multiagent reinforcement learning. The experimental results demonstrate that the new framework is more efficient and requires less training time compared to several multiagent reinforcement learning algorithms.},
+  archive      = {J_AIJ},
+  author       = {Yanyu Liu and Yinghui Pan and Yifeng Zeng and Biyang Ma and Prashant Doshi},
+  doi          = {10.1016/j.artint.2025.104357},
+  journal      = {Artificial Intelligence},
+  month        = {9},
+  pages        = {104357},
+  shortjournal = {Artif. Intell.},
+  title        = {Active legibility in multiagent reinforcement learning},
+  volume       = {346},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CBS-budget (CBSB): A complete and bounded suboptimal search for multi-agent path finding. <em>AIJ</em>, <em>346</em>, 104349. (<a href='https://doi.org/10.1016/j.artint.2025.104349'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-Agent Path Finding (MAPF) is the problem of finding a collection of conflict-free paths for a team of multiple agents while minimizing some global cost, such as the sum of the travel time of all agents, or the travel time of the last agent. Conflict Based Search (CBS) is a leading complete and optimal MAPF algorithm that lazily explores the joint agent state space, using an admissible heuristic joint plan. Such an admissible heuristic joint plan is computed by combining individual shortest paths computed without considering inter-agent conflicts, and becoming gradually more informed as constraints are added to the individual agents' path-planning problems to avoid discovered conflicts. In this paper, we seek to speed up CBS by finding a more informed heuristic joint plan that is bounded. We first propose the budgeted Class-Ordered A* (bCOA*), a novel algorithm that finds the least-cost path with the minimal number of conflicts that is upper bounded in terms of path length. Then, we propose a novel bounded-cost variant of CBS, called CBS-Budget (CBSB) by using bCOA* search at the low-level search of the CBS and by using a modified focal search at the high-level search of the CBS. We prove that CBSB is complete and bounded-suboptimal. In our numerical experiments, CBSB finds a near-optimal solution for hundreds of agents within a fraction of a second. CBSB shows state-of-the-art performance, comparable to Explicit Estimation CBS (EECBS), an enhanced recent version of CBS. On the other hand, CBSB is much easier to implement than EECBS, since only one priority queue at the low-level search is needed, as in CBS, and only two priority queues at the high-level search are needed, as in Enhanced CBS (ECBS).},
+  archive      = {J_AIJ},
+  author       = {Jaein Lim and Panagiotis Tsiotras},
+  doi          = {10.1016/j.artint.2025.104349},
+  journal      = {Artificial Intelligence},
+  month        = {9},
+  pages        = {104349},
+  shortjournal = {Artif. Intell.},
+  title        = {CBS-budget (CBSB): A complete and bounded suboptimal search for multi-agent path finding},
+  volume       = {346},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient and effective budget-feasible mechanisms for submodular valuations. <em>AIJ</em>, <em>345</em>, 104348. (<a href='https://doi.org/10.1016/j.artint.2025.104348'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We revisit the classical problem of designing Budget-Feasible Mechanisms (BFMs) for submodular valuation functions, which has been extensively studied since the seminal paper of Singer [FOCS'10] due to their wide applications in crowdsourcing and social marketing. We propose TripleEagle , a novel algorithmic framework for designing BFMs, based on which we present several simple yet effective BFMs that achieve better approximation ratios than the state-of-the-art work. Moreover, our BFMs are the first in the literature to achieve linear query complexity under the value oracle model while ensuring obvious strategyproofness, making them more practical than the previous BFMs. We conduct extensive experiments to evaluate the empirical performance of our BFMs, and the experimental results demonstrate the superiorities of our approach in terms of efficiency and effectiveness compared to the state-of-the-art BFMs.},
+  archive      = {J_AIJ},
+  author       = {Kai Han and Haotian Zhang and Shuang Cui},
+  doi          = {10.1016/j.artint.2025.104348},
+  journal      = {Artificial Intelligence},
+  month        = {8},
+  pages        = {104348},
+  shortjournal = {Artif. Intell.},
+  title        = {Efficient and effective budget-feasible mechanisms for submodular valuations},
+  volume       = {345},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deep optimal transport for domain adaptation on SPD manifolds. <em>AIJ</em>, <em>345</em>, 104347. (<a href='https://doi.org/10.1016/j.artint.2025.104347'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent progress in geometric deep learning has drawn increasing attention from the machine learning community toward domain adaptation on symmetric positive definite (SPD) manifolds—especially for neuroimaging data that often suffer from distribution shifts across sessions. These data, typically represented as covariance matrices of brain signals, inherently lie on SPD manifolds due to their symmetry and positive definiteness. However, conventional domain adaptation methods often overlook this geometric structure when applied directly to covariance matrices, which can result in suboptimal performance. To address this issue, we introduce a new geometric deep learning framework that combines optimal transport theory with the geometry of SPD manifolds. Our approach aligns data distributions while respecting the manifold structure, effectively reducing both marginal and conditional discrepancies. We validate our method on three cross-session brain-computer interface datasets—KU, BNCI2014001, and BNCI2015001—where it consistently outperforms baseline approaches while maintaining the intrinsic geometry of the data. We also provide quantitative results and visualizations to better illustrate the behavior of the learned embeddings.},
+  archive      = {J_AIJ},
+  author       = {Ce Ju and Cuntai Guan},
+  doi          = {10.1016/j.artint.2025.104347},
+  journal      = {Artificial Intelligence},
+  month        = {8},
+  pages        = {104347},
+  shortjournal = {Artif. Intell.},
+  title        = {Deep optimal transport for domain adaptation on SPD manifolds},
+  volume       = {345},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Disjoint projected enumeration for SAT and SMT without blocking clauses. <em>AIJ</em>, <em>345</em>, 104346. (<a href='https://doi.org/10.1016/j.artint.2025.104346'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {All-Solution Satisfiability (AllSAT) and its extension, All-Solution Satisfiability Modulo Theories (AllSMT), have become more relevant in recent years, mainly in formal verification and artificial intelligence applications. The goal of these problems is the enumeration of all satisfying assignments of a formula (for SAT and SMT problems, respectively), making them useful for test generation, model checking, and probabilistic inference. Nevertheless, traditional AllSAT algorithms face significant computational challenges due to the exponential growth of the search space and inefficiencies caused by blocking clauses, which cause memory blowups and degrade unit propagation performance in the long term. This paper presents two novel solvers: TabularAllSAT , a projected AllSAT solver, and TabularAllSMT , a projected AllSMT solver. Both solvers combine Conflict-Driven Clause Learning (CDCL) with chronological backtracking to improve efficiency while ensuring disjoint enumeration. To retrieve compact partial assignments we propose a novel aggressive implicant shrinking algorithm, compatible with chronological backtracking, to minimize the number of partial assignments, reducing overall search complexity. Furthermore, we extend the solver framework to handle projected enumeration and SMT formulas effectively and efficiently, adapting the baseline framework to integrate theory reasoning and the distinction between important and non-important variables. An extensive experimental evaluation demonstrates the superiority of our approach compared to state-of-the-art solvers, particularly in scenarios requiring projection and SMT-based reasoning.},
+  archive      = {J_AIJ},
+  author       = {Giuseppe Spallitta and Roberto Sebastiani and Armin Biere},
+  doi          = {10.1016/j.artint.2025.104346},
+  journal      = {Artificial Intelligence},
+  month        = {8},
+  pages        = {104346},
+  shortjournal = {Artif. Intell.},
+  title        = {Disjoint projected enumeration for SAT and SMT without blocking clauses},
+  volume       = {345},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Coltrane: A domain-independent system for characterizing and planning in novel situations. <em>AIJ</em>, <em>345</em>, 104336. (<a href='https://doi.org/10.1016/j.artint.2025.104336'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {AI systems operating in open-world environments must be able to adapt to impactful changes in the world, immediately when they occur, and be able to do this across the many types of changes that can occur. We are seeking to create methods to extend traditional AI systems so that they can (1) immediately recognize changes in how the world works that are impactful to task accomplishment; (2) rapidly characterize the nature of the change using the limited observations that are available when the change is first detected; (3) adapt to the change as well as feasible to accomplish the system's tasks given the available observations; and (4) continue to improve the characterization and adaptation as additional observations are available. In this paper, we describe Coltrane, a domain-independent system for characterizing and planning in novel situations that uses only natural domain descriptions to generate its novelty-handling behavior, without any domain-specific anticipation of the novelty. Coltrane's characterization method is based on probabilistic program synthesis of perturbations to programs expressed in a traditional programming language describing domain transition models. Its planning method is based on incorporating novel domain models in an MCTS search algorithm and on automatically adapting the heuristics used. Both a formal external evaluation and our own demonstrations show that Coltrane is capable of accurately characterizing interesting forms of novelty and of adapting its behavior to restore its performance to pre-novelty levels and even beyond.},
+  archive      = {J_AIJ},
+  author       = {Bryan Loyall and Avi Pfeffer and James Niehaus and Michael Harradon and Paola Rizzo and Alex Gee and Joe Campolongo and Tyler Mayer and John Steigerwald},
+  doi          = {10.1016/j.artint.2025.104336},
+  journal      = {Artificial Intelligence},
+  month        = {8},
+  pages        = {104336},
+  shortjournal = {Artif. Intell.},
+  title        = {Coltrane: A domain-independent system for characterizing and planning in novel situations},
+  volume       = {345},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Effective and fast module extraction for nonempty ABoxes. <em>AIJ</em>, <em>344</em>, 104345. (<a href='https://doi.org/10.1016/j.artint.2025.104345'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A deductive module of a knowledge base KB is a subset of KB that preserves a specified class of consequences. Module extraction is applied in ontology design, debugging, and reasoning. The locality-based module extractors of the OWL API are less effective when the knowledge base contains facts such as ABox assertions. The competing module extractor PrisM computes smaller modules at the cost of higher computation time. In this paper, we introduce and study a novel module extraction technique, called conditional module extraction , that can be applied to satisfiable SRIQ ( D ) knowledge bases. Experimental analysis shows that conditional module extraction constitutes an appealing alternative to PrisM and to the locality-based extractors of the OWL API, when the ABox is nonempty.},
+  archive      = {J_AIJ},
+  author       = {Piero Andrea Bonatti and Francesco Magliocca and Iliana Mineva Petrova and Luigi Sauro},
+  doi          = {10.1016/j.artint.2025.104345},
+  journal      = {Artificial Intelligence},
+  month        = {7},
+  pages        = {104345},
+  shortjournal = {Artif. Intell.},
+  title        = {Effective and fast module extraction for nonempty ABoxes},
+  volume       = {344},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The incentive guarantees behind nash welfare in divisible resources allocation. <em>AIJ</em>, <em>344</em>, 104335. (<a href='https://doi.org/10.1016/j.artint.2025.104335'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the problem of allocating divisible resources among n agents, hopefully in a fair and efficient manner. With the presence of strategic agents, additional incentive guarantees are also necessary, and the problem of designing fair and efficient mechanisms becomes much less tractable. While there are flourishing positive results against strategic agents for homogeneous divisible items, very few of them are known to hold in cake cutting. We show that the Maximum Nash Welfare (MNW) mechanism, which provides desirable fairness and efficiency guarantees and achieves an incentive ratio of 2 for homogeneous divisible items, also has an incentive ratio of 2 in cake cutting. Remarkably, this result holds even without the free disposal assumption, which is hard to get rid of in the design of truthful cake cutting mechanisms. Moreover, we show that, for cake cutting, the Partial Allocation (PA) mechanism proposed by Cole et al. [1] , which is truthful and 1 / e -MNW for homogeneous divisible items, has an incentive ratio between [ e 1 / e , e ] and when randomization is allowed, can be turned to be truthful in expectation. Given two alternatives for a trade-off between incentive ratio and Nash welfare provided by the MNW and PA mechanisms, we establish an interpolation between them for both cake cutting and homogeneous divisible items. Finally, we study the optimal incentive ratio achievable by envy-free cake cutting mechanisms. We first give an envy-free mechanism for two agents with an incentive ratio of 4/3. Then, we show that any envy-free cake cutting mechanism with the connected pieces constraint has an incentive ratio of Θ ( n ) .},
+  archive      = {J_AIJ},
+  author       = {Xiaohui Bei and Biaoshuai Tao and Jiajun Wu and Mingwei Yang},
+  doi          = {10.1016/j.artint.2025.104335},
+  journal      = {Artificial Intelligence},
+  month        = {7},
+  pages        = {104335},
+  shortjournal = {Artif. Intell.},
+  title        = {The incentive guarantees behind nash welfare in divisible resources allocation},
+  volume       = {344},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning optimal contracts with small action spaces. <em>AIJ</em>, <em>344</em>, 104334. (<a href='https://doi.org/10.1016/j.artint.2025.104334'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study principal-agent problems in which a principal commits to an outcome-dependent payment scheme—called contract —in order to induce an agent to take a costly, unobservable action leading to favorable outcomes. We consider a generalization of the classical (single-round) version of the problem in which the principal interacts with the agent by committing to contracts over multiple rounds. The principal has no information about the agent, and they have to learn an optimal contract by only observing the outcome realized at each round. We focus on settings in which the size of the agent's action space is small . We design an algorithm that learns an approximately-optimal contract with high probability in a number of rounds polynomial in the size of the outcome space, when the number of actions is constant. Our algorithm solves an open problem by Zhu et al. [1] . Moreover, it can also be employed to provide a O ˜ ( T 4 / 5 ) regret bound in the related online learning setting in which the principal aims at maximizing their cumulative utility over rounds, considerably improving previously-known regret bounds.},
+  archive      = {J_AIJ},
+  author       = {Francesco Bacchiocchi and Matteo Castiglioni and Nicola Gatti and Alberto Marchesi},
+  doi          = {10.1016/j.artint.2025.104334},
+  journal      = {Artificial Intelligence},
+  month        = {7},
+  pages        = {104334},
+  shortjournal = {Artif. Intell.},
+  title        = {Learning optimal contracts with small action spaces},
+  volume       = {344},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FedHM: Efficient federated learning for heterogeneous models via low-rank factorization. <em>AIJ</em>, <em>344</em>, 104333. (<a href='https://doi.org/10.1016/j.artint.2025.104333'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {One underlying assumption of recent Federated Learning (FL) paradigms is that all local models share an identical network architecture. However, this assumption is inefficient for heterogeneous systems where devices possess varying computation and communication capabilities. The presence of such heterogeneity among devices negatively impacts the scalability of FL and slows down the training process due to the existence of stragglers. To this end, this paper proposes a novel federated compression framework for heterogeneous models , named FedHM, distributing the heterogeneous low-rank models to clients and then aggregating them into a full-rank global model. Furthermore, FedHM significantly reduces communication costs by utilizing low-rank models. Compared with state-of-the-art heterogeneous FL methods under various FL settings, FedHM is superior in the performance and robustness of models with different sizes. Additionally, the convergence guarantee of FL for heterogeneous devices is first theoretically analyzed.},
+  archive      = {J_AIJ},
+  author       = {Dezhong Yao and Wanning Pan and Yuexin Shi and Michael J. O'Neill and Yutong Dai and Yao Wan and Peilin Zhao and Hai Jin and Lichao Sun},
+  doi          = {10.1016/j.artint.2025.104333},
+  journal      = {Artificial Intelligence},
+  month        = {7},
+  pages        = {104333},
+  shortjournal = {Artif. Intell.},
+  title        = {FedHM: Efficient federated learning for heterogeneous models via low-rank factorization},
+  volume       = {344},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Drawing a map of elections. <em>AIJ</em>, <em>343</em>, 104332. (<a href='https://doi.org/10.1016/j.artint.2025.104332'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Our main contribution is the introduction of the map of elections framework. A map of elections consists of three main elements: (1) a dataset of elections (i.e., collections of ordinal votes over given sets of candidates), (2) a way of measuring similarities between these elections, and (3) a representation of the elections in the 2D Euclidean space as points, so that the more similar two elections are, the closer are their points. In our maps, we mostly focus on datasets of synthetic elections, but we also show an example of a map over real-life ones. To measure similarities, we would have preferred to use, e.g., the isomorphic swap distance, but this is infeasible due to its high computational complexity. Hence, we propose polynomial-time computable positionwise distance and use it instead. Regarding the representations in 2D Euclidean space, we mostly use the Kamada-Kawai algorithm, but we also show two alternatives. We develop the necessary theoretical results to form our maps and argue experimentally that they are accurate and credible. Further, we show how coloring the elections in a map according to various criteria helps in analyzing results of a number of experiments. In particular, we show colorings according to the scores of winning candidates or committees, running times of ILP-based winner determination algorithms, and approximation ratios achieved by particular algorithms.},
+  archive      = {J_AIJ},
+  author       = {Stanisław Szufa and Niclas Boehmer and Robert Bredereck and Piotr Faliszewski and Rolf Niedermeier and Piotr Skowron and Arkadii Slinko and Nimrod Talmon},
+  doi          = {10.1016/j.artint.2025.104332},
+  journal      = {Artificial Intelligence},
+  month        = {6},
+  pages        = {104332},
+  shortjournal = {Artif. Intell.},
+  title        = {Drawing a map of elections},
+  volume       = {343},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The value of real-time automated explanations in stochastic planning. <em>AIJ</em>, <em>343</em>, 104323. (<a href='https://doi.org/10.1016/j.artint.2025.104323'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, we are witnessing an increase in computation power and memory, leading to strong AI algorithms becoming applicable in areas affecting our daily lives. We focus on AI planning solutions for complex, real-life decision-making problems under uncertainty, such as autonomous driving. Human trust in such AI-based systems is essential for their acceptance and market penetration. Moreover, users need to establish appropriate levels of trust to benefit the most from these systems. Previous studies have motivated this work, showing that users can benefit from receiving (handcrafted) information about the reasoning of a stochastic AI planner, for example, controlling automated driving maneuvers. Our solution to automating these hand-crafted notifications with explainable AI algorithms, XAI, includes studying: (1) what explanations can be generated from an AI planning system, applied to a real-world problem, in real-time? What is that content that can be processed from a planner's reasoning that can help users understand and trust the system controlling a behavior they are experiencing? (2) when can this information be displayed? and (3) how shall we display this information to an end user? The value of these computed XAI notifications has been assessed through an online user study with 800 participants, experiencing simulated automated driving scenarios. Our results show that real time XAI notifications decrease significantly subjective misunderstanding of participants compared to those that received only a dynamic HMI display. Also, our XAI solution significantly increases the level of understanding of participants with prior ADAS experience and of participants that lack such experience but have non-negative prior trust to ADAS features. The level of trust significantly increases when XAI was provided to a more restricted set of the participants, including those over 60 years old, with prior ADAS experience and non-negative prior trust attitude to automated features.},
+  archive      = {J_AIJ},
+  author       = {Claudia V. Goldman and Ronit Bustin and Wenyuan Qi and Zhengyu Xing and Rachel McPhearson-White and Sally Rogers},
+  doi          = {10.1016/j.artint.2025.104323},
+  journal      = {Artificial Intelligence},
+  month        = {6},
+  pages        = {104323},
+  shortjournal = {Artif. Intell.},
+  title        = {The value of real-time automated explanations in stochastic planning},
+  volume       = {343},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The influence of dimensions on the complexity of computing decision trees. <em>AIJ</em>, <em>343</em>, 104322. (<a href='https://doi.org/10.1016/j.artint.2025.104322'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A decision tree recursively splits a feature space R d and then assigns class labels based on the resulting partition. Decision trees have been part of the basic machine-learning toolkit for decades. A large body of work considers heuristic algorithms that compute a decision tree from training data, usually aiming to minimize in particular the size of the resulting tree. In contrast, little is known about the complexity of the underlying computational problem of computing a minimum-size tree for the given training data. We study this problem with respect to the number d of dimensions of the feature space R d , which contains n training examples. We show that it can be solved in O ( n 2 d + 1 ) time, but under reasonable complexity-theoretic assumptions it is not possible to achieve f ( d ) ⋅ n o ( d / log ⁡ d ) running time. The problem is solvable in ( d R ) O ( d R ) ⋅ n 1 + o ( 1 ) time if there are exactly two classes and R is an upper bound on the number of tree leaves labeled with the first class.},
+  archive      = {J_AIJ},
+  author       = {Stephen Kobourov and Maarten Löffler and Fabrizio Montecchiani and Marcin Pilipczuk and Ignaz Rutter and Raimund Seidel and Manuel Sorge and Jules Wulms},
+  doi          = {10.1016/j.artint.2025.104322},
+  journal      = {Artificial Intelligence},
+  month        = {6},
+  pages        = {104322},
+  shortjournal = {Artif. Intell.},
+  title        = {The influence of dimensions on the complexity of computing decision trees},
+  volume       = {343},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ICCMA 2023: 5th international competition on computational models of argumentation. <em>AIJ</em>, <em>342</em>, 104311. (<a href='https://doi.org/10.1016/j.artint.2025.104311'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The study of computational models of argumentation and the development of practical automated approaches to reasoning over the models has developed into a vibrant area of artificial intelligence research in recent years. The series of International Competitions on Computational Models of Argumentation (ICCMA) aims at nurturing research and development of practical reasoning algorithms for models of argumentation. Organized biennially, the ICCMA competitions provide a snapshot of the current state of the art in algorithm implementations for central fundamental reasoning tasks over models of argumentation. The year 2023 marked the 5th instantiation of International Competitions on Computational Models of Argumentation, ICCMA 2023. We provide a comprehensive overview of ICCMA 2023, including details on the various new developments introduced in 2023, overview of the participating solvers, extensive details on the competition benchmarks and results, as well as lessons learned.},
+  archive      = {J_AIJ},
+  author       = {Matti Järvisalo and Tuomo Lehtonen and Andreas Niskanen},
+  doi          = {10.1016/j.artint.2025.104311},
+  journal      = {Artificial Intelligence},
+  month        = {5},
+  pages        = {104311},
+  shortjournal = {Artif. Intell.},
+  title        = {ICCMA 2023: 5th international competition on computational models of argumentation},
+  volume       = {342},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Lifted inference beyond first-order logic. <em>AIJ</em>, <em>342</em>, 104310. (<a href='https://doi.org/10.1016/j.artint.2025.104310'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Weighted First Order Model Counting (WFOMC) is fundamental to probabilistic inference in statistical relational learning models. As WFOMC is known to be intractable in general (#P-complete), logical fragments that admit polynomial time WFOMC are of significant interest. Such fragments are called domain liftable . Recent works have shown that the two-variable fragment of first order logic extended with counting quantifiers (C 2 ) is domain-liftable. However, many properties of real-world data, like acyclicity in citation networks and connectivity in social networks, cannot be modeled in C 2 , or first order logic in general. In this work, we expand the domain liftability of C 2 with multiple such properties. We show that any C 2 sentence remains domain liftable when one of its relations is restricted to represent a directed acyclic graph, a connected graph, a tree (resp. a directed tree) or a forest (resp. a directed forest). All our results rely on a novel and general methodology of counting by splitting . Besides their application to probabilistic inference, our results provide a general framework for counting combinatorial structures. We expand a vast array of previous results in discrete mathematics literature on directed acyclic graphs, phylogenetic networks, etc.},
+  archive      = {J_AIJ},
+  author       = {Sagar Malhotra and Davide Bizzaro and Luciano Serafini},
+  doi          = {10.1016/j.artint.2025.104310},
+  journal      = {Artificial Intelligence},
+  month        = {5},
+  pages        = {104310},
+  shortjournal = {Artif. Intell.},
+  title        = {Lifted inference beyond first-order logic},
+  volume       = {342},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). (Re)Conceptualizing trustworthy AI: A foundation for change. <em>AIJ</em>, <em>342</em>, 104309. (<a href='https://doi.org/10.1016/j.artint.2025.104309'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Developers and academics have grown increasingly interested in developing “trustworthy” artificial intelligence (AI). However, this aim is difficult to achieve in practice, especially given trust and trustworthiness are complex, multifaceted concepts that cannot be completely guaranteed nor built entirely into an AI system. We have drawn on the breadth of trust-related literature across multiple disciplines and fields to synthesize knowledge pertaining to interpersonal trust, trust in automation, and risk and trust. Based on this review we have (re)conceptualized trustworthiness in practice as being both (a) perceptual, meaning that a user assesses whether, when, and to what extent AI model output is trustworthy, even if it has been developed in adherence to AI trustworthiness standards, and (b) context-dependent, meaning that a user's perceived trustworthiness and use of an AI model can vary based on the specifics of their situation (e.g., time-pressures for decision-making, high-stakes decisions). We provide our reconceptualization to nuance how trustworthiness is thought about, studied, and evaluated by the AI community in ways that are more aligned with past theoretical research.},
+  archive      = {J_AIJ},
+  author       = {Christopher D. Wirz and Julie L. Demuth and Ann Bostrom and Mariana G. Cains and Imme Ebert-Uphoff and David John Gagne II and Andrea Schumacher and Amy McGovern and Deianna Madlambayan},
+  doi          = {10.1016/j.artint.2025.104309},
+  journal      = {Artificial Intelligence},
+  month        = {5},
+  pages        = {104309},
+  shortjournal = {Artif. Intell.},
+  title        = {(Re)Conceptualizing trustworthy AI: A foundation for change},
+  volume       = {342},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Stochastic population update can provably be helpful in multi-objective evolutionary algorithms. <em>AIJ</em>, <em>341</em>, 104308. (<a href='https://doi.org/10.1016/j.artint.2025.104308'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Evolutionary algorithms (EAs) have been widely and successfully applied to solve multi-objective optimization problems, due to their nature of population-based search. Population update, a key component in multi-objective EAs (MOEAs), is usually performed in a greedy, deterministic manner. That is, the next-generation population is formed by selecting the best solutions from the current population and newly-generated solutions (irrespective of the selection criteria used such as Pareto dominance, crowdedness and indicators). In this paper, we analytically present that stochastic population update can be beneficial for the search of MOEAs. Specifically, we prove that the expected running time of two well-established MOEAs, SMS-EMOA and NSGA-II, for solving two bi-objective problems, OneJumpZeroJump and bi-objective RealRoyalRoad, can be exponentially decreased if replacing its deterministic population update mechanism by a stochastic one. Empirical studies also verify the effectiveness of the proposed population update method. This work is an attempt to show the benefit of introducing randomness into the population update of MOEAs. Its positive results, which might hold more generally, should encourage the exploration of developing new MOEAs in the area.},
+  archive      = {J_AIJ},
+  author       = {Chao Bian and Yawen Zhou and Miqing Li and Chao Qian},
+  doi          = {10.1016/j.artint.2025.104308},
+  journal      = {Artificial Intelligence},
+  month        = {4},
+  pages        = {104308},
+  shortjournal = {Artif. Intell.},
+  title        = {Stochastic population update can provably be helpful in multi-objective evolutionary algorithms},
+  volume       = {341},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Grounded predictions of teamwork as a one-shot game: A multiagent multi-armed bandits approach. <em>AIJ</em>, <em>341</em>, 104307. (<a href='https://doi.org/10.1016/j.artint.2025.104307'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Humans possess innate collaborative capacities. However, effective teamwork often remains challenging. This study delves into the feasibility of collaboration within teams of rational, self-interested agents who engage in teamwork without the obligation to contribute. Drawing from psychological and game theoretical frameworks, we formalise teamwork as a one-shot aggregative game, integrating insights from Steiner's theory of group productivity. We characterise this novel game's Nash equilibria and propose a multiagent multi-armed bandit system that learns to converge to approximations of such equilibria. Our research contributes value to the areas of game theory and multiagent systems, paving the way for a better understanding of voluntary collaborative dynamics. We examine how team heterogeneity, task typology, and assessment difficulty influence agents' strategies and resulting teamwork outcomes. Finally, we empirically study the behaviour of work teams under incentive systems that defy analytical treatment. Our agents demonstrate human-like behaviour patterns, corroborating findings from social psychology research.},
+  archive      = {J_AIJ},
+  author       = {Alejandra López de Aberasturi Gómez and Carles Sierra and Jordi Sabater-Mir},
+  doi          = {10.1016/j.artint.2025.104307},
+  journal      = {Artificial Intelligence},
+  month        = {4},
+  pages        = {104307},
+  shortjournal = {Artif. Intell.},
+  title        = {Grounded predictions of teamwork as a one-shot game: A multiagent multi-armed bandits approach},
+  volume       = {341},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Grammar induction from visual, speech and text. <em>AIJ</em>, <em>341</em>, 104306. (<a href='https://doi.org/10.1016/j.artint.2025.104306'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Grammar Induction (GI) seeks to uncover the underlying grammatical rules and linguistic patterns of a language, positioning it as a pivotal research topic within Artificial Intelligence (AI). Although extensive research in GI has predominantly focused on text or other singular modalities, we reveal that GI could significantly benefit from rich heterogeneous signals, such as text, vision, and acoustics. In the process, features from distinct modalities essentially serve complementary roles to each other. With such intuition, this work introduces a novel unsupervised visual-audio-text grammar induction task (named VAT-GI ), to induce the constituent grammar trees from parallel images, text, and speech inputs. Inspired by the fact that language grammar natively exists beyond the texts, we argue that the text has not to be the predominant modality in grammar induction. Thus we further introduce a textless setting of VAT-GI, wherein the task solely relies on visual and auditory inputs. To approach the task, we propose a visual-audio-text inside-outside recursive autoencoder ( VaTiora ) framework, which leverages rich modal-specific and complementary features for effective grammar parsing. Besides, a more challenging benchmark data is constructed to assess the generalization ability of VAT-GI system. Experiments on two benchmark datasets demonstrate that our proposed VaTiora system is more effective in incorporating the various multimodal signals, and also presents new state-of-the-art performance of VAT-GI. Further in-depth analyses are shown to gain a deep understanding of the VAT-GI task and how our VaTiora system advances. Our code and data: https://github.com/LLLogen/VAT-GI/ .},
+  archive      = {J_AIJ},
+  author       = {Yu Zhao and Hao Fei and Shengqiong Wu and Meishan Zhang and Min Zhang and Tat-seng Chua},
+  doi          = {10.1016/j.artint.2025.104306},
+  journal      = {Artificial Intelligence},
+  month        = {4},
+  pages        = {104306},
+  shortjournal = {Artif. Intell.},
+  title        = {Grammar induction from visual, speech and text},
+  volume       = {341},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the computation of mixed strategies for security games with general defending requirements. <em>AIJ</em>, <em>341</em>, 104297. (<a href='https://doi.org/10.1016/j.artint.2025.104297'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Stackelberg security game is played between a defender and an attacker, where the defender needs to allocate a limited amount of resources to multiple targets in order to minimize the loss due to adversarial attacks by the attacker. While allowing targets to have different values, classic settings often assume uniform requirements for defending the targets. This enables existing results that study mixed strategies (randomized allocation algorithms) to adopt a compact representation of the mixed strategies. In this work, we initiate the study of mixed strategies for security games in which the targets can have different defending requirements. In contrast to the case of uniform defending requirements, for which an optimal mixed strategy can be computed efficiently, we show that computing the optimal mixed strategy is NP -hard for the general defending requirements setting. However, we show strong upper and lower bounds for the optimal mixed strategy defending result. Additionally, we extend our analysis to study uniform attack settings on these security games. We propose an efficient close-to-optimal Patching algorithm that computes mixed strategies using only a few pure strategies. Furthermore, we study the setting when the game is played on a network and resource sharing is enabled between neighboring targets. We show the effectiveness of our algorithm in various large real-world datasets, addressing both uniform and general defending requirements.},
+  archive      = {J_AIJ},
+  author       = {Rufan Bai and Haoxing Lin and Xiaowei Wu and Minming Li and Weijia Jia},
+  doi          = {10.1016/j.artint.2025.104297},
+  journal      = {Artificial Intelligence},
+  month        = {4},
+  pages        = {104297},
+  shortjournal = {Artif. Intell.},
+  title        = {On the computation of mixed strategies for security games with general defending requirements},
+  volume       = {341},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). IID prophet inequality with a single data point. <em>AIJ</em>, <em>341</em>, 104296. (<a href='https://doi.org/10.1016/j.artint.2025.104296'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this work, we study the single-choice prophet inequality problem, where a seller encounters a sequence of n online bids. These bids are modeled as independent and identically distributed (i.i.d.) random variables drawn from an unknown distribution. Upon the revelation of each bid's value, the seller must make an immediate and irrevocable decision on whether to accept the bid and sell the item to the bidder. The objective is to maximize the competitive ratio between the expected gain of the seller and that of the maximum bid. It is shown by Correa et al. [1] that when the distribution is unknown or only o ( n ) uniform samples from the distribution are given, the best an algorithm can do is 1 / e -competitive. In contrast, when the distribution is known [2] , or when Ω ( n ) uniform samples are given [3] , the optimal competitive ratio of 0.7451 can be achieved. In this paper, we study the setting when the seller has access to a single point in the cumulative density function of the distribution, which can be learned from historical sales data. We investigate how effectively this data point can be used to design competitive algorithms. Motivated by the algorithm for the secretary problem, we propose the observe-and-accept algorithm that sets a threshold in the first phase using the data point and adopts the highest bid from the first phase as the threshold for the second phase. It can be viewed as a natural combination of the single-threshold algorithm for prophet inequality and the secretary problem algorithm. We show that our algorithm achieves a good competitive ratio for a wide range of data points, reaching up to 0.6785-competitive as n → ∞ for certain data points. Additionally, we study an extension of the algorithm that utilizes more than two phases and show that the competitive ratio can be further improved to at least 0.6862.},
+  archive      = {J_AIJ},
+  author       = {Yilong Feng and Bo Li and Haolong Li and Xiaowei Wu and Yutong Wu},
+  doi          = {10.1016/j.artint.2025.104296},
+  journal      = {Artificial Intelligence},
+  month        = {4},
+  pages        = {104296},
+  shortjournal = {Artif. Intell.},
+  title        = {IID prophet inequality with a single data point},
+  volume       = {341},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improved metric distortion via threshold approvals. <em>AIJ</em>, <em>341</em>, 104295. (<a href='https://doi.org/10.1016/j.artint.2025.104295'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider a social choice setting in which agents and alternatives are represented by points in a metric space, and the cost of an agent for an alternative is the distance between the corresponding points in the space. The goal is to choose a single alternative to (approximately) minimize the social cost (cost of all agents) or the maximum cost of any agent, when only limited information about the preferences of the agents is given. Previous work has shown that the best possible distortion one can hope to achieve is 3 when access to the ordinal preferences of the agents is given, even when the distances between alternatives in the metric space are known. We improve upon this bound of 3 by designing deterministic mechanisms that exploit a bit of cardinal information. We show that it is possible to achieve distortion 1 + 2 by using the ordinal preferences of the agents, the distances between alternatives, and a threshold approval set per agent that contains all alternatives that are at distance from the agent within an appropriately chosen factor of the minimum distance of the agents from any alternative. We show that this bound is the best possible for any deterministic mechanism in general metric spaces, and also provide improved bounds for the fundamental case of a line metric.},
+  archive      = {J_AIJ},
+  author       = {Elliot Anshelevich and Aris Filos-Ratsikas and Christopher Jerrett and Alexandros A. Voudouris},
+  doi          = {10.1016/j.artint.2025.104295},
+  journal      = {Artificial Intelligence},
+  month        = {4},
+  pages        = {104295},
+  shortjournal = {Artif. Intell.},
+  title        = {Improved metric distortion via threshold approvals},
+  volume       = {341},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Explanations for query answers under existential rules. <em>AIJ</em>, <em>341</em>, 104294. (<a href='https://doi.org/10.1016/j.artint.2025.104294'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ontology-based data access is an extensively studied paradigm aiming at improving query answers with the use of an “ontology”. An ontology is a specification of a domain of interest, which, in this context, is described via a logical theory. As a form of logical entailment, ontology-mediated query answering is fully interpretable, which makes it possible to derive explanations for ontological query answers. This is a quite important aspect, as the fact that many recent AI systems mostly operating as black boxes has led to some serious concerns. In the literature, various works on explanations in the context of description logics (DLs) have appeared, mostly focusing on explaining concept subsumption and concept unsatisfiability in the ontologies. Some works on explaining query entailment in DLs have appeared as well, however, mainly dealing with inconsistency-tolerant semantics and, actually, non -entailment of the queries. Surprisingly, explaining ontological query entailment has received little attention for ontology languages based on existential rules. In fact, although DLs are popular formalisms to model ontologies, it is generally agreed that rule-based ontologies are well-suited for data-intensive applications, as they allow us to conveniently deal with higher-arity relations, which naturally occur in standard relational databases. The goal of this work is to close this gap, and study the problem of explaining query entailment in the context of existential rules ontologies in terms of minimal subsets of database facts. We provide a thorough complexity analysis for several decision problems associated with minimal explanations for various classes of existential rules, and for different complexity measures.},
+  archive      = {J_AIJ},
+  author       = {İsmail İlkan Ceylan and Thomas Lukasiewicz and Enrico Malizia and Andrius Vaicenavičius},
+  doi          = {10.1016/j.artint.2025.104294},
+  journal      = {Artificial Intelligence},
+  month        = {4},
+  pages        = {104294},
+  shortjournal = {Artif. Intell.},
+  title        = {Explanations for query answers under existential rules},
+  volume       = {341},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). No free lunch theorem for privacy-preserving LLM inference. <em>AIJ</em>, <em>341</em>, 104293. (<a href='https://doi.org/10.1016/j.artint.2025.104293'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Individuals and businesses have been significantly benefited by Large Language Models (LLMs) including PaLM, Gemini and ChatGPT in various ways. For example, LLMs enhance productivity, reduce costs, and enable us to focus on more valuable tasks. Furthermore, LLMs possess the capacity to sift through extensive datasets, uncover underlying patterns, and furnish critical insights that propel the frontiers of technology and science. However, LLMs also pose privacy concerns. Users' interactions with LLMs may expose their sensitive personal or company information. A lack of robust privacy safeguards and legal frameworks could permit the unwarranted intrusion or improper handling of individual data, thereby risking infringements of privacy and the theft of personal identities. To ensure privacy, it is essential to minimize the dependency between shared prompts and private information. Various randomization approaches have been proposed to protect prompts' privacy, but they may incur utility loss compared to unprotected LLMs prompting. Therefore, it is essential to evaluate the balance between the risk of privacy leakage and loss of utility when conducting effective protection mechanisms. The current study develops a framework for inferring privacy-protected Large Language Models (LLMs) and lays down a solid theoretical basis for examining the interplay between privacy preservation and utility. The core insight is encapsulated within a theorem that is called as the NFL (abbreviation of the word No-Free-Lunch) Theorem.},
+  archive      = {J_AIJ},
+  author       = {Xiaojin Zhang and Yahao Pang and Yan Kang and Wei Chen and Lixin Fan and Hai Jin and Qiang Yang},
+  doi          = {10.1016/j.artint.2025.104293},
+  journal      = {Artificial Intelligence},
+  month        = {4},
+  pages        = {104293},
+  shortjournal = {Artif. Intell.},
+  title        = {No free lunch theorem for privacy-preserving LLM inference},
+  volume       = {341},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TTVAE: Transformer-based generative modeling for tabular data generation. <em>AIJ</em>, <em>340</em>, 104292. (<a href='https://doi.org/10.1016/j.artint.2025.104292'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Tabular data synthesis presents unique challenges, with Transformer models remaining underexplored despite the applications of Variational Autoencoders and Generative Adversarial Networks. To address this gap, we propose the Transformer-based Tabular Variational AutoEncoder (TTVAE), leveraging the attention mechanism for capturing complex data distributions. The inclusion of the attention mechanism enables our model to understand complex relationships among heterogeneous features, a task often difficult for traditional methods. TTVAE facilitates the integration of interpolation within the latent space during the data generation process. Specifically, TTVAE is trained once, establishing a low-dimensional representation of real data, and then various latent interpolation methods can efficiently generate synthetic latent points. Through extensive experiments on diverse datasets, TTVAE consistently achieves state-of-the-art performance, highlighting its adaptability across different feature types and data sizes. This innovative approach, empowered by the attention mechanism and the integration of interpolation, addresses the complex challenges of tabular data synthesis, establishing TTVAE as a powerful solution.},
+  archive      = {J_AIJ},
+  author       = {Alex X. Wang and Binh P. Nguyen},
+  doi          = {10.1016/j.artint.2025.104292},
+  journal      = {Artificial Intelligence},
+  month        = {3},
+  pages        = {104292},
+  shortjournal = {Artif. Intell.},
+  title        = {TTVAE: Transformer-based generative modeling for tabular data generation},
+  volume       = {340},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Argumentative review aggregation and dialogical explanations. <em>AIJ</em>, <em>340</em>, 104291. (<a href='https://doi.org/10.1016/j.artint.2025.104291'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The aggregation of online reviews is one of the dominant methods of quality control for users in various domains, from retail to entertainment. Consequently, explainable aggregation of reviews is increasingly sought-after. We introduce quantitative argumentation technology to this setting, towards automatically generating reasoned review aggregations equipped with dialogical explanations. To this end, we define a novel form of argumentative dialogical agent (ADA), using ontologies to harbour information from reviews into argumentation frameworks. These agents may then be evaluated with a quantitative argumentation semantics and used to mediate the generation of dialogical explanations for item recommendations based on the reviews. We show how to deploy ADAs in three different contexts in which argumentation frameworks are mined from text, guided by ontologies. First, for hotel recommendations, we use a human-authored ontology and exemplify the potential range of dialogical explanations afforded by ADAs. Second, for movie recommendations, we empirically evaluate an ADA based on a bespoke ontology (extracted semi-automatically, by natural language processing), by demonstrating that its quantitative evaluations, which are shown to satisfy desirable theoretical properties, are comparable with those on a well-known movie review aggregation website. Finally, for product recommendation in e-commerce, we use another bespoke ontology (extracted fully automatically, by natural language processing, from a website's reviews) to construct an ADA which is then empirically evaluated favourably against review aggregations from the website.},
+  archive      = {J_AIJ},
+  author       = {Antonio Rago and Oana Cocarascu and Joel Oksanen and Francesca Toni},
+  doi          = {10.1016/j.artint.2025.104291},
+  journal      = {Artificial Intelligence},
+  month        = {3},
+  pages        = {104291},
+  shortjournal = {Artif. Intell.},
+  title        = {Argumentative review aggregation and dialogical explanations},
+  volume       = {340},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Maximum likelihood evidential reasoning. <em>AIJ</em>, <em>340</em>, 104289. (<a href='https://doi.org/10.1016/j.artint.2025.104289'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we aim at generalising the e vidential r easoning ( ER ) rule to establish a new ma ximum li k elihood e vidential r easoning ( MAKER ) framework for probabilistic inference from inputs to outputs in a system space, with their relationships characterised by imperfect data. The MAKER framework consists of three models: s ystem s tate m odel ( SSM ), e vidence a cquisition m odel ( EAM ) and e vidential r easoning m odel ( ERM ). SSM is introduced to describe system output in the form of ordinary probability distribution on singleton states of the system space to model randomness only, or more generally basic probability distribution on singleton states and their subsets, referred to as states for short, to depict both randomness and ambiguity explicitly. EAM is established to acquire evidence from a data source as system input in the form of basic probability distribution on the evidential elements of the data source, with each evidential element pointing to a state in the system space. ERM is created to combine pieces of acquired evidence, with each represented in the form of basic probability distribution on all the states and the powerset of the system space to facilitate an augmented probabilistic inference process where the trustworthiness of evidence is explicitly modelled alongside its randomness and ambiguity. Within the MAKER framework, the trustworthiness of evidence is defined in terms of its reliability and expected weight to measure the total degree of its support for all states. Interdependence between pairs of evidence is also measured explicitly. A general conjunctive MAKER rule and algorithm are then established to infer system output from multiple inputs by combining multiple pieces of evidence that have weights and reliabilities and are dependent on each other in general. Several special MAKER rules and algorithms are deduced to facilitate inference in special situations where evidence is exclusive or independent of each other. Specific conditions are identified and proven where the MAKER rule reduces to the ER rule, Dempster's rule and Bayes’ rule. A bi-objective nonlinear pre-emptive minimax optimisation model is built to make use of observed data for optimal learning of evidence weights and reliabilities by maximising the predicted likelihood of the true state for each observation. Two numerical examples are analysed to demonstrate the three constituent models of the MAKER framework, the MAKER rules and algorithms, and the optimal learning model. A case study for human well-being analysis is provided where data from a panel survey are used to show the potential applications of the MAKER framework for probabilistic reasoning and decision making under different types of uncertainty.},
+  archive      = {J_AIJ},
+  author       = {Jian-Bo Yang and Dong-Ling Xu},
+  doi          = {10.1016/j.artint.2025.104289},
+  journal      = {Artificial Intelligence},
+  month        = {3},
+  pages        = {104289},
+  shortjournal = {Artif. Intell.},
+  title        = {Maximum likelihood evidential reasoning},
+  volume       = {340},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Explainable AI and stakes in medicine: A user study. <em>AIJ</em>, <em>340</em>, 104282. (<a href='https://doi.org/10.1016/j.artint.2025.104282'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The apparent downsides of opaque algorithms have led to a demand for explainable AI (XAI) methods by which a user might come to understand why an algorithm produced the particular output it did, given its inputs. Patients, for example, might find that the lack of explanation of the process underlying the algorithmic recommendations for diagnosis and treatment hinders their ability to provide informed consent. This paper examines the impact of two factors on user perceptions of explanations for AI systems in medical contexts. The factors considered were the stakes of the decision—high versus low—and the decision source—human versus AI. 484 participants were presented with vignettes in which medical diagnosis and treatment plan recommendations were made by humans or by AI. Separate vignettes were used for high stakes scenarios involving life-threatening diseases, and low stakes scenarios involving mild diseases. In each vignette, an explanation for the decision was given. Four explanation types were tested across separate vignettes: no explanation, counterfactual, causal and a novel ‘narrative-based’ explanation, not previously considered. This yielded a total of 16 conditions, of which each participant saw only one. Individuals were asked to evaluate the explanations they received based on helpfulness, understanding, consent, reliability, trust, interests and likelihood of undergoing treatment. We observed a main effect for stakes on all factors and a main effect for decision source on all factors except for helpfulness and likelihood to undergo treatment. While we observed effects for explanation on helpfulness, understanding, consent, reliability, trust and interests, we by and large did not see any differences between the effects of explanation types. This suggests that the effectiveness of explanations may not depend on type of explanation but instead, on the stakes and decision source.},
+  archive      = {J_AIJ},
+  author       = {Sam Baron and Andrew J. Latham and Somogy Varga},
+  doi          = {10.1016/j.artint.2025.104282},
+  journal      = {Artificial Intelligence},
+  month        = {3},
+  pages        = {104282},
+  shortjournal = {Artif. Intell.},
+  title        = {Explainable AI and stakes in medicine: A user study},
+  volume       = {340},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning a fast 3D spectral approach to object segmentation and tracking over space and time. <em>AIJ</em>, <em>340</em>, 104281. (<a href='https://doi.org/10.1016/j.artint.2024.104281'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We pose video object segmentation as spectral graph clustering in space and time, with one graph node for each pixel and edges forming local space-time neighborhoods. We claim that the strongest cluster in this video graph represents the salient object. We start by introducing a novel and efficient method based on 3D filtering for approximating the spectral solution, as the principal eigenvector of the graph's adjacency matrix, without explicitly building the matrix. This key property allows us to have a fast parallel implementation on GPU, orders of magnitude faster than classical approaches for computing the eigenvector. Our motivation for a spectral space-time clustering approach, unique in video semantic segmentation literature, is that such clustering is dedicated to preserving object consistency over time, which we evaluate using our novel segmentation consistency measure. Further on, we show how to efficiently learn the solution over multiple input feature channels. Finally, we extend the formulation of our approach beyond the segmentation task, into the realm of object tracking. In extensive experiments we show significant improvements over top methods, as well as over powerful ensembles that combine them, achieving state-of-the-art on multiple benchmarks, both for tracking and segmentation.},
+  archive      = {J_AIJ},
+  author       = {Elena Burceanu and Marius Leordeanu},
+  doi          = {10.1016/j.artint.2024.104281},
+  journal      = {Artificial Intelligence},
+  month        = {3},
+  pages        = {104281},
+  shortjournal = {Artif. Intell.},
+  title        = {Learning a fast 3D spectral approach to object segmentation and tracking over space and time},
+  volume       = {340},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Beyond incompatibility: Trade-offs between mutually exclusive fairness criteria in machine learning and law. <em>AIJ</em>, <em>340</em>, 104280. (<a href='https://doi.org/10.1016/j.artint.2024.104280'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fair and trustworthy AI is becoming ever more important in both machine learning and legal domains. One important consequence is that decision makers must seek to guarantee a ‘fair’, i.e., non-discriminatory, algorithmic decision procedure. However, there are several competing notions of algorithmic fairness that have been shown to be mutually incompatible under realistic factual assumptions. This concerns, for example, the widely used fairness measures of ‘calibration within groups’ and ‘balance for the positive/negative class,’ which relate to accuracy, false negative and false positive rates, respectively. In this paper, we present a novel algorithm (FAir Interpolation Method: FAIM) for continuously interpolating between these three fairness criteria. Thus, an initially unfair prediction can be remedied to meet, at least partially, a desired, weighted combination of the respective fairness conditions. We demonstrate the effectiveness of our algorithm when applied to synthetic data, the COMPAS data set, and a new, real-world data set from the e-commerce sector. We provide guidance on using our algorithm in different high-stakes contexts, and we discuss to what extent FAIM can be harnessed to comply with conflicting legal obligations. The analysis suggests that it may operationalize duties in traditional legal fields, such as credit scoring and criminal justice proceedings, but also for the latest AI regulations put forth in the EU, like the Digital Markets Act and the recently enacted AI Act.},
+  archive      = {J_AIJ},
+  author       = {Meike Zehlike and Alex Loosley and Håkan Jonsson and Emil Wiedemann and Philipp Hacker},
+  doi          = {10.1016/j.artint.2024.104280},
+  journal      = {Artificial Intelligence},
+  month        = {3},
+  pages        = {104280},
+  shortjournal = {Artif. Intell.},
+  title        = {Beyond incompatibility: Trade-offs between mutually exclusive fairness criteria in machine learning and law},
+  volume       = {340},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Explain it as simple as possible, but no simpler – Explanation via model simplification for addressing inferential gap. <em>AIJ</em>, <em>340</em>, 104279. (<a href='https://doi.org/10.1016/j.artint.2024.104279'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {One of the core challenges of explaining decisions made by modern AI systems is the need to address the potential gap in the inferential capabilities of the system generating the decision and the user trying to make sense of it. This inferential capability gap becomes even more critical when it comes to explaining sequential decisions. While there have been some isolated efforts at developing explanation methods suited for complex decision-making settings, most of these current efforts are limited in scope. In this paper, we introduce a general framework for generating explanations in the presence of inferential capability gaps. A framework that is grounded in the generation of simplified representations of the agent model through the application of a sequence of model simplifying transformations. This framework not only allows us to develop an extremely general explanation generation algorithm, but we see that many of the existing works in this direction could be seen as specific instantiations of our more general method. While the ideas presented in this paper are general enough to be applied to any decision-making framework, we will focus on instantiating the framework in the context of stochastic planning problems. As a part of this instantiation, we will also provide an exhaustive characterization of explanatory queries and an analysis of various classes of applicable transformations. We will evaluate the effectiveness of transformation-based explanations through both synthetic experiments and user studies.},
+  archive      = {J_AIJ},
+  author       = {Sarath Sreedharan and Siddharth Srivastava and Subbarao Kambhampati},
+  doi          = {10.1016/j.artint.2024.104279},
+  journal      = {Artificial Intelligence},
+  month        = {3},
+  pages        = {104279},
+  shortjournal = {Artif. Intell.},
+  title        = {Explain it as simple as possible, but no simpler – Explanation via model simplification for addressing inferential gap},
+  volume       = {340},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CureGraph: Contrastive multi-modal graph representation learning for urban living circle health profiling and prediction. <em>AIJ</em>, <em>340</em>, 104278. (<a href='https://doi.org/10.1016/j.artint.2024.104278'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The early detection and prediction of health status decline among the elderly at the neighborhood level are of great significance for urban planning and public health policymaking. While existing studies affirm the connection between living environments and health outcomes, most rely on single data modalities or simplistic feature concatenation of multi-modal information, limiting their ability to comprehensively profile the health-oriented urban environments. To fill this gap, we propose CureGraph , a c ontrastive m u lti-modal r epresentation learning framework for urban h e alth prediction that employs graph -based techniques to infer the prevalence of common chronic diseases among the elderly within the urban living circles of each neighborhood. CureGraph leverages rich multi-modal information, including photos and textual reviews of residential areas and their surrounding points of interest, to generate urban neighborhood embeddings. By integrating pre-trained visual and textual encoders with graph modeling techniques, CureGraph captures cross-modal spatial dependencies, offering a comprehensive understanding of urban environments tailored to elderly health considerations. Extensive experiments on real-world datasets demonstrate that CureGraph improves the best baseline by 28% on average in terms of R 2 across elderly disease risk prediction tasks. Moreover, the model enables the identification of stage-wise chronic disease progression and supports comparative public health analysis across neighborhoods, offering actionable insights for sustainable urban development and enhanced quality of life. The code is publicly available at https://github.com/jinlin2021/CureGraph .},
+  archive      = {J_AIJ},
+  author       = {Jinlin Li and Xiao Zhou},
+  doi          = {10.1016/j.artint.2024.104278},
+  journal      = {Artificial Intelligence},
+  month        = {3},
+  pages        = {104278},
+  shortjournal = {Artif. Intell.},
+  title        = {CureGraph: Contrastive multi-modal graph representation learning for urban living circle health profiling and prediction},
+  volume       = {340},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Athanor: Local search over abstract constraint specifications. <em>AIJ</em>, <em>340</em>, 104277. (<a href='https://doi.org/10.1016/j.artint.2024.104277'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Local search is a common method for solving combinatorial optimisation problems. We focus on general-purpose local search solvers that accept as input a constraint model — a declarative description of a problem consisting of a set of decision variables under a set of constraints. Existing approaches typically take as input models written in solver-independent constraint modelling languages like MiniZinc. The Athanor solver we describe herein differs in that it begins from a specification of a problem in the abstract constraint specification language Essence , which allows problems to be described without commitment to low-level modelling decisions through its support for a rich set of abstract types. The advantage of proceeding from Essence is that the structure apparent in a concise, abstract specification of a problem can be exploited to generate high quality neighbourhoods automatically, avoiding the difficult task of identifying that structure in an equivalent constraint model. Based on the twin benefits of neighbourhoods derived from high level types and the scalability derived by searching directly over those types, our empirical results demonstrate strong performance in practice relative to existing solution methods.},
+  archive      = {J_AIJ},
+  author       = {Saad Attieh and Nguyen Dang and Christopher Jefferson and Ian Miguel and Peter Nightingale},
+  doi          = {10.1016/j.artint.2024.104277},
+  journal      = {Artificial Intelligence},
+  month        = {3},
+  pages        = {104277},
+  shortjournal = {Artif. Intell.},
+  title        = {Athanor: Local search over abstract constraint specifications},
+  volume       = {340},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A simple proof-theoretic characterization of stable models: Reduction to difference logic and experiments. <em>AIJ</em>, <em>340</em>, 104276. (<a href='https://doi.org/10.1016/j.artint.2024.104276'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Stable models of logic programs have been studied and characterized in relation with other formalisms by many researchers. As already argued in previous papers, such characterizations are interesting for diverse reasons, including theoretical investigations and the possibility of leading to new algorithms for computing stable models of logic programs. At the theoretical level, complexity and expressiveness comparisons have brought about fundamental insights. Beyond that, practical implementations of the developed reductions enable the use of existing solvers for other logical formalisms to compute stable models. In this paper, we first provide a simple characterization of stable models that can be viewed as a proof-theoretic counterpart of the standard model-theoretic definition. We further show how it can be naturally encoded in difference logic. Such an encoding, compared to the existing reductions to classical logics, does not require Boolean variables. Then, we implement our novel translation to a Satisfiability Modulo Theories (SMT) formula. We finally compare our approach, employing the SMT solver yices , to the translation-based ASP solver lp2diff and to clingo on domains from the “Basic Decision” track of the 2017 Answer Set Programming competition. The results show that our approach is competitive to and often better than lp2diff , and that it can also be faster than clingo on non-tight domains.},
+  archive      = {J_AIJ},
+  author       = {Martin Gebser and Enrico Giunchiglia and Marco Maratea and Marco Mochi},
+  doi          = {10.1016/j.artint.2024.104276},
+  journal      = {Artificial Intelligence},
+  month        = {3},
+  pages        = {104276},
+  shortjournal = {Artif. Intell.},
+  title        = {A simple proof-theoretic characterization of stable models: Reduction to difference logic and experiments},
+  volume       = {340},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A semantic framework for neurosymbolic computation. <em>AIJ</em>, <em>340</em>, 104273. (<a href='https://doi.org/10.1016/j.artint.2024.104273'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The field of neurosymbolic AI aims to benefit from the combination of neural networks and symbolic systems. A cornerstone of the field is the translation or encoding of symbolic knowledge into neural networks. Although many neurosymbolic methods and approaches have been proposed, and with a large increase in recent years, no common definition of encoding exists that can enable a precise, theoretical comparison of neurosymbolic methods. This paper addresses this problem by introducing a semantic framework for neurosymbolic AI. We start by providing a formal definition of semantic encoding , specifying the components and conditions under which a knowledge-base can be encoded correctly by a neural network. We then show that many neurosymbolic approaches are accounted for by this definition. We provide a number of examples and correspondence proofs applying the proposed framework to the neural encoding of various forms of knowledge representation. Many, at first sight disparate, neurosymbolic methods, are shown to fall within the proposed formalization. This is expected to provide guidance to future neurosymbolic encodings by placing them in the broader context of semantic encodings of entire families of existing neurosymbolic systems. The paper hopes to help initiate a discussion around the provision of a theory for neurosymbolic AI and a semantics for deep learning.},
+  archive      = {J_AIJ},
+  author       = {Simon Odense and Artur d'Avila Garcez},
+  doi          = {10.1016/j.artint.2024.104273},
+  journal      = {Artificial Intelligence},
+  month        = {3},
+  pages        = {104273},
+  shortjournal = {Artif. Intell.},
+  title        = {A semantic framework for neurosymbolic computation},
+  volume       = {340},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Out-of-distribution detection by regaining lost clues. <em>AIJ</em>, <em>339</em>, 104275. (<a href='https://doi.org/10.1016/j.artint.2024.104275'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Out-of-distribution (OOD) detection identifies samples in the test phase that are drawn from distributions distinct from that of training in-distribution (ID) samples for a trained network. According to the information bottleneck, networks that classify tabular data tend to extract labeling information from features with strong associations to ground-truth labels, discarding less relevant labeling cues. This behavior leads to a predicament in which OOD samples with limited labeling information receive high-confidence predictions, rendering the network incapable of distinguishing between ID and OOD samples. Hence, exploring more labeling information from ID samples, which makes it harder for an OOD sample to obtain high-confidence predictions, can address this over-confidence issue on tabular data. Accordingly, we propose a novel transformer chain (TC), which comprises a sequence of dependent transformers that iteratively regain discarded labeling information and integrate all the labeling information to enhance OOD detection. The generalization bound theoretically reveals that TC can balance ID generalization and OOD detection capabilities. Experimental results demonstrate that TC significantly surpasses state-of-the-art methods for OOD detection in tabular data.},
+  archive      = {J_AIJ},
+  author       = {Zhilin Zhao and Longbing Cao and Philip S. Yu},
+  doi          = {10.1016/j.artint.2024.104275},
+  journal      = {Artificial Intelligence},
+  month        = {2},
+  pages        = {104275},
+  shortjournal = {Artif. Intell.},
+  title        = {Out-of-distribution detection by regaining lost clues},
+  volume       = {339},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-rank smart reserves: A general framework for selection and matching diversity goals. <em>AIJ</em>, <em>339</em>, 104274. (<a href='https://doi.org/10.1016/j.artint.2024.104274'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study a problem where each school has flexible multi-ranked diversity goals, and each student may belong to multiple overlapping types, and consumes only one of the positions reserved for their types. We propose a novel choice function for a school to select students and show that it is the unique rule that satisfies three fundamental properties: maximal diversity, non-wastefulness, and justified envy-freeness. We provide a fast polynomial-time algorithm for our choice function that is based on the Dulmage Mendelsohn Decomposition Theorem as well as new insights into the combinatorial structure of constrained rank maximal matchings. Even for the case of minimum and maximum quotas for types (that capture two ranks), ours is the first known polynomial-time approach to compute an optimally diverse choice outcome. Finally, we prove that the choice function we design for schools, satisfies substitutability and hence can be directly embedded in the generalized deferred acceptance algorithm to achieve strategyproofness and stability. Our algorithms and results have immediate policy implications and directly apply to a variety of scenarios, such as where hiring positions or scarce medical resources need to be allocated while taking into account diversity concerns or ethical principles.},
+  archive      = {J_AIJ},
+  author       = {Haris Aziz and Zhaohong Sun},
+  doi          = {10.1016/j.artint.2024.104274},
+  journal      = {Artificial Intelligence},
+  month        = {2},
+  pages        = {104274},
+  shortjournal = {Artif. Intell.},
+  title        = {Multi-rank smart reserves: A general framework for selection and matching diversity goals},
+  volume       = {339},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Formal verification and synthesis of mechanisms for social choice. <em>AIJ</em>, <em>339</em>, 104272. (<a href='https://doi.org/10.1016/j.artint.2024.104272'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mechanism Design (MD) aims at defining resources allocation protocols that satisfy a predefined set of properties, and Auction Mechanisms are of foremost importance. Core properties of mechanisms, such as strategy-proofness or budget balance, involve: (i) complex strategic concepts such as Nash equilibria, (ii) quantitative aspects such as utilities, and often (iii) imperfect information, with agents' private valuations. We demonstrate that Strategy Logic provides a formal framework fit to model mechanisms and express such properties, and we show that it can be used either to automatically check that a given mechanism satisfies some property (verification), or automatically produce a mechanism that does (synthesis). To do so, we consider a quantitative and variant of Strategy Logic. We first show how to express the implementation of social choice functions. Second, we show how fundamental mechanism properties can be expressed as logical formulas, and thus evaluated by model checking. We then prove that model checking for this particular variant of Strategy Logic can be done in polynomial space. Next, we show how MD can be rephrased as a synthesis problem, where mechanisms are automatically synthesized from a partial or complete logical specification. We solve the automated synthesis of mechanisms in two cases: when the number of actions is bounded, and when agents play in turns. Finally, we provide examples of auction design based for each of these two cases. The benefit of our approach in relation to classical MD is to provide a general framework for addressing a large spectrum of MD problems, which is not tailored to a particular setting or problem.},
+  archive      = {J_AIJ},
+  author       = {Munyque Mittelmann and Bastien Maubert and Aniello Murano and Laurent Perrussel},
+  doi          = {10.1016/j.artint.2024.104272},
+  journal      = {Artificial Intelligence},
+  month        = {2},
+  pages        = {104272},
+  shortjournal = {Artif. Intell.},
+  title        = {Formal verification and synthesis of mechanisms for social choice},
+  volume       = {339},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Defying catastrophic forgetting via influence function. <em>AIJ</em>, <em>339</em>, 104261. (<a href='https://doi.org/10.1016/j.artint.2024.104261'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep-learning models need to continually accumulate knowledge from tasks, given that the number of tasks are increasing overwhelmingly as the digital world evolves. However, standard deep-learning models are prone to forgetting about previously acquired skills when learning new ones. Fortunately, this catastrophic forgetting problem can be solved by means of continual learning. One popular approach in this vein is regularization-based method which penalizes parameters by giving their importance. However, a formal definition of parameter importance and theoretical analysis of regularization-based methods are elements that remain under-explored. In this paper, we first rigorously define the parameter importance by influence function, then unify the seminal methods (i.e., EWC, SI and MAS) into one whole framework. Two key theoretical results are presented in this work, and extensive experiments are conducted on standard benchmarks, which verify the superior performance of our proposed method.},
+  archive      = {J_AIJ},
+  author       = {Rui Gao and Weiwei Liu},
+  doi          = {10.1016/j.artint.2024.104261},
+  journal      = {Artificial Intelligence},
+  month        = {2},
+  pages        = {104261},
+  shortjournal = {Artif. Intell.},
+  title        = {Defying catastrophic forgetting via influence function},
+  volume       = {339},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EMOA*: A framework for search-based multi-objective path planning. <em>AIJ</em>, <em>339</em>, 104260. (<a href='https://doi.org/10.1016/j.artint.2024.104260'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the Multi-Objective Shortest Path Problem (MO-SPP), one has to find paths on a graph that simultaneously minimize multiple objectives. It is not guaranteed that there exists a path that minimizes all objectives, and the problem thus aims to find the set of Pareto-optimal paths from the start to the goal vertex. A variety of multi-objective A*-based search approaches have been developed for this purpose. Typically, these approaches maintain a front set at each vertex during the search process to keep track of the Pareto-optimal paths that reach that vertex. Maintaining these front sets becomes burdensome and often slows down the search when there are many Pareto-optimal paths. In this article, we first introduce a framework for MO-SPP with the key procedures related to the front sets abstracted and highlighted, which provides a novel perspective for understanding the existing multi-objective A*-based search algorithms. Within this framework, we develop two different, yet closely related approaches to maintain these front sets efficiently during the search. We show that our approaches can find all cost-unique Pareto-optimal paths, and analyze their runtime complexity. We implement the approaches and compare them against baselines using instances with three, four and five objectives. Our experimental results show that our approaches run up to an order of magnitude faster than the baselines.},
+  archive      = {J_AIJ},
+  author       = {Zhongqiang Ren and Carlos Hernández and Maxim Likhachev and Ariel Felner and Sven Koenig and Oren Salzman and Sivakumar Rathinam and Howie Choset},
+  doi          = {10.1016/j.artint.2024.104260},
+  journal      = {Artificial Intelligence},
+  month        = {2},
+  pages        = {104260},
+  shortjournal = {Artif. Intell.},
+  title        = {EMOA*: A framework for search-based multi-objective path planning},
+  volume       = {339},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A kripke-lewis semantics for belief update and belief revision. <em>AIJ</em>, <em>339</em>, 104259. (<a href='https://doi.org/10.1016/j.artint.2024.104259'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We provide a new characterization of both belief update and belief revision in terms of a Kripke-Lewis semantics. We consider frames consisting of a set of states, a Kripke belief relation and a Lewis selection function. Adding a valuation to a frame yields a model. Given a model and a state, we identify the initial belief set K with the set of formulas that are believed at that state and we identify either the updated belief set K ⋄ ϕ or the revised belief set K ⁎ ϕ (prompted by the input represented by formula ϕ ) as the set of formulas that are the consequent of conditionals that (1) are believed at that state and (2) have ϕ as antecedent. We show that this class of models characterizes both the Katsuno-Mendelzon (KM) belief update functions and the Alchourrón, Gärdenfors and Makinson (AGM) belief revision functions, in the following sense: (1) each model gives rise to a partial belief function that can be completed into a full KM/AGM update/revision function, and (2) for every KM/AGM update/revision function there is a model whose associated belief function coincides with it. The difference between update and revision can be reduced to two semantic properties that appear in a stronger form in revision relative to update, thus confirming the finding by Peppas et al. (1996) [30] that, “for a fixed theory K , revising K is much the same as updating K ”. It is argued that the proposed semantic characterization brings into question the common interpretation of belief revision and update as change in beliefs in response to new information.},
+  archive      = {J_AIJ},
+  author       = {Giacomo Bonanno},
+  doi          = {10.1016/j.artint.2024.104259},
+  journal      = {Artificial Intelligence},
+  month        = {2},
+  pages        = {104259},
+  shortjournal = {Artif. Intell.},
+  title        = {A kripke-lewis semantics for belief update and belief revision},
+  volume       = {339},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A simple yet effective self-debiasing framework for transformer models. <em>AIJ</em>, <em>339</em>, 104258. (<a href='https://doi.org/10.1016/j.artint.2024.104258'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Current Transformer-based natural language understanding (NLU) models heavily rely on dataset biases, while failing to handle real-world out-of-distribution (OOD) instances. Many methods have been proposed to deal with this issue, but they ignore the fact that the features learned in different layers of Transformer-based NLU models are different. In this paper, we first conduct preliminary studies to obtain two conclusions: 1) both low- and high-layer sentence representations encode common biased features during training; 2) the low-layer sentence representations encode fewer unbiased features than the high-layer ones. Based on these conclusions, we propose a simple yet effective self-debiasing framework for Transformer-based NLU models. Concretely, we first stack a classifier on a selected low layer. Then, we introduce a residual connection that feeds the low-layer sentence representation to the top-layer classifier. In this way, the top-layer sentence representation will be trained to ignore the common biased features encoded by the low-layer sentence representation and focus on task-relevant unbiased features. During inference, we remove the residual connection and directly use the top-layer sentence representation to make predictions. Extensive experiments and in-depth analyses on NLU tasks demonstrate the superiority of our framework, achieving a new state-of-the-art (SOTA) on three OOD test sets.},
+  archive      = {J_AIJ},
+  author       = {Xiaoyue Wang and Xin Liu and Lijie Wang and Suhang Wu and Jinsong Su and Hua Wu},
+  doi          = {10.1016/j.artint.2024.104258},
+  journal      = {Artificial Intelligence},
+  month        = {2},
+  pages        = {104258},
+  shortjournal = {Artif. Intell.},
+  title        = {A simple yet effective self-debiasing framework for transformer models},
+  volume       = {339},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Integrating symbolic reasoning into neural generative models for design generation. <em>AIJ</em>, <em>339</em>, 104257. (<a href='https://doi.org/10.1016/j.artint.2024.104257'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Design generation requires tight integration of neural and symbolic reasoning, as good design must meet explicit user needs and honor implicit rules for aesthetics, utility, and convenience. Current automated design tools driven by neural networks produce appealing designs, but cannot satisfy user specifications and utility requirements. Symbolic reasoning tools, such as constraint programming, cannot perceive low-level visual information in images or capture subtle aspects such as aesthetics. We introduce the Spatial Reasoning Integrated Generator (SPRING) for design generation. SPRING embeds a neural and symbolic integrated spatial reasoning module inside the deep generative network. The spatial reasoning module samples the set of locations of objects to be generated from a backtrack-free distribution. This distribution modifies the implicit preference distribution, which is learned by a recurrent neural network to capture utility and aesthetics. The sampling from the backtrack-free distribution is accomplished by a symbolic reasoning approach, SampleSearch, which zeros out the probability of sampling spatial locations violating explicit user specifications. Embedding symbolic reasoning into neural generation guarantees that the output of SPRING satisfies user requirements. Furthermore, SPRING offers interpretability, allowing users to visualize and diagnose the generation process through the bounding boxes. SPRING is also adept at managing novel user specifications not encountered during its training, thanks to its proficiency in zero-shot constraint transfer. Quantitative evaluations and a human study reveal that SPRING outperforms baseline generative models, excelling in delivering high design quality and better meeting user specifications.},
+  archive      = {J_AIJ},
+  author       = {Maxwell J. Jacobson and Yexiang Xue},
+  doi          = {10.1016/j.artint.2024.104257},
+  journal      = {Artificial Intelligence},
+  month        = {2},
+  pages        = {104257},
+  shortjournal = {Artif. Intell.},
+  title        = {Integrating symbolic reasoning into neural generative models for design generation},
+  volume       = {339},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Lifted action models learning from partial traces. <em>AIJ</em>, <em>339</em>, 104256. (<a href='https://doi.org/10.1016/j.artint.2024.104256'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For applying symbolic planning, there is the necessity of providing the specification of a symbolic action model, which is usually manually specified by a domain expert. However, such an encoding may be faulty due to either human errors or lack of domain knowledge. Therefore, learning the symbolic action model in an automated way has been widely adopted as an alternative to its manual specification. In this paper, we focus on the problem of learning action models offline, from an input set of partially observable plan traces. In particular, we propose an approach to: (i) augment the observability of a given plan trace by applying predefined logical rules; (ii) learn the preconditions and effects of each action in a plan trace from partial observations before and after the action execution. We formally prove that our approach learns action models with fundamental theoretical properties, not provided by other methods. We experimentally show that our approach outperforms a state-of-the-art method on a large set of existing benchmark domains. Furthermore, we compare the effectiveness of the learned action models for solving planning problems and show that the action models learned by our approach are much more effective w.r.t. a state-of-the-art method. 1},
+  archive      = {J_AIJ},
+  author       = {Leonardo Lamanna and Luciano Serafini and Alessandro Saetti and Alfonso Emilio Gerevini and Paolo Traverso},
+  doi          = {10.1016/j.artint.2024.104256},
+  journal      = {Artificial Intelligence},
+  month        = {2},
+  pages        = {104256},
+  shortjournal = {Artif. Intell.},
+  title        = {Lifted action models learning from partial traces},
+  volume       = {339},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Human-AI coevolution. <em>AIJ</em>, <em>339</em>, 104244. (<a href='https://doi.org/10.1016/j.artint.2024.104244'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Human-AI coevolution, defined as a process in which humans and AI algorithms continuously influence each other, increasingly characterises our society, but is understudied in artificial intelligence and complexity science literature. Recommender systems and assistants play a prominent role in human-AI coevolution, as they permeate many facets of daily life and influence human choices through online platforms. The interaction between users and AI results in a potentially endless feedback loop, wherein users' choices generate data to train AI models, which, in turn, shape subsequent user preferences. This human-AI feedback loop has peculiar characteristics compared to traditional human-machine interaction and gives rise to complex and often “unintended” systemic outcomes. This paper introduces human-AI coevolution as the cornerstone for a new field of study at the intersection between AI and complexity science focused on the theoretical, empirical, and mathematical investigation of the human-AI feedback loop. In doing so, we: (i) outline the pros and cons of existing methodologies and highlight shortcomings and potential ways for capturing feedback loop mechanisms; (ii) propose a reflection at the intersection between complexity science, AI and society; (iii) provide real-world examples for different human-AI ecosystems; and (iv) illustrate challenges to the creation of such a field of study, conceptualising them at increasing levels of abstraction, i.e., scientific, legal and socio-political.},
+  archive      = {J_AIJ},
+  author       = {Dino Pedreschi and Luca Pappalardo and Emanuele Ferragina and Ricardo Baeza-Yates and Albert-László Barabási and Frank Dignum and Virginia Dignum and Tina Eliassi-Rad and Fosca Giannotti and János Kertész and Alistair Knott and Yannis Ioannidis and Paul Lukowicz and Andrea Passarella and Alex Sandy Pentland and John Shawe-Taylor and Alessandro Vespignani},
+  doi          = {10.1016/j.artint.2024.104244},
+  journal      = {Artificial Intelligence},
+  month        = {2},
+  pages        = {104244},
+  shortjournal = {Artif. Intell.},
+  title        = {Human-AI coevolution},
+  volume       = {339},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Online learning in sequential bayesian persuasion: Handling unknown priors. <em>AIJ</em>, <em>338</em>, 104245. (<a href='https://doi.org/10.1016/j.artint.2024.104245'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study a repeated information design problem faced by an informed sender who tries to influence the behavior of a self-interested receiver , through the provision of payoff-relevant information. We consider settings where the receiver repeatedly faces a sequential decision making (SDM) problem. At each round, the sender observes the realizations of random events in the SDM problem, which are only partially observable by the receiver. This begets the challenge of how to incrementally disclose such information to the receiver to persuade them to follow (desirable) action recommendations. We study the case in which the sender does not know random events probabilities, and, thus, they have to gradually learn them while persuading the receiver. We start by providing a non-trivial polytopal approximation of the set of the sender's persuasive information-revelation structures. This is crucial to design efficient learning algorithms. Next, we prove a negative result which also applies to the non-sequential case: no learning algorithm can be persuasive in high probability . Thus, we relax the persuasiveness requirement, studying algorithms that guarantee that the receiver's regret in following recommendations grows sub-linearly . In the full-feedback setting—where the sender observes the realizations of all the possible random events—, we provide an algorithm with O ˜ ( T ) regret for both the sender and the receiver. Instead, in the bandit-feedback setting—where the sender only observes the realizations of random events actually occurring in the SDM problem—, we design an algorithm that, given an α ∈ [ 1 / 2 , 1 ] as input, guarantees O ˜ ( T α ) and O ˜ ( T max ⁡ { α , 1 − α 2 } ) regrets, for the sender and the receiver respectively. This result is complemented by a lower bound showing that such a regret trade-off is tight for α ∈ [ 1 / 2 , 2 / 3 ] .},
+  archive      = {J_AIJ},
+  author       = {Martino Bernasconi and Matteo Castiglioni and Alberto Marchesi and Nicola Gatti and Francesco Trovò},
+  doi          = {10.1016/j.artint.2024.104245},
+  journal      = {Artificial Intelligence},
+  month        = {1},
+  pages        = {104245},
+  shortjournal = {Artif. Intell.},
+  title        = {Online learning in sequential bayesian persuasion: Handling unknown priors},
+  volume       = {338},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Separate but equal: Equality in belief propagation for single-cycle graphs. <em>AIJ</em>, <em>338</em>, 104243. (<a href='https://doi.org/10.1016/j.artint.2024.104243'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Belief propagation is a widely used, incomplete optimization algorithm whose main theoretical properties hold only under the assumption that beliefs are not equal. Nevertheless, there is substantial evidence to suggest that equality between beliefs does occur. A published method to overcome belief equality, which is based on the use of unary function-nodes, is commonly assumed to resolve the problem. In this study, we focus on min-sum, the version of belief propagation that is used to solve constraint optimization problems. We prove that for the case of a single-cycle graph, belief equality can only be avoided when the algorithm converges to the optimal solution. Under any other circumstances, the unary function method will not prevent equality, indicating that some of the existing results presented in the literature are in need of reassessment. We differentiate between belief equality, which refers to equal beliefs in a single message, and assignment equality, which prevents the coherent assignment of values to the variables, and we provide conditions for both.},
+  archive      = {J_AIJ},
+  author       = {Erel Cohen and Ben Rachmut and Omer Lev and Roie Zivan},
+  doi          = {10.1016/j.artint.2024.104243},
+  journal      = {Artificial Intelligence},
+  month        = {1},
+  pages        = {104243},
+  shortjournal = {Artif. Intell.},
+  title        = {Separate but equal: Equality in belief propagation for single-cycle graphs},
+  volume       = {338},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Integrating multi-armed bandit with local search for MaxSAT. <em>AIJ</em>, <em>338</em>, 104242. (<a href='https://doi.org/10.1016/j.artint.2024.104242'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Partial MaxSAT (PMS) and Weighted PMS (WPMS) are two practical generalizations of the MaxSAT problem. In this paper, we introduce a new local search algorithm for these problems, named BandHS. It applies two multi-armed bandit (MAB) models to guide the search directions when escaping local optima. One MAB model is combined with all the soft clauses to help the algorithm select to satisfy appropriate soft clauses, while the other MAB model is combined with all the literals in hard clauses to help the algorithm select suitable literals to satisfy the hard clauses. These two models enhance the algorithm's search ability in both feasible and infeasible solution spaces. BandHS also incorporates a novel initialization method that prioritizes both unit and binary clauses when generating the initial solutions. Moreover, we apply our MAB approach to the state-of-the-art local search algorithm NuWLS and to the local search component of the incomplete solver NuWLS-c-2023. The extensive experiments conducted demonstrate the excellent performance and generalization capability of the proposed method. Additionally, we provide analyses on the type of problems where our MAB method works well or not, aiming to offer insights and suggestions for its application. Encouragingly, our MAB method has been successfully applied in core local search components in the winner of the WPMS complete track of MaxSAT Evaluation 2023, as well as the runners-up of the incomplete track of MaxSAT Evaluations 2022 and 2023.},
+  archive      = {J_AIJ},
+  author       = {Jiongzhi Zheng and Kun He and Jianrong Zhou and Yan Jin and Chu-Min Li and Felip Manyà},
+  doi          = {10.1016/j.artint.2024.104242},
+  journal      = {Artificial Intelligence},
+  month        = {1},
+  pages        = {104242},
+  shortjournal = {Artif. Intell.},
+  title        = {Integrating multi-armed bandit with local search for MaxSAT},
+  volume       = {338},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The complexity of optimizing atomic congestion. <em>AIJ</em>, <em>338</em>, 104241. (<a href='https://doi.org/10.1016/j.artint.2024.104241'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Atomic congestion games are a classic topic in network design, routing, and algorithmic game theory, and are capable of modeling congestion and flow optimization tasks in various application areas. While both the price of anarchy for such games as well as the computational complexity of computing their Nash equilibria are by now well-understood, the computational complexity of computing a system-optimal set of strategies—that is, a centrally planned routing that minimizes the average cost of agents—is severely understudied in the literature. We close this gap by identifying the exact boundaries of tractability for the problem through the lens of the parameterized complexity paradigm. After showing that the problem remains highly intractable even on extremely simple networks, we obtain a set of results which demonstrate that the structural parameters which control the computational (in)tractability of the problem are not vertex-separator based in nature (such as, e.g., treewidth), but rather based on edge separators. We conclude by extending our analysis towards the (even more challenging) min-max variant of the problem.},
+  archive      = {J_AIJ},
+  author       = {Cornelius Brand and Robert Ganian and Subrahmanyam Kalyanasundaram and Fionn Mc Inerney},
+  doi          = {10.1016/j.artint.2024.104241},
+  journal      = {Artificial Intelligence},
+  month        = {1},
+  pages        = {104241},
+  shortjournal = {Artif. Intell.},
+  title        = {The complexity of optimizing atomic congestion},
+  volume       = {338},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Chimeric U-net – Modifying the standard U-net towards explainability. <em>AIJ</em>, <em>338</em>, 104240. (<a href='https://doi.org/10.1016/j.artint.2024.104240'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Healthcare guided by semantic segmentation has the potential to improve our quality of life through early and accurate disease detection. Convolutional Neural Networks, especially the U-Net-based architectures, are currently the state-of-the-art learning-based segmentation methods and have given unprecedented performances. However, their decision-making processes are still an active field of research. In order to reliably utilize such methods in healthcare, explainability of how the segmentation was performed is mandated. To date, explainability is studied and applied heavily in classification tasks. In this work, we propose the Chimeric U-Net, a U-Net architecture with an invertible decoder unit, that inherently brings explainability into semantic segmentation tasks. We find that having the restriction of an invertible decoder does not hinder the performance of the segmentation task. However, the invertible decoder helps to disentangle the class information in the latent space embedding and to construct meaningful saliency maps. Furthermore, we found that with a simple k-Nearest-Neighbours classifier, we could predict the Intersection over Union scores of unseen data, demonstrating that the latent space, constructed by the Chimeric U-Net, encodes an interpretable representation of the segmentation quality. Explainability is an emerging field, and in this work, we propose an alternative approach, that is, rather than building tools for explaining a generic architecture, we propose constraints on the architecture which induce explainability. With this approach, we could peer into the architecture to reveal its class correlations and local contextual dependencies, taking an insightful step towards trustworthy and reliable AI. Code to build and utilize the Chimeric U-Net is made available under: https://github.com/kenrickschulze/Chimeric-UNet---Half-invertible-UNet-in-Pytorch},
+  archive      = {J_AIJ},
+  author       = {Kenrick Schulze and Felix Peppert and Christof Schütte and Vikram Sunkara},
+  doi          = {10.1016/j.artint.2024.104240},
+  journal      = {Artificial Intelligence},
+  month        = {1},
+  pages        = {104240},
+  shortjournal = {Artif. Intell.},
+  title        = {Chimeric U-net – Modifying the standard U-net towards explainability},
+  volume       = {338},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AI-driven transcriptome profile-guided hit molecule generation. <em>AIJ</em>, <em>338</em>, 104239. (<a href='https://doi.org/10.1016/j.artint.2024.104239'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {D e n o v o generation of bioactive and drug-like hit molecules is a pivotal goal in computer-aided drug discovery. While artificial intelligence (AI) has proven adept at generating molecules with desired chemical properties, previous studies often overlook the influence of disease-specific cellular environments. This study introduces GxVAEs, a novel AI-driven deep generative model designed to produce hit molecules from transcriptome profiles using dual variational autoencoders (VAEs). The first VAE, ProfileVAE, extracts latent features from transcriptome profiles to guide the second VAE, MolVAE, in generating hit molecules. GxVAEs aim to bridge the gap between molecule generation and the biological context of disease, producing molecules that are biologically relevant within specific cellular environments or pathological conditions. Experimental results and case studies focused on hit molecule generation demonstrate that GxVAEs surpass current state-of-the-art methods, in terms of reproducibility of known ligands. This approach is expected to effectively find potential molecular structures with bioactivities across diverse disease contexts.},
+  archive      = {J_AIJ},
+  author       = {Chen Li and Yoshihiro Yamanishi},
+  doi          = {10.1016/j.artint.2024.104239},
+  journal      = {Artificial Intelligence},
+  month        = {1},
+  pages        = {104239},
+  shortjournal = {Artif. Intell.},
+  title        = {AI-driven transcriptome profile-guided hit molecule generation},
+  volume       = {338},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Generative models for grid-based and image-based pathfinding. <em>AIJ</em>, <em>338</em>, 104238. (<a href='https://doi.org/10.1016/j.artint.2024.104238'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Pathfinding is a challenging problem which generally asks to find a sequence of valid moves for an agent provided with a representation of the environment, i.e. a map, in which it operates. In this work, we consider pathfinding on binary grids and on image representations of the digital elevation models. In the former case, the transition costs are known, while in latter scenario, they are not. A widespread method to solve the first problem is to utilize a search algorithm that systematically explores the search space to obtain a solution. Ideally, the search should also be complemented with an informative heuristic to focus on the goal and prune the unpromising regions of the search space, thus decreasing the number of search iterations. Unfortunately, the widespread heuristic functions for grid-based pathfinding, such as Manhattan distance or Chebyshev distance, do not take the obstacles into account and in obstacle-rich environments demonstrate inefficient performance. As for pathfinding with image inputs, the heuristic search cannot be applied straightforwardly as the transition costs, i.e. the costs of moving from one pixel to the other, are not known. To tackle both challenges, we suggest utilizing modern deep neural networks to infer the instance-dependent heuristic functions at the pre-processing step and further use them for pathfinding with standard heuristic search algorithms. The principal heuristic function that we suggest learning is the path probability, which indicates how likely the grid cell (pixel) is lying on the shortest path (for binary grids with known transition costs, we also suggest another variant of the heuristic function that can speed up the search). Learning is performed in a supervised fashion (while we have also explored the possibilities of end-to-end learning that includes a planner in the learning pipeline). At the test time, path probability is used as the secondary heuristic for the Focal Search, a specific heuristic search algorithm that provides the theoretical guarantees on the cost bound of the resultant solution. Empirically, we show that the suggested approach significantly outperforms state-of-the-art competitors in a variety of different tasks (including out-of-the distribution instances).},
+  archive      = {J_AIJ},
+  author       = {Daniil Kirilenko and Anton Andreychuk and Aleksandr I. Panov and Konstantin Yakovlev},
+  doi          = {10.1016/j.artint.2024.104238},
+  journal      = {Artificial Intelligence},
+  month        = {1},
+  pages        = {104238},
+  shortjournal = {Artif. Intell.},
+  title        = {Generative models for grid-based and image-based pathfinding},
+  volume       = {338},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Open-world continual learning: Unifying novelty detection and continual learning. <em>AIJ</em>, <em>338</em>, 104237. (<a href='https://doi.org/10.1016/j.artint.2024.104237'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As AI agents are increasingly used in the real open world with unknowns or novelties, they need the ability to (1) recognize objects that (a) they have learned before and (b) detect items that they have never seen or learned, and (2) learn the new items incrementally to become more and more knowledgeable and powerful. (1) is called novelty detection or out-of-distribution (OOD) detection and (2) is called class incremental learning (CIL), which is a setting of continual learning (CL). In existing research, OOD detection and CIL are regarded as two completely different problems. This paper first provides a theoretical proof that good OOD detection for each task within the set of learned tasks (called closed-world OOD detection ) is necessary for successful CIL. We show this by decomposing CIL into two sub-problems: within-task prediction (WP) and task-id prediction (TP), and proving that TP is correlated with closed-world OOD detection. The key theoretical result is that regardless of whether WP and OOD detection (or TP) are defined explicitly or implicitly by a CIL algorithm, good WP and good closed-world OOD detection are necessary and sufficient conditions for good CIL, which unifies novelty or OOD detection and continual learning (CIL, in particular). We call this traditional CIL the closed-world CIL as it does not detect future OOD data in the open world. The paper then proves that the theory can be generalized or extended to open-world CIL , which is the proposed open-world continual learning , that can perform CIL in the open world and detect future or open-world OOD data. Based on the theoretical results, new CIL methods are also designed, which outperform strong baselines in CIL accuracy and in continual OOD detection by a large margin.},
+  archive      = {J_AIJ},
+  author       = {Gyuhak Kim and Changnan Xiao and Tatsuya Konishi and Zixuan Ke and Bing Liu},
+  doi          = {10.1016/j.artint.2024.104237},
+  journal      = {Artificial Intelligence},
+  month        = {1},
+  pages        = {104237},
+  shortjournal = {Artif. Intell.},
+  title        = {Open-world continual learning: Unifying novelty detection and continual learning},
+  volume       = {338},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Gödel–Dummett linear temporal logic. <em>AIJ</em>, <em>338</em>, 104236. (<a href='https://doi.org/10.1016/j.artint.2024.104236'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We investigate a version of linear temporal logic whose propositional fragment is Gödel–Dummett logic (which is well known both as a superintuitionistic logic and a t-norm fuzzy logic). We define the logic using two natural semantics: first a real-valued semantics, where statements have a degree of truth in the real unit interval, and second a ‘bi-relational’ semantics. We then show that these two semantics indeed define one and the same logic: the statements that are valid for the real-valued semantics are the same as those that are valid for the bi-relational semantics. This Gödel temporal logic does not have any form of the finite model property for these two semantics: there are non-valid statements that can only be falsified on an infinite model. However, by using the technical notion of a quasimodel, we show that every falsifiable statement is falsifiable on a finite quasimodel, yielding an algorithm for deciding if a statement is valid or not. Later, we strengthen this decidability result by giving an algorithm that uses only a polynomial amount of memory, proving that Gödel temporal logic is PSPACE-complete. We also provide a deductive calculus for Gödel temporal logic, and show this calculus to be sound and complete for the above-mentioned semantics, so that all (and only) the valid statements can be proved with this calculus.},
+  archive      = {J_AIJ},
+  author       = {Juan Pablo Aguilera and Martín Diéguez and David Fernández-Duque and Brett McLean},
+  doi          = {10.1016/j.artint.2024.104236},
+  journal      = {Artificial Intelligence},
+  month        = {1},
+  pages        = {104236},
+  shortjournal = {Artif. Intell.},
+  title        = {Gödel–Dummett linear temporal logic},
+  volume       = {338},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TeachText: CrossModal text-video retrieval through generalized distillation. <em>AIJ</em>, <em>338</em>, 104235. (<a href='https://doi.org/10.1016/j.artint.2024.104235'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, considerable progress on the task of text-video retrieval has been achieved by leveraging large-scale pretraining on visual and audio datasets to construct powerful video encoders. By contrast, despite the natural symmetry, the design of effective algorithms for exploiting large-scale language pretraining remains under-explored. In this work, we investigate the design of such algorithms and propose a novel generalized distillation method, TeachText , which leverages complementary cues from multiple text encoders to provide an enhanced supervisory signal to the retrieval model. TeachText yields significant gains on a number of video retrieval benchmarks without incurring additional computational overhead during inference and was used to produce the winning entry in the Condensed Movie Challenge at ICCV 2021. We show how TeachText can be extended to include multiple video modalities, reducing computational cost at inference without compromising performance. Finally, we demonstrate the application of our method to the task of removing noisy descriptions from the training partitions of retrieval datasets to improve performance. Code and data can be found at https://www.robots.ox.ac.uk/~vgg/research/teachtext/ .},
+  archive      = {J_AIJ},
+  author       = {Ioana Croitoru and Simion-Vlad Bogolin and Marius Leordeanu and Hailin Jin and Andrew Zisserman and Yang Liu and Samuel Albanie},
+  doi          = {10.1016/j.artint.2024.104235},
+  journal      = {Artificial Intelligence},
+  month        = {1},
+  pages        = {104235},
+  shortjournal = {Artif. Intell.},
+  title        = {TeachText: CrossModal text-video retrieval through generalized distillation},
+  volume       = {338},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Interpretation modeling: Social grounding of sentences by reasoning over their implicit moral judgments. <em>AIJ</em>, <em>338</em>, 104234. (<a href='https://doi.org/10.1016/j.artint.2024.104234'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The social and implicit nature of human communication ramifies readers' understandings of written sentences. Single gold-standard interpretations rarely exist, challenging conventional assumptions in natural language processing. This work introduces the interpretation modeling (IM) task which involves modeling several interpretations of a sentence's underlying semantics to unearth layers of implicit meaning. To obtain these, IM is guided by multiple annotations of social relation and common ground - in this work approximated by reader attitudes towards the author and their understanding of moral judgments subtly embedded in the sentence. We propose a number of modeling strategies that rely on one-to-one and one-to-many generation methods that take inspiration from the philosophical study of interpretation. A first-of-its-kind IM dataset is curated to support experiments and analyses. The modeling results, coupled with scrutiny of the dataset, underline the challenges of IM as conflicting and complex interpretations are socially plausible. This interplay of diverse readings is affirmed by automated and human evaluations on the generated interpretations. Finally, toxicity analyses in the generated interpretations demonstrate the importance of IM for refining filters of content and assisting content moderators in safeguarding the safety in online discourse. 1},
+  archive      = {J_AIJ},
+  author       = {Liesbeth Allein and Maria Mihaela Truşcǎ and Marie-Francine Moens},
+  doi          = {10.1016/j.artint.2024.104234},
+  journal      = {Artificial Intelligence},
+  month        = {1},
+  pages        = {104234},
+  shortjournal = {Artif. Intell.},
+  title        = {Interpretation modeling: Social grounding of sentences by reasoning over their implicit moral judgments},
+  volume       = {338},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

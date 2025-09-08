@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MLST</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="mlst">MLST - 5</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Development and application of a high-dimensional neural network potential for boron carbide. <em>MLST</em>, <em>6</em>(3), 035047. (<a href='https://doi.org/10.1088/2632-2153/adfffd'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A high-dimensional neural network potential (HDNNP) is developed to accurately model the potential energy surface of boron carbide. The HDNNP is trained on an extensive dataset of structures generated using a Monte Carlo algorithm, covering a wide range of stoichiometries and structural configurations. Density functional theory (DFT) calculations provided energy and atomic force data, which were encoded using atom-centered symmetry functions to capture local atomic environments. The resulting HDNNP exhibits exceptional predictive performance, accurately estimating energies and forces across diverse structural configurations of boron carbide. The model effectively captures essential structural, energetic, and mechanical properties, including elastic behavior and the influence of stoichiometry on stability. The HDNNP development followed an iterative refinement strategy, in which the initial training set was systematically expanded to 2931 structures by incorporating finite-temperature AIMD snapshots at 300 K, 600 K, and 1000 K, as well as extrapolative configurations from MD simulations and defect-containing cells. This approach resulted in an HDNNP model that is numerically stable and physically consistent up to 500 K, with only minor drift observed at 600 K. The HDNNP achieves exceptional accuracy in predicting energies, forces, and mechanical properties across temperatures, reproducing Young’s modulus values of 416 GPa at 10 K and 420\pm20 GPa at 300 K, in close agreement with DFT and experimental ranges. The predicted ultimate tensile strength of 43 GPa at a failure strain of 0.14 at 300 K is consistent with atomistic simulations (40.23 GPa, strain 0.12). Comparative MD simulations show that the HDNNP outperforms Tersoff and ReaxFF in both accuracy and computational efficiency, enabling timesteps up to an order of magnitude larger, achieving 43% faster performance than Tersoff and 79% faster than ReaxFF. These results highlight the HDNNP as a robust and efficient tool for simulating boron carbide across a range of temperatures and deformation conditions, offering quantum-level accuracy for large-scale atomistic modeling in extreme environments.},
+  archive      = {J_MLST},
+  author       = {Sara Sheikhi and Wylie Stroberg and James D Hogan},
+  doi          = {10.1088/2632-2153/adfffd},
+  journal      = {Machine Learning: Science and Technology},
+  month        = {9},
+  number       = {3},
+  pages        = {035047},
+  shortjournal = {Mach. Learn.: Sci. Technol.},
+  title        = {Development and application of a high-dimensional neural network potential for boron carbide},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A novel quintile multi-model ensemble approach for improving future extreme precipitation projections using XGBoost. <em>MLST</em>, <em>6</em>(3), 035046. (<a href='https://doi.org/10.1088/2632-2153/adfcb1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A novel quintile multi-model ensemble (QMME) framework is introduced to improve future precipitation projections from MMEs. The QMME method divides daily precipitation into five quintiles, thereby capturing not only extreme rainfall but also the full spectrum of precipitation intensities. This approach surpasses conventional ensembles, such as the equal MME (EMME) and the weighted MME (WMME), in accurately reflecting the distinct characteristics of individual climate models. To develop the QMME, this study first applies empirical quantile mapping to correct biases in daily precipitation outputs from 14 coupled model intercomparison project 6 (CMIP6) general circulation models (GCMs). Historical observations (1980–2014) from 61-gauge stations in South Korea are then used to evaluate GCM performance within each quintile. The QMME framework integrates each GCM’s historical performance and future uncertainty into a quintile-specific weights and combines them with XGBoost to generate enhanced precipitation time series. Four shared socioeconomic pathway (SSP) scenarios (SSP1-2.6, SSP2-4.5, SSP3-7.0, and SSP5-8.5) are considered to assess a range of future scenarios. As a result, the QMME consistently outperforms both EMME and WMME in capturing both extreme precipitation events and moderate rainfall conditions. An evaluation using reliability ensemble averaging confirms that the QMME more effectively accounts for inter-model variability and reduces uncertainty, thus providing robust projections of future precipitation. This quintile-based methodology can be readily extended to other hydroclimatic variables and geographic regions, offering significant potential for improving climate impact assessments and guiding risk management in water resources planning.},
+  archive      = {J_MLST},
+  author       = {Young Hoon Song and Mohamed Sanusi Shiru and Eun-Sung Chung},
+  doi          = {10.1088/2632-2153/adfcb1},
+  journal      = {Machine Learning: Science and Technology},
+  month        = {9},
+  number       = {3},
+  pages        = {035046},
+  shortjournal = {Mach. Learn.: Sci. Technol.},
+  title        = {A novel quintile multi-model ensemble approach for improving future extreme precipitation projections using XGBoost},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning and interpreting gravitational-wave features from CNNs with a random forest approach. <em>MLST</em>, <em>6</em>(3), 035045. (<a href='https://doi.org/10.1088/2632-2153/adfc27'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Convolutional neural networks (CNNs) have attracted increasing attention in gravitational wave (GW) data analysis due to their ability to automatically learn hierarchical features from raw strain data. However, the physical meaning of these learned features remains underexplored, limiting the interpretability of such models. In this work, we propose a hybrid architecture that combines a CNN-based feature extractor with a random forest (RF) classifier to improve both detection performance and interpretability. Unlike prior approaches that directly connect classifiers to CNN outputs, our method introduces four physically interpretable metrics-variance, signal-to-noise ratio (SNR), waveform overlap, and peak amplitude-computed from the final convolutional layer. These are jointly used with the CNN output probability in the RF classifier to enable more informed decision boundaries. Tested on long-duration strain datasets, our hybrid model outperforms a baseline-CNN model, achieving a relative improvement of 21% in sensitivity at a fixed false alarm rate of 10 events per month. Notably, it also shows improved detection of low-SNR signals (SNR \unicode{x2A7D} 10), which are especially vulnerable to misclassification in noisy environments. Feature importance analysis and ablation studies reveal that handcrafted features play a significant role in classification decisions and contribute to improved performance. These findings suggest that physically motivated post-processing of CNN feature maps can serve as a valuable tool for interpretable and efficient GW detection, bridging the gap between deep learning and domain knowledge.},
+  archive      = {J_MLST},
+  author       = {Jun Tian and He Wang and Jibo He and Yu Pan and Shuo Cao and Qingquan Jiang},
+  doi          = {10.1088/2632-2153/adfc27},
+  journal      = {Machine Learning: Science and Technology},
+  month        = {9},
+  number       = {3},
+  pages        = {035045},
+  shortjournal = {Mach. Learn.: Sci. Technol.},
+  title        = {Learning and interpreting gravitational-wave features from CNNs with a random forest approach},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Accelerating reaction rate predictions: A machine learning approach using a novel quantum chemical property for nucleophilic aromatic substitutions. <em>MLST</em>, <em>6</em>(3), 035044. (<a href='https://doi.org/10.1088/2632-2153/adfd37'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurately predicting reaction rate coefficients is crucial for various chemical engineering tasks, such as kinetic modeling and drug synthesis planning. Traditional methods like group additivity and rate rules have limitations, prompting the exploration of machine learning methods to predict these coefficients. These machine learning models are often combined with quantum chemical calculations to improve their performance. While often accurate, these approaches slow down predictions due to the need for quantum chemical calculations, particularly for transition states. This study addresses the issue by introducing a quantum chemical property that does not require transition state calculations but still correlates well with the rate coefficient. We further enhance the prediction speed by training a machine learning model to predict this property. Finally, we propose two approaches using this machine learning model to predict the rate coefficients of nucleophilic aromatic substitution reactions in fractions of a second.},
+  archive      = {J_MLST},
+  author       = {Lowie Tomme and István Lengyel and Florence H Vermeire and Christian V Stevens and Kevin M Van Geem},
+  doi          = {10.1088/2632-2153/adfd37},
+  journal      = {Machine Learning: Science and Technology},
+  month        = {9},
+  number       = {3},
+  pages        = {035044},
+  shortjournal = {Mach. Learn.: Sci. Technol.},
+  title        = {Accelerating reaction rate predictions: A machine learning approach using a novel quantum chemical property for nucleophilic aromatic substitutions},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Theoretical physics benchmark (TPBench)—a dataset and study of AI reasoning capabilities in theoretical physics. <em>MLST</em>, <em>6</em>(3), 030505. (<a href='https://doi.org/10.1088/2632-2153/adfcb0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce a benchmark to evaluate the capability of AI to solve problems in theoretical physics (TP), focusing on high-energy theory and cosmology. The first iteration of our benchmark consists of 57 problems of varying difficulty, from undergraduate to research level. These problems are novel in the sense that they do not come from public problem collections. We evaluate our data set on various open and closed language models, including o3-mini, o1, DeepSeek-R1, GPT-4o and versions of Llama and Qwen. While we find impressive progress in model performance with the most recent models, our research-level difficulty problems are mostly unsolved. We address challenges of auto-verifiability and grading, and discuss common failure modes. While currently state-of-the art models are still of limited use for researchers, our results show that AI assisted TP research may become possible in the near future. We discuss the main obstacles towards this goal and possible strategies to overcome them. The public problems and solutions, results for various models, and updates to the data set and score distribution, are available on the website of the dataset tpbench.org .},
+  archive      = {J_MLST},
+  author       = {Daniel J H Chung and Zhiqi Gao and Yurii Kvasiuk and Tianyi Li and Moritz Münchmeyer and Maja Rudolph and Frederic Sala and Sai Chaitanya Tadepalli},
+  doi          = {10.1088/2632-2153/adfcb0},
+  journal      = {Machine Learning: Science and Technology},
+  month        = {9},
+  number       = {3},
+  pages        = {030505},
+  shortjournal = {Mach. Learn.: Sci. Technol.},
+  title        = {Theoretical physics benchmark (TPBench)—a dataset and study of AI reasoning capabilities in theoretical physics},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

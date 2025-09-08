@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TIP</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tip">TIP - 6</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Instance-adaptive spatial-temporal enhancement for efficient video compression. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3602648'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Efficiently compressing HD/UHD content has long been challenging due to high bitrate costs. Instance-adaptive enhancement methods try to tackle this issue by compressing a video at reduced resolution and enhancing it using a neural model specifically overfitted for this video. However, existing methods focus solely on spatial super-resolution (SR) and under-utilize the videos’ temporal redundancy. Their limited management of the model’s updated parameters also causes excessive overfitting overheads. Therefore, this paper introduces IASTE, the first instance-adaptive enhancement method based on spatial-temporal enhancement (STE), and incorporates low-rank adaptation (LoRA) for efficient model overfitting. Specifically, we downscale videos spatially and temporally to reduce the data volume and achieve efficient video compression. Then, we overfit a specific STE model for each video and use it to enhance the decoded video’s spatiotemporal resolution. Leveraging the video swin transformer’s strong capability in capturing spatiotemporal correlations, we design a lightweight and efficient model to implement video STE. The model is overfitted for each video using LoRA. By freezing the pre-trained model and selectively updating a few low-rank matrices, the bitrate overhead for model storage can be mitigated. Experiments prove that compared to directly compressing high-frame-rate (HFR), high-resolution (HR) videos, our method achieves around 30% BD-Rate gains on the CTC and UVG datasets, about 15% gains on the YoutubeUGC dataset, and about 10% gains on the ultra-long videos in the Xiph dataset.},
+  archive      = {J_TIP},
+  author       = {Yan Zhao and Zhengxue Cheng and Jiangchuan Li and Donghui Feng and Qunshan Gu and Qi Wang and Guo Lu and Li Song},
+  doi          = {10.1109/TIP.2025.3602648},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {Instance-adaptive spatial-temporal enhancement for efficient video compression},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Spiking variational graph representation inference for video summarization. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3602649'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rise of short video content, efficient video summarization techniques for extracting key information have become crucial. However, existing methods struggle to capture the global temporal dependencies and maintain the semantic coherence of video content. Additionally, these methods are also influenced by noise during multi-channel feature fusion. We propose a Spiking Variational Graph (SpiVG) Network, which enhances information density and reduces computational complexity. First, we design a keyframe extractor based on Spiking Neural Networks (SNN), leveraging the event-driven computation mechanism of SNNs to learn keyframe features autonomously. To enable fine-grained and adaptable reasoning across video frames, we introduce a Dynamic Aggregation Graph Reasoner, which decouples contextual object consistency from semantic perspective coherence. We present a Variational Inference Reconstruction Module to address uncertainty and noise arising during multi-channel feature fusion. In this module, we employ Evidence Lower Bound Optimization (ELBO) to capture the latent structure of multi-channel feature distributions, using posterior distribution regularization to reduce overfitting. Experimental results show that SpiVG surpasses existing methods across multiple datasets such as SumMe, TVSum, VideoXum, and QFVS. Our codes and pre-trained models are available at https://github.com/liwrui/SpiVG.},
+  archive      = {J_TIP},
+  author       = {Wenrui Li and Wei Han and Liang-Jian Deng and Ruiqin Xiong and Xiaopeng Fan},
+  doi          = {10.1109/TIP.2025.3602649},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {Spiking variational graph representation inference for video summarization},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Image-text-image knowledge transfer for lifelong person re-identification with hybrid clothing states. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3602745'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the continuous expansion of intelligent surveillance networks, lifelong person re-identification (LReID) has received widespread attention, pursuing the need of self-evolution across different domains. However, existing LReID studies accumulate knowledge with the assumption that people would not change their clothes. In this paper, we propose a more practical task, namely lifelong person re-identification with hybrid clothing states (LReID-Hybrid), which takes a series of cloth-changing and same-cloth domains into account during lifelong learning. To tackle the challenges of knowledge granularity mismatch and knowledge presentation mismatch in LReID-Hybrid, we take advantage of the consistency and generalization capabilities of the text space, and propose a novel framework, dubbed Teata, to effectively align, transfer, and accumulate knowledge in an “image-text-image” closed loop. Concretely, to achieve effective knowledge transfer, we design a Structured Semantic Prompt (SSP) learning to decompose the text prompt into several structured pairs to distill knowledge from the image space with a unified granularity of text description. Then, we introduce a Knowledge Adaptation and Projection (KAP) strategy, which tunes text knowledge via a slow-paced learner to adapt to different tasks without catastrophic forgetting. Extensive experiments demonstrate the superiority of our proposed Teata for LReID-Hybrid as well as on conventional LReID benchmarks over advanced methods.},
+  archive      = {J_TIP},
+  author       = {Qizao Wang and Xuelin Qian and Bin Li and Yanwei Fu and Xiangyang Xue},
+  doi          = {10.1109/TIP.2025.3602745},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {Image-text-image knowledge transfer for lifelong person re-identification with hybrid clothing states},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ColorAssist: Perception-based recoloring for color vision deficiency compensation. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3602643'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Image enhancement methods have been widely studied to improve the visual quality of diverse images, implicitly assuming that all human observers have normal vision. However, a large population around the world suffers from Color Vision Deficiency (CVD). Enhancing images to compensate for their perceptions remains a challenging issue. Existing CVD compensation methods have two drawbacks: first, the available datasets and validations have not been rigorously tested by CVD individuals; second, these methods struggle to strike an optimal balance between contrast enhancement and naturalness preservation, which often results in suboptimal outcomes for individuals with CVD. To address these issues, we develop the first large-scale, CVD-individual-labeled dataset called FZU-CVDSet and a CVD-friendly recoloring algorithm called ColorAssist. In particular, we design a perception-guided feature extraction module and a perception-guided diffusion transformer module that jointly achieve efficient image recoloring for individuals with CVD. Comprehensive experiments on both FZU-CVDSet and subjective tests in hospitals demonstrate that the proposed ColorAssist closely aligns with the visual perceptions of individuals with CVD, achieving superior performance compared with the state-of-the-arts. The source code will be made publicly available after the peer review process.},
+  archive      = {J_TIP},
+  author       = {Liqun Lin and Shangxi Xie and Yanting Wang and Bolin Chen and Ying Xue and Xiahai Zhuang and Tiesong Zhao},
+  doi          = {10.1109/TIP.2025.3602643},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {ColorAssist: Perception-based recoloring for color vision deficiency compensation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FocalTransNet: A hybrid focal-enhanced transformer network for medical image segmentation. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3602739'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {CNNs have demonstrated superior performance in medical image segmentation. To overcome the limitation of only using local receptive field, previous work has attempted to integrate Transformers into convolutional network components such as encoders, decoders, or skip connections. However, these methods can only establish long-distance dependencies for some specific patterns and usually neglect the loss of fine-grained details during downsampling in multi-scale feature extraction. To address the issues, we present a novel hybrid Transformer network called FocalTransNet. specifically, we construct a focal-enhanced (FE) Transformer module by introducing dense cross-connections into a CNN-Transformer dual-path structure and deploy the FE Transformer throughout the entire encoder. Different from existing hybrid networks that employ embedding or stacking strategies, the proposed model allows for a comprehensive extraction and deep fusion of both local and global features at different scales. Besides, we propose a symmetric patch merging (SPM) module for downsampling, which can retain the fine-grained details by stablishing a specific information compensation mechanism. We evaluated the proposed method on four different medical image segmentation benchmarks. The proposed method outperforms previous state-of-the-art convolutional networks, Transformers, and hybrid networks. The code for FocalTransNet is publicly available at https://github.com/nemanjajoe/FocalTransNet.},
+  archive      = {J_TIP},
+  author       = {Miao Liao and Ruixin Yang and Yuqian Zhao and Wei Liang and Junsong Yuan},
+  doi          = {10.1109/TIP.2025.3602739},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {FocalTransNet: A hybrid focal-enhanced transformer network for medical image segmentation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CLIP-based multi-modal feature learning for cloth-changing person re-identification. <em>TIP</em>, 1. (<a href='https://doi.org/10.1109/TIP.2025.3602641'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Contrastive Language-Image Pre-training (CLIP) has achieved remarkable results in the field of person re-identification (ReID) due to its excellent cross-modal understanding ability and high scalability. Since the text encoder of CLIP mainly focuses on easy-to-describe attributes such as clothing, and clothing is the main interference factor that reduces the recognition accuracy in cloth-changing person ReID (CC ReID). Consequently, directly applying CLIP to cloth-changing scenario may be difficult to adapt to such dynamic feature changes, thereby affecting the precision of identification. To solve this challenge, we propose a CLIP-based multi-modal feature learning framework (CMFF) for CC ReID. Specifically, we first design a pose-aware identity enhancement module (PIE) to enhance the model’s perception of identity-intrinsic information. In this branch, to weaken the interference of clothing information, we apply a ranking loss to minimize the difference between appearance and pose in the feature space. Secondly, we propose a global-local hybrid attention module (GLHA) , which fuses head and global features through a cross-attention mechanism, enhancing the global recognition ability of key head information. Finally, considering that existing CLIP-based methods often ignore the potential importance of shallow features, we propose a graph-based multi-layer interactive enhancement module (GMIE), which groups and integrates multi-layer features of the image encoder, aiming to enhance the contextual awareness of multi-scale features. Extensive experiments on multiple popular pedestrian datasets validate the outstanding performance of our proposed CMFF.},
+  archive      = {J_TIP},
+  author       = {Guoqing Zhang and Jieqiong Zhou and Lu Jiang and Yuhui Zheng and Weisi Lin},
+  doi          = {10.1109/TIP.2025.3602641},
+  journal      = {IEEE Transactions on Image Processing},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Image Process.},
+  title        = {CLIP-based multi-modal feature learning for cloth-changing person re-identification},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

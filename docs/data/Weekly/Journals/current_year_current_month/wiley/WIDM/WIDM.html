@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>WIDM</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="widm">WIDM - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Transforming disaster risk reduction with AI and big data: Legal and interdisciplinary perspectives. <em>WIDM</em>, <em>15</em>(2), e70011. (<a href='https://doi.org/10.1002/widm.70011'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Managing complex disaster risks requires interdisciplinary efforts. Breaking down silos between law, social sciences, and natural sciences is critical for all processes of disaster risk reduction. It is essential to explore how AI enhances understanding of legal frameworks and environmental management, while also examining how legal and environmental factors may limit AI's role in society. From a co-production review perspective, drawing on insights from lawyers, social scientists, and environmental scientists, principles for responsible data mining are proposed based on safety, transparency, fairness, accountability, and contestability. This discussion offers a blueprint for interdisciplinary collaboration to create adaptive law systems based on AI integration of knowledge from environmental and social sciences. When social networks are useful for mitigating disaster risks based on AI, the legal implications related to privacy and liability of the outcomes of disaster management must be considered. Fair and accountable principles emphasize environmental considerations and foster socioeconomic discussions related to public engagement. AI also has an important role to play in education, bringing together the next generations of law, social sciences, and natural sciences to work on interdisciplinary solutions in harmony. Although emerging AI approaches can be powerful tools for disaster management, they must be implemented with ethical considerations and safeguards to address concerns about bias, transparency, and privacy. The responsible execution of AI approaches, based on the dynamic interplay between AI, law, and environmental risk, promotes sustainable and equitable practices in data mining.},
+  archive      = {J_WIDM},
+  author       = {Kwok P. Chun and Thanti Octavianti and Nilay Dogulu and Hristos Tyralis and Georgia Papacharalampous and Ryan Rowberry and Pingyu Fan and Mark Everard and Maria Francesch-Huidobro and Wellington Migliari and David M. Hannah and John Travis Marshall and Rafael Tolosana Calasanz and Chad Staddon and Ida Ansharyani and Bastien Dieppois and Todd R. Lewis and Juli Ponce and Silvia Ibrean and Tiago Miguel Ferreira and Chinkie Peliño-Golle and Ye Mu and Manuel Davila Delgado and Elizabeth Silvestre Espinoza and Martin Keulertz and Deepak Gopinath and Cheng Li},
+  doi          = {10.1002/widm.70011},
+  journal      = {Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery},
+  number       = {2},
+  pages        = {e70011},
+  shortjournal = {WIREs Data Mining Knowl. Discov.},
+  title        = {Transforming disaster risk reduction with AI and big data: Legal and interdisciplinary perspectives},
+  volume       = {15},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

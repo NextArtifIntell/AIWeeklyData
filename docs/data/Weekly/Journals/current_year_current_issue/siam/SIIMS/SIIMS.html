@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SIIMS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="siims">SIIMS - 9</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Uncertainty estimation for learning-based classification of corrupted images. <em>SIIMS</em>, <em>18</em>(3), 1828-1856. (<a href='https://doi.org/10.1137/25M1726546'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Image restoration tasks often admit a wide range of solutions that are equally consistent with the observed data. Quantifying this uncertainty is crucial for the robust interpretation of restored images and their reliable use in science and decision-making. We consider the classification of images reconstructed from noisy and corrupted measurements, with special attention to the quantification of uncertainty in the delivered classification results. We address this problem by constructing a Bayesian statistical approach that combines learning-based image priors and image classifiers with explicit image observation models specified during inference. Following the manifold hypothesis, we assume that the image prior is supported on a submanifold of the ambient space—which we learn from uncorrupted training data using a variational autoencoder—and use as a classifier a support vector machine operating in this low-dimensional representation. The observation model is incorporated during inference time through its likelihood function. Bayesian computation is then efficiently performed by leveraging variants of the unadjusted Langevin algorithm that operate directly on the submanifold and are robust to multimodality. This results in a robust image classification method that provides uncertainty estimates that are provably well-posed, derived from Bayesian decision theory rigorously and transparently, and which incorporate physical and instrumental aspects of the data acquisition process through Bayes’ theorem. We demonstrate the effectiveness of the proposed approach through experiments on the MNIST and CelebA datasets, where we achieve accurate uncertainty estimates, as measured by the expected calibration error, even in challenging image restoration problems with significant inherent uncertainty.},
+  archive      = {J_SIIMS},
+  author       = {A. Effland and E. Kobler and M. Pereyra and J. Peter},
+  doi          = {10.1137/25M1726546},
+  journal      = {SIAM Journal on Imaging Sciences},
+  month        = {9},
+  number       = {3},
+  pages        = {1828-1856},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Uncertainty estimation for learning-based classification of corrupted images},
+  volume       = {18},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adversarial transferability in deep denoising models: Theoretical insights and robustness enhancement via out-of-distribution typical set sampling. <em>SIIMS</em>, <em>18</em>(3), 1788-1827. (<a href='https://doi.org/10.1137/24M1716021'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Deep learning-based image denoising models demonstrate remarkable performance, but their lack of robustness analysis remains a significant concern. A major issue is that these models are susceptible to adversarial attacks, where small, carefully crafted perturbations to input data can cause them to fail. Surprisingly, perturbations specifically crafted for one model can easily transfer across various models, including convolutional neural networks, transformers, unfolding models, and plug-and-play models, leading to failures in those models as well. Such high adversarial transferability is not observed in classification models. We analyze the possible underlying reasons behind the high adversarial transferability through a series of hypotheses and validation experiments. By characterizing the manifolds of Gaussian noise and adversarial perturbations using the concept of a typical set and the asymptotic equipartition property, we prove that adversarial samples deviate slightly from the typical set of the original input distribution, causing the models to fail. Based on these insights, we propose a novel adversarial defense method: the out-of-distribution typical set sampling (TSS) training strategy. TSS training strategy not only significantly enhances the model’s robustness but also marginally improves denoising performance compared to the original model.},
+  archive      = {J_SIIMS},
+  author       = {Jie Ning and Jiebao Sun and Shengzhu Shi and Zhichang Guo and Yao Li and Hongwei Li and Boying Wu},
+  doi          = {10.1137/24M1716021},
+  journal      = {SIAM Journal on Imaging Sciences},
+  month        = {9},
+  number       = {3},
+  pages        = {1788-1827},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Adversarial transferability in deep denoising models: Theoretical insights and robustness enhancement via out-of-distribution typical set sampling},
+  volume       = {18},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A formalization of image vectorization by region merging. <em>SIIMS</em>, <em>18</em>(3), 1742-1787. (<a href='https://doi.org/10.1137/24M1696469'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Image vectorization converts raster images into vector graphics composed of regions separated by curves. Typical vectorization methods first define the regions by grouping similar colored regions by color quantization, then approximate their boundaries by Bézier curves. In that way, the raster input is converted into an SVG format parameterizing the regions’ colors and the Bézier control points. This compact representation has many graphical applications thanks to its universality and resolution-independence. In this paper, we remark that image vectorization is nothing but an image segmentation, and that it can be built by fine to coarse region merging. Our analysis of the problem leads us to propose a vectorization method that alternates region merging and curve smoothing. We formalize the method by alternate operations on the dual and primal graph induced by any domain partition. In that way, we address a limitation of current vectorization methods, which separate the update of regional information from curve approximation. We formalize region merging methods by associating them with various gain functionals, including the classic Beaulieu–Goldberg and Mumford–Shah functionals. More generally, we introduce and compare region merging criteria that involve the number of regions, the scale, the area, and the internal standard deviation of each region. We also show that the curve smoothing, implicit in all vectorization methods, can be performed by the shape-preserving affine scale-space. We extend this flow to a network of curves and give a sufficient condition for the topological preservation of the segmentation. The general vectorization method that follows from this analysis shows explainable behaviors, explicitly controlled by a few intuitive parameters. It is experimentally compared to state-of-the-art software and proved to have comparable or superior fidelity and cost efficiency.},
+  archive      = {J_SIIMS},
+  author       = {Roy Y. He and Sung Ha Kang and Jean-Michel Morel},
+  doi          = {10.1137/24M1696469},
+  journal      = {SIAM Journal on Imaging Sciences},
+  month        = {9},
+  number       = {3},
+  pages        = {1742-1787},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {A formalization of image vectorization by region merging},
+  volume       = {18},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Theoretical characterization of effect of masks in snapshot compressive imaging. <em>SIIMS</em>, <em>18</em>(3), 1707-1741. (<a href='https://doi.org/10.1137/25M1723979'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Snapshot compressive imaging (SCI) refers to the recovery of three-dimensional data cubes, such as videos or hyperspectral images, from their two-dimensional projections, which are generated by a special encoding of the data with a mask. SCI systems commonly use binary-valued masks that follow certain physical constraints. Optimizing these masks subject to these constraints is expected to improve system performance. While prior theoretical analysis of SCI systems has primarily focused on independent and identically distributed Gaussian masks, recent empirical, data-driven mask optimizations yield structured and sometimes interpretable patterns. However, such empirical optimizations typically involve computationally intensive joint procedures that are expected to be suboptimal due to the nonconvexity and complexity of the optimization. In this paper, we analytically characterize the performance of SCI systems employing binary masks and leverage our analysis to optimize hardware parameters. Our findings provide a comprehensive and fundamental understanding of the role of binary masks, with both independent and dependent elements, and their optimization. We also present simulation results that confirm our theoretical findings and further illuminate different aspects of mask design.},
+  archive      = {J_SIIMS},
+  author       = {Mengyu Zhao and Shirin Jalali},
+  doi          = {10.1137/25M1723979},
+  journal      = {SIAM Journal on Imaging Sciences},
+  month        = {9},
+  number       = {3},
+  pages        = {1707-1741},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Theoretical characterization of effect of masks in snapshot compressive imaging},
+  volume       = {18},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Projection-based preprocessing for electrical impedance tomography to reduce the effect of electrode contacts. <em>SIIMS</em>, <em>18</em>(3), 1681-1706. (<a href='https://doi.org/10.1137/24M1719517'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This work introduces a method for preprocessing measurements of electrical impedance tomography to considerably reduce the effect uncertainties in the electrode contacts have on the reconstruction quality, without a need to explicitly estimate the contacts. The idea is to compute the Jacobian matrix of the forward map with respect to the contact strengths and project the electrode measurements and the forward map onto the orthogonal complement of the range of this Jacobian. Using the smoothened complete electrode model as the forward model, it is demonstrated that inverting the resulting projected equation with respect to only the internal conductivity of the examined body results in good quality reconstructions both when resorting to a single step linearization with a smoothness prior and when combining lagged diffusivity iteration with total variation regularization. The quality of the reconstructions is further improved if the range of the employed projection is also orthogonal to that of the Jacobian with respect to the electrode positions. These results hold even if the projections are formed at internal and contact conductivities that significantly differ from the true ones; it is numerically demonstrated that the orthogonal complement of the range of the contact Jacobian is almost independent of the conductivity parameters at which it is evaluated. In particular, our observations introduce a numerical technique for inferring whether a change in the electrode measurements is caused by a change in the internal conductivity or alterations in the electrode contacts, which has potential applications, e.g., in bedside monitoring of stroke patients. The ideas are tested both on simulated data and on real-world water tank measurements with adjustable contact resistances.},
+  archive      = {J_SIIMS},
+  author       = {A. Jääskeläinen and J. Toivanen and A. Hänninen and V. Kolehmainen and N. Hyvönen},
+  doi          = {10.1137/24M1719517},
+  journal      = {SIAM Journal on Imaging Sciences},
+  month        = {9},
+  number       = {3},
+  pages        = {1681-1706},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Projection-based preprocessing for electrical impedance tomography to reduce the effect of electrode contacts},
+  volume       = {18},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Iterative reconstruction methods for cosmological X-ray tomography. <em>SIIMS</em>, <em>18</em>(3), 1653-1680. (<a href='https://doi.org/10.1137/24M1656724'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We consider the imaging of cosmic strings by using cosmic microwave background data. Mathematically, we study the inversion of an X-ray transform in Lorentzian geometry, called the light ray transform. The inverse problem is highly ill-posed, with additional complexities of being large-scale and dynamic, with unknown parameters that represent multidimensional objects. This presents significant computational challenges for the numerical reconstruction of images that have high spatial and temporal resolution. In this paper, we begin with a microlocal stability analysis for inverting the light ray transform using the Landweber iteration. Next, we discretize the spatiotemporal object and light ray transform and consider iterative computational methods for solving the resulting inverse problem. We provide a numerical investigation and comparison of some advanced iterative methods for regularization including Tikhonov and sparsity-promoting regularizers for various example scalar functions with conormal-type singularities.},
+  archive      = {J_SIIMS},
+  author       = {Julianne Chung and Lucas Onisk and Yiran Wang},
+  doi          = {10.1137/24M1656724},
+  journal      = {SIAM Journal on Imaging Sciences},
+  month        = {9},
+  number       = {3},
+  pages        = {1653-1680},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Iterative reconstruction methods for cosmological X-ray tomography},
+  volume       = {18},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Visualizing shape functionals via sinkhorn multidimensional scaling. <em>SIIMS</em>, <em>18</em>(3), 1632-1652. (<a href='https://doi.org/10.1137/24M1696093'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this paper, we present Sinkhorn multidimensional scaling (Sinkhorn MDS) as a method for visualizing shape functionals in shape spaces. This approach uses the Sinkhorn divergence to map these infinite-dimensional spaces into lower-dimensional Euclidean spaces. We establish error estimates for the embedding generated by Sinkhorn MDS compared to the unregularized case. Moreover, we validate the method through numerical experiments, including visualizations of the classical Dido’s problem and the newly introduced double-well, triple-well, and Sinkhorn cone-type shape functionals. Our results demonstrate that Sinkhorn MDS effectively captures and visualizes shapes of shape functionals.},
+  archive      = {J_SIIMS},
+  author       = {Toshiaki Yachimura and Jun Okamoto and Lorenzo Cavallina},
+  doi          = {10.1137/24M1696093},
+  journal      = {SIAM Journal on Imaging Sciences},
+  month        = {9},
+  number       = {3},
+  pages        = {1632-1652},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Visualizing shape functionals via sinkhorn multidimensional scaling},
+  volume       = {18},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive unsupervised anomaly detection in variable environment by online expectation maximization. <em>SIIMS</em>, <em>18</em>(3), 1601-1631. (<a href='https://doi.org/10.1137/24M168492X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Automatic anomaly detection (AD) in a series of images of industrial parts is a key component of industrial production and an exemplary problem for machine learning. Since it can only realistically function with minimal supervision, unsupervised methods dominate the field. Their principle is that the “normal aspect” of objects is learned from recently observed samples, so that anomalies can be detected as outliers. In this paper, we start by reviewing recent AD methods and their performance-based ranking on recent benchmark datasets. The recent progress of such methods is such that they learn from a few hundred normal samples only. However, we argue that the current method evaluation based on static datasets is limited and biased. Indeed, a main feature of industrial production is that the aspect of objects evolves over time, due to changes in production and acquisition conditions, thus leading to significant probability distribution shifts. By introducing artificial but realistic deviations into the classic MVTec benchmark we show that the smallest deviation is sufficient to make these stationary models collapse. We argue that some of these models, especially the stochastic ones, can be easily adapted to cope with distribution shifts. The Global-to-Local Anomaly Detector (GLAD) is such an example of a method that uses Gaussian Mixture Models to model the distribution of regular objects. Using the stochastic approximation of expectation maximization, we design Online-GLAD, an improved GLAD that can update and adapt online. In the experiments, we show that Online-GLAD is able to maintain good performance even in the presence of multiple progressive deviations, and with constant complexity compatible with real-time implementation.},
+  archive      = {J_SIIMS},
+  author       = {Aitor Artola and Yannis Kolodziej and Jean-Michel Morel and Thibaud Ehret},
+  doi          = {10.1137/24M168492X},
+  journal      = {SIAM Journal on Imaging Sciences},
+  month        = {9},
+  number       = {3},
+  pages        = {1601-1631},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Adaptive unsupervised anomaly detection in variable environment by online expectation maximization},
+  volume       = {18},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Regularization with optimal space-time priors. <em>SIIMS</em>, <em>18</em>(3), 1563-1600. (<a href='https://doi.org/10.1137/24M1661923'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We propose a variational regularization approach based on a multiscale representation called cylindrical shearlets aimed at dynamic imaging problems, especially dynamic tomography. The intuitive idea of our approach is to integrate a sequence of separable static problems in the mismatch term of the cost function, while the regularization term handles the nonstationary target as a spatio-temporal object. This approach is motivated by the fact that cylindrical shearlets provide (nearly) optimally sparse approximations on an idealized class of functions modeling spatio-temportal data and the numerical observation that they provide highly sparse approximations even for more general spatio-temporal image sequences found in dynamic tomography applications. To formulate our regularization model, we introduce cylindrical shearlet smoothness spaces, which are instrumental for defining suitable embeddings in functional spaces. We prove that the proposed regularization strategy is well-defined, and the minimization problem has a unique solution (for ). Furthermore, we provide convergence rates (in terms of the symmetric Bregman distance) under deterministic and random noise conditions, within the context of statistical inverse learning. We numerically validate our theoretical results using both simulated and measured dynamic tomography data, showing that our approach leads to an efficient and robust reconstruction strategy.},
+  archive      = {J_SIIMS},
+  author       = {Tatiana A. Bubba and Tommi Heikkilä and Demetrio Labate and Luca Ratti},
+  doi          = {10.1137/24M1661923},
+  journal      = {SIAM Journal on Imaging Sciences},
+  month        = {9},
+  number       = {3},
+  pages        = {1563-1600},
+  shortjournal = {SIAM J. Imaging Sci.},
+  title        = {Regularization with optimal space-time priors},
+  volume       = {18},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

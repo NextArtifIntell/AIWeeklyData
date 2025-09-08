@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IJNME</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ijnme">IJNME - 13</h2>
+<ul>
+<li><details>
+<summary>
+(2025). A stabilized finite element framework for incompressible hyperelastic materials at finite strains: Analysis, implementation, and applications. <em>IJNME</em>, <em>126</em>(17), e70121. (<a href='https://doi.org/10.1002/nme.70121'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a stabilized finite element method (FEM) for incompressible hyperelastic materials at finite strains, addressing the computational and implementational challenges of traditional inf-sup-stable mixed FEMs. By augmenting the weak formulation with Galerkin/Least-Squares (GLS) stabilization terms, the method enables equal-order Lagrange elements ( ), eliminating the need for complex element pairings like Taylor–Hood ( ). The stabilization parameter is defined as where denotes the finite-element mesh size and is the shear modulus; this choice, derived via eigenvalue analysis-ensures robustness against volumetric locking while preserving consistency. The nonlinear system of algebraic equations is solved via a Newton–Raphson scheme with a block-preconditioned GMRES solver, achieving optimal displacement convergence rates (comparable to Taylor–Hood elements). Validated on benchmarks including Cook's membrane and a pressurized neo-Hookean cylinder, the method demonstrates optimal displacement convergence and less than 2% error in reaction forces compared to Abaqus. It reduces degrees of freedom by 30%–40% and solve times by 35% relative to Taylor–Hood elements, as shown in weak scaling tests. An industrial case study on seal compression under 4 mm displacement highlights its capability to handle contact mechanics and geometric nonlinearities, with pressure oscillations suppressed below 5%. The framework's open-source implementation, combined with its accuracy, efficiency, and robustness under mesh distortion (aspect ratios up to 5:1) and near-incompressibility ( ), makes it a versatile tool for engineering applications. Key advancements include a theoretically grounded stabilization strategy, computational efficiency gains, and seamless integration into industrial workflows. The open-source implementation is available at https://github.com/ujwalwarbhe/A-Stabilized-Finite-Element-Framework-for-Incompressible-Hyperelastic-Materials .},
+  archive      = {J_IJNME},
+  author       = {Ujwal Warbhe},
+  doi          = {10.1002/nme.70121},
+  journal      = {International Journal for Numerical Methods in Engineering},
+  month        = {9},
+  number       = {17},
+  pages        = {e70121},
+  shortjournal = {Int. J. Numer. Meth. Eng.},
+  title        = {A stabilized finite element framework for incompressible hyperelastic materials at finite strains: Analysis, implementation, and applications},
+  volume       = {126},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A level set topology optimization theory based on hamilton's principle. <em>IJNME</em>, <em>126</em>(17), e70120. (<a href='https://doi.org/10.1002/nme.70120'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, we propose a unified variational framework for deriving the evolution equation of the level set function in topology optimization, departing from conventional Hamilton–Jacobi-based formulations. The key idea is the introduction of an auxiliary domain, geometrically identical to the physical design domain, occupied by fictitious matter which is dynamically excited by the conditions prevailing in the design domain. By assigning kinetic and potential energy to this matter and interpreting the level set function as the generalized coordinate to describe its deformation, the governing equation of motion is determined via Hamilton's principle, yielding a modified wave equation. Appropriate combinations of model parameters enable the recovery of classical physical behaviors, including the standard and biharmonic wave equations. The evolution problem is formulated in weak form using variational methods and implemented in the software environment FreeFEM++. The influence of the numerical parameters is analyzed on the example of minimum mean compliance. The results demonstrate that topological complexity and strut design can be effectively controlled by the respective parameters. Notably, the proposed formulation inherently supports the nucleation of new holes and maintains a well-defined level set function without requiring explicit re-initialization procedures, both of which emerge naturally from the physically motivated variational framework. The inclusion of a damping term further enhances numerical stability. To showcase the versatility and robustness of our method, we also apply it to compliant mechanism design and a bi-objective optimization problem involving self-weight and compliance minimization under local stress constraints.},
+  archive      = {J_IJNME},
+  author       = {Jan Oellerich and Takayuki Yamada},
+  doi          = {10.1002/nme.70120},
+  journal      = {International Journal for Numerical Methods in Engineering},
+  month        = {9},
+  number       = {17},
+  pages        = {e70120},
+  shortjournal = {Int. J. Numer. Meth. Eng.},
+  title        = {A level set topology optimization theory based on hamilton's principle},
+  volume       = {126},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A novel quadratic exponential B-spline based explicit time integration approach with energy corrector technique for transient heat conduction analysis. <em>IJNME</em>, <em>126</em>(17), e70117. (<a href='https://doi.org/10.1002/nme.70117'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This research proposes a novel single-step explicit time integration approach, which is formulated with a quadratic exponential B-spline interpolation function. To obtain enhanced solution accuracy, especially for problems with discontinuous load, the “energy corrector” technique is developed. Through theoretical analysis, four cases of algorithm parameters for the new approach are determined, which achieve high-order accuracy and desirable stability. Numerical simulation demonstrates that the new approach can provide highly precise solutions for transient heat conduction problems, especially for those with discontinuous loads. Furthermore, the new approach possesses a far larger critical stable time step than the traditional approaches, which in return improves computational efficiency greatly.},
+  archive      = {J_IJNME},
+  author       = {Weibin Wen and Yongyu Hong and Kexuan Kang and Xin Ye and Pan Wang and Jun Liang},
+  doi          = {10.1002/nme.70117},
+  journal      = {International Journal for Numerical Methods in Engineering},
+  month        = {9},
+  number       = {17},
+  pages        = {e70117},
+  shortjournal = {Int. J. Numer. Meth. Eng.},
+  title        = {A novel quadratic exponential B-spline based explicit time integration approach with energy corrector technique for transient heat conduction analysis},
+  volume       = {126},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A novel density correction method for improved prediction of pressure fields in SPH. <em>IJNME</em>, <em>126</em>(17), e70116. (<a href='https://doi.org/10.1002/nme.70116'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Smoothed particle hydrodynamics (SPH) has been extensively studied for several decades, yet accurate calculation of pressure fields remains a significant challenge, hindering its widespread application in practical engineering. This paper focuses on developing a novel density correction method to enhance the accuracy of hydrostatic pressure distribution in SPH, both near solid boundaries and within the fluid domain. The method incorporates two innovative concepts: an interpolation grid and supplementary particles, both aimed at refining density distributions. The proposed method is straightforward to implement, making it accessible for a wide range of applications. It proves highly effective in calculating improved hydrostatic pressure fields in high-pressure regions close to solid boundaries. Moreover, the proposed method effectively suppresses unphysical oscillations and peaks in the hydrodynamic pressure fields while alleviating unintended numerical dissipation that often occurs in long-term simulations. Additionally, the method offers greater flexibility in determining the correction interval and demonstrates excellent compatibility with various solid boundary treatments. The performance of the proposed method is validated through several numerical tests, and comparisons with other related numerical schemes are presented.},
+  archive      = {J_IJNME},
+  author       = {Yoon Sung Jeong and Phill-Seung Lee},
+  doi          = {10.1002/nme.70116},
+  journal      = {International Journal for Numerical Methods in Engineering},
+  month        = {9},
+  number       = {17},
+  pages        = {e70116},
+  shortjournal = {Int. J. Numer. Meth. Eng.},
+  title        = {A novel density correction method for improved prediction of pressure fields in SPH},
+  volume       = {126},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Parameter identification for a reduced transport model in fusion plasma. <em>IJNME</em>, <em>126</em>(17), e70115. (<a href='https://doi.org/10.1002/nme.70115'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Two-dimensional transport codes for the simulation of tokamak plasmas are simplified versions of full 3D fluid models, where plasma turbulence is averaged out. One of the main challenges in such reduced models is to accurately reconstruct transverse transport fluxes that arise from the averaging of stresses due to fluctuations. These transverse fluxes are typically approximated by ad-hoc diffusion coefficients (turbulent eddy viscosity), manually adjusted to align numerical solutions with experimental observations. They can vary significantly depending on the type of tokamak, the experimental conditions, and even the location within the device, severely limiting the predictive capability of these codes for new configurations. To address this issue, we recently proposed an innovative approach to fusion plasma simulations by introducing two additional transport equations for turbulence-related variables (specifically, the turbulent kinetic energy and its dissipation rate ) into the mean-flow system to estimate the turbulent eddy viscosity. This approach also introduces new free parameters, but they are primarily governed by the underlying transport physics and thus exhibit considerably less variation across devices and plasma regions. In this article, we continue an ongoing study of data assimilation techniques to determine the free parameters of the model for transverse turbulent plasma transport. Based on digital twin experiments within the framework of equations averaged over the magnetic surfaces of the tokamak, we provide an in-depth study of optimization strategies to improve the performance of the calibration algorithm in a complex configuration with considerable scale variation of the parameters.},
+  archive      = {J_IJNME},
+  author       = {Louis Lamérand and Didier Auroux and Francesca Rapetti},
+  doi          = {10.1002/nme.70115},
+  journal      = {International Journal for Numerical Methods in Engineering},
+  month        = {9},
+  number       = {17},
+  pages        = {e70115},
+  shortjournal = {Int. J. Numer. Meth. Eng.},
+  title        = {Parameter identification for a reduced transport model in fusion plasma},
+  volume       = {126},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Regularization in structural model updating in the presence of noisy data. <em>IJNME</em>, <em>126</em>(17), e70113. (<a href='https://doi.org/10.1002/nme.70113'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article addresses the presence of noise when solving the inverse problem of determining the material properties of an elastic engineering structure from measured vibration data. After identifying the frequencies, material properties are determined by solving an optimization problem. However, if the experimental frequencies are affected by noise (as often happens in practice), this can lead to inaccuracy due to the ill-conditioning of the problem. A regularization strategy based on Tikhonov regularization is discussed, and an automatic regularization parameter choice is introduced to deal with cases where the noise level is not known beforehand. The algorithm is tested on three examples, including artificial models where the exact solution is known and a case study from the Matilde donjon in Livorno, with experimental data measured by seismic stations during ambient vibration tests. The proposed method consistently performs well across all tests, validating the reliability of the approach.},
+  archive      = {J_IJNME},
+  author       = {Maria Girardi and Cristina Padovani and Daniele Pellegrini and Leonardo Robol},
+  doi          = {10.1002/nme.70113},
+  journal      = {International Journal for Numerical Methods in Engineering},
+  month        = {9},
+  number       = {17},
+  pages        = {e70113},
+  shortjournal = {Int. J. Numer. Meth. Eng.},
+  title        = {Regularization in structural model updating in the presence of noisy data},
+  volume       = {126},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A h-adaptivity strategy for hybridizable discontinuous galerkin (HDG) simulations of fluid transport models in tokamak plasma. <em>IJNME</em>, <em>126</em>(17), e70107. (<a href='https://doi.org/10.1002/nme.70107'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The highly anisotropic, multi-scale nature of fusion plasma simulations in tokamaks, combined with the complexity in the geometries of plasma-facing components and magnetic equilibrium, challenges numerical schemes. They therefore require the development of advanced numerical techniques to enhance computational efficiency and enable codes to simulate realistic plasma configurations relevant to tokamak operation. This paper proposes an adaptive mesh refinement strategy ( -adaptivity) in the SolEdge-HDG code for the resolution of 2D fluid-drift Braginskii equations using the Hybrid Discontinuous Galerkin (HDG) method. The strategy is based on an oscillation indicator implemented to detect under-resolved regions and dynamically refine the mesh, associated with an a posteriori accuracy indicator built on the local difference between the solution at order and the post-processed one at order considered as reference. The method thus enables both refinement, where necessary, as well as coarsening in regions where the solution is smooth. Numerical results obtained with this method in realistic tokamak geometry and plasma conditions show significant reductions in computational resources and an improvement in code robustness while maintaining high accuracy, particularly in regions with steep gradients or near the sharp angles of the tokamak walls. This work highlights the potential of such -adaptivity technique to optimize transport simulations in realistic tokamak configurations, offering a fully automated, goal-oriented mesh refinement strategy. In addition to optimizing the numerical cost of simulation, this strategy offers all users a fully automated means of designing a mesh in any tokamak geometry.},
+  archive      = {J_IJNME},
+  author       = {Marcello Capasso and Ivan Kudashev and Frédéric Schwander and Éric Serre},
+  doi          = {10.1002/nme.70107},
+  journal      = {International Journal for Numerical Methods in Engineering},
+  month        = {9},
+  number       = {17},
+  pages        = {e70107},
+  shortjournal = {Int. J. Numer. Meth. Eng.},
+  title        = {A h-adaptivity strategy for hybridizable discontinuous galerkin (HDG) simulations of fluid transport models in tokamak plasma},
+  volume       = {126},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A new contact algorithm for the total-lagrangian material point method. <em>IJNME</em>, <em>126</em>(17), e70105. (<a href='https://doi.org/10.1002/nme.70105'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Total Lagrangian Material Point Method (TLMPM) is a relatively new variant of the now popular MPM, a method to solve partial differential equations appearing in solid and fluid mechanics problems. In TLMPM, each solid has its own grid, and all calculations are carried out in a configuration of reference, often the original configuration. Because of this, TLMPM is free of numerical fracture, cell crossing instability and is efficient. An unfortunate result of having individual grids is that TLMPM does not have a built-in contact algorithm. Recently, a contact algorithm based on particle-to-particle contact was published for TLMPM. However, it scales quadratically with the number of particles and is therefore slow for a large number of particles. This paper introduces a new contact algorithm for TLMPM using a flexible contact grid. The advantages of this algorithm are: (1) all the advantages of TLMPM are kept, such as the absence of numerical fracture and good convergence rates; (2) the core principle of using a background grid in the material point method for contacts is preserved; (3) different basis functions can be used for each grid, and (4) boundary conditions can be enforced with more flexibility. The performance of the new algorithm is demonstrated through several two and three-dimensional numerical examples exhibiting large elastic and plastic deformation.},
+  archive      = {J_IJNME},
+  author       = {Quang Hieu Bui and Vinh Phu Nguyen and Alban de Vaucorbeil},
+  doi          = {10.1002/nme.70105},
+  journal      = {International Journal for Numerical Methods in Engineering},
+  month        = {9},
+  number       = {17},
+  pages        = {e70105},
+  shortjournal = {Int. J. Numer. Meth. Eng.},
+  title        = {A new contact algorithm for the total-lagrangian material point method},
+  volume       = {126},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fourth- and higher-order finite element methods for the incompressible Navier–Stokes equations with dirichlet boundary conditions. <em>IJNME</em>, <em>126</em>(17), e70102. (<a href='https://doi.org/10.1002/nme.70102'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Inspired by the unconstrained pressure Poisson equation (PPE) formulation [Liu, Liu, & Pego, Comm. Pure Appl. Math. 60 (2007): 1443–1487], we previously proposed the generic projection and unconstrained PPE (GePUP) formulation [Zhang, J. Sci. Comput. 67 (2016): 1134–1180] for numerically solving the incompressible Navier–Stokes equations (INSE) with no-slip boundary conditions. In GePUP, the main evolutionary variable does not have to be solenoidal, with its divergence controlled by a heat equation. This work presents GePUP–FEM, high-order finite-element solvers for the INSE under the framework of the method-of-lines. Continuous Lagrange finite elements of equal order are utilized for the velocity and pressure finite element spaces to discretize the weak form of GePUP in space, while high-order implicit–explicit Runge–Kutta methods are then employed to treat the stiff diffusion term implicitly and the other terms explicitly. Due to the implicit treatment of the diffusion term, the time step size is only restricted by convection. The solver is efficient in that advancing the solution at each time step only involves solving a sequence of linear systems either on the velocity or on the pressure, with geometric multigrid methods. Furthermore, the solver is enhanced with adaptive mesh refinement (AMR) so that the multiple length scales and time scales in flows at moderate or high Reynolds numbers can be efficiently resolved. Numerical tests with various Reynolds numbers are performed for the single-vortex test, the lid-driven cavity, and the flow past a cylinder/sphere, demonstrating the high-order accuracy of GePUP–FEM both in time and in space and its capability of accurately and efficiently resolving the right physics. Moreover, GePUP–FEM offers the flexibility in choosing velocity and pressure finite element spaces and is free of the standard inf-sup condition.},
+  archive      = {J_IJNME},
+  author       = {Yang Li and Heyu Wang and Qinghai Zhang},
+  doi          = {10.1002/nme.70102},
+  journal      = {International Journal for Numerical Methods in Engineering},
+  month        = {9},
+  number       = {17},
+  pages        = {e70102},
+  shortjournal = {Int. J. Numer. Meth. Eng.},
+  title        = {Fourth- and higher-order finite element methods for the incompressible Navier–Stokes equations with dirichlet boundary conditions},
+  volume       = {126},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient XFEM/GFEM approach for the analysis of thick plates utilizing global enrichments. <em>IJNME</em>, <em>126</em>(17), e70101. (<a href='https://doi.org/10.1002/nme.70101'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Plates are common flat structural elements that support loads through their flexural bending rigidity. Because plate thickness is much smaller than their surface dimensions, plate theories have emerged to simplify full three-dimensional behavior. Since analytical solutions for plate elements are not always available, especially for general loads and boundary conditions, numerical methods, such as the finite element method (FEM), are often employed to solve these problems. Due to its general polynomial approximation of the solution field, FEM often requires a large number of degrees of freedom to achieve convergence, increasing the computational burden. In this study, we propose a new approach for the analysis of plates utilizing the eXtended finite element method (XFEM) within the Mindlin-Reissner thick plate theory. As opposed to the traditional XFEM, where the enrichment functions are applied locally, mainly targeting strong and weak discontinuities in the domain, in the proposed approach, the entire domain is globally enriched with functions inspired by analytical solutions available for simple cases of plates. The objective of the current formulation is to reduce the computational burden by reducing the number of degrees of freedom in the problem compared to the standard FE configuration. The deformation of rectangular plates is studied for different boundary and loading conditions. The enrichment functions added to the FE shape functions are based on the series expansion resulting from the analytical solution of a simply supported plate under uniform pressure. However, those functions may not necessarily match the actual problem studied. To this end, higher series terms are employed to improve the accuracy and response of the plates. A convergence study is conducted to investigate the efficiency and robustness of the proposed method. The results show an improved convergence rate of the XFEM compared to the standard FEM approach.},
+  archive      = {J_IJNME},
+  author       = {Athanasios Zisimos and Ameer Marzok and Haim Waisman},
+  doi          = {10.1002/nme.70101},
+  journal      = {International Journal for Numerical Methods in Engineering},
+  month        = {9},
+  number       = {17},
+  pages        = {e70101},
+  shortjournal = {Int. J. Numer. Meth. Eng.},
+  title        = {Efficient XFEM/GFEM approach for the analysis of thick plates utilizing global enrichments},
+  volume       = {126},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A cluster mean approach for topology optimization of natural frequencies and bandgaps with Simple/Multiple eigenfrequencies. <em>IJNME</em>, <em>126</em>(17), e70092. (<a href='https://doi.org/10.1002/nme.70092'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study presents a novel approach utilizing cluster means to address the non-differentiability issue arising from multiple eigenvalues in eigenfrequency and bandgap optimization. This study builds upon the method proposed by Zhang et al., extending it to eigenfrequency topology optimization using bound formulations. By constructing symmetric functions of repeated eigenvalues—including cluster mean, -norm and Kreisselmeier–Steinhauser (KS) functions—the study confirms their differentiability when all repeated eigenvalues are included, that is, clusters are complete. Numerical sensitivity analyses indicate that, under some symmetry conditions, multiple eigenvalues may also be differentiable with respect to the symmetric design variables. Notably, regardless of enforced symmetry, the cluster mean approach guarantees the differentiability of multiple eigenvalues, offering a reliable solution strategy in eigenfrequency optimization. Optimization schemes are proposed to maximize eigenfrequencies and bandgaps by integrating cluster means with the bound formulations. The efficacy of the proposed method is demonstrated through numerical examples of 2D and 3D solids and plate structures. All optimization results demonstrate smooth convergence under simple/multiple eigenvalues.},
+  archive      = {J_IJNME},
+  author       = {Shiyao Sun and Kapil Khandelwal},
+  doi          = {10.1002/nme.70092},
+  journal      = {International Journal for Numerical Methods in Engineering},
+  month        = {9},
+  number       = {17},
+  pages        = {e70092},
+  shortjournal = {Int. J. Numer. Meth. Eng.},
+  title        = {A cluster mean approach for topology optimization of natural frequencies and bandgaps with Simple/Multiple eigenfrequencies},
+  volume       = {126},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning the solution operator family in elastic mechanics for response prediction under various load scenarios. <em>IJNME</em>, <em>126</em>(17), e70085. (<a href='https://doi.org/10.1002/nme.70085'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Analyzing the responses of solid materials under diverse loading scenarios with different types and forms is a fundamental engineering necessity. However, a load-adaptable machine learning model that can predict such responses still needs to be explored. This study formulates the load-adaptable response prediction problem as a solution operator family regression task and develops a Load-Adaptable Physics-Informed DeepONet (LA-PIDON) to learn the solution operator family of mechanics. The proposed method utilizes the product space as the input space, composed of function spaces for force boundaries, displacement boundaries, material properties, and other mechanical factors. Distinct branch networks are established for each mechanical factor and distinct trunk networks for each corresponding response. The solution family learning task is accomplished by using shared branch networks across multiple trunk networks. The load adaptability for both concentrated and distributed forces is achieved through the integration of Gaussian Random Fields(GRFs) and Fourier polynomials to generate function spaces for the force boundary; the load adaptability for force and imposed displacement excitation is achieved by incorporating the product space of force and displacement boundaries into the input space. The numerical cases of (1) elastic plates subjected to benchmark force and imposed displacement excitations, (2) benchmark beams under pure and tensile bending, and (3) 3D elastic cubes undergoing axial tension demonstrate the method's adaptability to various load scenarios and its capacity to handle complex stress states. The proposed method has potential applications in fields that require numerous simulations for diverse load scenarios, such as reliability analysis and digital twins.},
+  archive      = {J_IJNME},
+  author       = {Xuliang Liu and Yuequan Bao},
+  doi          = {10.1002/nme.70085},
+  journal      = {International Journal for Numerical Methods in Engineering},
+  month        = {9},
+  number       = {17},
+  pages        = {e70085},
+  shortjournal = {Int. J. Numer. Meth. Eng.},
+  title        = {Learning the solution operator family in elastic mechanics for response prediction under various load scenarios},
+  volume       = {126},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An eulerian framework for modeling visco-plasticity and isotropic and directional material hardening utilizing neural networks. <em>IJNME</em>, <em>126</em>(17), e70083. (<a href='https://doi.org/10.1002/nme.70083'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A neural network is inserted into a theoretical framework for modeling the inelastic behavior of materials. The neural network replaces functional expressions for such phenomena as isotropic and directional hardening and viscoplasticity. The theoretical framework, into which the neural network is inserted, is Eulerian in the sense that all state variables are defined in the current state of the material, and the framework is independent of history variables, such as plastic strain, accumulated equivalent plastic strain, etc. The neural network-based model is compared to and trained to reproduce the uniaxial tension response of theoretical reference solutions as well as experimental results. The neural network-based model is able to reproduce the reference results with excellent precision. Also, the neural network-based model was implemented as a VUMAT in Abaqus together with one of the theoretical reference models. Deformation of a plate with a hole in it was simulated, and the outcome from the reference model and the trained neural network-based model was compared. The solutions, in terms of von Mises stress and accumulated equivalent plastic strain, were very similar. Hence, it seems like training the neural network model by use of uniaxial stress data is sufficient for being able to make accurate 3D predictions.},
+  archive      = {J_IJNME},
+  author       = {Martin Kroon},
+  doi          = {10.1002/nme.70083},
+  journal      = {International Journal for Numerical Methods in Engineering},
+  month        = {9},
+  number       = {17},
+  pages        = {e70083},
+  shortjournal = {Int. J. Numer. Meth. Eng.},
+  title        = {An eulerian framework for modeling visco-plasticity and isotropic and directional material hardening utilizing neural networks},
+  volume       = {126},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

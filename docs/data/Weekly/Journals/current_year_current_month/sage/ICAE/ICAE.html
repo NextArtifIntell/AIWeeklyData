@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ICAE</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="icae">ICAE - 7</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Models and tools for supporting sustainability assessment in systems engineering. <em>ICAE</em>, <em>32</em>(3), 326-342. (<a href='https://doi.org/10.1177/10692509251352461'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Since several years, sustainability has become a very important challenge for our societies. Our lifestyles are in the process of making our planet uninhabitable because of the various impacts that we, as human beings, are inflicting on it. As part of these impacts, we focus on Complex Systems designed by humans. It is of uttermost importance to be able to analyze and design complex systems so that the sustainability features are taken into account. More specifically, the contribution of this article is to propose models and tools for the assessment of systems sustainability during the analysis and design phases. The analysis and design of systems may be difficult tasks. It is even more so for complex systems. Since decades, the System Engineering (SE) field has given birth to a family of systemic and multidisciplinary approaches for the design of systems. Among SE approaches, Model-Based System Engineering (MBSE) is a special kind of SE that relies on formalized models as first-class citizens deliverables for all analysis and design activities from requirements elicitation to final design and validation. SysML (Systems Modelling Language) is one of these MBSE approaches. SysML is a well-known, general purpose graphical systems modelling language that supports SE approaches. In addition, SysML allows its own language extension by the creation of new concepts and diagrams. This extension mechanism is known as Domain Specific Modelling Language (DSML). The contributions presented in this paper consist in the definition of an extension of SysML that provides models and tools in order to assess the sustainability of systems during analysis and design. This extension of SysML is based upon a technique, named profile, and proposes new modelling concepts for taking into consideration sustainability issues during systems engineering. Moreover, these new model elements are supported by software tools issued from the MBSE domain and allow the development of ad-hoc software tooling support.},
+  archive      = {J_ICAE},
+  author       = {Vincent Hilaire and Alexis Lalevée},
+  doi          = {10.1177/10692509251352461},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {8},
+  number       = {3},
+  pages        = {326-342},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Models and tools for supporting sustainability assessment in systems engineering},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Design and implementation of an internet of things automatic solar shading system. <em>ICAE</em>, <em>32</em>(3), 309-325. (<a href='https://doi.org/10.1177/10692509251318454'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The implementation of energy-saving solutions becomes increasingly crucial as global energy reserves decline. The integration of automated solar shading systems not only improves living conditions, but also reduces energy costs. This work presents the design and implementation of an Internet of Things (IoT) automatic solar shading system. The developed solar shading includes custom-made louvers that are able to reflect the external light, while being transparent. Moreover, the system is equipped with a microcontroller and appropriate sensors that enable its automated operation based on measurements of the internal and external environmental conditions. A Raspberry Pi acts as a server, enabling the communication between the shading devices and the users, through an open-source home automation operating system (Home Assistant OS). The user-friendly interface, accessible via a web browser or a mobile application, provides essential data such as temperature, humidity, and device status. Alert notifications are sent when specific conditions are met. The overall system is enclosed in two 3D-printed units, ensuring its durability and easy integration into existing or new installations. In summary, this system combines the advantages of automatic solar shadings, including energy efficiency and improved occupant comfort, with smart features for remote control and monitoring through a user-friendly interface. The proposed system has been installed in a window of our laboratory, performing successfully in real-life conditions.},
+  archive      = {J_ICAE},
+  author       = {Georgia Stamou and Spyridon Angelopoulos and Nikolaos Stefanakis and Evangelos Hristoforou},
+  doi          = {10.1177/10692509251318454},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {8},
+  number       = {3},
+  pages        = {309-325},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Design and implementation of an internet of things automatic solar shading system},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Digital shielding for cross-domain wi-fi signal adaptation using relativistic average generative adversarial network. <em>ICAE</em>, <em>32</em>(3), 292-308. (<a href='https://doi.org/10.1177/10692509251339913'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Wi-Fi sensing exploits radio-frequency signals emitted by Wi-Fi devices to analyze environments, enabling tasks such as people tracking, intruder detection, and gesture recognition. Its growing diffusion is driven by the IEEE 802.11bf standard, which facilitates environmental monitoring, and the increasing demand for tools capable of penetrating obstacles while preserving privacy. However, the performance of Wi-Fi-based sensing solutions is influenced by the environment in which signals are acquired. This is critical when extracting spatial and temporal information from the surrounding scene, as such data reflect both environmental structure and interference sources. A main challenge is achieving generalization across domains, that is, ensuring consistent performance under varying conditions, such as different rooms or buildings, without significant accuracy loss. This paper presents a deep model for domain adaptation of Wi-Fi signals by simulating a digital shielding mechanism. The model is based on a Relativistic average Generative Adversarial Network (RaGAN), which mimics physical shielding to suppress domain-specific features while preserving signal integrity. Both the generator and discriminator use Bidirectional Long Short-Term Memory (Bi-LSTM) architectures, enabling modeling of waveform and time-dimension signal characteristics. To support training, an acrylic box lined with electromagnetic shielding fabric, replicating a Faraday cage, was constructed. Spectra from same-sized objects made of different materials were acquired both inside (domain-free) and outside (domain-dependent) the box. A multi-class Support Vector Machine (SVM), trained on shielded spectra and tested on RaGAN-denoised data, achieved 96 percent accuracy. The SVM also distinguished materials, suggesting a promising approach for security systems aimed at identifying the nature and composition of potentially dangerous objects.},
+  archive      = {J_ICAE},
+  author       = {Danilo Avola and Federica Bruni and Gian Luca Foresti and Daniele Pannone and Amedeo Ranaldi},
+  doi          = {10.1177/10692509251339913},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {8},
+  number       = {3},
+  pages        = {292-308},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Digital shielding for cross-domain wi-fi signal adaptation using relativistic average generative adversarial network},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An automated workflow based on UAV imagery and deep learning methods for monitoring excavation area work. <em>ICAE</em>, <em>32</em>(3), 272-291. (<a href='https://doi.org/10.1177/10692509251340464'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid advancement of Artificial Intelligence (AI) is transforming the construction sector, particularly in site monitoring and safety management. Real-time monitoring enables the automatic detection of work progress issues, anomalies, and hazardous situations. However, no existing Deep Learning (DL)-based system is specifically designed to utilize Unmanned Aerial Vehicles (UAVs) for excavation area monitoring. This study presents an automated workflow that integrates UAV imagery with DL architectures, featuring a 1D Convolutional Neural Network (1D-CNN) for classifying excavation work phases and a VGG16 network for detecting safety fences. These technologies are incorporated into a Decision Support System (DSS), which automates report generation and enhances decision-making by providing structured, data-driven insights. The system was validated in a real-world case study involving an oil and gas construction company, demonstrating its ability to streamline site management tasks and improve safety oversight. Compared to traditional monitoring methods, our approach leverages UAV technology and DL methodologies to provide higher accuracy, efficiency, and scalability in excavation site monitoring. This contribution supports the digital transformation of construction management, offering a practical and innovative solution for real-time progress tracking and compliance verification.},
+  archive      = {J_ICAE},
+  author       = {Riccardo Rosati and Matteo Fabiani and Roberto Pierdicca and Adriano Mancini},
+  doi          = {10.1177/10692509251340464},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {8},
+  number       = {3},
+  pages        = {272-291},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {An automated workflow based on UAV imagery and deep learning methods for monitoring excavation area work},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A cost-effective autonomous underwater system for small size object detection. <em>ICAE</em>, <em>32</em>(3), 258-271. (<a href='https://doi.org/10.1177/10692509251336668'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {According to US National Oceanic and Atmospheric Administration (NOAA), we have only explored five percent of our world ocean. Among the ocean exploration tasks, underwater object detection is a multidisciplinary challenge that extends beyond engineering into fields such as oceanography, marine biology, and environmental science. Scientifically, it involves understanding the complex interactions between sound waves, light, and water, as well as the navigation dynamics within marine environments. The underwater environment presents unique physical challenges for object detection due to factors like light attenuation, turbidity, and the variability of acoustic propagation. This paper introduces a cost-effective autonomous underwater prototype for real-time detection, and localization of small underwater objects (e.g., archaeological artifacts, parts of infrastructures, wreckage debris, but also life forms like fishes, corals etc.) in shallow waters. The system combines object identification with autonomous navigation capabilities. It consists of an autonomous underwater vehicle equipped with sensors, cameras, and localization tools, as well as a ground control station for monitoring and intervention. In particular, we focus on a case study about detecting and reporting the locations of unexploded ordnance materials, contributing to the monitoring of underwater hazards in conflict-affected regions. Key contributions include the integration of a cost-effective autonomous remotely operated vehicle with sensors and software for real-time detection and localization of small underwater objects, as well as an annotated dataset of UXO images, usable as a benchmark.},
+  archive      = {J_ICAE},
+  author       = {Denis Tavaris and Leonardo Scandino and Gian Luca Foresti and Ivan Scagnetto},
+  doi          = {10.1177/10692509251336668},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {8},
+  number       = {3},
+  pages        = {258-271},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {A cost-effective autonomous underwater system for small size object detection},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Segmentation networks for detecting overlapping screws in 3D and color images for industrial quality control. <em>ICAE</em>, <em>32</em>(3), 244-257. (<a href='https://doi.org/10.1177/10692509251328780'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study explores cost-effective, real-time strategies for bin picking in industrial quality control. An anomaly detection solution was developed for a screw production plant, utilizing machine vision and AI to identify overlapping screws as anomalies. Two improvements are proposed to a basic solution initially relying on a laser profiler for depth images. The first improvement applies a Convolutional Neural Network (CNN) to the laser profiler's output, and the second replaces the laser profiler with a camera that captures color images, applying a CNN to its output. The first improvement was tested with real laser profiler data using YOLOv8 and Mask R-CNN segmentation models. After achieving comparable results on the real dataset, the second improvement was tested on multiple synthetic datasets, simulating different scenarios, including setups with mixed screws. Results demonstrated that model performance on color images, represented in the RGB color space (red, green, and blue), was comparable to depth images, validating color cameras as an appropriate alternative. Since color cameras are cheaper and capture images faster, they are well-suited for high-speed quality control systems, offering significant cost and performance advantages. Code is available at: https://github.com/enmarchi/overlapping_screws_geneneration_code .},
+  archive      = {J_ICAE},
+  author       = {Enrico Marchi and Daniele Fornasier and Alberto Miorin and Gian Luca Foresti},
+  doi          = {10.1177/10692509251328780},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {8},
+  number       = {3},
+  pages        = {244-257},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Segmentation networks for detecting overlapping screws in 3D and color images for industrial quality control},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Gravity-constrained simultaneous localization and mapping for suppressing map warping in complex large-scale environments. <em>ICAE</em>, <em>32</em>(3), 229-243. (<a href='https://doi.org/10.1177/10692509251331372'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Simultaneous Localization and Mapping (SLAM) serves as a foundational technology for autonomous systems operating within large-scale, complex environments. Traditional SLAM methodologies, however, are prone to altitude-axis distortions resulting from cumulative errors. To mitigate these issues, Gravity-Constrained SLAM (GC-SLAM) is introduced as a novel computational method that integrates gravity constraints and incremental optimisation to enhance mapping accuracy and computational efficiency. GC-SLAM incorporates a gravity constraint handling actor within the global optimisation algorithm, effectively reducing vertical-axis errors caused by accumulated drift during mapping. Furthermore, an incremental optimisation strategy is employed to manage the computational complexity associated with increasing map size. Performance evaluations of GC-SLAM are conducted on the KITTI dataset and large-scale environments, comparing its effectiveness against state-of-the-art SLAM-based algorithms, including FAST-LIO2, LIO-SAM (Lidar Inertial Odometry and SLAM), Lego-LOAM (Lightweight and Ground-optimised Lidar Odometry and Mapping), and A-LOAM (Advanced Lidar Odometry and Mapping). Experimental results demonstrate that GC-SLAM effectively suppresses vertical-axis distortions, significantly enhances localisation accuracy, and outperforms competing methods.},
+  archive      = {J_ICAE},
+  author       = {Kaiyi Xian and Duo Liu and Gexiang Zhang and Ferrante Neri and Song Chen},
+  doi          = {10.1177/10692509251331372},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {8},
+  number       = {3},
+  pages        = {229-243},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Gravity-constrained simultaneous localization and mapping for suppressing map warping in complex large-scale environments},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

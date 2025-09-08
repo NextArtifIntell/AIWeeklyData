@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IJRR</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ijrr">IJRR - 64</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Magnetic localization during manipulation by two robotized permanent magnets. <em>IJRR</em>, <em>44</em>(9), 1600-1613. (<a href='https://doi.org/10.1177/02783649251317212'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Localization methods for magnetically actuated medical robots have long been a topic of research, as they are fundamental to closed-loop control and delivery of functionalities. However, magnetic localization has mainly been linked to robots under a single permanent magnet control. With the release of multi-magnet actuation systems for increased control and manipulability, new localization methods are needed to account for the added magnetic field sources. This paper presents a six degree of freedom localization method for magnetically actuated robots under two external permanent magnets control. The approach relies on the measurements of an accelerometer and gyroscope for the estimation of orientation in the Special Orthogonal Group SO (3), and the measurements of the actuating magnetic fields for the estimation of position. The observability analysis of the system is presented, and the relationship between the external permanent poses and conditioning of the system is explored. Additionally, a calibration procedure to determine the relative poses between the two external permanent magnets is presented where the path that the magnets travel is optimized for the best results. Lastly, the localization method was implemented in a magnetic soft continuum robot and achieved positional average errors of 3.5 mm in norm, and orientation errors of 2.5°, 1.5°, and 2.8° around x , y , and z , respectively.},
+  archive      = {J_IJRR},
+  author       = {Tomás da Veiga and Michael Brockdorff and Giovanni Pittiglio and James H Chandler and Pietro Valdastri},
+  doi          = {10.1177/02783649251317212},
+  journal      = {The International Journal of Robotics Research},
+  month        = {8},
+  number       = {9},
+  pages        = {1600-1613},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Magnetic localization during manipulation by two robotized permanent magnets},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A flexible framework for accurate LiDAR odometry, map manipulation, and localization. <em>IJRR</em>, <em>44</em>(9), 1553-1599. (<a href='https://doi.org/10.1177/02783649251316881'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Light Detection and Ranging (LiDAR)-based simultaneous localization and mapping (SLAM) is a core technology for autonomous vehicles and robots. One key contribution of this work to 3D LiDAR SLAM and localization is a fierce defense of view-based maps (pose graphs with time-stamped sensor readings) as the fundamental representation of maps. As will be shown, they allow for the greatest flexibility, enabling the posterior generation of arbitrary metric maps optimized for particular tasks, for example, obstacle avoidance and real-time localization. Moreover, this work introduces a new framework in which mapping pipelines can be defined without coding, defining the connections of a network of reusable blocks much like deep-learning networks are designed by connecting layers of standardized elements. We also introduce tightly-coupled estimation of linear and angular velocity vectors within the Iterative Closest Point (ICP)-like optimizer, leading to superior robustness against aggressive motion profiles without the need for an IMU. Extensive experimental validation reveals that the proposal compares well to, or improves, former state-of-the-art (SOTA) LiDAR odometry systems, while also successfully mapping some hard sequences where others diverge. A proposed self-adaptive configuration has been used, without parameter changes, for all 3D LiDAR datasets with sensors between 16 and 128 rings, and has been extensively tested on 83 sequences over more than 250 km of automotive, hand-held, airborne, and quadruped LiDAR datasets, both indoors and outdoors. The system flexibility is demonstrated with additional configurations for 2D LiDARs and for building 3D NDT-like maps. The framework is open-sourced online: https://github.com/MOLAorg/mola .},
+  archive      = {J_IJRR},
+  author       = {Jose Luis Blanco-Claraco},
+  doi          = {10.1177/02783649251316881},
+  journal      = {The International Journal of Robotics Research},
+  month        = {8},
+  number       = {9},
+  pages        = {1553-1599},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {A flexible framework for accurate LiDAR odometry, map manipulation, and localization},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). No-regret path planning for temporal logic tasks in partially-known environments. <em>IJRR</em>, <em>44</em>(9), 1526-1552. (<a href='https://doi.org/10.1177/02783649251315758'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we investigate the graph-based robot path planning problem for high-level specifications described by co-safe linear temporal logic (scLTL) formulae. Our focus is on scenarios where the map geometry of the workspace is only partially-known . Specifically, we assume the existence of unknown regions, where the robot lacks prior knowledge of their successor regions unless it physically reaches these areas. In contrast to the standard non-deterministic synthesis approach that optimizes the worst-case cost, in the paper, we propose using regret as the metric for planning in such partially-known environments. Regret measures the difference between the actual cost incurred and the best-response cost the robot could have achieved if it were aware of the actual environment from the start. We present a formal model for this problem setting and develop an efficient algorithm to find an optimal strategy in the sense that it meets the scLTL specification while minimizing the regret of the strategy. Our approach provides a quantitative method for evaluating the trade-off between exploration and non-exploration, rather than relying on the heuristic determinations used in many existing works. Case studies on firefighting and collaborative robots are provided to illustrate the effectiveness of our framework. Furthermore, we conduct numerical experiments on a large number of randomly generated systems and compare the performance of the regret-based strategy with other path planning strategies. The experimental results indicate that regret is a highly meaningful metric for path planning in partially-unknown environments, especially in cases where no probabilistic a priori knowledge is available.},
+  archive      = {J_IJRR},
+  author       = {Jianing Zhao and Keyi Zhu and Mingyang Feng and Shaoyuan Li and Xiang Yin},
+  doi          = {10.1177/02783649251315758},
+  journal      = {The International Journal of Robotics Research},
+  month        = {8},
+  number       = {9},
+  pages        = {1526-1552},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {No-regret path planning for temporal logic tasks in partially-known environments},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scenario-based motion planning with bounded probability of collision. <em>IJRR</em>, <em>44</em>(9), 1507-1525. (<a href='https://doi.org/10.1177/02783649251315203'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robots will increasingly operate near humans that introduce uncertainties in the motion planning problem due to their complex nature. Optimization-based planners typically avoid humans through collision avoidance chance constraints. This allows the planner to optimize performance while guaranteeing probabilistic safety. However, existing real-time methods do not consider the actual probability of collision for the planned trajectory but rather its marginalization, that is, the independent collision probabilities for each planning step and/or dynamic obstacle, resulting in conservative trajectories. To address this issue, we introduce a novel real-time capable method termed Safe Horizon MPC that explicitly constrains the joint probability of collision with all obstacles over the duration of the motion plan. This is achieved by reformulating the chance-constrained planning problem using scenario optimization and predictive control. Out of sampled realizations of human motion, we identify which cases affect the optimization. This allows us to certify the planned trajectory in real-time. Our method is less conservative than state-of-the-art approaches, applicable to arbitrary probability distributions of the obstacles’ trajectories, computationally tractable and scalable. We demonstrate our proposed approach using a mobile robot and an autonomous vehicle in an environment shared with humans.},
+  archive      = {J_IJRR},
+  author       = {Oscar de Groot and Laura Ferranti and Dariu M. Gavrila and Javier Alonso-Mora},
+  doi          = {10.1177/02783649251315203},
+  journal      = {The International Journal of Robotics Research},
+  month        = {8},
+  number       = {9},
+  pages        = {1507-1525},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Scenario-based motion planning with bounded probability of collision},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mobile robots exploration strategies and requirements: A systematic mapping study. <em>IJRR</em>, <em>44</em>(9), 1461-1506. (<a href='https://doi.org/10.1177/02783649241313471'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A variety of autonomous exploration tasks have been successfully performed in several types of environments using different types of robotic platforms. The robotic task, the operational environment, and the robot embodiment represent the dimensions of the “problem space” in robot exploration. At the same time, a lot of exploration strategies are documented in the literature that provide partial solutions to the exploration problem. They define the “solution space” in robot exploration. To our knowledge, no previous work has provided a methodical overview of robot exploration strategies from the point of view of both the problem and solution spaces. In this systematic mapping study, we build a taxonomy of autonomous robot exploration strategies and application requirements and classify existing approaches according to it. The goal is to analyze research trends over time, and identify possible research gaps, open challenges, and promising future directions in order to support researchers and practitioners in generalizing, communicating, and applying the findings of the robot exploration knowledge field.},
+  archive      = {J_IJRR},
+  author       = {Davide Brugali and Luca Muratore and Alessio De Luca},
+  doi          = {10.1177/02783649241313471},
+  journal      = {The International Journal of Robotics Research},
+  month        = {8},
+  number       = {9},
+  pages        = {1461-1506},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Mobile robots exploration strategies and requirements: A systematic mapping study},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Shared autonomy policy fine-tuning and alignment for robotic tasks. <em>IJRR</em>, <em>44</em>(9), 1443-1460. (<a href='https://doi.org/10.1177/02783649241312699'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we present a comprehensive shared autonomy framework for human-in-the-loop policy fine-tuning and alignment. Our framework integrates policy adapting algorithms on a multi-agent system foundation tailored for human-robot interaction and decision-making arbitration. This strategy is intended for complex, task-oriented robotic tasks that require cognitive-level human-robot interactions. We design short- and long-horizon fine-tuning algorithms to adapt a policy to different operating conditions and human agents. This is accomplished using Bayesian analysis and custom deep reinforcement learning techniques, through various interaction channels strategically placed at different operational points of the system. To showcase the effectiveness of our algorithms, as well as the strength of our framework, we conduct a human user study involving operation of a laboratory robot in a sequence of high-level pick-and-place tasks. The experiments of the study are designed to demonstrate the interplay between different design elements of our framework, such as, interaction channels and multi-horizon fine-tuning algorithms. By laying out careful hypotheses, we employ objective and subjective metrics to measure the effects of shared autonomy design elements on both the system performance and human user satisfaction. Our human user study reveals significant results related to the complex interplay between shared autonomy design elements, the behavior of the algorithms, and core decision-making and arbitration formulation.},
+  archive      = {J_IJRR},
+  author       = {Ehsan Yousefi and Mo Chen and Inna Sharf},
+  doi          = {10.1177/02783649241312699},
+  journal      = {The International Journal of Robotics Research},
+  month        = {8},
+  number       = {9},
+  pages        = {1443-1460},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Shared autonomy policy fine-tuning and alignment for robotic tasks},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Tracking cloth deformation: A novel dataset for closing the sim-to-real gap for robotic cloth manipulation learning. <em>IJRR</em>, <em>44</em>(9), 1431-1442. (<a href='https://doi.org/10.1177/02783649251317617'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robotic learning for deformable object manipulation—such as textiles—is often done in simulation due to the current limitation of perception methods to understand cloth’s deformation. For this reason, the robotics community is always on the search for more realistic simulators to reduce as much as possible the sim-to-real gap, which is still quite large especially when dynamic motions are applied. We present a cloth dataset consisting of 120 high-quality recordings of several textiles during dynamic motions. Using a Motion Capture System , we record the location of key-points on the cloth surface of four types of fabrics (cotton, denim, wool and polyester) of two sizes and at different speeds. The scenarios considered are all dynamic and involve rapid shaking and twisting of the textiles, collisions with frictional objects, strong hits with a long and thin rigid object and even self-collisions. We explain in detail the scenarios considered, the collected data and how to read it and use it. In addition, we propose a metric to use the dataset as a benchmark to quantify the sim-to-real gap of any cloth simulator. Finally, we show that the recorded trajectories can be directly executed by a robotic arm, enabling learning by demonstration and other imitation learning techniques. Dataset: https://doi.org/10.5281/zenodo.14644526 Video: https://fcoltraro.github.io/projects/dataset/},
+  archive      = {J_IJRR},
+  author       = {Franco Coltraro and Júlia Borràs and Maria Alberich-Carramiñana and Carme Torras},
+  doi          = {10.1177/02783649251317617},
+  journal      = {The International Journal of Robotics Research},
+  month        = {8},
+  number       = {9},
+  pages        = {1431-1442},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Tracking cloth deformation: A novel dataset for closing the sim-to-real gap for robotic cloth manipulation learning},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning-based legged locomotion: State of the art and future perspectives. <em>IJRR</em>, <em>44</em>(8), 1396-1427. (<a href='https://doi.org/10.1177/02783649241312698'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Legged locomotion holds the premise of universal mobility, a critical capability for many real-world robotic applications. Both model-based and learning-based approaches have advanced the field of legged locomotion in the past three decades. In recent years, however, a number of factors have dramatically accelerated progress in learning-based methods, including the rise of deep learning, rapid progress in simulating robotic systems, and the availability of high-performance and affordable hardware. This article aims to give a brief history of the field, to summarize recent efforts in learning locomotion skills for quadrupeds, and to provide researchers new to the area with an understanding of the key issues involved. With the recent proliferation of humanoid robots, we further outline the rapid rise of analogous methods for bipedal locomotion. We conclude with a discussion of open problems as well as related societal impact.},
+  archive      = {J_IJRR},
+  author       = {Sehoon Ha and Joonho Lee and Michiel van de Panne and Zhaoming Xie and Wenhao Yu and Majid Khadiv},
+  doi          = {10.1177/02783649241312698},
+  journal      = {The International Journal of Robotics Research},
+  month        = {7},
+  number       = {8},
+  pages        = {1396-1427},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Learning-based legged locomotion: State of the art and future perspectives},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Motion planning for hybrid dynamical systems: Framework, algorithm template, and a sampling-based approach. <em>IJRR</em>, <em>44</em>(8), 1360-1395. (<a href='https://doi.org/10.1177/02783649241312695'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper focuses on the motion planning problem for the systems exhibiting both continuous and discrete behaviors, which we refer to as hybrid dynamical systems. First, the motion planning problem for hybrid systems is formulated using the hybrid equation framework, which is general to capture most hybrid systems. Second, a propagation algorithm template is proposed that describes a general framework to solve the motion planning problem for hybrid systems. Third, a rapidly-exploring random trees (RRT) implementation of the proposed algorithm template is designed to solve the motion planning problem for hybrid systems. At each iteration, the proposed algorithm, called HyRRT, randomly picks a state sample and extends the search tree by flow or jump, which is also chosen randomly when both regimes are possible. Through a definition of concatenation of functions defined on hybrid time domains, we show that HyRRT is probabilistically complete, namely, the probability of failing to find a motion plan approaches zero as the number of iterations of the algorithm increases. This property is guaranteed under mild conditions on the data defining the motion plan, which include a relaxation of the usual positive clearance assumption imposed in the literature of classical systems. The motion plan is computed through the solution of two optimization problems, one associated with the flow and the other with the jumps of the system. The proposed algorithm is applied to an actuated bouncing ball system and a walking robot system so as to highlight its generality and computational features.},
+  archive      = {J_IJRR},
+  author       = {Nan Wang and Ricardo G. Sanfelice},
+  doi          = {10.1177/02783649241312695},
+  journal      = {The International Journal of Robotics Research},
+  month        = {7},
+  number       = {8},
+  pages        = {1360-1395},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Motion planning for hybrid dynamical systems: Framework, algorithm template, and a sampling-based approach},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Decentralized trajectory planning for quadrotor swarm in cluttered environments with goal convergence guarantee. <em>IJRR</em>, <em>44</em>(8), 1336-1359. (<a href='https://doi.org/10.1177/02783649241312352'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Decentralized multi-agent trajectory planning (MATP) can enhance the efficiency of multi-robot systems thanks to high scalability and short computation time. However, it may lead to deadlock or livelock in obstacle-rich environments. To tackle this challenge, this paper presents a decentralized MATP algorithm for a quadrotor swarm that ensures convergence to a goal in maze-like environments. The proposed method guides the agents to their goal using the waypoints generated by a grid-based multi-agent path planning (MAPF) algorithm. Additionally, we introduce subgoal optimization to prevent deadlock while the agents follow the waypoints. The proposed algorithm guarantees that the agents converge to their goal if there is no dynamic obstacle and the agents are connected through a fully connected network. Moreover, it ensures deadlock-free even when the agent has a limited communication range. For dynamic obstacle avoidance, we revise the grid-based MAPF to prioritize collision avoidance when the agents encounter dynamic obstacles in a narrow corridor. In simulation, the proposed algorithm achieves a 100% success rate in static environments and shows a higher success rate and shorter flight time compared to most state-of-the-art baseline algorithms in dynamic environments. We validate the safety and robustness of the proposed work through the experiment with 10 quadrotors and one pedestrian in a maze-like environment.},
+  archive      = {J_IJRR},
+  author       = {Jungwon Park and Yunwoo Lee and Inkyu Jang and H. Jin Kim},
+  doi          = {10.1177/02783649241312352},
+  journal      = {The International Journal of Robotics Research},
+  month        = {7},
+  number       = {8},
+  pages        = {1336-1359},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Decentralized trajectory planning for quadrotor swarm in cluttered environments with goal convergence guarantee},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Expanded quasi-static models to predict the performance of robotic skins on soft cylinders. <em>IJRR</em>, <em>44</em>(8), 1317-1335. (<a href='https://doi.org/10.1177/02783649241310885'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robotic skins with embedded sensors and actuators are designed to wrap around soft, passive objects to control those objects from their surface. Prior state estimation and control models relied on specific actuator and sensor placement in robotic skins wrapped around soft cylinders, as well as used simplistic assumptions based on geometry and an ideal connection between the robotic skin and underlying structure. Such assumptions limit model fidelity and affect its utility in the design and control of surface-actuated systems. In this work, we relax prior assumptions and present a new quasi-static model with mechanics, controls, state estimation, and kinematic sub-models, or modules, for robotic skins placed around cylindrical structures. The kinematics module is used post-process to analyze the performance of the other three modules. We test the utility of the model on two robotic skin designs and compare the performance against a previous model and physical experiments. We demonstrate that the mechanics, controls, and state estimation modules presented herein outperform the previous model and the mechanics module can be used to predict the behavior of new robotic skin designs. The accuracy of the model increases as the stiffness of the host body material increases. This expanded theory could be utilized to reduce fabrication costs and speed up the design process and could be further extended to include system dynamics and model systems with multiple robotic skins.},
+  archive      = {J_IJRR},
+  author       = {Jennifer C Case and Gabrielle Branin and Ellen Yang and Stephanie J Woodman and James Gibert and Rebecca Kramer-Bottiglio},
+  doi          = {10.1177/02783649241310885},
+  journal      = {The International Journal of Robotics Research},
+  month        = {7},
+  number       = {8},
+  pages        = {1317-1335},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Expanded quasi-static models to predict the performance of robotic skins on soft cylinders},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BoundMPC: Cartesian path following with error bounds based on model predictive control in the joint space. <em>IJRR</em>, <em>44</em>(8), 1287-1316. (<a href='https://doi.org/10.1177/02783649241309354'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work introduces the BoundMPC strategy, an innovative online model-predictive path-following approach for robot manipulators. This joint-space trajectory planner allows the following of Cartesian reference paths in the end-effector’s position and orientation, including via-points, within the desired asymmetric bounds of the orthogonal path error. These bounds encode the obstacle-free space and additional task-specific constraints in Cartesian space. Contrary to traditional path-following concepts, BoundMPC purposefully deviates from the Cartesian reference path in position and orientation to account for the robot’s kinematics, leading to more successful task executions for Cartesian reference paths. Furthermore the simple reference path formulation is computationally efficient and allows for replanning during the robot’s motion. This feature makes it possible to use this planner for dynamically changing environments and varying goals. The flexibility and performance of BoundMPC are experimentally demonstrated by five scenarios on a 7-DoF Kuka LBR iiwa 14 R820 robot. The first scenario shows the transfer of a larger object from a start to a goal pose through a confined space where the object must be tilted. The second scenario deals with grasping an object from a table where the grasping point changes during the robot’s motion, and collisions with other obstacles in the scene must be avoided. The adaptability of BoundMPC is showcased in scenarios such as the opening of a drawer, the transfer of an open container, and the wiping of a table, where it effectively handles task-specific constraints. The last scenario highlights the possibility of accounting for collisions with the entire robot’s kinematic chain. The code is readily available at https://github.com/TU-Wien-ACIN-CDS/BoundMPC , inspiring you to explore its potential and adapt it to your specific robotic tasks.},
+  archive      = {J_IJRR},
+  author       = {Thies Oelerich and Florian Beck and Christian Hartl-Nesic and Andreas Kugi},
+  doi          = {10.1177/02783649241309354},
+  journal      = {The International Journal of Robotics Research},
+  month        = {7},
+  number       = {8},
+  pages        = {1287-1316},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {BoundMPC: Cartesian path following with error bounds based on model predictive control in the joint space},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Asynchronous multi-agent deep reinforcement learning under partial observability. <em>IJRR</em>, <em>44</em>(8), 1257-1286. (<a href='https://doi.org/10.1177/02783649241306124'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The state-of-the-art multi-agent reinforcement learning (MARL) methods provide promising solutions to a variety of complex problems. Yet, these methods all assume that agents perform primitive actions in a synchronized manner, making them impractical for long-horizon real-world multi-robot tasks that inherently require robots to asynchronously reason about action selection at varying time durations. To solve this problem, we first propose a group of value-based cooperative MARL approaches for asynchronous execution using temporally extended macro-actions . Here, agents perform asynchronous learning and decision-making with macro-action-value functions in three paradigms: decentralized learning and control, centralized learning and control, and centralized training for decentralized execution (CTDE). Building on the above work, we formulate a set of macro-action-based policy gradient algorithms under the three training paradigms, where agents directly optimize their parameterized policies in an asynchronous manner. We evaluate our methods both in simulation and on real robots over a variety of realistic domains. Empirical results demonstrate the effectiveness of our algorithms for learning high-quality and asynchronous solutions with macro-actions in large multi-agent problems that were previously unsolvable via primitive-action-based approaches. The proposed approaches represent the first general MARL methods for temporally extended actions and serve as the foundation for future methods in the area.},
+  archive      = {J_IJRR},
+  author       = {Yuchen Xiao and Weihao Tan and Joshua Hoffman and Tian Xia and Christopher Amato},
+  doi          = {10.1177/02783649241306124},
+  journal      = {The International Journal of Robotics Research},
+  month        = {7},
+  number       = {8},
+  pages        = {1257-1286},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Asynchronous multi-agent deep reinforcement learning under partial observability},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Combining the SLAM back and front ends with a joint vector-set distribution. <em>IJRR</em>, <em>44</em>(7), 1231-1254. (<a href='https://doi.org/10.1177/02783649241303770'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The joint optimization of map management and map feature to measurement association, together with the trajectory and map states, within a single, unified, Bayesian, feature-based, simultaneous localization and mapping (SLAM) solution is addressed in this article. Remarkable progress in feature-based SLAM has been made in which, given data association, the SLAM problem can be solved by use of nonlinear least squares solvers, often referred to as the SLAM back-end. These methods rely on external methods to solve both the data association and map management problems, which are collectively incorporated into the SLAM front-end. SLAM convergence failures are common when these front-end routines fail, particularly when feature detection uncertainty increases. Therefore, this article introduces Joint, Vector-Set SLAM (JVS-SLAM), utilizing Bayes theorem to solve feature to measurement association, map management, and SLAM itself jointly, thus combining the SLAM back and front ends. Results will demonstrate equivalent or superior SLAM performance to state-of-the-art solutions, under varying odometry, spatial and detection measurement uncertainties, without reliance on data association decisions. Results are based on both simulations and the challenging EuRoC data set, in which a drone undergoing high accelerations, equipped with a stereo camera, performs SLAM. Since JVS-SLAM jointly provides a solution to the map feature to measurement association problem, its computational complexity is comparable with multi-hypothesis based solutions. Parallels between state-of-the-art map management and feature to measurement association methods and the detection statistics used within JVS-SLAM will be examined, with a view to reducing its complexity in the future.},
+  archive      = {J_IJRR},
+  author       = {Felipe Inostroza and Martin Adams},
+  doi          = {10.1177/02783649241303770},
+  journal      = {The International Journal of Robotics Research},
+  month        = {6},
+  number       = {7},
+  pages        = {1231-1254},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Combining the SLAM back and front ends with a joint vector-set distribution},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-tactile sensor calibration via motion constraints with tactile measurements. <em>IJRR</em>, <em>44</em>(7), 1217-1230. (<a href='https://doi.org/10.1177/02783649241302840'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper addresses a fundamental problem in multi-finger robot dexterous manipulation, Multi-Tactile Sensor Calibration (MTSC). It involves estimating the relative poses between multiple tactile sensors using their intrinsic measurements, crucial for coordinating multiple fingers in a dexterous robotic hand, especially when accurate encoders are unavailable. Unlike conventional multi-sensor calibration methods (like cameras), which rely on overlapping sensing regions and feature point matching, calibrating multiple tactile sensors presents unique challenges because these sensors cannot have overlapping sensing regions, precluding the use of shared key-points visible from different sensors. In this paper, we establish the theoretical basis for the MTSC problem, constructing constraint equations based on motions measured at multiple locations on the same grasped object from different tactile sensors. The key is that all these measurements correspond to a shared rigid body motion. A calibration scheme is proposed accordingly, with theoretical analysis conducted to enhance precision. Results in simulation, with objects of different shapes, confirm the validity of the proposed calibration approach. Furthermore, calibration of the relative pose between two GelSlim vision-based tactile sensors in real experiments demonstrates good agreement with the ground truth. The proposed theory and method not only shed light on explaining the accuracy gap between proprioception and tactile sensing in multi-finger manipulation but also pave the way for tactile-encoder-mixed or encoder-free solutions in dexterous multi-finger coordination.},
+  archive      = {J_IJRR},
+  author       = {Hexi Yu and Jin Liu and Daolin Ma},
+  doi          = {10.1177/02783649241302840},
+  journal      = {The International Journal of Robotics Research},
+  month        = {6},
+  number       = {7},
+  pages        = {1217-1230},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Multi-tactile sensor calibration via motion constraints with tactile measurements},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Shared visuo-tactile interactive perception for robust object pose estimation. <em>IJRR</em>, <em>44</em>(7), 1186-1216. (<a href='https://doi.org/10.1177/02783649241301443'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Shared perception between robotic systems significantly enhances their ability to understand and interact with their environment, leading to improved performance and efficiency in various applications. In this work, we present a novel full-fledged framework for robotic systems to interactively share their visuo-tactile perception for the robust pose estimation of novel objects in dense clutter. This is demonstrated with a two-robot team sharing their visuo-tactile scene representation which then declutters the scene using interactive perception and precisely estimates the 6 Degrees-of-Freedom (DoF) pose and 3 DoF scale of a target unknown object. This is achieved with the Stochastic Translation-Invariant Quaternion Filter (S-TIQF), a novel Bayesian filtering method with robust stochastic optimization for estimating the globally optimal pose of a target object. S-TIQF is also deployed to perform in situ visuo-tactile hand-eye calibration, since shared perception requires accurate extrinsic calibration between the two different sensing modalities, tactile and visual. Finally, we develop a novel active shared visuo-tactile representation and object reconstruction method employing a joint information gain criterion to improve the sample efficiency of the robot actions. To validate the effectiveness of our approach, we perform extensive experiments across standard datasets for pose estimation, as well as real-robot experiments with opaque, transparent and specular objects in randomised clutter settings and comprehensive comparison with other state-of-the-art approaches. Our experiments indicate that our approach outperforms state-of-the-art methods in terms of pose estimation accuracy for dense visual and sparse tactile point clouds.},
+  archive      = {J_IJRR},
+  author       = {Prajval Kumar Murali and Bernd Porr and Mohsen Kaboli},
+  doi          = {10.1177/02783649241301443},
+  journal      = {The International Journal of Robotics Research},
+  month        = {6},
+  number       = {7},
+  pages        = {1186-1216},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Shared visuo-tactile interactive perception for robust object pose estimation},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mixed strategy nash equilibrium for crowd navigation. <em>IJRR</em>, <em>44</em>(7), 1156-1185. (<a href='https://doi.org/10.1177/02783649241302342'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robots navigating in crowded areas should negotiate free space with humans rather than fully controlling collision avoidance, as this can lead to freezing behavior. Game theory provides a framework for the robot to reason about potential cooperation from humans for collision avoidance during path planning. In particular, the mixed strategy Nash equilibrium captures the negotiation behavior under uncertainty, making it well suited for crowd navigation. However, computing the mixed strategy Nash equilibrium is often prohibitively expensive for real-time decision-making. In this paper, we propose an iterative Bayesian update scheme over probability distributions of trajectories. The algorithm simultaneously generates a stochastic plan for the robot and probabilistic predictions of other pedestrians’ paths. We prove that the proposed algorithm is equivalent to solving a mixed strategy game for crowd navigation, and the algorithm guarantees the recovery of the global Nash equilibrium of the game. We name our algorithm Bayesian Recursive Nash Equilibrium (BRNE) and develop a real-time model prediction crowd navigation framework. Since BRNE is not solving a general-purpose mixed strategy Nash equilibrium but a tailored formula specifically for crowd navigation, it can compute the solution in real-time on a low-power embedded computer. We evaluate BRNE in both simulated environments and real-world pedestrian datasets. BRNE consistently outperforms non-learning and learning-based methods regarding safety and navigation efficiency. It also reaches human-level crowd navigation performance in the pedestrian dataset benchmark. Lastly, we demonstrate the practicality of our algorithm with real humans on an untethered quadruped robot with fully onboard perception and computation.},
+  archive      = {J_IJRR},
+  author       = {Max Muchen Sun and Francesca Baldini and Katie Hughes and Peter Trautman and Todd Murphey},
+  doi          = {10.1177/02783649241302342},
+  journal      = {The International Journal of Robotics Research},
+  month        = {6},
+  number       = {7},
+  pages        = {1156-1185},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Mixed strategy nash equilibrium for crowd navigation},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dual-arm shaping of soft objects in 3D based on visual servoing and online FEM simulations. <em>IJRR</em>, <em>44</em>(7), 1138-1155. (<a href='https://doi.org/10.1177/02783649241301076'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this work, we propose a vision-based and finite element method (FEM)-based controller to automate the 3D shaping of soft objects with dual-arm robots. Our controller relies on a data-based approach to learn how the robot’s actions result in object deformations, while also running FEM-based simulations to infer the shape of the whole body. These model-based simulations are used to generate initial shape data, allowing to extract visual features through a principal component analysis and thus estimate the interaction matrix of the object–robot system. In contrast with most existing shape servoing controllers, our new model-based approach continuously predicts the object deformations produced by the robot, which are then compared to the visually observed deformation feedback. This iterative process enables to correct the deformed mesh model before updating the interaction matrix. To validate this new control methodology, we present a detailed experimental study with a dual-arm robot and different soft objects, which showcases the performance of our automatic shaping framework.},
+  archive      = {J_IJRR},
+  author       = {Célia Saghour and David Navarro-Alarcón and Philippe Fraisse and Andrea Cherubini},
+  doi          = {10.1177/02783649241301076},
+  journal      = {The International Journal of Robotics Research},
+  month        = {6},
+  number       = {7},
+  pages        = {1138-1155},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Dual-arm shaping of soft objects in 3D based on visual servoing and online FEM simulations},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Magnetic manipulation of unknown and complex conductive nonmagnetic objects with application in the remediation of space debris. <em>IJRR</em>, <em>44</em>(7), 1117-1137. (<a href='https://doi.org/10.1177/02783649241300167'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article extends recent work in magnetic manipulation of conductive, nonmagnetic objects using rotating magnetic dipole fields. Eddy-current-based manipulation provides a contact-free way to manipulate metallic objects. We are particularly motivated by the large amount of aluminum in space debris. We previously demonstrated dexterous manipulation of solid spheres with all object parameters known a priori. This work expands the previous model, which contained three discrete modes, to a continuous model that covers all possible relative positions of the manipulated spherical object with respect to the magnetic field source. We further leverage this new model to examine manipulation of spherical objects with unknown physical parameters by applying techniques from the online-optimization and adaptive-control literature. Our experimental results validate our new dynamics model, showing that we get improved performance compared to the previously proposed model, while also solving a simpler optimization problem for control. We further demonstrate the first physical magnetic manipulation of aluminum spheres, as previous controllers were only physically validated on copper spheres. We show that our adaptive control framework can quickly acquire useful object parameters when weakly initialized. Finally, we demonstrate that the spherical-object model can be used as an approximate model for adaptive control of nonspherical objects by performing magnetic manipulation of a variety of objects for which a spherical model is not an obvious approximation.},
+  archive      = {J_IJRR},
+  author       = {Griffin F Tabor and Lan N Pham and Jake J Abbott and Tucker Hermans},
+  doi          = {10.1177/02783649241300167},
+  journal      = {The International Journal of Robotics Research},
+  month        = {6},
+  number       = {7},
+  pages        = {1117-1137},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Magnetic manipulation of unknown and complex conductive nonmagnetic objects with application in the remediation of space debris},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FusionPortableV2: A unified multi-sensor dataset for generalized SLAM across diverse platforms and scalable environments. <em>IJRR</em>, <em>44</em>(7), 1093-1116. (<a href='https://doi.org/10.1177/02783649241303525'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Simultaneous Localization and Mapping (SLAM) has been widely applied in various robotic missions, from rescue operations to autonomous driving. However, the generalization of SLAM algorithms remains a significant challenge, as current datasets often lack scalability in terms of platforms and environments. To address this limitation, we present FusionPortableV2, a multi-sensor SLAM dataset featuring sensor diversity, varied motion patterns, and a wide range of environmental scenarios. Our dataset comprises 27 sequences, spanning over 2.5 hours and collected from four distinct platforms: a handheld suite, a legged robot, an unmanned ground vehicle (UGV), and a vehicle. These sequences cover diverse settings, including buildings, campuses, and urban areas, with a total length of 38.7 km. Additionally, the dataset includes ground truth (GT) trajectories and RGB point cloud maps covering approximately 0.3 km 2 . To validate the utility of our dataset in advancing SLAM research, we assess several state-of-the-art (SOTA) SLAM algorithms. Furthermore, we demonstrate the dataset’s broad application beyond traditional SLAM tasks by investigating its potential for monocular depth estimation. The complete dataset, including sensor data, GT, and calibration details, is accessible at https://fusionportable.github.io/dataset/fusionportable_v2 .},
+  archive      = {J_IJRR},
+  author       = {Hexiang Wei and Jianhao Jiao and Xiangcheng Hu and Jingwen Yu and Xupeng Xie and Jin Wu and Yilong Zhu and Yuxuan Liu and Lujia Wang and Ming Liu},
+  doi          = {10.1177/02783649241303525},
+  journal      = {The International Journal of Robotics Research},
+  month        = {6},
+  number       = {7},
+  pages        = {1093-1116},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {FusionPortableV2: A unified multi-sensor dataset for generalized SLAM across diverse platforms and scalable environments},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RflyMAD: A dataset for multicopter fault detection and health assessment. <em>IJRR</em>, <em>44</em>(7), 1081-1092. (<a href='https://doi.org/10.1177/02783649241305153'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents an open-source dataset, RflyMAD, a Multicopter Abnormal Dataset developed by the Reliable Flight Control (Rfly) Group aiming to promote the development of research fields such as Fault Detection and Isolation (FDI) or Health Assessment (HA). The full 114 GB dataset includes 11 types of faults under 6 flight statuses which are adapted from the ADS-33 file to cover more cases where the multicopters have different levels of mobility when faults occur. In the total of 5629 flight cases, the fault time is up to 3283 min, and there are 2566 cases for software-in-the-loop (SIL) simulation, 2566 cases for hardware-in-the-loop (HIL) simulation, and 497 cases for real flight. As it contains simulation data based on RflySim and real flight data, it is possible to improve the quantity while increasing the quality of the data. In each case, there are ULog, Telemetry log, Flight information, and processed files for researchers to use and review. The RflyMAD dataset could be used as a benchmark for fault diagnosis methods and the support relationship between simulation data and real flight is verified by transfer learning methods. In the future, more methods will be presented as a baseline and RflyMAD will be updated with more data and types. In addition, the dataset and associated toolkit are available at https://rfly-openha.github.io/documents/4_resources/dataset.html .},
+  archive      = {J_IJRR},
+  author       = {Xiangli Le and Bo Jin and Gen Cui and Xunhua Dai and Quan Quan},
+  doi          = {10.1177/02783649241305153},
+  journal      = {The International Journal of Robotics Research},
+  month        = {6},
+  number       = {7},
+  pages        = {1081-1092},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {RflyMAD: A dataset for multicopter fault detection and health assessment},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An expert ensemble for detecting anomalous scenes, interactions, and behaviors in autonomous driving. <em>IJRR</em>, <em>44</em>(6), 1055-1077. (<a href='https://doi.org/10.1177/02783649241297998'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As automated vehicles enter public roads, safety in a near-infinite number of driving scenarios becomes one of the major concerns for the widespread adoption of fully autonomous driving. The ability to detect anomalous situations outside of the operational design domain is a key component in self-driving cars, enabling us to mitigate the impact of abnormal ego behaviors and to realize trustworthy driving systems. On-road anomaly detection in egocentric videos remains a challenging problem due to the difficulties introduced by complex and interactive scenarios. We conduct a holistic analysis of common on-road anomaly patterns, from which we propose three unsupervised anomaly detection experts: a scene expert that focuses on frame-level appearances to detect abnormal scenes and unexpected scene motions; an interaction expert that models normal relative motions between two road participants and raises alarms whenever anomalous interactions emerge; and a behavior expert which monitors abnormal behaviors of individual objects by future trajectory prediction. To combine the strengths of all the modules, we propose an expert ensemble (Xen) using a Kalman filter, in which the final anomaly score is absorbed as one of the states and the observations are generated by the experts. Our experiments employ a novel evaluation protocol for realistic model performance, demonstrate superior anomaly detection performance than previous methods, and show that our framework has potential in classifying anomaly types using unsupervised learning on a large-scale on-road anomaly dataset.},
+  archive      = {J_IJRR},
+  author       = {Tianchen Ji and Neeloy Chakraborty and Andre Schreiber and Katherine Driggs-Campbell},
+  doi          = {10.1177/02783649241297998},
+  journal      = {The International Journal of Robotics Research},
+  month        = {5},
+  number       = {6},
+  pages        = {1055-1077},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {An expert ensemble for detecting anomalous scenes, interactions, and behaviors in autonomous driving},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Kinematic issues in 6R cuspidal robots, guidelines for path planning and deciding cuspidality. <em>IJRR</em>, <em>44</em>(6), 1035-1054. (<a href='https://doi.org/10.1177/02783649241293481'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A cuspidal serial robot can change inverse kinematic solutions (IKS) without crossing singularities because it has multiple IKS in a singularity-free region. This property of robots has been researched for over thirty years but has not been taken seriously when designing new robots. The presented work points out issues related to nonsingular change of IKS and path planning specific to the cuspidal robots present in existing commercial robots used in various applications. The multiple IKS at the initial end-effector pose allows the user to choose an initial IKS that may lead to a continuous and repeatable path. We analyze in detail how the initial IKS choice affects the prescribed path’s feasibility and repeatability. Cuspidal robots can be used safely if the workspace is analyzed, considering the cuspidality property. For these reasons, we propose a path testing and planning methodology that considers different path scenarios. Given the rise of unconventional designs in 6R robots, the identification of cuspidal properties in the design phase of a robot is of paramount importance. We recall all the known criteria for cuspidality and propose new methods to decide if a given 6R robot is cuspidal. Accordingly, a practical guideline is proposed for deciding the cuspidality of a generic 6R robot.},
+  archive      = {J_IJRR},
+  author       = {Durgesh Haribhau Salunkhe and Tobias Marauli and Andreas Müller and Damien Chablat and Philippe Wenger},
+  doi          = {10.1177/02783649241293481},
+  journal      = {The International Journal of Robotics Research},
+  month        = {5},
+  number       = {6},
+  pages        = {1035-1054},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Kinematic issues in 6R cuspidal robots, guidelines for path planning and deciding cuspidality},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An actuator space optimal kinematic path tracking framework for tendon-driven continuum robots: Theory, algorithm and validation. <em>IJRR</em>, <em>44</em>(6), 1006-1034. (<a href='https://doi.org/10.1177/02783649241290525'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Path tracking of continuum robots is a fundamental and crucial problem across various applications. In this article, we address this problem by focussing on three aspects. Firstly, we propose an efficient multi-solution inverse kinematics solver for three-section constant curvature robots by bridging the theoretical reduction and the numerical correction. Secondly, we derive a linear tendon-driven actuation model, establishing the connection between the robot configuration space and the actuator space. With this model, we achieve optimal distance planning and optimal time allocation considering the constraints of actuator velocity and acceleration, generating a continuous trajectory directly in the actuator space. Finally, we present our kinematic path tracking framework, which includes offline optimal trajectory planning and online feedforward and feedback control. Experiments are conducted both in simulations and in the real world on our three-section tendon-driven continuum robot. The experiments validate the increased efficiency, higher success rates, and accessibility of multiple solutions offered by our inverse kinematics solver, as well as the optimality in distance planning and time allocation in the actuator space. Performance improvements in tracking accuracy are demonstrated through comparative experiments and the application of our framework in path tracking tasks with obstacles is presented through a case study.},
+  archive      = {J_IJRR},
+  author       = {Ke Qiu and Hongye Zhang and Jingyu Zhang and Rong Xiong and Haojian Lu and Yue Wang},
+  doi          = {10.1177/02783649241290525},
+  journal      = {The International Journal of Robotics Research},
+  month        = {5},
+  number       = {6},
+  pages        = {1006-1034},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {An actuator space optimal kinematic path tracking framework for tendon-driven continuum robots: Theory, algorithm and validation},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Understanding human activity with uncertainty measure for novelty in graph convolutional networks. <em>IJRR</em>, <em>44</em>(6), 989-1005. (<a href='https://doi.org/10.1177/02783649241287800'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Understanding human activity is a crucial aspect of developing intelligent robots, particularly in the domain of human-robot collaboration. Nevertheless, existing systems encounter challenges such as over-segmentation, attributed to errors in the up-sampling process of the decoder. In response, we introduce a promising solution: the Temporal Fusion Graph Convolutional Network. This innovative approach aims to rectify the inadequate boundary estimation of individual actions within an activity stream and mitigate the issue of over-segmentation in the temporal dimension. Moreover, systems leveraging human activity recognition frameworks for decision-making necessitate more than just the identification of actions. They require a confidence value indicative of the certainty regarding the correspondence between observations and training examples. This is crucial to prevent overly confident responses to unforeseen scenarios that were not part of the training data and may have resulted in mismatches due to weak similarity measures within the system. To address this, we propose the incorporation of a Spectral Normalized Residual connection aimed at enhancing efficient estimation of novelty in observations. This innovative approach ensures the preservation of input distance within the feature space by imposing constraints on the maximum gradients of weight updates. By limiting these gradients, we promote a more robust handling of novel situations, thereby mitigating the risks associated with overconfidence. Our methodology involves the use of a Gaussian process to quantify the distance in feature space. The final model is evaluated on two challenging public datasets in the field of human-object interaction recognition, that is, Bimanual Actions and IKEA Assembly datasets, and outperforms popular existing methods in terms of action recognition and segmentation accuracy as well as out-of-distribution detection.},
+  archive      = {J_IJRR},
+  author       = {Hao Xing and Darius Burschka},
+  doi          = {10.1177/02783649241287800},
+  journal      = {The International Journal of Robotics Research},
+  month        = {5},
+  number       = {6},
+  pages        = {989-1005},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Understanding human activity with uncertainty measure for novelty in graph convolutional networks},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Quantifying mobile robot localization safety for an EKF-based SLAM estimator: An integrity monitoring approach. <em>IJRR</em>, <em>44</em>(6), 972-988. (<a href='https://doi.org/10.1177/02783649241287797'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The safety of SLAM-based estimation for mobile robots is a challenging research problem, particularly for life- or mission-critical exploratory applications. To address this problem, this work proposes a method to utilize integrity risk, a widely used performance metric in aviation, to quantify SLAM-based mobile robot’s localization safety. More importantly, the approach accounts for sensor measurement faults, unknown deterministic errors that cannot be modeled via Gaussian white noise. The method is tailored for an EKF-based SLAM estimator, a chi-squared failure detector, and a local nearest neighbors data association criterion. The results show that data association errors can cause significant positioning performance degradation that can only be predicted using the proposed integrity risk metric. Furthermore, the study demonstrates that as the map’s landmark density increases, mobile robot localization safety improves, except when the landmark map’s density is too high to make the features indistinguishable, which leads to positioning safety degradation.},
+  archive      = {J_IJRR},
+  author       = {Osama Abdul Hafez and Mathieu Joerger and Matthew Spenko},
+  doi          = {10.1177/02783649241287797},
+  journal      = {The International Journal of Robotics Research},
+  month        = {5},
+  number       = {6},
+  pages        = {972-988},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Quantifying mobile robot localization safety for an EKF-based SLAM estimator: An integrity monitoring approach},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An estimation method for vision-based autonomous landing system for fixed wing aircraft. <em>IJRR</em>, <em>44</em>(6), 952-971. (<a href='https://doi.org/10.1177/02783649241287229'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we propose a vision-based estimation method for autonomous landing of fixed-wing aircraft for Advanced Air Mobility. The concept of autonomous flight with minimal human intervention has gained significant interest with a particular focus on autonomous landing. The goal is to overcome the limitations of existing instrument landing systems and reduce reliance on GNSS during aircraft landing. The proposed system leverages the following techniques for high-performance and real-time operations in various real-world environments and during all stages of landing. A deep learning segmentation model was directly learned, created, and used for robust runway recognition performance against environmental changes around the runway. Algorithms were designed to adapt to different flight stages considering the varying information offered by image data when the aircraft is in mid-air and on the ground. The relative lateral position from the aircraft to the runway was estimated using bird’s-eye-view conversion and inverse projection techniques instead of conventional perspective-n-point methods for reducing the recognition error occurring from the conversion between 2D image and 3D world. Finally, the mixed-precision technique was used for the segmentation model to improve inference speed and ensure real-time operation in real-world deployment. Estimation stability and reliability were improved by using a Kalman Filter to cope with sensor uncertainties caused by the real-world flight environment. Consequently, we show that the average error in the lateral position estimation by the proposed method is comparable to the accuracy of a single GNSS and demonstrate successful autonomous landing of our test aircraft with a set of flight tests.},
+  archive      = {J_IJRR},
+  author       = {Hyunjee Ryu and Junyoung Lim and Hongju Lee and Gunhee Moon and Kyunam Kim},
+  doi          = {10.1177/02783649241287229},
+  journal      = {The International Journal of Robotics Research},
+  month        = {5},
+  number       = {6},
+  pages        = {952-971},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {An estimation method for vision-based autonomous landing system for fixed wing aircraft},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Nonlinear model predictive dynamic positioning of a remotely operated vehicle with wave disturbance preview. <em>IJRR</em>, <em>44</em>(6), 932-951. (<a href='https://doi.org/10.1177/02783649241286909'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Exploiting preview information of disturbances within robot control is an effective method of handling state perturbations. For underwater vehicles operating in wave-dominated environments, disturbances significantly influence vehicle response and pose a threat to operational safety. In consideration of this, a complete end-to-end control architecture is developed in this work for disturbance rejection during station keeping tasks under wave perturbations, encompassing a nonlinear model predictive controller (NMPC) combined with a deterministic sea wave predictor (DSWP). The wave predictor exploits a continuous measurement of the wave elevation at a location upstream of the vehicle to form a forecast of the temporal evolution of the wave elevation at the vehicle location. The predicted wave parameters are then used to estimate the impending wave-induced hydrodynamic loading, enabling explicit consideration of accurate short-term disturbance forecasts within the controller, ensuring this preview is incorporated in the optimised control sequence. Experimental testing confirms the validity of the wave predictor, producing RMSE as low as 0.017 m. The proposed strategy is then simulated under various wave conditions, optimising control actions inclusive of the preview information. The NMPC outperforms a similar disturbance mitigating feed-forward controller, with average improvements of up to 52% and is found to perform best even with noisy, lower accuracy wave predictions, as well as with communication time delays, providing a high degree of robustness. This demonstrates the potential of the proposed control framework to effectively tackle disturbance mitigation of underwater vehicles subject to large magnitude wave disturbances, expanding the operational envelop of autonomous systems towards forbidding ocean environments.},
+  archive      = {J_IJRR},
+  author       = {Kyle L. Walker and Laura-Beth Jordan and Francesco Giorgio-Serchi},
+  doi          = {10.1177/02783649241286909},
+  journal      = {The International Journal of Robotics Research},
+  month        = {5},
+  number       = {6},
+  pages        = {932-951},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Nonlinear model predictive dynamic positioning of a remotely operated vehicle with wave disturbance preview},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Linear-time quasi-static stability detection for modular self-reconfigurable robots. <em>IJRR</em>, <em>44</em>(6), 908-931. (<a href='https://doi.org/10.1177/02783649241286491'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We address the problem of detecting potential instability in the planned motion of modular self-reconfigurable robots. Previous research primarily focused on determining the system’s unique physical state but overlooked the mutual compensation effects of connection constraints. We introduce a linear-time quasi-static stability detection method for modular self-reconfigurable robots. The internal connections, non-connected contacts, and environmental contacts are considered, and the problem is modeled as a second-order cone program problem, whose solving time linearly increases with the number of modules. We aim to determine the critical stable state of the system and that is achieved by finding the required minimum characteristic connection strength. By analyzing the critical stable state, we can assess the system’s stability and identify potential broken connection points. Furthermore, the internal stability margin is defined to evaluate the configuration’s stability level. The suspension and object manipulation configurations are first demonstrated in simulation to analyze the effectiveness of the proposed algorithm. Subsequently, a series of physical experiments based on FreeSN were carried out. The calculated stable motion ranges of manipulator configurations are highly consistent with the actual sampling boundaries. Moreover, the proposed algorithm successfully predicts stability and identifies broken connections in diverse configurations, encompassing quadruped and closed-chain configurations on both even and uneven terrains. The load experiment further demonstrates that the impacts from unmodeled factors and input errors under normal conditions can be on a small scale. By combining the proposed detection method and stability margin, we open the door to realizing real-time motion planning on modular self-reconfigurable robots.},
+  archive      = {J_IJRR},
+  author       = {Di Wu and Guanqi Liang and Yuxiao Tu and Lijun Zong and Tin Lun Lam},
+  doi          = {10.1177/02783649241286491},
+  journal      = {The International Journal of Robotics Research},
+  month        = {5},
+  number       = {6},
+  pages        = {908-931},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Linear-time quasi-static stability detection for modular self-reconfigurable robots},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BiCap: A novel bi-modal dataset of daily living dual-arm manipulation actions. <em>IJRR</em>, <em>44</em>(6), 891-907. (<a href='https://doi.org/10.1177/02783649241290836'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dual-arm manipulation of daily living objects is essential for robots operating in household environments. Learning from demonstration is a promising approach for teaching robots dual-arm manipulation skills. It usually requires a dataset of participants demonstrating the sequence of manipulation actions to achieve a goal. That sequence can be represented using symbolical or trajectory encoding. The symbolic-encoded sequence is known as the task plan. The chief limitations of current datasets are that most tend to disregard dual-arm manipulation skills and omit the formal grammar used to annotate the task plans. This paper introduces BiCap, a novel bi-modal dataset of dual-arm manipulation actions on daily living objects coupled with a bio-inspired action context-free grammar for fine-grained task plan annotation to train, test, and validate learning from demonstration-based algorithms for robotic dual-arm manipulation. 15 participants were recruited. The experimenter placed reflective markers on their upper limbs and pelvis. Then, the participants sat at a table where one or two objects were placed. They performed one of the following tasks: pouring, opening, and passing, using both hands. An RGB camera pointing towards the table recorded the participants’ hand movements. Subsequently, an annotator reviewed the RGB videos and wrote the participants’ task plans using the bio-inspired action context-free grammar. The participants’ upper-limb kinematics were computed, too, which provides the trajectory-encoded action sequences. The resulting dataset, BiCap, contains 4,026 task plans, videos, and motion data of the 15 participants.},
+  archive      = {J_IJRR},
+  author       = {David Carmona and Haoyong Yu},
+  doi          = {10.1177/02783649241290836},
+  journal      = {The International Journal of Robotics Research},
+  month        = {5},
+  number       = {6},
+  pages        = {891-907},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {BiCap: A novel bi-modal dataset of daily living dual-arm manipulation actions},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reinforcement learning for versatile, dynamic, and robust bipedal locomotion control. <em>IJRR</em>, <em>44</em>(5), 840-888. (<a href='https://doi.org/10.1177/02783649241285161'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a comprehensive study on using deep reinforcement learning (RL) to create dynamic locomotion controllers for bipedal robots. Going beyond focusing on a single locomotion skill, we develop a general control solution that can be used for a range of dynamic bipedal skills, from periodic walking and running to aperiodic jumping and standing. Our RL-based controller incorporates a novel dual-history architecture, utilizing both a long-term and short-term input/output (I/O) history of the robot. This control architecture, when trained through the proposed end-to-end RL approach, consistently outperforms other methods across a diverse range of skills in both simulation and the real world. The study also delves into the adaptivity and robustness introduced by the proposed RL system in developing locomotion controllers. We demonstrate that the proposed architecture can adapt to both time-invariant dynamics shifts and time-variant changes, such as contact events, by effectively using the robot’s I/O history. Additionally, we identify task randomization as another key source of robustness, fostering better task generalization and compliance to disturbances. The resulting control policies can be successfully deployed on Cassie, a torque-controlled human-sized bipedal robot. This work pushes the limits of agility for bipedal robots through extensive real-world experiments. We demonstrate a diverse range of locomotion skills, including: robust standing, versatile walking, fast running with a demonstration of a 400-meter dash, and a diverse set of jumping skills, such as standing long jumps and high jumps.},
+  archive      = {J_IJRR},
+  author       = {Zhongyu Li and Xue Bin Peng and Pieter Abbeel and Sergey Levine and Glen Berseth and Koushil Sreenath},
+  doi          = {10.1177/02783649241285161},
+  journal      = {The International Journal of Robotics Research},
+  month        = {4},
+  number       = {5},
+  pages        = {840-888},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Reinforcement learning for versatile, dynamic, and robust bipedal locomotion control},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Model-predictive optimal control of ferrofluidic microrobots in three-dimensional space. <em>IJRR</em>, <em>44</em>(5), 826-839. (<a href='https://doi.org/10.1177/02783649241285051'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ferrofluid microrobots have emerged as promising tools for minimally invasive medical procedures. Their unique properties to navigate complex fluids and reach otherwise inaccessible regions of the human body have enabled new applications in targeted drug delivery, tissue engineering, and diagnostics. This paper proposes a model-predictive controller for the external magnetic manipulation of ferrofluid microrobots in three dimensions (3D). The internal optimization routine of the controller determines appropriate changes in the applied electromagnetic field to minimize the deviation between the actual and desired trajectories of the microrobot. A linear system governing locomotion is derived and used as the equality constraints of the optimization problems associated with the feedback index. In addition to ferrofluid droplets, the controller presented in this work may be applied to other magnetically-pulled microrobots. Several experiments are performed to validate the controller and showcase its ability to adapt to changes in system parameters such as the desired tracking trajectory and the size, orientation, deformation, and velocity of the microrobot. The accuracy of the controller is analyzed for each experiment, and the average error is found to be within 0.25 mm for small velocities. An additional experiment is performed to demonstrate significant improvement over a PID controller that is optimally tuned using Bayesian optimization. The results presented in this paper suggest that the proposed control algorithm could enable new microrobotic capabilities in minimally invasive medical procedures, lab-on-a-chip applications, and microfluidics.},
+  archive      = {J_IJRR},
+  author       = {E Olga Skowronek and Luke S Baker and Reza Ahmed and Hamid Marvi},
+  doi          = {10.1177/02783649241285051},
+  journal      = {The International Journal of Robotics Research},
+  month        = {4},
+  number       = {5},
+  pages        = {826-839},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Model-predictive optimal control of ferrofluidic microrobots in three-dimensional space},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning to control and coordinate mixed traffic through robot vehicles at complex and unsignalized intersections. <em>IJRR</em>, <em>44</em>(5), 805-825. (<a href='https://doi.org/10.1177/02783649241284069'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Intersections are essential road infrastructures for traffic in modern metropolises. However, they can also be the bottleneck of traffic flows as a result of traffic incidents or the absence of traffic coordination mechanisms such as traffic lights. Recently, various control and coordination mechanisms that are beyond traditional control methods have been proposed to improve the efficiency of intersection traffic by leveraging the ability of autonomous vehicles. Among these methods, the control of foreseeable mixed traffic that consists of human-driven vehicles (HVs) and robot vehicles (RVs) has emerged. We propose a decentralized multi-agent reinforcement learning approach for the control and coordination of mixed traffic by RVs at real-world, complex intersections—an open challenge to date. We design comprehensive experiments to evaluate the effectiveness, robustness, generalizablility, and adaptability of our approach. In particular, our method can prevent congestion formation via merely 5% RVs under a real-world traffic demand of 700 vehicles per hour. In contrast, without RVs, congestion will form when the traffic demand reaches as low as 200 vehicles per hour. Moreover, when the RV penetration rate exceeds 60%, our method starts to outperform traffic signal control in terms of the average waiting time of all vehicles. Our method is not only robust against blackout events, sudden RV percentage drops, and V2V communication error, but also enjoys excellent generalizablility, evidenced by its successful deployment in five unseen intersections. Lastly, our method performs well under various traffic rules, demonstrating its adaptability to diverse scenarios. Videos and code of our work are available at https://sites.google.com/view/mixedtrafficcontrol .},
+  archive      = {J_IJRR},
+  author       = {Dawei Wang and Weizi Li and Lei Zhu and Jia Pan},
+  doi          = {10.1177/02783649241284069},
+  journal      = {The International Journal of Robotics Research},
+  month        = {4},
+  number       = {5},
+  pages        = {805-825},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Learning to control and coordinate mixed traffic through robot vehicles at complex and unsignalized intersections},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A neuromorphic approach to obstacle avoidance in robot manipulation. <em>IJRR</em>, <em>44</em>(5), 768-804. (<a href='https://doi.org/10.1177/02783649241284058'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neuromorphic computing mimics computational principles of the brain in silico and motivates research into event-based vision and spiking neural networks (SNNs). Event cameras (ECs) exclusively capture local intensity changes and offer superior power consumption, response latencies, and dynamic ranges. SNNs replicate biological neuronal dynamics and have demonstrated potential as alternatives to conventional artificial neural networks (ANNs), such as in reducing energy expenditure and inference time in visual classification. Nevertheless, these novel paradigms remain scarcely explored outside the domain of aerial robots. To investigate the utility of brain-inspired sensing and data processing, we developed a neuromorphic approach to obstacle avoidance on a camera-equipped manipulator. Our approach adapts high-level trajectory plans with reactive maneuvers by processing emulated event data in a convolutional SNN, decoding neural activations into avoidance motions, and adjusting plans using a dynamic motion primitive. We conducted experiments with a Kinova Gen3 arm performing simple reaching tasks that involve obstacles in sets of distinct task scenarios and in comparison to a non-adaptive baseline. Our neuromorphic approach facilitated reliable avoidance of imminent collisions in simulated and real-world experiments, where the baseline consistently failed. Trajectory adaptations had low impacts on safety and predictability criteria. Among the notable SNN properties were the correlation of computations with the magnitude of perceived motions and a robustness to different event emulation methods. Tests with a DAVIS346 EC showed similar performance, validating our experimental event emulation. Our results motivate incorporating SNN learning, utilizing neuromorphic processors, and further exploring the potential of neuromorphic methods.},
+  archive      = {J_IJRR},
+  author       = {Ahmed Abdelrahman and Matias Valdenegro-Toro and Maren Bennewitz and Paul G Plöger},
+  doi          = {10.1177/02783649241284058},
+  journal      = {The International Journal of Robotics Research},
+  month        = {4},
+  number       = {5},
+  pages        = {768-804},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {A neuromorphic approach to obstacle avoidance in robot manipulation},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Decoding modular reconfigurable robots: A survey on mechanisms and design. <em>IJRR</em>, <em>44</em>(5), 740-767. (<a href='https://doi.org/10.1177/02783649241283847'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The intrinsic modularity and reconfigurability of modular reconfigurable robot (MRR) systems confer advantages such as versatility, fault tolerance, and economic efficacy, thereby showcasing considerable potential across diverse applications. The continuous evolution of the technology landscape and the emergence of diverse conceptual designs have generated multiple MRR categories, each described by its respective morphology or capability characteristics, leading to some ambiguity in the taxonomy. This paper conducts a comprehensive survey covering a wide range of mechanism and design aspects of MRR systems, spanning from 1985 to 2023. It introduces an innovative, unified conceptual framework for understanding MRR hardware, which encompasses three pivotal elements: connectors, actuators, and homogeneity. Through the utilization of this trilateral framework, this paper systematically interprets and classifies MRR systems over the years, aiming to provide a structured taxonomy perspective and enhance understanding of MRR. It explains the fundamental attributes characterizing MRR systems and their compositional aspects, providing insights into their design, technology, functionality, and categorization. Augmented by the proposed trilateral framework, this paper also elaborates on the trajectory of evolution, prevailing trends, principal challenges, and potential prospects within the field of MRR.},
+  archive      = {J_IJRR},
+  author       = {Guanqi Liang and Di Wu and Yuxiao Tu and Tin Lun Lam},
+  doi          = {10.1177/02783649241283847},
+  journal      = {The International Journal of Robotics Research},
+  month        = {4},
+  number       = {5},
+  pages        = {740-767},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Decoding modular reconfigurable robots: A survey on mechanisms and design},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Foundation models in robotics: Applications, challenges, and the future. <em>IJRR</em>, <em>44</em>(5), 701-739. (<a href='https://doi.org/10.1177/02783649241281508'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We survey applications of pretrained foundation models in robotics. Traditional deep learning models in robotics are trained on small datasets tailored for specific tasks, which limits their adaptability across diverse applications. In contrast, foundation models pretrained on internet-scale data appear to have superior generalization capabilities, and in some instances display an emergent ability to find zero-shot solutions to problems that are not present in the training data. Foundation models may hold the potential to enhance various components of the robot autonomy stack, from perception to decision-making and control. For example, large language models can generate code or provide common sense reasoning, while vision-language models enable open-vocabulary visual recognition. However, significant open research challenges remain, particularly around the scarcity of robot-relevant training data, safety guarantees and uncertainty quantification, and real-time execution. In this survey, we study recent papers that have used or built foundation models to solve robotics problems. We explore how foundation models contribute to improving robot capabilities in the domains of perception, decision-making, and control. We discuss the challenges hindering the adoption of foundation models in robot autonomy and provide opportunities and potential pathways for future advancements. The GitHub project corresponding to this paper can be found here: https://github.com/robotics-survey/Awesome-Robotics-Foundation-Models .},
+  archive      = {J_IJRR},
+  author       = {Roya Firoozi and Johnathan Tucker and Stephen Tian and Anirudha Majumdar and Jiankai Sun and Weiyu Liu and Yuke Zhu and Shuran Song and Ashish Kapoor and Karol Hausman and Brian Ichter and Danny Driess and Jiajun Wu and Cewu Lu and Mac Schwager},
+  doi          = {10.1177/02783649241281508},
+  journal      = {The International Journal of Robotics Research},
+  month        = {4},
+  number       = {5},
+  pages        = {701-739},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Foundation models in robotics: Applications, challenges, and the future},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A survey of communicating robot learning during human-robot interaction. <em>IJRR</em>, <em>44</em>(4), 665-698. (<a href='https://doi.org/10.1177/02783649241281369'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {For robots to seamlessly interact with humans, we first need to make sure that humans and robots understand one another. Diverse algorithms have been developed to enable robots to learn from humans (i.e., transferring information from humans to robots). In parallel, visual, haptic, and auditory communication interfaces have been designed to convey the robot’s internal state to the human (i.e., transferring information from robots to humans). Prior research often separates these two directions of information transfer, and focuses primarily on either learning algorithms or communication interfaces. By contrast, in this survey we take an interdisciplinary approach to identify common themes and emerging trends that close the loop between learning and communication. Specifically, we survey state-of-the-art methods and outcomes for communicating a robot’s learning back to the human teacher during human-robot interaction. This discussion connects human-in-the-loop learning methods and explainable robot learning with multimodal feedback systems and measures of human-robot interaction. We find that—when learning and communication are developed together—the resulting closed-loop system can lead to improved human teaching, increased human trust, and human-robot co-adaptation. The paper includes a perspective on several of the interdisciplinary research themes and open questions that could advance how future robots communicate their learning to everyday operators. Finally, we implement a selection of the reviewed methods in a case study where participants kinesthetically teach a robot arm. This case study documents and tests an integrated approach for learning in ways that can be communicated, conveying this learning across multimodal interfaces, and measuring the resulting changes in human and robot behavior.},
+  archive      = {J_IJRR},
+  author       = {Soheil Habibian and Antonio Alvarez Valdivia and Laura H. Blumenschein and Dylan P. Losey},
+  doi          = {10.1177/02783649241281369},
+  journal      = {The International Journal of Robotics Research},
+  month        = {4},
+  number       = {4},
+  pages        = {665-698},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {A survey of communicating robot learning during human-robot interaction},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Real-time reactive task allocation and planning of large heterogeneous multi-robot systems with temporal logic specifications. <em>IJRR</em>, <em>44</em>(4), 640-664. (<a href='https://doi.org/10.1177/02783649241278372'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing methods for the task allocation and planning (TAP) of multi-robot systems with temporal logic specifications mainly rely on optimization-based approaches or graph search techniques applied to the product automaton. However, these methods suffer from high computational cost and scale poorly with the number of robots and the complexity of temporal logic tasks, thus limiting the applicability in real-time implementation, especially for large multi-robot systems. To address these challenges, this work develops a novel TAP framework that can solve reactive temporal logic planning problems for large-scale heterogeneous multi-robot systems (HMRS) in real time. Specifically, we develop a planning decision tree (PDT) to represent the task progression and task allocation specialized for HMRS with temporal logic specifications. Based on the PDT, we develop two key search algorithms—the planning decision tree search (PDTS) and the interactive planning decision tree search (IPDTS)—where PDTS generates an offline plan which will be modified online by PDTS and IPDTS jointly to enable fast reactive planning if environmental changes or temporary tasks occur. Such a design can generate satisfying plan for HMRS with multiple orders of magnitude more robots than those that existing methods can manipulate. Rigorous analysis shows that the PDT-based planning is feasible (i.e., the generated plan is applicable) and complete (i.e., a feasible plan, if exits, is guaranteed to be found). The algorithm complexity further indicates that the solution time is only linearly proportional to the robot numbers and types. Simulation and experiment results demonstrate that reactive plan can be generated for large HMRS in real-time, which outperforms the state-of-the-art methods.},
+  archive      = {J_IJRR},
+  author       = {Ziyang Chen and Zhen Kan},
+  doi          = {10.1177/02783649241278372},
+  journal      = {The International Journal of Robotics Research},
+  month        = {4},
+  number       = {4},
+  pages        = {640-664},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Real-time reactive task allocation and planning of large heterogeneous multi-robot systems with temporal logic specifications},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Generalizable whole-body global manipulation of deformable linear objects by dual-arm robot in 3-D constrained environments. <em>IJRR</em>, <em>44</em>(4), 607-639. (<a href='https://doi.org/10.1177/02783649241276886'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Constrained environments, compared with open spaces without other objects, are more common in practical applications of manipulating deformable linear objects (DLOs) by robots, where movements of both DLOs and robot manipulators should be constrained and unintended collision should be avoided. Such a task is high-dimensional and highly constrained owing to the highly deformable DLOs, dual-arm robots with high degrees of freedom, and 3-D complex environments, which render global planning extremely challenging. Furthermore, accurate DLO models needed by planning are often unavailable owing to their strong nonlinearity and diversity, resulting in unreliable planned paths. This article focuses on the global moving and shaping of DLOs in constrained environments by dual-arm robots. The main objectives are (1) to efficiently and accurately accomplish this task and (2) to achieve generalizable and robust manipulation of various DLOs. To this end, we propose a complementary framework with whole-body planning and control using appropriate DLO model representations. First, a global planner is proposed to efficiently find feasible solutions based on a simplified DLO energy model, which considers the full system states and all constraints to plan more reliable paths. Then, a closed-loop manipulation scheme is proposed to compensate for the modeling errors and enhance the robustness and accuracy, which incorporates a constrained model predictive controller to track the planned path as guidance while real-time adjusting the robot motion based on an adaptive DLO motion model. This framework systematically considers multiple constraints for this problem, including stable deformation, overstretch prevention, closed-chain movements, and collision avoidance. The key novelty is that it can efficiently solve the high-dimensional problem subject to all those constraints and generalize to various DLOs without elaborate model identifications. Experiments demonstrate that our framework can accomplish considerably more complicated tasks than existing works. It achieves a 100% planning success rate among thousands of trials with an average time cost of less than 15 seconds, and a 100% manipulation success rate among 135 real-world tests on five different DLOs.},
+  archive      = {J_IJRR},
+  author       = {Mingrui Yu and Kangchen Lv and Changhao Wang and Yongpeng Jiang and Masayoshi Tomizuka and Xiang Li},
+  doi          = {10.1177/02783649241276886},
+  journal      = {The International Journal of Robotics Research},
+  month        = {4},
+  number       = {4},
+  pages        = {607-639},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Generalizable whole-body global manipulation of deformable linear objects by dual-arm robot in 3-D constrained environments},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FMB: A functional manipulation benchmark for generalizable robotic learning. <em>IJRR</em>, <em>44</em>(4), 592-606. (<a href='https://doi.org/10.1177/02783649241276017'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we propose a real-world benchmark for studying robotic learning in the context of functional manipulation: a robot needs to accomplish complex long-horizon behaviors by composing individual manipulation skills in functionally relevant ways. The core design principles of our Functional Manipulation Benchmark (FMB) emphasize a harmonious balance between complexity and accessibility. Tasks are deliberately scoped to be narrow, ensuring that models and datasets of manageable scale can be utilized effectively to track progress. Simultaneously, they are diverse enough to pose a significant generalization challenge. Furthermore, the benchmark is designed to be easily replicable, encompassing all essential hardware and software components. To achieve this goal, FMB consists of a variety of 3D-printed objects designed for easy and accurate replication by other researchers. The objects are procedurally generated, providing a principled framework to study generalization in a controlled fashion. We focus on fundamental manipulation skills, including grasping, repositioning, and a range of assembly behaviors. The FMB can be used to evaluate methods for acquiring individual skills, as well as methods for effectively combining and ordering such skills in order to solve complex, multi-stage manipulation tasks. We also offer an imitation learning framework that includes a suite of policies trained to solve the proposed tasks. This enables researchers to utilize our tasks as a versatile toolkit for examining various parts of the pipeline. For example, researchers could propose a better design for a grasping controller and evaluate it in combination with our baseline reorientation and assembly policies as part of a pipeline for solving multi-stage tasks. Our dataset, object CAD files, code, and evaluation videos can be found on our project website: https://functional-manipulation-benchmark.github.io .},
+  archive      = {J_IJRR},
+  author       = {Jianlan Luo and Charles Xu and Fangchen Liu and Liam Tan and Zipeng Lin and Jeffrey Wu and Pieter Abbeel and Sergey Levine},
+  doi          = {10.1177/02783649241276017},
+  journal      = {The International Journal of Robotics Research},
+  month        = {4},
+  number       = {4},
+  pages        = {592-606},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {FMB: A functional manipulation benchmark for generalizable robotic learning},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). THÖR-MAGNI: A large-scale indoor motion capture recording of human movement and robot interaction. <em>IJRR</em>, <em>44</em>(4), 568-591. (<a href='https://doi.org/10.1177/02783649241274794'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a new large dataset of indoor human and robot navigation and interaction, called THÖR-MAGNI, that is designed to facilitate research on social human navigation: for example, modeling and predicting human motion, analyzing goal-oriented interactions between humans and robots, and investigating visual attention in a social interaction context. THÖR-MAGNI was created to fill a gap in available datasets for human motion analysis and HRI. This gap is characterized by a lack of comprehensive inclusion of exogenous factors and essential target agent cues, which hinders the development of robust models capable of capturing the relationship between contextual cues and human behavior in different scenarios. Unlike existing datasets, THÖR-MAGNI includes a broader set of contextual features and offers multiple scenario variations to facilitate factor isolation. The dataset includes many social human–human and human–robot interaction scenarios, rich context annotations, and multi-modal data, such as walking trajectories, gaze-tracking data, and lidar and camera streams recorded from a mobile robot. We also provide a set of tools for visualization and processing of the recorded data. THÖR-MAGNI is, to the best of our knowledge, unique in the amount and diversity of sensor data collected in a contextualized and socially dynamic environment, capturing natural human–robot interactions.},
+  archive      = {J_IJRR},
+  author       = {Tim Schreiter and Tiago Rodrigues de Almeida and Yufei Zhu and Eduardo Gutierrez Maestro and Lucas Morillo-Mendez and Andrey Rudenko and Luigi Palmieri and Tomasz P Kucner and Martin Magnusson and Achim J Lilienthal},
+  doi          = {10.1177/02783649241274794},
+  journal      = {The International Journal of Robotics Research},
+  month        = {4},
+  number       = {4},
+  pages        = {568-591},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {THÖR-MAGNI: A large-scale indoor motion capture recording of human movement and robot interaction},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A new design and analysis of low-profile soft rotary pneumatic actuator for enhanced rotation and torque. <em>IJRR</em>, <em>44</em>(4), 550-567. (<a href='https://doi.org/10.1177/02783649241273662'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Soft actuators producing bending motions have gained significant attention for their advantages in mimicking the properties and movements of human muscles. However, the research on soft rotary actuators has yet to keep pace with other soft actuators. This paper makes two key contributions to the design and modeling of these actuators. First, we introduce a novel design for a soft rotary pneumatic actuator. This design outperforms existing cylindrical shaped soft actuators, especially in terms of torque. Second, we present an analytical model based on finite deformation. This model accurately describes the relationship between rotational movement and corresponding torque. The accuracy of this model is validated through Finite Element Method (FEM) simulations and corresponding tests. By providing a mechanically efficient design and a highly accurate analytical model, this work offers a comprehensive solution for the development of new soft pneumatic actuators.},
+  archive      = {J_IJRR},
+  author       = {Young Min Lee and Hyungpil Moon and Hyouk Ryeol Choi and Ja Choon Koo},
+  doi          = {10.1177/02783649241273662},
+  journal      = {The International Journal of Robotics Research},
+  month        = {4},
+  number       = {4},
+  pages        = {550-567},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {A new design and analysis of low-profile soft rotary pneumatic actuator for enhanced rotation and torque},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). WildScenes: A benchmark for 2D and 3D semantic segmentation in large-scale natural environments. <em>IJRR</em>, <em>44</em>(4), 532-549. (<a href='https://doi.org/10.1177/02783649241278369'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent progress in semantic scene understanding has primarily been enabled by the availability of semantically annotated bi-modal (camera and LiDAR) datasets in urban environments. However, such annotated datasets are also needed for natural, unstructured environments to enable semantic perception for applications, including conservation, search and rescue, environment monitoring, and agricultural automation. Therefore, we introduce WildScenes , a bi-modal benchmark dataset consisting of multiple large-scale, sequential traversals in natural environments, including semantic annotations in high-resolution 2D images and dense 3D LiDAR point clouds, and accurate 6-DoF pose information. The data is (1) trajectory-centric with accurate localization and globally aligned point clouds, (2) calibrated and synchronized to support bi-modal training and inference, and (3) containing different natural environments over 6 months to support research on domain adaptation. Our 3D semantic labels are obtained via an efficient, automated process that transfers the human-annotated 2D labels from multiple views into 3D point cloud sequences, thus circumventing the need for expensive and time-consuming human annotation in 3D. We introduce benchmarks on 2D and 3D semantic segmentation and evaluate a variety of recent deep-learning techniques to demonstrate the challenges in semantic segmentation in natural environments. We propose train-val-test splits for standard benchmarks as well as domain adaptation benchmarks and utilize an automated split generation technique to ensure the balance of class label distributions. The WildScenes benchmark webpage is https://csiro-robotics.github.io/WildScenes , and the data is publicly available at https://data.csiro.au/collection/csiro:61541 .},
+  archive      = {J_IJRR},
+  author       = {Kavisha Vidanapathirana and Joshua Knights and Stephen Hausler and Mark Cox and Milad Ramezani and Jason Jooste and Ethan Griffiths and Shaheer Mohamed and Sridha Sridharan and Clinton Fookes and Peyman Moghadam},
+  doi          = {10.1177/02783649241278369},
+  journal      = {The International Journal of Robotics Research},
+  month        = {4},
+  number       = {4},
+  pages        = {532-549},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {WildScenes: A benchmark for 2D and 3D semantic segmentation in large-scale natural environments},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Advancing robots with greater dynamic dexterity: A large-scale multi-view and multi-modal dataset of human-human throw&catch of arbitrary objects. <em>IJRR</em>, <em>44</em>(4), 513-531. (<a href='https://doi.org/10.1177/02783649241275674'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Learning and imitating behavioral intelligence from human demonstrations is a promising approach towards the intuitive programming of robots for enhanced dynamic dexterity. However, there has been no publicly available dataset in this domain. To address this gap, we introduce the first large-scale dataset and recording framework specifically designed for studying human collaborative dynamic dexterity in throw&catch tasks. The dataset, named H 2 TC, contains 15,000 multi-view and multi-modal synchronized recordings of diverse Human-Human Throw-and-Catch activities. It involves 34 human subjects with typical motor abilities and a variety of 52 objects frequently manipulated through throw&catch in domestic and/or industrial scenarios. The dataset is supplemented with a hierarchy of manually annotated semantic and dense labels, such as the ground truth human body, hand and object motions captured with specialized high-precision motion tracking systems. These rich annotations make the dataset well-suited for a wide range of robot studies, including both low-level motor skill learning and high-level cognitive planning and recognition. We envision that the proposed dataset and recording framework will facilitate learning pipelines to extract insights on how humans coordinate both intra- and interpersonally to throw and catch objects, ultimately leading to the development of more capable and collaborative robots. The dataset, along with a suite of utility tools, such as those for visualization and annotation, can be accessed from our project page at https://h2tc-roboticsx.github.io/ .},
+  archive      = {J_IJRR},
+  author       = {Lipeng Chen and Jianing Qiu and Lin Li and Xi Luo and Guoyi Chi and Yu Zheng},
+  doi          = {10.1177/02783649241275674},
+  journal      = {The International Journal of Robotics Research},
+  month        = {4},
+  number       = {4},
+  pages        = {513-531},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Advancing robots with greater dynamic dexterity: A large-scale multi-view and multi-modal dataset of human-human throw&catch of arbitrary objects},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Contact-implicit model predictive control: Controlling diverse quadruped motions without pre-planned contact modes or trajectories. <em>IJRR</em>, <em>44</em>(3), 486-510. (<a href='https://doi.org/10.1177/02783649241273645'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a contact-implicit model predictive control (MPC) framework for the real-time discovery of multi-contact motions, without predefined contact mode sequences or foothold positions. This approach utilizes the contact-implicit differential dynamic programming (DDP) framework, merging the hard contact model with a linear complementarity constraint. We propose the analytical gradient of the contact impulse based on relaxed complementarity constraints to further the exploration of a variety of contact modes. By leveraging a hard contact model-based simulation and computation of search direction through a smooth gradient, our methodology identifies dynamically feasible state trajectories, control inputs, and contact forces while simultaneously unveiling new contact mode sequences. However, the broadened scope of contact modes does not always ensure real-world applicability. Recognizing this, we implemented differentiable cost terms to guide foot trajectories and make gait patterns. Furthermore, to address the challenge of unstable initial roll-outs in an MPC setting, we employ the multiple shooting variant of DDP. The efficacy of the proposed framework is validated through simulations and real-world demonstrations using a 45 kg HOUND quadruped robot, performing various tasks in simulation and showcasing actual experiments involving a forward trot and a front-leg rearing motion.},
+  archive      = {J_IJRR},
+  author       = {Gijeong Kim and Dongyun Kang and Joon-Ha Kim and Seungwoo Hong and Hae-Won Park},
+  doi          = {10.1177/02783649241273645},
+  journal      = {The International Journal of Robotics Research},
+  month        = {3},
+  number       = {3},
+  pages        = {486-510},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Contact-implicit model predictive control: Controlling diverse quadruped motions without pre-planned contact modes or trajectories},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Transfer learning in robotics: An upcoming breakthrough? a review of promises and challenges. <em>IJRR</em>, <em>44</em>(3), 465-485. (<a href='https://doi.org/10.1177/02783649241273565'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Transfer learning is a conceptually-enticing paradigm in pursuit of truly intelligent embodied agents. The core concept—reusing prior knowledge to learn in and from novel situations—is successfully leveraged by humans to handle novel situations. In recent years, transfer learning has received renewed interest from the community from different perspectives, including imitation learning, domain adaptation, and transfer of experience from simulation to the real world, among others. In this paper, we unify the concept of transfer learning in robotics and provide the first taxonomy of its kind considering the key concepts of robot, task, and environment. Through a review of the promises and challenges in the field, we identify the need of transferring at different abstraction levels, the need of quantifying the transfer gap and the quality of transfer, as well as the dangers of negative transfer. Via this position paper, we hope to channel the effort of the community towards the most significant roadblocks to realize the full potential of transfer learning in robotics.},
+  archive      = {J_IJRR},
+  author       = {Noémie Jaquier and Michael C Welle and Andrej Gams and Kunpeng Yao and Bernardo Fichera and Aude Billard and Aleš Ude and Tamim Asfour and Danica Kragic},
+  doi          = {10.1177/02783649241273565},
+  journal      = {The International Journal of Robotics Research},
+  month        = {3},
+  number       = {3},
+  pages        = {465-485},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Transfer learning in robotics: An upcoming breakthrough? a review of promises and challenges},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A morphology-centered view towards describing bats dynamically versatile wing conformations. <em>IJRR</em>, <em>44</em>(3), 431-464. (<a href='https://doi.org/10.1177_02783649241272132'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Bats exhibit a remarkable ability to create periodic air jets, manifested as pulsating wake structures downstream of their flight path, as they navigate through their fluidic environment. This distinctive skill, driven by their fine-grained and dynamic wing motions, is integral to bats’ unparalleled agility and flight efficiency. We refer to flight led by these dynamic wing adjustments as “ dynamic morphing wing flight.” The robotic emulation of bats’ adept manipulation of their fluidic surroundings offers fresh perspectives for aerial robotics. Nevertheless, the design of micro aerial vehicles (MAVs) following the bat’s style presents significant challenges, including constraints related to payload, actuation, and computation. While contemporary MAVs primarily consider body structures as mere hosts for components, our work explores a morphology-centric MAV design that aims to incorporate closed-loop motion control within the structural design itself, termed “computational structures.” To fulfill this objective, we have developed Aerobat, an MAV equipped with dynamic morphing wings, onboard electronics, including actuators, an inertial measurement unit, an onboard camera, and a powerful computer. In the design of Aerobat, we meticulously addressed two specific needs: (1) the generation of gaits using a limited number of high-power actuators, and (2) the regulation of gaits employing an arbitrary number of low-power actuators. Our contributions in this work encompass (1) the introduction of a morphology optimization-based design framework, (2) the demonstration of stable, untethered dynamic morphing flights, and (3) achieving an aerodynamic force enhancement mechanism through wing surface maximization and wing rise-up time minimization.},
+  archive      = {J_IJRR},
+  author       = {Eric Sihite and Alireza Ramezani},
+  doi          = {10.1177_02783649241272132},
+  journal      = {The International Journal of Robotics Research},
+  month        = {3},
+  number       = {3},
+  pages        = {431-464},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {A morphology-centered view towards describing bats dynamically versatile wing conformations},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Sim-to-real transfer of adaptive control parameters for AUV stabilisation under current disturbance. <em>IJRR</em>, <em>44</em>(3), 407-430. (<a href='https://doi.org/10.1177/02783649241272115'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Learning-based adaptive control methods hold the potential to empower autonomous agents in mitigating the impact of process variations with minimal human intervention. However, their application to autonomous underwater vehicles (AUVs) has been constrained by two main challenges: (1) the presence of unknown dynamics in the form of sea current disturbances, which cannot be modelled or measured due to limited sensor capability, particularly on smaller low-cost AUVs, and (2) the nonlinearity of AUV tasks, where the controller response at certain operating points must be excessively conservative to meet specifications at other points. Deep Reinforcement Learning (DRL) offers a solution to these challenges by training versatile neural network policies. Nevertheless, the application of DRL algorithms to AUVs has been predominantly limited to simulated environments due to their inherent high sample complexity and the distribution shift problem. This paper introduces a novel approach by combining the Maximum Entropy Deep Reinforcement Learning framework with a classic model-based control architecture to formulate an adaptive controller. In this framework, we propose a Sim-to-Real transfer strategy, incorporating a bio-inspired experience replay mechanism, an enhanced domain randomisation technique, and an evaluation protocol executed on a physical platform. Our experimental assessments demonstrate the effectiveness of this method in learning proficient policies from suboptimal simulated models of the AUV. When transferred to a real-world vehicle, the approach exhibits a control performance three times higher compared to its model-based nonadaptive but optimal counterpart.},
+  archive      = {J_IJRR},
+  author       = {Thomas Chaffre and Jonathan Wheare and Andrew Lammas and Paulo Santos and Gilles Le Chenadec and Karl Sammut and Benoit Clement},
+  doi          = {10.1177/02783649241272115},
+  journal      = {The International Journal of Robotics Research},
+  month        = {3},
+  number       = {3},
+  pages        = {407-430},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Sim-to-real transfer of adaptive control parameters for AUV stabilisation under current disturbance},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A koopman-based residual modeling approach for the control of a soft robot arm. <em>IJRR</em>, <em>44</em>(3), 388-406. (<a href='https://doi.org/10.1177/02783649241272114'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Soft robots are challenging to model and control due to their poorly defined kinematics and nonlinear dynamics. Recently, Koopman operator theory has been shown capable of constructing control-oriented soft robot models from data. However, building these models requires extensive data collection and they do not necessarily generalize well outside of the training observations. This paper presents a more data-efficient and generalizable approach to soft robot modeling that first identifies a physics-based Koopman model then supplements it with a data-driven residual Koopman model. The resulting combined model is linear and thus compatible with real-time model-based control techniques such as Model Predictive Control (MPC). The efficacy of the approach is demonstrated on several simulated systems and on a real soft robot arm, where it is shown to generate models that are more accurate than purely physics-based models and require less data to construct than purely data-driven models. Using a model-based controller, the soft arm is able to successfully track end effector trajectories, perform a pick-and-place task, and write on a dry-erase board, showcasing the applicability of this framework to increase the capabilities of soft robotic systems.},
+  archive      = {J_IJRR},
+  author       = {Daniel Bruder and David Bombara and Robert J Wood},
+  doi          = {10.1177/02783649241272114},
+  journal      = {The International Journal of Robotics Research},
+  month        = {3},
+  number       = {3},
+  pages        = {388-406},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {A koopman-based residual modeling approach for the control of a soft robot arm},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Certifiably optimal rotation and pose estimation based on the cayley map. <em>IJRR</em>, <em>44</em>(3), 366-387. (<a href='https://doi.org/10.1177/02783649241269337'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present novel, convex relaxations for rotation and pose estimation problems that can a posteriori guarantee global optimality for practical measurement noise levels. Some such relaxations exist in the literature for specific problem setups that assume the matrix von Mises-Fisher distribution (a.k.a., matrix Langevin distribution or chordal distance) for isotropic rotational uncertainty. However, another common way to represent uncertainty for rotations and poses is to define anisotropic noise in the associated Lie algebra. Starting from a noise model based on the Cayley map, we define our estimation problems, convert them to Quadratically Constrained Quadratic Programs (QCQPs), then relax them to Semidefinite Programs (SDPs), which can be solved using standard interior-point optimization methods; global optimality follows from Lagrangian strong duality. We first show how to carry out basic rotation and pose averaging. We then turn to the more complex problem of trajectory estimation, which involves many pose variables with both individual and inter-pose measurements (or motion priors). Our contribution is to formulate SDP relaxations for all these problems based on the Cayley map (including the identification of redundant constraints) and to show them working in practical settings. We hope our results can add to the catalogue of useful estimation problems whose solutions can be a posteriori guaranteed to be globally optimal.},
+  archive      = {J_IJRR},
+  author       = {Timothy D. Barfoot and Connor Holmes and Frederike Dümbgen},
+  doi          = {10.1177/02783649241269337},
+  journal      = {The International Journal of Robotics Research},
+  month        = {3},
+  number       = {3},
+  pages        = {366-387},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Certifiably optimal rotation and pose estimation based on the cayley map},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dataset and benchmark: Novel sensors for autonomous vehicle perception. <em>IJRR</em>, <em>44</em>(3), 355-365. (<a href='https://doi.org/10.1177/02783649241273554'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Conventional cameras employed in autonomous vehicle (AV) systems support many perception tasks but are challenged by low-light or high dynamic range scenes, adverse weather, and fast motion. Novel sensors, such as event and thermal cameras, offer capabilities with the potential to address these scenarios, but they remain to be fully exploited. This paper introduces the Novel Sensors for Autonomous Vehicle Perception (NSAVP) dataset to facilitate future research on this topic. The dataset was captured with a platform including stereo event, thermal, monochrome, and RGB cameras as well as a high precision navigation system providing ground truth poses. The data was collected by repeatedly driving two ∼8 km routes and includes varied lighting conditions and opposing viewpoint perspectives. We provide benchmarking experiments on the task of place recognition to demonstrate challenges and opportunities for novel sensors to enhance critical AV perception tasks. To our knowledge, the NSAVP dataset is the first to include stereo thermal cameras together with stereo event and monochrome cameras. The dataset and supporting software suite is available at https://umautobots.github.io/nsavp .},
+  archive      = {J_IJRR},
+  author       = {Spencer Carmichael and Austin Buchan and Mani Ramanagopal and Radhika Ravi and Ram Vasudevan and Katherine A Skinner},
+  doi          = {10.1177/02783649241273554},
+  journal      = {The International Journal of Robotics Research},
+  month        = {3},
+  number       = {3},
+  pages        = {355-365},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Dataset and benchmark: Novel sensors for autonomous vehicle perception},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Machine learning for shipwreck segmentation from side scan sonar imagery: Dataset and benchmark. <em>IJRR</em>, <em>44</em>(3), 341-354. (<a href='https://doi.org/10.1177/02783649241266853'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Open-source benchmark datasets have been a critical component for advancing machine learning for robot perception in terrestrial applications. Benchmark datasets enable the widespread development of state-of-the-art machine learning methods, which require large datasets for training, validation, and thorough comparison to competing approaches. Underwater environments impose several operational challenges that hinder efforts to collect large benchmark datasets for marine robot perception. Furthermore, a low abundance of targets of interest relative to the size of the search space leads to increased time and cost required to collect useful datasets for a specific task. As a result, there is limited availability of labeled benchmark datasets for underwater applications. We present the AI4Shipwrecks dataset, which consists of 28 distinct shipwrecks totaling 286 high-resolution labeled side scan sonar images to advance the state-of-the-art in autonomous sonar image understanding. We leverage the unique abundance of targets in Thunder Bay National Marine Sanctuary in Lake Huron, MI, to collect and compile a sonar imagery benchmark dataset through surveys with an autonomous underwater vehicle (AUV). We consulted with expert marine archaeologists for the labeling of robotically gathered data. We then leverage this dataset to perform benchmark experiments for comparison of state-of-the-art supervised segmentation methods, and we present insights on opportunities and open challenges for the field. The dataset and benchmarking tools will be released as an open-source benchmark dataset to spur innovation in machine learning for Great Lakes and ocean exploration. The dataset and accompanying software are available at https://umfieldrobotics.github.io/ai4shipwrecks/ .},
+  archive      = {J_IJRR},
+  author       = {Advaith V. Sethuraman and Anja Sheppard and Onur Bagoren and Christopher Pinnow and Jamey Anderson and Timothy C. Havens and Katherine A. Skinner},
+  doi          = {10.1177/02783649241266853},
+  journal      = {The International Journal of Robotics Research},
+  month        = {3},
+  number       = {3},
+  pages        = {341-354},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Machine learning for shipwreck segmentation from side scan sonar imagery: Dataset and benchmark},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A direct-drive five-bar manipulator with tuned directional first-order kinematics for low energy consumption in vertical loading. <em>IJRR</em>, <em>44</em>(2), 317-338. (<a href='https://doi.org/10.1177/02783649241266852'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The kinematic configuration space of a manipulator determines the set of all possible motions that may occur, and its differential properties have a strong, albeit indirect, influence on both static and dynamic performance. By viewing first-order kinematics as a field of Jacobian-defined ellipses across a workspace, a novel two degree-of-freedom manipulator was designed, and is tested in this paper for its benefits. The manipulator exhibits a field of ellipses that biases transmission characteristics in Cartesian directions of the end-effector. The horizontal direction is biased toward speed in order to move across the width of the workspace quickly, while the vertical direction is biased toward force production in order to resist gravitational loads. The latter bias endows the manipulator with load capacity in the absence of gears. Such an exclusion can forego the extra weight, complexity, backlash, transmission losses, and fragility of gearboxes. Additionally, a direct drive set-up improves backdrivability and transparency. The latter is relevant to applications that involve interacting with the environment or people. Our novel design is set through an array of theoretical and experimental performance studies in comparison to a conventional direct drive manipulator. The experimental results showed a 3.75× increase in payload capacity, a 2× increase in dynamic tracking accuracy, a 2.07× increase in dynamic cycling frequency, and at least a 3.70× reduction in power consumption, considering both static and dynamic experiments.},
+  archive      = {J_IJRR},
+  author       = {Shashank Ramesh and Mark Plecnik},
+  doi          = {10.1177/02783649241266852},
+  journal      = {The International Journal of Robotics Research},
+  month        = {2},
+  number       = {2},
+  pages        = {317-338},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {A direct-drive five-bar manipulator with tuned directional first-order kinematics for low energy consumption in vertical loading},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exploiting body redundancy to control supernumerary robotic limbs in human augmentation. <em>IJRR</em>, <em>44</em>(2), 291-316. (<a href='https://doi.org/10.1177/02783649241265451'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the last decades, supernumerary robotic limbs (SRLs) have been proposed as technological aids for rehabilitation, assistance, and functional augmentation. Whether they are in the form of wearable devices or grounded systems, SRLs can be used to compensate for lost motor functions in patients with disabilities, as well as to augment the human sensorimotor capabilities. By using SRLs, users gain the ability to perform a wide range of complex tasks that may otherwise be challenging or even impossible with their natural limbs. Designing effective strategies and policies for the control and operation of SRLs represents a substantial challenge in their development. A key aspect that remains insufficiently addressed is the formulation of successful and intuitive augmentation policies that do not hinder the functionality of a person’s natural limbs. This work introduces an innovative strategy based on the exploitation of the redundancy of the human kinematic chain involved in a task for commanding SRLs having one degree of freedom. This concept is summarized in the definition of the Intrinsic Kinematic Null Space (IKNS). The newly developed procedure encompasses a real-time analysis of body motion and a subsequent computation of the control signal for SRLs based on the IKNS for single-arm tasks. What sets our approach apart is its explicit emphasis on incorporating user-specific biomechanical and physiological characteristics and constraints. This ensures an efficient and intuitive approach to commanding SRLs, tailored to the individual user’s needs. Towards a complete evaluation of the proposed system, we studied the users’ capability of exploiting the IKNS both in virtual and real environments. Obtained results demonstrated that the exploitation of the Intrinsic Kinematic Null Space allows to perform complex tasks involving both biological and artificial limbs, and that practice improves the ability to accurately manage the coordination of human and supernumerary artificial limbs.},
+  archive      = {J_IJRR},
+  author       = {Tommaso Lisini Baldi and Nicole D’Aurizio and Chiara Gaudeni and Sergio Gurgone and Daniele Borzelli and Andrea d’Avella and Domenico Prattichizzo},
+  doi          = {10.1177/02783649241265451},
+  journal      = {The International Journal of Robotics Research},
+  month        = {2},
+  number       = {2},
+  pages        = {291-316},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Exploiting body redundancy to control supernumerary robotic limbs in human augmentation},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hybrid trajectory planning of two permanent magnets for medical robotic applications. <em>IJRR</em>, <em>44</em>(2), 273-290. (<a href='https://doi.org/10.1177/02783649241264844'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Independent robotic manipulation of two large permanent magnets, in the form of the dual External Permanent Magnet (dEPM) system has demonstrated the possibility for enhanced magnetic control by allowing for actuation up to eight magnetic degrees of freedom (DOFs) at clinically relevant scales. This precise off-board control has facilitated the use of magnetic agents as medical devices, including catheter-like soft continuum robots (SCRs). The use of multiple robotically actuated permanent magnets poses the risk of collision between the robotic arms, the environment, and the patient. Furthermore, unconstrained transitions between actuation inputs can lead to undesired spikes in magnetic fields potentially resulting in unsafe manipulator deformation. This paper presents a hybrid approach to trajectory planning for the dEPM platform. This is performed by splitting the planning problem in two: first finding a collision-free physical path for the two robotically actuated permanent magnets before combining this with a path in magnetic space , which permits for a smooth change in magnetic fields and gradients. This algorithm was characterized by actuating each of the eight magnetic DOFs sequentially, eliminating any potential collisions and reducing the maximum undesired actuation value by 203.7 mT for fields and by 418.7 mT/m for gradients. The effect of this planned magnetic field actuation on a SCR was then examined through two case studies. First, a tip-driven SCR was moved to set points within a confined area. Actuation using the proposed planner reduced movement outside the restricted area by an average of 41.3%. Lastly, the use of the proposed magnetic planner was shown to be essential in navigating a multi-segment magnetic SCR to the site of an aneurysm within a silicone brain phantom.},
+  archive      = {J_IJRR},
+  author       = {Michael Brockdorff and Tomas da Veiga and Joshua Davy and Peter Lloyd and James H Chandler and Giovanni Pittiglio and Ryan K Mathew and Pietro Valdastri},
+  doi          = {10.1177/02783649241264844},
+  journal      = {The International Journal of Robotics Research},
+  month        = {2},
+  number       = {2},
+  pages        = {273-290},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Hybrid trajectory planning of two permanent magnets for medical robotic applications},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Active perception network for non-myopic online exploration and visual surface coverage. <em>IJRR</em>, <em>44</em>(2), 247-272. (<a href='https://doi.org/10.1177/02783649241264577'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work addresses the problem of online exploration and visual sensor coverage of unknown environments. We introduce a novel perception roadmap we refer to as the Active Perception Network (APN) that serves as a hierarchical topological graph describing how to traverse and perceive an incrementally built spatial map of the environment. The APN state is incrementally updated to expand a connected configuration space that extends throughout as much of the known space as possible, using efficient difference-awareness techniques that track the discrete changes of the spatial map to inform the updates. A frontier-guided approach is presented for efficient evaluation of information gain and covisible information, which guides view sampling and refinement to ensure maximum coverage of the unmapped space is maintained within the APN. The updated roadmap is hierarchically decomposed into subgraph regions which we use to facilitate a non-myopic global view sequence planner. A comparative analysis to several state-of-the-art approaches was conducted, showing significant performance improvements in terms of total exploration time and surface coverage, and demonstrating high computational efficiency that is scalable to large and complex environments.},
+  archive      = {J_IJRR},
+  author       = {David Vutetakis and Jing Xiao},
+  doi          = {10.1177/02783649241264577},
+  journal      = {The International Journal of Robotics Research},
+  month        = {2},
+  number       = {2},
+  pages        = {247-272},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Active perception network for non-myopic online exploration and visual surface coverage},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Continuum concentric push–pull robots: A cosserat rod model. <em>IJRR</em>, <em>44</em>(2), 216-246. (<a href='https://doi.org/10.1177/02783649241263366'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Various approaches and structures emerged recently to design continuum robots. One of the most promising designs regards a new concept of continuum concentric push–pull robots (CPPRs) that have the characteristic of combining several key advantages of tendon actuated, multi-backbone, and concentric tube ones (direct curvature actuation, small outer/inner diameter ratio, free lumen, etc.). Geometrically-exact models of such recently introduced robots are yet to be developed to gain leverage of their full potential. This article extends beyond usual definitions of Cosserat rod theory in order to take into account this new type of continuum robots, constituted by sliding rods, in a shape of tubes whose cross-sections are neither uniform nor symmetrical along their entire length. The introduced model is capable of considering versatile design options, external loads, 3D deformations, an arbitrary number of tubes and profiles of the centroid lines, as well as a new actuation method consisting of an input rotation. Numerical simulations and experiments on CPPR prototypes validate our model.},
+  archive      = {J_IJRR},
+  author       = {Matthias Tummers and Frédéric Boyer and Vincent Lebastard and Alexis Offermann and Jocelyne Troccaz and Benoît Rosa and M. Taha Chikhaoui},
+  doi          = {10.1177/02783649241263366},
+  journal      = {The International Journal of Robotics Research},
+  month        = {2},
+  number       = {2},
+  pages        = {216-246},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Continuum concentric push–pull robots: A cosserat rod model},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Modeling multi-legged robot locomotion with slipping and its experimental validation. <em>IJRR</em>, <em>44</em>(2), 196-215. (<a href='https://doi.org/10.1177/02783649241263114'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-legged robots with six or more legs are not in common use, despite designs with superior stability, maneuverability, and a low number of actuators being available for over 20 years. This may be in part due to the difficulty in modeling multi-legged motion with slipping and producing reliable predictions of body velocity. Here, we present a detailed measurement of the foot contact forces in a hexapedal robot with multiple sliding contacts, and provide an algorithm for predicting these contact forces and the body velocity. The algorithm relies on the recently published observation that even while slipping, multi-legged robots are principally kinematic, and employ a friction law ansatz that allows us to compute the shape-change to body-velocity connection and the foot contact forces. This results in the ability to simulate motion plans for a large number of contacts, each potentially with slipping. Furthermore, in homogeneous environments, this kind of simulation can run in (parallel) logarithmic time of the planning horizon.},
+  archive      = {J_IJRR},
+  author       = {Ziyou Wu and Dan Zhao and Shai Revzen},
+  doi          = {10.1177/02783649241263114},
+  journal      = {The International Journal of Robotics Research},
+  month        = {2},
+  number       = {2},
+  pages        = {196-215},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Modeling multi-legged robot locomotion with slipping and its experimental validation},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). No compromise in solution quality: Speeding up belief-dependent continuous partially observable markov decision processes via adaptive multilevel simplification. <em>IJRR</em>, <em>44</em>(2), 157-195. (<a href='https://doi.org/10.1177/02783649241261398'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Continuous Partially Observable Markov Decision Processes (POMDPs) with general belief-dependent rewards are notoriously difficult to solve online. In this paper, we present a complete provable theory of adaptive multilevel simplification for the setting of a given externally constructed belief tree and Monte Carlo Tree Search (MCTS) that constructs the belief tree on the fly using an exploration technique. Our theory allows to accelerate POMDP planning with belief-dependent rewards without any sacrifice in the quality of the obtained solution. We rigorously prove each theoretical claim in the proposed unified theory. Using the general theoretical results, we present three algorithms to accelerate continuous POMDP online planning with belief-dependent rewards. Our two algorithms, SITH-BSP and LAZY-SITH-BSP, can be utilized on top of any method that constructs a belief tree externally. The third algorithm, SITH-PFT, is an anytime MCTS method that permits to plug-in any exploration technique. All our methods are guaranteed to return exactly the same optimal action as their unsimplified equivalents. We replace the costly computation of information-theoretic rewards with novel adaptive upper and lower bounds which we derive in this paper, and are of independent interest. We show that they are easy to calculate and can be tightened by the demand of our algorithms. Our approach is general; namely, any bounds that monotonically converge to the reward can be utilized to achieve a significant speedup without any loss in performance. Our theory and algorithms support the challenging setting of continuous states, actions, and observations. The beliefs can be parametric or general and represented by weighted particles. We demonstrate in simulation a significant speedup in planning compared to baseline approaches with guaranteed identical performance.},
+  archive      = {J_IJRR},
+  author       = {Andrey Zhitnikov and Ori Sztyglic and Vadim Indelman},
+  doi          = {10.1177/02783649241261398},
+  journal      = {The International Journal of Robotics Research},
+  month        = {2},
+  number       = {2},
+  pages        = {157-195},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {No compromise in solution quality: Speeding up belief-dependent continuous partially observable markov decision processes via adaptive multilevel simplification},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reduced order modeling of hybrid soft-rigid robots using global, local, and state-dependent strain parameterization. <em>IJRR</em>, <em>44</em>(1), 129-154. (<a href='https://doi.org/10.1177/02783649241262333'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The need for fast and accurate analysis of soft robots calls for reduced order models (ROM). Among these, the relative reduction of strain-based ROMs follows the discretization of the strain to capture the configurations of the robot. Based on the geometrically exact variable strain parametrization of the Cosserat rod, we developed a ROM that necessitates a minimal number of degrees of freedom to represent the state of the robot: the Geometric Variable Strain (GVS) model. This model allows the static and dynamic analysis of open-, branched-, or closed-chain soft-rigid hybrid robots, all under the same mathematical framework. This paper presents for the first time the complete GVS modeling framework for a generic hybrid soft-rigid robot. Based on the Magnus expansion of the variable strain field, we developed an efficient recursive algorithm for computing the Lagrangian dynamics of the system. To discretize the soft link, we introduce state- and time-dependent basis, which is the most general form of strain basis. We classify the independent bases into global and local bases. We propose “FEM-like” local strain bases with nodal values as their generalized coordinates. Finally, using four real-world applications, we illustrate the potential of the model developed. We think that the soft robotics community will use the comprehensive framework presented in this work to analyze a wide range of specific robotic systems.},
+  archive      = {J_IJRR},
+  author       = {Anup Teejo Mathew and Daniel Feliu-Talegon and Abdulaziz Y Alkayas and Frederic Boyer and Federico Renda},
+  doi          = {10.1177/02783649241262333},
+  journal      = {The International Journal of Robotics Research},
+  month        = {1},
+  number       = {1},
+  pages        = {129-154},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Reduced order modeling of hybrid soft-rigid robots using global, local, and state-dependent strain parameterization},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MOB-net: Limb-modularized uncertainty torque learning of humanoids for sensorless external torque estimation. <em>IJRR</em>, <em>44</em>(1), 96-128. (<a href='https://doi.org/10.1177/02783649241260428'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Momentum observer (MOB) can estimate external joint torque without requiring additional sensors, such as force/torque or joint torque sensors. However, the estimation performance of MOB deteriorates due to the model uncertainty which encompasses the modeling errors and the joint friction. Moreover, the estimation error is significant when MOB is applied to high-dimensional floating-base humanoids, which prevents the estimated external joint torque from being used for force control or collision detection in the real humanoid robot. In this paper, the pure external joint torque estimation method named MOB-Net , is proposed for humanoids. MOB-Net learns the model uncertainty torque and calibrates the estimated signal of MOB, substantially reducing the estimation errors of MOB. The external joint torque can be estimated in the generalized coordinate including whole-body and virtual joints of the floating-base robot with only internal sensors (an IMU on the pelvis and encoders in the joints). Furthermore, MOB-Net shows more robust performance for the unseen data compared to the end-to-end learning method, and the robustness of MOB-Net is validated through extensive simulations, real robot experiments, and ablation studies. Finally, various collision handling scenarios are presented to show the versatility of MOB-Net: contact wrench feedback control for locomotion, collision detection, and collision reaction for safety.},
+  archive      = {J_IJRR},
+  author       = {Daegyu Lim and Myeong-Ju Kim and Junhyeok Cha and Jaeheung Park},
+  doi          = {10.1177/02783649241260428},
+  journal      = {The International Journal of Robotics Research},
+  month        = {1},
+  number       = {1},
+  pages        = {96-128},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {MOB-net: Limb-modularized uncertainty torque learning of humanoids for sensorless external torque estimation},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Behavior-predefined adaptive control for heterogeneous continuum robots. <em>IJRR</em>, <em>44</em>(1), 65-95. (<a href='https://doi.org/10.1177/02783649241259138'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Continuum robots have great application value and broad prospects in various fields due to their dexterity and compliance. To fully exploit their advantages, it is crucial to develop an effective, accurate and robust control system for them. However, research on continuum robot control is still in its infancy and there are many problems remaining unsolved in this field. In particular, this paper focuses on the task-space behavior and the generic control of heterogeneous continuum robots. First, a controller is proposed to achieve the kinematic motion control and visual servoing of continuum robots with predefined task-space behavior. The predefined behavior is twofold: prescribed task-space error and predefined convergence time. Then, the proposed controller is integrated with a velocity-level kinematic mapping estimator to obtain a model-free control system, which is applicable to heterogeneous continuum robots. Furthermore, a re-adjustable performance function is proposed to ensure the effectiveness and robustness of the proposed control system in the presence of external disturbance. Finally, extensive simulations and experiments are performed based on heterogeneous continuum robots, including the cable-driven continuum robot, the parallel continuum robot, the concentric-tube robot, the flexible endoscope, and the pneumatic continuum robot. Our results demonstrate that the task-space error of heterogeneous continuum robots complies with the prescribed boundaries and converges to steady state in predefined time, which reveals the efficacy of the proposed control method.},
+  archive      = {J_IJRR},
+  author       = {Ning Tan and Peng Yu and Xin Wang and Kai Huang},
+  doi          = {10.1177/02783649241259138},
+  journal      = {The International Journal of Robotics Research},
+  month        = {1},
+  number       = {1},
+  pages        = {65-95},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Behavior-predefined adaptive control for heterogeneous continuum robots},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ASIMO: Agent-centric scene representation in multi-object manipulation. <em>IJRR</em>, <em>44</em>(1), 22-64. (<a href='https://doi.org/10.1177/02783649241257537'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Vision-based reinforcement learning (RL) is a generalizable way to control an agent because it is agnostic of specific hardware configurations. As visual observations are highly entangled, attempts for vision-based RL rely on scene representation that discerns individual entities and establishes intuitive physics to constitute the world model. However, most existing works on scene representation learning cannot successfully be deployed to train an RL agent, as they are often highly unstable and fail to sustain for a long enough temporal horizon. We propose ASIMO, a fully unsupervised scene decomposition to perform interaction-rich tasks with a vision-based RL agent. ASIMO decomposes agent-object interaction videos of episodic-length into the agent, objects, and background, predicting their long-term interactions. Further, we explicitly model possible occlusion in the image observations and stably track individual objects. Then, we can correctly deduce the updated positions of individual entities in response to the agent action, only from partial visual observation. Based on the stable entity-wise decomposition and temporal prediction, we formulate a hierarchical framework to train the RL agent that focuses on the context around the object of interest. We demonstrate that our formulation for scene representation can be universally deployed to train different configurations of agents and accomplish several tasks that involve pushing, arranging, and placing multiple rigid objects.},
+  archive      = {J_IJRR},
+  author       = {Cheol-Hui Min and Young Min Kim},
+  doi          = {10.1177/02783649241257537},
+  journal      = {The International Journal of Robotics Research},
+  month        = {1},
+  number       = {1},
+  pages        = {22-64},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {ASIMO: Agent-centric scene representation in multi-object manipulation},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). YUTO MMS: A comprehensive SLAM dataset for urban mobile mapping with tilted LiDAR and panoramic camera integration. <em>IJRR</em>, <em>44</em>(1), 3-21. (<a href='https://doi.org/10.1177/02783649241261079'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The York University Teledyne Optech (YUTO) Mobile Mapping System (MMS) Dataset, encompassing four sequences totaling 20.1 km, was thoroughly assembled through two data collection expeditions on August 12, 2020, and June 21, 2019. Acquisitions were performed using a uniquely equipped vehicle, fortified with a panoramic camera, a tilted LiDAR, a Global Positioning System (GPS), and an Inertial Measurement Unit (IMU), journeying through two strategic locations: the York University Keele Campus in Toronto and the Teledyne Optech headquarters in City of Vaughan, Canada. This paper not only delineates the comprehensive overview of the YUTO MMS dataset, delving into aspects such as the collection procedure, sensor configuration, synchronization, data structure and format but also presents a robust benchmark of prevailing Simultaneous Localization and Mapping (SLAM) systems. By subjecting them to analysis utilizing the introduced dataset, this research lays a foundational baseline for ensuing studies, thereby contributing to advancements and enhancements in the SLAM-integrated mobile mapping system. The dataset can be downloaded from: https://ausmlab.github.io/yutomms/ .},
+  archive      = {J_IJRR},
+  author       = {Yiujia Zhang and SeyedMostafa Ahmadi and Jungwon Kang and Zahra Arjmandi and Gunho Sohn},
+  doi          = {10.1177/02783649241261079},
+  journal      = {The International Journal of Robotics Research},
+  month        = {1},
+  number       = {1},
+  pages        = {3-21},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {YUTO MMS: A comprehensive SLAM dataset for urban mobile mapping with tilted LiDAR and panoramic camera integration},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

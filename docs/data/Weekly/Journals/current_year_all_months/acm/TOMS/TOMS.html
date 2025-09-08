@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TOMS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="toms">TOMS - 14</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Algorithm 1055: HDSDP: Software for semidefinite programming. <em>TOMS</em>, <em>51</em>(2), 1-30. (<a href='https://doi.org/10.1145/3721123'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {HDSDP is a numerical software solving semidefinite programming problems. The main framework of HDSDP resembles the dual-scaling interior point solver DSDP and several new features, including a dual method based on the simplified homogeneous self-dual embedding, have been implemented. The embedding technique enhances the stability of the dual method, and several new heuristics and computational techniques are designed to accelerate its convergence. HDSDP aims to show how the dual-scaling algorithm benefits from the self-dual embedding, and it is developed in parallel to DSDP 5.8. Numerical experiments over several classical benchmark datasets exhibit their robustness and efficiency, particularly their advantages on SDP instances featuring low-rank structure and sparsity. HDSDP is open sourced under an MIT license and available at https://github.com/Gwzwpxz/HDSDP .},
+  archive      = {J_TOMS},
+  author       = {Wenzhi Gao and Dongdong Ge and Yinyu Ye},
+  doi          = {10.1145/3721123},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-30},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1055: HDSDP: Software for semidefinite programming},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Approximating large-scale hessian matrices using secant equations. <em>TOMS</em>, <em>51</em>(2), 1-21. (<a href='https://doi.org/10.1145/3728460'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large-scale optimization algorithms frequently require sparse Hessian matrices that are not readily available. Existing methods for approximating large sparse Hessian matrices either do not impose sparsity or are computationally prohibitive. To try and overcome these limitations, we propose a novel approach that seeks to satisfy as many componentwise secant equations as necessary to define each row of the Hessian matrix. A naive application of this approach is too expensive for Hessian matrices that have some relatively dense rows but, by carefully taking into account the symmetry and connectivity of the Hessian matrix, we are able devise an approximation algorithm that is fast and efficient with scope for parallelism. Example sparse Hessian matrices from the CUTEst test collection for optimization illustrate the effectiveness and robustness of our proposed method.},
+  archive      = {J_TOMS},
+  author       = {Jaroslav M. Fowkes and Nicholas I. M. Gould and Jennifer A. Scott},
+  doi          = {10.1145/3728460},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-21},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Approximating large-scale hessian matrices using secant equations},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Intersection of tetrahedra. <em>TOMS</em>, <em>51</em>(2), 1-26. (<a href='https://doi.org/10.1145/3729532'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {When intersecting non-matching three-dimensional lattices, one needs to calculate the intersections of tetrahedra. The authors’ previously published two-dimensional triangle–triangle intersection algorithm suggests a novel approach in three dimensions based on parsimony. The algorithm presented here expands on this two-dimensional algorithm and introduces new strategies necessitated by the increase in dimension. An extensive proof is given for the consistency of the algorithm. Thus, the algorithm is shown to be robust to numerical error arising from floating-point arithmetic. Example problems demonstrate its use and effectiveness.},
+  archive      = {J_TOMS},
+  author       = {Conor McCoid and Martin J. Gander},
+  doi          = {10.1145/3729532},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Intersection of tetrahedra},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LevelSetPy: A GPU-accelerated package for hyperbolic Hamilton–Jacobi partial differential equations. <em>TOMS</em>, <em>51</em>(2), 1-14. (<a href='https://doi.org/10.1145/3730407'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article introduces a software package release for geometrically reasoning about the safety desiderata of (complex) dynamical systems via level set methods. In emphasis, safety is analyzed with the Hamilton–Jacobi equations. In scope, we provide implementations of numerical algorithms for the resolution of Hamilton–Jacobi–Isaacs equations: the spatial derivatives of the associated value function via upwinding, the Hamiltonian via Lax–Friedrichs schemes, and the integration of the Hamilton–Jacobi equation altogether via total variation diminishing Runge–Kutta schemes. Since computational speed and interoperability with other modern scientific computing libraries (typically written in the Python language) are of essence, we capitalize on modern computational frameworks such as CUPY and NUMPY and move heavy computations to GPU devices to aid parallelization and improve bring-up time in safety analysis. We hope that this package can aid users to quickly iterate on ideas and evaluate all possible safety desiderata of a system via geometrical simulation in modern engineering problems.},
+  archive      = {J_TOMS},
+  author       = {Lekan Molu},
+  doi          = {10.1145/3730407},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-14},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {LevelSetPy: A GPU-accelerated package for hyperbolic Hamilton–Jacobi partial differential equations},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Algorithm 1056: QPoly—A magma package for working with quaternionic polynomials. <em>TOMS</em>, <em>51</em>(2), 1-14. (<a href='https://doi.org/10.1145/3731677'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The article presents the package for the computer algebra system Magma . It is a collection of functions for manipulating quaternionic polynomials over number fields. It provides nearly the same functionality for quaternionic polynomials as the ones provided by Magma for polynomials over fields.},
+  archive      = {J_TOMS},
+  author       = {Przemysław Koprowski},
+  doi          = {10.1145/3731677},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-14},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1056: QPoly—A magma package for working with quaternionic polynomials},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Algorithm 1057: FunC: A minimally invasive c++ library for the generation and analysis of univariate lookup tables. <em>TOMS</em>, <em>51</em>(2), 1-30. (<a href='https://doi.org/10.1145/3734692'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A Lookup Table (LUT) is a computationally inexpensive piecewise function used to approximate computationally expensive mathematical functions. Evaluating a LUT can be as quick as using Horner’s method to evaluate a polynomial after looking up its coefficients. A common choice of LUT is a piecewise constant or piecewise linear function; however, high-degree interpolating polynomials can also be valuable. Here, we describe the functionality of FunC 2.0, a C++ library designed to streamline the process of building, comparing, and implementing univariate LUTs in practical applications. In particular, FunC 2.0 can build relatively small LUTs satisfying user-provided absolute and relative tolerances for error. Furthermore, FunC 2.0 can build nonuniform LUTs, it provides utilities to quickly determine reasonable LUT bounds and tolerances for error, and it provides a way to quickly profile a set of LUTs. We demonstrate FunC ’s utility in application by reducing the total runtime of a simulation performed by the Canadian Hydrological Model (CHM). This simulation modeled the snow mass distribution across Western Canada over 1 month. Now, the CHM can evaluate the mathematical function of interest about 28 times faster, allowing the necessary algorithm to finish two times faster, and the overall simulation is about 9% faster.},
+  archive      = {J_TOMS},
+  author       = {Shawn S. C. McAdam and Raymond J. Spiteri},
+  doi          = {10.1145/3734692},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-30},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1057: FunC: A minimally invasive c++ library for the generation and analysis of univariate lookup tables},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Symbolic and user-friendly geometric algebra routines (SUGAR) for computations in matlab. <em>TOMS</em>, <em>51</em>(2), 1-31. (<a href='https://doi.org/10.1145/3734693'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Geometric Algebra (GA) provides a unified, compact mathematical framework for geometric computing, simplifying relations typically handled with more complex tools like matrix multiplication. In fields like robotics, GA replaces conventional coordinate-based approaches with the multiplication of special elements called rotors, offering greater efficiency. Despite its advantages, GA’s complexity and the lack of symbolic tools hinder its broader adoption among applied mathematicians and engineers. To address this, this article introduces Symbolic and User-friendly Geometric Algebra Routines (SUGAR), an open source Matlab toolbox. SUGAR streamlines GA usage in Matlab through a collection of user-friendly functions that support both numeric and symbolic computations, even in high-dimensional algebras. Designed for applied mathematics and engineering, it enables intuitive manipulation of geometric elements and transformations in two- and three-dimensional projective and conformal GAs, consistent with established computational methods. Moreover, SUGAR manages multivector functions such as exponential, logarithmic, sinusoidal, and cosine operations, enhancing its applicability in domains like robotics, control systems, and power electronics. Finally, this article also presents three validation examples across these fields, showcasing SUGAR’s practical utility in solving real-world engineering and applied mathematics problems.},
+  archive      = {J_TOMS},
+  author       = {Manel Velasco and Isiah Zaplana and Arnau Dòria-Cerezo and Pau Martí},
+  doi          = {10.1145/3734693},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {6},
+  number       = {2},
+  pages        = {1-31},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Symbolic and user-friendly geometric algebra routines (SUGAR) for computations in matlab},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Forward-mode automatic differentiation of compiled programs. <em>TOMS</em>, <em>51</em>(2), 1-25. (<a href='https://doi.org/10.1145/3716309'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Algorithmic differentiation (AD) is a set of techniques that provide partial derivatives of computer-implemented functions. Such functions can be supplied to state-of-the-art AD tools via their source code , or via intermediate representations produced while compiling their source code. We present the novel AD tool Derivgrind, which augments the machine code of compiled programs with forward-mode AD logic. Derivgrind leverages the Valgrind instrumentation framework for structured access to the machine code, and a shadow memory tool to store dot values. Access to the source code is required at most for the files in which input and output variables are defined. Derivgrind’s versatility mainly comes at the price of reduced run-time performance. According to our extensive regression test suite, Derivgrind produces correct results on GCC- and Clang-compiled programs, including a Python interpreter, with a small number of exceptions. We provide a list of “bit-tricks” that Derivgrind does not handle correctly, some of which actually appear in highly optimized math libraries. As long as differentiating those is avoided, Derivgrind enables black-box forward-mode AD for an unprecedentedly wide range of cross-language software with little integration efforts.},
+  archive      = {J_TOMS},
+  author       = {Max Aehle and Johannes Blühdorn and Max Sagebaum and Nicolas R. Gauger},
+  doi          = {10.1145/3716309},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {5},
+  number       = {2},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Forward-mode automatic differentiation of compiled programs},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Algorithm 1054: , a fortran software library for legendre elliptic integrals and jacobi elliptic functions with generalized input arguments. <em>TOMS</em>, <em>51</em>(1), 1-17. (<a href='https://doi.org/10.1145/3709136'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Legendre elliptic integrals and Jacobi elliptic functions arise in multiple applications within the physical sciences, including oscillations, celestial mechanics, and geodynamics. In this study, we describe the Fortran library ellipFor capable of evaluating the following for generalized input values: (1) the complete Legendre elliptic integrals of the first and second kinds, (2) the incomplete Legendre elliptic integrals of the first and second kinds, and (3) the principal Jacobi elliptic functions. Our software builds upon previously developed Fortran routines, which were designed with restrictions on input parameters that may be limiting in applications. Our routines apply multiple transformations to allow for more general input values, such as elliptic moduli greater than unity for points 1–3, arbitrary real Jacobi amplitudes for points 1–2, and complex first arguments for point 3. In addition, our routines are thread-safe, allowing for parallel computations. Our routines were compared with values from the computer algebra system SageMath over a wide range of input parameters. Values from ellipFor and SageMath agreed to within tolerances commensurate with the limitations of floating-point arithmetic used for the elliptic integrals and Jacobi elliptic functions listed in points 1, 2, and 3 above for generalized input arguments.},
+  archive      = {J_TOMS},
+  author       = {Sean J. Trim and Raymond J. Spiteri},
+  doi          = {10.1145/3709136},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {4},
+  number       = {1},
+  pages        = {1-17},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Algorithm 1054: , a fortran software library for legendre elliptic integrals and jacobi elliptic functions with generalized input arguments},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A simple, scalable large deformation solid mechanics implementation in the MOOSE framework. <em>TOMS</em>, <em>51</em>(1), 1-22. (<a href='https://doi.org/10.1145/3716308'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article describes a large deformation solid mechanics solver implemented as part of the freely available and open source MOOSE finite element simulation framework. The article documents the choices made in developing the solid mechanics framework and describes novel formulations for the gradient operator and constitutive modeling framework made to simplify implementations of different coordinate systems, stabilized gradient operators, and different constitutive model inputs and outputs. In the process, the article describes a new formulation that casts objective integration of the Cauchy stress as a linear transformation of the small stress rate. Finally, the article presents key implementation details and examines the parallel efficiency of the solid mechanics solver implemented in MOOSE. The implementation retains a good weak scaling efficiency beyond 1,000 parallel processes. The article includes a discussion of the factors limiting the parallel efficiency of implicit, large deformation solid mechanics codes on current high-performance computers, with the main current limitation being the scalability of the algebraic multigrid methods used to solve the linearized equilibrium equations.},
+  archive      = {J_TOMS},
+  author       = {Tianchen Hu and Mark C. Messner},
+  doi          = {10.1145/3716308},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {4},
+  number       = {1},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {A simple, scalable large deformation solid mechanics implementation in the MOOSE framework},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). : Discontinuous polytopal methods for multi-physics differential problems. <em>TOMS</em>, <em>51</em>(1), 1-22. (<a href='https://doi.org/10.1145/3716310'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present the library lymph for the finite element numerical discretization of coupled multi-physics problems. lymph is a MATLAB library for the discretization of partial differential equations based on high-order discontinuous Galerkin methods on polytopal grids (PolyDG) for spatial discretization coupled with suitable finite-difference time marching schemes. The objective of the article is to introduce the library by describing it in terms of installation, input/output data, and code structure, highlighting—when necessary—key implementation aspects related to the method. A user guide, proceeding step-by-step in the implementation and solution of a Poisson problem, is also provided. In the last part of the article, we show the results obtained for several differential problems, namely the Poisson problem, the heat equation, the elastodynamics system, and a multi-physics problem coupling poroelasticity and acoustic equations. Through these examples, we show the convergence properties and highlight some of the main features of the proposed method, i.e., geometric flexibility, high-order accuracy, and robustness with respect to heterogeneous physical parameters.},
+  archive      = {J_TOMS},
+  author       = {Paola F. Antonietti and Stefano Bonetti and Michele Botti and Mattia Corti and Ivan Fumagalli and Ilario Mazzieri},
+  doi          = {10.1145/3716310},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {4},
+  number       = {1},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {: Discontinuous polytopal methods for multi-physics differential problems},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A mixed precision jacobi SVD algorithm. <em>TOMS</em>, <em>51</em>(1), 1-33. (<a href='https://doi.org/10.1145/3721124'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a mixed precision Jacobi algorithm for computing the singular value decomposition (SVD) of a dense matrix. After appropriate preconditioning, the proposed algorithm computes the SVD in a lower precision as an initial guess and then performs one-sided Jacobi rotations in the working precision as iterative refinement. By carefully transforming a lower precision solution to a higher precision one, our algorithm achieves about \(2\times\) speedup on the x86-64 architecture compared to the usual one-sided Jacobi SVD algorithm in LAPACK, without sacrificing the accuracy.},
+  archive      = {J_TOMS},
+  author       = {Weiguo Gao and Yuxin Ma and Meiyue Shao},
+  doi          = {10.1145/3721124},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {4},
+  number       = {1},
+  pages        = {1-33},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {A mixed precision jacobi SVD algorithm},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An integer arithmetic-based AMG preconditioned FGMRES solver. <em>TOMS</em>, <em>51</em>(1), 1-25. (<a href='https://doi.org/10.1145/3704726'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider solving a sparse linear system using integer (fixed-point) arithmetic. Integer arithmetic has attracted attention in scientific computing because of its high computational efficiency. Furthermore, considering the current circumstances of hardware development, integer arithmetic is expected to become increasingly important. Nevertheless, integer arithmetic has not been widely used for solving linear systems because it lacks robustness against overflow and underflow, making it hard to solve practical problems. Thus, we propose a new integer-based implementation framework for the Flexible GMRES (FGMRES) method, which enables integer-based solvers to solve linear systems with the same accuracy as conventional floating-point solvers. In addition, we propose an integer-only algebraic multigrid preconditioner. Combining it with the integer-based FGMRES framework, we develop an integer-based solver. Numerical experiments on CPUs showed that the developed integer-based solver has a comparable convergence rate to floating-point solvers. We also found the test cases where the integer-based solver runs faster than the floating-point solvers.},
+  archive      = {J_TOMS},
+  author       = {Kengo Suzuki and Takeshi Fukaya and Takeshi Iwashita},
+  doi          = {10.1145/3704726},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {3},
+  number       = {1},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {An integer arithmetic-based AMG preconditioned FGMRES solver},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimal approximation of the 1/ function using chebyshev polynomials and magic constants. <em>TOMS</em>, <em>51</em>(1), 1-38. (<a href='https://doi.org/10.1145/3708472'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article we analyze low-cost accurate approximation of the function \(1/x\) using Chebyshev polynomials of the first kind and minimizing number of elementary operations in computer codes (in particular, by using the so-called magic constants). It is shown that Newton-Raphson iterative method is not optimal and a new approach is proposed. We prove that optimal Chebyshev polynomials can be factorized in terms of Chebyshev polynomials of lower order which leads to new optimal iteration schemes. We also construct a family of new algorithms by dividing the considered interval into sub-intervals where different magic constants and multiplicative factors are used (in order to increase the accuracy). Theoretical considerations and proofs are completed with numerical tests on three types of microcontroller processors.},
+  archive      = {J_TOMS},
+  author       = {Cezary J. Walczyk and Leonid V. Moroz and Volodymyr Samotyy and Jan L. Cieśliński},
+  doi          = {10.1145/3708472},
+  journal      = {ACM Transactions on Mathematical Software},
+  month        = {3},
+  number       = {1},
+  pages        = {1-38},
+  shortjournal = {ACM Trans. Math. Softw.},
+  title        = {Optimal approximation of the 1/ function using chebyshev polynomials and magic constants},
+  volume       = {51},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

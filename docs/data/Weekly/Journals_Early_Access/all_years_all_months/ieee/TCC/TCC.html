@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TCC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tcc">TCC - 32</h2>
+<ul>
+<li><details>
+<summary>
+(2025). HPCBL: A privacy-preserving data computing model for the supercomputing internet. <em>TCC</em>, 1-14. (<a href='https://doi.org/10.1109/TCC.2025.3604606'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {HPC-cloud is becoming popular as it allows supercomputers to provide computing service with parallelism and high performance based on public cloud technology. Moreover, supercomputers across organizations are forming a network to scale the computational and storage capability of their service. However, the distributed computing process in the supercomputer internet requires a large amount of data transmission and access, arousing privacy and control problems. In this paper, we propose HPCBL, a blockchain-enabled decentralized data computing architecture that ensures private data sharing and computing in the Supercomputer Internet. We also propose a decentralized authentication scheme that entitles users the full control of their anonymous identity to support user private interactions with the Supercomputing Internet. The scheme supports anonymous self-derivative credentials for pair-wised access control and user-optional accountability without a trusted arbiter. We implemented a HPCBL prototype to empirically assess its performance.},
+  archive      = {J_TCC},
+  author       = {Wei Shao and Lianhai Wang and Chunfu Jia and Jinpeng Wang and Shujiang Xu and Shuhui Zhang and Mingyue Li and Qizheng Wang},
+  doi          = {10.1109/TCC.2025.3604606},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {HPCBL: A privacy-preserving data computing model for the supercomputing internet},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Comments on “Blockchain-assisted public-key encryption with keyword search against keyword guessing attacks for cloud storage”. <em>TCC</em>, 1-2. (<a href='https://doi.org/10.1109/TCC.2025.3604552'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As a variant of PEKS (Public key Encryption with Keyword Search), Zhang it al. (IEEE Transactions on Cloud Computing 2021) introduced a secure and efficient PEKS scheme called SEPSE, where servers issue a servers-derived keyword to a sender or a receiver. In this paper, we show that information of keyword is revealed from trapdoor when an adversary is allowed to issue servers-derived keyword queries twice.},
+  archive      = {J_TCC},
+  author       = {Keita Emura},
+  doi          = {10.1109/TCC.2025.3604552},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {9},
+  pages        = {1-2},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Comments on “Blockchain-assisted public-key encryption with keyword search against keyword guessing attacks for cloud storage”},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cloud load balancers need to stay off the data path. <em>TCC</em>, 1-14. (<a href='https://doi.org/10.1109/TCC.2025.3595172'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Load balancers (LBs) are crucial in cloud environments, ensuring workload scalability. They route packets destined for a service (identified by a virtual IP address, or VIP) to a group of servers designated to deliver that service, each with its direct IP address (DIP). Consequently, LBs significantly impact the performance of cloud services and the experience of tenants. Many academic studies focus on specific issues such as designing new load balancing algorithms and developing hardware load balancing devices to enhance the LB's performance, reliability, and scalability. However, we believe this approach is not ideal for cloud data centers for the following reasons: (i) the increasing demands of users and the variety of cloud service types turn the LB into a bottleneck; and (ii) continually adding machines or upgrading hardware devices can incur substantial costs. In this paper, we propose the Next Generation Load Balancer (NGLB), designed to bypass the TCP connection datapath from the LB, thereby eliminating latency overheads and scalability bottlenecks of traditional cloud LBs. The LB only participates in the TCP connection establishment phase. The three key features of our design are: (i) the introduction of an active address learning model to redirect traffic and bypass the LB, (ii) a multi-tenant isolation mechanism for deployment within multi-tenant Virtual Private Cloud networks, and (iii) a distributed flow control method, known as hierarchical connection cleaner, designed to ensure the availability of backend resources. The evaluation results demonstrate that NGLB reduces latency by 16% and increases nearly 3× throughput. With the same LB resources, NGLB improves 10× rate of new connection establishment. More importantly, five years of operational experience has proven NGLB's stability for high-bandwidth services.},
+  archive      = {J_TCC},
+  author       = {Yuchen Zhang and Shuai Jin and Zhenyu Wen and Shibo He and Qingzheng Hou and Yang Song and Zhigang Zong and Xiaomin Wu and Bengbeng Xue and Chenghao Sun and Ku Li and Xing Li and Biao Lyu and Rong Wen and Jiming Chen and Shunmin Zhu},
+  doi          = {10.1109/TCC.2025.3595172},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {8},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Cloud load balancers need to stay off the data path},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Observability and incident response in managed serverless environments using ontology-based log monitoring. <em>TCC</em>, 1-16. (<a href='https://doi.org/10.1109/TCC.2025.3598060'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In fully managed serverless environments, cloud service providers handle the underlying infrastructure, reducing application developers' operational and maintenance efforts. However, these environments limit the use of traditional cybersecurity frameworks and tools, compromising observability and situational awareness capabilities for security tasks (e.g., risk assessment, incident response). Additionally, existing security frameworks for serverless applications often lack generalizability across architectures and require specialized expertise. In this paper, we propose a three-layer security stack for fully managed serverless applications. The first layer establishes a foundational generic ontology that models serverless application resources and their interactions using API logs. In the second layer, the ontology is leveraged via perimeterless pipeline, to map the logs into a unified application activity KG, and in the third layer, two situational awareness tools that utilize the graph-based representation are implemented: (1) an incident response dashboard that leverages the ontology to visualize and examine application activity logs in the context of cybersecurity alerts; our user study showed that this dashboard enabled participants to respond 10% more accurately and almost twice as fast than the examined baseline tool, and (2) a criticality of asset (CoA) risk assessment framework that enables efficient expert-based prioritization in cybersecurity contexts; our expert-based questionnaire demonstrated strong agreement, achieving a Kendall-W score of 0.7179.},
+  archive      = {J_TCC},
+  author       = {Lavi Ben-Shimol and Edita Grolman and Aviad Elyashar and Inbar Maimon and Dudu Mimran and Oleg Brodt and Martin Strassmann and Heiko Lehmann and Yuval Elovici and Asaf Shabtai},
+  doi          = {10.1109/TCC.2025.3598060},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {8},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Observability and incident response in managed serverless environments using ontology-based log monitoring},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Forward-secure multi-user graph searchable encryption for exact shortest path queries. <em>TCC</em>, 1-12. (<a href='https://doi.org/10.1109/TCC.2025.3599412'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid development of cloud computing and increasing adoption of unstructured data impose higher requirements on cloud servers to deliver advanced query capabilities tailored for protected complex data. To provide outsourced graph privacy and support the shortest path query, a cornerstone of graph computing, various graph searchable encryption (GSE) schemes have been proposed. However, those GSE schemes are only for single-user setting and barely keep forward security, limiting data sharing and value extraction. Therefore, we propose a forward-secure GSE scheme for multi-user querying the exact shortest path. Specifically, our designed encryption structure seamlessly combines the randomizable distributed key-homomorphic pseudorandom function (RDPRF) for multi-user authentication and reduces database update. We then build a dual-server architecture with secure equality test protocol for query. To our knowledge, our GSE scheme is the first to guarantee forward security without a trusted proxy and support multi-user querying the exact shortest path. We formalize leakage functions and model the dynamic multi-user GSE scheme. Formal security proof is offered under reasonable leakage. Finally, we conduct experiments on ten real-world graph datasets with different scales and exemplify the feasibility of our scheme.},
+  archive      = {J_TCC},
+  author       = {Weixiao Wang and Qing Fan and Chuan Zhang and Cong Zuo and Liehuang Zhu},
+  doi          = {10.1109/TCC.2025.3599412},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {8},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Forward-secure multi-user graph searchable encryption for exact shortest path queries},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Pura: An efficient privacy-preserving solution for face recognition. <em>TCC</em>, 1-13. (<a href='https://doi.org/10.1109/TCC.2025.3599468'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Face recognition is an effective technology for identifying a target person by facial images. However, sensitive facial images raises privacy concerns. Although privacy-preserving face recognition is a potential solution, this solution neither fully addresses the privacy concerns nor is efficient enough. To this end, we propose an efficient privacy-preserving solution for face recognition, named Pura, which sufficiently protects facial privacy and supports face recognition over encrypted data efficiently. Specifically, we propose a privacy-preserving and non-interactive architecture for face recognition through the threshold Paillier cryptosystem. Additionally, we carefully design a suite of underlying secure computing protocols to enable efficient operations of face recognition over encrypted data directly. Furthermore, we introduce a parallel computing mechanism to enhance the performance of the proposed secure computing protocols. Privacy analysis demonstrates that Pura fully safeguards personal facial privacy. Experimental evaluations demonstrate that Pura achieves recognition speeds up to 16 times faster than the state-of-the-art.},
+  archive      = {J_TCC},
+  author       = {Guotao Xu and Bowen Zhao and Yang Xiao and Yantao Zhong and Liang Zhai and Qingqi Pei},
+  doi          = {10.1109/TCC.2025.3599468},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {8},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Pura: An efficient privacy-preserving solution for face recognition},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Resource-aware dynamic scheduling for tasks with deadline constraints on edge computing systems. <em>TCC</em>, 1-15. (<a href='https://doi.org/10.1109/TCC.2025.3603782'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The proliferation of various IoT devices has brought about diverse computing requests. Scheduling delay-sensitive tasks to edge nodes closer to data sources can help alleviate core network congestion and improve system quality of service (QoS). However, with the dynamic computing requirements of changing scenarios and the imbalanced performance of limited heterogeneous edge resources, resource competition among multiple tasks has become increasingly fierce. This resource competition leads to inefficient services and performance fluctuations in edge scheduling systems. The key lies in dynamically matching task requirements and limited heterogeneous resources to improve resource utilization efficiency. To overcome this challenge, we propose a resource-aware task grouping scheduling strategy (RATGS) based on our proposed group-based and sharedstate edge scheduling framework, aiming to improve the overall service quality of edge computing systems. We perform extensive evaluation on multiple metrics using realistic workloads and realworld traces. The experimental results demonstrate that RATGS improves the task completion rate by 7.56%∼50.1% before the deadline and improves the efficiency of resource utilization by 17.7%∼94.8% compared with existing baseline strategies. In addition, RATGS performed second best in terms of average completion time.},
+  archive      = {J_TCC},
+  author       = {Wenbiao Cao and Xiaoyong Tang and Tan Deng and Ronghui Cao and Keqin Li},
+  doi          = {10.1109/TCC.2025.3603782},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {8},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Resource-aware dynamic scheduling for tasks with deadline constraints on edge computing systems},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fog-enhanced personalized privacy-preserving data analysis for smart homes. <em>TCC</em>, 1-16. (<a href='https://doi.org/10.1109/TCC.2025.3586052'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The proliferation of Internet of Things (IoT) devices has led to a surge in data generation within smart home environments. This data explosion has raised significant privacy concerns and highlighted a lack of user-friendly controls. Consequently, there is a pressing need for a robust privacy-enhancing mechanism tailored for smart homes, safeguarding sensitive data from a user-centric perspective. In this paper, we introduce the Fog-enhanced Personalized Differential Privacy (FEPDP) model, which utilizes the distributed nature of fog computing to improve data processing efficiency and security in smart homes. Specifically, the personalization, as a key feature of FEPDP, is manifested through an array of user-driven policy specifications, enabling home users to specify secret and privacy specifications for their personal data. These specifications not only enhance control over personal data but also align with the heterogeneous nature of smart home environments. Subsequently, aligned with fog-based smart home architecture, we propose two policy-driven partitioning mechanisms that utilize threshold partitioning based on dynamic programming to effectively implement FEPDP. Finally, comprehensive theoretical analysis and experimental validation across various statistical analysis tasks and datasets confirm that FEPDP achieves a superior privacy-utility trade-off for smart home data by leveraging non-sensitive data and fog-based partitioning.},
+  archive      = {J_TCC},
+  author       = {Jiajun Chen and Chunqiang Hu and Weihong Sheng and Hui Xia and Pengfei Hu and Jiguo Yu},
+  doi          = {10.1109/TCC.2025.3586052},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {7},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Fog-enhanced personalized privacy-preserving data analysis for smart homes},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Accelerating AI-generated content collaborative inference via transfer reinforcement learning in dynamic edge networks. <em>TCC</em>, 1-15. (<a href='https://doi.org/10.1109/TCC.2025.3586878'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {While diffusion models have demonstrated remarkable success in computer vision tasks, their deployment in Internet of Things environments remains challenging. Edge devices face significant constraints in computational resources and must adapt to dynamic operating conditions. To address these limitations, we propose a novel system that accelerates AIgenerated content (AIGC) collaborative inference in dynamic edge networks. The proposed system introduces a multi-exit vision transformer-based U-Net architecture that enables efficient processing through adaptive exit point selection during the diffusion process, optimizing the trade-off between inference accuracy and computational efficiency. To optimize device-level operations, we develop an innovative generative AI-assisted reinforcement learning framework that determines optimal exit selection and offloading strategies to maximize generation quality and inference speed. Furthermore, we design a fine-tuning approach with policy reuse mechanisms that facilitates rapid reinforcement learning algorithm deployment across diverse environments. Extensive experimental evaluations demonstrate that our system outperforms existing algorithms in terms of balancing inference latency and generation quality, while also exhibiting improved adaptability to environmental variations.},
+  archive      = {J_TCC},
+  author       = {Meng Tian and Zhicheng Liu and Chenxuan Hou and Chao Qiu and Xiaofei Wang and Dusit Niyato and Victor C. M. Leung},
+  doi          = {10.1109/TCC.2025.3586878},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {7},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Accelerating AI-generated content collaborative inference via transfer reinforcement learning in dynamic edge networks},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Securing and sustaining IoT edge-computing architectures through nanoservice integration. <em>TCC</em>, 1-12. (<a href='https://doi.org/10.1109/TCC.2025.3588681'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid proliferation of the Internet of Things (IoT) and edge computing devices calls for solutions that deliver low latency, energy efficiency, and robust security-often challenging goals to balance simultaneously. This paper introduces a novel nanoservice-based framework that dynamically adapts to changing demands while achieving sustainable and secure edge operations. By breaking down functionalities into specialized and narrowly scoped nanoservices that are requested only as needed and eliminated when idle, the approach significantly reduces latency and energy usage compared to conventional, more static methods. Moreover, integrating a Zero-Trust Architecture (ZTA) ensures that every component-computational or security-related-is continuously verified and restricted through strict access controls and micro-segmentation. This framework's adaptability extends uniformly to all nanoservices, including those providing security features, thereby maintaining strong protective measures even as workloads and network conditions evolve. Experimental evaluations on IoT devices under varying workloads demonstrate that the proposed approach significantly reduces energy consumption and latency while maintaining security and scalability. These results underscore the potential for an integrated, flexible model that simultaneously addresses energy efficiency, performance, and security-an essential trifecta in future edge computing environments.},
+  archive      = {J_TCC},
+  author       = {Cinthya Celina Tamayo Gonzalez and Ijaz Ahmad and Simone Soderi and Erkki Harjula},
+  doi          = {10.1109/TCC.2025.3588681},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {7},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Securing and sustaining IoT edge-computing architectures through nanoservice integration},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Layer redundancy aware DNN model repository planning for fast model download in edge cloud. <em>TCC</em>, 1-12. (<a href='https://doi.org/10.1109/TCC.2025.3591482'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The booming development of artificial intelligence (AI) applications has greatly promoted edge intelligence technology. To support latency-sensitive Deep Neural Network (DNN) based applications, the integration of serverless inference paradigm into edge intelligence has become a widely recognized solution. However, the long DNN model downloading time from central clouds to edge servers hinders inference performance, and asks for establishing model repository within the edge cloud. This paper first identifies the inherent layer redundancy in DNN models, which is potentially beneficial to improve the storage efficiency of the model repository in the edge cloud. However, how to exploit the layer redundancy feature and allocate the DNN layers across different edge servers with capacitated storage resources to reduce the model downloading time remains challenging. To address this issue, we first formulate this problem in Quadratic Integer Programming (QIP) form, based on which a randomized rounding layer redundancy aware DNN model storage planning strategy is proposed. Our approach significantly reduces model downloading time by up to 63% compared to state-of-the-art methods, as demonstrated through extensive trace-driven experiments.},
+  archive      = {J_TCC},
+  author       = {Hongmin Geng and Yuepeng Li and Sheng Wang and Lin Gu and Deze Zeng},
+  doi          = {10.1109/TCC.2025.3591482},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {7},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Layer redundancy aware DNN model repository planning for fast model download in edge cloud},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CSCR: A cross-view intelligent scheduling method implemented via cloud computing workflow reduction. <em>TCC</em>, 1-16. (<a href='https://doi.org/10.1109/TCC.2025.3591549'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The surge in the development of artificial intelligence has led to increases in the complexity of computational tasks and the resource demands within cloud computing scenarios. Therefore, intelligent scheduling methods have formed a crucial research area. Solving complex scheduling problems requires many problem feature and long-sequence decision-making observations as possible. To address the workflow scheduling problem under the limited capabilities of models, workflow reduction and cross-view workflow scheduling problems are first proposed in this paper, with the optimization objectives and constraints of each problem described. Second, a cross-view intelligent scheduling method implemented via cloud computing workflow reduction (CSCR), including a workflow reduction sorting algorithm (Task-priority ranker), an intelligent reduction algorithm (Workflow view-transformer), and a cross-view intelligent scheduling algorithm (Joint-scheduler), is proposed. We also propose an intelligent scheduling architecture under the workflow reduction paradigm. By reducing the workflow, we provide multiple views that support the decision-making processes of deep reinforcement learning-based scheduling models and coordinate workflow views before and after the reduction step to achieve cross-view joint scheduling. Experimental results show that CSCR achieves minimum advantages of 42.1%, 43.2%, and 33.3% in terms of three workflow reduction indicators over four other algorithms, significantly optimizing the effect of the employed scheduling model.},
+  archive      = {J_TCC},
+  author       = {Genxin Chen and Jin Qi and Xingjian Zhu and Jialin Hua and Zhenjiang Dong and Yanfei Sun},
+  doi          = {10.1109/TCC.2025.3591549},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {7},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {CSCR: A cross-view intelligent scheduling method implemented via cloud computing workflow reduction},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MKAC: Efficient and privacy-preserving multi-keyword ranked query with ciphertext access control in cloud environments. <em>TCC</em>, 1-14. (<a href='https://doi.org/10.1109/TCC.2025.3594575'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the explosion of big data in cloud environments, data owners tend to delegate the storage and computation to cloud servers. Since cloud servers are generally untrustworthy, data owners often encrypt data before outsourcing it to the cloud. Numerous privacy-preserving schemes for the multi-keyword ranked query have been proposed, but most of these schemes do not support ciphertext access control, which can easily lead to malicious access by unauthorized users, causing serious damage to personal privacy and commercial secrets. To address the above challenges, we propose an efficient and privacy-preserving multi-keyword ranked query scheme (MKAC) that supports ciphertext access control. Specifically, in order to enhance the efficiency of the multi-keyword ranked query, we employ a vantage point (VP) tree to organize the keyword index. Additionally, we develop a VP tree-based multi-keyword ranked query algorithm, which utilizes the pruning strategy to minimize the number of nodes to search. Next, we propose a privacy-preserving multi-keyword ranked query scheme that combines asymmetric scalar-product-preserving encryption with the VP tree. Furthermore, attribute-based encryption mechanism is used to generate the decryption key based on the query user's attributes, which is then employed to decrypt the query results and trace any malicious query user who may leak the secret key. Finally, a rigorous analysis of the security of MKAC is conducted. The extensive experimental evaluation shows that the proposed scheme is efficient and practical.},
+  archive      = {J_TCC},
+  author       = {Haiyong Bao and Lu Xing and Honglin Wu and Menghong Guan and Na Ruan and Cheng Huang and Hong-Ning Dai},
+  doi          = {10.1109/TCC.2025.3594575},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {7},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {MKAC: Efficient and privacy-preserving multi-keyword ranked query with ciphertext access control in cloud environments},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A cross-workload power prediction method based on transfer gaussian process regression in cloud data centers. <em>TCC</em>, 1-12. (<a href='https://doi.org/10.1109/TCC.2025.3575790'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Nowadays, machine learning (ML)-based power prediction models for servers have shown remarkable performance, leveraging large volumes of labeled data for training. However, collecting extensive labeled power data from servers in cloud data centers incurs substantial costs. Additionally, varying resource demands across different workloads (e.g., CPU-intensive, memory-intensive, and I/O-intensive) lead to significant differences in power consumption behaviors, known as domain shift. Consequently, power data collected from one type of workload cannot effectively train power prediction models for other workloads, limiting the exploration of the collected power data. To tackle these challenges, we propose TGCP, a cross-workload power prediction method based on multi-source transfer Gaussian process regression. TGCP transfers knowledge from abundant power data across multiple source workloads to a target workload with limited power data. Furthermore, Continuous normalizing flows adjust the posterior prediction distribution of Gaussian process, making it locally non-Gaussian, enhancing TGCP's ability to handle real-world power data distribution. This method enhances prediction accuracy for the target workload while reducing the expense of acquiring power data for real cloud data centers. Experimental results on a realistic power consumption dataset demonstrate that TGCP surpasses four traditional ML methods and three transfer learning methods in cross-workload power prediction.},
+  archive      = {J_TCC},
+  author       = {Ruichao Mo and Weiwei Lin and Haocheng Zhong and Minxian Xu and Keqin Li},
+  doi          = {10.1109/TCC.2025.3575790},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {6},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {A cross-workload power prediction method based on transfer gaussian process regression in cloud data centers},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PHOENIX: Misconfiguration detection for AWS serverless computing. <em>TCC</em>, 1-13. (<a href='https://doi.org/10.1109/TCC.2025.3577211'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Serverless computing is a burgeoning cloud computing paradigm that allows developers to implement applications at the function level, known as serverless applications. Amazon Web Services (AWS), the leading provider in this field, offers Serverless Application Model (AWS SAM), a widely adopted configuration schema for configuring functions and managing resources. However, misconfigurations pose a major challenge during serverless application development, and existing methods are not applicable. To our knowledge, the configuration characteristics and misconfiguration detection for serverless applications have not been well explored. To address this gap, we collect and analyze 733 real-world serverless application configuration files using AWS SAM to understand their characteristics and challenges. Based on the insights, we design PHOENIX, a misconfiguration detection approach for serverless computing. PHOENIX learns configuration patterns from uniform representations of configurations and identifies potential misconfigurations that deviate from these patterns. To evaluate PHOENIX, we construct a dataset comprising 35 injected misconfigurations and 70 real-world misconfigurations with confirmed causes. Our results show that PHOENIX detects 100% of the injected misconfigurations and identifies 97.14% of real-world misconfigurations, significantly outperforming the state-of-the-art tool.},
+  archive      = {J_TCC},
+  author       = {Jinfeng Wen and Haodi Ping},
+  doi          = {10.1109/TCC.2025.3577211},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {6},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {PHOENIX: Misconfiguration detection for AWS serverless computing},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A reference architecture for governance of cloud native applications. <em>TCC</em>, 1-18. (<a href='https://doi.org/10.1109/TCC.2025.3578557'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The evolution of cloud computing has given rise to Cloud Native Applications (CNAs), presenting new challenges in governance, particularly when faced with strict compliance requirements. This work explores the unique characteristics of CNAs and their impact on governance. We introduce a comprehensive reference architecture designed to streamline governance across CNAs, along with a sample implementation, offering insights for both single and multi-cloud environments. Our architecture seamlessly integrates governance within the CNA framework, adhering to a “battery-included” philosophy. Tailored for both expansive and compact CNA deployments across various industries, this design enables cloud practitioners to prioritize product development by alleviating the complexities associated with governance. In addition, it provides a building block for academic exploration of generic CNA frameworks, highlighting their relevance in the evolving cloud computing landscape.},
+  archive      = {J_TCC},
+  author       = {William Pourmajidi and Lei Zhang and John Steinbacher and Tony Erwin and Andriy Miranskyy},
+  doi          = {10.1109/TCC.2025.3578557},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {6},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {A reference architecture for governance of cloud native applications},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). REE-TM: Reliable and energy-efficient traffic management model for diverse cloud workloads. <em>TCC</em>, 1-16. (<a href='https://doi.org/10.1109/TCC.2025.3581697'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Diversity of workload demands lays a critical impact on efficient resource allocation and management of cloud services. The existing literature has either weakly considered or overlooked the heterogeneous feature of job requests received from wide range of internet services users. To address this context, the proposed approach named Reliable and Energy Efficient Traffic Management (REE-TM) has exploited the diversity of internet traffic in terms of variation in resource demands and expected complexity. Specifically, REE-TM incorporates categorization of heterogeneous job requests and executes them by selecting the most admissible virtual node (a software-defined instance such as a virtual machine or container) and physical node (an actual hardware server or compute host) within the cloud infrastructure. To deal with resource-contention-based resource failures and performance degradation, a novel workload estimator ‘Toffoli Gate-based Quantum Neural Network’ (TG-QNN) is proposed, wherein learning process or interconnection weights optimization is achieved using Quantum version of BlackHole (QBHO) algorithm. The proactively estimated workload is used to compute entropy of the upcoming internet traffic with various traffic states analysis for detection of probable resource-congestion. REE-TM is extensively evaluated through simulations using a benchmark dataset and compared with optimal and without REE-TM versions. The performance evaluation and comparison of REE-TM with measured significant metrics reveal its effectiveness in assuring higher reliability by up to 30.25% and energy-efficiency by up to 23% as compared without REE-TM.},
+  archive      = {J_TCC},
+  author       = {Ashutosh Kumar Singh and Deepika Saxena and Volker Lindenstruth},
+  doi          = {10.1109/TCC.2025.3581697},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {6},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {REE-TM: Reliable and energy-efficient traffic management model for diverse cloud workloads},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Refrain from inquiring about my scalable storage and boolean queries for secure cloud. <em>TCC</em>, 1-14. (<a href='https://doi.org/10.1109/TCC.2025.3582645'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Outsourcing personal data to a convenient and affordable cloud platform has become a popular practice. Considering the risk of privacy leakage, users usually encrypt their data before uploading it to the cloud server. Searchable encryption (SE) allows cloud servers to manage and search data in encrypted form based on user-specified requests. However, coercion attacks are rarely considered, where users may be forced to open search records and results. Therefore, deniable SE solutions against coercion attacks are presented, but they suffer from large storage overhead or fail to consider the dual coercion situation towards both sides of data owners and data users. In this paper, we roughly combine oblivious cross-tags protocol (OXT) and deniable encryption to propose a deniable SE (deniable cross-tag, DXT) scheme, which supports boolean queries and resists dual coercion attacks. Technically, we formalize a new primitive called updatable deniable encryption, and combine it with OXT in a non-trivial manner. In addition, we give formal system model, security model, and security proof of DXT. By employing the HUAWEI cloud platform, we conduct sufficient comparative experiments between DXT and state-of-the-art solutions based on a public dataset. The experimental results demonstrate that DXT outperforms higher search efficiency while achieving better features.},
+  archive      = {J_TCC},
+  author       = {Boli Hu and Kai Zhang and Junqing Gong and Haifeng Qian},
+  doi          = {10.1109/TCC.2025.3582645},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {6},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Refrain from inquiring about my scalable storage and boolean queries for secure cloud},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhancing container security through phase-based system call filtering. <em>TCC</em>, 1-13. (<a href='https://doi.org/10.1109/TCC.2025.3583414'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Container technology in cloud computing has improved resource utilization and deployment efficiency, but it also introduces new security risks. Excessive privileges in containerized environments can allow attackers to exploit insufficiently restricted system calls, potentially leading to container escapes and other attacks. Some system calls are only necessary during the initialization phase of a container, and allowing them during runtime can increase the risk of exploitation. This paper proposes a Phase-based System Call Filtering (PSF) method to minimize system call permissions during the runtime of cloud containers. The PSF method builds a comprehensive whitelist of system calls during the initialization phase to cover all necessary calls for containerized applications. During runtime, a refined, phase-specific system call whitelist is enforced, dynamically adjusting privileges based on the functions encapsulated within the container. Additionally, we introduce a container phase recognition algorithm to distinguish between initialization and runtime phases, supporting the generation of phase-specific system call lists. Experimental results show that the proposed method enhances runtime system call restrictions, minimizes privileges, and improves the overall security of cloud containers.},
+  archive      = {J_TCC},
+  author       = {Ke Chen and Hui Lu and Yinnan Yao and Binxing Fang and Yuan Liu and Zhihong Tian},
+  doi          = {10.1109/TCC.2025.3583414},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {6},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Enhancing container security through phase-based system call filtering},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Achieving enhanced bi-linear attention network for teaching manner analysis over edge cloud-assisted AIoT: Voice-body coordination perspective. <em>TCC</em>, 1-15. (<a href='https://doi.org/10.1109/TCC.2025.3568394'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Edge computing, an advanced extension of cloud computing, provides superior computational capabilities and lowlatency processing at the network edge, facilitating its availability for real-time data analysis in resource-limited settings. When applied to the analysis of teaching methodologies, edge computing enables the seamless integration of vocal and physical cues, facilitating collaborative, dynamic, and real-time evaluations of teaching quality. However, the inherent complexity of human perception and multimodal interactions impose great challenges to the analysis of these aspects in Artificial Intelligence of Things (AIoT). This paper introduces an innovative mathematical model and a measurement index specifically designed to assess changes in voice-body coordination over time. To achieve this, we propose a cloud-enabled enhanced Bi-Linear Attention Network incorporating entropy and Fourier transforms (BAN-E-FT), which leverages both temporal and frequencydomain features. Specifically, by harnessing the computational and storage capabilities of edge computing, BAN-E-FT facilitates distributed training, expedites large-scale data processing, and enhances model scalability, where entropy measures and Fourier transforms capture modality dynamics, enhancing BAN's fusion capabilities. Moreover, a conditional domain adversarial network is embedded to address regional teaching variations, improving model generalizability. We also verify the robustness of BAN-EFT with accuracy and convergence through convex optimization analysis. Experiments on the eNTERFACE'05 dataset demonstrate 81% accuracy in assessing teaching adaptability, while real-world test at Guizhou University confirms 78% accuracy when using BAN-E-FT, matching human expert assessments.},
+  archive      = {J_TCC},
+  author       = {Yu Zhou and Sai Zou and Bochun Wu and Wei Ni and Xiaojiang Du},
+  doi          = {10.1109/TCC.2025.3568394},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {5},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Achieving enhanced bi-linear attention network for teaching manner analysis over edge cloud-assisted AIoT: Voice-body coordination perspective},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Demand-aware distributed scheduling with adaptive buffer control in reconfigurable data center networks. <em>TCC</em>, 1-12. (<a href='https://doi.org/10.1109/TCC.2025.3568369'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reconfigurable data center networks (RDCNs), integrating the electrical packet switch (EPS) with the optical circuit switch (OCS), improve network adaptability by enabling high- throughput connections between top-of-rack (ToR) pairs. However, existing RDCN scheduling schemes face challenges in responsiveness, particularly during traffic bursts. In this paper, we propose a novel demand-aware distributed scheduling framework called P4-DADS, utilizing P4-based programmable ToR switches (P4ToR). To prevent conflicts arising from simultaneous OCS port allocations, P4-DADS employs a token-ring-based distributed reservation algorithm, enhanced with an adaptive buffer control (ABC) mechanism. By formulating a Markov decision process (MDP) problem, the optimal ABC policy is obtained through a value iteration algorithm, ensuring that packets are immediately ready for transmission during sudden demand surges. P4-DADS improves network responsiveness and scalability, as evidenced by a 145.95% increase in throughput and a 87.31% reduction in flow completion time. These improvements demonstrate the potential of P4-DADS as a scalable and efficient solution for resource management in RDCN.},
+  archive      = {J_TCC},
+  author       = {Subin Han and Eunsok Lee and Hyunkyung Yoo and Namseok Ko and Sangheon Pack},
+  doi          = {10.1109/TCC.2025.3568369},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {5},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Demand-aware distributed scheduling with adaptive buffer control in reconfigurable data center networks},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Data-related parameter selection for training deep learning models predicting application performance degradation in clouds. <em>TCC</em>, 1-14. (<a href='https://doi.org/10.1109/TCC.2025.3570093'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Applications deployed in clouds are susceptible to performance degradation due to diverse underlying causes such as infrastructure faults. To maintain the expected availability of these applications, Machine Learning (ML) models can be used to predict the impending application performance degradations to take preventive measures. However, the prediction accuracy of these ML models, which is a key indicator of their performance, is influenced by several factors, including training data size, data sampling intervals, input window and prediction horizon. To optimize these data-related parameters, in this paper, we propose a surrogate-assisted multi-objective optimization algorithm with the objective to maximize prediction model accuracy while minimizing the resources consumed for data collection and storage. We evaluated the proposed algorithm through two use cases focusing on the prediction of Key Performance Indicators (KPIs) for a 5 G core network and a web application deployed in two Kubernetes-based cloud testbeds. It is demonstrated that the proposed algorithm can achieve a normalized hypervolume of 99.5% relative to the optimal Pareto front and reduce search time for the optimal solution by 0.6 hours compared to other surrogates and by 3.58 hours compared to using no surrogates.},
+  archive      = {J_TCC},
+  author       = {Behshid Shayesteh and Chunyan Fu and Amin Ebrahimzadeh and Roch Glitho},
+  doi          = {10.1109/TCC.2025.3570093},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {5},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Data-related parameter selection for training deep learning models predicting application performance degradation in clouds},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reversible data hiding in encrypted images based on chinese remainder theorem. <em>TCC</em>, 1-16. (<a href='https://doi.org/10.1109/TCC.2025.3570327'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To deal with the development of the distributed server, this paper proposes a new method for reversible data hiding in encrypted images based on the Chinese Remainder Theorem (CRT), encrypting and sharing one image to multiple data hiders through $(k,n)$-threshold secret sharing. First, an original image is divided into the most significant bit (MSB) compression area and the least significant bit (LSB) area by utilizing the spatial correlation. The $l$-MSB layers are predicted to obtain prediction errors, and these prediction errors are compressed by Huffman coding. Then according to the value of $k$, CRT and secret sharing scheme are performed on the $(8-l)$-LSB layers to generate the shared bitstream. Finally, $n$ encrypted images for sharing consist of MSB compression bitstreams and shared bitstreams, whose size is adjusted based on $k$ value. Each data hider can independently embed secret data after having one of the encrypted images, while the receiver can recover the original image only after receiving $k$ or more encrypted images. Experimental results show that the proposed algorithm not only provides a large embedding space for secret data, but is also able to complete the inverse operation of data hiding and realize the lossless recovery of the original image with $(k,n)$-threshold secret sharing.},
+  archive      = {J_TCC},
+  author       = {Jiani Chen and Dawen Xu},
+  doi          = {10.1109/TCC.2025.3570327},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {5},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Reversible data hiding in encrypted images based on chinese remainder theorem},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Lattice-based revocable IBEET scheme for mobile cloud computing. <em>TCC</em>, 1-14. (<a href='https://doi.org/10.1109/TCC.2025.3570332'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Identity-based encryption with equality test (IBEET) is a special form of searchable encryption that has broad applications in cloud computing. It enables users to perform equality tests on encrypted data without decryption, thereby achieving secure data search while ensuring data privacy and confidentiality. However, in the context of mobile cloud computing, the susceptibility of mobile devices to loss significantly increases the risk of private key exposure. Existing IBEET schemes struggle to address this issue effectively, limiting their practical applicability. Moreover, with the rapid advancement of quantum computing, the security of traditional cryptographic hardness assumptions faces potential threats. To address these challenges and enhance system efficiency, we proposes the first lattice-based revocable IBEET (RIBEET) scheme, which supports user key revocation. We prove that our scheme satisfies adaptive CCA security under the assumption of DLWE hard problem. Additionally, performance evaluations comparing our scheme with existing ones demonstrate that our scheme offers significant efficiency advantages. Furthermore, we apply the proposed scheme to mobile health services, showcasing its practicality and reliability in mobile cloud computing environments.},
+  archive      = {J_TCC},
+  author       = {Hongwei Wang and Yongjian Liao and Zhishuo Zhang and Yingjie Dong and Shijie Zhou},
+  doi          = {10.1109/TCC.2025.3570332},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {5},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Lattice-based revocable IBEET scheme for mobile cloud computing},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Personalized cloud gaming: Multi-objective optimization for resource utilization and video encoding. <em>TCC</em>, 1-14. (<a href='https://doi.org/10.1109/TCC.2025.3571095'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cloud gaming represents a major part of contemporary gaming. To boost the Quality-of-Experience (QoE) of cloud gaming, the integration of Dynamic Adaptive Video Encoding (DAVE) with Multi-access Edge Computing (MEC) has become the natural candidate owing to its flexibility and reliable transmission support for real-time interactions. However, as multiple gamers compete for limited resources to achieve personalized QoE, such as ultra-high video quality and ultra-low latency, how to support efficient edge resource optimization is a fundamental and important problem. Furthermore, determining the optimal game video encoding configuration in real-time poses significant challenges, especially when lacking the information on future video and edge network resources. To address these key issues, we jointly optimize the video encoding as well as computing and communication resource allocation by active mutual adaptation of video coding configurations and physical resources in a Software Defined Networking (SDN)-assisted edge network. This eliminates the performance bottleneck caused by decoupling optimization of coding parameter configuration and physical resource allocation. The SDN-assisted edge network architecture supports efficient on-demand resource management, provides global network information, and meets the stringent time-varying game requests. Due to the significant time scale difference between video chunk and physical resource block, we propose a novel Asynchronous Decision-Making Multi Agent Proximal Policy Optimization algorithm (AD-MAPPO), which can address the credit assignment problem with a single agent. It can also adapt to the highly dynamic cloud gaming environment without prior knowledge and a deterministic environmental model. Extensive experimentation based on real cloud gaming datasets convincingly demonstrates that our approach can significantly enhance the overall QoE of gamers.},
+  archive      = {J_TCC},
+  author       = {Jingjing Zhang and Xiaoheng Deng and Jinsong Gui and Xuechen Chen and Shaohua Wan and Geyong Min},
+  doi          = {10.1109/TCC.2025.3571095},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {5},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Personalized cloud gaming: Multi-objective optimization for resource utilization and video encoding},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic QoS-driven framework for co-scheduling of distributed long-running applications on shared clusters. <em>TCC</em>, 1-17. (<a href='https://doi.org/10.1109/TCC.2025.3571098'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cloud service providers typically co-locate various workloads within the same production cluster to improve resource utilization and reduce operational costs. These workloads primarily consist of batch analysis jobs composed of multiple parallel short-running tasks and long-running applications (LRAs) that continuously reside in the system. The adoption of microservice architecture has led to the emergence of distributed long-running applications (DLRAs), which enhance deployment flexibility but pose challenges in detecting and investigating QoS violations due to workload variability and performance propagation across microservices. State-of-the-art resource managers are only responsible for resource allocation among applications/jobs and do not prioritize runtime QoS aspects, such as applicationlevel latency. To address this, we introduce Prank, a QoSdriven resource management framework for co-located workloads. Prank incorporates a non-intrusive performance anomaly detection mechanism for DLRAs and proposes a root cause localization algorithm based on PageRank-weighted analysis of performance anomalies. Moreover, it dynamically balances resource allocation between DLRAs and co-located batch jobs on nodes hosting critical microservices, optimizing for both DLRA performance and overall cluster efficiency. Experimental results demonstrate that Prank outperforms state-of-the-art baselines, reducing DLRA tail latency by over 38% while increasing batch job completion time by no more than 21% on average},
+  archive      = {J_TCC},
+  author       = {Jianyong Zhu and Hongtao Wang and Pan Su and Yang Wang and Weihua Pan},
+  doi          = {10.1109/TCC.2025.3571098},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {5},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Dynamic QoS-driven framework for co-scheduling of distributed long-running applications on shared clusters},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Jiangsu T-COMS: A time-slot-aware and cost-effective data transfer method for geo-distributed data centers. <em>TCC</em>, 1-14. (<a href='https://doi.org/10.1109/TCC.2025.3572308'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the increasing demands placed on geographically distributed Data Centers (DCs), recent studies have focused on optimizing performance from the perspective of both cloud providers and customers. These studies address a variety of goals, such as minimizing transmission time, reducing resource usage, and optimizing network costs. However, many existing models for workload transfers operate using a uniform time-slot approach, which limits their flexibility in handling variable data transfer requests with different deadline requirements. This lack of adaptability can negatively impact the quality of service for users. Additionally, these models often overlook the potential benefits of incorporating multiple data sources, which can lead to sub-optimal transmission times. To overcome these limitations, this paper introduces TCOMS, a Time-slot-aware, COst-effective, and Multi-Source-aware method for file transfers tailored specifically for geo-distributed DCs, leveraging a multi-source and dynamic time-slot strategy to accelerate transmission and enhance service quality. The proposed model identifies the optimal sources, paths, and time slot lengths required to efficiently transmit workloads to their destinations while minimizing costs. Initially, we introduced a Mixed Integer NonLinear Programming (MINLP) model and subsequently linearized it within our framework. Given the NP-hard nature of the proposed model, its applicability is limited in large-scale environments. To address this issue, we developed an efficient heuristic algorithm that can derive near-optimal solutions in polynomial time. The simulation results demonstrate the effectiveness of the proposed TCOMS model and the heuristic algorithm in terms of the reduction in cost and transmission time for file transfers between geographically distributed DCs.},
+  archive      = {J_TCC},
+  author       = {Bita Fatemipour and Zhe Zhang and Marc St-Hilaire},
+  doi          = {10.1109/TCC.2025.3572308},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {5},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Jiangsu T-COMS: A time-slot-aware and cost-effective data transfer method for geo-distributed data centers},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Leakage reduced searchable symmetric encryption for multi-keyword queries. <em>TCC</em>, 1-13. (<a href='https://doi.org/10.1109/TCC.2025.3573378'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Conjunctive keyword queries on untrusted cloud servers represent one of the most common forms of search in encrypted environments. Extensive research has been devoted to developing efficient schemes that support multi-keyword queries. In particular, the Oblivious Cross-Tags (OXT) protocol has received significant attention and is widely regarded as a benchmark in this domain. However, existing schemes fail to simultaneously hide the Keyword-Pair Result Pattern (KPRP) and the conditional Intersection Pattern (IP), potentially leaking additional information to the server. In this work, we propose a novel searchable symmetric encryption (SSE) scheme, referred to as Result Hiding Search (RHS), which aims to minimize result pattern leakage and achieve query result hiding during the index retrieval phase by integrating Private Set Intersection (PSI) techniques. Our scheme enhances privacy by employing PSI for secure membership testing. To improve query efficiency, we shift the expensive complex computation to the offline phase, and utilize efficient pseudorandom functions and hash functions during the online phase. Moreover, we propose a variant of RHS, called vRHS, designed to reduce client-side storage overhead. A simulation-based security proof demonstrates that our scheme is robust against non-adaptive adversaries. Comprehensive experimental evaluation further shows that our approach achieves better security and efficiency trade-offs compared to existing SSE schemes.},
+  archive      = {J_TCC},
+  author       = {Qinghua Deng and Lanxiang Chen and Yizhao Zhu and Yi Mu},
+  doi          = {10.1109/TCC.2025.3573378},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {5},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Leakage reduced searchable symmetric encryption for multi-keyword queries},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Robin: An efficient hierarchical federated learning framework via a learning-based synchronization scheme. <em>TCC</em>, 1-14. (<a href='https://doi.org/10.1109/TCC.2025.3574823'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hierarchical federated learning (HFL) extends traditional federated learning by introducing a cloud-edge-device framework to enhance scalability. However, the challenge of determining when devices and edges should aggregate models remains unresolved, making the design of an effective synchronization scheme crucial. Additionally, the heterogeneity in computing and communication capabilities, coupled with non-independent and identically distributed ( non-IID) data distributions, makes synchronization particularly complex. In this paper, we propose Robin, a learning-based synchronization scheme for HFL systems. By collecting data such as models' parameters, CPU usage, communication time, etc., we design a deep reinforcement learning-based approach to decide the frequencies of cloud aggregation and edge aggregation, respectively. The proposed scheme well considers device heterogeneity, non-IID data and device mobility, to maximize the training model accuracy while minimizing the energy overhead. Meanwhile, we prove the convergence of Robin's synchronization scheme. And we build an HFL testbed and conduct the experiments with real data obtained from Raspberry Pi and Alibaba Cloud. Extensive experiments under various settings are conducted to confirm the effectiveness of Robin, which can improve 31.2% in model accuracy while reducing energy consumption by 36.4%.},
+  archive      = {J_TCC},
+  author       = {Tianyu Qi and Yufeng Zhan and Peng Li and Yuanqing Xia},
+  doi          = {10.1109/TCC.2025.3574823},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {5},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Robin: An efficient hierarchical federated learning framework via a learning-based synchronization scheme},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2023). Design and implementation of fragmented clouds for evaluation of distributed databases. <em>TCC</em>, 1-14. (<a href='https://doi.org/10.1109/TCC.2023.3304351'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we present a Fragmented Hybrid Cloud (FHC) that provides a unified view of multiple geographically distributed private cloud datacenters. FHC leverages a fragmented usage model in which outsourcing is bi-directional across private clouds that can be hosted by static and mobile entities. The mobility aspect of private cloud nodes has important impacts on the FHC performance in terms of latency and network throughput that are reversely proportional to time-varying distances among different nodes. Mobility also results in intermittent interruption among computing nodes and network links of FHC infrastructure. To fully consider mobility and its consequences, we implemented a layered FHC that leverages Linux utilities and bash-shell programming. We also evaluated the impact of the mobility of nodes on the performance of distributed databases as a result of time-varying latency and bandwidth, downsizing and upsizing cluster nodes, and network accessibility. The findings from our extensive experiments provide deep insights into the performance of well-known big data databases, such as Cassandra, MongoDB, Redis, and MySQL, when deployed on a FHC.},
+  archive      = {J_TCC},
+  author       = {Yaser Mansouri and Faheem Ullah and Shagun Dhingra and M. Ali Babar},
+  doi          = {10.1109/TCC.2023.3304351},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Design and implementation of fragmented clouds for evaluation of distributed databases},
+  year         = {2023},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2017). DemePro: DEcouple packet marking from enqueuing for multiple services with PROactive congestion control. <em>TCC</em>, 1. (<a href='https://doi.org/10.1109/TCC.2017.2688318'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Most of current Data Center Network (DCN) protocols leverage Explicit Congestion Notification (ECN) for congestion control to maintain low latency and high throughput. However, the majority of them only consider single-queue scenario in each switch port, making their performance inferior in multiple-service multiple-queue scenario. To this end, we propose DemePro, a DCN scheme for multiple-service multiple-queue scenario. In face of congestion signal, DemePro also leverages ECN for congestion notification, while decouples packet marking from enqueuing, in order to ensure fairness among multiple services. We also question the effectiveness of the congestion signal derived from the single threshold for port buffer queue length, via a set of experiments. Then, DemePro utilizes multiple thresholds for proactive congestion control, and packets are encapsulated to carry congestion extent information, in order to notify TCP senders for precise and fine-grained congestion control. Experiments show that DemePro has better performance than MQ-ECN [1] which is currently the best DCN scheme for multiple-service multiple-queue scenario, and DemePro can also well guarantee the fairness.},
+  archive      = {J_TCC},
+  author       = {Chengxi Gao and Victor C.S. Lee and Keqin Li},
+  doi          = {10.1109/TCC.2017.2688318},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {3},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {DemePro: DEcouple packet marking from enqueuing for multiple services with PROactive congestion control},
+  year         = {2017},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2014). Notice of violation of IEEE publication principles: Scientific workflow partitioning and data flow optimization in hybrid clouds. <em>TCC</em>, 1. (<a href='https://doi.org/10.1109/TCC.2014.2378790'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Notice of Violation of IEEE Publication Principles"Scientific Workflow Partitioning and Data Flow Optimization in Hybrid Clouds"by Rubing Duan, Rick Siow Mong Goh, Zheng Qin and Young Liu in Pre-Prints for IEEE Transactions on Cloud ComputingAfter careful and considered review of the content and authorship of this paper by a duly constituted expert committee, this paper has been found to be in violation of IEEE's Publication Principles.Due to the nature of this violation, reasonable effort should be made to remove all references to this paper and it should not be used for research or citation },
+  archive      = {J_TCC},
+  author       = {Rubing Duan and Rick Siow Mong Goh and Qin Zheng and Yong Liu},
+  doi          = {10.1109/TCC.2014.2378790},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {12},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Notice of violation of IEEE publication principles: Scientific workflow partitioning and data flow optimization in hybrid clouds},
+  year         = {2014},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

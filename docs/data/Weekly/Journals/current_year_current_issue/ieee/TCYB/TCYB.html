@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TCYB</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tcyb">TCYB - 41</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Cc-DRL: A convex combined deep reinforcement learning flight control design of a morphing quadrotor. <em>TCYB</em>, <em>55</em>(9), 4554-4566. (<a href='https://doi.org/10.1109/TCYB.2025.3580074'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In comparison to common quadrotors, the structure deformation of morphing quadrotors endows them with better flight performance but also results in more complex flight dynamics. Generally, it is extremely difficult or impossible for these morphing quadrotors to develop an accurate mathematical model that describes their complex flight dynamics. This fact leads to a particularly challenging situation, as the existing mature model-based flight control theory fails to address the flight control design issue of morphing quadrotors. By resorting to a combination of model-free control techniques [e.g., deep reinforcement learning (DRL)] and convex combination (CC) technique, a convex-combined-DRL (cc-DRL) flight control algorithm is proposed for flight trajectory tracking and attitude stabilization of a class of morphing quadrotors with arm-length deformation. In the proposed cc-DRL flight control algorithm, a proximal policy optimization algorithm is utilized to offline train the corresponding optimal flight control laws for some selected representative arm length modes. Hereby, a cc-DRL flight control scheme is constructed by the CC technique. Finally, simulation results are presented to show the effectiveness and merit of the proposed DRL flight control algorithm.},
+  archive      = {J_TCYB},
+  author       = {Tao Yang and Huai-Ning Wu and Jun-Wei Wang},
+  doi          = {10.1109/TCYB.2025.3580074},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4554-4566},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Cc-DRL: A convex combined deep reinforcement learning flight control design of a morphing quadrotor},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Uncalibrated model-free visual servo control for robotic endoscopic with RCM constraint using neural networks. <em>TCYB</em>, <em>55</em>(9), 4541-4553. (<a href='https://doi.org/10.1109/TCYB.2025.3582866'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the advancement of robotic-assisted minimally invasive surgery, visual servo control has become a crucial technique for improving surgical outcomes. However, traditional visual servo methods often rely on precise kinematic models and camera calibration, limiting their generalizability. Considering these, this article proposes a novel uncalibrated model-free visual servo control scheme. Specifically, we introduce a Jacobian matrix and interaction matrix estimation method based on a gradient neural network (GNN), which enables online estimation by utilizing control signals and sensor outputs. Then, the estimated results are incorporated into a visual servo control framework that considers remote center of motion (RCM) constraint, joint-drift problem, and physical constraint, formulated as a quadratic programming (QP) problem. Subsequently, focusing on the joint limits and endoscope insertion depth constraint, we develop a nonpiecewise differentiable multilevel constraint handling technique. For the formulated QP problem, a predefined-time convergent error-regulating zeroing neural network (PTCER-ZNN) solver is designed, and we can derive the optimal control signals. Detailed theoretical analyses of the developed GNN estimation method and the PTCER-ZNN solver are provided. Simulation results demonstrate the effectiveness of the proposed scheme in image feature regulation and tracking tasks, exhibiting its advantages over existing approaches.},
+  archive      = {J_TCYB},
+  author       = {Mengrui Cao and Lin Xiao and Qiuyue Zuo and Xiangru Yan and Linju Li and Xieping Gao},
+  doi          = {10.1109/TCYB.2025.3582866},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4541-4553},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Uncalibrated model-free visual servo control for robotic endoscopic with RCM constraint using neural networks},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Distributed adaptive accelerated nash equilibrium seeking for noncooperative games: A differentially private method. <em>TCYB</em>, <em>55</em>(9), 4528-4540. (<a href='https://doi.org/10.1109/TCYB.2025.3579593'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article is concerned with a distributed algorithm for seeking the Nash equilibrium in noncooperative games with partial-decision information, which simultaneously addresses the protection of individual privacy and ensures fast algorithmic convergence. First, a differential privacy mechanism is used in the fully distributed consensus-based projected pseudo-gradient algorithm to obfuscate shared messages over the communication network and quantify the algorithm’s privacy level. To achieve fast convergence, a novel relaxed inertial method is designed, consisting of two steps with independently designed parameters: 1) a relaxation step and 2) an inertia step. The adaptive inertia coefficient in the inertia step is designed based on the iteration error of the players’ estimated decisions and a decaying sequence, with the only requirement being the non-negativity of its internal parameters. Compared to existing approaches, our algorithm exhibits high flexibility in parameter selection. Furthermore, we analyze the algorithm’s convergence and differential privacy under both linearly decaying and fixed stepsizes within a unified framework, providing sufficient conditions that are independent of the number of players. Finally, numerical simulations validate the algorithm’s potential, demonstrating significant improvements in convergence rate, accuracy, and privacy level.},
+  archive      = {J_TCYB},
+  author       = {Ruixu Hu and Wenying Xu and Li Sun and Jinde Cao},
+  doi          = {10.1109/TCYB.2025.3579593},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4528-4540},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Distributed adaptive accelerated nash equilibrium seeking for noncooperative games: A differentially private method},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Long-term prediction model for fuzzy granular time series based on trend filter decomposition and ensemble learning. <em>TCYB</em>, <em>55</em>(9), 4514-4527. (<a href='https://doi.org/10.1109/TCYB.2025.3582771'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the realm of control theory, the complex task of long-term time series prediction has been profoundly transformed by the confluence of advancements in computer technology and machine learning. However, the application of fuzzy information granularity remains a significant challenge, primarily due to the potential for substantial data distortion. To address this limitation, we propose an innovative long-term prediction model based on granularity time series, which integrates $l_{1}$ -trend filter decomposition and integrated learning. The core of our model lies in a novel modal decomposition method that utilizes $l_{1}$ -trend filters and a validity function to meticulously extract valuable insights from the original time series, thereby enhancing the precision of data analysis while preserving the integrity of the original data. Furthermore, we introduce a groundbreaking formula to measure the similarity of fuzzy information granularity, classifying time series components into three distinct categories: trend, period, and noise. By applying distinct prediction strategies to each category, we construct an integrated learning model that leverages the strengths of each component. At the heart of our model is a multilinear information granularity prediction approach, which is based on trend time windows and utilizes the newly developed similarity measure. This method not only maintains the integrity of the original time series but also offers a more accurate representation of the similarity between information grains. Empirical results from publicly available datasets validate the superior performance of our proposed prediction model, demonstrating its potential to significantly enhance long-term time series prediction accuracy.},
+  archive      = {J_TCYB},
+  author       = {Chenglong Zhu and Xueling Ma and Weiping Ding and Witold Pedrycz and Jianming Zhan},
+  doi          = {10.1109/TCYB.2025.3582771},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4514-4527},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Long-term prediction model for fuzzy granular time series based on trend filter decomposition and ensemble learning},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Bipartite synchronization for coupled fractional-order reaction-diffusion neural networks with multiple weights. <em>TCYB</em>, <em>55</em>(9), 4502-4513. (<a href='https://doi.org/10.1109/TCYB.2025.3573856'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article deals with the bipartite synchronization in coupled fractional-order reaction-diffusion neural networks (CFRNN) with multiple state or multiple spatial diffusion couplings. A bipartite synchronization condition is derived for the multiple state CFRNN (MSCFRNN) with the help of the Lyapunov functional combined with inequality techniques, and an adaptive state-feedback control scheme is also devised to ensure the bipartite synchronization of the MSCFRNN. Similarly, several sufficient conditions are also given to guarantee the bipartite synchronization in the multiple spatial diffusion CFRNN (MSDCFRNN). Finally, the effectiveness of the devised control strategies is demonstrated through two numerical examples.},
+  archive      = {J_TCYB},
+  author       = {Jin-Liang Wang and Ya-Nan Li and Xin-Yu Zhao and Rui-Guo Li and Tingwen Huang},
+  doi          = {10.1109/TCYB.2025.3573856},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4502-4513},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Bipartite synchronization for coupled fractional-order reaction-diffusion neural networks with multiple weights},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reinforcement-learning-based fuzzy bipartite consensus for multiagent systems: A novel scaling off-policy learning scheme. <em>TCYB</em>, <em>55</em>(9), 4491-4501. (<a href='https://doi.org/10.1109/TCYB.2025.3572104'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The bipartite consensus (BC) issue for nonlinear multiagent systems (NMASs) with unknown system dynamics information is investigated in this article. Initially, the dynamics of NMASs are represented using the Takagi-Sugeno (T-S) fuzzy model. Subsequently, to achieve distributed control, a minmax game policy is introduced, where each agent aims to minimize its performance index while its neighbors attempt to maximize it. Consequently, the BC problem for NMASs is reformulated as a zero-sum game, transforming the controller design into solving a set of game algebraic Riccati equations (GAREs). To solve such equations, a novel scaling off-policy iteration (PI) algorithm is proposed. The key features of the proposed learning algorithm can be outlined in three main aspects: 1) during the learning process, the reliance on system dynamics is relaxed; 2) compared with the PI method, the requirement for initial admissible control policies is eliminated; and 3) a more rapid convergence speed is achieved than traditional value iteration. Finally, the effectiveness and advantages of the proposed method are validated through a simulation example and a series of comparative experiments.},
+  archive      = {J_TCYB},
+  author       = {Jing Wang and Qing Yang and Jinde Cao and Leszek Rutkowski and Hao Shen},
+  doi          = {10.1109/TCYB.2025.3572104},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4491-4501},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Reinforcement-learning-based fuzzy bipartite consensus for multiagent systems: A novel scaling off-policy learning scheme},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Leader-following consensus of time-scale-type heterogeneous nonlinear MASs via periodic event-triggered control. <em>TCYB</em>, <em>55</em>(9), 4480-4490. (<a href='https://doi.org/10.1109/TCYB.2025.3579049'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, leader-following consensus of time-scale-type heterogeneous nonlinear multiagent systems (HNMASs) is investigated with dynamic periodic event-triggered mechanism (DPETM). The event detection period in DPETM is determined by a function-dependent threshold, whose initial value and the value at each periodic event detection instant are used for the update of an auxiliary function in the DPETM. Furthermore, the auxiliary function with periodic jumps serves as a detection threshold. To guarantee the nonincreasing behavior of the designed non-negative analysis function, a weighted function is devised that shares the same derivative form as the function that determines the detection period during each detection period. Then, by integrating the theory of time scales and graph theory, leader-following consensus is achieved in a periodic communication fashion with fewer sampling updates. Two examples are presented to illustrate the validity of the results.},
+  archive      = {J_TCYB},
+  author       = {Yin Sheng and Wei Tang and Qiang Xiao and Zhigang Zeng and Nikhil R. Pal},
+  doi          = {10.1109/TCYB.2025.3579049},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4480-4490},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Leader-following consensus of time-scale-type heterogeneous nonlinear MASs via periodic event-triggered control},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fractional-proportional-type iterative learning control with a novel gain selection rule. <em>TCYB</em>, <em>55</em>(9), 4466-4479. (<a href='https://doi.org/10.1109/TCYB.2025.3588481'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article proposes a novel gain selection scheme for fractional-proportional-type iterative learning control, aiming to achieve faster convergence rates while maintaining high tracking precision. The convergence of tracking errors to adjustable limit cycles is demonstrated, and a recursive computation method is provided for these limit cycles. Furthermore, the bounds of the limit cycles are estimated in detail, and both local and global convergence rates are thoroughly analyzed. A systematic performance comparison of different gain selection rules, including tracking precision and convergence rate, is conducted. Two multistage update schemes are established through combining different gain selections to accelerate convergence quantitatively, resulting in faster convergence rates compared to the common proportional-type update rule while preserving final zero-error tracking performance. Moreover, the switching iteration of the proposed multistage schemes can be independent of system matrices. Numerical simulations and experiments are presented to validate the theoretical findings.},
+  archive      = {J_TCYB},
+  author       = {Zihan Li and Dong Shen and Xinghuo Yu},
+  doi          = {10.1109/TCYB.2025.3588481},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4466-4479},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Fractional-proportional-type iterative learning control with a novel gain selection rule},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive safety-based tracking control for uncertain robotic systems with Input–Output constraints: A neural network-based augmented high-order control barrier function approach. <em>TCYB</em>, <em>55</em>(9), 4453-4465. (<a href='https://doi.org/10.1109/TCYB.2025.3580085'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article investigates the trajectory tracking control of uncertain robotic systems with limited control torque input bounds and joint position constraints. A novel neural network-based augmented high-order control barrier function (NN-AHoCBF) is proposed to facilitate the tracking control strategy of uncertain robotic systems with input-output constraints, where the neural network (NN) is used to estimate uncertainties in the robotic system dynamics, and the bounds of NN approximation errors and NN weights are adapted in the high-order time derivative of the HoCBFs. The NN-AHoCBF is then derivated with a series of time-varying functions, and auxiliary systems are constructed to guarantee the time-varying functions to be HoCBFs. In this way, the control input of the robotic system is relaxed by adjusting the time-varying functions through the inputs of auxiliary systems in NN-AHoCBF barrier conditions. Also, the sufficient condition for the NN-AHoCBF is provided to adaptively ensure system safety. The adaptive safety-based tracking control method is designed based on NN-AHoCBF in quadratic program (QP) framework, which can not only satisfy input-output constraints simultaneously, but also achieve good robustness and tracking performance. A simulation example is performed on a two-DOF robotic mainpulator to verify the effectiveness of the developed controller.},
+  archive      = {J_TCYB},
+  author       = {Haijing Wang and Jinzhu Peng and Yaqiang Liu and Wei He and Yaonan Wang},
+  doi          = {10.1109/TCYB.2025.3580085},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4453-4465},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Adaptive safety-based tracking control for uncertain robotic systems with Input–Output constraints: A neural network-based augmented high-order control barrier function approach},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Distributed observers for linear time-invariant systems with time-varying delays: A switching event-triggered approach. <em>TCYB</em>, <em>55</em>(9), 4441-4452. (<a href='https://doi.org/10.1109/TCYB.2025.3574192'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The state estimation problem of linear time-invariant (LTI) systems is investigated in this article. Distributed observers are designed to estimate the complete states of LTI systems under time-varying delays. A class of edge-based switching event-triggered mechanisms (SETMs) are designed for distributed observers to continuously estimate the states of the target system by the discrete relative state information, reducing the consumption of communication/computation resources significantly. The positive lower bounds of intersampling times are guaranteed, which further avoids Zeno behaviors. A unified framework for the stability analysis of the estimation error system under the SETM is presented, and the sufficient conditions for the asymptotic state estimation of the distributed observer are derived. Finally, numerical simulations are given to illustrate the effectiveness of the proposed method.},
+  archive      = {J_TCYB},
+  author       = {Shuqi Li and Feng Xiao and Aiping Wang and Yuanshi Zheng},
+  doi          = {10.1109/TCYB.2025.3574192},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4441-4452},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Distributed observers for linear time-invariant systems with time-varying delays: A switching event-triggered approach},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Active learning for object detection with vectorized dual pseudo loss and multiple instance offset constraint. <em>TCYB</em>, <em>55</em>(9), 4427-4440. (<a href='https://doi.org/10.1109/TCYB.2025.3584808'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing active learning methods for object detection face challenges, such as the lack of ground truth labels for regression loss, insufficient representation of unlabeled instance samples information, and discrepancies in information quality between image-level and multiple anchor-level instances. To address these issues, we propose an active learning method for object detection with vectorized dual pseudo loss and multiple instance offset constraint. This method implements a two-stage framework. The first stage focuses on evaluating the information quality of detection images. We first pioneer a dual pseudo loss formulation that provides theoretically grounded regression loss estimation. The regression loss is calculated as the norm of the offset discrepancy loss vector between the enhanced and original base box vector, further constrained by the cosine value of the angle between the anchor box feature and regressor parameters vector. The distance entropy from the base box feature vector to each category’s feature prototype vector is used as a weighting factor for the regression and classification information quality of instance samples. Subsequently, the second stage employs diversity-driven sampling on high-information images, leveraging instance-level cosine similarity to effectively remove redundant images. The proposed method outperforms state-of-the-art active learning approaches for object detection on PASCAL VOC and MS COCO datasets. Additionally, the proposed dual pseudo regression loss robustly captures regression information quality, demonstrating its effectiveness for active learning in object detection.},
+  archive      = {J_TCYB},
+  author       = {Jiachen Yang and Jiasai Wu and Shuai Xiao and Jiabao Wen and Qinggang Meng and Wen Lu and Xinbo Gao},
+  doi          = {10.1109/TCYB.2025.3584808},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4427-4440},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Active learning for object detection with vectorized dual pseudo loss and multiple instance offset constraint},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Performance-driven distillation and confident pseudo labeling for semi-supervised industrial soft-sensor application. <em>TCYB</em>, <em>55</em>(9), 4414-4426. (<a href='https://doi.org/10.1109/TCYB.2025.3580633'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In industrial soft-sensor applications, labeled samples are often scarce and unable to fully represent the dynamic changes in industrial processes. Although semi-supervised methods offer a potential solution to this issue, existing feature-construction-based methods cannot ensure the effectiveness of the feature, and pseudo-label-based methods lack an established confidence evaluation standard. To address these challenges, this article first proposes a novel performance-driven distillation strategy, which designs an innovative siameseLSTM structure for training multiple teacher models. By assigning higher weights to high-performance teacher models and simultaneously leveraging the guidance of the soft sensing task, the student model is guided to learn more effective feature representations. Additionally, a new pseudo label confidence evaluation strategy is introduced, which aims to enhance the generalization of the base soft-sensor model by selecting samples with high-confidence pseudo labels. Finally, By combining the above two strategies, a semi-supervised soft-sensor framework is proposed for the soft sensing of industrial quality variables. The effectiveness of the proposed framework is validated through two real-world datasets from different stages of the alumina production process. Compared with some existing advanced soft sensor frameworks, the prediction results on different datasets show that the root-mean-square error (RMSE) and mean absolute error (MAE) are reduced by an average of 10.76% and 11.18%, respectively, while the correlation coefficient (R2) is averagely increased by 0.1203.},
+  archive      = {J_TCYB},
+  author       = {Bochun Yue and Kai Wang and Hongqiu Zhu and Chunhua Yang and Weihua Gui},
+  doi          = {10.1109/TCYB.2025.3580633},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4414-4426},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Performance-driven distillation and confident pseudo labeling for semi-supervised industrial soft-sensor application},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). How to predict bifurcations induced by fractional order in delayed large-scale neural networks. <em>TCYB</em>, <em>55</em>(9), 4400-4413. (<a href='https://doi.org/10.1109/TCYB.2025.3585240'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The principal innovative contribution of this study resides in the introduction of a category of fractional delayed large-scale neural networks characterized by intricate topological structures. Additionally, this article provides a comprehensive exploration of novel outcomes linked to fractional order-induced bifurcations in large-scale networks. In the initial step, the correlation of the artificial neural network and the graphical neural network is established through the Mason’s diagram method. Subsequently, the system’s characteristic equations are derived by employing the Coates’ flow graph decomposition method. Moving on, through the concept of the global element, an exhaustive investigation delves into the distribution of eigenroots. The sum of synaptic transmission delays among neurons is considered as a bifurcation parameter, with an analysis focused on the stability of the trivial equilibrium and the existence of the Hopf bifurcation. Following this, the optimal fractional order-dependent stability interval is determined using the implicit function array curve method, presenting a novel approach for critical value determination. Finally, the drawn conclusions are substantiated through multiple sets of computer simulations. It is indicated that an increase in delay precipitates the onset of Hopf bifurcation. Moreover, a reduction in the fractional order significantly improves the steady-state performance of the system. However, once the fractional order value descends below the left stability boundary, the system’s stability is compromised, leading to the emergence of periodic oscillations. The prediction algorithm proposed in this article offers valuable insights into selecting the appropriate fractional order for large-scale complex networks.},
+  archive      = {J_TCYB},
+  author       = {Yunxiang Lu and Min Xiao and Leszek Rutkowski and Zhengxin Wang and Xiaoqun Wu and Zhen Wang and Chengdai Huang and Jinde Cao and Wei Xing Zheng},
+  doi          = {10.1109/TCYB.2025.3585240},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4400-4413},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {How to predict bifurcations induced by fractional order in delayed large-scale neural networks},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Decentralized prescribed-time control of robotic arm-finger systems for grasping and moving tasks. <em>TCYB</em>, <em>55</em>(9), 4386-4399. (<a href='https://doi.org/10.1109/TCYB.2025.3586153'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The control of a humanoid robot equipped with one arm and multiple fingers, designed primarily for grasping and manipulating various objects, is investigated. Synchronizing the movements of the fingers is a challenging task, as each joint must reach the desired angle simultaneously to ensure a firm grasp. The success of this task hinges on the synchronization of convergence times for each finger joint; otherwise, the object may slip or escape. This challenge is further intensified by uncertainties in the dynamics of the hand or the object. We present decentralized prescribed-time tracking control strategies for the dynamical system comprising the arm-finger combination. In this system, the fingers are primarily used for grasping the object while the arm is responsible for moving, tilting, or flipping it. To streamline the controller structure and simplify the stability analysis, we design a linear controller based on the maximum eigenvalue of a parameter matrix and establish a new technical lemma, which paves the way for the stability analysis of the prescribed-time tracking and the reduction of the input efforts of the actuator. We develop robust and decentralized adaptive control schemes separately for the arm and fingers, achieving better transient performance with less prior knowledge and lower computation costs. Finally, we validate the proposed controller’s performance through kinematic simulations of grasping and moving tasks in 3-D, alongside numerical simulations that demonstrate the tracking performance of our algorithm in the joint space.},
+  archive      = {J_TCYB},
+  author       = {Hefu Ye and Yongduan Song and James Lam and Petros A. Ioannou},
+  doi          = {10.1109/TCYB.2025.3586153},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4386-4399},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Decentralized prescribed-time control of robotic arm-finger systems for grasping and moving tasks},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A novel DoS-attack-aware event-triggered synchronization control for discrete-time fuzzy complex networks under round-robin protocol. <em>TCYB</em>, <em>55</em>(9), 4374-4385. (<a href='https://doi.org/10.1109/TCYB.2025.3583666'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article investigates the discrete-time fuzzy complex networks (FCNs) event-triggered (ET) synchronization control problem by considering the coupling effect and cyber attacks. To prevent data conflicts caused by communication resource limitations, a round-robin (RR) protocol is introduced to regulate the communication transmission order among coupled nodes. To be more general and flexible against Denial-of-Service (DoS) attacks, the concept of average dwelling time ratio (ADTR) is proposed to evaluate DoS attack models. In addition, a DoS-attack-aware ET mechanism is developed. Under this mechanism, a threshold parameter is dynamically adjusted according to the active and dormant time of the DoS attacks. The correlated co-design of anti-attack security control and ET mechanism is realized. Compared with the existing results, the scheme improves the control performance while reducing the controller update frequency. Then, by establishing appropriate Lyapunov function, sufficient criteria for synchronization of discrete-time FCNs are obtained, and a controllable range of the ADTR is calculated. Finally, the effectiveness of the proposed DoS-attack-aware ET control scheme based on RR protocol is verified through two simulations.},
+  archive      = {J_TCYB},
+  author       = {Huaguang Zhang and Zhihong Liang and Juan Zhang and Qiongwen Zhang},
+  doi          = {10.1109/TCYB.2025.3583666},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4374-4385},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {A novel DoS-attack-aware event-triggered synchronization control for discrete-time fuzzy complex networks under round-robin protocol},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Interaction-aware transformer network for human-object interaction detection. <em>TCYB</em>, <em>55</em>(9), 4361-4373. (<a href='https://doi.org/10.1109/TCYB.2025.3587037'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {human-object interaction (HOI) detection tackles the problem of joint localization and classification of HOIs. Recent HOI detection methods are mainly based on transformer networks, where the explicit priors at the object level (e.g., scene layout, object appearance, or category) are usually fed into the transformer to improve the object query ability. Though these methods have achieved remarkable results, they did not pay enough attention to the implicit action-level information, which is the fundamental element of HOI. In this work, we propose an interaction-aware transformer network (IATN) to obtain the interaction-aware query, by jointly utilizing implicit action-level priors and explicit object-level priors. Specifically, we design an action-aware module (AAM) to aggregate implicit action priors from the scene level and instance level, respectively. Then, we design an action-oriented graph (AOG), where human feature and object feature are graph nodes and action semantics represent graph edges, to aggregate priors jointly from action level and object level. Afterwards, the interaction-aware query is acquired and finally adopted to obtain the HOI predictions. Besides, we leverage knowledge distillation to enhance the action-level priors by transferring the final HOI predictions to the intermediate features. Extensive experiments on HICO-DET and V-COCO datasets verify the effectiveness of our proposed interaction-aware model.},
+  archive      = {J_TCYB},
+  author       = {Weibo Jiang and Weihong Ren and Jiandong Tian and Hanwei Ma and Bowen Chen and Honghai Liu},
+  doi          = {10.1109/TCYB.2025.3587037},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4361-4373},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Interaction-aware transformer network for human-object interaction detection},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multiagent consensus tracking control over asynchronous Cooperation–Competition networks. <em>TCYB</em>, <em>55</em>(9), 4347-4360. (<a href='https://doi.org/10.1109/TCYB.2025.3583387'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In nature, populations of organisms (e.g., wolves) exhibit a remarkable ability to coordinate their group actions, such as hunting prey or evading predators, despite the coexistence of cooperative and competitive interactions among individuals. Motivated by this intriguing phenomenon, this article investigates the cooperative consensus tracking control problem of multiagent systems (MASs) over cooperation–competition networks with asynchronous communications. That is, all followers can simultaneously achieve trajectory tracking of the leader agent, even if there exist competitive interactions between the followers and the leader. To portray the cooperation and competition level among agents, a new distance-based weight function is designed, which is more flexible than the fixed weight values in existing research works. Theoretically, the sufficient conditions for achieving consensus tracking control are obtained based on the convergence analysis method of infinite products of super-stochastic matrices. Finally, some numerical simulations are given to verify the effectiveness of the proposed consensus tracking control scheme.},
+  archive      = {J_TCYB},
+  author       = {Weihao Li and Shuaiming Yan and Lei Shi and Jiangfeng Yue and Mengji Shi and Boxian Lin and Kaiyu Qin},
+  doi          = {10.1109/TCYB.2025.3583387},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4347-4360},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Multiagent consensus tracking control over asynchronous Cooperation–Competition networks},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Distributed generalized nash equilibrium seeking for linear systems over a switching network. <em>TCYB</em>, <em>55</em>(9), 4333-4346. (<a href='https://doi.org/10.1109/TCYB.2025.3579958'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article concerns distributed generalized Nash equilibrium (GNE) seeking in an N-player game with linear dynamics over a jointly strongly connected switching network. The main challenge of this problem is the design of appropriate updating laws that ensure convergence under a jointly strongly connected switching network. Such a design must also respect inequality constraints and address the complexity of linear dynamics. Projection-based pseudo-gradient method is proposed to seek the GNE while satisfying both the individual and the shared inequality constraints. Furthermore, the jointly strongly connected switching network, which may be disconnected at any time instant, entails resorting to the generalized Barbalat’s lemma in the convergence analysis. We also discuss an application to doubly fed induction generators (DFIGs) subject to total power limitations and individual power ranges, providing simulation results to verify the proposed algorithm.},
+  archive      = {J_TCYB},
+  author       = {Xiongnan He and Zongli Lin},
+  doi          = {10.1109/TCYB.2025.3579958},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4333-4346},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Distributed generalized nash equilibrium seeking for linear systems over a switching network},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Toward improved performance of inner convex approximation for suboptimal nonlinear MPC. <em>TCYB</em>, <em>55</em>(9), 4322-4332. (<a href='https://doi.org/10.1109/TCYB.2025.3583588'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Inner convex approximation is a compelling method that enables the real-time implementation of suboptimal nonlinear model predictive controls (MPCs). However, it suffers from a slow convergence rate, which prevents suboptimal MPC from achieving better performance within a specific sample time. To address this issue, we first reformulate the conventional inner convex approximation procedure as a root-finding problem for a nonlinear equation. Then, under mild assumptions, a comprehensive functional analysis is performed on the derived nonlinear equation, focusing on its continuity, differentiability, and the invertibility of the Jacobian matrix. Building on this analysis, we propose an improved algorithm that applies Broyden’s method to accelerate the root-finding procedure of this derived nonlinear equation, thereby enhancing the convergence rate of the conventional inner convex approximation method. We also provide a detailed analysis of the proposed algorithm’s convergence properties and computational complexity, showing that it achieves a locally superlinear convergence rate without devoting much additional computational effort. Simulation experiments are performed in an obstacle avoidance scenario, and the results are compared to the conventional inner convex approximation method to assess the effectiveness and advantages of the proposed approach.},
+  archive      = {J_TCYB},
+  author       = {Jinxian Wu and Li Dai and Songshi Dou and Yunshan Deng and Yuanqing Xia},
+  doi          = {10.1109/TCYB.2025.3583588},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4322-4332},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Toward improved performance of inner convex approximation for suboptimal nonlinear MPC},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Brain-controlled wheeled mobile robots: A framework combining probabilistic brain-computer interface and model predictive control. <em>TCYB</em>, <em>55</em>(9), 4311-4321. (<a href='https://doi.org/10.1109/TCYB.2025.3580726'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Brain-controlled systems have experienced significant advancements in overall performance, largely driven by continuous optimization and innovation in electroencephalography (EEG) acquisition experimental paradigms and decoding algorithms. However, their applications still face challenges, including limited control precision and low efficiency. In this article, we focus on a wheeled mobile robot (WMR) as the control object and propose a novel brain-controlled framework that combines a probabilistic brain-computer interface (BCI) and a model predictive controller (MPC). First, the probabilistic BCI is developed, featuring the sigmoid fitting-filter bank canonical correlation analysis (SF-FBCCA) algorithm, which serves as the core of the BCI system by decoding EEG signals and generating brain commands along with their associated probabilities. Second, an auxiliary MPC is integrated into the probabilistic BCI system to provide decision-making assistance while preserving the users’ primary brain control authority. The weights of the cost function are adaptively determined based on the command probabilities. Finally, simulation-based evaluations were conducted using the WMR in a path-keeping scenario. The results demonstrate that the proposed framework significantly improves control accuracy and efficiency compared to direct brain control approaches, reducing the average lateral error by 58.02% and the average yaw angle error by 60.06%. Additionally, the MPC employing adaptive weights further improves overall performance. These findings offer theoretical insights and technical references for future research on BCI-based control frameworks.},
+  archive      = {J_TCYB},
+  author       = {Xinyu Yu and Xiaojun Yu},
+  doi          = {10.1109/TCYB.2025.3580726},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4311-4321},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Brain-controlled wheeled mobile robots: A framework combining probabilistic brain-computer interface and model predictive control},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A novel model-free output-feedback h∞ parameterization control method with unknown states under ill-condition. <em>TCYB</em>, <em>55</em>(9), 4300-4310. (<a href='https://doi.org/10.1109/TCYB.2025.3582874'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Developing model-free $H_{\infty }$ optimal control schemes in systems with unknown model parameters and unmeasurable states is challenging. In this article, an output-feedback (OPFB) suboptimal control scheme based on adaptive dynamic programming (ADP) is proposed to realize model-free $H_{\infty }$ control under uncertain disturbances. First, a free matrix is introduced to compute the suboptimal gain in the absence of an optimal OPFB gain, and a policy iterative algorithm is developed to solve for the suboptimal gain and shown to converge to a solution of the algebraic Riccati equation. In addition, a model-free ADP algorithm is proposed to realize online learning of control parameters without relying on system dynamics parameters. The Lanczos method is introduced to solve the ill-condition problem in the model-free algorithm solution. After that, the algorithm is further extended to the case where the system state is not measurable and parameterized reconstruction is performed using online input-output data. The results show that the proposed algorithm can realize model-free control with unknown parameters and unmeasurable states. The effectiveness of the proposed control scheme is simulated by an F-16 aircraft.},
+  archive      = {J_TCYB},
+  author       = {Yanhong Luo and Shunwei Hu and Xiangpeng Xie and Huaguang Zhang},
+  doi          = {10.1109/TCYB.2025.3582874},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4300-4310},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {A novel model-free output-feedback h∞ parameterization control method with unknown states under ill-condition},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). H∞-based tracking control for nonlinear systems with a sampled-data PI-type controller: A nonuniform sampled-time-dependent functional. <em>TCYB</em>, <em>55</em>(9), 4286-4299. (<a href='https://doi.org/10.1109/TCYB.2025.3586451'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article investigates the $H_{\infty }$ -based tracking control problem for nonlinear systems through the Takagi-Sugeno (T-S) fuzzy technique. A nonuniform sampled-time-dependent functional (NSTDF) is proposed, which removes the constraints of the conventional looped functional (LF) and relaxes the condition of the functional derivative. Combining the NSTDF with $H_{\infty }$ theory, a novel theorem for $H_{\infty }$ performance analysis of sampled-data systems is given, which loosens the positive-definite constraint on Lyapunov matrices in traditional LFs. By introducing the error integral state, an augmented system is constructed, and a proportional-integral (PI)-type controller that incorporates the external disturbance, transmission delay, and packet dropouts is designed to enable the tracking control. Thus, the $H_{\infty }$ -based tracking control issue is converted into an $H_{\infty }$ -based control problem for the augmented system, and the control conditions are derived via the proposed methods. Finally, the wind energy conversion system (WECS) and Rossler’s system clarify the feasibility and merits of the provided methods.},
+  archive      = {J_TCYB},
+  author       = {Yun-Fan Liu and Chuan-Ke Zhang and Xing-Chen Shangguan and Jian Chen and Yong He},
+  doi          = {10.1109/TCYB.2025.3586451},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4286-4299},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {H∞-based tracking control for nonlinear systems with a sampled-data PI-type controller: A nonuniform sampled-time-dependent functional},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A novel ordinal consensus model for multiple attribute group decision making with incomplete social network trust preference relations. <em>TCYB</em>, <em>55</em>(9), 4270-4285. (<a href='https://doi.org/10.1109/TCYB.2025.3585741'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {multiple attribute group decision making (MAGDM) aims to assist a group in evaluating multiattribute alternatives for seeking the most satisfactory one(s). To improve the decision quality of MAGDM, various consensus models were suggested to deal with opinion differences among experts and achieve consensual decision outcomes. This study proposes a novel ordinal consensus framework for MAGDM with incomplete social network trust preference relations (TPRs). In this framework, incomplete linguistic preference relation are first utilized to represent experts’ social network TPRs. After that, a consistency-driven two-stage optimization approach is designed to deal with incomplete TPRs for obtaining individual trust levels and expert weight information. Then, a distance-based ordinal consensus measure is designed with the integration of the obtained expert weight information and the basic idea that the higher-ranked alternatives should have greater importance than the lower-ranked ones. When the consensus degree among experts is unacceptable, an opinion dynamic-based feedback adjustment mechanism is devised by integrating the obtained individual trust levels to provide reasonable opinion modification suggestions for accelerating the consensus reaching in MAGDM. Otherwise, the selection process is used to make a selection. A simulation experiment is designed to investigate the effect of key parameters on consensus efficiency. Next, examples of project investment and software supplier selection demonstrate the usability of the proposed consensus framework. Meanwhile, a comparison analysis and in-depth discussions are presented to justify our proposal. The main contributions of this study are twofold. First, a new perspective on managing incomplete social network TPRs is suggested for MAGDM. Second, a novel ordinal consensus process is designed to enhance the effectiveness of the consensual decision outcome. These results can offer new insights into the consensus building for practice social network MAGDM problems.},
+  archive      = {J_TCYB},
+  author       = {Sihai Zhao and Siqi Wu and Haiming Liang and Hengjie Zhang},
+  doi          = {10.1109/TCYB.2025.3585741},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4270-4285},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {A novel ordinal consensus model for multiple attribute group decision making with incomplete social network trust preference relations},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimization-free smooth control barrier function for polygonal collision avoidance. <em>TCYB</em>, <em>55</em>(9), 4257-4269. (<a href='https://doi.org/10.1109/TCYB.2025.3578441'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Polygonal collision avoidance (PCA) is short for the problem of collision avoidance between two polygons (i.e., polytopes in planar) that own their dynamic equations. This problem suffers the inherent difficulty in dealing with nonsmooth boundaries and recently optimization-defined metrics, such as signed distance field (SDF) and its variants, have been proposed as control barrier functions (CBFs) to tackle PCA problems. In contrast, we propose an optimization-free smooth CBF method in this article, which is computationally efficient and proved to be nonconservative. It is achieved by three main steps: a lower bound of SDF is expressed as a nested Boolean logic composition first, then its smooth approximation is established by applying the latest log-sum-exp method, after which a specified CBF-based safety filter is proposed to address this class of problems. To illustrate its wide applications, the optimization-free smooth CBF method is extended to solve distributed collision avoidance of two underactuated nonholonomic vehicles and drive an underactuated container crane to avoid a moving obstacle, respectively, for which numerical simulations are also performed.},
+  archive      = {J_TCYB},
+  author       = {Shizhen Wu and Yongchun Fang and Ning Sun and Biao Lu and Xiao Liang and Yiming Zhao},
+  doi          = {10.1109/TCYB.2025.3578441},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4257-4269},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Optimization-free smooth control barrier function for polygonal collision avoidance},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). H₂–H∞ composite control for singularly perturbed systems with finite-frequency performances. <em>TCYB</em>, <em>55</em>(9), 4243-4256. (<a href='https://doi.org/10.1109/TCYB.2025.3581280'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article considers the finite-frequency (FF) $H_{2}$ – $H_{\infty }$ composite control problem for continuous singularly perturbed systems. To address the performance requirements in the low- and high-frequency ranges, the FF $H_{2}$ and $H_{\infty }$ norms are used to impose on the performance of the slow and fast subsystems, respectively. The FF $H_{2}$ control of the slow subsystem is analyzed using the FF Gramian matrix method. While the FF $H_{\infty }$ control of the fast subsystem is studied by using the Generalized Kalman–Yakubovič–Popov Lemma. Subsequently, an $H_{2}$ – $H_{\infty }$ composite controller for the singularly perturbed system is developed. Finally, two simulation examples involving an armature control direct-current motor system are demonstrated to verify the effectiveness and superiority of the proposed control scheme.},
+  archive      = {J_TCYB},
+  author       = {Hongzheng Quan and Xiujuan Lu and Chenxiao Cai and Hong Lin and James Lam},
+  doi          = {10.1109/TCYB.2025.3581280},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4243-4256},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {H₂–H∞ composite control for singularly perturbed systems with finite-frequency performances},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Novel SMC for discrete interval type-2 fuzzy semi-markovian switching models with incomplete semi-markovian kernel. <em>TCYB</em>, <em>55</em>(9), 4231-4242. (<a href='https://doi.org/10.1109/TCYB.2025.3579728'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work studies the novel sliding mode control (SMC) of discrete nonlinear stochastic switching models under semi-Markovian parameter and incomplete semi-Markovian kernel (SMK). The characteristic of nonlinear system is described by an interval type-2 fuzzy (IT2F) model that can be recognized as a collection of several type-1 fuzzy models. The uncertainties in system parameters is efficiently captured using the lower and upper grades of membership. Based on the mode-dependent Lyapunov function and incomplete SMK, sufficient conditions are proposed to ensure the stability of sliding dynamics. Moreover, an IT2F SMC law based on learning strategy is developed such that the state signals are guided onto the predetermined sliding region and the mode switchings-induced chattering is effectively reduced. Finally, the IT2F SMC strategy is validated through the simulation of truck-trailer model.},
+  archive      = {J_TCYB},
+  author       = {Wenhai Qi and Jichao Zhang and Guangdeng Zong and Shun-Feng Su and Jinde Cao and Ruey-Huei Yeh},
+  doi          = {10.1109/TCYB.2025.3579728},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4231-4242},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Novel SMC for discrete interval type-2 fuzzy semi-markovian switching models with incomplete semi-markovian kernel},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Omni-explorer: A rapid autonomous exploration framework with FOV expansion mechanism. <em>TCYB</em>, <em>55</em>(9), 4219-4230. (<a href='https://doi.org/10.1109/TCYB.2025.3581376'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Autonomous exploration is a fundamental challenge for numerous applications of mobile robots. Traditional methods often lead to impractical and discontinuous trajectories, which may substantially deteriorate the exploration time. In this work, we propose a rapid autonomous exploration framework with a field-of-view (FOV) expansion mechanism. We present a 1-degree-of-freedom (DOF) FOV expansion mechanism, coupled with a frontier-gravitation FOV direction planning method to decouple the direction of the sensor’s FOV from the robot velocity direction. Our approach includes a rapid frontier viewpoint generation method utilizing principal component analysis (PCA). Moreover, we introduce a sliding window travelling salesman problem (TSP) for global coverage path planning, incorporating an attenuation coefficient to increase the exploration priority of independent small frontiers and reduce revisit probability. Finally, compared to state-of-the-art (SOTA) approaches, our proposed mechanism and framework beneficially reduce exploration time by 30%–44% and enhance the continuity of the robot movement in both simulation and real-world scenarios.},
+  archive      = {J_TCYB},
+  author       = {Zichen Wang and Jingjing Wang and Zhijun Meng and Guodong Zhao and Chunxiao Jiang},
+  doi          = {10.1109/TCYB.2025.3581376},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4219-4230},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Omni-explorer: A rapid autonomous exploration framework with FOV expansion mechanism},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Group time-varying formation tracking control for multiagent systems using multiple dynamic edge-event-triggered mechanisms. <em>TCYB</em>, <em>55</em>(9), 4208-4218. (<a href='https://doi.org/10.1109/TCYB.2025.3581345'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article addresses a new type of adaptive time-varying group formation tracking (TVGFT) problem for linear multiagent systems (MASs) with nonautonomous leaders. To fulfill complicated formation tasks, a TVGFT protocol is proposed, where the agents are decomposed into multiple subgroups and each subgroup can successfully track the corresponding leader. Additionally, novel multiple asynchronous dynamic edge-event-triggered mechanisms (DEETMs) are designed to further conserve communication resources and optimize network utilization by enabling the leader to send information intermittently and allowing each follower to transmit information asynchronously when the trigger mechanisms are satisfied. The DEETMs consider both interlayer and intergroup information interactions to improve communication efficiency. Different from the existing results, the proposed DEETMs are used for intergroup information exchange to enhance both the coordination of formation and information transparency. At last, the simulation experiment is offered to validate the designed protocol.},
+  archive      = {J_TCYB},
+  author       = {Jing He and Dongsheng Yang and Jiayue Sun and Juan Zhang and Chengyun Li},
+  doi          = {10.1109/TCYB.2025.3581345},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4208-4218},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Group time-varying formation tracking control for multiagent systems using multiple dynamic edge-event-triggered mechanisms},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). H∞ filtering for 2-D discrete-time periodic markov jump systems with multiplicative noise: A periodic HMM approach. <em>TCYB</em>, <em>55</em>(9), 4196-4207. (<a href='https://doi.org/10.1109/TCYB.2025.3575452'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article presents the implementation of an asynchronous ${\mathcal {H}}_{\infty }$ filter for 2-D discrete-time periodic Markov jump systems with multiplicative noise. The study addresses the issue of missing measurements, which is treated as a stochastic variable following the Bernoulli random distribution. To account for the nonsynchronous phenomenon between the system and filter due to the loss of mode information, the periodic hidden Markov model (HMM) is introduced. Moreover, the transition rate matrix of the system and the conditional probability matrix of the filter are general, allowing for transition probabilities in fully known, partly known or fully unknown cases. The objective is to implement an asynchronous ${\mathcal {H}}_{\infty }$ filter based on periodic HMM that guarantees the filtering error system is mean-square asymptotically stable while maintaining a specified ${\mathcal {H}}_{\infty }$ disturbance attenuation performance. In the light of linear matrix inequalities, the article offers sufficient conditions for filter to exist and provides a solution for the parameters of the filter. Ultimately, a demonstration of the validity of the presented design technique is provided through the Darboux equation.},
+  archive      = {J_TCYB},
+  author       = {Mingang Hua and Xingyan Hu and Feiqi Deng and Qiwen Yang and Hua Chen},
+  doi          = {10.1109/TCYB.2025.3575452},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4196-4207},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {H∞ filtering for 2-D discrete-time periodic markov jump systems with multiplicative noise: A periodic HMM approach},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fixed-time optimal consensus of multiagent systems under cyber-attacks: A hierarchical control approach. <em>TCYB</em>, <em>55</em>(9), 4182-4195. (<a href='https://doi.org/10.1109/TCYB.2025.3583368'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article aims to address the fixed-time optimal leader-following consensus issue for unknown multiagent systems (MASs) under Denial of Service (DoS) and false data injection (FDI) attacks. A novel fixed-time stability theorem under DoS attacks is presented to simplify the stability conditions and decrease the computational complexity of the settling time. Simultaneously, the deep neural networks (DNNs) structure with the projection operator are adopted in real-time to approximate the unknown system dynamics. To achieve the optimal consensus under cyber-attacks, a hierarchical control approach is presented, which includes a reference signal generation layer and a tracking control layer. Specifically, the distributed and Luenberger-based observers are designed in the reference signal generation layer to solve the fixed-time state estimation issues of leader and followers under multiple malicious attacks, respectively. Then, the optimal control strategy based on the event-triggered mechanism (ETM) is designed in the tracking control layer to track the reference signal and minimize the cost consumption. Due to the difficulty in obtaining explicit expressions of the optimal control mechanisms, a critic-only reinforcement learning (RL)-based algorithm is presented for online learning the unknown weight within a fixed time. By rigorous proof, the developed observers can achieve the fixed-time state reconstruction and the optimal control policy can track observation states after a fixed time. Finally, simulation results about platooning control of automated vehicles are given to demonstrate the efficacy of the developed technique.},
+  archive      = {J_TCYB},
+  author       = {Ruihong Li and Qintao Gan and Guoquan Ren and Huaiqin Wu and Jinde Cao},
+  doi          = {10.1109/TCYB.2025.3583368},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4182-4195},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Fixed-time optimal consensus of multiagent systems under cyber-attacks: A hierarchical control approach},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Anti-quasisynchronization for asynchronous Leader–Follower markovian neural networks with hidden markov model-based intermittent control. <em>TCYB</em>, <em>55</em>(9), 4170-4181. (<a href='https://doi.org/10.1109/TCYB.2025.3582043'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study focuses on anti-quasisynchronization for discrete-time asynchronous leader–follower Markovian neural networks (MNNs) with mismatched parameters. To overcome the energy constraint, the intermittent control transmission strategy is introduced. Meanwhile, to address the challenge of unknown Markovian models in the leader–follower MNNs, a hidden Markov model (HMM) is utilized to infer unknown modes from observable information. Then, an intermittent nonfragile controller based on HMM is designed for the follower MNNs. Furthermore, the exponential iteration method is employed to establish sufficient conditions for ensuring anti-quasisynchronization for leader–follower MNNs, and an optimal boundary of anti-quasisynchronization is obtained. Ultimately, the effectiveness of the proposed HMM-based intermittent controller is demonstrated via a numerical simulation.},
+  archive      = {J_TCYB},
+  author       = {Zijing Xiao and Meng Zhang and Hongxia Rao and Chang Liu and Yong Xu},
+  doi          = {10.1109/TCYB.2025.3582043},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4170-4181},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Anti-quasisynchronization for asynchronous Leader–Follower markovian neural networks with hidden markov model-based intermittent control},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cooperative fuzzy event-based tracking control of heterogeneous multiple marine vehicles with a nonautonomous leader. <em>TCYB</em>, <em>55</em>(9), 4158-4169. (<a href='https://doi.org/10.1109/TCYB.2025.3585693'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article addresses the cooperative tracking control problem for heterogeneous multiple marine vehicles with a nonautonomous leader. A fully distributed smooth observer is proposed to estimate the trajectory of the leader, mitigating the influence of its control input. Based on the observer, three decentralized adaptive fuzzy event-based controllers are designed with distinct triggering strategies, i.e., fixed, relative, and switching threshold triggering strategies, which utilize fuzzy-logic systems and event-triggering mechanisms to address the challenge of model uncertainties and communication constraints of marine vehicles. The proposed methods ensure the zero-error tracking without Zeno behavior, as demonstrated through Lyapunov analysis. Numerical simulations validate the effectiveness of the proposed approaches.},
+  archive      = {J_TCYB},
+  author       = {Shanling Dong and Enjun Liu and Yougang Bian and Zheng-Guang Wu and Meiqin Liu},
+  doi          = {10.1109/TCYB.2025.3585693},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4158-4169},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Cooperative fuzzy event-based tracking control of heterogeneous multiple marine vehicles with a nonautonomous leader},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A partial joint optimization algorithm for autonomous air combat based on hierarchical reinforcement learning. <em>TCYB</em>, <em>55</em>(9), 4145-4157. (<a href='https://doi.org/10.1109/TCYB.2025.3579745'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Designing intelligent game strategies for autonomous air combat has suffered from the vast exploration space, lengthy decision-making process, and sparse rewards. Some existing approaches adopt the hierarchical framework to improve the exploration efficiency. However, in these methods, agents in different layers are typically trained independently and operate at fixed frequencies, which limits their performance and hampers their ability to respond to highly dynamic combat situations. In view of this, we present PJOH-TED2, a partial-joint-optimization-based hierarchical (PJOH) learning framework with a time-event dual-driven (TED2) mechanism, for one-on-one beyond-visual-range (BVR) air combat. Specifically, the PJOH learning framework embeds the partial joint optimization mechanism into hierarchical reinforcement learning (HRL), thus improving the exploration efficiency dramatically while enhancing the integration across hierarchical levels. Moreover, the TED2 mechanism combines the advantages of event-driven and time-driven methods, which promote the dynamic response speed of agents as well as avoid redundant actions. In addition, we evaluated this work through a series of games against the state-of-the-art (SOTA) methods in a high-fidelity air combat simulation environment. The results empirically demonstrate that the proposed approach outperforms four SOTA methods with a win rate of at least 71%. Finally, this approach achieved the 1st place in learning methods in the intelligent air game algorithm challenge (IAGAC) by the Chinese Institute of Command and Control among 43 teams.},
+  archive      = {J_TCYB},
+  author       = {Chenxu Qian and Xuebo Zhang and Lun Li and Yisong Wang and Minghui Zhao and Yongchun Fang},
+  doi          = {10.1109/TCYB.2025.3579745},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4145-4157},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {A partial joint optimization algorithm for autonomous air combat based on hierarchical reinforcement learning},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Event-triggered multiple leaders formation tracking for networked swarm system with resilience to noncooperative nodes. <em>TCYB</em>, <em>55</em>(9), 4136-4144. (<a href='https://doi.org/10.1109/TCYB.2025.3580666'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In practical applications, not all nodes in networked swarm systems are cooperative. The noncooperative nodes are transformed from healthy ones because of cyber-attacks launched by malicious adversaries, hardware faults caused by low reliability individuals, or communication delay. In this article, an approximate fault detection method using residual threshold is shown to judge which agent is cooperative or not, and to reconstruct the communication topology. Then, the event-triggered technique is utilized to design the multileaders formation tracking protocol with resilience to noncooperative nodes. The Zeno behavior is considered to constrain the trigger condition. Finally, the comparison simulation results show the effectiveness and advantage for the proposed secure control method.},
+  archive      = {J_TCYB},
+  author       = {Yishi Liu and Xiwang Dong and Enrico Zio and Ying Cui},
+  doi          = {10.1109/TCYB.2025.3580666},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4136-4144},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Event-triggered multiple leaders formation tracking for networked swarm system with resilience to noncooperative nodes},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Prescribed-time tracking over total-time-domain for nonlinear systems subject to mismatched disturbance: An ESO-based control strategy. <em>TCYB</em>, <em>55</em>(9), 4128-4135. (<a href='https://doi.org/10.1109/TCYB.2025.3581753'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article aims to investigate the performance-guaranteed tracking problem for a class of uncertain nonlinear systems. The main goal is to attain control performance within prescribed-time (PT) limits despite the existence of mismatched disturbances. First, the mismatched disturbances are transformed into the equivalent forms. Second, for the unknown disturbance estimation, a PT extended state observer (PTESO) is developed to switch between the prescribed settling time ${\mathcal {T}}_{p}$ , the order is diminished to alleviate the occurrence of the peaking phenomenon. Furthermore, an ESO-based PT control strategy is constructed with time-varying gains. This allows real-time compensation of disturbances, and the prescribed performance is attained by virtue of a Lyapunov function employed combines both barrier and quadratic forms. Ultimately, the benefits and efficacy are illustrated via a numerical demonstration involving a wheeled mobile robot. The key features of this article include the observer capability to estimate unknown mismatching disturbances and the full effectiveness of the proposed controller for $t \in [t_{0}, \infty $ ), ensuring the convergence of tracking error to zero within any PT. Consequently, in addition to achieving the output tracking objective, the system can also exhibit favorable transient performance.},
+  archive      = {J_TCYB},
+  author       = {Junyi Yang and Zhichen Li and Huaicheng Yan and Hao Zhang},
+  doi          = {10.1109/TCYB.2025.3581753},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4128-4135},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Prescribed-time tracking over total-time-domain for nonlinear systems subject to mismatched disturbance: An ESO-based control strategy},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Toward adaptive and interpretable process monitoring: Incremental variational graph attention autoencoder with probabilistic inference. <em>TCYB</em>, <em>55</em>(9), 4114-4127. (<a href='https://doi.org/10.1109/TCYB.2025.3583035'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Complex industrial processes exhibit typical nonstationarity due to frequently fluctuating material flows and complex control loops. This poses three challenges for trustworthy process monitoring, including data drift, coordination of old and new knowledge, and interpretability. In this study, the adaptive and interpretable process monitoring problem is formulated as an online updating strategy and the spatial topology structure representation learning process monitoring problem. An incremental variational graph attention autoencoder with probabilistic inference framework is proposed, which aims to effectively learn continuously from dynamically changing industrial data to make interpretable monitoring results. First, an incremental learning strategy based on the Bayesian regularized self-organizing map is presented, which can distinguish between real faults and time-varying changes. Once normal samples are encountered, the itself and downstream model are elegantly updated with a dynamic down-sampling replay strategy without leading to catastrophic forgetting. Subsequently, a variational graph attention autoencoder with probabilistic inference is proposed, which endows interpretable spatial structural relationships through priors and effectively captures the variability of spatial latent representations suitable for nonstationary processes. Then, an incremental variational Bayesian inference is introduced to calculate the adaptive thresholds to adapt the system. In addition, an anomaly-aware graph attention localization mechanism is provided to localize fault root causes and propagation paths. Finally, the effectiveness of the proposed method is validated through two industrial applications. The results demonstrate that the proposed method can significantly enhance the performance of process monitoring, especially for reducing the false alarm rate (FAR) in process monitoring schemes. Moreover, it offers interpretable causal relationships among faults.},
+  archive      = {J_TCYB},
+  author       = {Mingjie Lv and Yonggang Li and Huanzhi Gao and Bei Sun and Chunhua Yang and Weihua Gui},
+  doi          = {10.1109/TCYB.2025.3583035},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4114-4127},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Toward adaptive and interpretable process monitoring: Incremental variational graph attention autoencoder with probabilistic inference},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Design of integral-based HOSM controller under perturbations of unknown magnitudes. <em>TCYB</em>, <em>55</em>(9), 4103-4113. (<a href='https://doi.org/10.1109/TCYB.2025.3582072'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article is committed to the establishment of an integral-based high-order sliding mode (iHOSM) controller for one category of nonlinear systems when confronted with perturbations with unknown magnitudes. A striking characteristic is that an integral dynamics is deftly constructed and then incorporated into the original sliding mode system to dispose of the perturbations of unknown magnitudes. On account of the new sliding mode dynamics, we explicitly introduce a systematic design protocol to dexterously design a new iHOSM controller. This is fulfilled through amending the technique of adding a power integrator. The theoretical justification has been guaranteed by the rigorous Lyapunov analysis. The investigations of two elucidative examples are provided to validate the validity and feasibility of the designed methodology.},
+  archive      = {J_TCYB},
+  author       = {Keqi Mei and Yao Gong and Li Ma and Shihong Ding and Chen Ding and Ye Yuan},
+  doi          = {10.1109/TCYB.2025.3582072},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4103-4113},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Design of integral-based HOSM controller under perturbations of unknown magnitudes},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Understanding the dimensional need of noncontrastive learning. <em>TCYB</em>, <em>55</em>(9), 4089-4102. (<a href='https://doi.org/10.1109/TCYB.2025.3577745'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Noncontrastive self-supervised learning methods offer an effective alternative to contrastive approaches by avoiding the need for negative samples to avoid representation collapse. Noncontrastive learning methods explicitly or implicitly optimize the representation space, yet they often require large representation dimensions, leading to dimensional inefficiency. To provide negative samples, contrastive learning methods often require large batch sizes, thus regarded as sample inefficient, while noncontrastive learning methods require large representation dimensions, thus regarded as dimension inefficient. Although we have some understanding of the noncontrastive learning method, theoretical analysis of such phenomenon still remains largely unexplored. We present a theoretical analysis of the dimensional need for noncontrastive learning. We investigate the transfer between upstream representation learning and downstream tasks’ performance, demonstrating how noncontrastive methods implicitly increase interclass distances within the representation space and how the distance affects the model performance of evaluation performance. We prove that the performance of noncontrastive methods is affected by the output dimension and the number of latent classes, and illustrate why performance degrades significantly when the output dimension is substantially smaller than the number of latent classes. We demonstrate our findings through experiments on image classification experiments, and enrich the verification in audio, graph and text modalities. We also perform empirical evaluation for image models on extensive detection and segmentation tasks beyond classification that show satisfactory correspondence to our theorem.},
+  archive      = {J_TCYB},
+  author       = {Zhexiao Cao and Lei Huang and Tian Wang and Yinquan Wang and Jingang Shi and Aichun Zhu and Tianyun Shi and Hichem Snoussi},
+  doi          = {10.1109/TCYB.2025.3577745},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4089-4102},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Understanding the dimensional need of noncontrastive learning},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Tracking correlations between multiple data streams through evolutionary regressor chains. <em>TCYB</em>, <em>55</em>(9), 4078-4088. (<a href='https://doi.org/10.1109/TCYB.2025.3587025'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In a real-world setting, several correlational data streams are active at once. An essential question is how to use the correlations between data streams to enhance the effectiveness of machine learning models. The fact that data streams are nonstationary and the correlations across data streams might change over time presents another difficulty. We suggest an ensemble chain-structured model, Evolutionary regressor chains (RCs), to track the correlations between data streams to solve these issues. We develop a heuristic order searching approach to search for the chain’s optimal order. With the ability to monitor the dynamicity of the correlations, the heuristic order searching technique can also update the chains over time. Furthermore, a way for reducing computing complexity while maintaining the ensemble’s diversity is proposed. The method’s theoretical foundation is established through a dynamic regret analysis proving optimal adaptation in the data streams. The outcomes of our experiments demonstrate the effectiveness of Evolutionary RCs.},
+  archive      = {J_TCYB},
+  author       = {Bin Zhang and Jie Lu and Anjin Liu and Xin Yao and Guangquan Zhang},
+  doi          = {10.1109/TCYB.2025.3587025},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4078-4088},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Tracking correlations between multiple data streams through evolutionary regressor chains},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Energy-efficient waypoint tracking for underwater gliders: Theory and experimental results. <em>TCYB</em>, <em>55</em>(9), 4064-4077. (<a href='https://doi.org/10.1109/TCYB.2025.3578122'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this article, a novel energy-efficient control method for waypoint tracking of underwater gliders is designed. The method can be divided into a planning layer and a control layer. In the planning layer, a novel steady/unsteady gliding depth intervals-based dead-reckoning is proposed to predict depth-averaged current velocity with lower consumption. Also a novel heading and depth modification strategy based on line-of-sight is proposed to implement waypoint tracking planning. In the control layer, heading control is implemented by two event-triggered extended state observers (ET-ESOs) and an event-triggered backstepping heading controller (ET-BHC). The ET-ESOs intermittently estimate the real states input to the ET-BHC, and the ET-BHC intermittently outputs the control signal. Simulation and sea trial results show that the UG achieves tracking waypoints, and in addition, energy efficiency is significantly improved.},
+  archive      = {J_TCYB},
+  author       = {Anyan Jing and Jian Gao and Boxu Min and Jiarun Wang and Yimin Chen and Guang Pan and Chenguang Yang},
+  doi          = {10.1109/TCYB.2025.3578122},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4064-4077},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Energy-efficient waypoint tracking for underwater gliders: Theory and experimental results},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Game-based distributed decision optimization for heterogeneous multiagent systems with unknown nonlinear dynamics. <em>TCYB</em>, <em>55</em>(9), 4054-4063. (<a href='https://doi.org/10.1109/TCYB.2025.3581999'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article proposes a game-based distributed decision optimization method for heterogeneous multiagent systems with unknown nonlinear dynamics. Due to the information exchange between agents in the network, the unknown nonlinear dynamics lead to the degradation of local and all-agent control performance, which causes the strategies of all agents to deviate from the Nash equilibrium under a given goal. To address this problem, an adaptive distributed algorithm is designed to seek Nash equilibrium by combining two optimization levels. Specifically, the decision layer uses a distributed consensus algorithm to achieve benefit evaluation and a gradient algorithm to generate reference signals. Then, the control layer uses the virtual reference signal from the decision layer and the neural network estimation information to design an adaptive control algorithm. The proposed method performs real-time adaptive optimization of the strategies and control performance of the decision and control layers, ensuring the successful implementation of the distributed Nash equilibrium search. The convergence of the proposed algorithm is proved in the Lyapunov sense. Finally, simulation examples demonstrate the performance and effectiveness of the proposed method.},
+  archive      = {J_TCYB},
+  author       = {Hao Wang and Hao Luo and Yuchen Jiang and Shimeng Wu},
+  doi          = {10.1109/TCYB.2025.3581999},
+  journal      = {IEEE Transactions on Cybernetics},
+  month        = {9},
+  number       = {9},
+  pages        = {4054-4063},
+  shortjournal = {IEEE Trans. Cybern.},
+  title        = {Game-based distributed decision optimization for heterogeneous multiagent systems with unknown nonlinear dynamics},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

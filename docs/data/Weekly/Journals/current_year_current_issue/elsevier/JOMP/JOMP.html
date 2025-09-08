@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JOMP</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="jomp">JOMP - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Causal analysis of absolute and relative risk reductions. <em>JOMP</em>, <em>127</em>, 102942. (<a href='https://doi.org/10.1016/j.jmp.2025.102942'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Any medical innovation must first prove its benefits with reliable evidence from clinical trials. Evidence is commonly expressed using two metrics, summarizing treatment benefits based on either absolute risk reductions (ARRs) or relative risk reductions (RRRs). Both metrics are derived from the same data, but they implement conceptually distinct ideas. Here, we analyze these risk reductions measures from a causal modeling perspective. First, we show that ARR is equivalent to Δ P , while RRR is equivalent to causal power, thus clarifying the implicit causal assumptions. Second, we show how this formal equivalence establishes a relationship with causal Bayes nets theory, offering a basis for incorporating risk reduction metrics into a computational modeling framework. Leveraging these analyses, we demonstrate that under dynamically varying baseline risks, ARRs and RRRs lead to strongly diverging predictions. Specifically, the inherent assumption of a linear parameterization of the underlying causal graph can lead to incorrect conclusions when generalizing treatment benefits (e.g, predicting the effect of a vaccine in new populations with different baseline risks). Our analyses highlight the shared principles underlying risk reduction metrics and measures of causal strength, emphasizing the potential for explicating causal structure and inference in medical research.},
+  archive      = {J_JOMP},
+  author       = {Björn Meder and Charley M. Wu and Felix G. Rebitschek},
+  doi          = {10.1016/j.jmp.2025.102942},
+  journal      = {Journal of Mathematical Psychology},
+  month        = {12},
+  pages        = {102942},
+  shortjournal = {J. Math. Psychol.},
+  title        = {Causal analysis of absolute and relative risk reductions},
+  volume       = {127},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

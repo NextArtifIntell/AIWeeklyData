@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>DSS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="dss">DSS - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). A cross-platform rumor detection framework considering data privacy protection and different detection capabilities of online social platforms. <em>DSS</em>, <em>198</em>, 114524. (<a href='https://doi.org/10.1016/j.dss.2025.114524'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The anonymity and widespread popularity of online social platforms (OSPs) allow users to share uncertain posts freely, leading to numerous rumors. Similar rumors spread widely across OSPs, resulting in frequent cross-platform rumors (CPRs). Owing to the unique nature of the cross-platform spread, the dual challenges of data privacy protection constraints and differences in the data and detection capabilities of OSPs exacerbate the difficulty of CPR detection. Thus, to detect CPRs effectively, we designed and implemented a novel deep learning framework named Cross Platform Rumor Detection based on Improved Federated Learning (CPRDIFL), which integrates and improves federated learning and the pre-trained Masked and Contextualized BERT (MacBERT). Our framework uses FL to analyze data from OSPs independently, thus avoiding the need for data integration and ensuring the data privacy protection of OSPs. Moreover, MacBERT is deployed on the clients of CPRDIFL to extract contextual features from posts and dynamically update local weights based on the data and detection performance. Weight parameters are dynamically shared between clients and servers and between clients to achieve complementary advantages across OSPs. Our framework was used in six comprehensive experiments in different scenarios, and the experimental results showed that it achieved the best results in CPR detection. This study not only provides an effective solution for CPR detection but also marks a significant step toward the automated detection of cross-OSP information pollution.},
+  archive      = {J_DSS},
+  author       = {Xuelong Chen and Jinchao Pan},
+  doi          = {10.1016/j.dss.2025.114524},
+  journal      = {Decision Support Systems},
+  month        = {11},
+  pages        = {114524},
+  shortjournal = {Decis. Supp. Syst.},
+  title        = {A cross-platform rumor detection framework considering data privacy protection and different detection capabilities of online social platforms},
+  volume       = {198},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

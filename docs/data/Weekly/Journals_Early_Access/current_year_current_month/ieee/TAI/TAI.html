@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TAI</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tai">TAI - 2</h2>
+<ul>
+<li><details>
+<summary>
+(2025). FedImp: Enhancing federated learning convergence with impurity-based weighting. <em>TAI</em>, 1-13. (<a href='https://doi.org/10.1109/TAI.2025.3605307'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated Learning (FL) is a collaborative paradigm that enables multiple devices to train a global model while preserving local data privacy. A major challenge in FL is the non-Independent and Identically Distributed (non-IID) nature of data across devices, which hinders training efficiency and slows convergence. To tackle this, we propose Federated Impurity Weighting (FedImp), a novel algorithm that quantifies each device’s contribution based on the informational content of its local data. These contributions are normalized to compute distinct aggregation weights for the global model update. Extensive experiments on EMNIST and CIFAR-10 datasets show that FedImp significantly improves convergence speed, reducing communication rounds by up to 64.4%, 27.8%, and 66.7% on EMNIST, and 44.2%, 44%, and 25.6% on CIFAR-10 compared to FedAvg, FedProx, and FedAdp, respectively. Under highly imbalanced data distributions, FedImp outperforms all baselines and achieves the highest accuracy. Overall, FedImp offers an effective solution to enhance FL efficiency in non-IID settings.},
+  archive      = {J_TAI},
+  author       = {Hai Anh Tran and Cuong Ta and Truong X. Tran},
+  doi          = {10.1109/TAI.2025.3605307},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {FedImp: Enhancing federated learning convergence with impurity-based weighting},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Watermarking language models through language models. <em>TAI</em>, 1-10. (<a href='https://doi.org/10.1109/TAI.2025.3605117'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Watermarking the outputs of large language models (LLMs) is critical for provenance tracing, content regulation, and model accountability. Existing approaches often rely on access to model internals or are constrained by static rules and token-level perturbations. Moreover, the idea of steering generative behavior via prompt-based instruction control remains largely underexplored. We introduce a prompt-guided watermarking framework that operates entirely at the input level and requires no access to model parameters or decoding logits. The framework comprises three cooperating components: a Prompting LM that synthesizes watermarking instructions from user prompts, a Marking LM that generates watermarked outputs conditioned on these instructions, and a Detecting LM trained to classify whether a response carries an embedded watermark. This modular design enables dynamic watermarking that adapts to individual prompts while remaining compatible with diverse LLM architectures, including both proprietary and open-weight models. We evaluate the framework over 25 combinations of Prompting and Marking LMs, such as GPT-4o, Mistral, LLaMA3, and DeepSeek. Experimental results show that watermark signals generalize across architectures and remain robust under fine-tuning, model distillation, and prompt-based adversarial attacks, demonstrating the effectiveness and robustness of the proposed approach.},
+  archive      = {J_TAI},
+  author       = {Agnibh Dasgupta and Abdullah All Tanvir and Xin Zhong},
+  doi          = {10.1109/TAI.2025.3605117},
+  journal      = {IEEE Transactions on Artificial Intelligence},
+  month        = {9},
+  pages        = {1-10},
+  shortjournal = {IEEE Trans. Artif. Intell.},
+  title        = {Watermarking language models through language models},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

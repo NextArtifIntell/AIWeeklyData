@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MOOR</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="moor">MOOR - 30</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Comparison between mean-variance and monotone mean-variance preferences under jump diffusion and stochastic factor model. <em>MOOR</em>, <em>50</em>(3), 2405-2432. (<a href='https://doi.org/10.1287/moor.2022.0331'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper compares the optimal investment problems based on monotone mean-variance (MMV) and mean-variance (MV) preferences in a Lévy market with an untradable stochastic factor. It is an open question proposed by Trybuła and Zawisza. Using the dynamic programming and Lagrange multiplier methods, we get the Hamilton-Jacobi-Bellman-Isaacs (HJBI) and Hamilton-Jacobi-Bellman (HJB) equations corresponding to the two investment problems. The equations are transformed into a new-type parabolic equation, from which the optimal strategies under both preferences are derived. We prove that the two optimal strategies and value functions coincide if and only if an important market assumption holds. When the assumption is violated, MMV investors act differently from MV investors. Thus, we conclude that the difference between continuous-time MMV and MV portfolio selections is due to the discontinuity of the market. In addition, we derive the efficient frontier and analyze the economic impact of the jump diffusion risky asset. We also provide empirical evidence to demonstrate the validity of the assumption in real financial markets. Funding: This research was supported by National Natural Science Foundation of China [Grants 12271290 and 11871036].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2022.0331},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {2405-2432},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Comparison between mean-variance and monotone mean-variance preferences under jump diffusion and stochastic factor model},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dual solutions in convex stochastic optimization. <em>MOOR</em>, <em>50</em>(3), 2375-2404. (<a href='https://doi.org/10.1287/moor.2022.0270'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper studies duality and optimality conditions for general convex stochastic optimization problems. The main result gives sufficient conditions for the absence of a duality gap and the existence of dual solutions in a locally convex space of random variables. It implies, in particular, the necessity of scenario-wise optimality conditions that are behind many fundamental results in operations research, stochastic optimal control, and financial mathematics. Our analysis builds on the theory of Fréchet spaces of random variables whose topological dual can be identified with the direct sum of another space of random variables and a space of singular functionals. The results are illustrated by deriving sufficient and necessary optimality conditions for several more specific problem classes. We obtain significant extensions to earlier models, for example, on stochastic optimal control, portfolio optimization, and mathematical programming.},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2022.0270},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {2375-2404},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Dual solutions in convex stochastic optimization},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Langevin dynamics based algorithm e-THεO POULA for stochastic optimization problems with discontinuous stochastic gradient. <em>MOOR</em>, <em>50</em>(3), 2333-2374. (<a href='https://doi.org/10.1287/moor.2022.0307'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce a new Langevin dynamics based algorithm, called the extended tamed hybrid ε -order polygonal unadjusted Langevin algorithm (e-TH ε O POULA), to solve optimization problems with discontinuous stochastic gradients, which naturally appear in real-world applications such as quantile estimation, vector quantization, conditional value at risk (CVaR) minimization, and regularized optimization problems involving rectified linear unit (ReLU) neural networks. We demonstrate both theoretically and numerically the applicability of the e-TH ε O POULA algorithm. More precisely, under the conditions that the stochastic gradient is locally Lipschitz in average and satisfies a certain convexity at infinity condition, we establish nonasymptotic error bounds for e-TH ε O POULA in Wasserstein distances and provide a nonasymptotic estimate for the expected excess risk, which can be controlled to be arbitrarily small. Three key applications in finance and insurance are provided, namely, multiperiod portfolio optimization, transfer learning in multiperiod portfolio optimization, and insurance claim prediction, which involve neural networks with (Leaky)-ReLU activation functions. Numerical experiments conducted using real-world data sets illustrate the superior empirical performance of e-TH ε O POULA compared with SGLD (stochastic gradient Langevin dynamics), TUSLA (tamed unadjusted stochastic Langevin algorithm), adaptive moment estimation, and Adaptive Moment Estimation with a Strongly Non-Convex Decaying Learning Rate in terms of model accuracy. Funding: Financial support was provided by the Alan Turing Institute, London, under the Engineering and Physical Sciences Research Council [Grant EP/N510129/1]; the Ministry of Education of Singapore Academic Research Fund [Tier 2 Grant MOE-T2EP20222-0013]; the European Union’s Horizon 2020 Research and Innovation Programme [Marie Skłodowska-Curie Grant Agreement 801215]; the University of Edinburgh’s Data-Driven Innovation Programme, part of the Edinburgh and South East Scotland City Region Deal; an Institute of Information and Communications Technology Planning and Evaluation grant funded by the Korean Ministry of Science and ICT (MIST) [Grant 2020-0-01336]; the Artificial Intelligence Graduate School Program of the Ulsan National Institute of Science and Technology; a National Research Foundation of Korea grant funded by the Korean government (MSIT) [Grant RS-2023-00253002]; and the Guangzhou–Hong Kong University of Science and Technology (Guangzhou) Joint Funding Program [Grant 2024A03J0630].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2022.0307},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {2333-2374},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Langevin dynamics based algorithm e-THεO POULA for stochastic optimization problems with discontinuous stochastic gradient},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A retrospective approximation approach for smooth stochastic optimization. <em>MOOR</em>, <em>50</em>(3), 2301-2332. (<a href='https://doi.org/10.1287/moor.2022.0136'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Stochastic Gradient (SG) is the de facto iterative technique to solve stochastic optimization (SO) problems with a smooth (nonconvex) objective f and a stochastic first-order oracle. SG’s attractiveness is due in part to its simplicity of executing a single step along the negative subsampled gradient direction to update the incumbent iterate. In this paper, we question SG’s choice of executing a single step as opposed to multiple steps between subsample updates. Our investigation leads naturally to generalizing SG into Retrospective Approximation (RA), where, during each iteration, a “deterministic solver” executes possibly multiple steps on a subsampled deterministic problem and stops when further solving is deemed unnecessary from the standpoint of statistical efficiency. RA thus formalizes what is appealing for implementation—during each iteration, “plug in” a solver—for example, L-BFGS line search or Newton-CG— as is , and solve only to the extent necessary. We develop a complete theory using relative error of the observed gradients as the principal object, demonstrating that almost sure and L 1 consistency of RA are preserved under especially weak conditions when sample sizes are increased at appropriate rates. We also characterize the iteration and oracle complexity (for linear and sublinear solvers) of RA and identify a practical termination criterion leading to optimal complexity rates. To subsume nonconvex f , we present a certain “random central limit theorem” that incorporates the effect of curvature across all first-order critical points, demonstrating that the asymptotic behavior is described by a certain mixture of normals. The message from our numerical experiments is that the ability of RA to incorporate existing second-order deterministic solvers in a strategic manner might be important from the standpoint of dispensing with hyper-parameter tuning. Funding: R. Pasupathy received financial support from the Office of Naval Research [Grants N000141712295 and 13000991]. R. Bollapragada received financial support from the Lawrence Livermore National Laboratory and the National Science Foundation [Grant NSF DMS 2324643].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2022.0136},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {2301-2332},
+  shortjournal = {Math. Oper. Res.},
+  title        = {A retrospective approximation approach for smooth stochastic optimization},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The minimax property in infinite two-person win-lose games. <em>MOOR</em>, <em>50</em>(3), 2287-2300. (<a href='https://doi.org/10.1287/moor.2023.0352'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We explore a version of the minimax theorem for two-person win-lose games with infinitely many pure strategies. In the countable case, we give a combinatorial condition on the game which implies the minimax property. In the general case, we prove that a game satisfies the minimax property along with all its subgames if and only if none of its subgames is isomorphic to the “larger number game.” This generalizes a recent theorem of Hanneke, Livni, and Moran. We also propose several applications of our results outside of game theory.},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2023.0352},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {2287-2300},
+  shortjournal = {Math. Oper. Res.},
+  title        = {The minimax property in infinite two-person win-lose games},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Envy-free division of multilayered cakes. <em>MOOR</em>, <em>50</em>(3), 2261-2286. (<a href='https://doi.org/10.1287/moor.2022.0350'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dividing a multilayered cake under nonoverlapping constraints captures several scenarios (e.g., allocating multiple facilities over time where each agent can utilize at most one facility simultaneously). We establish the existence of an envy-free multidivision that is nonoverlapping and contiguous within each layer when the number of agents is a prime power, solving partially an open question by Hosseini et al. [Hosseini H, Igarashi A, Searns A (2020) Fair division of time: Multi-layered cake cutting. Proc. 29th Internat. Joint Conf. Artificial Intelligence (IJCAI) , 182–188; Hosseini H, Igarashi A, Searns A (2020) Fair division of time: Multi-layered cake cutting. Preprint, submitted April 28, http://arxiv.org/abs/2004.13397 ]. Our approach follows an idea proposed by Jojić et al. [Jojić D, Panina G, Živaljević R (2021) Splitting necklaces, with constraints. SIAM J. Discrete Math. 35(2):1268–1286] for envy-free divisions, relying on a general fixed-point theorem. We further design a fully polynomial-time approximation scheme for the two-layer, three-agent case, with monotone preferences. All results are actually established for divisions among groups of almost the same size. In the one-layer, three-group case, our algorithm is able to deal with any predetermined sizes, still with monotone preferences. For three groups, this provides an algorithmic version of a recent theorem by Segal-Halevi and Suksompong [Segal-Halevi E, Suksompong W (2021) How to cut a cake fairly: A generalization to groups. Amer. Math. Monthly 128(1):79–83]. Funding: This work was partially supported by the Japan Science and Technology Agency [Grant JPMJPR20C], Fusion Oriented REsearch for disruptive Science and Technology [Grant JPMJFR226O], and Exploratory Research for Advanced Technology [Grant JPMJER2301].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2022.0350},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {2261-2286},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Envy-free division of multilayered cakes},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Robust online selection with uncertain offer acceptance. <em>MOOR</em>, <em>50</em>(3), 2226-2260. (<a href='https://doi.org/10.1287/moor.2023.0210'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Online advertising has motivated interest in online selection problems. Displaying ads to the right users benefits both the platform (e.g., via pay-per-click) and the advertisers (by increasing their reach). In practice, not all users click on displayed ads, while the platform’s algorithm may miss the users most disposed to do so. This mismatch decreases the platform’s revenue and the advertiser’s chances to reach the right customers. With this motivation, we propose a secretary problem where a candidate may or may not accept an offer according to a known probability p . Because we do not know the top candidate willing to accept an offer, the goal is to maximize a robust objective defined as the minimum over integers k of the probability of choosing one of the top k candidates, given that one of these candidates will accept an offer. Using Markov decision process theory, we derive a linear program for this max-min objective whose solution encodes an optimal policy. The derivation may be of independent interest, as it is generalizable and can be used to obtain linear programs for many online selection models. We further relax this linear program into an infinite counterpart, which we use to provide bounds for the objective and closed-form policies. For p ≥ p * ≈ 0.6 , an optimal policy is a simple threshold rule that observes the first p 1 / ( 1 − p ) fraction of candidates and subsequently makes offers to the best candidate observed so far. Funding: Financial support from the U.S. National Science Foundation [Grants CCF-2106444, CCF-1910423, and CMMI 1552479] is gratefully acknowledged.},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2023.0210},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {2226-2260},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Robust online selection with uncertain offer acceptance},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The core of housing markets from an agent’s perspective: Is it worth sprucing up your home?. <em>MOOR</em>, <em>50</em>(3), 2199-2225. (<a href='https://doi.org/10.1287/moor.2023.0092'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study housing markets as introduced by Shapley and Scarf. We investigate the computational complexity of various questions regarding the situation of an agent a in a housing market H : we show that it is NP -hard to find an allocation in the core of H in which (i) a receives a certain house, (ii) a does not receive a certain house, or (iii) a receives a house other than a ’s own. We prove that the core of housing markets respects improvement in the following sense: given an allocation in the core of H in which agent a receives a house h , if the value of the house owned by a increases, then the resulting housing market admits an allocation in its core in which a receives either h or a house that a prefers to h ; moreover, such an allocation can be found efficiently. We further show an analogous result in the S table R oommates setting by proving that stable matchings in a one-sided market also respect improvement. Funding: This work was supported by the Hungarian Scientific Research Fund [Grants K124171, K128611]. I. Schlotter is supported by the Hungarian Academy of Sciences under its Momentum Programme (LP2021-2) and its János Bolyai Research Scholarship. The research reported in this paper and carried out by T. Fleiner at the Budapest University of Technology and Economics was supported by the “TKP2020, National Challenges Program” of the National Research Development and Innovation Office [BME NC TKP2020 and OTKA K143858] and by the Higher Education Excellence Program of the Ministry of Human Capacities in the frame of the Artificial Intelligence research area of the Budapest University of Technology and Economics (BME FIKP-MI/SC). P. Biró gratefully acknowledges financial support from the Hungarian Scientific Research Fund, OTKA [Grant K143858] and the Hungarian Academy of Sciences [Momentum Grant LP2021-2].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2023.0092},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {2199-2225},
+  shortjournal = {Math. Oper. Res.},
+  title        = {The core of housing markets from an agent’s perspective: Is it worth sprucing up your home?},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Analysis of a class of minimization problems lacking lower semicontinuity. <em>MOOR</em>, <em>50</em>(3), 2175-2198. (<a href='https://doi.org/10.1287/moor.2023.0295'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The minimization of nonlower semicontinuous functions is a difficult topic that has been minimally studied. Among such functions is a Heaviside composite function that is the composition of a Heaviside function with a possibly nonsmooth multivariate function. Unifying a statistical estimation problem with hierarchical selection of variables and a sample average approximation of composite chance constrained stochastic programs, a Heaviside composite optimization problem is one whose objective and constraints are defined by sums of possibly nonlinear multiples of such composite functions. Via a pulled-out formulation, a pseudostationarity concept for a feasible point was introduced in an earlier work as a necessary condition for a local minimizer of a Heaviside composite optimization problem. The present paper extends this previous study in several directions: (a) showing that pseudostationarity is implied by (and thus, weaker than) a sharper subdifferential-based stationarity condition that we term epistationarity; (b) introducing a set-theoretic sufficient condition, which we term a local convexity-like property, under which an epistationary point of a possibly nonlower semicontinuous optimization problem is a local minimizer; (c) providing several classes of Heaviside composite functions satisfying this local convexity-like property; (d) extending the epigraphical formulation of a nonnegative multiple of a Heaviside composite function to a lifted formulation for arbitrarily signed multiples of the Heaviside composite function, based on which we show that an epistationary solution of the given Heaviside composite program with broad classes of B-differentiable component functions can in principle be approximately computed by surrogation methods. Funding: The work of Y. Cui was based on research supported by the National Science Foundation [Grants CCF-2153352, DMS-2309729, and CCF-2416172] and the National Institutes of Health [Grant 1R01CA287413-01]. The work of J.-S. Pang was based on research supported by the Air Force Office of Scientific Research [Grant FA9550-22-1-0045].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2023.0295},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {2175-2198},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Analysis of a class of minimization problems lacking lower semicontinuity},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Correlated equilibria in large anonymous bayesian games. <em>MOOR</em>, <em>50</em>(3), 2157-2174. (<a href='https://doi.org/10.1287/moor.2023.0278'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider multipopulation Bayesian games with a large number of players. Each player aims at minimizing a cost function that depends on this player’s own action, the distribution of players’ actions in all populations, and an unknown state parameter. We study the nonatomic limit versions of these games and introduce the concept of Bayes correlated Wardrop equilibrium, which extends the concept of Bayes correlated equilibrium to nonatomic games. We prove that Bayes correlated Wardrop equilibria are limits of action flows induced by Bayes correlated equilibria of the game with a large finite set of small players. For nonatomic games with complete information admitting a convex potential, we prove that the set of correlated and of coarse correlated Wardrop equilibria coincide with the set of probability distributions over Wardrop equilibria and that all equilibrium outcomes have the same costs. We get the following consequences. First, all flow distributions of (coarse) correlated equilibria in convex potential games with finitely many players converge to mixtures of Wardrop equilibria when the weight of each player tends to zero. Second, for any sequence of flows satisfying a no-regret property, its empirical distribution converges to the set of distributions over Wardrop equilibria, and the average cost converges to the unique Wardrop cost. Funding: This work was partially supported by European Cooperation in Science and Technology Action 16228 GAMENET. F. Koessler acknowledges the support of the Agence Nationale de la Recherche [Grant StratCom ANR-19-CE26-0010-01]. M. Scarsini acknowledges the support of the Gruppo Nazionale per l’Analisi Matematica, la Probabilità e le loro Applicazioni project [Grant CUP_E53C22001930001], the Ministero dell’Università e della Ricerca Progetti di Rilevante Interesse Nazionale [Grant 2022EKNE5K], and the European Union-Next Generation EU, component M4C2, investment 1.1 (Ministero dell’Università e della Ricerca Progetti di Rilevante Interesse Nazionale Piano Nazionale di Ripresa e Resilienza) [Grant P2022XT8C8]. T. Tomala gratefully acknowledges the support of the HEC foundation and Agence Nationale de la Recherche/Investissements d’Avenir [Grant ANR-11-IDEX-0003/Labex Ecodec/ANR-11-LABX-0047].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2023.0278},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {2157-2174},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Correlated equilibria in large anonymous bayesian games},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Sparse integer programming is fixed-parameter tractable. <em>MOOR</em>, <em>50</em>(3), 2141-2156. (<a href='https://doi.org/10.1287/moor.2023.0162'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the general integer programming problem where the number of variables n is a variable part of the input. We consider two natural parameters of the constraint matrix A : its numeric measure a and its sparsity measure d . We present an algorithm for solving integer programming in time g ( a , d ) poly ( n , L ) , where g is some computable function of the parameters a and d , and L is the binary encoding length of the input. In particular, integer programming is fixed-parameter tractable parameterized by a and d , and is solvable in polynomial time for every fixed a and d . Our results also extend to nonlinear separable convex objective functions. Funding: F. Eisenbrand, C. Hunkenschröder, and K.-M. Klein were supported by the Swiss National Science Foundation (SNSF) within the project “Convexity, geometry of numbers, and the complexity of integer programming” [Grant 163071]. A. Levin and S. Onn are partially supported by the Israel Science Foundation [Grant 308/18]. A. Levin is also partially supported by the Israel Science Foundation [Grant 1467/22]. S. Onn is also partially supported by the Dresner Chair at the Technion. M. Koutecký is partially supported by Charles University project UNCE 24/SCI/008, and by the project 22-22997S of the Grantová Agentura České Republiky (GA ČR).},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2023.0162},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {2141-2156},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Sparse integer programming is fixed-parameter tractable},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On a network centrality maximization game. <em>MOOR</em>, <em>50</em>(3), 2112-2140. (<a href='https://doi.org/10.1287/moor.2022.0251'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study a network formation game where n players, identified with the nodes of a directed graph to be formed, choose where to wire their outgoing links in order to maximize their PageRank centrality. Specifically, the action of every player i consists in the wiring of a predetermined number d i of directed out-links, and her utility is her own PageRank centrality in the network resulting from the actions of all players. We show that this is a potential game and that the best response correspondence always exhibits a local structure in that it is never convenient for a node i to link to other nodes that are at incoming distance more than d i from her. We then study the equilibria of this game determining necessary conditions for a graph to be a (strict, recurrent) Nash equilibrium. Moreover, in the homogeneous case, where players all have the same number d of out-links, we characterize the structure of the potential-maximizing equilibria, and in the special cases d = 1 and d = 2, we provide a complete classification of the set of (strict, recurrent) Nash equilibria. Our analysis shows in particular that the considered formation mechanism leads to the emergence of undirected and disconnected or loosely connected networks. Funding: This research was carried out within the framework of the Ministero dell’Università e della Ricerca (MIUR)-funded Progetto di Eccellenza of the Dipartimento di Scienze Matematiche G. L. Lagrange, Politecnico di Torino [CUP: E11G18000350001]. It received partial support from the MIUR-funded project PRIN 2017 “Advanced Network Control of Future Smart Grids” and from the Compagnia di San Paolo.},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2022.0251},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {2112-2140},
+  shortjournal = {Math. Oper. Res.},
+  title        = {On a network centrality maximization game},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimal ratcheting of dividends with capital injection. <em>MOOR</em>, <em>50</em>(3), 2073-2111. (<a href='https://doi.org/10.1287/moor.2023.0102'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we investigate the optimal dividend problem with capital injection and ratcheting constraint with nondecreasing dividend payout rate. Capital injections are introduced in order to eliminate the possibility of bankruptcy. Under the Cramér–Lundberg risk model, the problem is formulated as a two-dimensional stochastic control problem. By applying the viscosity theory, we show that the value function is the unique viscosity solution to the associated Hamilton–Jacobi–Bellman equation. In order to obtain analytical results, we further study the problem with finite ratcheting constraint, where the dividend rate takes only a finite number of available values. We show that the value function under general ratcheting can be approximated arbitrarily closely by the one with finite ratcheting. Finally, we derive the expressions of value function when the threshold-type finite ratcheting dividend strategy with capital injection is applied, and we show the optimality of such a strategy under certain conditions of concavity. Numerical examples under various scenarios are provided at the end. Funding W. Wang was supported by the National Natural Science Foundation of China [Grants 12171405, 12271066, and 11661074] and the Fundamental Research Funds for the Central Universities of China [Grant 20720220044]. R. Xu was supported by the National Natural Science Foundation of China [Grants 12201506 and 12371468], the Natural Science Foundation of the Jiangsu Higher Education Institutions of China [Grant 21KJB110024], and Xi’an Jiaotong-Liverpool University Research Development Funding [Grant RDF-20-01-02].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2023.0102},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {2073-2111},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Optimal ratcheting of dividends with capital injection},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the set of balanced games. <em>MOOR</em>, <em>50</em>(3), 2047-2072. (<a href='https://doi.org/10.1287/moor.2023.0379'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the geometric structure of the set of cooperative transferable utility games having a nonempty core, characterized by Bondareva and Shapley as balanced games. We show that this set is a nonpointed polyhedral cone, and we find the set of its extremal rays and facets. This study is also done for the set of balanced games whose value for the grand coalition is fixed, which yields an affine nonpointed polyhedral cone. Finally, the case of nonnegative balanced games with fixed value for the grand coalition is tackled. This set is a convex polytope, with remarkable properties. We characterize its vertices and facets, study the adjacency structure of vertices, develop an algorithm for generating vertices in a random uniform way, and show that this polytope is combinatorial and its adjacency graph is Hamiltonian. Last, we give a characterization of the set of games having a core reduced to a singleton. Funding: This work was supported by the Spanish Government [Grant PID2021-124933NB-I00].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2023.0379},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {2047-2072},
+  shortjournal = {Math. Oper. Res.},
+  title        = {On the set of balanced games},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Parabolic regularity of spectral functions. <em>MOOR</em>, <em>50</em>(3), 2017-2046. (<a href='https://doi.org/10.1287/moor.2023.0010'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper is devoted to the study of the second-order variational analysis of spectral functions. It is well-known that spectral functions can be expressed as a composite function of symmetric functions and eigenvalue functions. We establish several second-order properties of spectral functions when their associated symmetric functions enjoy these properties. Our main attention is given to characterize parabolic regularity for this class of functions. It was observed recently that parabolic regularity can play a central rule in ensuring the validity of important second-order variational properties, such as twice epi-differentiability. We demonstrates that for convex spectral functions, their parabolic regularity amounts to that of their symmetric functions. As an important consequence, we calculate the second subderivative of convex spectral functions, which allows us to establish second-order optimality conditions for a class of matrix optimization problems. Funding: The research of A. Mohammadi is funded by a postdoctoral fellowship from Georgetown University. E. Sarabi is partially supported by the U.S. National Science Foundation [Grant DMS 2108546].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2023.0010},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {2017-2046},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Parabolic regularity of spectral functions},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Compact extended formulations for low-rank functions with indicator variables. <em>MOOR</em>, <em>50</em>(3), 1992-2016. (<a href='https://doi.org/10.1287/moor.2021.0281'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the mixed-integer epigraph of a special class of convex functions with nonconvex indicator constraints, which are often used to impose logical constraints on the support of the solutions. The class of functions we consider are defined as compositions of low-dimensional nonlinear functions with affine functions. Extended formulations describing the convex hull of such sets can easily be constructed via disjunctive programming although a direct application of this method often yields prohibitively large formulations, whose size is exponential in the number of variables. In this paper, we propose a new disjunctive representation of the sets under study, which leads to compact formulations with size exponential in the dimension of the nonlinear function but polynomial in the number of variables. Moreover, we show how to project out the additional variables for the case of dimension one, recovering or generalizing known results for the convex hulls of such sets (in the original space of variables). Our computational results indicate that the proposed approach can significantly improve the performance of solvers in structured problems. Funding: This work was supported by the National Science Foundation Division of Computing and Communication Foundations [Grant 2006762].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2021.0281},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {1992-2016},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Compact extended formulations for low-rank functions with indicator variables},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Information design and sharing in supply chains. <em>MOOR</em>, <em>50</em>(3), 1965-1991. (<a href='https://doi.org/10.1287/moor.2023.0008'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the interplay between inventory replenishment policies and information sharing in the context of a two-tier supply chain with a single supplier and a single retailer serving an independent and identically distributed Gaussian market demand. We investigate how the retailer’s inventory policy impacts the supply chain’s cumulative expected long-term average inventory costs C in two extreme information-sharing cases: (a) full information sharing and (b) no information sharing. To find the retailer’s inventory policy that minimizes C , we formulate an infinite-dimensional optimization problem whose decision variables are the MA( ∞ ) coefficients that characterize a stationary ordering policy. Under full information sharing, the optimization problem admits a simple solution and the optimal policy is given by an MA(1) process. On the other hand, to solve the optimization problem under no information sharing, we reformulate the optimization from its time domain formulation to an equivalent z -transform formulation in which the decision variables correspond to elements of the Hardy space H 2 . This alternative representation allows us to use a number of results from H 2 theory to compute the optimal value of C and characterize a sequence of ϵ -optimal inventory policies under some mild technical conditions. By comparing the optimal solution under full information sharing and no information sharing, we derive a number of important practical takeaways. For instance, we show that there is value in information sharing if and only if the retailer’s optimal policy under full information sharing is not invertible with respect to the sequence of demand shocks. Furthermore, we derive a fundamental mathematical identity that reveals the value of information sharing by exploiting the canonical Smirnov–Beurling inner–outer factorization of the retailer’s orders when viewed as an element of H 2 . We also show that the value of information sharing can grow unboundedly when the cumulative supply chain costs are dominated by the supplier’s inventory costs. Funding: R. Caldentey acknowledges the University of Chicago Booth School of Business for financial support. Supplemental Material: The online appendix is available at https://doi.org/10.1287/moor.2023.0008 .},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2023.0008},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {1965-1991},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Information design and sharing in supply chains},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Uncertainty propagation and dynamic robust risk measures. <em>MOOR</em>, <em>50</em>(3), 1939-1964. (<a href='https://doi.org/10.1287/moor.2023.0267'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce a framework for quantifying propagation of uncertainty arising in a dynamic setting. Specifically, we define dynamic uncertainty sets designed explicitly for discrete stochastic processes over a finite time horizon. These dynamic uncertainty sets capture the uncertainty surrounding stochastic processes and models, accounting for factors such as distributional ambiguity. Examples of uncertainty sets include those induced by the Wasserstein distance and f -divergences. We further define dynamic robust risk measures as the supremum of all candidates’ risks within the uncertainty set. In an axiomatic way, we discuss conditions on the uncertainty sets that lead to well-known properties of dynamic robust risk measures, such as convexity and coherence. Furthermore, we discuss the necessary and sufficient properties of dynamic uncertainty sets that lead to time-consistencies of dynamic robust risk measures. We find that uncertainty sets stemming from f -divergences lead to strong time-consistency whereas the Wasserstein distance results in a new time-consistent notion of weak recursiveness. Moreover, we show that a dynamic robust risk measure is strong time-consistent or weak recursive if and only if it admits a recursive representation of one-step conditional robust risk measures arising from static uncertainty sets. Funding: M. Mailhot and S. M. Pesenti acknowledge support from the Canadian Statistical Sciences Institute (CANSSI) and from the Natural Sciences and Engineering Research Council of Canada [Grants RGPIN-2015-05447, DGECR-2020-00333, and RGPIN-2020-04289]. M. R. Moresco thanks the Horizon Postdoctoral Fellowship for the support.},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2023.0267},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {1939-1964},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Uncertainty propagation and dynamic robust risk measures},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Erratum to: Linear convergence of dual coordinate descent on nonpolyhedral convex problems. <em>MOOR</em>, <em>50</em>(3), 1935-1938. (<a href='https://doi.org/10.1287/moor.2024.0500'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Our proof of linear convergence for Dykstra’s algorithm was erroneous, and in fact, there even exists a counterexample showing that the result is false.},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2024.0500},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {1935-1938},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Erratum to: Linear convergence of dual coordinate descent on nonpolyhedral convex problems},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fair shares: Feasibility, domination, and incentives. <em>MOOR</em>, <em>50</em>(3), 1901-1934. (<a href='https://doi.org/10.1287/moor.2022.0257'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider fair allocation of indivisible goods to n equally entitled agents. Every agent i has a valuation function v i from some given class of valuation functions. A share s is a function that maps ( v i , n ) to a nonnegative value. A share is feasible if for every allocation instance, there is an allocation that gives every agent i a bundle that is acceptable with respect to v i , one of value at least her share value s ( v i , n ) . We introduce the following concepts. A share is self-maximizing if reporting the true valuation maximizes the minimum true value of a bundle that is acceptable with respect to the report. A share s ρ-dominates another share s ′ if s ( v i , n ) ≥ ρ · s ′ ( v i , n ) for every valuation function. We initiate a systematic study of feasible and self-maximizing shares and a systematic study of ρ -domination relation between shares, presenting both positive and negative results. Funding: The research of M. Babaioff is supported in part by a Golda Meir Fellowship. The research of U. Feige is supported in part by the Israel Science Foundation [Grant 1122/22].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2022.0257},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {1901-1934},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Fair shares: Feasibility, domination, and incentives},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An augmented lagrangian approach to conically constrained nonmonotone variational inequality problems. <em>MOOR</em>, <em>50</em>(3), 1868-1900. (<a href='https://doi.org/10.1287/moor.2023.0167'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper we consider a nonmonotone (mixed) variational inequality (VI) model with (nonlinear) convex conic constraints. Through developing an equivalent Lagrangian function-like primal-dual saddle point system for the VI model in question, we introduce an augmented Lagrangian primal-dual method, called ALAVI (Augmented Lagrangian Approach to Variational Inequality) in the paper, for solving a general constrained VI model. Under an assumption, called the primal-dual variational coherence condition in the paper, we prove the convergence of ALAVI. Next, we show that many existing generalized monotonicity properties are sufficient—though by no means necessary—to imply the abovementioned coherence condition and thus are sufficient to ensure convergence of ALAVI. Under that assumption, we further show that ALAVI has in fact an o ( 1 / k ) global rate of convergence where k is the iteration count. By introducing a new gap function, this rate further improves to be O ( 1 / k ) if the mapping is monotone. Finally, we show that under a metric subregularity condition, even if the VI model may be nonmonotone, the local convergence rate of ALAVI improves to be linear. Numerical experiments on some randomly generated highly nonlinear and nonmonotone VI problems show the practical efficacy of the newly proposed method. Funding: L. Zhao and D. Zhu were partially supported by the Major Project of the National Natural Science Foundation of China [Grant 72293582], the National Key R&D Program of China [Grant 2023YFA0915202], and the Fundamental Research Funds for the Central Universities (the Interdisciplinary Program of Shanghai Jiao Tong University) [Grant YG2024QNA36]. L. Zhao was partially supported by the Startup Fund for Young Faculty at SJTU (SFYF at SJTU) [Grant 22X010503839].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2023.0167},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {1868-1900},
+  shortjournal = {Math. Oper. Res.},
+  title        = {An augmented lagrangian approach to conically constrained nonmonotone variational inequality problems},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Nonzero-sum optimal stopping game with continuous vs. periodic exercise opportunities. <em>MOOR</em>, <em>50</em>(3), 1832-1867. (<a href='https://doi.org/10.1287/moor.2023.0123'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce a new nonzero-sum game of optimal stopping with asymmetric exercise opportunities. Given a stochastic process modeling the value of an asset, one player observes and can act on the process continuously, whereas the other player can act on it only periodically at independent Poisson arrival times. The first one to stop receives a reward, different for each player, whereas the other one gets nothing. We study how each player balances the maximization of gains against the maximization of the likelihood of stopping before the opponent. In such a setup driven by a Lévy process with positive jumps, we not only prove the existence but also explicitly construct a Nash equilibrium with values of the game written in terms of the scale function. Numerical illustrations with put-option payoffs are also provided to study the behavior of the players’ strategies as well as the quantification of the value of available exercise opportunities. Funding: K. Yamazaki was partly supported by The Japan Society for the Promotion of Science (JSPS) Grant-in-Aid for Scientific Research (KAKENHI) [Grants 19H01791, 20K03758, and 24K06844], Open Partnership Joint Research Projects [Grant JPJSBP120209921], and the University of Queensland [start-up grant].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2023.0123},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {1832-1867},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Nonzero-sum optimal stopping game with continuous vs. periodic exercise opportunities},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exploration noise for learning linear-quadratic mean field games. <em>MOOR</em>, <em>50</em>(3), 1762-1831. (<a href='https://doi.org/10.1287/moor.2021.0157'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The goal of this paper is to demonstrate that common noise may serve as an exploration noise for learning the solution of a mean field game. This concept is here exemplified through a toy linear-quadratic model, for which a suitable form of common noise has already been proven to restore existence and uniqueness. We here go one step further and prove that the same form of common noise may force the convergence of the learning algorithm called fictitious play, and this without any further potential or monotone structure. Several numerical examples are provided to support our theoretical analysis. Funding: F. Delarue acknowledges the financial support of the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme [AdG ELISA project, Grant 101054746]. A. Vasileiadis acknowledge the financial support of French ANR project ANR-19-P3IA-0002-3IA Côte d'Azur-Nice-Interdisciplinary Institute for Artificial Intelligence.},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2021.0157},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {1762-1831},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Exploration noise for learning linear-quadratic mean field games},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A moment-sum-of-squares hierarchy for robust polynomial matrix inequality optimization with sum-of-squares convexity. <em>MOOR</em>, <em>50</em>(3), 1734-1761. (<a href='https://doi.org/10.1287/moor.2023.0361'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study a class of polynomial optimization problems with a robust polynomial matrix inequality (PMI) constraint where the uncertainty set itself is also defined by a PMI. These can be viewed as matrix generalizations of semi-infinite polynomial programs because they involve actually infinitely many PMI constraints in general. Under certain sum-of-squares (SOS)-convexity assumptions, we construct a hierarchy of increasingly tight moment-SOS relaxations for solving such problems. Most of the nice features of the moment-SOS hierarchy for the usual polynomial optimization are extended to this more complicated setting. In particular, asymptotic convergence of the hierarchy is guaranteed, and finite convergence can be certified if some flat extension condition holds true. To extract global minimizers, we provide a linear algebra procedure for recovering a finitely atomic matrix-valued measure from truncated matrix-valued moments. As an application, we are able to solve the problem of minimizing the smallest eigenvalue of a polynomial matrix subject to a PMI constraint. If SOS convexity is replaced by convexity, we can still approximate the optimal value as closely as desired by solving a sequence of semidefinite programs and certify global optimality in case that certain flat extension conditions hold true. Finally, an extension to the nonconvexity setting is provided under a rank 1 condition. To obtain the above-mentioned results, techniques from real algebraic geometry, matrix-valued measure theory, and convex optimization are employed. Funding: This work was supported by the National Key Research and Development Program of China [Grant 2023YFA1009401] and the National Natural Science Foundation of China [Grants 11571350 and 12201618].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2023.0361},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {1734-1761},
+  shortjournal = {Math. Oper. Res.},
+  title        = {A moment-sum-of-squares hierarchy for robust polynomial matrix inequality optimization with sum-of-squares convexity},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Risk-averse markov decision processes through a distributional lens. <em>MOOR</em>, <em>50</em>(3), 1707-1733. (<a href='https://doi.org/10.1287/moor.2023.0211'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {By adopting a distributional viewpoint on law-invariant convex risk measures, we construct dynamic risk measures (DRMs) at the distributional level. We then apply these DRMs to investigate Markov decision processes, incorporating latent costs, random actions, and weakly continuous transition kernels. Furthermore, the proposed DRMs allow risk aversion to change dynamically. Under mild assumptions, we derive a dynamic programming principle and show the existence of an optimal policy in both finite and infinite time horizons. Moreover, we provide a sufficient condition for the optimality of deterministic actions. For illustration, we conclude the paper with examples from optimal liquidation with limit order books and autonomous driving. Funding: This work was supported by Natural Sciences and Engineering Research Council of Canada [Grants RGPAS-2018-522715 and RGPIN-2018-05705].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2023.0211},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {1707-1733},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Risk-averse markov decision processes through a distributional lens},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the convex formulations of robust markov decision processes. <em>MOOR</em>, <em>50</em>(3), 1681-1706. (<a href='https://doi.org/10.1287/moor.2022.0284'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robust Markov decision processes (MDPs) are used for applications of dynamic optimization in uncertain environments and have been studied extensively. Many of the main properties and algorithms of MDPs, such as value iteration and policy iteration, extend directly to RMDPs. Surprisingly, there is no known analog of the MDP convex optimization formulation for solving RMDPs. This work describes the first convex optimization formulation of RMDPs under the classical sa-rectangularity and s-rectangularity assumptions. By using entropic regularization and exponential change of variables, we derive a convex formulation with a number of variables and constraints polynomial in the number of states and actions, but with large coefficients in the constraints. We further simplify the formulation for RMDPs with polyhedral, ellipsoidal, or entropy-based uncertainty sets, showing that, in these cases, RMDPs can be reformulated as conic programs based on exponential cones, quadratic cones, and nonnegative orthants. Our work opens a new research direction for RMDPs and can serve as a first step toward obtaining a tractable convex formulation of RMDPs. Funding: The work in the paper was supported, in part, by NSF [Grants 2144601 and 1815275]; and Agence Nationale de la Recherche [Grant 11-LABX-0047].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2022.0284},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {1681-1706},
+  shortjournal = {Math. Oper. Res.},
+  title        = {On the convex formulations of robust markov decision processes},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimality conditions in control problems with random state constraints in probabilistic or almost sure form. <em>MOOR</em>, <em>50</em>(3), 1654-1680. (<a href='https://doi.org/10.1287/moor.2023.0177'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we discuss optimality conditions for optimization problems involving random state constraints, which are modeled in probabilistic or almost sure form. Although the latter can be understood as the limiting case of the former, the derivation of optimality conditions requires substantially different approaches. We apply them to a linear elliptic partial differential equation with random inputs. In the probabilistic case, we rely on the spherical-radial decomposition of Gaussian random vectors in order to formulate fully explicit optimality conditions involving a spherical integral. In the almost sure case, we derive optimality conditions and compare them with a model based on robust constraints with respect to the (compact) support of the given distribution. Funding: The authors thank the Deutsche Forschungsgemeinschaft [Projects B02 and B04 in the “Sonderforschungsbereich/Transregio 154 Mathematical Modelling, Simulation and Optimization Using the Example of Gas Networks”] for support. C. Geiersbach acknowledges support from the Deutsche Forschungsgemeinschaft [Germany’s Excellence Strategy–the Berlin Mathematics Research Center MATH+ Grant EXC-2046/1, Project 390685689]. R. Henrion acknowledges support from the Fondation Mathématique Jacques Hadamard [Program Gaspard Monge in Optimization and Operations Research, including support to this program by Electricité de France].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2023.0177},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {1654-1680},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Optimality conditions in control problems with random state constraints in probabilistic or almost sure form},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Order independence in sequential, issue-by-issue voting. <em>MOOR</em>, <em>50</em>(3), 1635-1653. (<a href='https://doi.org/10.1287/moor.2022.0342'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study when the voting outcome is independent of the order of issues put up for vote in a spatial multidimensional voting model. Agents equipped with norm-based preferences that use a norm to measure the distance from their ideal policy vote sequentially and issue by issue via simple majority. If the underlying norm is generated by an inner product—such as the Euclidean norm—then the voting outcome is order independent if and only if the issues are orthogonal. If the underlying norm is a general one, then the outcome is order independent if the basis defining the issues to be voted upon satisfies the following property; for any vector in the basis, any linear combination of the other vectors is Birkhoff–James orthogonal to it. We prove a partial converse in the case of two dimensions; if the underlying basis fails this property, then the voting order matters. Finally, despite existence results for the two-dimensional case and for the general l p case, we show that nonexistence of bases with this property is generic. Funding: The research of A. Gershkov is supported by the Israel Science Foundation [Grant 1118/22]. The research of B. Moldovanu is supported by the German Science Foundation through the Hausdorff Center for Mathematics and The Collaborative Research Center Transregio 224. The research of X. Shi is supported by the Social Sciences and Humanities Research Council of Canada.},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2022.0342},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {1635-1653},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Order independence in sequential, issue-by-issue voting},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Large independent sets in recursive markov random graphs. <em>MOOR</em>, <em>50</em>(3), 1611-1634. (<a href='https://doi.org/10.1287/moor.2022.0215'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Computing the maximum size of an independent set in a graph is a famously hard combinatorial problem that has been well studied for various classes of graphs. When it comes to random graphs, the classic Erdős–Rényi–Gilbert random graph G n , p has been analyzed and shown to have the largest independent sets of size Θ ( log n ) with high probability (w.h.p.) This classic model does not capture any dependency structure between edges that can appear in real-world networks. We define random graphs G n , p r whose existence of edges is determined by a Markov process that is also governed by a decay parameter r ∈ ( 0 , 1 ] . We prove that w.h.p. G n , p r has independent sets of size ( 1 − r 2 + ε ) n log n for arbitrary ε > 0 . This is derived using bounds on the terms of a harmonic series, a Turán bound on a stability number, and a concentration analysis for a certain sequence of dependent Bernoulli variables that may also be of independent interest. Because G n , p r collapses to G n , p when there is no decay, it follows that having even the slightest bit of dependency (any r < 1 ) in the random graph construction leads to the presence of large independent sets, and thus, our random model has a phase transition at its boundary value of r = 1. This implies that there are large matchings in the line graph of G n , p r , which is a Markov random field. For the maximal independent set output by a greedy algorithm, we deduce that it has a performance ratio of at most 1 + log n ( 1 − r ) w.h.p. when the lowest degree vertex is picked at each iteration and also show that, under any other permutation of vertices, the algorithm outputs a set of size Ω ( n 1 / 1 + τ ) , where τ = 1 / ( 1 − r ) and, hence, has a performance ratio of O ( n 1 2 − r ) . Funding: The initial phase of this research was supported by the National Science Foundation [Grant DMS-1913294].},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2022.0215},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {1611-1634},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Large independent sets in recursive markov random graphs},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Rockafellian relaxation and stochastic optimization under perturbations. <em>MOOR</em>, <em>50</em>(3), 1585-1610. (<a href='https://doi.org/10.1287/moor.2022.0122'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In practice, optimization models are often prone to unavoidable inaccuracies because of dubious assumptions and corrupted data. Traditionally, this placed special emphasis on risk-based and robust formulations, and their focus on “conservative” decisions. We develop, in contrast, an “optimistic” framework based on Rockafellian relaxations in which optimization is conducted not only over the original decision space but also jointly with a choice of model perturbation. The framework enables us to address challenging problems with ambiguous probability distributions from the areas of two-stage stochastic optimization without relatively complete recourse, probability functions lacking continuity properties, expectation constraints, and outlier analysis. We are also able to circumvent the fundamental difficulty in stochastic optimization that convergence of distributions fails to guarantee convergence of expectations. The framework centers on the novel concepts of exact and limit-exact Rockafellians, with interpretations of “negative” regularization emerging in certain settings. We illustrate the role of Phi-divergence, examine rates of convergence under changing distributions, and explore extensions to first-order optimality conditions. The main development is free of assumptions about convexity, smoothness, and even continuity of objective functions. Numerical results in the setting of computer vision and text analytics with label noise illustrate the framework. Funding: This work was supported by the Air Force Office of Scientific Research (Mathematical Optimization Program) under the grant: “Optimal Decision Making under Tight Performance Requirements in Adversarial and Uncertain Environments: Insight from Rockafellian Functions.”},
+  archive      = {J_MOOR},
+  doi          = {10.1287/moor.2022.0122},
+  journal      = {Mathematics of Operations Research},
+  month        = {8},
+  number       = {3},
+  pages        = {1585-1610},
+  shortjournal = {Math. Oper. Res.},
+  title        = {Rockafellian relaxation and stochastic optimization under perturbations},
+  volume       = {50},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

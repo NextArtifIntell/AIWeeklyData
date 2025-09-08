@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TEVC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tevc">TEVC - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Competitive multitasking sampling with deep reinforcement learning for surrogate-assisted constrained multiobjective optimization. <em>TEVC</em>, 1. (<a href='https://doi.org/10.1109/TEVC.2025.3605406'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {When solving expensive constrained multiobjective optimization problems by surrogate-assisted evolutionary algorithms, the evolutionary sampling method is utilized to select valuable candidate solutions for expensive evaluations, therefore playing a vital role. Most existing sampling methods always prioritize feasible solutions over infeasible solutions during the whole evolutionary process. However, sampling infeasible solutions in some cases can not only provide search directions but also enhance diversity. To tackle this issue, a novel competitive multitasking sampling-based framework is proposed. Specifically, three complementary sampling subtasks are constructed: constraint-prioritized subtask, objective-constraint equivalence subtask, and objective-prioritized subtask. The main task is to find the constrained Pareto front. Different sampling subtasks exhibit different performances on various expensive problems. During each iteration, one of the sampling subtasks is selected by hierarchical deep reinforcement learning technique. This technique can effectively learn the relationship between the environmental states and the performances of different subtasks. Based on the selected subtask, the candidate points are generated via surrogate-assisted evolution. Subsequently, after these points undergo expensive evaluations, they can be regarded as knowledge and transferred to both the subtasks and the main task. Experimental results on three benchmark test suites and a real-world application have demonstrated the framework’s superiority over other state-of-the-art competitors.},
+  archive      = {J_TEVC},
+  author       = {Yuhang Ma and Bo Shen and Anqi Pan},
+  doi          = {10.1109/TEVC.2025.3605406},
+  journal      = {IEEE Transactions on Evolutionary Computation},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Evol. Comput.},
+  title        = {Competitive multitasking sampling with deep reinforcement learning for surrogate-assisted constrained multiobjective optimization},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

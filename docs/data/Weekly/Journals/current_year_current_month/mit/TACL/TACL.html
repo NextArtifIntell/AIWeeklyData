@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TACL</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tacl">TACL - 3</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Analyzing and adapting large language models for few-shot multilingual NLU: Are we there yet?. <em>TACL</em>, <em>13</em>, 1096-1120. (<a href='https://doi.org/10.1162/TACL.a.33'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Supervised fine-tuning (SFT), supervised instruction tuning (SIT), and in-context learning (ICL) are three alternative, de facto standard approaches to few-shot learning. ICL has gained popularity recently with the advent of LLMs due to its versatile simplicity and sample efficiency. Prior research has conducted only limited investigation into how these approaches work for multilingual few-shot learning, and the focus so far has been mostly on their performance. In this work, we present an extensive and systematic comparison of the three approaches, testing them on a variety of high- and low-resource languages over five different NLU tasks, and a myriad of language and domain setups. Importantly, performance is only one aspect of the comparison, where we also analyze and discuss the approaches through the optics of their computational, inference and financial costs. Some of the highlighted findings concern an excellent trade-off between performance and resource requirements/cost for SIT. We further analyze the impact of target language adaptation of pretrained LLMs and find that the standard adaptation approaches can (superficially) improve target language generation capabilities, but language understanding elicited through ICL does not improve accordingly and remains limited, especially for low-resource languages.},
+  archive      = {J_TACL},
+  author       = {Razumovskaia, Evgeniia and Vulić, Ivan and Korhonen, Anna},
+  doi          = {10.1162/TACL.a.33},
+  journal      = {Transactions of the Association for Computational Linguistics},
+  month        = {9},
+  pages        = {1096-1120},
+  shortjournal = {Trans. Assoc. Comput. Lingu.},
+  title        = {Analyzing and adapting large language models for few-shot multilingual NLU: Are we there yet?},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BenCzechMark: A czech-centric multitask and multimetric benchmark for large language models with duel scoring mechanism. <em>TACL</em>, <em>13</em>, 1068-1095. (<a href='https://doi.org/10.1162/TACL.a.32'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present B en C zech M ark (BCM), the first comprehensive Czech language benchmark designed for large language models, offering diverse tasks, multiple task formats, and multiple evaluation metrics. Its duel scoring system is grounded in statistical significance theory and uses aggregation across tasks inspired by social preference theory. Our benchmark encompasses 50 challenging tasks, with corresponding test datasets, primarily in native Czech, with 14 newly collected ones. These tasks span 8 categories and cover diverse domains, including historical Czech news, essays from pupils or language learners, and spoken word. Furthermore, we collect and clean BUT-Large Czech Collection, the largest publicly available clean Czech language corpus, and use it for (i) contamination analysis and (ii) continuous pretraining of the first Czech-centric 7B language model with Czech-specific tokenization. We use our model as a baseline for comparison with publicly available multilingual models. Lastly, we release and maintain a leaderboard with existing 50 model submissions, where new model submissions can be made at https://huggingface.co/spaces/CZLC/BenCzechMark .},
+  archive      = {J_TACL},
+  author       = {Fajcik, Martin and Docekal, Martin and Dolezal, Jan and Ondrej, Karel and Beneš, Karel and Kapsa, Jan and Smrz, Pavel and Polok, Alexander and Hradis, Michal and Neverilova, Zuzana and Horak, Ales and Sabol, Radoslav and Stefanik, Michal and Jirkovsky, Adam and Adamczyk, David and Hyner, Petr and Hula, Jan and Kydlicek, Hynek},
+  doi          = {10.1162/TACL.a.32},
+  journal      = {Transactions of the Association for Computational Linguistics},
+  month        = {9},
+  pages        = {1068-1095},
+  shortjournal = {Trans. Assoc. Comput. Lingu.},
+  title        = {BenCzechMark: A czech-centric multitask and multimetric benchmark for large language models with duel scoring mechanism},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). KEFT: Knowledge-enhanced fine-tuning for large language models in domain-specific question answering. <em>TACL</em>, <em>13</em>, 1056-1067. (<a href='https://doi.org/10.1162/TACL.a.31'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid advancement of large language models (LLMs) has opened up promising opportunities for their downstream applications in question-answering (QA), such as ChatGPT, ChatGLM, etc. However, such LLMs do not perform very well in domain-specific QA tasks without fine-tuning. But directly fine-tuning LLMs on domain-specific corpus data may lead to catastrophic forgetting, causing the LLMs to lose their general language capability. To address this problem, we propose the Knowledge-Enhanced Fine-Tuning (KEFT) method, an unsupervised fine-tuning approach to enhance the knowledge capability of LLMs in domain-specific QA tasks while preserving their general language capability. KEFT leverages the inherent language comprehension of pre-trained LLMs to generate synthetic-QA datasets from domain-specific corpus data autonomously for fine-tuning, and adopts a Low-Rank Adaptation (LoRA) method to further alleviate over-fitting. Furthermore, to enhance the representation of domain-specific knowledge, we introduce a knowledge-enhanced fine-tuning loss function, which encourages the model to learn the knowledge-question connection, thereby generating natural and knowledgeable answers. Our evaluations across multiple domain-specific datasets demonstrate that KEFT surpasses state-of-the-art fine-tuning approaches, enhancing the performance of various LLMs in QA tasks in both English and Chinese languages.},
+  archive      = {J_TACL},
+  author       = {Li, Haiyun and Zhang, Jixin and Shen, Hua and Cheng, Ke and Huang, Xiaofeng},
+  doi          = {10.1162/TACL.a.31},
+  journal      = {Transactions of the Association for Computational Linguistics},
+  month        = {9},
+  pages        = {1056-1067},
+  shortjournal = {Trans. Assoc. Comput. Lingu.},
+  title        = {KEFT: Knowledge-enhanced fine-tuning for large language models in domain-specific question answering},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

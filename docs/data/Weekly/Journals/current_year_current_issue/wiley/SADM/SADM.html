@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SADM</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="sadm">SADM - 2</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Recursive random binning to detect and display pairwise dependence. <em>SADM</em>, <em>18</em>(5), e70042. (<a href='https://doi.org/10.1002/sam.70042'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Random binnings generated via recursive binary splits are introduced as a way to detect, measure the strength of, and to display the pattern of association between any two variates, whether one or both are continuous or categorical. This provides a single approach to ordering large numbers of variate pairs by their measure of dependence and then to examine any pattern of dependence via a common display, the departure display (coloring bins by a standardized Pearson residual). Continuous variates are first ranked and their rank pairs binned. The Pearson's goodness of fit statistic is applicable but the classic approximation to its null distribution is not. Theoretical and empirical investigations motivate several approximations, including a simple approximation with real-valued, yet intuitive, degrees of freedom. Alternatively, applying an inverse probability transform from the ranks before binning returns a simple Pearson statistic with the classic degrees of freedom. Recursive random binning with different approximations is compared to recent grid-based methods on a variety of non-null dependence patterns; the method with any of these approximations is found to be well-calibrated and relatively powerful against common test alternatives. Method and displays are illustrated by applying the screening methodology to a publicly available data set having several continuous and categorical measurements of each of 6497 Portuguese wines. The software is publicly available as the R package AssocBin .},
+  archive  = {J},
+  author   = {Chris Salahub and R. Wayne Oldford},
+  doi      = {10.1002/sam.70042},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {10},
+  number   = {5},
+  pages    = {e70042},
+  title    = {Recursive random binning to detect and display pairwise dependence},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Nonlinear superpopulation model inference for non-probability samples with nonignorable missingness. <em>SADM</em>, <em>18</em>(5), e70040. (<a href='https://doi.org/10.1002/sam.70040'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In the era of big data and increasing survey costs, non-probability samples become increasingly popular in sampling surveys but may be subject to selection biases with unknown inclusion probabilities. In addition to selection bias, non-probability samples may also suffer from missingness in practice, even nonignorable nonresponse with unknown response probabilities. Superpopulation model methods have been discussed for reducing selection biases from non-probability samples, but not for dealing with nonignorable missingness for non-probability samples yet. In this paper, we propose a nonlinear superpopulation model inference approach for non-probability samples with nonignorable missingness. We develop rigorous procedures for estimating the response probabilities for units in the non-probability sample and the nonlinear superpopulation model parameters, and construct the finite population mean estimator based on the nonlinear superpopulation model, response probabilities, and inclusion probabilities. Asymptotic properties of the proposed estimators and variance estimation are also discussed under the proposed framework. In a simulation study, we compare the proposed method with some existing methods. The real data analysis results using the National Health Interview Survey data illustrate the good performance of the proposed method.},
+  archive  = {J},
+  author   = {Zhan Liu and Jiajing Xu and Ruohan Li and Yingli Pan},
+  doi      = {10.1002/sam.70040},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {10},
+  number   = {5},
+  pages    = {e70040},
+  title    = {Nonlinear superpopulation model inference for non-probability samples with nonignorable missingness},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SPA</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="spa">SPA - 28</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Mirror descent for stochastic control problems with measure-valued controls. <em>SPA</em>, <em>190</em>, 104765. (<a href='https://doi.org/10.1016/j.spa.2025.104765'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper studies the convergence of the mirror descent algorithm for finite horizon stochastic control problems with measure-valued control processes. The control objective involves a convex regularisation function, denoted as h , with regularisation strength determined by the weight τ ≥ 0 . The setting covers regularised relaxed control problems. Under suitable conditions, we establish the relative smoothness and convexity of the control objective with respect to the Bregman divergence of h , and prove linear convergence of the algorithm for τ = 0 and exponential convergence for τ > 0 . The results apply to common regularisers including relative entropy, χ 2 -divergence, and entropic Wasserstein costs. This validates recent reinforcement learning heuristics that adding regularisation accelerates the convergence of gradient methods. The proof exploits careful regularity estimates of backward stochastic differential equations in the bounded mean oscillation norm.},
+  archive      = {J_SPA},
+  author       = {Bekzhan Kerimkulov and David Šiška and Łukasz Szpruch and Yufei Zhang},
+  doi          = {10.1016/j.spa.2025.104765},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104765},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Mirror descent for stochastic control problems with measure-valued controls},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Parallelized midpoint randomization for langevin monte carlo. <em>SPA</em>, <em>190</em>, 104764. (<a href='https://doi.org/10.1016/j.spa.2025.104764'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the problem of sampling from a target probability density function in frameworks where parallel evaluations of the log-density gradient are feasible. Focusing on smooth and strongly log-concave densities, we revisit the parallelized randomized midpoint method and investigate its properties using recently developed techniques for analyzing its sequential version. Through these techniques, we derive upper bounds on the Wasserstein distance between sampling and target densities. These bounds quantify the substantial runtime improvements achieved through parallel processing.},
+  archive      = {J_SPA},
+  author       = {Lu Yu and Arnak Dalalyan},
+  doi          = {10.1016/j.spa.2025.104764},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104764},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Parallelized midpoint randomization for langevin monte carlo},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Essential barrier height and a probabilistic approach in characterizing potential landscape. <em>SPA</em>, <em>190</em>, 104763. (<a href='https://doi.org/10.1016/j.spa.2025.104763'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes a probabilistic approach to investigate the shape of landscapes of multi-dimensional potential functions. Under a suitable coupling scheme, two copies of the overdamped Langevin dynamics associated with the potential function are coupled, and the coupling times are collected. Assuming a set of intuitive yet technically challenging conditions on the coupling scheme, it is shown that the tail distributions of the coupling times exhibit qualitatively different dependencies on the noise magnitude for single-well versus multi-well potential functions. More specifically, for convex single-well potentials, the negative tail exponent of the coupling time distribution is uniformly bounded away from zero by the convexity parameter and is independent of the noise magnitude. In contrast, for multi-well potentials, the negative tail exponent decreases exponentially as the noise vanishes, with the decay rate governed by the essential barrier height , a quantity introduced in this paper to characterize the non-convex nature of the potential function. Numerical investigations are conducted for a variety of examples, including the Rosenbrock function, interacting particle systems, and loss functions arising in artificial neural networks. These examples not only illustrate the theoretical results in various contexts but also provide crucial numerical validation of the conjectured assumptions, which are essential to the theoretical analysis yet lie beyond the reach of standard technical tools.},
+  archive      = {J_SPA},
+  author       = {Yao Li and Molei Tao and Shirou Wang},
+  doi          = {10.1016/j.spa.2025.104763},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104763},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Essential barrier height and a probabilistic approach in characterizing potential landscape},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Emergence of multivariate extremes in multilayer inhomogeneous random graphs. <em>SPA</em>, <em>190</em>, 104762. (<a href='https://doi.org/10.1016/j.spa.2025.104762'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper we develop a multilayer inhomogeneous random graph model (MIRG). Layers of the MIRG may consist of both single-edge and multi-edge graphs. In the single layer case, it has been shown that the regular variation of the weight distribution underlying the inhomogeneous random graph implies the regular variation of the typical degree distribution. We extend this correspondence to the multilayer case by showing that multivariate regular variation of the weight distribution implies multivariate regular variation of the asymptotic degree distribution. Furthermore, under suitable assumptions, the extremal dependence structure present in the weight distribution will be adopted by the asymptotic degree distribution. By considering the asymptotic degree distribution, a wider class of Chung–Lu and Norros–Reittu graphs may be incorporated into the MIRG layers. Additionally, we prove consistency of the Hill estimator when applied to degrees of the MIRG that have a tail index greater than 1. Simulation results indicate that, in practice, hidden regular variation may be consistently detected from an observed MIRG. Finally, we analyze user interactions on Reddit and observe that they exhibit properties of the MIRG.},
+  archive      = {J_SPA},
+  author       = {Daniel Cirkovic and Tiandong Wang and Daren B.H. Cline},
+  doi          = {10.1016/j.spa.2025.104762},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104762},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Emergence of multivariate extremes in multilayer inhomogeneous random graphs},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Regularization effects of time integration on gaussian process functionals. <em>SPA</em>, <em>190</em>, 104761. (<a href='https://doi.org/10.1016/j.spa.2025.104761'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we investigate the regularization effects, in the sense of Malliavin calculus, on functionals of Gaussian processes induced by time integration, focusing on their covariance functions. We study several examples of important covariance functions classes to verify whether they satisfy the sufficient conditions proposed for regularization. Additionally, we derive a weak implication for the smoothness of level-crossing functionals.},
+  archive      = {J_SPA},
+  author       = {Takafumi Amaba and Marie Kratz},
+  doi          = {10.1016/j.spa.2025.104761},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104761},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Regularization effects of time integration on gaussian process functionals},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On favourite sites of a random walk in moderately sparse random environment. <em>SPA</em>, <em>190</em>, 104760. (<a href='https://doi.org/10.1016/j.spa.2025.104760'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the favourite sites of a random walk evolving in a sparse random environment on the set of integers. The walker moves symmetrically apart from some randomly chosen sites where we impose random drift. We prove annealed limit theorems for the time the walk spends in its favourite sites in two cases. The first one, in which it is the distribution of the drift that determines the limiting behaviour of the walk, is a generalization of known results for a random walk in i.i.d. random environment. In the second case a new behaviour appears, caused by the sparsity of the environment.},
+  archive      = {J_SPA},
+  author       = {Alicja Kołodziejska},
+  doi          = {10.1016/j.spa.2025.104760},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104760},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {On favourite sites of a random walk in moderately sparse random environment},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Stochastic approximation with two time scales: The general case. <em>SPA</em>, <em>190</em>, 104759. (<a href='https://doi.org/10.1016/j.spa.2025.104759'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Two time scale stochastic approximation is analyzed when the iterates on either or both time scales do not necessarily converge.},
+  archive      = {J_SPA},
+  author       = {Vivek S. Borkar},
+  doi          = {10.1016/j.spa.2025.104759},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104759},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Stochastic approximation with two time scales: The general case},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Weighted solutions of random time horizon BSDEs with stochastic monotonicity and general growth generators and related PDEs. <em>SPA</em>, <em>190</em>, 104758. (<a href='https://doi.org/10.1016/j.spa.2025.104758'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study focuses on a multidimensional backward stochastic differential equation (BSDE) with a general random terminal time τ taking values in [ 0 , + ∞ ] . The generator g satisfies a stochastic monotonicity condition in the first unknown variable y and a stochastic Lipschitz continuity condition in the second unknown variable z , and it can have a more general growth with respect to y than the classical one stated in (H5) of Briand et al. (2003). Without imposing any restriction of finite moment on the stochastic coefficients, we establish a general existence and uniqueness result for the weighted solution of such BSDE in a proper weighted L 2 -space with a suitable weighted factor. This result is proved via some innovative ideas and delicate analytical techniques, and it unifies and strengthens some existing works on BSDEs with stochastic monotonicity generators, BSDEs with stochastic Lipschitz generators, and BSDEs with deterministic Lipschitz/monotonicity generators. Then, a continuous dependence property and a stability theorem for the weighted L 2 -solutions are given. We also derive the nonlinear Feynman–Kac formulas for both parabolic and elliptic PDEs in our context.},
+  archive      = {J_SPA},
+  author       = {Xinying Li and Yaqi Zhang and Shengjun Fan},
+  doi          = {10.1016/j.spa.2025.104758},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104758},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Weighted solutions of random time horizon BSDEs with stochastic monotonicity and general growth generators and related PDEs},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Rough differential equations in the flow approach. <em>SPA</em>, <em>190</em>, 104757. (<a href='https://doi.org/10.1016/j.spa.2025.104757'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We show how the flow approach of Duch (2021), with elementary differentials as coordinates as in Chandra and Ferdinand (2024), can be used to prove well-posedness for rough stochastic differential equations driven by fractional Brownian motion with Hurst index H > 1 4 . A novelty appearing here is that we use coordinates for the flow that are indexed by trees rather than multi-indices.},
+  archive      = {J_SPA},
+  author       = {Ajay Chandra and Léonard Ferdinand},
+  doi          = {10.1016/j.spa.2025.104757},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104757},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Rough differential equations in the flow approach},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Approximation of birth–death processes. <em>SPA</em>, <em>190</em>, 104756. (<a href='https://doi.org/10.1016/j.spa.2025.104756'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A birth–death process is a special type of continuous-time Markov chains with minimal state space N . Its resolvent matrix can be fully characterized by a set of parameters ( γ , β , ν ) , where γ and β are non-negative constants, and ν is a positive measure on N . By employing the Ray-Knight compactification, the birth–death process can be realized as a càdlàg process with strong Markov property on the one-point compactification space N ¯ ∂ , which includes an additional cemetery point ∂ . In a certain sense, the three parameters that determine the birth–death process correspond to its killing, reflecting, and jumping behaviors at ∞ used for the one-point compactification, respectively. In general, providing a clear description of the trajectories of a birth–death process, especially in the pathological case where | ν | = ∞ , is challenging. This paper aims to address this issue by studying the birth–death process using approximation methods. Specifically, we will approximate the birth–death process with simpler birth–death processes that are easier to comprehend. For two typical approximation methods, our main results establish the weak convergence of a sequence of probability measures, which are induced by the approximating processes, on the space of all càdlàg functions. This type of convergence is significantly stronger than the convergence of transition matrices typically considered in the theory of continuous-time Markov chains.},
+  archive      = {J_SPA},
+  author       = {Liping Li},
+  doi          = {10.1016/j.spa.2025.104756},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104756},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Approximation of birth–death processes},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scaling limits for interactive hawkes shot noise processes. <em>SPA</em>, <em>190</em>, 104748. (<a href='https://doi.org/10.1016/j.spa.2025.104748'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce an interactive Hawkes shot noise process, in which the shot noise process has a Hawkes arrival process whose intensity depends on the state of the shot noise process via the self-exciting function. Namely, the shot noise process and the Hawkes process are interactive. We prove a functional law of large numbers (FLLN) and a functional central limit theorem (FCLT) for the joint dynamics of shot noise process and the Hawkes process, and characterize the effect of the interaction between them. The FLLN limit is determined by a nonlinear function determined through an integral equation. The diffusion limit is a two-dimensional interactive stochastic differential equation driven by two independent time-changed Brownian motions. The limit of the CLT-scaled shot noise process itself can be also expressed equivalently in distribution as an Ornstein–Uhlenbeck process with time-dependent parameters, unlike being a Brownian motion in the standard case without interaction. The limit of the CLT-scaled Hawkes counting process can be expressed as a sum of two independent terms, one as a time-changed Brownian motion (just as the standard case), and the other as a (Volterra type) Gaussian process represented by an Itô integral with another time-changed Brownian motion, capturing the effect of the interaction in the self-exciting function with the state of the shot noise process. To prove the joint convergence of the co-dependent Hawkes and shot noise processes, the standard techniques for Hawkes processes using the immigration-birth representations and the associated renewal equations are no longer applicable. We develop novel techniques by constructing representations for the LLN and CLT scaled processes that resemble the limits together with the associated residual terms, and then use a localization technique together with some martingale properties to prove the residual terms converge to zero and hence the joint convergence of the scaled processes. We also consider an extension of our model, an interactive marked Hawkes shot noise process, where the intensity of the Hawkes arrivals also depends on an exogenous noise, and present the corresponding FLLN and FCLT limits.},
+  archive      = {J_SPA},
+  author       = {Bo Li and Guodong Pang},
+  doi          = {10.1016/j.spa.2025.104748},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104748},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Scaling limits for interactive hawkes shot noise processes},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the ɛ–Euler–Maruyama scheme for time inhomogeneous jump-driven SDEs. <em>SPA</em>, <em>190</em>, 104747. (<a href='https://doi.org/10.1016/j.spa.2025.104747'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider a class of general SDEs with a jump integral term driven by a time-inhomogeneous Poisson random measure. We propose a two-parameters Euler-type scheme for this SDE class and prove an optimal rate for the strong convergence with respect to the L p ( Ω ) -norm and for the weak convergence, considering integration over n uniform time-steps. One of the primary issues to address in this context is the approximation of the noise structure when it can no longer be expressed as the increment of random variables. We extend the Asmussen–Rosiński approach to the case of a fully dependent jump coefficient and time-dependent Poisson compensation, handling contribution of jumps smaller than ɛ with an appropriate Gaussian substitute and exact simulation for the large jumps contribution. For any p ≥ 2 , under hypotheses required to control the L p -moments of the process, we obtain a strong convergence rate of order 1 / p . Under standard regularity hypotheses on the coefficients, we obtain a weak convergence rate of 1 / n + ϵ 3 − β , where β is the Blumenthal–Getoor index of the underlying Lévy measure. We compare this scheme with the Rubenthaler’s approach where the jumps smaller than ɛ are neglected, providing strong and weak rates of convergence in that case too. The theoretical rates are confirmed by numerical experiments afterwards. We apply this model class for some anomalous diffusion model related to the dynamics of rigid fibres in turbulence.},
+  archive      = {J_SPA},
+  author       = {Mireille Bossy and Paul Maurer},
+  doi          = {10.1016/j.spa.2025.104747},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104747},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {On the ɛ–Euler–Maruyama scheme for time inhomogeneous jump-driven SDEs},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Parisi PDE and convexity for vector spins. <em>SPA</em>, <em>190</em>, 104746. (<a href='https://doi.org/10.1016/j.spa.2025.104746'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider mean-field vector spin glasses with self-overlap correction. The limit of free energy is known to be the Parisi formula, which is an infimum over matrix-valued paths. We decompose such a path into a Lipschitz matrix-valued path and the quantile function of a one-dimensional probability measure. For such a pair, we associate a Parisi PDE generalized for vector spins. Under mild conditions, we rewrite the Parisi formula in terms of solutions of the PDE. Moreover, for each fixed Lipschitz path, the Parisi functional is strictly convex over probability measures.},
+  archive      = {J_SPA},
+  author       = {Hong-Bin Chen},
+  doi          = {10.1016/j.spa.2025.104746},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104746},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Parisi PDE and convexity for vector spins},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multidimensional sticky brownian motions: Heavy traffic limit and rough tail asymptotics. <em>SPA</em>, <em>190</em>, 104743. (<a href='https://doi.org/10.1016/j.spa.2025.104743'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Inspired by the concept of sticky Brownian motion on the half-line, we investigate a time-changed semimartingale reflecting Brownian motion in the orthant, which we refer to as multidimensional sticky Brownian motion. We first show that it can be obtained as a natural diffusion approximation for a certain tandem queue with exceptional arrival rates. Furthermore, we examine the tail dependence structure of the joint stationary distribution. Under some mild conditions, we derive rough tail asymptotics for the joint stationary distribution. Finally, in some special cases, we present the exact tail asymptotics of the joint stationary distribution.},
+  archive      = {J_SPA},
+  author       = {Hongshuai Dai and Yiqiang Q. Zhao},
+  doi          = {10.1016/j.spa.2025.104743},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104743},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Multidimensional sticky brownian motions: Heavy traffic limit and rough tail asymptotics},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On time-dependent boundary crossing probabilities of diffusion processes as differentiable functionals of the boundary. <em>SPA</em>, <em>190</em>, 104742. (<a href='https://doi.org/10.1016/j.spa.2025.104742'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The paper analyses the sensitivity of the finite time horizon boundary non-crossing probability F ( g ) of a general time-inhomogeneous, one-dimensional diffusion process to perturbations of the boundary g . We prove that, for time-dependent boundaries g ∈ C 2 , this probability is Gâteaux differentiable in directions h ∈ H ∪ C 2 and Fréchet-differentiable in directions h ∈ H , where H is the Cameron–Martin space, and derive a compact representation for the derivative of F . Our results allow one to approximate F ( g ) using boundaries g ̄ that are close to g and for which the computation of F ( g ̄ ) is feasible. We also obtain auxiliary results of independent interest in both probability theory and PDE theory.},
+  archive      = {J_SPA},
+  author       = {V. Liang and K. Borovkov},
+  doi          = {10.1016/j.spa.2025.104742},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104742},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {On time-dependent boundary crossing probabilities of diffusion processes as differentiable functionals of the boundary},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive nonparametric drift estimation for multivariate jump diffusions under sup-norm risk. <em>SPA</em>, <em>190</em>, 104741. (<a href='https://doi.org/10.1016/j.spa.2025.104741'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We investigate nonparametric drift estimation for multidimensional jump diffusions based on continuous observations. The results are derived under anisotropic smoothness assumptions and the estimators’ performance is measured in terms of the sup -norm loss. We present two different Nadaraya–Watson type estimators, which are both shown to achieve the minimax optimal classical nonparametric rate of convergence under varying assumptions on the jump measure. Fully data-driven versions of both estimators are also introduced and shown to attain the same rate of convergence. The results rely on novel uniform moment bounds for empirical processes associated to the investigated jump diffusion, which are of independent interest.},
+  archive      = {J_SPA},
+  author       = {Niklas Dexheimer},
+  doi          = {10.1016/j.spa.2025.104741},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104741},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Adaptive nonparametric drift estimation for multivariate jump diffusions under sup-norm risk},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Perpetuities with light tails and the local dependence measure. <em>SPA</em>, <em>190</em>, 104740. (<a href='https://doi.org/10.1016/j.spa.2025.104740'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work investigates the tail behavior of solutions to the affine stochastic fixed-point equation of the form X = d A X + B , where X and ( A , B ) are independent. Focusing on the light-tail regime, following (Burdzy et al., 2022), we introduce a local dependence measure along with an associated Legendre-type transform. These tools allow us to effectively describe the logarithmic right-tail asymptotics of the solution X . Moreover, we extend our analysis to a related recursive sequence X n = A n X n − 1 + B n , where ( A n , B n ) n are i.i.d. copies of ( A , B ) . For this sequence, we construct deterministic scaling ( f n ) n such that lim sup n → ∞ X n / f n is a.s. positive and finite, with its non-random explicit value provided.},
+  archive      = {J_SPA},
+  author       = {Julia Le Bihan and Bartosz Kołodziejek},
+  doi          = {10.1016/j.spa.2025.104740},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104740},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Perpetuities with light tails and the local dependence measure},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Rough path lifts of banach space-valued gaussian processes. <em>SPA</em>, <em>190</em>, 104739. (<a href='https://doi.org/10.1016/j.spa.2025.104739'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Under certain assumptions on a Gaussian process taking values in a separable Banach space, we construct its lift to a geometric rough path. The lift is natural in the sense that for any sequence of piece-wise linear approximations to the original process, their signatures converge to the lifted path in a suitable metric. This extends to infinite dimensions the known results in Euclidean spaces. Examples of processes satisfying our conditions include the infinite-dimensional analogues of Brownian motion, fractional Brownian motion with Hurst parameter H ∈ ( 1 4 , 1 2 ] , Ornstein–Uhlenbeck process. As a by-product of our methods, we also provide a construction for Ito–Skorokhod integrals of these processes, which might be of independent interest.},
+  archive      = {J_SPA},
+  author       = {A.A. Kalinichenko},
+  doi          = {10.1016/j.spa.2025.104739},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104739},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Rough path lifts of banach space-valued gaussian processes},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Birth-death processes are time-changed feller’s brownian motions. <em>SPA</em>, <em>190</em>, 104738. (<a href='https://doi.org/10.1016/j.spa.2025.104738'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A Feller’s Brownian motion refers to a Feller process on the interval [ 0 , ∞ ) that is equivalent to the killed Brownian motion before reaching 0. It is fully determined by four parameters ( p 1 , p 2 , p 3 , p 4 ) , reflecting its killing, reflecting, sojourn, and jumping behaviors at the boundary 0. On the other hand, a birth–death process is a continuous-time Markov chain on N with a given birth–death Q -matrix, and it is characterized by three parameters ( γ , β , ν ) that describe its killing, reflecting, and jumping behaviors at the boundary ∞ . The primary objective of this paper is to establish a connection between Feller’s Brownian motion and birth–death process. We will demonstrate that any Feller’s Brownian motion can be transformed into a specific birth–death process through a unique time change transformation, and conversely, any birth–death process can be derived from Feller’s Brownian motion via time change. Specifically, the birth–death process generated by the Feller’s Brownian motion, determined by the parameters ( p 1 , p 2 , p 3 , p 4 ) , through time change, has the parameters: γ = p 1 , β = 2 p 2 , ν n = p n , n ∈ N , where { p n : n ∈ N } is a sequence derived by allocating weights to the measure p 4 in a specific manner. Utilizing the pathwise representation of Feller’s Brownian motion, our results provide a pathwise construction scheme for birth–death processes, addressing a gap in the existing literature.},
+  archive      = {J_SPA},
+  author       = {Liping Li},
+  doi          = {10.1016/j.spa.2025.104738},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104738},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Birth-death processes are time-changed feller’s brownian motions},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The phase transition of the voter model on evolving scale-free networks. <em>SPA</em>, <em>190</em>, 104737. (<a href='https://doi.org/10.1016/j.spa.2025.104737'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The voter model on a social network can explain consensus formation, where real networks feature a heterogeneous degree distribution and also change in time. We study the voter model in an environment with both features: a rank one scale-free network evolving in time by each vertex updating its edge neighbourhood at rate κ . When κ ≫ 1 the dynamic giant has no effect up to a polylogarithmic correction, but for more slowly changing graphs consensus takes 1 κ longer without a dynamic giant. This continues until κ ≪ 1 N , where this factor 1 κ becomes N log N .},
+  archive      = {J_SPA},
+  author       = {John Fernley},
+  doi          = {10.1016/j.spa.2025.104737},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104737},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {The phase transition of the voter model on evolving scale-free networks},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Weak error on the densities for the euler scheme of stable additive SDEs with hölder drift. <em>SPA</em>, <em>190</em>, 104736. (<a href='https://doi.org/10.1016/j.spa.2025.104736'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We are interested in the Euler–Maruyama discretization of the SDE d X t = b ( t , X t ) d t + d Z t , X 0 = x ∈ R d , where Z t is a symmetric isotropic d -dimensional α -stable process, α ∈ ( 1 , 2 ] and the drift b ∈ L ∞ [ 0 , T ] , C β ( R d , R d ) , β ∈ ( 0 , 1 ) , is bounded and Hölder regular in space. Using an Euler scheme with a randomization of the time variable, we show that, denoting γ ≔ α + β − 1 , the weak error on densities related to this discretization converges at the rate γ / α .},
+  archive      = {J_SPA},
+  author       = {Mathis Fitoussi and Stéphane Menozzi},
+  doi          = {10.1016/j.spa.2025.104736},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104736},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Weak error on the densities for the euler scheme of stable additive SDEs with hölder drift},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A complete characterization of monotonicity equivalence for continuous-time markov processes. <em>SPA</em>, <em>190</em>, 104735. (<a href='https://doi.org/10.1016/j.spa.2025.104735'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dai Pra et al., studied two notions of monotonicity for continuous-time Markov processes on a finite partially ordered set (poset). They conjectured that monotonicity equivalence holds for a poset of W-glued diamond, and that there is no other case when it has no acyclic extension. We proved their conjecture and were able to provide a complete characterization of posets for monotonicity equivalence.},
+  archive      = {J_SPA},
+  author       = {Motoya Machida},
+  doi          = {10.1016/j.spa.2025.104735},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104735},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {A complete characterization of monotonicity equivalence for continuous-time markov processes},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Self-normalized partial sums of heavy-tailed time series. <em>SPA</em>, <em>190</em>, 104729. (<a href='https://doi.org/10.1016/j.spa.2025.104729'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the joint limit behavior of sums, maxima and ℓ p -type moduli for samples taken from an R d -valued regularly varying stationary sequence with infinite variance. As a consequence, we can determine the distributional limits for ratios of sums and maxima, studentized sums, and other self-normalized quantities in terms of hybrid characteristic-distribution functions and Laplace transforms. These transforms enable one to calculate moments of the limits and to characterize the differences between the iid and stationary cases in terms of indices which describe effects of extremal clustering on functionals acting on the dependent sequence.},
+  archive      = {J_SPA},
+  author       = {Muneya Matsui and Thomas Mikosch and Olivier Wintenberger},
+  doi          = {10.1016/j.spa.2025.104729},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104729},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Self-normalized partial sums of heavy-tailed time series},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Nonlinear graphon mean-field systems. <em>SPA</em>, <em>190</em>, 104728. (<a href='https://doi.org/10.1016/j.spa.2025.104728'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We address a system of weakly interacting particles where the heterogeneous connections among the particles are described by a graph sequence and the number of particles grows to infinity. Our results extend the existing law of large numbers and propagation of chaos results to the case where the interaction between one particle and its neighbours is expressed as a nonlinear function of the local empirical measure. In the limit of the number of particles which tends to infinity, if the graph sequence converges to a graphon, then we show that the limit system is described by an infinite collection of processes and can be seen as a process in a suitable L 2 space constructed via a Fubini extension. The proof is built on decoupling techniques and careful estimates of the Wasserstein distance.},
+  archive      = {J_SPA},
+  author       = {Fabio Coppini and Anna De Crescenzo and Huyên Pham},
+  doi          = {10.1016/j.spa.2025.104728},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104728},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Nonlinear graphon mean-field systems},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Moments of polynomial functionals of spectrally positive lévy processes. <em>SPA</em>, <em>190</em>, 104726. (<a href='https://doi.org/10.1016/j.spa.2025.104726'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Let J ( ⋅ ) be a compound Poisson process with rate λ > 0 and a jumps distribution G ( ⋅ ) concentrated on ( 0 , ∞ ) . In addition, let V be a random variable which is distributed according to G ( ⋅ ) and independent from J ( ⋅ ) . Define a new process W ( t ) ≡ W V ( t ) ≡ V + J ( t ) − t , t ⩾ 0 and let τ V be the first time that W ( ⋅ ) hits the origin. A long-standing open problem due to Iglehart (1971) and Cohen (1979) is to derive the moments of the functional ∫ 0 τ W ( t ) d t in terms of the moments of G ( ⋅ ) and λ . In the current work, we solve this problem in much greater generality, i.e., first by letting J ( ⋅ ) belong to a wide class of spectrally positive Lévy processes and secondly, by considering more general class of functionals. We also supply several applications of the existing results, e.g., in studying the process x ↦ ∫ 0 τ x W x ( t ) d t defined on x ∈ [ 0 , ∞ ) .},
+  archive      = {J_SPA},
+  author       = {Peter Glynn and Royi Jacobovic and Michel Mandjes},
+  doi          = {10.1016/j.spa.2025.104726},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104726},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Moments of polynomial functionals of spectrally positive lévy processes},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Renewal structure of the tree builder random walk. <em>SPA</em>, <em>190</em>, 104725. (<a href='https://doi.org/10.1016/j.spa.2025.104725'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we study a class of random walks that build their own tree. At each step, the walker attaches a random number of leaves to its current position. The model can be seen as a subclass of the Random Walk in Changing Environments (RWCE) introduced by G. Amir, I. Benjamini, O. Gurel-Gurevich and G. Kozma. We develop a renewal framework for the process analogous to that established by A-S. Sznitman and M. Zerner in the context of RWRE. This provides a more robust foundation for analyzing the model. As a result of our renewal framework, we establish several limit theorems for the walker’s distance, which include the Strong Law of Large Numbers (SLLN), the Law of the Iterated Logarithm (LIL), Central Limit Theorem (CLT) and Invariance Principle, under an i.i.d. hypothesis for the walker’s leaf-adding mechanism. Further, we show that the limit speed defined by the SLLN is a continuous function over the space of probability distributions on N .},
+  archive      = {J_SPA},
+  author       = {Rodrigo Ribeiro},
+  doi          = {10.1016/j.spa.2025.104725},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104725},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Renewal structure of the tree builder random walk},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Uniform bounds for robust mean estimators. <em>SPA</em>, <em>190</em>, 104724. (<a href='https://doi.org/10.1016/j.spa.2025.104724'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study estimators of the means of a family of random variables { f ( X ) , f ∈ F } that admit uniform, over the class F of real-valued functions, non-asymptotic error bounds under minimal moment assumptions on the underlying distribution. We show that known robust methods, such as the median-of-means and Catoni’s estimators, can often be viewed as special cases of our construction. The paper’s primary contribution lies in establishing uniform bounds for the deviations of stochastic processes defined by the proposed estimators. Furthermore, we analyze the stability of these estimators within the context of the ‘adversarial contamination’ framework. Finally, we demonstrate the applicability of our methods to the problem of robust multivariate mean estimation, showing that the resulting inequalities achieve optimal dependence on the parameters of the problem.},
+  archive      = {J_SPA},
+  author       = {Stanislav Minsker},
+  doi          = {10.1016/j.spa.2025.104724},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104724},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Uniform bounds for robust mean estimators},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Global central limit theorems for markov chains. <em>SPA</em>, <em>190</em>, 104709. (<a href='https://doi.org/10.1016/j.spa.2025.104709'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Let P be a Markov operator on a general state space ( S , Σ ) with invariant probability m , assumed ergodic. We study conditions which yield that for every centered 0 ≠ f ∈ L 2 ( m ) a non-degenerate annealed CLT and an L 2 -normalized CLT hold.},
+  archive      = {J_SPA},
+  author       = {Christophe Cuny and Michael Lin},
+  doi          = {10.1016/j.spa.2025.104709},
+  journal      = {Stochastic Processes and Their Applications},
+  month        = {12},
+  pages        = {104709},
+  shortjournal = {Stoch. Proc. Appl.},
+  title        = {Global central limit theorems for markov chains},
+  volume       = {190},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

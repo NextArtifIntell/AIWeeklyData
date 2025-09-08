@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TMC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tmc">TMC - 7</h2>
+<ul>
+<li><details>
+<summary>
+(2025). 2FDP-BRL: A new framework of distributed task offloading for IoAV in extreme weather scenarios. <em>TMC</em>, 1-18. (<a href='https://doi.org/10.1109/TMC.2025.3604461'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the Internet of Autonomous Vehicles (IoAV), task offloading is crucial for managing tasks that require extensive computing power to guarantee vehicle safety under different weather scenarios. However, extreme weather events can lead to infrastructure damage and network disruptions, significantly increasing the computational demands of autonomous vehicles. These vehicles require additional computing resources to navigate complex road conditions and risks, all while facing a high degree of uncertainty, such as fluctuations in vehicle resource utilization and task workloads. To address these challenges, a new and lightweight task offloading decision framework, named 2FDP-BRL, has been first proposed in this paper. This framework not only considers the fast response time required for autonomous driving, but also considers the resource shortage and offloading uncertainty caused by extreme weather. Therefore, we introduce the dynamic pricing idea and the Interval Type-2 Fuzzy Inference System (IT2FIS) utilizing broad reinforcement learning to deal with various dynamic uncertainties in the IoAV under extreme weather. For the authenticity of experimental results, we utilize the VISSIM platform to collect experimental data and conduct simulations. Moreover, to accurately simulate extreme weather scenarios, we also account for the variability of infrastructure and road elements, including reduced transmission rates and decreased efficiency in executing tasks. Furthermore, to enhance the realism of the simulation, we incorporate historical weather data from NOAA for Shenyang in 2024 to model dynamic uncertainties under extreme weather conditions and conduct comparative experimental analyses focusing on task completion rates. Finally, the proposed framework was implemented on both a local setup and the Huawei Atlas 200I DK A2 device, illustrating its efficacy design.},
+  archive      = {J_TMC},
+  author       = {Xiting Peng and Shun Song and Xiaoyu Zhang and Mianxiong Dong and Kaoru Ota and Lexi Xu},
+  doi          = {10.1109/TMC.2025.3604461},
+  journal      = {IEEE Transactions on Mobile Computing},
+  month        = {9},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Mobile Comput.},
+  title        = {2FDP-BRL: A new framework of distributed task offloading for IoAV in extreme weather scenarios},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Sniffing the application usage information with the leakage current of laptops. <em>TMC</em>, 1-14. (<a href='https://doi.org/10.1109/TMC.2025.3599338'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Smart devices are proliferating in every aspect of our lives, providing convenience but also exposing us to the risk of information leakage at any moment. Attackers can monitor the user and infer private information such as personality and preferences by stealing the behavioral information. In this paper, we investigated the potential threat of information stealing via the leakage current of laptops and electrodes in wearable devices (e.g., smart watches and bracelets). Specifically, the leakage current in the laptop adapter can flow from the metal casing into the human body and be collected by electrodes in wearable devices when the user is using a laptop with a metal casing (e.g., MacBook). We verified the correlation between leakage current and the working states of the laptop, where different operations corresponding to different CPU instructions can generate different leakage currents. Based on this, we propose LeakThief, a system that consists of three components: leakage current detection, application operation detection, and application recognition. The experiments in a real-world environment demonstrated that the proposed system can recognize 25 common applications with high accuracy, including launching-based (96.4%) and in-application operation-based recognition (81.2%).},
+  archive      = {J_TMC},
+  author       = {Dian Ding and Yijie Li and Yongzhao Zhang and Yi-Chao Chen and Xiaoyu Ji and Guangtao Xue},
+  doi          = {10.1109/TMC.2025.3599338},
+  journal      = {IEEE Transactions on Mobile Computing},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Mobile Comput.},
+  title        = {Sniffing the application usage information with the leakage current of laptops},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Rising from pieces: Effective inference at the edge via robust split ML. <em>TMC</em>, 1-14. (<a href='https://doi.org/10.1109/TMC.2025.3605382'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The increasing processing demands of today's mobile deep learning applications impose stringent requirements on edge devices. Offloading these tasks to the cloud, while being a potential solution, often results in significant data transfer overhead, as well as privacy and connectivity concerns. To address these challenges, split machine learning (split ML) has emerged as an innovative paradigm, enabling task distribution among edge devices themselves. However, split ML systems inherently exhibit instability due to the hardware and communication limitations of mobile devices, which frequently result in failures and malfunctions of client nodes. In light of these challenges, we present Axolotl, a fault-tolerant edge split ML inference system for addressing node failure with minimal performance impact. Specifically, we first design a novel curriculum dropout mechanism to enhance the model's resilience by gradually exposing it to potential server node failures. We then design inverse-proximal weight consolidation to mitigate catastrophic forgetting caused by curriculum dropout. To further tackle potential node failures, we innovate in a resource-aware substitution module that offload the functions of a failed node to neighboring ones, ensuring efficient information flow. Extensive experiments demonstrate the effectiveness and robustness of Axolotl in various deep learning networks and tasks in edge environments.},
+  archive      = {J_TMC},
+  author       = {Yuxuan Weng and Tianyue Zheng and Zhe Chen and Menglan Hu and Jun Luo},
+  doi          = {10.1109/TMC.2025.3605382},
+  journal      = {IEEE Transactions on Mobile Computing},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Mobile Comput.},
+  title        = {Rising from pieces: Effective inference at the edge via robust split ML},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Uplink resource allocation for RSMA-aided digital twin-assisted user-centric cell-free massive MIMO systems. <em>TMC</em>, 1-17. (<a href='https://doi.org/10.1109/TMC.2025.3604722'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper investigates uplink radio resource optimization of a user-centric (UC) cell-free (CF) massive multiple-input multiple-output (mMIMO) system aided by the rate splitting multiple access (RSMA) technique subject to pilot contamination. We formulate problem to maximize the minimum spectral efficiency (SE) problem by jointly addressing decoding order selection, power allocation, and access point (AP) - user equipment (UE) association assignment. The envisioned optimization exhibits two challenges. First, it requires global channel state information (CSI) for near-optimal performance, which incurs substantial overhead and data collection costs in large-scale CF networks. Second, the optimization is intractable due to its NP-hard and discrete non-linear programming nature. To address the CSI acquisition issue, we utilize a digital twin (DT) of the CF mMIMO system, leveraging its context-awareness to acquire global CSI with reduced overhead. To address computational intractiablity of the optimization problem, we decompose it into three sub-problems. The power allocation sub-problem is transformed into a second-order cone programming problem and solved by the bisection method. Additionally, we propose a computationally efficient heuristic approach for power allocation. Next, we propose an analytical method for the decoding order selection by ranking the channels in descending order of strength. Simulation results validate the ability of the proposed approach to attain the near-optimal performance. Subsequently, the AP-UE association assignment problem is solved by a heuristic approach to further improve the SE performance. Finally, we solve the original NP-hard problem in a unified manner via the block-coordinate descent algorithm. Simulation results underscore a substantial 61% improvement in the SE performance when integrating the RSMA technique into a UC CF mMIMO system.},
+  archive      = {J_TMC},
+  author       = {Manobendu Sarker and Md. Zoheb Hassan and Georges Kaddoum and Abraham O. Fapojuwo},
+  doi          = {10.1109/TMC.2025.3604722},
+  journal      = {IEEE Transactions on Mobile Computing},
+  month        = {9},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Mobile Comput.},
+  title        = {Uplink resource allocation for RSMA-aided digital twin-assisted user-centric cell-free massive MIMO systems},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Secure charging scheduling in wireless rechargeable sensor networks. <em>TMC</em>, 1-15. (<a href='https://doi.org/10.1109/TMC.2025.3605390'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Wireless Rechargeable Sensor Networks (WRSNs) promise to address the limited energy resource issue for sensor nodes through wireless power transfer technology. However, WRSNs are vulnerable to various security threats, such as compromised node attack and malicious mobile charger (MC) attack, which can disrupt the charging process and degrade charging efficiency. In this work, we investigate the eneRgy conversion Efficiency maximization problem unDer chargIng attackS (REDIS). We propose a blockchain-based framework that employs a lightweight multi-layer storage approach tailored for resource-constrained sensor nodes and features consensus algorithms that validate charging transactions. Furthermore, we introduce a validation node selection strategy that integrates consensus execution with charging scheduling, reducing energy consumption, and improving energy efficiency. Extensive simulations and experiments validate the effectiveness of our framework, improving energy efficiency by 30% and as much as 5 times in networks without attacks and those under full attacks, respectively.},
+  archive      = {J_TMC},
+  author       = {Wei Yang and Chi Lin and Jing Deng and Haipeng Dai and Liming Chen and Xinxin Fan and Li Zhang},
+  doi          = {10.1109/TMC.2025.3605390},
+  journal      = {IEEE Transactions on Mobile Computing},
+  month        = {9},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Mobile Comput.},
+  title        = {Secure charging scheduling in wireless rechargeable sensor networks},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fully anonymous broadcast signcryption for secure health data transmission in WBANs. <em>TMC</em>, 1-15. (<a href='https://doi.org/10.1109/TMC.2025.3605205'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To support comprehensive and personalized healthcare delivery, sensitive personal health data must often be transmitted from wearable devices to multiple designated specialists via wireless body area networks. Although existing identity-based broadcast signcryption schemes provide secure one-to-many transmission, they typically fail to preserve recipient anonymity. In particular, each recipient is usually required to know the identities of all other recipients to unsigncrypt the message, which undermines privacy and enables inference attacks, especially problematic in telemedicine applications. In this paper, we propose a novel broadcast signcryption scheme that simultaneously achieves recipient anonymity, sender anonymity, and resilience to physical attacks, which are not realized in prior work. Our key innovation lies in an anonymity-preserving unsigncryption mechanism based on inner product, which enables each recipient to independently verify and decrypt the broadcast message without knowledge of others' identities. In addition, we incorporate a physical unclonable function with a fuzzy extractor to resist physical attacks in the presence of noise. Furthermore, a comprehensive security analysis demonstrates that our scheme satisfies essential security properties, including authentication, integrity, confidentiality, and full anonymity. It is resilient against common attacks such as impersonation, modification, replay, and man-in-the-middle attacks. Finally, performance evaluations confirm the practical feasibility of our scheme.},
+  archive      = {J_TMC},
+  author       = {Yangfan Liang and Gao Liu and Xianchao Zhang and Yiming Chen and Jingxue Chen and Yuanjun Xia and Yining Liu},
+  doi          = {10.1109/TMC.2025.3605205},
+  journal      = {IEEE Transactions on Mobile Computing},
+  month        = {9},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Mobile Comput.},
+  title        = {Fully anonymous broadcast signcryption for secure health data transmission in WBANs},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AIGC-enhanced federated learning: Addressing data scarcity in preference-based scenarios. <em>TMC</em>, 1-16. (<a href='https://doi.org/10.1109/TMC.2025.3605397'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated learning (FL) is a decentralized machine learning paradigm that enables collaborative model training while preserving data privacy by avoiding sensitive data exfiltration from local storage. Despite its success in various domains, current FL frameworks lack mechanisms to accommodate personalized training objectives, particularly in optimizing performance for specific data classes. Recent advancements in Artificial Intelligence Generated Content (AIGC) present opportunities to address these limitations by supplementing training data for user-preferred classes using generative models. Nonetheless, incorporating AIGC into FL introduces significant challenges, including non-compliant data quality, disorganized data distributions, limited computational resources, and slow data generation speed on edge devices. To address these challenges, we propose AIGC-enhanced Federated Preference Learning (FPL), a novel framework designed to enhance FL performance for user-specified preference classes (PCs). Our approach employs pre-training and fine-tuning of generative models across diverse datasets to improve the quality of synthetic data. Additionally, we optimize FPL efficiency through a client selection strategy that matches tasks involving generated data with suitable clients and a data distribution mechanism that allocates synthetic data to where it is most needed. To further accelerate data supplementation, data augmentation is utilized on local clients. We provide theoretical convergence guarantees for AIGC-enhanced FPL and demonstrate its effectiveness through comprehensive experiments on MNIST and CIFAR-10 datasets, including ablation studies on various data supplementation techniques.},
+  archive      = {J_TMC},
+  author       = {Chenyu Wang and Zhi Zhou and Zixin Xu and Zhijie Wang and Shaoquan Wang and Xu Chen},
+  doi          = {10.1109/TMC.2025.3605397},
+  journal      = {IEEE Transactions on Mobile Computing},
+  month        = {9},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Mobile Comput.},
+  title        = {AIGC-enhanced federated learning: Addressing data scarcity in preference-based scenarios},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

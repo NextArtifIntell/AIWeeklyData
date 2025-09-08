@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TPAMI</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tpami">TPAMI - 6</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Structure-induced gradient regulation for generalizable vision-language models. <em>TPAMI</em>, 1-17. (<a href='https://doi.org/10.1109/TPAMI.2025.3604454'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Prompt tuning, a recently emerging paradigm, adapts vision-language pre-trained models to new tasks efficiently by learning “soft prompts” for frozen models. However, in few-shot scenarios, its effectiveness is limited by sensitivity to the initialization and the time-consuming search for optimal initialization, hindering rapid adaptation. Additionally, prompt tuning risks reducing the models' generalizability due to overfitting on scarce training samples. To overcome these challenges, we introduce a novel Gradient-RegulAted Meta-prompt learning (GRAM) framework that jointly meta-learns an efficient soft prompt initialization for better adaptation and a lightweight gradient regulating function for strong cross-domain generalizability in a meta-learning paradigm using only the weakly labeled image-text pre-training data. This is achieved through a Cross-Modal Hierarchical Clustering algorithm that organizes extensive image-text data into a structured hierarchy, facilitating robust meta-learning across diverse domains. Rather than designing a specific prompt tuning method, our GRAM can be easily incorporated into various prompt tuning methods in a model-agnostic way and bring about consistent improvement for them. Further, we consider a more practical but challenging setting: test-time prompt tuning with only unlabeled test samples and propose an improved structure-induced gradient regulating function to leverage the structured semantics of the meta-learning data for zero-shot generalization. This novel approach exploits the hierarchically clustered meta-learning data to model relationships between test-time data and meta-learning prototypes, facilitating the transfer of invariant knowledge without explicit annotations. Meanwhile, we introduce a structure complexity-informed strategy for adaptively constructing meta-training tasks and generating prototypes, which fully considers the diverse semantics within hierarchical clusters of different complexities. Comprehensive experiments demonstrate the state-of-the-art few- and zero-shot generalizability of our method.},
+  archive      = {J_TPAMI},
+  author       = {Juncheng Li and Minghe Gao and Siliang Tang and Longhui Wei and Jun Xiao and Fei Wu and Richang Hong and Meng Wang and Qi Tian},
+  doi          = {10.1109/TPAMI.2025.3604454},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {9},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Structure-induced gradient regulation for generalizable vision-language models},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An end-to-end depth-based pipeline for selfie image rectification. <em>TPAMI</em>, 1-13. (<a href='https://doi.org/10.1109/TPAMI.2025.3604574'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Portraits or selfie images taken from a close distance typically suffer from perspective distortion. In this paper, we propose an end-to-end deep learning-based rectification pipeline to mitigate the effects of perspective distortion. We learn to predict the facial depth by training a deep CNN. The estimated depth is utilized to adjust the camera-to-subject distance by moving the camera farther, increasing the camera focal length, and reprojecting the 3D image features to the new perspective. The reprojected features are then fed to an inpainting module to fill in the missing pixels. We leverage a differentiable renderer to enable end-to-end training of our depth estimation and feature extraction nets to improve the rectified outputs. To boost the results of the inpainting module, we incorporate an auxiliary module to predict the horizontal movement of the camera which decreases the area that requires hallucination of challenging face parts such as ears. Unlike previous works, we process the full-frame input image at once without cropping the subject's face and processing it separately from the rest of the body, eliminating the need for complex post-processing steps to attach the face back to the subject's body. To train our network, we utilize the popular game engine Unreal Engine to generate a large synthetic face dataset containing various subjects, head poses, expressions, eyewear, clothes, and lighting. Quantitative and qualitative results show that our rectification pipeline outperforms previous methods, and produces comparable results with a time-consuming 3D GAN-based method while being more than 260 times faster.},
+  archive      = {J_TPAMI},
+  author       = {Ahmed Alhawwary and Janne Mustaniemi and Phong Nguyen-Ha and Janne Heikkilä},
+  doi          = {10.1109/TPAMI.2025.3604574},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {9},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {An end-to-end depth-based pipeline for selfie image rectification},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LatentAugment: Data augmentation via guided manipulation of GAN's latent space. <em>TPAMI</em>, 1-15. (<a href='https://doi.org/10.1109/TPAMI.2025.3598866'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data Augmentation (DA) is a technique to increase the quantity and diversity of the training data, and by that alleviate overfitting and improve generalisation. However, standard DA produces synthetic data for augmentation with limited diversity. Generative Adversarial Networks (GANs) may unlock additional information in a dataset by generating synthetic samples having the appearance of real images. However, these models struggle to simultaneously address three key requirements: fidelity and high-quality samples; diversity and mode coverage; and fast sampling. Indeed, GANs generate high-quality samples rapidly, but have poor mode coverage, limiting their adoption in DA applications. We propose LatentAugment, a DA strategy that overcomes the low diversity of GANs, opening up for use in DA applications. Without external supervision, LatentAugment modifies latent vectors and moves them into latent space regions to maximise the synthetic images' diversity and fidelity. It is also agnostic to the dataset and the downstream task. A wide set of experiments shows that LatentAugment improves the generalisation of a deep model translating from MRI-to-CT beating both standard DA as well GAN-based sampling. We further demonstrate its effectiveness when translating from low-energy mammograms to dual-energy subtracted images in contrast-enhanced spectral mammography. Moreover, still in comparison with GAN-based sampling, LatentAugment synthetic samples show superior mode coverage and diversity. Code is available at: https://github.com/ltronchin/LatentAugment.},
+  archive      = {J_TPAMI},
+  author       = {Lorenzo Tronchin and Minh H. Vu and Paolo Soda and Tommy Löfstedt},
+  doi          = {10.1109/TPAMI.2025.3598866},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {9},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {LatentAugment: Data augmentation via guided manipulation of GAN's latent space},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MovieChat+: Question-aware sparse memory for long video question answering. <em>TPAMI</em>, 1-18. (<a href='https://doi.org/10.1109/TPAMI.2025.3604614'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, integrating video foundation models and large language models to build a video understanding system can overcome the limitations of specific vision tasks. Yet, existing methods either employ complex spatial-temporal modules or rely heavily on additional perception models to extract temporal features for video understanding, performing well only on short videos. For long videos, the computational complexity and memory costs associated with long-term temporal connections are significantly increased, posing additional challenges. Leveraging the hierarchical memory structure of the Atkinson-Shiffrin memory model, with tokens in Transformers being employed as the carriers of memory in combination, we propose MovieChat within a training-free memory consolidation mechanism to overcome these challenges, which transfers dense frames from short-term memory into sparse tokens in long-term memory by temporally merging adjacent frames. We lift pre-trained large multi-modal models for understanding long videos without additional trainable modules, employing a zero-shot approach. Additionally, in our new version, MovieChat+, we design an enhanced training-free vision-question matching-based memory consolidation mechanism to better anchor predictions to relevant visual content. MovieChat achieves state-of-the-art performance in long video understanding, along with the released MovieChat-1K benchmark with 1K long video, 2K temporal grounding labels, and 14K manual annotations. Resources are available at: https://github.com/rese1f/MovieChat.},
+  archive      = {J_TPAMI},
+  author       = {Enxin Song and Wenhao Chai and Tian Ye and Jenq-Neng Hwang and Xi Li and Gaoang Wang},
+  doi          = {10.1109/TPAMI.2025.3604614},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {9},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {MovieChat+: Question-aware sparse memory for long video question answering},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PRANCE: Joint token-optimization and structural channel-pruning for adaptive ViT inference. <em>TPAMI</em>, 1-17. (<a href='https://doi.org/10.1109/TPAMI.2025.3605239'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The troublesome model size and quadratic computational complexity associated with token quantity pose significant deployment challenges for Vision Transformers (ViTs) in practical applications. Despite recent advancements in model pruning and token reduction techniques speed up the inference speed of ViTs, these approaches either adopt a fixed sparsity ratio or overlook the meaningful interplay between architectural optimization and token selection. Consequently, this static and single-dimension compression often leads to pronounced accuracy degradation under aggressive compression rates, as they fail to fully explore redundancies across these two orthogonal dimensions. Therefore, we introduce PRANCE, a framework which can jointly optimize activated channels and tokens on a per-sample basis, aiming to accelerate ViTs' inference process from a unified data and architectural perspective. However, the joint framework poses challenges to both architectural and decision-making aspects. Firstly, while ViTs inherently support variable-token inference, they do not facilitate dynamic computations for variable channels. To overcome this limitation, we propose a meta-network using weight-sharing techniques to support arbitrary channels of the Multi-Head Self-Attention (MHSA) and Multi-Layer Perceptron (MLP) layers, serving as a foundational model for architectural decision-making. Secondly, simultaneously optimizing the model structure and input data constitutes a combinatorial optimization problem with an extremely large decision space, reaching up to around $10^{14}$, making supervised learning infeasible. To this end, we design a lightweight selector employing Proximal Policy Optimization algorithm (PPO) for efficient decision-making. Furthermore, we introduce a novel “Result-to-Go” training mechanism that models ViTs' inference process as a Markov decision process, significantly reducing action space and mitigating delayed-reward issues during training. Additionally, our framework simultaneously supports different kinds of token optimization methods such as pruning, merging, and sequential pruning-merging strategies. Extensive experiments demonstrate the effectiveness of PRANCE in reducing FLOPs by approximately 50%, retaining only about 10% of tokens while achieving lossless Top-1 accuracy.},
+  archive      = {J_TPAMI},
+  author       = {Ye Li and Chen Tang and Yuan Meng and Jiajun Fan and Zenghao Chai and Xinzhu Ma and Zhi Wang and Wenwu Zhu},
+  doi          = {10.1109/TPAMI.2025.3605239},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {9},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {PRANCE: Joint token-optimization and structural channel-pruning for adaptive ViT inference},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Make identity indistinguishable: Utility-preserving face dataset publication with provable privacy guarantees. <em>TPAMI</em>, 1-13. (<a href='https://doi.org/10.1109/TPAMI.2025.3605195'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the popularity of personal devices, there are abundant valuable face image datasets in the industry, which provides opportunities for the development of visual models. However, privacy concerns related to identity sensitive information hinder face datasets sharing. Despite existing works dedicated to removing identity sensitive information from images, they either lack provable privacy guarantees or compromise crucial face dataset utilities, e.g., identity correlation and image naturalness. To overcome these weaknesses, we propose a novel face dataset publication scheme that protects face images by obfuscating face features. The obfuscated features still retain a certain level of correlation, allowing the protected dataset to be used for training. In the process of obfuscating the features, we design a novel metric differential privacy mechanism, which can enhance the correlation between features while ensuring privacy. Furthermore, we construct a latent diffusion model with identity and attribute as inputs to improve the naturalness of generated images. Extensive experimental results and theoretical analysis demonstrate our scheme significantly outperforms existing works in providing privacy protection while maintaining high dataset utility for downstream tasks.},
+  archive      = {J_TPAMI},
+  author       = {Yushu Zhang and Junhao Ji and Tao Wang and Ruoyu Zhao and Wenying Wen and Yong Xiang},
+  doi          = {10.1109/TPAMI.2025.3605195},
+  journal      = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  month        = {9},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Pattern Anal. Mach. Intell.},
+  title        = {Make identity indistinguishable: Utility-preserving face dataset publication with provable privacy guarantees},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

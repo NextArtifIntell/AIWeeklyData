@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>RAS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ras">RAS - 60</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Enhancing fault detection and performance for UAVs with digital twin systems in search and rescue missions. <em>RAS</em>, <em>194</em>, 105186. (<a href='https://doi.org/10.1016/j.robot.2025.105186'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study presents the development of a Digital Twin for the "Made in UU" Field-based Autonomous LiDAR Control for Obstacle Navigation (FALCON), enabling advanced control systems and robust fault detection. The Digital Twin integrates real-time flight data and fault scenarios to enhance UAV stability under challenging conditions. The FALCON was modelled using real-time flight data, with traditional control methods, including Proportional-Integral-Derivative (PID), Linear Quadratic Regulator (LQR), and Linear Quadratic Gaussian (LQG), combined with optimization techniques such as Particle Swarm Optimization (PSO), Genetic Algorithm (GA), and Mayfly Algorithm (MA) to tune state feedback gains. Simulations showed GA-based tuning outperformed manual tuning, PSO, and MA in improving UAV stability and fault recovery. For PID, manual tuning achieved the fastest pitch settling with a 73.8 % improvement, while PSO-tuned PID delivered the quickest roll (52.8 %) and yaw (47.2 %) responses. The PSO-tuned LQG controller minimized settling times across all dynamics. Full State Feedback and PID controllers performed comparably, with GA achieving the best roll settling and both GA and PSO reaching 0.1 s in yaw. Overall, LQR with GA tuning provided the most balanced performance. These findings highlight GA’s robustness in challenging conditions, significantly improving UAV safety and efficiency in search and rescue, environmental monitoring, and disaster response. FALCON UAV and its Digital Twin offer a low-cost, IoT-integrated platform with real-time fault detection and optimal control, paving the way for next-generation UAV systems. Future work involves integrating machine learning for dynamic fault detection and real-world deployments.},
+  archive      = {J_RAS},
+  author       = {Cara Rose and Robert McMurray and Muhammad Usman Hadi},
+  doi          = {10.1016/j.robot.2025.105186},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105186},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Enhancing fault detection and performance for UAVs with digital twin systems in search and rescue missions},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A skill learning approach based on dynamic movement primitives and quadratic-neural energy functions. <em>RAS</em>, <em>194</em>, 105183. (<a href='https://doi.org/10.1016/j.robot.2025.105183'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we propose a skill learning method based on the combination of energy change and trajectory optimization. First, we propose a novel quadratic-neural energy function (QNEF) to achieve a unified characterization of multiple skill features from demonstrations. Second, the trajectories are segmented using QNEF and its gradient to generate multi-layer energy sequences, which enables accurate segmentation of non-specific trajectories and supports spatio-temporal alignment through Global Time Warping (GTW). In addition, inspired by natural energy systems, we formulate the energy function as a coupling term and integrate it into dynamic movement primitives (DMPs) to construct quadratic-neural energy function dynamic movement primitives (QNEF-DMPs). The proposed method autonomously adjusts trajectories based on energy levels while preserving trajectory features, enabling continuous obstacle avoidance. Moreover, the visualization of the energy field enhances both intuitiveness and physical interpretability. Finally, the effectiveness of the method is demonstrated through practical experiments on the ROKAE robot platform.},
+  archive      = {J_RAS},
+  author       = {Yongqing Liu and Chengguo Liu and Ye He and Xianzu Peng and Maoxuan Li},
+  doi          = {10.1016/j.robot.2025.105183},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105183},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {A skill learning approach based on dynamic movement primitives and quadratic-neural energy functions},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Differentiable optimization based time-varying control barrier functions for dynamic obstacle avoidance. <em>RAS</em>, <em>194</em>, 105182. (<a href='https://doi.org/10.1016/j.robot.2025.105182'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Control barrier functions (CBFs) provide a simple yet effective way for safe control synthesis. Recently, work has been done using differentiable optimization (diffOpt) based methods to systematically construct CBFs for static obstacle avoidance tasks between geometric shapes. In this work, we propose a novel pipeline for diffOpt CBFs to perform dynamic obstacle avoidance tasks while considering measurement noise and actuation limits. We show that by using the time-varying CBF (TVCBF) formulation, we can perform obstacle avoidance for dynamic geometric obstacles. Additionally, we show how to enable the TVCBF constraint to consider measurement noise and actuation limits. To demonstrate the efficacy of our proposed approach, we first compare its performance with a model predictive control based method and a circular CBF based method on a simulated dynamic obstacle avoidance task. Then, we demonstrate the performance of our proposed approach in experimental studies using a 7-degree-of-freedom Franka Research 3 robotic manipulator.},
+  archive      = {J_RAS},
+  author       = {Bolun Dai and Rooholla Khorrambakht and Prashanth Krishnamurthy and Farshad Khorrami},
+  doi          = {10.1016/j.robot.2025.105182},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105182},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Differentiable optimization based time-varying control barrier functions for dynamic obstacle avoidance},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Geometric methods for aircraft planning and control. <em>RAS</em>, <em>194</em>, 105181. (<a href='https://doi.org/10.1016/j.robot.2025.105181'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Path planning and control of autonomous aircraft is a critical problem, particularly under conditions of model and sensor uncertainty. This paper presents a hierarchical control architecture that integrates geometric and probabilistic methods to address these challenges. The proposed framework combines a high-level controller, a low-level controller, and an observer, leveraging Lie group theory for geometric modeling. The high-level controller formulates the planning problem as a Markov Decision Process (MDP), solved using Monte Carlo Tree Search (MCTS) to generate reference trajectories while avoiding no-fly zones. The low-level controller exploits the relationship between tangent space velocities and left-trivialized velocities in the Lie algebra to produce control commands. State estimation is achieved using a second-order optimal minimum-energy filter formulated on Lie groups, ensuring robust performance under noisy measurements. Simulation results show the efficacy of the proposed architecture in guiding an aircraft from a start point to a target while satisfying operational constraints.},
+  archive      = {J_RAS},
+  author       = {Francesco Trotti and Damiano Rigo and Riccardo Muradore},
+  doi          = {10.1016/j.robot.2025.105181},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105181},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Geometric methods for aircraft planning and control},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive game-theoretic decision-making with driving style recognition for autonomous vehicles in uninterrupted traffic flows at intersections. <em>RAS</em>, <em>194</em>, 105180. (<a href='https://doi.org/10.1016/j.robot.2025.105180'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The absence of standardized conflict resolution mechanisms presents critical challenges for autonomous vehicles operating in uninterrupted traffic flows, particularly when managing time-sensitive interactions with heterogeneous road users. Existing approaches either adopt overly conservative policies by oversimplifying multi-agent interactions or neglect the critical influence of heterogeneous driving styles. This paper proposes a game-theoretic decision-making framework for autonomous vehicles in uninterrupted traffic flow scenarios, specifically designed to address the intertwined challenges of multi-objective optimization and driving style adaptation. A hierarchical game-theoretic architecture integrates kinematic state evolution, feasibility constraints, and interactive behavior modeling to rigorously model multi-vehicle interactions under dynamic mixed traffic conditions. A novel online identification mechanism estimates driving styles through real-time interaction pattern analysis, while a machine learning-driven adaptive framework generates parametric policies through offline random forest training coupled with context-aware online policy adjustments. Comprehensive simulations validate the framework’s effectiveness in both single and multiple intersection scenarios, demonstrating enhanced interaction adaptability (more than 10% efficiency improvements) compared to conventional non-adaptive methods. Experimental results demonstrate the model’s capability to efficiently handle heterogeneous driving behaviors and dynamically refine negotiation strategies, providing a systematic, human-like vehicle decision-making solution for mixed traffic environments.},
+  archive      = {J_RAS},
+  author       = {Yuxiao Cao and Yinuo Jiang and Xiangrui Zeng},
+  doi          = {10.1016/j.robot.2025.105180},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105180},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Adaptive game-theoretic decision-making with driving style recognition for autonomous vehicles in uninterrupted traffic flows at intersections},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Estimation of lower limb rehabilitation exoskeleton torque by combining dual-joint parameter identification and neural network. <em>RAS</em>, <em>194</em>, 105178. (<a href='https://doi.org/10.1016/j.robot.2025.105178'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Lower limb rehabilitation exoskeleton is widely used for rehabilitative training. Estimating the torque of the lower limb exoskeleton can help identify the patient's intent, thereby enhancing engagement in rehabilitative training. Parameter identification (PI) is used to estimate torque. However, the presence of unmodeled dynamics and external disturbances poses challenges for achieving reliable torque estimation. Consequently, achieving accurate torque estimation is a primary research focus in this field. This study combines dual-joint parameter identification and neural network, for estimating joint torque in lower limb rehabilitation exoskeletons. This method enhances the performance of parameter identification optimization algorithms by employing Markov-based Particle Swarm Optimization and Gradient Descent Algorithm (MPG). Additionally, it independently identifies the parameters of the hip and knee joints, thereby enhancing the accuracy of torque estimation for each joint. The estimated physical parameters of the model and joint state variables are then utilized as inputs to the neural network for estimating the torques during the lower limb exoskeleton training process. MATLAB simulation demonstrates that employing MPG for parameter identification enhances fitness by 37.59 % and 15.24 % when compared to Particle Swarm Optimization(PSO) and Gradient descent (GD), respectively. Through experimental verification conducted under controlled disturbances, method for combining dual-joint parameter identification and neural networks (DPI-BP) demonstrates its effectiveness in accurately estimating torque in lower limb rehabilitation exoskeletons. Angle, velocity, acceleration, inertia matrix, Coriolis matrix, gravity matrix and friction matrix of hip and knee joints are taken as inputs for DPI-BP. The application of DPI-BP results in a reduction of torque estimation errors, specifically by 0.12 Nm and 1.40 Nm(P<0.001), corresponding to a decrease of 66.57 % and 14.35 % when compared to the PI and Backpropagation (BP) methods, respectively. The torque estimation error of hip and knee joints are 0.86 Nm and 0.54 Nm.},
+  archive      = {J_RAS},
+  author       = {Yumeng Zhang and Chen Lv and Yaning Li and Longhan Xie},
+  doi          = {10.1016/j.robot.2025.105178},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105178},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Estimation of lower limb rehabilitation exoskeleton torque by combining dual-joint parameter identification and neural network},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MOMAV: A highly symmetrical fully-actuated multirotor drone using optimizing control allocation. <em>RAS</em>, <em>194</em>, 105176. (<a href='https://doi.org/10.1016/j.robot.2025.105176'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {MOMAV (Marco’s Omnidirectional Micro Aerial Vehicle) is a multirotor drone that is fully actuated, meaning it can control its orientation independently of its position. MOMAV is also highly symmetrical, making its flight efficiency largely unaffected by its current orientation. These characteristics are achieved by a novel drone design where six rotor arms align with the vertices of an octahedron, and where each arm can actively rotate along its long axis. Various standout features of MOMAV are presented: The high flight efficiency compared to arm configuration of other fully-actuated drones, the design of an original rotating arm assembly featuring slip-rings used to enable continuous arm rotation, and a novel control allocation algorithm based on sequential quadratic programming (SQP) used to calculate throttle and arm-angle setpoints in flight. Flight tests have shown that MOMAV is able to achieve remarkably low mean position/orientation errors of 6.6 mm, 2.1°( σ : 3.0 mm, 1.0°) when sweeping position setpoints, and 11.8 mm, 3.3°( σ : 8.6 mm, 2.0°) when sweeping orientation setpoints.},
+  archive      = {J_RAS},
+  author       = {Marco Ruggia},
+  doi          = {10.1016/j.robot.2025.105176},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105176},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {MOMAV: A highly symmetrical fully-actuated multirotor drone using optimizing control allocation},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Robotic manipulation framework based on semantic keypoints for packing shoes of different sizes, shapes, and softness. <em>RAS</em>, <em>194</em>, 105174. (<a href='https://doi.org/10.1016/j.robot.2025.105174'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rapid development of the warehousing and logistics industries, the packing of goods has gradually attracted the attention of academia and industry. The packing of footwear products is a typical representative paired-item packing task involving irregular shapes and deformable objects. Although studies on shoe packing have been conducted, different initial states due to the irregular shapes of shoes and standard packing placement poses have not been considered. This study proposes a robotic manipulation framework, including a perception module, reorientation planners, and a packing planner, that can complete the packing of pairs of shoes in any initial state. First, to adapt to the large intraclass variations due to the states, shapes, and deformation of shoes, we propose a vision module based on semantic keypoints, which can also infer additional information such as sizes, states, poses, and manipulation points by combining geometric features. Subsequently, we not only propose primitive-based reorientation methods for different states of a single deformable shoe but also propose a fast reorientation method for the top state using box edge contact and gravity, which further improve the efficiency of reorientation. Finally, based on the perception module and reorientation methods, we propose a task planner for packing paired shoes in any initial state to provide an optimal packing strategy. Real-world experiments were conducted to verify the robustness of the reorientation methods and the effectiveness of the packing strategy for various types of shoes. In this study, we highlight the potential of semantic keypoint representation, introduce new perspectives on the reorientation of 3D deformable objects and multi-object manipulation, and provide a reference for paired object packing.},
+  archive      = {J_RAS},
+  author       = {Yi Dong and Yangjun Liu and Jinjun Duan and Yang Li and Zhendong Dai},
+  doi          = {10.1016/j.robot.2025.105174},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105174},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Robotic manipulation framework based on semantic keypoints for packing shoes of different sizes, shapes, and softness},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hybrid of representation learning and reinforcement learning for dynamic and complex robotic motion planning. <em>RAS</em>, <em>194</em>, 105167. (<a href='https://doi.org/10.1016/j.robot.2025.105167'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Motion planning is the soul of robot decision making. Classical planning algorithms like graph search and reaction-based algorithms face challenges in cases of dense and dynamic obstacles. Deep learning algorithms generate suboptimal one-step predictions that cause many collisions. Reinforcement learning algorithms generate optimal or near-optimal time-sequential predictions. However, they suffer from slow convergence, suboptimal converged results, and unstable training. This paper introduces a hybrid algorithm for robotic motion planning: l ong short-term memory (LSTM) and s kip connection for a ttention-based d iscrete s oft a ctor c ritic (LSA-DSAC). First, graph network (relational graph) and attention network (attention weight) interpret the environmental state for the learning of the discrete soft actor critic algorithm. The expressive power of attention network outperforms that of graph in our task by difference analysis of these two representation methods. However, attention based DSAC faces the problem of unstable training (vanishing gradient). Second, the skip connection method is integrated to attention based DSAC to mitigate unstable training and improve convergence speed. Third, LSTM is taken to replace the sum operator of attention weigh and eliminate unstable training by slightly sacrificing convergence speed at early-stage training. Experiments show that LSA-DSAC outperforms the state-of-the-art in training and most evaluations. Physical robots are also implemented and tested in the real world.},
+  archive      = {J_RAS},
+  author       = {Chengmin Zhou and Xin Lu and Jiapeng Dai and Xiaoxu Liu and Bingding Huang and Pasi Fränti},
+  doi          = {10.1016/j.robot.2025.105167},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105167},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Hybrid of representation learning and reinforcement learning for dynamic and complex robotic motion planning},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Maritime scene matching for inter-robot localization across surface and underwater domains. <em>RAS</em>, <em>194</em>, 105166. (<a href='https://doi.org/10.1016/j.robot.2025.105166'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Autonomous underwater vehicles (AUVs) play a crucial role across various sectors, including oil and gas production, civil engineering, and defense. However, underwater localization remains a significant challenge, limiting the widespread adoption of AUVs in these fields. A common strategy to address this challenge is to deploy a fleet of Uncrewed Surface Vessels (USVs), which are easier to localize on the surface, alongside AUVs to help anchor their position estimates. These methods typically rely on acoustic pinging among the robots to relay position-related data. Unfortunately, acoustic pinging requires synchronized clocks and a clear line of sight, making it difficult to deploy large-scale, decentralized teams, particularly in littoral (i.e. near-shore) environments. To bridge this gap, we propose an alternative approach that is resolvable over asynchronous, intermittent communications. By leveraging the fact that many human-made structures in littoral environments are visible both above and below the waterline, our method automatically detects correspondences between above-water LiDAR scenes and underwater sonar scenes. First, we convert underwater and above-water data into a common representation, generate descriptors to find commonalities, and then apply point cloud registration tools to find rigid body transformations between them. Lastly, we apply pairwise consistent measurement set maximization (PCM) as a robust outlier rejection system. Our results demonstrate that our solution to this novel Maritime Scene Matching (MSM) problem is both robust to outliers and effective in localizing sonar scenes with an accuracy of less than two meters. Datasets are collected using a single robot equipped with underwater imaging sonar and above-water LiDAR. We have made our real-world datasets, hardware designs, and open-source code available to promote reproducibility and to encourage broader community engagement with the MSM problem. Opensource code: https://github.com/jake3991/maritime-scene-matching .},
+  archive      = {J_RAS},
+  author       = {John McConnell and Ivana Collado-Gonzalez and Paul Szenher and Armon Shariati},
+  doi          = {10.1016/j.robot.2025.105166},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105166},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Maritime scene matching for inter-robot localization across surface and underwater domains},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Behavior tree generation and adaptation for a social robot control with LLMs. <em>RAS</em>, <em>194</em>, 105165. (<a href='https://doi.org/10.1016/j.robot.2025.105165'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large Language Models have recently emerged as a powerful tool for generating flexible and context-aware robotic behavior. However, adapting to unforeseen events and ensuring robust task completion remain significant challenges. This paper presents a novel system that leverages LLMs and Behavior Trees to enable robots to generate, execute, and adapt task plans based on natural language commands. The system employs ChatGPT to process user instructions, generating initial Behavior Trees that encapsulate the required task steps. A modular architecture, combining the BT planner and a Failure Interpreter module, allows the system to dynamically adjust Behavior Trees when execution challenges or environmental changes arise. Unlike conventional methods that rely on static Behavior Trees or predefined state machines, our approach ensures adaptability by integrating a Failure Interpreter capable of identifying execution issues and proposing alternative plans or user clarifications in real time. This adaptability makes the system robust to disturbances and allows for seamless human–robot interaction. We validate the proposed methodology using experiments on a social robot across various scenarios in our workplace, demonstrating its effectiveness in generating executable Behavior Trees and responding to execution failures. The approach achieves an 89.6% success rate in a realistic home environment, highlighting the effectiveness of LLM-powered Behavior Trees in enabling robust and flexible robot behavior from natural language input.},
+  archive      = {J_RAS},
+  author       = {Sergio Merino-Fidalgo and Celia Sánchez-Girón and Eduardo Zalama and Jaime Gómez-García-Bermejo and Jaime Duque-Domingo},
+  doi          = {10.1016/j.robot.2025.105165},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105165},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Behavior tree generation and adaptation for a social robot control with LLMs},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Control and stabilization of quadcopters subjected to propeller failures. <em>RAS</em>, <em>194</em>, 105162. (<a href='https://doi.org/10.1016/j.robot.2025.105162'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work develops an auxiliary control system based on sliding mode control in order to stabilize quadcopters in the event of propeller failures, a significant challenge in the operation of unmanned aircraft. The proposed approach includes the implementation of modern control techniques, extensively tested in both a nonlinear simulator and a testing platform, allowing the reproduction of scenarios with up to 30% power loss in one of the motors. The combination of detailed simulations and practical experiments demonstrates the efficiency of sliding mode control, which is able to mitigate the effects of failures by reducing deviations in the ϕ and θ angles by more than 80% at the initial moments and maintaining partial stability of the angle ψ . In addition to surpassing other approaches in terms of efficiency, the proposed method preserves the aircraft’s autonomy, offering a robust and practical solution for application in real operational environments, ensuring greater safety and reliability in quadcopter control.},
+  archive      = {J_RAS},
+  author       = {Junio Santos Bulhões and Cristiane Lopes Martins and Viviane M. Gomes Pacheco and Alana da Silva Magalhães and Clóves Gonçalves Rodrigues and Antonio Paulo Coimbra and Wesley Pacheco Calixto},
+  doi          = {10.1016/j.robot.2025.105162},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105162},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Control and stabilization of quadcopters subjected to propeller failures},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Integration of linear extended state observer within proxy-based sliding mode control for a cable-driven aerial manipulator. <em>RAS</em>, <em>194</em>, 105161. (<a href='https://doi.org/10.1016/j.robot.2025.105161'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Aerial manipulators with active operation capabilities have a wide range of applications, but the design of their high-performance controller will be challenging due to internal uncertainties and external disturbances. This article proposes a novel composite control strategy for a cable-driven aerial manipulator, integrating proxy-based sliding mode control and linear extended state observer technique. In this control structure, proxy-based sliding mode control can modify the behavior of the aerial manipulator in joint space, such as tracking accuracy, system safety, and chattering reduction. Meanwhile, the linear extended state observer can estimate and compensate for the lumped disturbances, which enhances the robustness of the designed controller. The stability and convergence of the proposed controller are proved by the Lyapunov theory. Several simulation results show that our controller outperforms the other two existing controllers in terms of control precision, convergence, and robustness.},
+  archive      = {J_RAS},
+  author       = {Li Ding and Yong Yao and Mingyue Lu and Yangmin Li and Yaoyao Wang},
+  doi          = {10.1016/j.robot.2025.105161},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105161},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Integration of linear extended state observer within proxy-based sliding mode control for a cable-driven aerial manipulator},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An enhanced autonomous counter-drone system with jamming and relative positioning capabilities. <em>RAS</em>, <em>194</em>, 105160. (<a href='https://doi.org/10.1016/j.robot.2025.105160'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rise of unlawful and unauthorized operations of unmanned aerial vehicles (UAVs) has led to the need for versatile counter-drone systems. In this work, an autonomous counter-drone system is developed (denoted as RPS-JS-DNN — relative positioning and simultaneous jamming system with deep neural network learning), where a pursuer drone employs algorithms for detection, tracking, and jamming a rogue drone in real-time. The proposed system incorporates wireless interception capabilities to jam the rogue drone, together with self-positioning for the pursuer drone by employing a relative positioning system methodology based on signals of opportunity fused with inertial measurements. The performance of the proposed system depends on the switching between the jamming and self-localization modules, essentially leading to a jamming duration and positioning accuracy trade-off. The overall objective is the maximization of the jamming module’s operation time, while also increasing the performance of the self-localization module. In the proposed system, a software-defined radio (SDR) is utilized, facilitating jamming and spectrum sweeping capabilities to realize the desired GPS disturbance and self-localization, respectively. A prototype system is developed, implemented, deployed, and tested over extensive field experiments, demonstrating its effectiveness to jam a rogue drone and also achieve relative navigation in a real-world environment under various parameter settings.},
+  archive      = {J_RAS},
+  author       = {Nicolas Souli and Panayiotis Kolios and Georgios Ellinas},
+  doi          = {10.1016/j.robot.2025.105160},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105160},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {An enhanced autonomous counter-drone system with jamming and relative positioning capabilities},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Intelligent automated gesture planning for reconfigurable soft gripper system in food handling. <em>RAS</em>, <em>194</em>, 105159. (<a href='https://doi.org/10.1016/j.robot.2025.105159'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Soft grippers, that can mimic human fingers grasping objects, have emerged as a game-changer in the automated food service industry. Their flexibility and compliance enable them to handle various food items, regardless of size, shape, or stiffness, outperforming their rigid counterparts while maintaining cost-efficiency and greater adaptability. However, the working scenarios for soft grippers are also more complex and unpredictable, leading to a challenge in pre-programming the gesture and trajectory of the system. Current research on soft grippers primarily focuses on their compliance characteristics, which is effective for objects with characteristic features but faces challenges with cut food items. For such cut objects, both vertical friction and compliance play crucial roles in grasping, highlighting the need for a reconfigurable soft gripper system (RSGS) with multiple degrees of freedom actuators. To address these challenges, we introduce an intelligent automated gesture planning strategy for RSGSs with multiple degrees of freedom. Our proposed framework comprises five modules: Feature Engineering, which parameterizes and samples arbitrary polygon cross-sections of food items; Simulation, which automates the creation of numerical models in the design space, run and post-processing of simulation; GraspingFormer, which estimates reaction forces during grasping; AgentVAE, which uses a generative variational autoencoder to sample feasible grasping gestures in latent space; Planner, which identifies the optimized gestures by solving an inverse problem. This strategy can facilitate gesture planning when grasping a target object with a RSGS, to enhance the picking-up success rate. The proposed framework can potentially benefit food-handling-like tasks and expand the use of soft robots in real-world applications.},
+  archive      = {J_RAS},
+  author       = {Yangfan Li and Jun Liu and Wenyu Liang and Jin Huat Low and Yadan Zeng and Chen-Hua Yeow and I-Ming Chen and Zhuangjian Liu},
+  doi          = {10.1016/j.robot.2025.105159},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105159},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Intelligent automated gesture planning for reconfigurable soft gripper system in food handling},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Swarm self-organized multi-heterogeneous target trapping based on the distribution of agent movement influence. <em>RAS</em>, <em>194</em>, 105158. (<a href='https://doi.org/10.1016/j.robot.2025.105158'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In existing swarm-based self-organized trapping algorithms, the majority of studies have concentrated on single-target or homogeneous multi-target scenarios within two-dimensional spaces, with limited attention paid to the spatial trapping of multiple heterogeneous targets in three-dimensional environments. The problem of enabling trapping agents to self-organize through mutual perception to trap multiple dispersed and evasive heterogeneous targets in three-dimensional space presents a novel and challenging research direction. To address this gap, this paper proposes a self-organized swarm trapping approach for multiple heterogeneous targets based on the distribution of agent movement influence. First, evaluation criteria for trapping success are established through the definition of nearest-distance and morphological indices. Then, a single-step movement distribution field is constructed based on the incremental motion of neighboring agents to represent the local movement tendencies of trapping agents. This field is used to infer the trapping requirements of heterogeneous targets and to develop a target selection strategy that integrates target demands, density fields, and inter-target distances. Subsequently, the trapping agents achieve a swarm-level self-organized trap in three-dimensional space through the combined effects of four virtual forces: density regulation, target attraction, inter-agent repulsion, and self-propulsion. The feasibility of the proposed method is demonstrated through both algorithmic analysis and simulation-based validation. Results show that even under conditions with minimal redundancy in the number of trapping agents, the proposed strategy can adaptively select heterogeneous targets and form stable trap configurations with high efficiency.},
+  archive      = {J_RAS},
+  author       = {Hanqiao Huang and Yuchen Zhou and Wei Yin and Bo Zhang},
+  doi          = {10.1016/j.robot.2025.105158},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105158},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Swarm self-organized multi-heterogeneous target trapping based on the distribution of agent movement influence},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamics, multi-performance analysis and load experimental study of a 3-DOF over constrained robot with high energy efficiency for extracting fermented grains. <em>RAS</em>, <em>194</em>, 105157. (<a href='https://doi.org/10.1016/j.robot.2025.105157'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, a novel 3-DoF hybrid mechanism is presented, as the manipulator of the reclaiming robot for the extraction process of fermented grains (FG) of liquor. and the performance analysis and motion control are studied. The performance is evaluated from three dimensions: motion/force transmission characteristics, speed characteristics, and dynamic characteristics, and the redundant complementary driving characteristics of this mechanism were analyzed. For the multi-closed-loop over-constrained mechanism, all the driving/constraining forces and torques are determined using a method that combines the Newton-Euler equation and deformation coordination equation. Additionally, the prototype of the reclaiming robot for FG is developed. In the robot's control system design, a collision observer based on second-order momentum and an active contact self-aligning trajectory algorithm are designed for the actuator-cylinder centering. Furthermore, an adaptive robust controller is designed for motion control. Finally, the experiments are conducted to test the trajectory tracking performance and analyze the unmodeled dynamic characteristics, which also show the advantages of energy efficiency and load performance of the mechanism. This paper serves as a basis for the design and analysis of the robot's hybrid over-constrained mechanism and provides an idea for the realization of force detection and position control.},
+  archive      = {J_RAS},
+  author       = {Yubin Zhang and Jinzhu Zhang and Xiaoyan Xiong and Shengxiang Liu and Hongjie Du and Yanjiang Huang},
+  doi          = {10.1016/j.robot.2025.105157},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105157},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Dynamics, multi-performance analysis and load experimental study of a 3-DOF over constrained robot with high energy efficiency for extracting fermented grains},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Data-driven predictive control of nonholonomic robots based on a bilinear koopman realization: Data does not replace geometry. <em>RAS</em>, <em>194</em>, 105156. (<a href='https://doi.org/10.1016/j.robot.2025.105156'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Advances in machine learning and the growing trend towards effortless data generation in real-world systems have led to an increasing interest for data-inferred models and data-based control in robotics. It seems appealing to govern robots solely based on data, bypassing the traditional, more elaborate pipeline of system modeling through first-principles and subsequent controller design. One promising data-driven approach is the Extended Dynamic Mode Decomposition (EDMD) for control-affine systems, a system class which contains many vehicles and machines of immense practical importance including, e.g., typical wheeled mobile robots. EDMD can be highly data-efficient, computationally inexpensive, can deal with nonlinear dynamics as prevalent in robotics and mechanics, and has a sound theoretical foundation rooted in Koopman theory. On this background, this present paper examines how EDMD models can be integrated into predictive controllers for nonholonomic mobile robots. In addition to the conventional kinematic mobile robot, we also cover the complete data-driven control pipeline – from data acquisition to control design – when the robot is not treated in terms of first-order kinematics but in a second-order manner, allowing to account for actuator dynamics. Using only real-world measurement data, it is shown in both simulations and hardware experiments that the surrogate models enable high-precision predictive controllers in the studied cases. However, the findings raise significant concerns about purely data-centric approaches that overlook the underlying geometry of nonholonomic systems, showing that, for nonholonomic systems, some geometric insight seems necessary and cannot be easily compensated for with large amounts of data.},
+  archive      = {J_RAS},
+  author       = {Mario Rosenfelder and Lea Bold and Hannes Eschmann and Peter Eberhard and Karl Worthmann and Henrik Ebel},
+  doi          = {10.1016/j.robot.2025.105156},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105156},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Data-driven predictive control of nonholonomic robots based on a bilinear koopman realization: Data does not replace geometry},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Combined model-based and data-driven approach for the control of a soft robotic neck. <em>RAS</em>, <em>194</em>, 105155. (<a href='https://doi.org/10.1016/j.robot.2025.105155'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper delves into the potential of integrating model-based and data-driven techniques for controlling the performance of a soft robotic neck. Artificial intelligence (AI) methods, such as machine learning and deep learning, have shown their applicability in modelling and controlling robotic systems with complex nonlinear behaviours. However, model-based approaches have also proven to be effective analytical alternatives, even if they rely on simplified approximations of the robot model. The control system proposed in this work combines the closed loop analytical model of the soft robotic neck with a Multi-Layer Perceptron (MLP) network trained to minimise the neck pose error. The MLP undergoes training with three different data treatments, and the results are compared to determine the most effective one. The experimental results obtained demonstrate the robustness of the proposed technique and its potential as an alternative to classical solutions, whether purely based on analytical models or data-driven models.},
+  archive      = {J_RAS},
+  author       = {Nicole A. Continelli and Luis F. Nagua and Pablo M. Olmos and Concepción A. Monje},
+  doi          = {10.1016/j.robot.2025.105155},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105155},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Combined model-based and data-driven approach for the control of a soft robotic neck},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An embedded deep learning neural network control for a wheeled mobile robot. <em>RAS</em>, <em>194</em>, 105154. (<a href='https://doi.org/10.1016/j.robot.2025.105154'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes an adaptive tracking scheme for a 4-wheeled skid steering mobile robot (4-WSSMR) using diagonal recurrent neural network controller based on the hybrid deep learning algorithm (DRNNC-HDLA). For the developed DRNNC-HDLA structure, the diagonal recurrent neural network is constructed, whose initial weights values are obtained through the hybrid deep learning algorithm. It is a combination of the restricted Boltzmann machine and the self-organized map of Kohonen. The network weights and learning rate for the proposed scheme are updated based on the Lyapunov stability criteria to achieve the controlled system stability. To show the robustness of the proposed algorithm, the results are compared to other existing algorithms. The proposed algorithm is practically implemented for controlling a 4-WSSMR to show the ability of the proposed algorithm to deal with real applications. The effectiveness of the proposed approach is validated through extensive real-world experiments involving uncertainties and disturbances, demonstrating its capability to achieve accurate and reliable trajectory tracking. This work advances the field by offering a reliable control solution for mobile robots operating under challenging conditions.},
+  archive      = {J_RAS},
+  author       = {Ahmad M. El-Nagar and Ahmad M. Zaki and F.A.S. Soliman and Mohammad El-Bardini},
+  doi          = {10.1016/j.robot.2025.105154},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105154},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {An embedded deep learning neural network control for a wheeled mobile robot},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An integrated framework for obstacle avoidance path planning and tracking of autonomous vehicles considering risk potential fields. <em>RAS</em>, <em>194</em>, 105153. (<a href='https://doi.org/10.1016/j.robot.2025.105153'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Vehicle safety during driving conditions is critical, as collisions significantly contribute to traffic accidents and road congestion. This paper proposes an integrated framework combining a risk potential field and dual-layer model predictive control (MPC) for autonomous obstacle avoidance path planning and tracking. First, environmental risks are modeled through potential fields representing road boundaries, target attractions, and obstacle repulsions. Then, the upper-layer nonlinear MPC (NMPC)incorporates these potential field constraints along with vehicle dynamics to generate feasible path in real-time. Subsequently, the planned path are passed to the lower-layer MPC for accurate path tracking control. Simulation tests on the MATLAB/CarSim co-simulation platform under representative driving scenarios demonstrate that the proposed approach effectively achieves safe autonomous obstacle avoidance and stable control at high speeds,reducing collision risks and validating the method’s feasibility and effectiveness.},
+  archive      = {J_RAS},
+  author       = {Jinhua Zhang and Weilong Fu},
+  doi          = {10.1016/j.robot.2025.105153},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105153},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {An integrated framework for obstacle avoidance path planning and tracking of autonomous vehicles considering risk potential fields},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Trajectory tracking model predictive control for mobile robot based on deep koopman operator modeling. <em>RAS</em>, <em>194</em>, 105152. (<a href='https://doi.org/10.1016/j.robot.2025.105152'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Trajectory tracking serves as a pivotal performance metric for mobile robot systems, and is crucial for improving the efficiency of robots. The intricate kinematic and dynamic properties of robot systems pose substantial challenges in achieving accurate modeling and effective control, which remain pressing issues within the current research domain. This study focuses on wheeled mobile robot, relying on the deep Koopman operator theory, combined with the extended state observer (ESO) and the adaptive predictive time domain self-triggered model predictive control (APST-MPC) method, to propose a data-driven solution for the trajectory tracking control issue of wheeled mobile robot under uncertain model parameters. Firstly, the dynamic model of the mobile robot is constructed by the deep Koopman operator method. Secondly, to counteract operational disturbances encountered by the robot, an ESO is designed for disturbance estimation and subsequent compensation within the controller. Thirdly, to reduce the computational load, APST-MPC is employed to enhance the trajectory tracking control of wheeled mobile robot. Ultimately, the efficacy of the proposed trajectory tracking controller is confirmed through simulation experiments. The simulation outcomes confirm the deep Koopman operator theory’s efficacy in establishing a robot model with considerable accuracy, the tracking error of the robot is reduced by 46.03% and the total number of triggering times of the system is reduced by more than 59.8% by the APST-MPC controller based on ESO compared with the MPC controller.},
+  archive      = {J_RAS},
+  author       = {Minan Tang and Yaqi Zhang and Shuyou Yu and Jinping Li and Kunxi Tang},
+  doi          = {10.1016/j.robot.2025.105152},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105152},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Trajectory tracking model predictive control for mobile robot based on deep koopman operator modeling},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). 3D point cloud-based 6D pose estimation using the pedicel morphological features of fruits and vegetables. <em>RAS</em>, <em>194</em>, 105151. (<a href='https://doi.org/10.1016/j.robot.2025.105151'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study proposes a method to estimate the 6D pose of pedicels using the morphological features of fruits and vegetables. The pedicel, a critical element connecting fruits to their stems, significantly influences the precision and efficiency of agricultural harvesting robots. The proposed system employs 3D point cloud data obtained from RGB-D cameras, using differences in width and curvature to identify the location and orientation of the pedicel. A lightweight YOLOv8n-seg architecture is employed to detect fruits and vegetables, computing the local curvature to estimate pedicel positions. The experimental evaluations on tomatoes and Cucumis melo ( C. melo ) demonstrate the capability of the proposed system to handle diverse agricultural environments. For C. melo , the system achieved a precision of 0.927, recall of 0.809 and F1-score of 0.864. For tomatoes, precision and recall were both 0.837, resulting in an F1-score of 0.837. Positional errors along the x -, y - and z -axes averaged 1.34, 3.19 and 4.79 mm , respectively, for the C. melo , with corresponding root mean squared errors of 7.95, 5.46 and 5.13 mm. Orientational errors averaged 2.14°, 1.14°and -1.49°for ϕ , θ and ψ , respectively. Smoothing algorithms, including linear interpolation for translation and spherical linear interpolation for rotation, address positional and orientational instability, further enhancing trajectory precision. The system achieved real-time operation with a processing speed exceeding 20 fps with smoothing, making it suitable for dynamic agricultural tasks. The results highlight the robust performance of the system in accurately identifying and approaching pedicels, even in occluded or clustered conditions.},
+  archive      = {J_RAS},
+  author       = {Yonghyun Park and Jeonghyeon Pak and Changjo Kim and Hyoung Il Son},
+  doi          = {10.1016/j.robot.2025.105151},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105151},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {3D point cloud-based 6D pose estimation using the pedicel morphological features of fruits and vegetables},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). STSLAM: Robust visual SLAM in dynamic scenes via image segmentation and instance tracking. <em>RAS</em>, <em>194</em>, 105150. (<a href='https://doi.org/10.1016/j.robot.2025.105150'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Although visual simultaneous localization and mapping (SLAM) has made significant progress in localization accuracy, its robustness can be further improved. The primary reason for this is the insufficient modeling of dynamic instances, which leads to tracking failures for current SLAM methods in dynamic scenes. Furthermore, the lack of semantic information is also a problem in the traditional visual SLAM field. To solve these problems, this paper proposes a visual SLAM algorithm called segmentation and tracking SLAM (STSLAM). We apply image segmentation and instance tracking to visual SLAM. The image segmentation and instance tracking task is achieved through a video panoptic segmentation algorithm. By integrating the learning-based algorithm into the SLAM system, STSLAM not only achieves motion estimation for each dynamic instance but also introduces novel factors for factor graph construction to constrain these dynamic instances. Meanwhile, we use the learning-based algorithm to assign semantics to the map and build a panoptic point cloud map. Finally, ablation studies and comparative experiments are conducted on the KITTI, TUM RGB-D and Bonn RGB-D Dynamic dataset, which verify the effectiveness of the STSLAM method and achieve state-of-the-art performance.},
+  archive      = {J_RAS},
+  author       = {Yiwei Xiu and Xiao Liang and Guodong Chen},
+  doi          = {10.1016/j.robot.2025.105150},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105150},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {STSLAM: Robust visual SLAM in dynamic scenes via image segmentation and instance tracking},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An empirical evaluation of learning-based multi-agent path finding algorithms in warehouse environments. <em>RAS</em>, <em>194</em>, 105149. (<a href='https://doi.org/10.1016/j.robot.2025.105149'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, Multi-Agent Path Finding (MAPF) has become one of the most challenging and interesting fields in autonomous robotics and artificial intelligence. MAPF consists in computing collision-free paths for a group of agents that move from their initial locations to their goal locations in a shared environment. Many algorithms have been proposed to solve this problem using traditional search and planning approaches. The scarce scalability to hundreds or thousands of agents of some of these algorithms has recently pushed the community to investigate the use of Multi-Agent Reinforcement Learning (MARL) techniques for MAPF. Despite requiring extensive training, these learning-based approaches promise to scale better than traditional search and planning algorithms in complex environments, thanks to their decentralized execution. In this paper, we empirically evaluate and compare a representative sample of learning-based algorithms for MAPF, highlighting their strengths and weaknesses, also comparing them with traditional search and planning algorithms. Interestingly, while learning-based algorithms are usually trained and tested in randomly-generated environments, we test them in warehouse environments, to evaluate their practical applicability in realistic MAPF settings. Our results show that some learning-based algorithms nearly match the performance of search and planning algorithms in terms of path quality and show limited computing effort, proving their potential as a viable option for practical applications.},
+  archive      = {J_RAS},
+  author       = {Andrea Giuffrida and Nicola Basilico and Francesco Amigoni},
+  doi          = {10.1016/j.robot.2025.105149},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105149},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {An empirical evaluation of learning-based multi-agent path finding algorithms in warehouse environments},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Design and motion analysis of a simple screw driven in-pipe inspection robot base on adaptive variable pitch. <em>RAS</em>, <em>194</em>, 105148. (<a href='https://doi.org/10.1016/j.robot.2025.105148'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In-pipe inspection robot (IPIR) play an important role in detecting the quality of the inner walls of oil and gas transportation pipelines and urban pipelines. However, due to the complex structure of the pipeline, robot is required to have adaptability. The currently existing screw driven pipeline robot has a fixed pitch, and the robot passively and rigidly pass through pipeline curvature. This article designs a simple adaptive variable pitch pipeline robot. The robot is driven by an electric motor and has simple motion control. The robot consists of a rotor that can adapt to changes in pipeline diameter and a stator with fixed dimensions. The robot adapts through pipeline curvature by continuously adjusting the pitch. The robot is equipped with a wide-angle lens and transmits quality images of the inner wall of the pipeline through Wi-Fi. Through theoretical analysis and model experiments, the robot can smoothly pass through vertical pipes with a diameter of 160 mm and 90-degree pipeline curvature.},
+  archive      = {J_RAS},
+  author       = {Jihua Yin and Xuemei Liu and Maokun Rui and Miao Yu},
+  doi          = {10.1016/j.robot.2025.105148},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105148},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Design and motion analysis of a simple screw driven in-pipe inspection robot base on adaptive variable pitch},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Real-time flame detection and localization for firefighting robots. <em>RAS</em>, <em>194</em>, 105147. (<a href='https://doi.org/10.1016/j.robot.2025.105147'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the realm of firefighting, firefighters frequently confront high-risk scenarios when encountering flames. The application of firefighting robots can either assist or even substitute human firefighters in entering dangerous environments, thereby protecting their safety. A critical component of firefighting robots is the capability for efficient and precise flame detection and localization. Therefore, this paper proposes a real-time vision-based system that combines YOLOv5s for high-accuracy flame detection with stereo vision for 3D position estimation, specifically optimized for embedded deployment. The proposed algorithm first employs the lightweight YOLOv5s model to identify flame regions in image frames, then calculates their spatial coordinates relative to the robot using depth information from a calibrated stereo camera. To validate the proposed method, experimental environments were constructed in both real-world and virtual reality settings, and extensive data collection and algorithm testing were conducted.},
+  archive      = {J_RAS},
+  author       = {Tao Yang and Weili Ding and Yaohui Wang and Taiyu Chen and Dianrui Mu},
+  doi          = {10.1016/j.robot.2025.105147},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105147},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Real-time flame detection and localization for firefighting robots},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Model-free kinematic control of redundant manipulators: A passivity perspective. <em>RAS</em>, <em>194</em>, 105146. (<a href='https://doi.org/10.1016/j.robot.2025.105146'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The advancement of methods in addressing the kinematic control problem of redundant manipulators has been rapid due to the emergence of neural networks. However, many studies have failed to adequately consider the physical structure of the system, leading to a less straightforward design process. This paper aims to tackle this issue by identifying a passive mapping in the control problem and enhancing the neural network solver to create a closed-loop and interpretable control system. Furthermore, the paper introduces a zeroing neural network model to estimate the unknown kinematic model of robots, which is then integrated with the improved neural network solver to establish a passive and model-free control framework. Safety measures for redundant manipulators are ensured by simultaneously taking into account joint angle and velocity constraints. The theoretical analysis confirms the convergence and passivity properties of the proposed method. The effectiveness and practicality of the approach are validated through simulations and experiments.},
+  archive      = {J_RAS},
+  author       = {Haoyu Liang and Peng Yu and Qinghua Lu and Yongxin Wu and Ning Tan},
+  doi          = {10.1016/j.robot.2025.105146},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105146},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Model-free kinematic control of redundant manipulators: A passivity perspective},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Vision-based approaches for cutting food products with robots: A review. <em>RAS</em>, <em>194</em>, 105145. (<a href='https://doi.org/10.1016/j.robot.2025.105145'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The use of robotic vision to cut deformable food objects is a challenge in robotics that has the potential to improve autonomy and create new opportunities in industries such as medicine, the food industry, and services. While cutting rigid objects is relatively simple, cutting deformable objects like food items, which change shape during the cutting process, is a significant challenge that requires advances in various aspects of robotics, including vision, modeling, hardware design, and control. This paper discusses recent developments in vision-based approaches for robots cutting food items and highlights the main challenges that must be overcome to succeed in this task and outline some potential future research directions.},
+  archive      = {J_RAS},
+  author       = {Abhaya Pal Singh and Dmytro Romanov and Ekrem Misimi and Alex Mason},
+  doi          = {10.1016/j.robot.2025.105145},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105145},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Vision-based approaches for cutting food products with robots: A review},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A novel closed-form solution for automatic calibration of extrinsic parameters based on plane-induced homography. <em>RAS</em>, <em>194</em>, 105144. (<a href='https://doi.org/10.1016/j.robot.2025.105144'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The extrinsic calibration of the camera is an important task for deploying an autonomous device. This paper proposes a novel method for the estimation of the six degrees of freedom extrinsic parameters in a camera-robot system, in which the plane-induced Homography between two camera images is employed. The characteristics of the eigenvalues and eigenvectors in the Homography are firstly investigated and identified supposing the robot performs a known translation motion. Then a closed-form solution for rotation matrix can be achieved from the eigenvectors and so is the translation vector in the extrinsic parameters. Three simulation experiments are performed to validate the correctness, accuracy and robustness. Besides, one real data experiment is implemented on our robot platform. For comparison, two recently reported algorithms are carried out under similar settings. The experimental results of means and standard deviations for those parameters demonstrate that the proposed solution can provide satisfactory performance.},
+  archive      = {J_RAS},
+  author       = {Beiwei Zhang and Zhiwang Zhang and Xueru Gu},
+  doi          = {10.1016/j.robot.2025.105144},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105144},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {A novel closed-form solution for automatic calibration of extrinsic parameters based on plane-induced homography},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Data-based controller for a soft robot actuated by ultrasonic atomization with unknown dynamics and uncertainty. <em>RAS</em>, <em>194</em>, 105143. (<a href='https://doi.org/10.1016/j.robot.2025.105143'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Soft robots are increasingly indispensable in engineering and scientific applications due to their ability to navigate unstructured environments, interact with humans, and emulate biological systems. These tasks pose challenges for rigid robots. Traditional actuation methods for soft robots rely on pneumatic or hydraulic systems, which may face limitations in miniaturized soft robots. Here, a soft robot featuring an actuation system based on vibrating mesh atomization and ethanol evaporation is introduced. However, the physical process of this actuator introduces noise, non-linearity, and hysteresis during displacement and force cycles. Thus, the inherent uncertainty and lack of a dynamic model pose challenges for a classical model-based control. Existing data-based controllers typically prioritize minimizing cost functions to address this issue. In this study, a novel data-based fuzzy network controller for the discussed soft actuation is proposed, integrating an input error function within a sliding mode framework. The controller, along with its learning law, is specifically designed to tackle time-varying parameters resulting from the hysteresis and nonlinear characteristics of soft robots. Rigorous analysis is provided using the Lyapunov method to validate the proposed approach. Numerical experiments were performed using an approximate discretized nonlinear model with noise to describe the data reported in the literature. Experimental validation involves measuring the voltage of a micro-force sensor to track blocking force as a control signal to the plant. Both numerical and experimental results validate the efficacy of the proposed controller in force tracking under external perturbations. Soft robots play an essential role in engineering and scientific applications due to their adaptability in unstructured environments, safe human interaction, and biomimetic capabilities—challenges that rigid robots face. Traditional actuation methods, such as pneumatic and hydraulic systems, exhibit limitations in miniaturized soft robots. This study presents a soft robot actuated by vibrating mesh atomization and ethanol evaporation. However, the actuator introduces noise, nonlinearity, and hysteresis, complicating model-based control. To address these challenges, a data-driven fuzzy network controller is proposed, integrating an input error function within a sliding mode framework. The controller and its learning law are designed to accommodate time-varying parameters associated with hysteresis and nonlinear behavior. Stability is rigorously analyzed using the Lyapunov method. Numerical experiments utilize a discretized nonlinear model with noise to approximate reported data. Experimental validation measures the voltage of a micro-force sensor to track blocking force as a control signal. Both numerical and experimental results confirm the controller’s effectiveness in force tracking under external perturbations.},
+  archive      = {J_RAS},
+  author       = {Josué Gómez and Arturo Baltazar and Isaias Campos and Chidentree Treesatayapun},
+  doi          = {10.1016/j.robot.2025.105143},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105143},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Data-based controller for a soft robot actuated by ultrasonic atomization with unknown dynamics and uncertainty},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Analytical inverse kinematic solution for the redundant 7-DoF manipulator. <em>RAS</em>, <em>194</em>, 105142. (<a href='https://doi.org/10.1016/j.robot.2025.105142'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes a novel parameterization analytical method to solve the inverse kinematics of a redundant 7-DoF manipulator. The current arm-angle parameterization methods cannot describe the self-motion of the elbow joint well. To address this issue, a novel arm length parameter that describes the manipulator’s redundancy is defined to represent the self-motion manifold of the elbow motion. Then the analytical inverse kinematics solutions can be obtained by utilizing arm length parameter and global configuration parameters. The joint angle constraints and singularity constraints are mapped to the arm length parameter space, and the feasible arm length intervals are derived. Furthermore, a redundant parameter optimization method is proposed based on the hierarchical motion control strategy, which applies the feasible arm length interval into the redundancy resolution problem. Numerical simulations are conducted to verify the proposed inverse kinematics method can reduce motion amplitude of joint angles during trajectory tracking and thus improve the motion accuracy of the manipulator compared with the traditional methods.},
+  archive      = {J_RAS},
+  author       = {Gang Wang and Wenjun Li and Xiaoshan Gao and Qi Zhang},
+  doi          = {10.1016/j.robot.2025.105142},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105142},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Analytical inverse kinematic solution for the redundant 7-DoF manipulator},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Variable-polygon-based planning method for reconfigurable topology truss robot. <em>RAS</em>, <em>194</em>, 105141. (<a href='https://doi.org/10.1016/j.robot.2025.105141'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes a variable-polygon-based random tree search algorithm with a variable polygon shape (VPRT) for Variable Topology Truss (VTT). This algorithm is a modified version of the previously proposed polygon-based random tree search expanded to the use of variable polygons other than triangles. The algorithm defines a new foot placement for polygons and subsequently determines the lowest cost required to complete the locomotion path of a VTT with non-triangular faces. Using this algorithm, the path planning of a VTT with any type of polygon can be performed. The performance of the algorithm was validated using simulated results with reference polyhedrons.},
+  archive      = {J_RAS},
+  author       = {Jeeho Won and Jangho Bae and Mark Yim and TaeWon Seo},
+  doi          = {10.1016/j.robot.2025.105141},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105141},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Variable-polygon-based planning method for reconfigurable topology truss robot},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning-aided state estimation for robotic rollators with experimental validation. <em>RAS</em>, <em>194</em>, 105140. (<a href='https://doi.org/10.1016/j.robot.2025.105140'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {While demand for assistive technology has risen with aging populations and concomitant increase in mobility disabilities, conventional (passive) walker designs have demonstrated safety and usability limitations. Robotic rollators (or 4-wheeled walkers) have been proposed to address concerns, including slip, fall, and collision risks. To develop control systems for robotic rollators, accurate estimation of the states is required. While model-based estimation approaches have been widely investigated for mobile robots, robotic rollators present unique challenges due to model parameter changes and uncertainties. In contrast, data-driven estimation approaches require sufficient excitation modes during learning to address corner cases. The proposed learning-aided state estimation (L-ASE) method augments an unscented transformation observer with a long short term memory (LSTM) based learning algorithm to estimate rollator states by using on-board inertial measurement unit data and wheel speeds. The stability and boundedness of the error covariance is investigated. The developed learning-aided estimation method is also experimentally verified for the walker-assisted gait and demonstrates superior performance using a robotic rollator platform in rigorous testing conditions.},
+  archive      = {J_RAS},
+  author       = {Abdullah Yeaser and James Tung and Jan Huissoon and Ehsan Hashemi},
+  doi          = {10.1016/j.robot.2025.105140},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105140},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Learning-aided state estimation for robotic rollators with experimental validation},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Data efficient deep reinforcement learning for robust inertial-based UAV localization. <em>RAS</em>, <em>194</em>, 105139. (<a href='https://doi.org/10.1016/j.robot.2025.105139'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Precise localization is a critical task for many UAV-based applications. Inertial Measurement Units (IMUs), which measure acceleration and angular velocity, are commonly used for UAV localization due to their low cost and small size. However, IMU-based localization is prone to accumulating errors over time, which can significantly impact the accuracy of the localization. To address this issue, we propose a data efficient Deep Reinforcement Learning (DRL) method that enables learning how to correct localization errors from IMUs. Our approach utilizes a novel data augmentation method, along with an appropriate “hint” loss that can provide additional supervision during the training process. As a result, the proposed method requires a very small number of real-world examples and can be implemented using widely available low cost RGB sensors, ensuring that it can be readily applied in a wide range of different applications. We demonstrate the effectiveness of the proposed method in both simulation and real-world UAV experiments. In comparison to traditional supervised and DRL approaches, the proposed approach allows for achieving more precise localization with fewer real-world examples, making it a practical tool for adapting DL-based localization models for UAV applications.},
+  archive      = {J_RAS},
+  author       = {Dimitrios Tsiakmakis and Nikolaos Passalis and Anastasios Tefas},
+  doi          = {10.1016/j.robot.2025.105139},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105139},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Data efficient deep reinforcement learning for robust inertial-based UAV localization},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Pro-routing: Proactive routing of autonomous multi-capacity robots for pickup-and-delivery tasks. <em>RAS</em>, <em>194</em>, 105138. (<a href='https://doi.org/10.1016/j.robot.2025.105138'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider a multi-robot setting, where we have a fleet of multi-capacity autonomous robots that must service spatially distributed pickup-and-delivery requests with fixed maximum wait times. Requests can be either scheduled ahead of time or they can enter the system in real-time. In this setting, stability for a routing policy is defined as the cost of the policy being uniformly bounded over time. Most previous work either solve the problem offline to theoretically maintain stability or they consider dynamically arriving requests at the expense of the theoretical guarantees on stability. In this paper, we aim to bridge this gap by proposing a novel proactive rollout-based routing framework that adapts to real-time demand while still provably maintaining the stability of the learned routing policy. We derive provable stability guarantees for our method by proposing a fleet sizing algorithm that obtains a sufficiently large fleet that ensures stability by construction. To validate our theoretical results, we consider a case study on real ride requests for Harvard’s Evening Van System, a university-wide minibus transportation service that allows students to book rides within an operational area around the campus. We also evaluate the performance of our framework using the currently deployed smaller fleet size under no traffic and average traffic conditions. In this smaller setup, we compare against the currently deployed routing algorithm, greedy heuristics, and Monte-Carlo-Tree-Search-based algorithms. Our empirical results show that our framework maintains stability when we use the sufficiently large fleet size found in our theoretical results. For the smaller currently deployed fleet size, our method services 15% more requests than the closest baseline while reducing median passenger wait times by 33%.},
+  archive      = {J_RAS},
+  author       = {Daniel Garces and Stephanie Gil},
+  doi          = {10.1016/j.robot.2025.105138},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105138},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Pro-routing: Proactive routing of autonomous multi-capacity robots for pickup-and-delivery tasks},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-robot rendezvous in communication-restricted unknown environments via backtracking and semantic frontier-based exploration. <em>RAS</em>, <em>194</em>, 105137. (<a href='https://doi.org/10.1016/j.robot.2025.105137'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The multi-robot rendezvous problem requires coordinating a team of mobile robots to converge at a common location. Efficient decentralized execution with limited communication and in unknown environments can be essential in several applications, but such real-world robotic features are often not captured by theoretical rendezvous frameworks. In this work, we present an approach to this problem that extends traditional frontier-based exploration strategies to facilitate efficient rendezvous in such conditions. Our method allows robots to backtrack their exploration of the environment and exploit semantic knowledge on the map by prioritizing high-connectivity areas like corridors and hallways. We define and evaluate different variants of our method to study a trade-off between the time taken to perform a rendezvous and the amount of discovered area in the environment. Extensive experimental evaluation in ROS using 3D simulations demonstrates the feasibility of our method and its performance improvements over baselines.},
+  archive      = {J_RAS},
+  author       = {Matteo Luperto and Mauro Tellaroli and Michele Antonazzi and Nicola Basilico},
+  doi          = {10.1016/j.robot.2025.105137},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105137},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Multi-robot rendezvous in communication-restricted unknown environments via backtracking and semantic frontier-based exploration},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A novel algorithm for key road sections obstacle detection based on LiDAR. <em>RAS</em>, <em>194</em>, 105136. (<a href='https://doi.org/10.1016/j.robot.2025.105136'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ensuring the safety of key road sections is crucial, and high-precision Obstacle Detection (OD) is necessary to achieve this goal. In this study, we utilized LiDAR technology to develop a novel algorithm that accurately detects obstacles in critical road sections. The algorithm consists of three main parts: Firstly, the point cloud is segmented into scan lines, and the distribution error of the scan lines is used to filter out point clouds that correspond to road boundary. Secondly, we used an improved DBSCAN algorithm to achieve global robust clustering. This method introduces a modulation function to dynamically regulate the neighbourhood radius during the clustering process by referring to the density distribution characteristics of point clouds in the x and y directions. This step was employed to extract suspicious obstacle clusters. Finally, we extract regions corresponding to the real-time input point cloud from the reference point cloud. Segmented ICP (Seg-ICP) registration was performed in the global scope to obtain a true set of obstacle clusters. Experiment results in multiple locations demonstrated that our algorithm could effectively identify dangerous obstacles in key road sections. Our algorithm can detect obstacles of 10 cm * 10 cm * 10 cm within a range of 50 m and its Average Final Detection Rate (AFDR) can reach at 99.47%, providing an optional means of safety protection for key road sections.},
+  archive      = {J_RAS},
+  author       = {Zongliang Nan and Guoan Zhu and Xu Zhang and Xiaoqi Liu and Xuechun Lin and Yingying Yang},
+  doi          = {10.1016/j.robot.2025.105136},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105136},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {A novel algorithm for key road sections obstacle detection based on LiDAR},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Distributed adaptive coverage control with obstacle avoidance for a drone network based on collective initial excitation. <em>RAS</em>, <em>194</em>, 105135. (<a href='https://doi.org/10.1016/j.robot.2025.105135'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper introduces a distributed adaptive controller for mobile sensor network (MSN) coverage that incorporates collective initial excitation (C-IE) while simultaneously ensuring obstacle avoidance. Agents exchange their parameter estimates with their neighbors to facilitate consensus on the unknown sensory function. They collectively achieve the C-IE condition, which enables parameter convergence and obviates the need for every agent to individually satisfy the excitation condition. This C-IE condition extends the previously established initial excitation (IE) condition to multi-agent systems. The proposed artificial potential-like control law and parameter adaptation guarantee both obstacle avoidance and coverage, along with parameter estimation. Experimental tests with multiple drones validate the effectiveness of the proposed method.},
+  archive      = {J_RAS},
+  author       = {S. Surendhar and Sayan Basu Roy and Shubhendu Bhasin},
+  doi          = {10.1016/j.robot.2025.105135},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105135},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Distributed adaptive coverage control with obstacle avoidance for a drone network based on collective initial excitation},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-scale elastic contour mapping for deformable object shape control. <em>RAS</em>, <em>194</em>, 105134. (<a href='https://doi.org/10.1016/j.robot.2025.105134'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Shape control involves manipulating a deformable object towards a desired shape. In this paper we present a multi-scale elastic contour mapping method for shape control of texture-less deformable objects. Our method considers similar geometric features between the current and the target shape by means of multi-scale Laplacian descriptors. We compute elastic maps and thus define a contour point error that considers the stretching and compressing processes involved in shape control tasks. We validate the applicability of our novel mapping method in real shape control frameworks by means of a proposed shape control law. We perform simulations and experiments on different objects and materials with two robotic arms to validate our method.},
+  archive      = {J_RAS},
+  author       = {Ignacio Cuiral-Zueco and Gonzalo López-Nicolás},
+  doi          = {10.1016/j.robot.2025.105134},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105134},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Multi-scale elastic contour mapping for deformable object shape control},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Task-focused robotic swarming: Maximising effectiveness via specialised roles. <em>RAS</em>, <em>194</em>, 105133. (<a href='https://doi.org/10.1016/j.robot.2025.105133'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the realm of distributed systems such as swarm robotics and other multi-agent setups, the principle of labour division stands as a fundamental cornerstone. In this study, we propose a task-specialised approach to robotic swarming. The framework integrates an anonymous hedonic game for task allocation and the Hilbert Space-Filling Algorithm for systematic area coverage. Focusing on the problem of efficient foraging, we conduct an in-depth comparative analysis between our proposed specialised approach and the conventional multi-tasking strategy. We establish two distinct swarm configurations: the multi-tasking swarm, where agents perform various sub-tasks, and the specialised swarm, comprising sub-teams focused on specific sub-tasks namely deposit searching and transportation. Throughout our investigation, encompassing diverse environmental scenarios with varying deposit distributions, we evaluate performance metrics such as deposit collection and distance travelled. The specialised approach harnesses the power of hedonic games to allocate tasks optimally within sub-teams, ensuring efficient resource transportation to the base. Our results reveal the advantages of the specialised swarm strategy. Through task specialisation, we achieve heightened scalability, reduced resource consumption, adaptability to dynamic environments, and resilience in the presence of agent unavailability.},
+  archive      = {J_RAS},
+  author       = {Essam Debie and Kathryn Kasmarik and Matthew Garratt},
+  doi          = {10.1016/j.robot.2025.105133},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105133},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Task-focused robotic swarming: Maximising effectiveness via specialised roles},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Circulation-embedded control barrier function for safe navigation: A solution to avoid undesired equilibria and dysfunctional circulation. <em>RAS</em>, <em>194</em>, 105132. (<a href='https://doi.org/10.1016/j.robot.2025.105132'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Control Barrier Function (CBF) is widely adopted in safety-critical applications such as safe navigation in an unknown environment. CBF quadratic program (CBF-QP) is a conventional CBF framework that acts as a safety filter. However, CBF-QP is prone to deadlocks, especially in dynamic and multi-agent environments, although it also occurs with convex obstacles. Specifically, CBF-QP suffers from several challenges, including undesired equilibria, accompanying slowdown behavior around these points, dysfunctional circulation, and becoming trapped in the obstacle. In this paper, we propose a practical solution to address these issues. First, we introduce the foundational principles and parameters for the proposed circulation-embedded CBF algorithm, which incorporates an effective circulation linear inequality constraint into CBF-QP. Moreover, input bounds constraints are incorporated to ensure that the rectified input is readily applicable and optimal. Then, we study the feasibility, continuity, equilibrium points, and convergence of the proposed circulation-embedded CBF-QP algorithm through propositions and formal proofs. Finally, the effectiveness of the proposed algorithm is demonstrated through experiments and comparisons involving unknown nonconvex obstacles and multi-robot scenarios without communication. The source code is released for the reference of the community. 2},
+  archive      = {J_RAS},
+  author       = {Shaghayegh Keyumarsi and Made Widhi Surya Atman and Azwirman Gusrialdi},
+  doi          = {10.1016/j.robot.2025.105132},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105132},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Circulation-embedded control barrier function for safe navigation: A solution to avoid undesired equilibria and dysfunctional circulation},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cooperative and asynchronous transformer-based mission planning for heterogeneous teams of mobile robots. <em>RAS</em>, <em>194</em>, 105131. (<a href='https://doi.org/10.1016/j.robot.2025.105131'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cooperative mission planning for heterogeneous teams of mobile robots presents a unique set of challenges, particularly when operating under communication constraints and limited computational resources. To address these challenges, we propose the Cooperative and Asynchronous Transformer-based Mission Planning (CATMiP) framework, which leverages multi-agent reinforcement learning (MARL) to coordinate distributed decision making among agents with diverse sensing, motion, and actuation capabilities, operating under sporadic ad hoc communication. A Class-based Macro-Action Decentralized Partially Observable Markov Decision Process (CMacDec-POMDP) is also formulated to effectively model asynchronous decision-making for heterogeneous teams of agents. The framework utilizes an asynchronous centralized training and distributed execution scheme, enabled by the proposed Asynchronous Multi-Agent Transformer (AMAT) architecture. This design allows a single trained model to generalize to larger environments and accommodate varying team sizes and compositions. We evaluate CATMiP in a 2D grid-world simulation environment and compare its performance against planning-based exploration methods. Results demonstrate CATMiP’s superior efficiency, scalability, and robustness to communication dropouts and input noise, highlighting its potential for real-world heterogeneous mobile robot systems. The code is available at https://github.com/mylad13/CATMiP .},
+  archive      = {J_RAS},
+  author       = {Milad Farjadnasab and Shahin Sirouspour},
+  doi          = {10.1016/j.robot.2025.105131},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105131},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Cooperative and asynchronous transformer-based mission planning for heterogeneous teams of mobile robots},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Resource-constrained dynamic planning and model-free control in turbulent urban environments. <em>RAS</em>, <em>194</em>, 105130. (<a href='https://doi.org/10.1016/j.robot.2025.105130'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work proposes a descriptive digital twin of an urban region with a sufficiently small footprint to run online in resource-constrained quadrotor systems. The digital twin describes the building geometries and turbulent kinetic energy (TKE) within an urban region, enabled via our proposed surrogate model (SM) for TKE reconstruction. This forms the basis of a simulation environment for autonomous path following and collision avoidance using Deep Reinforcement Learning (DRL). A Voronoi-based turbulence-weighted graph (TWG) is developed for safe path planning and is capable of reacting to dynamic changes in wind direction and, consequently, the turbulence field. Lastly, the environment simulates oncoming traffic of dynamic unknown obstacles for a vision-enabled DRL agent to evade. Several DRL agents with different observation and action spaces are trained and evaluated. The SM enables rapid reconstruction of the turbulence with an accuracy comparable to full-order methods. The TWG plans safe paths that reduce the worst-case TKE exposure by 44% at the cost of increasing the average path length by 33% compared to a shortest-distance approach. The DRL agents successfully solve the navigation problem with a 100% success rate in the static obstacle scenario, where the minimum clearance between buildings is 1 . 0 m . In scenarios with dynamic obstacles, the agent achieves a 79% success rate. Suggestions for further performance and safety improvements in the TWG planner and DRL agents are presented.},
+  archive      = {J_RAS},
+  author       = {Thomas Nakken Larsen and Mandar Tabib and Adil Rasheed},
+  doi          = {10.1016/j.robot.2025.105130},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105130},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Resource-constrained dynamic planning and model-free control in turbulent urban environments},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Unconventional grasping in multi-limb humanoid robot using fuzzy logic intelligence. <em>RAS</em>, <em>194</em>, 105129. (<a href='https://doi.org/10.1016/j.robot.2025.105129'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This research article outlines grasping using the whole body of a human and explores the similar grasping potential of a humanoid robot. The unconventional grasping for a humanoid robot is addressed, in which the robot can perform autonomous grasping by the potential body limbs based on the object’s location and size. A comprehensive grasping possibility with human body limbs is studied using a stick diagram. These limb-assisted grasps are reported to utilize the theory of enumerative combinatorics, and an upper-body humanoid robot is used to implement some feasible intelligent, unconventional grasping. Single-Input Multi-Output and Multi-Input Multi-Output fuzzy logic control algorithms are developed to acquire the intelligent grasp objectives. These algorithms assign grasp weightage based on the size and position of the object to instruct the individual robotic arms to be involved in the grasping. Further, a Humanoid Robot Grasp Control algorithm is developed for head and arm motion control that assists in grasp execution. Finally, unconventional grasps are implemented using an upper-body dual-arm humanoid robot consisting of a 7 DoF robot with left and right arms, torso, and head in the virtual environment. The proposed strategy offers a benefit in intelligent grasping and improves the adaptability of a humanoid robot’s limbs for handling a variety of primitive-shaped objects.},
+  archive      = {J_RAS},
+  author       = {Indramani and Arun Dayal Udai and Sanjoy K. Ghoshal},
+  doi          = {10.1016/j.robot.2025.105129},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105129},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Unconventional grasping in multi-limb humanoid robot using fuzzy logic intelligence},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). NMPC design for a self-aligning compliant gait rehabilitation robot. <em>RAS</em>, <em>194</em>, 105128. (<a href='https://doi.org/10.1016/j.robot.2025.105128'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The application of robotic devices in rehabilitation is proliferating. Such devices’ mechanism design, actuation, and control strategy are essential for effective and successful rehabilitation treatment. This paper investigates the effectiveness of a self-aligning mechanism for a multi-DOFs (Degrees of Freedom) rehabilitation robot. The actuation is provided by lightweight albeit powerful Pneumatic Muscle Actuators (PMA). Although the mechanism design and the actuation system provide a safe, secure, and efficient platform for rehabilitation, they increase the complexity of the system modeling and, subsequently, the control system’s design. Furthermore, the mechanism has three active and five passive DOFs, which further increase the intricacies of system identification. Hence, this paper presents an autodidactic approach to identify the system dynamics using the Koopman operator. The learned operator is then integrated with the Nonlinear Model Predictive Controller (NMPC) to guide the robot along the predefined path while adapting to the nonlinear dynamics of the physical human-robot interaction. Finally, the rehabilitation robot and the control scheme were experimentally validated with healthy human subjects. The results demonstrate that the NMPC controller could successfully manipulate the gait rehabilitation robot with the subject to achieve the desired orientation during the entire gait cycle.},
+  archive      = {J_RAS},
+  author       = {Yinan Jin and Tanishka Goyal and Prashant K. Jamwal and Roland Goecke and Mergen H. Ghayesh and Shahid Hussain},
+  doi          = {10.1016/j.robot.2025.105128},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105128},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {NMPC design for a self-aligning compliant gait rehabilitation robot},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AEROBULL: A center-of-mass displacing aerial vehicle enabling efficient high-force interaction. <em>RAS</em>, <em>194</em>, 105127. (<a href='https://doi.org/10.1016/j.robot.2025.105127'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Aerial manipulators are increasingly used in contact-based industrial applications, where tasks like drilling and pushing require platforms to exert significant forces in multiple directions. To enhance force generation capabilities, various approaches, such as thrust vectoring and perching, have been explored. In this article, we introduce a novel approach by investigating the impact of varied CoM (Center of Mass) locations on an aerial manipulation system’s force exertion. Our proposed platform-AEROBULL features a design with a dynamically displacing CoM, enabling a smooth transition between free flight and high-force interactions supported by tilting back rotors. We provide a detailed study of the aerial platform’s overall system design, hardware integration of the developed physical prototype, and software architecture of the proposed control algorithm. Physical experiments were conducted to validate the control design and explore the force generation capability of the designed platform via a pushing task. With a total mass of 3 . 12 k g , the aerial vehicle exerted a maximum pushing force of above 28 N being almost equal to its gravity force. Furthermore, the experiments illustrated the benefits of having displaced CoM by benchmarking with a fixed CoM configuration. Additionally, we introduce a quantitative factor to compare the force exertion capabilities of our system with existing platforms, highlighting the advantages of our approach.},
+  archive      = {J_RAS},
+  author       = {Tong Hui and Stefan Rucareanu and Esteban Zamora and Simone D’Angelo and Haotian Liu and Matteo Fumagalli},
+  doi          = {10.1016/j.robot.2025.105127},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105127},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {AEROBULL: A center-of-mass displacing aerial vehicle enabling efficient high-force interaction},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Very large-scale multi-robot task allocation in challenging environments via robot redistribution. <em>RAS</em>, <em>194</em>, 105126. (<a href='https://doi.org/10.1016/j.robot.2025.105126'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the Multi-Robot Task Allocation (MRTA) problem that aims to optimize an assignment of multiple robots to multiple tasks in challenging environments which are with densely populated obstacles and narrow passages. In such environments, conventional methods optimizing the sum-of-cost are often ineffective because the conflicts between robots incur additional costs (e.g., collision avoidance, waiting). Also, an allocation that does not incorporate the actual robot paths could cause deadlocks, which significantly degrade the collective performance of the robots. We propose a scalable MRTA method that considers the paths of the robots to avoid collisions and deadlocks which result in a fast completion of all tasks (i.e., minimizing the makespan ). To incorporate robot paths into task allocation, the proposed method constructs a roadmap using a Generalized Voronoi Diagram. The method partitions the roadmap into several components to know how to redistribute robots to achieve all tasks with less conflicts between the robots. In the redistribution process, robots are transferred to their final destinations according to a push-pop mechanism with the first-in first-out principle. From the extensive experiments, we show that our method can handle instances with hundreds of robots in dense clutter while competitors are unable to compute a solution within a time limit.},
+  archive      = {J_RAS},
+  author       = {Seabin Lee and Joonyeol Sim and Changjoo Nam},
+  doi          = {10.1016/j.robot.2025.105126},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105126},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Very large-scale multi-robot task allocation in challenging environments via robot redistribution},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Design and optimization of a novel pneumatic translational manipulator with independent constraints. <em>RAS</em>, <em>194</em>, 105125. (<a href='https://doi.org/10.1016/j.robot.2025.105125'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Pneumatic parallel translation robots offer several advantages in complex industrial production environments, such as a simple structure, high cleanliness, and excellent safety. This paper presents a novel split-type translational manipulator structure 3S P S+3CPR. The independent restraining limbs (3-CPR) effectively constrain undesired degrees of freedom at the platform's end without compromising the kinematic properties of the manipulator. This paper provides kinematic, workspace analysis, and performance evaluation, and furthermore, proposes a dimensional optimization scheme for the manipulator based on motion/force transmission performance and geometric constraints. Prototype experiments have been conducted to validate the rationality and efficacy of the overall design. Compared to traditional integrated drive-constrained translational mechanisms, this pure linear transmission design features simple analysis, flexible design, and fewer associated parameters. Additionally, using cylinders as actuators endows the manipulator with rapid response characteristics, making it suitable for industrial applications requiring fast translation.},
+  archive      = {J_RAS},
+  author       = {Tao Wang and Ying Zhao and Bo Wang},
+  doi          = {10.1016/j.robot.2025.105125},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105125},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Design and optimization of a novel pneumatic translational manipulator with independent constraints},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhanced hierarchical fuzzy formation control with fuzzy collision avoidance behavior for multiple mecanum wheeled mobile robots. <em>RAS</em>, <em>194</em>, 105124. (<a href='https://doi.org/10.1016/j.robot.2025.105124'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Integrating collision avoidance mechanisms into formation control represents a critical aspect for enabling multi-mobile robotic coordination from arbitrary initial configurations. Additionally, the reliance on precise system models for controller design and leader-centralized control architecture limits the flexibility to dynamically reconfigure the formation structure, which is often crucial in real-world applications. Consequently, exploration of modularly interpretable and model-free control strategies emerge as a compelling research direction to address contemporary robotic coordination challenges. This study proposes a Hierarchical Fuzzy Formation Control (HFFC) approach for multiple Mecanum-wheeled Mobile Robots (MMRs) to achieve simultaneous formation tracking, collision avoidance, and orientation alignment. The HFFC leverages a modular hierarchical fuzzy inference system, combining leader–follower and behavior-based strategies. Fuzzified sliding surfaces enhance the tracking performance by minimizing oscillation and chattering effects during formation convergence. Collision avoidance is improved by incorporating inter-MMR approaching rate, enabling proactive anticipation and more responsive maneuvers. A realistic Takagi–Sugeno model, replicating real-world MMR behavior with practical actuator voltage inputs, is developed for evaluation. Simulations demonstrate that five MMRs achieve the desired formation geometry within 1.9 s with 0.048 m accuracy while maintaining a minimum inter-robot distance of 10.77 cm to prevent collisions. Moreover, compared to existing approaches, the proposed control scheme possesses better performance.},
+  archive      = {J_RAS},
+  author       = {Hsiu-Ming Wu and Muhammad Qomaruz Zaman},
+  doi          = {10.1016/j.robot.2025.105124},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105124},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Enhanced hierarchical fuzzy formation control with fuzzy collision avoidance behavior for multiple mecanum wheeled mobile robots},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Quantum neural network-based inverse kinematics of a six-jointed industrial robotic arm. <em>RAS</em>, <em>194</em>, 105123. (<a href='https://doi.org/10.1016/j.robot.2025.105123'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This research examines the potential of quantum-inspired neural networks (QNNs) for solving the inverse kinematics of robotic arms, focusing on the six-degree-of-freedom ABB IRB140 robot. Traditional inverse kinematics approaches face challenges such as non-unique solutions and computational complexity, especially with increasing degrees of freedom. While artificial neural networks (ANNs) have shown promise, they require further improvements, particularly in terms of quantum computing integration. This study introduces a quantum-inspired activation function to multi-layer perceptron neural networks. We compared ANNs and QNNs with and without singularity avoidance, finding that QNNs significantly outperformed ANNs in mean absolute error (MAE), achieving a 15.60 % lower MAE in singularity-free models and a 16.67 % lower MAE in singularity-avoidance models. The QNNs demonstrated superior precision, with a position error of 1.64 mm and an orientation error of 0.00179 radians when avoiding singularities. These results highlight the potential of QNNs to enhance the precision, efficiency, and performance of robotic arm manipulation. Quantum computing offers advantages including parallelism, quantum entanglement, and quantum annealing, which contribute to the QNNs’ superior performance. Overall, this study represents a practical contribution to robotics and quantum computing, paving the way for future research into applying quantum principles to neural network models for robotics.},
+  archive      = {J_RAS},
+  author       = {Mehdi Fazilat and Nadjet Zioui},
+  doi          = {10.1016/j.robot.2025.105123},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105123},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Quantum neural network-based inverse kinematics of a six-jointed industrial robotic arm},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Data efficient online learning of robot behaviours via qualitative planning and reinforcement learning. <em>RAS</em>, <em>194</em>, 105122. (<a href='https://doi.org/10.1016/j.robot.2025.105122'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Autonomous robots execute complex behaviours to perform tasks in real-world environments. Reinforcement learning can acquire such behaviours, however, often requires a large number of iterations to reach an operational behaviour. This makes it inefficient for online learning, that is, learning on board the robot as it operates. Combinations of techniques such as model-based reinforcement learning, planning, and behavioural cloning, attempt to narrow the search space of trial-and-error learning. However, they rely on a significant degree of domain knowledge. We develop a domain independent Data Efficient Planning and Learning Architecture for online skill acquisition and which is applied to locomotion tasks on a multi-tracked robot typical of those designed for urban search and rescue. We build a qualitative model of the robot’s dynamics from online behavioural traces, that trades accuracy for domain independence in elevating the skill acquisition problem into a symbolic representation. Then a forward-chaining planner finds an operational sequence of qualitative symbolic actions enabling the robot to complete a task, from which quantitative action parameters representing the robot’s actuator movements are extracted. The qualitative plan places constraints on valid parameter values. This enables online reinforcement learning to refine the parameters into satisficing (or optimal) actuator movements, making trial-and-error learning data efficient in terms of the number of trials. By applying our architecture in a “closed-loop”, the qualitative model is improved from the reinforcement learning trials, refining the final robot’s operation, along with discovering new emergent behaviours.},
+  archive      = {J_RAS},
+  author       = {Timothy Wiley and Claude Sammut},
+  doi          = {10.1016/j.robot.2025.105122},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105122},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Data efficient online learning of robot behaviours via qualitative planning and reinforcement learning},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Regional pole placement-based robust lateral controller for autonomous ground vehicles considering uncertainty. <em>RAS</em>, <em>194</em>, 105121. (<a href='https://doi.org/10.1016/j.robot.2025.105121'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Autonomous ground vehicles (AGVs) often face challenges in maintaining tracking accuracy and stability due to uncertainties and external factors, such as variations in road surface friction and wind. These factors, particularly at higher speeds, significantly hinder the ability to achieve the desired stability and tracking performance. To address these challenges, we propose a novel robust lateral controller (RLC) by exploiting the H ∞ synthesis technique, considering uncertain cornering stiffness, with linear matrix inequality (LMI)-based regional pole placement constraints (RPPC). The proposed regional pole placement constraints-based robust lateral controller (RPPC-RLC) with uncertainty is designed to be robust against variations in road conditions and external disturbances, ensuring the desired path-tracking accuracy and vehicle stability. A state-feedback control law is employed using a nonlinear vehicle dynamics model to develop LMIs as performance conditions. Additionally, we utilised RPPC technique to precisely refine the controller gain for ensuring precise stability and robust performance in the presence of uncertainties and active disturbances. The proposed controller’s effectiveness is rigorously examined under different road conditions, various AGV speeds, and both the presence and absence of wind disturbances, while cornering stiffness was considered an uncertain parameter. The performance of the controller was also compared with several commonly used controllers, such as the model predictive controller (MPC), H 2 , conventional robust controller, and the Linear Quadratic Regulator (LQR). The results demonstrate that the proposed controller outperforms these alternatives in terms of minimising the lateral position error and heading error, based on different statistical parameters. Furthermore, we validated the controller’s performance in a MATLAB/Simulink environment using a 14-degree-of-freedom complex vehicle model. Finally, the proposed RPPC-RLC with uncertainty exhibited efficient tracking performance and maintained the stability of the AGV under varying road conditions and wind disturbances at different speeds, even at high speeds.},
+  archive      = {J_RAS},
+  author       = {Md. Abdur Rahim and Mohammad Rokonuzzaman and Ahmad Abu Alqumsan and Adetokunbo Arogbonlo},
+  doi          = {10.1016/j.robot.2025.105121},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105121},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Regional pole placement-based robust lateral controller for autonomous ground vehicles considering uncertainty},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Phase-independent dynamic movement primitives with applications to human–robot co-manipulation and time optimal planning. <em>RAS</em>, <em>194</em>, 105120. (<a href='https://doi.org/10.1016/j.robot.2025.105120'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dynamic Movement Primitives (DMP) are an established and efficient method for encoding robotic tasks that require adaptation based on reference motions. Typically, the nominal trajectory is obtained through Programming by Demonstration (PbD), where the robot learns a task via kinesthetic guidance and reproduces it in terms of both geometric path and timing law. Modifying the duration of the execution in standard DMPs is achieved by adjusting a time constant in the model. This paper introduces a novel approach to fully decouple the geometric information of a task from its temporal information using an algorithm called spatial sampling, which allows parameterizing the demonstrated curve by its arc-length. This motivates the use of the name Geometric DMP (GDMP) for the proposed DMP approach. The proposed spatial sampling algorithm guarantees the regularity of the demonstrated curve and ensures a consistent projection of the human force throughout the task in a human-in-the-loop scenario. GDMP exhibits phase independence, as its phase variable is no longer constrained to the demonstration’s timing law, enabling a wide range of applications, including phase optimization problems and human-in-the-loop applications. Firstly, a minimum task duration optimization problem subject to velocity and acceleration constraints is formulated. The decoupling of path and speed in GDMP allows to achieve optimal time duration without violating the constraints. Secondly, GDMP is validated in a human-in-the-loop application, providing a theoretical passivity analysis and an experimental stability evaluation in co-manipulation tasks. Finally, GDMP is compared with other DMP architectures available in the literature, both for the phase optimization problem and experimentally with reference to an insertion task and a simulated welding task, showcasing the enhanced performance of GDMP with respect to other solutions.},
+  archive      = {J_RAS},
+  author       = {Giovanni Braglia and Davide Tebaldi and Luigi Biagiotti},
+  doi          = {10.1016/j.robot.2025.105120},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105120},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Phase-independent dynamic movement primitives with applications to human–robot co-manipulation and time optimal planning},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Path and footfall planning for N-legged and climbing robots — A model predictive control approach. <em>RAS</em>, <em>194</em>, 105119. (<a href='https://doi.org/10.1016/j.robot.2025.105119'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we present a general control framework for N-legged and variably-configured robots, designed to coordinate leg movements for climbing tasks without relying on Central Pattern Generators (CPGs). Model-based path and footfall planners are introduced to minimize actuator effort, minimize robot detachment risk, improve payload distribution between legs, and maximize the traveled distance during the swing phase. To achieve this, we address the force distribution problem (FDP) by selecting configurations where the robot is most comfortable in terms of kinematics, effort, and safety. A gait controller is presented as a nonperiodic, nonsymmetric, and nonregular bioinspired method that selects the most convenient leg to move by ensuring comfort, safety, and robot capabilities. The system has been tested in simulation with different robot configurations (varying number of legs and arrangements) and with the physical robot ROMERIN in its quadruped version.},
+  archive      = {J_RAS},
+  author       = {Carlos Prados and Miguel Hernando and Ernesto Gambao},
+  doi          = {10.1016/j.robot.2025.105119},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105119},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Path and footfall planning for N-legged and climbing robots — A model predictive control approach},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Trajectory planning system for bimanual robots: Achieving efficient collision-free manipulation. <em>RAS</em>, <em>194</em>, 105118. (<a href='https://doi.org/10.1016/j.robot.2025.105118'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Pick-and-place operations are non-value-added activities but essential in many industrial processes. Some of these operations must be performed by dual-arm robots, which represent new challenges in terms of collision-avoidance due to the use of a shared workspace. This work addresses these two issues by proposing a Task and Motion Architecture (TMA) designed to optimize pick-and-place tasks, ensuring efficient and safe operation through collision-free movements. This architecture consists of two interconnected sublayers, the Task Planner (TP) and the Global Motion Planner (GMP). The TP calculates the optimal sequence of operations, minimizing the total execution time and guaranteeing a collision-free sequence. The GMP plans the trajectories of the robotic arms using predefined motion strategies and following the calculated optimal sequence. This work presents a novel solution for enhancing the efficiency of robot coordination in real-world settings by integrating an intercommunicated TP and MP. Results from simulations demonstrate improved task efficiency, reduced operational times, and successful collision avoidance between robots.},
+  archive      = {J_RAS},
+  author       = {Francisco José Martínez-Peral and Jorge Borrell Méndez and Dennis Mronga and José Vicente Segura-Heras and Carlos Perez-Vidal},
+  doi          = {10.1016/j.robot.2025.105118},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105118},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Trajectory planning system for bimanual robots: Achieving efficient collision-free manipulation},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Sampling functions for global motion planning using maps of dynamics for mobile robots. <em>RAS</em>, <em>194</em>, 105117. (<a href='https://doi.org/10.1016/j.robot.2025.105117'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Motion planning for mobile robots in dynamic environments shared with people is challenging. In a typical hierarchical planning framework, robots use a global planner for overall path-finding and a local planner for immediate adjustments to the path. Without considering the typical patterns of motion of dynamic entities, the global planner might generate paths that lead the robot into highly congested areas, where it is forced to wait, replan or manoeuvre around dynamic obstacles. Maps of Dynamics (MoDs) are a way to mitigate these issues. MoDs represent patterns of motion exhibited by moving entities in the environment, using probabilistic models. The use of MoDs in cost functions for motion planning enables a robot to plan motions that consider the motion patterns encoded in the MoDs. In previous work, it has been shown that the use of MoDs in the cost function helps generate more efficient paths, i.e., paths that lead to the robot and pedestrians spending less time waiting for each other. It has also been shown that using MoDs in the sampling step of sampling-based motion planning is beneficial to a mobile robot since it can result in reduced computation time by explicitly guiding the sampling process using information encoded in MoDs. However, existing work on the use of MoDs in the sampling process is limited. Correspondingly, an analysis of the performance of sampling heuristics for MoDs is also largely lacking. Since such an analysis is crucial to understand the effectiveness of MoDs in a practical setting, we ask the research question: can we obtain reasonably low-cost solutions using sampling-based motion planners that consider the flow of dynamic entities, in a reasonable amount of time . In this paper, we propose substantial improvements to two existing sampling heuristics: the Dijkstra-graph sampling (DGS), previously restricted to a specific type of MoD is extended to use any MoD; and the intensity-map (normalized number of observations of dynamic entities in each grid cell) is utilized more effectively by using importance sampling instead of rejection sampling. We show that an ellipsoidal heuristic can also be used with MoDs. We experimentally validate several sampling heuristics on two different sampling-based motion planners and present a comprehensive evaluation (52800 runs) of their performance on real-world data from densely populated environments. We conclude that reasonably cost solutions can be quickly obtained using a combination of the sampling heuristics within practically feasible time limits. Using the RRT* planner with our proposed MoD-aware, Dijkstra-graph-based heuristic yields ≈ 5%, %10 and 12% higher success rates after 2, 4 and 8 s of planning respectively, compared to uniform sampling, the baseline.},
+  archive      = {J_RAS},
+  author       = {Chittaranjan Srinivas Swaminathan and Tomasz P. Kucner and Achim J. Lilienthal and Martin Magnusson},
+  doi          = {10.1016/j.robot.2025.105117},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105117},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Sampling functions for global motion planning using maps of dynamics for mobile robots},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A barrier lyapunov-based fast adaptive robust control system for 6-DOF autonomous submersible vehicles. <em>RAS</em>, <em>194</em>, 105115. (<a href='https://doi.org/10.1016/j.robot.2025.105115'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes a novel fast adaptive back-stepping robust controller, based on the barrier Lyapunov function ( BLF ), to address the position and velocity constraints typically imposed in the design of Euler–Lagrange systems . The aim is to improve upon various aspects of conventional L 1 adaptive control and Model Reference Adaptive Control ( MRAC ). The proposed controller reduces complexity by eliminating the low-pass filter from the design process in L 1 adaptive control, resulting in faster convergence and enhanced robustness against nonlinear uncertainties, external disturbances, and actuator dynamics , which are crucial in real-world applications. The performance of the proposed scheme is evaluated on two different Euler–Lagrange systems: a 6-degree-of-freedom (6- DOF ) remotely operated vehicle ( ROV ) and a single-link robot manipulator. Key performance indicators such as settling time, overshoot percentage, control effort, and trajectory tracking error are used for assessment. The results confirm that the proposed controller outperforms both L 1 adaptive control and MRAC in terms of tracking accuracy and state estimation errors for both position and velocity outputs. Additionally, the proposed method demonstrates superior performance in handling actuator dynamics, mitigating matched nonlinear time-varying disturbances, and achieving precise trajectory tracking, even in the presence of input gain uncertainties. These improvements establish the proposed controller as a more robust and efficient alternative to traditional adaptive control methods.},
+  archive      = {J_RAS},
+  author       = {Hossein Ahmadian and Mohammad Mehdi Arefi and Alireza Khayatian and Allahyar Montazeri},
+  doi          = {10.1016/j.robot.2025.105115},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105115},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {A barrier lyapunov-based fast adaptive robust control system for 6-DOF autonomous submersible vehicles},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Conform to grip: Joint reaction force-driven adaptive variable admittance control of biped climbing robots. <em>RAS</em>, <em>194</em>, 105105. (<a href='https://doi.org/10.1016/j.robot.2025.105105'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Current biped climbing robots encounter persistent challenges in aligning their grippers with structural elements like poles, regardless of teleoperation or perception-based control implementations. To overcome this limitation, we present a joint reaction force-driven adaptive variable admittance control framework that enables autonomous compliant alignment with enhanced precision. The proposed method utilizes unintentional gripper-pole contact-induced joint reaction forces to drive alignment through a variable damping admittance controller. Damping parameters are adaptively regulated through proportional-derivative control law based on real-time joint reaction force errors. By establishing zero reference reaction force, the system concurrently accomplishes dual objectives: gripper pose alignment and reaction force minimization. Experimental validation confirms that our framework significantly enhances alignment efficiency and gripping reliability without requiring explicit gripper-pole pose detection. This methodology proves particularly effective for robotic systems transitioning between open-chain and closed-chain configurations while resolving inherent joint conflicts.},
+  archive      = {J_RAS},
+  author       = {Haifei Zhu and Pengcheng Ye and Jiongyu Tan and Weinan Chen and Tao Zhang and Yisheng Guan},
+  doi          = {10.1016/j.robot.2025.105105},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105105},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {Conform to grip: Joint reaction force-driven adaptive variable admittance control of biped climbing robots},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LiDAR odometry method based on multi-scale fusion and semantic enhancement. <em>RAS</em>, <em>194</em>, 105093. (<a href='https://doi.org/10.1016/j.robot.2025.105093'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we propose an end-to-end deep learning-based LiDAR odometry framework addressing key challenges such as point cloud information loss, density variability, and dynamic scene uncertainty. By directly using raw point clouds, our method avoids dimensionality reduction loss and introduces a light-weight geometrically adaptive convolution to improve feature extraction based on local geometric structures. Additionally, a multi-scale fusion and semantic enhancement strategy is employed to incorporate semantic context and optimize pose estimation from coarse to fine. Experimental results on the KITTI dataset show that our approach is competitive with existing methods in accuracy and robustness.},
+  archive      = {J_RAS},
+  author       = {Yibin Ye and Yang Ren and Yiming Fan and Yiyou Liang and Hui Zeng},
+  doi          = {10.1016/j.robot.2025.105093},
+  journal      = {Robotics and Autonomous Systems},
+  month        = {12},
+  pages        = {105093},
+  shortjournal = {Robot. Auton. Syst.},
+  title        = {LiDAR odometry method based on multi-scale fusion and semantic enhancement},
+  volume       = {194},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ECJ</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ecj">ECJ - 5</h2>
+<ul>
+<li><details>
+<summary>
+(2025). On the use of the doubly stochastic matrix models for the quadratic assignment problem. <em>ECJ</em>, <em>33</em>(3), 425-457. (<a href='https://doi.org/10.1162/evco_a_00369'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Permutation problems have captured the attention of the combinatorial optimization community for decades due to the challenge they pose. Although their solutions are naturally encoded as permutations, in each problem, the information to be used to optimize them can vary substantially. In this paper, we consider the Quadratic Assignment Problem (QAP) as a case study, and propose using Doubly Stochastic Matrices (DSMs) under the framework of Estimation of Distribution Algorithms. To that end, we design efficient learning and sampling schemes that enable an effective iterative update of the probability model. Conducted experiments on commonly adopted benchmarks for the QAP prove doubly stochastic matrices to be preferred to the other four models for permutations, both in terms of effectiveness and computational efficiency. Moreover, additional analyses performed on the structure of the QAP and the Linear Ordering Problem (LOP) show that DSMs are good to deal with assignment problems, but they have interesting capabilities to deal also with ordering problems such as the LOP. The paper concludes with a description of the potential uses of DSMs for other optimization paradigms, such as genetic algorithms or model-based gradient search.},
+  archive      = {J_ECJ},
+  author       = {Santucci, Valentino and Ceberio, Josu},
+  doi          = {10.1162/evco_a_00369},
+  journal      = {Evolutionary Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {425-457},
+  shortjournal = {Evol. Comput.},
+  title        = {On the use of the doubly stochastic matrix models for the quadratic assignment problem},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). P-NP instance decomposition based on the fourier transform for solving the linear ordering problem. <em>ECJ</em>, <em>33</em>(3), 395-423. (<a href='https://doi.org/10.1162/evco_a_00368'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Fourier transform over finite groups has proved to be a useful tool for analyzing combinatorial optimization problems. However, few heuristic and metaheuristic algorithms have been proposed in the literature that utilize the information provided by this technique to guide the search process. In this work, we attempt to address this research gap by considering the case study of the Linear Ordering Problem (LOP). Based on the Fourier transform, we propose an instance decomposition strategy that divides any LOP instance into the sum of two LOP instances associated with a P and an NP-Hard optimization problem. By linearly aggregating the instances obtained from the decomposition, it is possible to create artificial instances with modified proportions of the P and NP-Hard components. Conducted experiments show that increasing the weight of the P component leads to a less rugged fitness landscape suitable for local search-based optimization. We take advantage of this phenomenon by presenting a new metaheuristic algorithm called P-Descent Search (PDS). The proposed method, first, optimizes a surrogate instance with a high proportion of the P component, and then, gradually increases the weight of the NP-Hard component until the original instance is reached. The multi-start version of PDS shows a promising and predictable performance that appears to be correlated to specific characteristics of the problem, which could open the door to an automatic tuning of its hyperparameters.},
+  archive      = {J_ECJ},
+  author       = {Benavides, Xabier and Hernando, Leticia and Ceberio, Josu and Lozano, Jose A.},
+  doi          = {10.1162/evco_a_00368},
+  journal      = {Evolutionary Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {395-423},
+  shortjournal = {Evol. Comput.},
+  title        = {P-NP instance decomposition based on the fourier transform for solving the linear ordering problem},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimizing monotone chance-constrained submodular functions using evolutionary multiobjective algorithms. <em>ECJ</em>, <em>33</em>(3), 363-393. (<a href='https://doi.org/10.1162/evco_a_00360'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many real-world optimization problems can be stated in terms of submodular functions. Furthermore, these real-world problems often involve uncertainties which may lead to the violation of given constraints. A lot of evolutionary multiobjective algorithms following the Pareto optimization approach have recently been analyzed and applied to submodular problems with different types of constraints. We present a first runtime analysis of evolutionary multiobjective algorithms based on Pareto optimization for chance-constrained submodular functions. Here the constraint involves stochastic components and the constraint can only be violated with a small probability of α ⁠ . We investigate the classical GSEMO algorithm for two different bi-objective formulations using tail bounds to determine the feasibility of solutions. We show that the algorithm GSEMO obtains the same worst case performance guarantees for monotone submodular functions as recently analyzed greedy algorithms for the case of uniform IID weights and uniformly distributed weights with the same dispersion when using the appropriate bi-objective formulation. As part of our investigations, we also point out situations where the use of tail bounds in the first bi-objective formulation can prevent GSEMO from obtaining good solutions in the case of uniformly distributed weights with the same dispersion if the objective function is submodular but non-monotone due to a single element impacting monotonicity. Furthermore, we investigate the behavior of the evolutionary multiobjective algorithms GSEMO, NSGA-II, and SPEA2 on different submodular chance-constrained network problems. Our experimental results show that the use of evolutionary multiobjective algorithms leads to significant performance improvements compared to state-of-the-art greedy algorithms for submodular optimization.},
+  archive      = {J_ECJ},
+  author       = {Neumann, Aneta and Neumann, Frank},
+  doi          = {10.1162/evco_a_00360},
+  journal      = {Evolutionary Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {363-393},
+  shortjournal = {Evol. Comput.},
+  title        = {Optimizing monotone chance-constrained submodular functions using evolutionary multiobjective algorithms},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Genetic programming for automatically evolving multiple features to classification. <em>ECJ</em>, <em>33</em>(3), 335-362. (<a href='https://doi.org/10.1162/evco_a_00359'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Performing classification on high-dimensional data poses a significant challenge due to the huge search space. Moreover, complex feature interactions introduce an additional obstacle. The problems can be addressed by using feature selection to select relevant features or feature construction to construct a small set of high-level features. However, performing feature selection or feature construction might only make the feature set suboptimal. To remedy this problem, this study investigates the use of genetic programming for simultaneous feature selection and feature construction in addressing different classification tasks. The proposed approach is tested on 16 datasets and compared with seven methods including both feature selection and feature construction techniques. The results show that the obtained feature sets with the constructed and/or selected features can significantly increase the classification accuracy and reduce the dimensionality of the datasets. Further analysis reveals the complementarity of the obtained features leading to the promising classification performance of the proposed method.},
+  archive      = {J_ECJ},
+  author       = {Wang, Peng and Xue, Bing and Liang, Jing and Zhang, Mengjie},
+  doi          = {10.1162/evco_a_00359},
+  journal      = {Evolutionary Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {335-362},
+  shortjournal = {Evol. Comput.},
+  title        = {Genetic programming for automatically evolving multiple features to classification},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Large-scale multiobjective evolutionary algorithm guided by low-dimensional surrogates of scalarization functions. <em>ECJ</em>, <em>33</em>(3), 309-334. (<a href='https://doi.org/10.1162/evco_a_00354'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, computationally intensive multiobjective optimization problems have been efficiently solved by surrogate-assisted multiobjective evolutionary algorithms. However, most of those algorithms can handle no more than 200 decision variables. As the number of decision variables increases further, unreliable surrogate models will result in a dramatic deterioration of their performance, which makes large-scale expensive multiobjective optimization challenging. To address this challenge, we develop a large-scale multiobjective evolutionary algorithm guided by low-dimensional surrogate models of scalarization functions. The proposed algorithm (termed LDS-AF) reduces the dimension of the original decision space based on principal component analysis, and then directly approximates the scalarization functions in a decomposition-based multiobjective evolutionary algorithm. With the help of a two-stage modeling strategy and convergence control strategy, LDS-AF can keep a good balance between convergence and diversity, and achieve a promising performance without being trapped in a local optimum prematurely. The experimental results on a set of test instances have demonstrated its superiority over eight state-of-the-art algorithms on multiobjective optimization problems with up to 1,000 decision variables using only 500 real function evaluations.},
+  archive      = {J_ECJ},
+  author       = {Gu, Haoran and Wang, Handing and He, Cheng and Yuan, Bo and Jin, Yaochu},
+  doi          = {10.1162/evco_a_00354},
+  journal      = {Evolutionary Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {309-334},
+  shortjournal = {Evol. Comput.},
+  title        = {Large-scale multiobjective evolutionary algorithm guided by low-dimensional surrogates of scalarization functions},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

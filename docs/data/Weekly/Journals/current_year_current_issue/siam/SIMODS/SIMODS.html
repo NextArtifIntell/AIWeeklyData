@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SIMODS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="simods">SIMODS - 22</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Theoretical foundations of ordinal multidimensional scaling, including internal unfolding and external unfolding. <em>SIMODS</em>, <em>7</em>(3), 1422-1440. (<a href='https://doi.org/10.1137/24M1691624'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We provide a comprehensive theory of multiple variants of ordinal multidimensional scaling, including internal unfolding and external unfolding. We first follow Shepard [J. Math. Psychol., 3 (1966), pp. 287–315] and work in a continuum model to gain insight. We then follow Kleindessner and von Luxburg [Uniqueness of ordinal embedding, in Conference on Learning Theory, 2014, pp. 40–67] and work in an asymptotic discrete setting.},
+  archive      = {J_SIMODS},
+  author       = {Ery Arias-Castro and Clément Berenfeld and Daniel Kane},
+  doi          = {10.1137/24M1691624},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {1422-1440},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Theoretical foundations of ordinal multidimensional scaling, including internal unfolding and external unfolding},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Maximum a posteriori inference for factor graphs via benders’ decomposition. <em>SIMODS</em>, <em>7</em>(3), 1394-1421. (<a href='https://doi.org/10.1137/23M1624981'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Many Bayesian statistical inference problems come down to computing a maximum a posteriori (MAP) assignment of latent variables. Yet, standard methods for estimating the MAP assignment do not have a finite time guarantee that the algorithm has converged to a fixed point. Previous research has found that MAP inference can be represented in dual form as a linear programming problem with a nonpolynomial number of constraints. A Lagrangian relaxation of the dual yields a statistical inference algorithm as a linear programming problem. However, the decision as to which constraints to remove in the relaxation is often heuristic. We present a method for maximum a posteriori inference in general Bayesian factor models that sequentially adds constraints to the fully relaxed dual problem using Benders’ decomposition. Our method enables the incorporation of expressive integer and logical constraints in clustering problems such as must-link, cannot-link, and a minimum number of whole samples allocated to each cluster. Using this approach, we derive MAP estimation algorithms for the Bayesian Gaussian mixture model and latent Dirichlet allocation. Empirical results show that our method produces a higher optimal posterior value compared to Gibbs sampling and variational Bayes methods for standard data sets and provides a certificate of convergence.},
+  archive      = {J_SIMODS},
+  author       = {Harsh Vardhan Dubey and Ji Ah Lee and Patrick Flaherty},
+  doi          = {10.1137/23M1624981},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {1394-1421},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Maximum a posteriori inference for factor graphs via benders’ decomposition},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Clustering in pure-attention hardmax transformers and its role in sentiment analysis. <em>SIMODS</em>, <em>7</em>(3), 1367-1393. (<a href='https://doi.org/10.1137/24M167086X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Transformers are extremely successful machine learning models whose mathematical properties remain poorly understood. Here, we rigorously characterize the behavior of transformers with hardmax self-attention and normalization sublayers as the number of layers tends to infinity. By viewing such transformers as discrete-time dynamical systems describing the evolution of points in a Euclidean space, and thanks to a geometric interpretation of the self-attention mechanism based on hyperplane separation, we show that the transformer inputs asymptotically converge to a clustered equilibrium determined by special points called leaders. We then leverage this theoretical understanding to solve sentiment analysis problems from language processing using a fully interpretable transformer model, which effectively captures “context” by clustering meaningless words around leader words carrying the most meaning. Finally, we outline remaining challenges to bridge the gap between the mathematical analysis of transformers and their real-life implementation.},
+  archive      = {J_SIMODS},
+  author       = {Albert Alcalde and Giovanni Fantuzzi and Enrique Zuazua},
+  doi          = {10.1137/24M167086X},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {1367-1393},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Clustering in pure-attention hardmax transformers and its role in sentiment analysis},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multilevel diffusion: Infinite dimensional score-based diffusion models for image generation. <em>SIMODS</em>, <em>7</em>(3), 1337-1366. (<a href='https://doi.org/10.1137/23M1614092'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Score-based diffusion models (SBDMs) have recently emerged as state-of-the-art approaches for image generation. Existing SBDMs are typically formulated in a finite-dimensional setting, where images are considered as tensors of finite size. This paper develops SBDMs in the infinite-dimensional setting, that is, we model the training data as functions supported on a rectangular domain. In addition to the quest for generating images at ever-higher resolutions, our primary motivation is to create a well-posed infinite-dimensional learning problem that we can discretize consistently on multiple resolution levels. We thereby intend to obtain diffusion models that generalize across different resolution levels and improve the efficiency of the training process. We demonstrate how to overcome two shortcomings of current SBDM approaches in the infinite-dimensional setting. First, we modify the forward process using trace class operators to ensure that the latent distribution is well-defined in the infinite-dimensional setting and derive the reverse processes for finite-dimensional approximations. Second, we illustrate that approximating the score function with an operator network is beneficial for multilevel training. After deriving the convergence of the discretization and the approximation of multilevel training, we demonstrate some practical benefits of our infinite-dimensional SBDM approach on a synthetic Gaussian mixture example, the MNIST dataset, and a dataset generated from a nonlinear 2D reaction-diffusion equation.},
+  archive      = {J_SIMODS},
+  author       = {Paul Hagemann and Sophie Mildenberger and Lars Ruthotto and Gabriele Steidl and Nicole Tianjiao Yang},
+  doi          = {10.1137/23M1614092},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {1337-1366},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Multilevel diffusion: Infinite dimensional score-based diffusion models for image generation},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Plug-in estimation of schrödinger bridges. <em>SIMODS</em>, <em>7</em>(3), 1315-1336. (<a href='https://doi.org/10.1137/24M1687340'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We propose a procedure for estimating the Schrödinger bridge between two probability distributions. Unlike existing approaches, our method does not require iteratively simulating forward and backward diffusions or training neural networks to fit unknown drifts. Instead, we show that the potentials obtained from solving the static entropic optimal transport problem between the source and target samples can be modified to yield a natural plug-in estimator of the time-dependent drift that defines the bridge between two measures. Under minimal assumptions, we show that our proposal, which we call the Sinkhorn bridge, provably estimates the Schrödinger bridge with a rate of convergence that depends on the intrinsic dimensionality of the target measure. Our approach combines results from the areas of sampling, and theoretical and statistical entropic optimal transport.},
+  archive      = {J_SIMODS},
+  author       = {Aram-Alexandre Pooladian and Jonathan Niles-Weed},
+  doi          = {10.1137/24M1687340},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {1315-1336},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Plug-in estimation of schrödinger bridges},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Block majorization minimization with extrapolation and application to \({\beta }\)-NMF. <em>SIMODS</em>, <em>7</em>(3), 1292-1314. (<a href='https://doi.org/10.1137/24M1660188'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We propose a Block Majorization Minimization method with Extrapolation (BMMe) for solving a class of multiconvex optimization problems. The extrapolation parameters of BMMe are updated using a novel adaptive update rule. By showing that block majorization minimization can be reformulated as a block mirror descent method, with the Bregman divergence adaptively updated at each iteration, we establish subsequential convergence for BMMe. We use this method to design efficient algorithms to tackle nonnegative matrix factorization problems with -divergences (-NMF) for . These algorithms, which are multiplicative updates with extrapolation, benefit from our novel results, which offer convergence guarantees. We also empirically illustrate the significant acceleration of BMMe for -NMF through extensive experiments.},
+  archive      = {J_SIMODS},
+  author       = {Le Thi Khanh Hien and Valentin Leplat and Nicolas Gillis},
+  doi          = {10.1137/24M1660188},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {1292-1314},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Block majorization minimization with extrapolation and application to \({\beta }\)-NMF},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive smooth nonstationary bandits. <em>SIMODS</em>, <em>7</em>(3), 1265-1291. (<a href='https://doi.org/10.1137/24M167651X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We study a -armed nonstationary bandit model where rewards change smoothly, as captured by Hölder class assumptions on rewards as functions of time. Such smooth changes are parametrized by a Hölder exponent and coefficient . While various subcases of this general model have been studied in isolation, we first establish the minimax dynamic regret rate generally for all . Next, we show that this optimal dynamic regret can be attained adaptively, without knowledge of . To contrast, even with parameter knowledge, upper bounds were only previously known for limited regimes and [A. Slivkins, J. Mach. Learn. Res., 15 (2014), pp. 2533–2568], [R. Krishnamurthy and A. Gopalan, On Slowly-Varying Non-Stationary Bandits, preprint, arXiv:2110.12916, 2021], [A. G. Manegueu, A. Carpentier, and Y. Yu, Generalized, Non-stationary Bandits, preprint, arXiv:2102.00725, 2021], [S. Jia, Q. Xie, N. Kallus, and P. Frazier, Smooth non-stationary bandits, in International Conference on Machine Learning, JMLR.org, 2023, pp. 14930–14944]. Thus, our work resolves open questions raised by disparate threads of the literature. We also study the problem of attaining faster gap-dependent regret rates in nonstationary bandits. While such rates are long known to be impossible in general [A. Garivier and E. Moulines, On upper-confidence bound policies for switching bandit problems, in Proceedings of the 22nd International Conference on Algorithmic Learning Theory, Springer, 2011, pp. 174–188], we show that environments admitting a safe arm [J. Suk and S. Kpotufe, Tracking most significant arm switches in bandits, in Conference on Learning Theory, 2022] allow for much faster rates than the worst-case scaling with . While previous works in this direction focused on attaining the usual logarithmic regret bounds, as summed over stationary periods, our new gap-dependent rates reveal new optimistic regimes of nonstationarity where even the logarithmic bounds are pessimistic. We show that our new gap-dependent rate is tight and that its achievability (i.e., as made possible by a safe arm) has a surprisingly simple and clean characterization within the smooth Hölder class model.},
+  archive      = {J_SIMODS},
+  author       = {Joe Suk},
+  doi          = {10.1137/24M167651X},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {1265-1291},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Adaptive smooth nonstationary bandits},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient estimation of the central mean subspace via smoothed gradient outer products. <em>SIMODS</em>, <em>7</em>(3), 1241-1264. (<a href='https://doi.org/10.1137/23M1626700'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We consider the problem of sufficient dimension reduction for multi-index models. The estimators of the central mean subspace in prior works either have slow (nonparametric) convergence rates or rely on stringent distributional conditions (e.g., elliptical symmetric covariate distribution ). In this paper, we show that a fast parametric convergence rate of form is achievable via estimating the expected smoothed gradient outer product for a general class of distribution that admits Gaussian or heavier distributions. When the link function is a polynomial with a degree of at most and is the standard Gaussian, we show that the prefactor depends on the ambient dimension as .},
+  archive      = {J_SIMODS},
+  author       = {Gan Yuan and Mingyue Xu and Samory Kpotufe and Daniel Hsu},
+  doi          = {10.1137/23M1626700},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {1241-1264},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Efficient estimation of the central mean subspace via smoothed gradient outer products},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Bayesian deep learning with multilevel trace-class neural networks. <em>SIMODS</em>, <em>7</em>(3), 1210-1240. (<a href='https://doi.org/10.1137/23M1544738'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this article we consider Bayesian inference associated to deep neural networks (DNNs) and in particular, trace-class neural network (TNN) priors [T. Sell and S. S. Singh, Dimension-robust Function Space Mcmc with Neural Network Priors, 2020] which can be preferable to traditional DNNs because they (a) are identifiable and (b) possess desirable convergence properties. TNN priors are defined on functions with infinitely many hidden units, and have strongly convergent Karhunen–Loeve-type approximations with finitely many hidden units. A practical hurdle is that the Bayesian solution is computationally demanding, requiring simulation methods, so approaches to drive down the complexity are needed. In this paper, we leverage the strong convergence of TNN in order to apply multilevel Monte Carlo (MLMC) to these models. In particular, an MLMC method that was introduced by Beskos et al. [SIAM/ASA J. Uncertain. Quantif., 6 (2018), pp. 762–786] is used to approximate posterior expectations of Bayesian TNN models with optimal computational complexity, and this is mathematically proved. The results are verified with several numerical experiments on model problems arising in machine learning, including some toy regression and classification models, MNIST image classification, and a challenging reinforcement learning problem. Furthermore, we illustrate the practical utility of the method on MNIST as well as IMDb sentiment classification.},
+  archive      = {J_SIMODS},
+  author       = {Neil K. Chada and Ajay Jasra and Kody J. H. Law and Sumeetpal S. Singh},
+  doi          = {10.1137/23M1544738},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {1210-1240},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Bayesian deep learning with multilevel trace-class neural networks},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Monotone generative modeling via a Gromov–Monge embedding. <em>SIMODS</em>, <em>7</em>(3), 1184-1209. (<a href='https://doi.org/10.1137/24M1673772'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Generative adversarial networks are popular for generative tasks; however, they often require careful architecture selection and extensive empirical tuning, and they are prone to mode collapse. To overcome these challenges, we propose a novel model that identifies the low-dimensional structure of the underlying data distribution, maps it into a low-dimensional latent space while preserving the underlying geometry, and then optimally transports a reference measure to the embedded distribution. We prove three key properties of our method: (1) the encoder preserves the geometry of the underlying data; (2) the generator is -cyclically monotone, where is an intrinsic embedding cost employed by the encoder; and (3) the discriminator’s modulus of continuity improves with the geometric preservation of the data. Numerical experiments demonstrate the effectiveness of our approach in generating high-quality images and exhibiting robustness to both mode collapse and training instability.},
+  archive      = {J_SIMODS},
+  author       = {Wonjun Lee and Yifei Yang and Dongmian Zou and Gilad Lerman},
+  doi          = {10.1137/24M1673772},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {1184-1209},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Monotone generative modeling via a Gromov–Monge embedding},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Spectral complexity of deep neural networks. <em>SIMODS</em>, <em>7</em>(3), 1154-1183. (<a href='https://doi.org/10.1137/24M1675746'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. It is well known that randomly initialized, push-forward, fully connected neural networks weakly converge to isotropic Gaussian processes in the limit where the width of all layers goes to infinity. In this paper, we propose to use the angular power spectrum of the limiting fields to characterize the complexity of the network architecture. In particular, we define sequences of random variables associated with the angular power spectrum and provide a full characterization of the network complexity in terms of the asymptotic distribution of these sequences as the depth diverges. On this basis, we classify neural networks as low-disorder, sparse, or high-disorder; we show how this classification highlights a number of distinct features for standard activation functions and, in particular, sparsity properties of ReLU networks. Our theoretical results are also validated by numerical simulations.},
+  archive      = {J_SIMODS},
+  author       = {Simmaco Di Lillo and Domenico Marinucci and Michele Salvi and Stefano Vigogna},
+  doi          = {10.1137/24M1675746},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {1154-1183},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Spectral complexity of deep neural networks},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Random multitype spanning forests for synchronization on sparse graphs. <em>SIMODS</em>, <em>7</em>(3), 1123-1153. (<a href='https://doi.org/10.1137/24M1649563'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Random diffusions are a popular tool in Monte Carlo estimations, with well-established algorithms such as walk-on-spheres (WoS) going back several decades. In this work, we introduce diffusion estimators for the problems of angular synchronization and smoothing on graphs, in the presence of a rotation associated to each edge. Unlike classical WoS algorithms that are pointwise estimators, our diffusion estimators allow for global estimations by propagating along the branches of random spanning subgraphs called multitype spanning forests. Building upon efficient samplers based on variants of Wilson’s algorithm, we show that our estimators outperform standard numerical-linear-algebra solvers in challenging instances, depending on the topology and density of the graph.},
+  archive      = {J_SIMODS},
+  author       = {Hugo Jaquard and Pierre-Olivier Amblard and Simon Barthelmé and Nicolas Tremblay},
+  doi          = {10.1137/24M1649563},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {1123-1153},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Random multitype spanning forests for synchronization on sparse graphs},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). When big data actually are low-rank, or entrywise approximation of certain function-generated matrices. <em>SIMODS</em>, <em>7</em>(3), 1098-1122. (<a href='https://doi.org/10.1137/24M1687133'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The article concerns low-rank approximation of matrices generated by sampling a smooth function of two -dimensional variables. We identify several misconceptions surrounding a claim that, for a specific class of analytic functions, such matrices admit accurate entrywise approximation of rank that is independent of and grows as —colloquially known as “big-data matrices are approximately low-rank.” We provide a theoretical explanation of the numerical results presented in support of this claim, describing three narrower classes of functions for which function-generated matrices can be approximated within an entrywise error of order with rank that is independent of the dimension : (i) functions of the inner product of the two variables, (ii) functions of the Euclidean distance between the variables, and (iii) shift-invariant positive-definite kernels. We extend our argument to tensor-train approximation of tensors generated with functions of the “higher-order inner product” of their multiple variables. We discuss our results in the context of low-rank approximation of (i) growing datasets and (ii) attention in transformer neural networks.},
+  archive      = {J_SIMODS},
+  author       = {Stanislav Budzinskiy},
+  doi          = {10.1137/24M1687133},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {1098-1122},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {When big data actually are low-rank, or entrywise approximation of certain function-generated matrices},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Stability of sequential lateration and of stress minimization in the presence of noise. <em>SIMODS</em>, <em>7</em>(3), 1077-1097. (<a href='https://doi.org/10.1137/24M1661790'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Sequential lateration is a class of methods for multidimensional scaling where a suitable subset of nodes is first embedded by some method, e.g., a clique embedded by classical scaling, and then the remaining nodes are recursively embedded by lateration. A graph is a lateration graph when it can be embedded by such a procedure. We provide a stability result for a particular variant of sequential lateration. We do so in a setting where the dissimilarities represent noisy Euclidean distances between nodes in a geometric lateration graph. We then deduce, as a corollary, a perturbation bound for stress minimization. To argue that our setting applies broadly, we show that a (large) random geometric graph is a lateration graph with high probability under mild conditions, extending a previous result of Aspnes et al. [IEEE Trans. Mobile Comput., 5 (2006), pp. 1663–1678].},
+  archive      = {J_SIMODS},
+  author       = {Ery Arias-Castro and Siddharth Vishwanath},
+  doi          = {10.1137/24M1661790},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {1077-1097},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Stability of sequential lateration and of stress minimization in the presence of noise},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Spectral barron space for deep neural network approximation. <em>SIMODS</em>, <em>7</em>(3), 1053-1076. (<a href='https://doi.org/10.1137/23M1598738'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We prove the sharp embedding between the spectral Barron space and the Besov space with embedding constants independent of the input dimension. Given the spectral Barron space as the target function space, we prove a dimension-free convergence result that if the neural network contains hidden layers with units per layer, then the upper and lower bounds of the -approximation error are with , where is the smoothness index of the spectral Barron space.},
+  archive      = {J_SIMODS},
+  author       = {Yulei Liao and Pingbing Ming},
+  doi          = {10.1137/23M1598738},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {1053-1076},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Spectral barron space for deep neural network approximation},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ReLU neural networks with linear layers are biased towards single- and multi-index models. <em>SIMODS</em>, <em>7</em>(3), 1021-1052. (<a href='https://doi.org/10.1137/24M1672158'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Neural networks often operate in the overparameterized regime, in which there are far more parameters than training samples, allowing the training data to fit perfectly. That is, training the network effectively learns an interpolating function, and properties of the interpolant affect predictions the network will make on new samples. This manuscript explores how properties of such functions learned by neural networks of depth greater than two layers. Our framework considers a family of networks of varying depths that all have the same capacity but different representation costs. The representation cost of a function induced by a neural network architecture is the minimum sum of squared weights needed for the network to represent the function; it reflects the function space bias associated with the architecture. Our results show that adding additional linear layers to the input side of a shallow ReLU network yields a representation cost favoring functions with low mixed variation–-that is, it has limited variation in directions orthogonal to a low-dimensional subspace and can be well approximated by a single- or multi-index model. This bias occurs because minimizing the sum of squared weights of the linear layers is equivalent to minimizing a low-rank promoting Schatten quasi-norm of a single “virtual” weight matrix. Our experiments confirm this behavior in standard network training regimes. They additionally show that linear layers can improve generalization and the learned network is well-aligned with the true latent low-dimensional linear subspace when data is generated using a multi-index model.},
+  archive      = {J_SIMODS},
+  author       = {Suzanna Parkinson and Greg Ongie and Rebecca Willett},
+  doi          = {10.1137/24M1672158},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {1021-1052},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {ReLU neural networks with linear layers are biased towards single- and multi-index models},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Resolving the mixing time of the langevin algorithm to its stationary distribution for log-concave sampling. <em>SIMODS</em>, <em>7</em>(3), 993-1020. (<a href='https://doi.org/10.1137/24M1638689'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Sampling from a high-dimensional distribution is a fundamental task in statistics, engineering, and the sciences. A canonical approach is the Langevin algorithm, i.e., the Markov chain for the discretized Langevin diffusion. This is the sampling analog of gradient descent. Despite being studied for several decades in multiple communities, tight mixing bounds for this algorithm remain unresolved even in the seemingly simple setting of log-concave distributions over a bounded domain. This paper characterizes the mixing time of the Langevin algorithm to its stationary distribution in this setting (and others). This mixing result can be combined with any bound on the discretization bias in order to sample from the stationary distribution of the continuous Langevin diffusion. In this way, we disentangle the study of the mixing and bias of the Langevin algorithm. Our key insight is to introduce a technique from the differential privacy literature to the sampling literature. This technique, called privacy amplification by iteration, uses as a potential a variant of Rényi divergence that is made geometrically aware via optimal transport smoothing. This gives a short, simple proof of optimal mixing bounds and has several additional appealing properties. First, our approach removes all unnecessary assumptions required by other sampling analyses. Second, our approach unifies many settings: it extends unchanged if the Langevin algorithm uses projections, stochastic minibatch gradients, or strongly convex potentials (whereby our mixing time improves exponentially). Third, our approach exploits convexity only through the contractivity of a gradient step—reminiscent of how convexity is used in textbook proofs of gradient descent. In this way, we offer a new approach towards further unifying the analyses of optimization and sampling algorithms.},
+  archive      = {J_SIMODS},
+  author       = {Jason M. Altschuler and Kunal Talwar},
+  doi          = {10.1137/24M1638689},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {993-1020},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Resolving the mixing time of the langevin algorithm to its stationary distribution for log-concave sampling},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Select without fear: Almost all minibatch schedules generalize optimally. <em>SIMODS</em>, <em>7</em>(3), 965-992. (<a href='https://doi.org/10.1137/23M1617096'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We establish matching upper and lower generalization error bounds for minibatch gradient descent (GD) training with either deterministic or stochastic, data-independent, but otherwise arbitrary batch selection rules, including stochastic GD (SGD) with random reshuffling, SGD with single shuffling, and incremental gradient methods. We consider smooth Lipschitz-convex/nonconvex/strongly convex loss functions and show that classical upper bounds for SGD also hold verbatim for such arbitrary nonadaptive batch schedules, including all deterministic ones. Further, for convex and strongly convex losses we prove matching lower bounds directly on the generalization error uniform over the aforementioned class of batch schedules, showing that all such batch schedules generalize optimally. Last, for smooth (non-Lipschitz) nonconvex losses, we show that full-batch (deterministic) GD is essentially optimal, among all possible batch schedules within the considered class, including all stochastic ones.},
+  archive      = {J_SIMODS},
+  author       = {Konstantinos E. Nikolakakis and Amin Karbasi and Dionysis Kalogerias},
+  doi          = {10.1137/23M1617096},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {965-992},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Select without fear: Almost all minibatch schedules generalize optimally},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Diffeomorphic measure matching with kernels for generative modeling. <em>SIMODS</em>, <em>7</em>(3), 937-964. (<a href='https://doi.org/10.1137/24M1642202'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This article presents a general framework for the transport of probability measures toward minimum divergence generative modeling and sampling using ODEs and reproducing kernel Hilbert spaces, inspired by ideas from diffeomorphic matching and image registration. A theoretical analysis of the proposed method is presented, giving a priori error bounds in terms of the complexity of the model, the number of samples in the training set, and model misspecification. An extensive suite of numerical experiments further highlights the properties, strengths, and weaknesses of the method and extends its applicability to other tasks, such as conditional simulation and inference.},
+  archive      = {J_SIMODS},
+  author       = {Biraj Pandey and Bamdad Hosseini and Pau Batlle and Houman Owhadi},
+  doi          = {10.1137/24M1642202},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {937-964},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Diffeomorphic measure matching with kernels for generative modeling},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An adaptively inexact first-order method for bilevel optimization with application to hyperparameter learning. <em>SIMODS</em>, <em>7</em>(3), 906-936. (<a href='https://doi.org/10.1137/24M1653513'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Various tasks in data science are modeled utilizing the variational regularization approach, where manually selecting regularization parameters presents a challenge. The difficulty gets exacerbated when employing regularizers involving a large number of hyperparameters. To overcome this challenge, bilevel learning can be employed to learn such parameters from data. However, neither exact function values nor exact gradients with respect to the hyperparameters are attainable, necessitating methods that only rely on inexact evaluation of such quantities. State-of-the-art inexact gradient-based methods a priori select a sequence of the required accuracies and cannot identify an appropriate step size since the Lipschitz constant of the hypergradient is unknown. In this work, we propose an algorithm with backtracking line search that only relies on inexact function evaluations and hypergradients and show convergence to a stationary point. Furthermore, the proposed algorithm determines the required accuracy dynamically rather than manually selected before running it. Our numerical experiments demonstrate the efficiency and feasibility of our approach for hyperparameter estimation on a range of relevant problems in imaging and data science such as total variation and field of experts denoising and multinomial logistic regression. Particularly, the results show that the algorithm is robust to its own hyperparameters such as the initial accuracies and step size.},
+  archive      = {J_SIMODS},
+  author       = {Mohammad Sadegh Salehi and Subhadip Mukherjee and Lindon Roberts and Matthias J. Ehrhardt},
+  doi          = {10.1137/24M1653513},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {906-936},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {An adaptively inexact first-order method for bilevel optimization with application to hyperparameter learning},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Online machine teaching under learner uncertainty: Gradient descent learners of a quadratic loss. <em>SIMODS</em>, <em>7</em>(3), 884-905. (<a href='https://doi.org/10.1137/24M1657997'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We revisit the framework of online machine teaching, a special case of active learning in which a teacher with full knowledge of a model attempts to train a learner by adaptively presenting examples. While online machine teaching example selection strategies are typically designed assuming omniscience, i.e., the teacher has absolute knowledge of the learner state, we show that efficient machine teaching is possible even when the teacher is uncertain about the learner initialization. Specifically, we consider the case of learners that perform gradient descent of a quadratic loss to learn a linear classifier, and we propose an online machine teaching algorithm in which the teacher simultaneously learns the learner state while teaching the learner. We theoretically show that the learner’s mean square error decreases exponentially with the number of examples, thus achieving a performance similar to the omniscient case and outperforming two stage strategies that first attempt to make the teacher omniscient before teaching. We empirically illustrate our approach in the context of a cross-lingual sentiment analysis problem.},
+  archive      = {J_SIMODS},
+  author       = {Belen Martin-Urcelay and Christopher J. Rozell and Matthieu R. Bloch},
+  doi          = {10.1137/24M1657997},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {884-905},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Online machine teaching under learner uncertainty: Gradient descent learners of a quadratic loss},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Simple alternating minimization provably solves complete dictionary learning. <em>SIMODS</em>, <em>7</em>(3), 855-883. (<a href='https://doi.org/10.1137/23M1568120'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper focuses on the noiseless complete dictionary learning problem, where the goal is to represent a set of given signals as linear combinations of a small number of atoms from a learned dictionary. There are two main challenges faced by theoretical and practical studies of dictionary learning: the lack of theoretical guarantees for practically used heuristic algorithms and their poor scalability when dealing with huge-scale datasets. Towards addressing these issues, we propose a simple and efficient algorithm that provably recovers the ground truth when applied to the nonconvex and discrete formulation of the problem in the noiseless setting. We also extend our proposed method to mini-batch and online settings where the data is huge-scale or arrives continuously over time. At the core of our proposed method lies an efficient preconditioning technique that transforms the unknown dictionary to a near-orthonormal one, for which we prove a simple alternating minimization technique converges linearly to the ground truth under minimal conditions. Our numerical experiments on synthetic and real datasets showcase the superiority of our method compared with the existing techniques.},
+  archive      = {J_SIMODS},
+  author       = {Geyu Liang and Gavin Zhang and Salar Fattahi and Richard Y. Zhang},
+  doi          = {10.1137/23M1568120},
+  journal      = {SIAM Journal on Mathematics of Data Science},
+  month        = {9},
+  number       = {3},
+  pages        = {855-883},
+  shortjournal = {SIAM J. Math. Data Sci.},
+  title        = {Simple alternating minimization provably solves complete dictionary learning},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

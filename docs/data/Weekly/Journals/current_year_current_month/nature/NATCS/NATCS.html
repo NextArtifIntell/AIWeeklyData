@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NATCS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="natcs">NATCS - 12</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Privacy-preserving multicenter differential protein abundance analysis with FedProt. <em>NATCS</em>, <em>5</em>(8), 675-688. (<a href='https://doi.org/10.1038/s43588-025-00832-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Quantitative mass spectrometry has revolutionized proteomics by enabling simultaneous quantification of thousands of proteins. Pooling patient-derived data from multiple institutions enhances statistical power but raises serious privacy concerns. Here we introduce FedProt, the first privacy-preserving tool for collaborative differential protein abundance analysis of distributed data, which utilizes federated learning and additive secret sharing. In the absence of a multicenter patient-derived dataset for evaluation, we created two: one at five centers from E. coli experiments and one at three centers from human serum. Evaluations using these datasets confirm that FedProt achieves accuracy equivalent to the DEqMS method applied to pooled data, with completely negligible absolute differences no greater than 4 × 10−12. By contrast, −log10P computed by the most accurate meta-analysis methods diverged from the centralized analysis results by up to 25–26. In this Resource, the authors present FedProt, a tool that enables privacy-preserving, federated differential protein abundance analysis across multiple institutions. Its results match the results of centralized analysis, enabling secure, collaborative proteomics without sensitive data sharing.},
+  archive      = {J_NATCS},
+  author       = {Burankova, Yuliya and Abele, Miriam and Bakhtiari, Mohammad and von Toerne, Christine and Barth, Teresa K. and Schweizer, Lisa and Giesbertz, Pieter and Schmidt, Johannes R. and Kalkhof, Stefan and Müller-Deile, Janina and van Veelen, Peter A. and Mohammed, Yassene and Hammer, Elke and Arend, Lis and Adamowicz, Klaudia and Laske, Tanja and Hartebrodt, Anne and Frisch, Tobias and Meng, Chen and Matschinske, Julian and Späth, Julian and Röttger, Richard and Schwämmle, Veit and Hauck, Stefanie M. and Lichtenthaler, Stefan F. and Imhof, Axel and Mann, Matthias and Ludwig, Christina and Kuster, Bernhard and Baumbach, Jan and Zolotareva, Olga},
+  doi          = {10.1038/s43588-025-00832-7},
+  journal      = {Nature Computational Science},
+  month        = {8},
+  number       = {8},
+  pages        = {675-688},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {Privacy-preserving multicenter differential protein abundance analysis with FedProt},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A comprehensive mapping of zeolite–template chemical space. <em>NATCS</em>, <em>5</em>(8), 661-674. (<a href='https://doi.org/10.1038/s43588-025-00842-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Zeolites are industrially important catalysts and adsorbents, typically synthesized using specific molecules known as organic structure-directing agents (OSDAs). The templating effect of the OSDAs is pivotal in determining the zeolite polymorph formed and its physicochemical properties. However, de novo design of selective OSDAs is challenging because of the diversity and size of the zeolite–OSDA chemical space. Here we present ZeoBind, a computational workflow powered by machine learning that enables an exhaustive exploration of the OSDA space. We design predictive tasks that capture zeolite–molecule matching, train predictive models for these tasks on hundreds of thousands of datapoints and curate a library of 2.3 million synthetically accessible, hypothetical OSDA-like molecules enumerated from commercially available precursors. We use ZeoBind to screen nearly 500 million zeolite–molecule pairs and identified and experimentally validated two new OSDAs that template zeolites with novel compositions. The scale of the OSDA library, along with the open-access tools and data, has the potential to accelerate OSDA design for zeolite synthesis. ZeoBind is developed for high-throughput molecule screening in zeolite synthesis. Here 2.3 million organic structure-directing agents are enumerated and predictive models for binding affinity are developed; the screening is experimentally validated for two zeolites.},
+  archive      = {J_NATCS},
+  author       = {Xie, Mingrou and Schwalbe-Koda, Daniel and Semanate-Esquivel, Yolanda Marcela and Bello-Jurado, Estefanía and Hoffman, Alexander and Santiago-Reyes, Omar and Paris, Cecilia and Moliner, Manuel and Gómez-Bombarelli, Rafael},
+  doi          = {10.1038/s43588-025-00842-5},
+  journal      = {Nature Computational Science},
+  month        = {8},
+  number       = {8},
+  pages        = {661-674},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {A comprehensive mapping of zeolite–template chemical space},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RNA–ligand interaction scoring via data perturbation and augmentation modeling. <em>NATCS</em>, <em>5</em>(8), 648-660. (<a href='https://doi.org/10.1038/s43588-025-00820-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Despite recent advances in RNA-targeting drug discovery, the development of data-driven deep learning models remains challenging owing to limited validated RNA–small molecule interaction data and scarce known RNA structures. In this context, we introduce RNAsmol, a sequence-based deep learning framework that incorporates data perturbation with augmentation, graph-based molecular feature representation and attention-based feature fusion modules to predict RNA–small molecule interactions. RNAsmol employs perturbation strategies to balance the bias between the true negative and unknown interaction space, thereby elucidating the intrinsic binding patterns between RNA and small molecules. The resulting model demonstrates accurate predictions of the binding between RNA and small molecules, outperforming other methods in ten-fold cross-validation, unseen evaluation and decoy evaluation. Moreover, we use case studies to visualize molecular binding profiles and the distribution of learned weights, providing interpretable insights into RNAsmol’s predictions. In particular, without requiring structural input, RNAsmol can generate reliable predictions and be adapted to various drug design scenarios. RNAsmol is a sequence-based deep learning framework for predicting RNA–small molecule interactions, integrating perturbation and augmentation to achieve robust predictions under limited data and adaptability to diverse drug discovery scenarios.},
+  archive      = {J_NATCS},
+  author       = {Ma, Hongli and Gao, Letian and Jin, Yunfan and Ma, Jianwei and Bai, Yilan and Liu, Xiaofan and Bao, Pengfei and Liu, Ke and Xu, Zhenjiang Zech and Lu, Zhi John},
+  doi          = {10.1038/s43588-025-00820-x},
+  journal      = {Nature Computational Science},
+  month        = {8},
+  number       = {8},
+  pages        = {648-660},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {RNA–ligand interaction scoring via data perturbation and augmentation modeling},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Investigating the volume and diversity of data needed for generalizable antibody–antigen ΔΔG prediction. <em>NATCS</em>, <em>5</em>(8), 635-647. (<a href='https://doi.org/10.1038/s43588-025-00823-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Antibody–antigen binding affinity lies at the heart of therapeutic antibody development: efficacy is guided by specific binding and control of affinity. Here we present Graphinity, an equivariant graph neural network architecture built directly from antibody–antigen structures that achieves test Pearson’s correlations of up to 0.87 on experimental change in binding affinity (ΔΔG) prediction. However, our model, like previous methods, appears to be overtraining on the few hundred experimental data points available and performance is not robust to train–test cut-offs. To investigate the amount and type of data required to generalizably predict ΔΔG, we built synthetic datasets of nearly 1 million FoldX-generated and &gt;20,000 Rosetta Flex ddG-generated ΔΔG values. Our results indicate that there are currently insufficient experimental data to accurately and robustly predict ΔΔG, with orders of magnitude more likely needed. Dataset size is not the only consideration; diversity is also an important factor for model predictiveness. These findings provide a lower bound on data requirements to inform future method development and data collection efforts. Predicting the effects of mutations on antibody–antigen binding is a key challenge in therapeutic antibody development. Orders of magnitude more data will be needed to unlock accurate, robust prediction.},
+  archive      = {J_NATCS},
+  author       = {Hummer, Alissa M. and Schneider, Constantin and Chinery, Lewis and Deane, Charlotte M.},
+  doi          = {10.1038/s43588-025-00823-8},
+  journal      = {Nature Computational Science},
+  month        = {8},
+  number       = {8},
+  pages        = {635-647},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {Investigating the volume and diversity of data needed for generalizable antibody–antigen ΔΔG prediction},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A large-scale replication of scenario-based experiments in psychology and management using large language models. <em>NATCS</em>, <em>5</em>(8), 627-634. (<a href='https://doi.org/10.1038/s43588-025-00840-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We conducted a large-scale study replicating 156 psychological experiments from top social science journals using three state-of-the-art large language models (LLMs). Our results reveal that, while LLMs demonstrated high replication rates for main effects (73–81%) and moderate to strong success with interaction effects (46–63%), they consistently produced larger effect sizes than human studies. Notably, LLMs showed significantly lower replication rates for studies involving socially sensitive topics such as race, gender and ethics. When original studies reported null findings, LLMs produced significant results at remarkably high rates (68–83%); while this could reflect cleaner data with less noise, it also suggests potential risks of effect size overestimation. Our results demonstrate both the promises and the challenges of LLMs in psychological research: while LLMs are efficient tools for pilot testing and rapid hypothesis validation, enriching rather than replacing traditional human-participant studies, they require more nuanced interpretation and human validation for complex social phenomena and culturally sensitive research questions. Researchers replicated 156 psychological experiments using three large language models (LLMs) instead of human participants. LLMs achieved 73–81% replication rates but showed amplified effect sizes and challenges with socially sensitive topics.},
+  archive      = {J_NATCS},
+  author       = {Cui, Ziyan and Li, Ning and Zhou, Huaikang},
+  doi          = {10.1038/s43588-025-00840-7},
+  journal      = {Nature Computational Science},
+  month        = {8},
+  number       = {8},
+  pages        = {627-634},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {A large-scale replication of scenario-based experiments in psychology and management using large language models},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A formally exact method for high-throughput absolute binding-free-energy calculations. <em>NATCS</em>, <em>5</em>(8), 621-626. (<a href='https://doi.org/10.1038/s43588-025-00821-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Here we introduce a high-throughput, formally exact method for absolute binding-free-energy calculations that enhances computational efficiency and accuracy. At the core of this method is a thermodynamic cycle that minimizes protein ligand relative motion, thereby reducing system perturbations and driving a fourfold gain in efficiency over the traditional double-decoupling method. By combining this strategy with double-wide sampling and hydrogen-mass repartitioning algorithms, the efficiency is further boosted to eightfold. The presented method is applied to 45 diverse protein–ligand complexes. For 34 complexes with validated force-field accuracy, our method achieves an average unsigned error of less than 1 kcal mol−1 and a hysteresis below 0.5 kcal mol−1, showcasing exceptional reliability. Moreover, it efficiently manages flexible peptide ligands through a potential-of-mean-force calculation, adding less than 5% extra simulation time. For 11 challenging cases, the presented method also shows an improvement compared with previously published results. Put together, this method has potential for advancing research in physical, biological and medicinal chemistry. A thermodynamic cycle is proposed that limits protein–ligand relative motion and boosts the efficiency of absolute binding-free-energy calculations four- to eightfold, without compromising theoretical rigor.},
+  archive      = {J_NATCS},
+  author       = {Bian, Hengwei and Shao, Xueguang and Chipot, Christophe and Cai, Wensheng and Fu, Haohao},
+  doi          = {10.1038/s43588-025-00821-w},
+  journal      = {Nature Computational Science},
+  month        = {8},
+  number       = {8},
+  pages        = {621-626},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {A formally exact method for high-throughput absolute binding-free-energy calculations},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Quantifying batch effects for individual genes in single-cell data. <em>NATCS</em>, <em>5</em>(8), 612-620. (<a href='https://doi.org/10.1038/s43588-025-00824-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Batch effects substantially impede the comparison of multiple single-cell experiment batches. Existing methods for batch effect removal and quantification primarily emphasize cell alignment across batches, often overlooking gene-level batch effects. Here we introduce group technical effects (GTE)—a quantitative metric to assess batch effects on individual genes. Using GTE, we show that batch effects unevenly impact genes within the dataset. A portion of highly batch-sensitive genes (HBGs) differ between datasets and dominate the batch effects, whereas non-HBGs exhibit low batch effects. We demonstrate that as few as three HBGs are sufficient to introduce substantial batch effects. Our method also enables the assessment of cell-level batch effects, outperforming existing batch effect quantification methods. We also observe that biologically similar cell types undergo similar batch effects, informing the development of data integration strategies. The GTE method is versatile and applicable to various single-cell omics data types. Group technical effects, a metric to quantify gene-level batch effects in single-cell data, is proposed. The analysis based on group technical effects reveals the unbalanced batch effects across genes.},
+  archive      = {J_NATCS},
+  author       = {Zhou, Yang and Sheng, Qiongyu and Wang, Guohua and Xu, Li and Jin, Shuilin},
+  doi          = {10.1038/s43588-025-00824-7},
+  journal      = {Nature Computational Science},
+  month        = {8},
+  number       = {8},
+  pages        = {612-620},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {Quantifying batch effects for individual genes in single-cell data},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Unbalanced gene-level batch effects in single-cell data. <em>NATCS</em>, <em>5</em>(8), 610-611. (<a href='https://doi.org/10.1038/s43588-025-00829-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We developed group technical effects (GTE) as a quantitative metric for evaluating gene-level batch effects in single-cell data. It identifies highly batch-sensitive genes — the primary contributors to batch effects — that vary across datasets, and whose removal effectively mitigates the batch effects.},
+  archive      = {J_NATCS},
+  doi          = {10.1038/s43588-025-00829-2},
+  journal      = {Nature Computational Science},
+  month        = {8},
+  number       = {8},
+  pages        = {610-611},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {Unbalanced gene-level batch effects in single-cell data},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Diving deep into zeolite space. <em>NATCS</em>, <em>5</em>(8), 608-609. (<a href='https://doi.org/10.1038/s43588-025-00831-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A recent study proposed ZeoBind, an AI-accelerated workflow enabling the discovery and experimental verification of hits within chemical spaces containing hundreds of millions of zeolites.},
+  archive      = {J_NATCS},
+  author       = {Balcells, David},
+  doi          = {10.1038/s43588-025-00831-8},
+  journal      = {Nature Computational Science},
+  month        = {8},
+  number       = {8},
+  pages        = {608-609},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {Diving deep into zeolite space},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). What’s so hard about RNA-targeting drug discovery?. <em>NATCS</em>, <em>5</em>(8), 606-607. (<a href='https://doi.org/10.1038/s43588-025-00853-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {An artificial intelligence model leverages language models and molecular perturbations to tackle the data scarcity problem in the RNA drug world.},
+  archive      = {J_NATCS},
+  author       = {Oliver, Carlos and Waldispühl, Jérôme},
+  doi          = {10.1038/s43588-025-00853-2},
+  journal      = {Nature Computational Science},
+  month        = {8},
+  number       = {8},
+  pages        = {606-607},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {What’s so hard about RNA-targeting drug discovery?},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Experimenting on AI can (sometimes) teach us about ourselves. <em>NATCS</em>, <em>5</em>(8), 604-605. (<a href='https://doi.org/10.1038/s43588-025-00838-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A recent study sought to replicate published experimental research using large language models, finding that human behavior is replicated surprisingly well overall, but deviates in important ways that could lead social scientists astray.},
+  archive      = {J_NATCS},
+  author       = {van Loon, Austin and Heidenry, Zoe},
+  doi          = {10.1038/s43588-025-00838-1},
+  journal      = {Nature Computational Science},
+  month        = {8},
+  number       = {8},
+  pages        = {604-605},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {Experimenting on AI can (sometimes) teach us about ourselves},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Pushing the frontiers in computational chemistry. <em>NATCS</em>, <em>5</em>(8), 603. (<a href='https://doi.org/10.1038/s43588-025-00862-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We reflect on ongoing topics and discussions at conferences in the field of computational chemistry.},
+  archive      = {J_NATCS},
+  doi          = {10.1038/s43588-025-00862-1},
+  journal      = {Nature Computational Science},
+  month        = {8},
+  number       = {8},
+  pages        = {603},
+  shortjournal = {Nat. Comput. Sci},
+  title        = {Pushing the frontiers in computational chemistry},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TPDS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tpds">TPDS - 3</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Chameleon: An efficient FHE scheme switching acceleration on GPUs. <em>TPDS</em>, 1-18. (<a href='https://doi.org/10.1109/TPDS.2025.3604866'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fully homomorphic encryption (FHE) enables direct computation on encrypted data, making it a crucial technology for privacy protection. However, FHE suffers from significant performance bottlenecks. In this context, GPU acceleration offers a promising solution to bridge the performance gap. Existing efforts primarily focus on single-class FHE schemes, which fail to meet the diverse requirements of data types and functions, prompting the development of hybrid multi-class FHE schemes. However, studies have yet to thoroughly investigate specific GPU optimizations for hybrid FHE schemes. In this paper, we present an efficient GPU-based FHE scheme switching acceleration named Chameleon. First, we propose a scalable NTT acceleration design that adapts to larger CKKS polynomials and smaller TFHE polynomials. Specifically, Chameleon tackles synchronization issues by fusing stages to reduce synchronization, employing polynomial coefficient shuffling to minimize synchronization scale, and utilizing an SM-aware combination strategy to identify the optimal switching point. Second, Chameleon is the first to comprehensively analyze and optimize critical switching operations. It introduces CMux-level parallelization to accelerate LUT evaluation and a homomorphic rotation-free matrixvector multiplication to improve repacking efficiency. Finally, Chameleon outperforms the state-of-the-art GPU implementations by 1.23× in CKKS HMUL and 1.15× in bootstrapping. It also achieves up to 4.87× and 1.51× speedups for TFHE bootstrapping compared to CPU and GPU versions, respectively, and delivers a 67.3× average speedup for scheme switching over CPU-based implementation.},
+  archive      = {J_TPDS},
+  author       = {Zhiwei Wang and Haoqi He and Lutan Zhao and Peinan Li and Zhihao Li and Dan Meng and Rui Hou},
+  doi          = {10.1109/TPDS.2025.3604866},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Chameleon: An efficient FHE scheme switching acceleration on GPUs},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PreTrans: Enabling efficient CGRA multi-task context switch through config pre-mapping and data transceiving. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3604815'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dynamic resource allocation guarantees the performance of CGRA multi-task, but incurs a wide range of incompatible contexts (config & data) to the CGRA architecture. However, traditional context switch approaches including online config transformation and data reloading may significantly block the task to process inputs under new resource allocation decisions, resulting in the limited task throughput. To address this issue, online config transformation can be avoided if compatible configs have been prepared through offline pre-mapping, but traditional CGRA mappers require days to achieve comprehensive pre-mapping with considerable quality. Besides, online data reloading can also be eliminated through memory sharing, but the traditional arbiter-based approach has the difficulty of trading off physical complexity and memory access parallelism. PreTrans is the first system design to achieve the efficient CGRA multi-task context switch. PreTrans first avoids the online config transformation through a software incremental pre-mapper, which re-utilizes the previously finished pre-mapping results to dramatically accelerate the pre-mapping of subsequent resource allocation decisions with negligible mapping quality loss. Secondly, PreTrans replaces the traditional arbiter with a hardware data transceiver to better support the memory sharing that eliminates data reloading, which allows each tile to possess an individual memory that maximizes the access parallelism without introducing significant physical overhead. The overall evaluation demonstrates that PreTrans achieves 1.13$\sim 2.46\times$ throughput improvement on pipeline and parallel multi-task scenarios, and can reach the target throughput immediately after the new resource allocation decision takes effect. Ablation study further shows that the pre-mapper is more than 3 magnitudes faster than the traditional CGRA mapper while maintaining more than 99% of the optimal mapping quality, and the data transceiver only introduces 9.02% hardware area overhead under 16×16 CGRA.},
+  archive      = {J_TPDS},
+  author       = {Yufei Yang and Chenhao Xie and Liansheng Liu and Xiyuan Peng and Yu Peng and Hailong Yang and Depei Qian},
+  doi          = {10.1109/TPDS.2025.3604815},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {PreTrans: Enabling efficient CGRA multi-task context switch through config pre-mapping and data transceiving},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scheduling fork-joins with communication delays and equal processing times on heterogeneous processors. <em>TPDS</em>, 1-13. (<a href='https://doi.org/10.1109/TPDS.2025.3605272'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Task scheduling for parallel computing is strongly NP-hard even without precedence constraints $P||C_{max}$. With any kind of precedence constraints and communication delays the problem becomes less manageable still. We look at the specific case of scheduling under the precedence constraints of a fork-join structure (including communication delays) $P[Q]|fork-join, c_{ij}|C_{max}$. This represents any kind of computation that divides into sub-computations with the end results being processed together. Looking at special cases where computation costs are equal, we propose polynomial time approximations and exact algorithms for them, considering homogenous and (related) heterogenous processors. Having those algorithms allows us to study the quality of heuristics in a large experimental evaluation. This demonstrates that heuristic schedulers perform well enough in most cases.},
+  archive      = {J_TPDS},
+  author       = {Huijun Wang and Oliver Sinnen},
+  doi          = {10.1109/TPDS.2025.3605272},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Scheduling fork-joins with communication delays and equal processing times on heterogeneous processors},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TIIS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tiis">TIIS - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Practitioners and bias in machine learning: A study. <em>TIIS</em>, <em>15</em>(2), 1-28. (<a href='https://doi.org/10.1145/3733838'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The increasing adoption of machine learning (ML) raises ethical concerns, particularly regarding bias. This study explores how ML practitioners with limited experience in bias understand and apply bias definitions, detection measures, and mitigation methods. Through a take-home task, exercises, and interviews with 22 participants, we identified five key themes: sources of bias, selecting bias metrics, detecting bias, mitigating bias, and ethical considerations. Participants faced unresolved conflicts, such as applying fairness definitions in practice, selecting context-dependent bias metrics, addressing real-world biases, balancing model performance with bias mitigation, and relying on personal perspectives over data-driven metrics. While bias mitigation techniques helped identify biases in two datasets, participants could not fully eliminate bias, citing the oversimplification of complex processes into models with limited variables. We propose designing bias detection tools that encourage practitioners to focus on the underlying assumptions and integrating bias concepts into ML practices, such as using a harmonic mean-based approach, akin to the F1 score, to balance bias and accuracy.},
+  archive      = {J_TIIS},
+  author       = {Robert Cinca and Enrico Costanza and Mirco Musolesi},
+  doi          = {10.1145/3733838},
+  journal      = {ACM Transactions on Interactive Intelligent Systems},
+  month        = {6},
+  number       = {2},
+  pages        = {1-28},
+  shortjournal = {ACM Trans. Interact. Intell. Syst.},
+  title        = {Practitioners and bias in machine learning: A study},
+  volume       = {15},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

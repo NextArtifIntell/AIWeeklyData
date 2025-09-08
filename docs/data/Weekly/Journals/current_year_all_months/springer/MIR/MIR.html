@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MIR</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="mir">MIR - 50</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Guided proximal policy optimization with structured action graph for complex decision-making. <em>MIR</em>, <em>22</em>(4), 797-816. (<a href='https://doi.org/10.1007/s11633-024-1503-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reinforcement learning encounters formidable challenges when tasked with intricate decision-making scenarios, primarily due to the expansive parameterized action spaces and the vastness of the corresponding policy landscapes. To surmount these difficulties, we devise a practical structured action graph model augmented by guiding policies that integrate trust region constraints. Based on this, we propose guided proximal policy optimization with structured action graph (GPPO-SAG), which has demonstrated pronounced efficacy in refining policy learning and enhancing performance across sophisticated tasks characterized by parameterized action spaces. Rigorous empirical evaluations of our model have been performed on comprehensive gaming platforms, including the entire suite of StarCraft II and Hearthstone, yielding exceptionally favorable outcomes. Our source code is at https://github.com/sachiel321/GPPO-SAG .},
+  archive      = {J_MIR},
+  author       = {Yang, Yiming and Xing, Dengpeng and Xia, Wannian and Wang, Peng},
+  doi          = {10.1007/s11633-024-1503-7},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {797-816},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Guided proximal policy optimization with structured action graph for complex decision-making},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AdaGPAR: Generalizable pedestrian attribute recognition via test-time adaptation. <em>MIR</em>, <em>22</em>(4), 783-796. (<a href='https://doi.org/10.1007/s11633-024-1504-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Generalizable pedestrian attribute recognition (PAR) aims to learn a robust PAR model that can be directly adapted to unknown distributions under varying illumination, different viewpoints and occlusions, which is an essential problem for real-world applications, such as video surveillance and fashion search. In practice, when a trained PAR model is deployed to real-world scenarios, the unseen target samples are fed into the model continuously in an online manner. Therefore, this paper proposes an efficient and flexible method, named AdaGPAR, for generalizable PAR (GPAR) via test-time adaptation (TTA), where we adapt the trained model through exploiting the unlabeled target samples online during the test phase. As far as we know, it is the first work that solves the GPAR from the perspective of TTA. In particular, the proposed AdaGPAR memorizes the reliable target sample pairs (features and pseudo-labels) as prototypes gradually in the test phase. Then, it makes predictions with a non-parametric classifier by calculating the similarity between a target instance and the prototypes. However, since PAR is a task of multi-label classification, only using the same holistic feature of one pedestrian image as the prototypes of multiple attributes is not optimal. Therefore, an attribute localization branch is introduced to extract the attribute-specific features, where two kinds of memory banks are further constructed to cache the global and attribute-specific features simultaneously. In summary, the AdaGPAR is training-free in the test phase and predicts multiple pedestrian attributes of the target samples in an online manner. This makes the AdaGPAR time efficient and generalizable for real-world applications. Extensive experiments have been performed on the UPAR benchmark to compare the proposed method with multiple baselines. The superior performance demonstrates the effectiveness of the proposed AdaGPAR that improves the generalizability of a PAR model via TTA.},
+  archive      = {J_MIR},
+  author       = {Li, Da and Zhang, Zhang and Zhang, Yifan and Jia, Zhen and Shan, Caifeng},
+  doi          = {10.1007/s11633-024-1504-6},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {783-796},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {AdaGPAR: Generalizable pedestrian attribute recognition via test-time adaptation},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AICAttack: Adversarial image captioning attack with attention-based optimization. <em>MIR</em>, <em>22</em>(4), 769-782. (<a href='https://doi.org/10.1007/s11633-024-1535-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advances in deep learning research have shown remarkable achievements across many tasks in computer vision (CV) and natural language processing (NLP). At the intersection of CV and NLP is the problem of image captioning, where the related models’ robustness against adversarial attacks has not been well studied. This paper presents a novel adversarial attack strategy, attention-based image captioning attack (AICAttack), designed to attack image captioning models through subtle perturbations to images. Operating within a black-box attack scenario, our algorithm requires no access to the target model’s architecture, parameters, or gradient information. We introduce an attention-based candidate selection mechanism that identifies the optimal pixels for attack, followed by a customized differential evolution method to optimize the perturbations of the pixels’ RGB values. We demonstrate AICAttack’s effectiveness through extensive experiments on benchmark datasets against multiple victim models. The experimental results demonstrate that our method outperforms current leading-edge techniques by achieving consistently higher attack success rates.},
+  archive      = {J_MIR},
+  author       = {Li, Jiyao and Ni, Mingze and Dong, Yifei and Zhu, Tianqing and Gong, Yongshun and Liu, Wei},
+  doi          = {10.1007/s11633-024-1535-z},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {769-782},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {AICAttack: Adversarial image captioning attack with attention-based optimization},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CMSL: Cross-modal style learning for few-shot image generation. <em>MIR</em>, <em>22</em>(4), 752-768. (<a href='https://doi.org/10.1007/s11633-024-1511-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Training generative adversarial networks is data-demanding, which limits the development of these models on target domains with inadequate training data. Recently, researchers have leveraged generative models pretrained on sufficient data and fine-tuned them using small training samples, thus reducing data requirements. However, due to the lack of explicit focus on target styles and disproportionately concentrating on generative consistency, these methods do not perform well in diversity preservation which represents the adaptation ability for few-shot generative models. To mitigate the diversity degradation, we propose a framework with two key strategies: 1) To obtain more diverse styles from limited training data effectively, we propose a cross-modal module that explicitly obtains the target styles with a style prototype space and text-guided style instructions. 2) To inherit the generation capability from the pretrained model, we aim to constrain the similarity between the generated and source images with a structural discrepancy alignment module by maintaining the structure correlation in multiscale areas. We demonstrate the effectiveness of our method, which outperforms state-of-the-art methods in mitigating diversity degradation through extensive experiments and analyses.},
+  archive      = {J_MIR},
+  author       = {Jiang, Yue and Lyu, Yueming and Peng, Bo and Wang, Wei and Dong, Jing},
+  doi          = {10.1007/s11633-024-1511-7},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {752-768},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {CMSL: Cross-modal style learning for few-shot image generation},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DPM-solver++: Fast solver for guided sampling of diffusion probabilistic models. <em>MIR</em>, <em>22</em>(4), 730-751. (<a href='https://doi.org/10.1007/s11633-025-1562-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Diffusion probabilistic models (DPMs) have achieved impressive success in high-resolution image synthesis, especially in recent large-scale text-to-image generation applications. An essential technique for improving the sample quality of DPMs is guided sampling, which usually needs a large guidance scale to obtain the best sample quality. The commonly-used fast sampler for guided sampling is denoising diffusion implicit models (DDIM), a first-order diffusion ordinary differential equation (ODE) solver that generally needs 100 to 250 steps for high-quality samples. Although recent works propose dedicated high-order solvers and achieve a further speedup for sampling without guidance, their effectiveness for guided sampling has not been well-tested before. In this work, we demonstrate that previous high-order fast samplers suffer from instability issues, and they even become slower than DDIM when the guidance scale grows larger. To further speed up guided sampling, we propose DPM-Solver++, a high-order solver for the guided sampling of DPMs. DPM-Solver++ solves the diffusion ODE with the data prediction model and adopts thresholding methods to keep the solution matches training data distribution. We further propose a multistep variant of DPM-Solver++ to address the instability issue by reducing the effective step size. Experiments show that DPM-Solver++ can generate high-quality samples within only 15 to 20 steps for guided sampling by pixel-space and latent-space DPMs.},
+  archive      = {J_MIR},
+  author       = {Lu, Cheng and Zhou, Yuhao and Bao, Fan and Chen, Jianfei and Li, Chongxuan and Zhu, Jun},
+  doi          = {10.1007/s11633-025-1562-4},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {730-751},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {DPM-solver++: Fast solver for guided sampling of diffusion probabilistic models},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multimodal pretrained knowledge for real-world object navigation. <em>MIR</em>, <em>22</em>(4), 713-729. (<a href='https://doi.org/10.1007/s11633-024-1537-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Most visual-language navigation (VLN) research focuses on simulate environments, but applying these methods to real-world scenarios is challenging because of misalignments between vision and language in complex environments, leading to path deviations. To address this, we propose a novel vision-and-language object navigation strategy that uses multimodal pretrained knowledge as a cross-modal bridge to link semantic concepts in both images and text. This improves navigation supervision at key-points and enhances robustness. Specifically, we 1) randomly generate key-points within a specific density range and optimize them on the basis of challenging locations; 2) use pretrained multimodal knowledge to efficiently retrieve target objects; 3) combine depth information with simultaneous localization and mapping (SLAM) map data to predict optimal positions and orientations for accurate navigation; and 4) implement the method on a physical robot, successfully conducting navigation tests. Our approach achieves a maximum success rate of 66.7%, outperforming existing VLN methods in real-world environments.},
+  archive      = {J_MIR},
+  author       = {Yuan, Hui and Huang, Yan and Yu, Naigong and Zhang, Dongbo and Du, Zetao and Liu, Ziqi and Zhang, Kun},
+  doi          = {10.1007/s11633-024-1537-x},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {713-729},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Multimodal pretrained knowledge for real-world object navigation},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Online iterative learning enhanced sim-to-real transfer for efficient manipulation of deformable objects. <em>MIR</em>, <em>22</em>(4), 696-712. (<a href='https://doi.org/10.1007/s11633-025-1566-0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deformable manipulation has attracted a lot of attention in the field of robotics, especially in medical applications. However, manipulating deformable objects faces various challenges, mainly including their complex dynamic properties and unpredictable nonlinear deformations. It is difficult to provide a basis for deformable object measurements without effective control methods that provide intelligent and accurate position control, and this research also provides a premise for deformable object measurements. To address these issues, this paper proposes an online iterative perception policy (IPP) method, which does not require large-scale deep network training. This method is able to perceive transformations through an iterative process, and achieve efficient and accurate control of deformable objects. Extensive experiments in the simulation environment and the real scene are conducted to validate the effectiveness and superiority of the proposed method, as well as to compare with advanced algorithms (linear-quadratic regulator (LQR), sliding mode control (SMC), model predictive control (MPC), and heuristic). The experimental results reveal that IPP outperforms other approaches in terms of convergence, stability, robustness and flexibility in both the simulation and real-world scenarios, regardless of textile properties or initial conditions.},
+  archive      = {J_MIR},
+  author       = {Chen, Zuyan and Huang, Jian-An and Röning, Juha and Angrisani, Leopoldo and Li, Shuai},
+  doi          = {10.1007/s11633-025-1566-0},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {696-712},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Online iterative learning enhanced sim-to-real transfer for efficient manipulation of deformable objects},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Human-like observation-inspired universal image acquisition system for complex surfaces in industrial product inspection. <em>MIR</em>, <em>22</em>(4), 677-695. (<a href='https://doi.org/10.1007/s11633-025-1561-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Industrial surface inspection is crucial for the manufacture of high-end equipment across industries, with precise image acquisition being fundamental. Existing imaging systems often lack flexibility, they are restricted to specific objects, and face challenges in industrial structures without standardized computer-aided design (CAD) models or with complex surfaces. Inspired by human-like multidimensional observation, this study developed a universal image acquisition system based on measured point clouds, offering strong adaptability and robustness in complex industrial settings. The system is divided into three layers: the physical layer responsible for hardware integration, the interaction layer that facilitates bidirectional data exchange with the control layer, and the control layer integrating a new paradigm of multiple intelligent algorithms. The physical layer incorporates 2D and 3D cameras, turntables and industrial robots, enhancing the flexibility and compatibility of imaging. The interaction layer manages bidirectional information transmission and data exchange, offering a visualized area to enhance the user interaction experience. The control layer consists of point cloud preprocessing, primitive segmentation, viewpoint generation and pose estimation algorithms, using point cloud-based viewpoint generation and trajectory planning for high-precision image acquisition applicable to complex surface inspections across scenarios and structures. The system’s utility is demonstrated through a software and hardware algorithm platform and an interactive interface. Experimental validation on curved surfaces of different configurations and sizes confirms its universal image acquisition advantages. This system promises to introduce a cost-effective, versatile solution for complex surfaces, driving adoption across diverse industrial scenarios.},
+  archive      = {J_MIR},
+  author       = {Yang, Tianbo and Wang, Shaohu and Tong, Yuchuang and Zou, Menghan and Shang, Xiuqin and Ma, Wenzhi and Zhang, Zhengtao},
+  doi          = {10.1007/s11633-025-1561-5},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {677-695},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Human-like observation-inspired universal image acquisition system for complex surfaces in industrial product inspection},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Self-supervised vision-driven trajectory planning for intelligent robotic deburring. <em>MIR</em>, <em>22</em>(4), 655-676. (<a href='https://doi.org/10.1007/s11633-025-1560-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Intelligent robotic manufacturing systems are revolutionizing the production industry. These next-generation systems employ robots as actuators, multi-source sensors for perception, and artificial intelligence for decision-making, aiming to execute routine manufacturing tasks with greater autonomy and flexibility. In footwear manufacturing, sole deburring presents a specific challenge in detecting defects and elaborating deburring paths, which skilled workers traditionally handle. The present research goes beyond solving such problems traditionally with computer vision and hard robot programming. Instead, it focuses on developing a learning structure mimicking human motion planning capability from vision inputs. Like humans who mentally visualize and predict a path before refining it in real-time, we want to give the robot the ability to predetermine the trajectory needed for a finishing task, exploiting only vision data. The system is designed to learn how to identify defects and directly correlate this information with motions by utilizing a latent space representation, transitioning from simple programmed responses to more adaptive and intelligent behaviors. We call it a self-supervised vision-proprioception model, an AI framework that autonomously learns to correlate visual observations to proprioceptive data (end effector trajectories) for effective task execution. This is achieved by integrating a vision-based latent space learning phase (learn to see), followed by a reinforcement learning stage, where the agent learns to associate the latent space with deburring actions in a simulated environment (learn to act). Recognizing the common performance degradation when transferring learned policies to real robots, this research also employs Sim-to-Real methods to bridge the reality gap (learn to transfer). Experimental results validate the whole approach.},
+  archive      = {J_MIR},
+  author       = {Tafuro, Alessandra and Molinaro, Martin and Zanchettin, Andrea Maria and Rocco, Paolo},
+  doi          = {10.1007/s11633-025-1560-6},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {655-676},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Self-supervised vision-driven trajectory planning for intelligent robotic deburring},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GPU-accelerated conflict-based search for multi-agent embodied intelligence. <em>MIR</em>, <em>22</em>(4), 641-654. (<a href='https://doi.org/10.1007/s11633-025-1568-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Embodied intelligence applications, such as autonomous robotics and smart transportation systems, require efficient coordination of multiple agents in dynamic environments. A critical challenge in this domain is the multi-agent pathfinding (MAPF) problem, which ensures that agents can navigate conflict-free while optimizing their paths. Conflict-based search (CBS) is a well-established two-level solver for the MAPF problem. However, as the scale of the problem expands, the computation time becomes a significant challenge for the implementation of CBS. Previous optimizations have mainly focused on reducing the number of nodes explored by the high-level or low-level solver. This paper takes a different perspective by proposing a parallel version of CBS, namely GPU-accelerated conflict-based search (GACBS), which significantly exploits the parallel computing capabilities of GPU. GACBS employs a task coordination framework to enable collaboration between the high-level and low-level solvers with lightweight synchronous operations. Moreover, GACBS leverages a parallel low-level solver, called GATSA, to efficiently find the shortest path for a single agent under constraints. Experimental results show that the proposed GACBS significantly outperforms CPU-based CBS, with the maximum speedup ratio reaching over 46.},
+  archive      = {J_MIR},
+  author       = {Tang, Mingkai and Xin, Ren and Fang, Chao and Li, Yuanhang and Liu, Hongji and Wu, Jin},
+  doi          = {10.1007/s11633-025-1568-y},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {641-654},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {GPU-accelerated conflict-based search for multi-agent embodied intelligence},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reactive whole-body locomotion-integrated manipulation based on combined learning and optimization. <em>MIR</em>, <em>22</em>(4), 627-640. (<a href='https://doi.org/10.1007/s11633-024-1538-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reactive planning and control capacity for collaborative robots is essential when the tasks change online in an unstructured environment. This is more difficult for collaborative mobile manipulators (CMM) due to high redundancies. To this end, this paper proposed a reactive whole-body locomotion-integrated manipulation approach based on combined learning and optimization. First, human demonstrations are collected, where the wrist and pelvis movements are treated as whole-body trajectories, mapping to the end-effector (EE) and the mobile base (MB) of CMM, respectively. A time-input kernelized movement primitive (T-KMP) learns the whole-body trajectory, and a multi-dimensional kernelized movement primitive (M-KMP) learns the spatial relationship between the MB and EE pose. According to task changes, the T-KMP adapts the learned trajectories online by inserting the new desired point predicted by M-KMP. Then, the updated reference trajectories are sent to a hierarchical quadratic programming (HQP) controller, where the EE and the MB trajectories tracking are set as the first and second priority tasks, generating the feasible and optimal joint level commands. An ablation simulation experiment with CMM of the HQP is conducted to show the necessity of MB trajectory tracking in mimicking human whole-body motion behavior. Finally, the tasks of the reactive pick-and-place and reactive reaching were undertaken, where the target object was randomly moved, even out of the region of demonstrations. The results showed that the proposed approach can successfully transfer and adapt the human whole-body loco-manipulation skills to CMM online with task changes.},
+  archive      = {J_MIR},
+  author       = {Zhao, Jianzhuang and Teng, Tao and De Momi, Elena and Ajoudani, Arash},
+  doi          = {10.1007/s11633-024-1538-9},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {627-640},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Reactive whole-body locomotion-integrated manipulation based on combined learning and optimization},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A survey of embodied learning for object-centric robotic manipulation. <em>MIR</em>, <em>22</em>(4), 588-626. (<a href='https://doi.org/10.1007/s11633-025-1542-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Embodied learning for object-centric robotic manipulation is a rapidly developing and challenging area in embodied AI. It is crucial for advancing next-generation intelligent robots and has garnered significant interest recently. Unlike data-driven machine learning methods, embodied learning focuses on robot learning through physical interaction with the environment and perceptual feedback, making it especially suitable for robotic manipulation. In this paper, we provide a comprehensive survey of the latest advancements in this field and categorize the existing work into three main branches: 1) Embodied perceptual learning, which aims to predict object pose and affordance through various data representations; 2) Embodied policy learning, which focuses on generating optimal robotic decisions using methods such as reinforcement learning and imitation learning; 3) Embodied task-oriented learning, designed to optimize the robot’s performance based on the characteristics of different tasks in object grasping and manipulation. In addition, we offer an overview and discussion of public datasets, evaluation metrics, representative applications, current challenges, and potential future research directions. A project associated with this survey has been established at https://github.com/RayYoh/OCRM_survey .},
+  archive      = {J_MIR},
+  author       = {Zheng, Ying and Yao, Lei and Su, Yuejiao and Zhang, Yi and Wang, Yi and Zhao, Sicheng and Zhang, Yiyi and Chau, Lap-Pui},
+  doi          = {10.1007/s11633-025-1542-8},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {588-626},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {A survey of embodied learning for object-centric robotic manipulation},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Editorial for special issue on embodied intelligence. <em>MIR</em>, <em>22</em>(4), 585-587. (<a href='https://doi.org/10.1007/s11633-025-1572-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_MIR},
+  author       = {He, Wei and Yang, Chenguang and Cheng, Long and Wang, Zhichuang and Wu, Jin and Peternel, Luka},
+  doi          = {10.1007/s11633-025-1572-2},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {585-587},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Editorial for special issue on embodied intelligence},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CRMR: A collaborative multistep reasoning framework for solving mathematical problems. <em>MIR</em>, <em>22</em>(3), 571-584. (<a href='https://doi.org/10.1007/s11633-024-1531-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The reasoning chain generated by the large language models (LLMs) during the reasoning process is often susceptible to illusions that lead to incorrect reasoning steps. Such misleading intermediate reasoning steps may trigger a series of errors. This phenomenon can be alleviated by using validation methods to obtain feedback and adjust the reasoning process, similar to the human reflective process. In this paper, we propose a collaborative reasoning framework for mathematical reasoning called CRMR, where a generator is responsible for generating structured intermediate reasoning and a verifier provides detailed feedback on each step of the reasoning. In particular, we formulate a rigorous form of structured intermediate reasoning called step-by-step rationale (SSR). We evaluated the CRMR framework not only on mathematical word problems but also conducted experiments using open-source and closed-source models with different parameter sizes independently. The results show that our method fully exploits the inference capabilities of the models and achieves significant results on the dataset compared to a single model.},
+  archive      = {J_MIR},
+  author       = {Zhang, Yudi and Tang, Xue-song and Hao, Kuangrong},
+  doi          = {10.1007/s11633-024-1531-3},
+  journal      = {Machine Intelligence Research},
+  month        = {6},
+  number       = {3},
+  pages        = {571-584},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {CRMR: A collaborative multistep reasoning framework for solving mathematical problems},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Interpretable visual neural decoding with unsupervised semantic disentanglement. <em>MIR</em>, <em>22</em>(3), 553-570. (<a href='https://doi.org/10.1007/s11633-023-1484-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the field of brain decoding research, reconstructing visual perception from neural recordings is a challenging but crucial task. With the use of superior algorithms, many methods have been dedicated to enhancing decoding performance. However, these models that map neural activities onto semantically entangled feature space are difficult to interpret. It is hard to understand the connections between neural activities and these abstract features. In this paper, we propose an interpretable neural decoding model that projects neural activities onto a semantically disentangled feature space with each dimension representing distinct visual attributes, such as gender and facial pose. A two-stage algorithm is designed to achieve this goal. First, a deep generative model learns semantically-disentangled image representations in an unsupervised way. Second, neural activities are linearly embedded into the semantic space, which the generator uses to reconstruct visual stimuli. Due to modality heterogeneity, it is challenging to learn such a neural embedded high-level semantic representation. We induce pixel, feature, and semantic alignment to ensure reconstruction quality. Three experimental fMRI datasets containing handwritten digits, characters, and human face stimuli are used to evaluate the neural decoding performance of our model. We also demonstrate the model interpretability through a reconstructed image editing application. The experimental results indicate that our model maintains a competitive decoding performance while remaining interpretable.},
+  archive      = {J_MIR},
+  author       = {Zhou, Qiongyi and Du, Changde and Li, Dan and Wen, Bincheng and Chang, Le and He, Huiguang},
+  doi          = {10.1007/s11633-023-1484-y},
+  journal      = {Machine Intelligence Research},
+  month        = {6},
+  number       = {3},
+  pages        = {553-570},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Interpretable visual neural decoding with unsupervised semantic disentanglement},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Automatic tooth labeling after segmentation using prototype-based meta-learning. <em>MIR</em>, <em>22</em>(3), 539-552. (<a href='https://doi.org/10.1007/s11633-024-1520-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Digital dentistry has been upgraded traditional dentistry by realizing the complete process linking preliminary image processing tasks to orthodontic diagnosis and treatment planning. Automatic tooth labeling from dental images involves identifying a specific tooth class using deep learning algorithms. Existing methods used for tooth labeling often use incomplete tooth models, with only crown information obtained by oral scanners or X-ray radiographs. Even with cone beam computed tomography (CBCT) images, the problem of misclassification with a change in tooth orientation still appears. Consequently, they could not perform well for the varying test samples with similar teeth or those with missing teeth. We propose a tooth labeling method based on complete tooth models using a few-shot classification based on a meta-learning approach. To resolve the problem of intra-class similarities, we design an attention mechanism based on matrix decomposition inspired by HamNet. We validate the proposed method on the CBCT dataset with augmented tooth models. The results demonstrate that our approach performs better than cutting edge methods like PointNet, PointCNN, PointNet++, dynamic graph convolutional neural network (DGCNN), hierarchical convolutional neural network (HCNN), and TSegNet in terms of accuracy with a significant improvement of 11.46%, 7.8%, 6.16%, 4.48%, 5.06% and 5.08%, respectively. Therefore, with validated data applicability, automated tooth labeling will be applied in digital dentistry with much excellence and feasibility.},
+  archive      = {J_MIR},
+  author       = {Sehar, Uroosa and Xiong, Jing and Xia, Zeyang},
+  doi          = {10.1007/s11633-024-1520-6},
+  journal      = {Machine Intelligence Research},
+  month        = {6},
+  number       = {3},
+  pages        = {539-552},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Automatic tooth labeling after segmentation using prototype-based meta-learning},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reparameterized multi-scale transformer for deformable retinal image registration. <em>MIR</em>, <em>22</em>(3), 524-538. (<a href='https://doi.org/10.1007/s11633-024-1525-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deformable retinal image registration is crucial in clinical diagnosis and longitudinal studies of retinal diseases. Most existing deep deformable retinal image registration methods focus on fully convolutional network (FCN) architecture design, which fails to model long-range dependencies among pixels – a significant factor in deformable retinal image registration. Transformers based on the self-attention mechanism, can capture global context dependencies, complementing local convolution. However, multi-scale spatial feature fusion and pixel-wise position selection are also crucial for the deformable retinal image registration, are often ignored by both FCNs and transformers. To fully leverage the merits of FCNs, multi-scale spatial attention and transformers, we propose a hierarchical hybrid architecture, reparameterized multi-scale transformer (RMFormer), for deformable retinal image registration. In RMFormer, we specifically develop a reparameterized multi-scale spatial attention to adaptively fuse multi-scale spatial features, with the assistance of the reparameterizing technique, thereby highlighting informative pixel-wise positions in a lightweight manner. The experimental results on two publicly available datasets demonstrate the superiority of our RMFormer over state-of-the-art methods and show that it is data-efficient in a limited medical image regime. Additionally, we are the first to provide a visualization analysis to explain how our proposed method affects the deformable retinal image registration process. The source code of our work is available at https://github.com/Tloops/RMFormer .},
+  archive      = {J_MIR},
+  author       = {Nie, Qiushi and Zhang, Xiaoqing and Chen, Chuan and Zhang, Zhixuan and Hu, Yan and Liu, Jiang},
+  doi          = {10.1007/s11633-024-1525-1},
+  journal      = {Machine Intelligence Research},
+  month        = {6},
+  number       = {3},
+  pages        = {524-538},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Reparameterized multi-scale transformer for deformable retinal image registration},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TENET: Beyond pseudo-labeling for semi-supervised few-shot learning. <em>MIR</em>, <em>22</em>(3), 511-523. (<a href='https://doi.org/10.1007/s11633-023-1476-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Few-shot learning attempts to identify novel categories by exploiting limited labeled training data, while the performances of existing methods still have much room for improvement. Thanks to a very low cost, many recent methods resort to additional unlabeled training data to boost performance, known as semi-supervised few-shot learning (SSFSL). The general idea of SSFSL methods is to first generate pseudo labels for all unlabeled data and then augment the labeled training set with selected pseudo-labeled data. However, almost all previous SSFSL methods only take supervision signal from pseudo-labeling, ignoring that the distribution of training data can also be utilized as an effective unsupervised regularization. In this paper, we propose a simple yet effective SSFSL method named feature reconstruction based regression method (TENET), which takes low-rank feature reconstruction as the unsupervised objective function and pseudo labels as the supervised constraint. We provide several theoretical insights on why TENET can mitigate overfitting on low-quality training data, and why it can enhance the robustness against inaccurate pseudo labels. Extensive experiments on four popular datasets validate the effectiveness of TENET.},
+  archive      = {J_MIR},
+  author       = {Ma, Chengcheng and Dong, Weiming and Xu, Changsheng},
+  doi          = {10.1007/s11633-023-1476-y},
+  journal      = {Machine Intelligence Research},
+  month        = {6},
+  number       = {3},
+  pages        = {511-523},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {TENET: Beyond pseudo-labeling for semi-supervised few-shot learning},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SelectQ: Calibration data selection for post-training quantization. <em>MIR</em>, <em>22</em>(3), 499-510. (<a href='https://doi.org/10.1007/s11633-024-1518-0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Post-training quantization (PTQ) can reduce the memory footprint and latency of deep model inference while still preserving the accuracy of model, with only a small unlabeled calibration set and without the retraining on full training set. To calibrate a quantized model, current PTQ methods usually randomly select some unlabeled data from the training set as calibration data. However, we show the random data selection would result in performance instability and degradation due to the activation distribution mismatch. In this paper, we attempt to solve the crucial task on appropriate calibration data selection, and propose a novel one-shot calibration data selection method termed SelectQ, which selects specific data for calibration via dynamic clustering. The setting of our SelectQ uses the statistic information of activation and performs layer-wise clustering to learn an activation distribution on training set. For that purpose, a new metric called knowledge distance is proposed to calculate the distances of the activation statistics to centroids. Finally, after calibration with the selected data, quantization noise can be alleviated by mitigating the distribution mismatch within activations. Extensive experiments on ImageNet dataset show that our SelectQ increases the top-1 accuracy of ResNet18 over 15% in 4-bit quantization, compared to randomly sampled calibration data. It's noteworthy that SelectQ does not involve both the backward propagation and batch normalization parameters, which means that it has fewer limitations in practical applications.},
+  archive      = {J_MIR},
+  author       = {Zhang, Zhao and Gao, Yangcheng and Fan, Jicong and Zhao, Zhongqiu and Yang, Yi and Yan, Shuicheng},
+  doi          = {10.1007/s11633-024-1518-0},
+  journal      = {Machine Intelligence Research},
+  month        = {6},
+  number       = {3},
+  pages        = {499-510},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {SelectQ: Calibration data selection for post-training quantization},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improving accomplice detection in the morphing attack. <em>MIR</em>, <em>22</em>(3), 484-498. (<a href='https://doi.org/10.1007/s11633-024-1533-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper addresses a critical security challenge in the field of automated face recognition, i.e., morphing attack. The paper introduces a novel differential morphing attack detection (D-MAD) system called ACIdA, which is specifically designed to overcome the limitations of existing D-MAD approaches. Traditional methods are effective when the morphed image and live capture are distinct, but they falter when the morphed image closely resembles the accomplice. This is a critical gap because detecting accomplice involvement in addition to the criminal one is essential for robust security. ACIdA’s impact is underscored by its innovative approach, which consists of three modules: One for classifying the type of attempt (bona fide, criminal, or accomplice verification attempt), and two others dedicated to analyzing identity and artifacts. This multi-faceted approach enables ACIdA to excel in scenarios where the morphed image does not equally represent both contributing subjects–a common and challenging situation in real-world applications. The paper’s extensive cross-dataset experimental evaluation demonstrates that ACIdA achieves state-of-the-art results in detecting accomplices, a crucial advancement for enhancing the security of face recognition systems. Furthermore, it maintains strong performance in identifying criminals, thereby addressing a significant vulnerability in current D-MAD methods and marking a substantial contribution to the field of facial recognition security.},
+  archive      = {J_MIR},
+  author       = {Di Domenico, Nicoló and Borghi, Guido and Franco, Annalisa and Maltoni, Davide},
+  doi          = {10.1007/s11633-024-1533-1},
+  journal      = {Machine Intelligence Research},
+  month        = {6},
+  number       = {3},
+  pages        = {484-498},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Improving accomplice detection in the morphing attack},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Balanced representation learning for long-tailed skeleton-based action recognition. <em>MIR</em>, <em>22</em>(3), 466-483. (<a href='https://doi.org/10.1007/s11633-023-1487-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Skeleton-based action recognition has recently made significant progress. However, data imbalance is still a great challenge in real-world scenarios. The performance of current action recognition algorithms declines sharply when training data suffers from heavy class imbalance. The imbalanced data actually degrades the representations learned by these methods and becomes the bottleneck for action recognition. How to learn unbiased representations from imbalanced action data is the key to long-tailed action recognition. In this paper, we propose a novel balanced representation learning method to address the long-tailed problem in action recognition. Firstly, a spatial-temporal action exploration strategy is presented to expand the sample space effectively, generating more valuable samples in a rebalanced manner. Secondly, we design a detached action-aware learning schedule to further mitigate the bias in the representation space. The schedule detaches the representation learning of tail classes from training and proposes an action-aware loss to impose more effective constraints. Additionally, a skip-type representation is proposed to provide complementary structural information. The proposed method is validated on four skeleton datasets, NTU RGB+D 60, NTU RGB+D 120, NW-UCLA and Kinetics. It not only achieves consistently large improvement compared to the state-of-the-art (SOTA) methods, but also demonstrates a superior generalization capacity through extensive experiments. Our code is available at https://github.com/firework8/BRL .},
+  archive      = {J_MIR},
+  author       = {Liu, Hongda and Wang, Yunlong and Ren, Min and Hu, Junxing and Luo, Zhengquan and Hou, Guangqi and Sun, Zhenan},
+  doi          = {10.1007/s11633-023-1487-8},
+  journal      = {Machine Intelligence Research},
+  month        = {6},
+  number       = {3},
+  pages        = {466-483},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Balanced representation learning for long-tailed skeleton-based action recognition},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DDSR-net: Direct document shadow removal leveraging multi-scale attention. <em>MIR</em>, <em>22</em>(3), 452-465. (<a href='https://doi.org/10.1007/s11633-024-1522-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Shadows in document images are undesirable yet inevitable. They can decrease the clarity and readability of the images. The existing methods for removing shadows from documents still face some challenges, such as the traditional heuristics lack universality and the optimization goal of subnetworks is not consistent for multistage deep learning methods. In this paper, we introduce an end-to-end direct document shadow removal network (DDSR-Net), where we employ a 3-layer UNet++ as the backbone to extract features from diverse scales. To further improve the performance of DDSR-Net, we integrate the multi-scale attention (MSA) blocks into each node. The MSA block allocates different weights to feature vectors at different positions, achieving automatic feature alignment and significantly enhancing the end-to-end network’s ability to handle shadow processing. To verify the effectiveness of the proposed DDSR-Net, qualitative and quantitative experiments are conducted on multiple open-source document shadow removal datasets. The experimental results demonstrate that our method outperforms the existing state-of-the-art methods on these datasets. Our code and models will be released to the public.},
+  archive      = {J_MIR},
+  author       = {Wang, Bingshu and Wang, Ze and Liu, Wenjie and Huang, Xiaoshui and Chen, C. L. Philip and Zhao, Yue},
+  doi          = {10.1007/s11633-024-1522-4},
+  journal      = {Machine Intelligence Research},
+  month        = {6},
+  number       = {3},
+  pages        = {452-465},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {DDSR-net: Direct document shadow removal leveraging multi-scale attention},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MCANet: Medical image segmentation with multi-scale cross-axis attention. <em>MIR</em>, <em>22</em>(3), 437-451. (<a href='https://doi.org/10.1007/s11633-025-1552-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Efficiently capturing multi-scale local information and building long-range dependencies among pixels are essential for medical image segmentation because of the various sizes and shapes of the lesion regions or organs. In this paper, we propose the multi-scale cross-axis attention (MCA) mechanism to address these challenges through enhanced axial attention. To address the issues of insufficient learning of positional bias and limited long-distance interaction in axial attention caused by the small dataset, we propose using a dual cross-attention mechanism instead of axial attention to enhance global information capture. Meanwhile, to compensate for the lack of explicit attention to local information in axial attention, we use multiple convolutions of strip-shaped kernels with different kernel sizes in each axial attention path, which improves the efficiency of MCA in local information encoding. By integrating MCA into the multi-scale cross-axis attention network (MSCAN) backbone, we develop our network architecture, termed MCANet. With merely 4 M+ parameters, MCANet outperforms previous heavyweight approaches (e.g., swin transformer-based methods) across four challenging tasks: skin lesion segmentation, nuclei segmentation, abdominal multi-organ segmentation, and polyp segmentation. The code is available at https://github.com/haoshao-nku/medical_seg .},
+  archive      = {J_MIR},
+  author       = {Shao, Hao and Zeng, Quansheng and Hou, Qibin and Yang, Jufeng},
+  doi          = {10.1007/s11633-025-1552-6},
+  journal      = {Machine Intelligence Research},
+  month        = {6},
+  number       = {3},
+  pages        = {437-451},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {MCANet: Medical image segmentation with multi-scale cross-axis attention},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Assessing and understanding creativity in large language models. <em>MIR</em>, <em>22</em>(3), 417-436. (<a href='https://doi.org/10.1007/s11633-025-1546-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the field of natural language processing, the rapid development of large language model (LLM) has attracted increasing attention. LLMs have shown a high level of creativity in various tasks, but the methods for assessing such creativity are inadequate. Assessment of LLM creativity needs to consider differences from humans, requiring multiple dimensional measurement while balancing accuracy and efficiency. This paper aims to establish an efficient framework for assessing the level of creativity in LLMs. By adapting the modified Torrance tests of creative thinking, the research evaluates the creative performance of various LLMs across 7 tasks, emphasizing 4 criteria including fluency, flexibility, originality, and elaboration. In this context, we develop a comprehensive dataset of 700 questions for testing and an LLM-based evaluation method. In addition, this study presents a novel analysis of LLMs’ responses to diverse prompts and role-play situations. We found that the creativity of LLMs primarily falls short in originality, while excelling in elaboration. In addition, the use of prompts and role-play settings of the model significantly influence creativity. Additionally, the experimental results also indicate that collaboration among multiple LLMs can enhance originality. Notably, our findings reveal a consensus between human evaluations and LLMs regarding the personality traits that influence creativity. The findings underscore the significant impact of LLM design on creativity and bridge artificial intelligence and human creativity, offering insights into LLMs’ creativity and potential applications.},
+  archive      = {J_MIR},
+  author       = {Zhao, Yunpu and Zhang, Rui and Li, Wenyi and Li, Ling},
+  doi          = {10.1007/s11633-025-1546-4},
+  journal      = {Machine Intelligence Research},
+  month        = {6},
+  number       = {3},
+  pages        = {417-436},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Assessing and understanding creativity in large language models},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A survey on writing style change detection: Current literature and future directions. <em>MIR</em>, <em>22</em>(3), 397-416. (<a href='https://doi.org/10.1007/s11633-025-1544-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Writing style change detection (WSCD) is the task of automatically identifying transitions in the writing style of a text, which may include changes in authorship. While traditional WSCD research has focused on style changes between human authors, the increasing use of AI-generated text introduces a new challenge: detecting transitions between human-written and AI-generated content. This survey, to the best of our knowledge, is the first to address WSCD in both human-human and human-AI collaborative contexts. We begin by providing a systematic review that investigates task descriptions, and analyzes, categorizes, and compares the existing approaches, methodologies, and datasets commonly used in WSCD research. Additionally, we highlight the challenges and limitations in the current literature including the lack of comprehensive and realistic datasets, limited language coverage, and insufficient focus on domains where textual integrity is crucial, such as education. Furthermore, we point out emerging research directions in WSCD, including the potential use of federated learning (FL) to enable the use of sensitive data sources. We highlight the intersection between traditional human-human style change detection and machine-generated text detection, aiming to facilitate knowledge transfer between these domains that can benefit emerging studies focused on human-AI collaborative writing.},
+  archive      = {J_MIR},
+  author       = {Hashemi, Ahmad and Shi, Wei},
+  doi          = {10.1007/s11633-025-1544-6},
+  journal      = {Machine Intelligence Research},
+  month        = {6},
+  number       = {3},
+  pages        = {397-416},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {A survey on writing style change detection: Current literature and future directions},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Active object detection based on PPO learning algorithm with decision knowledge guidance. <em>MIR</em>, <em>22</em>(2), 386-396. (<a href='https://doi.org/10.1007/s11633-024-1500-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {After detecting a target object, a service robot must approach the target object to perform the associated service task. In active object detection (AOD) tasks, effective feature information representation and comprehensive action execution strategies are crucial. Currently, most AOD tasks are accomplished by traditional reinforcement learning algorithms, but there are still problems such as high task failure rates and model training efficiency. To solve these problems, this paper proposes a combined data-driven and knowledge-guided solution. First, semantic information features, depth information features and target object bounding box information are used as inputs to comprehensively represent feature information. Second, a policy network is constructed based on the proximal policy optimizaton (PPO) algorithm. The reward value is set according to the robot’s action, the position of the bounding box, and the distance to the target object, and then applied to the robot’s training process. Finally, the knowledge of the path experience in the task, the robot’s colhsion avoidance ability and the prediction of target object loss are combined to guide the robot’s behavior, and a comprehensive decision model is proposed to enable the robot to make the best decision. Relevant experiments were conducted on an active vision dataset. The robot achieves an average success rate of 91.36% and an average step size of 9.363 1 in performing the AOD task in the test scenes, which verifies the effectiveness of the proposed scheme.},
+  archive      = {J_MIR},
+  author       = {Yao, Fujing and Tian, Guohui and Wang, Yuhao and Yang, Ning},
+  doi          = {10.1007/s11633-024-1500-x},
+  journal      = {Machine Intelligence Research},
+  month        = {4},
+  number       = {2},
+  pages        = {386-396},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Active object detection based on PPO learning algorithm with decision knowledge guidance},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Auto-3D-house design from structured user requirements. <em>MIR</em>, <em>22</em>(2), 368-385. (<a href='https://doi.org/10.1007/s11633-024-1498-0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the task of automated house design, which aims to automatically generate 3D houses from user requirements. However, in the automatic system, it is non-trivial due to the intrinsic complexity of house designing: 1) the understanding of user requirements, where the users can hardly provide high-quality requirements without any professional knowledge; 2) the design of house plan, which mainly focuses on how to capture the effective information from user requirements. To address the above issues, we propose an automatic house design framework, called auto-3D-house design (A3HD). Unlike the previous works that consider the user requirements in an unstructured way (e.g., natural language), we carefully design a structured list that divides the requirements into three parts (i.e., layout, outline, and style), which focus on the attributes of rooms, the outline of the building, and the style of decoration, respectively. Following the processing of architects, we construct a bubble diagram (i.e., graph) that covers the rooms’ attributes and relations under the constraint of outline. In addition, we take each outline as a combination of points and orders, ensuring that it can represent the outlines with arbitrary shapes. Then, we propose a graph feature generation module (GFGM) to capture layout features from the bubble diagrams and an outline feature generation module (OFGM) for outline features. Finally, we render 3D houses according to the given style requirements in a rule-based method. Experiments on two benchmark datasets (i.e., RPLAN and T3HM) demonstrate the effectiveness of our A3HD in terms of both quantitative and qualitative evaluation metrics.},
+  archive      = {J_MIR},
+  author       = {Tan, Minkui and Chen, Qi and Huang, Zixiong and Wu, Qi and Li, Yuanqing and Zhou, Jiaqiu},
+  doi          = {10.1007/s11633-024-1498-0},
+  journal      = {Machine Intelligence Research},
+  month        = {4},
+  number       = {2},
+  pages        = {368-385},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Auto-3D-house design from structured user requirements},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Analysis of conjoint response in post-stroke patients using the attention-coupled weighting method. <em>MIR</em>, <em>22</em>(2), 352-367. (<a href='https://doi.org/10.1007/s11633-024-1499-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Rehabilitation assessment plays a vital role in the recovery process of post-stroke patients. Currently, many studies have focused on the implementation of automated assessment scales. However, the impact of stroke on the synergistic pattern between different human joints is not well understood. In this study, we developed an attention-coupled weighting based quantitative analysis model to identify the pathological alteration in the conjoint response structure between stroke patients and healthy participants, thus providing more intrinsic suggestions for the post-stroke rehabilitation training. In collaboration with the China Rehabilitation Research Center and the Macau University of Science and Technology, we recruited 15 post-stroke patients and 15 healthy participants to complete several actions selected from the Fugl-Meyer assessment (FMA) scale, which is a commonly used post-stroke rehabilitation assessment scale in clinical practice. Our study proposed an attentional coupling weight (ACW) extraction method. By filtering the weights in the attentional coupling network using a priori matrix, we can analyse the effect of stroke on the alteration of synergistic structures and the coordination patterns of the upper and lower extremities. Moreover, we used a commonly accepted synergy analysis method, the nonnegative matrix decomposition (NMF) method, for comparison and validation. The experimental results demonstrated the effectiveness of our method in quantifying the synergistic structure pattern alterations in post-stroke patients, which provides a new targeted option for the rehabilitation process.},
+  archive      = {J_MIR},
+  author       = {Chen, Jingyao and Wang, Chen and Xu, Ningcun and Hou, Zeng-Guang and Peng, Liang and Zhang, Pu},
+  doi          = {10.1007/s11633-024-1499-z},
+  journal      = {Machine Intelligence Research},
+  month        = {4},
+  number       = {2},
+  pages        = {352-367},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Analysis of conjoint response in post-stroke patients using the attention-coupled weighting method},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TAL: Two-stream adaptive learning for generalizable person re-identification. <em>MIR</em>, <em>22</em>(2), 337-351. (<a href='https://doi.org/10.1007/s11633-024-1516-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Domain generalizable person re-identification (reid) is a challenging task in computer vision, which aims to apply a trained reid model to unseen domains. Prior works either combine the data in all the training domains to capture domain-invariant features, or adopt a mixture of experts to investigate domain-specific information. In this work, we argue that both domain-specific and domain-invariant features are crucial for improving the generalization ability of reid models. To this end, we design a novel framework, which we name two-stream adaptive learning (TAL), to simultaneously model these two kinds of information. Specifically, a domain-specific stream is proposed to capture the training domain statistics with batch normalization (BN) parameters, whereas an adaptive matching layer is designed to dynamically aggregate domain-level information. In the meantime, we design an adaptive BN layer in the domain-invariant stream to approximate the statistic of unseen domains, such that our model is capable of handling various novel scenes. These two streams work adaptively and collaboratively to learn generalizable reid features. As validated by extensive experiments, our framework can be applied to both single-source and multi-source domain generalization tasks, where the results show that our framework notably outperforms the state-of-the-art methods.},
+  archive      = {J_MIR},
+  author       = {Yan, Yichao and Li, Junjie and Liao, Shengcai and Qin, Jie},
+  doi          = {10.1007/s11633-024-1516-2},
+  journal      = {Machine Intelligence Research},
+  month        = {4},
+  number       = {2},
+  pages        = {337-351},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {TAL: Two-stream adaptive learning for generalizable person re-identification},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Accelerated elliptical PDE solver for computational fluid dynamics based on configurable U-net architecture: Analogy to V-cycle multigrid. <em>MIR</em>, <em>22</em>(2), 324-336. (<a href='https://doi.org/10.1007/s11633-024-1521-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A configurable U-Net architecture is trained to solve the multi-scale elliptical partial differential equations. The motivation is to improve the computational cost of the numerical solution of Navier-Stokes equations – the governing equations for fluid dynamics. Building on the underlying concept of V-Cycle multigrid methods, a neural network framework using U-Net architecture is optimized to solve the Poisson equation and Helmholtz equations – the characteristic form of the discretized Navier-Stokes equations. The results demonstrate the optimized U-Net captures the high dimensional mathematical features of the elliptical operator and with a better convergence than the multigrid method. The optimal performance between the errors and the FLOPS is the (3, 2, 5) case with 3 stacks of U-Nets, with 2 initial features, 5 depth layers and with ELU activation. Further, by training the network with the multi-scale synthetic data the finer features of the physical system are captured.},
+  archive      = {J_MIR},
+  author       = {Bhaganagar, Kiran and Chambers, David},
+  doi          = {10.1007/s11633-024-1521-5},
+  journal      = {Machine Intelligence Research},
+  month        = {4},
+  number       = {2},
+  pages        = {324-336},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Accelerated elliptical PDE solver for computational fluid dynamics based on configurable U-net architecture: Analogy to V-cycle multigrid},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning hierarchical adaptive code clouds for neural 3D shape representation. <em>MIR</em>, <em>22</em>(2), 304-323. (<a href='https://doi.org/10.1007/s11633-024-1491-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neural implicit representation (NIR) has attracted significant attention in 3D shape representation for its efficiency, generalizability, and flexibility compared with traditional explicit representations. Previous works usually parameterize shapes with neural feature grids/volumes, which prove to be inefficient for the discrete position constraints of the representations. While recent advances make it possible to optimize continuous positions for the latent codes, they still lack self-adaptability to represent various kinds of shapes well. In this paper, we introduce a hierarchical adaptive code cloud (HACC) model to achieve an accurate and compact implicit 3D shape representation. Specifically, we begin by assigning adaptive influence fields and dynamic positions to latent codes, which are optimizable during training, and propose an adaptive aggregation function to fuse the contributions of candidate latent codes with respect to query points. In addition, these basic modules are stacked hierarchically with gradually narrowing influence field thresholds and, therefore, heuristically forced to focus on capturing finer structures at higher levels. These formulations greatly improve the distribution and effectiveness of local latent codes and reconstruct shapes from coarse to fine with high accuracy. Extensive qualitative and quantitative evaluations both on single-shape reconstruction and large-scale dataset representation tasks demonstrate the superiority of our method over state-of-the-art approaches.},
+  archive      = {J_MIR},
+  author       = {Lu, Yuanxun and Ji, Xinya and Zhu, Hao and Cao, Xun},
+  doi          = {10.1007/s11633-024-1491-7},
+  journal      = {Machine Intelligence Research},
+  month        = {4},
+  number       = {2},
+  pages        = {304-323},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Learning hierarchical adaptive code clouds for neural 3D shape representation},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Entity and relationship extraction with high-quality spans and enhanced marker strategies. <em>MIR</em>, <em>22</em>(2), 289-303. (<a href='https://doi.org/10.1007/s11633-024-1515-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Entity and relation extraction is a critical task in information extraction. Recent approaches have emphasized obtaining improved span representations. However, existing work suffers from two major drawbacks. First, there is an overabundance of low-quality candidate spans, which hinders the effective extraction of information from high-quality candidate spans. Second, the information encoded by existing marker strategies is often too simple to fully capture the nuances of the span, resulting in the loss of potentially valuable information. To address these issues, we propose an enhancing entity and relation extraction with high-quality spans and enhanced marker (HSEM) strategies, it assigns adaptive weights to different spans in order to make the model more focused on high quality spans. Specifically, the HSEM model enriches marker representation to incorporate more span information and enhance entity categorization. Additionally, we design a span scoring framework that assesses span quality based on the fusion of internal information and focuses the model on training high-quality samples to improve performance. Experimental results on six benchmark datasets demonstrate that our model achieves state-of-the-art results after discriminating span quality.},
+  archive      = {J_MIR},
+  author       = {Li, Qibin and Yao, Nianmin and Zhou, Nai},
+  doi          = {10.1007/s11633-024-1515-3},
+  journal      = {Machine Intelligence Research},
+  month        = {4},
+  number       = {2},
+  pages        = {289-303},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Entity and relationship extraction with high-quality spans and enhanced marker strategies},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Latent landmark graph for efficient exploration-exploitation balance in hierarchical reinforcement learning. <em>MIR</em>, <em>22</em>(2), 267-288. (<a href='https://doi.org/10.1007/s11633-023-1482-0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Goal-conditioned hierarchical reinforcement learning (GCHRL) decomposes the desired goal into subgoals and conducts exploration and exploitation in the subgoal space. Its effectiveness heavily relies on subgoal representation and selection. However, existing works do not consider distinct information across hierarchical time scales when learning subgoal representations and lack a subgoal selection strategy that balances exploration and exploitation. In this paper, we propose a novel method for efficient exploration-exploitation balance in HIerarchical reinforcement learning by dynamically constructing Latent Landmark graphs (HILL). HILL transforms the reward maximization problem of GCHRL into the shortest path planning on graphs. To effectively consider the hierarchical time-scale information, HILL adopts a contrastive representation learning objective to learn informative latent representations. Based on these representations, HILL dynamically constructs latent landmark graphs and selects subgoals using two measures to balance exploration and exploitation. We implement two variants: HILL-hf generates graphs periodically, while HILL-lf generates graphs adaptively. Empirical results on continuous control tasks with sparse rewards demonstrate that both variants outperform state-of-the-art baselines in sample efficiency and asymptotic performance, with HILL-lf further reducing training time by 40% compared to HILL-hf.},
+  archive      = {J_MIR},
+  author       = {Zhang, Qingyang and Zhang, Hongming and Xing, Dengpeng and Xu, Bo},
+  doi          = {10.1007/s11633-023-1482-0},
+  journal      = {Machine Intelligence Research},
+  month        = {4},
+  number       = {2},
+  pages        = {267-288},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Latent landmark graph for efficient exploration-exploitation balance in hierarchical reinforcement learning},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A systematic comparison of horizontal federated learning algorithm based on random forests in a medical setting. <em>MIR</em>, <em>22</em>(2), 254-266. (<a href='https://doi.org/10.1007/s11633-023-1489-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The medical industry generates vast amounts of data suitable for machine learning during patient-clinician interaction in hospitals. However, as a result of data protection regulations like the general data protection regulation (GDPR), patient data cannot be shared freely across institutions. In these cases, federated learning (FL) is a viable option where a global model learns from multiple data sites without moving the data. In this paper, we focused on random forests (RFs) for its effectiveness in classification tasks and widespread use throughout the medical industry and compared two popular federated random forest aggregation algorithms on horizontally partitioned data. We first provided necessary background information on federated learning, the advantages of random forests in a medical context, and the two aggregation algorithms. A series of extensive experiments using four public binary medical datasets (an excerpt of MIMIC III, Pima Indian diabetes dataset from Kaggle, and diabetic retinopathy and heart failure dataset from UCI machine learning repository) were then performed to systematically compare the two on equal-sized, unequal-sized, and class-imbalanced clients. A follow-up investigation on the effects of more clients was also conducted. We finally empirically analyzed the advantages of federated learning and concluded that the weighted merge algorithm produces models with, on average, 1.903% higher F1 score and 1.406% higher AUCROC value.},
+  archive      = {J_MIR},
+  author       = {Cheng, Andrew and Zhang, Jingqing and Sharma, Atri and Gupta, Vibhor and Guo, Yike},
+  doi          = {10.1007/s11633-023-1489-6},
+  journal      = {Machine Intelligence Research},
+  month        = {4},
+  number       = {2},
+  pages        = {254-266},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {A systematic comparison of horizontal federated learning algorithm based on random forests in a medical setting},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GraphFM: Graph factorization machines for feature interaction modelling. <em>MIR</em>, <em>22</em>(2), 239-253. (<a href='https://doi.org/10.1007/s11633-024-1505-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Factorization machine (FM) is a prevalent approach to modelling pairwise (second-order) feature interactions when dealing with high-dimensional sparse data. However, on the one hand, FMs fail to capture higher-order feature interactions suffering from combinatorial expansion. On the other hand, taking into account interactions between every pair of features may introduce noise and degrade the prediction accuracy. To solve these problems, we propose a novel approach, the graph factorization machine (GraphFM), which naturally represents features in the graph structure. In particular, we design a mechanism to select beneficial feature interactions and formulate them as edges between features. Then the proposed model, which integrates the interaction function of the FM into the feature aggregation strategy of the graph neural network (GNN), can model arbitrary-order feature interactions on graph-structured features by stacking layers. Experimental results on several real-world datasets demonstrate the rationality and effectiveness of our proposed approach. The code and data are available at https://github.com/CRIPAC-DIG/GraphCTR .},
+  archive      = {J_MIR},
+  author       = {Wu, Shu and Li, Zekun and Su, Yunyue and Cui, Zeyu and Zhang, Xiaoyu and Wang, Liang},
+  doi          = {10.1007/s11633-024-1505-5},
+  journal      = {Machine Intelligence Research},
+  month        = {4},
+  number       = {2},
+  pages        = {239-253},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {GraphFM: Graph factorization machines for feature interaction modelling},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Attention detection using EEG signals and machine learning: A review. <em>MIR</em>, <em>22</em>(2), 219-238. (<a href='https://doi.org/10.1007/s11633-024-1492-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Attention detection using electroencephalogram (EEG) signals has become a popular topic. However, there seems to be a notable gap in the literature regarding comprehensive and systematic reviews of machine learning methods for attention detection using EEG signals. Therefore, this survey outlines recent advances in EEG-based attention detection within the past five years, with a primary focus on auditory attention detection (AAD) and attention level classification. First, we provide a brief overview of commonly used paradigms, preprocessing techniques, and artifact-handling methods, as well as listing accessible datasets used in these studies. Next, we summarize the machine learning methods for classification in this field and divide them into two categories: traditional machine learning methods and deep learning methods. We also analyse the most frequently used methods and discuss the factors influencing each technique’s performance and applicability. Finally, we discuss the existing challenges and future trends in this field.},
+  archive      = {J_MIR},
+  author       = {Sun, Qianru and Zhou, Yueying and Gong, Peiliang and Zhang, Daoqiang},
+  doi          = {10.1007/s11633-024-1492-6},
+  journal      = {Machine Intelligence Research},
+  month        = {4},
+  number       = {2},
+  pages        = {219-238},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Attention detection using EEG signals and machine learning: A review},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A survey of recent advances in commonsense knowledge acquisition: Methods and resources. <em>MIR</em>, <em>22</em>(2), 201-218. (<a href='https://doi.org/10.1007/s11633-023-1471-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Imparting human-like commonsense to machines is a long-term goal in the artificial intelligence community. To achieve this goal, constructing large-scale commonsense knowledge resources is an important step. In recent years, due to increasing demand, commonsense knowledge has become a rapidly growing research field, resulting in a surge of new acquisition methods and corresponding resources. These advances have empowered a variety of downstream AI tasks. However, constructing large-scale commonsense knowledge resources remains an ongoing and challenging task. It is still difficult to efficiently collect large-scale, high-quality commonsense knowledge. In this paper, we systematically review recent advances in commonsense knowledge acquisition methods and resources, providing a comprehensive summary of recent research scope, the characteristics of different resources, and unsolved challenges.},
+  archive      = {J_MIR},
+  author       = {Wang, Chenhao and Li, Jiachun and Chen, Yubo and Liu, Kang and Zhao, Jun},
+  doi          = {10.1007/s11633-023-1471-3},
+  journal      = {Machine Intelligence Research},
+  month        = {4},
+  number       = {2},
+  pages        = {201-218},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {A survey of recent advances in commonsense knowledge acquisition: Methods and resources},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive VDI session placement via user logoff prediction. <em>MIR</em>, <em>22</em>(1), 189-200. (<a href='https://doi.org/10.1007/s11633-023-1468-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {After the global pandemic, DaaS (desktop as a service) has become the first choice of many companies’ remote working solution. As the desktops are usually deployed in the public cloud when using DaaS, customers are more cost-sensitive which boosts the requirement of proactive power management. Prior researches in this area focus on virtual desktop infrastructure (VDI) session logon behavior modeling, but for the remote desktop service host (RDSH)-shared desktop pools, logoff optimization is also important. Existing systems place sessions by round-robin or in a pre-defined order without considering their logoff time. However, these approaches usually suffer from the situation that few left sessions prevent RDSH servers from being powered-off which introduces cost waste. In this paper, we propose session placement via adaptive user logoff prediction (SODA), an innovative compound model towards proactive RDSH session placement. Specifically, an ensemble machine learning model that can predict session logoff time is combined with a statistical session placement bucket model to place RDSH sessions with similar logoff time in a more centralized manner on RDSH hosts. Consequently, the infrastructure cost-saving can be improved by reducing the resource waste introduced by those RDSH hosts with very few hanging sessions left for a long time. Experiments on real RDSH pool data demonstrate the effectiveness of the proposed proactive session placement approach against existing static placement techniques.},
+  archive      = {J_MIR},
+  author       = {Fan, Wenping and Meng, Puhui and Tian, Yu and Zhang, Min-Ling and Zhang, Yao},
+  doi          = {10.1007/s11633-023-1468-y},
+  journal      = {Machine Intelligence Research},
+  month        = {2},
+  number       = {1},
+  pages        = {189-200},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Adaptive VDI session placement via user logoff prediction},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Neural network based on inter-layer perturbation strategy for text classification. <em>MIR</em>, <em>22</em>(1), 176-188. (<a href='https://doi.org/10.1007/s11633-024-1490-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, many researches have created adversarial samples to enrich the diversity of training data for improving the text classification performance via reducing the loss incurred in the neural network training. However, existing studies have focused solely on adding perturbations to the input, such as text sentences and embedded representations, resulting in adversarial samples that are very similar to the original ones. Such adversarial samples can not significantly improve the diversity of training data, which restricts the potential for improved classification performance. To alleviate the problem, in this paper, we extend the diversity of generated adversarial samples based on the fact that adding different disturbances between different layers of neural network has different effects. We propose a novel neural network with perturbation strategy (PTNet), which generates adversarial samples by adding perturbation to the intrinsic representation of each hidden layer of the neural network. Specifically, we design two different perturbation ways to perturb each hidden layer: 1) directly adding a certain threshold perturbation; 2) adding the perturbation in the way of adversarial training. Through above settings, we can get more perturbed intrinsic representations of hidden layers and use them as new adversarial samples, thus improving the diversity of the augmented training data. We validate the effectiveness of our approach on six text classification datasets and demonstrate that it improves the classification ability of the model. In particular, the classification accuracy on the sentiment analysis task improved by an average of 1.79% and on question classification task improved by 3.2% compared to the BERT baseline, respectively.},
+  archive      = {J_MIR},
+  author       = {Zhou, Nai and Yao, Nianmin and Li, Qibin},
+  doi          = {10.1007/s11633-024-1490-8},
+  journal      = {Machine Intelligence Research},
+  month        = {2},
+  number       = {1},
+  pages        = {176-188},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Neural network based on inter-layer perturbation strategy for text classification},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Prioritization hindsight experience based on spatial position attention for robots. <em>MIR</em>, <em>22</em>(1), 160-175. (<a href='https://doi.org/10.1007/s11633-023-1467-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sparse rewards pose significant challenges in deep reinforcement learning as agents struggle to learn from experiences with limited reward signals. Hindsight experience replay (HER) addresses this problem by creating “small goals” within a hierarchical decision model. However, HER does not consider the value of different episodes for agent learning. In this paper, we propose SPAHER, a framework for prioritizing hindsight experiences based on spatial position attention. SPAHER allows the agent to prioritize more valuable experiences in a manipulation task. It achieves this by calculating transition and trajectory spatial position functions to determine the value of each episode for experience replays. We evaluate SPAHER on eight robot manipulation tasks in the Fetch and Hand environments provided by OpenAI Gym. Simulation results show that our method improves the final mean success rate by an average of 3.63% compared to HER, especially in challenging Hand environments. Notably, these improvements are achieved without any increase in computation time.},
+  archive      = {J_MIR},
+  author       = {Yuan, Ye and Sha, Yu and Sun, Feixiang and Lu, Haofan and Gou, Shuiping and Luo, Jie},
+  doi          = {10.1007/s11633-023-1467-z},
+  journal      = {Machine Intelligence Research},
+  month        = {2},
+  number       = {1},
+  pages        = {160-175},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Prioritization hindsight experience based on spatial position attention for robots},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). General automatic solution generation for social problems. <em>MIR</em>, <em>22</em>(1), 145-159. (<a href='https://doi.org/10.1007/s11633-024-1496-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Given the escalating intricacy and multifaceted nature of contemporary social systems, manually generating solutions to address pertinent social issues has become a formidable task. In response to this challenge, the rapid development of artificial intelligence has spurred the exploration of computational methodologies aimed at automatically generating solutions. However, current methods for the auto-generation of solutions mainly concentrate on local social regulations that pertain to specific scenarios. Here, we report an automatic social operating system (ASOS) designed for general social solution generation built upon agent-based models that enables both global and local analyses and regulations of social problems across spatial and temporal dimensions. ASOS adopts a hypergraph with extensible social semantics for a comprehensive and structured representation of social dynamics. It also incorporates a generalized protocol for standardized hypergraph operations and a symbolic hybrid framework that delivers interpretable solutions, yielding a balance between regulatory efficacy and functional viability. To demonstrate the effectiveness of the ASOS, we apply it to the domain of averting extreme events within international oil futures markets. By generating a new trading role supplemented by new mechanisms, ASOS can adeptly discern precarious market conditions and make front-running interventions for nonprofit purposes. This study demonstrated that ASOS provides an efficient and systematic approach for generating solutions for enhancing our society.},
+  archive      = {J_MIR},
+  author       = {Niu, Tong and Huang, Haoyu and Du, Yu and Zhang, Weihao and Shi, Luping and Zhao, Rong},
+  doi          = {10.1007/s11633-024-1496-2},
+  journal      = {Machine Intelligence Research},
+  month        = {2},
+  number       = {1},
+  pages        = {145-159},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {General automatic solution generation for social problems},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improving multi-task GNNs for molecular property prediction via missing label imputation. <em>MIR</em>, <em>22</em>(1), 131-144. (<a href='https://doi.org/10.1007/s11633-023-1443-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The prediction of molecular properties is a fundamental task in the field of drug discovery. Recently, graph neural networks (GNNs) have been gaining prominence in this area. Since a molecule tends to have multiple correlated properties, there is a great need to develop the multi-task learning ability of GNNs. However, limited by expensive and time-consuming human annotations, collecting complete labels for each task is difficult. As a result, most existing benchmarks involve many missing labels in training data, and the performance of GNNs is impaired due to the lack of sufficient supervision information. To overcome this obstacle, we propose to improve multi-task molecular property prediction by missing label imputation. Specifically, a bipartite graph is first introduced to model the molecule-task co-occurrence relationships. Then, the imputation of missing labels is transformed into predicting missing edges on this bipartite graph. To predict the missing edges, a graph neural network is devised, which can learn the complex molecule-task co-occurrence relationships. After that, we select reliable pseudo labels according to the uncertainty of the prediction results. Boosting with enough and reliable supervision information, our approach achieves state-of-the-art performance on a variety of real-world datasets.},
+  archive      = {J_MIR},
+  author       = {Hu, Fenyu and Chen, Dingshuo and Liu, Qiang and Wu, Shu},
+  doi          = {10.1007/s11633-023-1443-7},
+  journal      = {Machine Intelligence Research},
+  month        = {2},
+  number       = {1},
+  pages        = {131-144},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Improving multi-task GNNs for molecular property prediction via missing label imputation},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). End-to-end identification of autoregressive with exogenous input (ARX) models using neural networks. <em>MIR</em>, <em>22</em>(1), 117-130. (<a href='https://doi.org/10.1007/s11633-024-1523-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Traditional parametric system identification methods usually rely on apriori knowledge of the targeted system, which may not always be available, especially for complex systems. Although neural networks (NNs) have been increasingly adopted in system identification, most studies have failed to derive interpretable parametric models for further analysis. In this paper, we propose a novel end-to-end autoregressive with exogenous input (ARX) model identification framework using NNs. An order-wise neural network structure is introduced and trained using a multitask learning approach to simultaneously identify both the model terms and coefficients of the ARX model. Through testing with various neural network backbones and training data sizes in different scenarios, we empirically demonstrate that the proposed framework can effectively identify an arbitrary stable ARX model with finite simulation training data. This study opens up a new research opportunity for parametric system identification by harnessing the power of deep learning.},
+  archive      = {J_MIR},
+  author       = {Dong, Aoxiang and Starr, Andrew and Zhao, Yifan},
+  doi          = {10.1007/s11633-024-1523-3},
+  journal      = {Machine Intelligence Research},
+  month        = {2},
+  number       = {1},
+  pages        = {117-130},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {End-to-end identification of autoregressive with exogenous input (ARX) models using neural networks},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Edge-aware feature aggregation network for polyp segmentation. <em>MIR</em>, <em>22</em>(1), 101-116. (<a href='https://doi.org/10.1007/s11633-023-1479-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Precise polyp segmentation is vital for the early diagnosis and prevention of colorectal cancer (CRC) in clinical practice. However, due to scale variation and blurry polyp boundaries, it is still a challenging task to achieve satisfactory segmentation performance with different scales and shapes. In this study, we present a novel edge-aware feature aggregation network (EFA-Net) for polyp segmentation, which can fully make use of cross-level and multi-scale features to enhance the performance of polyp segmentation. Specifically, we first present an edge-aware guidance module (EGM) to combine the low-level features with the high-level features to learn an edge-enhanced feature, which is incorporated into each decoder unit using a layer-by-layer strategy. Besides, a scale-aware convolution module (SCM) is proposed to learn scale-aware features by using dilated convolutions with different ratios, in order to effectively deal with scale variation. Further, a cross-level fusion module (CFM) is proposed to effectively integrate the cross-level features, which can exploit the local and global contextual information. Finally, the outputs of CFMs are adaptively weighted by using the learned edge-aware feature, which are then used to produce multiple side-out segmentation maps. Experimental results on five widely adopted colonoscopy datasets show that our EFA-Net outperforms state-of-the-art polyp segmentation methods in terms of generalization and effectiveness. Our implementation code and segmentation maps will be publicly at https://github.com/taozh2017/EFANet .},
+  archive      = {J_MIR},
+  author       = {Zhou, Tao and Zhang, Yizhe and Chen, Geng and Zhou, Yi and Wu, Ye and Fan, Deng-Ping},
+  doi          = {10.1007/s11633-023-1479-8},
+  journal      = {Machine Intelligence Research},
+  month        = {2},
+  number       = {1},
+  pages        = {101-116},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Edge-aware feature aggregation network for polyp segmentation},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Unveiling the hidden interactions among features: A heterogeneous graph approach for personality prediction. <em>MIR</em>, <em>22</em>(1), 91-100. (<a href='https://doi.org/10.1007/s11633-024-1495-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Identifying personalities accurately helps merchants and management departments understand user needs in detail and improve the quality of service and decision-making efficiency. Existing research on text-based personality prediction mainly uses deep neural networks or pretrained language models to mine deep semantics, ignoring the dynamic interactions among personality features. This paper presents a novel personality prediction method that simultaneously taps into the capability of graph neural networks to model the deep interactions among features and that of pretrained language models to learn latent semantics with a hierarchical aggregation mechanism. Specifically, the proposed model leverages self-attention to capture the interaction relationships among POS tags, entities, personality tags, etc., and considers the labels’ cooccurrence patterns. The efficacy of the proposed model is evaluated on the myPersonality and PANDORA datasets. This research contributes to the personality prediction literature from the perspective of a multigranular personality feature learning perspective and provides business value for consuming predictive analytics.},
+  archive      = {J_MIR},
+  author       = {Song, Yuxuan and Wu, Yilin and Li, Qiudan and Chen, Liping and Zeng, Daniel},
+  doi          = {10.1007/s11633-024-1495-3},
+  journal      = {Machine Intelligence Research},
+  month        = {2},
+  number       = {1},
+  pages        = {91-100},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Unveiling the hidden interactions among features: A heterogeneous graph approach for personality prediction},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Target search and navigation in heterogeneous robot systems with deep reinforcement learning. <em>MIR</em>, <em>22</em>(1), 79-90. (<a href='https://doi.org/10.1007/s11633-024-1512-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Collaborative heterogeneous robot systems can greatly enhance the efficiency of target search and navigation tasks. In this paper, we design a heterogeneous robot system consisting of an unmanned aerial vehicle (UAV) and an unmanned ground vehicle (UGV) for search and rescue missions in unknown environments. The system is able to search for targets and navigate to them in a maze-like mine environment with the policies learned through deep reinforcement learning algorithms. During the training process, if two robots are trained simultaneously, the rewards related to their collaboration may not be properly obtained. Hence, we introduce a multi-stage reinforcement learning framework and a curiosity module to encourage agents to explore unvisited environments. Experiments in simulation environments show that our framework can train the heterogeneous robot system to achieve the search and navigation with unknown target locations while existing baselines may not. The UGV achieves a success rate of 89.1% in the mission within the original environment, and maintains a 67.6% success rate in untrained complex environments.},
+  archive      = {J_MIR},
+  author       = {Chen, Yun and Xiao, Jiaping},
+  doi          = {10.1007/s11633-024-1512-6},
+  journal      = {Machine Intelligence Research},
+  month        = {2},
+  number       = {1},
+  pages        = {79-90},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Target search and navigation in heterogeneous robot systems with deep reinforcement learning},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A comprehensive survey of few-shot information networks. <em>MIR</em>, <em>22</em>(1), 60-78. (<a href='https://doi.org/10.1007/s11633-023-1470-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Information networks store rich information in the nodes and edges, which benefit many downstream tasks, such as recommender systems and knowledge graph completion. Information networks contain homogeneous information, heterogeneous information and knowledge graphs. A significant number of surveys focus on one of the three parts and summarize the research works, but few surveys conclude and compare the three kinds of information networks. In addition, in real scenarios, lots of information networks lack sufficient labeled data, so the combination of meta-learning and information networks can bring in extended applications. This paper concentrates on few-shot information networks and systematically presents recent works to help analyze and follow related works.},
+  archive      = {J_MIR},
+  author       = {Zheng, Xinxin and Che, Feihu and Tao, Jianhua},
+  doi          = {10.1007/s11633-023-1470-4},
+  journal      = {Machine Intelligence Research},
+  month        = {2},
+  number       = {1},
+  pages        = {60-78},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {A comprehensive survey of few-shot information networks},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Counterfactual learning on graphs: A survey. <em>MIR</em>, <em>22</em>(1), 17-59. (<a href='https://doi.org/10.1007/s11633-024-1519-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph-structured data are pervasive in the real-world such as social networks, molecular graphs and transaction networks. Graph neural networks (GNNs) have achieved great success in representation learning on graphs, facilitating various downstream tasks. However, GNNs have several drawbacks such as lacking interpretability, can easily inherit the bias of data and cannot model casual relations. Recently, counterfactual learning on graphs has shown promising results in alleviating these drawbacks. Various approaches have been proposed for counterfactual fairness, explainability, link prediction and other applications on graphs. To facilitate the development of this promising direction, in this survey, we categorize and comprehensively review papers on graph counterfactual learning. We divide existing methods into four categories based on problems studied. For each category, we provide background and motivating examples, a general framework summarizing existing works and a detailed review of these works. We point out promising future research directions at the intersection of graph-structured data, counterfactual learning, and real-world applications. To offer a comprehensive view of resources for future studies, we compile a collection of open-source implementations, public datasets, and commonly-used evaluation metrics. This survey aims to serve as a “one-stop-shop” for building a unified understanding of graph counterfactual learning categories and current resources.},
+  archive      = {J_MIR},
+  author       = {Guo, Zhimeng and Wu, Zongyu and Xiao, Teng and Aggarwal, Charu and Liu, Hui and Wang, Suhang},
+  doi          = {10.1007/s11633-024-1519-z},
+  journal      = {Machine Intelligence Research},
+  month        = {2},
+  number       = {1},
+  pages        = {17-59},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Counterfactual learning on graphs: A survey},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Key technologies for machine vision for picking robots: Review and benchmarking. <em>MIR</em>, <em>22</em>(1), 2-16. (<a href='https://doi.org/10.1007/s11633-024-1517-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The increase in precision agriculture has promoted the development of picking robot technology, and the visual recognition system at its core is crucial for improving the level of agricultural automation. This paper reviews the progress of visual recognition technology for picking robots, including image capture technology, target detection algorithms, spatial positioning strategies and scene understanding. This article begins with a description of the basic structure and function of the vision system of the picking robot and emphasizes the importance of achieving high-efficiency and high-accuracy recognition in the natural agricultural environment. Subsequently, various image processing techniques and vision algorithms, including color image analysis, three-dimensional depth perception, and automatic object recognition technology that integrates machine learning and deep learning algorithms, were analysed. At the same time, the paper also highlights the challenges of existing technologies in dynamic lighting, occlusion problems, fruit maturity diversity, and real-time processing capabilities. This paper further discusses multisensor information fusion technology and discusses methods for combining visual recognition with a robot control system to improve the accuracy and working rate of picking. At the same time, this paper also introduces innovative research, such as the application of convolutional neural networks (CNNs) for accurate fruit detection and the development of event-based vision systems to improve the response speed of the system. At the end of this paper, the future development of visual recognition technology for picking robots is predicted, and new research trends are proposed, including the refinement of algorithms, hardware innovation, and the adaptability of technology to different agricultural conditions. The purpose of this paper is to provide a comprehensive analysis of visual recognition technology for researchers and practitioners in the field of agricultural robotics, including current achievements, existing challenges and future development prospects.},
+  archive      = {J_MIR},
+  author       = {Xiao, Xu and Jiang, Yiming and Wang, Yaonan},
+  doi          = {10.1007/s11633-024-1517-1},
+  journal      = {Machine Intelligence Research},
+  month        = {2},
+  number       = {1},
+  pages        = {2-16},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Key technologies for machine vision for picking robots: Review and benchmarking},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Editorial. <em>MIR</em>, <em>22</em>(1), 1. (<a href='https://doi.org/10.1007/s11633-024-1540-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_MIR},
+  author       = {Tan, Tieniu},
+  doi          = {10.1007/s11633-024-1540-2},
+  journal      = {Machine Intelligence Research},
+  month        = {2},
+  number       = {1},
+  pages        = {1},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Editorial},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

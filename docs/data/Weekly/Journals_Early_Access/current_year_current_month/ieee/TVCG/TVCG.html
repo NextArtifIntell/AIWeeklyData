@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TVCG</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tvcg">TVCG - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Upright-net+: Enhanced learning of upright orientation for 3D point clouds. <em>TVCG</em>, 1-16. (<a href='https://doi.org/10.1109/TVCG.2025.3605201'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Automatic 3D shape analysis is heavily influenced by the pose of input 3D models, as the continuous nature of pose space introduces complexities that usually exceed the encoding capacities of standard deep learning frameworks. To tackle this challenge, we present Upright-Net+, an enhancement of our previous model, Upright-Net, specifically developed for estimating upright orientation in 3D point clouds. Our approach is grounded in the design principle that ”form ever follows function,” treating the natural base of an object as a functional structure that stabilizes it in its typical pose, influenced by physical laws and geometric properties. We reformulate the continuous orientation problem into a discrete classification task, focusing on learning the points that constitute the natural base of a 3D model. The upright orientation is determined by aligning the normal orientation of this base towards the mass center. To mitigate over-smoothing in the global feature embeddings from stacked graph convolutional layers, we introduce a Global Positional Encoding Module using Relative Distance Histogram Statistics Embedding (GPE-RDHS), which reduces structural ambiguity and enhances orientation estimation. We also enhanced a weighted residual loss term to penalize false positive predictions, enhancing overall model performance. Our method demonstrates exceptional performance in upright orientation estimation and reveals that the learned orientation-aware features significantly benefit downstream tasks, particularly in classification.},
+  archive      = {J_TVCG},
+  author       = {Xufang Pang and Feng Li and Hongjie Zhuang and Ning Ding and Xiaopin Zhong and Shengfeng He and Wenxi Liu and Bo Jiang},
+  doi          = {10.1109/TVCG.2025.3605201},
+  journal      = {IEEE Transactions on Visualization and Computer Graphics},
+  month        = {9},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Vis. Comput. Graph.},
+  title        = {Upright-net+: Enhanced learning of upright orientation for 3D point clouds},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TNNLS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tnnls">TNNLS - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Unveiling group-specific distributed concept drift: A fairness imperative in federated learning. <em>TNNLS</em>, 1-15. (<a href='https://doi.org/10.1109/TNNLS.2025.3601834'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the evolving field of machine learning, ensuring group fairness has become a critical concern, prompting the development of algorithms designed to mitigate bias in decision-making processes. Group fairness refers to the principle that a model’s decisions should be equitable across different groups defined by sensitive attributes such as gender or race, ensuring that individuals from privileged groups and unprivileged groups are treated fairly and receive similar outcomes. However, achieving fairness in the presence of group-specific concept drift remains an unexplored frontier, and our research represents pioneering efforts in this regard. Group-specific concept drift refers to situations where one group experiences concept drift over time, while another does not, leading to a decrease in fairness even if accuracy (ACC) remains fairly stable. Within the framework of federated learning (FL), where clients collaboratively train models, its distributed nature further amplifies these challenges since each client can experience group-specific concept drift independently while still sharing the same underlying concept, creating a complex and dynamic environment for maintaining fairness. The most significant contribution of our research is the formalization and introduction of the problem of group-specific concept drift and its distributed counterpart, shedding light on its critical importance in the field of fairness. In addition, leveraging insights from prior research, we adapt an existing distributed concept drift adaptation algorithm to tackle group-specific distributed concept drift, which uses a multimodel approach, a local group-specific drift detection mechanism, and continuous clustering of models over time. The findings from our experiments highlight the importance of addressing group-specific concept drift and its distributed counterpart to advance fairness in machine learning.},
+  archive      = {J_TNNLS},
+  author       = {Teresa Salazar and João Gama and Helder Araújo and Pedro Henriques Abreu},
+  doi          = {10.1109/TNNLS.2025.3601834},
+  journal      = {IEEE Transactions on Neural Networks and Learning Systems},
+  month        = {9},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Neural Netw. Learn. Syst.},
+  title        = {Unveiling group-specific distributed concept drift: A fairness imperative in federated learning},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

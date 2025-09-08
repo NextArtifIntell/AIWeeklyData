@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TRSC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="trsc">TRSC - 45</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Special issue on machine learning methods for urban passenger mobility. <em>TRSC</em>, <em>59</em>(4), iii-vi. (<a href='https://doi.org/10.1287/trsc.2025.intro.v59.n4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2025.intro.v59.n4},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {iii-vi},
+  shortjournal = {Trans. Sci.},
+  title        = {Special issue on machine learning methods for urban passenger mobility},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). End-to-end learning of user equilibrium: Expressivity, generalization, and optimization. <em>TRSC</em>, <em>59</em>(4), 853-882. (<a href='https://doi.org/10.1287/trsc.2023.0489'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper establishes an end-to-end learning framework for constructing transportation network equilibrium models. The proposed framework directly learns supply and demand components as well as equilibrium states from multiday traffic state observations. Specifically, it parameterizes unknown model components with neural networks and embeds them in an implicit layer to enforce user equilibrium conditions. By minimizing the differences between the predicted and observed traffic states, parameters for supply and demand components are simultaneously estimated. We demonstrate that the end-to-end framework is expressive: when parameterized with sufficiently large neural networks, it can replicate any unique, differentiable equilibrium state that solves a well-posed variational inequality. Moreover, it can generalize to new, unseen data when trained with sufficient observations. For efficient training, we design an autodifferentiation-based gradient descent algorithm that handles link- and path-based user equilibrium constraints and ensures local convergence. The proposed framework is demonstrated using three synthesized data sets. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: This work described in this paper was partly supported by research grants from the USDOT Center for Connected and Automated Transportation and the National Science Foundation, Division of Civil, Mechanical and Manufacturing Innovation [Grant CMMI-2233057].},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0489},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {853-882},
+  shortjournal = {Trans. Sci.},
+  title        = {End-to-end learning of user equilibrium: Expressivity, generalization, and optimization},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Toward human-like trajectory prediction for autonomous driving: A behavior-centric approach. <em>TRSC</em>, <em>59</em>(4), 823-852. (<a href='https://doi.org/10.1287/trsc.2023.0366'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Predicting the trajectories of vehicles is crucial for the development of autonomous driving systems, particularly in complex and dynamic traffic environments. In this study, we introduce human-like trajectory prediction (HiT), a novel model designed to enhance trajectory prediction by incorporating behavior-aware modules and dynamic centrality measures. Unlike traditional methods that primarily rely on static graph structures, HiT leverages a dynamic framework that accounts for both direct and indirect interactions among traffic participants. This allows the model to capture the subtle, yet significant, influences of surrounding vehicles, enabling more accurate and human-like predictions. To evaluate HiT’s performance, we conducted extensive experiments using diverse and challenging real-world data sets, including NGSIM, HighD, RounD, ApolloScape, and MoCAD++. The results demonstrate that HiT consistently outperforms state-of-the-art models across multiple metrics, particularly excelling in scenarios involving aggressive driving behaviors. This research presents a significant step forward in trajectory prediction, offering a more reliable and interpretable approach for enhancing the safety and efficiency of autonomous driving systems. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: This work was supported by the Shenzhen-Hong Kong-Macau Science and Technology Program Category C [SGDX20230821095159012], University of Macau [SRG2023-00037-IOTSC, MYRG-GRG2024-00284-IOTSC], the Science and Technology Development Fund of Macau [0021/2022/ITP, 0122/2024/RIB2 and 001/2024/SKL], the State Key Lab of Intelligent Transportation System [2024-B001], and the Jiangsu Provincial Science and Technology Program [BZ2024055]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2023.0366 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0366},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {823-852},
+  shortjournal = {Trans. Sci.},
+  title        = {Toward human-like trajectory prediction for autonomous driving: A behavior-centric approach},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Modeling metro passenger routing choices with a fully differentiable end-to-end simulation-based optimization (SBO) approach. <em>TRSC</em>, <em>59</em>(4), 802-822. (<a href='https://doi.org/10.1287/trsc.2024.0557'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Metro systems in densely populated urban areas are often complicated, with some origin-destinations (OD) having multiple routes with similar travel times, leading to complex passenger routing behaviors. To improve modeling and calibration, this paper proposes a novel passenger route choice model with a metro simulator that accounts for passenger flows, queueing, congestion, and transfer delays. A novel, data-driven approach that utilizes a fully differentiable end-to-end simulation-based optimization (SBO) framework is proposed to calibrate the model, with the gradients calculated automatically and analytically using the iterative backpropagation (IB) algorithm. The SBO framework integrates data from multiple sources, including smart card data and train loadings, to calibrate the route choice parameters that best match the observed data. The full differentiability of the proposed framework enables it to calibrate for more than 20,000 passenger route choice ratios, covering every OD pair. To further improve the efficiency of the framework, a matrix-based optimization (MBO) mechanism is proposed, which provides better initial values for the SBO and ensures high efficiency with large datasets. A hybrid optimization algorithm combining MBO and SBO effectively calibrates the model, demonstrating high accuracy with synthetic data from actual passenger OD demands, where hypothesis tests are conducted for accuracies and significances. The accuracies and robustness are validated by experiments with synthetic passenger flow data, offering potential for optimizing passenger flow management in densely populated urban metro systems. Then, the SBO framework is extended for user equilibrium formulations with a crowding-aware route choice model and iterative metro simulations, calibrated by the hybrid optimization algorithm with additional matrix operations. Case studies with actual observed passenger flows are conducted to illustrate the proposed framework with multiple setups, exhibiting the heterogeneity of passenger route choice preferences and providing insights for operation management in the Hong Kong Mass Transit Railway system. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: This work was supported by the General Research Fund of the Research Grants Council of Hong Kong [Grant 16219224], the Key Research and Development Program of Hubei Province [Grant 2023BAB076], and the National Natural Science Foundation of China [Grant 72001162]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2024.0557 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0557},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {802-822},
+  shortjournal = {Trans. Sci.},
+  title        = {Modeling metro passenger routing choices with a fully differentiable end-to-end simulation-based optimization (SBO) approach},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DiffIRM: A diffusion-augmented invariant risk minimization framework for spatiotemporal prediction over graphs. <em>TRSC</em>, <em>59</em>(4), 782-801. (<a href='https://doi.org/10.1287/trsc.2024.0562'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Spatiotemporal prediction over graphs (STPG) is challenging because real-world data suffer from the out-of-distribution (OOD) generalization problem, where test data follow different distributions from training ones. To address this issue, invariant risk minimization (IRM) has emerged as a promising approach for learning invariant representations across different environments. However, IRM and its variants are originally designed for Euclidean data, such as images, and may not generalize well to graph-structure data, such as spatiotemporal graphs, because of spatial correlations in graphs. To overcome the challenge posed by graph-structure data, the existing graph OOD methods adhere to the principles of invariance existence (i.e., there exist invariant features that consistently relate to the label across various environments) or environment diversity (i.e., diversifying training environments increases the likelihood that test environments align with training ones). However, there is little research that combines both principles in the STPG problem. A combination of the two is crucial for efficiently distinguishing between invariant features and spurious ones. In this study, we fill in this research gap and propose a diffusion-augmented invariant risk minimization (diffIRM) framework that combines these two principles for the STPG problem. Our diffIRM contains two processes: (1) data augmentation, and (2) invariant learning. In the data augmentation process, a causal mask generator identifies causal features, and a graph-based diffusion model acts as an environment augmentor to generate augmented spatiotemporal graph data. In the invariant learning process, an invariance penalty is designed using the augmented data and then serves as a regularizer for training the spatiotemporal prediction model. We provide theoretical evidence supporting diffIRM’s ability to identify invariant features. The effectiveness of diffIRM is further demonstrated through experiments on both numerical and real-world data. The numerical data are generated from a known structural causal model (SCM), and our proposed diffIRM successfully identifies the true invariant features. The real-world experiment uses three human mobility data sets, that is, SafeGraph, PeMS04, and PeMS08. Our proposed diffIRM outperforms baselines. Furthermore, our model demonstrates interpretability by discerning invariant features while making predictions. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: This work was supported by the National Science Foundation [Grant 2218809].},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0562},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {782-801},
+  shortjournal = {Trans. Sci.},
+  title        = {DiffIRM: A diffusion-augmented invariant risk minimization framework for spatiotemporal prediction over graphs},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Simultaneous multimodal demand imputation and forecasting via graph-guided generative and adversarial network. <em>TRSC</em>, <em>59</em>(4), 763-781. (<a href='https://doi.org/10.1287/trsc.2023.0326'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate prediction of multimodal transport demand is essential for effective transport planning and management and enables service optimization based on historical and (predicted) future demand. However, dealing with missing data remains a common challenge in multimodal demand analytics. Furthermore, the potential benefits of knowledge sharing across different modes for simultaneous imputation and forecasting have not been thoroughly explored. This study introduces the Graph-guided Generative-Adversarial Imputation and Forecasting Network (GIF) to tackle these challenges. GIF utilizes a Generative Adversarial Network with a generator and a discriminator. The generator simultaneously fills in missing values and predicts future demand, whereas the discriminator differentiates between synthetic and real data. An Encoder-Decoder framework is employed to reconstruct the generated data to the original data to ensure that the important information is preserved. Spatiotemporal features of each mode’s demand are captured via Transformer-encoder layers, whereas the knowledge sharing among multiple modes is facilitated by graph-guided feature fusion of different modes. The proposed method is evaluated on three real-world transport data sets, demonstrating its potential to address forecasting tasks with missing data in multimodal transport systems. Overall, this study provides insights into the effectiveness of cross-modal knowledge sharing and joint imputation and prediction in enhancing the accuracy of multimodal demand prediction. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: Financial support from the National Natural Science Foundation of China [Grants 52325210, 52131204, 52402407, and 72301228], the Research Grants Council of Hong Kong, University Grants Committee [Grants T41-603/20R and N_PolyU521/22], and Hong Kong Polytechnic University [Grants P0039246, P0040900, and P0041316] is gratefully acknowledged.},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0326},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {763-781},
+  shortjournal = {Trans. Sci.},
+  title        = {Simultaneous multimodal demand imputation and forecasting via graph-guided generative and adversarial network},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Using multiple biased data sets to recover missing trips with a behaviorally informed model. <em>TRSC</em>, <em>59</em>(4), 743-762. (<a href='https://doi.org/10.1287/trsc.2024.0550'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Trip generation, a critical first step in travel demand forecasting, requires not only estimating trips from the observed sample data, but also calculating the total number of trips in the population, including both the observed trips and the trips missed from the sample (we call them missing trips in this paper). The latter, how to recover missing trips, is scarcely studied in the academic literature, and the state-of-the-art practice is through the application of sample weights to extrapolate from observed trips to the population total. In recent years, big location-based service (LBS) has become a promising alternative data source (in addition to household travel survey data) in trip generation. Because users self-select into using different mobile services that result in LBS data, selection bias exists in the LBS data, and the kinds of trips excluded or included differ systematically among data sources. This study addresses this issue and develops a behaviorally informed approach to quantify the selection biases and recover missing trips. The key idea is that because biases reflected in different data sources are likely different, the integration of multiple biased data sources will mitigate biases. This is achieved by formulating a capture probability that specifies the probability of capturing a trip in a data set as a function of various behavioral factors (e.g., socio-demographics and area-related factors) and estimating the associated parameters through maximum likelihood or Bayesian methods. This approach is evaluated through experimental studies that test the effects of data and model uncertainty on its ability of recovering missing trips. The model is also applied to two real-world case studies: one using the 2017 National Household Travel Survey data and the other using two LBS data sets. Our results demonstrate the robustness of the model in recovering missing trips, even when the analyst completely mis-specifies the underlying trip generation process and the capture probability functions (for quantifying selection biases). The developed methodology can be scalable to any number of data sets and is applicable to both big and small data sets. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: This work was supported by the Division of Civil, Mechanical and Manufacturing Innovation [Grant 2114260], the National Institute of General Medical Sciences [Grant 1R01GM108731-01A1], and the U.S. Department of Transportation [Grant 69A3551747116]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2024.0550 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0550},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {743-762},
+  shortjournal = {Trans. Sci.},
+  title        = {Using multiple biased data sets to recover missing trips with a behaviorally informed model},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Estimating erratic measurement errors in network-wide traffic flow via virtual balance sensors. <em>TRSC</em>, <em>59</em>(4), 721-742. (<a href='https://doi.org/10.1287/trsc.2023.0493'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large-scale traffic flow data are collected by numerous sensors for managing and operating transport systems. However, various measurement errors exist in the sensor data and their distributions or structures are usually not known in the real world, which diminishes the reliability of the collected data and impairs the performance of smart mobility applications. Such irregular error is referred to as the erratic measurement error and has not been well investigated in existing studies. In this research, we propose to estimate the erratic measurement errors in networked traffic flow data. Different from existing studies that mainly focus on measurement errors with known distributions or structures, we allow the distributions and structures of measurement errors to be unknown except that measurement errors occur based on a Poisson process. By exploiting the flow balance law, we first introduce the concept of virtual balance sensors and develop a mixed integer nonlinear programming model to simultaneously estimate sensor error probabilities and recover traffic flow. Under suitable assumptions, the complex integrated problem can be equivalently viewed as an estimate-then-optimize problem: first, estimation using machine learning (ML) methods, and then optimization with mathematical programming. When the assumptions fail in more realistic scenarios, we further develop a smart estimate-then-optimize (SEO) framework that embeds the optimization model into ML training loops to solve the problem. Compared with the two-stage method, the SEO framework ensures that the optimization process can recognize and compensate for inaccurate estimations caused by ML methods, which can produce more reliable results. Finally, we conduct numerical experiments using both synthetic and real-world examples under various scenarios. Results demonstrate the effectiveness of our decomposition approach and the superiority of the SEO framework. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: The work described in this paper was supported by the National Natural Science Foundation of China [Grant Project No. 72288101, 72101012, 72301023] and a grant from the Research Grants Council of the Hong Kong Special Administrative Region, China [Grant Project No. PolyU/15206322]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2023.0493 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0493},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {721-742},
+  shortjournal = {Trans. Sci.},
+  title        = {Estimating erratic measurement errors in network-wide traffic flow via virtual balance sensors},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scalable dynamic mixture model with full covariance for probabilistic traffic forecasting. <em>TRSC</em>, <em>59</em>(4), 708-720. (<a href='https://doi.org/10.1287/trsc.2024.0547'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep-learning-based multivariate and multistep-ahead traffic forecasting models are typically trained with the mean squared error (MSE) or mean absolute error (MAE) as the loss function in a sequence-to-sequence setting, simply assuming that the errors follow an independent and isotropic Gaussian or Laplacian distributions. However, such assumptions are often unrealistic for real-world traffic forecasting tasks, where the probabilistic distribution of spatiotemporal forecasting is very complex with strong concurrent correlations across both sensors and forecasting horizons in a time-varying manner. In this paper, we model the time-varying distribution for the matrix-variate error process as a dynamic mixture of zero-mean Gaussian distributions. To achieve efficiency, flexibility, and scalability, we parameterize each mixture component using a matrix normal distribution and allow the mixture weight to change and be predictable over time. The proposed method can be seamlessly integrated into existing deep-learning frameworks with only a few additional parameters to be learned. We evaluate the performance of the proposed method on a traffic speed forecasting task and find that our method not only improves model performance but also provides interpretable spatiotemporal correlation structures. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: This work was supported by Institut de Valorisation des Données (IVADO) through its Fundamental Research Funding Program.},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0547},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {708-720},
+  shortjournal = {Trans. Sci.},
+  title        = {Scalable dynamic mixture model with full covariance for probabilistic traffic forecasting},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Probabilistic traffic forecasting with dynamic regression. <em>TRSC</em>, <em>59</em>(4), 689-707. (<a href='https://doi.org/10.1287/trsc.2024.0560'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes a dynamic regression (DR) framework that enhances existing deep spatiotemporal models by incorporating structured learning for the error process in traffic forecasting. The framework relaxes the assumption of time independence by modeling the error series of the base model (i.e., a well-established traffic forecasting model) using a matrix-variate autoregressive (AR) model. The AR model is integrated into training by redesigning the loss function. The newly designed loss function is based on the likelihood of a nonisotropic error term, enabling the model to generate probabilistic forecasts while preserving the original outputs of the base model. Importantly, the additional parameters introduced by the DR framework can be jointly optimized alongside the base model. Evaluation on state-of-the-art traffic forecasting models using speed and flow data sets demonstrates improved performance, with interpretable AR coefficients and spatiotemporal covariance matrices enhancing the understanding of the model. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: Financial support from the Natural Sciences and Engineering Research Council of Canada [Discovery Grant RGPIN 2019-05950] is gratefully acknowledged. In addition, V. Z. Zheng received financial support from the FRQNT B2X Doctoral Scholarship Program.},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0560},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {689-707},
+  shortjournal = {Trans. Sci.},
+  title        = {Probabilistic traffic forecasting with dynamic regression},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Forecasting sparse movement speed of urban road networks with nonstationary temporal matrix factorization. <em>TRSC</em>, <em>59</em>(3), 670-687. (<a href='https://doi.org/10.1287/trsc.2024.0629'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Movement speed data from urban road networks, computed from ridesharing vehicles or taxi trajectories, is often high-dimensional, sparse, and nonstationary (e.g., exhibiting seasonality). These characteristics pose challenges for developing scalable and efficient data-driven solutions for traffic flow estimation and forecasting using machine learning techniques. To address these challenges, we propose a Nonstationary Temporal Matrix Factorization (NoTMF) model that leverages matrix factorization to project high-dimensional and sparse movement speed data into low-dimensional latent spaces. This results in a concise formula with the multiplication between spatial and temporal factor matrices. To characterize the temporal correlations, NoTMF takes a latent equation on the seasonal differenced temporal factors using higher-order vector autoregression (VAR). This approach not only preserves the low-rank structure of sparse movement speed data but also maintains consistent temporal dynamics, including seasonality information. The learning process for NoTMF involves optimizing the spatial and temporal factor matrices along with a collection of VAR coefficient matrices. To solve this efficiently, we introduce an alternating minimization framework, which tackles a challenging procedure of estimating the temporal factor matrix using conjugate gradient method, as the subproblem involves both partially observed matrix factorization and seasonal differenced VAR. To evaluate the forecasting performance of NoTMF, we conduct extensive experiments on Uber movement speed data sets, which are estimated from ridesharing vehicle trajectories. These data sets contain a large proportion of missing values due to insufficient ridesharing vehicles on the urban road network. Despite the presence of missing data, NoTMF demonstrates superior forecasting accuracy and effectiveness compared with baseline models. Moreover, as the seasonality of movement speed data are of great concern, the experiment results highlight the significance of addressing the nonstationarity of movement speed data. Funding: This work was supported by Institute for Data Valorisation (IVADO); Fonds de recherche du Québec – Nature et technologies (FRQNT); the Interuniversity Research Centre on Enterprise Networks, Logistics and Transportation (CIRRELT).},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0629},
+  journal      = {Transportation Science},
+  month        = {5-6},
+  number       = {3},
+  pages        = {670-687},
+  shortjournal = {Trans. Sci.},
+  title        = {Forecasting sparse movement speed of urban road networks with nonstationary temporal matrix factorization},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Data-driven policies for the online ride-hailing problem with fairness. <em>TRSC</em>, <em>59</em>(3), 647-669. (<a href='https://doi.org/10.1287/trsc.2023.0068'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ride-hailing is a prevalent transportation service that facilitates mobility in urban areas. A ride-hailing service system encompasses several research problems, including the operational assignment of on-demand ride requests to vehicles in real time. The literature suggests various approaches to address similar systems, mainly optimizing the system efficiency, but recent studies pointed out that these systems are likely to cause geographical unfairness among passengers. Such unfairness may imply, for example, that requests whose origin or destination is far from centralized locations may suffer from excessive service rejections. In this paper, we suggest a data-driven approach to design an online assignment policy to overcome this phenomenon. We formulate the online ride-hailing problem with fairness that seeks to maximize both efficiency and geographical fairness in the system while achieving an adequate balance between them. To solve this problem, we offer a new general method to develop online assignment policies based on solutions for offline versions of the problem. The new method suggests extracting information from these solutions to guide real-time assignment decisions, which are chosen using a data-driven algorithm. With a simulation study, we examine the performance of our online policies relative to dispatching rules using synthetic random data that represent a real city layout and movement. Some of these rules are commonly used in practice, and some are more sophisticated ones. Our results demonstrate the viability of our approach to designing online policies. Compared with other dispatching rules, the experiments show that the generated policies maintain a better trade-off between efficiency and geographical fairness and preserve stable performance regardless of the instance size in different system settings. Funding: This research was partially supported by the Israel Science Foundation [Grant 2772/24]. S. Ben-Gal was partially supported by a scholarship from the Shlomo Shmeltzer Institute for Smart Transportation at Tel Aviv University and by The Israeli Smart Transportation Research Center. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2023.0068 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0068},
+  journal      = {Transportation Science},
+  month        = {5-6},
+  number       = {3},
+  pages        = {647-669},
+  shortjournal = {Trans. Sci.},
+  title        = {Data-driven policies for the online ride-hailing problem with fairness},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Branch-price-and-cut for the electric vehicle routing problem with heterogeneous recharging technologies and nonlinear recharging functions. <em>TRSC</em>, <em>59</em>(3), 628-646. (<a href='https://doi.org/10.1287/trsc.2024.0725'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As electric vehicles become increasingly prevalent, effective planning of their use becomes paramount. The electric vehicle routing problem, characterized by limited driving range and the need for recharging, poses unique challenges compared with traditional vehicle routing problems. This paper proposes a branch-price-and-cut solution method tailored for the electric vehicle routing problem with time windows, heterogeneous recharging technologies, and nonlinear charging functions (E-VRPTW-NL). The methodology differs from previous methods proposed in the literature by handling nonlinear recharging functions in the pricing problem. The pricing problem is solved by a bidirectional labeling algorithm that efficiently handles the complex interdependency between time and state of charge during recharge scheduling. The proposed solution method is tested on both benchmark instances from the literature as well as new instances. Tests show that the solution method is competitive with well-known solution methods from the literature on simpler variants of the problem. The computational results also indicate that the proposed method can solve new E-VRPTW-NL instances with up to 100 customers and 21 recharge locations within one hour. Further analysis explores how simplifying the modeling of the recharging process affects solution feasibility and cost. The results show that keeping the heterogeneity of the recharging functions is crucial, whereas simplifying the shape of each recharging function has limited impact. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2024.0725 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0725},
+  journal      = {Transportation Science},
+  month        = {5-6},
+  number       = {3},
+  pages        = {628-646},
+  shortjournal = {Trans. Sci.},
+  title        = {Branch-price-and-cut for the electric vehicle routing problem with heterogeneous recharging technologies and nonlinear recharging functions},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic robot routing and destination assignment policies for robotic sorting systems. <em>TRSC</em>, <em>59</em>(3), 603-627. (<a href='https://doi.org/10.1287/trsc.2023.0458'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robotic sorting systems (RSSs) use mobile robots to sort items by destination. An RSS pairs high accuracy and flexible capacity sorting with the advantages of a flexible layout. This is why several express parcel and e-commerce retail companies, who face heavy demand fluctuations, have implemented these systems. To cope with fluctuating demand, temporal robot congestion, and high sorting speed requirements, workload balancing strategies such as dynamic robot routing and destination reassignment may be of benefit. We investigate the effect of a dynamic robot routing policy using a Markov decision process (MDP) model and dynamic destination assignment using a mixed integer programming (MIP) model. To obtain the MDP model parameters, we first model the system as a semiopen queuing network (SOQN) that accounts for robot movement dynamics and network congestion. Then, we construct the MIP model to find a destination reassignment scheme that minimizes the workload imbalance. With inputs from the SOQN and MIP models, the Markov decision process minimizes parcel waiting and postponement costs and helps to find a good heuristic robot routing policy to reduce congestion. We show that the heuristic dynamic routing policy is near optimal in small-scale systems and outperforms benchmark policies in large-scale realistic scenarios. Dynamic destination reassignment also has positive effects on the throughput capacity in highly loaded systems. Together, in our case company, they improve the throughput capacity by 35%. Simultaneously, the effect of dynamic routing exceeds that of dynamic destination reassignment, suggesting that managers should focus more on dynamic robot routing than dynamic destination reassignment to mitigate temporal congestion. Funding: This work was supported by The Fundamental Research Funds for the Central Universities [Grant WK2040000094] and the National Natural Science Foundation of China [Grants 71921001 and 72091215/72091210]. Supplemental Material: The online appendices are available at https://doi.org/10.1287/trsc.2023.0458 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0458},
+  journal      = {Transportation Science},
+  month        = {5-6},
+  number       = {3},
+  pages        = {603-627},
+  shortjournal = {Trans. Sci.},
+  title        = {Dynamic robot routing and destination assignment policies for robotic sorting systems},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Solving the real-time train dispatching problem by column generation. <em>TRSC</em>, <em>59</em>(3), 587-602. (<a href='https://doi.org/10.1287/trsc.2023.0215'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Disruptions in the operational flow of rail traffic can lead to conflicts between train movements, making it impossible to adhere to the scheduled timetable. This is when dispatching comes into play: resolving existing conflicts and providing a revised timetable. In this process, train paths are adjusted in their spatial and temporal dimensions. This adjustment is known as the train dispatching problem (TDP), which involves selecting conflict-free train paths with minimal delay. Starting from a path-oriented formulation of the TDP, a binary linear decision model is introduced. For each possible train path, a binary decision variable indicates whether the path is utilized by a train. Each train path is constructed from a set of predefined path segments within a time–space network. Instead of modeling pairwise conflicts, stronger linear programming formulations are achieved by defining cliques over the complete train paths. The combinatorial nature of the path segments results in a large number of possible paths, necessitating the use of the column-generation method. Within the subproblem, the shadow prices of conflict cliques must be considered. When constructing a new train path, it must be determined whether it belongs to a clique. This issue is addressed using a mixed integer program. The methodology is tested on instances from a dispatching area in Germany. Numerical results show that the presented method achieves acceptable computation times and good solution quality, meeting the requirements for real-time dispatching.},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0215},
+  journal      = {Transportation Science},
+  month        = {5-6},
+  number       = {3},
+  pages        = {587-602},
+  shortjournal = {Trans. Sci.},
+  title        = {Solving the real-time train dispatching problem by column generation},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A two-stage iteration method for solving the departure time choice problem. <em>TRSC</em>, <em>59</em>(3), 565-586. (<a href='https://doi.org/10.1287/trsc.2024.0599'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We discuss the numerical solution of the departure time choice problem. The non–quasi-monotone of the travel cost vector function is first proved to address the study motivation. A two-stage iteration method is then proposed to effectively solve the problem in a single origin-destination (OD) pair network with parallel links, in which departure time and route choices of commuters are involved. We analytically reveal why the iteration method can solve the problem and theoretically prove the convergence, that is, the iteration process finally achieves at a user equilibrium (UE) state. The iteration method is then extended to a single link network with heterogeneous users in the values of travel time and schedule delay and the preferred arrival time. Furthermore, numerical analyses are conducted for the two networks to demonstrate the effectiveness of the iteration method for solving the departure time choice problem. Funding: This work was supported by the National Natural Science Foundation of China [Grants 72288101, 72171007, and 72021001]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2024.0599 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0599},
+  journal      = {Transportation Science},
+  month        = {5-6},
+  number       = {3},
+  pages        = {565-586},
+  shortjournal = {Trans. Sci.},
+  title        = {A two-stage iteration method for solving the departure time choice problem},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reduce-then-optimize for the fixed-charge transportation problem. <em>TRSC</em>, <em>59</em>(3), 540-564. (<a href='https://doi.org/10.1287/trsc.2023.0407'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Research on addressing combinatorial optimization (CO) problems with machine learning (ML) is thriving with a strong focus on replacing exact but slow solvers with faster ML oracles. However, developing accurate and generalizable predictors remains challenging. We investigate a different paradigm, called reduce-then-optimize, that uses ML to reduce the problem complexity for a subsequent CO solver by predicting a relevant subset of variables. We apply this paradigm to the fixed-charge transportation problem (FCTP), an important problem class in logistics and transportation. To obtain a high-quality and problem size-agnostic predictor, we employ a tailored bipartite graph neural network (GNN). We evaluate the performance of our reduce-then-optimize pipeline on various FCTP benchmark data sets to analyze the impact of different instance characteristics, such as the supply-demand ratio or the predominance of the fixed costs, on the problem difficulty and predictability. This includes FCTP variants with edge capacities, fixed-step costs, and blending constraints. The GNN shows good prediction and generalization capabilities that translate into high-quality solutions across all data sets with optimality gaps below 1%, decreasing runtimes of a state-of-the-art mixed-integer linear programming by 80%–95%. When runtimes are limited, the problem reduction provides an effective reduction of the search space, which leads to better solutions in comparison with solving the full problem. Similarly, we systematically improve the solution quality and convergence of two established meta-heuristics by applying our reduce-then-optimize pipeline. As the GNN-based reduce-then-optimize pipeline can be easily adapted to support additional constraints and objectives, it constitutes a flexible and robust solution approach for FCTP solving in practice. Funding: This research was supported by the Deutsche Forschungsgemeinschaft (German Research Foundation) as part of the research group Advanced Optimization in a Networked Economy [Grant GRK2201/277991500]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2023.0407 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0407},
+  journal      = {Transportation Science},
+  month        = {5-6},
+  number       = {3},
+  pages        = {540-564},
+  shortjournal = {Trans. Sci.},
+  title        = {Reduce-then-optimize for the fixed-charge transportation problem},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Intermodal hub network design with probabilistic service-level constraints. <em>TRSC</em>, <em>59</em>(3), 518-539. (<a href='https://doi.org/10.1287/trsc.2024.0657'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we study the intermodal hub network design problem with probabilistic service-level constraints ensuring that total service time requirements of customers’ orders are satisfied with a minimum probability. The intermodal network is modeled as a Jackson queueing network with M / M / s queues for the hubs and M / G I / ∞ queues for transport operations. We characterize the total service time distribution and propose a cutting-plane algorithm that exploits the characteristics of this distribution. We show that the α -level sets of the total sojourn time distribution for a transport path including two or more hubs are homothetic with some homothetic center. This characteristic allows for the derivation of valid inequalities leading to significant reductions in the solution time. We propose a worst-case renewal approximation considering G I / P H / 1 queues to extend our analysis to non-Jackson networks. We prove that the properties of the total sojourn time distribution derived for Jackson networks also hold for this renewal approximation, allowing the application of the derived cutting-plane approach to the general case. Extensive computational experiments are performed on the Australian Post and Colombian data sets to assess the performance of the proposed formulations and solution algorithms. Funding: The authors acknowledge support from the Natural Sciences and Engineering Research Council of Canada. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2024.0657 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0657},
+  journal      = {Transportation Science},
+  month        = {5-6},
+  number       = {3},
+  pages        = {518-539},
+  shortjournal = {Trans. Sci.},
+  title        = {Intermodal hub network design with probabilistic service-level constraints},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Piggyback on idle ride-sourcing drivers for integrated on-demand and flexible intracity parcel delivery services. <em>TRSC</em>, <em>59</em>(3), 494-517. (<a href='https://doi.org/10.1287/trsc.2024.0601'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper investigates spatial pricing and fleet management strategies for an integrated platform that provides both ride-sourcing and intracity parcel delivery services, leveraging the idle time of ride-sourcing drivers across a transportation network. Specifically, the integrated platform simultaneously offers on-demand ride-sourcing services for passengers and multiple modes of parcel delivery services for customers, including (1) on-demand delivery , where drivers immediately pick up and deliver parcels upon receiving a delivery request; and (2) flexible delivery , where drivers pick up (or drop off) parcels only when they are idle and waiting for the next ride-sourcing order. A semi-Markov process (SMP) model is proposed to characterize the status change of drivers under joint movement of passengers and parcels over the transportation network with limited vehicle capacity, where the service quality of ride-sourcing services, on-demand delivery services, and flexible delivery services are quantified. Building on the SMP model, incentives for ride-sourcing passengers, delivery customers, drivers, and the platform are captured through an economic equilibrium model. Subsequently, we derive the platform’s optimal spatial pricing by solving a nonconvex profit-maximization problem. We establish the well-posedness of the model and introduce a customized algorithm that enhances computation time and numerical stability when determining the platform’s optimal strategies, outperforming the benchmark method. We also validate the proposed model and algorithm through a comprehensive case study of San Francisco. Numerical results indicate that ride-sourcing and parcel delivery services exert both complementary and competitive effects on each other, with the integrated business model’s overall impact hinging on the complex interaction between ride-sourcing orders, on-demand parcel delivery orders, and flexible parcel delivery orders. Funding: This work was supported by the Research Grants Council of Hong Kong [Grants 16202922 and 26200420]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2024.0601 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0601},
+  journal      = {Transportation Science},
+  month        = {5-6},
+  number       = {3},
+  pages        = {494-517},
+  shortjournal = {Trans. Sci.},
+  title        = {Piggyback on idle ride-sourcing drivers for integrated on-demand and flexible intracity parcel delivery services},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Peer-to-peer crowdshipping as an omnichannel retail strategy. <em>TRSC</em>, <em>59</em>(3), 473-493. (<a href='https://doi.org/10.1287/trsc.2023.0242'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Crowdshipping is an emerging operations model proposed to tackle the last-mile delivery problem in urban markets that major retailers such as Amazon and Walmart, as well as start-ups such as Instacart and DoorDash, have adopted or experimented with. This paper investigates a novel peer-to-peer (P2P) mode of crowdshipping, that is, using in-store customers to help deliver online orders, and its strategic implications on the marketing-operations interface: on the one hand, it offers the opportunity to improve last-mile delivery efficiency (the efficiency effect); on the other hand, it provides an additional tool for the retailer to price discriminate between the online and in-store channels (the pricing effect). We model an omnichannel retail network’s pricing decision for its online and in-store channels and consumers’ decisions on purchase, channel choice, and participation in P2P crowdshipping. As the exact analysis of the game is confounded by heterogeneity of spatial characteristics within a store’s catchment area, we adopt a continuous approximation approach to yield a tractable model. Contrasting two remuneration modes for P2P crowdshipping, that is, remunerating shopper-deliverers their incurred delivery costs or providing an additional premium as a (cross-channel) subsidy, against a store-operated (business-to-consumer (B2C)) delivery model, our analysis reveals that the effect of P2P crowdshipping depends upon the interactions between the aforementioned efficiency and pricing effects. A win-win outcome can arise if the retailer employs the cost-based remuneration model when there is little correlation between consumers’ travel costs and product valuation, or the cross-subsidy model when such correlation is strong. We further show that P2P crowdshipping has the potential to help reduce the carbon footprint of sales by inducing a larger proportion of online sales and fulfilling them with efficient crowdshipping. Finally, we find that P2P crowdshipping, if mass adopted in the long run, could enable the retailer to serve the market with a sparser store network. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2023.0242 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0242},
+  journal      = {Transportation Science},
+  month        = {5-6},
+  number       = {3},
+  pages        = {473-493},
+  shortjournal = {Trans. Sci.},
+  title        = {Peer-to-peer crowdshipping as an omnichannel retail strategy},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multimodal transportation pricing alliance design: Large-scale optimization for rapid gains. <em>TRSC</em>, <em>59</em>(3), 451-472. (<a href='https://doi.org/10.1287/trsc.2023.0009'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Transit agencies have the opportunity to outsource certain services to established mobility-on-demand (MOD) providers. Such alliances can improve service quality, coverage, and ridership; reduce public sector costs and vehicular emissions; and integrate the passenger experience. To amplify the effectiveness of such alliances, we develop a fare-setting model that jointly optimizes fares and discounts across a multimodal network. We capture commuters’ travel decisions with a discrete choice model, resulting in a large-scale, mixed-integer, nonconvex optimization problem. To solve this challenging problem, we develop a two-stage decomposition with the pricing decisions in the first stage and a mixed-integer linear optimization of fare discounts and passengers’ travel decisions in the second stage. To solve the decomposition, we develop a new solution approach that combines customized coordinate descent, parsimonious second-stage evaluations, and interpolations using special ordered sets. This approach, enhanced by acceleration techniques based on slanted traversal, randomization, and warm-start, significantly outperforms algorithmic benchmarks. Different alliance priorities result in qualitatively different fare designs: flat fares decrease the total vehicle-miles traveled, whereas geographically informed discounts improve passenger happiness. The model responds appropriately to equity-oriented and passenger-centric priorities, improving system utilization and lowering prices for low-income and long-distance commuters. Our profit allocation mechanism improves the outcomes for both types of operators, thus incentivizing profit-oriented MOD operators to adopt transit priorities. Funding: This material is based on work supported by the National Science Foundation [Grants 1122374 and 1750587]. Supplemental Material: The online appendices are available at https://doi.org/10.1287/trsc.2023.0009 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0009},
+  journal      = {Transportation Science},
+  month        = {5-6},
+  number       = {3},
+  pages        = {451-472},
+  shortjournal = {Trans. Sci.},
+  title        = {Multimodal transportation pricing alliance design: Large-scale optimization for rapid gains},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The restaurant meal delivery problem with ghost kitchens. <em>TRSC</em>, <em>59</em>(2), 433-450. (<a href='https://doi.org/10.1287/trsc.2024.0510'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Restaurant meal delivery has been rapidly growing in the last few years. The main operational challenges are the temporally and spatially dispersed stochastic demand that arrives from customers all over town as well as the customers’ expectation of timely and fresh delivery. To overcome these challenges, a new business concept emerged: ghost kitchens. This concept proposes synchronized food preparation of several restaurants in a central facility. Ghost kitchens can bring several advantages, such as fresher food because of the synchronization of food preparation and delivery and less delay because of the consolidated delivery of orders. Exploiting these advantages requires effective operational strategies for the dynamic scheduling of food preparation and delivery. The goal of this paper is providing these strategies and investigating the value of ghost kitchens. We model the problem as a sequential decision process. For the complex decision space of scheduling order preparations, consolidating orders to trips, and scheduling trip departures, we propose a large neighborhood search (LNS) procedure based on partial decisions and driven by analytical properties. Within the LNS, decisions are evaluated via a value function approximation, enabling anticipatory and real-time decision making. In a comprehensive computational study, we demonstrate the effectiveness of our method compared with benchmark policies and highlight the advantages of ghost kitchens compared with conventional meal delivery. Funding: G. Neria’s research is partially supported by the Israeli Smart Transportation Research Center, the Council for Higher Education in Israel, and the Shlomo Shmeltzer Institute for Smart Transportation at Tel Aviv University. F. D. Hildebrandt’s research is funded by the Deutsche Forschungsgemeinschaft (DFG) German Research Foundation [Grant 413322447]. M. Tzur’s research is partially supported by the Israeli Smart Transportation Research Center. M. W. Ulmer’s work is funded by the DFG Emmy Noether Programme [Grant 444657906]. We gratefully acknowledge their support. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2024.0510 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0510},
+  journal      = {Transportation Science},
+  month        = {3-4},
+  number       = {2},
+  pages        = {433-450},
+  shortjournal = {Trans. Sci.},
+  title        = {The restaurant meal delivery problem with ghost kitchens},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multiday user equilibrium with strategic commuters. <em>TRSC</em>, <em>59</em>(2), 413-432. (<a href='https://doi.org/10.1287/trsc.2023.0488'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the era of connected and automated mobility, commuters possess strong computation power, enabling them to strategically make sequential travel choices over a planning horizon. This paper investigates the multiday traffic patterns that arise from such decision-making behavior. In doing so, we frame the commute problem as a mean-field Markov game and introduce a novel concept of multiday user equilibrium to capture the steady state of commuters’ interactions. The proposed model is general and can be tailored to various travel choices, such as route or departure time. We explore a range of properties of the multiday user equilibrium under mild conditions. The study reveals the fingerprint of user inertia on network flow patterns, causing between-day variations even at a steady state. Furthermore, our analysis establishes critical connections between the multiday user equilibrium and conventional Wardrop equilibrium. Funding: This work was supported by the National Science Foundation [Grants CMMI-1854684, CMMI-1904575, CMMI-2233057, and CMMI-2240981]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2023.0488 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0488},
+  journal      = {Transportation Science},
+  month        = {3-4},
+  number       = {2},
+  pages        = {413-432},
+  shortjournal = {Trans. Sci.},
+  title        = {Multiday user equilibrium with strategic commuters},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Designing the liner shipping network of tomorrow powered by alternative fuels. <em>TRSC</em>, <em>59</em>(2), 391-412. (<a href='https://doi.org/10.1287/trsc.2023.0143'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The liner shipping industry is undergoing an extensive decarbonization process to reduce its 275 million tons of CO 2 emissions as of 2018. In this process, the long-term solution is the introduction of new alternative maritime fuels. The introduction of alternative fuels presents a great set of unknowns. Among these are the strategic concerns regarding sourcing of alternative fuels and, operationally, how the new fuels might affect the network of shipping routes. We propose a problem formulation that integrates fuel supply/demand into the liner shipping network design problem. Here, we present a model to determine the production sites and distribution of new alternative fuels—we consider methanol and ammonia. For the network design problem, we apply an adaptive large neighborhood search combined with a delayed column generation process. In addition, we wish to test the effect of designing a robust network under uncertain demand conditions because of the problem’s strategic nature and importance. Therefore, our proposed solution method will have a deterministic and stochastic setup when we apply it to the second-largest multihub instance, WorldSmall , known from LINER-LIB. In the deterministic setting, our proposed solution method finds a new best solution to three instances from LINER-LIB. For the main considered WorldSmall instance, we even noticed a new best solution in all our tested fuel settings. In addition, we note a profit drop of 7.2% between a bunker-powered and pure alternative fuel–powered network. The selected alternative fuel production sites favor a proximity to European ports and have a heavy reliance on wind turbines. The stochastic results clearly showed that the found networks were much more resilient to the demand changes. Neglecting the perspective of uncertain demand leads to highly fluctuating profits. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2023.0143 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0143},
+  journal      = {Transportation Science},
+  month        = {3-4},
+  number       = {2},
+  pages        = {391-412},
+  shortjournal = {Trans. Sci.},
+  title        = {Designing the liner shipping network of tomorrow powered by alternative fuels},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The stochastic dynamic postdisaster inventory allocation problem with trucks and UAVs. <em>TRSC</em>, <em>59</em>(2), 360-390. (<a href='https://doi.org/10.1287/trsc.2023.0438'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Humanitarian logistics operations face increasing difficulties due to rising demands for aid in disaster areas. This paper investigates the dynamic allocation of scarce relief supplies across multiple affected districts over time. It introduces a novel stochastic dynamic postdisaster inventory allocation problem (SDPDIAP) with trucks and unmanned aerial vehicles (UAVs) delivering relief goods under uncertain supply and demand. The relevance of this humanitarian logistics problem lies in the importance of considering the intertemporal social impact of deliveries. We achieve this by considering social costs (transportation and deprivation costs) when allocating scarce supplies. Furthermore, we consider the inherent uncertainties of disaster areas and the potential use of cargo UAVs to enhance operational efficiency. This study proposes two anticipatory solution methods based on approximate dynamic programming, specifically decomposed linear value function approximation (DL-VFA) and neural network value function approximation (NN-VFA) to effectively manage uncertainties in the dynamic allocation process. We compare DL-VFA and NN-VFA with various state-of-the-art methods (e.g., exact reoptimization and proximal policy optimization) and results show a 6%–8% improvement compared with the best benchmarks. NN-VFA provides the best performance and captures nonlinearities in the problem, whereas DL-VFA shows excellent scalability against a minor performance loss. From a practical standpoint, the experiments reveal that consideration of social costs results in improved allocation of scarce supplies both across affected districts and over time. Finally, results show that deploying UAVs can play a crucial role in the allocation of relief goods, especially in the first stages after a disaster. The use of UAVs reduces transportation and deprivation costs together by 16%–20% and reduces maximum deprivation times by 19%–40% while maintaining similar levels of demand coverage, showcasing efficient and effective operations. History: This paper has been accepted for the Transportation Science Special Issue on TSL Conference 2023.},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0438},
+  journal      = {Transportation Science},
+  month        = {3-4},
+  number       = {2},
+  pages        = {360-390},
+  shortjournal = {Trans. Sci.},
+  title        = {The stochastic dynamic postdisaster inventory allocation problem with trucks and UAVs},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CARMA: Fair and efficient bottleneck congestion management via nontradable karma credits. <em>TRSC</em>, <em>59</em>(2), 340-359. (<a href='https://doi.org/10.1287/trsc.2023.0323'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes a nonmonetary traffic demand management scheme, named CARMA , as a fair solution to the morning commute congestion. We consider heterogeneous commuters traveling through a single bottleneck that differ in both the desired arrival time and value of time (VOT). We consider a generalized notion of VOT by allowing it to vary dynamically on each day (e.g., according to trip purpose and urgency) rather than being a static characteristic of each individual. In our CARMA scheme, the bottleneck is divided into a fast lane that is kept in free flow and a slow lane that is subject to congestion. We introduce a nontradable mobility credit, named karma , that is used by commuters to bid for access to the fast lane. Commuters who get outbid or do not participate in the CARMA scheme instead use the slow lane. At the end of each day, karma collected from the bidders is redistributed, and the process repeats day by day. We model the collective commuter behaviors under CARMA as a dynamic population game (DPG), in which a stationary Nash equilibrium (SNE) is guaranteed to exist. Unlike existing monetary schemes, CARMA is demonstrated, both analytically and numerically, to achieve (a) an equitable traffic assignment with respect to heterogeneous income classes and (b) a strong Pareto improvement in the long-term average travel disutility with respect to no policy intervention. With extensive numerical analysis, we show that CARMA is able to retain the same congestion reduction as an optimal monetary tolling scheme under uniform karma redistribution and even outperform tolling under a well-designed redistribution scheme. We also highlight the privacy-preserving feature of CARMA , that is, its ability to tailor to the private preferences of commuters without centrally collecting the information. History: This paper has been accepted for the Transportation Science Special Issue on TSL Conference 2023. Funding: This work was supported by NCCR Automation, a National Centre of Competence in Research, funded by the Schweizerischer Nationalfonds zur Förderung der Wissenschaftlichen Forschung [Grant 180545]. Supplemental Material: The online appendices are available at https://doi.org/10.1287/trsc.2023.0323 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0323},
+  journal      = {Transportation Science},
+  month        = {3-4},
+  number       = {2},
+  pages        = {340-359},
+  shortjournal = {Trans. Sci.},
+  title        = {CARMA: Fair and efficient bottleneck congestion management via nontradable karma credits},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Genetic algorithms with neural cost predictor for solving hierarchical vehicle routing problems. <em>TRSC</em>, <em>59</em>(2), 322-339. (<a href='https://doi.org/10.1287/trsc.2023.0369'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {When vehicle routing decisions are intertwined with higher-level decisions, the resulting optimization problems pose significant challenges for computation. Examples are the multi-depot vehicle routing problem (MDVRP), where customers are assigned to depots before delivery, and the capacitated location routing problem (CLRP), where the locations of depots should be determined first. A simple and straightforward approach for such hierarchical problems would be to separate the higher-level decisions from the complicated vehicle routing decisions. For each higher-level decision candidate, we may evaluate the underlying vehicle routing problems to assess the candidate. As this approach requires solving vehicle routing problems multiple times, it has been regarded as impractical in most cases. We propose a novel deep learning-based approach called the genetic algorithm with neural cost predictor to tackle the challenge and simplify algorithm developments. For each higher-level decision candidate, we predict the objective function values of the underlying vehicle routing problems using a pretrained graph neural network without actually solving the routing problems. In particular, our proposed neural network learns the objective values of the HGS-CVRP open-source package that solves capacitated vehicle routing problems. Our numerical experiments show that this simplified approach is effective and efficient in generating high-quality solutions for both MDVRP and CLRP and that it has the potential to expedite algorithm developments for complicated hierarchical problems. We provide computational results evaluated in the standard benchmark instances used in the literature. History: This paper has been accepted for the Transportation Science Special Issue on TSL Conference 2023. Funding: This research was funded by the National Research Foundation of Korea [Grant RS-2023-00259550]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2023.0369 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0369},
+  journal      = {Transportation Science},
+  month        = {3-4},
+  number       = {2},
+  pages        = {322-339},
+  shortjournal = {Trans. Sci.},
+  title        = {Genetic algorithms with neural cost predictor for solving hierarchical vehicle routing problems},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Inverse optimization for routing problems. <em>TRSC</em>, <em>59</em>(2), 301-321. (<a href='https://doi.org/10.1287/trsc.2023.0241'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a method for learning decision makers’ behavior in routing problems using inverse optimization (IO). The IO framework falls into the supervised learning category and builds on the premise that the target behavior is an optimizer of an unknown cost function. This cost function is to be learned through historical data, and in the context of routing problems, can be interpreted as the routing preferences of the decision makers. In this view, the main contributions of this study are to propose an IO methodology with a hypothesis function, loss function, and stochastic first-order algorithm tailored to routing problems. We further test our IO approach in the Amazon Last Mile Routing Research Challenge, where the goal is to learn models that replicate the routing preferences of human drivers, using thousands of real-world routing examples. Our final IO-learned routing model achieves a score that ranks second compared with the 48 models that qualified for the final round of the challenge. Our examples and results showcase the flexibility and real-world potential of the proposed IO methodology to learn from decision-makers’ decisions in routing problems. History: This paper has been accepted for the Transportation Science Special Issue on TSL Conference 2023. Funding: This work was supported by the European Research Council [TRUST-949796].},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0241},
+  journal      = {Transportation Science},
+  month        = {3-4},
+  number       = {2},
+  pages        = {301-321},
+  shortjournal = {Trans. Sci.},
+  title        = {Inverse optimization for routing problems},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Pricing and demand management for integrated same-day and next-day delivery systems. <em>TRSC</em>, <em>59</em>(2), 279-300. (<a href='https://doi.org/10.1287/trsc.2023.0381'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study a system in which a common delivery fleet provides service to both same-day delivery (SDD) and next-day delivery (NDD) orders placed by e-retail customers who are sensitive to delivery prices. We develop a model of the system and optimize with respect to two separate objectives. First, empirical research suggests that fulfilling e-retail orders ahead of promised delivery days increases a firm’s long-run market share. Motivated by this phenomenon, we optimize for customer satisfaction by maximizing the quantity of NDD orders fulfilled one day early given fixed prices. Next, we optimize for total profit; we optimize for a single SDD price, and we then set SDD prices in a two-level scheme with discounts for early-ordering customers. Our analysis relies on continuous approximation techniques to capture the interplay between NDD and SDD orders and particularly the effect one day’s operations have on the next, a novel modeling component not present in SDD-only models; a key technical result is establishing the model’s convergence to a steady state using dynamical systems theory. We derive structural insights and efficient algorithms for both objectives. In particular, we show that, under certain conditions, the total profit is a piecewise-convex function with polynomially many breakpoints that can be efficiently enumerated. In a case study set in metropolitan Denver, Colorado, approximately 10% of NDD orders can be fulfilled one day early at optimality, and profit is increased by 1% to 3% in a two-level pricing scheme versus a one-level scheme. We conduct operational simulations for validation of solutions and analysis of initial conditions. History: This paper has been accepted for the Transportation Science Special Issue on TSL Conference 2023. Funding: This work was supported by the National Science Foundation [Grant DGE-1650044]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2023.0381 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0381},
+  journal      = {Transportation Science},
+  month        = {3-4},
+  number       = {2},
+  pages        = {279-300},
+  shortjournal = {Trans. Sci.},
+  title        = {Pricing and demand management for integrated same-day and next-day delivery systems},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning dynamic selection and pricing of out-of-home deliveries. <em>TRSC</em>, <em>59</em>(2), 250-278. (<a href='https://doi.org/10.1287/trsc.2023.0434'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Home delivery failures, traffic congestion, and relatively large handling times have a negative impact on the profitability of last-mile logistics. A potential solution is the delivery to parcel lockers or parcel shops, denoted by out-of-home (OOH) delivery. In the academic literature, models for OOH delivery are so far limited to static settings, contrasting with the sequential nature of the problem. We model the sequential decision-making problem of which OOH location to offer against what incentive for each incoming customer, taking into account future customer arrivals and choices. We propose dynamic selection and pricing of OOH (DSPO), an algorithmic pipeline that uses a novel spatial-temporal state encoding as input to a convolutional neural network. We demonstrate the performance of our method by benchmarking it against two state-of-the-art approaches. Our extensive numerical study, guided by real-world data, reveals that DSPO can save 19.9 percentage points (%pt) in costs compared with a situation without OOH locations, 7%pt compared with a static selection and pricing policy, and 3.8%pt compared with a state-of-the-art demand management benchmark. We provide comprehensive insights into the complex interplay between OOH delivery dynamics and customer behavior influenced by pricing strategies. The implications of our findings suggest that practitioners adopt dynamic selection and pricing policies. History: This paper has been accepted for the Transportation Science special issue on TSL Conference 2023. Funding: This work was supported by TKI DINALOG.},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0434},
+  journal      = {Transportation Science},
+  month        = {3-4},
+  number       = {2},
+  pages        = {250-278},
+  shortjournal = {Trans. Sci.},
+  title        = {Learning dynamic selection and pricing of out-of-home deliveries},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Branch and price for the stochastic traveling salesman problem with generalized latency. <em>TRSC</em>, <em>59</em>(2), 229-249. (<a href='https://doi.org/10.1287/trsc.2023.0417'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider an extension of the symmetric traveling salesman problem with generalized latency that explicitly models uncertainty. The stochastic traveling salesman problem with generalized latency (STSP-GL) aims to choose a subset of nodes of an undirected graph and determines a Hamiltonian tour among those nodes, minimizing an objective function that is a weighted combination of route design and passenger routing costs. These nodes are selected to ensure that a predefined percentage of uncertain passenger demand is served with a given probability. We formulate the STSP-GL as a stochastic program and propose a branch-and-price algorithm for solving its deterministic equivalent. We also develop a local search approach with which we improve the performance of the branch-and-price approach. We assess the efficiency of the proposed methods on a set of instances from the literature. We demonstrate that the proposed methods outperform a known benchmark, improving upper bounds by up to 85% and lower bounds by up to 55%. Finally, we show that solutions of the stochastic model are both more cost-effective and robust than those of the deterministic model. History: This paper has been accepted for the Transportation Science Special Issue on TSL Conference 2023. Funding: This work was supported by the Bundesministerium für Bildung und Forschung [Grant 03ZU1105FA]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2023.0417 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0417},
+  journal      = {Transportation Science},
+  month        = {3-4},
+  number       = {2},
+  pages        = {229-249},
+  shortjournal = {Trans. Sci.},
+  title        = {Branch and price for the stochastic traveling salesman problem with generalized latency},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exact two-step benders decomposition for the time window assignment traveling salesperson problem. <em>TRSC</em>, <em>59</em>(2), 210-228. (<a href='https://doi.org/10.1287/trsc.2024.0750'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Next-day delivery logistics services are redefining the industry by increasingly focusing on customer service. Each logistics service provider’s challenge is jointly optimizing time window assignment and vehicle routing for such next-day delivery services. To do so in a cost-efficient and customer-centric fashion, real-life uncertainty, such as stochastic travel times, needs to be incorporated into the optimization process. This paper focuses on the canonical optimization problem within this context: the time window assignment traveling salesperson problem with stochastic travel times (TWATSP-ST). It belongs to two-stage, stochastic, mixed-integer programming problems with continuous recourse. We introduce two-step Benders decomposition with scenario clustering (TBDS) as an exact solution methodology for solving such stochastic programs. The method utilizes a new two-step decomposition along the binary and continuous first stage decisions and introduces a new scenario-retention strategy that combines and generalizes state-of-the-art Benders approaches and scenario-clustering techniques. Extensive experiments show that TBDS is superior to state-of-the-art approaches in the literature. It solves TWATSP-ST instances with up to 25 customers to optimality. It provides better lower and upper bounds that lead to faster convergence than existing state-of-the-art methods. We use TBDS to analyze the structure of the optimal solutions. By increasing routing costs only slightly, customer service can be improved tremendously driven by smartly alternating between high- and low-variance travel arcs to reduce the impact of delay propagation throughout the executed vehicle route. Funding: A. H. Schrotenboer has received support from the Dutch Science Foundation [Grant VI.Veni.211E.043]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2024.0750 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0750},
+  journal      = {Transportation Science},
+  month        = {3-4},
+  number       = {2},
+  pages        = {210-228},
+  shortjournal = {Trans. Sci.},
+  title        = {Exact two-step benders decomposition for the time window assignment traveling salesperson problem},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Special issue on TSL conference 2023. <em>TRSC</em>, <em>59</em>(2), 207-209. (<a href='https://doi.org/10.1287/trsc.2023.intro.v59.n2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.intro.v59.n2},
+  journal      = {Transportation Science},
+  month        = {3-4},
+  number       = {2},
+  pages        = {207-209},
+  shortjournal = {Trans. Sci.},
+  title        = {Special issue on TSL conference 2023},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A 0,1 linear programming approach to deadlock detection and management in railways. <em>TRSC</em>, <em>59</em>(1), 187-205. (<a href='https://doi.org/10.1287/trsc.2024.0521'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In railway systems, a deadlock occurs when trains accidentally occupy positions that prevent each other from moving forward. Although deadlocks are rare events, they do occur from time to time, requiring costly recourse actions and generating significant knock-on delays. In this paper, we present a noncompact 0,1 linear programming formulation and a methodology for discovering (possibly future) deadlocks and the subsequent implementation of optimal recovery measures. The approach is implemented in a tool to dispatch trains in real time developed in cooperation with Union Pacific (UP) and currently in operations on the entire UP network. Funding: This work was partially funded by Europe’s Rail, Flagship Project MOTIONAL [Action Horizon JU Innovation, Project 101101973]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2024.0521 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0521},
+  journal      = {Transportation Science},
+  month        = {1-2},
+  number       = {1},
+  pages        = {187-205},
+  shortjournal = {Trans. Sci.},
+  title        = {A 0,1 linear programming approach to deadlock detection and management in railways},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cross-dock trailer scheduling with workforce constraints: A dynamic discretization discovery approach. <em>TRSC</em>, <em>59</em>(1), 165-186. (<a href='https://doi.org/10.1287/trsc.2023.0406'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Less-than-truckload (LTL) freight carriers operate consolidation networks that utilize cross-docking terminals to facilitate the transfer of freight between trailers and enhance trailer utilization. This research addresses the problem of determining an optimal schedule for unloading inbound trailers at specific unloading doors using teams of dock workers. The optimization objective is chosen to ensure that outbound trailers are loaded with minimal delay with respect to their target loading due dates. Formulating this problem, which is known to be NP-hard, using a typical time-expanded network often results in an excessively large mixed-integer programming (MIP) model. To overcome this challenge, we propose an exact dynamic discretization discovery (DDD) algorithm that iteratively solves MIPs formulated over partial networks. The algorithm employs a combination of a simple time discretization refinement strategy to progressively refine the partial network until a provably optimal solution is obtained. We demonstrate the effectiveness of the algorithm in solving problem instances representative of a large L-shaped cross-dock in Atlanta. The DDD algorithm outperforms solving the model formulated over a complete time-expanded network with a commercial solver in terms of both computational time and solution quality for practical instances with 180 trailers, 44 unloading doors, and 57 loading doors. Additionally, we compare the DDD algorithm with a state-of-the-art interval scheduling approach using instances from a previous study with a different objective function and additional constraints. The DDD algorithm is computationally faster for most of the small and medium instances and achieves competitive bounds for the larger instances. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2023.0406 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0406},
+  journal      = {Transportation Science},
+  month        = {1-2},
+  number       = {1},
+  pages        = {165-186},
+  shortjournal = {Trans. Sci.},
+  title        = {Cross-dock trailer scheduling with workforce constraints: A dynamic discretization discovery approach},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A multiperiod, multicommodity, capacitated international agricultural trade network equilibrium model with applications to ukraine in wartime. <em>TRSC</em>, <em>59</em>(1), 143-164. (<a href='https://doi.org/10.1287/trsc.2023.0294'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The world is facing immense challenges because of increasing strife and the impacts of climate change with accompanying disasters, both sudden-onset as well as slow-onset ones, which have affected the trade of agricultural commodities needed for food security. In this paper, a multiperiod, multicommodity, international, agricultural trade network equilibrium model is constructed with capacity constraints on the production, transportation, and storage of agricultural commodities. The model allows for multiple routes between supply and demand country markets, different modes of transport, and storage in the producing and consuming countries as well as in the intermediate countries. The generality of the underlying functions, coupled with the capacity constraints, allow for the modeling of competition among agricultural commodities for production, transportation, and storage. The capacity constraints also enable the quantification of various disaster-related disruptions to production, transportation, and storage on the volumes of commodity flows as well as on the prices. A series of numerical examples inspired by the effects of Russia’s full-scale invasion of Ukraine on agricultural trade is presented, and the results are analyzed to provide insights into food insecurity issues caused by the war.},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0294},
+  journal      = {Transportation Science},
+  month        = {1-2},
+  number       = {1},
+  pages        = {143-164},
+  shortjournal = {Trans. Sci.},
+  title        = {A multiperiod, multicommodity, capacitated international agricultural trade network equilibrium model with applications to ukraine in wartime},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the concept of opportunity cost in integrated demand management and vehicle routing. <em>TRSC</em>, <em>59</em>(1), 125-142. (<a href='https://doi.org/10.1287/trsc.2024.0644'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Integrated demand management and vehicle routing problems are characterized by a stream of customers arriving dynamically over a booking horizon and requesting logistical services, fulfilled by a given fleet of vehicles during a service horizon. Prominent examples are attended home delivery and same-day delivery problems, where customers commonly have heterogeneous preferences regarding service fulfillment and requests differ in profitability. Thus, demand management methods are applied to steer the booking process to maximize total profit considering the cost of the routing decisions for the resulting orders. To measure the requests’ profitability for any demand management method, it is common to estimate their opportunity cost. In the context of integrated demand management and vehicle routing problems, this estimation differs substantially from the estimation in the well-examined demand management problems of traditional revenue management applications as, for example, found in the airline or car rental industry. This is because of the unique interrelation of demand control decisions and vehicle routing decisions as it inhibits a clear quantification and attribution of cost, and of displaced revenue, to certain customer requests. In this paper, we extend the theoretical foundation of opportunity cost in integrated demand management and vehicle routing problems. By defining and analyzing a generic Markov decision process model, we formally derive a definition of opportunity cost and prove opportunity cost properties on a general level. Hence, our findings are valid for a wide range of specific problems. Further, based on these theoretical findings, we propose approximation approaches that have not yet been applied in the existing literature, and evaluate their potential in a computational study. Thereby, we provide evidence that the theoretical results can be practically exploited in the development of solution algorithms. Funding: This work was supported by the University of the Bundeswehr Munich. Supplemental Material: The online appendices are available at https://doi.org/10.1287/trsc.2024.0644 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0644},
+  journal      = {Transportation Science},
+  month        = {1-2},
+  number       = {1},
+  pages        = {125-142},
+  shortjournal = {Trans. Sci.},
+  title        = {On the concept of opportunity cost in integrated demand management and vehicle routing},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimal multi-agent pickup and delivery using branch-and-cut-and-price algorithms. <em>TRSC</em>, <em>59</em>(1), 104-124. (<a href='https://doi.org/10.1287/trsc.2023.0268'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Given a set of agents and a set of pickup-delivery requests located on a two-dimensional grid map, the multi-agent pickup and delivery problem assigns the requests to the agents such that every agent moves from its start location to the locations of its assigned requests and finally, to its end location without colliding into other agents and that the sum of arrival times is minimized. This paper proposes two exact branch-and-cut-and-price algorithms for the problem. The first algorithm performs a three-level search. A high-level master problem selects an optimal sequence of requests and a path for every agent from a large collection. A mid-level sequencing problem and a low-level navigation problem are solved simultaneously to incrementally enlarge the collection of request sequences and paths. The second algorithm first solves the sequencing problem to find a set of request sequences and then solves the navigation problem to determine if paths compatible with the request sequences exist. Experimental results indicate that the integrated algorithm solves more instances with higher congestion, and the deferred algorithm solves more instances with lower congestion and could scale to 100 agents and 100 requests, significantly higher than a state-of-the-art suboptimal approach. Funding: This research was supported by the Australian Research Council [Discovery Early Career Researcher Award DE240100042 and Discovery Projects DP190100013 and DP200100025] and by Amazon. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2023.0268 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0268},
+  journal      = {Transportation Science},
+  month        = {1-2},
+  number       = {1},
+  pages        = {104-124},
+  shortjournal = {Trans. Sci.},
+  title        = {Optimal multi-agent pickup and delivery using branch-and-cut-and-price algorithms},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Heatmap design for probabilistic driver repositioning in crowdsourced delivery. <em>TRSC</em>, <em>59</em>(1), 81-103. (<a href='https://doi.org/10.1287/trsc.2022.0418'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes the use of heatmaps as a control lever to manage the probabilistic repositioning of independent drivers in crowdsourced delivery platforms. The platform aims to maximize order fulfillment by dynamically matching drivers and orders and selecting heatmaps that trigger the probabilistic flow of unmatched drivers to balance driver supply and delivery requests across the service region. We develop a Markov decision process (MDP) model to sequentially select matching and heatmap decisions in which the repositioning behavior of drivers is captured by a multinomial logit discrete choice model. Because of the curse of dimensionality and the endogenous uncertainty of driver repositioning, the MDP model is solved using a rolling-horizon stochastic lookahead policy. This policy decomposes matching and heatmap decisions into two optimization problems: a two-stage stochastic programming upper bounding problem for matching decisions and a mixed-integer programming problem for heatmap decisions. We also propose a simple policy for efficiently solving large-scale problems. An extensive computational study on instances derived from the Chicago ride-hailing data set is conducted. Computational experiments demonstrate the value of heatmaps in improving order fulfillment beyond the level achieved by matching alone (up to 25%) and identify conditions that affect the benefit of using heatmaps to guide driver repositioning. Funding: The authors gratefully acknowledge the support of the Natural Sciences and Engineering Research Council of Canada through Discovery Grants [Grants RGPIN-2024-04881, RGPIN-2020-04498, and RGPIN-2019-06207] awarded to the first, second, and third authors, respectively. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2022.0418 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2022.0418},
+  journal      = {Transportation Science},
+  month        = {1-2},
+  number       = {1},
+  pages        = {81-103},
+  shortjournal = {Trans. Sci.},
+  title        = {Heatmap design for probabilistic driver repositioning in crowdsourced delivery},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exact solution of the vehicle routing problem with drones. <em>TRSC</em>, <em>59</em>(1), 60-80. (<a href='https://doi.org/10.1287/trsc.2024.0544'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The vehicle routing problem with drones (VRP-D) that we consider is an extension of the capacitated vehicle routing problem in which the fleet consists of trucks equipped with one drone each. A truck and its drone can either move together or separately. A truck can release its drone at the depot or at a customer location and must pick it up later at another customer or the depot location. In this way, both trucks and drones deliver goods to customers working together as synchronized working units. A feasible route has to satisfy the capacity constraints of both the truck and the drone. A feasible solution to the VRP-D is a set of feasible routes such that each customer is served exactly once by either a truck or a drone. We investigate two standard objectives considered in the literature, that is, the minimization of the total routing cost and the sum of the routes’ durations. To solve the VRP-D exactly, we develop a branch-price-and-cut (BPC) algorithm. In particular, we present a new forward and implicit bidirectional labeling algorithm defined over an artificial network to solve the column-generation subproblems. The new bidirectional labeling algorithm substantially accelerates the solution process compared with its monodirectional counterpart. The time needed to solve the pricing problems is reduced by 55% on average when minimizing routing costs and by 30% when minimizing the sum of the routes’ durations. In further computational experiments, we analyze algorithmic components of the BPC algorithm, compare the cost and duration objectives, and highlight the impact of the drones’ speed on the structure of VRP-D solutions. For the routing-cost minimization objective, our BPC algorithm is able to solve several VRP-D instances with 50 vertices to proven optimality within one hour of computation time. The same instances with duration minimization are more difficult, and the BPC algorithm provides only heuristic solutions with an average gap not exceeding 3%. Funding: This work was supported by Deutsche Forschungsgemeinschaft [Project 418727865, Grant IR 122/10-1]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2024.0544 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0544},
+  journal      = {Transportation Science},
+  month        = {1-2},
+  number       = {1},
+  pages        = {60-80},
+  shortjournal = {Trans. Sci.},
+  title        = {Exact solution of the vehicle routing problem with drones},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The online shortest path problem: Learning travel times using a multiarmed bandit framework. <em>TRSC</em>, <em>59</em>(1), 28-59. (<a href='https://doi.org/10.1287/trsc.2023.0196'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the age of e-commerce, logistics companies often operate within extensive road networks without accurate knowledge of travel times for their specific fleet of vehicles. Moreover, millions of dollars are spent on routing services that fail to accurately capture the unique characteristics of the drivers and vehicles of the companies. In this work, we address the challenge faced by a logistic operator with limited travel time information, aiming to find the optimal expected shortest path between origin-destination pairs. We model this problem as an online shortest path problem, common to many last-mile routing settings; given a graph whose arcs’ travel times are stochastic and follow an unknown distribution, the objective is to find a vehicle route of minimum travel time from an origin to a destination. The planner progressively collects travel condition data as drivers complete their routes. Inspired by the combinatorial multiarmed bandit and kriging literature, we propose three methods with distinct features to effectively learn the optimal shortest path, highlighting the practical advantages of incorporating spatial correlation in the learning process. Our approach balances exploration (improving estimates for unexplored arcs) and exploitation (executing the minimum expected time path) using the Thompson sampling algorithm. In each iteration, our algorithm executes the path that minimizes the expected travel time based on data from a posterior distribution of the speeds of the arcs. We conduct a computational study comprising two settings: a set of four artificial instances and a real-life case study. The case study uses empirical data of taxis in the 17-km-radius area of the center of Beijing, encompassing Beijing’s “5th Ring Road.” In both settings, our algorithms demonstrate efficient and effective balancing of the exploration-exploitation trade-off.},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0196},
+  journal      = {Transportation Science},
+  month        = {1-2},
+  number       = {1},
+  pages        = {28-59},
+  shortjournal = {Trans. Sci.},
+  title        = {The online shortest path problem: Learning travel times using a multiarmed bandit framework},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Plan your system and price for free: Fast algorithms for multimodal transit operations. <em>TRSC</em>, <em>59</em>(1), 13-27. (<a href='https://doi.org/10.1287/trsc.2022.0452'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the problem of jointly pricing and designing a smart transit system, where a transit agency (the platform ) controls a fleet of demand-responsive vehicles (cars) and a fixed line service (buses). The platform offers commuters a menu of options ( modes ) to travel between origin and destination (e.g., direct car trip, a bus ride, or a combination of the two), and commuters make a utility-maximizing choice within this menu, given the price of each mode. The goal of the platform is to determine an optimal set of modes to display to commuters, prices for these modes, and the design of the transit network in order to maximize the social welfare of the system. In this work, we tackle the commuter choice aspect of this problem, traditionally approached via computationally intensive bilevel programming techniques. In particular, we develop a framework that efficiently decouples the pricing and network design problem: Given an efficient (approximation) algorithm for centralized network design without prices , there exists an efficient (approximation) algorithm for decentralized network design with prices and commuter choice . We demonstrate the practicality of our framework via extensive numerical experiments on a real-world data set. We moreover explore the dependence of metrics such as welfare, revenue, and mode usage on (i) transfer costs and (ii) cost of contracting with on-demand service providers and exhibit the welfare gains of a fully integrated mobility system. Funding: This work was supported by the National Science Foundation [Awards CMMI-2308750, CNS-1952011, and CMMI-2144127]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2022.0452 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2022.0452},
+  journal      = {Transportation Science},
+  month        = {1-2},
+  number       = {1},
+  pages        = {13-27},
+  shortjournal = {Trans. Sci.},
+  title        = {Plan your system and price for free: Fast algorithms for multimodal transit operations},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Transportation science and logistics society best dissertation award competition: Abstracts of 2024 winners. <em>TRSC</em>, <em>59</em>(1), 5-12. (<a href='https://doi.org/10.1287/trsc.2024_dissertation_award'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The journal is pleased to bring back the tradition of publishing the abstracts of the winners of the TSL Best Dissertation Award. The 2024 dissertation prize committee was chaired by Margaretha Gansterer. The other committee members were Shadi Sharif Azadeh, Justin Goodson, Tal Raviv, and Hai Wang.},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024_dissertation_award},
+  journal      = {Transportation Science},
+  month        = {1-2},
+  number       = {1},
+  pages        = {5-12},
+  shortjournal = {Trans. Sci.},
+  title        = {Transportation science and logistics society best dissertation award competition: Abstracts of 2024 winners},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). 2024 transportation science meritorious service awards. <em>TRSC</em>, <em>59</em>(1), 3-4. (<a href='https://doi.org/10.1287/trsc.2023.servawards.v59.n1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We are pleased to announce the recipients of the Transportation Science Meritorious Service Awards. These awards recognize associate editors, special issue guest editors, and reviewers who have offered exceptional service in the review process. We truly appreciate all the efforts of the many volunteers who provide invaluable service to the journal. The 2024 recipients have distinguished themselves by the number of papers handled, their efficiency in handling papers, and the quality of their reviews.},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.servawards.v59.n1},
+  journal      = {Transportation Science},
+  month        = {1-2},
+  number       = {1},
+  pages        = {3-4},
+  shortjournal = {Trans. Sci.},
+  title        = {2024 transportation science meritorious service awards},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Editorial statement. <em>TRSC</em>, <em>59</em>(1), 1-2. (<a href='https://doi.org/10.1287/trsc.2025.ed.v59.n1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2025.ed.v59.n1},
+  journal      = {Transportation Science},
+  month        = {1-2},
+  number       = {1},
+  pages        = {1-2},
+  shortjournal = {Trans. Sci.},
+  title        = {Editorial statement},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

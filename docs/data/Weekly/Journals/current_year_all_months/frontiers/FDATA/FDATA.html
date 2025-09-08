@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FDATA</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="fdata">FDATA - 61</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Editorial: Interdisciplinary approaches to complex systems: Highlights from FRCCS 2023/24. <em>FDATA</em>, <em>8</em>, 1666305. (<a href='https://doi.org/10.3389/fdata.2025.1666305'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The study of complex systems has emerged as one of the most compelling and transformative fields in contemporary science, offering profound insights into the fundamental nature of organization, emergence, and adaptation across scales—from molecular networks to global ecosystems, from neural circuits to social institutions. This research topic presents a curated selection of research contributions that exemplify the rich interdisciplinary dialogue fostered by the France’s International Conference on Complex Systems (FRCCS) through its third and fourth editions, held in Le Havre (2023) and Montpellier (2024). The contributions in this special issue exemplify the evolution of complexity science toward data-driven, computationally sophisticated, and socially relevant research. The selected articles demonstrate how traditional complexity science foundations are being enhanced by cutting-edge computational methods and applied to pressing contemporary challenges.For instance, the exploration of physics-guided machine learning approaches for predicting chaotic system dynamics illustrates how domain knowledge can enhance data-driven methods, offering new pathways for understanding and forecasting complex behaviors. Feng et al. introduce a Physics-Guided Learning (PGL) approach that combines empirical observations with fundamental physical principles to improve prediction accuracy in chaotic systems over extended time horizons. Rather than relying solely on data patterns or physical equations, the method creates a hybrid framework that integrates three complementary components: a Data-Driven Component (for extracting patterns and relationships from historical observations), a Physics-Guided Component (that incorporates physical laws to guide and constrain the learning process) and a Nonlinear Learning Component to combines insights from both data and physics. Evaluation on six dynamical systems, each exhibiting unique chaotic behaviors, show the significance of the proposed approach. Always at the edge between complex systems and AI, the evaluation of fine-tuning versus prompting strategies for knowledge graph construction using large language models demonstrates how modern AI architectures can be leveraged to extract and represent complex relationships from unstructured data. Ghanem and Cruz focus on how to exploit Large Language Models (LLMs) for a Text-to-Knowledge Graph (T2KG) construction task. By testing different strategies (Zero-Shot Prompting, Few-Shot Prompting, and Fine-Tuning) on three LLMs (Llama2, Mistral, and Starling) they show the potential of these techniques in the context of Knowledge Graph construction. While, also through the introduction of nuanced evaluation metrics, the authors show how Fine-Tuning tends to outperform other strategies, they also emphasize how this approach can limit generalization capablities of the resulting model.Urban Systems and Spatial Complexity emerge as a central theme, reflecting the growing recognition of cities as archetypal complex systems. Bogomolov et al. develop a methodological framework for urban delineation using passive mobile phone data to analyze commute patterns in the city of Brno (Czech Republic). The authors focus on the analysis of bidirectional commute flows, by examining movement patterns in urban and suburban networks, creating a comprehensive view of mobility that spans city boundaries. This allows to identify mobility patterns and communities (based on clustering techniques) that are based on actual movements, rather than on road networks or administrative boundaries. The results show how this framework can be helpful for urban planners, since it allows to assess the centrality of certain zones regardless of their geographical location (e.g., areas with shopping centers being considered central for their economic activity, even if geographically peripheral). Complementing this, the analysis of city composition and accessibility statistics in and around Paris provides concrete insights into how urban complexity manifests in terms of spatial organization and resource distribution. Thaury et al. examine whether Paris truly functions as a “15-minute city” where residents can access essential amenities within a 15-minute walk or bike ride, using a combination of open-source mapping data and official socio-economic statistics. The authors developed a comprehensive accessibility framework that goes beyond simply counting nearby amenities to measure actual accessibility based on supply, demand, and distance factors. The analysis reveals a stark dichotomy within Paris itself, with a highly accessible and well-equipped center contrasting sharply with less-served peripheral neighborhoods. A significant finding concerns socio- economic inequalities in accessibility. Poorer neighborhoods, predominantly located on the city’s edges, have substantially less access to amenities. The key takeaway message of the work is that, starting from the observation that Paris fails to meet the 15-minute city ideal due to persistent center-periphery inequalities, successful implementation of this concept requires addressing existing socio-economic disparities and adopting a metropolitan-scale perspective rather than focusing solely on the central municipality.Technological Integrity and Security in complex systems has gained paramount importance in our interconnected world. hrefhttps://doi.org/10.3389/fdata.2025.1521653Rani et al. address the growing threat of deepfake technology, which has reached alarming levels with approximately 71% of people falling victim to fake video-based blackmail and manipulation. The researchers developed a hybrid architecture that combines transformer and Linformer models (i.e., transformer variants optimized for computational efficiency) to create a more efficient and accurate deepfake detection system. The research demonstrates that the use of larger patch sizes improve performance by enabling better capture of fine-grained features and spatial details, which enhances the model’s ability to distinguish between authentic and manipulated content. This approach addresses the critical need for detection systems that are both highly accurate and computationally feasible for real-world deployment.Sustainable Development and Knowledge Systems represent an increasingly crucial application domain. Paletta et al. introduce a methodological framework for visualizing the alignment between complex research systems and the Sustainable Development Goals (SDGs). The authors use a French research institute, namely CIRAD (French Agricultural Research Centre for International Development) as case in point, showing how the proposed visualization allows to explore thematic priorities and institutional collaborations. The integration of complex systems theory and network analysis enhances understanding of SDG interlinkages and provides actionable insights for strategic decision-making in research governance.The emphasis on research with high societal impact has been a distinguishing feature of FRCCS. The contributions in this special issue demonstrate how complexity science is moving beyond academic discourse to inform policy, guide intervention strategies, and shape technological development. This applied dimension does not diminish the theoretical rigor of the work but rather enhances its relevance and validates its insights.},
+  archive      = {J_FDATA},
+  author       = {Interdonato, Roberto and Cherifi, Hocine},
+  doi          = {10.3389/fdata.2025.1666305},
+  journal      = {Frontiers in Big Data},
+  month        = {8},
+  pages        = {1666305},
+  shortjournal = {Front. Big Data},
+  title        = {Editorial: Interdisciplinary approaches to complex systems: Highlights from FRCCS 2023/24},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Automated road surface classification in OpenStreetMap using MaskCNN and aerial imagery. <em>FDATA</em>, <em>8</em>, 1657320. (<a href='https://doi.org/10.3389/fdata.2025.1657320'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {IntroductionOpenStreetMap (OSM) road surface data is critical for navigation, infrastructure monitoring, and urban planning but is often incomplete or inconsistent. This study addresses the need for automated validation and classification of road surfaces by leveraging high-resolution aerial imagery and deep learning techniques.MethodsWe propose a MaskCNN-based deep learning model enhanced with attention mechanisms and a hierarchical loss function to classify road surfaces into four types: asphalt, concrete, gravel, and dirt. The model uses NAIP (National Agriculture Imagery Program) aerial imagery aligned with OSM labels. Preprocessing includes georeferencing, data augmentation, label cleaning, and class balancing. The architecture comprises a ResNet-50 encoder with squeeze-and-excitation blocks and a U-Net-style decoder with spatial attention. Evaluation metrics include accuracy, mIoU, precision, recall, and F1-score.ResultsThe proposed model achieved an overall accuracy of 92.3% and a mean Intersection over Union (mIoU) of 83.7%, outperforming baseline models such as SVM (81.2% accuracy), Random Forest (83.7%), and standard U-Net (89.6%). Class-wise performance showed high precision and recall even for challenging surface types like gravel and dirt. Comparative evaluations against state-of-the-art models (COANet, SA-UNet, MMFFNet) also confirmed superior performance.DiscussionThe results demonstrate that combining NAIP imagery with attention-guided CNN architectures and hierarchical loss functions significantly improves road surface classification. The model is robust across varied terrains and visual conditions and shows potential for real-world applications such as OSM data enhancement, infrastructure analysis, and autonomous navigation. Limitations include label noise in OSM and class imbalance, which can be addressed through future work involving semi-supervised learning and multimodal data integration.},
+  archive      = {J_FDATA},
+  author       = {Parvathi, R. and Pattabiraman, V. and Saxena, Nancy and Mishra, Aakarsh and Mishra, Utkarsh and Pandey, Ansh},
+  doi          = {10.3389/fdata.2025.1657320},
+  journal      = {Frontiers in Big Data},
+  month        = {8},
+  pages        = {1657320},
+  shortjournal = {Front. Big Data},
+  title        = {Automated road surface classification in OpenStreetMap using MaskCNN and aerial imagery},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Basrah score: A novel machine learning-based score for differentiating iron deficiency anemia and beta thalassemia trait using RBC indices. <em>FDATA</em>, <em>8</em>, 1634133. (<a href='https://doi.org/10.3389/fdata.2025.1634133'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Iron deficiency anemia (IDA) and beta-thalassemia trait (BTT) are prevalent causes of microcytic anemia, often presenting overlapping hematological features that pose diagnostic challenges and necessitate prompt and precise management. Traditional discrimination indices—such as the Mentzer Index, Ihsan's formula, and the England and Fraser criteria—have been extensively applied in both research and clinical settings; however, their diagnostic performance varies considerably across different populations and datasets. This study proposes a novel and interpretable diagnostic model, the Basrah Score, developed using Elastic Net Logistic Regression (ENLR). This machine learning–based approach yields a flexible discrimination function that adapts to variations in clinical and environmental factors. The model was trained and validated on a local dataset of 2,120 individuals (1,080 with IDA and 1,040 with BTT), and was benchmarked against eight conventional indices. The Basrah Score demonstrated superior diagnostic performance, with an accuracy of 96.7%, a sensitivity of 95.0%, and a specificity of 98.6%. These results underscore the importance of incorporating advanced pre-processing techniques, class balancing, hyperparameter optimization, and rigorous cross-validation to ensure the robustness of diagnostic models. Overall, this research highlights the potential of integrating interpretable machine learning models with established clinical parameters to improve diagnostic accuracy in hematological disorders, particularly in resource-constrained settings.},
+  archive      = {J_FDATA},
+  author       = {Mahmood, Salma A. and Khalaf, Asaad A. and Hamadi, Saad S.},
+  doi          = {10.3389/fdata.2025.1634133},
+  journal      = {Frontiers in Big Data},
+  month        = {8},
+  pages        = {1634133},
+  shortjournal = {Front. Big Data},
+  title        = {Basrah score: A novel machine learning-based score for differentiating iron deficiency anemia and beta thalassemia trait using RBC indices},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Artificial intelligence for surgical outcome prediction in glaucoma: A systematic review. <em>FDATA</em>, <em>8</em>, 1605018. (<a href='https://doi.org/10.3389/fdata.2025.1605018'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {IntroductionGlaucoma is a leading cause of irreversible blindness, and its rising global prevalence has led to a significant increase in glaucoma surgeries. However, predicting postoperative outcomes remains challenging due to the complex interplay of patient factors, surgical techniques, and postoperative care. Artificial intelligence (AI) has emerged as a promising tool for enhancing predictive accuracy in clinical decision-making.MethodsThis systematic review was conducted to evaluate the current evidence on the use of AI to predict surgical outcomes in glaucoma patients. A comprehensive search of Medline, Embase, Web of Science, and Scopus was performed. Studies were included if they applied AI models to glaucoma surgery outcome prediction.ResultsSix studies met inclusion criteria, collectively analyzing 4,630 surgeries. A variety of algorithms were applied, including random forests, support vector machines, and neural networks. Overall, AI models consistently outperformed traditional statistical approaches, with the best-performing model achieving an accuracy of 87.5%. Key predictors of outcomes included demographic factors (e.g., age), systemic health indicators (e.g., smoking status and body mass index), and ophthalmic parameters (e.g., baseline intraocular pressure, central corneal thickness, mitomycin C use).DiscussionWhile AI models demonstrated superior performance to traditional statistical approaches, the lack of external validation and standardized surgical success definitions limit their clinical applicability. This review highlights both the promise and the current limitations of artificial intelligence in glaucoma surgery outcome prediction, emphasizing the need for prospective, multicenter studies, publicly available datasets, and standardized evaluation metrics to enhance the generalizability and clinical utility of future models.Systematic review registrationhttps://www.crd.york.ac.uk/PROSPERO/view/CRD42024621758, identifier: CRD42024621758.},
+  archive      = {J_FDATA},
+  author       = {Kailani, Zeena and Kim, Lauren and Bierbrier, Joshua and Balas, Michael and Mathew, David J.},
+  doi          = {10.3389/fdata.2025.1605018},
+  journal      = {Frontiers in Big Data},
+  month        = {8},
+  pages        = {1605018},
+  shortjournal = {Front. Big Data},
+  title        = {Artificial intelligence for surgical outcome prediction in glaucoma: A systematic review},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The global burden of adverse effects of medical treatment: A 30-year socio-demographic and geographic analysis using GBD 2021 data. <em>FDATA</em>, <em>8</em>, 1590551. (<a href='https://doi.org/10.3389/fdata.2025.1590551'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {BackgroundAdverse effects of medical treatment (AEMT) pose critical global health challenges, yet comprehensive analyses of their long-term burden across socio-demographic contexts remain limited. This study evaluates 30-year trends (1990–2021) in AEMT-related mortality, disability-adjusted life years (DALYs), years lived with disability (YLDs), and years of life lost (YLLs) across 204 countries using Global Burden of Disease (GBD) 2021 data.MethodsAge-standardized rates (ASRs) were stratified by sociodemographic index (SDI) quintiles. Frontier efficiency analysis quantified health loss boundaries relative to SDI, while concentration (C) and slope indices of inequality (SII) assessed health inequities. Predictive models projected trends to 2035.ResultsGlobal age-standardized mortality rates (ASDR) declined by 36.3%, with low-SDI countries achieving the steepest reductions (5.31 to 3.71/100,000) but remaining 3.9-fold higher than high-SDI nations. DALYs decreased by 39.7% (106.49 to 64.19/100,000), driven by infectious disease control in low-SDI regions. High-SDI countries experienced post-2010 mortality rebounds (0.86 to 0.95/100,000), linked to aging and complex interventions. YLLs declined by 40.3% (104.87 to 62.66/100,000), while YLDs peaked transiently (2010: 1.95/100,000). Frontier analysis revealed low-SDI countries lagged furthest from optimal health outcomes, and inequality indices highlighted entrenched disparities (C: −0.34 for premature mortality). Projections suggest continued declines in ASDR, DALYs, and YLLs by 2035, contingent on addressing antimicrobial resistance and surgical overuse.ConclusionsSDI-driven inequities necessitate tailored interventions: low-SDI regions require strengthened infection control and primary care, while high-SDI systems must mitigate overmedicalization risks. Hybrid strategies integrating digital health and cross-sector collaboration are critical for equitable burden reduction.},
+  archive      = {J_FDATA},
+  author       = {Lu, Hanxin and Cheng, Xinyan and Xiong, Jun},
+  doi          = {10.3389/fdata.2025.1590551},
+  journal      = {Frontiers in Big Data},
+  month        = {8},
+  pages        = {1590551},
+  shortjournal = {Front. Big Data},
+  title        = {The global burden of adverse effects of medical treatment: A 30-year socio-demographic and geographic analysis using GBD 2021 data},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Toward more realistic career path prediction: Evaluation and methods. <em>FDATA</em>, <em>8</em>, 1564521. (<a href='https://doi.org/10.3389/fdata.2025.1564521'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Predicting career trajectories is a complex yet impactful task, offering significant benefits for personalized career counseling, recruitment optimization, and workforce planning. However, effective career path prediction (CPP) modeling faces challenges including highly variable career trajectories, free-text resume data, and limited publicly available benchmark datasets. In this study, we present a comprehensive comparative evaluation of CPP models—linear projection, multilayer perceptron (MLP), LSTM, and large language models (LLMs)—across multiple input settings and two recently introduced public datasets. Our contributions are threefold: (1) we propose novel model variants, including an MLP extension and a standardized LLM approach, (2) we systematically evaluate model performance across input types (titles only vs. title+description, standardized vs. free-text), and (3) we investigate the role of synthetic data and fine-tuning strategies in addressing data scarcity and improving model generalization. Additionally, we provide a detailed qualitative analysis of prediction behaviors across industries, career lengths, and transitions. Our findings establish new baselines, reveal the trade-offs of different modeling strategies, and offer practical insights for deploying CPP systems in real-world settings.},
+  archive      = {J_FDATA},
+  author       = {Senger, Elena and Campbell, Yuri and van der Goot, Rob and Plank, Barbara},
+  doi          = {10.3389/fdata.2025.1564521},
+  journal      = {Frontiers in Big Data},
+  month        = {8},
+  pages        = {1564521},
+  shortjournal = {Front. Big Data},
+  title        = {Toward more realistic career path prediction: Evaluation and methods},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A fashion product recommendation based on adaptive VPKNN-NET algorithm without fuzzy similar image. <em>FDATA</em>, <em>8</em>, 1557779. (<a href='https://doi.org/10.3389/fdata.2025.1557779'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {IntroductionRecommender systems are essential in e-commerce for assisting users in navigating large product catalogs, particularly in visually driven domains like fashion. Traditional keyword-based systems often struggle to capture subjective style preferences.MethodsThis study proposes a novel fashion recommendation framework using an Adaptive VPKNN-net algorithm. The model integrates deep visual feature extraction using a pre-trained VGG16 Convolutional Neural Network (CNN), dimensionality reduction through Principal Component Analysis (PCA), and a modified K-Nearest Neighbors (KNN) algorithm that combines Euclidean and cosine similarity metrics to enhance visual similarity assessment.ResultsExperiments were conducted using the “Fashion Product Images (Small)” dataset from Kaggle. The proposed system achieved high accuracy (98.69%) and demonstrated lower RMSE (0.8213) and MAE (0.6045) compared to baseline models such as Random Forest, SVM, and standard KNN.DiscussionThe proposed Adaptive VPKNN-net framework significantly improves the precision, interpretability, and efficiency of visual fashion recommendations. It eliminates the limitations of fuzzy similarity models and offers a scalable solution for visually oriented e-commerce platforms, particularly in cold-start scenarios and low-data conditions.},
+  archive      = {J_FDATA},
+  author       = {Sabitha, R. and Sundar, D.},
+  doi          = {10.3389/fdata.2025.1557779},
+  journal      = {Frontiers in Big Data},
+  month        = {8},
+  pages        = {1557779},
+  shortjournal = {Front. Big Data},
+  title        = {A fashion product recommendation based on adaptive VPKNN-NET algorithm without fuzzy similar image},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Navigating the microarray landscape: A comprehensive review of feature selection techniques and their applications. <em>FDATA</em>, <em>8</em>, 1624507. (<a href='https://doi.org/10.3389/fdata.2025.1624507'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This review systematically summarizes recent advances in microarray feature selection techniques and their applications in biomedical research. It addresses the challenges posed by the high dimensionality and noise of microarray data, aiming to integrate the strengths and limitations of various methods while exploring their applicability across different scenarios. By identifying gaps in current research, highlighting underexplored areas, and proposing clear directions for future studies, this review seeks to inspire academics to develop novel techniques and applications. Furthermore, it provides a comprehensive evaluation of feature selection methods, offering both a theoretical foundation and practical guidance to help researchers select the most suitable approaches for their specific research questions. Emphasizing the importance of interdisciplinary collaboration, the study underscores the potential of feature selection in transformative applications such as personalized medicine, cancer diagnosis, and drug discovery. Through this review, not only does it provide in-depth theoretical support for the academic community, but also practical guidance for the practical field, which significantly contributes to the overall improvement of microarray data analysis technology.},
+  archive      = {J_FDATA},
+  author       = {Wang, Fangling and Zain, Azlan Mohd and Ren, Yanjie and Bahari, Mahadi and Samah, Azurah A. and Ali Shah, Zuraini Binti and Yusup, Norfadzlan Bin and Jalil, Rozita Abdul and Mohamad, Azizah and Azmi, Nurulhuda Firdaus Mohd},
+  doi          = {10.3389/fdata.2025.1624507},
+  journal      = {Frontiers in Big Data},
+  month        = {7},
+  pages        = {1624507},
+  shortjournal = {Front. Big Data},
+  title        = {Navigating the microarray landscape: A comprehensive review of feature selection techniques and their applications},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LLM-as-a-judge: Automated evaluation of search query parsing using large language models. <em>FDATA</em>, <em>8</em>, 1611389. (<a href='https://doi.org/10.3389/fdata.2025.1611389'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {IntroductionThe adoption of Large Language Models (LLMs) in search systems necessitates new evaluation methodologies beyond traditional rule-based or manual approaches.MethodsWe propose a general framework for evaluating structured outputs using LLMs, focusing on search query parsing within an online classified platform. Our approach leverages LLMs' contextual reasoning capabilities through three evaluation methodologies: Pointwise, Pairwise, and Pass/Fail assessments. Additionally, we introduce a Contextual Evaluation Prompt Routing strategy to improve reliability and reduce hallucinations.ResultsExperiments conducted on both small- and large-scale datasets demonstrate that LLM-based evaluation achieves approximately 90% agreement with human judgments.DiscussionThese results validate LLM-driven evaluation as a scalable, interpretable, and effective alternative to traditional evaluation methods, providing robust query parsing for real-world search systems.},
+  archive      = {J_FDATA},
+  author       = {Baysan, Mehmet Selman and Uysal, Serkan and İşlek, İrem and Çığ Karaman, Çağla and Güngör, Tunga},
+  doi          = {10.3389/fdata.2025.1611389},
+  journal      = {Frontiers in Big Data},
+  month        = {7},
+  pages        = {1611389},
+  shortjournal = {Front. Big Data},
+  title        = {LLM-as-a-judge: Automated evaluation of search query parsing using large language models},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). OCT-SelfNet: A self-supervised framework with multi-source datasets for generalized retinal disease detection. <em>FDATA</em>, <em>8</em>, 1609124. (<a href='https://doi.org/10.3389/fdata.2025.1609124'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {IntroductionIn the medical AI field, there is a significant gap between advances in AI technology and the challenge of applying locally trained models to diverse patient populations. This is mainly due to the limited availability of labeled medical image data, driven by privacy concerns. To address this, we have developed a self-supervised machine learning framework for detecting eye diseases from optical coherence tomography (OCT) images, aiming to achieve generalized learning while minimizing the need for large labeled datasets.MethodsOur framework, OCT-SelfNet, effectively addresses the challenge of data scarcity by integrating diverse datasets from multiple sources, ensuring a comprehensive representation of eye diseases. By employing a robust two-phase training strategy self-supervised pre-training with unlabeled data followed by a supervised training stage, we utilized the power of a masked autoencoder built on the SwinV2 backbone.ResultsExtensive experiments were conducted across three datasets with varying encoder backbones, assessing scenarios including the absence of self-supervised pre-training, the absence of data fusion, low data availability, and unseen data to evaluate the efficacy of our methodology. OCT-SelfNet outperformed the baseline model (ResNet-50, ViT) in most cases. Additionally, when tested for cross-dataset generalization, OCT-SelfNet surpassed the performance of the baseline model, further demonstrating its strong generalization ability. An ablation study revealed significant improvements attributable to self-supervised pre-training and data fusion methodologies.DiscussionOur findings suggest that the OCT-SelfNet framework is highly promising for real-world clinical deployment in detecting eye diseases from OCT images. This demonstrates the effectiveness of our two-phase training approach and the use of a masked autoencoder based on the SwinV2 backbone. Our work bridges the gap between basic research and clinical application, which significantly enhances the framework's domain adaptation and generalization capabilities in detecting eye diseases.},
+  archive      = {J_FDATA},
+  author       = {Jannat, Fatema-E and Gholami, Sina and Alam, Minhaj Nur and Tabkhi, Hamed},
+  doi          = {10.3389/fdata.2025.1609124},
+  journal      = {Frontiers in Big Data},
+  month        = {7},
+  pages        = {1609124},
+  shortjournal = {Front. Big Data},
+  title        = {OCT-SelfNet: A self-supervised framework with multi-source datasets for generalized retinal disease detection},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Collaborative filtering based on nonnegative/binary matrix factorization. <em>FDATA</em>, <em>8</em>, 1599704. (<a href='https://doi.org/10.3389/fdata.2025.1599704'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Collaborative filtering generates recommendations by exploiting user-item similarities based on rating data, which often contains numerous unrated items. To predict scores for unrated items, matrix factorization techniques such as nonnegative matrix factorization (NMF) are often employed. Nonnegative/binary matrix factorization (NBMF), which is an extension of NMF, approximates a nonnegative matrix as the product of nonnegative and binary matrices. While previous studies have applied NBMF primarily to dense data such as images, this paper proposes a modified NBMF algorithm tailored for collaborative filtering with sparse data. In the modified method, unrated entries in the rating matrix are masked, enhancing prediction accuracy. Furthermore, utilizing a low-latency Ising machine in NBMF is advantageous in terms of the computation time, making the proposed method beneficial.},
+  archive      = {J_FDATA},
+  author       = {Terui, Yukino and Inoue, Yuka and Hamakawa, Yohei and Tatsumura, Kosuke and Kudo, Kazue},
+  doi          = {10.3389/fdata.2025.1599704},
+  journal      = {Frontiers in Big Data},
+  month        = {7},
+  pages        = {1599704},
+  shortjournal = {Front. Big Data},
+  title        = {Collaborative filtering based on nonnegative/binary matrix factorization},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AI-powered smart emergency services support for 9-1-1 call handlers using textual features and SVM model for digital health optimization. <em>FDATA</em>, <em>8</em>, 1594062. (<a href='https://doi.org/10.3389/fdata.2025.1594062'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In emergency situations, 9-1-1 is considered the first point of contact, and their call handlers play a crucial role in managing the emergency response. Due to the large number of daily calls and the hectic routine, there are severe chances that the call handlers can make any mistake or human error during data taking in a high-pressure environment. These mistakes or errors impact 9-1-1 performance in emergencies. To address this problem, this research introduces an AI-powered digital health framework called Emergency Calls Assistant (ECA) that leverages artificial intelligence (AI) and natural language processing (NLP) techniques to assist call handlers during data collection. ECA is designed to predict the type of emergency, suggest relevant questions to collect deeper information, suggest pre-arrival instructions to emergency personnel, and generate incident reports that helps in data-driven decision making. The ECA framework works in two phases; the first phase is to convert the audio call into digital textual form, and the second phase is to analyze the textual information using NLP tools and mining techniques to retrieve contextual information. The second phase also deals with emergency categorization using a support vector machine (SVM) learning model to prioritize the emergency dealing with an accuracy of 92.7%. The key factors involved in categorization by ML models are the severity of injury and weapons involvement. The objective of ECA's development is to provide digital health-saving technology to 9-1-1 call handlers and save lives by making accurate decisions by providing real-time assistance. This research aligns with the advancement of digital health technologies by exhibiting how NLP-driven decision support systems can revolutionize emergency healthcare, improve patient outcomes through real-time AI integration, and reduce errors.},
+  archive      = {J_FDATA},
+  author       = {Attiah, Afraa and Kalkatawi, Manal},
+  doi          = {10.3389/fdata.2025.1594062},
+  journal      = {Frontiers in Big Data},
+  month        = {7},
+  pages        = {1594062},
+  shortjournal = {Front. Big Data},
+  title        = {AI-powered smart emergency services support for 9-1-1 call handlers using textual features and SVM model for digital health optimization},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimizing public health management with predictive analytics: Leveraging the power of random forest. <em>FDATA</em>, <em>8</em>, 1574683. (<a href='https://doi.org/10.3389/fdata.2025.1574683'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Community health outcomes significantly impact older populations' wellbeing and quality of life. Traditional analytical methods often struggle to accurately predict health risks at the community level due to their inability to capture complex, non-linear relationships among various health determinants. This study employs a Random Forest Algorithm (RFA) to address this limitation and enhance the predictive modeling of community health outcomes. By leveraging ensemble learning techniques and multi-factor analysis, this study aims to identify and quantify the relative contributions of key health indicators to risk assessment. The study begins with comprehensive data collection from diverse health sources, followed by a systematic preprocessing stage, which includes resolving missing values, normalizing variables, and encoding categorical features. Using bootstrap sampling, multiple decision trees were trained on random subsets of health data, ensuring variability in the model learning. The trees grow to full depth and aggregate their predictions to enhance the accuracy. An out-of-bag (OOB) error estimation was applied to refine the model and provide unbiased performance assessments, ensuring robust generalization to unseen data. The proposed model effectively analyzes key health indicators, ranking the feature importance to determine the most influential predictors of health risks. Results indicate that RFA achieves an accuracy rate of 92%, outperforming conventional prediction methods in terms of precision and recall. These findings underscore the efficacy of Random Forest in identifying critical health risk factors, paving the way for targeted and data-driven public health management strategies and interventions tailored to older adults.},
+  archive      = {J_FDATA},
+  author       = {Wang, Hongman and Song, Yifan and Bi, Hua},
+  doi          = {10.3389/fdata.2025.1574683},
+  journal      = {Frontiers in Big Data},
+  month        = {7},
+  pages        = {1574683},
+  shortjournal = {Front. Big Data},
+  title        = {Optimizing public health management with predictive analytics: Leveraging the power of random forest},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Design and development of an efficient RLNet prediction model for deepfake video detection. <em>FDATA</em>, <em>8</em>, 1569147. (<a href='https://doi.org/10.3389/fdata.2025.1569147'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {IntroductionThe widespread emergence of deepfake videos presents substantial challenges to the security and authenticity of digital content, necessitating robust detection methods. Deepfake detection remains challenging due to the increasing sophistication of forgery techniques. While existing methods often focus on spatial features, they may overlook crucial temporal information distinguishing real from fake content and need to investigate several other Convolutional Neural Network architectures on video-based deep fake datasets.MethodsThis study introduces an RLNet deep learning framework that utilizes ResNet and Long Short Term Memory (LSTM) networks for high-precision deepfake video detection. The key objective is exploiting spatial and temporal features to discern manipulated content accurately. The proposed approach starts with preprocessing a diverse dataset with authentic and deepfake videos. The ResNet component captures intricate spatial anomalies at the frame level, identifying subtle manipulations. Concurrently, the LSTM network analyzes temporal inconsistencies across video sequences, detecting dynamic irregularities that signify deepfake content.Results and discussionExperimental results demonstrate the effectiveness of the combined ResNet and LSTM approach, showing an accuracy of 95.2% and superior detection capabilities compared to existing methods like EfficientNet and Recurrent Neural Networks (RNN). The framework's ability to handle various deepfake techniques and compression levels highlights its versatility and robustness. This research significantly contributes to digital media forensics by providing an advanced tool for detecting deepfake videos, enhancing digital content's security and integrity. The efficacy and resilience of the proposed system are evidenced by deepfake detection, while our visualization-based interpretability provides insights into our model.},
+  archive      = {J_FDATA},
+  author       = {Bhandarkawthekar, Varad and Navamani, T. M. and Sharma, Rishabh and Shyamala, K.},
+  doi          = {10.3389/fdata.2025.1569147},
+  journal      = {Frontiers in Big Data},
+  month        = {7},
+  pages        = {1569147},
+  shortjournal = {Front. Big Data},
+  title        = {Design and development of an efficient RLNet prediction model for deepfake video detection},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Conceptual design of a decision knowledge service model integrating a multi-agent supply relationship diagram for electric power emergency equipment. <em>FDATA</em>, <em>8</em>, 1603106. (<a href='https://doi.org/10.3389/fdata.2025.1603106'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {IntroductionThe decision regarding the supply of emergency equipments for power emergencies requires timeliness, efficiency, and accuracy. The multi-agent supply relationship graph, based on complex data fusion, enables the comprehensive exploration of interconnections among key entities in power emergency supplies.MethodsThis approach enhances decision-making efficiency and quality by uncovering multiple relationships between main bodies involved. The present study focuses on the decision-making process for power emergency equipments supply and aims to enhance its professionalization. To achieve this goal, multi-modal data regarding power emergency equipments supply is collected from both internal and external power enterprises. Subsequently, a decision support knowledge base is established, along with a four-dimensional relationship graph that integrates events, time, equipments, and suppliers based on the knowledge graph. This enables the mining of multidimensional relationships pertaining to the main body. Finally, supported by the graph, the platform can offer intelligent assistance in decision-making, supplier recommendation, optimization of emergency equipment scheduling for electric power supply, and provides effective information and guidance for decision-making in electric power emergency equipment supply.ResultsAfter conducting a comparative analysis, the decision support system based on the knowledge graph proposed in this study demonstrates superior effectiveness and precision. By integrating the four-dimensional relationship graph with data mining algorithms, precise decision support can be provided for power emergency response. After verification through case studies, the model developed in this study was utilized to recommend suppliers of power emergency equipment, and the recommendation results demonstrated a closer alignment with actual procurement outcomes.Conclusion and recommendationThis system proposed by this study delivers multidimensional knowledge guidance and optimized decision pathways for emergency supply management.},
+  archive      = {J_FDATA},
+  author       = {Si, Jiandong and Liu, Chang and Ye, Jingxian and Wu, Jianfeng and Wang, Jianguo and Hu, Kairui and Ju, Chunhua and Cao, Qianwen},
+  doi          = {10.3389/fdata.2025.1603106},
+  journal      = {Frontiers in Big Data},
+  month        = {6},
+  pages        = {1603106},
+  shortjournal = {Front. Big Data},
+  title        = {Conceptual design of a decision knowledge service model integrating a multi-agent supply relationship diagram for electric power emergency equipment},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Sliding window based rare partial periodic pattern mining algorithms over temporal data streams. <em>FDATA</em>, <em>8</em>, 1600267. (<a href='https://doi.org/10.3389/fdata.2025.1600267'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Periodic pattern mining, a branch of data mining, is expanding to provide insight into the occurrence behavior of large volumes of data. Recently, a variety of industries, including fraud detection, telecommunications, retail marketing, research, and medical have found applications for rare association rule mining, which uncovers unusual or unexpected combinations. A limited amount of literature demonstrated how periodicity is essential in mining low-support rare patterns. In addition, attention must be placed on temporal datasets that analyze crucial information about the timing of pattern occurrences and stream datasets to manage high-speed streaming data. Several algorithms have been developed that effectively track the cyclic behavior of patterns and identify the patterns that display complete or partial periodic behavior in temporal datasets. Numerous frameworks have been created to examine the periodic behavior of streaming data. Nevertheless, such a method that focuses on the temporal information in the data stream and extracts rare partial periodic patterns has yet to be proposed. With a focus on identifying rare partial periodic patterns from temporal data streams, this paper proposes two novel sliding window-based single scan approaches called R3PStreamSW-Growth and R3PStreamSW-BitVectorMiner. The findings showed that when a dense dataset Accidents is considered, for different threshold variations R3P-StreamSWBitVectorMiner outperformed R3PStreamSW-Growth by about 93%. Similarly, when the sparse dataset T10I4D100K is taken into account, R3P-StreamSWBitVectorMiner exhibits a 90% boost in performance. This demonstrates that on a range of synthetic, real-world, sparse, and dense datasets for different thresholds, R3P-StreamSWBitVectorMiner is significantly faster than R3PStreamSW-Growth.},
+  archive      = {J_FDATA},
+  author       = {Upadhya, K. Jyothi and Lobo, Ronan and Chhabra, Mini Shail and Paleja, Aman and Rao, B. Dinesh and M., Geetha and Sisodia, Prachi and Reddy, Bolusani Akshita},
+  doi          = {10.3389/fdata.2025.1600267},
+  journal      = {Frontiers in Big Data},
+  month        = {6},
+  pages        = {1600267},
+  shortjournal = {Front. Big Data},
+  title        = {Sliding window based rare partial periodic pattern mining algorithms over temporal data streams},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Conceptualization and scale development for big data-based learning organization capability. <em>FDATA</em>, <em>8</em>, 1596615. (<a href='https://doi.org/10.3389/fdata.2025.1596615'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {IntroductionIn today's competitive business landscape, organizations must enhance learning and adaptability to gain a strategic edge. While big data significantly influences organizational learning, a comprehensive tool to measure this capability has been lacking in the literature. This study aims to develop a valid and reliable scale to assess big data-based learning organization capability.MethodsA two-phase research design was employed. In the first phase, Exploratory Factor Analysis (EFA) was conducted on data collected from 232 managers, identifying 22 items across three underlying factors. In the second phase, Confirmatory Factor Analysis (CFA) was applied to an independent sample (n = 128) to validate the scale's structure and its alignment with the theoretical model.ResultsThe EFA results revealed a clear three-factor structure, and the CFA confirmed the model's fit to the data, demonstrating good psychometric properties. The final BD-LOC scale shows high internal consistency and construct validity.DiscussionThe BD-LOC scale provides organizations with a valuable tool to assess their big data-driven learning capabilities. It supports strategic decision-making, fosters innovation, and enhances operational efficiency. This study fills a significant gap in the literature and contributes to the effective implementation of digital transformation strategies in organizations.},
+  archive      = {J_FDATA},
+  author       = {Alkan, Nesrin and Yilmaz, Deniz Ersan and Alkan, Bilal Baris},
+  doi          = {10.3389/fdata.2025.1596615},
+  journal      = {Frontiers in Big Data},
+  month        = {6},
+  pages        = {1596615},
+  shortjournal = {Front. Big Data},
+  title        = {Conceptualization and scale development for big data-based learning organization capability},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Data visualization of complex research systems aligned with the sustainable development goals. <em>FDATA</em>, <em>8</em>, 1562557. (<a href='https://doi.org/10.3389/fdata.2025.1562557'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study presents a methodological framework for visualizing the alignment between complex research systems and the Sustainable Development Goals (SDGs), using CIRAD as a case study. By leveraging advanced data visualization and bibliometric analysis, the research maps CIRAD's publications to the SDGs and explores thematic priorities and institutional collaborations. The findings underscore CIRAD's significant contributions to climate action, food security, biodiversity conservation, and rural development. The integration of complex systems theory and network analysis enhances understanding of SDG interlinkages and provides actionable insights for strategic decision-making in research governance.},
+  archive      = {J_FDATA},
+  author       = {Paletta, Francisco Carlos and Gonzalez-Aguilar, Audilio and Verlaet, Lise},
+  doi          = {10.3389/fdata.2025.1562557},
+  journal      = {Frontiers in Big Data},
+  month        = {6},
+  pages        = {1562557},
+  shortjournal = {Front. Big Data},
+  title        = {Data visualization of complex research systems aligned with the sustainable development goals},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LISTEN: Lived experiences of long COVID: A social media analysis of mental health and supplement use. <em>FDATA</em>, <em>8</em>, 1539724. (<a href='https://doi.org/10.3389/fdata.2025.1539724'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {IntroductionLong COVID, or Post-Acute Sequelae of SARS-CoV-2 infection (PASC), is a complex condition characterized by a wide range of persistent symptoms that can significantly impact an individual's quality of life and mental health. This study explores public perspectives on the mental health impact of Long COVID and the use of dietary supplements for recovery, drawing on social media content. It uniquely addresses how individuals with Long COVID discuss supplement use in the absence of public health recommendations.MethodsThe study employs the LISTEN method (“Collaborative and Digital Analysis of Big Qual Data in Time Sensitive Contexts”), an interdisciplinary approach that combines human insight and digital analysis software. Social media data related to Long COVID, mental health, and supplement use were collected using the Pulsar Platform. Data were analyzed using the free-text discourse analysis tool Infranodus and collaborative qualitative analysis methods.ResultsThe findings reveal key themes, including the impact of Long COVID on mental health, occupational health, and the use of food supplements. Analysis of attitudes toward supplement use highlights the prevalence of negative emotions and experiences among Long COVID patients. The study also identifies the need for evidence-based recommendations and patient education regarding supplement use.DiscussionThe findings contribute to a better understanding of the complex nature of Long COVID and inform the development of comprehensive, patient-centered care strategies addressing both physical and mental health needs.},
+  archive      = {J_FDATA},
+  author       = {Martin, Sam and Janse Van Rensburg, Maya and Le, Huong Thien and Firth, Charlie and Chandrasekar, Abinaya and Clark, Sigrún Eyrúnardóttir and Vanderslott, Samantha and Vindrola-Padros, Cecilia and Vera San Juan, Norha},
+  doi          = {10.3389/fdata.2025.1539724},
+  journal      = {Frontiers in Big Data},
+  month        = {6},
+  pages        = {1539724},
+  shortjournal = {Front. Big Data},
+  title        = {LISTEN: Lived experiences of long COVID: A social media analysis of mental health and supplement use},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fine-tuning or prompting on LLMs: Evaluating knowledge graph construction task. <em>FDATA</em>, <em>8</em>, 1505877. (<a href='https://doi.org/10.3389/fdata.2025.1505877'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper explores Text-to-Knowledge Graph (T2KG) construction, assessing Zero-Shot Prompting, Few-Shot Prompting, and Fine-Tuning methods with Large Language Models. Through comprehensive experimentation with Llama2, Mistral, and Starling, we highlight the strengths of FT, emphasize dataset size's role, and introduce nuanced evaluation metrics. Promising perspectives include synonym-aware metric refinement, and data augmentation with Large Language Models. The study contributes valuable insights to KG construction methodologies, setting the stage for further advancements.1},
+  archive      = {J_FDATA},
+  author       = {Ghanem, Hussam and Cruz, Christophe},
+  doi          = {10.3389/fdata.2025.1505877},
+  journal      = {Frontiers in Big Data},
+  month        = {6},
+  pages        = {1505877},
+  shortjournal = {Front. Big Data},
+  title        = {Fine-tuning or prompting on LLMs: Evaluating knowledge graph construction task},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deep learning based automation of mean linear intercept quantification in COPD research. <em>FDATA</em>, <em>8</em>, 1461016. (<a href='https://doi.org/10.3389/fdata.2025.1461016'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Chronic obstructive pulmonary disease (COPD), a major cause of global mortality, necessitates novel therapies targeting lung function and remodeling. Their effect on emphysema formation is initially investigated using mouse models by analyzing histological lung sections. The extent of airspace enlargement that is characteristic for emphysema is quantified by manual assessment of the mean linear intercept (MLI) across multiple histological microscopy images. Besides being tedious and cost intensive, this manual task lacks scientific comparability due to complexity and subjectivity. In order to continue with the well-established practice and to preserve the comparability of study results, we propose a deep learning-based approach for automating the determination of MLI in histological lung sections utilizing the AutoML software AIxCell which is specialized for the domain of semantic segmentation-based cell culture and tissue analysis. We develop and evaluate our image processing pipeline on stained histological microscope images that stem from a study including two groups of C57BL/6 mice where one group was exposed to cigarette smoke while the control group was not. The results indicate that the AIxCell segmentation algorithm achieves excellent performance, with IoU scores consistently exceeding 90%. Furthermore, the automated approach consistently yields higher MLI values compared to the manually generated values. However, the consistent nature of this discrepancy suggests that the automated approach can be reliably employed without any limitations. Moreover, it demonstrates statistical significance in distinguishing between smoker's and non-smoker's lungs.},
+  archive      = {J_FDATA},
+  author       = {Leyendecker, Lars and Weltin, Anna Louisa and Nienhaus, Florian and Matthey, Michaela and Nießing, Bastian and Wenzel, Daniela and Schmitt, Robert H.},
+  doi          = {10.3389/fdata.2025.1461016},
+  journal      = {Frontiers in Big Data},
+  month        = {6},
+  pages        = {1461016},
+  shortjournal = {Front. Big Data},
+  title        = {Deep learning based automation of mean linear intercept quantification in COPD research},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Editorial: Air quality and biosphere-atmosphere interactions. <em>FDATA</em>, <em>8</em>, 1611364. (<a href='https://doi.org/10.3389/fdata.2025.1611364'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The intricate relationship between air quality and biosphere-atmosphere interactions (BAI) has garnered significant attention in the face of escalating environmental issues. As we navigate the complexities of climate change, understanding how these two domains influence each other becomes paramount not only for elucidating ecological dynamics but also for enhancing human health outcomes. This research topic is based on four significant articles bringing a new contribution to both scientific knowledge and policy considerations regarding air quality and environmental health.The interplay between air quality and BAI is marked by mutual influences; air quality can modulate biospheric processes, while biospheric changes can, in turn, impact air quality. As highlighted by the available literature, the formation of particulate matter (PM) is a critical focal point. PM influences cloud formation and affects regional climate, creating feedback loops that complicate our understanding of ecological systems. The studies presented here delve into various aspects of these interactions, employing cutting-edge methodologies, including machine learning approaches, to elucidate the dynamics at play. The first article addresses the 'Causal effect of PM2.5 on the urban heat island'. This research underscores the significant correlation between PM2.5 concentrations and urban temperatures. Utilizing convergent cross-mapping (CCM), the authors reveal that while urban heat islands (UHIs) exacerbate air pollution levels, high pollution also contributes to elevated urban temperatures. The establishment of a nonlinear threshold effect provides a compelling argument for urban planning strategies to address UHI phenomena, particularly in rapidly urbanizing regions like Quito, Ecuador.The second manuscript focuses on 'Tradescantia response to air and soil pollution, stamen hair cells dataset and ANN colour classification'. This innovative study introduces a novel dataset, Trad-204, to assess the susceptibility of Tradescantia plants to environmental stressors caused by air and soil pollution. Using computer vision models to quantify colour changes in plant cells, the authors emphasize the potential for deploying biological indicators as a rapid assessment tool for air quality monitoring. This research not only illustrates the sensitivity of biotic systems to pollutants but also introduces advanced neural network architectures that enhance classification accuracy compared to traditional methods.The third paper is a study on the 'Particulate matter forecast and prediction in Curitiba using machine learning'. Utilizing Random Forest and Long Short-Term Memory (LSTM) neural networks, this work examines PM2.5 dynamics in the context of vehicular emissions and meteorological factors. A key finding is the significant impact of the COVID-19 pandemic on vehicle circulation patterns and, consequently, on PM levels. The high predictive accuracy achieved underscores the potential for these models to inform public health policies and strategies for managing urban air quality.Finally, the last article analyses the 'Real driving cycles and emissions for urban freight transport'. This study provides an extensive evaluation of how meteorological variables affect particulate matter levels. By establishing a robust dataset encompassing vehicle counts and PM data, the authors illustrate the interconnected roles of emissions and atmospheric conditions in shaping air quality. Their findings may assist in formulating strategies that emphasize compliance with emissions standards and enhance vehicular management, thus improving urban air quality.The collective findings of these studies highlight the urgent need for interdisciplinary approaches to tackling air quality issues, integrating knowledge from ecological sciences, public health, and machine learning technologies. As the interactions between air quality and BAI grow more intricate due to climate change and urbanization, future research must focus on refining predictive models and leveraging new technologies.Exploration of machine learning techniques continues to hold promise, with an imperative to improve the interpretability of models, particularly concerning nonlinear dynamics in environmental systems. Addressing current gaps in understanding how anthropogenic activities alter BAI processes will be crucial, particularly as policymakers seek actionable strategies to mitigate climate impacts and protect public health.In sum, this Research Topic not only advances our scientific understanding of air quality and BAI interactions but also serves as a critical resource for future research trajectories. It is hoped that these contributions will foster heightened awareness and inspire further inquiry into the vital connections that influence both the biosphere and the well-being of humanity.As we continue to face the pressing challenges of environmental degradation, the insights garnered from this body of work serve as a foundation for actionable strategies that bridge ecological resilience and human health in our rapidly changing world.},
+  archive      = {J_FDATA},
+  author       = {Rybarczyk, Yves Philippe},
+  doi          = {10.3389/fdata.2025.1611364},
+  journal      = {Frontiers in Big Data},
+  month        = {5},
+  pages        = {1611364},
+  shortjournal = {Front. Big Data},
+  title        = {Editorial: Air quality and biosphere-atmosphere interactions},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Editorial: Applied computational social sciences. <em>FDATA</em>, <em>8</em>, 1605788. (<a href='https://doi.org/10.3389/fdata.2025.1605788'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This issue examines the social transformations brought about by novel tools of social interactions. Man builds tools to change the world and in turn, the tools change the man that built them. It is this dynamic process that each of the articles presented here explores. Some common themes emerge across all the contributions:-Emphasis on the Social and Cultural Construction of Data-Driven Domains: Brandt examines the cultural construction of data science through the lens of motives, meaning-making, and disputes on social media. Kaul and Mukherjee focus on the "Equitable Differential Privacy" framework, arguing that ensuring equitable outcomes requires not just algorithmic design but also inclusive communication that considers diverse social groups and power dynamics. Sakamoto et al. analyze how the established practice of offline diplomacy is being augmented and selectively adopted in the online sphere, highlighting strategic and presentational considerations that reflect social norms and diplomatic goals.-Leveraging Computational Methods for Social Inquiry: Each article employs computational social science methodologies to analyze large datasets. Brandt utilizes network analysis and topic modeling on a large corpus of tweets. Kaul and Mukherjee conduct a descriptive case study, drawing on secondary sources related to the U.S. Census Bureau's communication strategies, which implicitly involves analyzing textual data and communication patterns. Sakamoto et al. explicitly use quantitative text analysis tools like word embeddings, topic modeling (LDA), and sentiment analysis on corpora of UN speeches and X posts. •Ethical and Equity Concerns: Two of the articles touch upon ethical and equity considerations within their respective domains. Brandt notes the emergence of concerns with "new practical and ethical standards" in the construction of data science. Kaul and Mukherjee make "equity" the central focus of their work on differential privacy, arguing for a framework that addresses the needs of all social groups, particularly marginalized ones, through both algorithmic design and inclusive communication. •Examining the Role of Online Platforms in Professional and Political Practices: All three articles consider the significance of online platforms in transforming professional and political practices. Brandt uses Twitter to study the cultural construction of data science. Kaul and Mukherjee analyze communication related to the Census Bureau's DP implementation, which includes online dissemination of information. Sakamoto et al. directly compare offline diplomatic speeches with online posts on X, highlighting how diplomats leverage these platforms to complement their traditional roles. A goal of this issue is to promote the circulation of ideas between academia and tech companies by encouraging research on topics that are relevant for both communities. We think that the topics covered in this issue offer a starting point for starting a dialogue between the two communities of researchers. As such, we see this as a beginning, a first step that recognize the existence of a new domain of knowledge that uses social science concepts and ideas for building tools that shape interactions.},
+  archive      = {J_FDATA},
+  author       = {Parigi, Paolo and Makovi, Kinga},
+  doi          = {10.3389/fdata.2025.1605788},
+  journal      = {Frontiers in Big Data},
+  month        = {5},
+  pages        = {1605788},
+  shortjournal = {Front. Big Data},
+  title        = {Editorial: Applied computational social sciences},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The climate gluing protests: Analyzing their development and framing in media since 1986 using sentiment analyses and frame detection models. <em>FDATA</em>, <em>8</em>, 1569623. (<a href='https://doi.org/10.3389/fdata.2025.1569623'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent climate-related protests by social movements such as Extinction Rebellion, Just Stop Oil, and others have included actions like defacing artwork and gluing oneself to objects and streets. Using sentiment analysis and frame detection models, we analyze a corpus of all available English-language news articles in LexisNexis, with the first recorded instance of a gluing protest appearing in 1986. Our study traces the development of this protest tactic over time and addresses three central questions from social movement literature: the use of glue in protests, the geographical spread of this tactic, and the framing of these actions. We find that gluing protests were initially associated with a range of issues—including abortion, criminal justice, and environmental concerns—but in recent years have become more strongly linked to climate activism. Media coverage of these protests is predominantly negative, although public media tends to be comparatively less so. Moreover, protesters' prognostic frames—suggestions for what should be done—are relatively rare, with discourse more often centering on policy and security concerns. From a data science perspective, we explore the use of various Natural Language Processing (NLP) methods. The discussion and conclusion section highlights challenges encountered when working with our corpus and NLP models, and suggests ways to address them in future research. We also consider how recent advancements in large language models (LLMs) could refine or extend these analyses while acknowledging important concerns related to their use.},
+  archive      = {J_FDATA},
+  author       = {Hadler, Markus and Ertl, Alexander and Klösch, Beate and Reiter-Haas, Markus and Lex, Elisabeth},
+  doi          = {10.3389/fdata.2025.1569623},
+  journal      = {Frontiers in Big Data},
+  month        = {5},
+  pages        = {1569623},
+  shortjournal = {Front. Big Data},
+  title        = {The climate gluing protests: Analyzing their development and framing in media since 1986 using sentiment analyses and frame detection models},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Federated learning framework for IoT intrusion detection using tab transformer and nature-inspired hyperparameter optimization. <em>FDATA</em>, <em>8</em>, 1526480. (<a href='https://doi.org/10.3389/fdata.2025.1526480'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Intrusion detection has been of prime concern in the Internet of Things (IoT) environment due to the rapid increase in cyber threats. Majority of traditional intrusion detection systems (IDSs) rely on centralized models, raising significant privacy concerns. Federated learning (FL) offers a decentralized alternative; however, many existing FL-based IDS frameworks suffer from poor performance due to suboptimal model architectures and ineffective hyperparameter selection. To address these challenges, this paper introduces a novel trust-centric FL framework based on the tab transformer (TTF) model for IDS. We enhance the Tab model through an optimization process, utilizing a hyperparameter tuning algorithm inspired by the nature-based electric eel foraging optimization (EEFO) algorithm. The goal of the developed framework is to improve the detection of IDS without using centralized data to preserve privacy. Whereas it enhances the processing and detection capability of huge amounts of data generated from IoT devices. Our framework is tested on three IoT datasets: N-BaIoT, UNSW-NB15, and CICIoT2023 to ensure the model's performance. Experimental results show that the proposed framework significantly exceeds traditional methods in terms of accuracy, precision, and recall. The results presented in this study confirm the effectiveness and superior performance of the proposed FL-based IDS framework.},
+  archive      = {J_FDATA},
+  author       = {Abd Elaziz, Mohamed and Fares, Ibrahim A. and Dahou, Abdelghani and Shrahili, Mansour},
+  doi          = {10.3389/fdata.2025.1526480},
+  journal      = {Frontiers in Big Data},
+  month        = {5},
+  pages        = {1526480},
+  shortjournal = {Front. Big Data},
+  title        = {Federated learning framework for IoT intrusion detection using tab transformer and nature-inspired hyperparameter optimization},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Estimation of the air conditioning energy consumption of a classroom using machine learning in a tropical climate. <em>FDATA</em>, <em>8</em>, 1520574. (<a href='https://doi.org/10.3389/fdata.2025.1520574'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Air conditioning energy consumption in buildings represents a considerable percentage of total energy consumption, which underlines the importance of implementing measures contributing to its reduction. Predicting energy consumption is critical to making informed decisions and identifying factors influencing power consumption. Machine learning is the most widely used approach for prediction due to its speed, accuracy, and non-linear modeling. In this study, three machine learning models were used to predict the air conditioning energy demand in a classroom of an educational building in a hot tropical climate. The models selected are SVR (Support Vector Regressor), DT (Decision Tree), and RFR (Random Forest Regressor) due to their wide use in the literature; therefore, the goal is to establish which one offers the best performance for this case study based on a comparative analysis using performance metrics. Cross-validation was used to perform robust training. Twenty-two input variables were considered: climatological, operational, and temporal. Occupancy is the variable with the highest correlation with air conditioning consumption; these two variables have a positive relationship of 0.65. Monitoring was carried out for 72 days, including weekends. Six study scenarios were considered, in which the monitoring period varied, influencing the number of samples. In addition, two sensitivity analyses were performed by modifying the time interval of the data (1, 5, 10, 20, 30, and 60 min) and the data split (50:50, 60:40, 70:30, 80:20 and 90:10). The evaluation of the models was performed using RMSE, MAE and R2 metrics, to different characteristics and approaches to error measurement. During the training phase, the RFR model achieved a coefficient of determination (R2) of 0.97, while the SVR obtained an R2 of 0.78 in the test phase. Finally, it is concluded that using shorter time intervals (every 1 min) in the data improves the performance of the predictive models. Splitting the data into 80:20 and 90:10 ratios resulted in the lowest RMSE values for the three models evaluated. Training the models with a larger amount of data allows for capturing more representative patterns, which improves their generalization ability and performance on new data.},
+  archive      = {J_FDATA},
+  author       = {Ortega-Diaz, Liliana and Jaramillo-Ibarra, Julian and Osma-Pinto, German},
+  doi          = {10.3389/fdata.2025.1520574},
+  journal      = {Frontiers in Big Data},
+  month        = {5},
+  pages        = {1520574},
+  shortjournal = {Front. Big Data},
+  title        = {Estimation of the air conditioning energy consumption of a classroom using machine learning in a tropical climate},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Machine vision model using nail images for non-invasive detection of iron deficiency anemia in university students. <em>FDATA</em>, <em>8</em>, 1557600. (<a href='https://doi.org/10.3389/fdata.2025.1557600'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Navarro-Cabrera, Jorge Raul and Valles-Coral, Miguel Angel and Farro-Roque, María Elena and Reátegui-Lozano, Nelly and Arévalo-Fasanando, Lolita},
+  doi          = {10.3389/fdata.2025.1557600},
+  journal      = {Frontiers in Big Data},
+  month        = {4},
+  pages        = {1557600},
+  shortjournal = {Front. Big Data},
+  title        = {Machine vision model using nail images for non-invasive detection of iron deficiency anemia in university students},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Safeguarding digital livestock farming - A comprehensive cybersecurity roadmap for dairy and poultry industries. <em>FDATA</em>, <em>8</em>, 1556157. (<a href='https://doi.org/10.3389/fdata.2025.1556157'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Neethirajan, Suresh},
+  doi          = {10.3389/fdata.2025.1556157},
+  journal      = {Frontiers in Big Data},
+  month        = {4},
+  pages        = {1556157},
+  shortjournal = {Front. Big Data},
+  title        = {Safeguarding digital livestock farming - A comprehensive cybersecurity roadmap for dairy and poultry industries},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An oversampling-undersampling strategy for large-scale data linkage. <em>FDATA</em>, <em>8</em>, 1542483. (<a href='https://doi.org/10.3389/fdata.2025.1542483'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Hassani, Hossein and Entezarian, Mohammad Reza and Zaeimzadeh, Sara and Marvian, Leila and Komendantova, Nadejda},
+  doi          = {10.3389/fdata.2025.1542483},
+  journal      = {Frontiers in Big Data},
+  month        = {4},
+  pages        = {1542483},
+  shortjournal = {Front. Big Data},
+  title        = {An oversampling-undersampling strategy for large-scale data linkage},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Big data and personal information privacy in developing countries: Insights from kenya. <em>FDATA</em>, <em>8</em>, 1532362. (<a href='https://doi.org/10.3389/fdata.2025.1532362'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Masinde, Johnson and Mugambi, Franklin and Muthee, Daniel Wambiri},
+  doi          = {10.3389/fdata.2025.1532362},
+  journal      = {Frontiers in Big Data},
+  month        = {4},
+  pages        = {1532362},
+  shortjournal = {Front. Big Data},
+  title        = {Big data and personal information privacy in developing countries: Insights from kenya},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A stacked ensemble machine learning model for the prediction of pentavalent 3 vaccination dropout in east africa. <em>FDATA</em>, <em>8</em>, 1522578. (<a href='https://doi.org/10.3389/fdata.2025.1522578'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Alemayehu, Meron Asmamaw and Kebede, Shimels Derso and Walle, Agmasie Damtew and Mamo, Daniel Niguse and Enyew, Ermias Bekele and Adem, Jibril Bashir},
+  doi          = {10.3389/fdata.2025.1522578},
+  journal      = {Frontiers in Big Data},
+  month        = {4},
+  pages        = {1522578},
+  shortjournal = {Front. Big Data},
+  title        = {A stacked ensemble machine learning model for the prediction of pentavalent 3 vaccination dropout in east africa},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Lightweight and hybrid transformer-based solution for quick and reliable deepfake detection. <em>FDATA</em>, <em>8</em>, 1521653. (<a href='https://doi.org/10.3389/fdata.2025.1521653'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Rani, Geeta and Kothekar, Atharv and Philip, Shawn George and Dhaka, Vijaypal Singh and Zumpano, Ester and Vocaturo, Eugenio},
+  doi          = {10.3389/fdata.2025.1521653},
+  journal      = {Frontiers in Big Data},
+  month        = {4},
+  pages        = {1521653},
+  shortjournal = {Front. Big Data},
+  title        = {Lightweight and hybrid transformer-based solution for quick and reliable deepfake detection},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Editorial: Natural language processing for recommender systems. <em>FDATA</em>, <em>8</em>, 1573072. (<a href='https://doi.org/10.3389/fdata.2025.1573072'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {automating competency score prediction to address the inefficiencies and biases inherent in manual assessment. This work aligns with performance modelling approaches, such as Thai-Nghe et al. (2010) in education-focused systems, but extends them into project management with a multi-modal and NLP-enhanced framework. Unlike existing models like Shahhosseini and Sebt (2011), which use fuzzy logic to assign competencies in construction projects, Jemal et al. incorporate robust recommendation techniques and NLP embeddings to enhance prediction accuracy.The study's focus on multi-modal data integration sets it apart from traditional frameworks (e.g., Dainty et al., 2005), while its use of advanced NLP tools contrasts with simpler regressionbased methods. By addressing cold-start challenges for new users and competencies, this research makes a significant contribution to both recommender systems and competencybased evaluation. Discussion. These studies share several common themes that highlight key priorities and methods in using NLP for recommender systems. First, all emphasize the importance of context. Whether it's understanding data, explaining recommendations, or evaluating competencies, context helps make recommendations more relevant and useful.Second, the studies use advanced NLP techniques to analyse and transform text data. For example, Dietz et al. use ranking methods, while Bhuvaneswari and Varalakshmi rely on hybrid training models. These approaches show how NLP not only supports but also drives solutions for specific challenges, delivering clear performance improvements.Third, there's a focus on innovation through combining different methods and data types. Jemal et al. use a multi-modal framework, while Zhang et al. explore how different explanation styles affect user satisfaction. These examples show the growing need for more complex systems that can handle diverse requirements, which aligns with the trend of using hybrid models and multimodal data processing to improve recommender systems.},
+  archive      = {J_FDATA},
+  author       = {Krzywicki, Alfred and Bain, Michael and Wobcke, Wayne},
+  doi          = {10.3389/fdata.2025.1573072},
+  journal      = {Frontiers in Big Data},
+  month        = {3},
+  pages        = {1573072},
+  shortjournal = {Front. Big Data},
+  title        = {Editorial: Natural language processing for recommender systems},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Causal effect of PM2.5 on the urban heat island. <em>FDATA</em>, <em>8</em>, 1546223. (<a href='https://doi.org/10.3389/fdata.2025.1546223'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Rybarczyk, Yves and Zalakeviciute, Rasa and Ereminaite, Marija and Costa-Stolz, Ivana},
+  doi          = {10.3389/fdata.2025.1546223},
+  journal      = {Frontiers in Big Data},
+  month        = {3},
+  pages        = {1546223},
+  shortjournal = {Front. Big Data},
+  title        = {Causal effect of PM2.5 on the urban heat island},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). (KAUH-BCMD) dataset: Advancing mammographic breast cancer classification with multi-fusion preprocessing and residual depth-wise network. <em>FDATA</em>, <em>8</em>, 1529848. (<a href='https://doi.org/10.3389/fdata.2025.1529848'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Al-Mnayyis, Asma'a Mohammad and Gharaibeh, Hasan and Amin, Mohammad and Anakreh, Duha and Akhdar, Hanan Fawaz and Alshdaifat, Eman Hussein and Nahar, Khalid M. O. and Nasayreh, Ahmad and Gharaibeh, Mohammad and Alsalman, Neda'a and Alomar, Alaa and Gharaibeh, Maha and Abu Mhanna, Hamad Yahia},
+  doi          = {10.3389/fdata.2025.1529848},
+  journal      = {Frontiers in Big Data},
+  month        = {3},
+  pages        = {1529848},
+  shortjournal = {Front. Big Data},
+  title        = {(KAUH-BCMD) dataset: Advancing mammographic breast cancer classification with multi-fusion preprocessing and residual depth-wise network},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Use of bayesian networks in brazil high school educational database: Analysis of the impact of COVID-19 on ENEM in pará between 2019 and 2022. <em>FDATA</em>, <em>8</em>, 1485493. (<a href='https://doi.org/10.3389/fdata.2025.1485493'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Santos, Sandio Maciel Dos and Silva, Marcelino Silva da and França Lobato, Fábio Manoel and Francês, Carlos Renato Lisboa},
+  doi          = {10.3389/fdata.2025.1485493},
+  journal      = {Frontiers in Big Data},
+  month        = {3},
+  pages        = {1485493},
+  shortjournal = {Front. Big Data},
+  title        = {Use of bayesian networks in brazil high school educational database: Analysis of the impact of COVID-19 on ENEM in pará between 2019 and 2022},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Impact of imbalanced features on large datasets. <em>FDATA</em>, <em>8</em>, 1455442. (<a href='https://doi.org/10.3389/fdata.2025.1455442'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Albattah, Waleed and Khan, Rehan Ullah},
+  doi          = {10.3389/fdata.2025.1455442},
+  journal      = {Frontiers in Big Data},
+  month        = {3},
+  pages        = {1455442},
+  shortjournal = {Front. Big Data},
+  title        = {Impact of imbalanced features on large datasets},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CrowdRadar: A mobile crowdsensing framework for urban traffic green travel safety risk assessment. <em>FDATA</em>, <em>8</em>, 1440816. (<a href='https://doi.org/10.3389/fdata.2025.1440816'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Wang, Yigao and Tang, Qingxian and Wei, Wenxuan and Yang, Chenhui and Yang, Dingqi and Wang, Cheng and Xu, Liang and Chen, Longbiao},
+  doi          = {10.3389/fdata.2025.1440816},
+  journal      = {Frontiers in Big Data},
+  month        = {3},
+  pages        = {1440816},
+  shortjournal = {Front. Big Data},
+  title        = {CrowdRadar: A mobile crowdsensing framework for urban traffic green travel safety risk assessment},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Editorial: Machine learning and immersive technologies for user-centered digital healthcare innovation. <em>FDATA</em>, <em>8</em>, 1567941. (<a href='https://doi.org/10.3389/fdata.2025.1567941'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Whereas the Research Topic title explicitly refers to healthcare innovation, the broader scope has turned this article collection into an opportunity for reflection on a range of topics of relevance to both health and wellbeing. Topics have included machine learning and immersive technologies for enhancing the provision of medical education and training, for improving workforce wellbeing, and for augmenting art therapy programmes with a view to increasing therapeutic compliance. Methods employed include Agile data science techniques, 'CRoss Industry Standard Process for Data Mining' (CRISP-SM), 'Preferred Reporting Items for Systematic reviews and Meta-Analyses' (PRISMA), thematic literature review, mini review, primary research (specifically, collection of data from university nursing students and surgeons), 'Simulation Effectiveness Tool -Modified' (SET-M), established data science techniques, and human factors engineering methods. Key research themes that have emerged from the Research Topic are discussed below, followed by a reflection on priorities for further research and development.The articles have highlighted a need for knowledge and expertise from across academic disciplines and professional practice to converge and underpin the development of digital innovations promoting individuals' health and wellbeing. Relevant disciplines and domains include computer science, user-centred design, human-computer interaction, engineering, human factors engineering, and the social sciences. Technology end user and stakeholder values, expectations, and requirements need to be addressed if new methods enabled by modern digital technologies are to be sustainably employed [1][2][3][4]. Interestingly, the articles have generally suggested the importance of embedding end user and stakeholder perspectives within technology development workflows, although only a minority of the studies have explicitly articulated the need for extensive involvement of humancentred design researchers and practitioners for scaffolding and facilitating iterative development and evaluation [3]. Unsurprisingly, the need to address ethical concerns appears intertwined with the recognised desirability of research objectives and methods to deliver deeper integration across discipline boundaries. This is illustrated by research advocating the adoption of intersectional social sciences perspectives within AI development for cancer diagnostics [2] and by studies focussing on the representativity of machine learning training data to reduce health inequalities affecting specific ethnic groups in relation the provision of diagnostic services [3].The design and development of production-ready AI-based systems designed for flexibility and maintainability over time have received significant attention in recent years, particularly in the information systems, human-computer interaction, and engineering design literature. This is illustrated by Research Topic articles focussing on the definition of architectural requirements for healthcare cost estimation systems relying on dedicated predictive numerical models [5], and by studies delivering prototype models to enable healthcare professionals to query different Electronic Medical Record systems using intuitive interfaces based on natural language [6]. Such efforts have achieved a balance between adapting research pipelines for production environments and identifying optimised architectural specifications from an information systems perspective.The emphasis in recent academic and professional discourse on opportunities afforded by immersive technologies, including virtual reality, augmented reality, and mixed reality, for achieving more efficient and inclusive delivery of medical educational and training programmes is reflected in this article collection. An interesting review study has focussed on a comparison between technologyaugmented methods and established approaches [7]. Reported benefits include enhanced student and trainee motivation, satisfaction, and learning outcomes, although the possible occurrence of undesired consequences of the use of immersive technologies, including cybersickness following prolonged exposure, has been noted. Interestingly, one study has focussed on real-time detection of cybersickness with a view to reducing detrimental effects on user experience [8]. Proposed innovations based on mixed reality to streamline urology anatomy training and to facilitate preoperative urology planning have attracted positive feedback from both university nursing students and surgeons, which encourages further research towards more extensive clinical validation [9]. An interesting study has focussed on an integration between generative AI and immersive technologies for designing augmented reality filters, with a view to improving medical students' perceptions of self-efficacy in recognising selected disease manifestations [10].The potential of modern digital technologies for improving individuals' wellbeing has been the subject of recent research, which is reflected in this article collection. The breadth of contributions received illustrates the potential of artificial intelligence and immersive technologies for improving individuals' wellbeing, particularly in clinical and workplace settings. A theoretical model has been presented, explaining the psychological benefits of virtual immersion for oncology patients with emphasis on distraction for alleviating anxiety and pain [4]. Opportunities have been identified for artistic expression within virtual reality environments to increase therapeutic compliance and to improve wellbeing outcomes for individuals in relation to psychotherapy and neurorehabilitation [11]. A study has identified features of immersive technologies that hold potential for improving motor rehabilitation compliance and efficacy with stroke patients when used in combination with traditional approaches [12]. Such features include those enabling real-time movement tracking and the provision of reinforced feedback in line with established neurorehabilitation principles. A review of modern digital technologies for estimating individuals' wellbeing in workplace settings has generated useful recommendations on how real-time posture detection is best combined with the adoption of established human factors engineering best practices [13]. This has enabled the identification of optimised algorithms to be employed in conjunction with physiological sensing methods towards the design of healthier workplaces.Overall, the articles published under this Research Topic have highlighted the importance of conducting interdisciplinary research when tackling challenges at the intersection of technology development with human-centred design and human factors engineering. Integrative capabilities across academic discipline silos and research methodologies -with emphasis on modern design research and design professional practice -have identified as an important enabler of challenge-driven research and responsible innovation. Such insights are relevant to the United Nations Sustainable Development Goal (SDG) number 3 ('Good health and well-being') and more broadly [14]. A balanced distribution has been achieved in this collection of articles between applications of immersive technologies [4;7-9;10-12] and applications of machine learning and artificial intelligence [1-3;5-6;8]. The authors speculate that future research is likely to reflect a convergence of immersive technologies and artificial intelligence in relation to the promotion of individuals' health and wellbeing. If that is the case, it is anticipated that the emphasis will be on human-centred design, participatory design, and methods addressing ethical issues of privacy, transparency, equitability, and fairness. One potential area of convergence relates to the development of personalised immersive experiences designed for inclusivity. It is expected that reliance on human-centred and participatory design methods will prove useful for scaffolding iterative design with significant involvement of technology end users and stakeholders. This is illustrated by the article discussing the use of artistic experiences within virtual reality environments to increase therapeutic compliance and to improve wellbeing outcomes [11]. The articles have also highlighted several limitations with the technology state of the art, which calls for additional emphasis on interdisciplinary research, human-centred design, and inclusive design research moving forward. Such limitations include the following: digital access barriers and reduced digital literacy across user groups; the generally reduced availability of dedicated features for visually-impaired individuals --and for individuals with specific characteristics more broadly -compared with mainstream users; undesired effects from the use of head-mounted immersive displays --including cybersickness; the presence of different skill sets within interdisciplinary AI development teams, potentially reducing the benefits of Agile development. Moreover, although the articles published under this Research Topic have not focussed on this aspect, future development will also need to address elements of clinical validation of digital technologies in the context of the relevant regulatory frameworks.},
+  archive      = {J_FDATA},
+  author       = {Colecchia, Federico and Giunchi, Daniele and Qin, Rui and Ceccaldi, Eleonora and Wang, Fang},
+  doi          = {10.3389/fdata.2025.1567941},
+  journal      = {Frontiers in Big Data},
+  month        = {2},
+  pages        = {1567941},
+  shortjournal = {Front. Big Data},
+  title        = {Editorial: Machine learning and immersive technologies for user-centered digital healthcare innovation},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Editorial: Visualizing big culture and history data. <em>FDATA</em>, <em>8</em>, 1563730. (<a href='https://doi.org/10.3389/fdata.2025.1563730'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Visualizing big, multi-sourced data of the past is not simply a technical challenge, it is an intellectual and 10 interpretive one. While early efforts in digital humanities focused on digitizing and representing discrete 11 collections, the growing complexity of the field manifests in projects going beyond individual datasets.12 Nowadays, scholars connect local case studies, create contextual linkages, and connect microhistorical 13 details to macrohistorical frameworks, as seen in large-scale initiatives such as the European Data Space The visualization of cultural and historical data also raises ethical questions. Visualizations are not 27 neutral; they reflect the decisions, biases, and goals of both their creators and the initial data collectors.They foreground certain perspectives and narratives, obscuring others, and play a major role in shaping 29 how audiences (scholars, students, and the public) engage with the past. This makes visualization design 30 not just a technical endeavor but also a deeply critical and reflective one.This special issue explores these intersections of technology, theory, and interpretation. It showcases 32 pioneering works combining humanities scholarship with computational methods and visualization to 33 uncover patterns, connections, and narratives within complex cultural datasets. Together, they offer insights 34 into how the field can reshape the ways we study, share, and understand cultural and historical knowledge.},
+  archive      = {J_FDATA},
+  author       = {Windhager, Florian and Koch, Steffen and Münster, Sander and Mayr, Eva},
+  doi          = {10.3389/fdata.2025.1563730},
+  journal      = {Frontiers in Big Data},
+  month        = {2},
+  pages        = {1563730},
+  shortjournal = {Front. Big Data},
+  title        = {Editorial: Visualizing big culture and history data},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Edge-level multi-constraint graph pattern matching with lung cancer knowledge graph. <em>FDATA</em>, <em>8</em>, 1546850. (<a href='https://doi.org/10.3389/fdata.2025.1546850'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Tu, Houdie and Li, Lei and Tao, Zhenchao and Zhang, Zan},
+  doi          = {10.3389/fdata.2025.1546850},
+  journal      = {Frontiers in Big Data},
+  month        = {2},
+  pages        = {1546850},
+  shortjournal = {Front. Big Data},
+  title        = {Edge-level multi-constraint graph pattern matching with lung cancer knowledge graph},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An epidemiological extension of the el farol bar problem. <em>FDATA</em>, <em>8</em>, 1519369. (<a href='https://doi.org/10.3389/fdata.2025.1519369'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Bertolotti, Francesco and Kadera, Niccolò and Pasquino, Luca and Mari, Luca},
+  doi          = {10.3389/fdata.2025.1519369},
+  journal      = {Frontiers in Big Data},
+  month        = {2},
+  pages        = {1519369},
+  shortjournal = {Front. Big Data},
+  title        = {An epidemiological extension of the el farol bar problem},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A review of AI-based radiogenomics in neurodegenerative disease. <em>FDATA</em>, <em>8</em>, 1515341. (<a href='https://doi.org/10.3389/fdata.2025.1515341'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Liu, Huanjing and Zhang, Xiao and Liu, Qian},
+  doi          = {10.3389/fdata.2025.1515341},
+  journal      = {Frontiers in Big Data},
+  month        = {2},
+  pages        = {1515341},
+  shortjournal = {Front. Big Data},
+  title        = {A review of AI-based radiogenomics in neurodegenerative disease},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Big data analytics and AI as success factors for online video streaming platforms. <em>FDATA</em>, <em>8</em>, 1513027. (<a href='https://doi.org/10.3389/fdata.2025.1513027'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Arshad, Muhammad and Onn, Choo Wou and Ahmad, Ashfaq and Mogwe, Goabaone},
+  doi          = {10.3389/fdata.2025.1513027},
+  journal      = {Frontiers in Big Data},
+  month        = {2},
+  pages        = {1513027},
+  shortjournal = {Front. Big Data},
+  title        = {Big data analytics and AI as success factors for online video streaming platforms},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cloud computing convergence: Integrating computer applications and information management for enhanced efficiency. <em>FDATA</em>, <em>8</em>, 1508087. (<a href='https://doi.org/10.3389/fdata.2025.1508087'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Zhang, Guo},
+  doi          = {10.3389/fdata.2025.1508087},
+  journal      = {Frontiers in Big Data},
+  month        = {2},
+  pages        = {1508087},
+  shortjournal = {Front. Big Data},
+  title        = {Cloud computing convergence: Integrating computer applications and information management for enhanced efficiency},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deep learning for accurate classification of conifer pollen grains: Enhancing species identification in palynology. <em>FDATA</em>, <em>8</em>, 1507036. (<a href='https://doi.org/10.3389/fdata.2025.1507036'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Rostami, Masoud A. and Kydd, LeMaur and Balmaki, Behnaz and Dyer, Lee A. and Allen, Julie M.},
+  doi          = {10.3389/fdata.2025.1507036},
+  journal      = {Frontiers in Big Data},
+  month        = {2},
+  pages        = {1507036},
+  shortjournal = {Front. Big Data},
+  title        = {Deep learning for accurate classification of conifer pollen grains: Enhancing species identification in palynology},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Next-generation approach to skin disorder prediction employing hybrid deep transfer learning. <em>FDATA</em>, <em>8</em>, 1503883. (<a href='https://doi.org/10.3389/fdata.2025.1503883'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Gulzar, Yonis and Agarwal, Shivani and Soomro, Saira and Kandpal, Meenakshi and Turaev, Sherzod and Onn, Choo W. and Saini, Shilpa and Bounsiar, Abdenour},
+  doi          = {10.3389/fdata.2025.1503883},
+  journal      = {Frontiers in Big Data},
+  month        = {2},
+  pages        = {1503883},
+  shortjournal = {Front. Big Data},
+  title        = {Next-generation approach to skin disorder prediction employing hybrid deep transfer learning},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Training and onboarding initiatives in high energy physics experiments. <em>FDATA</em>, <em>8</em>, 1497622. (<a href='https://doi.org/10.3389/fdata.2025.1497622'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Reinsvold Hall, Allison and Skidmore, Nicole and Benelli, Gabriele and Carlson, Ben and David, Claire and Davies, Jonathan and Deconinck, Wouter and DeMuth, David and Elmer, Peter and Garg, Rocky Bala and Hageböck, Stephan and Lieret, Killian and Lukashenko, Valeriia and Malik, Sudhir and Morris, Andy and Schellman, Heidi and Stewart, Graeme A. and Veatch, Jason and Hernandez Villanueva, Michel},
+  doi          = {10.3389/fdata.2025.1497622},
+  journal      = {Frontiers in Big Data},
+  month        = {2},
+  pages        = {1497622},
+  shortjournal = {Front. Big Data},
+  title        = {Training and onboarding initiatives in high energy physics experiments},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Balancing act: Europeans' privacy calculus and security concerns in online CSAM detection. <em>FDATA</em>, <em>8</em>, 1477911. (<a href='https://doi.org/10.3389/fdata.2025.1477911'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Rughiniş, Răzvan and Vulpe, Simona-Nicoleta and Ţurcanu, Dinu and Rosner, Daniel},
+  doi          = {10.3389/fdata.2025.1477911},
+  journal      = {Frontiers in Big Data},
+  month        = {1},
+  pages        = {1477911},
+  shortjournal = {Front. Big Data},
+  title        = {Balancing act: Europeans' privacy calculus and security concerns in online CSAM detection},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Editorial: Cybersecurity and artificial intelligence: Advances, challenges, opportunities, threats. <em>FDATA</em>, <em>7</em>, 1537878. (<a href='https://doi.org/10.3389/fdata.2024.1537878'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cybersecurity and AI have become increasingly important in today's interconnected world. Developments 2 in them and because of them find their way regularly not only to the scientific literature but to the media 3 as well. Notwithstanding the benefits of AI, the increasing use of and reliance on AI, including Machine 4 Learning (ML), have created a complex threat landscape. On the other hand, cybercriminals have become 5 more sophisticated and organized, targeting not only individuals but also organizations and even nations.These threat actors use advanced tactics, techniques, and procedures to exploit vulnerabilities to attack AI-7 powered systems. To mitigate these threats, it is essential to enhance our understanding of the risks involved 8 and to develop effective, specially targeted, cybersecurity strategies and robust defensive mechanisms.The increasing pervasiveness of AI and related technologies, coupled with the growing sophistication of 10 cybercriminals, has created a challenging threat landscape that requires innovative solutions to mitigate.},
+  archive      = {J_FDATA},
+  author       = {Papadopoulos, Pavlos and Katsikas, Sokratis and Pitropakis, Nikolaos},
+  doi          = {10.3389/fdata.2024.1537878},
+  journal      = {Frontiers in Big Data},
+  month        = {1},
+  pages        = {1537878},
+  shortjournal = {Front. Big Data},
+  title        = {Editorial: Cybersecurity and artificial intelligence: Advances, challenges, opportunities, threats},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-source data recognition and fusion algorithm based on a two-layer genetic algorithm–back propagation model. <em>FDATA</em>, <em>7</em>, 1520605. (<a href='https://doi.org/10.3389/fdata.2024.1520605'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Xiong, Zhuang and Ma, Jun and Chen, Bohang and Lan, Haiming and Niu, Yong},
+  doi          = {10.3389/fdata.2024.1520605},
+  journal      = {Frontiers in Big Data},
+  month        = {1},
+  pages        = {1520605},
+  shortjournal = {Front. Big Data},
+  title        = {Multi-source data recognition and fusion algorithm based on a two-layer genetic algorithm–back propagation model},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Prediction model of middle school student performance based on MBSO and MDBO-BP-adaboost method. <em>FDATA</em>, <em>7</em>, 1518939. (<a href='https://doi.org/10.3389/fdata.2024.1518939'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Fang, Rencheng and Zhou, Tao and Yu, Baohua and Li, Zhigang and Ma, Long and Luo, Tao and Zhang, Yongcai and Liu, Xinqi},
+  doi          = {10.3389/fdata.2024.1518939},
+  journal      = {Frontiers in Big Data},
+  month        = {1},
+  pages        = {1518939},
+  shortjournal = {Front. Big Data},
+  title        = {Prediction model of middle school student performance based on MBSO and MDBO-BP-adaboost method},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Toward a physics-guided machine learning approach for predicting chaotic systems dynamics. <em>FDATA</em>, <em>7</em>, 1506443. (<a href='https://doi.org/10.3389/fdata.2024.1506443'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Feng, Liu and Liu, Yang and Shi, Benyun and Liu, Jiming},
+  doi          = {10.3389/fdata.2024.1506443},
+  journal      = {Frontiers in Big Data},
+  month        = {1},
+  pages        = {1506443},
+  shortjournal = {Front. Big Data},
+  title        = {Toward a physics-guided machine learning approach for predicting chaotic systems dynamics},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On explaining recommendations with large language models: A review. <em>FDATA</em>, <em>7</em>, 1505284. (<a href='https://doi.org/10.3389/fdata.2024.1505284'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Said, Alan},
+  doi          = {10.3389/fdata.2024.1505284},
+  journal      = {Frontiers in Big Data},
+  month        = {1},
+  pages        = {1505284},
+  shortjournal = {Front. Big Data},
+  title        = {On explaining recommendations with large language models: A review},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Constructing a metadata knowledge graph as an atlas for demystifying AI pipeline optimization. <em>FDATA</em>, <em>7</em>, 1476506. (<a href='https://doi.org/10.3389/fdata.2024.1476506'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Venkataramanan, Revathy and Tripathy, Aalap and Kumar, Tarun and Serebryakov, Sergey and Justine, Annmary and Shah, Arpit and Bhattacharya, Suparna and Foltin, Martin and Faraboschi, Paolo and Roy, Kaushik and Sheth, Amit},
+  doi          = {10.3389/fdata.2024.1476506},
+  journal      = {Frontiers in Big Data},
+  month        = {1},
+  pages        = {1476506},
+  shortjournal = {Front. Big Data},
+  title        = {Constructing a metadata knowledge graph as an atlas for demystifying AI pipeline optimization},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Analysis and prediction of atmospheric ozone concentrations using machine learning. <em>FDATA</em>, <em>7</em>, 1469809. (<a href='https://doi.org/10.3389/fdata.2024.1469809'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Räss, Stephan and Leuenberger, Markus C.},
+  doi          = {10.3389/fdata.2024.1469809},
+  journal      = {Frontiers in Big Data},
+  month        = {1},
+  pages        = {1469809},
+  shortjournal = {Front. Big Data},
+  title        = {Analysis and prediction of atmospheric ozone concentrations using machine learning},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A scalable tool for analyzing genomic variants of humans using knowledge graphs and graph machine learning. <em>FDATA</em>, <em>7</em>, 1466391. (<a href='https://doi.org/10.3389/fdata.2024.1466391'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Prasanna, Shivika and Kumar, Ajay and Rao, Deepthi and Simoes, Eduardo J. and Rao, Praveen},
+  doi          = {10.3389/fdata.2024.1466391},
+  journal      = {Frontiers in Big Data},
+  month        = {1},
+  pages        = {1466391},
+  shortjournal = {Front. Big Data},
+  title        = {A scalable tool for analyzing genomic variants of humans using knowledge graphs and graph machine learning},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exploring the pivotal variables of tongue diagnosis between patients with chronic kidney disease and health participants. <em>FDATA</em>, <em>7</em>, 1443646. (<a href='https://doi.org/10.3389/fdata.2024.1443646'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Hsu, Po-Chi and Chen, Jia-Ming and Chang, Chia-Chu and Chang, Yu-Jun and Chiu, Ping-Fang and Chiang, John Y. and Lo, Lun-Chien},
+  doi          = {10.3389/fdata.2024.1443646},
+  journal      = {Frontiers in Big Data},
+  month        = {1},
+  pages        = {1443646},
+  shortjournal = {Front. Big Data},
+  title        = {Exploring the pivotal variables of tongue diagnosis between patients with chronic kidney disease and health participants},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhancing smart home environments: A novel pattern recognition approach to ambient acoustic event detection and localization. <em>FDATA</em>, <em>7</em>, 1419562. (<a href='https://doi.org/10.3389/fdata.2024.1419562'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Shabbir, Ahsan and Butt, Abdul Haleem and Khan, Taha and Chiari, Lorenzo and Almadhor, Ahmad and Karovic, Vincent},
+  doi          = {10.3389/fdata.2024.1419562},
+  journal      = {Frontiers in Big Data},
+  month        = {1},
+  pages        = {1419562},
+  shortjournal = {Front. Big Data},
+  title        = {Enhancing smart home environments: A novel pattern recognition approach to ambient acoustic event detection and localization},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Artificial intelligence for the detection of acute myeloid leukemia from microscopic blood images; a systematic review and meta-analysis. <em>FDATA</em>, <em>7</em>, 1402926. (<a href='https://doi.org/10.3389/fdata.2024.1402926'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Al-Obeidat, Feras and Hafez, Wael and Rashid, Asrar and Jallo, Mahir Khalil and Gador, Munier and Cherrez-Ojeda, Ivan and Simancas-Racines, Daniel},
+  doi          = {10.3389/fdata.2024.1402926},
+  journal      = {Frontiers in Big Data},
+  month        = {1},
+  pages        = {1402926},
+  shortjournal = {Front. Big Data},
+  title        = {Artificial intelligence for the detection of acute myeloid leukemia from microscopic blood images; a systematic review and meta-analysis},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exploring infodemiology: Unraveling the intricate relationships among stress, headaches, migraines, and suicide through google trends analysis. <em>FDATA</em>, <em>7</em>, 1365417. (<a href='https://doi.org/10.3389/fdata.2024.1365417'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_FDATA},
+  author       = {Rushendran, Rapuru and Chitra, Vellapandian},
+  doi          = {10.3389/fdata.2024.1365417},
+  journal      = {Frontiers in Big Data},
+  month        = {1},
+  pages        = {1365417},
+  shortjournal = {Front. Big Data},
+  title        = {Exploring infodemiology: Unraveling the intricate relationships among stress, headaches, migraines, and suicide through google trends analysis},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

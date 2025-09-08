@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AR</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ar">AR - 24</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Autonomous learning-free grasping and robot-to-robot handover of unknown objects. <em>AR</em>, <em>49</em>(3), 1-16. (<a href='https://doi.org/10.1007/s10514-025-10201-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we propose a learning-free approach for an autonomous robotic system to grasp, hand over, and regrasp previously unseen objects. The proposed framework includes two main components: a novel grasping detector to predict grasping poses directly from the point cloud and a reachability-aware handover planner to select the exchange pose and grasping poses for two robots. In the grasping detection stage, multiple superquadrics are first recovered at different positions within the object, representing the local geometric feature of the object. Our algorithm then exploits the tri-symmetry feature of superquadrics and synthesizes a list of antipodal grasps from each recovered superquadric. An evaluation model is designed to assess and quantify the quality of each grasp candidate. In the handover planning stage, the planner first selects grasping candidates that have high scores and a larger number of collision-free partners. Then the exchange location is computed by utilizing two signed distance fields (SDF) which model the reachability space for the pair of two robots. To evaluate the performance of the proposed method, we first run experiments on isolated and packed scenes to corroborate the effectiveness of our grasping detection method. Then the handover experiments are conducted on a dual-arm system with two 7 degrees of freedom (DoF) manipulators. The results indicate that our method shows better performance compared with the state-of-the-art, without the need for large amounts of training.},
+  archive      = {J_AR},
+  author       = {Wu, Yuwei and Li, Wanze and Liu, Zhiyang and Liu, Weixiao and Chirikjian, Gregory S.},
+  doi          = {10.1007/s10514-025-10201-y},
+  journal      = {Autonomous Robots},
+  month        = {9},
+  number       = {3},
+  pages        = {1-16},
+  shortjournal = {Auton. Robot.},
+  title        = {Autonomous learning-free grasping and robot-to-robot handover of unknown objects},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Wild visual navigation: Fast traversability learning via pre-trained models and online self-supervision. <em>AR</em>, <em>49</em>(3), 1-18. (<a href='https://doi.org/10.1007/s10514-025-10202-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Natural environments such as forests and grasslands are challenging for robotic navigation because of the false perception of rigid obstacles from high grass, twigs, or bushes. In this work, we present Wild Visual Navigation (WVN), an online self-supervised learning system for visual traversability estimation. The system is able to continuously adapt from a short human demonstration in the field, only using onboard sensing and computing. One of the key ideas to achieve this is the use of high-dimensional features from pre-trained self-supervised models, which implicitly encode semantic information that massively simplifies the learning task. Further, the development of an online scheme for supervision generator enables concurrent training and inference of the learned model in the wild. We demonstrate our approach through diverse real-world deployments in forests, parks, and grasslands. Our system is able to bootstrap the traversable terrain segmentation in less than 5 min of in-field training time, enabling the robot to navigate in complex, previously unseen outdoor terrains.},
+  archive      = {J_AR},
+  author       = {Mattamala, Matias and Frey, Jonas and Libera, Piotr and Chebrolu, Nived and Martius, Georg and Cadena, Cesar and Hutter, Marco and Fallon, Maurice},
+  doi          = {10.1007/s10514-025-10202-x},
+  journal      = {Autonomous Robots},
+  month        = {9},
+  number       = {3},
+  pages        = {1-18},
+  shortjournal = {Auton. Robot.},
+  title        = {Wild visual navigation: Fast traversability learning via pre-trained models and online self-supervision},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reconfigurable robot swarms for terrain traversal with passive coupling mechanisms. <em>AR</em>, <em>49</em>(3), 1-18. (<a href='https://doi.org/10.1007/s10514-025-10205-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In biological swarms, army ants and bees have demonstrated the ability to form functional structures for collaborative tasks. Achieving similar functionality with robot swarms requires forming connections between robots using electrical, magnetic, or mechanical means. Our research introduces the PuzzleBots–robot swarms equipped with passive coupling mechanisms that enable collective behavior. These mechanisms leverage the individual mobility and dexterity of each robot to achieve complex assemblies. By coupling together, PuzzleBots can form both rigid and flexible structures that significantly enhance their ability to navigate challenging terrains. Rigid structures offer high load-bearing and transportation capabilities, while flexible structures provide compliance with environmental geometries. We demonstrated that these assembled structures can be precisely controlled using our distributed Model Predictive Control framework. Our results show that passive coupling in robot swarms significantly improves the traversal capability on rough and discontinuous terrains compared with individual robots.},
+  archive      = {J_AR},
+  author       = {Yi, Sha and Singh, Shashwat and Seo, Allison and St. Pierre, Ryan and Sycara, Katia and Temel, Zeynep},
+  doi          = {10.1007/s10514-025-10205-8},
+  journal      = {Autonomous Robots},
+  month        = {9},
+  number       = {3},
+  pages        = {1-18},
+  shortjournal = {Auton. Robot.},
+  title        = {Reconfigurable robot swarms for terrain traversal with passive coupling mechanisms},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Es-cbf: An energy sufficiency extension for sample based path planners to enable long term autonomy. <em>AR</em>, <em>49</em>(3), 1-18. (<a href='https://doi.org/10.1007/s10514-025-10203-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Maintaining energy sufficiency of a battery-powered robot system is essential for long-term missions. This capability should be flexible enough to deal with different types of environments and a wide range of missions, while constantly guaranteeing that the robot does not run out of energy. We present a framework based on Control Barrier Functions (CBFs) which provides an energy sufficiency layer that can be applied on a wide range of sample based path planners and provides guarantees on sufficiency of robot’s energy during mission execution. In practice, we smooth the output of an arbitrary path planner (i.e. a set of waypoints) using double sigmoid functions and then use CBFs to ensure energy sufficiency along the smoothed path, for robots described by single integrator and unicycle kinematics. We present results using a physics-based robot simulator, as well as with real robots with a full localization and mapping stack to show the validity of our approach.},
+  archive      = {J_AR},
+  author       = {Fouad, Hassan and Varadharajan, Vivek Shankar and Beltrame, Giovanni},
+  doi          = {10.1007/s10514-025-10203-w},
+  journal      = {Autonomous Robots},
+  month        = {9},
+  number       = {3},
+  pages        = {1-18},
+  shortjournal = {Auton. Robot.},
+  title        = {Es-cbf: An energy sufficiency extension for sample based path planners to enable long term autonomy},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reconfiguration and locomotion with joint movements in the amoebot model. <em>AR</em>, <em>49</em>(3), 1-26. (<a href='https://doi.org/10.1007/s10514-025-10204-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We are considering the geometric amoebot model where a set of n amoebots is placed on the triangular grid. An amoebot is able to send information to its neighbors, and to move via expansions and contractions. Since amoebots and information can only travel node by node, most problems have a natural lower bound of $$\Omega (D)$$ where D denotes the diameter of the structure. Inspired by the nervous and muscular system, Feldmann et al. (Computat Biol 29(4):317–343, 2022) have proposed the reconfigurable circuit extension and the joint movement extension of the amoebot model with the goal of breaking this lower bound. In the joint movement extension, the way amoebots move is altered. Amoebots become able to push and pull other amoebots. Feldmann et al. (Computat Biol 29(4):317–343, 2022) demonstrated the power of joint movements by transforming a line of amoebots into a rhombus within $$O(\log n)$$ rounds. However, they left the details of the extension open. The goal of this paper is therefore to formalize and extend the joint movement extension. In order to provide a proof of concept for the extension, we develop centralized algorithms for two fundamental problems of modular robot systems: reconfiguration and locomotion. We approach these problems by defining meta-modules of rhombical and hexagonal shape, respectively. The meta-modules are capable of movement primitives like sliding, rotating, and tunneling. This allows us to simulate reconfiguration algorithms of various modular robot systems. Finally, we construct three amoebot structures capable of locomotion by rolling, crawling, and walking, respectively.},
+  archive      = {J_AR},
+  author       = {Padalkin, Andreas and Kumar, Manish and Scheideler, Christian},
+  doi          = {10.1007/s10514-025-10204-9},
+  journal      = {Autonomous Robots},
+  month        = {9},
+  number       = {3},
+  pages        = {1-26},
+  shortjournal = {Auton. Robot.},
+  title        = {Reconfiguration and locomotion with joint movements in the amoebot model},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). COVER: Cross-vehicle transition framework for quadrotor control in air-ground cooperation. <em>AR</em>, <em>49</em>(3), 1-18. (<a href='https://doi.org/10.1007/s10514-025-10209-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {UAV transitions across UGVs enable diverse air-ground cooperation (AGC) applications, such as cross-vehicle landing, delivery, and rescue. However, achieving precise and efficient transitions across multiple moving UGVs without prior knowledge of their trajectories remains highly challenging. This paper proposes COVER, a cross-vehicle transition framework for quadrotor control in AGC scenarios. In COVER, the UAV is directly controlled in UGVs’ body frames as non-inertial frames, thus eliminating all dependencies in the world frame. Each transition process is divided into three stages: the initial stage, transition stage, and final stage, with pre-set stage transition points and stage-varying system states. Then, an optimal reference trajectory is generated at each stage by solving a non-linear programming (NLP) problem. The effect of the target UGV’s rotation on the initial relative velocity is eliminated to obtain a dynamically feasible and smooth transition reference trajectory. Finally, we design a stage-adaptive model predictive control (SAMPC) method, proposing a novel MPC position reference mode to avoid indirect routes at the transition stage. The SAMPC method effectively mitigates the flight instability caused by reference frame transition and eliminates the effect of reference frame rotation at the transition stage. And it can flexibly adapt to accurate requirements at the final stage by switching position reference mode and adjusting cost weights. Simulation benchmarks and extensive real-world experiments validate that our approach can achieve smooth, short-distance, and accurate cross-vehicle operations.},
+  archive      = {J_AR},
+  author       = {Ren, Qiuyu and Xu, Miao and Zhang, Mengke and Chen, Nanhe and Lai, Mingwei and Xu, Chao and Gao, Fei and Cao, Yanjun},
+  doi          = {10.1007/s10514-025-10209-4},
+  journal      = {Autonomous Robots},
+  month        = {9},
+  number       = {3},
+  pages        = {1-18},
+  shortjournal = {Auton. Robot.},
+  title        = {COVER: Cross-vehicle transition framework for quadrotor control in air-ground cooperation},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optical communication-based identification for multi-UAV systems: Theory and practice. <em>AR</em>, <em>49</em>(3), 1-17. (<a href='https://doi.org/10.1007/s10514-025-10208-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mutual relative localization and identification are important features for multi-unmanned aerial vehicle (UAV) systems. Camera-based communications technology, also known as optical camera communications in the literature, is a novel technology that brings a valuable solution to this task. In such a system, the UAVs are equipped with LEDs acting as beacons, and with cameras to locate the LEDs of the other UAVs. Specific blinking sequences are assigned to the LEDs of each of the UAVs to uniquely identify them. This camera-based system is immune to radio frequency electromagnetic interference and operates in global navigation satellite-denied environments. In addition, the implementation of this system is inexpensive. In this article, we study in detail the capacity of this system and its limitations. Furthermore, we show how to construct blinking sequences for UAV LEDs to improve system performance. Finally, experimental results are presented to corroborate the analytical derivations.},
+  archive      = {J_AR},
+  author       = {Bonilla Licea, Daniel and Walter, Viktor and Ghogho, Mounir and Saska, Martin},
+  doi          = {10.1007/s10514-025-10208-5},
+  journal      = {Autonomous Robots},
+  month        = {9},
+  number       = {3},
+  pages        = {1-17},
+  shortjournal = {Auton. Robot.},
+  title        = {Optical communication-based identification for multi-UAV systems: Theory and practice},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Human2bot: Learning zero-shot reward functions for robotic manipulation from human demonstrations. <em>AR</em>, <em>49</em>(2), 1-17. (<a href='https://doi.org/10.1007/s10514-025-10193-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Developing effective reward functions is crucial for robot learning, as they guide behavior and facilitate adaptation to human-like tasks. We present Human2Bot (H2B), advancing the learning of such a generalized multi-task reward function that can be used zero-shot to execute unknown tasks in unseen environments. H2B is a newly designed task similarity estimation model that is trained on a large dataset of human videos. The model determines whether two videos from different environments represent the same task. At test time, the model serves as a reward function, evaluating how closely a robot’s execution matches the human demonstration. While previous approaches necessitate robot-specific data to learn reward functions or policies, our method can learn without any robot datasets. To achieve generalization in robotic environments, we incorporate a domain augmentation process that generates synthetic videos with varied visual appearances resembling simulation environments, alongside a multi-scale inter-frame attention mechanism that aligns human and robot task understanding. Finally, H2B is integrated with Visual Model Predictive Control (VMPC) to perform manipulation tasks in simulation and on the xARM6 robot in real-world settings. Our approach outperforms previous methods in simulated and real-world environments trained solely on human data, eliminating the need for privileged robot datasets.},
+  archive      = {J_AR},
+  author       = {Salam, Yasir and Li, Yinbei and Herzog, Jonas and Yang, Jiaqiang},
+  doi          = {10.1007/s10514-025-10193-9},
+  journal      = {Autonomous Robots},
+  month        = {6},
+  number       = {2},
+  pages        = {1-17},
+  shortjournal = {Auton. Robot.},
+  title        = {Human2bot: Learning zero-shot reward functions for robotic manipulation from human demonstrations},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fault-tolerant multi-robot localization: Diagnostic decision-making with information theory and learning models. <em>AR</em>, <em>49</em>(2), 1-13. (<a href='https://doi.org/10.1007/s10514-025-10196-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the domain of multi-robot systems, cooperative systems that are highly attuned and connected to their surroundings are becoming increasingly significant. This surge in interest highlights various challenges, especially regarding system integration and safety constraints. Our research contributes to the assurance of fault tolerance to avert abnormal behaviors and sustain reliable robot localization. In this paper, a mixed approach between data-driven and model-based for fault detection is introduced, within a decentralized architecture, thereby strengthening the system’s capacity to handle simultaneous sensor faults. Information theory-based fault indicators are developed by computing the Jensen-Shannon divergence ( $$D_{JS}$$ ) between state predictions and sensor-obtained corrections. This initiates a two-tiered data-driven mechanism: one layer employing Machine Learning for fault detection, and another distinct layer for fault isolation. The methodology’s efficacy is assessed using real data from the Turtlebot3 platform.},
+  archive      = {J_AR},
+  author       = {El Mawas, Zaynab and Cappelle, Cindy and El Badaoui El Najjar, Maan},
+  doi          = {10.1007/s10514-025-10196-6},
+  journal      = {Autonomous Robots},
+  month        = {6},
+  number       = {2},
+  pages        = {1-13},
+  shortjournal = {Auton. Robot.},
+  title        = {Fault-tolerant multi-robot localization: Diagnostic decision-making with information theory and learning models},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deadlock-free, safe, and decentralized multi-robot navigation in social mini-games via discrete-time control barrier functions. <em>AR</em>, <em>49</em>(2), 1-31. (<a href='https://doi.org/10.1007/s10514-025-10194-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present an approach to ensure safe and deadlock-free navigation for decentralized multi-robot systems operating in constrained environments, including doorways and intersections. Although many solutions have been proposed that ensure safety and resolve deadlocks, optimally preventing deadlocks in a minimally invasive and decentralized fashion remains an open problem. We first formalize the objective as a non-cooperative, non-communicative, partially observable multi-robot navigation problem in constrained spaces with multiple conflicting agents, which we term as social mini-games. Formally, we solve a discrete-time optimal receding horizon control problem leveraging control barrier functions for safe long-horizon planning. Our approach to ensuring liveness rests on the insight that there exists barrier certificates that allow each robot to preemptively perturb their state in a minimally-invasive fashion onto liveness sets i.e. states where robots are deadlock-free. We evaluate our approach in simulation as well on physical robots using F1/10 robots, a Clearpath Jackal, as well as a Boston Dynamics Spot in a doorway, hallway, and corridor intersection scenario. Compared to both fully decentralized and centralized approaches with and without deadlock resolution capabilities, we demonstrate that our approach results in safer, more efficient, and smoother navigation, based on a comprehensive set of metrics including success rate, collision rate, stop time, change in velocity, path deviation, time-to-goal, and flow rate.},
+  archive      = {J_AR},
+  author       = {Chandra, Rohan and Zinage, Vrushabh and Bakolas, Efstathios and Stone, Peter and Biswas, Joydeep},
+  doi          = {10.1007/s10514-025-10194-8},
+  journal      = {Autonomous Robots},
+  month        = {6},
+  number       = {2},
+  pages        = {1-31},
+  shortjournal = {Auton. Robot.},
+  title        = {Deadlock-free, safe, and decentralized multi-robot navigation in social mini-games via discrete-time control barrier functions},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FIMD: Fast isolated marker detection for UV-based visual relative localisation in agile UAV swarms. <em>AR</em>, <em>49</em>(2), 1-17. (<a href='https://doi.org/10.1007/s10514-025-10197-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A novel approach for the fast onboard detection of isolated markers for visual relative localisation of multiple teammates in agile UAV swarms is introduced in this paper. As the detection forms a key component of real-time localisation systems, a three-fold innovation is presented, consisting of an optimised procedure for CPUs, a GPU shader program, and a functionally equivalent FPGA streaming architecture. For the proposed CPU and GPU solutions, the mean processing time per pixel of input camera frames was accelerated by two to three orders of magnitude compared to the unoptimised state-of-the-art approach. For the localisation task, the proposed FPGA architecture offered the most significant overall acceleration by minimising the total delay from camera exposure to detection results. Additionally, the proposed solutions were evaluated on various 32-bit and 64-bit embedded platforms to demonstrate their efficiency, as well as their feasibility for applications using low-end UAVs and MAVs. Thus, it has become a crucial enabling technology for agile UAV swarming.},
+  archive      = {J_AR},
+  author       = {Vrba, Vojtěch and Walter, Viktor and Štěpán, Petr and Saska, Martin},
+  doi          = {10.1007/s10514-025-10197-5},
+  journal      = {Autonomous Robots},
+  month        = {6},
+  number       = {2},
+  pages        = {1-17},
+  shortjournal = {Auton. Robot.},
+  title        = {FIMD: Fast isolated marker detection for UV-based visual relative localisation in agile UAV swarms},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Shortest coordinated motions for square robots. <em>AR</em>, <em>49</em>(2), 1-22. (<a href='https://doi.org/10.1007/s10514-025-10198-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the problem of determining minimum-length coordinated motions for two axis-aligned square robots translating in an obstacle-free plane: Given feasible start and goal configurations (feasible in the sense that the two squares are interior disjoint), find a continuous motion for the two squares from start to goal, comprising only robot-robot collision-free configurations, such that the total Euclidean distance traveled by the two squares is minimal among all possible such motions. In this paper we present an adaptation of the tools developed for the case of disks to the case of squares. We show that in certain aspects the case of squares is more complicated, requiring additional and more involved arguments over the case of disks.},
+  archive      = {J_AR},
+  author       = {Esteban, Guillermo and Halperin, Dan and Silveira, Rodrigo I.},
+  doi          = {10.1007/s10514-025-10198-4},
+  journal      = {Autonomous Robots},
+  month        = {6},
+  number       = {2},
+  pages        = {1-22},
+  shortjournal = {Auton. Robot.},
+  title        = {Shortest coordinated motions for square robots},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LSF-planner: A visual local planner for legged robots based on ground structure and feature information. <em>AR</em>, <em>49</em>(2), 1-17. (<a href='https://doi.org/10.1007/s10514-025-10195-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Three-dimensional navigation of legged robots is crucial for field exploration and post-disaster rescue. Existing optimization-based local trajectory planners predominantly focus on obstacle avoidance, neglecting negative obstacles (e.g., pits) and varying ground features (e.g., different terrain types). Additionally, non-overlapping areas between the planned space in three-dimensional trajectory planning and the robot’s actual reachable space lead to decision-making issues between crossing and obstacle avoidance, making it challenging to differentiate between passable and hazardous areas, thus impacting navigation safety and stability. To address these limitations, we propose a novel visual local planner, LSF-Planner (Visual Local Planner for Legged Robots Based on Ground Structure and Feature Information). The LSF-Planner employs a multi-layer local perception map that integrates ground feature semantics, sensor range, and negative obstacles (e.g., voids detected by depth sensors) to construct a ground reliability representation. The Label2Grad method is introduced to convert this representation into gradient layers, incorporating a ground reliability penalty function into trajectory optimization. By incorporating constraints on the center of mass height and crossing angles, LSF-Planner effectively differentiates between traversable and hazardous areas. Experimental results show that LSF-Planner significantly outperforms existing methods in 3D trajectory planning, enhancing the navigation performance of legged robots in unstructured environments.},
+  archive      = {J_AR},
+  author       = {Zhang, Teng and Wang, Xiangji and Zha, Fusheng and Liu, Fucheng},
+  doi          = {10.1007/s10514-025-10195-7},
+  journal      = {Autonomous Robots},
+  month        = {6},
+  number       = {2},
+  pages        = {1-17},
+  shortjournal = {Auton. Robot.},
+  title        = {LSF-planner: A visual local planner for legged robots based on ground structure and feature information},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Effective tracking of unknown clustered targets using a distributed team of mobile robots. <em>AR</em>, <em>49</em>(2), 1-16. (<a href='https://doi.org/10.1007/s10514-025-10200-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Distributed multi-target tracking is a canonical task for multi-robot systems, encompassing applications from environmental monitoring to disaster response to surveillance. In many situations the unknown distribution of the targets in a search area is non-uniform, e.g., herds of animals moving together. This paper develops a novel distributed multi-robot multi-target tracking algorithm to effectively search for and track clustered targets. There are two key features. First, there are two parallel estimators, one to provide the best guess of the current states of targets and a second to provide a coarse, long-term distribution of clusters. Second, robots use the power diagram to divide the search space between agents in a way that effectively trades off between tracking detected targets within high density areas and searching for other potential targets. Extensive simulation experiments demonstrate the efficacy of the proposed method and show that it outperforms other approaches in tracking accuracy of clustered targets while maintain good performance for uniformly distributed targets.},
+  archive      = {J_AR},
+  author       = {Chen, Jun and Dames, Philip and Park, Shinkyu},
+  doi          = {10.1007/s10514-025-10200-z},
+  journal      = {Autonomous Robots},
+  month        = {6},
+  number       = {2},
+  pages        = {1-16},
+  shortjournal = {Auton. Robot.},
+  title        = {Effective tracking of unknown clustered targets using a distributed team of mobile robots},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-robot exploration for the CADRE mission. <em>AR</em>, <em>49</em>(2), 1-24. (<a href='https://doi.org/10.1007/s10514-025-10199-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present the design, implementation and testing of a multi-robot exploration algorithm for NASA’s upcoming Cooperative Autonomous Distributed Robotic Exploration (CADRE) lunar technology demonstration mission. The CADRE mission, among its various objectives, entails utilizing a trio of autonomous mobile robots to collaboratively explore and construct a map of a designated area of the lunar surface. Given the mission’s inherent constraints, including limited mission duration, constrained power resources, and restricted communication capabilities, we formulate an exploration algorithm to improve exploration efficiency, facilitate equitable workload distribution among individual agents, and minimize inter-robot communication. To achieve these requirements, we employ a semi-centralized exploration algorithm that partitions the unexplored area, regardless of its shape and size, into a series of non-overlapping partitions, assigning each partition to a specific robot for exploration. Each robot autonomously explores its designated region without intervention from other robots. We explore the design space of the proposed algorithm and evaluate its performance under diverse conditions in simulations. Finally, we validate the algorithm’s functionality through two sets of hardware experiments: the first utilizes prototype rovers using a ROS-based navigation software stack for feasibility testing, while the second employs high-fidelity development model rovers running CADRE’s custom flight-software stack for flight-like performance validation. Both sets of experiments are conducted in the Jet Propulsion Laboratory’s lunar-simulated rover testing facilities, demonstrating the algorithm’s robustness and readiness for lunar deployment.},
+  archive      = {J_AR},
+  author       = {Nayak, Sharan and Lim, Grace and Rossi, Federico and Otte, Michael and de la Croix, Jean-Pierre},
+  doi          = {10.1007/s10514-025-10199-3},
+  journal      = {Autonomous Robots},
+  month        = {6},
+  number       = {2},
+  pages        = {1-24},
+  shortjournal = {Auton. Robot.},
+  title        = {Multi-robot exploration for the CADRE mission},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mori-zwanzig approach for belief abstraction with application to belief space planning. <em>AR</em>, <em>49</em>(1), 1-23. (<a href='https://doi.org/10.1007/s10514-024-10185-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a learning-based method to extract symbolic representations of the belief state and its dynamics in order to solve planning problems in a continuous-state partially observable Markov decision processes (POMDP) problem. While existing approaches typically parameterize the continuous-state POMDP into a finite-dimensional Markovian model, they are unable to preserve fidelity of the abstracted model. To improve accuracy of the abstracted representation, we introduce a memory-dependent abstraction approach to mitigate the modeling error. The first major contribution of this paper is we propose a Neural Network based method to learn the non-Markovian transition model based on the Mori-Zwanzig (M-Z) formalism. Different from existing work in applying M-Z formalism to autonomous time-invariant systems, our approach is the first work generalizing the M-Z formalism to robotics, by addressing the non-Markovian modeling of the belief dynamics that is dependent on historical observations and actions. The second major contribution is we theoretically show that modeling the non-Markovian memory effect in the abstracted belief dynamics improves the modeling accuracy, which is the key benefit of the proposed algorithm. Simulation experiment of a belief space planning problem is provided to validate the performance of the proposed belief abstraction algorithms.},
+  archive      = {J_AR},
+  author       = {Hou, Mengxue and Lin, Tony X. and Zhou, Enlu and Zhang, Fumin},
+  doi          = {10.1007/s10514-024-10185-1},
+  journal      = {Autonomous Robots},
+  month        = {3},
+  number       = {1},
+  pages        = {1-23},
+  shortjournal = {Auton. Robot.},
+  title        = {Mori-zwanzig approach for belief abstraction with application to belief space planning},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Integrative biomechanics of a human–robot carrying task: Implications for future collaborative work. <em>AR</em>, <em>49</em>(1), 1-12. (<a href='https://doi.org/10.1007/s10514-024-10184-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Patients with sarcopenia, who face difficulties in carrying heavy loads, may benefit from collaborative robotic assistance that is modeled after human–human interaction. The objective of this study is to describe the kinematics and spatio-temporal parameters during a collaborative carrying task involving both human and robotic partners. Fourteen subjects carried a table while moving forward with a human and a robotic partner. The movements were recorded using a three-dimensional motion capture system. The subjects successfully completed the task of carrying the table with the robot. No significant differences were found in the shoulder and elbow flexion/extension angles. In human–human dyads, the center of mass naturally oscillated vertically with an amplitude of approximately 2 cm. The here presented results of the human–human interaction serve as a model for the development of future robotic systems, designed for collaborative manipulation.},
+  archive      = {J_AR},
+  author       = {Schuengel, Verena and Braunstein, Bjoern and Goell, Fabian and Braun, Daniel and Reißner, Nadine and Safronov, Kirill and Weiser, Christian and Heieis, Jule and Albracht, Kirsten},
+  doi          = {10.1007/s10514-024-10184-2},
+  journal      = {Autonomous Robots},
+  month        = {3},
+  number       = {1},
+  pages        = {1-12},
+  shortjournal = {Auton. Robot.},
+  title        = {Integrative biomechanics of a human–robot carrying task: Implications for future collaborative work},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Safe and stable teleoperation of quadrotor UAVs under haptic shared autonomy. <em>AR</em>, <em>49</em>(1), 1-17. (<a href='https://doi.org/10.1007/s10514-024-10186-0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a novel approach that aims to address both safety and stability of a haptic teleoperation system within a framework of Haptic Shared Autonomy (HSA). We use Control Barrier Functions (CBFs) to generate the control input that follows the user’s input as closely as possible while guaranteeing safety. In the context of stability of the human-in-the-loop system, we limit the force feedback perceived by the user via a small $$\mathcal {L}_2$$ -gain, which is achieved by limiting the control and the force feedback via a differential constraint. Specifically, with the property of HSA, we propose two pathways to design the control and the force feedback: Sequential Control Force (SCF) and Joint Control Force (JCF). Both designs can achieve safety and stability but with different responses to the user’s commands. We conducted experimental simulations to evaluate and investigate the properties of the designed methods. We also tested the proposed method on a physical quadrotor UAV and a haptic interface.},
+  archive      = {J_AR},
+  author       = {Zhang, Dawei and Tron, Roberto},
+  doi          = {10.1007/s10514-024-10186-0},
+  journal      = {Autonomous Robots},
+  month        = {3},
+  number       = {1},
+  pages        = {1-17},
+  shortjournal = {Auton. Robot.},
+  title        = {Safe and stable teleoperation of quadrotor UAVs under haptic shared autonomy},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Synthesizing compact behavior trees for probabilistic robotics domains. <em>AR</em>, <em>49</em>(1), 1-24. (<a href='https://doi.org/10.1007/s10514-024-10187-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Complex robotics domains (e.g., remote exploration applications and scenarios involving interactions with humans) require encoding high-level mission specifications that consider uncertainty. Most current fielded systems in practice require humans to manually encode mission specifications in ways that require amounts of time and expertise that can become infeasible and limit mission scope. Therefore, we propose a method of automating the process of encoding mission specifications as behavior trees. In particular, we present an algorithm for synthesizing behavior trees that represent the optimal policy for a user-defined specification of a domain and problem in the Probabilistic Planning Domain Definition Language (PPDDL). Our algorithm provides access to behavior tree advantages including compactness and modularity, while alleviating the need for the time-intensive manual design of behavior trees, which requires substantial expert knowledge. Our method converts the PPDDL specification into solvable MDP matrices, simplifies the solution, i.e. policy, using Boolean algebra simplification, and converts this simplified policy to a compact behavior tree that can be executed by a robot. We present simulated experiments for a marine target search and response scenario and an infant-robot interaction for mobility domain. Our results demonstrate that the synthesized, simplified behavior trees have approximately between 15 x and 26 x fewer nodes and an average of between 8 x and 13 x fewer active conditions for selecting the active action than they would without simplification. These compactness and activity results suggest an increase in the interpretability and execution efficiency of the behavior trees synthesized by the proposed method. Additionally, our results demonstrate that this synthesis method is robust to a variety of user input mistakes, and we empirically confirm that the synthesized behavior trees perform equivalently to the optimal policy that they are constructed to logically represent.},
+  archive      = {J_AR},
+  author       = {Scheide, Emily and Best, Graeme and Hollinger, Geoffrey A.},
+  doi          = {10.1007/s10514-024-10187-z},
+  journal      = {Autonomous Robots},
+  month        = {3},
+  number       = {1},
+  pages        = {1-24},
+  shortjournal = {Auton. Robot.},
+  title        = {Synthesizing compact behavior trees for probabilistic robotics domains},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). View: Visual imitation learning with waypoints. <em>AR</em>, <em>49</em>(1), 1-26. (<a href='https://doi.org/10.1007/s10514-024-10188-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robots can use visual imitation learning (VIL) to learn manipulation tasks from video demonstrations. However, translating visual observations into actionable robot policies is challenging due to the high-dimensional nature of video data. This challenge is further exacerbated by the morphological differences between humans and robots, especially when the video demonstrations feature humans performing tasks. To address these problems we introduce Visual Imitation lEarning with Waypoints (VIEW), an algorithm that significantly enhances the sample efficiency of human-to-robot VIL. VIEW achieves this efficiency using a multi-pronged approach: extracting a condensed prior trajectory that captures the demonstrator’s intent, employing an agent-agnostic reward function for feedback on the robot’s actions, and utilizing an exploration algorithm that efficiently samples around waypoints in the extracted trajectory. VIEW also segments the human trajectory into grasp and task phases to further accelerate learning efficiency. Through comprehensive simulations and real-world experiments, VIEW demonstrates improved performance compared to current state-of-the-art VIL methods. VIEW enables robots to learn manipulation tasks involving multiple objects from arbitrarily long video demonstrations. Additionally, it can learn standard manipulation tasks such as pushing or moving objects from a single video demonstration in under 30 min, with fewer than 20 real-world rollouts. Code and videos here: https://collab.me.vt.edu/view/},
+  archive      = {J_AR},
+  author       = {Jonnavittula, Ananth and Parekh, Sagar and P. Losey, Dylan},
+  doi          = {10.1007/s10514-024-10188-y},
+  journal      = {Autonomous Robots},
+  month        = {3},
+  number       = {1},
+  pages        = {1-26},
+  shortjournal = {Auton. Robot.},
+  title        = {View: Visual imitation learning with waypoints},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Eigen-factors a bilevel optimization for plane SLAM of 3D point clouds. <em>AR</em>, <em>49</em>(1), 1-19. (<a href='https://doi.org/10.1007/s10514-025-10189-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modern depth sensors can generate a huge number of 3D points in few seconds to be later processed by Localization and Mapping algorithms. Ideally, these algorithms should handle efficiently large sizes of Point Clouds (PC) under the assumption that using more points implies more information available. The Eigen Factors (EF) is a new algorithm that solves PC SLAM by using planes as the main geometric primitive. To do so, EF exhaustively calculates the error of all points at complexity O(1), thanks to the Summation matrix S of homogeneous points. The solution of EF is a bilevel optimization where the lower-level problem estimates the plane variables in closed-form, and the upper-level non-linear problem uses second order optimization to estimate sensor poses (trajectory). We provide a direct analytical solution for the gradient and Hessian based on the homogeneous point-plane constraint. In addition, two variants of the EF are proposed: one pure analytical derivation and a second one approximating the problem to an alternating optimization showing better convergence properties. We evaluate the optimization processes (back-end) of EF and other state-of-the-art plane SLAM algorithms in a synthetic environment, and extended to ICL dataset (RGBD) and LiDAR KITTI datasets. EF demonstrates superior robustness and accuracy of the estimated trajectory and improved map metrics. Code is publicly available at https://github.com/prime-slam/EF-plane-SLAM with python bindings and pip package.},
+  archive      = {J_AR},
+  author       = {Ferrer, Gonzalo and Iarosh, Dmitrii and Kornilova, Anastasiia},
+  doi          = {10.1007/s10514-025-10189-5},
+  journal      = {Autonomous Robots},
+  month        = {3},
+  number       = {1},
+  pages        = {1-19},
+  shortjournal = {Auton. Robot.},
+  title        = {Eigen-factors a bilevel optimization for plane SLAM of 3D point clouds},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Isolated kalman filtering: Theory and decoupled estimator design. <em>AR</em>, <em>49</em>(1), 1-25. (<a href='https://doi.org/10.1007/s10514-025-10191-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we propose a state decoupling strategy for Kalman filtering problems, when the dynamics of individual estimates are decoupled and their outputs are sparsely coupled. The algorithm is termed Isolated Kalman Filtering (IsoKF) and exploits the sparsity in the output coupling by applying approximations that mitigate the need for non-involved estimates. We prove that the approximations made during the isolated coupling of estimates are based on an implicit maximum determinant completion of the incomplete a priori covariance matrix. The steady state behavior is studied on eleven different observation graphs and a buffering scheme to support delayed (i.e. out-of-order) measurements is proposed. We discussed handling of delayed measurements in both, an optimal or a suboptimal way. The credibility of the isolated estimates are evaluated on a linear and nonlinear toy example in Monte Carlo simulations. The presented paradigm is made available online to the community within a generic C++ estimation framework supporting both, modular sensor fusion and collaborative state estimation.},
+  archive      = {J_AR},
+  author       = {Jung, Roland and Luft, Lukas and Weiss, Stephan},
+  doi          = {10.1007/s10514-025-10191-x},
+  journal      = {Autonomous Robots},
+  month        = {3},
+  number       = {1},
+  pages        = {1-25},
+  shortjournal = {Auton. Robot.},
+  title        = {Isolated kalman filtering: Theory and decoupled estimator design},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Between reality and delusion: Challenges of applying large language models to companion robots for open-domain dialogues with older adults. <em>AR</em>, <em>49</em>(1), 1-41. (<a href='https://doi.org/10.1007/s10514-025-10190-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Throughout our lives, we interact daily in conversations with our friends and family, covering a wide range of topics, known as open-domain dialogue. As we age, these interactions may diminish due to changes in social and personal relationships, leading to loneliness in older adults. Conversational companion robots can alleviate this issue by providing daily social support. Large language models (LLMs) offer flexibility for enabling open-domain dialogue in these robots. However, LLMs are typically trained and evaluated on textual data, while robots introduce additional complexity through multi-modal interactions, which has not been explored in prior studies. Moreover, it is crucial to involve older adults in the development of robots to ensure alignment with their needs and expectations. Correspondingly, using iterative participatory design approaches, this paper exposes the challenges of integrating LLMs into conversational robots, deriving from 34 Swedish-speaking older adults’ (one-to-one) interactions with a personalized companion robot, built on Furhat robot with GPT $$-$$ 3.5. These challenges encompass disruptions in conversations, including frequent interruptions, slow, repetitive, superficial, incoherent, and disengaging responses, language barriers, hallucinations, and outdated information, leading to frustration, confusion, and worry among older adults. Drawing on insights from these challenges, we offer recommendations to enhance the integration of LLMs into conversational robots, encompassing both general suggestions and those tailored to companion robots for older adults.},
+  archive      = {J_AR},
+  author       = {Irfan, Bahar and Kuoppamäki, Sanna and Hosseini, Aida and Skantze, Gabriel},
+  doi          = {10.1007/s10514-025-10190-y},
+  journal      = {Autonomous Robots},
+  month        = {3},
+  number       = {1},
+  pages        = {1-41},
+  shortjournal = {Auton. Robot.},
+  title        = {Between reality and delusion: Challenges of applying large language models to companion robots for open-domain dialogues with older adults},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ASAP-MPC: An asynchronous update scheme for online motion planning with nonlinear model predictive control. <em>AR</em>, <em>49</em>(1), 1-17. (<a href='https://doi.org/10.1007/s10514-025-10192-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a Nonlinear Model Predictive Control (NMPC) update scheme targeted at motion planning for mechatronic motion systems, such as drones and mobile platforms. NMPC-based motion planning typically requires low computation times to be able to provide control inputs at the required rate for system stability, disturbance rejection, and overall performance. To achieve online NMPC updates in complex situations, works in literature typically rely on one of two approaches: attempting to reduce the solution times in NMPC by sacrificing feasibility guarantees, or allowing more time to the motion planning algorithm, which requires additional strategies to ensure robust tracking of the planned motion, e.g., state feedback. Following this second paradigm, this paper presents As-Soon-As-Possible MPC (ASAP-MPC), an asynchronous update scheme for online motion planning with optimal control that abandons the idea of having to satisfy restrictive real-time update rates and that solves the optimal control problem to full convergence. ASAP-MPC combines trajectory generation through optimal control with additional tracking control for improved robustness against disturbances and plant-model mismatch. The scheme seamlessly connects trajectories, resulting from subsequent NMPC solutions, providing a smooth and continuous overall trajectory for the motion system. This framework’s applicability to embedded applications is shown on two different experiment setups where a state-of-the-art method fails to successfully navigate through a given environment: a quadcopter flying through a cluttered environment with hardware-in-the-loop simulation and a scale model truck-trailer manoeuvring in a structured physical lab environment.},
+  archive      = {J_AR},
+  author       = {Dirckx, Dries and Bos, Mathias and Vandewal, Bastiaan and Vanroye, Lander and Swevers, Jan and Decré, Wilm},
+  doi          = {10.1007/s10514-025-10192-w},
+  journal      = {Autonomous Robots},
+  month        = {3},
+  number       = {1},
+  pages        = {1-17},
+  shortjournal = {Auton. Robot.},
+  title        = {ASAP-MPC: An asynchronous update scheme for online motion planning with nonlinear model predictive control},
+  volume       = {49},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

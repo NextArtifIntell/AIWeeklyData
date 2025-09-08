@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IETCV</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ietcv">IETCV - 71</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Self-prompting segment anything model for few-shot medical image segmentation. <em>IETCV</em>, <em>19</em>(1), e70040. (<a href='https://doi.org/10.1049/cvi2.70040'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Segmenting unlabelled medical images with a minimal amount of labelled data is a daunting task due to the complex feature landscapes and the prevalent noise and artefacts characteristic of medical imaging processes. The SAM has showcased the potential of large-scale image segmentation models for achieving zero-shot generalisation across previously unseen objects. However, directly applying SAM to medical image segmentation without incorporating prior knowledge of the target task can lead to unsatisfactory results. To address this, we enhance SAM by integrating prior knowledge of medical image segmentation tasks. This enables it to quickly adapt to few-shot medical image segmentation tasks while ensuring efficient parameter training. Our method employs an ensemble learning strategy to train a simple classifier, producing a coarse mask for each test image. Importantly, this coarse mask generates more accurate prompt points and boxes, thus improving SAM's capacity for prompt-driven segmentation. Furthermore, to refine SAM's ability to produce more precise masks, we introduce the Isolated Noise Removal (INR) module, which efficiently removes noise from the coarse masks. In addition, our novel Multi-point Automatic Prompt (MPAP) module is designed to independently generate multiple effective and evenly distributed point prompts based on these coarse masks. Additionally, we introduce an innovative knee joint dataset benchmark specifically for medical image segmentation, contributing further to the research field. Extensive evaluations on three benchmark datasets confirm the superior performance of our approach compared to existing methods, demonstrating its efficacy and significant progress in the domain of few-shot medical image segmentation.},
+  archive      = {J_IETCV},
+  author       = {Haifeng Zhao and Weichen Liu and Leilei Ma and Zaipeng Xie},
+  doi          = {10.1049/cvi2.70040},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70040},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Self-prompting segment anything model for few-shot medical image segmentation},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhancing interpretability of NesT model using NesT-shapley and feature-weight-augmentation method. <em>IETCV</em>, <em>19</em>(1), e70039. (<a href='https://doi.org/10.1049/cvi2.70039'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The transformer's capabilities in natural language processing and computer vision are impressive, but interpretability is crucial in specific domain applications. The NesT model, with its pyramidal structure, demonstrates high accuracy and faster training speeds. Unlike other models, a unique aspect of NesT is its avoidance of the [CLS] token, which presents challenges when applying interpretability methods that rely on the model's internal structure. Instead, NesT divides the image into 16 blocks and processes them using 16 independent vision transformers. We propose the NesT-Shapley method, which utilises this structure to combine the Shapley value method (a self-interpretable approach) with the independently operating vision transformers within NesT, significantly reducing computational complexity. On the other hand, we introduced the feature weight augmentation (FWA) method to address the challenges of weight adjustment in the final interpretability results produced by interpretability methods without [CLS] token, markedly enhancing the performance of interpretability methods and providing a better understanding of the information flow during the prediction process in the NesT model. We conducted perturbation experiments on the NesT model using the ImageNet and CIFAR-100 datasets and segmentation experiments on the ImageNet-Segmentation dataset, achieving impressive experimental results.},
+  archive      = {J_IETCV},
+  author       = {Li Xu and Lei Li and Xiaohong Cong and Huijie Song},
+  doi          = {10.1049/cvi2.70039},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70039},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Enhancing interpretability of NesT model using NesT-shapley and feature-weight-augmentation method},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MVDT: Multiview distillation transformer for view-invariant sign language translation. <em>IETCV</em>, <em>19</em>(1), e70038. (<a href='https://doi.org/10.1049/cvi2.70038'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sign language translation based on machine learning plays a crucial role in facilitating communication between deaf and hearing individuals. However, due to the complexity and variability of sign language, coupled with limited observation angles, single-view sign language translation models often underperform in real-world applications. Although some studies have attempted to improve translation efficiency by incorporating multiview data, challenges, such as feature alignment, fusion, and the high cost of capturing multiview data, remain significant barriers in many practical scenarios. To address these issues, we propose a multiview distillation transformer model (MVDT) for continuous sign language translation. The MVDT introduces a novel distillation mechanism, where a teacher model is designed to learn common features from multiview data, subsequently guiding a student model to extract view-invariant features using only single-view input. To evaluate the proposed method, we construct a multiview sign language dataset comprising five distinct views and conduct extensive experiments comparing the MVDT with state-of-the-art methods. Experimental results demonstrate that the proposed model exhibits superior view-invariant translation capabilities across different views.},
+  archive      = {J_IETCV},
+  author       = {Zhong Guan and Yongli Hu and Huajie Jiang and Yanfeng Sun and Baocai Yin},
+  doi          = {10.1049/cvi2.70038},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70038},
+  shortjournal = {IET Comput. Vis.},
+  title        = {MVDT: Multiview distillation transformer for view-invariant sign language translation},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards more generalisable compositional feature learning in human-object interaction detection. <em>IETCV</em>, <em>19</em>(1), e70037. (<a href='https://doi.org/10.1049/cvi2.70037'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The long-tailed distribution of training samples is a fundamental challenge in human-object interaction (HOI) detection, leading to extremely imbalanced performance on non-rare and rare classes. Existing works adopt the idea of compositional learning, in which object and action features are learnt individually and re-composed into new samples of rare HOI classes. However, most of these methods are proposed on traditional CNN-based frameworks which are weak in capturing image-wide context. Moreover, the simple feature integration mechanisms fail to aggregate effective semantics in re-composed features. As a result, these methods achieve only limited improvements on knowledge generalisation. We propose a novel transformer-based compositional learning framework for HOI detection. Human-object pair features and interaction features containing rich global context are extracted, and comprehensively integrated via the cross-attention mechanism, generating re-composed features containing more generalisable semantics. To further improve re-composed features and promote knowledge generalisation, we leverage the vision-language model CLIP in a computation-efficient manner to improve re-composition sampling and guide the interaction feature learning. Experiments on two benchmark datasets prove the effectiveness of our method in improving performance on both rare and non-rare HOI classes.},
+  archive      = {J_IETCV},
+  author       = {Shuang Liang and Zikun Zhuang and Chi Xie and Shuwei Yan and Hongming Zhu},
+  doi          = {10.1049/cvi2.70037},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70037},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Towards more generalisable compositional feature learning in human-object interaction detection},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SIM-net: A multimodal fusion network using inferred 3D object shape point clouds from RGB images for 2D classification. <em>IETCV</em>, <em>19</em>(1), e70036. (<a href='https://doi.org/10.1049/cvi2.70036'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce the shape-image multimodal network (SIM-Net), a novel 2D image classification architecture that integrates 3D point cloud representations inferred directly from RGB images. Our key contribution lies in a pixel-to-point transformation that converts 2D object masks into 3D point clouds, enabling the fusion of texture-based and geometric features for enhanced classification performance. SIM-Net is particularly well-suited for the classification of digitised herbarium specimens—a task made challenging by heterogeneous backgrounds, nonplant elements, and occlusions that compromise conventional image-based models. To address these issues, SIM-Net employs a segmentation-based preprocessing step to extract object masks prior to 3D point cloud generation. The architecture comprises a CNN encoder for 2D image features and a PointNet-based encoder for geometric features, which are fused into a unified latent space. Experimental evaluations on herbarium datasets demonstrate that SIM-Net consistently outperforms ResNet101, achieving gains of up to 9.9% in accuracy and 12.3% in F-score. It also surpasses several transformer-based state-of-the-art architectures, highlighting the benefits of incorporating 3D structural reasoning into 2D image classification tasks.},
+  archive      = {J_IETCV},
+  author       = {Youcef Sklab and Hanane Ariouat and Eric Chenin and Edi Prifti and Jean-Daniel Zucker},
+  doi          = {10.1049/cvi2.70036},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70036},
+  shortjournal = {IET Comput. Vis.},
+  title        = {SIM-net: A multimodal fusion network using inferred 3D object shape point clouds from RGB images for 2D classification},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive multiscale attention feature aggregation for multi-modal 3D occluded object detection. <em>IETCV</em>, <em>19</em>(1), e70035. (<a href='https://doi.org/10.1049/cvi2.70035'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate perception and understanding of the three-dimensional environment is crucial for autonomous vehicles to navigate efficiently and make wise decisions. However, in complex real-world scenarios, the information obtained by a single-modal sensor is often incomplete, severely affecting the detection accuracy of occluded targets. To address this issue, this paper proposes a novel adaptive multi-scale attention aggregation strategy, efficiently fusing multi-scale feature representations of heterogeneous data to accurately capture the shape details and spatial relationships of targets in three-dimensional space. This strategy utilises learnable sparse keypoints to dynamically align heterogeneous features in a data-driven manner, adaptively modelling the cross-modal mapping relationships between keypoints and their corresponding multi-scale image features. Given the importance of accurately obtaining the three-dimensional shape information of targets for understanding the size and rotation pose of occluded targets, this paper adopts a shape prior knowledge-based constraint method and data augmentation strategy to guide the model to more accurately perceive the complete three-dimensional shape and rotation pose of occluded targets. Experimental results show that our proposed model achieves 2.15%, 3.24% and 2.75% improvement in 3D R40 mAP score under the easy, moderate and hard difficulty levels compared to MVXNet, significantly enhancing the detection accuracy and robustness of occluded targets in complex scenarios.},
+  archive      = {J_IETCV},
+  author       = {Yanfeng Han and Ming Yu and Jing Liu},
+  doi          = {10.1049/cvi2.70035},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70035},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Adaptive multiscale attention feature aggregation for multi-modal 3D occluded object detection},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GRVT: Improving the transferability of adversarial attacks through gradient related variance and input transformation. <em>IETCV</em>, <em>19</em>(1), e70034. (<a href='https://doi.org/10.1049/cvi2.70034'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As we all know, the emergence of a large number of adversarial samples reveals the vulnerability of deep neural networks. Attackers seriously affect the performance of models by adding imperceptible perturbations. Although adversarial samples have a high transferability success rate in white-box models, they are less effective in black-box models. To address this problem, this paper proposes a new transferability attack strategy, Gradient Related Variance and Input Transformation Attack (GRVT). First, the image is divided into small blocks, and random transformations are applied to each block to generate diversified images; then, in the gradient update process, the gradient of the neighbourhood area is introduced, and the current gradient is associated with the neighbourhood average gradient through Cosine Similarity. The current gradient direction is adjusted using the associated gradient combined with the previous gradient variance, and a step size reducer adjusts the gradient step size. Experiments on the ILSVRC 2012 dataset show that the transferability success rate of adversarial samples between convolutional neural network (CNN) and vision transformer (ViT) models is higher than that of currently advanced methods. Additionally, the adversarial samples generated on the ensemble model are practical against nine defence strategies. GRVT shows excellent transferability and broad applicability.},
+  archive      = {J_IETCV},
+  author       = {Yanlei Wei and Xiaolin Zhang and Yongping Wang and Jingyu Wang and Lixin Liu},
+  doi          = {10.1049/cvi2.70034},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70034},
+  shortjournal = {IET Comput. Vis.},
+  title        = {GRVT: Improving the transferability of adversarial attacks through gradient related variance and input transformation},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mamba4SOD: RGB-T salient object detection using mamba-based fusion module. <em>IETCV</em>, <em>19</em>(1), e70033. (<a href='https://doi.org/10.1049/cvi2.70033'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {RGB and thermal salient object detection (RGB-T SOD) aims to accurately locate and segment salient objects in aligned visible and thermal image pairs. However, existing methods often struggle to produce complete masks and sharp boundaries in challenging scenarios due to insufficient exploration of complementary features from the dual modalities. In this paper, we propose a novel mamba-based fusion network for RGB-T SOD task, named Mamba4SOD, which integrates the strengths of Swin Transformer and Mamba to construct robust multi-modal representations, effectively reducing pixel misclassification. Specifically, we leverage Swin Transformer V2 to establish long-range contextual dependencies and thoroughly analyse the impact of features at various levels on detection performance. Additionally, we develop a novel Mamba-based fusion module with linear complexity, boosting multi-modal enhancement and fusion. Experimental results on VT5000, VT1000 and VT821 datasets demonstrate that our method outperforms the state-of-the-art RGB-T SOD methods.},
+  archive      = {J_IETCV},
+  author       = {Yi Xu and Ruichao Hou and Ziheng Qi and Tongwei Ren},
+  doi          = {10.1049/cvi2.70033},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70033},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Mamba4SOD: RGB-T salient object detection using mamba-based fusion module},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improved SAR aircraft detection algorithm based on visual state space models. <em>IETCV</em>, <em>19</em>(1), e70032. (<a href='https://doi.org/10.1049/cvi2.70032'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, the development of deep learning algorithms has significantly advanced the application of synthetic aperture radar (SAR) aircraft detection in remote sensing and military fields. However, existing methods face a dual dilemma: CNN-based models suffer from insufficient detection accuracy due to limitations in local receptive fields, whereas Transformer-based models improve accuracy by leveraging attention mechanisms but incur significant computational overhead due to their quadratic complexity. This imbalance between accuracy and efficiency severely limits the development of SAR aircraft detection. To address this problem, this paper propose a novel neural network based on state space models (SSM), termed the Mamba SAR detection network (MSAD). Specifically, we design a feature encoding module, MEBlock, that integrates CNN with SSM to enhance global feature modelling capabilities. Meanwhile, the linear computational complexity brought by SSM is superior to that of Transformer architectures, achieving a reduction in computational overhead. Additionally, we propose a context-aware feature fusion module (CAFF) that combines attention mechanisms to achieve adaptive fusion of multi-scale features. Lastly, a lightweight parameter-shared detection head (PSHead) is utilised to effectively reduce redundant parameters through implicit feature interaction. Experiments on the SAR-AirCraft-v1.0 and SADD datasets show that MSAD achieves higher accuracy than existing algorithms, whereas its GFLOPs are 2.7 times smaller than those of the Transformer architecture RT-DETR. These results validate the core role of SSM as an accuracy-efficiency balancer, reflecting MSAD's perceptual capability and performance in SAR aircraft detection in complex environments.},
+  archive      = {J_IETCV},
+  author       = {Yaqiong Wang and Jing Zhang and Yipei Wang and Shiyu Hu and Baoguo Shen and Zhenhua Hou and Wanting Zhou},
+  doi          = {10.1049/cvi2.70032},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70032},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Improved SAR aircraft detection algorithm based on visual state space models},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PAD: Detail-preserving point cloud reconstruction and generation via autodecoders. <em>IETCV</em>, <em>19</em>(1), e70031. (<a href='https://doi.org/10.1049/cvi2.70031'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High-accuracy point cloud (self-) reconstruction is crucial for point cloud editing, translation, and unsupervised representation learning. However, existing point cloud reconstruction methods often sacrifice many geometric details. Altough many techniques have proposed how to construct better point cloud decoders, only a few have designed point cloud encoders from a reconstruction perspective. We propose an autodecoder architecture to achieve detail-preserving point cloud reconstruction while bypassing the performance bottleneck of the encoder. Our architecture is theoretically applicable to any existing point cloud decoder. For training, both the weights of the decoder and the pre-initialised latent codes, corresponding to the input points, are updated simultaneously. Experimental results demonstrate that our autodecoder achieves an average reduction of 24.62% in Chamfer Distance compared to existing methods, significantly improving reconstruction quality on the ShapeNet dataset. Furthermore, we verify the effectiveness of our autodecoder in point cloud generation, upsampling, and unsupervised representation learning to demonstrate its performance on downstream tasks, which is comparable to the state-of-the-art methods. We will make our code publicly available after peer review.},
+  archive      = {J_IETCV},
+  author       = {Yakai Zhang and Ping Yang and Haoran Wang and Zizhao Wu and Xiaoling Gu and Alexandru Telea and Kosinka Jiri},
+  doi          = {10.1049/cvi2.70031},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70031},
+  shortjournal = {IET Comput. Vis.},
+  title        = {PAD: Detail-preserving point cloud reconstruction and generation via autodecoders},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LRCM: Enhancing adversarial purification through latent representation compression. <em>IETCV</em>, <em>19</em>(1), e70030. (<a href='https://doi.org/10.1049/cvi2.70030'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the current context of the extensive use of deep neural networks, it has been observed that neural network models are vulnerable to adversarial perturbations, which may lead to unexpected results. In this paper, we introduce an Adversarial Purification Model rooted in latent representation compression, aimed at enhancing the robustness of deep learning models. Initially, we employ an encoder-decoder architecture inspired by the U-net to extract features from input samples. Subsequently, these features undergo a process of information compression to remove adversarial perturbations from the latent space. To counteract the model's tendency to overly focus on fine-grained details of input samples, resulting in ineffective adversarial sample purification, an early freezing mechanism is introduced during the encoder training process. We tested our model's ability to purify adversarial samples generated from the CIFAR-10, CIFAR-100, and ImageNet datasets using various methods. These samples were then used to test ResNet, an image recognition classifiers. Our experiments covered different resolutions and attack types to fully assess LRCM's effectiveness against adversarial attacks. We also compared LRCM with other defence strategies, demonstrating its strong defensive capabilities.},
+  archive      = {J_IETCV},
+  author       = {Yixin Li and Xintao Luo and Weijie Wu and Minjia Zheng},
+  doi          = {10.1049/cvi2.70030},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70030},
+  shortjournal = {IET Comput. Vis.},
+  title        = {LRCM: Enhancing adversarial purification through latent representation compression},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhanced Foreground–Background discrimination for weakly supervised semantic segmentation. <em>IETCV</em>, <em>19</em>(1), e70029. (<a href='https://doi.org/10.1049/cvi2.70029'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Weakly supervised semantic segmentation (WSSS) methods are extensively studied due to the availability of image-level annotations. Relying on class activation maps (CAMs) derived from original classification networks often suffers from issues such as inaccurate object localization, incomplete object regions, and the inclusion of confusing background pixels. To address these issues, we propose a two-stage method that enhances the foreground–background discriminative ability in a global context (FB-DGC). Specifically, a cross-domain feature calibration module (CFCM) is first proposed to calibrate foreground and background salient features using global spatial location information, thereby expanding foreground features while mitigating the impact of inaccurate localization in class activation regions. A class-specific distance module (CSDM) is further adopted to facilitate the separation of foreground–background features, thereby enhancing the activation of target regions, which alleviates the over-smoothing of features produced by the network and mitigates issues associated with confused features. In addition, an adaptive edge feature extraction (AEFE) strategy is proposed to identify target features in candidate boundary regions and capture missed features, compensating for drawbacks in recognising the co-occurrence of multiple targets. The proposed method is extensively evaluated on the challenging PASCAL VOC 2012 and MS COCO 2014 datasets, demonstrating its feasibility and superiority.},
+  archive      = {J_IETCV},
+  author       = {Zhoufeng Liu and Bingrui Li and Miao Yu and Guangshuai Gao and Chunlei Li},
+  doi          = {10.1049/cvi2.70029},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70029},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Enhanced Foreground–Background discrimination for weakly supervised semantic segmentation},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Object detection based on CNN and vision-transformer: A survey. <em>IETCV</em>, <em>19</em>(1), e70028. (<a href='https://doi.org/10.1049/cvi2.70028'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Object detection is the most crucial and challenging task of computer vision and has been used in various fields in recent years, such as autonomous driving and industrial inspection. Traditional object detection methods are mainly based on the sliding windows and the handcrafted features, which have problems such as insufficient understanding of image features and low accuracy of detection. With the rapid advancements in deep learning, convolutional neural networks (CNNs) and vision transformers have become fundamental components in object detection models. These components are capable of learning more advanced and deeper image properties, leading to a transformational breakthrough in the performance of object detection. In this review, we comprehensively review the representative object detection models from deep learning periods, tracing their architectural shifts and technological breakthroughs. Furthermore, we discuss key challenges and promising research directions in the object detection. This review aims to provide a comprehensive foundation for practitioners to enhance their understanding of object detection technologies.},
+  archive      = {J_IETCV},
+  author       = {Jinfeng Cao and Bo Peng and Mingzhong Gao and Haichun Hao and Xinfang Li and Hongwei Mou},
+  doi          = {10.1049/cvi2.70028},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70028},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Object detection based on CNN and vision-transformer: A survey},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adapting the re-ID challenge for static sensors. <em>IETCV</em>, <em>19</em>(1), e70027. (<a href='https://doi.org/10.1049/cvi2.70027'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Grévy's zebra, an endangered species native to Kenya and southern Ethiopia, has been the target of sustained conservation efforts in recent years. Accurately monitoring Grévy's zebra populations is essential for ecologists to evaluate ongoing conservation initiatives. Recently, in both 2016 and 2018, a full census of the Grévy's zebra population was enabled by the Great Grévy's Rally (GGR), a citizen science event that combines teams of volunteers to capture data with computer vision algorithms that help experts estimate the number of individuals in the population. A complementary, scalable, cost-effective and long-term Grévy's population monitoring approach involves deploying a network of camera traps, which we have done at the Mpala Research Centre in Laikipia County, Kenya. In both scenarios, a substantial majority of the images of zebras are not usable for individual identification due to ‘in-the-wild’ imaging conditions—occlusions from vegetation or other animals, oblique views, low image quality and animals that appear in the far background and are thus too small to identify. Camera trap images, without an intelligent human photographer to select the framing and focus on the animals of interest, are of even poorer quality, with high rates of occlusion and high spatiotemporal similarity within image bursts. We employ an image filtering pipeline incorporating animal detection, species identification, viewpoint estimation, quality evaluation and temporal subsampling to compensate for these factors and obtain individual crops from camera trap and GGR images of suitable quality for re-ID. We then employ the local clusterings and their alternatives (LCA) algorithm, a hybrid computer vision and graph clustering method for animal re-ID, on the resulting high-quality crops. Our method processed images taken during GGR-16 and GGR-18 in Meru County, Kenya, into 4142 highly comparable annotations, requiring only 120 contrastive same-vs-different-individual decisions from a human reviewer to produce a population estimate of 349 individuals (within 4.6 of the ground truth count in Meru County). Our method also efficiently processed 8.9M unlabelled camera trap images from 70 camera traps at Mpala over 2 years into 685 encounters of 173 unique individuals, requiring only 331 contrastive decisions from a human reviewer.},
+  archive      = {J_IETCV},
+  author       = {Avirath Sundaresan and Jason Parham and Jonathan Crall and Rosemary Warungu and Timothy Muthami and Jackson Miliko and Margaret Mwangi and Jason Holmberg and Tanya Berger-Wolf and Daniel Rubenstein and Charles Stewart and Sara Beery},
+  doi          = {10.1049/cvi2.70027},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70027},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Adapting the re-ID challenge for static sensors},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Geometric edge modelling in self-supervised learning for enhanced indoor depth estimation. <em>IETCV</em>, <em>19</em>(1), e70026. (<a href='https://doi.org/10.1049/cvi2.70026'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, the accuracy of self-supervised deep learning models for indoor depth estimation has approached that of supervised models by improving the supervision in planar regions. However, a common issue with integrating multiple planar priors is the generation of oversmooth depth maps, leading to unrealistic and erroneous depth representations at edges. Despite the fact that edge pixels only cover a small part of the image, they are of high significance for downstream tasks such as visual odometry, where image features, essential for motion computation, are mostly located at edges. To improve erroneous depth predictions at edge regions, we delve into the self-supervised training process, identifying its limitations and using these insights to develop a geometric edge model. Building on this, we introduce a novel algorithm that utilises the smooth depth predictions of existing models and colour image data to accurately identify edge pixels. After finding the edge pixels, our approach generates targeted self-supervision in these zones by interpolating depth values from adjacent planar areas towards the edges. We integrate the proposed algorithms into a novel loss function that encourages neural networks to predict sharper and more accurate depth edges in indoor scenes. To validate our methodology, we incorporated the proposed edge-enhancing loss function into a state-of-the-art self-supervised depth estimation framework. Our results demonstrate a notable improvement in the accuracy of edge depth predictions and a 19% improvement in visual odometry when using our depth model to generate RGB-D input, compared to the baseline model.},
+  archive      = {J_IETCV},
+  author       = {Niclas Joswig and Laura Ruotsalainen},
+  doi          = {10.1049/cvi2.70026},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70026},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Geometric edge modelling in self-supervised learning for enhanced indoor depth estimation},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Tran-GCN: A transformer-enhanced graph convolutional network for person re-identification in monitoring videos. <em>IETCV</em>, <em>19</em>(1), e70025. (<a href='https://doi.org/10.1049/cvi2.70025'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Person re-identification (Re-ID) has gained popularity in computer vision, enabling cross-camera pedestrian recognition. Although the development of deep learning has provided a robust technical foundation for person Re-ID research, most existing person Re-ID methods overlook the potential relationships among local person features, failing to adequately address the impact of pedestrian pose variations and local body parts occlusion. Therefore, we propose a transformer-enhanced graph convolutional network (Tran-GCN) model to improve person re-identification performance in monitoring videos. The model comprises four key components: (1) a pose estimation learning branch is utilised to estimate pedestrian pose information and inherent skeletal structure data, extracting pedestrian key point information; (2) a transformer learning branch learns the global dependencies between fine-grained and semantically meaningful local person features; (3) a convolution learning branch uses the basic ResNet architecture to extract the person's fine-grained local features; and (4) a Graph convolutional module (GCM) integrates local feature information, global feature information and body information for more effective person identification after fusion. Quantitative and qualitative analysis experiments conducted on three different datasets (Market-1501, DukeMTMC-ReID and MSMT17) demonstrate that the Tran-GCN model can more accurately capture discriminative person features in monitoring videos, significantly improving identification accuracy.},
+  archive      = {J_IETCV},
+  author       = {Xiaobin Hong and Tarmizi Adam and Masitah Ghazali},
+  doi          = {10.1049/cvi2.70025},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70025},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Tran-GCN: A transformer-enhanced graph convolutional network for person re-identification in monitoring videos},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CNN-based flank predictor for quadruped animal species. <em>IETCV</em>, <em>19</em>(1), e70024. (<a href='https://doi.org/10.1049/cvi2.70024'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The bilateral asymmetry of flanks, where the sides of an animal with unique visual markings are independently patterned, complicates tasks such as individual identification. Automatically generating additional information on the visible side of the animal would improve the accuracy of individual identification. In this study, we used transfer learning on popular convolutional neural network (CNN) image classification architectures to train a flank predictor that predicted the visible flank of quadruped mammalian species in images. We automatically derived the data labels from existing datasets initially labelled for animal pose estimation. The developed models were evaluated across various scenarios involving unseen quadruped species in familiar and unfamiliar habitats. As a real-world scenario, we used a dataset of manually labelled Eurasian lynx ( Lynx lynx ) from camera traps in the Bavarian Forest National Park, Germany, to evaluate the model. The best model on data obtained in the field was trained on a MobileNetV2 architecture. It achieved an accuracy of 91.7% for the unseen/untrained species lynx in a complex unseen/untrained habitat with challenging light conditions. The developed flank predictor was designed to be embedded as a preprocessing step for automated analysis of camera trap datasets to enhance tasks such as individual identification.},
+  archive      = {J_IETCV},
+  author       = {Vanessa Suessle and Marco Heurich and Colleen T. Downs and Andreas Weinmann and Elke Hergenroether},
+  doi          = {10.1049/cvi2.70024},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70024},
+  shortjournal = {IET Comput. Vis.},
+  title        = {CNN-based flank predictor for quadruped animal species},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Texture-aware network for enhancing inner smoke representation in visual smoke density estimation. <em>IETCV</em>, <em>19</em>(1), e70023. (<a href='https://doi.org/10.1049/cvi2.70023'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Smoke often appears before visible flames in the early stages of fire disasters, making accurate pixel-wise detection essential for fire alarms. Although existing segmentation models effectively identify smoke pixels, they generally treat all pixels within a smoke region as having the same prior probability. This assumption of rigidity, common in natural object segmentation, fails to account for the inherent variability within smoke. We argue that pixels within smoke exhibit a probabilistic relationship with both smoke and background, necessitating density estimation to enhance the representation of internal structures within the smoke. To this end, we propose enhancements across the entire network. First, we improve the backbone by adaptively integrating scene information into texture features through separate paths, enabling smoke-tailored feature representation for further exploit. Second, we introduce a texture-aware head with long convolutional kernels to integrate both global and orientation-specific information, enhancing representation for intricate smoke structure. Third, we develop a dual-task decoder for simultaneous density and location recovery, with the frequency-domain alignment in the final stage to preserve internal smoke details. Extensive experiments on synthetic and real smoke datasets demonstrate the effectiveness of our approach. Specifically, comparisons with 17 models show the superiority of our method, with mean IoU improvements of 4.88%, 2.63%, and 3.17% on three test sets. (The code will be available on https://github.com/xia-xx-cv/TANet_smoke ).},
+  archive      = {J_IETCV},
+  author       = {Xue Xia and Yajing Peng and Zichen Li and Jinting Shi and Yuming Fang},
+  doi          = {10.1049/cvi2.70023},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70023},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Texture-aware network for enhancing inner smoke representation in visual smoke density estimation},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FastVDT: Fast transformer with optimised attention masks and positional encoding for visual dialogue. <em>IETCV</em>, <em>19</em>(1), e70022. (<a href='https://doi.org/10.1049/cvi2.70022'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The visual dialogue task requires computers to comprehend image content and preceding question-and-answer history to accurately answer related questions, with each round of dialogue providing the necessary historical context for subsequent interactions. Existing research typically processes multiple questions related to a single image as independent samples, which results in redundant modelling of the images and their captions and substantially increases computational costs. To address the challenges above, we introduce a fast transformer for visual dialogue, termed FastVDT, which utilises novel attention masks and continuous positional encoding. FastVDT models multiple image-related questions as an integrated entity, accurately processing prior conversation history in each dialogue round while predicting answers to multiple questions. Our method effectively captures the interrelations among questions and significantly reduces computational overhead. Experimental results demonstrate that our method delivers outstanding performance on the VisDial v0.9 and v1.0 datasets. FastVDT achieves comparable performance to VD-BERT and VU-BERT while reducing computational costs by 80% and 56%, respectively.},
+  archive      = {J_IETCV},
+  author       = {Qiangqiang He and Shuwei Qian and Chongjun Wang},
+  doi          = {10.1049/cvi2.70022},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70022},
+  shortjournal = {IET Comput. Vis.},
+  title        = {FastVDT: Fast transformer with optimised attention masks and positional encoding for visual dialogue},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). End-to-end cascaded image restoration and object detection for rain and fog conditions. <em>IETCV</em>, <em>19</em>(1), e70021. (<a href='https://doi.org/10.1049/cvi2.70021'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Adverse weather conditions in real-world scenarios can degrade the performance of deep learning-based object detection models. A commonly used approach is to apply image restoration before object detection to improve degraded images. However, there is no direct correlation between the visual quality of image restoration and the object detection accuracy. Furthermore, image restoration and object detection have potential conflicting objectives, making joint optimisation difficult. To address this, we propose an end-to-end object detection network specifically designed for rainy and foggy conditions. Our approach cascades an image restoration subnetwork with a detection subnetwork and optimises them jointly through a shared objective. Specifically, we introduce an expanded dilated convolution block and a weather attention block to enhance the effectiveness and robustness of the restoration network under various weather degradations. Additionally, we incorporate an auxiliary alignment branch with feature alignment loss to align the features of restored and clean images within the detection backbone, enabling joint optimisation of both subnetworks. A novel training strategy is also proposed to further improve object detection performance under rainy and foggy conditions. Extensive experiments on the vehicle-rain-fog, VOC-fog and real-world fog datasets demonstrate that our method outperforms recent state-of-the-art approaches in image restoration quality and detection accuracy. The code is available at https://github.com/HappyPessimism/RainFog-Restoration-Detection .},
+  archive      = {J_IETCV},
+  author       = {Peng Li and Jun Ni and Dapeng Tao},
+  doi          = {10.1049/cvi2.70021},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70021},
+  shortjournal = {IET Comput. Vis.},
+  title        = {End-to-end cascaded image restoration and object detection for rain and fog conditions},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The generated-bbox guided interactive image segmentation with vision transformers. <em>IETCV</em>, <em>19</em>(1), e70019. (<a href='https://doi.org/10.1049/cvi2.70019'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing click-based interactive image segmentation methods typically initiate object extraction with the first click and iteratively refine the coarse segmentation through subsequent interactions. Unlike box-based methods, click-based approaches mitigate ambiguity when multiple targets are present within a single bounding box, but suffer from a lack of precise location and outline information. Inspired by instance segmentation, the authors propose a Generated-bbox Guided method that provides location and outline information using an automatically generated bounding box, rather than a manually labelled one, minimising the need for extensive user interaction. Building on the success of vision transformers, the authors adopt them as the network architecture to enhance model's performance. A click-based interactive image segmentation network named the Generated-bbox Guided Coarse-to-Fine Network (GCFN) was proposed. GCFN is a two-stage cascade network comprising two sub-networks: Coarsenet and Finenet. A transformer-based Box Detector was introduced to generate an initial bounding box from a inside click, that can provide location and outline information. Additionally, two feature enhancement modules guided by foreground and background information: the Foreground-Background Feature Enhancement Module (FFEM) and the Pixel Enhancement Module (PEM) were designed. The authors evaluate the GCFN method on five popular benchmark datasets and demonstrate the generalisation capability on three medical image datasets.},
+  archive      = {J_IETCV},
+  author       = {Shiyin Zhang and Yafei Dong and Shuang Qiu},
+  doi          = {10.1049/cvi2.70019},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70019},
+  shortjournal = {IET Comput. Vis.},
+  title        = {The generated-bbox guided interactive image segmentation with vision transformers},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EDG-CDM: A new encoder-guided conditional diffusion model-based image synthesis method for limited data. <em>IETCV</em>, <em>19</em>(1), e70018. (<a href='https://doi.org/10.1049/cvi2.70018'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Diffusion Probabilistic Model (DM) has emerged as a powerful generative model in the field of image synthesis, capable of producing high-quality and realistic images. However, training DM requires a large and diverse dataset, which can be challenging to obtain. This limitation weakens the model's generalisation and robustness when training data is limited. To address this issue, EDG-CDM, an innovative encoder-guided conditional diffusion model was proposed for image synthesis with limited data. Firstly, the authors pre-train the encoder by introducing noise to capture the distribution of image features and generate the condition vector through contrastive learning and KL divergence. Next, the encoder undergoes further training with classification to integrate image class information, providing more favourable and versatile conditions for the diffusion model. Subsequently, the encoder is connected to the diffusion model, which is trained using all available data with encoder-provided conditions. Finally, the authors evaluate EDG-CDM on various public datasets with limited data, conducting extensive experiments and comparing our results with state-of-the-art methods using metrics such as Fréchet Inception Distance and Inception Score. Our experiments demonstrate that EDG-CDM outperforms existing models by consistently achieving the lowest FID scores and the highest IS scores, highlighting its effectiveness in generating high-quality and diverse images with limited training data. These results underscore the significance of EDG-CDM in advancing image synthesis techniques under data-constrained scenarios.},
+  archive      = {J_IETCV},
+  author       = {Haopeng Lei and Hao Yin and Kaijun Liang and Mingwen Wang and Jinshan Zeng and Guoliang Luo},
+  doi          = {10.1049/cvi2.70018},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70018},
+  shortjournal = {IET Comput. Vis.},
+  title        = {EDG-CDM: A new encoder-guided conditional diffusion model-based image synthesis method for limited data},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-attention fusion artistic radiance fields and beyond. <em>IETCV</em>, <em>19</em>(1), e70017. (<a href='https://doi.org/10.1049/cvi2.70017'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present MRF (multi-attention fusion artistic radiance fields), a novel approach to 3D scene stylisation that synthesises artistic rendering by integrating stylised 2D images with neural radiance fields. Our method effectively incorporates high-frequency stylistic elements from 2D artistic representations while maintaining geometric consistency across multiple viewpoints. To address the challenges of view-dependent stylisation coherence and semantic fidelity, we introduce two key components: (1) a multi-scale attention module (MAM) that facilitates hierarchical feature extraction and fusion across different spatial resolutions and (2) a CLIP-guided semantic consistency module that preserves the underlying scene structure during style transfer. Through extensive experimentation, we demonstrate that MRF achieves superior stylisation quality and detail preservation compared to state-of-the-art methods, particularly in capturing fine artistic details while maintaining view consistency. Our approach represents a significant advancement in neural rendering-based artistic stylisation of 3D scenes.},
+  archive      = {J_IETCV},
+  author       = {Qianru Chen and Yufan Zhou and Xintong Hou and Kunze Jiang and Jincheng Li and Chao Wu},
+  doi          = {10.1049/cvi2.70017},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70017},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Multi-attention fusion artistic radiance fields and beyond},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Angle metric learning for discriminative features on vehicle re-identification. <em>IETCV</em>, <em>19</em>(1), e70015. (<a href='https://doi.org/10.1049/cvi2.70015'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Vehicle re-identification (Re-ID) facilitates the recognition and distinction of vehicles based on their visual characteristics in images or videos. However, accurately identifying a vehicle poses great challenges due to (i) the pronounced intra-instance variations encountered under varying lighting conditions such as day and night and (ii) the subtle inter-instance differences observed among similar vehicles. To address these challenges, the authors propose A ngle M etric learning for D iscriminative F eatures on vehicle Re-ID (termed as AMDF), which aims to maximise the variance between visual features of different classes while minimising the variance within the same class. AMDF comprehensively measures the angle and distance discrepancies between features. First, to mitigate the impact of lighting conditions on intra-class variation, the authors employ CycleGAN to generate images that simulate consistent lighting (either day or night), thereby standardising the conditions for distance measurement. Second, Swin Transformer was integrated to help generate more detailed features. At last, a novel angle metric loss based on cosine distance is proposed, which organically integrates angular metric and 2-norm metric, effectively maximising the decision boundary in angular space. Extensive experimental evaluations on three public datasets including VERI-776, VERI-Wild, and VEHICLEID, indicate that the method achieves state-of-the-art performance. The code of this project is released at https://github.com/ZnCu-0906/AMDF .},
+  archive      = {J_IETCV},
+  author       = {Yutong Xie and Shuoqi Zhang and Lide Guo and Yuming Liu and Rukai Wei and Yanzhao Xie and Yangtao Wang and Maobin Tang and Lisheng Fan},
+  doi          = {10.1049/cvi2.70015},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e70015},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Angle metric learning for discriminative features on vehicle re-identification},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Temporal optimisation of satellite image-based crop mapping: A comparison of deep time series and semi-supervised time warping strategies. <em>IETCV</em>, <em>19</em>(1), e70014. (<a href='https://doi.org/10.1049/cvi2.70014'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study presents a novel approach to crop mapping using remotely sensed satellite images. It addresses the significant classification modelling challenges, including (1) the requirements for extensive labelled data and (2) the complex optimisation problem for selection of appropriate temporal windows in the absence of prior knowledge of cultivation calendars. We compare the lightweight Dynamic Time Warping (DTW) classification method with the heavily supervised Convolutional Neural Network - Long Short-Term Memory (CNN-LSTM) using high-resolution multispectral optical satellite imagery (3 m/pixel). Our approach integrates effective practical preprocessing steps, including data augmentation and a data-driven optimisation strategy for the temporal window, even in the presence of numerous crop classes. Our findings demonstrate that DTW, despite its lower data demands, can match the performance of CNN-LSTM through our effective preprocessing steps while significantly improving runtime. These results demonstrate that both CNN-LSTM and DTW can achieve deployment-level accuracy and underscore the potential of DTW as a viable alternative to more resource-intensive models. The results also prove the effectiveness of temporal windowing for improving runtime and accuracy of a crop classification study, even with no prior knowledge of planting timeframes.},
+  archive      = {J_IETCV},
+  author       = {Rosie Finnegan and Joseph Metcalfe and Sara Sharifzadeh and Fabio Caraffini and Xianghua Xie and Alberto Hornero and Nicholas W. Synes},
+  doi          = {10.1049/cvi2.70014},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e70014},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Temporal optimisation of satellite image-based crop mapping: A comparison of deep time series and semi-supervised time warping strategies},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Recent advances of continual learning in computer vision: An overview. <em>IETCV</em>, <em>19</em>(1), e70013. (<a href='https://doi.org/10.1049/cvi2.70013'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In contrast to batch learning where all training data is available at once, continual learning represents a family of methods that accumulate knowledge and learn continuously with data available in sequential order. Similar to the human learning process with the ability of learning, fusing and accumulating new knowledge acquired at different time steps, continual learning is considered to have high practical significance. Hence, continual learning has been studied in various artificial intelligence tasks. In this paper, we present a comprehensive review of the recent progress of continual learning in computer vision. In particular, the works are grouped by their representative techniques, including regularisation, knowledge distillation, memory, generative replay, parameter isolation and a combination of the above techniques. For each category of these techniques, both its characteristics and applications in computer vision are presented. At the end of this overview, several subareas, where continuous knowledge accumulation is potentially helpful while continual learning has not been well studied, are discussed.},
+  archive      = {J_IETCV},
+  author       = {Haoxuan Qu and Hossein Rahmani and Li Xu and Bryan Williams and Jun Liu},
+  doi          = {10.1049/cvi2.70013},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e70013},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Recent advances of continual learning in computer vision: An overview},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TAPCNet: Tactile-assisted point cloud completion network via iterative fusion strategy. <em>IETCV</em>, <em>19</em>(1), e70012. (<a href='https://doi.org/10.1049/cvi2.70012'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the development of the 3D point cloud field in recent years, point cloud completion of 3D objects has increasingly attracted researchers' attention. Point cloud data can accurately express the shape information of 3D objects at different resolutions, but the original point clouds collected directly by various 3D scanning equipment are often incomplete and have uneven density. Tactile is one distinctive way to perceive the 3D shape of an object. Tactile point clouds can provide local shape information for unknown areas during completion, which is a valuable complement to the point cloud data acquired with visual devices. In order to effectively improve the effect of point cloud completion using tactile information, the authors propose an innovative tactile-assisted point cloud completion network, TAPCNet. This network is the first neural network customised for the input of tactile point clouds and incomplete point clouds, which can fuse two types of point cloud information in the feature domain. Besides, a new dataset named 3DVT was rebuilt, to fit the proposed network model. Based on the tactile fusion strategy and related modules, multiple comparative experiments were conducted by controlling the quantity of tactile point clouds on the 3DVT dataset. The experimental data illustrates that TAPCNet can outperform the state-of-the-art methods in the benchmark.},
+  archive      = {J_IETCV},
+  author       = {Yangrong Liu and Jian Li and Huaiyu Wang and Ming Lu and Haorao Shen and Qin Wang},
+  doi          = {10.1049/cvi2.70012},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e70012},
+  shortjournal = {IET Comput. Vis.},
+  title        = {TAPCNet: Tactile-assisted point cloud completion network via iterative fusion strategy},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Crafting transferable adversarial examples against 3D object detection. <em>IETCV</em>, <em>19</em>(1), e70011. (<a href='https://doi.org/10.1049/cvi2.70011'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {3D object detection is one of the current popular hotspots by perceiving the surrounding environment through LiDAR and camera sensors to recognise the category and location of objects in the scene. Deep neural networks (DNNs) have been found to be vulnerable to adversarial examples. Although some approaches have begun to investigate the robustness of 3D object detection models, they are currently generating adversarial examples in a white-box setting and there is a lack of research into generating transferable adversarial examples in a black-box setting. In this paper, a non-end-to-end attack algorithm was proposed for LiDAR pipelines that crafts transferable adversarial examples against 3D object detection. Specifically, the method generates adversarial examples by restraining features with high contribution to downstream tasks and amplifying features with low contribution to downstream tasks in the feature space. Extensive experiments validate that the method produces more transferable adversarial point clouds, for example, the method generates adversarial point clouds in the nuScenes dataset that are about 10 and 7 better than the state-of-the-art method on mAP and NDS, respectively.},
+  archive      = {J_IETCV},
+  author       = {Haiyan Long and Hai Chen and Mengyao Xu and Chonghao Zhang and Fulan Qian},
+  doi          = {10.1049/cvi2.70011},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e70011},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Crafting transferable adversarial examples against 3D object detection},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A review of multi-object tracking in recent times. <em>IETCV</em>, <em>19</em>(1), e70010. (<a href='https://doi.org/10.1049/cvi2.70010'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-object tracking (MOT) is a fundamental problem in computer vision that involves tracing the trajectories of foreground targets throughout a video sequence while establishing correspondences for identical objects across frames. With the advancement of deep learning techniques, methods based on deep learning have significantly improved accuracy and efficiency in MOT. This paper reviews several recent deep learning-based MOT methods and categorises them into three main groups: detection-based, single-object tracking (SOT)-based, and segmentation-based methods, according to their core technologies. Additionally, this paper discusses the metrics and datasets used for evaluating MOT performance, the challenges faced in the field, and future directions for research.},
+  archive      = {J_IETCV},
+  author       = {Suya Li and Hengyi Ren and Xin Xie and Ying Cao},
+  doi          = {10.1049/cvi2.70010},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e70010},
+  shortjournal = {IET Comput. Vis.},
+  title        = {A review of multi-object tracking in recent times},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Foundation model based camouflaged object detection. <em>IETCV</em>, <em>19</em>(1), e70009. (<a href='https://doi.org/10.1049/cvi2.70009'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Camouflaged object detection (COD) aims to identify and segment objects that closely resemble and are seamlessly integrated into their surrounding environments, making it a challenging task in computer vision. COD is constrained by the limited availability of training data and annotated samples, and most carefully designed COD models exhibit diminished performance under low-data conditions. In recent years, there has been increasing interest in leveraging foundation models, which have demonstrated robust general capabilities and superior generalisation performance, to address COD challenges. This work proposes a knowledge-guided domain adaptation (KGDA) approach to tackle the data scarcity problem in COD. The method utilises the knowledge descriptions generated by multimodal large language models (MLLMs) for camouflaged images, aiming to enhance the model's comprehension of semantic objects and camouflaged scenes through highly abstract and generalised knowledge representations. To resolve ambiguities and errors in the generated text descriptions, a multi-level knowledge aggregation (MLKG) module is devised. This module consolidates consistent semantic knowledge and forms multi-level semantic knowledge features. To incorporate semantic knowledge into the visual foundation model, the authors introduce a knowledge-guided semantic enhancement adaptor (KSEA) that integrates the semantic knowledge of camouflaged objects while preserving the original knowledge of the foundation model. Extensive experiments demonstrate that our method surpasses 19 state-of-the-art approaches and exhibits strong generalisation capabilities even with limited annotated data.},
+  archive      = {J_IETCV},
+  author       = {Zefeng Chen and Zhijiang Li and Yunqi Xue and Li Zhang},
+  doi          = {10.1049/cvi2.70009},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e70009},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Foundation model based camouflaged object detection},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Generating transferable adversarial point clouds via autoencoders for 3D object classification. <em>IETCV</em>, <em>19</em>(1), e70008. (<a href='https://doi.org/10.1049/cvi2.70008'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent studies have shown that deep neural networks are vulnerable to adversarial attacks. In the field of 3D point cloud classification, transfer-based black-box attack strategies have been explored to address the challenge of limited knowledge about the model in practical scenarios. However, existing approaches typically rely excessively on network structure, resulting in poor transferability of the generated adversarial examples. To address the above problem, the authors propose AEattack , an adversarial attack method capable of generating highly transferable adversarial examples. Specifically, AEattack employs an autoencoder (AE) to extract features from the point cloud data and reconstruct the adversarial point cloud based on these features. Notably, the AE does not require pre-training, and its parameters are jointly optimised using a loss function during the process of generating adversarial point clouds. The method makes the generated adversarial point cloud not overly dependent on the network structure, but more concerned with the data distribution. Moreover, this design endows AEattack with a broader potential for application. Extensive experiments on the ModelNet40 dataset show that AEattack is capable of generating highly transferable adversarial point clouds, with up to 61.8% improvement in transferability compared to state-of-the-art adversarial attacks.},
+  archive      = {J_IETCV},
+  author       = {Mengyao Xu and Hai Chen and Chonghao Zhang and Yuanjun Zou and Chenchu Xu and Yanping Zhang and Fulan Qian},
+  doi          = {10.1049/cvi2.70008},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e70008},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Generating transferable adversarial point clouds via autoencoders for 3D object classification},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A new large-scale dataset for marine vessel re-identification based on swin transformer network in ocean surveillance scenario. <em>IETCV</em>, <em>19</em>(1), e70007. (<a href='https://doi.org/10.1049/cvi2.70007'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, there has been an upward trend that marine vessels, an important object category in marine monitoring, have gradually become a research focal point in the field of computer vision, such as detection, tracking, and classification. Among them, marine vessel re-identification (Re-ID) emerges as a significant frontier research topics, which not only faces the dual challenge of huge intra-class and small inter-class differences, but also has complex environmental interference in the port monitoring scenarios. To propel advancements in marine vessel Re-ID technology, SwinTransReID, a framework grounded in the Swin Transformer for marine vessel Re-ID, is introduced. Specifically, the project initially encodes the triplet images separately as a sequence of blocks and construct a baseline model leveraging the Swin Transformer, achieving better performance on the Re-ID benchmark dataset in comparison to convolution neural network (CNN)-based approaches. And it introduces side information embedding (SIE) to further enhance the robust feature-learning capabilities of Swin Transformer, thus, integrating non-visual cues (orientation and type of vessel) and other auxiliary information (hull colour) through the insertion of learnable embedding modules. Additionally, the project presents VesselReID-1656, the first annotated large-scale benchmark dataset for vessel Re-ID in real-world ocean surveillance, comprising 135,866 images of 1656 vessels along with 5 orientations, 12 types, and 17 colours. The proposed method achieves 87.1 mAP and 96.1 Rank-1 accuracy on the newly-labelled challenging dataset, which surpasses the state-of-the-art (SOTA) method by 1.9 mAP regarding to performance. Moreover, extensive empirical results demonstrate the superiority of the proposed SwinTransReID on the person Market-1501 dataset, vehicle VeRi-776 dataset, and Boat Re-ID vessel dataset.},
+  archive      = {J_IETCV},
+  author       = {Zhi Lu and Liguo Sun and Pin Lv and Jiuwu Hao and Bo Tang and Xuanzhen Chen},
+  doi          = {10.1049/cvi2.70007},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e70007},
+  shortjournal = {IET Comput. Vis.},
+  title        = {A new large-scale dataset for marine vessel re-identification based on swin transformer network in ocean surveillance scenario},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Performance of computer vision algorithms for fine-grained classification using crowdsourced insect images. <em>IETCV</em>, <em>19</em>(1), e70006. (<a href='https://doi.org/10.1049/cvi2.70006'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With fine-grained classification, we identify unique characteristics to distinguish among classes of the same super-class. We are focusing on species recognition in Insecta as they are critical for biodiversity monitoring and at the base of many ecosystems. With citizen science campaigns, billions of images are collected in the wild. Once these are labelled, experts can use them to create distribution maps. However, the labelling process is time consuming, which is where computer vision comes in. The field of computer vision offers a wide range of algorithms, each with its strengths and weaknesses; how do we identify the algorithm that is in line with our application? To answer this question, we provide a full and detailed evaluation of nine algorithms among deep convolutional networks (CNN), vision transformers (ViT) and locality-based vision transformers (LBVT) on 4 different aspects: classification performance, embedding quality, computational cost and gradient activity. We offer insights that we have not yet had in this domain proving to which extent these algorithms solve the fine-grained tasks in Insecta. We found that ViT performs the best on inference speed and computational cost, whereas LBVT outperforms the others on performance and embedding quality; the CNN provide a trade-off among the metrics.},
+  archive      = {J_IETCV},
+  author       = {Rita Pucci and Vincent J. Kalkman and Dan Stowell},
+  doi          = {10.1049/cvi2.70006},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e70006},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Performance of computer vision algorithms for fine-grained classification using crowdsourced insect images},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Feature-level compensation and alignment for visible-infrared person re-identification. <em>IETCV</em>, <em>19</em>(1), e70005. (<a href='https://doi.org/10.1049/cvi2.70005'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Visible-infrared person re-identification (VI-ReID) aims to match pedestrian images captured by nonoverlapping visible and infrared cameras. Most existing compensation-based methods try to generate images of missing modality from the other ones. However, the generated images often fail to possess enough quality due to severe discrepancies between different modalities. Moreover, it is generally assumed that person images are roughly aligned during the extraction of part-based local features. However, this does not always hold true, typically when they are cropped via inaccurate pedestrian detectors. To alleviate such problems, the authors propose a novel feature-level compensation and alignment network (FCA-Net) for VI-ReID in this paper, which tries to compensate for the missing modality information on the channel-level and align part-based local features. Specifically, the visible and infrared features of low-level subnetworks are first processed by a channel feature compensation (CFC) module, which enforces the network to learn consistent distribution patterns of channel features, and thereby the cross-modality discrepancy is narrowed. To address spatial misalignment, a pairwise relation module (PRM) is introduced to incorporate human structural information into part-based local features, which can significantly enhance the feature discrimination power. Besides, a cross-modality part alignment loss (CPAL) is designed on the basis of a dynamic part matching algorithm, which can promote more accurate local matching. Extensive experiments on three standard VI-ReID datasets are conducted to validate the effectiveness of the proposed method, and the results show that state-of-the-art performance is achieved.},
+  archive      = {J_IETCV},
+  author       = {Husheng Dong and Ping Lu and Yuanfeng Yang and Xun Sun},
+  doi          = {10.1049/cvi2.70005},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e70005},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Feature-level compensation and alignment for visible-infrared person re-identification},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Advancements in smart agriculture: A systematic literature review on state-of-the-art plant disease detection with computer vision. <em>IETCV</em>, <em>19</em>(1), e70004. (<a href='https://doi.org/10.1049/cvi2.70004'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In an era of rapid digital transformation, ensuring sustainable and traceable food production is more crucial than ever. Plant diseases, a major threat to agriculture, lead to significant losses in crops and financial damage. Standard techniques for detecting diseases, though widespread, are lengthy and intensive work, especially in extensive agricultural settings. This systematic literature review examines the cutting-edge technologies in smart agriculture specifically computer vision, robotics, deep learning (DL), and Internet of Things (IoT) that are reshaping plant disease detection and management. By analysing 198 studies published between 2021 and 2023, from an initial pool of 19,838 papers, the authors reveal the dominance of DL, particularly with datasets such as PlantVillage, and highlight critical challenges, including dataset limitations, lack of geographical diversity, and the scarcity of real-world field data. Moreover, the authors explore the promising role of IoT, robotics, and drones in enhancing early disease detection, although the high costs and technological gaps present significant barriers for small-scale farmers, especially in developing countries. Through the preferred reporting items for systematic reviews and meta-analyses methodology, this review synthesises these findings, identifying key trends, uncovering research gaps, and offering actionable insights for the future of plant disease management in smart agriculture.},
+  archive      = {J_IETCV},
+  author       = {Esra Yilmaz and Sevim Ceylan Bocekci and Cengiz Safak and Kazim Yildiz},
+  doi          = {10.1049/cvi2.70004},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e70004},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Advancements in smart agriculture: A systematic literature review on state-of-the-art plant disease detection with computer vision},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Human activity recognition: A review of deep learning-based methods. <em>IETCV</em>, <em>19</em>(1), e70003. (<a href='https://doi.org/10.1049/cvi2.70003'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Human Activity Recognition (HAR) covers methods for automatically identifying human activities from a stream of data. End-users of HAR methods cover a range of sectors, including health, self-care, amusement, safety and monitoring. In this survey, the authors provide a thorough overview of deep learning based and detailed analysis of work that was performed between 2018 and 2023 in a variety of fields related to HAR with a focus on device-free solutions. It also presents the categorisation and taxonomy of the covered publication and an overview of publicly available datasets. To complete this review, the limitations of existing approaches and potential future research directions are discussed.},
+  archive      = {J_IETCV},
+  author       = {Sanjay Jyoti Dutta and Tossapon Boongoen and Reyer Zwiggelaar},
+  doi          = {10.1049/cvi2.70003},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e70003},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Human activity recognition: A review of deep learning-based methods},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Controlling semantics of diffusion-augmented data for unsupervised domain adaptation. <em>IETCV</em>, <em>19</em>(1), e70002. (<a href='https://doi.org/10.1049/cvi2.70002'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unsupervised domain adaptation (UDA) offers a compelling solution to bridge the gap between labelled synthetic data and unlabelled real-world data for training semantic segmentation models, given the high costs associated with manual annotation. However, the visual differences between the synthetic and real images pose significant challenges to their practical applications. This work addresses these challenges through synthetic-to-real style transfer leveraging diffusion models. The authors’ proposal incorporates semantic controllers to guide the diffusion process and low-rank adaptations (LoRAs) to ensure that style-transferred images align with real-world aesthetics while preserving semantic layout. Moreover, the authors introduce quality metrics to rank the utility of generated images, enabling the selective use of high-quality images for training. To further enhance reliability, the authors propose a novel loss function that mitigates artefacts from the style transfer process by incorporating only pixels aligned with the original semantic labels. Experimental results demonstrate that the authors’ proposal outperforms selected state-of-the-art methods for image generation and UDA training, achieving optimal performance even with a smaller set of high-quality generated images. The authors’ code and models are available at http://www-vpu.eps.uam.es/ControllingSem4UDA/ .},
+  archive      = {J_IETCV},
+  author       = {Henrietta Ridley and Roberto Alcover-Couso and Juan C. SanMiguel},
+  doi          = {10.1049/cvi2.70002},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e70002},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Controlling semantics of diffusion-augmented data for unsupervised domain adaptation},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TomoSAR 3D reconstruction: Cascading adversarial strategy with sparse observation trajectory. <em>IETCV</em>, <em>19</em>(1), e70001. (<a href='https://doi.org/10.1049/cvi2.70001'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Synthetic aperture radar tomography (TomoSAR) has shown significant potential for the 3D Reconstruction of buildings, especially in critical areas such as topographic mapping, urban planning, and disaster monitoring. In practical applications, the constraints of observation trajectories frequently lead to the acquisition of a limited dataset of sparse SAR images, presenting challenges for TomoSAR 3D Reconstruction and affecting its signal-to-noise ratio and elevation resolution performance. The study introduces a cascade adversarial strategy based on the Conditional Generative Adversarial Network (CGAN), optimised explicitly for sparse observation trajectories. In the preliminary phase of the CGAN, the U-Net architecture was employed to capture more global information and enhance image detail recovery capability, which is subsequently utilised in the cascade refinement network. The ResNet34 residual network in the advanced network stage was adopted to bolster feature extraction and image generation capabilities further. Based on experimental validation performed on the curated TomoSAR 3D super-resolution dataset tailored for buildings, the findings reveal that the methodology yields a notable enhancement in image quality and accuracy compared to other techniques.},
+  archive      = {J_IETCV},
+  author       = {Xian Zhu and Xiaoqin Zeng and Yuhua Cong and Yanhao Huang and Ziyan Zhu and Yantao Luo},
+  doi          = {10.1049/cvi2.70001},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e70001},
+  shortjournal = {IET Comput. Vis.},
+  title        = {TomoSAR 3D reconstruction: Cascading adversarial strategy with sparse observation trajectory},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A principal direction-guided local voxelisation structural feature approach for point cloud registration. <em>IETCV</em>, <em>19</em>(1), e70000. (<a href='https://doi.org/10.1049/cvi2.70000'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Point cloud registration is a crucial aspect of computer vision and 3D reconstruction. Traditional registration methods often depend on global features or iterative optimisation, leading to inefficiencies and imprecise outcomes when processing complex scene point cloud data. To address these challenges, the authors introduce a principal direction-guided local voxelisation structural feature (PDLVSF) approach for point cloud registration. This method reliably identifies feature points regardless of initial positioning. Approach begins with the 3D Harris algorithm to extract feature points, followed by determining the principal direction within the feature points' radius neighbourhood to ensure rotational invariance. For scale invariance, voxel grid normalisation is utilised to maximise the point cloud's geometric resolution and make it scale-independent. Cosine similarity is then employed for effective feature matching, identifying corresponding feature point pairs and determining transformation parameters between point clouds. Experimental validations on various datasets, including the real terrain dataset, demonstrate the effectiveness of our method. Results indicate superior performance in root mean square error (RMSE) and registration accuracy compared to state-of-the-art methods, particularly in scenarios with high noise, limited overlap, and significant initial pose rotation. The real terrain dataset is publicly available at https://github.com/black-2000/Real-terrain-data .},
+  archive      = {J_IETCV},
+  author       = {Chenyang Li and Yansong Duan},
+  doi          = {10.1049/cvi2.70000},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e70000},
+  shortjournal = {IET Comput. Vis.},
+  title        = {A principal direction-guided local voxelisation structural feature approach for point cloud registration},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Egocentric action anticipation from untrimmed videos. <em>IETCV</em>, <em>19</em>(1), e12342. (<a href='https://doi.org/10.1049/cvi2.12342'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Egocentric action anticipation involves predicting future actions performed by the camera wearer from egocentric video. Although the task has recently gained attention in the research community, current approaches often assume that input videos are ‘trimmed’, meaning that a short video sequence is sampled a fixed time before the beginning of the action. However, trimmed action anticipation has limited applicability in real-world scenarios, where it is crucial to deal with ‘untrimmed’ video inputs and the exact moment of action initiation cannot be assumed at test time. To address these limitations, an untrimmed action anticipation task is proposed, which, akin to temporal action detection, assumes that the input video is untrimmed at test time, while still requiring predictions to be made before actions take place. The authors introduce a benchmark evaluation procedure for methods designed to address this novel task and compare several baselines on the EPIC-KITCHENS-100 dataset. Through our experimental evaluation, testing a variety of models, the authors aim to better understand their performance in untrimmed action anticipation. Our results reveal that the performance of current models designed for trimmed action anticipation is limited, emphasising the need for further research in this area.},
+  archive      = {J_IETCV},
+  author       = {Ivan Rodin and Antonino Furnari and Giovanni Maria Farinella},
+  doi          = {10.1049/cvi2.12342},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12342},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Egocentric action anticipation from untrimmed videos},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). NBCDC-YOLOv8: A new framework to improve blood cell detection and classification based on YOLOv8. <em>IETCV</em>, <em>19</em>(1), e12341. (<a href='https://doi.org/10.1049/cvi2.12341'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, computer technology has successfully permeated all areas of medicine and its management, and it now offers doctors an accurate and rapid means of diagnosis. Existing blood cell detection methods suffer from low accuracy, which is caused by the uneven distribution, high density, and mutual occlusion of different blood cell types in blood microscope images, this article introduces NBCDC-YOLOv8: a new framework to improve blood cell detection and classification based on YOLOv8. Our framework innovates on several fronts: it uses Mosaic data augmentation to enrich the dataset and add small targets, incorporates a space to depth convolution (SPD-Conv) tailored for cells that are small and have low resolution, and introduces the Multi-Separated and Enhancement Attention Module (MultiSEAM) to enhance feature map resolution. Additionally, it integrates a bidirectional feature pyramid network (BiFPN) for effective multi-scale feature fusion and includes four detection heads to improve recognition accuracy of various cell sizes, especially small target platelets. Evaluated on the Blood Cell Classification Dataset (BCCD), NBCDC-YOLOv8 obtains a mean average precision (mAP) of 94.7%, and thus surpasses the original YOLOv8n by 2.3%.},
+  archive      = {J_IETCV},
+  author       = {Xuan Chen and Linxuan Li and Xiaoyu Liu and Fengjuan Yin and Xue Liu and Xiaoxiao Zhu and Yufeng Wang and Fanbin Meng},
+  doi          = {10.1049/cvi2.12341},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12341},
+  shortjournal = {IET Comput. Vis.},
+  title        = {NBCDC-YOLOv8: A new framework to improve blood cell detection and classification based on YOLOv8},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A robust few-shot classifier with image as set of points. <em>IETCV</em>, <em>19</em>(1), e12340. (<a href='https://doi.org/10.1049/cvi2.12340'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, many few-shot classification methods have been proposed. However, only a few of them have explored robust classification, which is an important aspect of human visual intelligence. Humans can effortlessly recognise visual patterns, including lines, circles, and even characters, from image data that has been corrupted or degraded. In this paper, the authors investigate a robust classification method that extends the classical paradigm of robust geometric model fitting. The method views an image as a set of points in a low-dimensional space and analyses each image through low-dimensional geometric model fitting. In contrast, the majority of other methods, such as deep learning methods, treat an image as a single point in a high-dimensional space. The authors evaluate the performance of the method using a noisy Omniglot dataset. The experimental results demonstrate that the proposed method is significantly more robust than other methods. The source code and data for this paper are available at https://github.com/pengsuhua/PMF_OMNIGLOT .},
+  archive      = {J_IETCV},
+  author       = {Suhua Peng and Zongliang Zhang and Xingwang Huang and Zongyue Wang and Shubing Su and Guorong Cai},
+  doi          = {10.1049/cvi2.12340},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12340},
+  shortjournal = {IET Comput. Vis.},
+  title        = {A robust few-shot classifier with image as set of points},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SMGNFORMER: Fusion mamba-graph transformer network for human pose estimation. <em>IETCV</em>, <em>19</em>(1), e12339. (<a href='https://doi.org/10.1049/cvi2.12339'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the field of 3D human pose estimation (HPE), many deep learning algorithms overlook the topological relationships between 2D keypoints, resulting in imprecise regression of 3D coordinates and a notable decline in estimation performance. To address this limitation, this paper proposes a novel approach to 3D HPE, termed the Spatial Mamba Graph Convolutional Neural Network (GCN) Former (SMGNFormer). The proposed method utilises the Mamba architecture to extract spatial information from 2D keypoints and integrates GCNs with multi-head attention mechanisms to build a relational graph of 2D keypoints across a global receptive field. The outputs are subsequently processed by a Time-Frequency Feature Fusion Transformer to estimate 3D human poses. SMGNFormer demonstrates superior estimation performance on the Human3.6M dataset and real-world video data compared to most Transformer-based algorithms. Moreover, the proposed method achieves a training speed comparable to PoseFormerv2, providing a clear advantage over other methods in its category.},
+  archive      = {J_IETCV},
+  author       = {Yi Li and Zan Wang and Weiran Niu},
+  doi          = {10.1049/cvi2.12339},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12339},
+  shortjournal = {IET Comput. Vis.},
+  title        = {SMGNFORMER: Fusion mamba-graph transformer network for human pose estimation},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LLFormer4D: LiDAR-based lane detection method by temporal feature fusion and sparse transformer. <em>IETCV</em>, <em>19</em>(1), e12338. (<a href='https://doi.org/10.1049/cvi2.12338'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Lane detection is a fundamental problem in autonomous driving, which provides vehicles with essential road information. Despite the attention from scholars and engineers, lane detection based on LiDAR meets challenges such as unsatisfactory detection accuracy and significant computation overhead. In this paper, the authors propose LLFormer4D to overcome these technical challenges by leveraging the strengths of both Convolutional Neural Network and Transformer networks. Specifically, the Temporal Feature Fusion module is introduced to enhance accuracy and robustness by integrating features from multi-frame point clouds. In addition, a sparse Transformer decoder based on Lane Key-point Query is designed, which introduces key-point supervision for each lane line to streamline the post-processing. The authors conduct experiments and evaluate the proposed method on the K-Lane and nuScenes map datasets respectively. The results demonstrate the effectiveness of the presented method, achieving second place with an F1 score of 82.39 and a processing speed of 16.03 Frames Per Seconds on the K-Lane dataset. Furthermore, this algorithm attains the best mAP of 70.66 for lane detection on the nuScenes map dataset.},
+  archive      = {J_IETCV},
+  author       = {Jun Hu and Chaolu Feng and Haoxiang Jie and Zuotao Ning and Xinyi Zuo and Wei Liu and Xiangyu Wei},
+  doi          = {10.1049/cvi2.12338},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12338},
+  shortjournal = {IET Comput. Vis.},
+  title        = {LLFormer4D: LiDAR-based lane detection method by temporal feature fusion and sparse transformer},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Re-identification of patterned animals by multi-image feature aggregation and geometric similarity. <em>IETCV</em>, <em>19</em>(1), e12337. (<a href='https://doi.org/10.1049/cvi2.12337'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Image-based re-identification of animal individuals allows gathering of information such as population size and migration patterns of the animals over time. This, together with large image volumes collected using camera traps and crowdsourcing, opens novel possibilities to study animal populations. For many species, the re-identification can be done by analysing the permanent fur, feather, or skin patterns that are unique to each individual. In this paper, the authors study pattern feature aggregation based re-identification and consider two ways of improving accuracy: (1) aggregating pattern image features over multiple images and (2) combining the pattern appearance similarity obtained by feature aggregation and geometric pattern similarity. Aggregation over multiple database images of the same individual allows to obtain more comprehensive and robust descriptors while reducing the computation time. On the other hand, combining the two similarity measures allows to efficiently utilise both the local and global pattern features, providing a general re-identification approach that can be applied to a wide variety of different pattern types. In the experimental part of the work, the authors demonstrate that the proposed method achieves promising re-identification accuracies for Saimaa ringed seals and whale sharks without species-specific training or fine-tuning.},
+  archive      = {J_IETCV},
+  author       = {Ekaterina Nepovinnykh and Veikka Immonen and Tuomas Eerola and Charles V. Stewart and Heikki Kälviäinen},
+  doi          = {10.1049/cvi2.12337},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12337},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Re-identification of patterned animals by multi-image feature aggregation and geometric similarity},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MMF-net: A novel multi-feature and multi-level fusion network for 3D human pose estimation. <em>IETCV</em>, <em>19</em>(1), e12336. (<a href='https://doi.org/10.1049/cvi2.12336'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Human pose estimation based on monocular video has always been the focus of research in the human computer interaction community, which suffers mainly from depth ambiguity and self-occlusion challenges. While the recently proposed learning-based approaches have demonstrated promising performance, they do not fully explore the complementarity of features. In this paper, the authors propose a novel multi-feature and multi-level fusion network (MMF-Net), which extracts and combines joint features, bone features and trajectory features at multiple levels to estimate 3D human pose. In MMF-Net, firstly, the bone length estimation module and the trajectory multi-level fusion module are used to extract the geometric size information of the human body and multi-level trajectory information of human motion, respectively. Then, the fusion attention-based combination (FABC) module is used to extract multi-level topological structure information of the human body, and effectively fuse topological structure information, geometric size information and trajectory information. Extensive experiments show that MMF-Net achieves competitive results on Human3.6M, HumanEva-I and MPI-INF-3DHP datasets.},
+  archive      = {J_IETCV},
+  author       = {Qianxing Li and Dehui Kong and Jinghua Li and Baocai Yin},
+  doi          = {10.1049/cvi2.12336},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12336},
+  shortjournal = {IET Comput. Vis.},
+  title        = {MMF-net: A novel multi-feature and multi-level fusion network for 3D human pose estimation},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Unlocking the power of multi-modal fusion in 3D object tracking. <em>IETCV</em>, <em>19</em>(1), e12335. (<a href='https://doi.org/10.1049/cvi2.12335'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {3D Single Object Tracking plays a vital role in autonomous driving and robotics, yet traditional approaches have predominantly focused on using pure LiDAR-based point cloud data, often neglecting the benefits of integrating image modalities. To address this gap, we propose a novel Multi-modal Image-LiDAR Tracker (MILT) designed to overcome the limitations of single-modality methods by effectively combining RGB and point cloud data. Our key contribution is a dual-branch architecture that separately extracts geometric features from LiDAR and texture features from images. These features are then fused in a BEV perspective to achieve a comprehensive representation of the tracked object. A significant innovation in our approach is the Image-to-LiDAR Adapter module, which transfers the rich feature representation capabilities of the image modality to the 3D tracking task, and the BEV-Fusion module, which facilitates the interactive fusion of geometry and texture features. By validating MILT on public datasets, we demonstrate substantial performance improvements over traditional methods, effectively showcasing the advantages of our multi-modal fusion strategy. This work advances the state-of-the-art in SOT by integrating complementary information from RGB and LiDAR modalities, resulting in enhanced tracking accuracy and robustness.},
+  archive      = {J_IETCV},
+  author       = {Yue Hu},
+  doi          = {10.1049/cvi2.12335},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12335},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Unlocking the power of multi-modal fusion in 3D object tracking},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Semantic segmentation of urban airborne LiDAR data of varying landcover diversity using XGBoost. <em>IETCV</em>, <em>19</em>(1), e12334. (<a href='https://doi.org/10.1049/cvi2.12334'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Semantic segmentation of aerial LiDAR dataset is a crucial step for accurate identification of urban objects for various applications pertaining to sustainable urban development. However, this task becomes more complex in urban areas characterised by the coexistence of modern developments and natural vegetation. The unstructured nature of point cloud data, along with data sparsity, irregular point distribution, and varying sizes of urban objects, presents challenges in point cloud classification. To address these challenges, development of robust algorithmic approach encompassing efficient feature sets and classification model are essential. This study incorporates point-wise features to capture the local spatial context of points in datasets. Furthermore, an ensemble machine learning model based on extreme boosting is utilised, which integrates sequential training for weak learners, to enhance the model’s resilience. To thoroughly investigate the efficacy of the proposed approach, this study utilises three distinct datasets from diverse geographical locations, each presenting unique challenges related to class distribution, 3D terrain intricacies, and geographical variations. The Land-cover Diversity Index is introduced to quantify the complexity of landcover in 3D by measuring the degree of class heterogeneity and the frequency of class variation in the dataset. The proposed approach achieved an accuracy of 90% on the regionally complex, higher landcover diversity dataset, Trivandrum Aerial LiDAR Dataset. Furthermore, the results of the study demonstrate improved overall predictive accuracy of 91% and 87% on data segments from two benchmark datasets, DALES and Vaihingen 3D.},
+  archive      = {J_IETCV},
+  author       = {Jayati Vijaywargiya and Anandakumar M. Ramiya},
+  doi          = {10.1049/cvi2.12334},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12334},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Semantic segmentation of urban airborne LiDAR data of varying landcover diversity using XGBoost},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Autoencoder-based unsupervised one-class learning for abnormal activity detection in egocentric videos. <em>IETCV</em>, <em>19</em>(1), e12333. (<a href='https://doi.org/10.1049/cvi2.12333'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, abnormal human activity detection has become an important research topic. However, most existing methods focus on detecting abnormal activities of pedestrians in surveillance videos; even those methods using egocentric videos deal with the activities of pedestrians around the camera wearer. In this paper, the authors present an unsupervised auto-encoder-based network trained by one-class learning that inputs RGB image sequences recorded by egocentric cameras to detect abnormal activities of the camera wearers themselves. To improve the performance of network, the authors introduce a ‘re-encoding’ architecture and a regularisation loss function term, minimising the KL divergence between the distributions of features extracted by the first and second encoders. Unlike the common use of KL divergence loss to obtain a feature distribution close to an already-known distribution, the aim is to encourage the features extracted by the second encoder to have a close distribution to those extracted from the first encoder. The authors evaluate the proposed method on the Epic-Kitchens-55 dataset and conduct an ablation study to analyse the functions of different components. Experimental results demonstrate that the method outperforms the comparison methods in all cases and demonstrate the effectiveness of the proposed re-encoding architecture and the regularisation term.},
+  archive      = {J_IETCV},
+  author       = {Haowen Hu and Ryo Hachiuma and Hideo Saito},
+  doi          = {10.1049/cvi2.12333},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12333},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Autoencoder-based unsupervised one-class learning for abnormal activity detection in egocentric videos},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Weakly supervised bounding-box generation for camera-trap image based animal detection. <em>IETCV</em>, <em>19</em>(1), e12332. (<a href='https://doi.org/10.1049/cvi2.12332'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In ecology, deep learning is improving the performance of camera-trap image based wild animal analysis. However, high labelling cost becomes a big challenge, as it requires involvement of huge human annotation. For example, the Snapshot Serengeti (SS) dataset contains over 900,000 images, while only 322,653 contains valid animals, 68,000 volunteers were recruited to provide image level labels such as species, the no. of animals and five behaviour attributes such as standing, resting and moving etc. In contrast, the Gold Standard SS Bounding-Box Coordinates (GSBBC for short) contains only 4011 images for training of object detection algorithms, as the annotation of bounding-box for animals in the image, is much more costive. Such a no. of training images, is obviously insufficient. To address this, the authors propose a method to generate bounding-boxes for a larger dataset using limited manually labelled images. To achieve this, the authors first train a wild animal detector using a small dataset (e.g. GSBBC) that is manually labelled to locate animals in images; then apply this detector to a bigger dataset (e.g. SS) for bounding-box generation; finally, we remove false detections according to the existing label information of the images. Experiments show that detector trained with images whose bounding-boxes are generated using the proposal, outperformed the existing camera-trap image based animal detection, in terms of mean average precision (mAP). Compared with the traditional data augmentation method, our method improved the mAP by 21.3% and 44.9% for rare species, also alleviating the long-tail issue in data distribution. In addition, detectors trained with the proposed method also achieve promising results when applied to classification and counting tasks, which are commonly required in wildlife research.},
+  archive      = {J_IETCV},
+  author       = {Puxuan Xie and Renwu Gao and Weizeng Lu and Linlin Shen},
+  doi          = {10.1049/cvi2.12332},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12332},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Weakly supervised bounding-box generation for camera-trap image based animal detection},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Representation alignment contrastive regularisation for multi-object tracking. <em>IETCV</em>, <em>19</em>(1), e12331. (<a href='https://doi.org/10.1049/cvi2.12331'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Achieving high-performance in multi-object tracking algorithms heavily relies on modelling spatial-temporal relationships during the data association stage. Mainstream approaches encompass rule-based and deep learning-based methods for spatial-temporal relationship modelling. While the former relies on physical motion laws, offering wider applicability but yielding suboptimal results for complex object movements, the latter, though achieving high-performance, lacks interpretability and involves complex module designs. This work aims to simplify deep learning-based spatial-temporal relationship models and introduce interpretability into features for data association. Specifically, a lightweight single-layer transformer encoder is utilised to model spatial-temporal relationships. To make features more interpretative, two contrastive regularisation losses based on representation alignment are proposed, derived from spatial-temporal consistency rules. By applying weighted summation to affinity matrices, the aligned features can seamlessly integrate into the data association stage of the original tracking workflow. Experimental results showcase that our model enhances the majority of existing tracking networks' performance without excessive complexity, with minimal increase in training overhead and nearly negligible computational and storage costs.},
+  archive      = {J_IETCV},
+  author       = {Shujie Chen and Zhonglin Liu and Jianfeng Dong and Xun Wang and Di Zhou},
+  doi          = {10.1049/cvi2.12331},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12331},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Representation alignment contrastive regularisation for multi-object tracking},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Outliers rejection for robust camera pose estimation using graduated non-convexity. <em>IETCV</em>, <em>19</em>(1), e12330. (<a href='https://doi.org/10.1049/cvi2.12330'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Camera pose estimation plays a crucial role in computer vision, which is widely used in augmented reality, robotics and autonomous driving. However, previous studies have neglected the presence of outliers in measurements, so that even a small percentage of outliers will significantly degrade precision. In order to deal with outliers, this paper proposes using a graduated non-convexity (GNC) method to suppress outliers in robust camera pose estimation, which serves as the core of GNCPnP. The authors first reformulate the camera pose estimation problem using a non-convex cost, which is less affected by outliers. Then, to apply a non-minimum solver to solve the reformulated problem, the authors use the Black-Rangarajan duality theory to transform it. Finally, to address the dependence of non-convex optimisation on initial values, the GNC method was customised according to the truncated least squares cost. The results of simulation and real experiments show that GNCPnP can effectively handle the interference of outliers and achieve higher accuracy compared to existing state-of-the-art algorithms. In particular, the camera pose estimation accuracy of GNCPnP in the case of a low percentage of outliers is almost comparable to that of the state-of-the-art algorithm in the case of no outliers.},
+  archive      = {J_IETCV},
+  author       = {Hao Yi and Bo Liu and Bin Zhao and Enhai Liu},
+  doi          = {10.1049/cvi2.12330},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12330},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Outliers rejection for robust camera pose estimation using graduated non-convexity},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hybrid feature-based moving cast shadow detection. <em>IETCV</em>, <em>19</em>(1), e12328. (<a href='https://doi.org/10.1049/cvi2.12328'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The accurate detection of moving objects is essential in various applications of artificial intelligence, particularly in the field of intelligent surveillance systems. However, the moving cast shadow detection significantly decreases the precision of moving object detection because they share similar motion characteristics. To address the issue, the authors propose an innovative approach to detect moving cast shadows by combining the hybrid feature with a broad learning system (BLS). The approach involves extracting low-level features from the input and background images based on colour constancy and texture consistency principles that are shown to be highly effective in moving cast shadow detection. The authors then utilise the BLS to create a hybrid feature and BLS uses the extracted low-level features as input instead of the original data. BLS is an innovative form of deep learning that can map input to feature nodes and further enhance them by enhancement nodes, resulting in more compact features for classification. Finally, the authors develop an efficient and straightforward post-processing technique to improve the accuracy of moving object detection. To evaluate the effectiveness and generalisation ability, the authors conduct extensive experiments on public ATON-CVRR and CDnet datasets to verify the superior performance of our method by comparing with representative approaches.},
+  archive      = {J_IETCV},
+  author       = {Jiangyan Dai and Huihui Zhang and Jin Gao and Chunlei Chen and Yugen Yi},
+  doi          = {10.1049/cvi2.12328},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12328},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Hybrid feature-based moving cast shadow detection},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Category-instance distillation based on visual-language models for rehearsal-free class incremental learning. <em>IETCV</em>, <em>19</em>(1), e12327. (<a href='https://doi.org/10.1049/cvi2.12327'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, visual-language models (VLMs) have displayed potent capabilities in the field of computer vision. Their emerging trend as the backbone of visual tasks necessitates studying class incremental learning (CIL) issues within the VLM architecture. However, the pre-training data for many VLMs is proprietary, and during the incremental phase, old task data may also raise privacy issues. Moreover, replay-based methods can introduce new problems like class imbalance, the selection of data for replay and a trade-off between replay cost and performance. Therefore, the authors choose the more challenging rehearsal-free settings. In this paper, the authors study class-incremental tasks based on the large pre-trained vision-language models like CLIP model. Initially, at the category level, the authors combine traditional optimisation and distillation techniques, utilising both pre-trained models and models trained in previous incremental stages to jointly guide the training of the new model. This paradigm effectively balances the stability and plasticity of the new model, mitigating the issue of catastrophic forgetting. Moreover, utilising the VLM infrastructure, the authors redefine the relationship between instances. This allows us to glean fine-grained instance relational information from the a priori knowledge provided during pre-training. The authors supplement this approach with an entropy-balancing method that allows the model to adaptively distribute optimisation weights across training samples. The authors’ experimental results validate that their method, within the framework of VLMs, outperforms traditional CIL methods.},
+  archive      = {J_IETCV},
+  author       = {Weilong Jin and Zilei Wang and Yixin Zhang},
+  doi          = {10.1049/cvi2.12327},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12327},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Category-instance distillation based on visual-language models for rehearsal-free class incremental learning},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AMEF-net: Towards an attention and multi-level enhancement fusion for medical image classification in parkinson's aided diagnosis. <em>IETCV</em>, <em>19</em>(1), e12324. (<a href='https://doi.org/10.1049/cvi2.12324'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Parkinson's disease (PD) is a neurodegenerative disorder primarily affecting middle-aged and elderly populations. Its insidious onset, high disability rate, long diagnostic cycle, and high diagnostic costs impose a heavy burden on patients and their families. Leveraging artificial intelligence, with its rapid diagnostic speed, high accuracy, and fatigue resistance, to achieve intelligent assisted diagnosis of PD holds significant promise for alleviating patients' financial stress, reducing diagnostic cycles, and helping patients seize the golden period for early treatment. This paper proposes an Attention and Multi-level Enhancement Fusion Network (AMEF-Net) based on the characteristics of three-dimensional medical imaging and the specific manifestations of PD in medical images. The focus is on small lesion areas and structural lesion areas that are often overlooked in traditional deep learning models, achieving multi-level attention and processing of imaging information. The model achieved a diagnostic accuracy of 98.867%, a precision of 99.830%, a sensitivity of 99.182%, and a specificity of 99.384% on Magnetic Resonance Images from the Parkinson's Progression Markers Initiative dataset. On Diffusion Tensor Images, it achieved a diagnostic accuracy of 99.602%, a precision of 99.930%, a sensitivity of 99.463%, and a specificity of 99.877%. The relevant code has been placed in https://github.com/EdwardTj/AMEF-NET .},
+  archive      = {J_IETCV},
+  author       = {Qingyan Ding and Yu Pan and Jianxin Liu and Lianxin Li and Nan Liu and Na Li and Wan Zheng and Xuecheng Dong},
+  doi          = {10.1049/cvi2.12324},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12324},
+  shortjournal = {IET Comput. Vis.},
+  title        = {AMEF-net: Towards an attention and multi-level enhancement fusion for medical image classification in parkinson's aided diagnosis},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Metric-guided class-level alignment for domain adaptation. <em>IETCV</em>, <em>19</em>(1), e12322. (<a href='https://doi.org/10.1049/cvi2.12322'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The utilisation of domain adaptation methods facilitates the resolution of classification challenges in an unlabelled target domain by capitalising on the labelled information from source domains. Unfortunately, previous domain adaptation methods have focused mostly on global domain adaptation and have not taken into account class-specific data, which leads to poor knowledge transfer performance. The study of class-level domain adaptation, which aims to precisely match the distributions of different domains, has garnered attention in recent times. However, existing investigations into class-level alignment frequently align domain features either directly on or in close proximity to classification boundaries, resulting in the creation of uncertain samples that could potentially impair classification accuracy. To address the aforementioned problem, we propose a new approach called metric-guided class-level alignment (MCA) as a solution to this problem. Specifically, we employ different metrics to enable the network to acquire supplementary information, thereby enhancing class-level alignment. Moreover, MCA can be effectively combined with existing domain-level alignment methods to successfully mitigate the challenges posed by domain shift. Extensive testing on commonly-used public datasets shows that our method outperforms many other cutting-edge domain adaptation methods, showing significant gains over baseline performance.},
+  archive      = {J_IETCV},
+  author       = {Xiaoshun Wang and Yunhan Li},
+  doi          = {10.1049/cvi2.12322},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12322},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Metric-guided class-level alignment for domain adaptation},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HMSFU: A hierarchical multi-scale fusion unit for video prediction and beyond. <em>IETCV</em>, <em>19</em>(1), e12312. (<a href='https://doi.org/10.1049/cvi2.12312'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Video prediction is the process of learning necessary information from historical frames to predict future video frames. Learning features from historical frames is a crucial step in this process. However, most current methods have a relatively single-scale learning approach, even if they learn features at different scales, they cannot fully integrate and utilise them, resulting in unsatisfactory prediction results. To address this issue, a hierarchical multi-scale fusion unit (HMSFU) is proposed. By using a hierarchical multi-scale architecture, each layer predicts future frames at different granularities using different convolutional scales. The abstract features from different layers can be fused, enabling the model not only to capture rich contextual information but also to expand the model's receptive field, enhance its expressive power, and improve its applicability to complex prediction scenarios. To fully utilise the expanded receptive field, HMSFU incorporates three fusion modules. The first module is the single-layer historical attention fusion module, which uses an attention mechanism to fuse the features from historical frames into the current frame at each layer. The second module is the single-layer spatiotemporal fusion module, which fuses complementary temporal and spatial features at each layer. The third module is the multi-layer spatiotemporal fusion module, which fuses spatiotemporal features from different layers. Additionally, the authors not only focus on the frame-level error using mean squared error loss, but also introduce the novel use of Kullback–Leibler (KL) divergence to consider inter-frame variations. Experimental results demonstrate that our proposed HMSFU model achieves the best performance on popular video prediction datasets, showcasing its remarkable competitiveness in the field.},
+  archive      = {J_IETCV},
+  author       = {Hongchang Zhu and Faming Fang},
+  doi          = {10.1049/cvi2.12312},
+  journal      = {IET Computer Vision},
+  month        = {1},
+  number       = {1},
+  pages        = {e12312},
+  shortjournal = {IET Comput. Vis.},
+  title        = {HMSFU: A hierarchical multi-scale fusion unit for video prediction and beyond},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). VT-NeRF: Neural radiance field with a vertex-texture latent code for high-fidelity dynamic human-body rendering. <em>IETCV</em>, <em>19</em>(1), e12189. (<a href='https://doi.org/10.1049/cvi2.12189'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The fusion of a human prior with neural rendering techniques has recently emerged as one of the most promising approaches to processing dynamic human-body scenes with sparse inputs. However, learning geometric details and appearance in dynamic human-body scenes based solely on a human prior model represents a severely under-constrained problem. A new human-body representation method to solve this problem: a neural radiance field with vertex-texture latent codes (VT-NeRF) is proposed. VT-NeRF uses joint latent code to improve access to detailed information, combining vertex latent codes with 2D texture latent codes for the body surface. Referencing a 3D human skeleton for accurate guidance, the human model can quickly match poses and learn information about the body in different frames. VT-NeRF can integrate body information from different frames and different poses quickly because it uses an information-rich human prior: a 3D human skeleton and parametric models. A 3D human scene is then presented as an implied field of density and colour. Experiments with the ZJU-MoCap dataset show that our method outperforms previous methods in terms of both novel-view synthesis and 3D human reconstruction quality. It is twice as fast as Neural Body, and its average accuracy reaches 95.9%.},
+  archive      = {J_IETCV},
+  author       = {Fengyu Hao and Xinna Shang and Wenfa Li and Liping Zhang and Baoli Lu},
+  doi          = {10.1049/cvi2.12189},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e12189},
+  shortjournal = {IET Comput. Vis.},
+  title        = {VT-NeRF: Neural radiance field with a vertex-texture latent code for high-fidelity dynamic human-body rendering},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-view short-term photovoltaic power prediction combining satellite images feature learning and graph mutual information feature representation. <em>IETCV</em>, <em>19</em>(1), e12174. (<a href='https://doi.org/10.1049/cvi2.12174'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the introduction of national policies, photovoltaic (PV) power forecasting requirements for PV power plants are becoming increasingly stringent. It is particularly critical that PV power predictions are accurate while new energy is being consumed. It is also important to consider the satellite imagery of the location of the PV power plant and the meteorological information of the plant itself. The authors aim to explore the impact of these two elements on PV power prediction to better support PV power prediction. Therefore, this paper explores the cloud information elements of the satellite images from a multi-view perspective and performs feature extraction and processing of the meteorological information to learn the impact of cloud cover on PV power prediction. Meanwhile, this paper introduces the mutual information mechanism for the influence of meteorological factors on PV power generation. It constructs the mutual information matrix and adopts the graph neural network for representation learning. A time-series prediction model for short-term PV power prediction is constructed and more accurate prediction results are obtained. The experimental results demonstrate that the proposed method is effective, has generalisation ability, and improved performance compared with the traditional model. The proposed method can also provide a novel approach and solution for short-term PV power prediction.},
+  archive      = {J_IETCV},
+  author       = {Yuxing Dai and Jing Lai and Xuexin Xu and Jianbing Xiahou and Jie Lian and Zhihong Zhang},
+  doi          = {10.1049/cvi2.12174},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e12174},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Multi-view short-term photovoltaic power prediction combining satellite images feature learning and graph mutual information feature representation},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Attention-aware spatio-temporal learning for multi-view gait-based age estimation and gender classification. <em>IETCV</em>, <em>19</em>(1), e12165. (<a href='https://doi.org/10.1049/cvi2.12165'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, gait-based age and gender recognition have attracted considerable attention in the fields of advertisement marketing and surveillance retrieval due to the unique advantage that gaits can be perceived at a long distance. Intuitively, age and gender can be recognised by observing people's static shape (e.g. different hairstyles between males and females) and dynamic motion (e.g. different walking velocities between the elderly and youth). However, most of the existing gait-based age and gender recognition methods are based on Gait Energy Image (GEI), which loses the capability of explicitly modelling temporal dynamic information and is not robust to the multi-view recognition that inevitably happens in a real application. Therefore, in this study, an Attention-aware Spatio-Temporal Learning (ASTL) framework is proposed, which employs a silhouette sequence as input to learn essential and invariable spatial-temporal gait representations. More specifically, a Multi-Scale Temporal Aggregation (MSTA) module provides an effective scheme for dynamic gait description by exploring and aggregating multi-scale temporal interval information, which is a core supplement to spatial representation. Then, a Multiple Attention Aggregation (MAA) module is designed to help the network focus on the most discriminatory information along temporal, spatial and channel dimensions. Finally, a Multimodal Collaborative Learning (MCL) block gives full play to the advantages of different modal features through a multimodal cooperative learning strategy. The mean absolute error (MAE) for the age estimation and the correct classification rate (CCR) for the gender classification on OU-MVLP achieve 6.68 years and 97%, respectively, demonstrating the superiority of the method. Ablation experiments and visualisation results also prove the effectiveness of the three individual modules in their framework.},
+  archive      = {J_IETCV},
+  author       = {Binyuan Huang and Yongdong Luo and Jiahui Xie and Jiahui Pan and Chengju Zhou},
+  doi          = {10.1049/cvi2.12165},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e12165},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Attention-aware spatio-temporal learning for multi-view gait-based age estimation and gender classification},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Object-meta and MSGAE-MP: Multi-dimensional video anomaly detection. <em>IETCV</em>, <em>19</em>(1), e12156. (<a href='https://doi.org/10.1049/cvi2.12156'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Autoencoders have been widely used in video anomaly detection, and there are many variants. However, since these Autoencoders use frames as the input of the reconstruction network, they can only learn the pixel information in the frame and lack other key information. In addition, complete reconstruction of the frame will lead to memory consumption and waste of resources. In order to learn multi-dimensional information and reduce memory usage, we propose to use the Object-meta instead of video frames, and the Memory Search Guided Autoencoder with Memory Pools (MSGAE-MP) to reconstruct. Every Object-meta comes from the object and is composed of the type mask, position mask, optical flow, and pixels of the object. In this way, the multi-dimensional information carried by the input can be strengthened. After generating Object-meta, the MSGAE-MP will use the high-dimensional information to guide search in memory modules during the reconstruction, and it will construct multi-level memory pools, so as to reconstruct Object-meta in different dimensions. Experiments show that our method is feasible and has achieved excellent results.},
+  archive      = {J_IETCV},
+  author       = {Shunyao Zhang and Xuehua Song and Changda Wang and Yinwu Gu and Yiming Ma and Hailiang Ma},
+  doi          = {10.1049/cvi2.12156},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e12156},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Object-meta and MSGAE-MP: Multi-dimensional video anomaly detection},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multiview subspace clustering via low-rank correlation analysis. <em>IETCV</em>, <em>19</em>(1), e12155. (<a href='https://doi.org/10.1049/cvi2.12155'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In order to explore multi-view data, existing low-rank-based multi-view subspace clustering methods seek a common low-rank structure from different views. However, in real-world scenarios, each view will often hold complex structures resulting from noise or outliers, causing unreliable and imprecise graphs, which the previous methods cannot effectively ameliorate. This study proposes a new method based on low-rank correlation analysis to overcome these limitations. Firstly, the canonical correlation analysis strategy is introduced to jointly find the low-rank structures in different views. In order to facilitate a robust solution, a dual regularisation term is further introduced to find such low-rank structures that maximise the correlation in respective views much better. Thus, a unifying clustering structure is then integrated into the model to characterise the connections between different views adaptively. In this way, noise suppression is achieved more effectively. Furthermore, we avoid the uncertainty of spectral post-processing of the unifying clustering structure by imposing a rank constraint on its Laplacian matrix to obtain the clustering results explicitly, further enhancing computation efficiency. Experimental results obtained from several clustering and classification experiments performed using 3Sources, Caltech101-20, 100leaves, WebKB, and Hdigit datasets reveal the proposed method's superiority over compared state-of-the-art methods in Accuracy, Normalised Mutual Information, and F-score evaluation metrics.},
+  archive      = {J_IETCV},
+  author       = {Qu Kun and Stanley Ebhohimhen Abhadiomhen and Zhifeng Liu},
+  doi          = {10.1049/cvi2.12155},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e12155},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Multiview subspace clustering via low-rank correlation analysis},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Semi-paired semi-supervised deep hashing for cross-view retrieval. <em>IETCV</em>, <em>19</em>(1), e12153. (<a href='https://doi.org/10.1049/cvi2.12153'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Due to its fast computational speed and low storage cost, hashing has been effectively applied to large-scale multimedia retrieval tasks, such as medical video and security video retrieval. Most existing cross-view hashing methods require good matching information, however, this exact pairing relationship is difficult to fully realise in practice. The association between views is incomplete, as is the label information. This task of missing paired and labelled information is very challenging, but less explored in research. In this study, a semi-supervised semi-paired deep hashing for large-scale data is proposed, named Semi-Paired Semi-Supervised Deep Hashing (SPSDH) to solve this challenging task. SPSDH is a novel end-to-end deep neural network model with high-order affinity. A non-local higher-order affinity measure that better considers the multimodal neighbourhood structure is proposed. A common representation to associate different modalities is introduced, which combined with the labelled information greatly maintains the consistency within the modalities. SPSDH is evaluated on three benchmark datasets for large-scale cross-view approximate nearest neighbour search and compared with several state-of-the-art hashing methods. Extensive experimental results demonstrate the superior performance of our proposed SPSDH in semi-supervised semi-paired retrieval tasks.},
+  archive      = {J_IETCV},
+  author       = {Yi Wang and Xiaobo Shen and Zhenmin Tang and Ming Zhang},
+  doi          = {10.1049/cvi2.12153},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e12153},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Semi-paired semi-supervised deep hashing for cross-view retrieval},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Self-inferring incomplete multi-view clustering. <em>IETCV</em>, <em>19</em>(1), e12152. (<a href='https://doi.org/10.1049/cvi2.12152'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the advantage of exploiting complementary and consensus information across multiple views, techniques for Multi-view Clustering have attracted increasing attention in recent years. However, it is common that data on some views is not completed in real-world applications, which brings the challenge of partial mapping between the views. To explore the information hidden in the local geometric structure and recover missing instances through mining the information hidden in existing instances, a self-inferring incomplete multi-view clustering algorithm is proposed. Firstly, the incomplete multi-view data is replenished directly and exploited as variables for inferring the missing instances. And then, a feature graph constraint is united in consensus learning. Besides, a similarity graph learning method is imposed to preserve the local manifold structure. At last, the inferred instances are filled in the missing instances for learning better consensus representation in the iterative process. Extensive experiment results show that this method can improve the clustering performance compared with the state-of-the-art methods.},
+  archive      = {J_IETCV},
+  author       = {Junjun Fan and ZeQi Ma and Jiajun Wen and Zhihui Lai and Weicheng Xie and Wai Keung Wong},
+  doi          = {10.1049/cvi2.12152},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e12152},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Self-inferring incomplete multi-view clustering},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Attention assessment based on multi-view classroom behaviour recognition. <em>IETCV</em>, <em>19</em>(1), e12146. (<a href='https://doi.org/10.1049/cvi2.12146'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, artificial intelligence has been applied in many fields, and education has attracted more and more attention. More and more behaviour detection and recognition algorithms are applied in the field of education. Students' attention in class is the key to improving the quality of teaching, and classroom behavior is a direct manifestation of students' attention. In view of the problem that the accuracy of students' classroom behavior recognition is generally low, we apply deep learning to multi-view behavior detection, which can detect and recognize behaviors from different perspectives, to evaluate students' classroom attention. First, an improved detection model based on YOLOv5 is proposed, which improves the CBL module throughout the entire network to optimize the model and uses SIoU as the loss function to improve the convergence speed of the prediction box. Second, a quantitative evaluation standard for students' classroom attention is established and then training and verification are conducted by collecting multi-view classroom datasets. Finally, the environment variation in the training model phase is increased to make the model have better generalization ability. Experiments demonstrate that our method can effectively identify and detect students' behaviours in the classroom from different angles, and it has good robustness and feature extraction capabilities.},
+  archive      = {J_IETCV},
+  author       = {ZhouJie Zheng and GuoJun Liang and HuiBin Luo and HaiChang Yin},
+  doi          = {10.1049/cvi2.12146},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e12146},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Attention assessment based on multi-view classroom behaviour recognition},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Resolution independent person re-identification network. <em>IETCV</em>, <em>19</em>(1), e12140. (<a href='https://doi.org/10.1049/cvi2.12140'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Does a query image with much higher resolution than that of the gallery image also affect the pedestrian re-identification performance? If so, and how does it affect performance? The study proposes a novel framework for performing high-resolution image reconstruction and pedestrian re-identification tasks, independent of the query image resolution. More precisely, an end-to-end trainable Resolution Independent person Re-identification network is proposed. It is composed of our designed Cross-Resolution GAN and Embedding Batch Normalisation layers. The model is then compared with the traditional low-resolution pedestrian recognition algorithm and the hybrid method of high-resolution reconstruction and pedestrian re-identification. The results demonstrate that the proposed method outperforms the state-of-the-art methods in the pedestrian re-identification task based on our expanded benchmark dataset. It also reaches an equivalent performance to the existing methods in the high-resolution image reconstruction task.},
+  archive      = {J_IETCV},
+  author       = {Li Zhang and Yunjie Xu and Liaoying Zhao and Feiwei Qin},
+  doi          = {10.1049/cvi2.12140},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e12140},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Resolution independent person re-identification network},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Range-free disparity estimation with self-adaptive dual-matching. <em>IETCV</em>, <em>19</em>(1), e12135. (<a href='https://doi.org/10.1049/cvi2.12135'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Depth estimation from stereo images is an important task in computer vision. Despite of the great contributions that are made in this field, most matching-based methods still face the limitations brought by a pre-set-fixed disparity range. Stereo matching is reconsidered using a specially designed dual-matching method with a cross-attention mechanism, which liberates the algorithm from manually pre-specified disparity ranges and the performance is guaranteed without re-training when the camera rig varies. Moreover, to tackle the mismatches on edges and details, an exquisite module is designed based on left-right consistency, which further refines the estimated disparity map. The efficient multi-scale aggregation is done with both 2D and 3D convolutional layers and the proposed method is proved to be competitive and effective by experiments conducted under popular benchmarks.},
+  archive      = {J_IETCV},
+  author       = {Shuqiao Sun and Rongke liu and Shantong Sun},
+  doi          = {10.1049/cvi2.12135},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e12135},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Range-free disparity estimation with self-adaptive dual-matching},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-view subspace clustering with incomplete graph information. <em>IETCV</em>, <em>19</em>(1), e12124. (<a href='https://doi.org/10.1049/cvi2.12124'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The core of multi-view clustering is how to exploit the shared and specific information of multi-view data properly. The data missing and incompleteness bring great challenges to multi-view clustering. In this paper, we propose an innovative multi-view subspace clustering method with incomplete graph information, so-called incomplete multiple graphs clustering. Specifically, we creatively separate one shared and multiple specific graphs from multiple raw graph data, and exploit the mask fusion strategy and block diagonal regulariser to obtain the inherent category information. To handle the incomplete multiple graph data, we utilise multiple indicator matrices to mark the missing elements existed in each raw graph. In addition, the weight of each raw graph is adaptively learnt according to the graph importance. The alternative direction optimization algorithm is employed to solve our proposed methods. Finally, we also analyse the algorithm convergence and the computation complexity in detail. The clustering results on six real-world datasets show that our method obviously outperforms a serious of classic incomplete multi-view clustering methods.},
+  archive      = {J_IETCV},
+  author       = {Xiaxia He and Boyue Wang and Cuicui Luo and Junbin Gao and Yongli Hu and Baocai Yin},
+  doi          = {10.1049/cvi2.12124},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e12124},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Multi-view subspace clustering with incomplete graph information},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Double weighting convolutional neural net-works for multi-view 3D shape recognition. <em>IETCV</em>, <em>19</em>(1), e12107. (<a href='https://doi.org/10.1049/cvi2.12107'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Three-dimensional (3D) object recognition based on multiple views has been a popular area of research in recent years. Existing methods based on the grouping mechanism cannot sensibly group the views. Thus, the 3D shape descriptor that is generated by the final fusion is not representative, and the recognition accuracy still requires improvement. This study proposes a double-weighting convolutional neural network method, based on the L2-S grouping mechanism. The designed bidirectional long short-term memory module can learn the relationship between the views in detail and improve the quality of the extracted features. Further, the proposed L2-S grouping mechanism can use the L2 norm property to calculate the discrimination score of views and group views more reasonably. After reasonable grouping, weighted fusion operations are used within and between groups to fuse features to obtain group-level descriptors that better represent each group of views. Finally, compact 3D shape descriptors generated by equally important group-level descriptors for 3D object recognition. Results of the experiments show that our method can achieve state-of-the-art performance. The source code is available at https://github.com/Qishaohua94/DWCNN .},
+  archive      = {J_IETCV},
+  author       = {Shaohua Qi and Weijun Li and Guowei Yang},
+  doi          = {10.1049/cvi2.12107},
+  journal      = {IET Computer Vision},
+  month        = {1-12},
+  number       = {1},
+  pages        = {e12107},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Double weighting convolutional neural net-works for multi-view 3D shape recognition},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Structure-based uncertainty estimation for source-free active domain adaptation. <em>IETCV</em>, <em>19</em>(1), e70020. (<a href='https://doi.org/10.1049/cvi2.70020'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Active domain adaptation (active DA) provides an effective solution by selectively labelling a limited number of target samples to significantly enhance adaptation performance. However, existing active DA methods often struggle in real-world scenarios where, due to data privacy concerns, only a pre-trained source model is available, rather than the source samples. To address this issue, we propose a novel method called the structure-based uncertainty estimation model (SUEM) for source-free active domain adaptation (SFADA). To be specific, we introduce an innovative active sample selection strategy that combines both uncertainty and diversity sampling to identify the most informative samples. We assess the uncertainty in target samples using structure-wise probabilities and implement a diversity selection method to minimise redundancy. For the selected samples, we not only apply standard-supervised loss but also conduct interpolation consistency training to further explore the structural information of the target domain. Extensive experiments across four widely used datasets demonstrate that our method is comparable to or outperforms current UDA and active DA methods.},
+  archive      = {J_IETCV},
+  author       = {Jihong Ouyang and Zhengjie Zhang and Qingyi Meng and Jinjin Chi},
+  doi          = {10.1049/cvi2.70020},
+  journal      = {IET Computer Vision},
+  number       = {1},
+  pages        = {e70020},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Structure-based uncertainty estimation for source-free active domain adaptation},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Synchronised and fine-grained head for skeleton-based ambiguous action recognition. <em>IETCV</em>, <em>19</em>(1), e70016. (<a href='https://doi.org/10.1049/cvi2.70016'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Skeleton-based action recognition using Graph Convolutional Networks (GCNs) has achieved remarkable performance, but recognising ambiguous actions, such as ‘waving’ and ‘saluting’, remains a significant challenge. Existing methods typically rely on a serial combination of GCNs and Temporal Convolutional Networks (TCNs), where spatial and temporal features are extracted independently, leading to an unbalanced spatial-temporal information, which hinders accurate action recognition. Moreover, existing methods for ambiguous actions often overemphasise local details, resulting in the loss of crucial global context, which further complicates the task of differentiating ambiguous actions. To address these challenges, the authors propose a lightweight plug-and-play module called Synchronised and Fine-grained Head (SF-Head), inserted between GCN and TCN layers. SF-Head first conducts Synchronised Spatial-Temporal Extraction (SSTE) with a Feature Redundancy Loss (F-RL), ensuring a balanced interaction between the two types of features. It then performs Adaptive Cross-dimensional Feature Aggregation (AC-FA), with a Feature Consistency Loss (F-CL), which aligns the aggregated feature with their original spatial-temporal feature. This aggregation step effectively combines both global context and local details, enhancing the model's ability to classify ambiguous actions. Experimental results on NTU RGB + D 60, NTU RGB + D 120, NW-UCLA and PKU-MMD I datasets demonstrate significant improvements in distinguishing ambiguous actions. Our code will be made available at https://github.com/HaoHuang2003/SFHead .},
+  archive      = {J_IETCV},
+  author       = {Hao Huang and Yujie Lin and Siyu Chen and Haiyang Liu},
+  doi          = {10.1049/cvi2.70016},
+  journal      = {IET Computer Vision},
+  number       = {1},
+  pages        = {e70016},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Synchronised and fine-grained head for skeleton-based ambiguous action recognition},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

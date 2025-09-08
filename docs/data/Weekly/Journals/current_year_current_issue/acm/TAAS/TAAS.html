@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TAAS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="taas">TAAS - 7</h2>
+<ul>
+<li><details>
+<summary>
+(2025). An evaluation of self-adaptive mechanisms for misconfigurations in small uncrewed aerial systems. <em>TAAS</em>, <em>20</em>(2), 1-35. (<a href='https://doi.org/10.1145/3707643'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Small uncrewed aerial systems (sUAS) provide an invaluable resource for performing a variety of surveillance, search, and delivery tasks in remote or hostile terrains which may not be accessible by other means. Due to the critical role sUAS play in these situations, it is vital that they are well configured in order to ensure a safe and stable flight. However, it is not uncommon for mistakes to occur in configuration and calibration, leading to failures or incomplete missions. To address this problem, we propose a set of self-adaptive mechanisms and implement them into a self-adaptive framework, Controller Instability-preventing Configuration-Aware Drone Adaptation (CICADA). CICADA dynamically detects unstable drone behavior during flight and adapts to mitigate this threat. We have built a prototype of CICADA using a popular open source sUAS flight control software and experimented with a large number of different configurations in simulation. We then performed a case study with physical drones to determine if our framework will work in practice. Experimental results show that CICADA ’s adaptations reduce controller instability and enable the sUAS to recover from up to 33.8% of poor configurations. In cases where we cannot complete the intended mission, invoking alternative adaptations may still help by allowing the vehicle to loiter or land safely in place, avoiding potentially catastrophic crashes. These safety-focused adaptations can mitigate unsafe behavior in 52.9% to 64.7% of dangerous configurations. We further show that rule-based approaches can be leveraged to automatically select an appropriate adaptation strategy based on the severity of instability encountered, with up to a 14.2% improvement over direct adaptation. Finally, we introduce a variation of our primary adaptation strategy designed to allow more cautious adaptation with limited configuration information, which gets within 6.7% of our primary adaptation strategy despite not requiring an optimal knowledge base.},
+  archive      = {J_TAAS},
+  author       = {Salil Purandare and Md Nafee Al Islam and Urjoshi Sinha and Jane Cleland-Huang and Myra B. Cohen},
+  doi          = {10.1145/3707643},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {6},
+  number       = {2},
+  pages        = {1-35},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {An evaluation of self-adaptive mechanisms for misconfigurations in small uncrewed aerial systems},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An extended study of the performance of flexible controllers composed of micro-controllers. <em>TAAS</em>, <em>20</em>(2), 1-41. (<a href='https://doi.org/10.1145/3715145'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Generic controllers for self-adaptive systems can be configured parametrically according to system needs, even though their reuse is restricted because of the wide range of services that may be provided by each stage of a feedback control loop, like MAPE-K. Rainbow is a typical example of such a generic, monolithic controller. This article revisits and extends prior work that advocates structurally flexible controllers, as ensembles of micro-controllers each providing specific services. We experimented with our approach with three different architectural configurations for the controller—monolithic, decentralised and decentralised with a meta-controller. Our results indicate that despite the decentralised configuration with a meta-controller demanding more computational resources, it performed comparatively well compared to the other configurations, including when measuring the target system’s response time. Moreover, we found that variations of the control loop timing at the different layers of the controller impact the stability of the target system. We have also evolved the controller by adding a new micro-controller, which caused no impact on the other micro-controllers, and mostly kept the target system’s performance. We conclude that a multi-layered controller design, based on micro-controllers, provides the basis for defining structurally flexible controllers at operational-time and may promote reuse at development-time.},
+  archive      = {J_TAAS},
+  author       = {Bento Rafael Siqueira and Fabiano Cutigi Ferrari and Rogério de Lemos},
+  doi          = {10.1145/3715145},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {6},
+  number       = {2},
+  pages        = {1-41},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {An extended study of the performance of flexible controllers composed of micro-controllers},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Many-objective self-adaptation under model uncertainty. <em>TAAS</em>, <em>20</em>(2), 1-28. (<a href='https://doi.org/10.1145/3719349'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The field of uncertainty quantification and mitigation in software-intensive and self-adaptive systems is garnering increased interest, especially with the rise of statistical inference methodologies like Bayesian reasoning. These methods typically address uncertain quality attributes embedded within system models by adjusting model parameters. However, the uncertainty related to selecting a specific system model over plausible alternatives has received limited attention. Our work focuses on self-adaptation, exploring methods to tackle uncertainty in model selection. This includes scenarios where one model is chosen over competing alternatives to encapsulate the system’s understanding and anticipate future observations. Our proposed solution augments the conventional feedback loop of self-adaptive systems by combining Bayesian model averaging to mitigate uncertainty and many-objective optimization to take into account multiple, possibly many, dependability requirements at the same time. We carry out an empirical evaluation to study the effectiveness, cost, and scalability of the proposed approach using two case studies with increasing structural complexity and number of dependability requirements. Results show that our approach based on model averaging is significantly better than model selection in terms of satisfied requirements after adaptation (adaptation success frequency). We also show that our approach can deal with large model spaces ( \(\sim 10^{19}\) ) using efficient sampling methods rather than exhaustive model space exploration.},
+  archive      = {J_TAAS},
+  author       = {Matteo Camilli and Raffaela Mirandola and Patrizia Scandurra},
+  doi          = {10.1145/3719349},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {6},
+  number       = {2},
+  pages        = {1-28},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Many-objective self-adaptation under model uncertainty},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient training approaches for performance anomaly detection models in edge computing environments. <em>TAAS</em>, <em>20</em>(2), 1-27. (<a href='https://doi.org/10.1145/3725736'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Microservice architectures are increasingly used to modularize IoT applications and deploy them in distributed and heterogeneous edge computing environments. Over time, these microservice-based IoT applications are susceptible to performance anomalies caused by resource hogging (e.g., CPU or memory), resource contention, etc., which can negatively impact their Quality of Service and violate their Service Level Agreements. Existing research on performance anomaly detection for edge computing environments focuses on model training approaches that either achieve high accuracy at the expense of a time-consuming and resource-intensive training process or prioritize training efficiency at the cost of lower accuracy. To address this gap, while considering the resource constraints and the large number of devices in modern edge platforms, we propose two clustering-based model training approaches: (1) intra-cluster parameter transfer learning (ICPTL)-based model training and (2) cluster-level model (CM) training. These approaches aim to find a tradeoff between the training efficiency of anomaly detection models and their accuracy. We compared the models trained under ICPTL and CM to models trained for specific devices (most accurate, least efficient) and a single general model trained for all devices (least accurate, most efficient). Our findings show that ICPTL’s model accuracy is comparable to that of the model per device approach while requiring only 40% of the training time. In addition, CM further improves training efficiency by requiring 23% less training time and reducing the number of trained models by approximately 66% compared to ICPTL, yet achieving a higher accuracy than a single general model.},
+  archive      = {J_TAAS},
+  author       = {Duneesha Fernando and Maria A. Rodriguez and Patricia Arroba and Leila Ismail and Rajkumar Buyya},
+  doi          = {10.1145/3725736},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {6},
+  number       = {2},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Efficient training approaches for performance anomaly detection models in edge computing environments},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Introduction to the SEAMS 2023 special issue. <em>TAAS</em>, <em>20</em>(2), 1-2. (<a href='https://doi.org/10.1145/3725987'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_TAAS},
+  author       = {Raffaela Mirandola and Radu Calinescu and Pooyan Jamshidi},
+  doi          = {10.1145/3725987},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {6},
+  number       = {2},
+  pages        = {1-2},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Introduction to the SEAMS 2023 special issue},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Vehicle dynamics and interaction for trajectory prediction and traffic control. <em>TAAS</em>, <em>20</em>(2), 1-19. (<a href='https://doi.org/10.1145/3727342'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Trajectory prediction is a crucial challenge in autonomous vehicle motion planning and decision-making techniques. However, existing methods face limitations in accurately capturing vehicle dynamics and interactions. To address this issue, this article proposes a novel approach to extracting vehicle velocity and acceleration, enabling the learning of vehicle dynamics and encoding them as auxiliary information. The VDI-LSTM model is designed, incorporating graph convolution and attention mechanisms to capture vehicle interactions using trajectory data and dynamic information. Specifically, a dynamics encoder is designed to capture the dynamic information, a dynamic graph is employed to represent vehicle interactions, and an attention mechanism is introduced to enhance the performance of LSTM and graph convolution. To demonstrate the effectiveness of our model, extensive experiments are conducted, including comparisons with several baselines and ablation studies on real-world highway datasets. Experimental results show that VDI-LSTM outperforms other baselines compared, which obtains a 3% improvement on the average RMSE indicator over the five prediction steps.},
+  archive      = {J_TAAS},
+  author       = {Jian Chen and Shaorui Zhou and Wei Wang and Yuzhu Hu and Jianqing Li and Ben-guo He and Junxin Chen and Marwan Omar and Ali Kashif Bashir and Xiping Hu},
+  doi          = {10.1145/3727342},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {6},
+  number       = {2},
+  pages        = {1-19},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Vehicle dynamics and interaction for trajectory prediction and traffic control},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Model checking of workflow nets with tables and constraints. <em>TAAS</em>, <em>20</em>(2), 1-38. (<a href='https://doi.org/10.1145/3736177'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many operations in workflow systems are dependent on database tables. The classical workflow nets and their extensions (e.g., workflow nets with data) cannot model these operations, so that they cannot find some related errors. Recently, workflow nets with tables (WFT-nets) were proposed to remedy such a flaw. However, existing methods for constructing the reachability graph of the WFT-nets can generate pseudo states because they do not take into account the guards that constrain the enabling and firing of transitions. Additionally, only the soundness property of WFT-nets is considered that represents a single design requirement, while many other requirements, especially those related to tables, cannot be analyzed. In this article, we re-define the formalism of WFT-nets by augmenting the constraints of guards to them and re-name them as workflow nets with tables and constraints (WFTC-nets). We propose a new method to generate the state reachability graph (SRG) of WFTC-nets such that the SRG can avoid pseudo states by considering the guard constraints. To represent design requirements related to database operations, we define database-oriented computation tree logic (DCTL). We design the model checking algorithms of DCTL based on the SRG of WFTC-nets and develop a tool. Experiments on several public benchmarks show the usefulness of our methods.},
+  archive      = {J_TAAS},
+  author       = {Jian Song and Guanjun Liu and Miaomiao Wang},
+  doi          = {10.1145/3736177},
+  journal      = {ACM Transactions on Autonomous and Adaptive Systems},
+  month        = {6},
+  number       = {2},
+  pages        = {1-38},
+  shortjournal = {ACM Trans. Auton. Adapt. Syst.},
+  title        = {Model checking of workflow nets with tables and constraints},
+  volume       = {20},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

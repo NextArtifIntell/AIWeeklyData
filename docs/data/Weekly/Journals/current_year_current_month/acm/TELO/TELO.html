@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TELO</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="telo">TELO - 7</h2>
+<ul>
+<li><details>
+<summary>
+(2025). First steps toward a runtime analysis when starting with a good solution. <em>TELO</em>, <em>5</em>(2), 1-41. (<a href='https://doi.org/10.1145/3675783'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The mathematical runtime analysis of evolutionary algorithms traditionally regards the time an algorithm needs to find a solution of a certain quality when initialized with a random population. In practical applications it may be possible to guess solutions that are better than random ones. We start a mathematical runtime analysis for such situations. We observe that different algorithms profit to a very different degree from a better initialization. We also show that the optimal parameterization of an algorithm can depend strongly on the quality of the initial solutions. To overcome this difficulty, self-adjusting and randomized heavy-tailed parameter choices can be profitable. Finally, we observe a larger gap between the performance of the best evolutionary algorithm we found and the corresponding black-box complexity. This could suggest that evolutionary algorithms better exploiting good initial solutions are still to be found. These first findings stem from analyzing the performance of the \((1+1)\) evolutionary algorithm and the static, self-adjusting, and heavy-tailed \((1+(\lambda,\lambda))\) genetic algorithms on the OneMax benchmark. We are optimistic that the question of how to profit from good initial solutions is interesting beyond these first examples.},
+  archive  = {J},
+  author   = {Denis Antipov and Maxim Buzdalov and Benjamin Doerr},
+  doi      = {10.1145/3675783},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {5},
+  number   = {2},
+  pages    = {1-41},
+  title    = {First steps toward a runtime analysis when starting with a good solution},
+  volume   = {5},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Explainable optimisation through online and offline hyper-heuristics. <em>TELO</em>, <em>5</em>(2), 1-29. (<a href='https://doi.org/10.1145/3701236'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Research in the explainability of optimisation techniques has largely focused on metaheuristics and their movement of solutions around the search landscape. Hyper-heuristics create a different challenge for explainability as they make use of many more operators, or low-level heuristics and learning algorithms which modify their probability of selection online. This article describes a set of methods for explaining hyper-heuristics decisions in both online and offline scenarios using selection hyper-heuristics as an example. These methods help to explain various aspects of the function of hyper-heuristics both at a particular juncture in the optimisation process and through time. Visualisations of each method acting on sequences provide an understanding of which operators are being utilised and when, and in which combinations to produce a greater understanding of the algorithm-problem nexus in hyper-heuristic search. These methods are demonstrated on a range of problems including those in operational research and water distribution network optimisation. They demonstrate the insight that can be generated from optimisation using selection hyper-heuristics, including building an understanding of heuristic usage, useful combinations of heuristics and heuristic parameterisations. Furthermore the dynamics of heuristic utility are explored throughout an optimisation run and we show that it is possible to cluster problem instances according to heuristic selection alone, providing insight into the perception of problems from a hyper-heuristic perspective.},
+  archive  = {J},
+  author   = {William B. Yates and Edward C. Keedwell and Ahmed Kheiri},
+  doi      = {10.1145/3701236},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {5},
+  number   = {2},
+  pages    = {1-29},
+  title    = {Explainable optimisation through online and offline hyper-heuristics},
+  volume   = {5},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EVOTER: Evolution of transparent explainable rule-sets. <em>TELO</em>, <em>5</em>(2), 1-30. (<a href='https://doi.org/10.1145/3702651'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Most AI systems are black boxes generating reasonable outputs for given inputs. Some domains, however, have explainability and trustworthiness requirements that cannot be directly met by these approaches. Various methods have therefore been developed to interpret black-box models after training. This article advocates an alternative approach where the models are transparent and explainable to begin with. This approach, EVOTER, evolves rule-sets based on extended propositional logic expressions. The approach is evaluated in several prediction/classification and prescription/policy search domains with and without a surrogate. It is shown to discover meaningful rule-sets that perform similarly to black-box models. The rules can provide insight into the domain and make hidden biases explicit. It may also be possible to edit the rules directly to remove biases and add constraints. EVOTER thus forms a promising foundation for building trustworthy AI systems for real-world applications in the future.},
+  archive  = {J},
+  author   = {Hormoz Shahrzad and Babak Hodjat and Risto Miikkulainen},
+  doi      = {10.1145/3702651},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {5},
+  number   = {2},
+  pages    = {1-30},
+  title    = {EVOTER: Evolution of transparent explainable rule-sets},
+  volume   = {5},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-objectivising acquisition functions in bayesian optimisation. <em>TELO</em>, <em>5</em>(2), 1-33. (<a href='https://doi.org/10.1145/3716504'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Bayesian optimisation (BO) is an efficient approach for solving expensive optimisation problems, where acquisition functions play a major role in achieving the tradeoff between exploitation and exploration. The exploitation–exploration tradeoff is challenging; excessive focus on exploitation can stagnate the search, while too much exploration can slow convergence. Multi-objectivisation has been explored as an effective approach to mitigate the exploitation–exploration tradeoff problem. Along this line, in this article, we propose a Multi-Objectivisation-Based Adaptive Exploitation–Exploration Tradeoff Framework (MOEE) to balance exploitation and exploration in BO. MOEE considers the nondominated front formed by the exploitation and exploration objectives and adaptively switches the focus on exploration and exploitation on the basis of the search status. We verify our method on the 19 synthetic and practical problem instances with 1–20 dimensions, and the results show that our proposed multi-objectivisation framework can achieve a good balance between exploitation and exploration.},
+  archive      = {J_TELO},
+  author       = {Chao Jiang and Miqing Li},
+  doi          = {10.1145/3716504},
+  journal      = {ACM Transactions on Evolutionary Learning and Optimization},
+  month        = {5},
+  number       = {2},
+  pages        = {1-33},
+  shortjournal = {ACM Trans. Evol. Learn. Optim.},
+  title        = {Multi-objectivising acquisition functions in bayesian optimisation},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Explainable benchmarking for iterative optimization heuristics. <em>TELO</em>, <em>5</em>(2), 1-30. (<a href='https://doi.org/10.1145/3716638'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Benchmarking heuristic algorithms is vital to understand under which conditions and on what kind of problems certain algorithms perform well. In most current research into heuristic optimization algorithms, only a very limited number of scenarios, algorithm configurations and hyper-parameter settings are explored, leading to incomplete and often biased insights and results. This article presents a novel approach that we call explainable benchmarking. We introduce the IOHxplainer software library, for systematic analysing the performance of various optimization algorithms and the impact of their different components and hyperparameters. We showcase the methodology in the context of two modular optimization implementations. Through this library, we examine the impact of different algorithmic components and configurations, offering insights into their performance across diverse scenarios. We provide a systematic method for evaluating and interpreting the behaviour and efficiency of iterative optimization heuristics in a more transparent and comprehensible manner, aiming to improve future benchmarking and algorithm design practices.},
+  archive  = {J},
+  author   = {Niki van Stein and Diederick Vermetten and Anna V. Kononova and Thomas Bäck},
+  doi      = {10.1145/3716638},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {5},
+  number   = {2},
+  pages    = {1-30},
+  title    = {Explainable benchmarking for iterative optimization heuristics},
+  volume   = {5},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards explainable metaheuristics: Feature mining of search trajectories through principal component projection. <em>TELO</em>, <em>5</em>(2), 1-30. (<a href='https://doi.org/10.1145/3731456'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {While population-based metaheuristics have proven useful for refining and improving explainable AI systems, they are seldom the focus of explanatory approaches themselves. This stems from their inherently stochastic, population-driven searches, which complicate the use of standard explainability techniques. In this article, we present a method to identify which decision variables have the greatest impact during an algorithm’s trajectory from random initialsation to convergence. We apply Principal Component Analysis to project each population onto a lower-dimensional space, then introduce two metrics—Mean Variable Contribution and Proportion of Aligned Variables—to identify the variables most responsible for guiding the search. Using four different population-based methods (Particle Swarm Optimisation, Genetic Algorithm, Differential Evolution, and Covariance Matrix Adaptation Evolution Strategy) on 24 BBOB benchmark functions in 10 dimensions, we find that these metrics highlight meaningful variable relationships and provide a window into each method’s search dynamics. By comparing the features extracted across algorithms and problems, we illustrate how certain variable subsets consistently drive major improvements in solution quality. In doing so, new evolutionary algorithm variants can be designed to take advantage of these influential variables, while also identifying underutilised variables that may benefit alternative search strategies.},
+  archive  = {J},
+  author   = {Martin Fyvie and John A. W. McCall and Lee A. Christie},
+  doi      = {10.1145/3731456},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {5},
+  number   = {2},
+  pages    = {1-30},
+  title    = {Towards explainable metaheuristics: Feature mining of search trajectories through principal component projection},
+  volume   = {5},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Introduction to the special issue on explainable AI in evolutionary Computation—Part 2. <em>TELO</em>, <em>5</em>(2), 1-2. (<a href='https://doi.org/10.1145/3733611'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive = {J},
+  author  = {Jaume Bacardit and Alexander Brownlee and Stefano Cagnoni and Giovanni Iacca and John McCall and David Walker},
+  doi     = {10.1145/3733611},
+  journal = {ACM Transactions on Evolutionary Learning},
+  month   = {5},
+  number  = {2},
+  pages   = {1-2},
+  title   = {Introduction to the special issue on explainable AI in evolutionary Computation—Part 2},
+  volume  = {5},
+  year    = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

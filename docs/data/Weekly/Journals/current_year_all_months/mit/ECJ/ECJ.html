@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ECJ</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ecj">ECJ - 15</h2>
+<ul>
+<li><details>
+<summary>
+(2025). On the use of the doubly stochastic matrix models for the quadratic assignment problem. <em>ECJ</em>, <em>33</em>(3), 425-457. (<a href='https://doi.org/10.1162/evco_a_00369'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Permutation problems have captured the attention of the combinatorial optimization community for decades due to the challenge they pose. Although their solutions are naturally encoded as permutations, in each problem, the information to be used to optimize them can vary substantially. In this paper, we consider the Quadratic Assignment Problem (QAP) as a case study, and propose using Doubly Stochastic Matrices (DSMs) under the framework of Estimation of Distribution Algorithms. To that end, we design efficient learning and sampling schemes that enable an effective iterative update of the probability model. Conducted experiments on commonly adopted benchmarks for the QAP prove doubly stochastic matrices to be preferred to the other four models for permutations, both in terms of effectiveness and computational efficiency. Moreover, additional analyses performed on the structure of the QAP and the Linear Ordering Problem (LOP) show that DSMs are good to deal with assignment problems, but they have interesting capabilities to deal also with ordering problems such as the LOP. The paper concludes with a description of the potential uses of DSMs for other optimization paradigms, such as genetic algorithms or model-based gradient search.},
+  archive      = {J_ECJ},
+  author       = {Santucci, Valentino and Ceberio, Josu},
+  doi          = {10.1162/evco_a_00369},
+  journal      = {Evolutionary Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {425-457},
+  shortjournal = {Evol. Comput.},
+  title        = {On the use of the doubly stochastic matrix models for the quadratic assignment problem},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). P-NP instance decomposition based on the fourier transform for solving the linear ordering problem. <em>ECJ</em>, <em>33</em>(3), 395-423. (<a href='https://doi.org/10.1162/evco_a_00368'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Fourier transform over finite groups has proved to be a useful tool for analyzing combinatorial optimization problems. However, few heuristic and metaheuristic algorithms have been proposed in the literature that utilize the information provided by this technique to guide the search process. In this work, we attempt to address this research gap by considering the case study of the Linear Ordering Problem (LOP). Based on the Fourier transform, we propose an instance decomposition strategy that divides any LOP instance into the sum of two LOP instances associated with a P and an NP-Hard optimization problem. By linearly aggregating the instances obtained from the decomposition, it is possible to create artificial instances with modified proportions of the P and NP-Hard components. Conducted experiments show that increasing the weight of the P component leads to a less rugged fitness landscape suitable for local search-based optimization. We take advantage of this phenomenon by presenting a new metaheuristic algorithm called P-Descent Search (PDS). The proposed method, first, optimizes a surrogate instance with a high proportion of the P component, and then, gradually increases the weight of the NP-Hard component until the original instance is reached. The multi-start version of PDS shows a promising and predictable performance that appears to be correlated to specific characteristics of the problem, which could open the door to an automatic tuning of its hyperparameters.},
+  archive      = {J_ECJ},
+  author       = {Benavides, Xabier and Hernando, Leticia and Ceberio, Josu and Lozano, Jose A.},
+  doi          = {10.1162/evco_a_00368},
+  journal      = {Evolutionary Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {395-423},
+  shortjournal = {Evol. Comput.},
+  title        = {P-NP instance decomposition based on the fourier transform for solving the linear ordering problem},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimizing monotone chance-constrained submodular functions using evolutionary multiobjective algorithms. <em>ECJ</em>, <em>33</em>(3), 363-393. (<a href='https://doi.org/10.1162/evco_a_00360'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many real-world optimization problems can be stated in terms of submodular functions. Furthermore, these real-world problems often involve uncertainties which may lead to the violation of given constraints. A lot of evolutionary multiobjective algorithms following the Pareto optimization approach have recently been analyzed and applied to submodular problems with different types of constraints. We present a first runtime analysis of evolutionary multiobjective algorithms based on Pareto optimization for chance-constrained submodular functions. Here the constraint involves stochastic components and the constraint can only be violated with a small probability of α ⁠ . We investigate the classical GSEMO algorithm for two different bi-objective formulations using tail bounds to determine the feasibility of solutions. We show that the algorithm GSEMO obtains the same worst case performance guarantees for monotone submodular functions as recently analyzed greedy algorithms for the case of uniform IID weights and uniformly distributed weights with the same dispersion when using the appropriate bi-objective formulation. As part of our investigations, we also point out situations where the use of tail bounds in the first bi-objective formulation can prevent GSEMO from obtaining good solutions in the case of uniformly distributed weights with the same dispersion if the objective function is submodular but non-monotone due to a single element impacting monotonicity. Furthermore, we investigate the behavior of the evolutionary multiobjective algorithms GSEMO, NSGA-II, and SPEA2 on different submodular chance-constrained network problems. Our experimental results show that the use of evolutionary multiobjective algorithms leads to significant performance improvements compared to state-of-the-art greedy algorithms for submodular optimization.},
+  archive      = {J_ECJ},
+  author       = {Neumann, Aneta and Neumann, Frank},
+  doi          = {10.1162/evco_a_00360},
+  journal      = {Evolutionary Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {363-393},
+  shortjournal = {Evol. Comput.},
+  title        = {Optimizing monotone chance-constrained submodular functions using evolutionary multiobjective algorithms},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Genetic programming for automatically evolving multiple features to classification. <em>ECJ</em>, <em>33</em>(3), 335-362. (<a href='https://doi.org/10.1162/evco_a_00359'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Performing classification on high-dimensional data poses a significant challenge due to the huge search space. Moreover, complex feature interactions introduce an additional obstacle. The problems can be addressed by using feature selection to select relevant features or feature construction to construct a small set of high-level features. However, performing feature selection or feature construction might only make the feature set suboptimal. To remedy this problem, this study investigates the use of genetic programming for simultaneous feature selection and feature construction in addressing different classification tasks. The proposed approach is tested on 16 datasets and compared with seven methods including both feature selection and feature construction techniques. The results show that the obtained feature sets with the constructed and/or selected features can significantly increase the classification accuracy and reduce the dimensionality of the datasets. Further analysis reveals the complementarity of the obtained features leading to the promising classification performance of the proposed method.},
+  archive      = {J_ECJ},
+  author       = {Wang, Peng and Xue, Bing and Liang, Jing and Zhang, Mengjie},
+  doi          = {10.1162/evco_a_00359},
+  journal      = {Evolutionary Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {335-362},
+  shortjournal = {Evol. Comput.},
+  title        = {Genetic programming for automatically evolving multiple features to classification},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Large-scale multiobjective evolutionary algorithm guided by low-dimensional surrogates of scalarization functions. <em>ECJ</em>, <em>33</em>(3), 309-334. (<a href='https://doi.org/10.1162/evco_a_00354'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recently, computationally intensive multiobjective optimization problems have been efficiently solved by surrogate-assisted multiobjective evolutionary algorithms. However, most of those algorithms can handle no more than 200 decision variables. As the number of decision variables increases further, unreliable surrogate models will result in a dramatic deterioration of their performance, which makes large-scale expensive multiobjective optimization challenging. To address this challenge, we develop a large-scale multiobjective evolutionary algorithm guided by low-dimensional surrogate models of scalarization functions. The proposed algorithm (termed LDS-AF) reduces the dimension of the original decision space based on principal component analysis, and then directly approximates the scalarization functions in a decomposition-based multiobjective evolutionary algorithm. With the help of a two-stage modeling strategy and convergence control strategy, LDS-AF can keep a good balance between convergence and diversity, and achieve a promising performance without being trapped in a local optimum prematurely. The experimental results on a set of test instances have demonstrated its superiority over eight state-of-the-art algorithms on multiobjective optimization problems with up to 1,000 decision variables using only 500 real function evaluations.},
+  archive      = {J_ECJ},
+  author       = {Gu, Haoran and Wang, Handing and He, Cheng and Yuan, Bo and Jin, Yaochu},
+  doi          = {10.1162/evco_a_00354},
+  journal      = {Evolutionary Computation},
+  month        = {9},
+  number       = {3},
+  pages        = {309-334},
+  shortjournal = {Evol. Comput.},
+  title        = {Large-scale multiobjective evolutionary algorithm guided by low-dimensional surrogates of scalarization functions},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hyperparameter control using fuzzy logic: Evolving policies for adaptive fuzzy particle swarm optimization algorithm. <em>ECJ</em>, <em>33</em>(2), 279-308. (<a href='https://doi.org/10.1162/evco_a_00353'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Heuristic optimization methods such as particle swarm optimization (PSO) depend on their parameters to achieve optimal performance on a given class of problems. Some modifications of heuristic algorithms aim at adapting those parameters during the optimization process. We present a novel approach to design such adaptation strategies using continuous fuzzy feedback control. Fuzzy feedback provides a simple interface where probes are sampled in the optimization process and parameters are fed back to the optimizer. The probes are turned into parameters by a fuzzy process optimized beforehand to maximize performance on a training benchmark. Utilizing this framework, we systematically established 127 different fuzzy PSO algorithms featuring a maximum of seven parameters under fuzzy control. These newly devised algorithms exhibit superior performance compared to both traditional PSO and some of its best parameter control variants. The performance is reported in the single-objective bound-constrained numerical optimization competition of Congress on Evolutionary Computation (CEC) 2020. Additionally, two specific controls, highlighted for their efficacy and dependability, demonstrated commendable performance in real-world scenarios from CEC 2011.},
+  archive      = {J_ECJ},
+  author       = {Roy, Nicolas and Beauthier, Charlotte and Mayer, Alexandre},
+  doi          = {10.1162/evco_a_00353},
+  journal      = {Evolutionary Computation},
+  month        = {6},
+  number       = {2},
+  pages        = {279-308},
+  shortjournal = {Evol. Comput.},
+  title        = {Hyperparameter control using fuzzy logic: Evolving policies for adaptive fuzzy particle swarm optimization algorithm},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Landscape analysis for surrogate models in the evolutionary black-box context. <em>ECJ</em>, <em>33</em>(2), 249-277. (<a href='https://doi.org/10.1162/evco_a_00357'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Surrogate modeling has become a valuable technique for black-box optimization tasks with expensive evaluation of the objective function. In this paper, we investigate the relationships between the predictive accuracy of surrogate models, their settings, and features of the black-box function landscape during evolutionary optimization by the covariance matrix adaptation evolution strategy (CMA-ES) state-of-the-art optimizer for expensive continuous black-box tasks. This study aims to establish the foundation for specific rules and automated methods for selecting and tuning surrogate models by exploring relationships between landscape features and model errors, focusing on the behavior of a specific model within each generation in contrast to selecting a specific algorithm at the outset. We perform a feature analysis process, identifying a significant number of non-robust features and clustering similar landscape features, resulting in the selection of 14 features out of 384, varying with input data selection methods. Our analysis explores the error dependencies of four models across 39 settings, utilizing three methods for input data selection, drawn from surrogate-assisted CMA-ES runs on noiseless benchmarks within the comparing continuous optimizers (COCO) framework.},
+  archive      = {J_ECJ},
+  author       = {Pitra, Zbyněk and Koza, Jan and Tumpach, Jiří and Holeňa, Martin},
+  doi          = {10.1162/evco_a_00357},
+  journal      = {Evolutionary Computation},
+  month        = {6},
+  number       = {2},
+  pages        = {249-277},
+  shortjournal = {Evol. Comput.},
+  title        = {Landscape analysis for surrogate models in the evolutionary black-box context},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Evolutionary sparsity regularisation-based feature selection for binary classification. <em>ECJ</em>, <em>33</em>(2), 215-248. (<a href='https://doi.org/10.1162/evco_a_00358'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In classification, feature selection is an essential preprocessing step that selects a small subset of features to improve classification performance. Existing feature selection approaches can be divided into three main approaches: wrapper approaches, filter approaches, and embedded approaches. In comparison with the two other approaches, embedded approaches usually have better trade-off between classification performance and computation time. One of the most well-known embedded approaches is sparsity regularisation-based feature selection which generates sparse solutions for feature selection. Despite its good performance, sparsity regularisation-based feature selection outputs only a feature ranking which requires the number of selected features to be predefined. More importantly, the ranking mechanism introduces a risk of ignoring feature interactions which leads to the fact that many top-ranked but redundant features are selected. This work addresses the above problems by proposing a new representation that considers the interactions between features and can automatically determine an appropriate number of selected features. The proposed representation is used in a differential evolutionary (DE) algorithm to optimise the feature subset. In addition, a novel initialisation mechanism is proposed to let DE consider various numbers of selected features at the beginning. The proposed algorithm is examined on both synthetic and real-world datasets. The results on the synthetic dataset show that the proposed algorithm can select complementary features while existing sparsity regularisation-based feature selection algorithms are at risk of selecting redundant features. The results on real-world datasets show that the proposed algorithm achieves better classification performance than well-known wrapper, filter, and embedded approaches. The algorithm is also as efficient as filter feature selection approaches.},
+  archive      = {J_ECJ},
+  author       = {Nguyen, Bach Hoai and Xue, Bing and Zhang, Mengjie},
+  doi          = {10.1162/evco_a_00358},
+  journal      = {Evolutionary Computation},
+  month        = {6},
+  number       = {2},
+  pages        = {215-248},
+  shortjournal = {Evol. Comput.},
+  title        = {Evolutionary sparsity regularisation-based feature selection for binary classification},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Runtime analysis of single- and multiobjective evolutionary algorithms for chance-constrained optimization problems with normally distributed random variables*. <em>ECJ</em>, <em>33</em>(2), 191-214. (<a href='https://doi.org/10.1162/evco_a_00355'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Chance-constrained optimization problems allow us to model problems where constraints involving stochastic components should be violated only with a small probability. Evolutionary algorithms have been applied to this scenario and shown to achieve high-quality results. With this paper, we contribute to the theoretical understanding of evolutionary algorithms for chance-constrained optimization. We study the scenario of stochastic components that are independent and normally distributed. Considering the simple single-objective (1 + 1) EA, we show that imposing an additional uniform constraint already leads to local optima for very restricted scenarios and an exponential optimization time. We therefore introduce a multiobjective formulation of the problem which trades off the expected cost and its variance. We show that multiobjective evolutionary algorithms are highly effective when using this formulation and obtain a set of solutions that contains an optimal solution for any possible confidence level imposed on the constraint. Furthermore, we prove that this approach can also be used to compute a set of optimal solutions for the chance-constrained minimum spanning tree problem. In order to deal with potentially exponentially many trade-offs in the multiobjective formulation, we propose and analyze improved convex multiobjective approaches. Experimental investigations on instances of the NP-hard stochastic minimum weight dominating set problem confirm the benefit of the multiobjective and the improved convex multiobjective approach in practice.},
+  archive      = {J_ECJ},
+  author       = {Neumann, Frank and Witt, Carsten},
+  doi          = {10.1162/evco_a_00355},
+  journal      = {Evolutionary Computation},
+  month        = {6},
+  number       = {2},
+  pages        = {191-214},
+  shortjournal = {Evol. Comput.},
+  title        = {Runtime analysis of single- and multiobjective evolutionary algorithms for chance-constrained optimization problems with normally distributed random variables*},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Tail bounds on the runtime of categorical compact genetic algorithm. <em>ECJ</em>, <em>33</em>(2), 141-189. (<a href='https://doi.org/10.1162/evco_a_00361'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The majority of theoretical analyses of evolutionary algorithms in the discrete domain focus on binary optimization algorithms, even though black-box optimization on the categorical domain has many practical applications. In this paper, we consider a probabilistic model-based algorithm using the family of categorical distributions as its underlying distribution and set the sample size as two. We term this specific algorithm the categorical compact genetic algorithm (ccGA). The ccGA can be considered as an extension of the compact genetic algorithm (cGA), which is an efficient binary optimization algorithm. We theoretically analyze the dependency of the number of possible categories K ⁠ , the number of dimensions D ⁠ , and the learning rate η on the runtime. We investigate the tail bound of the runtime on two typical linear functions on the categorical domain: categorical OneMax (COM) and KVal . We derive that the runtimes on COM and KVal are O ( D ln ( D K ) / η ) and Θ ( D ln K / η ) with high probability, respectively. Our analysis is a generalization for that of the cGA on the binary domain.},
+  archive      = {J_ECJ},
+  author       = {Hamano, Ryoki and Uchida, Kento and Shirakawa, Shinichi and Morinaga, Daiki and Akimoto, Youhei},
+  doi          = {10.1162/evco_a_00361},
+  journal      = {Evolutionary Computation},
+  month        = {6},
+  number       = {2},
+  pages        = {141-189},
+  shortjournal = {Evol. Comput.},
+  title        = {Tail bounds on the runtime of categorical compact genetic algorithm},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A layered learning approach to scaling in learning classifier systems for boolean problems. <em>ECJ</em>, <em>33</em>(1), 115-140. (<a href='https://doi.org/10.1162/evco_a_00351'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Evolutionary Computation (EC) often throws away learned knowledge as it is reset for each new problem addressed. Conversely, humans can learn from small-scale problems, retain this knowledge (plus functionality), and then successfully reuse them in larger-scale and/or related problems. Linking solutions to problems has been achieved through layered learning, where an experimenter sets a series of simpler related problems to solve a more complex task. Recent works on Learning Classifier Systems (LCSs) has shown that knowledge reuse through the adoption of Code Fragments, GP-like tree-based programs, is plausible. However, random reuse is inefficient. Thus, the research question is how LCS can adopt a layered-learning framework, such that increasingly complex problems can be solved efficiently. An LCS (named XCSCF*) has been developed to include the required base axioms necessary for learning, refined methods for transfer learning and learning recast as a decomposition into a series of subordinate problems. These subordinate problems can be set as a curriculum by a teacher, but this does not mean that an agent can learn from it; especially if it only extracts over-fitted knowledge of each problem rather than the underlying scalable patterns and functions. Results show that from a conventional tabula rasa, with only a vague notion of which subordinate problems might be relevant, XCSCF* captures the general logic behind the tested domains and therefore can solve any n-bit Multiplexer, n-bit Carry-one, n-bit Majority-on, and n-bit Even-parity problems. This work demonstrates a step towards continual learning as learned knowledge is effectively reused in subsequent problems.},
+  archive      = {J_ECJ},
+  author       = {Alvarez, Isidro M. and Nguyen, Trung B. and Browne, Will N. and Zhang, Mengjie},
+  doi          = {10.1162/evco_a_00351},
+  journal      = {Evolutionary Computation},
+  month        = {3},
+  number       = {1},
+  pages        = {115-140},
+  shortjournal = {Evol. Comput.},
+  title        = {A layered learning approach to scaling in learning classifier systems for boolean problems},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BUSTLE: A versatile tool for the evolutionary learning of STL specifications from data. <em>ECJ</em>, <em>33</em>(1), 91-114. (<a href='https://doi.org/10.1162/evco_a_00347'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Describing the properties of complex systems that evolve over time is a crucial requirement for monitoring and understanding them. Signal Temporal Logic (STL) is a framework that proved to be effective for this aim because it is expressive and allows state properties as human-readable formulae. Crafting STL formulae that fit a particular system is, however, a difficult task. For this reason, a few approaches have been proposed recently for the automatic learning of STL formulae starting from observations of the system. In this paper, we propose BUSTLE (Bi-level Universal STL Evolver), an approach based on evolutionary computation for learning STL formulae from data. BUSTLE advances the state of the art because it (i) applies to a broader class of problems, in terms of what is known about the state of the system during its observation, and (ii) generates both the structure and the values of the parameters of the formulae employing a bi-level search mechanism (global for the structure, local for the parameters). We consider two cases where (a) observations of the system in both anomalous and regular state are available, or (b) only observations of regular state are available. We experimentally evaluate BUSTLE on problem instances corresponding to the two cases and compare it against previous approaches. We show that the evolved STL formulae are effective and human-readable: the versatility of BUSTLE does not come at the cost of lower effectiveness.},
+  archive      = {J_ECJ},
+  author       = {Pigozzi, Federico and Nenzi, Laura and Medvet, Eric},
+  doi          = {10.1162/evco_a_00347},
+  journal      = {Evolutionary Computation},
+  month        = {3},
+  number       = {1},
+  pages        = {91-114},
+  shortjournal = {Evol. Comput.},
+  title        = {BUSTLE: A versatile tool for the evolutionary learning of STL specifications from data},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Synthesising diverse and discriminatory sets of instances using novelty search in combinatorial domains. <em>ECJ</em>, <em>33</em>(1), 55-90. (<a href='https://doi.org/10.1162/evco_a_00350'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Gathering sufficient instance data to either train algorithm-selection models or understand algorithm footprints within an instance space can be challenging. We propose an approach to generating synthetic instances that are tailored to perform well with respect to a target algorithm belonging to a predefined portfolio but are also diverse with respect to their features. Our approach uses a novelty search algorithm with a linearly weighted fitness function that balances novelty and performance to generate a large set of diverse and discriminatory instances in a single run of the algorithm. We consider two definitions of novelty: (1) with respect to discriminatory performance within a portfolio of solvers; (2) with respect to the features of the evolved instances. We evaluate the proposed method with respect to its ability to generate diverse and discriminatory instances in two domains (knapsack and bin-packing), comparing to another well-known quality diversity method, Multi-dimensional Archive of Phenotypic Elites (MAP-Elites) and an evolutionary algorithm that only evolves for discriminatory behaviour. The results demonstrate that the novelty search method outperforms its competitors in terms of coverage of the space and its ability to generate instances that are diverse regarding the relative size of the “performance gap” between the target solver and the remaining solvers in the portfolio. Moreover, for the Knapsack domain, we also show that we are able to generate novel instances in regions of an instance space not covered by existing benchmarks using a portfolio of state-of-the-art solvers. Finally, we demonstrate that the method is robust to different portfolios of solvers (stochastic approaches, deterministic heuristics, and state-of-the-art methods), thereby providing further evidence of its generality.},
+  archive      = {J_ECJ},
+  author       = {Marrero, Alejandro and Segredo, Eduardo and León, Coromoto and Hart, Emma},
+  doi          = {10.1162/evco_a_00350},
+  journal      = {Evolutionary Computation},
+  month        = {3},
+  number       = {1},
+  pages        = {55-90},
+  shortjournal = {Evol. Comput.},
+  title        = {Synthesising diverse and discriminatory sets of instances using novelty search in combinatorial domains},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). OneMax is not the easiest function for fitness improvements. <em>ECJ</em>, <em>33</em>(1), 27-54. (<a href='https://doi.org/10.1162/evco_a_00348'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the ( 1 : s + 1 ) success rule for controlling the population size of the ( 1 , λ ) -EA. It was shown by Hevia Fajardo and Sudholt that this parameter control mechanism can run into problems for large s if the fitness landscape is too easy. They conjectured that this problem is worst for the OneMax benchmark, since in some well-established sense OneMax is known to be the easiest fitness landscape. In this paper, we disprove this conjecture. We show that there exist s and ɛ ɛ such that the self-adjusting ( 1 , λ ) -EA with the ( 1 : s + 1 ) -rule optimizes OneMax efficiently when started with ɛ ɛ n zero-bits, but does not find the optimum in polynomial time on Dynamic BinVal . Hence, we show that there are landscapes where the problem of the ( 1 : s + 1 ) -rule for controlling the population size of the ( 1 , λ ) -EA is more severe than for OneMax . The key insight is that, while OneMax is the easiest function for decreasing the distance to the optimum, it is not the easiest fitness landscape with respect to finding fitness-improving steps.},
+  archive      = {J_ECJ},
+  author       = {Kaufmann, Marc and Larcher, Maxime and Lengler, Johannes and Zou, Xun},
+  doi          = {10.1162/evco_a_00348},
+  journal      = {Evolutionary Computation},
+  month        = {3},
+  number       = {1},
+  pages        = {27-54},
+  shortjournal = {Evol. Comput.},
+  title        = {OneMax is not the easiest function for fitness improvements},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Drift analysis with fitness levels for elitist evolutionary algorithms. <em>ECJ</em>, <em>33</em>(1), 1-25. (<a href='https://doi.org/10.1162/evco_a_00349'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The fitness level method is a popular tool for analyzing the hitting time of elitist evolutionary algorithms. Its idea is to divide the search space into multiple fitness levels and estimate lower and upper bounds on the hitting time using transition probabilities between fitness levels. However, the lower bound generated by this method is often loose. An open question regarding the fitness level method is what are the tightest lower and upper time bounds that can be constructed based on transition probabilities between fitness levels. To answer this question, we combine drift analysis with fitness levels and define the tightest bound problem as a constrained multiobjective optimization problem subject to fitness levels. The tightest metric bounds by fitness levels are constructed and proven for the first time. Then linear bounds are derived from metric bounds and a framework is established that can be used to develop different fitness level methods for different types of linear bounds. The framework is generic and promising, as it can be used to draw tight time bounds on both fitness landscapes with and without shortcuts. This is demonstrated in the example of the (1 + 1) EA maximizing the TwoMax1 function.},
+  archive      = {J_ECJ},
+  author       = {He, Jun and Zhou, Yuren},
+  doi          = {10.1162/evco_a_00349},
+  journal      = {Evolutionary Computation},
+  month        = {3},
+  number       = {1},
+  pages        = {1-25},
+  shortjournal = {Evol. Comput.},
+  title        = {Drift analysis with fitness levels for elitist evolutionary algorithms},
+  volume       = {33},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

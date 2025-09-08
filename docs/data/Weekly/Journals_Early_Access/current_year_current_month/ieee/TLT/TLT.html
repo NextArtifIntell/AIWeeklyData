@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TLT</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tlt">TLT - 2</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Quantum algorithm design and its implementation for solving test sheet composition optimization using quantum annealing approach. <em>TLT</em>, 1-14. (<a href='https://doi.org/10.1109/TLT.2025.3604522'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In testing systems, Item Response Theory (IRT) is a widely used model for accurately synthesizing user response information. However, compared to Classical Test Theory (CTT) approaches, it imposes a higher computational burden and increases system design complexity. Quantum computing has shown promise in alleviating these computational challenges. Currently, general-purpose quantum computers are still in a relatively early stage of development. However, special-purpose quantum computing architectures have been designed to solve combinatorial optimization problems, attracting significant attention across various fields. These systems enable researchers to tackle domain-specific optimization problems with reduced computational time. To the best of our knowledge, no applications of quantum computing have been proposed in the field of educational technology. This study therefore aimed to design a quantum QUBO (Quadratic Unconstrained Binary Optimization) formulation for optimizing test sheet composition. The proposed model can be implemented on practical quantum Ising machines (or digital quantum Ising machines for larger qubit usage) to evaluate system efficiency. Simulation results demonstrate that the proposed approach outperforms traditional methods, including the genetic algorithm and particle swarm optimization algorithm, in terms of computational efficiency.},
+  archive      = {J_TLT},
+  author       = {Chu-Fu Wang and Yih-Kai Lin and Ling Cheng},
+  doi          = {10.1109/TLT.2025.3604522},
+  journal      = {IEEE Transactions on Learning Technologies},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Learn. Technol.},
+  title        = {Quantum algorithm design and its implementation for solving test sheet composition optimization using quantum annealing approach},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Building trust in AI through dialogues with chinese ethics: Toward ethical partnerships in education. <em>TLT</em>, 1-10. (<a href='https://doi.org/10.1109/TLT.2025.3604616'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes a novel framework for ethical human–AI partnerships in education by integrating Eastern ethics (with Chinese ethics as an example), Intelligence Augmentation (IA), and agentic AI design. Moving beyond the dominant Western paradigm, the study draws from Confucian and Daoist principles—such as relational trust, co-agency, and moral cultivation—to envision AI as an ethical partner, not just a tool. It addresses two key questions: How can trust in AI be cultivated in education? and When can AI be ethically considered a collaborator? The authors introduce a triadic model combining normative grounding, cognitive scaffolding, and system-level design, operationalized through culturally sensitive platforms, pedagogy, and ethical interaction. They also propose a three-tiered evaluation system: learner trust metrics, educator audits, and AI reflexivity protocols. This interdisciplinary synthesis provides a scalable, culturally rooted pathway for designing AI systems that are pedagogically meaningful, ethically adaptive, and co-constructive—contributing to more equitable and morally resonant educational futures.},
+  archive      = {J_TLT},
+  author       = {John Chi-Kin Lee and Chris Dede and Minjuan Wang and Xuefan Li},
+  doi          = {10.1109/TLT.2025.3604616},
+  journal      = {IEEE Transactions on Learning Technologies},
+  month        = {9},
+  pages        = {1-10},
+  shortjournal = {IEEE Trans. Learn. Technol.},
+  title        = {Building trust in AI through dialogues with chinese ethics: Toward ethical partnerships in education},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

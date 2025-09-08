@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AIJ</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="aij">AIJ - 14</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Abstracting situation calculus action theories. <em>AIJ</em>, <em>348</em>, 104407. (<a href='https://doi.org/10.1016/j.artint.2025.104407'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We develop a general framework for agent abstraction based on the situation calculus and the ConGolog agent programming language. We assume that we have a high-level specification and a low-level specification of the agent, both represented as basic action theories. A refinement mapping specifies how each high-level action is implemented by a low-level ConGolog program and how each high-level fluent can be translated into a low-level formula. We define a notion of sound abstraction between such action theories in terms of the existence of a suitable bisimulation between their respective models. Sound abstractions have many useful properties that ensure that we can reason about the agent's actions (e.g., executability, projection, and planning) at the abstract level, and refine and concretely execute them at the low level. We also characterize the notion of complete abstraction where all actions (including exogenous ones) that the high level thinks can happen can in fact occur at the low level. To facilitate verifying that one has a sound/complete abstraction relative to a mapping, we provide a set of necessary and sufficient conditions. Finally, we identify a set of basic action theory constraints that ensure that for any low-level action sequence, there is a unique high-level action sequence that it refines. This allows us to track/monitor what the low-level agent is doing and describe it in abstract terms (i.e., provide high-level explanations, for instance, to a client or manager).},
+  archive      = {J_AIJ},
+  author       = {Bita Banihashemi and Giuseppe De Giacomo and Yves Lespérance},
+  doi          = {10.1016/j.artint.2025.104407},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104407},
+  shortjournal = {Artif. Intell.},
+  title        = {Abstracting situation calculus action theories},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards optimal subsidy bounds for envy-freeable allocations. <em>AIJ</em>, <em>348</em>, 104406. (<a href='https://doi.org/10.1016/j.artint.2025.104406'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the fair division of indivisible items with subsidies among n agents, where the absolute marginal valuation of each item is at most one. Under monotone nondecreasing valuations (where each item is a good), Brustle et al. [9] demonstrated that a maximum subsidy of 2 ( n − 1 ) and a total subsidy of 2 ( n − 1 ) 2 are sufficient to guarantee the existence of an envy-freeable allocation. In this paper, we improve upon these bounds, even in a wider model. Namely, we show that, given an EF1 allocation, we can compute in polynomial time an envy-free allocation with a subsidy of at most n − 1 per agent and a total subsidy of at most n ( n − 1 ) / 2 . Moreover, when the valuations are monotone nondecreasing, we provide a polynomial-time algorithm that computes an envy-free allocation with a subsidy of at most n − 1.5 per agent and a total subsidy of at most ( n 2 − n − 1 ) / 2 .},
+  archive      = {J_AIJ},
+  author       = {Yasushi Kawase and Kazuhisa Makino and Hanna Sumita and Akihisa Tamura and Makoto Yokoo},
+  doi          = {10.1016/j.artint.2025.104406},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104406},
+  shortjournal = {Artif. Intell.},
+  title        = {Towards optimal subsidy bounds for envy-freeable allocations},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Local-MIP: Efficient local search for mixed integer programming. <em>AIJ</em>, <em>348</em>, 104405. (<a href='https://doi.org/10.1016/j.artint.2025.104405'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mixed Integer Programming (MIP) is a fundamental model in operations research with broad industrial applications. Local search is a powerful methodology for solving complex optimization problems; however, the development of local search algorithms for MIP still needs exploration. In this work, we propose Local-MIP , an efficient local search algorithm tailored for MIP that integrates novel operators and employs a two-mode architecture to adaptively apply operators based on the current solution's feasibility. For the feasible mode, we propose the lift move operator and a corresponding lift process to improve the objective value while maintaining feasibility. For the infeasible mode, we propose the breakthrough move and mixed tight move operators to respectively optimize the objective function and satisfy constraints. To apply operators intelligently, we develop a dynamic weighting scheme that balances the priorities of the objective function and constraints. Furthermore, we propose a two-level scoring function structure that hierarchically selects operations, guiding the search toward high-quality feasible solutions. Experiments are conducted on public benchmarks to compare Local-MIP with state-of-the-art MIP solvers in finding high-quality solutions. The results show that Local-MIP significantly outperforms CPLEX , HiGHS , SCIP , and Feasibility Jump while remaining competitive with the commercial solver Gurobi on challenging problems within short time limits. Moreover, Local-MIP establishes 10 new records on MIPLIB open instances.},
+  archive      = {J_AIJ},
+  author       = {Peng Lin and Shaowei Cai and Mengchuan Zou and Jinkun Lin},
+  doi          = {10.1016/j.artint.2025.104405},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104405},
+  shortjournal = {Artif. Intell.},
+  title        = {Local-MIP: Efficient local search for mixed integer programming},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Algebras of actions in an agent's representations of the world. <em>AIJ</em>, <em>348</em>, 104403. (<a href='https://doi.org/10.1016/j.artint.2025.104403'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Learning efficient representations allows robust processing of data, data that can then be generalised across different tasks and domains, and it is thus paramount in various areas of Artificial Intelligence, including computer vision, natural language processing and reinforcement learning, among others. Within the context of reinforcement learning, we propose in this paper a mathematical framework to learn representations by extracting the algebra of the transformations of worlds from the perspective of an agent. As a starting point, we use our framework to reproduce representations from the symmetry-based disentangled representation learning (SBDRL) formalism proposed by [1] and prove that, although useful, they are restricted to transformations that respond to the properties of algebraic groups. We then generalise two important results of SBDRL –the equivariance condition and the disentangling definition– from only working with group-based symmetry representations to working with representations capturing the transformation properties of worlds for any algebra, using examples common in reinforcement learning and generated by an algorithm that computes their corresponding Cayley tables. Finally, we combine our generalised equivariance condition and our generalised disentangling definition to show that disentangled sub-algebras can each have their own individual equivariance conditions, which can be treated independently, using category theory. In so doing, our framework offers a rich formal tool to represent different types of symmetry transformations in reinforcement learning, extending the scope of previous proposals and providing Artificial Intelligence developers with a sound foundation to implement efficient applications.},
+  archive      = {J_AIJ},
+  author       = {Alexander Dean and Eduardo Alonso and Esther Mondragón},
+  doi          = {10.1016/j.artint.2025.104403},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104403},
+  shortjournal = {Artif. Intell.},
+  title        = {Algebras of actions in an agent's representations of the world},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhancing cooperativity in controlled query evaluation over ontologies. <em>AIJ</em>, <em>348</em>, 104402. (<a href='https://doi.org/10.1016/j.artint.2025.104402'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Controlled Query Evaluation (CQE) is a methodology designed to maintain confidentiality by either rejecting specific queries or adjusting responses to safeguard sensitive information. In this investigation, our focus centers on CQE within Description Logic ontologies, aiming to ensure that queries are answered truthfully as long as possible before resorting to deceptive responses, a cooperativity property which is called the “longest honeymoon”. Our work introduces new semantics for CQE, denoted as MC-CQE, which enjoys the longest honeymoon property and outperforms previous methodologies in terms of cooperativity. We study the complexity of query answering in this new framework for ontologies expressed in the Description Logic DL-Lite R . Specifically, we establish data complexity results under different maximally cooperative semantics and for different classes of queries. Our results identify both tractable and intractable cases. In particular, we show that the evaluation of Boolean unions of conjunctive queries is the same under all the above semantics and its data complexity is in . This result makes query answering amenable to SQL query rewriting. However, this favorable property does not extend to open queries, even with a restricted query language limited to conjunctions of atoms. While, in general, answering open queries in the MC-CQE framework is intractable, we identify a sub-family of semantics under which answering full conjunctive queries is tractable.},
+  archive      = {J_AIJ},
+  author       = {Piero Bonatti and Gianluca Cima and Domenico Lembo and Francesco Magliocca and Lorenzo Marconi and Riccardo Rosati and Luigi Sauro and Domenico Fabio Savo},
+  doi          = {10.1016/j.artint.2025.104402},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104402},
+  shortjournal = {Artif. Intell.},
+  title        = {Enhancing cooperativity in controlled query evaluation over ontologies},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BATED: Learning fair representation for pre-trained language models via biased teacher-guided disentanglement. <em>AIJ</em>, <em>348</em>, 104401. (<a href='https://doi.org/10.1016/j.artint.2025.104401'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rapid development of Pre-trained Language Models (PLMs) and their widespread deployment in various real-world applications, social biases of PLMs have attracted increasing attention, especially the fairness of downstream tasks, which potentially affects the development and stability of society. Among existing debiasing methods, intrinsic debiasing methods are not necessarily effective when applied to downstream tasks, and the downstream fine-tuning process may introduce new biases or catastrophic forgetting. Most extrinsic debiasing methods rely on sensitive attribute words as prior knowledge to supervise debiasing training. However, it is difficult to collect sensitive attribute information of real data due to privacy and regulation. Moreover, limited sensitive attribute words may lead to inadequate debiasing training. To this end, this paper proposes a debiasing method to learn fair representation for PLMs via B i A sed TE acher-guided D isentanglement (called BATED ). Specific to downstream tasks, BATED performs debiasing training under the guidance of a biased teacher model rather than relying on sensitive attribute information of the training data. First, we leverage causal contrastive learning to train a task-agnostic general biased teacher model. We then employ Variational Auto-Encoder (VAE) to disentangle the PLM-encoded representation into the fair representation and the biased representation. The Biased representation is further decoupled via biased teacher-guided disentanglement, while the fair representation learn downstream tasks. Therefore, BATED guarantees the performance of downstream tasks while improving the fairness. Experimental results on seven PLMs testing three downstream tasks demonstrate that BATED outperforms the state-of-the-art overall in terms of fairness and performance on downstream tasks.},
+  archive      = {J_AIJ},
+  author       = {Yingji Li and Mengnan Du and Rui Song and Mu Liu and Ying Wang},
+  doi          = {10.1016/j.artint.2025.104401},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104401},
+  shortjournal = {Artif. Intell.},
+  title        = {BATED: Learning fair representation for pre-trained language models via biased teacher-guided disentanglement},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Choosing abstraction levels for model-based software debugging: A theoretical and empirical analysis for spreadsheet programs. <em>AIJ</em>, <em>348</em>, 104399. (<a href='https://doi.org/10.1016/j.artint.2025.104399'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Model-based diagnosis is a generally applicable, principled approach to the systematic debugging of a wide range of system types such as circuits, knowledge bases, physical devices, or software. Based on a formal description of the system, it enables precise and deterministic reasoning about potential faults responsible for observed misbehavior. In software, such a formal system description can often even be extracted from the buggy program fully automatically. As logical reasoning is central to diagnosis, the performance of model-based debuggers is largely influenced by reasoning efficiency, which in turn depends on the complexity and expressivity of the system description. Since highly detailed models capturing exact semantics often exceed the capabilities of current reasoning tools, researchers have proposed more abstract representations. In this work, we thoroughly analyze system modeling techniques with a focus on fault localization in spreadsheets—one of the most widely used end-user programming paradigms. Specifically, we present three constraint model types characterizing spreadsheets at different abstraction levels, show how to extract them automatically from faulty spreadsheets, and provide theoretical and empirical investigations of the impact of abstraction on both diagnostic output and computational performance. Our main conclusions are that (i) for the model types, there is a trade-off between the conciseness of generated fault candidates and computation time, (ii) the exact model is often impractical, and (iii) a new model based on qualitative reasoning yields the same solutions as the exact one in up to more than half the cases while being orders of magnitude faster. Due to their ability to restrict the solution space in a sound way, the explored model-based techniques, rather than being used as standalone approaches, are expected to realize their full potential in combination with iterative sequential diagnosis or indeterministic but more performant statistical debugging methods.},
+  archive      = {J_AIJ},
+  author       = {Patrick Rodler and Birgit Hofer and Dietmar Jannach and Iulia Nica and Franz Wotawa},
+  doi          = {10.1016/j.artint.2025.104399},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104399},
+  shortjournal = {Artif. Intell.},
+  title        = {Choosing abstraction levels for model-based software debugging: A theoretical and empirical analysis for spreadsheet programs},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Argus: Programming with communication protocols in a belief-desire-intention architecture. <em>AIJ</em>, <em>348</em>, 104398. (<a href='https://doi.org/10.1016/j.artint.2025.104398'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Protocols model multiagent systems (MAS) by capturing the communications between its agents. Belief-Desire-Intention (BDI) architectures provide an attractive way for organizing an agent in terms of cognitive concepts. Current BDI approaches, however, lack adequate support for engineering protocol-based agents. We describe Argus, an approach that melds recent advances in flexible, declarative communication protocols with BDI architectures. For concreteness, we adopt Jason as an exemplar of the BDI paradigm and show how to support protocol-based reasoning in it. Specifically, Argus contributes (1) a novel architecture and formal operational semantics combining protocols and BDI; (2) a code generation-based programming model that guides the implementation of agents; and (3) integrity checking for incoming and outgoing messages that help ensure that the agents are well-behaved. The Argus conceptual architecture builds quite naturally on top of Jason. Thus, Argus enables building more flexible multiagent systems while using a BDI architecture than is currently possible.},
+  archive      = {J_AIJ},
+  author       = {Samuel H. Christie V and Munindar P. Singh and Amit K. Chopra},
+  doi          = {10.1016/j.artint.2025.104398},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104398},
+  shortjournal = {Artif. Intell.},
+  title        = {Argus: Programming with communication protocols in a belief-desire-intention architecture},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Social behavior as a key to learning-based multi-agent pathfinding dilemmas. <em>AIJ</em>, <em>348</em>, 104397. (<a href='https://doi.org/10.1016/j.artint.2025.104397'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Multi-agent Path Finding (MAPF) problem involves finding collision-free paths for a team of agents in a known, static environment, with important applications in warehouse automation, logistics, or last-mile delivery. To meet the needs of these large-scale applications, current learning-based methods often deploy the same fully trained, decentralized network to all agents to improve scalability. However, such parameter sharing typically results in homogeneous behaviors among agents, which may prevent agents from breaking ties around symmetric conflict (e.g., bottlenecks) and might lead to live-/deadlocks. In this paper, we propose SYLPH, a novel learning-based MAPF framework aimed to mitigate the adverse effects of homogeneity by allowing agents to learn and dynamically select different social behaviors (akin to individual, dynamic roles), without affecting the scalability offered by parameter sharing. Specifically, SYLPH offers a novel hierarchical mechanism by introducing Social Value Orientation (SVO) as a temporally extended latent variable that plays a central role in both policy generation and reward assignment. To support this hierarchical decision-making process, we introduce Social-aware Multi-Policy PPO (SMP3O), a reinforcement learning method that ensures stable and effective training through a mechanism for the cross-utilization of advantages. Moreover, we design an SVO-based learning tie-breaking algorithm, allowing agents to proactively avoid collisions, rather than relying solely on post-processing techniques. As a result of this hierarchical decision-making and exchange of social preferences, SYLPH endows agents with the ability to reason about the MAPF task through more latent spaces and nuanced contexts, leading to varied responses that can help break ties around symmetric conflicts. Our comparative experiments show that SYLPH achieves state-of-the-art performance, surpassing other learning-based MAPF planners in random, room-like, and maze-like maps, while our ablation studies demonstrate the advantages of each component in SYLPH. We finally experimentally validate our trained policies on hardware in three types of maps, showing how SYLPH allows agents to find high-quality paths under real-life conditions. Our code and videos are available at: marmotlab.github.io/mapf_sylph .},
+  archive      = {J_AIJ},
+  author       = {Chengyang He and Tanishq Duhan and Parth Tulsyan and Patrick Kim and Guillaume Sartoretti},
+  doi          = {10.1016/j.artint.2025.104397},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104397},
+  shortjournal = {Artif. Intell.},
+  title        = {Social behavior as a key to learning-based multi-agent pathfinding dilemmas},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MATE: Masked optimal transport with dynamic selection for partial label graph learning. <em>AIJ</em>, <em>348</em>, 104396. (<a href='https://doi.org/10.1016/j.artint.2025.104396'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper investigates the problem of partial label graph learning, in which every graph is associated with a set of candidate labels. Previous methods for weakly supervised graph classification often provide pseudo-labels for graph samples that could be overconfident and biased towards the dominant classes, thus resulting in substantial error accumulation. In this paper, we introduce a new framework named M asked Optim a l T ransport with Dynamic S e lection (MATE) for partial label graph learning, which improves the quality of graph assignments from the perspectives of class balancing and uncertainty mining. In particular, our MATE masks probabilities out of candidate sets and then adopts optimal transport to optimize the assignments without class biases. This design is based on the assumption that the true label distribution is class-balanced or nearly balanced, which is common in various training datasets and real-world scenarios. To further reduce potential noise, we propose a novel scoring metric termed partial energy discrepancy (PED) to evaluate the uncertainty of assignments, and then introduce a dynamic selection strategy that modifies the sample-specific thresholds via momentum updating. Finally, these samples are divided into three levels, i.e., confident, less-confident, and unconfident and each group is trained separately in our collaborative optimization framework. Extensive experiments on various benchmarks demonstrate the superiority of our MATE compared to various state-of-the-art baselines.},
+  archive      = {J_AIJ},
+  author       = {Yiyang Gu and Binqi Chen and Zihao Chen and Ziyue Qiao and Xiao Luo and Junyu Luo and Zhiping Xiao and Wei Ju and Ming Zhang},
+  doi          = {10.1016/j.artint.2025.104396},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104396},
+  shortjournal = {Artif. Intell.},
+  title        = {MATE: Masked optimal transport with dynamic selection for partial label graph learning},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Interpreting capsule networks for image classification by routing path visualization. <em>AIJ</em>, <em>348</em>, 104395. (<a href='https://doi.org/10.1016/j.artint.2025.104395'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Artificial neural networks are popular for computer vision as they often give state-of-the-art performance, but are difficult to interpret because of their complexity. This black box modeling is especially troubling when the application concerns human well-being such as in medical image analysis or autonomous driving. In this work, we propose a technique called routing path visualization for capsule networks, which reveals how much of each region in an image is routed to each capsule. In turn, this technique can be used to interpret the entity that a given capsule detects, and speculate how the network makes a prediction. We demonstrate our new visualization technique on several real world datasets. Experimental results suggest that routing path visualization can precisely localize the predicted class from an image, even though the capsule networks are trained using just images and their respective class labels, without additional information defining the location of the class in the image.},
+  archive      = {J_AIJ},
+  author       = {Amanjot Bhullar and Michael Czomko and R. Ayesha Ali and Douglas L. Welch},
+  doi          = {10.1016/j.artint.2025.104395},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104395},
+  shortjournal = {Artif. Intell.},
+  title        = {Interpreting capsule networks for image classification by routing path visualization},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Relaxed core stability in hedonic games. <em>AIJ</em>, <em>348</em>, 104394. (<a href='https://doi.org/10.1016/j.artint.2025.104394'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The core is a well-known and fundamental notion of stability in games intended to model coalition formation such as hedonic games: an outcome is core stable if there exists no blocking coalition , i.e., no set of agents that may profit by forming a coalition together. The fact that the cardinality of a blocking coalition, i.e., the number of deviating agents that have to coordinate themselves, can be arbitrarily high, and the fact that agents may benefit only by a tiny amount from their deviation, while they could incur in a higher cost for deviating, suggest that the core is not able to suitably model practical scenarios in large and highly distributed multi-agent systems. For this reason, we consider relaxed core stable outcomes where the notion of permissible deviations is modified along two orthogonal directions: the former takes into account the size q of the deviating coalition, and the latter the amount of utility gain, in terms of a multiplicative factor k , for each member of the deviating coalition. These changes result in two different notions of stability, namely, the q-size core and k-improvement core . We consider fractional hedonic games, that is a well-known subclass of hedonic games for which core stable outcomes are not guaranteed to exist and it is computationally hard to decide non-emptiness of the core; we investigate these relaxed concepts of stability with respect to their existence, computability and performance in terms of price of anarchy and price of stability, by providing in many cases tight or almost tight bounds. Interestingly, the considered relaxed notions of core also possess the appealing property of recovering, in some notable cases, the convergence, the existence and the possibility of computing stable solutions in polynomial time.},
+  archive      = {J_AIJ},
+  author       = {Angelo Fanelli and Gianpiero Monaco and Luca Moscardelli},
+  doi          = {10.1016/j.artint.2025.104394},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104394},
+  shortjournal = {Artif. Intell.},
+  title        = {Relaxed core stability in hedonic games},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Provably efficient information-directed sampling algorithms for multi-agent reinforcement learning. <em>AIJ</em>, <em>348</em>, 104392. (<a href='https://doi.org/10.1016/j.artint.2025.104392'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work designs and analyzes a novel set of algorithms for multi-agent reinforcement learning (MARL) based on the principle of information-directed sampling (IDS). These algorithms draw inspiration from foundational concepts in information theory, and are proven to be sample efficient in MARL settings such as two-player zero-sum Markov games (MGs) and multi-player general-sum MGs. For episodic two-player zero-sum MGs, we present three sample-efficient algorithms for learning Nash equilibrium. The basic algorithm, referred to as MAIDS , employs an asymmetric learning structure where the max-player first solves a minimax optimization problem based on the joint information ratio of the joint policy, and the min-player then minimizes the marginal information ratio with the max-player's policy fixed. Theoretical analyses show that it achieves a Bayesian regret of O ˜ ( K ) for K episodes. To reduce the computational load of MAIDS , we develop an improved algorithm called Reg-MAIDS , which has the same Bayesian regret bound while enjoying less computational complexity. Moreover, by leveraging the flexibility of IDS principle in choosing the learning target, we propose two methods for constructing compressed environments based on rate-distortion theory, upon which we develop an algorithm Compressed-MAIDS wherein the learning target is a compressed environment. Finally, we extend Reg-MAIDS to multi-player general-sum MGs and prove that it can learn either the Nash equilibrium or coarse correlated equilibrium in a sample-efficient manner.},
+  archive      = {J_AIJ},
+  author       = {Qiaosheng Zhang and Chenjia Bai and Shuyue Hu and Zhen Wang and Xuelong Li},
+  doi          = {10.1016/j.artint.2025.104392},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104392},
+  shortjournal = {Artif. Intell.},
+  title        = {Provably efficient information-directed sampling algorithms for multi-agent reinforcement learning},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the design of truthful mechanisms for the capacitated facility location problem with two and more facilities. <em>AIJ</em>, <em>348</em>, 104390. (<a href='https://doi.org/10.1016/j.artint.2025.104390'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we explore the Mechanism Design aspects of the m -Capacitated Facility Location Problem ( m -CFLP) on a line, focusing on two frameworks. In the first framework, the number of facilities is arbitrary, all facilities share the same capacity, and the number of agents matches the total capacity of the facilities. In the second framework, we need to locate two facilities, each with a capacity equal to at least half the number of agents. For both frameworks, we propose truthful mechanisms with bounded approximation ratios in terms of Social Cost (SC) and Maximum Cost (MC). When m > 2 , our results stand in contrast to the impossibility results known for the classical m -Facility Location Problem, where capacity constraints are absent. Moreover, all the proposed mechanisms are optimal with respect to MC and either optimal or near-optimal with respect to the SC among anonymous mechanisms. We then establish lower bounds on the approximation ratios that any truthful and deterministic mechanism achieves with respect to SC and MC for both frameworks. Lastly, we run several numerical experiments to empirically evaluate the performances of our mechanisms with respect to the SC or the MC. Our empirical analysis shows that our proposed mechanisms outperform all previously proposed mechanisms applicable in this setting.},
+  archive      = {J_AIJ},
+  author       = {Gennaro Auricchio and Zihe Wang and Jie Zhang},
+  doi          = {10.1016/j.artint.2025.104390},
+  journal      = {Artificial Intelligence},
+  month        = {11},
+  pages        = {104390},
+  shortjournal = {Artif. Intell.},
+  title        = {On the design of truthful mechanisms for the capacitated facility location problem with two and more facilities},
+  volume       = {348},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

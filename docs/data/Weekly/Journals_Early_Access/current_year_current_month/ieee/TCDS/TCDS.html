@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TCDS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tcds">TCDS - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Graph reinforcement learning-based reachability map for generalized mobile manipulation. <em>TCDS</em>, 1-14. (<a href='https://doi.org/10.1109/TCDS.2025.3605388'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mobile manipulators need to determine feasible navigation positions before manipulation tasks. Real-world environments, with varying obstacles and objects, pose significant challenges for computing optimal navigation positions due to their variability. In this work, a novel method named Graph Reinforcement Learning-based Reachability Map (GRAM) is proposed. First, GRAM uses a graph attention network (GAT) to capture the spatial relationships between objects. Then, it leverages the Q-value from the pre-trained critic network to generate the reachability map. The reachability map is integrated into navigation policies for long-horizon tasks, effectively solving the skill transition problems. Extensive simulation and real-world experiments were conducted on the Fetch mobile robot platform. The results demonstrate the superiority of GRAM, with simulation results showing an average 16.3% performance improvement over the baseline in four flexible environments. In long-horizon tasks, GRAM’s overall task success rate improved by 4.2%. The project is open-source at https://github.com/nubotnudt/Grand RM.},
+  archive      = {J_TCDS},
+  author       = {Lu Jiang and Junkai Ren and Zhiqian Zhou and Yuke Qu and Huimin Lu and Meiping Wu},
+  doi          = {10.1109/TCDS.2025.3605388},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Graph reinforcement learning-based reachability map for generalized mobile manipulation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

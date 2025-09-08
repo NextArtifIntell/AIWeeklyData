@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ARTMED</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="artmed">ARTMED - 2</h2>
+<ul>
+<li><details>
+<summary>
+(2025). LoRA-PT: Low-rank adapting UNETR for hippocampus segmentation using principal tensor singular values and vectors. <em>ARTMED</em>, <em>170</em>, 103254. (<a href='https://doi.org/10.1016/j.artmed.2025.103254'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The hippocampus is an important brain structure involved in various psychiatric disorders, and its automatic and accurate segmentation is vital for studying these diseases. Recently, deep learning-based methods have made significant progress in hippocampus segmentation. However, training deep neural network models requires substantial computational resources, time, and a large amount of labeled training data, which is frequently scarce in medical image segmentation. To address these issues, we propose LoRA-PT, a novel parameter-efficient fine-tuning (PEFT) method that transfers the pre-trained UNETR model from the BraTS2021 dataset to the hippocampus segmentation task. Specifically, LoRA-PT divides the parameter matrix of the transformer structure into three distinct sizes, yielding three third-order tensors. These tensors are decomposed using tensor singular value decomposition to generate low-rank tensors consisting of the principal singular values and vectors, with the remaining singular values and vectors forming the residual tensor. During fine-tuning, only the low-rank tensors (i.e., the principal tensor singular values and vectors) are updated, while the residual tensors remain unchanged. We validated the proposed method on three public hippocampus datasets, and the experimental results show that LoRA-PT outperformed state-of-the-art PEFT methods in segmentation accuracy while significantly reducing the number of parameter updates. Our source code is available at https://github.com/WangangCheng/LoRA-PT/tree/LoRA-PT .},
+  archive      = {J_ARTMED},
+  author       = {Guanghua He and Wangang Cheng and Hancan Zhu and Gaohang Yu},
+  doi          = {10.1016/j.artmed.2025.103254},
+  journal      = {Artificial Intelligence in Medicine},
+  month        = {12},
+  pages        = {103254},
+  shortjournal = {Artif. Intell. Med.},
+  title        = {LoRA-PT: Low-rank adapting UNETR for hippocampus segmentation using principal tensor singular values and vectors},
+  volume       = {170},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MMSupcon: An image fusion-based multi-modal supervised contrastive method for brain tumor diagnosis. <em>ARTMED</em>, <em>170</em>, 103253. (<a href='https://doi.org/10.1016/j.artmed.2025.103253'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The diagnosis of brain tumors is pivotal for effective treatment, with MRI serving as a commonly used non-invasive diagnostic modality in clinical practices. Fundamentally, brain tumor diagnosis is a type of pattern recognition task that requires the integration of information from multi-modal MRI images. However, existing fusion strategies are hindered by the scarcity of multi-modal imaging samples. In this paper, we propose a new training paradigm tailored for the scenario of multi-modal imaging in brain tumor diagnosis, called multi-modal supervised contrastive learning method (MMSupcon). This method significantly enhances diagnostic accuracy through two key components: multi-modal medical image fusion and multi-modal supervised contrastive loss. First, the fusion component integrates complementary imaging modalities to generate information-rich samples. Second, by introducing fused samples to guide original samples in learning feature consistency or inconsistency among classes, our loss component effectively preserves the integrity of cross-modal information while maintaining the distinctiveness of individual modalities. Finally, MMSupcon is validated on a real-world brain tumor dataset collected from Beijing Tiantan Hospital, achieving state-of-the-art performance. Furthermore, additional experiments on two public BraTS glioma classification datasets also demonstrate our substantial performance improvements. The source code is released at https://github.com/hywang02/MMSupcon .},
+  archive      = {J_ARTMED},
+  author       = {Haoyu Wang and Jing Zhang and Siying Wu and Haoran Wei and Xun Chen and Yunwei Ou and Xiaoyan Sun},
+  doi          = {10.1016/j.artmed.2025.103253},
+  journal      = {Artificial Intelligence in Medicine},
+  month        = {12},
+  pages        = {103253},
+  shortjournal = {Artif. Intell. Med.},
+  title        = {MMSupcon: An image fusion-based multi-modal supervised contrastive method for brain tumor diagnosis},
+  volume       = {170},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

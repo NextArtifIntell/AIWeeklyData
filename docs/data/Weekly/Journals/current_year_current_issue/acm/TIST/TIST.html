@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TIST</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tist">TIST - 4</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Hire: Hybrid-modal interaction with multiple relational enhancements for image-text matching. <em>TIST</em>, <em>16</em>(3), 1-23. (<a href='https://doi.org/10.1145/3714431'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Image-Text Matching (ITM) is a fundamental problem in computer vision. The key issue lies in jointly learning the visual and textual representation to estimate their similarity accurately. Most existing methods focus on feature enhancement within modality or feature interaction across modalities, which, however, neglects the contextual information of the object representation based on the inter-object relationships that match the corresponding sentences with rich contextual semantics. In this article, we propose a Hybrid-modal Interaction with multiple Relational Enhancements (termed Hire ) for ITM, which correlates the intra- and inter-modal semantics between objects and words with implicit and explicit relationship modeling. In particular, the explicit intra-modal spatial-semantic graph-based reasoning network is designed to improve the contextual representation of visual objects with salient spatial and semantic relational connectivities, guided by the explicit relationships of the objects’ spatial positions and their scene graph. We use implicit relationship modeling for potential relationship interactions before explicit modeling to improve the fault tolerance of explicit relationship detection. Then the visual and textual semantic representations are refined jointly via inter-modal interactive attention and cross-modal alignment. To correlate the context of objects with the textual context, we further refine the visual semantic representation via cross-level object-sentence and word-image-based interactive attention. Extensive experiments validate that the proposed hybrid-modal interaction with implicit and explicit modeling is more beneficial for ITM. And the proposed Hire obtains new state-of-the-art results on MS-COCO and Flickr30K benchmarks.},
+  archive      = {J_TIST},
+  author       = {Xuri Ge and Fuhai Chen and Songpei Xu and Fuxiang Tao and Jie Wang and Joemon M. Jose},
+  doi          = {10.1145/3714431},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  month        = {6},
+  number       = {3},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Hire: Hybrid-modal interaction with multiple relational enhancements for image-text matching},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Self-optimizing teacher and auto-matching student framework for change-point representation learning in time series forecasting. <em>TIST</em>, <em>16</em>(3), 1-25. (<a href='https://doi.org/10.1145/3718091'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Real-world time series data is inherently complex, noisy, and exhibits abrupt changes, posing various challenges in data modeling. Given the ubiquity and importance of time series data, accurately forecasting change points, instead of the overall predictive performance, has become increasingly attractive as it assists in risk mitigation and loss prevention. In this task, we argue that the past and future interactions involving the target points determine the comprehensive structure contributing to abrupt changes. However, traditional left-to-right auto-regressive approaches only consider the historical sequence, resulting in a flawed learning process and limited performance. In this article, we extend the teacher-student learning and propose a novel Self-optimizing Teacher and Auto-matching Student framework (named ST-AS) to predict change points in time series data. Our framework models change-point representations specific to the target points by integrating future knowledge while avoiding data leakage. Specifically, we design a Gumbel-enhanced filter for our self-optimizing teacher, which constructs selected and filtered sub-groups to derive discriminative representations using a positive-unlabeled learning strategy. Given this well-trained teacher, we propose an adaptive pattern matcher for our auto-matching student model, which learns missing information by automatically aligning relevant features. After that, a novel two-stage dual-guided learning process is then designed to mimic teacher’s decision-making behavior and enhance student’s excavate capability. Finally, we conduct extensive experiments on four real-world datasets to demonstrate that our proposed ST-AS exhibits significantly better prediction performance compared to existing state-of-the-art alternatives.},
+  archive      = {J_TIST},
+  author       = {Jinxiao Fan and Pengfei Wang and Liang Liu and Huadong Ma},
+  doi          = {10.1145/3718091},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  month        = {6},
+  number       = {3},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Self-optimizing teacher and auto-matching student framework for change-point representation learning in time series forecasting},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SubgroupTE: Advancing treatment effect estimation with subgroup identification. <em>TIST</em>, <em>16</em>(3), 1-23. (<a href='https://doi.org/10.1145/3718097'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Precise estimation of treatment effects is crucial for accurately evaluating the intervention. While deep learning models have exhibited promising performance in learning counterfactual representations for Treatment Effect Estimation (TEE), a major limitation in most of these models is that they often overlook the diversity of treatment effects across potential subgroups that have varying treatment effects and characteristics, treating the entire population as a homogeneous group. This limitation restricts the ability to precisely estimate treatment effects and provide targeted treatment recommendations. In this article, we propose a novel TEE model, named SubgroupTE, which incorporates subgroup identification in TEE. SubgroupTE identifies heterogeneous subgroups with different responses and more precisely estimates treatment effects by considering subgroup-specific treatment effects in the estimation process. In addition, we introduce an Expectation–Maximization (EM)-based training process that iteratively optimizes estimation and subgrouping networks to improve both estimation and subgroup identification. Comprehensive experiments on the synthetic and semi-synthetic datasets demonstrate the outstanding performance of SubgroupTE compared to the existing works for TEE and subgrouping models. Additionally, a real-world study demonstrates the capabilities of SubgroupTE in enhancing targeted treatment recommendations for patients with Opioid Use Disorder (OUD) by incorporating subgroup identification with TEE.},
+  archive      = {J_TIST},
+  author       = {Seungyeon Lee and Ruoqi Liu and Wenyu Song and Lang Li and Ping Zhang},
+  doi          = {10.1145/3718097},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  month        = {6},
+  number       = {3},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {SubgroupTE: Advancing treatment effect estimation with subgroup identification},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning on missing tabular data: Attention with self-supervision, not imputation, is all you need. <em>TIST</em>, <em>16</em>(3), 1-24. (<a href='https://doi.org/10.1145/3729241'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Learning from data with missing values is a common challenge in real-world applications. Existing approaches for handling data incompleteness often involve imputation, which can introduce errors that propagate into downstream tasks or impose assumptions that limit the support for heterogeneous feature types. To address these issues, we propose Missing Feature Attention Network ( MFAN ), an end-to-end label prediction model that directly consumes incomplete data without requiring imputation. MFAN flexibly accommodates both continuous and categorical features through learnable embeddings and leverages a transformer encoder with self-attention to capture the correlation among features as well as the correlation between features and missingness . This attention-based mechanism allows missing features to benefit from relationships learned among observed features, leading to enhanced hidden representations and robust prediction performance. Additionally, we introduce auxiliary self-supervised pre-training tasks that further guide the attention mechanism in modeling missingness. Experimental results on eight regression and seven classification datasets demonstrate MFAN ’s superiority over state-of-the-art end-to-end methods and imputation-based approaches. Comprehensive ablation studies confirm the effectiveness of each MFAN component, underscoring the importance of explicitly modeling correlations among observed and missing features.},
+  archive      = {J_TIST},
+  author       = {Li-Wei Chang and Cheng-Te Li and Chun-Pai Yang and Shou-de Lin},
+  doi          = {10.1145/3729241},
+  journal      = {ACM Transactions on Intelligent Systems and Technology},
+  month        = {6},
+  number       = {3},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. Intell. Syst. Technol.},
+  title        = {Learning on missing tabular data: Attention with self-supervision, not imputation, is all you need},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

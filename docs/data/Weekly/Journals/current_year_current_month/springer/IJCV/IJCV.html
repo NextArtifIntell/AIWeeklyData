@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IJCV</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ijcv">IJCV - 40</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Correction: Consistent prompt tuning for generalized category discovery. <em>IJCV</em>, <em>133</em>(8), 5872-5881. (<a href='https://doi.org/10.1007/s11263-025-02449-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_IJCV},
+  author       = {Yang, Muli and Yin, Jie and Gu, Yanan and Deng, Cheng and Zhang, Hanwang and Zhu, Hongyuan},
+  doi          = {10.1007/s11263-025-02449-9},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5872-5881},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Correction: Consistent prompt tuning for generalized category discovery},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Simplified concrete dropout - Improving the generation of attribution masks for fine-grained classification. <em>IJCV</em>, <em>133</em>(8), 5857-5871. (<a href='https://doi.org/10.1007/s11263-025-02453-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In fine-grained classification, which is classifying images into subcategories within a common broader category, it is crucial to have precise visual explanations of the classification model’s decision. While commonly used attention- or gradient-based methods deliver either too coarse or too noisy explanations unsuitable for highlighting subtle visual differences reliably, perturbation-based methods can precisely locate pixels causally responsible for the predicted category. The fill-in of the dropout (FIDO) algorithm is one of those methods, which utilizes concrete dropout (CD) to sample a set of attribution masks and updates the sampling parameters based on the output of the classification model. In this paper, we present a solution against the high variance in the gradient estimates, a known problem of the FIDO algorithm that has been mitigated until now by large mini-batch updates of the sampling parameters. First, our solution allows for estimating the parameters with smaller mini-batch sizes without losing the quality of the estimates but with a reduced computational effort. Next, our method produces finer and more coherent attribution masks. Finally, we use the resulting attribution masks to improve the classification performance on three fine-grained datasets without additional fine-tuning steps and achieve results that are otherwise only achieved if ground truth bounding boxes are used.},
+  archive      = {J_IJCV},
+  author       = {Korsch, Dimitri and Shadaydeh, Maha and Denzler, Joachim},
+  doi          = {10.1007/s11263-025-02453-z},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5857-5871},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Simplified concrete dropout - Improving the generation of attribution masks for fine-grained classification},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Generalized relative pose and scale from affine correspondences. <em>IJCV</em>, <em>133</em>(8), 5840-5856. (<a href='https://doi.org/10.1007/s11263-025-02452-0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Aligning extrinsically calibrated view sets is essential for merging 3D reconstructions from different agents or localizing them within a large existing map of the environment. In such scenarios, we not only have to account for the 3D rotation and translation but also need to estimate the unknown scaling factor between the reconstructions. In this paper, we propose the first closed-form solvers for image-only data to the general problem, leveraging either 26 point or 9 affine correspondences (AC) to obtain the scale, 3D orientation, and translation. Considering that modern image-capturing tools like smartphones and mixed reality devices typically come with Inertial Measurement Units and return the gravity direction by default, we also propose a solver that requires just 2 ACs along with gravity measurements. The proposed methods have been rigorously tested on both synthetic data and extensive publicly available real-world datasets. The results demonstrate that our approach achieves state-of-the-art accuracy and permits robust estimation in real-time owing to small sample sizes. The code is available at https://github.com/gowanting/GRPS-Affine .},
+  archive      = {J_IJCV},
+  author       = {Xu, Wanting and Zhang, Xinyue and Pollefeys, Marc and Barath, Daniel and Kneip, Laurent},
+  doi          = {10.1007/s11263-025-02452-0},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5840-5856},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Generalized relative pose and scale from affine correspondences},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Supplementary prompt learning for vision-language models. <em>IJCV</em>, <em>133</em>(8), 5822-5839. (<a href='https://doi.org/10.1007/s11263-025-02451-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Pre-trained vision-language models like CLIP have shown remarkable capabilities across various downstream tasks with well-tuned prompts. Advanced methods tune prompts by optimizing context while keeping the class name fixed, implicitly assuming that the class names in prompts are accurate and not missing. However, this assumption may be violated in numerous real-world scenarios, leading to potential performance degeneration or even failure of existing prompt learning methods. For example, an accurate class name for an image containing “Transformers” might be inaccurate because selecting a precise class name among numerous candidates is challenging. Moreover, assigning class names to some images may require specialized knowledge, resulting in indexing rather than semantic labels, e.g., Group 3 and Group 4 subtypes of medulloblastoma. To cope with the class-name missing issue, we propose a simple yet effective prompt learning approach, called Supplementary Optimization (SOp) for supplementing the missing class-related information. Specifically, SOp models the class names as learnable vectors while keeping the context fixed to learn prompts for downstream tasks. Extensive experiments across 18 public datasets demonstrate the efficacy of SOp when class names are missing. SOp can achieve performance comparable to that of the context optimization approach, even without using the prior information in the class names.},
+  archive      = {J_IJCV},
+  author       = {Zeng, Rongfei and Yang, Zhipeng and Yu, Ruiyun and Zhang, Yonggang},
+  doi          = {10.1007/s11263-025-02451-1},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5822-5839},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Supplementary prompt learning for vision-language models},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Bamboo: Building mega-scale vision dataset continually with Human–Machine synergy. <em>IJCV</em>, <em>133</em>(8), 5806-5821. (<a href='https://doi.org/10.1007/s11263-025-02450-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large-scale datasets play a vital role in computer vision. But current datasets are annotated blindly without differentiation to samples, making the data collection inefficient and unscalable. The open question is how to build a mega-scale dataset actively. Although advanced active learning algorithms might be the answer, we experimentally found that they are lame in the realistic annotation scenario where out-of-distribution data is extensive. This work thus proposes a novel active learning framework for realistic dataset annotation. Equipped with this framework, we build a high-quality vision dataset—Bamboo, which consists of 69M image classification annotations with 119K categories and 28M object bounding box annotations with 809 categories. We organize these categories by a hierarchical taxonomy integrated from several knowledge bases. The classification annotations are four times larger than ImageNet22K, and that of detection is three times larger than Object365. Compared to ImageNet22K and Objects365, models pre-trained on Bamboo achieve superior performance among various downstream tasks (6.2% gains on classification and 2.1% gains on detection). We believe our active learning framework and Bamboo are essential for future work. Code and dataset are available at https://github.com/ZhangYuanhan-AI/Bamboo .},
+  archive      = {J_IJCV},
+  author       = {Zhang, Yuanhan and Sun, Qinghong and Zhou, Yichun and He, Zexin and Yin, Zhenfei and Wang, Kun and Sheng, Lu and Qiao, Yu and Shao, Jing and Liu, Ziwei},
+  doi          = {10.1007/s11263-025-02450-2},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5806-5821},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Bamboo: Building mega-scale vision dataset continually with Human–Machine synergy},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). High-fidelity image inpainting with multimodal guided GAN inversion. <em>IJCV</em>, <em>133</em>(8), 5788-5805. (<a href='https://doi.org/10.1007/s11263-025-02448-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Generative Adversarial Network (GAN) inversion have demonstrated excellent performance in image inpainting that aims to restore lost or damaged image texture using its unmasked content. Previous GAN inversion-based methods usually utilize well-trained GAN models as effective priors to generate the realistic regions for missing holes. Despite excellence, they ignore a hard constraint that the unmasked regions in the input and the output should be the same, resulting in a gap between GAN inversion and image inpainting and thus degrading the performance. Besides, existing GAN inversion approaches often consider a single modality of the input image, neglecting other auxiliary cues in images for improvements. Addressing these problems, we propose a novel GAN inversion approach, dubbed MMInvertFill, for image inpainting. MMInvertFill contains primarily a multimodal guided encoder with a pre-modulation and a GAN generator with $$ \mathcal {F} \& \mathcal {W}^+$$ latent space. Specifically, the multimodal encoder aims to enhance the multi-scale structures with additional semantic segmentation edge texture modalities through a gated mask-aware attention module. Afterwards, a pre-modulation is presented to encode these structures into style vectors. To mitigate issues of conspicuous color discrepancy and semantic inconsistency, we introduce the $$ \mathcal {F} \& \mathcal {W}^+$$ latent space to bridge the gap between GAN inversion and image inpainting. Furthermore, in order to reconstruct faithful and photorealistic images, we devise a simple yet effective Soft-update Mean Latent module to capture more diversified in-domain patterns for generating high-fidelity textures for massive corruptions. In our extensive experiments on six challenging datasets, including CelebA-HQ, Places2, OST, CityScapes, MetFaces and Scenery, we show that our MMInvertFill qualitatively and quantitatively outperforms other state-of-the-arts and it supports the completion of out-of-domain images effectively. Our project webpage including code and results will be available at https://yeates.github.io/mm-invertfill .},
+  archive      = {J_IJCV},
+  author       = {Zhang, Libo and Yu, Yongsheng and Yao, Jiali and Fan, Heng},
+  doi          = {10.1007/s11263-025-02448-w},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5788-5805},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {High-fidelity image inpainting with multimodal guided GAN inversion},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BackdoorBench: A comprehensive benchmark and analysis of backdoor learning. <em>IJCV</em>, <em>133</em>(8), 5700-5787. (<a href='https://doi.org/10.1007/s11263-025-02447-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, backdoor learning has attracted increasing attention due to its effectiveness on investigating the adversarial vulnerability of artificial intelligence (AI) systems. Several seminal backdoor attack and defense algorithms have been developed, forming an increasingly fierce arms race. However, since backdoor learning involves various factors in different stages of an AI system (e.g., data preprocessing, model training algorithm, model activation), there have been diverse settings in existing works, causing unfair comparisons or unreliable conclusions (e.g., misleading, biased, or even false conclusions). Hence, it is urgent to build a unified and standardized benchmark of backdoor learning, such that we can track real progress and design a roadmap for the future development of this literature. To that end, we construct a comprehensive benchmark of backdoor learning, dubbed BackdoorBench. Our benchmark makes three valuable contributions to the research community. (1) We provide an integrated implementation of representative backdoor learning algorithms (currently including 20 attack algorithms and 32 defense algorithms), based on an extensible modular-based codebase. (2) We conduct comprehensive evaluations of the implemented algorithms on 4 models and 4 datasets, leading to 11,492 pairs of attack-against-defense evaluations in total. (3) Based on above evaluations, we present abundant analysis from 10 perspectives via 23 analysis tools, and reveal several inspiring insights about backdoor learning. We hope that our efforts could build a solid foundation of backdoor learning to facilitate researchers to investigate existing algorithms, develop more innovative algorithms, and explore the intrinsic mechanism of backdoor learning. Finally, we have created a user-friendly website at https://backdoorbench.github.io/ , which collects all the important information of BackdoorBench, including the link to Codebase, Docs, Leaderboard, and Model Zoo.},
+  archive      = {J_IJCV},
+  author       = {Wu, Baoyuan and Chen, Hongrui and Zhang, Mingda and Zhu, Zihao and Wei, Shaokui and Yuan, Danni and Zhu, Mingli and Wang, Ruotong and Liu, Li and Shen, Chao},
+  doi          = {10.1007/s11263-025-02447-x},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5700-5787},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {BackdoorBench: A comprehensive benchmark and analysis of backdoor learning},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Local concept embeddings for analysis of concept distributions in vision DNN feature spaces. <em>IJCV</em>, <em>133</em>(8), 5649-5699. (<a href='https://doi.org/10.1007/s11263-025-02446-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Insights into the learned latent representations are imperative for verifying deep neural networks (DNNs) in critical computer vision (CV) tasks. Therefore, state-of-the-art supervised Concept-based eXplainable Artificial Intelligence (C-XAI) methods associate user-defined concepts like “car” each with a single vector in the DNN latent space (concept embedding vector). In the case of concept segmentation, these linearly separate between activation map pixels belonging to a concept and those belonging to background. Existing methods for concept segmentation, however, fall short of capturing implicitly learned sub-concepts (e.g., the DNN might split car into “proximate car” and “distant car”), and overlap of user-defined concepts (e.g., between “bus” and “truck”). In other words, they do not capture the full distribution of concept representatives in latent space. For the first time, this work shows that these simplifications are frequently broken and that distribution information can be particularly useful for understanding DNN-learned notions of sub-concepts, concept confusion, and concept outliers. To allow exploration of learned concept distributions, we propose a novel local concept analysis framework. Instead of optimizing a single global concept vector on the complete dataset, it generates a local concept embedding (LoCE) vector for each individual sample. We use the distribution formed by LoCEs to explore the latent concept distribution by fitting Gaussian mixture models (GMMs), hierarchical clustering, and concept-level information retrieval and outlier detection. Despite its context sensitivity, our method’s concept segmentation performance is competitive to global baselines. Analysis results are obtained on three datasets and six diverse vision DNN architectures, including vision transformers (ViTs). The code is available at https://github.com/continental/local-concept-embeddings .},
+  archive      = {J_IJCV},
+  author       = {Mikriukov, Georgii and Schwalbe, Gesina and Bade, Korinna},
+  doi          = {10.1007/s11263-025-02446-y},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5649-5699},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Local concept embeddings for analysis of concept distributions in vision DNN feature spaces},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Interaction confidence attention for Human–Object interaction detection. <em>IJCV</em>, <em>133</em>(8), 5629-5648. (<a href='https://doi.org/10.1007/s11263-025-02445-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In human–object interaction (HOI) detection task, ensuring that interactive pairs receive higher attention weights while reducing the weight of non-interaction pairs is imperative for enhancing HOI detection accuracy. Guiding attention learning is also a key aspect of existing transformer-based algorithms. To tackle this challenge, this study proposes a novel approach termed Interaction Confidence Score Learning Attention (ICSLA), which introduces weakening and augmentation operations into the original attention weight calculation and feature extraction processes. In ICSLA, feature learning is coupled with confidence score learning, simultaneously. Leveraging ICSLA, a new and universal decoder is devised, establishing a transformer-based one-stage HOI detection architecture. Experimental results demonstrate the effectiveness of the proposed method in improving HOI detection accuracy, offering valuable insights for further optimization of attention mechanisms.},
+  archive      = {J_IJCV},
+  author       = {Zhang, Hong-Bo and Lin, Wang-Kai and Su, Hang and Lei, Qing and Liu, Jing-Hua and Du, Ji-Xiang},
+  doi          = {10.1007/s11263-025-02445-z},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5629-5648},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Interaction confidence attention for Human–Object interaction detection},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Few-shot referring video single- and multi-object segmentation via cross-modal affinity with instance sequence matching. <em>IJCV</em>, <em>133</em>(8), 5610-5628. (<a href='https://doi.org/10.1007/s11263-025-02444-0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Referring Video Object Segmentation (RVOS) aims to segment specific objects in videos based on the provided natural language descriptions. As a new supervised visual learning task, achieving RVOS for a given scene requires a substantial amount of annotated data. However, only minimal annotations are usually available for new scenes in realistic scenarios. Another practical problem is that, apart from a single object, multiple objects of the same category coexist in the same scene. Both of these issues may significantly reduce the performance of existing RVOS methods in handling real-world applications. In this paper, we propose a simple yet effective model to address these issues by incorporating a newly designed cross-modal affinity (CMA) module based on a Transformer architecture. The CMA module facilitates the establishment of multi-modal affinity over a limited number of samples, allowing the rapid acquisition of new semantic information while fostering the model’s adaptability to diverse scenarios. Furthermore, we extend our FS-RVOS approach to multiple objects through a new instance sequence matching module over CMA, which filters out all object trajectories with similarity to language features that exceed a matching threshold, thereby achieving few-shot referring multi-object segmentation (FS-RVMOS). To foster research in this field, we establish a new dataset based on currently available datasets, which covers many scenarios in terms of single-object and multi-object data, hence effectively simulating real-world scenes. Extensive experiments and comparative analyses underscore the exceptional performance of our proposed FS-RVOS and FS-RVMOS methods. Our method consistently outperforms existing related approaches through practical performance evaluations and robustness studies, achieving optimal performance on metrics across diverse benchmark tests.},
+  archive      = {J_IJCV},
+  author       = {Liu, Heng and Li, Guanghui and Gao, Mingqi and Zhen, Xiantong and Zheng, Feng and Wang, Yang},
+  doi          = {10.1007/s11263-025-02444-0},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5610-5628},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Few-shot referring video single- and multi-object segmentation via cross-modal affinity with instance sequence matching},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). IPAD: Iterative, parallel, and diffusion-based network for scene text recognition. <em>IJCV</em>, <em>133</em>(8), 5589-5609. (<a href='https://doi.org/10.1007/s11263-025-02443-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Nowadays, scene text recognition has attracted more and more attention due to its diverse applications. Most state-of-the-art methods adopt an encoder-decoder framework with the attention mechanism, autoregressively generating text from left to right. Despite the convincing performance, this sequential decoding strategy constrains the inference speed. Conversely, non-autoregressive models provide faster, simultaneous predictions but often sacrifice accuracy. Although utilizing an explicit language model can improve performance, it burdens the computational load. Besides, separating linguistic knowledge from vision information may harm the final prediction. In this paper, we propose an alternative solution that uses a parallel and iterative decoder that adopts an easy-first decoding strategy. Furthermore, we regard text recognition as an image-based conditional text generation task and utilize the discrete diffusion strategy, ensuring exhaustive exploration of bidirectional contextual information. Extensive experiments demonstrate that the proposed approach achieves superior results on the benchmark datasets, including both Chinese and English text images.},
+  archive      = {J_IJCV},
+  author       = {Yang, Xiaomeng and Qiao, Zhi and Zhou, Yu},
+  doi          = {10.1007/s11263-025-02443-1},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5589-5609},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {IPAD: Iterative, parallel, and diffusion-based network for scene text recognition},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CLIMS++: Cross language image matching with automatic context discovery for weakly supervised semantic segmentation. <em>IJCV</em>, <em>133</em>(8), 5569-5588. (<a href='https://doi.org/10.1007/s11263-025-02442-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {While promising results have been achieved in weakly-supervised semantic segmentation (WSSS), limited supervision from image-level tags inevitably induces discriminative reliance and spurious relations between target classes and background regions. Thus, Class Activation Map (CAM) usually tends to activate discriminative object regions and falsely includes lots of class-related backgrounds. Without pixel-level supervisions, it could be very difficult to enlarge the foreground activation and suppress those false activation of background regions. In this paper, we propose a novel framework of Cross Language Image Matching with Automatic Context Discovery (CLIMS++), based on the recently introduced Contrastive Language-Image Pre-training (CLIP) model, for WSSS. The core idea of our framework is to introduce natural language supervision to activate more complete object regions and suppress class-related background regions in CAM. In particular, we design object, background region, and text label matching losses to guide the model to excite more reasonable object regions of each category. In addition, we propose to automatically find spurious relations between foreground categories and backgrounds, through which a background suppression loss is designed to suppress the activation of class-related backgrounds. The above designs enable the proposed CLIMS++ to generate a more complete and compact activation map for the target objects. Extensive experiments on PASCAL VOC 2012 and MS COCO 2014 datasets show that our CLIMS++ significantly outperforms the previous state-of-the-art methods.},
+  archive      = {J_IJCV},
+  author       = {Xie, Jinheng and Deng, Songhe and Hou, Xianxu and Luo, Zhaochuan and Shen, Linlin and Huang, Yawen and Zheng, Yefeng and Shou, Mike Zheng},
+  doi          = {10.1007/s11263-025-02442-2},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5569-5588},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {CLIMS++: Cross language image matching with automatic context discovery for weakly supervised semantic segmentation},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). P2Object: Single point supervised object detection and instance segmentation. <em>IJCV</em>, <em>133</em>(8), 5544-5568. (<a href='https://doi.org/10.1007/s11263-025-02441-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Object recognition using single-point supervision has attracted increasing attention recently. However, the performance gap compared with fully-supervised algorithms remains large. Previous works generated class-agnostic proposals in an image offline and then treated mixed candidates as a single bag, putting a huge burden on multiple instance learning (MIL). In this paper, we introduce Point-to-Box Network (P2BNet), which constructs balanced instance-level proposal bags by generating proposals in an anchor-like way and refining the proposals in a coarse-to-fine paradigm. Through further research, we find that the bag of proposals, either at the image level or the instance level, is established on discrete box sampling. This leads the pseudo box estimation into a sub-optimal solution, resulting in the truncation of object boundaries or the excessive inclusion of background. Hence, we conduct a series exploration of discrete-to-continuous optimization, yielding P2BNet++ and Point-to-Mask Network (P2MNet). P2BNet++ conducts an approximately continuous proposal sampling strategy by better utilizing spatial clues. P2MNet further introduces low-level image information to assist in pixel prediction, and a boundary self-prediction is designed to relieve the limitation of the estimated boxes. Benefiting from the continuous object-aware pixel-level perception, P2MNet can generate more precise bounding boxes and generalize to segmentation tasks. Our method largely surpasses the previous methods in terms of the mean average precision on COCO, VOC, SBD, and Cityscapes, demonstrating great potential to bridge the performance gap compared with fully supervised tasks.},
+  archive      = {J_IJCV},
+  author       = {Chen, Pengfei and Yu, Xuehui and Han, Xumeng and Wang, Kuiran and Li, Guorong and Xie, Lingxi and Han, Zhenjun and Jiao, Jianbin},
+  doi          = {10.1007/s11263-025-02441-3},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5544-5568},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {P2Object: Single point supervised object detection and instance segmentation},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ADEM-VL: Adaptive and embedded fusion for efficient vision-language tuning. <em>IJCV</em>, <em>133</em>(8), 5527-5543. (<a href='https://doi.org/10.1007/s11263-025-02440-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advancements in multimodal fusion have witnessed the remarkable success of vision-language (VL) models, which excel in various multimodal applications such as image captioning and visual question answering. However, building VL models requires substantial hardware resources, where efficiency is restricted by two key factors: the extended input sequence of the language model with vision features demands more computational operations, and a large number of additional learnable parameters increase memory complexity. These challenges significantly restrict the broader applicability of such models. To bridge this gap, we propose ADEM-VL, an efficient vision-language method that tunes VL models based on pretrained large language models (LLMs) by adopting a parameter-free cross-attention mechanism for similarity measurements in multimodal fusion. This approach only requires embedding vision features into the language space, significantly reducing the number of trainable parameters and accelerating both training and inference speeds. To enhance representation learning in fusion module, we introduce an efficient multiscale feature generation scheme that requires only a single forward pass through the vision encoder. Moreover, we propose an adaptive fusion scheme that dynamically discards less relevant visual information for each text token based on its attention score. This ensures that the fusion process prioritizes the most pertinent visual features. With experiments on various tasks including visual question answering, image captioning, and instruction-following, we demonstrate that our framework outperforms existing approaches. Specifically, our method surpasses existing methods by an average accuracy of 0.77% on ScienceQA dataset, with reduced training and inference latency, demonstrating the superiority of our framework.},
+  archive      = {J_IJCV},
+  author       = {Hao, Zhiwei and Guo, Jianyuan and Shen, Li and Luo, Yong and Hu, Han and Wen, Yonggang},
+  doi          = {10.1007/s11263-025-02440-4},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5527-5543},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {ADEM-VL: Adaptive and embedded fusion for efficient vision-language tuning},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Autoregressive temporal modeling for advanced tracking-by-diffusion. <em>IJCV</em>, <em>133</em>(8), 5505-5526. (<a href='https://doi.org/10.1007/s11263-025-02439-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Object tracking is a widely studied computer vision task with video and instance analysis applications. While paradigms such as tracking-by-regression,-detection,-attention have advanced the field, generative modeling offers new potential. Although some studies explore the generative process in instance-based understanding tasks, they rely on prediction refinement in the coordinate space rather than the visual domain. Instead, this paper presents Tracking-by-Diffusion, a novel paradigm for object tracking in video, leveraging visual generative models via the perspective of autoregressive models. This paradigm demonstrates broad applicability across point, box, and mask modalities while uniquely enabling textual guidance. We present DIFTracker, a framework that utilizes iterative latent variable diffusion models to redefine tracking as a next-frame reconstruction task. Our approach uniquely combines spatial and temporal dependencies in video data, offering a unified solution that encompasses existing tracking paradigms within a single Inversion-Reconstruction process. DIFTracker operates online and auto-regressively, enabling flexible instance-based video understanding. It allows us to overcome difficulties in variable-length video understanding encountered by video-inflated models and perform superior performance on seven benchmarks across five modalities. This paper not only introduces a new perspective on visual autoregressive modeling in understanding sequential visual data, specifically videos, but also provides robust theoretical validations and demonstrates broader applications in visual tracking and computer vision.},
+  archive      = {J_IJCV},
+  author       = {Nguyen, Pha and Madhok, Rishi and Raj, Bhiksha and Luu, Khoa},
+  doi          = {10.1007/s11263-025-02439-x},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5505-5526},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Autoregressive temporal modeling for advanced tracking-by-diffusion},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RGB-D visual perception for occluded scenes via event camera. <em>IJCV</em>, <em>133</em>(8), 5483-5504. (<a href='https://doi.org/10.1007/s11263-025-02438-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents the first RGB-D visual perception method and dataset for densely occluded scenes. Under such dense occlusion scenarios, existing synthetic aperture imaging methods could only recover the 2D appearance of the target scene. In contrast, our proposed method could see through dense foreground occlusions and recover both the 2D appearance and 3D structure of the target scene, which is more beneficial for downstream applications. To achieve this, our proposed method takes the occluded frames and event stream captured by a moving event camera as inputs, which could provide sufficient visual information about the densely occluded scene due to the high temporal resolution of the event camera. To tackle the noise interference caused by dense foreground occlusions, an occlusion segmentation module with the guidance of event epipolar-plane images is proposed to predict occlusion masks of input occluded frames and event stream. Then, invalid occlusions are excluded according to the predicted masks, and valid visual features are extracted to simultaneously predict the appearance and structure of the target scene. A lightweight high-order conditional random fields module is proposed to model multi-pixel higher-order correlations, making pixels with similar color and structure have smoother features. A cross-modal edge consistency mechanism is proposed to achieve consistent RGB-D visual perception. In addition, we construct a hybrid vision acquisition system and collect the first Event-enhanced Occluded scene RGB-D Visual Perception dataset, named $$\hbox {THU}^\text {E-OccVP}$$ , which will be released as the first RGB-D visual perception benchmark for densely occluded scenes. Experimental results show that our proposed framework achieves significantly superior results over other baseline solutions, and the ablation experiments further demonstrate the effectiveness of each proposed module.},
+  archive      = {J_IJCV},
+  author       = {Li, Siqi and Wu, Zongze and Li, Yipeng and Xue, Zhou and Liu, Yu-Shen and Gao, Yue},
+  doi          = {10.1007/s11263-025-02438-y},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5483-5504},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {RGB-D visual perception for occluded scenes via event camera},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An information theory-inspired strategy for automated network pruning. <em>IJCV</em>, <em>133</em>(8), 5455-5482. (<a href='https://doi.org/10.1007/s11263-025-02437-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Despite superior performance achieved on many computer vision tasks, deep neural networks demand high computing power and memory footprint. Most existing network pruning methods require laborious human efforts and prohibitive computation resources, especially when the constraints are changed. This practically limits the application of model compression when the model needs to be deployed on a wide range of devices. Besides, existing methods are still challenged by the missing theoretical guidance, which lacks influence on the generalization error. In this paper we propose an information theory-inspired strategy for automated network pruning. The principle behind our method is the information bottleneck theory. Concretely, we introduce a new theorem to illustrate that the hidden representation should compress information with each other to achieve a better generalization. In this way, we further introduce the normalized Hilbert-Schmidt Independence Criterion on network activations as a stable and generalized indicator to construct layer importance. When a certain resource constraint is given, we integrate the HSIC indicator with the constraint to transform the architecture search problem into a linear programming problem with quadratic constraints. Such a problem is easily solved by a convex optimization method within a few seconds. We also provide rigorous proof to reveal that optimizing the normalized HSIC simultaneously minimizes the mutual information between different layers. Without any search process, our method achieves better compression trade-offs compared to the state-of-the-art compression algorithms. For instance, on ResNet-50, we achieve a 45.3%-FLOPs reduction, with a 75.75 top-1 accuracy on ImageNet. Codes are available at https://github.com/MAC-AutoML/ITPruner .},
+  archive      = {J_IJCV},
+  author       = {Zheng, Xiawu and Ma, Yuexiao and Xi, Teng and Zhang, Gang and Ding, Errui and Li, Yuchao and Chen, Jie and Tian, Yonghong and Ji, Rongrong},
+  doi          = {10.1007/s11263-025-02437-z},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5455-5482},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {An information theory-inspired strategy for automated network pruning},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Image captions are natural prompts for training data synthesis. <em>IJCV</em>, <em>133</em>(8), 5435-5454. (<a href='https://doi.org/10.1007/s11263-025-02436-0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rapid development of Artificial Intelligence Generated Content, it has become a common practice to train models on synthetic data due to data-scarcity and privacy leakage problems. Owing to massive and diverse information conveyed in real images, it is challenging for text-to-image generative models to synthesize informative training data with hand-crafted prompts. Considering the impressive ability of large generative models, could such models directly synthesize good training images for prediction tasks with proper prompts? We offer an affirmative response to this question by proposing a simple yet effective method, validated through ImageNet classification. Specifically, we caption each real image with the advanced captioning model to obtain informative and faithful prompts that extract class-relevant information and clarify the polysemy of class names. The image captions and class names are concatenated to prompt generative models for training image synthesis. We show that this simple caption incorporation significantly boosts the informativeness of synthetic data therefore enhancing downstream model generalization. More importantly, besides improvements in data augmentation and privacy preservation, our experiments demonstrate that synthesized images can exceed real data in terms of out-of-distribution robustness.},
+  archive      = {J_IJCV},
+  author       = {Lei, Shiye and Chen, Hao and Zhang, Sen and Zhao, Bo and Tao, Dacheng},
+  doi          = {10.1007/s11263-025-02436-0},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5435-5454},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Image captions are natural prompts for training data synthesis},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Paragraph-to-image generation with information-enriched diffusion model. <em>IJCV</em>, <em>133</em>(8), 5413-5434. (<a href='https://doi.org/10.1007/s11263-025-02435-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Text-to-image models have recently experienced rapid development, achieving astonishing performance in terms of fidelity and textual alignment capabilities. However, given a long paragraph (up to 512 words), these generation models still struggle to achieve strong alignment and are unable to generate images depicting complex scenes. In this paper, we introduce an information-enriched diffusion model for paragraph-to-image generation task, termed ParaDiffusion, which delves into the transference of the extensive semantic comprehension capabilities of large language models to the task of image generation. At its core is using a large language model (e.g., Llama V2) to encode long-form text, followed by fine-tuning with LoRA to align the text-image feature spaces in the generation task. To facilitate the training of long-text semantic alignment, we also curated a high-quality paragraph-image pair dataset, namely ParaImage. This dataset contains a small amount of high-quality, meticulously annotated data, and a large-scale synthetic dataset with long text descriptions being generated using a vision-language model. Experiments demonstrate that ParaDiffusion outperforms state-of-the-art models (SD XL, DeepFloyd IF) on ViLG-300 and ParaPrompts, achieving up to $$45\%$$ human voting rate improvements for text faithfulness. Code and data can be found at: https://github.com/weijiawu/ParaDiffusion .},
+  archive      = {J_IJCV},
+  author       = {Wu, Weijia and Li, Zhuang and He, Yefei and Shou, Mike Zheng and Shen, Chunhua and Cheng, Lele and Li, Yan and Gao, Tingting and Zhang, Di},
+  doi          = {10.1007/s11263-025-02435-1},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5413-5434},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Paragraph-to-image generation with information-enriched diffusion model},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Data-adaptive weight-ensembling for multi-task model fusion. <em>IJCV</em>, <em>133</em>(8), 5396-5412. (<a href='https://doi.org/10.1007/s11263-025-02434-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Creating a multi-task model by merging models for distinct tasks has proven to be an economical and scalable approach. Recent research, like task arithmetic, demonstrates that a static solution for multi-task model fusion can be located within the vector space spanned by task vectors. However, the static nature of these methods limits their ability to adapt to the intricacies of individual instances, thereby hindering their performance in complex scenarios. To overcome this limitation, we propose a data-adaptive weight-ensembling approach that generates model weights in time. Specifically, we first feed the input samples into a hypernetwork to generate instance-specific weights for the primary model. Subsequently, we perform a functional call on the primary large model with the instance-specific weights. By generating model weights in time, the unified model gains increased flexibility and can resolve potential weight conflicts between tasks. Building upon this adaptability, our method necessitates solely the model checkpoints and unlabeled test samples using test-time adaptation training. We primarily conduct extensive experiments on vision Transformers and Flan-T5 models, demonstrating superior performance and satisfactory zero-shot transferability.},
+  archive      = {J_IJCV},
+  author       = {Tang, Anke and Shen, Li and Luo, Yong and Liu, Shiwei and Hu, Han and Du, Bo and Tao, Dacheng},
+  doi          = {10.1007/s11263-025-02434-2},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5396-5412},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Data-adaptive weight-ensembling for multi-task model fusion},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HiLM-D: Enhancing MLLMs with multi-scale high-resolution details for autonomous driving. <em>IJCV</em>, <em>133</em>(8), 5379-5395. (<a href='https://doi.org/10.1007/s11263-025-02433-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent efforts to use natural language for interpretable driving focus mainly on planning, neglecting perception tasks. In this paper, we address this gap by introducing ROLISP (Risk Object Localization and Intention and Suggestion Prediction), which towards interpretable risk object detection and suggestion for ego car motions. Accurate ROLISP implementation requires extensive reasoning to identify critical traffic objects and infer their intentions, prompting us to explore the capabilities of multimodal large language models (MLLMs). However, the limited perception performance of CLIP-ViT vision encoders in existing MLLMs struggles with capturing essential visual perception information, e.g., high-resolution, multi-scale and visual-related inductive biases, which are important for autonomous driving. Addressing these challenges, we introduce HiLM-D, a resource-efficient framework that enhances visual information processing in MLLMs for ROLISP. Our method is motivated by the fact that the primary variations in autonomous driving scenarios are the motion trajectories rather than the semantic or appearance information (e.g., the shapes and colors) of objects. Hence, the visual process of HiLM-D is a two-stream framework: (i) a temporal reasoning stream, receiving low-resolution dynamic video content, to capture temporal semantics, and (ii) a spatial perception stream, receiving a single high-resolution frame, to capture holistic visual perception-related information. The spatial perception stream can be made very lightweight by a well-designed P-Adapter, which is lightweight, training-efficient, and easily integrated into existing MLLMs. Experiments on the DRAMA-ROLISP dataset show HiLM-D’s significant improvements over current MLLMs, with a $$3.7\%$$ in BLEU-4 for captioning and $$8.7\%$$ in mIoU for detection. Further tests on the Shikra-RD dataset confirm our method’s generalization capabilities. The DRAMA-ROLISP is available at https://github.com/xmed-lab/HiLM-D .},
+  archive      = {J_IJCV},
+  author       = {Ding, Xinpeng and Han, Jianhua and Xu, Hang and Zhang, Wei and Li, Xiaomeng},
+  doi          = {10.1007/s11263-025-02433-3},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5379-5395},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {HiLM-D: Enhancing MLLMs with multi-scale high-resolution details for autonomous driving},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). $$\text {A}^2\text {M}^2$$ -net: Adaptively aligned multi-scale moment for few-shot action recognition. <em>IJCV</em>, <em>133</em>(8), 5363-5378. (<a href='https://doi.org/10.1007/s11263-025-02432-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Thanks to capability to alleviate the cost of large-scale annotation, few-shot action recognition (FSAR) has attracted increased attention of researchers in recent years. Existing FSAR approaches typically neglect the role of individual motion pattern in comparison, and under-explore the feature statistics for video dynamics. Thereby, they struggle to handle the challenging temporal misalignment in video dynamics, particularly by using 2D backbones. To overcome these limitations, this work proposes an adaptively aligned multi-scale second-order moment network, namely $$\text {A}^2\text {M}^2$$ -Net, to describe the latent video dynamics with a collection of powerful representation candidates and adaptively align them in an instance-guided manner. To this end, our $$\text {A}^2\text {M}^2$$ -Net involves two core components, namely, adaptive alignment ( $$\text {A}^2$$ module) for matching, and multi-scale second-order moment ( $$\text {M}^2$$ block) for strong representation. Specifically, $$\text {M}^2$$ block develops a collection of semantic second-order descriptors at multiple spatio-temporal scales. Furthermore, $$\text {A}^2$$ module aims to adaptively select informative candidate descriptors while considering the individual motion pattern. By such means, our $$\text {A}^2\text {M}^2$$ -Net is able to handle the challenging temporal misalignment problem by establishing an adaptive alignment protocol for strong representation. Notably, our proposed method generalizes well to various few-shot settings and diverse metrics. The experiments are conducted on five widely used FSAR benchmarks, and the results show our $$\text {A}^2\text {M}^2$$ -Net achieves very competitive performance compared to state-of-the-arts, demonstrating its effectiveness and generalization.},
+  archive      = {J_IJCV},
+  author       = {Gao, Zilin and Wang, Qilong and Zhang, Bingbing and Hu, Qinghua and Li, Peihua},
+  doi          = {10.1007/s11263-025-02432-4},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5363-5378},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {$$\text {A}^2\text {M}^2$$ -net: Adaptively aligned multi-scale moment for few-shot action recognition},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DocScanner: Robust document image rectification with progressive learning. <em>IJCV</em>, <em>133</em>(8), 5343-5362. (<a href='https://doi.org/10.1007/s11263-025-02431-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Compared with flatbed scanners, portable smartphones provide more convenience for physical document digitization. However, such digitized documents are often distorted due to uncontrolled physical deformations, camera positions, and illumination variations. To this end, we present DocScanner, a novel framework for document image rectification. Different from existing solutions, DocScanner addresses this issue by introducing a progressive learning mechanism. Specifically, DocScanner maintains a single estimate of the rectified image, which is progressively corrected with a recurrent architecture. The iterative refinements make DocScanner converge to a robust and superior rectification performance, while the lightweight recurrent architecture ensures the running efficiency. To further improve the rectification quality, based on the geometric priori between the distorted and the rectified images, a geometric constraint is introduced during training to further improve the performance. Extensive experiments are conducted on the Doc3D dataset and the DocUNet Benchmark dataset, and the quantitative and qualitative evaluation results verify the effectiveness of DocScanner, which outperforms previous methods on OCR accuracy, image similarity, and our proposed distortion metric by a considerable margin. Furthermore, our DocScanner shows superior efficiency in runtime latency and model size. The codes and pre-trained models are available at https://github.com/fh2019ustc/DocScanner .},
+  archive      = {J_IJCV},
+  author       = {Feng, Hao and Zhou, Wengang and Deng, Jiajun and Tian, Qi and Li, Houqiang},
+  doi          = {10.1007/s11263-025-02431-5},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5343-5362},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {DocScanner: Robust document image rectification with progressive learning},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). P2P: Part-to-part motion cues guide a strong tracking framework for LiDAR point clouds. <em>IJCV</em>, <em>133</em>(8), 5326-5342. (<a href='https://doi.org/10.1007/s11263-025-02430-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {3D single object tracking (SOT) methods based on appearance matching has long suffered from insufficient appearance information incurred by incomplete, textureless and semantically deficient LiDAR point clouds. While motion paradigm exploits motion cues instead of appearance matching for tracking, it incurs complex multi-stage processing and segmentation module. In this paper, we first provide in-depth explorations on motion paradigm, which proves that (i) it is feasible to directly infer target relative motion from point clouds across consecutive frames; (ii) fine-grained information comparison between consecutive point clouds facilitates target motion modeling. We thereby propose to perform part-to-part motion modeling for consecutive point clouds and introduce a novel tracking framework, termed P2P. The novel framework fuses each corresponding part information between consecutive point clouds, effectively exploring detailed information changes and thus modeling accurate target-related motion cues. Following this framework, we present P2P-point and P2P-voxel models, incorporating implicit and explicit part-to-part motion modeling by point- and voxel-based representation, respectively. Without bells and whistles, P2P-voxel sets a new state-of-the-art performance ( $$\sim $$ 89%, 72% and 63% precision on KITTI, NuScenes and Waymo Open Dataset, respectively). Moreover, under the same point-based representation, P2P-point outperforms the previous motion tracker M $$^2$$ Track by 3.3% and 6.7% on the KITTI and NuScenes, while running at a considerably high speed of 107 Fps on a single RTX3090 GPU. The source code and pre-trained models are available at https://github.com/haooozi/P2P .},
+  archive      = {J_IJCV},
+  author       = {Nie, Jiahao and Xie, Fei and Zhou, Sifan and Zhou, Xueyi and Chae, Dong-Kyu and He, Zhiwei},
+  doi          = {10.1007/s11263-025-02430-6},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5326-5342},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {P2P: Part-to-part motion cues guide a strong tracking framework for LiDAR point clouds},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Effectively leveraging CLIP for generating situational summaries of images and videos. <em>IJCV</em>, <em>133</em>(8), 5302-5325. (<a href='https://doi.org/10.1007/s11263-025-02429-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Situation recognition refers to the ability of an agent to identify and understand various situations or contexts based on available information and sensory inputs. It involves the cognitive process of interpreting data from the environment to determine what is happening, what factors are involved, and what actions caused those situations. This interpretation of situations is formulated as a semantic role labeling problem in computer vision-based situation recognition. Situations depicted in images and videos hold pivotal information, essential for various applications like image and video captioning, multimedia retrieval, autonomous systems and event monitoring. However, existing methods often struggle with ambiguity and lack of context in generating meaningful and accurate predictions. Leveraging multimodal models such as CLIP, we propose ClipSitu, which sidesteps the need for full fine-tuning and achieves state-of-the-art results in situation recognition and localization tasks. ClipSitu harnesses CLIP-based image, verb, and role embeddings to predict nouns fulfilling all the roles associated with a verb, providing a comprehensive understanding of depicted scenarios. Through a cross-attention transformer, ClipSitu XTF enhances the connection between semantic role queries and visual token representations, leading to superior performance in situation recognition. We also propose a verb-wise role prediction model with near-perfect accuracy to create an end-to-end framework for producing situational summaries for out-of-domain images. We show that situational summaries empower our ClipSitu models to produce structured descriptions with reduced ambiguity compared to generic captions. Finally, we extend ClipSitu to video situation recognition to showcase its versatility and produce comparable performance to state-of-the-art methods. In summary, ClipSitu offers a robust solution to the challenge of semantic role labeling providing a way for structured understanding of visual media. ClipSitu advances the state-of-the-art in situation recognition, paving the way for a more nuanced and contextually relevant understanding of visual content that potentially could derive meaningful insights about the environment that agents observe. Code is available at https://github.com/LUNAProject22/CLIPSitu .},
+  archive      = {J_IJCV},
+  author       = {Verma, Dhruv and Roy, Debaditya and Fernando, Basura},
+  doi          = {10.1007/s11263-025-02429-z},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5302-5325},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Effectively leveraging CLIP for generating situational summaries of images and videos},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SwinTextSpotter v2: Towards better synergy for scene text spotting. <em>IJCV</em>, <em>133</em>(8), 5281-5301. (<a href='https://doi.org/10.1007/s11263-025-02428-0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {End-to-end scene text spotting, which aims to read the text in natural images, has garnered significant attention in recent years. However, recent state-of-the-art methods usually incorporate detection and recognition simply by sharing the backbone, which does not directly take advantage of the feature interaction between the two tasks. In this paper, we propose a new end-to-end scene text spotting framework termed SwinTextSpotter v2, which seeks to find a better synergy between text detection and recognition. Specifically, we enhance the relationship between two tasks using novel Recognition Conversion and Recognition Alignment modules. Recognition Conversion explicitly guides text localization through recognition loss, while Recognition Alignment dynamically extracts text features for recognition through the detection predictions. This simple yet effective design results in a concise framework that requires neither an additional rectification module nor character-level annotations for the arbitrarily-shaped text. Furthermore, the parameters of the detector are greatly reduced without performance degradation by introducing a Box Selection Schedule. Qualitative and quantitative experiments demonstrate that SwinTextSpotter v2 achieves state-of-the-art performance on various multilingual (English, Chinese, and Vietnamese) benchmarks. The code will be available at https://github.com/mxin262/SwinTextSpotterv2 .},
+  archive      = {J_IJCV},
+  author       = {Huang, Mingxin and Peng, Dezhi and Li, Hongliang and Peng, Zhenghao and Liu, Chongyu and Lin, Dahua and Liu, Yuliang and Bai, Xiang and Jin, Lianwen},
+  doi          = {10.1007/s11263-025-02428-0},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5281-5301},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {SwinTextSpotter v2: Towards better synergy for scene text spotting},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). C2RF: Bridging multi-modal image registration and fusion via commonality mining and contrastive learning. <em>IJCV</em>, <em>133</em>(8), 5262-5280. (<a href='https://doi.org/10.1007/s11263-025-02427-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing image fusion methods are typically only applicable to strictly aligned source images, and they introduce undesirable artifacts when source images are misaligned, compromising visual perception and downstream applications. In this work, we propose a mutually promoting multi-modal image registration and fusion framework based on commonality mining and contrastive learning, named C2RF. We adaptively decompose multi-modal images into modality-invariant common features and modality-specific unique features. Effective disentanglement not only reduces the difficulty of cross-modal registration but also facilitates purposeful information aggregation. Moreover, C2RF incorporates fusion-based contrastive learning to explicitly model the requirements of fusion on registration, which breaks the dilemma that registration and fusion are independent of each other. The aligned and misaligned fusion results act as positive and negative samples to guide registration optimization. Particularly, negative samples generated with hard negative sample mining enable our fusion results away from artifacts. Extensive experiments demonstrate that C2RF outperforms other competitors in both multi-modal image registration and fusion, notably in bolstering the robustness of image fusion to misalignment. The source code has been released at https://github.com/QinglongYan-hub/C2RF .},
+  archive      = {J_IJCV},
+  author       = {Tang, Linfeng and Yan, Qinglong and Xiang, Xinyu and Fang, Leyuan and Ma, Jiayi},
+  doi          = {10.1007/s11263-025-02427-1},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5262-5280},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {C2RF: Bridging multi-modal image registration and fusion via commonality mining and contrastive learning},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). D3T: Dual-domain diffusion transformer in triplanar latent space for 3D incomplete-view CT reconstruction. <em>IJCV</em>, <em>133</em>(8), 5238-5261. (<a href='https://doi.org/10.1007/s11263-025-02426-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Computed tomography (CT) is a cornerstone of clinical imaging, yet its accessibility in certain scenarios is constrained by radiation exposure concerns and operational limitations within surgical environments. CT reconstruction from incomplete views has attracted increasing research attention due to its great potential in medical applications. However, it is inherently an ill-posed problem, which, coupled with the complex, high-dimensional characteristics of 3D medical data, poses great challenges such as artifact mitigation, global incoherence, and high computational costs. To tackle those challenges, this paper introduces D3T, a new 3D conditional diffusion transformer that models 3D CT distributions in the low-dimensional 2D latent space for incomplete-view CT reconstruction. Our approach comprises two primary components: a triplanar vector quantized auto-encoder (TriVQAE) and a latent dual-domain diffusion transformer (LD3T). TriVQAE encodes high-resolution 3D CT images into compact 2D latent triplane codes which effectively factorize the intricate CT structures, further enabling compute-friendly diffusion model architecture design. Operating in the latent triplane space, LD3T significantly reduces the complexity of capturing the intricate structures in CT images. Its improved diffusion transformer architecture efficiently understands the global correlations across the three planes, ensuring high-fidelity 3D reconstructions. LD3T presents a new dual-domain conditional generation pipeline that incorporates both image and projection conditions, facilitating controllable reconstruction to produce 3D structures consistent with the given conditions. Moreover, LD3T introduces a new Dual-Space Consistency Loss that integrates image-level supervision beyond standard supervision in the latent space to enhance consistency in the 3D image space. Extensive experiments on four datasets with three inverse settings demonstrate the effectiveness of our proposal.},
+  archive      = {J_IJCV},
+  author       = {Liu, Xuhui and Li, Hong and Qiao, Zhi and Huang, Yawen and Liu, Xi and Zhang, Juan and Qian, Zhen and Zhen, Xiantong and Zhang, Baochang},
+  doi          = {10.1007/s11263-025-02426-2},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5238-5261},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {D3T: Dual-domain diffusion transformer in triplanar latent space for 3D incomplete-view CT reconstruction},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A fast and lightweight 3D keypoint detector. <em>IJCV</em>, <em>133</em>(8), 5216-5237. (<a href='https://doi.org/10.1007/s11263-025-02425-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Keypoint detection is crucial in many visual tasks, such as object recognition, shape retrieval, and 3D reconstruction, as labeling point data is labor-intensive or sometimes implausible. Nevertheless, it is challenging to quickly and accurately locate keypoints unsupervised from point clouds. This work proposes a fast and lightweight 3D keypoint detector that can efficiently and accurately detect keypoints from point clouds. Our method does not require a complex model learning process and generalizes well to new scenes. Specifically, we consider detecting keypoints a saliency detection problem for a point cloud. First, we propose a simple and effective distance measure to characterize the saliency of points in a point cloud. This distance describes geometrically essential points in the point cloud. Next, we present a regional saliency based on relative centroid distance representation that can globally characterize keypoints with regional visual information. Third, we combine geometric and semantic cues to generate a saliency map of the point cloud for determining stable 3D keypoints. We evaluate our method against existing approaches on four benchmark keypoint datasets to demonstrate its state-of-the-art performance.},
+  archive      = {J_IJCV},
+  author       = {Yang, Chengzhuan and Yu, Qian and Wei, Hui and Wu, Fei and Jiang, Yunliang and Zheng, Zhonglong and Yang, Ming-Hsuan},
+  doi          = {10.1007/s11263-025-02425-3},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5216-5237},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {A fast and lightweight 3D keypoint detector},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Creatively upscaling images with global-regional priors. <em>IJCV</em>, <em>133</em>(8), 5197-5215. (<a href='https://doi.org/10.1007/s11263-025-02424-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Contemporary diffusion models show remarkable capability in text-to-image generation, while still being limited to restricted resolutions (e.g., $$1024\times 1024$$ ). Recent advances enable tuning-free higher-resolution image generation by recycling pre-trained diffusion models and extending them via regional denoising or dilated sampling/convolutions. However, these models struggle to simultaneously preserve global semantic structure and produce creative regional details in higher-resolution images. To address this, we present C-Upscale, a new recipe of tuning-free image upscaling that pivots on global-regional priors derived from given global prompt and estimated regional prompts via Multimodal LLM. Technically, the low-frequency component of low-resolution image is recognized as global structure prior to encourage global semantic consistency in high-resolution generation. Next, we perform regional attention control to screen cross-attention between global prompt and each region during regional denoising, leading to regional attention prior that alleviates object repetition issue. The estimated regional prompts containing rich descriptive details further act as regional semantic prior to fuel the creativity of regional detail generation. Both quantitative and qualitative evaluations demonstrate that our C-Upscale manages to generate ultra-high-resolution images (e.g., $$4096\times 4096 \,{\text {and}}\, 8192\times 8192$$ ) with higher visual fidelity and more creative regional details.},
+  archive      = {J_IJCV},
+  author       = {Qian, Yurui and Cai, Qi and Pan, Yingwei and Yao, Ting and Mei, Tao},
+  doi          = {10.1007/s11263-025-02424-4},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5197-5215},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Creatively upscaling images with global-regional priors},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AvatarStudio: High-fidelity and animatable 3D avatar creation from text. <em>IJCV</em>, <em>133</em>(8), 5178-5196. (<a href='https://doi.org/10.1007/s11263-025-02423-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the problem of creating high-fidelity and animatable 3D avatars from only textual descriptions. Existing text-to-avatar methods are either limited to static avatars which cannot be animated or struggle to generate animatable avatars with promising quality and precise pose control. To address these limitations, we propose AvatarStudio, a generative model that yields explicit textured 3D meshes for animatable human avatars. Specifically, AvatarStudio proposes to incorporate articulation modeling into the explicit mesh representation to support high-resolution rendering and avatar animation. To ensure view consistency and pose controllability of the resulting avatars, we introduce a simple-yet-effective 2D diffusion model conditioned on DensePose for Score Distillation Sampling supervision. By effectively leveraging the synergy between the articulated mesh representation and DensePose-conditional diffusion model, AvatarStudio can create high-quality avatars from text ready for animation. Furthermore, it is competent for many applications, e.g., multimodal avatar animations and style-guided avatar creation. Please refer to our project page for more results.},
+  archive      = {J_IJCV},
+  author       = {Zhang, Xuanmeng and Zhang, Jianfeng and Zhang, Chenxu and Liew, Jun Hao and Zhang, Huichao and Yang, Yi and Feng, Jiashi},
+  doi          = {10.1007/s11263-025-02423-5},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5178-5196},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {AvatarStudio: High-fidelity and animatable 3D avatar creation from text},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SimZSL: Zero-shot learning beyond a pre-defined semantic embedding space. <em>IJCV</em>, <em>133</em>(8), 5161-5177. (<a href='https://doi.org/10.1007/s11263-025-02422-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Zero-shot recognition is centered around learning representations to transfer knowledge from seen to unseen classes. Where foundational approaches perform the transfer with semantic embedding spaces, e.g., from attributes or word vectors, the current state-of-the-art relies on prompting pre-trained vision-language models to obtain class embeddings. Whether zero-shot learning is performed with attributes, CLIP, or something else, current approaches de facto assume that there is a pre-defined embedding space in which seen and unseen classes can be positioned. Our work is concerned with real-world zero-shot settings where a pre-defined embedding space can no longer be assumed. This is natural in domains such as biology and medicine, where class names are not common English words, rendering vision-language models useless; or neuroscience, where class relations are only given with non-semantic human comparison scores. We find that there is one data structure enabling zero-shot learning in both standard and non-standard settings: a similarity matrix spanning the seen and unseen classes. We introduce four similarity-based zero-shot learning challenges, tackling open-ended scenarios such as learning with uncommon class names, learning from multiple partial sources, and learning with missing knowledge. As the first step for zero-shot learning beyond a pre-defined semantic embedding space, we propose $$\kappa $$ -MDS, a general approach that obtains a prototype for each class on any manifold from similarities alone, even when part of the similarities are missing. Our approach can be plugged into any standard, hyperspherical, or hyperbolic zero-shot learner. Experiments on existing datasets and the new benchmarks show the promise and challenges of similarity-based zero-shot learning.},
+  archive      = {J_IJCV},
+  author       = {Atigh, Mina Ghadimi and Nargang, Stephanie and Keller-Ressel, Martin and Mettes, Pascal},
+  doi          = {10.1007/s11263-025-02422-6},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5161-5177},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {SimZSL: Zero-shot learning beyond a pre-defined semantic embedding space},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Segment anything in 3D with radiance fields. <em>IJCV</em>, <em>133</em>(8), 5138-5160. (<a href='https://doi.org/10.1007/s11263-025-02421-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Segment Anything Model (SAM) emerges as a powerful vision foundation model to generate high-quality 2D segmentation results. This paper aims to generalize SAM to segment 3D objects. Rather than replicating the data acquisition and annotation procedure which is costly in 3D, we design an efficient solution, leveraging the radiance field as a cheap and off-the-shelf prior that connects multi-view 2D images to the 3D space. We refer to the proposed solution as SA3D, short for Segment Anything in 3D. With SA3D, the user is only required to provide a 2D segmentation prompt (e.g., rough points) for the target object in a single view, which is used to generate its corresponding 2D mask with SAM. Next, SA3D alternately performs mask inverse rendering and cross-view self-prompting across various views to iteratively refine the 3D mask of the target object. For one view, mask inverse rendering projects the 2D mask obtained by SAM into the 3D space with guidance of the density distribution learned by the radiance field for 3D mask refinement. Then, cross-view self-prompting extracts reliable prompts automatically as the input to SAM from the rendered 2D mask of the inaccurate 3D mask for a new view. We show in experiments that SA3D adapts to various scenes and achieves 3D segmentation within seconds. Our research reveals a potential methodology to lift the ability of a 2D segmentation model to 3D. Our code is available at https://github.com/Jumpat/SegmentAnythingin3D .},
+  archive      = {J_IJCV},
+  author       = {Cen, Jiazhong and Fang, Jiemin and Zhou, Zanwei and Yang, Chen and Xie, Lingxi and Zhang, Xiaopeng and Shen, Wei and Tian, Qi},
+  doi          = {10.1007/s11263-025-02421-7},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5138-5160},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Segment anything in 3D with radiance fields},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Free lunch to meet the gap: Intermediate domain reconstruction for cross-domain few-shot learning. <em>IJCV</em>, <em>133</em>(8), 5118-5137. (<a href='https://doi.org/10.1007/s11263-025-02419-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cross-domain few-shot learning (CDFSL) endeavors to transfer generalized knowledge from the source domain to target domains using only a minimal amount of training data, which faces a triplet of learning challenges in the meantime, i.e., semantic disjoint, large domain discrepancy, and data scarcity. Different from predominant CDFSL works focused on generalized representations, we make novel attempts to construct intermediate domain proxies (IDP) with source feature embeddings as the codebook and reconstruct the target domain feature with this learned codebook. We then conduct an empirical study to explore the intrinsic attributes from perspectives of visual styles and semantic contents in intermediate domain proxies. Reaping benefits from these attributes of intermediate domains, we develop a fast domain alignment method to use these proxies as learning guidance for target domain feature transformation. With the collaborative learning of intermediate domain reconstruction and target feature transformation, our proposed model is able to surpass the state-of-the-art models by a margin on 8 cross-domain few-shot learning benchmarks. Our code and models will be publicly available.},
+  archive      = {J_IJCV},
+  author       = {Zhang, Tong and Zhao, Yifan and Wang, Liangyu and Li, Jia},
+  doi          = {10.1007/s11263-025-02419-1},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5118-5137},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Free lunch to meet the gap: Intermediate domain reconstruction for cross-domain few-shot learning},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). NU-AIR: A neuromorphic urban aerial dataset for detection and localization of pedestrians and vehicles. <em>IJCV</em>, <em>133</em>(8), 5099-5117. (<a href='https://doi.org/10.1007/s11263-025-02418-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents an open-source aerial neuromorphic dataset that captures pedestrians and vehicles moving in an urban environment. The dataset, titled NU-AIR, features over 70 min of event footage acquired with a 640 $$\times $$ 480 resolution neuromorphic sensor mounted on a quadrotor operating in an urban environment. Crowds of pedestrians, different types of vehicles, and street scenes featuring busy urban environments are captured at different elevations and illumination conditions. Manual bounding box annotations of vehicles and pedestrians contained in the recordings are provided at a frequency of 30 Hz, yielding more than 93,000 labels in total. A baseline evaluation for this dataset was performed using three Spiking Neural Networks (SNNs) and ten Deep Neural Networks (DNNs). All data and Python code to voxelize the data and subsequently train SNNs/DNNs has been open-sourced.},
+  archive      = {J_IJCV},
+  author       = {Iaboni, Craig and Kelly, Thomas and Abichandani, Pramod},
+  doi          = {10.1007/s11263-025-02418-2},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5099-5117},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {NU-AIR: A neuromorphic urban aerial dataset for detection and localization of pedestrians and vehicles},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Diffusion-enhanced test-time adaptation with text and image augmentation. <em>IJCV</em>, <em>133</em>(8), 5083-5098. (<a href='https://doi.org/10.1007/s11263-025-02412-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing test-time prompt tuning (TPT) methods focus on single-modality data, primarily enhancing images and using confidence ratings to filter out inaccurate images. However, while image generation models can produce visually diverse images, single-modality data enhancement techniques still fail to capture the comprehensive knowledge provided by different modalities. Additionally, we note that the performance of TPT-based methods drops significantly when the number of augmented images is limited, which is not unusual given the computational expense of generative augmentation. To address these issues, we introduce $$\text {IT}^{3}\text {A}$$ , a novel test-time adaptation method that utilizes a pre-trained generative model for multi-modal augmentation of each test sample from unknown new domains. By combining augmented data from pre-trained vision and language models, we enhance the ability of the model to adapt to unknown new test data. Additionally, to ensure that key semantics are accurately retained when generating various visual and text enhancements, we employ cosine similarity filtering between the logits of the enhanced images and text with the original test data. This process allows us to filter out some spurious augmentation and inadequate combinations. To leverage the diverse enhancements provided by the generation model across different modals, we have replaced prompt tuning with an adapter for greater flexibility in utilizing text templates. Our experiments on the test datasets with distribution shifts and domain gaps show that in a zero-shot setting, $$\text {IT}^{3}\text {A}$$ outperforms state-of-the-art test-time prompt tuning methods with a 5.50% increase in accuracy.},
+  archive      = {J_IJCV},
+  author       = {Feng, Chun-Mei and He, Yuanyang and Zou, Jian and Khan, Salman and Xiong, Huan and Li, Zhen and Zuo, Wangmeng and Goh, Rick Siow Mong and Liu, Yong},
+  doi          = {10.1007/s11263-025-02412-8},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5083-5098},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Diffusion-enhanced test-time adaptation with text and image augmentation},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Animal-CLIP: A dual-prompt enhanced vision-language model for animal action recognition. <em>IJCV</em>, <em>133</em>(8), 5062-5082. (<a href='https://doi.org/10.1007/s11263-025-02408-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Animal action recognition has a wide range of applications. With the rise of visual-language pretraining models (VLMs), new possibilities have emerged for action recognition. However, while current VLMs perform well on human-centric videos, they still struggle with animal videos. This is primarily due to the lack of domain-specific knowledge during model training and more pronounced intra-class variations compared to humans. To address these issues, we introduce Animal-CLIP, a specialized and efficient animal action recognition framework built upon existing VLMs. To address the lack of domain-specific knowledge in animal actions, we leverage the extensive expertise of large language models (LLMs) to automatically generate external prompts, thereby expanding the semantic scope of labels and enhancing the model’s generalization capability. To effectively integrate external knowledge into the model, we propose a knowledge-enhanced internal prompt fine-tuning approach. We design a text feature refinement module to reduce potential recognition inconsistencies. Furthermore, to address the high intra-class variation in animal actions, a novel category-specific prompting method is introduced to generate adaptive prompts to optimize the alignment between text and video features, facilitating more precise partitioning of the action space. Experimental results demonstrate that our method outperforms six previous action recognition methods across three large-scale multi-species, multi-action datasets and exhibits strong generalization capability on unseen animals.},
+  archive      = {J_IJCV},
+  author       = {Jing, Yinuo and Liang, Kongming and Zhang, Ruxu and Sun, Hao and Li, Yongxiang and He, Zhongjiang and Ma, Zhanyu},
+  doi          = {10.1007/s11263-025-02408-4},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5062-5082},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Animal-CLIP: A dual-prompt enhanced vision-language model for animal action recognition},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Advances in 3D neural stylization: A survey. <em>IJCV</em>, <em>133</em>(8), 5026-5061. (<a href='https://doi.org/10.1007/s11263-025-02403-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modern artificial intelligence offers a novel and transformative approach to creating digital art across diverse styles and modalities like images, videos and 3D data, unleashing the power of creativity and revolutionizing the way that we perceive and interact with visual content. This paper reports on recent advances in stylized 3D asset creation and manipulation with the expressive power of neural networks. We establish a taxonomy for neural stylization, considering crucial design choices such as scene representation, guidance data, optimization strategies, and output styles. Building on such taxonomy, our survey first revisits the background of neural stylization on 2D images, and then presents in-depth discussions on recent neural stylization methods for 3D data, accompanied by a benchmark evaluating selected mesh and neural field stylization methods. Based on the insights gained from the survey, we highlight the practical significance, open challenges, future research, and potential impacts of neural stylization, which facilitates researchers and practitioners to navigate the rapidly evolving landscape of 3D content creation using modern artificial intelligence.},
+  archive      = {J_IJCV},
+  author       = {Chen, Yingshu and Shao, Guocheng and Shum, Ka Chun and Hua, Binh-Son and Yeung, Sai-Kit},
+  doi          = {10.1007/s11263-025-02403-9},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5026-5061},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {Advances in 3D neural stylization: A survey},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A closer look at benchmarking self-supervised pre-training with image classification. <em>IJCV</em>, <em>133</em>(8), 5013-5025. (<a href='https://doi.org/10.1007/s11263-025-02402-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Self-supervised learning (SSL) is a machine learning approach where the data itself provides supervision, eliminating the need for external labels. The model is forced to learn about the data’s inherent structure or context by solving a pretext task. With SSL, models can learn from abundant and cheap unlabeled data, significantly reducing the cost of training models where labels are expensive or inaccessible. In Computer Vision, SSL is widely used as pre-training followed by a downstream task, such as supervised transfer, few-shot learning on smaller labeled data sets, and/or unsupervised clustering. Unfortunately, it is infeasible to evaluate SSL methods on all possible downstream tasks and objectively measure the quality of the learned representation. Instead, SSL methods are evaluated using in-domain evaluation protocols, such as fine-tuning, linear probing, and k-nearest neighbors (kNN). However, it is not well understood how well these evaluation protocols estimate the representation quality of a pre-trained model for different downstream tasks under different conditions, such as dataset, metric, and model architecture. In this work, we study how classification-based evaluation protocols for SSL correlate and how well they predict downstream performance on different dataset types. Our study includes eleven common image datasets and 26 models that were pre-trained with different SSL methods or have different model backbones. We find that in-domain linear/kNN probing protocols are, on average, the best general predictors for out-of-domain performance. We further investigate the importance of batch normalization for the various protocols and evaluate how robust correlations are for different kinds of dataset domain shifts. In addition, we challenge assumptions about the relationship between discriminative and generative self-supervised methods, finding that most of their performance differences can be explained by changes to model backbones.},
+  archive      = {J_IJCV},
+  author       = {Marks, Markus and Knott, Manuel and Kondapaneni, Neehar and Cole, Elijah and Defraeye, Thijs and Perez-Cruz, Fernando and Perona, Pietro},
+  doi          = {10.1007/s11263-025-02402-w},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {5013-5025},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {A closer look at benchmarking self-supervised pre-training with image classification},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A survey of representation learning, optimization strategies, and applications for omnidirectional vision. <em>IJCV</em>, <em>133</em>(8), 4973-5012. (<a href='https://doi.org/10.1007/s11263-025-02391-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Omnidirectional image (ODI) data is captured with a field-of-view of $$360^\circ \times 180^\circ $$ , which is much wider than the pinhole cameras and captures richer surrounding environment details than the conventional perspective images. In recent years, the availability of customer-level $$360^\circ $$ cameras has made omnidirectional vision more popular, and the advance of deep learning (DL) has significantly sparked its research and applications. This paper presents a systematic and comprehensive review and analysis of the recent progress of DL for omnidirectional vision. It delineates the distinct challenges and complexities encountered in applying DL to omnidirectional images as opposed to traditional perspective imagery. Our work covers four main contents: (i) A thorough introduction to the principles of omnidirectional imaging and commonly explored projections of ODI; (ii) A methodical review of varied representation learning approaches tailored for ODI; (iii) An in-depth investigation of optimization strategies specific to omnidirectional vision; (iv) A structural and hierarchical taxonomy of the DL methods for the representative omnidirectional vision tasks, from visual enhancement (e.g., image generation and super-resolution) to 3D geometry and motion estimation (e.g., depth and optical flow estimation), alongside the discussions on emergent research directions; (v) An overview of cutting-edge applications (e.g., autonomous driving and virtual reality), coupled with a critical discussion on prevailing challenges and open questions, to trigger more research in the community.},
+  archive      = {J_IJCV},
+  author       = {Ai, Hao and Cao, Zidong and Wang, Lin},
+  doi          = {10.1007/s11263-025-02391-w},
+  journal      = {International Journal of Computer Vision},
+  month        = {8},
+  number       = {8},
+  pages        = {4973-5012},
+  shortjournal = {Int. J. Comput. Vis.},
+  title        = {A survey of representation learning, optimization strategies, and applications for omnidirectional vision},
+  volume       = {133},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

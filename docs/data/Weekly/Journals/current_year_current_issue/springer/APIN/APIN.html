@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>APIN</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="apin">APIN - 8</h2>
+<ul>
+<li><details>
+<summary>
+(2025). GAN-CLC-DGSR: Generative adversarial network framework with contrastive learning classifier for simultaneous time series data generation and state recognition. <em>APIN</em>, <em>55</em>(14), 1-20. (<a href='https://doi.org/10.1007/s10489-025-06856-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate identification of abnormal states is crucial for the continuous stable operation of equipment and timely intervention. However, the scarcity of abnormal data leads to low recognition accuracy in traditional methods when handling the data imbalance problem. To address this issue, we propose a novel Generative Adversarial Network Framework with Contrastive Learning Classifier for Simultaneous Time Series Data Generation and State Recognition (GAN-CLC-DGSR). In this framework, the generator not only synthesizes realistic signals but also enables the conversion between different signal categories. In addition to the conventional discriminator used to distinguish real from fake data, we design a contrastive learning-based classification discriminator. This discriminator maps the time-domain and frequency-domain features of the signal to a unified space, capturing invariant characteristics of the signal. This aids the generator in producing samples with higher category distinguishability. The classification discriminator is also trained as a state recognizer. We conduct extensive experiments on the vibration screen dataset from a coal preparation plant, a bearing dataset, and an epilepsy dataset. The results demonstrate that the proposed method outperforms other comparative methods in both data generation and state recognition, and it exhibits strong generalization capability.},
+  archive      = {J_APIN},
+  author       = {Wang, Weidong and Wu, Yuxin and Song, Yang and Zhao, Xuan and Cui, Yao and Fan, Yuhan and Liu, Yanbo and Lv, Ziqi},
+  doi          = {10.1007/s10489-025-06856-w},
+  journal      = {Applied Intelligence},
+  month        = {9},
+  number       = {14},
+  pages        = {1-20},
+  shortjournal = {Appl. Intell.},
+  title        = {GAN-CLC-DGSR: Generative adversarial network framework with contrastive learning classifier for simultaneous time series data generation and state recognition},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A transfer learning-based fault diagnosis method for rolling bearings with variable operating conditions. <em>APIN</em>, <em>55</em>(14), 1-13. (<a href='https://doi.org/10.1007/s10489-025-06811-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Aiming at the problem that fault feature information cannot be completely extracted and it is difficult to obtain a large amount of sample data for fault labeling in real production life, we propose a transfer learning-based fault diagnosis method for rolling bearings with variable operating conditions. First, in order to make up for the single limitation of the feature extraction of the original vibration signal, a new feature signal is formed by fusing the time domain features on the basis of the original vibration signal, which is used as the input of the model, and a lightweight one-dimensional convolutional neural network(1d-CNN) is constructed, and an efficient channel attention mechanism is introduced to extract the fault features, so as to get the source domain diagnostic model. Then, according to the idea of transfer learning, the vibration signals under different working conditions are input into the fine-tuned model to realize the rolling bearing fault diagnosis under multiple working conditions. The results show that the method can realize migration under different working conditions and accurately and efficiently realize rolling bearing fault diagnosis.},
+  archive      = {J_APIN},
+  author       = {Song, Cunli and Yuan, Xiaomeng},
+  doi          = {10.1007/s10489-025-06811-9},
+  journal      = {Applied Intelligence},
+  month        = {9},
+  number       = {14},
+  pages        = {1-13},
+  shortjournal = {Appl. Intell.},
+  title        = {A transfer learning-based fault diagnosis method for rolling bearings with variable operating conditions},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhancing multi-level cross-modal interaction with false negative-aware contrastive learning for text-video retrieval. <em>APIN</em>, <em>55</em>(14), 1-26. (<a href='https://doi.org/10.1007/s10489-025-06821-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Text-video retrieval (TVR) has become a crucial branch in multi-modal understanding tasks. Enhanced by CLIP, a well-known contrastive learning framework that connects text and image, TVR has made substantial progress, particularly in developing cross-grained methods that account for both coarse and fine granularity in text and video. Nonetheless, previous cross-grained approaches have overlooked two crucial aspects. First, they utilize text-agnostic video summaries by simply averaging frame-level embeddings, potentially failing to capture crucial frame-level information that is semantically relevant to the corresponding text. Second, these approaches employ contrastive learning that neglects the impact of false negatives containing semantically relevant information. To address the aforementioned aspects, we introduce a novel framework for TVR, referred to as X-MLNet, focusing on capturing multi-level cross-modal interactions across video and text. This is done by first incorporating cross-attention modules at various levels of granularity, ranging from fine-grained (i.e., frame/word-level) representations to coarse-grained (i.e., video/sentence-level) representations. Then, we apply a contrastive learning framework that utilizes a similarity score computed based on the multi-level cross-modal interactions, excluding potential false negatives based on intra-modal connectivity among samples. Our experiments on five real-world benchmark datasets, including MSRVTT, MSVD, LSMDC, ActivityNet, and DiDeMo, demonstrate state-of-the-art performance in both text-to-video and video-to-text retrieval tasks. Our code is available at https://github.com/celestialxevermore/X-VLNet .},
+  archive      = {J_APIN},
+  author       = {Kim, Eungyeop and Lee, Changhee},
+  doi          = {10.1007/s10489-025-06821-7},
+  journal      = {Applied Intelligence},
+  month        = {9},
+  number       = {14},
+  pages        = {1-26},
+  shortjournal = {Appl. Intell.},
+  title        = {Enhancing multi-level cross-modal interaction with false negative-aware contrastive learning for text-video retrieval},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive deep shared latent representation enables novel multi-omics cancer subtype classification. <em>APIN</em>, <em>55</em>(14), 1-17. (<a href='https://doi.org/10.1007/s10489-025-06848-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Variations in outcomes among cancer patients are significant even when they have the same type of tumor. Identifying and classifying molecular subtypes of cancer offers a valuable opportunity to enhance prognosis and tailor treatment plans for individuals. Recent efforts have been made to generate extensive multidimensional genomic data to achieve this potential. However, existing algorithms still face challenges in integrating and analyzing such intricate datasets. In this study, we present Adaptive Deep Shared Latent Representation (ADSLR), a novel approach for cancer subtyping that utilizes shared latent representation to reveal distinct molecular subtypes in cancer. It incorporates a cycle autoencoder with a nonnegative matrix factorization layer, capturing consistent signals of nonlinear features at various omics levels. This enables the generation of adaptable representations for shared latent representation across multiple omics levels. We apply ADSLR to multi-omics data obtained from eight different cancer types in the “The Cancer Genome Atlas” dataset, demonstrating significant improvements in the identification of biologically meaningful cancer subtypes. These identified subtypes exhibit noteworthy variations in patient survival rates across seven out of the eight cancer types. Our analysis uncovers integrated patterns involving mRNA expression, miRNA expression, DNA methylation, and protein across multiple cancers while showcasing ADSLR’s versatility for integrating various other omics types.},
+  archive      = {J_APIN},
+  author       = {Li, Min and Qi, Zhifang and Deng, Shaobo and Wang, Lei and Yu, Xiang},
+  doi          = {10.1007/s10489-025-06848-w},
+  journal      = {Applied Intelligence},
+  month        = {9},
+  number       = {14},
+  pages        = {1-17},
+  shortjournal = {Appl. Intell.},
+  title        = {Adaptive deep shared latent representation enables novel multi-omics cancer subtype classification},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-view contrastive learning with static attributes and dynamic interests for sequential recommendation. <em>APIN</em>, <em>55</em>(14), 1-21. (<a href='https://doi.org/10.1007/s10489-025-06816-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sequential recommendation plays a critical role in preference prediction by capturing the temporal evolution of user behavior. However, a key challenge lies in effectively integrating static attributes, such as stable user traits and item properties, with dynamic interests, which reflect the users’ transient and evolving preferences during interactions with various items. Current approaches typically focus on static attributes or recent interactions, neglecting the nuanced interplay between long-term stability and short-term variability. Additionally, the disparate encoding strategies for various data structures—such as bipartite interaction graphs, heterogeneous knowledge graphs, and sequential data streams—lead to fragmented user and item representations, hindering the development of a unified framework and reducing the system’s ability to holistically model user preferences. To address these challenges, we propose the multi-view contrastive learning with Static attributes and Dynamic interests for Sequential Recommendation (SDSR), a novel framework that integrates static and dynamic characteristics to enhance recommendation systems. SDSR employs graph-based encoders to capture static user and item features, while a sequence encoder models temporal changes in user behavior. By leveraging contrastive learning, SDSR aligns representations across multiple data views—such as interaction graphs, knowledge graphs, and sequential data—creating a unified user-item model that bridges long-term preferences with short-term trends. It also ensures consistency across various representations, yielding a cohesive and robust framework for synthesizing multi-perspective data. Empirical evaluations on benchmark datasets demonstrate that SDSR significantly outperforms state-of-the-art models, validating its effectiveness in integrating multi-view data and capturing both static and dynamic user preferences.},
+  archive      = {J_APIN},
+  author       = {Chen, Mukun and Wu, Jia and Pan, Shirui and Cai, Xiantao and Du, Bo and Hu, Wenbin and Xu, Huiting},
+  doi          = {10.1007/s10489-025-06816-4},
+  journal      = {Applied Intelligence},
+  month        = {9},
+  number       = {14},
+  pages        = {1-21},
+  shortjournal = {Appl. Intell.},
+  title        = {Multi-view contrastive learning with static attributes and dynamic interests for sequential recommendation},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DMSE: An efficient malicious traffic detection model based on deep multi-stacking ensemble learning. <em>APIN</em>, <em>55</em>(14), 1-29. (<a href='https://doi.org/10.1007/s10489-025-06819-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the context of increasing cyber threats, developing an efficient malicious traffic detection model to recognize the cyber attacks has become an urgent demand in the field of cyber security. This paper proposes an efficient malicious traffic detection model called DMSE based on deep multi-stacking ensemble learning, it is primarily consisted of feature representation module, base model detection module and multi-stacking ensemble learning module. In the feature representation phase, we propose a novel RGB image representation method, which hierarchically represents the global and local features of network traffic by allocating the information to three channels of RGB images. In the base model detection phase, we adopt five different deep learning models—CNN, TCN, LSTM, BiLSTM and BiTCN—as base models for the first-stage prediction. In the multi-stacking ensemble learning phase, we adopt the best-performing BiTCN from extensive experiments as the meta-learner to perform a second prediction using the results from the first stage, thereby obtaining the final detection result. Experiments conducted on USTC-TFC2016, CTU and ISAC datasets demonstrate that the proposed DMSE model significantly outperforms existing ensemble learning-based detection models in terms of accuracy, F1-score, false positive rate (FPR), true positive rate (TPR) and stability. The experimental results indicate that the proposed DMSE model can effectively identify and defend against network attacks, providing the new perspectives and technical support for maintaining a secure network environment.},
+  archive      = {J_APIN},
+  author       = {Cai, Saihua and Zhang, Yang and Li, Yanghang and Wang, Yupeng and Li, Jiayao and Zhou, Xiang},
+  doi          = {10.1007/s10489-025-06819-1},
+  journal      = {Applied Intelligence},
+  month        = {9},
+  number       = {14},
+  pages        = {1-29},
+  shortjournal = {Appl. Intell.},
+  title        = {DMSE: An efficient malicious traffic detection model based on deep multi-stacking ensemble learning},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An unsupervised domain adaptation method for cross-domain deceptive reviews detection. <em>APIN</em>, <em>55</em>(14), 1-18. (<a href='https://doi.org/10.1007/s10489-025-06825-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deceptive reviews seriously affect the interests of consumers, honest sellers, and e-commerce platforms. As e-commerce platforms often involve multiple domains (i.e., different products or services), in-domain deceptive review detection models trained and tested on a specific dataset may not perform well on other domains. Moreover, obtaining annotated data for so many individual domains is unrealistic. Cross-domain deceptive review detection aims to leverage labeled source domain data to improve the model’s performance on unlabeled target domain data. However, existing cross-domain deceptive review detection methods require labels for target domain data or do not consider domain-specific information. To further advance research, this paper proposes an unsupervised domain adaptation method for detecting cross-domain deceptive reviews. First, we propose a multiple mask views generation method to enhance domain-specific information to obtain different mask views of reviews. Secondly, the BERT and mask attention mechanisms are used sequentially to obtain contextual representations of the mask views and the original view of reviews. Thirdly, to maintain the consistency between the mask views and the original view of reviews, we use the intra-domain Kullback-Leibler divergence to constrain their learning process. Moreover, we use inter-domain dynamic maximum mean discrepancy and conditional maximum mean discrepancy to reduce differences between the distribution of source and target domains. Three sets of experiments on two datasets show that our method is superior to the baselines. In particular, the impact of domain differences on domain adaptability is further analyzed according to the quantified metric named domain distance defined in this paper.},
+  archive      = {J_APIN},
+  author       = {Cao, Ning and Ji, Shujuan and Zhuang, Fuzhen and Chiu, Dickson K. W. and Guo, Yajie and Gong, Maoguo},
+  doi          = {10.1007/s10489-025-06825-3},
+  journal      = {Applied Intelligence},
+  month        = {9},
+  number       = {14},
+  pages        = {1-18},
+  shortjournal = {Appl. Intell.},
+  title        = {An unsupervised domain adaptation method for cross-domain deceptive reviews detection},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Micro-dynamics prediction of well water level based on GRU and attention mechanism. <em>APIN</em>, <em>55</em>(14), 1-15. (<a href='https://doi.org/10.1007/s10489-025-06855-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Well water level is an important precursor observation, which is expected to be used to extract information on subsurface stress and media changes. Real-time prediction of well water level can help prevent geological disasters, but there are few related experimental studies. This study aims to explore a short-term prediction model of well water level that is more pervasive than the GRU model, explore new methods to enhance the model’s capability, and provide scientific references for the application of deep learning models in the field of well water level prediction. Taking the measured data of the Three Gorges well network from 2012 to 2014 as an example, the performance of the GRU and its variant models on the RMSE, MAE and R² evaluation criteria are compared, and the results show that only the BiGRU-Attention model shows excellent performance at all well points, with better pervasiveness and stability; performing a single-step prediction and adding a 1% standard deviation noise to the training set can improve the robustness and generalisation of the model.},
+  archive      = {J_APIN},
+  author       = {Fang, Xiaoyu and Zhang, Lili and Li, Haoran and Zhang, Yaowen and Yao, Yunsheng},
+  doi          = {10.1007/s10489-025-06855-x},
+  journal      = {Applied Intelligence},
+  month        = {9},
+  number       = {14},
+  pages        = {1-15},
+  shortjournal = {Appl. Intell.},
+  title        = {Micro-dynamics prediction of well water level based on GRU and attention mechanism},
+  volume       = {55},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

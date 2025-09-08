@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PARCO</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="parco">PARCO - 5</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Software acceleration of multi-user MIMO uplink detection on GPU. <em>PARCO</em>, <em>125</em>, 103150. (<a href='https://doi.org/10.1016/j.parco.2025.103150'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents the exploration of GPU-accelerated block-wise decompositions for zero-forcing (ZF) based QR and Cholesky methods applied to massive multiple-input multiple-output (MIMO) uplink detection algorithms. Three algorithms are evaluated: ZF with block Cholesky decomposition, ZF with block QR decomposition (QRD), and minimum mean square error (MMSE) with block Cholesky decomposition. The latter was the only one previously explored, but it used standard Cholesky decomposition. Our approach achieves an 11% improvement over the previous GPU-accelerated MMSE study. Through performance analysis, we observe a trade-off between precision and execution time. Reducing precision from FP64 to FP32 improves execution time but increases bit error rate (BER), with ZF-based QRD reducing execution time from 2 . 04 μ s to 1 . 24 μ s for a 128 × 8 MIMO size. The study also highlights that larger MIMO sizes, particularly 2048 × 32, require GPUs to fully utilize their computational and memory capabilities, especially under FP64 precision. In contrast, smaller matrices are compute-bound. Our results recommend GPUs for larger MIMO sizes, as they offer the parallelism and memory resources necessary to efficiently handle the computational demands of next-generation networks. This work paves the way for scalable, GPU-based massive MIMO uplink detection systems.},
+  archive      = {J_PARCO},
+  author       = {Ali Nada and Hazem Ismail Ali and Liang Liu and Yousra Alkabani},
+  doi          = {10.1016/j.parco.2025.103150},
+  journal      = {Parallel Computing},
+  month        = {9},
+  pages        = {103150},
+  shortjournal = {Parallel Comput.},
+  title        = {Software acceleration of multi-user MIMO uplink detection on GPU},
+  volume       = {125},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enable cross-iteration parallelism for PIM-based graph processing with vertex-level synchronization. <em>PARCO</em>, <em>125</em>, 103149. (<a href='https://doi.org/10.1016/j.parco.2025.103149'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Processing-in-memory (PIM) architectures have emerged as a promising solution for accelerating graph processing by enabling computation in memory and minimizing data movement. However, most existing PIM-based graph processing systems rely on the Bulk Synchronous Parallel (BSP) model, which frequently enforces global barriers that limit cross-iteration computational parallelism and introduce significant synchronization and communication overheads. To address these limitations, we propose the Cross Iteration Parallel (CIP) model, a novel vertex-level synchronization approach that eliminates global barriers by independently tracking the synchronization states of vertices. The CIP model enables concurrent execution across iterations, enhancing computational parallelism, overlapping communication and computation, improving core utilization, and increasing resilience to workload imbalance. We implement the CIP model in a PIM-based graph processing system, GraphDF, which features a few specially designed function units to support vertex-level synchronization. Evaluated on a PyMTL3-based cycle-accurate simulator using four real-world graphs and four graph algorithms, CIP running on GraphDF achieves an average speedup of 1.8 × and a maximum of 2.3 × compared to Dalorex, the state-of-the-art PIM-based graph processing system.},
+  archive      = {J_PARCO},
+  author       = {Xiang Zhao and Haitao Du and Yi Kang},
+  doi          = {10.1016/j.parco.2025.103149},
+  journal      = {Parallel Computing},
+  month        = {9},
+  pages        = {103149},
+  shortjournal = {Parallel Comput.},
+  title        = {Enable cross-iteration parallelism for PIM-based graph processing with vertex-level synchronization},
+  volume       = {125},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-workflow fault-tolerance scheduling strategy considering resources supply delay in WaaS platforms. <em>PARCO</em>, <em>125</em>, 103148. (<a href='https://doi.org/10.1016/j.parco.2025.103148'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Workflow as a Service (WaaS) platforms rent virtual machines (VMs) from IaaS providers to run scientific workflows for users. However, current researches on workflow scheduling in WaaS platforms did not consider the possibility of VMs downtime leading to task failures or the resources (such as VMs and containers) supply delay affecting scheduling efficiency. To address this issue, this paper proposes a multi-workflow fault-tolerance scheduling strategy for WaaS platforms. Firstly, since WaaS platforms do not manage hardware directly but schedule workflows at the level of VMs and containers, we establish a workflow scheduling model suitable for WaaS platforms, taking into account the impact of resources supply delay on workflow scheduling. Secondly, we propose a multi-workflow fault-tolerance scheduling strategy for WaaS platforms, which includes preprocessing, fault-tolerance selection, task assignment, and resource adjustment. It involves an improved deadline division algorithm to determine the scheduling order, a fault-tolerance selection algorithm combining two fault-tolerance strategies (replication and re-submission), task assignment algorithm considering task attributes and resource supply delay to schedule tasks, and a resource adjustment algorithm to pre-deploy resources for upcoming tasks. Finally, we compare the proposed scheduling strategy with three other algorithms, and the results also demonstrate its effectiveness.},
+  archive      = {J_PARCO},
+  author       = {Hui Zhao and Wentao Zhi and Xiaoqin Lu and Jing Wang and Nan Luo and Bo Wan and Quan Wang},
+  doi          = {10.1016/j.parco.2025.103148},
+  journal      = {Parallel Computing},
+  month        = {9},
+  pages        = {103148},
+  shortjournal = {Parallel Comput.},
+  title        = {Multi-workflow fault-tolerance scheduling strategy considering resources supply delay in WaaS platforms},
+  volume       = {125},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ALBBA: An efficient ALgebraic bypass BFS algorithm on long vector architectures. <em>PARCO</em>, <em>125</em>, 103147. (<a href='https://doi.org/10.1016/j.parco.2025.103147'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Breadth First Search (BFS) is a fundamental algorithm in scientific computing, databases, and network analysis applications. In the algebraic BFS paradigm, each BFS iteration is expressed as a sparse matrix–vector multiplication, allowing BFS to be accelerated and analyzed through well-established linear algebra primitives. Although much effort has been made to optimize algebraic BFS on parallel platforms such as CPUs, GPUs, and distributed memory systems, vector architectures that exploit Single Instruction Multiple Data (SIMD) parallelism, particularly with their high performance on sparse workloads, remain relatively underexplored for BFS. In this paper, we propose the ALgebraic Bypass BFS Algorithm (ALBBA), a novel and efficient algebraic BFS implementation optimized for long vector architectures. ALBBA utilizes a customized variant of the SELL- C - σ data structure to fully exploit the SIMD capabilities. By integrating a vectorization-friendly search method alongside a two-level bypass strategy, we enhance both sparse matrix-sparse vector multiplication (SpMSpV) and sparse matrix-dense vector multiplication (SpMV) algorithms, which are crucial for algebraic BFS operations. We further incorporate merge primitives and adopt an efficient selection method for each BFS iteration. Our experiments on an NEC VE20B processor demonstrate that ALBBA achieves average speedups of 3.91 × , 2.88 × , and 1.46 × over Enterprise, GraphBLAST, and Gunrock running on an NVIDIA H100 GPU, respectively.},
+  archive      = {J_PARCO},
+  author       = {Yuyao Niu and Marc Casas},
+  doi          = {10.1016/j.parco.2025.103147},
+  journal      = {Parallel Computing},
+  month        = {9},
+  pages        = {103147},
+  shortjournal = {Parallel Comput.},
+  title        = {ALBBA: An efficient ALgebraic bypass BFS algorithm on long vector architectures},
+  volume       = {125},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Using java to create and analyze models of parallel computing systems. <em>PARCO</em>, <em>125</em>, 103146. (<a href='https://doi.org/10.1016/j.parco.2025.103146'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The purpose of the study is to develop optimal solutions for models of parallel computing systems using the Java language. During the study, programs were written for the examined models of parallel computing systems. The result of the parallel sorting code is the output of a sorted array of random numbers. When processing data in parallel, the time spent on processing and the first elements of the list of squared numbers are displayed. When processing requests asynchronously, processing completion messages are displayed for each task with a slight delay. The main results include the development of optimization methods for algorithms and processes, such as the division of tasks into subtasks, the use of non-blocking algorithms, effective memory management, and load balancing, as well as the construction of diagrams and comparison of these methods by characteristics, including descriptions, implementation examples, and advantages. In addition, various specialized libraries were analyzed to improve the performance and scalability of the models. The results of the work performed showed a substantial improvement in response time, bandwidth, and resource efficiency in parallel computing systems. Scalability and load analysis assessments were conducted, demonstrating how the system responds to an increase in data volume or the number of threads. Profiling tools were used to analyze performance in detail and identify bottlenecks in models, which improved the architecture and implementation of parallel computing systems. The obtained results emphasize the importance of choosing the right methods and tools for optimizing parallel computing systems, which can substantially improve their performance and efficiency.},
+  archive      = {J_PARCO},
+  author       = {Harish Padmanaban and Nurkasym Arkabaev and Maher Ali Rusho and Vladyslav Kozub and Yurii Kozub},
+  doi          = {10.1016/j.parco.2025.103146},
+  journal      = {Parallel Computing},
+  month        = {9},
+  pages        = {103146},
+  shortjournal = {Parallel Comput.},
+  title        = {Using java to create and analyze models of parallel computing systems},
+  volume       = {125},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

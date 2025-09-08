@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TCSS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tcss">TCSS - 44</h2>
+<ul>
+<li><details>
+<summary>
+(2025). A review of few-shot and zero-shot learning for node classification in social networks. <em>TCSS</em>, <em>12</em>(4), 1927-1941. (<a href='https://doi.org/10.1109/TCSS.2024.3452697'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Node classification tasks aim to assign labels or categories to entire graphs based on their structural properties or node attributes. It can be adopted for various types of graph systems, including but not limited to network traffic, biological networks, knowledge graphs, etc., especially to social networks. This problem is well-studied, and solutions have demonstrated significant success in numerous real-world applications. However, in the situation where emerging categories are scarce or even have no labeled data, classical methods perform poorly on the whole, which has attracted growing attention. Based on this, in this article, we divide researches for node classification in social networks into two broad categories: traditional methods and novel strategies (few-shot/zero-shot learning). In traditional node classification methods, we summarize some classical methods for both homogeneous and heterogeneous networks, which includes unsupervised classifier, matrix factorization techniques, supervised methods, random-walk, and meta-path. Meanwhile, we introduce novel methods in few-shot or zero-shot learning. The article outlines the technical principles of various methods and analyzes their performance across different classes. It further summarizes the benchmark datasets used for evaluating node classification tasks. Finally, the major opportunities, challenges, and future research directions in few-shot and zero-shot learning for node classification in graph scenarios are discussed.},
+  archive      = {J_TCSS},
+  author       = {Junyang Chen and Rui Mi and Huan Wang and Huisi Wu and Jiqian Mo and Jingcai Guo and Zhihui Lai and Liangjie Zhang and Victor C. M. Leung},
+  doi          = {10.1109/TCSS.2024.3452697},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1927-1941},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {A review of few-shot and zero-shot learning for node classification in social networks},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CGraphNet: Contrastive graph context prediction for sparse unlabeled short text representation learning on social media. <em>TCSS</em>, <em>12</em>(4), 1912-1926. (<a href='https://doi.org/10.1109/TCSS.2024.3452695'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unlabeled text representation learning (UTRL), encompassing static word embeddings such as Word2Vec and contextualized word embeddings such as bidirectional encoder representations from transformer (BERT), aims to capture semantic word relationships in a low-dimensional space without the need for manual labeling. These word embeddings are invaluable for downstream tasks such as document classification and clustering. However, the surge of short texts generated daily on social media platforms results in sparse word cooccurrences, compromising UTRL outcomes. Contextualized models such as recurrent neural network (RNN) and BERT, while impressive, often struggle with predicting the next word due to sparse word sequences in short texts. To address this, we introduce CGraphNet, a contrastive graph context prediction model designed for UTRL. This approach converts short texts into graphs, establishing links between sequentially occurring words. Information from the next word and its neighbors informs the target prediction, a process referred to as graph context prediction, mitigating sparse word cooccurrence issues in brief sentences. To minimize noise, an attention mechanism assigns importance to neighbors, while a contrastive objective encourages more distinctive representations by comparing the target word with its neighbors. Our experiments demonstrate CGraphNet's superior performance over other baselines, particularly in classification and clustering tasks on real-world datasets.},
+  archive      = {J_TCSS},
+  author       = {Junyang Chen and Jingcai Guo and Xueliang Li and Huan Wang and Zhenghua Xu and Zhiguo Gong and Liangjie Zhang and Victor C. M. Leung},
+  doi          = {10.1109/TCSS.2024.3452695},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1912-1926},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {CGraphNet: Contrastive graph context prediction for sparse unlabeled short text representation learning on social media},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive density estimation for personalized recommendations across varied user activity levels. <em>TCSS</em>, <em>12</em>(4), 1902-1911. (<a href='https://doi.org/10.1109/TCSS.2024.3439777'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Top-N recommendation systems are recognized as highly effective for delivering personalized services that cater to the varied interests of users. Nonetheless, current state-of-the-art (SOTA) analyses reveal a marked variability in their performance across users with differing levels of activity, which substantially undermines the quality of personalized recommendation services. Prevailing research tends to overlook this discrepancy, often presuming a uniform probability distribution in user preferences and employing a static model (such as a single latent vector) for user representation. This oversimplification impedes the adaptability of existing models to accommodate the spectrum of user activity levels. In our research, we introduce the variational kernel density estimation (VKDE) approach, an innovative nonparametric method designed to accurately capture the unique preference distributions of individual users. The VKDE framework integrates multiple local distributions to construct a comprehensive global preference profile for each user. We have developed a novel variational kernel function that delineates user-specific interests and constructs each local distribution accordingly. Additionally, we present a tailored sampling strategy that simplifies the complexity of the training process while preserving the efficacy of the recommendations. Empirical evaluations conducted on four widely recognized public datasets demonstrate that our VKDE model achieves superior performance over the SOTA alternatives, significantly enhancing accuracy for users with a broad range of activity levels.},
+  archive      = {J_TCSS},
+  author       = {Wei Liu and Huaijie Zhu and Jianxing Yu and Libin Zheng and Jian Yin and Ruishi Liang and Xin Liu and Junyang Chen and Victor C. M. Leung},
+  doi          = {10.1109/TCSS.2024.3439777},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1902-1911},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Adaptive density estimation for personalized recommendations across varied user activity levels},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multitask asynchronous metalearning for few-shot anomalous node detection in dynamic networks. <em>TCSS</em>, <em>12</em>(4), 1890-1901. (<a href='https://doi.org/10.1109/TCSS.2024.3442238'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Few-shot anomalous node detection in dynamic networks has been extensively investigated in the field of research. In this few-shot scenario, the detection of these anomalous nodes is particularly challenging due to the continuously evolving network topology and data distribution over time, which is known as concept drift. Concept drift refers to the phenomenon where the underlying concepts or patterns in the data generation process change over time, leading to varying data distributions across different periods. Due to these changes in data distribution, the patterns learned during training may become invalid under the new data distribution. Existing models primarily aim to enhance the representation of evolving node attributes and relationships to mitigate the impact of concept drift in few-shot scenarios. However, the scarcity of anomalous samples further limits the model's ability to learn new patterns, thereby reducing its effectiveness in addressing concept drift in few-shot scenarios. To address this challenge, we propose the multitask asynchronous metalearning framework (MAMF), which aims to mitigate bias induced by concept drift in few-shot anomalous node detection. Our framework consists of four main components: a feature extractor, an anomaly simulator, an asynchronous learner, and a type detector. The feature extractor captures the relative variations of each node in an evolving graph stream. The anomaly simulator uses generative adversarial models to learn anomaly distributions and generate samples at different time intervals. The asynchronous learner samples from various time distributions to create metatasks for anomalous node detection, allowing it to adapt to changes between these distributions. To aid in few-shot anomalous node detection, the type detector is used for anomaly type recognition. Our framework achieves AUC improvements of 5.12%, 6.87%, and 1.91% over the best existing methods on Wikipedia, Reddit, and Mooc datasets, respectively, demonstrating its effectiveness and robustness in adapting to concept drift and detecting anomalous nodes.},
+  archive      = {J_TCSS},
+  author       = {Yifan Hong and Chuanqi Shi and Junyang Chen and Huan Wang and Di Wang},
+  doi          = {10.1109/TCSS.2024.3442238},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1890-1901},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Multitask asynchronous metalearning for few-shot anomalous node detection in dynamic networks},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Zero-shot recognition for healthcare social networks via tensor-based vision-semantic manifold alignment. <em>TCSS</em>, <em>12</em>(4), 1880-1889. (<a href='https://doi.org/10.1109/TCSS.2024.3410872'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Healthcare social networks (HSNs) are pivotal in spreading healthcare knowledge, providing support to both potential patients and medical professionals, and enhancing healthcare services. However, identifying unseen data in HSN poses a significant challenge due to their intrinsic heterogeneity, dynamic characteristics, and the scarcity of labeled data. Employing semantic knowledge transfer for class-agnostic zero-shot recognition stands out as a promising and innovative solution to this problem, but the visual-semantic gap and domain shift problems considerably hinder advancements in zero-shot recognition capabilities. Previous zero-shot models often impose constraints between vision and semantics in the loss part without explicitly injecting intermodality guidance into the feature refinement process. This article yields a novel zero-shot recognition framework for HSN, named the dual tensor prototype graph network, devoted to improving the performance of recognizing unseen objects in HSN leveraging semantic knowledge. We have developed an iterative and interactive updating strategy for dual tensor prototype graphs, explicitly leveraging the distribution information from one modality to guide the prototype graph updates of another modality. We constrain the update process of the dual prototype graphs by several tailored loss functions and episodic training, alleviating the inconsistency between semantic and visual manifolds. Extensive comparative experiments conducted on two medical imaging datasets and five zero-shot benchmarks affirm the stronger generalization ability of our proposed method compared with other advanced approaches, showing the potential of addressing zero-shot problems in HSN.},
+  archive      = {J_TCSS},
+  author       = {Bocheng Ren and Yuanyuan Yi and Laurence T. Yang and Xin Nie and Zecan Yang and Jun Feng},
+  doi          = {10.1109/TCSS.2024.3410872},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1880-1889},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Zero-shot recognition for healthcare social networks via tensor-based vision-semantic manifold alignment},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Zero-shot cross-lingual knowledge transfer in VQA via multimodal distillation. <em>TCSS</em>, <em>12</em>(4), 1869-1879. (<a href='https://doi.org/10.1109/TCSS.2024.3402270'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As multilingual artificial intelligence systems proliferate, achieving robust cross-lingual understanding remains an open challenge. Recent works have made progress on visual question answering (VQA) models by pretraining on large English image-text datasets. However, there is a language gap as most models are English-centric. Existing attempts at multilingual VQA rely on machine translation or multilingual model pretraining, but cannot effectively transfer rich cross-modal knowledge from English models. In this work, we propose the cross-lingual multimodal knowledge transfer (CMKT) framework to efficiently extend English VQA models to non-English languages via knowledge distillation. Specifically, we introduce a code-mixed cross-lingual mask modeling (CCM) method to establish representations for new languages using small image-text data. We also design a multimodal knowledge distillation (MMKD) method to transfer modal understanding from English models by imitating their sequence processing. Experiments on the xGQA benchmark demonstrate that CMKT can effectively improve zero-shot learning and few-shot learning in non-English languages. Our method reduces the data and computation needed to train multilingual VQA models from scratch. The knowledge transfer paradigm enables non-English languages to inherit and generalize the intricate visual-semantic relationships learned from English. The results also show that the proposed method outperforms previous state-of-the-art methods in the zero-shot setting on the xGQA dataset.},
+  archive      = {J_TCSS},
+  author       = {Yu Weng and Jun Dong and Wenbin He and Chaomurilige and Xuan Liu and Zheng Liu and Honghao Gao},
+  doi          = {10.1109/TCSS.2024.3402270},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1869-1879},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Zero-shot cross-lingual knowledge transfer in VQA via multimodal distillation},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An embedded unlabeled data partitioning PU-learning method based on genetic programming. <em>TCSS</em>, <em>12</em>(4), 1858-1868. (<a href='https://doi.org/10.1109/TCSS.2024.3406377'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In traditional binary classification tasks, learning algorithms conventionally distinguish positive and negative samples by leveraging fully labeled training data. However, in practical applications, there frequently arises a scenario where only a small number of positive samples and a large volume of unlabeled data exist, with the latter potentially containing a mix of positive and negative instances. This situation is known as positive-unlabeled learning (PUL) and has drawn considerable interest across various domains, such as text categorization. Despite numerous studies addressing PUL issues, few have focused on improving the two-step methodology in the data partitioning process, and even fewer have explored the application of genetic programming (GP) to PUL challenges. This article introduces a GP-based embedded unlabeled data partitioning method (EPGP) tailored for the PUL problem, particularly in the context of few-shot learning scenarios. The approach adopts a multiphase data partitioning strategy, integrating the partitioning process into the evolutionary cycle of the GP population, progressively isolating positive samples from the unlabeled data to yield a PU dataset closer to the real-world distribution. To achieve smoother data partitioning, a dynamically adjusted partitioning threshold strategy is incorporated. Finally, an ensemble method is devised, capitalizing on the high confidence associated with the originally labeled positive samples to generate the final classification outcome via weighted voting. Experimental evaluations of EPGP against other state-of-the-art PUL methods on 22 datasets show significant advantages in terms of balanced accuracy and macro-F1 scores on 17 datasets. Moreover, a case study on text data classification tasks demonstrates that EPGP consistently delivers substantial performance enhancements under varying proportions of labeled positive samples.},
+  archive      = {J_TCSS},
+  author       = {Yu Zhou and Nanjian Yang and Ran Wang},
+  doi          = {10.1109/TCSS.2024.3406377},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1858-1868},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {An embedded unlabeled data partitioning PU-learning method based on genetic programming},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Transfer learning for dynamic community knowledge detection based on dual-population cooperation and competition. <em>TCSS</em>, <em>12</em>(4), 1845-1857. (<a href='https://doi.org/10.1109/TCSS.2024.3385431'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Extracting evolving communities in social networks has attracted much attention recently due to its usefulness in the area of social media. Most existing models assume that network structures evolve monotonically and fail to leverage the fluctuating variation in the real world. Moreover, it is difficult to extract valuable community knowledge from previous snapshots, leading to a negative transfer to the current snapshot. In this article, we design a novel transferring strategy for dynamic community detection based on dual-population cooperation and competition. The transfer strategy guides the search by leveraging the meaningful community structures among previous snapshots based on the similarity between the current and all previous ones. Furthermore, to avoid the problem of insufficient population diversity caused by previous single-population algorithms, this article utilizes dual-population cooperative competition for multiobjective optimization. An intercooperation method effectively interchanges information according to normalized mutual information of different individuals in dual-population. Each population optimizes according to different objectives with a role-oriented teaching–learning-based optimizer to compensate for defects such as many hyperparameters, declining diversity, and insufficient convergence. Top students integrate the fine-grained strategy to mutate boundary nodes depending on embedding-based node activity; Ordinary students fuse the coarse-grained method to separate loosely connected subcommunities, while the bottom students do normal learning. Experimental results indicate that our approach outperforms state-of-the-art methods with high consistency.},
+  archive      = {J_TCSS},
+  author       = {Yan Kang and Baochen Fan and Ziyi Ma and Jing Guo and Tianjing Li and Kang Pu},
+  doi          = {10.1109/TCSS.2024.3385431},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1845-1857},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Transfer learning for dynamic community knowledge detection based on dual-population cooperation and competition},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CbDA: Contrastive-based data augmentation for domain generalization. <em>TCSS</em>, <em>12</em>(4), 1837-1844. (<a href='https://doi.org/10.1109/TCSS.2024.3395705'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the realm of domain generalization (DG), domain adversarial training is a popular method for achieving invariant representations and is often applied to various tasks in this field. Notably, recent developments in supervised learning, particularly in classification, have shown that methods converging toward smoother optima yield better generalization. This research delves into the impact of contrastive-based data augmentation on DG, focusing on leveraging category-specific distribution statistics. We introduce an innovative contrastive loss at the sample level, tailored to align samplewise representations with semantic distributions across domains. This involves encouraging representations within the same category to form clusters while ensuring those from different categories remain distinct, thus enhancing the model's classification strength. Additionally, we establish an upper limit for this loss function. This approach efficiently handles an infinite array of both similar and dissimilar sample pairs. Our methodology significantly surpasses the baseline model, a fact underscored by comprehensive empirical evaluations on challenging benchmarks such as Digits-DG, PACS, Office–Home, and DomainNet.},
+  archive      = {J_TCSS},
+  author       = {Ziyi Jiang and Liwen Zhang and Xiaoxuan Liang and Zhenghan Chen},
+  doi          = {10.1109/TCSS.2024.3395705},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1837-1844},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {CbDA: Contrastive-based data augmentation for domain generalization},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multimodal knowledge graph embedding with missing data integration. <em>TCSS</em>, <em>12</em>(4), 1824-1836. (<a href='https://doi.org/10.1109/TCSS.2024.3385672'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In real-world network scenarios, modal absence may be caused by various factors, such as sensor damage, data corruption, and human errors in recording. Effectively integrating multimodal missing data still poses significant challenges. Different combinations of missing modes can form feature sets of inconsistent dimensions and quantities. Additionally, effectively merging multimodal data requires a thorough understanding of specific modal information and intermodal interactions. The abundance of missing data can significantly reduce the sample set size, leading to learning interaction features from only a few samples. Moreover, there is a lack of clear correspondence between heterogeneous data from different sources. To address these issues, we focus our research on multimodal knowledge graph scenarios with different types of structures and content and develop a new knowledge graph embedding method. First, we use three embedding components to automatically extract feature vector representations of items from the structural content, textual content, and visual content of the knowledge graph. Then, we divide the dataset into several modal groups and model these modal groups using a multilayer network structure, with each multilayer network corresponding to a specific multimodal combination. Subsequently, we construct corresponding multilayer network projection layers and propose a two-stage GAT-based transfer learning framework for the projection layers, in which the extracted incomplete multimodal information and intermodal interaction information are integrated and mapped to a low-dimensional space. Finally, we not only theoretically prove the feasibility of the proposed method but also validate its effectiveness through extensive comparative experiments on multiple datasets.},
+  archive      = {J_TCSS},
+  author       = {Yuan Liang},
+  doi          = {10.1109/TCSS.2024.3385672},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1824-1836},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Multimodal knowledge graph embedding with missing data integration},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive sharpness-aware minimization for adversarial domain generalization. <em>TCSS</em>, <em>12</em>(4), 1816-1823. (<a href='https://doi.org/10.1109/TCSS.2024.3388894'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To obtain invariant representations, domain-adversarial training has been widely employed, and it is also frequently used for a variety of domain generalization (DG) tasks. For supervised learning tasks such as classification, emerging techniques that converge to smooth optima have demonstrated increased generalization. In this study, we examine how smoothness-enhancing formulations affect DG, which aims to combine task loss with adversarial terms. We consider that stabilizing the adversarial training leads to superior performance on the target domain when converging to a smooth minima with respect to task loss. Contrary to task loss, our analysis demonstrates that smooth minima convergence with respect to adversarial loss results in suboptimal generalization on the target domain. The investigation led us to develop the adaptive sharpness-aware minimization (ASAM) for adversarial DG method, which significantly improves the performance of current domain-adversarial methods for classification tasks. The proposed strategy performs similarly to the traditional state-of-the-art options in the most recent benchmark, Digits-DG, PACS, Office-Home, and DomainNet.},
+  archive      = {J_TCSS},
+  author       = {Tianci Xie and Tao Li and Ruoxue Wu},
+  doi          = {10.1109/TCSS.2024.3388894},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1816-1823},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Adaptive sharpness-aware minimization for adversarial domain generalization},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Generalized few-shot node classification with graph knowledge distillation. <em>TCSS</em>, <em>12</em>(4), 1805-1815. (<a href='https://doi.org/10.1109/TCSS.2024.3382471'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Generalized few-shot node classification (GFS-NC) is a very important challenge for graph-based algorithms, as it requires to identify novel classes and base classes simultaneously. Although there are several methods that try to combine metalearning or metric learning with graph neural networks to solve few-shot problem, most of them assume that test samples only come from the novel classes, which is impractical in reality. Besides, they overlook the relationship among classes, which can provide additional information for the novel classes classification. In this article, we propose a graph-based knowledge distillation network (GraphKD) to extract the class relationship and learn better nodes representations for nodes from novel classes in GFS-NC task. GraphKD consists of two modules: balanced pretraining module and class-relation transferring module. Balanced pretraining can optimize network parameters to a suitable manifold for subsequent initialization. The class-relation transferring module leverages a knowledge distillation model, where a teacher model generates soft labels containing interclass relationships and then transfer them to the student model. The student model is optimized to fit both the soft labels and hard labels concurrently. This relationship information can help the student model better understand the similarities and differences between classes, thereby improving its classification performance. In addition, we employee information entropy to distinguish the samples locate at the boundary of a base class and novel class and then assign them larger weights in the student model to enhance its expressive capacity for novel nodes. Our experiments show that the proposed method outperforms state-of-the-art baselines on various few-shot node classification datasets.},
+  archive      = {J_TCSS},
+  author       = {Jialong Wang and Mengting Zhou and Shilong Zhang and Zhiguo Gong},
+  doi          = {10.1109/TCSS.2024.3382471},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1805-1815},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Generalized few-shot node classification with graph knowledge distillation},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Informative nodes mining for class-imbalanced representation learning. <em>TCSS</em>, <em>12</em>(4), 1794-1804. (<a href='https://doi.org/10.1109/TCSS.2024.3350740'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Online social networks often enforce a restricted web interface to allow third part users to access their data objects in one-by-one manner along links. The heavy cost of collecting data from them makes it very difficult to train a graph neural networks (GNNs) algorithm by using valuable data resources from those social network services. In this article, we endeavor to harness the potential of collected data in order to cultivate robust node representations, all while taking into account the prevalent class-imbalanced scenario. To this end, we propose a framework based on the reinforcement learning technique that can implement training while sampling. We employee deep Q-learning network (DQN) as the basic reinforcement learning framework which maintains an experience replay buffer to store experiences in order to improve efficiency and generalization ability of the algorithm. The proposed framework can guide the training process according to the label distribution of the currently collected training data. To maximize the utility of the collected data, we introduce two ways to guide the agent to learn more robust node representations under the natural class-imbalanced scenario. Specifically, effective-number GNNs (ENG) try to employ a reward function with the technique of effective number and resampling GNNs (RSG) attempts to modify the state transition function motivated by resampling technique. Extensive experiments are conducted on several real-world imbalanced datasets and the proposed methods significantly outperform the state-of-the-art methods in node classification task, accomplishing higher performance while utilizing a reduced volume of data.},
+  archive      = {J_TCSS},
+  author       = {Mengting Zhou and Zhiguo Gong},
+  doi          = {10.1109/TCSS.2024.3350740},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1794-1804},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Informative nodes mining for class-imbalanced representation learning},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Graph convolutional network for adversarial domain generalization. <em>TCSS</em>, <em>12</em>(4), 1785-1793. (<a href='https://doi.org/10.1109/TCSS.2024.3367972'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Domain generalization (DG) aims to create a model that is trained across multiple source domains and is capable of performing well on new, previously unseen target domains. The essence of this task lies in acquiring features that are both discriminative and invariant across domains. One common approach to achieve this is through adversarial DG, with techniques like generative adversarial networks (GANs). However, these methods often struggle with limited intraclass diversity, hindering their generalization capabilities. To address this, we introduce the graph adversarial domain generalization (GADG) method. This novel approach, to our knowledge, is the first to incorporate graph information in DG, effectively learning domain-invariant and semantic representations. Our extensive image classification tests on benchmark datasets show that GADG not only achieves robust generalization but also surpasses existing state-of-the-art DG methods.},
+  archive      = {J_TCSS},
+  author       = {Xiaoqing Zhang and Hao Su and Xuebin Liu},
+  doi          = {10.1109/TCSS.2024.3367972},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1785-1793},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Graph convolutional network for adversarial domain generalization},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Knowledge-augmented interpretable network for zero-shot stance detection on social media. <em>TCSS</em>, <em>12</em>(4), 1773-1784. (<a href='https://doi.org/10.1109/TCSS.2024.3388723'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Stance detection on social media has become increasingly important for understanding public opinions on controversial issues. Existing methods often require large amounts of labeled data to learn target-independent transferable knowledge, which is infeasible under zero-shot settings where the target is unseen. Furthermore, most current stance detection models, primarily based on end-to-end deep learning architectures, lack transparency and may produce counter-intuitive and uninterpretable predictions. In this article, we propose a novel knowledge-augmented interpretable network (KAI) to enable zero-shot stance detection (ZSSD). First, we introduce an unsupervised approach based on large language models (LLM-KE) to elicit analysis perspectives, which is target-independent knowledge shared across different targets. This transferable knowledge bridges connections between seen and unseen targets. Second, we develop a bidirectional knowledge-guided neural production system (Bi-KGNPS) that effectively integrates such transferable knowledge through an iterative knowledge-variable binding process to guide stance predictions. Extensive experiments on benchmark datasets demonstrate KAI achieves new state-of-the-art performance on ZSSD. Moreover, our approach also delivers strong results on conventional in-target and cross-target stance detection. With the dual benefits of knowledge-augmented accuracy and model interpretability, this work represents an important advance toward practical stance detection systems that can generalize to emerging topics of interest. The proposed KAI framework provides an interpretable approach to effectively transfer knowledge across domains for zero-shot learning.},
+  archive      = {J_TCSS},
+  author       = {Bowen Zhang and Daijun Ding and Zhichao Huang and Ang Li and Yangyang Li and Baoquan Zhang and Hu Huang},
+  doi          = {10.1109/TCSS.2024.3388723},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1773-1784},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Knowledge-augmented interpretable network for zero-shot stance detection on social media},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Federated contrastive learning with feature-based distillation for human activity recognition. <em>TCSS</em>, <em>12</em>(4), 1759-1772. (<a href='https://doi.org/10.1109/TCSS.2024.3510428'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article proposes a federated contrastive learning with feature-based distillation (FCLFD) framework tailored for human activity recognition (HAR). The FCLFD system integrates a central server with multiple mobile users to address a diverse range of HAR challenges. The framework encompasses two pivotal elements: a contrastive student–teacher (CST) architecture with feature-based distillation and an average weight scheme (AWS). The CST framework facilitates the transfer of comprehensive knowledge from a teacher model to a student model through feature-based distillation and contrastive learning, with both models sharing an identical architecture. Each participating user periodically uploads the weights of its student model to the central server, where the AWS deployed on the server calculates the average weights based on contributions from all connected users. The aggregated weights are then redistributed to each user, who updates their teacher model accordingly. Experimental evaluations demonstrate that when 50 users are connected, the proposed FCLFD scheme obtains the highest $F_{1}$ values of 89.01 and 94.19, outperforming several state-of-the-art federated learning algorithms on the wireless sensor data mining (WISDM) and PAMAP2 datasets.},
+  archive      = {J_TCSS},
+  author       = {Zhiwen Xiao and Huagang Tong},
+  doi          = {10.1109/TCSS.2024.3510428},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1759-1772},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Federated contrastive learning with feature-based distillation for human activity recognition},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deep graph clustering with triple fusion mechanism for community detection. <em>TCSS</em>, <em>12</em>(4), 1743-1758. (<a href='https://doi.org/10.1109/TCSS.2024.3478351'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep graph clustering is a highly significant tool for community detection, enabling the identification of strongly connected groups of nodes within a graph. This technology is crucial in various fields such as education and E-learning. However, deep graph clustering can be more misled by the graph topology, disregarding node information. For example, an excessive number of intercommunity edges or insufficient intracommunity edges can lead to inaccurate community distinction by the model. In this article, we propose a novel model, deep Graph Clustering with Triple Fusion Autoencoder (GC-TriFA) for community detection, which utilizes a triple encoding fusion mechanism to balance the incorporation of node and topological information, thereby mitigating this issue. Specifically, GC-TriFA employs a shallow linear coding fusion and a deep coding fusion method within an autoencoder structure. This approach enables the model to simultaneously learn and capture the embedding of cross-modality information and later utilizes weight fusion to equalize the two modalities. Furthermore, GC-TriFA also reconstructs the graph structure, learns relaxed $k$-means, and undergoes self-supervised training to enhance the quality of the graph embedding. The experimental results of GC-TriFA, when evaluated as an end-to-end model on publicly available datasets, demonstrate its superiority compared to the baseline models.},
+  archive      = {J_TCSS},
+  author       = {Yuanchi Ma and Kaize Shi and Xueping Peng and Hui He and Peng Zhang and Jinyan Liu and Zhongxiang Lei and Zhendong Niu},
+  doi          = {10.1109/TCSS.2024.3478351},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1743-1758},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Deep graph clustering with triple fusion mechanism for community detection},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The communality of risk: Differentiating the logic of risk governance based on evolutionary game theory. <em>TCSS</em>, <em>12</em>(4), 1728-1742. (<a href='https://doi.org/10.1109/TCSS.2024.3474095'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Human beings live in a world full of risks, from minor risks such as colds and fevers to major crises such as economic crises and hurricanes. How to cope with these risks is a constant topic in the evolution of humankind. The impact of various characteristics of risk on the risk-resistance outcomes has been well studied, including the probability, intensity and spread of risks. However, as an additional dimension independent of the above main characteristics, risk-resistance solutions that are appropriate to the risk have not received sufficient attention. We abstract this characteristic as the relative cost-effectiveness between collective solution and individual solution in resisting a risk and name it communality. Taking communality and intensity as the two main characteristics of risk, we propose a risk-resistance model and explore the critical impact of risk communality on the outcomes of risk resistance. Using numerical analysis, we map the state transition of the population on a two-dimensional surface consisting of communality and intensity. Simulation experiments validate the results from numerical analysis and reveal four regions in this surface, each of which corresponds to a governance structure endogenous to the population. The complex impact of population-endogenous governance structures on the risk-resistance outcomes reflects the real-world challenges of risk governance. This article suggests that social governors need to implement different logics in the face of risks with different communalities.},
+  archive      = {J_TCSS},
+  author       = {Xiao Sun and Jun Qian and Yanlin Ying and Yueting Chai and Yi Liu},
+  doi          = {10.1109/TCSS.2024.3474095},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1728-1742},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {The communality of risk: Differentiating the logic of risk governance based on evolutionary game theory},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Diversified budgeted influence maximization in dynamic social networks. <em>TCSS</em>, <em>12</em>(4), 1716-1727. (<a href='https://doi.org/10.1109/TCSS.2024.3473948'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Influence maximization is a fundamental problem in network analysis, which attempts to identify a subset of nodes that maximizes the spread of influence/information. This problem has applications in various fields such as social networks, viral marketing, advertisements, and political campaigns, where understanding and exploiting network dynamics lead to effective strategies to promote behaviors, products, or ideas. The goal is to strategically select seed nodes to maximize the overall impact or adoption of an idea, behavior, or product in the network. Most of the existing IM algorithms give equal cost to selecting nodes and maximizing the active nodes, which overlook the number of influenced communities. To make it applicable to real-world applications, this article presents a diversified budgeted influence maximization (DBIM) algorithm for dynamic social networks. The DBIM algorithm considers the different costs of the nodes and maximizes the number of communities. This work proposes an objective function for diversification and presents an algorithm that finds the seed set utilizing the suggested strategy. Further, we show the monotone, submodular, and NP-hardness properties of the objective function. The proposed work experimentally shows the results on eight datasets and concludes that the proposed algorithm outperforms the activated nodes and the number of communities on all the datasets.},
+  archive      = {J_TCSS},
+  author       = {Sunil Kumar Meena and Shashank Sheshar Singh and Kuldeep Singh},
+  doi          = {10.1109/TCSS.2024.3473948},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1716-1727},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Diversified budgeted influence maximization in dynamic social networks},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HateFusion: Harnessing attention-based techniques for enhanced filtering and detection of implicit hate speech. <em>TCSS</em>, <em>12</em>(4), 1700-1715. (<a href='https://doi.org/10.1109/TCSS.2024.3512573'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hate speech is a complex, multifaceted form of harmful material that targets individuals or groups. Detecting implicit hate speech poses a significant challenge due to its subtle expressions and the critical role of context in its identification. In response to this challenge, we have fine-tuned BERT and DistilBERT models on three publicly available datasets: Toxigen, Implicit Gab, and the Implicit Hate Corpus (IHC). Our approach involves meticulous data preprocessing, customized model configurations, and strategic hyperparameter optimization, all tailored to enhance the models’ performance in binary, 3-way, and 7-way implicit hate detection. We observed notable improvements in the detection capabilities of our proposed work. To enhance the explainability of model behavior, we visualized attention mechanisms, including attention heads and compatibility scores, using tools such as BertViz, local interpretable model-agnostic explanations (LIME), and Shapley additive explanations (SHAP). This facilitated the clear interpretation of model decisions. We developed a software application called HateFusion, which integrates our fine-tuned models with an intuitive graphical interface. The application includes a flagging option that allows users or moderators to mark highly hateful content, supporting continuous model refinement and updates. Our proposed model achieved the highest macro-weighted F1 scores across multiple datasets. On the IHC dataset (for 2-, 3-, and 7-way classification tasks), it achieved F1 scores of 0.75, 0.73, and 0.61 with DistilBERT, and 0.77, 0.72, and 0.60 with BERT. On the Toxigen (2-way) and ImpGab (3-way) datasets, it scored 0.77 and 0.89 with DistilBERT, and 0.82 and 0.89 with BERT, respectively.},
+  archive      = {J_TCSS},
+  author       = {Ashok Yadav and Vrijendra Singh},
+  doi          = {10.1109/TCSS.2024.3512573},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1700-1715},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {HateFusion: Harnessing attention-based techniques for enhanced filtering and detection of implicit hate speech},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Artificial intelligence techniques introduced into evolutionary games and simulation studies. <em>TCSS</em>, <em>12</em>(4), 1688-1699. (<a href='https://doi.org/10.1109/TCSS.2024.3515085'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The advent of the artificial intelligence (AI) era has greatly facilitated enterprises, while also accelerating the pace of business transformation and development. However, the digital transformation process of small and medium-sized enterprises (SMEs) is progressing slowly. Therefore, it is necessary to study the constraints and enhancement strategies related to the adoption of artificial intelligence technology in SMEs. This article takes robotic process automation (RPA) technology as an example to construct a tripartite game relationship involving enterprise employees, technology service platforms, and enterprise leaders in the introduction of artificial intelligence technology. It explores the factors influencing the strategic choices of each party and summarizes the mechanisms underlying these strategic choices. Research findings indicate that 1) in the tripartite evolutionary game introduced by AI technology, three relatively stable equilibrium states exist; 2) when all participants have the same initial intentions, the degree of strategy evolution for each participant varies under different circumstances. The initial intentions of enterprise employees significantly influence their choices 3) participants’ strategy choices are significantly influenced by various factors related to the adoption and management of RPA technology. These factors include the benefits employees gain from adopting RPA technology and the incentives provided by leadership for employees to use RPA technology. Consequently, we recommend that firms implement targeted promotional activities and incentive measures, integrating RPA technology adoption into their overarching strategy. This approach aims to enhance the initial willingness of all strategic stakeholders, ensuring the stability of AI technology adoption, particularly within SMEs.},
+  archive      = {J_TCSS},
+  author       = {Xiaofan Li and Long Zhang and Peiyao Wang},
+  doi          = {10.1109/TCSS.2024.3515085},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1688-1699},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Artificial intelligence techniques introduced into evolutionary games and simulation studies},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Finite-time bounded control for multitime-scale production-inventory systems under inventory inaccuracy. <em>TCSS</em>, <em>12</em>(4), 1678-1687. (<a href='https://doi.org/10.1109/TCSS.2024.3477730'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The production-inventory system is a fundamental component of the supply chain, and inconsistencies in production rates arise from the flow of products from suppliers to retailers within the supply chain network. This article investigates the problem of dynamic control of inventory levels in a multitime-scale production-inventory system, the basic unit in a supply chain. First, the dynamic behavior of the production-inventory quantity of two different level factories is modeled by the ordinary differential equations. Second, the issue of inconsistent production rates among different factories is considered, and the singular perturbation theory is introduced to describe the phenomenon. In addition, to deal with the bullwhip effect caused by the variation of order demand and the phenomenon of inaccurate inventory levels caused by misplacing and theft, the $\mathscr{H}_{\infty}$ control strategy is considered to improve the system's robustness. Then, the finite-time boundedness of the production-inventory system is analyzed by combining it with the Lyapunov control theory, and the theorem is given to ensure that the dynamic change of the factory inventory is bounded and controllable. Finally, the effectiveness of the proposed method is verified by a simulation example of the potassium carbonate production process in a chemical plant.},
+  archive      = {J_TCSS},
+  author       = {Qiyuan Zhang and Hongfeng Wang and Junwei Wang},
+  doi          = {10.1109/TCSS.2024.3477730},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1678-1687},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Finite-time bounded control for multitime-scale production-inventory systems under inventory inaccuracy},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Producing considerate responses: Progressive staged training for emotional support conversation. <em>TCSS</em>, <em>12</em>(4), 1665-1677. (<a href='https://doi.org/10.1109/TCSS.2024.3477531'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Emotional support conversation (ESC) aims to alleviate the negative emotions of help-seekers by providing psychological assistance. Existing approaches typically overlook the abundant annotations contained in the ESC dataset, such as the situation descriptions and feedback scores of seekers, which limits their performance. In an effort to utilize the annotation information to enhance the emotional support ability of the backbone, we propose a three-stage training method called BlenderBot-ThTra for ESC systems. The proposed BlenderBot-ThTra involves the following three training processes: fine-tuning with supplemental feedback utterance, fine-tuning with auxiliary situation restoration, and calibration with the helpfulness estimation. The first stage aims to intensify the backbone's perception of conversational context, the second stage propels the backbone into excavating the causes of the emotional distress faced by the seeker. In the third stage, we leverage a Bayesian method based on the seeker's feedback scores to train a helpfulness evaluation model, then exploit a contrastive learning method to calibrate the ESC backbone. We conduct experiments on the standard multiturn ESC dataset, and the results demonstrate that BlenderBot-ThTra has a significant advantage in generating more supportive and adaptive responses.},
+  archive      = {J_TCSS},
+  author       = {Guoqing Lv and Jiang Li and Xiaoping Wang and Xin Zhan and Zhigang Zeng},
+  doi          = {10.1109/TCSS.2024.3477531},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1665-1677},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Producing considerate responses: Progressive staged training for emotional support conversation},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Rumor containment in hypergraph representation of social networks: A deep reinforcement learning-based solution. <em>TCSS</em>, <em>12</em>(4), 1653-1664. (<a href='https://doi.org/10.1109/TCSS.2024.3505205'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing solutions for rumor containment typically model social networks as regular graphs, focusing solely on dyadic relationships between pairs of individuals. However, these solutions overlook the crowd influence, which arises from higher order relationships involving multiple individuals. This crowd influence is a distinct concept that cannot be substituted by the cumulative effect of individual influences through dyadic relationships. Therefore, it is important to consider the impact of crowd influence when modeling influence diffusion in the network. Moreover, traditional rumor containment methods lack generalization capacity. These methods require complete reexecution of algorithms whenever the target network changes, rendering them less efficient. In this work, we model the network as a hypergraph to effectively capture the crowd influence through higher order social relationships. We propose RCDRL-H, a deep reinforcement learning framework capable of constructing a trained model for containing rumors in previously unseen networks. Additionally, we introduce hyper-structure2vec, a node embedding technique for hypergraphs, and an efficient rumor containment estimation function that eliminates the need for computationally expensive Monte Carlo simulations during training. Experiments carried out on real-world social networks demonstrate that improved rumor containment can be achieved by treating the network as a hypergraph. It has also been observed that the achieved rumor containment is close to that of the greedy approach. Moreover, using the new estimation function significantly reduces training time.},
+  archive      = {J_TCSS},
+  author       = {Gouri Kundu and Smita Ghosh and Sankhayan Choudhury},
+  doi          = {10.1109/TCSS.2024.3505205},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1653-1664},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Rumor containment in hypergraph representation of social networks: A deep reinforcement learning-based solution},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Data-driven and physics-assisted machine learning approach for warpage classification and process parameter optimization in a 3-D-printed BeltClip. <em>TCSS</em>, <em>12</em>(4), 1637-1652. (<a href='https://doi.org/10.1109/TCSS.2024.3512614'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {3-D printing, or additive manufacturing (AM), leverages 3-D computer-aided design models and numerical control to produce objects layer-by-layer, playing a key role in Industry 4.0 and Industry 5.0. Despite its potential to revolutionize manufacturing by creating complex structures more efficiently and cost-effectively, 3-D printing still faces quality issues due to a lack of sufficient data, resulting in improper process parameter settings and poor analyzability. This work introduces a data-driven and physics-assisted machine learning (DP-ML) approach for a 3-D-printed BeltClip object, integrating finite element analysis (FEA) and physics-informed machine learning (PIML). The proposed DP-ML framework provides a cost-effective and time-efficient data collection method using Digimat-AM and a warpage classification algorithm. The data collection begins with obtaining the STereoLithography (STL) file of the BeltClip object from Thingiverse and slicing it in Ultimaker©  Cura, considering process parameters such as infill amount, toolpath pattern, layer height, print speed, and extrusion temperature. The resulting G-code file is then input into Digimat-AM for further parameter setting and analysis. In Digimat-AM, glass fiber-filled and unfilled material types are set, undergoing the virtual 3-D printing process, followed by a warpage analysis of the printed BeltClip. The collected 3-D printing data is used to build ML models—deep neural network (DNN), decision tree (DT), support vector machine (SVM), logistic regression (LR), and random forest. The DNN contains three architectures—DNN-1, DNN-2, and DNN-3. Based on the metrics of precision, recall, F1-score, and accuracy, DNN-3 outperforms the others and is chosen for the warpage classification algorithm. The presented DP-ML approach is compared with the state-of-the-art methods and shows a promising capability to predicting warpage, optimizing process parameters, and improving the overall quality and efficiency of a 3-D-printed BeltClip.},
+  archive      = {J_TCSS},
+  author       = {Tariku Sinshaw Tamir and Xijin Hua and Jingchao Jiang and Jiewu Leng and Gang Xiong and Zhen Shen and Qiang Liu},
+  doi          = {10.1109/TCSS.2024.3512614},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1637-1652},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Data-driven and physics-assisted machine learning approach for warpage classification and process parameter optimization in a 3-D-printed BeltClip},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The ParallelWorkforce: A framework for synergistic collaboration in digital, robotic, and biological workers of industry 5.0. <em>TCSS</em>, <em>12</em>(4), 1627-1636. (<a href='https://doi.org/10.1109/TCSS.2024.3512576'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Aiming to boost production efficiency and reduce human workload, human-centricity has emerged as the core concept of Industry 5.0 (I5.0). However, current works have not established a unified automation and autonomous framework for human-centric smart manufacturing across various real world applications. Addressing this gap, this research introduces an innovative automated framework, ParallelWorkforce, which integrates blockchain intelligence and decentralized autonomous organizations and operations (DAOs) to drive the evolution from digital twins to parallel intelligence. First, this research conducts a comprehensive investigation into smart manufacturing in I5.0, summarizing the ongoing evolution. Next, a detailed exploration of ParallelWorkforce is provided to offer customized strategies for managing different levels of out-of-distribution events, significantly alleviating the workload on biological workers and maximizing the potential of both digital and robotic workers. Finally, the development of ParallelWorkforce across various key applications of smart manufacturing is demonstrated, including autonomous transportation, task assignment, and worker management. This research provides a viable solution for the further development of human-centered smart manufacturing and paves the way for the realization of “6S” goals in I5.0.},
+  archive      = {J_TCSS},
+  author       = {Siyu Teng and Yutong Wang and Xingxia Wang and Juanjuan Li and Yuchen Li and Xiaotong Zhang and Lingxi Li and Long Chen and Fei-Yue Wang},
+  doi          = {10.1109/TCSS.2024.3512576},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1627-1636},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {The ParallelWorkforce: A framework for synergistic collaboration in digital, robotic, and biological workers of industry 5.0},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multipolarity-based sentiment classification using hybrid HDL-fuzzy-RMDL network. <em>TCSS</em>, <em>12</em>(4), 1617-1626. (<a href='https://doi.org/10.1109/TCSS.2024.3503436'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many companies and organizations extract valuable data from online reviews through the opinions and thoughts of people about a particular product. So, aspect-based sentiment analysis has become a popular method for identifying significant characteristics in review sentiment categorization. Occasionally, while evaluating document phrases or text, we encounter multipolarity concerns that impact the overall sentiment categorization. Hence, there is a need to handle this challenge of multipolarity that misleads due to conflicting or contradicting sentiments in the text. This research article implements the HDL-Fuzzy-RMDL model, which includes hierarchical deep learning for text classification, fuzzy sets, and random multimodel deep learning for multipolarity-based sentimental classification. The bidirectional encoder representations from transformers initially convert the input sentence tokens. The bidirectional long short-term memory performs the multiword aspect term extraction. The hybrid model utilizes significant keywords or aspects for multipolarity sentiment classification. The efficacy of the proposed approach is evaluated based on the accuracy concerning ATE, precision, recall, and F1-score. Furthermore, the HDL-Fuzzy-RMDL-based multipolarity sentiment classification model attained significant improvements in performance as compared with the existing baseline models.},
+  archive      = {J_TCSS},
+  author       = {Neelima S. Ambekar and Anant V. Nimkar},
+  doi          = {10.1109/TCSS.2024.3503436},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1617-1626},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Multipolarity-based sentiment classification using hybrid HDL-fuzzy-RMDL network},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MASK-net: Robust health mention classification by masking a disease or symptom terms. <em>TCSS</em>, <em>12</em>(4), 1607-1616. (<a href='https://doi.org/10.1109/TCSS.2024.3492143'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Social media users often use disease or symptom terms in ways other than describing their health conditions, which can lead to flawed conclusions in data-driven public health surveillance. The health mention classification (HMC) task aims to identify posts in which users use disease or symptom terms to discuss their health conditions instead of using them for other reasons. Existing methods rely on features extracted from external resources and are tested on data from either Twitter or Reddit; therefore, their generalizability and transferability are unproven. In this work, we present MASK-Net, which masks disease or symptom terms and relies on the context of a post. Furthermore, to capture the negative sentiments associated with the experience of having a disease, we incorporate sentiment information to improve the HMC. We conduct experiments using publicly available health-mention datasets collected from Twitter and Reddit. Experimental results demonstrate that our method outperforms state-of-the-art methods on both HMC datasets, highlighting the relevance of context words in identifying HMC. Additionally, we evaluate our method in cross-domain and multidomain settings to analyze the transferability and generalizability of MASK-Net and conclude with a discussion on the empirical and ethical considerations of our study.},
+  archive      = {J_TCSS},
+  author       = {Usman Naseem and Surendrabikram Thapa and Qi Zhang and Junaid Rashid and Liang Hu},
+  doi          = {10.1109/TCSS.2024.3492143},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1607-1616},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {MASK-net: Robust health mention classification by masking a disease or symptom terms},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Grouping interesting patterns for understanding customer behaviors. <em>TCSS</em>, <em>12</em>(4), 1598-1606. (<a href='https://doi.org/10.1109/TCSS.2024.3492094'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article presents a highly efficient technique for pattern mining in the realm of customer behavior analysis, termed hybrid clustering patterns for customer behavior analysis (HCP-CBA). It leverages decomposition techniques to uncover relevant patterns by examining correlations among customer transactions within the dataset. Initially, the transaction dataset undergoes decomposition, grouping together transactions exhibiting high correlations. Subsequently, relevant patterns are extracted by applying a pattern mining algorithm represented by Apriori to each group. It incorporates both groups of transactions and shared items between groups. To assess the effectiveness of the HCP-CBA framework, extensive experiments are conducted across customer behavior dataset. The experimental results demonstrate notable reductions in both runtime and scalability. The full code of this research work is available on https://github.com/YousIA/ConsumerAnalytics.},
+  archive      = {J_TCSS},
+  author       = {Kristian Brathovde and Youcef Djenouri and Anis Yazidi and Gautam Srivastava},
+  doi          = {10.1109/TCSS.2024.3492094},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1598-1606},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Grouping interesting patterns for understanding customer behaviors},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient detection of $k$-plex structures in large graphs through constraint learning. <em>TCSS</em>, <em>12</em>(4), 1584-1597. (<a href='https://doi.org/10.1109/TCSS.2024.3462934'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The $k$-plex is a popular definition of communities in networks, offering more flexibility than cliques by allowing each node to miss up to $k$ connections. However, finding $k$-plexes in large graphs is a theoretically challenging task due to the large number of possible $k$-plexes. In this article, we propose a novel approach for detecting $k$-plexes under various sizes and time constraints using an automated strategy to learn bounds, called the constraint learning and bounding (CLB) method. Specifically, our proposed CLB approach, leverages the concept of constraint learning to develop a mixed integer linear programming (MILP) instance as a model to learn a bounding strategy in the branch-and-bound process. The variables in the MILP instances correspond to the natural properties of the $k$-plex problem. Unlike previous works, we focus on learning the bounding strategy rather than learning the branching strategy. Thus, the strategy learned by our proposed approach avoids visiting infeasible solutions, which accelerates the branch-and-bound algorithm and reduces the computational load. To evaluate our approach, we conduct experiments on various real graphs to validate the superiority and the generality of our proposed approach. In summary, our approach offers an effective and efficient solution for detecting $k$-plexes under various conditions.},
+  archive      = {J_TCSS},
+  author       = {Hui-Ju Hung and Chia-Hsun Lu and Yun-Ya Huang and Ming-Yi Chang and Ya-Chi Ho and Chih-Ya Shen},
+  doi          = {10.1109/TCSS.2024.3462934},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1584-1597},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Efficient detection of $k$-plex structures in large graphs through constraint learning},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CUP_CDLSTM: Civil unrest event prediction using convolutional neural network, DistilBERT, and long short-term memory. <em>TCSS</em>, <em>12</em>(4), 1574-1583. (<a href='https://doi.org/10.1109/TCSS.2024.3487802'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Civil unrest, a major trouble in the country's progress, requires timely detection and prevention. It causes numerous major issues, including loss of life and injury, resource depletion, political instability, and violations of human rights. Automating the early warning civil unrest event prediction with social media data becomes critically important. Existing baseline methods through text datasets obtained from social media have shown promising results. However, most existing baseline methods are domain-specific and lacking in robustness and generalization. As of now, there has been less work done addressing these issues in civil unrest event prediction. To overcome these limitations, this article presents a novel method as CUP_CDLSTM by combining the convolutional neural network-long short-term memory (CNN-LSTM) model and the pretrained distilBERT model to predict civil unrest event prediction using social media data. First, the proposed CUP_CDLSTM model utilizes the LSTM model to learn temporal features followed by CNN utilized to learn spatial features from the correlation matrix of different features. DistilBERT is utilized to generate weighted word embedding to advance the contextual features. The proposed CUP_CDLSTM model is trained with two datasets of different geographical locations for predicting civil unrest events which include spatial, temporal, and event weights as input features. The proposed CUP_CDLSTM model outperforms the baseline methods by up to 5% on both the Hong Kong protest dataset and the black lives matter (BLM) protest dataset in terms of accuracy. It has shown significantly faster training and inference times than existing baseline models.},
+  archive      = {J_TCSS},
+  author       = {Pratima Singh and Amita Jain},
+  doi          = {10.1109/TCSS.2024.3487802},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1574-1583},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {CUP_CDLSTM: Civil unrest event prediction using convolutional neural network, DistilBERT, and long short-term memory},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient secure data aggregation for real-time smart grid monitoring: A lightweight privacy-preserving approach. <em>TCSS</em>, <em>12</em>(4), 1563-1573. (<a href='https://doi.org/10.1109/TCSS.2024.3510095'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data aggregation protocols play a crucial role in enabling real-time monitoring of the smart grid's operational status by the power control center. To ensure robust security, a data aggregation protocol should provide features such as data privacy, fault tolerance, lightweight computation, and fine-grained data aggregation. However, existing data aggregation protocols employing techniques such as homomorphic encryption, masking, or differential privacy fail to deliver these features concurrently. To address this challenge, we propose a novel lightweight privacy-preserving data aggregation scheme based on proxy reencryption and asymmetric scalar product-preserving encryption, in which encryption operations only involve addition and multiplication over the integer field, thus avoiding time-consuming exponentiation and pairing operations and achieving lightweight computation. Furthermore, through the use of an asymmetric scalar-product-preserving encryption scheme, we effectively align aggregation policies while maintaining the privacy of power consumption data. Finally, when compared to three recent data aggregation schemes with analogous structures, experimental results demonstrate that our proposed scheme outperforms others regarding computational and communication overheads, thus enhancing its efficiency.},
+  archive      = {J_TCSS},
+  author       = {Jianhong Zhang and Chuming Shi},
+  doi          = {10.1109/TCSS.2024.3510095},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1563-1573},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Efficient secure data aggregation for real-time smart grid monitoring: A lightweight privacy-preserving approach},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Emotion separation and recognition from a facial expression by generating the poker face with vision transformers. <em>TCSS</em>, <em>12</em>(4), 1548-1562. (<a href='https://doi.org/10.1109/TCSS.2024.3478839'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Representation learning and feature disentanglement have garnered significant research interest in the field of facial expression recognition (FER). The inherent ambiguity of emotion labels poses challenges for conventional supervised representation learning methods. Moreover, directly learning the mapping from a facial expression image to an emotion label lacks explicit supervision signals for capturing fine-grained facial features. In this article, we propose a novel FER model, named poker face vision transformer or PF-ViT, to address these challenges. PF-ViT aims to separate and recognize the disturbance-agnostic emotion from a static facial image by generating its corresponding poker face without the need for paired images. Inspired by the facial action coding system, we regard an expressive face as the combined result of a set of facial muscle movements on one's poker face (i.e., an emotionless face). PF-ViT utilizes vanilla vision transformers, and its components are first pretrained as masked autoencoders on a large facial expression dataset without emotion labels, yielding excellent representations. Subsequently, we train PF-ViT using a GAN framework. During training, the auxiliary task of poke face generation promotes the disentanglement between emotional and emotion-irrelevant components, guiding the FER model to holistically capture discriminative facial details. Quantitative and qualitative results demonstrate the effectiveness of our method, surpassing the state-of-the-art methods on four popular FER datasets.},
+  archive      = {J_TCSS},
+  author       = {Jia Li and Jiantao Nie and Dan Guo and Richang Hong and Meng Wang},
+  doi          = {10.1109/TCSS.2024.3478839},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1548-1562},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Emotion separation and recognition from a facial expression by generating the poker face with vision transformers},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RAG-based crowdsourcing task decomposition via masked contrastive learning with prompts. <em>TCSS</em>, <em>12</em>(4), 1535-1547. (<a href='https://doi.org/10.1109/TCSS.2024.3501316'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Crowdsourcing is a critical technology in social manufacturing, which leverages an extensive and boundless reservoir of human resources to handle a wide array of complex tasks. The successful execution of these complex tasks relies on task decomposition (TD) and allocation, with the former being a prerequisite for the latter. Recently, pretrained language models-based methods have garnered significant attention. However, they are constrained to handling straightforward common-sense tasks due to their inherent restrictions involving limited and difficult-to-update knowledge as well as the presence of “hallucinations.” To address these issues, we propose a retrieval-augmented generation-based crowdsourcing framework that reformulates TD as event detection from the perspective of natural language understanding. However, the existing detection methods fail to distinguish differences between event types and always depend on heuristic rules and external semantic analyzing tools. Therefore, we present a prompt-based contrastive learning framework for TD (PBCT), which incorporates a prompt-based trigger detector to overcome dependence. Additionally, trigger-attentive sentinel and masked contrastive learning are designed to provide varying attention to trigger and contextual features according to different event types. Extensive experiment results demonstrate our method is highly competitive in both supervised and zero-shot detection. A case study on printed circuit board design and manufacturing is used to validate its adaptability and scalability in unfamiliar professional domains.},
+  archive      = {J_TCSS},
+  author       = {Jing Yang and Xiao Wang and Yu Zhao and Yuhang Liu and Fei-Yue Wang},
+  doi          = {10.1109/TCSS.2024.3501316},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1535-1547},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {RAG-based crowdsourcing task decomposition via masked contrastive learning with prompts},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Belief option prioritization in the graph model for conflict resolution. <em>TCSS</em>, <em>12</em>(4), 1523-1534. (<a href='https://doi.org/10.1109/TCSS.2024.3503612'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the graph model for conflict resolution (GMCR), option prioritization is an important approach to obtain preferences of decision makers (DMs) over a special conflict. The preference, based on ordered preference statements, is influenced by the authenticity and the order of preference statements. Owing to ambiguous evidence and incomplete information in complex real-world conflicts, it is of great difficulty to determine crisp preference over states for DMs. Some uncertain preferences have been introduced to cope with two situations that uncertain about preference statements authenticity or prioritization. The belief structure can be used to capture vagueness or unknown in subjective judgments. In this article, we propose a belief option prioritization technique by considering two situations of preference statements to elicit preferences comprehensively and efficiently. First, a belief structure is applied to describe the uncertainty of preference statement authenticity. The belief degree represents the accuracy of each preference statement and the real preference attitude of a DM. Second, a belief distribution, associated with an ordered sequence of preference statements, is used to capture the uncertainty on the prioritization of preference statements. The belief preference over feasible states can be obtained by the scoring scheme of option prioritization based on the ordered preference statements. Last, we propose an overall belief option prioritization technique by combining two uncertain situations. The application of Gisborne Lake water export conflict is utilized to illustrate the use of belief option prioritization.},
+  archive      = {J_TCSS},
+  author       = {Zeqiang Hou and Bingfeng Ge and Yuming Huang and Zihui Liu and Jianbin Sun and Jianghan Zhu},
+  doi          = {10.1109/TCSS.2024.3503612},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1523-1534},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Belief option prioritization in the graph model for conflict resolution},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Boosting performance of graph convolutional networks via generating pseudolabels and feature interaction. <em>TCSS</em>, <em>12</em>(4), 1509-1522. (<a href='https://doi.org/10.1109/TCSS.2024.3516712'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The task of node classification based on graph convolutional networks (GCNs) is widely applied in many social media and e-commerce websites. In this context, rich node labels undoubtedly play a very important role. However, existing methods fail to generate high-quality pseudolabels that serve as a potential solution to alleviate label scarcity on graphs and reduce time-consuming annotation issues. Moreover, it is an interesting problem to boost the performance of GCNs with feature interaction and propagation. To tackle these limitations, we propose a new pseudolabels generation and feature interaction propagation based GCN, named PF-GCN. Specifically, the proposed PF-GCN first generates high-quality pseudolabels to enlarge the input set of node labels. Meanwhile, it fully exploits the information of feature interactions to enhance our PF-GCN model. We then present a straightforward yet highly effective cross-layer approach which is equipped with feature transformation to encode feature interaction at each layer. Finally, we propagate feature interactions through both topology space and feature space, and then employ an adaptive attention mechanism to learn rich node embeddings. Experimental results demonstrate that the proposed PF-GCN outperforms several state-of-the-art methods in the extensive evaluations of node classification. We have released the source codes of PF-GCN for public usage and evaluation at https://github.com/ZZY-GraphMiningLab/PF-GCN.},
+  archive      = {J_TCSS},
+  author       = {Qiqi Zhang and Zhongying Zhao and Chao Li and Xin Huang},
+  doi          = {10.1109/TCSS.2024.3516712},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1509-1522},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Boosting performance of graph convolutional networks via generating pseudolabels and feature interaction},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Common discriminative latent space learning for cross-domain speech emotion recognition. <em>TCSS</em>, <em>12</em>(4), 1498-1508. (<a href='https://doi.org/10.1109/TCSS.2024.3476325'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cross-domain speech emotion recognition (SER) has received increasing attention in recent years. Existing transfer subspace learning and regression-based SER methods have the following drawbacks. The features in the subspace are still insufficiently representative and discriminative, and direct regression would lead to information loss. To address these problems, we present a novel common discriminative latent space learning (CDLSL) method for cross-domain SER. To be specific, we first obtain a common latent space by imposing a projection matrix on the cross-domain data. Meanwhile, we impose an uncorrelated constraint on the projection matrix to ensure that the features are representative and discriminative after dimension reduction. Then, we implement a graph regularization term on the latent representations of the samples to capture the local similarity information. Furthermore, to obtain a more discriminative common latent space, we introduce the label information by aligning the latent space with the relaxed label space, while mitigating the information loss for regression. Extensive experimental results validate the superiority of the proposed method over the state-of-the-art competitors.},
+  archive      = {J_TCSS},
+  author       = {Siqi Fu and Peng Song and Hao Wang and Zhaowei Liu and Wenming Zheng},
+  doi          = {10.1109/TCSS.2024.3476325},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1498-1508},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Common discriminative latent space learning for cross-domain speech emotion recognition},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). How to perform energy-balanced underwater data collection in AUV-aided UASNs: A social welfare-based node clustering approach. <em>TCSS</em>, <em>12</em>(4), 1485-1497. (<a href='https://doi.org/10.1109/TCSS.2024.3476321'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid evolution of the Internet of Underwater Things (IoUT) has led to the widespread adoption of autonomous underwater vehicle (AUV)-assisted underwater acoustic sensor networks (UASNs) for various applications such as marine environment monitoring and resource exploration. This article introduces an energy-balanced data collection scheme tailored for AUV-supported UASNs. The proposed scheme combines a node clustering method based on a social welfare function and an intelligent path planning strategy for the AUV. The node clustering approach integrates canopy and K-means algorithms for initial node clustering, followed by reclustering using an enhanced hierarchical clustering algorithm. To balance energy distribution, Atkinson's social welfare function is employed to select and rotate cluster heads (CHs) within each cluster. To address limited CH memory constraints, a lossless compression technique is introduced to reduce data storage requirements at the CHs. Moreover, the article introduces the use of the deep Q-network (DQN) technique for AUV path planning, considering multiple pertinent factors simultaneously. Simulation results demonstrate that the proposed data collection scheme effectively reduces energy consumption, prolongs network lifespan, and enhances data collection efficiency when compared to recent research endeavors.},
+  archive      = {J_TCSS},
+  author       = {Chuan Lin and Guangjie Han and Chang Lu and Syed Bilal Hussain Shah and Yu Zhang and Feng Wang},
+  doi          = {10.1109/TCSS.2024.3476321},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1485-1497},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {How to perform energy-balanced underwater data collection in AUV-aided UASNs: A social welfare-based node clustering approach},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CRAFT: Identifying key nodes in the science communication community via counterfactual fairness. <em>TCSS</em>, <em>12</em>(4), 1473-1484. (<a href='https://doi.org/10.1109/TCSS.2024.3501740'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The advent of the new media era has greatly changed the original pattern of science communication, and social networks have become a new front to promote the Public Understanding of Science. The integration of social networks and scientific communication has dissolved the central focus of scientific communication, moving toward a more diversified subject centered around the public networks. Due to the special nature of science communication, the key nodes in the community network often play a crucial role. Specifically, by identifying key nodes and analyzing the trend of grouping them into clusters, the stability and robustness of the complex network of science communication can be significantly improved. This is of great significance for expanding the influence of science communication and attracting relevant practitioners to join. However, the sensitive attributes and potential influence factors of community network nodes can lead to deviations in key node mining using existing algorithms. From the perspective of algorithm fairness, we combine graph neural networks and counterfactual theory to address this issue in this work and propose a framework for key node mining for the characteristics of science communication, CounteRfActual Fairness discriminaTor (CRAFT). Experimental results on real data demonstrate the prediction and fairness results and the efficacy of CRAFT in learning causal representations of latent factors.},
+  archive      = {J_TCSS},
+  author       = {Wenkang Jiang and Qirui Tang and Lei Lin and Ye Han and Runqiang Wang and Hongbo He},
+  doi          = {10.1109/TCSS.2024.3501740},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1473-1484},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {CRAFT: Identifying key nodes in the science communication community via counterfactual fairness},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MLKT4Rec: Enhancing exercise recommendation through multitask learning with knowledge tracing. <em>TCSS</em>, <em>12</em>(4), 1458-1472. (<a href='https://doi.org/10.1109/TCSS.2024.3515254'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Personalized exercise recommendation is an important task in educational data mining, aiming to recommend exercises that match students’ intentions and abilities. However, existing recommendation methods often ignore the dynamic changes and individual differences in students’ knowledge levels and face serious data sparsity problems. To address these limitations, we employ graph neural networks (GNNs) to learn node representations in exercise recommendation contexts and propose a new knowledge tracing-enhanced multitask exercise recommendation framework, called MLKT4Rec. Unlike previous graph-based approaches that focus on explicitly observed relationships in the data, we use implicit edges to augment the graph structure and incorporate exercise difficulty attributes, relative time intervals, and location coding to enrich the exercise representation. Based on this, we construct a knowledge tracing model to capture students’ knowledge levels and integrate it into the exercise sequential recommendation process for joint multitask training. Extensive experiments on four real datasets validate the effectiveness of the proposed model.},
+  archive      = {J_TCSS},
+  author       = {Shufei Li and Xingwu Liu and Xiaolan Tang and Xi Chen and Juhua Pu},
+  doi          = {10.1109/TCSS.2024.3515254},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1458-1472},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {MLKT4Rec: Enhancing exercise recommendation through multitask learning with knowledge tracing},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Modeling the type hierarchy in high-dimensional box space for fine-grained entity typing. <em>TCSS</em>, <em>12</em>(4), 1440-1457. (<a href='https://doi.org/10.1109/TCSS.2024.3515054'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A critical component of fine-grained entity typing is the existence of precise relationship between entity types, such as type hierarchy. Previous approaches for fine-grained entity typing typically model the type hierarchy in vector space, which causes it extremely hard to precisely capture the complex relationship between entity types. To overcome the challenge of modeling type hierarchy in vector space, this article proposes for the first time to model the type hierarchy in high-dimensional box space. In addition, previous approaches focus more on the influence of the context of entity mentions, while neglecting the influence of entity mentions themselves. Based on the above challenges, we present a new approach called THBox, which not only successfully boosts the influence of entity mentions but also models the type hierarchy well. To verify the effectiveness of the method presented in this article, experimental results on three publicly available fine-grained entity typing benchmark datasets are provided to verify that the presented method is a new state-of-the-art solution for fine-grained entity typing.},
+  archive      = {J_TCSS},
+  author       = {Yixiu Qin and Feng Wang and Jiawei Li and Yuanfei Deng and Shun Mao and Yuncheng Jiang},
+  doi          = {10.1109/TCSS.2024.3515054},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1440-1457},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Modeling the type hierarchy in high-dimensional box space for fine-grained entity typing},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Opposing stance in topic evolution: A case analysis of messi's visit to hong kong. <em>TCSS</em>, <em>12</em>(4), 1430-1439. (<a href='https://doi.org/10.1109/TCSS.2024.3467672'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In February 2024, Lionel Messi's absence from a Hong Kong exhibition match ignited extensive debate across social media platforms, capturing the attention of the public and sparking controversies that extended into realms such as business partnerships and diplomatic implications. This incident not only reflects the public's reaction and pattern of stance changes toward such a complex Incident but also significantly demonstrates the close connection between cyberspace and the real world. Research on this incident has important practical significance for predicting and intervening in the evolution of similar hot incidents. In this article, the case of Messi's absence from the Hong Kong match is delved into. A stance detection method and a quantification approach for stance divergence have been devised to analyze the evolution of the stance surrounding the incident. Furthermore, by examining topic clusters over time, the topical progression of public stances is tracked. Findings reveal that nearly 60% of posts expressed an explicit stance throughout the incident, with the majority (66.9%) taking an opposing stance. Additionally, it was noted that the topics discussed at various stages followed a long-tail distribution, indicating that most discussions revolved around a few dominant themes. Within more segmented and specific topics, stance divergences were often more prominent.},
+  archive      = {J_TCSS},
+  author       = {Shan Huang and Tao Wang and Yuanhan Xie and Jiayuan Sun and Lifang Li and Weishan Zhang and Fei-Yue Wang},
+  doi          = {10.1109/TCSS.2024.3467672},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1430-1439},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Opposing stance in topic evolution: A case analysis of messi's visit to hong kong},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Semantics-based noninterference assessment in cyber-physical systems. <em>TCSS</em>, <em>12</em>(4), 1415-1429. (<a href='https://doi.org/10.1109/TCSS.2024.3456589'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Event-aware information flow security in cyber–physical systems (CPSs) emphasizes the correlation among events. Event-aware noninterference is a security property capable to describe such a correlation. In light of the event-aware noninterference assessment problem, system modeling is a common means, and many studies have been done on such a problem by using formal modeling tools, i.e., Petri nets (PNs), at present. However, classical PNs suffer from the lack of modeling for patterns with semantic sharing of events, which can be modeled by labeled PNs (LPNs). In this article, we present the concept of semantics-based noninterference for the CPSs modeled by LPNs and focus on the assessment problem of semantics-based noninterference properties represented by semantics-based strong nondeterministic noninterference (SNNI) and extended bisimulation SNNI (EBSNNI). To this end, we first give the formal definitions of semantics-based SNNI and EBSNNI. Then, we analyze the assessment mechanisms of them according to the characteristics of semantic sharing of events in LPNs. On this basis, we provide the semantics-based noninterference assessment method involving the coarse and fine assessments to reveal the event-aware security of CPSs. Finally, a case study is provided to explain the significance of our research and the effectiveness of our method.},
+  archive      = {J_TCSS},
+  author       = {Wenjing Zhong and Jinjing Zhao and Hesuan Hu},
+  doi          = {10.1109/TCSS.2024.3456589},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1415-1429},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Semantics-based noninterference assessment in cyber-physical systems},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Social cognition-enhanced public opinion response during emergencies. <em>TCSS</em>, <em>12</em>(4), 1405-1414. (<a href='https://doi.org/10.1109/TCSS.2025.3590115'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_TCSS},
+  author       = {Xuerong Li and Daniel Dajun Zeng and Shouyang Wang and Bin Hu},
+  doi          = {10.1109/TCSS.2025.3590115},
+  journal      = {IEEE Transactions on Computational Social Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1405-1414},
+  shortjournal = {IEEE Trans. Comput. Social Syst.},
+  title        = {Social cognition-enhanced public opinion response during emergencies},
+  volume       = {12},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MIR</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="mir">MIR - 13</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Guided proximal policy optimization with structured action graph for complex decision-making. <em>MIR</em>, <em>22</em>(4), 797-816. (<a href='https://doi.org/10.1007/s11633-024-1503-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reinforcement learning encounters formidable challenges when tasked with intricate decision-making scenarios, primarily due to the expansive parameterized action spaces and the vastness of the corresponding policy landscapes. To surmount these difficulties, we devise a practical structured action graph model augmented by guiding policies that integrate trust region constraints. Based on this, we propose guided proximal policy optimization with structured action graph (GPPO-SAG), which has demonstrated pronounced efficacy in refining policy learning and enhancing performance across sophisticated tasks characterized by parameterized action spaces. Rigorous empirical evaluations of our model have been performed on comprehensive gaming platforms, including the entire suite of StarCraft II and Hearthstone, yielding exceptionally favorable outcomes. Our source code is at https://github.com/sachiel321/GPPO-SAG .},
+  archive      = {J_MIR},
+  author       = {Yang, Yiming and Xing, Dengpeng and Xia, Wannian and Wang, Peng},
+  doi          = {10.1007/s11633-024-1503-7},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {797-816},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Guided proximal policy optimization with structured action graph for complex decision-making},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AdaGPAR: Generalizable pedestrian attribute recognition via test-time adaptation. <em>MIR</em>, <em>22</em>(4), 783-796. (<a href='https://doi.org/10.1007/s11633-024-1504-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Generalizable pedestrian attribute recognition (PAR) aims to learn a robust PAR model that can be directly adapted to unknown distributions under varying illumination, different viewpoints and occlusions, which is an essential problem for real-world applications, such as video surveillance and fashion search. In practice, when a trained PAR model is deployed to real-world scenarios, the unseen target samples are fed into the model continuously in an online manner. Therefore, this paper proposes an efficient and flexible method, named AdaGPAR, for generalizable PAR (GPAR) via test-time adaptation (TTA), where we adapt the trained model through exploiting the unlabeled target samples online during the test phase. As far as we know, it is the first work that solves the GPAR from the perspective of TTA. In particular, the proposed AdaGPAR memorizes the reliable target sample pairs (features and pseudo-labels) as prototypes gradually in the test phase. Then, it makes predictions with a non-parametric classifier by calculating the similarity between a target instance and the prototypes. However, since PAR is a task of multi-label classification, only using the same holistic feature of one pedestrian image as the prototypes of multiple attributes is not optimal. Therefore, an attribute localization branch is introduced to extract the attribute-specific features, where two kinds of memory banks are further constructed to cache the global and attribute-specific features simultaneously. In summary, the AdaGPAR is training-free in the test phase and predicts multiple pedestrian attributes of the target samples in an online manner. This makes the AdaGPAR time efficient and generalizable for real-world applications. Extensive experiments have been performed on the UPAR benchmark to compare the proposed method with multiple baselines. The superior performance demonstrates the effectiveness of the proposed AdaGPAR that improves the generalizability of a PAR model via TTA.},
+  archive      = {J_MIR},
+  author       = {Li, Da and Zhang, Zhang and Zhang, Yifan and Jia, Zhen and Shan, Caifeng},
+  doi          = {10.1007/s11633-024-1504-6},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {783-796},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {AdaGPAR: Generalizable pedestrian attribute recognition via test-time adaptation},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AICAttack: Adversarial image captioning attack with attention-based optimization. <em>MIR</em>, <em>22</em>(4), 769-782. (<a href='https://doi.org/10.1007/s11633-024-1535-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advances in deep learning research have shown remarkable achievements across many tasks in computer vision (CV) and natural language processing (NLP). At the intersection of CV and NLP is the problem of image captioning, where the related models’ robustness against adversarial attacks has not been well studied. This paper presents a novel adversarial attack strategy, attention-based image captioning attack (AICAttack), designed to attack image captioning models through subtle perturbations to images. Operating within a black-box attack scenario, our algorithm requires no access to the target model’s architecture, parameters, or gradient information. We introduce an attention-based candidate selection mechanism that identifies the optimal pixels for attack, followed by a customized differential evolution method to optimize the perturbations of the pixels’ RGB values. We demonstrate AICAttack’s effectiveness through extensive experiments on benchmark datasets against multiple victim models. The experimental results demonstrate that our method outperforms current leading-edge techniques by achieving consistently higher attack success rates.},
+  archive      = {J_MIR},
+  author       = {Li, Jiyao and Ni, Mingze and Dong, Yifei and Zhu, Tianqing and Gong, Yongshun and Liu, Wei},
+  doi          = {10.1007/s11633-024-1535-z},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {769-782},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {AICAttack: Adversarial image captioning attack with attention-based optimization},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CMSL: Cross-modal style learning for few-shot image generation. <em>MIR</em>, <em>22</em>(4), 752-768. (<a href='https://doi.org/10.1007/s11633-024-1511-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Training generative adversarial networks is data-demanding, which limits the development of these models on target domains with inadequate training data. Recently, researchers have leveraged generative models pretrained on sufficient data and fine-tuned them using small training samples, thus reducing data requirements. However, due to the lack of explicit focus on target styles and disproportionately concentrating on generative consistency, these methods do not perform well in diversity preservation which represents the adaptation ability for few-shot generative models. To mitigate the diversity degradation, we propose a framework with two key strategies: 1) To obtain more diverse styles from limited training data effectively, we propose a cross-modal module that explicitly obtains the target styles with a style prototype space and text-guided style instructions. 2) To inherit the generation capability from the pretrained model, we aim to constrain the similarity between the generated and source images with a structural discrepancy alignment module by maintaining the structure correlation in multiscale areas. We demonstrate the effectiveness of our method, which outperforms state-of-the-art methods in mitigating diversity degradation through extensive experiments and analyses.},
+  archive      = {J_MIR},
+  author       = {Jiang, Yue and Lyu, Yueming and Peng, Bo and Wang, Wei and Dong, Jing},
+  doi          = {10.1007/s11633-024-1511-7},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {752-768},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {CMSL: Cross-modal style learning for few-shot image generation},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DPM-solver++: Fast solver for guided sampling of diffusion probabilistic models. <em>MIR</em>, <em>22</em>(4), 730-751. (<a href='https://doi.org/10.1007/s11633-025-1562-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Diffusion probabilistic models (DPMs) have achieved impressive success in high-resolution image synthesis, especially in recent large-scale text-to-image generation applications. An essential technique for improving the sample quality of DPMs is guided sampling, which usually needs a large guidance scale to obtain the best sample quality. The commonly-used fast sampler for guided sampling is denoising diffusion implicit models (DDIM), a first-order diffusion ordinary differential equation (ODE) solver that generally needs 100 to 250 steps for high-quality samples. Although recent works propose dedicated high-order solvers and achieve a further speedup for sampling without guidance, their effectiveness for guided sampling has not been well-tested before. In this work, we demonstrate that previous high-order fast samplers suffer from instability issues, and they even become slower than DDIM when the guidance scale grows larger. To further speed up guided sampling, we propose DPM-Solver++, a high-order solver for the guided sampling of DPMs. DPM-Solver++ solves the diffusion ODE with the data prediction model and adopts thresholding methods to keep the solution matches training data distribution. We further propose a multistep variant of DPM-Solver++ to address the instability issue by reducing the effective step size. Experiments show that DPM-Solver++ can generate high-quality samples within only 15 to 20 steps for guided sampling by pixel-space and latent-space DPMs.},
+  archive      = {J_MIR},
+  author       = {Lu, Cheng and Zhou, Yuhao and Bao, Fan and Chen, Jianfei and Li, Chongxuan and Zhu, Jun},
+  doi          = {10.1007/s11633-025-1562-4},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {730-751},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {DPM-solver++: Fast solver for guided sampling of diffusion probabilistic models},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multimodal pretrained knowledge for real-world object navigation. <em>MIR</em>, <em>22</em>(4), 713-729. (<a href='https://doi.org/10.1007/s11633-024-1537-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Most visual-language navigation (VLN) research focuses on simulate environments, but applying these methods to real-world scenarios is challenging because of misalignments between vision and language in complex environments, leading to path deviations. To address this, we propose a novel vision-and-language object navigation strategy that uses multimodal pretrained knowledge as a cross-modal bridge to link semantic concepts in both images and text. This improves navigation supervision at key-points and enhances robustness. Specifically, we 1) randomly generate key-points within a specific density range and optimize them on the basis of challenging locations; 2) use pretrained multimodal knowledge to efficiently retrieve target objects; 3) combine depth information with simultaneous localization and mapping (SLAM) map data to predict optimal positions and orientations for accurate navigation; and 4) implement the method on a physical robot, successfully conducting navigation tests. Our approach achieves a maximum success rate of 66.7%, outperforming existing VLN methods in real-world environments.},
+  archive      = {J_MIR},
+  author       = {Yuan, Hui and Huang, Yan and Yu, Naigong and Zhang, Dongbo and Du, Zetao and Liu, Ziqi and Zhang, Kun},
+  doi          = {10.1007/s11633-024-1537-x},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {713-729},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Multimodal pretrained knowledge for real-world object navigation},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Online iterative learning enhanced sim-to-real transfer for efficient manipulation of deformable objects. <em>MIR</em>, <em>22</em>(4), 696-712. (<a href='https://doi.org/10.1007/s11633-025-1566-0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deformable manipulation has attracted a lot of attention in the field of robotics, especially in medical applications. However, manipulating deformable objects faces various challenges, mainly including their complex dynamic properties and unpredictable nonlinear deformations. It is difficult to provide a basis for deformable object measurements without effective control methods that provide intelligent and accurate position control, and this research also provides a premise for deformable object measurements. To address these issues, this paper proposes an online iterative perception policy (IPP) method, which does not require large-scale deep network training. This method is able to perceive transformations through an iterative process, and achieve efficient and accurate control of deformable objects. Extensive experiments in the simulation environment and the real scene are conducted to validate the effectiveness and superiority of the proposed method, as well as to compare with advanced algorithms (linear-quadratic regulator (LQR), sliding mode control (SMC), model predictive control (MPC), and heuristic). The experimental results reveal that IPP outperforms other approaches in terms of convergence, stability, robustness and flexibility in both the simulation and real-world scenarios, regardless of textile properties or initial conditions.},
+  archive      = {J_MIR},
+  author       = {Chen, Zuyan and Huang, Jian-An and Röning, Juha and Angrisani, Leopoldo and Li, Shuai},
+  doi          = {10.1007/s11633-025-1566-0},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {696-712},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Online iterative learning enhanced sim-to-real transfer for efficient manipulation of deformable objects},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Human-like observation-inspired universal image acquisition system for complex surfaces in industrial product inspection. <em>MIR</em>, <em>22</em>(4), 677-695. (<a href='https://doi.org/10.1007/s11633-025-1561-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Industrial surface inspection is crucial for the manufacture of high-end equipment across industries, with precise image acquisition being fundamental. Existing imaging systems often lack flexibility, they are restricted to specific objects, and face challenges in industrial structures without standardized computer-aided design (CAD) models or with complex surfaces. Inspired by human-like multidimensional observation, this study developed a universal image acquisition system based on measured point clouds, offering strong adaptability and robustness in complex industrial settings. The system is divided into three layers: the physical layer responsible for hardware integration, the interaction layer that facilitates bidirectional data exchange with the control layer, and the control layer integrating a new paradigm of multiple intelligent algorithms. The physical layer incorporates 2D and 3D cameras, turntables and industrial robots, enhancing the flexibility and compatibility of imaging. The interaction layer manages bidirectional information transmission and data exchange, offering a visualized area to enhance the user interaction experience. The control layer consists of point cloud preprocessing, primitive segmentation, viewpoint generation and pose estimation algorithms, using point cloud-based viewpoint generation and trajectory planning for high-precision image acquisition applicable to complex surface inspections across scenarios and structures. The system’s utility is demonstrated through a software and hardware algorithm platform and an interactive interface. Experimental validation on curved surfaces of different configurations and sizes confirms its universal image acquisition advantages. This system promises to introduce a cost-effective, versatile solution for complex surfaces, driving adoption across diverse industrial scenarios.},
+  archive      = {J_MIR},
+  author       = {Yang, Tianbo and Wang, Shaohu and Tong, Yuchuang and Zou, Menghan and Shang, Xiuqin and Ma, Wenzhi and Zhang, Zhengtao},
+  doi          = {10.1007/s11633-025-1561-5},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {677-695},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Human-like observation-inspired universal image acquisition system for complex surfaces in industrial product inspection},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Self-supervised vision-driven trajectory planning for intelligent robotic deburring. <em>MIR</em>, <em>22</em>(4), 655-676. (<a href='https://doi.org/10.1007/s11633-025-1560-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Intelligent robotic manufacturing systems are revolutionizing the production industry. These next-generation systems employ robots as actuators, multi-source sensors for perception, and artificial intelligence for decision-making, aiming to execute routine manufacturing tasks with greater autonomy and flexibility. In footwear manufacturing, sole deburring presents a specific challenge in detecting defects and elaborating deburring paths, which skilled workers traditionally handle. The present research goes beyond solving such problems traditionally with computer vision and hard robot programming. Instead, it focuses on developing a learning structure mimicking human motion planning capability from vision inputs. Like humans who mentally visualize and predict a path before refining it in real-time, we want to give the robot the ability to predetermine the trajectory needed for a finishing task, exploiting only vision data. The system is designed to learn how to identify defects and directly correlate this information with motions by utilizing a latent space representation, transitioning from simple programmed responses to more adaptive and intelligent behaviors. We call it a self-supervised vision-proprioception model, an AI framework that autonomously learns to correlate visual observations to proprioceptive data (end effector trajectories) for effective task execution. This is achieved by integrating a vision-based latent space learning phase (learn to see), followed by a reinforcement learning stage, where the agent learns to associate the latent space with deburring actions in a simulated environment (learn to act). Recognizing the common performance degradation when transferring learned policies to real robots, this research also employs Sim-to-Real methods to bridge the reality gap (learn to transfer). Experimental results validate the whole approach.},
+  archive      = {J_MIR},
+  author       = {Tafuro, Alessandra and Molinaro, Martin and Zanchettin, Andrea Maria and Rocco, Paolo},
+  doi          = {10.1007/s11633-025-1560-6},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {655-676},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Self-supervised vision-driven trajectory planning for intelligent robotic deburring},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GPU-accelerated conflict-based search for multi-agent embodied intelligence. <em>MIR</em>, <em>22</em>(4), 641-654. (<a href='https://doi.org/10.1007/s11633-025-1568-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Embodied intelligence applications, such as autonomous robotics and smart transportation systems, require efficient coordination of multiple agents in dynamic environments. A critical challenge in this domain is the multi-agent pathfinding (MAPF) problem, which ensures that agents can navigate conflict-free while optimizing their paths. Conflict-based search (CBS) is a well-established two-level solver for the MAPF problem. However, as the scale of the problem expands, the computation time becomes a significant challenge for the implementation of CBS. Previous optimizations have mainly focused on reducing the number of nodes explored by the high-level or low-level solver. This paper takes a different perspective by proposing a parallel version of CBS, namely GPU-accelerated conflict-based search (GACBS), which significantly exploits the parallel computing capabilities of GPU. GACBS employs a task coordination framework to enable collaboration between the high-level and low-level solvers with lightweight synchronous operations. Moreover, GACBS leverages a parallel low-level solver, called GATSA, to efficiently find the shortest path for a single agent under constraints. Experimental results show that the proposed GACBS significantly outperforms CPU-based CBS, with the maximum speedup ratio reaching over 46.},
+  archive      = {J_MIR},
+  author       = {Tang, Mingkai and Xin, Ren and Fang, Chao and Li, Yuanhang and Liu, Hongji and Wu, Jin},
+  doi          = {10.1007/s11633-025-1568-y},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {641-654},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {GPU-accelerated conflict-based search for multi-agent embodied intelligence},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reactive whole-body locomotion-integrated manipulation based on combined learning and optimization. <em>MIR</em>, <em>22</em>(4), 627-640. (<a href='https://doi.org/10.1007/s11633-024-1538-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Reactive planning and control capacity for collaborative robots is essential when the tasks change online in an unstructured environment. This is more difficult for collaborative mobile manipulators (CMM) due to high redundancies. To this end, this paper proposed a reactive whole-body locomotion-integrated manipulation approach based on combined learning and optimization. First, human demonstrations are collected, where the wrist and pelvis movements are treated as whole-body trajectories, mapping to the end-effector (EE) and the mobile base (MB) of CMM, respectively. A time-input kernelized movement primitive (T-KMP) learns the whole-body trajectory, and a multi-dimensional kernelized movement primitive (M-KMP) learns the spatial relationship between the MB and EE pose. According to task changes, the T-KMP adapts the learned trajectories online by inserting the new desired point predicted by M-KMP. Then, the updated reference trajectories are sent to a hierarchical quadratic programming (HQP) controller, where the EE and the MB trajectories tracking are set as the first and second priority tasks, generating the feasible and optimal joint level commands. An ablation simulation experiment with CMM of the HQP is conducted to show the necessity of MB trajectory tracking in mimicking human whole-body motion behavior. Finally, the tasks of the reactive pick-and-place and reactive reaching were undertaken, where the target object was randomly moved, even out of the region of demonstrations. The results showed that the proposed approach can successfully transfer and adapt the human whole-body loco-manipulation skills to CMM online with task changes.},
+  archive      = {J_MIR},
+  author       = {Zhao, Jianzhuang and Teng, Tao and De Momi, Elena and Ajoudani, Arash},
+  doi          = {10.1007/s11633-024-1538-9},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {627-640},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Reactive whole-body locomotion-integrated manipulation based on combined learning and optimization},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A survey of embodied learning for object-centric robotic manipulation. <em>MIR</em>, <em>22</em>(4), 588-626. (<a href='https://doi.org/10.1007/s11633-025-1542-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Embodied learning for object-centric robotic manipulation is a rapidly developing and challenging area in embodied AI. It is crucial for advancing next-generation intelligent robots and has garnered significant interest recently. Unlike data-driven machine learning methods, embodied learning focuses on robot learning through physical interaction with the environment and perceptual feedback, making it especially suitable for robotic manipulation. In this paper, we provide a comprehensive survey of the latest advancements in this field and categorize the existing work into three main branches: 1) Embodied perceptual learning, which aims to predict object pose and affordance through various data representations; 2) Embodied policy learning, which focuses on generating optimal robotic decisions using methods such as reinforcement learning and imitation learning; 3) Embodied task-oriented learning, designed to optimize the robot’s performance based on the characteristics of different tasks in object grasping and manipulation. In addition, we offer an overview and discussion of public datasets, evaluation metrics, representative applications, current challenges, and potential future research directions. A project associated with this survey has been established at https://github.com/RayYoh/OCRM_survey .},
+  archive      = {J_MIR},
+  author       = {Zheng, Ying and Yao, Lei and Su, Yuejiao and Zhang, Yi and Wang, Yi and Zhao, Sicheng and Zhang, Yiyi and Chau, Lap-Pui},
+  doi          = {10.1007/s11633-025-1542-8},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {588-626},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {A survey of embodied learning for object-centric robotic manipulation},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Editorial for special issue on embodied intelligence. <em>MIR</em>, <em>22</em>(4), 585-587. (<a href='https://doi.org/10.1007/s11633-025-1572-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_MIR},
+  author       = {He, Wei and Yang, Chenguang and Cheng, Long and Wang, Zhichuang and Wu, Jin and Peternel, Luka},
+  doi          = {10.1007/s11633-025-1572-2},
+  journal      = {Machine Intelligence Research},
+  month        = {8},
+  number       = {4},
+  pages        = {585-587},
+  shortjournal = {Mach. Intell. Res.},
+  title        = {Editorial for special issue on embodied intelligence},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

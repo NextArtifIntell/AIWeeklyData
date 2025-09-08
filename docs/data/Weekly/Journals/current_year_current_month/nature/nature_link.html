@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>nature_link</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h1 id="nature">NATURE</h1>
+<ul>
+<li><a
+href="data/Weekly/Journals/current_year_current_month/nature/nature_all.html">All
+Journals</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_month/nature/NATCS/NATCS.html">NATCS</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_month/nature/NATEE/NATEE.html">NATEE</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_month/nature/NATMI/NATMI.html">NATMI</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_month/nature/NATURE/NATURE.html">NATURE</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_month/nature/NBT/NBT.html">NBT</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_month/nature/NCHEM/NCHEM.html">NCHEM</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_month/nature/NG/NG.html">NG</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_month/nature/NMAT/NMAT.html">NMAT</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_month/nature/NMETH/NMETH.html">NMETH</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_month/nature/NPHYS/NPHYS.html">NPHYS</a></li>
+</ul>
+
+</body>
+</html>

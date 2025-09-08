@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TPDS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tpds">TPDS - 33</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Chameleon: An efficient FHE scheme switching acceleration on GPUs. <em>TPDS</em>, 1-18. (<a href='https://doi.org/10.1109/TPDS.2025.3604866'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fully homomorphic encryption (FHE) enables direct computation on encrypted data, making it a crucial technology for privacy protection. However, FHE suffers from significant performance bottlenecks. In this context, GPU acceleration offers a promising solution to bridge the performance gap. Existing efforts primarily focus on single-class FHE schemes, which fail to meet the diverse requirements of data types and functions, prompting the development of hybrid multi-class FHE schemes. However, studies have yet to thoroughly investigate specific GPU optimizations for hybrid FHE schemes. In this paper, we present an efficient GPU-based FHE scheme switching acceleration named Chameleon. First, we propose a scalable NTT acceleration design that adapts to larger CKKS polynomials and smaller TFHE polynomials. Specifically, Chameleon tackles synchronization issues by fusing stages to reduce synchronization, employing polynomial coefficient shuffling to minimize synchronization scale, and utilizing an SM-aware combination strategy to identify the optimal switching point. Second, Chameleon is the first to comprehensively analyze and optimize critical switching operations. It introduces CMux-level parallelization to accelerate LUT evaluation and a homomorphic rotation-free matrixvector multiplication to improve repacking efficiency. Finally, Chameleon outperforms the state-of-the-art GPU implementations by 1.23× in CKKS HMUL and 1.15× in bootstrapping. It also achieves up to 4.87× and 1.51× speedups for TFHE bootstrapping compared to CPU and GPU versions, respectively, and delivers a 67.3× average speedup for scheme switching over CPU-based implementation.},
+  archive      = {J_TPDS},
+  author       = {Zhiwei Wang and Haoqi He and Lutan Zhao and Peinan Li and Zhihao Li and Dan Meng and Rui Hou},
+  doi          = {10.1109/TPDS.2025.3604866},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-18},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Chameleon: An efficient FHE scheme switching acceleration on GPUs},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PreTrans: Enabling efficient CGRA multi-task context switch through config pre-mapping and data transceiving. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3604815'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dynamic resource allocation guarantees the performance of CGRA multi-task, but incurs a wide range of incompatible contexts (config & data) to the CGRA architecture. However, traditional context switch approaches including online config transformation and data reloading may significantly block the task to process inputs under new resource allocation decisions, resulting in the limited task throughput. To address this issue, online config transformation can be avoided if compatible configs have been prepared through offline pre-mapping, but traditional CGRA mappers require days to achieve comprehensive pre-mapping with considerable quality. Besides, online data reloading can also be eliminated through memory sharing, but the traditional arbiter-based approach has the difficulty of trading off physical complexity and memory access parallelism. PreTrans is the first system design to achieve the efficient CGRA multi-task context switch. PreTrans first avoids the online config transformation through a software incremental pre-mapper, which re-utilizes the previously finished pre-mapping results to dramatically accelerate the pre-mapping of subsequent resource allocation decisions with negligible mapping quality loss. Secondly, PreTrans replaces the traditional arbiter with a hardware data transceiver to better support the memory sharing that eliminates data reloading, which allows each tile to possess an individual memory that maximizes the access parallelism without introducing significant physical overhead. The overall evaluation demonstrates that PreTrans achieves 1.13$\sim 2.46\times$ throughput improvement on pipeline and parallel multi-task scenarios, and can reach the target throughput immediately after the new resource allocation decision takes effect. Ablation study further shows that the pre-mapper is more than 3 magnitudes faster than the traditional CGRA mapper while maintaining more than 99% of the optimal mapping quality, and the data transceiver only introduces 9.02% hardware area overhead under 16×16 CGRA.},
+  archive      = {J_TPDS},
+  author       = {Yufei Yang and Chenhao Xie and Liansheng Liu and Xiyuan Peng and Yu Peng and Hailong Yang and Depei Qian},
+  doi          = {10.1109/TPDS.2025.3604815},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {PreTrans: Enabling efficient CGRA multi-task context switch through config pre-mapping and data transceiving},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scheduling fork-joins with communication delays and equal processing times on heterogeneous processors. <em>TPDS</em>, 1-13. (<a href='https://doi.org/10.1109/TPDS.2025.3605272'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Task scheduling for parallel computing is strongly NP-hard even without precedence constraints $P||C_{max}$. With any kind of precedence constraints and communication delays the problem becomes less manageable still. We look at the specific case of scheduling under the precedence constraints of a fork-join structure (including communication delays) $P[Q]|fork-join, c_{ij}|C_{max}$. This represents any kind of computation that divides into sub-computations with the end results being processed together. Looking at special cases where computation costs are equal, we propose polynomial time approximations and exact algorithms for them, considering homogenous and (related) heterogenous processors. Having those algorithms allows us to study the quality of heuristics in a large experimental evaluation. This demonstrates that heuristic schedulers perform well enough in most cases.},
+  archive      = {J_TPDS},
+  author       = {Huijun Wang and Oliver Sinnen},
+  doi          = {10.1109/TPDS.2025.3605272},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Scheduling fork-joins with communication delays and equal processing times on heterogeneous processors},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A non-intrusive multi-objective task scheduling method for JointCloud environment. <em>TPDS</em>, 1-17. (<a href='https://doi.org/10.1109/TPDS.2025.3596012'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The advent of advanced technologies, such as large models, has precipitated a surging demand for computational resources, thereby driving the evolution of cloud computing services from single-cloud architectures to multi-cloud paradigms. The accompanying question is how to enable resources from different cloud service providers to collaborate efficiently. Although existing works have explored multi-cloud scheduling methods, most of these works are centralized scheduling, where the decision-maker can schedule computing resources across all clouds. However, this is nearly impossible given the current situation in which computing resources in different clouds come from various cloud service providers. In response to this challenge, JointCloud, a multi-cloud cooperation architecture, has been proposed, which aims at enhancing the cooperation among multiple clouds to provide efficient multi-cluster services. Following the idea of JointCloud, proposes a multi-objective evolutionary algorithm (MOEA) based method for task scheduling in multi-cluster cloud computing environments, without intervening in the intra-cluster scheduling scheme. In the proposed method, we construct a mathematical model with the optimization objectives of minimizing overall waiting time and load imbalance between clusters based on the actual operation data in China Computing NET (C $^{2}$ NET). In addition, we also develop an MOEA specifically tailored to address this problem. The performance of the proposed MOEA and existing state-of-the-art MOEAs is examined on the proposed problems. Comparison results highlight the promising performance of the proposed MOEA, the specifically tailored algorithm in effectively addressing the multi-cluster task scheduling problem. In addition, we also compared the results of the MOEAs with the results of three classical scheduling methods, the results proved the effectiveness of the MOEA-based method on this problem.},
+  archive      = {J_TPDS},
+  author       = {Lianghao Li and Haibo Mi and Bo Ding and Huaimin Wang},
+  doi          = {10.1109/TPDS.2025.3596012},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {8},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {A non-intrusive multi-objective task scheduling method for JointCloud environment},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Online container caching for IoT data processing in serverless edge computing. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3595965'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Serverless edge computing is an efficient way to execute event-driven, short-duration, and bursty IoT data processing tasks on resource-limited edge servers, using on-demand resource allocation and dynamic auto-scaling. In this paradigm, function requests are handled in virtualized environments, e.g., containers. When a function request arrives online, if there is no container in memory to execute it, the serverless platform will initialize such a container with non-negligible latency, known as cold start. Otherwise, it results in a warm start with no latency in previous studies. However, based on our experiments, we find there is a remarkable third case called Late-Warm, i.e., when a request arrives during the container initializing, its latency is less than a cold start but not zero. In this paper, we study online container caching in serverless edge computing to minimize the total latency with Late-Warm and other practical issues considered. We propose OnCoLa, a novel $O(T_{c}K)$-competitive algorithm supporting request relaying on multiple edge servers. Here, $T_{c}$ and $K$ are the maximum container cold start latency and the memory size, respectively. Extensive simulations on two real-world traces demonstrate that OnCoLa consistently outperforms the state-of-the-art container caching algorithms and reduces the latency by $23.33\%$. Experiments on Raspberry Pi and Jetson Nano show that OnCoLa reduces latency by up to $21.38\%$ compared with the representative lightweight policy.},
+  archive      = {J_TPDS},
+  author       = {Guopeng Li and Haisheng Tan and Chi Zhang and Xuan Zhang and Zhenhua Han and Guoliang Chen},
+  doi          = {10.1109/TPDS.2025.3595965},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {8},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Online container caching for IoT data processing in serverless edge computing},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mariana: Exploring native SkipList index design for disaggregated memory. <em>TPDS</em>, 1-15. (<a href='https://doi.org/10.1109/TPDS.2025.3596988'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Memory disaggregation has emerged as a promising architecture for improving resource efficiency by decoupling the computing and memory resources. But building efficient range indices in such an architecture faces three critical challenges: (1) coarse-grained concurrency control schemes for coordinating concurrent read/write operations with node splitting incur high contention under the skewed and write-intensive workloads; (2) existing data layouts fail to balance consistency verification and hardware acceleration via SIMD (Single Instruction Multiple Data); and (3) naive caching schemes struggle to adapt to rapidly changing access patterns. To address these challenges, we propose MARIANA, a memory-disaggregated skiplist index that integrates three key innovations. First, it uses a fine-grained (i.e., entry-level) latch mechanism combined with dynamic node resizing to minimize the contention and splitting frequency. Second, it employs a tailored data layout for leaf node, which separates keys and values to enable SIMD acceleration while maintaining consistency checks with minimal write overhead. Third, it implements an adaptive caching strategy that tracks node popularity in real-time to optimize network bandwidth utilization during the index traversal. Experimental results show that MARIANA achieves $1.7\times$ higher throughput under write-intensive workloads and reduces the P90 latency by 23% under the read-intensive workloads, when comparing to the state-of-the-art indices on disaggregated memory.},
+  archive      = {J_TPDS},
+  author       = {Xing Wei and Ke Wang and Yinjun Han and Hao Jin and Yaofeng Tu and Huiqi Hu and Xuan Zhou and Minghao Zhao},
+  doi          = {10.1109/TPDS.2025.3596988},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {8},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Mariana: Exploring native SkipList index design for disaggregated memory},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Rethinking virtual machines live migration for memory disaggregation. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3597149'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Resource underutilization has troubled data centers for several decades. On the CPU front, live migration plays a crucial role in reallocating CPU resources. Nevertheless, contemporary Virtual Machine (VM) live migration methods are burdened by substantial resource consumption. In terms of memory management, disaggregated memory offers an effective solution to enhance memory utilization, but leaves a gap in addressing CPU underutilization. Our findings highlight a considerable opportunity to optimize live migration in the context of disaggregated memory systems. We introduce Anemoi, a resource management system that seamlessly integrates VM live migration with memory disaggregation to address the aforementioned gap. In the context of disaggregated memory, remote memory becomes accessible from destination nodes, effectively eliminating the need for extensive network transmission of memory pages, and thereby significantly reducing migration time. In addition, we propose using memory replicas as an optimization to the live migration system. To mitigate the overhead of potential excessive memory consumption, we develop a dedicated compression algorithm. Our evaluations demonstrate that Anemoi leads to a notable 69% reduction in network bandwidth utilization and an impressive 83% reduction in migration time compared to traditional VM live migration. Additionally, our compression algorithm achieves an outstanding space-saving rate of 83.6%.},
+  archive      = {J_TPDS},
+  author       = {Xingzi Yu and Xingguo Jia and Jin Zhang and Yun Wang and Senhao Yu and Zhengwei Qi},
+  doi          = {10.1109/TPDS.2025.3597149},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {8},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Rethinking virtual machines live migration for memory disaggregation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exploiting fine-grained task-level parallelism for variant calling acceleration. <em>TPDS</em>, 1-13. (<a href='https://doi.org/10.1109/TPDS.2025.3600285'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Variant calling, which identifies genomic differences relative to a reference genome, is critical for understanding disease mechanisms, identifying therapeutic targets, and advancing precision medicine. However, as two critical stages in this process, serial processing in local assembly and the computational dependencies in Pair-HMM make variant calling highly time-consuming. Moreover, optimizing only one of these stages often shifts the performance bottleneck to the other. This paper observes that the similarity between reads allows parallel processing in the local assembly and that alignment information from the local assembly can significantly diminish the burdensome computations in Pair-HMM. Accordingly, this paper co-optimizes the software and hardware for both steps to achieve the best performance. First, we collect $k$-mer locations in each read during the local assembly process and utilize the similarity between reads to make it parallel. Second, we propose the mPair-HMM algorithm, leveraging location information to split a Pair-HMM computation task into multiple independent sub-tasks, improving the computation's parallelism. To fully exploit the parallelism stemming from the novel algorithms, we propose an end-to-end accelerator VCAx for variant calling that accelerates both stages in collaboration. Evaluation results demonstrate that our implementation achieves up to a 7× speedup over the GPU baseline for local assembly and a 3.16× performance improvement compared to the state-of-the-art ASIC implementation for Pair-HMM.},
+  archive      = {J_TPDS},
+  author       = {Menghao Guo and Longlong Chen and Yichi Zhang and Hongyi Guan and Shaojun Wei and Jianfeng Zhu and Leibo Liu},
+  doi          = {10.1109/TPDS.2025.3600285},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {8},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Exploiting fine-grained task-level parallelism for variant calling acceleration},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MemTunnel: A CXL-based rack-scale host memory pooling architecture for cloud service. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3598190'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Memory underutilization poses a significant challenge in cloud services, leading to performance inefficiencies and resource wastage. The tightly coupled computing and memory resources in cloud servers are identified as the root cause of this problem. To address this issue, memory pooling has been the subject of extensive research for decades, providing centralized or distributed shared memory pools as flexible memory resources for various applications running on different servers. However, existing memory disaggregation solutions sacrifice memory resources, add extra hardware (such as memory boxes/blades/drives), and degrade memory performance to achieve flexibility. To overcome these limitations, this paper proposes MemTunnel, a rack-scale host memory pooling architecture that provides a low-cost memory pooling solution based on Compute Express Link (CXL). MemTunnel is the first hardware and software architecture to offer symmetric, memory-semantic memory pooling over CXL, with an FPGA-based platform to demonstrate its feasibility in a real implementation. MemTunnel is orthogonal to the existing CXL-based memory pool and provides an additional layer of abstraction for memory disaggregation. Evaluation results show that MemTunnel achieves comparable performance to the existing CXL-based memory pool for a single machine and provides better rack-scale performance with minor hardware overheads.},
+  archive      = {J_TPDS},
+  author       = {Tianchan Guan and Yijin Guan and Zhaoyang Du and Jiacheng Ma and Boyu Tian and Zhao Wang and Teng Ma and Zheng Liu and Yang Kong and Yuan Xie and Mingyu Gao and Guangyu Sun and Hongzhong Zheng and Dimin Niu},
+  doi          = {10.1109/TPDS.2025.3598190},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {8},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {MemTunnel: A CXL-based rack-scale host memory pooling architecture for cloud service},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mapping large-scale spiking neural network on arbitrary meshed neuromorphic hardware. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3601993'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neuromorphic hardware systems—designed as 2D-mesh structures with parallel neurosynaptic cores—have proven highly efficient at executing large-scale spiking neural networks (SNNs). A critical challenge, however, lies in mapping neurons efficiently to these cores. While existing approaches work well with regular, fully functional mesh structures, they falter in real-world scenarios where hardware has irregular shapes or non-functional cores caused by defects or resource fragmentation. To address these limitations, we propose a novel mapping method based on an innovative space-filling curve: the Adaptive Locality-Preserving (ALP) curve. Using a unique divide-and-conquer construction algorithm, the ALP curve ensures adaptability to meshes of any shape while maintaining crucial locality properties—essential for efficient mapping. Our method demonstrates exceptional computational efficiency, making it ideal for large-scale deployments. These distinctive characteristics enable our approach to handle complex scenarios that challenge conventional methods. Experimental results show that our method matches state-of-the-art solutions in regular-shape mapping while achieving significant improvements in irregular scenarios, reducing communication overhead by up to 57.1%.},
+  archive      = {J_TPDS},
+  author       = {Ouwen Jin and Qinghui Xing and Zhuo Chen and Ming Zhang and De Ma and Ying Li and Xin Du and Shuibing He and Shuiguang Deng and Gang Pan},
+  doi          = {10.1109/TPDS.2025.3601993},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {8},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Mapping large-scale spiking neural network on arbitrary meshed neuromorphic hardware},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EdgeAIBus: AI-driven joint container management and model selection framework for heterogeneous edge computing. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3602521'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Containerized Edge computing offers lightweight, reliable, and quick solutions to latency-critical Machine Learning (ML) and Deep Learning (DL) applications. Existing solutions considering multiple Quality of Service (QoS) parameters either overlook the intricate relation of QoS parameters or pose significant scheduling overheads. Furthermore, reactive decisionmaking can damage Edge servers at peak load, incurring escalated costs and wasted computations. Resource provisioning, scheduling, and ML model selection substantially influence energy consumption, user-perceived accuracy, and delayoriented Service Level Agreement (SLA) violations. Addressing contrasting objectives and QoS simultaneously while avoiding server faults is highly challenging in the exposed heterogeneous and resource-constrained Edge continuum. In this work, we propose the EdgeAIBus framework that offers a novel joint container management and ML model selection algorithm based on Importance Weighted Actor-Learner Architecture to optimize energy, accuracy, SLA violations, and avoid server faults. Firstly, Patch Time Series Transformer (PatchTST) is utilized for CPU usage predictions of Edge servers for its 8.51% Root Mean Squared Error and 5.62% Mean Absolute Error. Leveraging pipelined predictions, EdgeAIBus conducts consolidation, resource oversubscription, and ML/DL model switching with possible migrations to conserve energy, maximize utilization and user-perceived accuracy, and reduce SLA violations. Simulation results show EdgeAIBus oversubscribed 110% cluster-wide CPU with real usage up to 70%, conserved 14 CPU cores, incurred less than 1% SLA violations with 2.54% drop in inference accuracy against industry-led Model Switching Balanced load and Google Kubernetes Optimized schedulers. Google Kubernetes Engine experiments demonstrate 80% oversubscription, 14 CPU cores conservation, 1% SLA violations, and 3.81% accuracy loss against the counterparts. Finally, constrained setting experiment analysis shows that PatchTST and EdgeAIBus can produce decisions within 100ms in a 1-core and 1 GB memory device.},
+  archive      = {J_TPDS},
+  author       = {Babar Ali and Muhammed Golec and Sukhpal Singh Gill and Felix Cuadrado and Steve Uhlig},
+  doi          = {10.1109/TPDS.2025.3602521},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {8},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {EdgeAIBus: AI-driven joint container management and model selection framework for heterogeneous edge computing},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A sparse function prediction approach for cold start optimization and user satisfaction guarantee in serverless. <em>TPDS</em>, 1-17. (<a href='https://doi.org/10.1109/TPDS.2025.3602440'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Serverless computing relies on keeping functions alive or pre-warming them before invocation to mitigate the cold start problem, stemming from the overhead of initializing function startup environments. However, under constrained cloud resources, accurately predicting the invocation patterns of sparse functions remains challenging. This limits the formulation of effective pre-warm and keep-alive strategies, leading to frequent cold starts and degraded user satisfaction. To address these challenges, we propose SPFaaS, a hybrid framework based on sparse function prediction. To enhance the learnability of sparse function invocation data, SPFaaS takes into account the characteristics of cloud service workloads along with the features of pre-warm and keep-alive strategies, transforming function invocation records into probabilistic data. It captures the underlying periodicity and temporal dependencies in the data through multiple rounds of sampling and the combined use of Gated Recurrent Units and Temporal Convolutional Networks for accurate prediction. Based on the final prediction outcome and real-time system states, SPFaaS determines adaptive pre-warm and keep-alive strategies for each function. Experiments conducted on two real-world serverless clusters demonstrate that SPFaaS outperforms state-of-the-art methods in reducing cold starts and improving user satisfaction.},
+  archive      = {J_TPDS},
+  author       = {Wang Zhang and Yuyang Zhu and Zhan Shi and Manyu Dang and Yutong Wu and Fang Wang and Dan Feng},
+  doi          = {10.1109/TPDS.2025.3602440},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {8},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {A sparse function prediction approach for cold start optimization and user satisfaction guarantee in serverless},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scheduling with lightweight predictions in power-constrained HPC platforms. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3586723'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the increase of demand for computing resources and the struggle to provide the necessary energy, power-aware resource management is becoming a major issue for the High-performance computing (HPC) community. Including reliable energy management to a supercomputer's resource and job management system (RJMS) is not an easy task. The energy consumption of jobs is rarely known in advance and the workload of every machine is unique and different from the others. We argue that the first step towards properly managing power is to deeply understand the power consumption of the workload, which involves predicting the workload power consumption and exploiting it by using smart power-aware scheduling algorithms. Crucial questions are (i) how sophisticated a prediction method needs to be to provide accurate workload power predictions, and (ii) to what point an accurate workload's power prediction translates into efficient power management. In this work, we proposed a method to predict and exploit HPC workloads power consumption with the objective of reducing the supercomputers power consumption, while maintaining the management (scheduling) performance of the RJMS. Our method exploits workload submission logs with power monitoring data, and relies on a mix of lightweight power prediction methods and a classical EASY Backfillling inspired heuristic. Then, we model and solve the power capping scheduling as a greedy knapsack algorithm. This algorithm improves the Quality of Service and avoids starvation while keeping the solution lightweight. We base this study on logs of Marconi 100, a 980-node supercomputer. We show using simulation that a lightweight history-based prediction method can provide accurate enough power prediction to improve the energy management of a large scale supercomputer compared to energy-unaware scheduling algorithms. These improvements have no significant negative impact on performance.},
+  archive      = {J_TPDS},
+  author       = {Danilo Carastan-Santos and Georges Da Costa and Igor Fontana de Nardin and Millian Poquet and Krzysztof Rzadca and Patricia Stolf and Denis Trystram},
+  doi          = {10.1109/TPDS.2025.3586723},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {7},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Scheduling with lightweight predictions in power-constrained HPC platforms},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SEMSO: A secure and efficient multi-data source blockchain oracle. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3586450'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, blockchain oracle, as the key link between blockchain and real-world data interaction, has greatly expanded the application scope of blockchain. In particular, the emergence of the Multi-Data Source (MDS) oracle has greatly improved the reliability of the oracle in the case of untrustworthy data sources. However, the current MDS oracle scheme requires nodes to obtain data redundantly from multiple data sources to guarantee data reliability, which greatly increases the resource overhead and response time of the system. Therefore, in this paper, we propose a Secure and Efficient Multi-data Source Oracle framework (SEMSO), where nodes only need to access one data source to ensure the reliability of final data. First, we design a new off-chain data aggregation protocol TBLS, to guarantee data source diversity and reliability at low cost. Second, according to the rational man assumption, the data source selection task of nodes is modeled and solved based on the Bayesian game under incomplete information to maximize the node's revenue while improving the success rate of TBLS aggregation and system response speed. Security analysis verifies the reliability of the proposed scheme, and experiments show that under the same environmental assumptions, SEMSO takes into account data diversity while reducing the response time by 23.5%.},
+  archive      = {J_TPDS},
+  author       = {Youquan Xian and Xueying Zeng and Chunpei Li and Peng Wang and Dongcheng Li and Peng Liu and Xianxian Li},
+  doi          = {10.1109/TPDS.2025.3586450},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {7},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {SEMSO: A secure and efficient multi-data source blockchain oracle},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Streamline: Accelerating deployment and assessment of real-time big data systems. <em>TPDS</em>, 1-15. (<a href='https://doi.org/10.1109/TPDS.2025.3587641'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Real-time stream processing applications (e.g., IoT data analytics and fraud detection) are becoming integral to everyday life. A robust and efficient Big Data system, especially a streaming pipeline composed of producers, brokers, and consumers, is at the heart of the successful deployment of these applications. However, their deployment and assessment can be complex and costly due to the intricate interactions between pipeline components and the reliance on expensive hardware or cloud environments. Thus, we propose streamline, an agile, efficient, and dependable framework as an alternative to assess streaming applications without requiring a hardware testbed or cloud setup. To simplify the deployment, prototyping, and benchmarking of end-to-end stream processing applications involving distributed platforms (e.g., Apache Kafka, Spark, Flink), the framework provides a lightweight environment with a developer-friendly, high-level API for dynamically selecting and configuring pipeline components. Moreover, the modular architecture of streamline enables developers to integrate any required platform into their systems. The performance and robustness of a deployed pipeline can be assessed with varying network conditions and injected faults. Furthermore, it facilitates benchmarking event streaming platforms like Apache Kafka and RabbitMQ. Extensive evaluations of various streaming applications confirm the effectiveness and dependability of streamline.},
+  archive      = {J_TPDS},
+  author       = {Md. Monzurul Amin Ifath and Tommaso Melodia and Israat Haque},
+  doi          = {10.1109/TPDS.2025.3587641},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {7},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Streamline: Accelerating deployment and assessment of real-time big data systems},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Elastic relaxation of concurrent data structures. <em>TPDS</em>, 1-17. (<a href='https://doi.org/10.1109/TPDS.2025.3587888'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The sequential semantics of many concurrent data structures, such as stacks and queues, inevitably lead to memory contention in parallel environments, thus limiting scalability. Semantic relaxation has the potential to address this issue, increasing the parallelism at the expense of weakened semantics. Although prior research has shown that improved performance can be attained by relaxing concurrent data structure semantics, there is no one-size-fits-all relaxation that adequately addresses the varying needs of dynamic executions. In this paper, we first introduce the concept of elastic relaxation and consequently present the Lateral structure, which is an algorithmic component capable of supporting the design of elastically relaxed concurrent data structures. Using the Lateral, we design novel elastically relaxed, lock-free queues, stacks, a counter, and a deque, capable of reconfiguring relaxation during run-time. We establish linearizability and define worst-case bounds for relaxation errors in our designs. Experimental evaluations show that our elastic designs match the performance of state-of-the-art statically relaxed structures when no elastic changes are utilized. We develop a lightweight, contention-aware controller for adjusting relaxation in real time, and demonstrate its benefits both in a dynamic producer-consumer micro-benchmark and in a parallel BFS traversal, where it improves throughput and work-efficiency compared to static designs.},
+  archive      = {J_TPDS},
+  author       = {Kåre von Geijer and Philippas Tsigas},
+  doi          = {10.1109/TPDS.2025.3587888},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {7},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Elastic relaxation of concurrent data structures},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Doing more with less: Balancing probing costs and task offloading efficiency at the network edge. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3590368'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In decentralized edge computing environments, user devices need to perceive the status of neighboring devices, including computational availability and communication delays, to optimize task offloading decisions. However, probing the real-time status of all devices introduces significant overhead, and probing only a few devices can lead to suboptimal decision-making, considering the massive connectivity and non-stationarity of edge networks. Aiming to balance the status probing cost and task offloading performance, we study the joint transmission and computation status probing problem, where the status and offloading delay on edge devices are characterized by general, bounded, and non-stationary distributions. The problem is proved to be NP-hard, even with known offloading delay distributions. To handle this case, we design an efficient offline method that guarantees a $(1-1/e)$ approximation ratio via leveraging the submodularity of the expected offloading delay function. Furthermore, for scenarios with unknown and non-stationary offloading delay distributions, we reformulate the problem using the piecewise-stationary combinatorial multi-armed bandit framework and develop a change-point detection-based online status probing (CD-OSP) algorithm. CD-OSP can timely detect environmental changes and update probing strategies via using the proposed offline method and estimating offloading delay distributions. We prove that CD-OSP achieves a regret of $\mathcal {O}(NV\sqrt{T\ln T})$, with $N$, $V$, and $T$ denoting the numbers of stationary periods, edge devices, and time slots, respectively. Extensive simulations and testbed experiments demonstrate that CD-OSP significantly outperforms state-of-the-art baselines, which can reduce the probing cost by up to 16.18X with a 2.14X increase in the offloading delay.},
+  archive      = {J_TPDS},
+  author       = {Xishuo Li and Shan Zhang and Tie Ma and Zhiyuan Wang and Hongbin Luo},
+  doi          = {10.1109/TPDS.2025.3590368},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {7},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Doing more with less: Balancing probing costs and task offloading efficiency at the network edge},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ELICA: Efficient and load balanced I/O cache architecture for hyperconverged infrastructures. <em>TPDS</em>, 1-16. (<a href='https://doi.org/10.1109/TPDS.2025.3592275'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hyperconverged Infrastructures (HCIs) combine processing and storage elements to meet the requirements of data-intensive applications in performance, scalability, and quality of service. As an emerging paradigm, HCI should couple with a variety of traditional performance improvement approaches such as I/O caching in virtualized platforms. Contemporary I/O caching schemes are optimized for traditional single-node storage architectures and suffer from two major shortcomings for multi-node architectures: a) imbalanced cache space requirement and b) imbalanced I/O traffic and load. This makes existing schemes inefficient in distributing cache resources over an array of separate physical nodes. In this paper, we propose an Efficient and Load Balanced I/O Cache Architecture (ELICA), managing the solid-state drive (SSD) cache resources across HCI nodes to enhance I/O performance. ELICA dynamically reconfigures and distributes the SSD cache resources throughout the array of HCI nodes and also balances the network traffic and I/O cache load by dynamic reallocation of cache resources. To maximize the performance, we further present an optimization problem defined by Integer Linear Programming to efficiently distribute cache resources and balance the network traffic and I/O cache relocations. Our experimental results on a real platform show that ELICA improves quality of service in terms of average and worst-case latency in HCIs by 3.1× and 23%, respectively, compared to the state-of-the-art.},
+  archive      = {J_TPDS},
+  author       = {Mostafa Kishani and Sina Ahmadi and Saba Ahmadian and Reza Salkhordeh and Zdenek Becvar and Onur Mutlu and André Brinkmann and Hossein Asadi},
+  doi          = {10.1109/TPDS.2025.3592275},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {7},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {ELICA: Efficient and load balanced I/O cache architecture for hyperconverged infrastructures},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FedEFsz: Fair cross-silo federated learning system with error-bounded lossy compression. <em>TPDS</em>, 1-15. (<a href='https://doi.org/10.1109/TPDS.2025.3593896'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cross-Silo federated learning systems have been identified as an efficient approach to scaling DNN training across geographically-distributed data silos to preserve the privacy of the training data. Communication efficiency and fairness are two major issues that need to be both satisfied when federated learning systems are deployed in practice. Simultaneously guaranteeing both of them, however, is exceptionally difficult because simply combining communication reduction and fairness optimization approaches often causes non-converged training or drastic accuracy degradation. To bridge this gap, we propose FedEFsz. On the one hand, it integrates the state-of-the-art error-bounded lossy compressor SZ3 into cross-silo federated learning systems to significantly reduce communication traffic during the training. On the other hand, it achieves a high fairness (i.e., rather consistent model accuracy and performance across different clients) through a carefully designed heuristic algorithm that can tune the error-bound of SZ3 for different clients during the training. Extensive experimental results based on a GPU cluster with 65 GPU cards show that FedEFsz improves the fairness across different benchmarks by up to $60.88\%$ and meanwhile reduces the communication traffic by up to $315\times$.},
+  archive      = {J_TPDS},
+  author       = {Zhaorui Zhang and Sheng Di and Benben Liu and Zhuoran Ji and Guanpeng Li and Xiaoyi Lu and Amelie Chi Zhou and Khalid Ayed Alharthi and Jiannong Cao},
+  doi          = {10.1109/TPDS.2025.3593896},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {7},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {FedEFsz: Fair cross-silo federated learning system with error-bounded lossy compression},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A performance-balanced scheduling algorithm for diverse real-world TSN scenarios. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3580402'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Time-Sensitive Networking (TSN) achieves low-delay and low-jitter traffic transmission through different traffic scheduling mechanisms. However, despite numerous algorithms developed based on these mechanisms, most fail to concurrently support multipath, hybrid, and multicast traffic, which are prevalent in real-world scenarios. Moreover, balancing performance metrics such as success rate, bandwidth utilization, and computation overhead remains challenging for these algorithms, significantly limiting their application in diverse TSN scenarios. To solve this problem, this paper proposes a universal ultra-low-delay and zero-jitter traffic scheduling model. Based on this model, this paper further designs a performance-balanced algorithm. The algorithm improves traffic scheduling success rate through joint routing and scheduling, increases network bandwidth utilization through hybrid traffic scheduling, and achieves low computation overhead through policy-based searching. Finally, extensive experiments demonstrate that the algorithm effectively balances performance metrics across diverse real-world scenarios. It achieves high scheduling success rate under real-world traffic loads ($\gt $20% improvement over non-joint routing), increased bandwidth utilization in the presence of hybrid traffic (18.3% enhancement over non-hybrid traffic scheduling), and low computation overhead ($\lt $ 2 minutes).},
+  archive      = {J_TPDS},
+  author       = {Qian Yang and Xuyan Jiang and Rulin Liu and Tao Li and Hui Yang and Wei Quan and Zhigang Sun},
+  doi          = {10.1109/TPDS.2025.3580402},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {6},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {A performance-balanced scheduling algorithm for diverse real-world TSN scenarios},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A privacy-preserving IoT data access control scheme for cloud-edge computing. <em>TPDS</em>, 1-17. (<a href='https://doi.org/10.1109/TPDS.2025.3580407'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In Internet of Things(IoT), the combination of cloud computing and edge computing becomes a new computing paradigm to provide users with low-latency data services. However, for the limited resource, high dynamic, and wide distributed characteristics of IoT devices, it becomes a great challenge to realize the universal application of edge servers and the cloud-edge computing allocation. Meanwhile, most of the schemes ignore the leakage of data access pattern privacy when accessing data. Therefore, in this paper, we propose a privacy-preserving access control scheme for IoT data. Based on the cloud-edge-end framework, we design a pervasive edge computing protocol, which allows well-resourced devices to become edge servers at suitable geographic locations and users to outsource and access IoT data through the nearest edge server. It increases the flexibility of the cloud-edge collaborative system as well as the efficiency of data processing. Users do not need to interact beyond the network edge to enjoy the data services. Furthermore, a novel attribute-based encryption scheme is designed based on a modified Lightweight Secret Sharing Scheme to optimize computing task allocation and reduce the computation burden on end devices, without attribute information leakage. In addition, we also design a Transform algorithm and a Cloud-edge Interaction protocol to hide access pattern privacy efficiently. We analyze the feasibility of the scheme and demonstrate that the scheme is semantically secure and conceals access pattern privacy. Simulation experiments based on real IoT data show that the scheme is efficient and suitable for IoT scenarios.},
+  archive      = {J_TPDS},
+  author       = {Jingjing Wang and Na Wang and Wen Zhou and Jianwei Liu and Junsong Fu and Lunzhi Deng},
+  doi          = {10.1109/TPDS.2025.3580407},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {6},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {A privacy-preserving IoT data access control scheme for cloud-edge computing},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Co-optimization of partial offloading and resource allocation for multi-user tasks in vehicular edge networks. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3571470'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mobile Edge Computing (MEC) effectively alleviates the pressure on limited in-vehicle computing resources and energy supply caused by computation-intensive vehicular applications. However, the uneven spatial distribution of users leads to load imbalance among adjacent MEC servers, significantly increase the latency and energy consumption costs for vehicles. Therefore, achieving optimal configuration of available computing resources in MEC servers to accomplish the goal of low-latency and low-energy task offloading has become a critical issue to address. To tackle this problem, this study proposes a Multi-RSU Load Balancing (MRLB) strategy based on multi-hop network technology. This strategy dynamically allocates computing tasks to neighboring RSU server clusters with available computing resources through task segmentation and computation offloading mechanisms. Meanwhile, adaptive resource allocation strategies are implemented based on task quantity and task scale characteristics. Specifically, this study designs a multi-RSU collaborative offloading algorithm based on Deep Deterministic Policy Gradient (DDPG) to solve the optimal offloading decision. Additionally, by integrating the Lagrange multiplier method and Sequential Quadratic Programming (SQP) algorithm, the joint optimization of imbalanced task segmentation decisions and optimal CPU frequency allocation decisions for RSU servers is achieved. Experimental results demonstrate that the proposed method can achieve efficient multi-RSU resource allocation and ensure coordinated optimization of both system latency and energy consumption costs across diverse device conditions and varying network scenarios, particularly in load-imbalanced situations.},
+  archive      = {J_TPDS},
+  author       = {Dun Cao and Shirui Huang and Ning Gu and Fayez Alqahtani and R. Simon Sherratt and Jin Wang},
+  doi          = {10.1109/TPDS.2025.3571470},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {5},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Co-optimization of partial offloading and resource allocation for multi-user tasks in vehicular edge networks},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Ocelot: An interactive, efficient distributed compression-as-a-service platform with optimized data compression techniques. <em>TPDS</em>, 1-15. (<a href='https://doi.org/10.1109/TPDS.2025.3568221'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large volumes of data generated by scientific simulations, genome sequencing, and other applications need to be moved among clusters for data collection/analysis. Data compression techniques have effectively reduced data storage and transfer costs. However, users' requirements on interactively controlling both data quality and compression ratios are non-trivial to fulfill. We propose a novel Compression-as-a-Service (CaaS) platform called Ocelot with four important contributions: (1) It offers real-time visualization, interactive compression, and transfer of scientific datasets. (2) It incorporates new strategies for compressing diverse types of datasets more effectively than traditional methods. (3) It provides an effective method for estimating the compression ratio and execution time of compression tasks. (4) Experiments on multiple real-world datasets on geographically distributed computers show that Ocelot can significantly improve data transfer efficiency with a performance gain of more than 10x in computing clusters with relatively slow networks.},
+  archive      = {J_TPDS},
+  author       = {Yuanjian Liu and Sheng Di and Jiajun Huang and Zhaorui Zhang and Kyle Chard and Ian Foster},
+  doi          = {10.1109/TPDS.2025.3568221},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {5},
+  pages        = {1-15},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Ocelot: An interactive, efficient distributed compression-as-a-service platform with optimized data compression techniques},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LQ-GNN: A graph neural network model for response time prediction of microservice-based applications in the computing continuum. <em>TPDS</em>, 1-12. (<a href='https://doi.org/10.1109/TPDS.2025.3564214'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To address the challenges posed by the deployment of microservices of future end-user applications in the cloud continuum, a performance prediction model working together with a network elasticity controller will be needed. With that aim, this work introduces Layered Queuing-Graph Neural Networks (LQ-GNN), a novel Machine Learning (ML) approach to develop a generalized performance prediction model for microservicebased applications. Unlike previous works focused on individual applications, our proposal aims for a versatile model applicable to any microservice-based application, integrating the Layered Queueing Network (LQN) modeling with Graph Neural Networks (GNN). LQ-GNN allows to efficiently estimate the response time of applications under different resource allocations and placements on the computing continuum. The obtained evaluation results indicate that the proposed model achieves a prediction error below 10% when considering different evaluation scenarios. Compared to existing methodologies, our approach balances prediction accuracy and computational efficiency, making it viable for real-time deployments. Consequently, ML-based performance prediction can significantly enhance the resource management and elasticity control of microservice-based architectures, leading to more resilient and efficient systems.},
+  archive      = {J_TPDS},
+  author       = {Matías Richart and Juan-Luis Gorricho and Javier Baliosian and Luis M. Contreras and Alejandro Muñiz and Joan Serrat},
+  doi          = {10.1109/TPDS.2025.3564214},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {4},
+  pages        = {1-12},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {LQ-GNN: A graph neural network model for response time prediction of microservice-based applications in the computing continuum},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). Hierarchical reinforcement learning with partner modeling for distributed multi-agent cooperation. <em>TPDS</em>, 1-13. (<a href='https://doi.org/10.1109/TPDS.2024.3457153'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many real-world applications can be formulated as multi-agent cooperation problems, such as network packet routing and coordination of autonomous vehicles. The emergence of deep reinforcement learning (DRL) provides a promising approach for multi-agent cooperation through the interaction of the agents and environments. However, traditional DRL solutions suffer from the high dimensions of multiple agents with continuous action space during policy search. Besides, the dynamicity of agents' policies makes the training non-stationary. To tackle these issues, we propose HERO , a distributed hierarchical reinforcement learning approach that reduces training time and improves model performance by decomposing the overall policy into multiple layers of sub-policies in a hierarchical manner. On the one hand, the cooperation of multiple agents can be learned efficiently in high-layer discrete action space. On the other hand, the low-layer individual control can be reduced to single-agent reinforcement learning. Furthermore, we introduce a partner modeling network to effectively capture and model other agents' policies during learning. Finally, We develop a real-world multi-vehicle testbed and evaluate HERO in a series of cooperative lane change scenarios. Both the simulation and real-world experiments show that our approach can achieve a lower average collision rate of 0.09 and a faster convergence speed than other baselines.},
+  archive      = {J_TPDS},
+  author       = {Zhixuan Liang and Jiannong Cao and Shan Jiang and Huafeng Xu},
+  doi          = {10.1109/TPDS.2024.3457153},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {9},
+  pages        = {1-13},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Hierarchical reinforcement learning with partner modeling for distributed multi-agent cooperation},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). A state-of-the-art review with code about connected components labeling on GPUs. <em>TPDS</em>, 1-20. (<a href='https://doi.org/10.1109/TPDS.2024.3434357'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article is about Connected Components Labeling (CCL) algorithms developed for GPU accelerators. The task itself is employed in many modern image-processing pipelines and represents a fundamental step in different scenarios, whenever object recognition is required. For this reason, a strong effort in the development of many different proposals devoted to improving algorithm performance using different kinds of hardware accelerators has been made. This paper focuses on GPU-based algorithmic solutions published in the last two decades, highlighting their distinctive traits and the improvements they leverage. The state-of-the-art review proposed is equipped with the source code, which allows to straightforwardly reproduce all the algorithms in different experimental settings. A comprehensive evaluation on multiple environments is also provided, including different operating systems, compilers, and GPUs. Our assessments are performed by means of several tests, including real-case images and synthetically generated ones, highlighting the strengths and weaknesses of each proposal. Overall, the experimental results revealed that block-based oriented algorithms outperform all the other algorithmic solutions on both 2D images and 3D volumes, regardless of the selected environment.},
+  archive      = {J_TPDS},
+  author       = {Federico Bolelli and Stefano Allegretti and Luca Lumetti and Costantino Grana},
+  doi          = {10.1109/TPDS.2024.3434357},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {7},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {A state-of-the-art review with code about connected components labeling on GPUs},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2021). Energy hardware and workload aware job scheduling towards interconnected HPC environments. <em>TPDS</em>, 1. (<a href='https://doi.org/10.1109/TPDS.2021.3090334'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {New HPC machines are getting close to the exascale. Power consumption for those machines has been increasing, and researchers are studying ways to reduce it. A second trend is HPC machines' growing complexity, with increasing heterogeneous hardware components and different clusters architectures cooperating in the same machine. We refer to these environments with the term heterogeneous multi-cluster environments. With the aim of optimizing performance and energy consumption in these environments, this paper proposes an Energy-Aware-Multi-Cluster (EAMC) job scheduling policy. EAMC-policy is able to optimize the scheduling and placement of jobs by predicting performance and energy consumption of arriving jobs for different hardware architectures and processor frequencies, reducing workload's energy consumption, makespan, and response time. The policy assigns a different priority to each job-resource combination so that the most efficient ones are favored, while less efficient ones are still considered on a variable degree, reducing response time and increasing cluster utilization. We implemented EAMC-policy in Slurm, and we evaluated a scenario in which two CPU clusters collaborate in the same machine. Simulations of workloads running applications modeled from real-world show a reduction of response time and makespan by up to 25% and 6% while saving up to 20% of total energy consumed when compared to policies minimizing runtime, and by 49%, 26%, and 6% compared to policies minimizing energy.},
+  archive      = {J_TPDS},
+  author       = {Marco D'Amico and Julita Corbalan Gonzalez},
+  doi          = {10.1109/TPDS.2021.3090334},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {6},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Energy hardware and workload aware job scheduling towards interconnected HPC environments},
+  year         = {2021},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2019). COOPER-SCHED: A cooperative scheduling framework for mobile edge computing with expected deadline guarantee. <em>TPDS</em>, 1. (<a href='https://doi.org/10.1109/TPDS.2019.2921761'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {While mobile edge computing (MEC) holds promise to enhance users' mobile experiences, building a scheduling framework to make full use of MEC capabilities is challenging. When involving quality of service (QoS) in MEC, the problem becomes even harder. In this work, we focus on QoS guaranteed scheduling in MEC with a cloudlet, which is a small cloud center deployed at the wireless access point (AP) to serve nearby mobile devices. There are multiple mobile devices (MDs) and each one is associated with a job to be offloaded to the AP and executed in the cloudlet. Each job is associated with a block of input data, an execution workload, and a QoS requirement, i.e., a time deadline that the job is expected to be completed before it. Our goal is to find an efficient schedule, which involves radio access network (RAN) allocation and job mapping on multiple heterogeneous servers, such that the number of jobs whose deadlines are satisfied is maximized. The problem is proved to be NP-hard. To solve the problem, we propose an extended marriage algorithm (EMA) by adapting the stable marriage game, for job mapping in the cloudlet. Based on this algorithm, we further implement a cooperative game based scheduling method COOPER-SCHED, which also involves RAN allocation. We perform extensive random experiments and compare it with three common heuristics in scheduling literature. The results show that COOPER-SCHED can find better schedules and shows more stability, i.e., suffering less impacts from RAN allocation, than others in MEC.},
+  archive      = {J_TPDS},
+  author       = {Chubo Liu and Kenli Li and Jie Liang and Keqin Li},
+  doi          = {10.1109/TPDS.2019.2921761},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {6},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {COOPER-SCHED: A cooperative scheduling framework for mobile edge computing with expected deadline guarantee},
+  year         = {2019},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2017). Achieving high performance on supercomputers with a sequential task-based programming model. <em>TPDS</em>, 1. (<a href='https://doi.org/10.1109/TPDS.2017.2766064'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The emergence of accelerators as standard computing resources on supercomputers and the subsequent architectural complexity increase revived the need for high-level parallel programming paradigms. Sequential task-based programming model has been shown to efficiently meet this challenge on a single multicore node possibly enhanced with accelerators, which motivated its support in the OpenMP 4.0 standard. In this paper, we show that this paradigm can also be employed to achieve high performance on modern supercomputers composed of multiple such nodes, with extremely limited changes in the user code. To prove this claim, we have extended the StarPU runtime system with an advanced inter-node data management layer that supports this model by posting communications automatically. We illustrate our discussion with the task-based tile Cholesky algorithm that we implemented on top of this new runtime system layer. We show that it allows for very high productivity while achieving a performance competitive with both the pure Message Passing Interface (MPI)-based ScaLAPACK Cholesky reference implementation and the DPLASMA Cholesky code, which implements another (non sequential) task-based programming paradigm.},
+  archive      = {J_TPDS},
+  author       = {Emmanuel Agullo and Olivier Aumage and Mathieu Faverge and Nathalie Furmento and Florent Pruvost and Marc Sergent and Samuel Paul Thibault},
+  doi          = {10.1109/TPDS.2017.2766064},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {12},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Achieving high performance on supercomputers with a sequential task-based programming model},
+  year         = {2017},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2017). Improving the performance and endurance of persistent memory with loose-ordering consistency. <em>TPDS</em>, 1. (<a href='https://doi.org/10.1109/TPDS.2017.2701364'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Persistent memory provides high-performance data persistence at main memory. Memory writes need to be performed in strict order to satisfy storage consistency requirements and enable correct recovery from system crashes. Unfortunately, adhering to such a strict order significantly degrades system performance and persistent memory endurance. This paper introduces a new mechanism, Loose-Ordering Consistency (LOC), that satisfies the ordering requirements at significantly lower performance and endurance loss. LOC consists of two key techniques. First, Eager Commit eliminates the need to perform a persistent commit record write within a transaction. We do so by ensuring that we can determine the status of all committed transactions during recovery by storing necessary metadata information statically with blocks of data written to memory. Second, Speculative Persistence relaxes the write ordering between transactions by allowing writes to be speculatively written to persistent memory. A speculative write is made visible to software only after its associated transaction commits. To enable this, our mechanism supports the tracking of committed transaction ID and multi-versioning in the CPU cache. Our evaluations show that LOC reduces the average performance overhead of memory persistence from 66.9% to 34.9% and the memory write traffic overhead from 17.1% to 3.4% on a variety of workloads.},
+  archive      = {J_TPDS},
+  author       = {Youyou Lu and Jiwu Shu and Long Sun and Onur Mutlu},
+  doi          = {10.1109/TPDS.2017.2701364},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {5},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Improving the performance and endurance of persistent memory with loose-ordering consistency},
+  year         = {2017},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2015). A relative coordinate based distributed sparse-preserving matrix factorization approach towards self-stabilizing network location service - Withdrawn. <em>TPDS</em>, 1. (<a href='https://doi.org/10.1109/TPDS.2015.2419667'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Withdrawn.},
+  archive      = {J_TPDS},
+  author       = {Yongquan Fu and Yijie Wang and Xiaoqiang Pei and Xiaoyong Li},
+  doi          = {10.1109/TPDS.2015.2419667},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {4},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {A relative coordinate based distributed sparse-preserving matrix factorization approach towards self-stabilizing network location service - Withdrawn},
+  year         = {2015},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2013). Internet traffic privacy enhancement with masking: Optimization and trade-offs. <em>TPDS</em>, 1. (<a href='https://doi.org/10.1109/TPDS.2013.72'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {An increasing number of recent experimental works have demonstrated that the supposedly secure channels in the Internet are prone to privacy breaking under many respects, due to packet traffic features leaking information on the user activity and traffic content. We aim at understanding if and how complex it is to obfuscate the information leaked by packet traffic features, namely packet lengths, directions, times: we call this technique traffic masking. We define a security model that points out what the ideal target of masking is, and then define the optimized traffic masking algorithm that removes any leaking (full masking). Further, we investigate the trade-off between traffic privacy protection and masking cost, namely required amount of overhead and realization complexity/feasibility. Numerical results are based on measured Internet traffic traces. Major findings are that: i) optimized full masking achieves similar overhead values with padding only and in case fragmentation is allowed; ii) if practical realizability is accounted for, optimized statistical masking attains only moderately better overhead than simple fixed pattern masking does, while still leaking correlation information that can be exploited by the adversary.},
+  archive      = {J_TPDS},
+  author       = {Alfonso Iacovazzi and Andrea Baiocchi},
+  doi          = {10.1109/TPDS.2013.72},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {3},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Internet traffic privacy enhancement with masking: Optimization and trade-offs},
+  year         = {2013},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2010). Secure time synchronization for wireless sensor networks based on bilinear pairing functions. <em>TPDS</em>, 1. (<a href='https://doi.org/10.1109/TPDS.2010.94'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Time synchronization is crucial for wireless sensor networks (WSNs) and secure time synchronization is a key requirement for many sophisticated applications running on these networks. Most of the existing secure time synchronization protocols incur high communication and storage costs, and are subject to a few known security attacks. In this paper, we propose a novel secure time synchronization protocol for both homogeneous and heterogeneous WSN models; the protocol uses pairing-based cryptography to secure the time synchronization and to reduce the communication and storage requirements of each node. Security analysis of the protocol shows that it is highly robust against different attacks, namely selective forwarding attack, wormhole attack, masquerade attack, message manipulation attack, replay attack and delay attack.},
+  archive      = {J_TPDS},
+  author       = {Mizanur Rahman and Khalil El-Khatib},
+  doi          = {10.1109/TPDS.2010.94},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {5},
+  pages        = {1},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Secure time synchronization for wireless sensor networks based on bilinear pairing functions},
+  year         = {2010},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

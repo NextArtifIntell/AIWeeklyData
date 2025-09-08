@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ML</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ml">ML - 16</h2>
+<ul>
+<li><details>
+<summary>
+(2025). TFAS: Zero-shot NAS for general time-series analysis with time-frequency aware scoring. <em>ML</em>, <em>114</em>(10), 1-33. (<a href='https://doi.org/10.1007/s10994-025-06832-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Designing effective neural networks from scratch for various time-series analysis tasks, such as activity recognition, fault detection, and traffic forecasting, is time-consuming and heavily relies on human labor. To reduce the reliance on human labor, recent studies adopt neural architecture search (NAS) to design neural networks for time series automatically. Still, existing NAS frameworks for time series only focus on one specific analysis, such as forecasting and classification, with expensive search methods. This paper therefore aims to build a unified zero-shot NAS framework that effectively searches neural architectures for a variety of tasks and time-series data. However, to build a general framework for different tasks, we need a zero-shot proxy that consistently correlates with the downstream performance across different characteristics of time-series datasets. To address these challenges, we propose a zero-shot NAS framework with novel Time-Frequency Aware Scoring for general time-series analysis, named TFAS. To incorporate TFAS into existing foundation time-series models, we adopt time-frequency decomposition methods and introduce the concept of augmented architecture to the foundation models. This augmented architecture enables the zero-shot proxy to be aware of the decomposed time and frequency information, resulting a more accurate estimation of downstream performance for particular datasets. Empirically, we show that the architectures found by TFAS gain improvement of up to 23.6% over state-of-the-art hand-crafted baselines in five mainstream time-series data mining tasks, including short- and long-term forecasting, classification, anomaly detection, and imputation.},
+  archive      = {J_ML},
+  author       = {Trirat, Patara and Lee, Jae-Gil},
+  doi          = {10.1007/s10994-025-06832-y},
+  journal      = {Machine Learning},
+  month        = {10},
+  number       = {10},
+  pages        = {1-33},
+  shortjournal = {Mach. Learn.},
+  title        = {TFAS: Zero-shot NAS for general time-series analysis with time-frequency aware scoring},
+  volume       = {114},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Pasco (PArallel structured COarsening): An overlay to speed up graph clustering algorithms. <em>ML</em>, <em>114</em>(10), 1-36. (<a href='https://doi.org/10.1007/s10994-025-06837-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Clustering the nodes of a graph is a cornerstone of graph analysis and has been extensively studied. However, some popular methods are not suitable for very large graphs: e.g., spectral clustering requires the computation of the spectral decomposition of the Laplacian matrix, which is not applicable for large graphs with a large number of communities. This work introduces PASCO, an overlay that accelerates clustering algorithms. Our method consists of three steps: (1) We compute several independent small graphs representing the input graph by applying an efficient and structure-preserving coarsening algorithm. (2) A clustering algorithm is run in parallel onto each small graph and provides several partitions of the initial graph. (3) These partitions are aligned and combined with an optimal transport method to output the final partition. The PASCO framework is based on two key contributions: a novel global algorithm structure designed to enable parallelization and a fast, empirically validated graph coarsening algorithm that preserves structural properties. We demonstrate the strong performance of PASCO in terms of computational efficiency, structural preservation, and output partition quality, evaluated on both synthetic and real-world graph datasets.},
+  archive      = {J_ML},
+  author       = {Etienne, Lasalle and Rémi, Vaudaine and Titouan, Vayer and Pierre, Borgnat and Paulo, Gonçalves and Rémi, Gribonval and Márton, Karsai},
+  doi          = {10.1007/s10994-025-06837-7},
+  journal      = {Machine Learning},
+  month        = {10},
+  number       = {10},
+  pages        = {1-36},
+  shortjournal = {Mach. Learn.},
+  title        = {Pasco (PArallel structured COarsening): An overlay to speed up graph clustering algorithms},
+  volume       = {114},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mind the gap: From plausible to valid self-explanations in large language models. <em>ML</em>, <em>114</em>(10), 1-38. (<a href='https://doi.org/10.1007/s10994-025-06838-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper investigates the reliability of explanations generated by large language models (LLMs) when prompted to explain their previous output. We evaluate two kinds of such self-explanations (SE)—extractive and counterfactual—using state-of-the-art LLMs (1B to 70B parameters) on three different classification tasks (both objective and subjective). In line with Agarwal et al. (Faithfulness versus plausibility: On the (Un)reliability of explanations from large language models. 2024. https://doi.org/10.48550/arXiv.2402.04614 ), our findings indicate a gap between perceived and actual model reasoning: while SE largely correlate with human judgment (i.e. are plausible), they do not fully and accurately follow the model’s decision process (i.e. are not faithful). Additionally, we show that counterfactual SE are not even necessarily valid in the sense of actually changing the LLM’s prediction. Our results suggest that extractive SE provide the LLM’s “guess” at an explanation based on training data. Conversely, counterfactual SE can help understand the LLM’s reasoning: We show that the issue of validity can be resolved by sampling counterfactual candidates at high temperature—followed by a validity check—and introducing a formula to estimate the number of tries needed to generate valid explanations. This simple method produces plausible and valid explanations that offer a 16 times faster alternative to SHAP on average in our experiments.},
+  archive      = {J_ML},
+  author       = {Randl, Korbinian and Pavlopoulos, John and Henriksson, Aron and Lindgren, Tony},
+  doi          = {10.1007/s10994-025-06838-6},
+  journal      = {Machine Learning},
+  month        = {10},
+  number       = {10},
+  pages        = {1-38},
+  shortjournal = {Mach. Learn.},
+  title        = {Mind the gap: From plausible to valid self-explanations in large language models},
+  volume       = {114},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning green’s function efficiently using low-rank approximations. <em>ML</em>, <em>114</em>(10), 1-17. (<a href='https://doi.org/10.1007/s10994-025-06845-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Learning the Green’s function using deep learning models enables efficient parametrization of partial differential equations. However, a practical limitation of this approach is the repeated computation of Monte Carlo integral approximations, which makes the learning process computationally expensive. To address this, we propose DecGreenNet, a novel algorithm that uses low-rank decomposition to learn the Green’s function efficiently. This novel architecture predicts the solution of PDE at a grid element using the product of two networks; one taking each grid element as input and the other taking the Monte Carlo samples as input. Experimental results show that the proposed method achieves faster training times compared to MOD-Net while maintaining comparable or lower prediction error relative to both PINNs and MOD-Net. We also provide a theoretical analysis for Green’s function based PINNs, including both DecGreenNet and MOD-Net, using a clipped Green’s function. Our analysis shows that both MOD-Net and DecGreenNet obtains similar convergence rates.},
+  archive      = {J_ML},
+  author       = {Wimalawarne, Kishan and Suzuki, Taiji and Langer, Sophie},
+  doi          = {10.1007/s10994-025-06845-7},
+  journal      = {Machine Learning},
+  month        = {10},
+  number       = {10},
+  pages        = {1-17},
+  shortjournal = {Mach. Learn.},
+  title        = {Learning green’s function efficiently using low-rank approximations},
+  volume       = {114},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Epidemic-guided deep learning for spatiotemporal forecasting of tuberculosis outbreak. <em>ML</em>, <em>114</em>(10), 1-59. (<a href='https://doi.org/10.1007/s10994-025-06848-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Tuberculosis (TB) remains a formidable global health challenge, driven by complex spatiotemporal transmission dynamics and influenced by factors such as population mobility and behavioral changes. We propose an Epidemic-Guided Deep Learning (EGDL) approach that fuses mechanistic epidemiological principles with advanced deep learning techniques to enhance early warning systems and intervention strategies for TB outbreaks. Our framework is built upon a modified networked Susceptible-Infectious-Recovered (MN-SIR) model augmented with a saturated incidence rate and graph Laplacian diffusion, capturing both long-term transmission dynamics and region-specific population mobility patterns. Compartmental model parameters are rigorously estimated using Bayesian inference via the Markov Chain Monte Carlo approach. Theoretical analysis leveraging the comparison principle and Green’s formula establishes global stability properties of the disease-free and endemic equilibria. Building on these epidemiological insights, we design two forecasting architectures, EGDL-Parallel and EGDL-Series, that integrate the mechanistic outputs of the MN-SIR model within deep neural networks. This integration mitigates the overfitting risks commonly encountered in data-driven methods and filters out noise inherent in surveillance data, resulting in reliable forecasts of real-world epidemic trends. Experiments conducted on TB incidence data from 47 prefectures in Japan and 31 provinces in mainland China demonstrate that our approach delivers robust and accurate predictions across multiple time horizons (short to medium-term forecasts), supporting its generalizability across regions with different population dynamics. Additionally, incorporating uncertainty quantification through conformal prediction and explainability via temporal gradient-based class activation maps enhances the model’s practical utility for guiding targeted public health interventions.},
+  archive      = {J_ML},
+  author       = {Barman, Madhab and Panja, Madhurima and Mishra, Nachiketa and Chakraborty, Tanujit},
+  doi          = {10.1007/s10994-025-06848-4},
+  journal      = {Machine Learning},
+  month        = {10},
+  number       = {10},
+  pages        = {1-59},
+  shortjournal = {Mach. Learn.},
+  title        = {Epidemic-guided deep learning for spatiotemporal forecasting of tuberculosis outbreak},
+  volume       = {114},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RIADNet: Single image deraining network for raindrops and rain streaks removal. <em>ML</em>, <em>114</em>(10), 1-21. (<a href='https://doi.org/10.1007/s10994-025-06854-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Both raindrops and rain streaks are common degradations in images captured on rainy days, which not only reduce the quality and visibility of images but also significantly affect downstream tasks such as object detection. However, most existing derain algorithms focus on one specific degradation, failing to provide a comprehensive analysis across other scenarios. In this paper, we propose RIADNet, a Rain Information Attention Deraining Network, which jointly removes raindrops and rain streaks while preserving critical image details. Initially, we devise a simple and efficient rain information attention module(RIAM) to extract raindrop and rain streak information from images accurately, guiding the network to focus on rainy regions and enhancing deraining performance. Furthermore, a multi-scale dilated convolution feature fusion module(MDFFM) integrates encoder features from multiple receptive fields through parallel dilated convolutions with varying dilation rates, which significantly improves multi-scale feature representation. Moreover, a deformable wavelet sampling module(DWSM) replaces traditional sampling with deformable wavelet-based kernels, adaptively preserving high-frequency details during feature extraction and minimizing information loss. Qualitative and quantitative experimental results on three public datasets demonstrate the superior performance of RIADNet in addressing diverse rain degradations. Notably, on the RDS dataset (mixed raindrops and rain streaks), RIADNet achieves a PSNR of 29.78 dB and SSIM of 0.921, outperforming all compared state-of-the-art deraining models while reducing parameters by 54.52% versus the second-best method.},
+  archive      = {J_ML},
+  author       = {Yu, Changle and Fan, Ping and Zhang, Yi and Yang, Jiyu},
+  doi          = {10.1007/s10994-025-06854-6},
+  journal      = {Machine Learning},
+  month        = {10},
+  number       = {10},
+  pages        = {1-21},
+  shortjournal = {Mach. Learn.},
+  title        = {RIADNet: Single image deraining network for raindrops and rain streaks removal},
+  volume       = {114},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Causal CSSE: Integrating counterfactuals and causality in the explanation of machine learning models. <em>ML</em>, <em>114</em>(10), 1-24. (<a href='https://doi.org/10.1007/s10994-025-06856-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Machine learning methods are widely used in various industries and research sectors, including health, agriculture, and law, to support decision-making. However, many of these models are inherently uninterpretable, necessitating the development of explainability methods. Among those methods, counterfactual methods aim to explain the decisions of black-box models by making minimal modifications to an instance’s attributes, thereby identifying the necessary changes to alter its classification. This article examines the relationship between counterfactuals and causality, emphasizing the significance of understanding causality for achieving more consistent explainability. We present the Causal CSSE method, which incorporates aspects of causality into the counterfactual CSSE (Social Explanations for Classification Models) method, providing more realistic and applicable explanations. Causal CSSE uses an ad-hoc genetic model to generate counterfactual examples, considering the causality between attributes to improve the interpretability and applicability of the generated explanations. This enhancement aims to provide more realistic and valuable counterfactual answers, thereby contributing to more effective solutions for real-world problems. This project is available at https://github.com/virion1996/causal_csse .},
+  archive      = {J_ML},
+  author       = {Krauss, Omar F. P. and Balbino, Marcelo S. and Nobre, Cristiane N.},
+  doi          = {10.1007/s10994-025-06856-4},
+  journal      = {Machine Learning},
+  month        = {10},
+  number       = {10},
+  pages        = {1-24},
+  shortjournal = {Mach. Learn.},
+  title        = {Causal CSSE: Integrating counterfactuals and causality in the explanation of machine learning models},
+  volume       = {114},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cluster weighted models for functional data. <em>ML</em>, <em>114</em>(10), 1-42. (<a href='https://doi.org/10.1007/s10994-025-06858-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a method, funWeightClust, based on a family of parsimonious models for clustering heterogeneous functional linear regression data. These models extend cluster weighted models to functional data, and they allow for multivariate functional responses and predictors. The proposed methodology follows the approach used by the the functional high dimensional data clustering (funHDDC) method. We construct an expectation maximization (EM) algorithm for parameter estimation. Using simulated and benchmark data we show that funWeightClust outperforms funHDDC and several two-steps clustering methods. We also use funWeightClust to analyze traffic patterns in Edmonton, Canada.},
+  archive      = {J_ML},
+  author       = {Anton, Cristina and Smith, Iain},
+  doi          = {10.1007/s10994-025-06858-2},
+  journal      = {Machine Learning},
+  month        = {10},
+  number       = {10},
+  pages        = {1-42},
+  shortjournal = {Mach. Learn.},
+  title        = {Cluster weighted models for functional data},
+  volume       = {114},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EchoRAG: A framework for enhancing language models with graph-RAG and in-context learning. <em>ML</em>, <em>114</em>(10), 1-25. (<a href='https://doi.org/10.1007/s10994-025-06859-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large Language Models (LLMs), and more recently Large Reasoning Models (LRMs), have demonstrated remarkable performance in various Natural Language Processing (NLP) tasks, such as classification and information extraction. However, their high computational demands, need for expensive infrastructure, and security issues—especially regarding API usage—limit their practical adoption in many scenarios. Compact and open-source models, like DeepSeek-R1 8B and Llama3 8B, have emerged as more cost-effective, self-hosted alternatives, enabling local execution and reducing dependence on external services. Nevertheless, their smaller number of parameters frequently provides limited performance in tasks requiring complex reasoning or specialized knowledge. In this work, we investigate how compact LLMs and LRMs can achieve competitive results without fine-tuning, by leveraging graph-based retrieval-augmented generation (Graph-RAG) and in-context learning (ICL). We conduct a comparative evaluation of both compact and large-scale LLMs and LRMs across four NLP tasks – classification, information extraction, sentiment analysis, and fake news detection—using eight datasets, and analyzing accuracy, latency, and cost. Our experiments explore: (i) the effectiveness of Graph-RAG for factual enrichment; (ii) the impact of ICL with examples the model struggles to answer; (iii) the combination of both techniques, culminating in the new framework EchoRAG; and (iv) the trade-offs between LLMs and LRMs. The results indicate that compact models, when enhanced with Graph-RAG and ICL, can achieve performance close to or even surpassing that of LLMs, while LRMs yielded underwhelming results and exhibited up to 97% higher latency compared to compact models.},
+  archive      = {J_ML},
+  author       = {Beckhauser, William Jones and Fileto, Renato},
+  doi          = {10.1007/s10994-025-06859-1},
+  journal      = {Machine Learning},
+  month        = {10},
+  number       = {10},
+  pages        = {1-25},
+  shortjournal = {Mach. Learn.},
+  title        = {EchoRAG: A framework for enhancing language models with graph-RAG and in-context learning},
+  volume       = {114},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Source-free domain adaptation requires penalized diversity. <em>ML</em>, <em>114</em>(10), 1-30. (<a href='https://doi.org/10.1007/s10994-025-06863-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {While neural networks are capable of achieving human-like performance in many tasks such as image classification, the impressive performance of each model is limited to its own dataset. Source-free domain adaptation (SFDA) was introduced to address knowledge transfer between different domains in the absence of source data, thus, increasing data privacy. Diversity in representation space can be vital to a model’s adaptability in varied and difficult domains. In unsupervised SFDA, the diversity is limited to learning a single hypothesis on the source or learning multiple hypotheses with a shared feature extractor. Motivated by the improved predictive performance of ensembles, we propose a novel unsupervised SFDA algorithm that promotes representational diversity through the use of separate feature extractors with Distinct Backbone Architectures (DBA). Although diversity in feature space is increased, the unconstrained mutual information (MI) maximization may potentially introduce amplification of weak hypotheses. Thus we introduce the Weak Hypothesis Penalization (WHP) regularizer as a mitigation strategy. Our work proposes Penalized Diversity (PD) where the synergy of DBA and WHP is applied to unsupervised source-free domain adaptation for covariate shift. In addition, PD is augmented with a weighted MI maximization objective for label distribution shift. Empirical results on natural, synthetic, and medical domains demonstrate the effectiveness of PD under different distributional shifts.},
+  archive      = {J_ML},
+  author       = {Rafiee Sevyeri, Laya and Sheth, Ivaxi and Farahnak, Farhood and See, Alexandre and Kahou, Samira Ebrahimi and Fevens, Thomas and Havaei, Mohammad},
+  doi          = {10.1007/s10994-025-06863-5},
+  journal      = {Machine Learning},
+  month        = {10},
+  number       = {10},
+  pages        = {1-30},
+  shortjournal = {Mach. Learn.},
+  title        = {Source-free domain adaptation requires penalized diversity},
+  volume       = {114},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Partially trained graph convolutional networks resist oversmoothing. <em>ML</em>, <em>114</em>(10), 1-24. (<a href='https://doi.org/10.1007/s10994-025-06865-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this work we investigate an observation made by Kipf and Welling (5th International Conference on Learning Representations, 2017), who suggested that untrained Graph Convolutional Networks (GCNs) can generate meaningful node embeddings. In particular, we investigate the effect of training only a single layer of a GCN or a GAT (Graph Attention Network), while keeping the rest of the layers frozen. We propose a basis on which the effect of the untrained layers and their contribution to the generation of embeddings can be predicted. Moreover, we show that network width influences the dissimilarity of node embeddings produced after the initial node features pass through the untrained part of the model. Additionally, we establish a connection between partially trained GCNs and oversmoothing, showing that they are capable of reducing it. We verify our theoretical results experimentally and show the benefits of using deep networks that resist oversmoothing, in a “cold start” scenario, where there is a lack of feature information for unlabeled nodes.},
+  archive      = {J_ML},
+  author       = {Kelesis, Dimitrios and Fotakis, Dimitris and Paliouras, Georgios},
+  doi          = {10.1007/s10994-025-06865-3},
+  journal      = {Machine Learning},
+  month        = {10},
+  number       = {10},
+  pages        = {1-24},
+  shortjournal = {Mach. Learn.},
+  title        = {Partially trained graph convolutional networks resist oversmoothing},
+  volume       = {114},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Splitting stump forests: Tree ensemble compression for edge devices (extended version). <em>ML</em>, <em>114</em>(10), 1-26. (<a href='https://doi.org/10.1007/s10994-025-06866-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce Splitting Stump Forests—small ensembles of weak learners extracted from a trained random forest. The high memory consumption of random forests renders them unfit for resource-constrained devices. We show empirically that we can significantly reduce the model size and inference time by selecting nodes that evenly split the arriving training data and applying a linear model on the resulting representation. Our extensive empirical evaluation indicates that Splitting Stump Forests outperform random forests and state-of-the-art compression methods on memory-limited embedded devices.},
+  archive      = {J_ML},
+  author       = {Alkhoury, Fouad and Buschjäger, Sebastian and Welke, Pascal},
+  doi          = {10.1007/s10994-025-06866-2},
+  journal      = {Machine Learning},
+  month        = {10},
+  number       = {10},
+  pages        = {1-26},
+  shortjournal = {Mach. Learn.},
+  title        = {Splitting stump forests: Tree ensemble compression for edge devices (extended version)},
+  volume       = {114},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Novel applications of item response theory for analysing data set complexity and benchmark selection. <em>ML</em>, <em>114</em>(10), 1-30. (<a href='https://doi.org/10.1007/s10994-025-06873-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Item response theory (IRT) was developed in psychometrics to measure the latent skills of human respondents based on their observed responses to items with different difficulty levels. Human ability is high in IRT when one correctly responds to difficult items despite random mistakes in easy items. IRT has been recently framed as a powerful tool to characterise instance hardness in classification problems by measuring difficulty and discrimination levels of instances in a data set based on the correctness of a set of classifiers. Here, we generalise such a concept to the data set level by taking a pool of 509 classification data sets and assessing their difficulties and discriminations based on the performance achieved by 95 classifiers when solving these problems. The ability is estimated such that high abilities are assigned to classifiers with better behaviour in hard data sets. We further evaluated IRT in two distinct applications. First, we build a regression meta-model where complexity measures are used to predict the IRT parameters of new data sets without the need to retrain the IRT model. Second, we propose two IRT-based benchmarks with 30 data sets each to test classifiers, one selected for diversity and another selected for greater difficulty. Both benchmarks may be used to evaluate new methods more broadly, instead of the common practice of gathering random data sets from public repositories.},
+  archive      = {J_ML},
+  author       = {Pereira, João Luiz Junho and Exposito de Queiroz, Alfredo Antonio Alencar and Silva Filho, Telmo de Menezes e and Lorena, Ana Carolina and Mantovani, Rafael Gomes and Pappa, Gisele Lobo and Prudêncio, Ricardo Bastos Cavalcante},
+  doi          = {10.1007/s10994-025-06873-3},
+  journal      = {Machine Learning},
+  month        = {10},
+  number       = {10},
+  pages        = {1-30},
+  shortjournal = {Mach. Learn.},
+  title        = {Novel applications of item response theory for analysing data set complexity and benchmark selection},
+  volume       = {114},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Linearly-interpretable concept embedding models for text analysis. <em>ML</em>, <em>114</em>(10), 1-38. (<a href='https://doi.org/10.1007/s10994-025-06839-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Despite their success, Large-Language Models (LLMs) still face criticism due to their lack of interpretability. Traditional post-hoc interpretation methods, based on attention and gradient-based analysis, offer limited insights as they only approximate the model’s decision-making processes and have been proved to be unreliable. For this reason, Concept-Bottleneck Models (CBMs) have been lately proposed in the textual field to provide interpretable predictions based on human-understandable concepts. However, CBMs still exhibit several limitations due to their architectural constraints limiting their expressivity, to the absence of task-interpretability when employing non-linear task predictors and for requiring extensive annotations that are impractical for real-world text data. In this paper, we address these challenges by proposing a novel Linearly Interpretable Concept Embedding Model (LICEM) going beyond the current accuracy-interpretability trade-off. LICEMs classification accuracy is better than existing interpretable models and matches black-box ones. We show that the explanations provided by our models are more intervenable and causally consistent with respect to existing solutions. Finally, we show that LICEMs can be trained without requiring any concept supervision, as concepts can be automatically predicted when using an LLM backbone.},
+  archive      = {J_ML},
+  author       = {De Santis, Francesco and Bich, Philippe and Ciravegna, Gabriele and Barbiero, Pietro and Giordano, Danilo and Cerquitelli, Tania},
+  doi          = {10.1007/s10994-025-06839-5},
+  journal      = {Machine Learning},
+  month        = {10},
+  number       = {10},
+  pages        = {1-38},
+  shortjournal = {Mach. Learn.},
+  title        = {Linearly-interpretable concept embedding models for text analysis},
+  volume       = {114},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Region-aware minimal counterfactual rules for model-agnostic explainable classification. <em>ML</em>, <em>114</em>(10), 1-24. (<a href='https://doi.org/10.1007/s10994-025-06847-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The increasing demand for transparency in machine learning has spurred the development of techniques that provide faithful explanations for complex black-box models. In this work, we introduce RaMiCo (Region Aware Minimal Counterfactual Rules), a model-agnostic method that extracts global counterfactual rules by mining instances from diverse regions of the input space. RaMiCo focuses on single-feature substitutions to generate minimal and region-aware rules that encapsulate the overall decision-making process of the target model. These global rules can be further localised to specific input instances, enabling users to obtain tailored explanations for individual predictions. Comprehensive experiments on multiple benchmark datasets demonstrate that RaMiCo achieves competitive fidelity in replicating black-box behaviour and exhibits high coverage in capturing the intrinsic structure of white-box classifiers. RaMiCo supports the development of trustworthy and secure machine learning systems by providing transparent, human-understandable explanations in the form of concise global rules. This design enables users to verify and inspect the model’s decision logic, reducing the risk of hidden biases, unintended behaviours, or adversarial exploitation. These features make RaMiCo particularly suitable for applications where the reliability, safety, and verifiability of automated decisions are essential.},
+  archive      = {J_ML},
+  author       = {Gagliardi, Guido and Alfeo, Antonio Luca and Guidotti, Riccardo and Cimino, Mario G. C. A.},
+  doi          = {10.1007/s10994-025-06847-5},
+  journal      = {Machine Learning},
+  month        = {10},
+  number       = {10},
+  pages        = {1-24},
+  shortjournal = {Mach. Learn.},
+  title        = {Region-aware minimal counterfactual rules for model-agnostic explainable classification},
+  volume       = {114},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimized YOLOv8 for lightweight and high-precision metal surface defect detection in industrial applications. <em>ML</em>, <em>114</em>(10), 1-35. (<a href='https://doi.org/10.1007/s10994-025-06857-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the metal industrial manufacturing process, surface defect detection is critical because these defects can seriously affect material quality and production efficiency. In recent years, although deep learning technology has made significant advances in the field of surface defect detection for images, it still faces many challenges in metal surface defect detection, such as high variability and sample imbalance. To address these challenges, this paper proposes an improved algorithm based on YOLOv8. First, this paper designs the C2f_GhostDynamic module, which reduces model size and computational overhead, lowering hardware requirements and energy consumption, making the model more suitable for deployment on embedded devices. Secondly, the CARAFE algorithm replaces the traditional upsampling method, expanding the model’s receptive field and enhancing feature extraction and fusion capabilities. Additionally, the RFAHead module was designed as the detection head, with RFAConv improving the model’s detection accuracy. At the same time, the SPPELAN pyramid pooling structure was introduced, combining multi-scale pooling and local attention mechanisms to generate more expressive feature maps. Finally, AKConv replaces traditional convolution operations, enabling adaptive adjustment of kernel size based on defect features and shapes, further reducing model size and improving performance. Experiments on the public NEU-DET dataset show that the improved model, compared to the baseline, reduces parameters by 9.2% , FLOPs by 31.7%, and increases mAP50 by 1.7 to 79.3%. Additionally, the model’s detection speed reaches 38 frames per second, meeting the requirements for real-time detection. Code is available at https://github.com/IamSunday/YOLOv8-Steel-Detection .},
+  archive      = {J_ML},
+  author       = {Li, Ruiping and Zhao, Linchang and Wei, Hao and OuYang, Bocheng and Zhang, Mu and Fang, Bing and Hu, Guoqing and Tan, Jin},
+  doi          = {10.1007/s10994-025-06857-3},
+  journal      = {Machine Learning},
+  month        = {10},
+  number       = {10},
+  pages        = {1-35},
+  shortjournal = {Mach. Learn.},
+  title        = {Optimized YOLOv8 for lightweight and high-precision metal surface defect detection in industrial applications},
+  volume       = {114},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

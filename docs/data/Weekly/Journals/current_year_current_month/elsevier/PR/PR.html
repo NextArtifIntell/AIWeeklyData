@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PR</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="pr">PR - 54</h2>
+<ul>
+<li><details>
+<summary>
+(2026). Understanding and tackling the modality imbalance problem in multimodal survival prediction. <em>PR</em>, <em>172</em>, 112398. (<a href='https://doi.org/10.1016/j.patcog.2025.112398'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Benefiting from the in-depth integration of multimodal data, survival prediction has emerged as a pivotal task in cancer prognosis by facilitating personalized treatment planning and medical resource allocation. In this study, we report an intriguing phenomenon of inter-modality capability gap (ICG) enlargement during joint survival modelling of genomics data and pathology images. This observation, supported by our dedicated theoretical analysis, uncovers a previously unrecognized modality imbalance problem, where pathology modality suffers from limited gradient propagation and insufficient learning while genomics modality dominates in reducing survival loss. To tackle this problem, we further propose a balanced multimodal learning approach for survival prediction named BMLSurv, which introduces two innovative auxiliary learning strategies: self-enhancement learning (SEL) and peer-assistance learning (PAL). The SEL strategy exploits a real-time imbalance measure to guide extra task-aware supervision, therefore dynamically strengthening pathology-specific gradient propagation in a self-enhanced manner. Meanwhile, the PAL strategy leverages the stronger genomics modality as a “helpful peer” to assist the sufficient learning of pathology modality via a new risk-ranking distillation technique. Extensive experiments on representative cancer datasets demonstrate that by successfully address the modality imbalance problem, BMLSurv remarkably narrows the ICG in joint survival modelling and consistently outperforms state-of-the-art methods by a large margin. These results underscore the potential of BMLSurv to advance multimodal survival prediction and enhance clinical decision-making in cancer prognosis.},
+  archive      = {J_PR},
+  author       = {Chicheng Zhou and Minghui Wang and Yi Shi and Anli Zhang and Ao Li},
+  doi          = {10.1016/j.patcog.2025.112398},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112398},
+  shortjournal = {Pattern Recognition},
+  title        = {Understanding and tackling the modality imbalance problem in multimodal survival prediction},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). HopGAT: A multi-hop graph attention network with heterophily and degree awareness. <em>PR</em>, <em>172</em>, 112387. (<a href='https://doi.org/10.1016/j.patcog.2025.112387'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In highly heterophilic graphs, where nodes frequently connect across categories, the attention learning mechanism by dynamically adjusting neighboring node weights, may struggle to capture intricate node relationships. Furthermore, first-hop neighbor information is usually insufficient to encompass the global structure, but multi-hop increases complexity. To address these challenges, we propose HopGAT, a multi-hop graph attention network with heterophily and degree awareness. Firstly, we design heterophily-based neighbor sampling to sequentially filter high-hop neighbors by degree. Next, to obtain comprehensive global information, we construct a multi-hop recursive learning method with head and tail attention vectors to learn multi-hop neighbor features. Finally, we combine the average node degree of the graph with hop decay modeling to learn importance coefficients at different hops and adaptively aggregate the learned multi-hop features. Experimental results demonstrate that HopGAT significantly improves performance across 9 benchmark datasets with various heterophily and different average degrees.},
+  archive      = {J_PR},
+  author       = {Han Zhang and Huan Wang and Mingjing Han},
+  doi          = {10.1016/j.patcog.2025.112387},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112387},
+  shortjournal = {Pattern Recognition},
+  title        = {HopGAT: A multi-hop graph attention network with heterophily and degree awareness},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Robust spatio-temporal graph neural networks with sparse structure learning. <em>PR</em>, <em>172</em>, 112383. (<a href='https://doi.org/10.1016/j.patcog.2025.112383'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper focuses on the problem of spatio-temporal graph classification by introducing sparse structure learning to enhance its robustness and explainability. Spatio-temporal graph neural networks (STGNN) integrate spatial structure and temporal sequential features into GNN learning, resulting in promising performance in many applications. However, current STGNN models often fail to capture the discriminative sparse substructure and the smooth distribution of these samples. To this end, this paper introduces RostGNN, robust spatio-temporal graph neural networks, for achieving more discriminative graph representations. Concretely, RostGNN extracts the spatial and temporal features by performing gated recurrent units on the given time series data and calculating adjacent matrixes for graphs. Then, we impose the iterative hard-thresholding approach on the final association matrix to obtain a sparse graph. Meanwhile, we calculate a similarity matrix from the side information of samples to smooth the achieved data representations and use fully connected networks for graph classification. We finally applied RostGNN to brain graph classification in experiments on real-world datasets. The results demonstrate that RostGNN delivers robust and discriminative graph representations and performs better than compared methods, benefiting from the sparsity and manifold regularizers. Furthermore, RostGNN can potentially yield useful findings for data understanding.},
+  archive      = {J_PR},
+  author       = {Yupei Zhang and Yuxin Li and Shuhui Liu and Xuequn Shang},
+  doi          = {10.1016/j.patcog.2025.112383},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112383},
+  shortjournal = {Pattern Recognition},
+  title        = {Robust spatio-temporal graph neural networks with sparse structure learning},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). MCoCa: Towards fine-grained multimodal control in image captioning. <em>PR</em>, <em>172</em>, 112381. (<a href='https://doi.org/10.1016/j.patcog.2025.112381'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Controllable image captioning (CIC) models have traditionally focused on generating controlled descriptions using specific text styles. However, these approaches are limited as they rely solely on text control signals, which often fail to align with complex human intentions, such as selecting specific areas in images. To enhance multimodal interactivity, we propose to augment current CIC systems with diverse and joint visual-text controls. To achieve this, we first create a comprehensive Multimodal Controllable Image Captioning Corpus (MCoCa) dataset by leveraging language rewriting ability of GPT-3.5, containing 0.97M image-captions pairs along with 21 visual-text control signals. By training the visual and textual adapters equipped on the multimodal large language model with newly proposed instructional prompts on MCoCa, we observe emergent combinatory multimodal controllability and significant improvement in text controllability. We present exhaustive quantitative and qualitative results, benchmarking our trained model’s state-of-the-art zero-shot captioning performance on SentiCap and FlickrStyle10K in terms of both fidelity and controllability. For regional understanding ability of visual-controlled captioning, our method achieves obvious improvement compared with the baseline models.},
+  archive      = {J_PR},
+  author       = {Shanshan Zhao and Teng Wang and Jinrui Zhang and Xiangchen Wang and Feng Zheng},
+  doi          = {10.1016/j.patcog.2025.112381},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112381},
+  shortjournal = {Pattern Recognition},
+  title        = {MCoCa: Towards fine-grained multimodal control in image captioning},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Learning interpretable binary codes via semantic alignment for customized image retrieval. <em>PR</em>, <em>172</em>, 112380. (<a href='https://doi.org/10.1016/j.patcog.2025.112380'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The single modality hashing (SMH) has achieved impressive performance on image retrieval task in recent years. The only fly in the ointment is that most of the methods mainly measure the image similarity based on the high-level class labels. The retrieval needs in the real world are diverse in form of different subsets of the semantics (not only the category labels) presented in the query image. However, existing SMH methods fail to account for such customized image retrieval task that allows users to select visual semantics or their combinations present in the query and retrieve similar images based on such selected semantic descriptions. To address such practical issues, we propose a deep hashing to learn Interpretable Binary Codes (IBC), endowing the hashing bits with semantic interpretability rather than purely entangling the class information in the whole codes, i.e., aligning the criteria of binary space partition of each bit with a particular visual semantic concept. Specifically, binary encoding is a highly non-linear operation of dimension reduction, the semantic and spatial information of which has respectively been abstract and lost heavily. In light of the rich semantic interpretability and binary concept detection ability of convolutional filters, we innovatively transfer the semantic knowledge from filters to hashing bits by align the distributions of the binary codes and filter activations that capture the presence/absence of visual patterns in images. To further improve the semantics of filters/bits, the shared and learnable classification rules are introduced and optimized to disentangle the sparse composition between the category label and encoded semantics in filters/bits. With high interpretability, we can selectively combine bits corresponding to the target semantics during retrieval, thereby enabling flexible and customized similarity searches. Extensive experiments on several large-scale datasets covering general objects and scenes, single and multiple label scenarios, demonstrate the interpretability and functionalities of learned binary codes for the customized image retrieval tasks.},
+  archive      = {J_PR},
+  author       = {Shishi Qiao and Ruiping Wang and Xilin Chen},
+  doi          = {10.1016/j.patcog.2025.112380},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112380},
+  shortjournal = {Pattern Recognition},
+  title        = {Learning interpretable binary codes via semantic alignment for customized image retrieval},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). AFFusion: Atmospheric scattering enhancement and frequency integrated spatial-channel attention for infrared and visible image fusion. <em>PR</em>, <em>172</em>, 112379. (<a href='https://doi.org/10.1016/j.patcog.2025.112379'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Infrared and visible image fusion (IVIF) seeks to generate fused images that combine rich texture details with distinct thermal radiation features by integrating and leveraging complementary information from multiple sources. However, existing fusion methods frequently neglect the challenges posed by illumination degradation and inaccurate color contrast, which arise due to light energy loss and light scattering during atmospheric transmission. To address these limitations, this study introduces an innovative IVIF framework, termed AFFusion, which integrates an atmospheric scattering physical model with a frequency-domain feature component. By accurately predicting and estimating two key physical parameters-the transmission map and atmospheric light-within the scattering model, AFFusion harnesses atmospheric scattering principles to produce enhanced visible images, thereby mitigating the adverse effects of energy attenuation and scattering. Furthermore, to resolve artifacts and texture loss caused by traditional atmospheric scattering models, AFFusion incorporates Fourier transform in conjunction with spatial and channel attention mechanisms to selectively amplify amplitude and phase features in the frequency domain, thereby enhancing texture fidelity and detail representation within the fused images. Comprehensive experimental evaluations demonstrate that AFFusion surpasses state-of-the-art methods in both qualitative and quantitative performance metrics, while also providing robust support for high-level visual tasks. The implementation code is publicly accessible at https://github.com/cici0206/AFFusion .},
+  archive      = {J_PR},
+  author       = {Jiwei Hu and Chengcheng Song and Qiwen Jin and Kin-Man Lam},
+  doi          = {10.1016/j.patcog.2025.112379},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112379},
+  shortjournal = {Pattern Recognition},
+  title        = {AFFusion: Atmospheric scattering enhancement and frequency integrated spatial-channel attention for infrared and visible image fusion},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Noise-aware state-space method for underwater object detection. <em>PR</em>, <em>172</em>, 112375. (<a href='https://doi.org/10.1016/j.patcog.2025.112375'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Underwater Object Detection (UOD) faces significant challenges due to complex degradation factors, such as color shifts caused by light absorption and scattering, spatially varying noise induced by plankton and sea snow, and motion blur resulting from dynamic water currents. Among existing methods, Convolutional Neural Networks (CNNs) are limited by fixed receptive fields, making it difficult to model long-range noise patterns; while Transformers excel at modeling global dependencies, they suffer from high computational complexity and weak capability in restoring fine-grained local features. Neither can effectively address the demands of detecting underwater-specific noise and small objects. To tackle these issues, we propose UOD-Mamba, a state space model (SSM)-based framework for underwater object detection. At its core is the Noise-Aware Dual-path Mamba (NADM) module, which integrates a global-local dual-path fusion strategy to enable both long-range noise modeling and local feature enhancement. The global path balances noise in input features through the Noise-Balanced Preprocessing Module (NBPM) and leverages Mamba’s long-range modeling capability to extract global noise patterns; the local path fuses the Underwater Enhanced Multi-scale Attention Module (UEMA) with CSP convolution to model edge and detail features at a fine-grained level, thereby compensating for the loss of local information. By explicitly learning the distribution characteristics of underwater noise and capturing the differences between noise and target features, the framework enhances detection robustness in noisy environments. Experimental validation on the DUO and RUOD datasets demonstrates that UOD-Mamba sets a new state-of-the-art in detection performance. It also exhibits advantages in explicit modeling of diverse noises, preservation of local details, and computational efficiency across multi-noise scenarios, enabling effective handling of complex underwater interference environments.},
+  archive      = {J_PR},
+  author       = {Jingchun Zhou and Xudong Wang and Mingjie Li and Zongxin He and Wentian Xin and Xiuguo Zhang},
+  doi          = {10.1016/j.patcog.2025.112375},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112375},
+  shortjournal = {Pattern Recognition},
+  title        = {Noise-aware state-space method for underwater object detection},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Cross-domain-aware deep unfolding transformer for hyperspectral image super-resolution. <em>PR</em>, <em>172</em>, 112374. (<a href='https://doi.org/10.1016/j.patcog.2025.112374'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fusing low-spatial-resolution hyperspectral images with high-spatial-resolution (HSR) multispectral images is pivotal for generating HSR hyperspectral images (HSR-HSIs). While current deep unrolling-based multi-stage frameworks have shown notable advancements due to their robustness and interpretability, they still exhibit limitations in adequately harnessing the HSI prior knowledge. This deficiency is principally attributed to three factors: (1) prior knowledge learned from training samples often overlooks target-specific characteristics; (2) insufficient feature representation within and across stages; and (3) insufficient modeling of spatial–spectral dependencies. To address these issues, we propose a novel Cross-domain-aware Transformer (CaFormer). Specifically, a cross-domain aware attention mechanism is investigated to capture intrinsic joint spatial–spectral dependencies through unified cross-domain feature representation. The attention mechanism models HSI eigenfeatures to derive spatial and spectral representations while preserving their mutual correlations. Furthermore, we introduce a Fourier Domain Perception Block to enhance structural and semantic representations by exploiting amplitude and phase components in the frequency domain, thereby strengthening feature aggregation across stages. To further improve adaptability while preserving the interpretability of deep unrolling networks, CaFormer employs a dual-stage prior learning strategy, transferring prior knowledge learned from general training data to the specific observed scene. Our experimental evaluations on four public datasets and Worldview-2 satellite images confirm that our proposed method outperformed eleven state-of-the-art methods. The code is available at https://github.com/Caoxuheng/HIFtool .},
+  archive      = {J_PR},
+  author       = {Xuheng Cao and Xuquan Wang and Xiong Dun and Yusheng Lian and Xinbin Cheng and Xiaopeng Hao},
+  doi          = {10.1016/j.patcog.2025.112374},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112374},
+  shortjournal = {Pattern Recognition},
+  title        = {Cross-domain-aware deep unfolding transformer for hyperspectral image super-resolution},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Nonuniform low-light image enhancement via noise-aware decomposition and adaptive correction. <em>PR</em>, <em>172</em>, 112370. (<a href='https://doi.org/10.1016/j.patcog.2025.112370'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Images captured under low-illumination conditions often exhibit low brightness with nonuniform distribution, low contrast, and noise, negatively affecting the human visual experience and the accuracy of image-based computer vision tasks. Enhancing nonuniform low-light images is challenging considering the requirement of simultaneously reducing noise, enhancing low-light regions, and suppressing high-light regions. To address these challenges, we innovatively propose a noise-aware decomposition and adaptive correction method (NDAC) to enhance the nonuniform low-light images without the need for paired high-quality training data. Specifically, a noise-aware image decomposition network (NIDNet) is first presented to decompose the input images into illumination, reflection, and noise components, while suppressing the noise in the reflection component through a variable gradient operator and estimating the noise component. Besides, we devise a novel nonlinear adaptive brightness mapping function (NABM), whose parameters are optimized via a designed automatic light enhancement network (ALENet) to brighten the illumination component. The enhancements are obtained by fusing the noiseless reflection component with the brightened illumination component. Extensive experiments on both public and industrial datasets demonstrate that the proposed NDAC method outperforms state-of-the-art approaches in both qualitative and quantitative evaluations.},
+  archive      = {J_PR},
+  author       = {Jiancai Huang and Zhaohui Jiang and Xingjian Liu and Yap-Peng Tan and Weihua Gui},
+  doi          = {10.1016/j.patcog.2025.112370},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112370},
+  shortjournal = {Pattern Recognition},
+  title        = {Nonuniform low-light image enhancement via noise-aware decomposition and adaptive correction},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Fourier-enhanced semi-supervised proxy learning for ultra-fine-grained novel class discovery. <em>PR</em>, <em>172</em>, 112369. (<a href='https://doi.org/10.1016/j.patcog.2025.112369'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Operating in open-world environments requires recognizing known categories and discovering new ones, especially in ultra-fine-grained task, where distinguishing similar categories is challenging. The task of Ultra-Fine-Grained Novel Class Discovery (UFG-NCD) intensifies this challenge by requiring systems to identify previously unseen classes within unlabeled data. However, existing UFG-NCD methods fall short in extracting critical visual cues and efficiently transferring knowledge from known to novel categories. To overcome these limitations, this paper proposes Fourier-Enhanced Semi-supervised Proxy Learning (FESPL), a novel framework for UFG-NCD. FESPL incorporates a Fourier amplitude guided block that leverages frequency domain analysis to capture high-frequency details often missed by traditional approaches, enhancing ultra-fine-grained discrimination. Additionally, the semi-supervised proxy learning strategy maximizes information extraction from limited labeled data and promotes robust generalization across known and unseen categories. Our approach achieves substantial improvements in both novel category discovery and known category classification on seven popular UFG-NCD datasets, with average performance gains of 10.41 % in the accuracy of the old class and 4.27 % in the accuracy of the new class in task-agnostic evaluation, while with average performance gains of 4.40 % in clustering accuracy on the unlabeled training data in task-aware evaluation.},
+  archive      = {J_PR},
+  author       = {Qiupu Chen and Hongkui Jiang and Lin Jiao and Zhou Li and Taosheng Xu and Xue Wang and Rujing Wang},
+  doi          = {10.1016/j.patcog.2025.112369},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112369},
+  shortjournal = {Pattern Recognition},
+  title        = {Fourier-enhanced semi-supervised proxy learning for ultra-fine-grained novel class discovery},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). An adaptive weighted active contour based HRNet for underwater image segmentation. <em>PR</em>, <em>172</em>, 112368. (<a href='https://doi.org/10.1016/j.patcog.2025.112368'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Acquiring optimal results in underwater environments remains challenging due to light absorption, scattering, and suspended particles. Furthermore, the low-resolution outputs from traditional semantic segmentation often result in spatial information loss and blurred segmentation boundaries. To address these issues, we first propose a low-level image enhancement preprocessing module as an independent preliminary stage to improve underwater image quality, thereby enhancing subsequent high-level semantic segmentation performance. Second, leveraging the region-based active contour model-which is independent of image gradients and adept at handling complex contour topology changes-we design a novel level set function to serve as the level set in the geometric active contour model. While this new level set exhibits formal similarity to classical level sets in representing binary segmentation contours, its formulation is derived from network prediction outputs. Third, we construct an adaptive weighted active contour energy function as a loss function within HRNet for multi-class segmentation. This loss function preserves geometric information while penalizing deviations between network-predicted probabilities and ground truth, effectively mitigating spatial information loss and optimizing boundary. Comparative experiments demonstrate that our model outperforms classical methods on objective metrics including mIoU and mPA.},
+  archive      = {J_PR},
+  author       = {Bo Chen and Jing Ji and Junwei Li and Xiaoli Sun and Feng Gong},
+  doi          = {10.1016/j.patcog.2025.112368},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112368},
+  shortjournal = {Pattern Recognition},
+  title        = {An adaptive weighted active contour based HRNet for underwater image segmentation},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). BORT2: Bi-level optimization for robust target training in multi-source domain adaptation. <em>PR</em>, <em>172</em>, 112367. (<a href='https://doi.org/10.1016/j.patcog.2025.112367'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Both conventional and source-free multi-source domain adaptation (MSDA) tasks often face bias toward source domains, because more numerous labeled data in these domains, compared with a single unlabeled target domain, can dominate the training process. To alleviate the bias, target adaptation techniques train a target model on the pseudo-labeled target domain data only, with the source-domain-biased models used as the labeling function for pseudo-label generation. However, the pseudo labels may contain noise and harm performance when directly used for supervision. To tackle label noise, we introduce a novel Bi-level Optimization for Robust Target Training (BORT 2 ) scheme. BORT 2 trains a noise-robust target model on pseudo-labeled target data only and meanwhile updates the labeling function (i.e., the source-domain-biased models) to improve pseudo-label quality. Specifically, the target model is a stochastic network designed to be robust to label noise. Such a stochastic network exploits a Gaussian distribution to model the feature of each target instance and deploys an entropy maximization regularizer to the Gaussian to quantify the uncertainty of each pseudo-label, where the uncertainty is utilized to mitigate the negative effects of label noise. In addition, BORT 2 leverages the entropy to update the labeling function for better pseudo-label quality. Updating both the labeling function and the stochastic network involves a nested bi-level optimization problem, addressed using implicit differentiation. Extensive experiments demonstrate that BORT 2 achieves state-of-the-art performance for both conventional and source-free MSDA, as verified on Office-Home, Office-Caltech, PACS, Digit-Five, and the large-scale DomainNet datasets.},
+  archive      = {J_PR},
+  author       = {Zhongying Deng and Da Li and Xiaojiang Peng and Yi-Zhe Song and Tao Xiang},
+  doi          = {10.1016/j.patcog.2025.112367},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112367},
+  shortjournal = {Pattern Recognition},
+  title        = {BORT2: Bi-level optimization for robust target training in multi-source domain adaptation},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Ultra-efficient 3D shape reconstruction: Line-coded absolute phase unwrapping algorithm. <em>PR</em>, <em>172</em>, 112366. (<a href='https://doi.org/10.1016/j.patcog.2025.112366'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Absolute phase unwrapping-based fringe projection profilometry (APU-FPP) has the advantages of pixel-wise calculation, high precision, and full-field sensing of 3D shape information. To the best of our knowledge, existing APU-FPP methods have a general contradiction between accuracy and efficiency because of projecting extra auxiliary coded fringes (ACFs). In this paper, a line-coded absolute phase unwrapping (LCAPU) algorithm is presented for absolute 3D shape reconstruction of the scene with non-uniform reflectivity and complex surfaces. Firstly, a sequence of single-pixel lines is successively embedded into two sets of 3-step phase-shifting patterns to mark fringe periods, which can thoroughly avoid extra ACFs to disrupt the coherence of adjacent morphological information. Secondly, two line-coded phase-shifting patterns with the same phase shift are used to recognize the corresponding coded lines containing the fringe order cue, which can be simultaneously used to guide fringe mutual compensation, thereby extracting a high-quality phase. Finally, according to the pixel positions and the fringe indices of the decoded lines, a multi-layer decoding (MLD) algorithm is developed to iteratively generate a fringe order map, which can adapt to the randomness of morphological changes. Compared to other methods, the proposed LCAPU can not only perform a one-shot 3D shape reconstruction with a single image acquisition, but also automatically correct phase errors, balancing ultra-efficiency and high accuracy. Experimental results demonstrate the superior performance and the practical application potential in dynamic complex scenes.},
+  archive      = {J_PR},
+  author       = {Haihua An and Yiping Cao and Hechen Zhang},
+  doi          = {10.1016/j.patcog.2025.112366},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112366},
+  shortjournal = {Pattern Recognition},
+  title        = {Ultra-efficient 3D shape reconstruction: Line-coded absolute phase unwrapping algorithm},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Learning label-specific features for multi-dimensional classification. <em>PR</em>, <em>172</em>, 112365. (<a href='https://doi.org/10.1016/j.patcog.2025.112365'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In multi-dimensional classification (MDC), instances are associated with multiple class variables that are assumed in the output space, and each class variable corresponds to one heterogeneous class space and characterizes the objects’ semantics from one dimension. Learning from MDC examples poses challenges due to the heterogeneity of class spaces, since the outputs from different class spaces are not directly comparable. Moreover, existing approaches often use identical data representation for all labels in a class, which may lead to suboptimal results as each label might be determined by its own specific characteristics. Critically, the inherent incomparability of raw heterogeneous labels prevents existing methods from effectively capturing label correlations, which are essential for guiding feature learning. In this paper, we propose a novel algorithm named LEAD, i.e., learning Label-spEcific feAtures for multi-Dimensional classification. LEAD first resolves label heterogeneity by transforming the original output space into a unified encoded label space through one-hot label encoding. This critical alignment enables explicit extraction of label correlations from the encoded space. To enhance the reliability of the estimation of label correlations, LEAD then leverages feature-space manifold structures via locally linear embedding, propagating labeling information across similar instances to counteract sparsity. Finally, LEAD jointly learns label-specific feature representations and constructs the classifier through sparse learning while incorporating label correlations. Experimental comparisons on fifteen datasets demonstrate that our proposed method outperforms state-of-the-art multi-dimensional classification methods. The code is available at https://github.com/ZhangZan-source/LEAD .},
+  archive      = {J_PR},
+  author       = {Zan Zhang and Jialin Zhou and Jialu Yao and Lin Liu and Jiuyong Li and Lei Li and Xindong Wu},
+  doi          = {10.1016/j.patcog.2025.112365},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112365},
+  shortjournal = {Pattern Recognition},
+  title        = {Learning label-specific features for multi-dimensional classification},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). TSAR: A two-stage approach to motion artifact reduction in OCTA images. <em>PR</em>, <em>172</em>, 112364. (<a href='https://doi.org/10.1016/j.patcog.2025.112364'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Optical Coherence Tomography Angiography (OCTA) is an innovative and non-invasive imaging technique that leverages motion contrast imaging to generate angiographic images from high-resolution volumetric blood flow data rapidly. However, OCTA imaging is vulnerable to various artifacts induced by eye movements, including displacement artifacts, duplicated scanning artifacts, and white line artifacts. Previous methods that attempted to mitigate eye motion artifacts necessitated costly hardware upgrades. However, despite the availability of advanced eye-tracking hardware and software correction in commercial machines, motion artifacts persist in real-world usage. Recently developed cost-effective learning-based methods only focus on the removal of white line artifacts while neglecting the displacement artifacts and duplicated scanning artifacts. To address this challenge, we propose a comprehensive framework, TSAR, to remove three types of eye motion artifacts in OCTA images. In the first stage, we leverage the intrinsic axial and directional attributes of these artifacts in the first phase to develop an innovative hierarchical transformer network. This network is designed to capture global-wise, local-wise, and vertical-wise features effectively while also removing displacement and duplicate scanning artifacts. Afterward, we leverage the contextual information and develop a residual conditional diffusion model (RCDM) to remove the white line artifacts. By applying our TSAR to the degraded OCTA images, we aim to eliminate all three types of motion artifacts. We evaluate the superior performance of our proposed methodology in artifact removal and image quality enhancement compared to other methods by conducting experiments on both synthetic and real-world OCTA images. The code is available at https://github.com/btma48/TSAR},
+  archive      = {J_PR},
+  author       = {Benteng Ma and Xiaomeng Li and Xu Lin and Xiaoyu Bai and Dongping Shao and Chubin Ou and Lin An and Jia Qin and Kwang-Ting Cheng},
+  doi          = {10.1016/j.patcog.2025.112364},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112364},
+  shortjournal = {Pattern Recognition},
+  title        = {TSAR: A two-stage approach to motion artifact reduction in OCTA images},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Quaternionic reweighted amplitude flow for phase retrieval in image reconstruction. <em>PR</em>, <em>172</em>, 112363. (<a href='https://doi.org/10.1016/j.patcog.2025.112363'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Quaternionic signal processing provides powerful tools for efficiently managing color signals by preserving the intrinsic correlations among signal dimensions through quaternion algebra. In this paper, we address the quaternionic phase retrieval problem by systematically developing novel algorithms based on an amplitude-based model. Specifically, we propose the Quaternionic Reweighted Amplitude Flow (QRAF) algorithm, which is further enhanced by three of its variants: incremental, accelerated, and adapted QRAF algorithms. In addition, we introduce the Quaternionic Perturbed Amplitude Flow (QPAF) algorithm, which has linear convergence. Extensive numerical experiments on both synthetic data and real images demonstrate that our proposed methods significantly improve recovery performance and computational efficiency compared to state-of-the-art approaches.},
+  archive      = {J_PR},
+  author       = {Ren Hu and Pan Lian},
+  doi          = {10.1016/j.patcog.2025.112363},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112363},
+  shortjournal = {Pattern Recognition},
+  title        = {Quaternionic reweighted amplitude flow for phase retrieval in image reconstruction},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Robust scene text understanding with OCR token and word alignment for text-VQA and text-caption. <em>PR</em>, <em>172</em>, 112362. (<a href='https://doi.org/10.1016/j.patcog.2025.112362'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To solve vision-language tasks incorporating scene text, such as Text-VQA and Text-Caption, recognizing and understanding scene text within image is the first priority. However, the scene text recognized by Optical Character Recognition (OCR) systems often includes spelling errors, such as “pepsi” being recognized as “peosi”. These OCR errors are one of the major challenges for Text-VQA and Text-Caption systems. To address this, we propose a novel multi-modal OCR Token and Word Alignment (TWA) method to alleviate OCR errors in these tasks. First, we artificially create the misspelled OCR tokens and render them onto the RGB images, which can effectively simulates OCR errors. Second, we propose an OCR token-word contrastive learning task to pre-train OCR token representation, making the system more robust to OCR errors. Finally, we introduce a vocabulary predictor with character-level semantic matching, which enables the model to recover the correct word from the vocabulary even with misspelled OCR tokens. A variety of experimental evaluations demonstrate that our method outperforms the state-of-the-art methods on both Text-VQA and Text-Caption datasets.},
+  archive      = {J_PR},
+  author       = {Zan-Xia Jin and Pinle Qin and Suzhen Lin and Jia Qin and Shuangjiao Zhai and Jianchao Zeng and Xu-Cheng Yin},
+  doi          = {10.1016/j.patcog.2025.112362},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112362},
+  shortjournal = {Pattern Recognition},
+  title        = {Robust scene text understanding with OCR token and word alignment for text-VQA and text-caption},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Prior tokenization-based interactive segmentation with vision transformers. <em>PR</em>, <em>172</em>, 112361. (<a href='https://doi.org/10.1016/j.patcog.2025.112361'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Effectively leveraging the provided priors is crucial for interactive segmentation. Existing approaches typically encode clicks via distance-based maps, which are then concatenated or added to the original image as network input. However, these methods do not fully exploit the semantic information embedded in the provided priors, leading to confusion in the feature distribution of different targets and reducing the segmentation quality. To address this issue, we propose a prior tokenization-based interactive segmentation method that uses simple Vision Transformers. By extending the original image tokens with prior tokens, each token represents the semantic features of the foreground and background related to the priors. These tokens participate in the self-attention operation alongside regular image tokens, gradually extracting semantic features from the image tokens to the prior tokens. In addition, we introduce a discriminative loss function to enforce inter-class separation and intra-class compactness of the prior tokens. Subsequently, we employ a cross-attention mechanism to couple the prior tokens with the regular image block token features, ensuring that the features extracted by the network are aligned with the user’s intent. Finally, we use the register method to suppress artifacts and enhance the segmentation performance further. Extensive experiments demonstrate that our method achieves superior interaction efficiency, robustness, and generalization ability across various medical image segmentation benchmarks. The source codes are available at https://github.com/dzyha2011/PT-SimpleClick},
+  archive      = {J_PR},
+  author       = {Zongyuan Ding and Boyu Wang and Hongyuan Wang and Tao Wang},
+  doi          = {10.1016/j.patcog.2025.112361},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112361},
+  shortjournal = {Pattern Recognition},
+  title        = {Prior tokenization-based interactive segmentation with vision transformers},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). CTNet: Color transformation network for low-light image enhancement. <em>PR</em>, <em>172</em>, 112360. (<a href='https://doi.org/10.1016/j.patcog.2025.112360'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Low-light images are often plagued by low visibility, poor contrast, and high noise levels, which significantly impair both subjective visual quality and the performance of downstream tasks. Existing enhancement methods typically struggle with color-related degradations such as color casting, artifacts, and distortion. To address these challenges, we propose an end-to-end Color Transformation Network for low-light image enhancement, with a specific focus on improving color restoration. By leveraging the complementary strengths of the HSV and RGB color spaces in capturing color attributes, our approach enables effective interaction between these color spaces at the feature level. The HSV branch simultaneously enhances the V component while extracting features from the H and S components, thereby providing a more comprehensive set of cues for color recovery. To facilitate interaction, we design a learnable Color Transformation Block that bridges the HSV and RGB feature domains, effectively simulating the HSV-to-RGB conversion. Furthermore, a Cross-Integration Block, employing an attention-based cross-guidance mechanism, enables bi-directional information flow between the two color spaces. Extensive experiments on both real and synthetic datasets demonstrate that our method achieves superior performance, surpassing existing approaches both qualitatively and quantitatively. The project is available at https://github.com/1013990424/CTNet .},
+  archive      = {J_PR},
+  author       = {Lidong Xie and Runmin Cong and Ju Dai and Wenhan Yang and Junjun Pan and Hao Wu},
+  doi          = {10.1016/j.patcog.2025.112360},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112360},
+  shortjournal = {Pattern Recognition},
+  title        = {CTNet: Color transformation network for low-light image enhancement},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Cross-channel blur invariants of color and multispectral images. <em>PR</em>, <em>172</em>, 112358. (<a href='https://doi.org/10.1016/j.patcog.2025.112358'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The paper deals with the recognition of blurred color/multispectral images directly without any deblurring. We present a general theory of invariants of multispectral images with respect to blur. The paper is a significant non-trivial extension of the recent theory of blur invariants of graylevel images. The main original contribution of the paper lies in introducing cross-channel blur invariants in Fourier domain. We also developed an algorithm for their stable and fast calculation in the moment domain. Moreover, the cross-channel invariants can be found for blurs for which single-channel invariants do not exist. The experiments on simulated and real data demonstrate that incorporating the new cross-channel invariants significantly improves the recognition power and surpasses other existing approaches. The outlook for a possible implementation of the blur invariants into neural networks is briefly sketched in the conclusion.},
+  archive      = {J_PR},
+  author       = {Václav Košík and Jan Flusser and Filip Šroubek},
+  doi          = {10.1016/j.patcog.2025.112358},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112358},
+  shortjournal = {Pattern Recognition},
+  title        = {Cross-channel blur invariants of color and multispectral images},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). UniForCE: The unimodality forest method for clustering and estimation of the number of clusters. <em>PR</em>, <em>172</em>, 112357. (<a href='https://doi.org/10.1016/j.patcog.2025.112357'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Estimating the number of clusters k while clustering the data is a challenging task. An incorrect cluster assumption indicates that the number of clusters k gets wrongly estimated. Consequently, the model fitting becomes less important. In this work, we focus on the concept of unimodality and propose a flexible cluster definition called locally unimodal cluster . A locally unimodal cluster extends for as long as unimodality is locally preserved across pairs of subclusters of the data. Then, we propose the UniForCE method for locally unimodal clustering. The method starts with an initial overclustering of the data and relies on the unimodality graph that connects subclusters forming unimodal pairs. Such pairs are identified using an appropriate statistical test. UniForCE identifies maximal locally unimodal clusters that are statistically significant by computing a spanning forest in the unimodality graph. Experimental results on both real and synthetic datasets illustrate that the proposed methodology is particularly flexible and robust in discovering regular and highly complex cluster shapes. Most importantly, it automatically provides an adequate estimation of the number of clusters.},
+  archive      = {J_PR},
+  author       = {Georgios Vardakas and Argyris Kalogeratos and Aristidis Likas},
+  doi          = {10.1016/j.patcog.2025.112357},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112357},
+  shortjournal = {Pattern Recognition},
+  title        = {UniForCE: The unimodality forest method for clustering and estimation of the number of clusters},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). SequencePAR: Understanding pedestrian attributes via a sequence generation paradigm. <em>PR</em>, <em>172</em>, 112356. (<a href='https://doi.org/10.1016/j.patcog.2025.112356'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Current pedestrian attribute recognition (PAR) algorithms use multi-label or multi-task learning frameworks with specific classification heads. These models often struggle with imbalanced data and noisy samples. Inspired by the success of generative models, we propose Sequence Pedestrian Attribute Recognition (SequencePAR), a novel sequence generation paradigm for PAR. SequencePAR extracts pedestrian features using a language-image pre-trained model and embeds the attribute set into query tokens guided by text prompts. A Transformer decoder generates human attributes by integrating visual features and attribute query tokens. The masked multi-head attention layer in the decoder prevents the model from predicting the next attribute during training. The extensive experiments on multiple PAR datasets validate the effectiveness of SequencePAR. Specifically, we achieve 84.92 %, 90.44 %, 90.73 %, and 90.46 % in accuracy, precision, recall, and F1-score on the PETA dataset.},
+  archive      = {J_PR},
+  author       = {Jiandong Jin and Xiao Wang and Yin Lin and Chenglong Li and Lili Huang and Aihua Zheng and Jin Tang},
+  doi          = {10.1016/j.patcog.2025.112356},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112356},
+  shortjournal = {Pattern Recognition},
+  title        = {SequencePAR: Understanding pedestrian attributes via a sequence generation paradigm},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Discriminative attention based weighted sparse representation of visual objects in complex scenarios. <em>PR</em>, <em>172</em>, 112354. (<a href='https://doi.org/10.1016/j.patcog.2025.112354'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sparse subspace representation (SSR) is an attractive technique for subspace segmentation of high-dimensional data through a self-representation manner to reveal its algebraic structure. Numerous generalizations of SSR have been developed to meet different applications. However, a fatal limitation in those extensions is their neglect of feature weights in visual samples, which play crucial roles in segmenting or recognizing specific objects. This paper introduces a discriminative attention based weighted SSR model to tackle visual objects. In the proposed model, the prior information is empirically constructed for intra-cluster features and inter-cluster ones, aided by the sparse representation of samples. An attention mechanism is introduced to learn weights of features of samples. The attention based weights of objects in samples and sparse representation of samples are collaboratively learned from the prior information. A hard version and a soft one of attention based sparse subspace representation, abbreviated as HDAWSSR and SDAWSSR, are specified by assigning attention of features by a Boolean matrix and a fuzzy matrix. Algorithms for solving both models are meticulously developed, respectively. Applications of both algorithms in clustering and moving object detection within high-dimensional image data are investigated. Experimental results show that both models outperform the state-of-the-art subspace based segmentation methods.},
+  archive      = {J_PR},
+  author       = {Ge Yang and Tingquan Deng and Ming Yang and Changzhong Wang},
+  doi          = {10.1016/j.patcog.2025.112354},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112354},
+  shortjournal = {Pattern Recognition},
+  title        = {Discriminative attention based weighted sparse representation of visual objects in complex scenarios},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Multi-scale feature sharing and collaborative sampling for unsupervised vehicle re-identification. <em>PR</em>, <em>172</em>, 112353. (<a href='https://doi.org/10.1016/j.patcog.2025.112353'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Vehicle Re-identification (Re-ID) retrieves target vehicle images from non-overlapping cameras. To address label noise in pseudo-labels, we propose the Multi-scale Feature Sharing and Collaborative Sampling (MFSCS) method. Specifically, the designed multi-scale feature sharing module moves beyond reliance on global features, efficiently promoting the exchange of characteristics between global and local aspects. This shared feature approach collectively mitigates the label noise arising from clustering. Recognizing that clustering methods are highly sensitive to outliers, we introduce a collaborative sampling module that cooperatively combines samples in the clustering process before training the model. This cooperative sampling module is better equipped to handle outliers in the samples and update label information more efficiently. As a result, it asymptotically improves the accuracy and stability of the model. The effectiveness of the proposed method in terms of performance is demonstrated through extensive experiments conducted on both the latest challenging truck Re-ID dataset, Truck-ID and VeRi-776.},
+  archive      = {J_PR},
+  author       = {Jia-Jia Li and Si-Bao Chen and Chris Ding and Bin Luo},
+  doi          = {10.1016/j.patcog.2025.112353},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112353},
+  shortjournal = {Pattern Recognition},
+  title        = {Multi-scale feature sharing and collaborative sampling for unsupervised vehicle re-identification},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). You look from old classes: Towards accurate few shot class-incremental learning. <em>PR</em>, <em>172</em>, 112352. (<a href='https://doi.org/10.1016/j.patcog.2025.112352'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Few-shot class incremental learning (FSCIL) is a common but difficult task that faces two challenges: catastrophic forgetting of old classes and insufficient learning of new classes with limited samples. Recent wisdom focuses on preventing catastrophic forgetting yet overlooks the limited samples issue, resulting in poor new class performance. In this paper, we argue that old class samples contain rich knowledge, which can be exploited to supplement the learning of new classes. To this end, we propose to Look from Old Classes (YLOC) for FSCIL, enhancing both the base and incremental sessions. In the base session, we develop a prototype centered loss (PCL) to obtain a compact distribution of old classes. During incremental sessions, we devise a prototype augmentation learning (PAL) method to aid the learning of new classes by exploiting old classes. Extensive experiments on three FSCIL benchmark datasets demonstrate the superiority of our method.},
+  archive      = {J_PR},
+  author       = {Yijie Hu and Kaizhu Huang and Wei Wang and Xiaowei Huang and Qiufeng Wang},
+  doi          = {10.1016/j.patcog.2025.112352},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112352},
+  shortjournal = {Pattern Recognition},
+  title        = {You look from old classes: Towards accurate few shot class-incremental learning},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Dual-decoder collaborative learning with multi-hybrid view augmentation for self-supervised 3D action recognition. <em>PR</em>, <em>172</em>, 112351. (<a href='https://doi.org/10.1016/j.patcog.2025.112351'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Self-supervised methods, including contrastive learning and masked skeleton modeling, have demonstrated considerable potential in the field of skeleton-based action recognition. While contrastive learning captures fine-grained details at the instance level, masked skeleton modeling emphasizes joint-level features. Recent studies have begun to combine these two approaches. However, existing combination methods primarily focus on integrating the tasks within the skeleton space. Moreover, existing contrastive learning methods often fail to exploit the comprehensive interaction information in skeletal structures, resulting in suboptimal performance when recognizing actions involving multiple individuals. To overcome these limitations, we introduce the Dual-Decoder Collaborative Learning (DDC) with Multi-Hybrid View Augmentation (MHGNA) method, which connects these two tasks across multiple spaces. Specifically, the masked skeleton modeling task provides diverse views for the contrastive learning task in the skeleton space, while the contrastive method aligns the features generated by both tasks within the feature space. We further present an innovative view augmentation method that enhances the model’s capacity to understand human interaction relationships by shuffling and replacing data across temporal, spatial, and personal dimensions. Extensive experiments on four downstream tasks across three large-scale datasets demonstrate that DDC exhibits stronger representational capabilities compared to state-of-the-art methods. Our code is available at https://github.com/Yingfei-Wu/DDC .},
+  archive      = {J_PR},
+  author       = {Wenming Cao and Yingfei Wu and Xinpeng Yin},
+  doi          = {10.1016/j.patcog.2025.112351},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112351},
+  shortjournal = {Pattern Recognition},
+  title        = {Dual-decoder collaborative learning with multi-hybrid view augmentation for self-supervised 3D action recognition},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). TBiGAN-based parallel networks for remaining useful life prediction of multi-stage degraded bearings. <em>PR</em>, <em>172</em>, 112349. (<a href='https://doi.org/10.1016/j.patcog.2025.112349'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate prediction of the remaining useful life (RUL) of rolling bearings is crucial for ensuring the safe and reliable operation of rotating machinery. However, existing methods generally overlook the correlation between different degradation stages and RUL, thereby limiting the accuracy of RUL prediction for rolling bearings. To address this challenge, a novel adaptive RUL prediction method for multi-stage degrading rolling bearings is proposed. Specifically, a new Transformer-based network is designed to classify the degradation stages of bearings. Additionally, a parallel RUL prediction model incorporating attention mechanisms is introduced, which integrates Temporal Convolutional Networks (TCN) and Bidirectional Gated Recurrent Units (BiGRU) to capture degradation features from multiple dimensions automatically and enhance the model’s ability to capture long-term dependencies in sequence tasks. Finally, the RUL prediction results from different stages are adaptively integrated using a smoothing technique to generate the final RUL. The accuracy and superiority of the proposed method are validated on the PHM2012 bearing dataset.},
+  archive      = {J_PR},
+  author       = {Zheng Jianfei and Chen Dongnan and Hu Changhua and Han Qihui and Pei Hong},
+  doi          = {10.1016/j.patcog.2025.112349},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112349},
+  shortjournal = {Pattern Recognition},
+  title        = {TBiGAN-based parallel networks for remaining useful life prediction of multi-stage degraded bearings},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). MChartQA and mChartQABench: A multimodal-only solution for complex chart question-answering. <em>PR</em>, <em>172</em>, 112348. (<a href='https://doi.org/10.1016/j.patcog.2025.112348'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multimodal chart question-answering (QA) is essential for applications such as financial report analysis, decision support, and invoice parsing. Current methods typically convert charts to text for processing by large language models (LLMs) or use direct multimodal processing. This raises an important question: under what conditions is a multimodal approach essential for chart question-answering? We observe that these traditional approaches often struggle with complex color patterns, structural intricacies, and implicit numerical data. Yet, limited research addresses these challenges. To bridge this gap, we introduce a new multimodal chart dataset, mChartQABench, constructed by consolidating data from existing open-source datasets to address challenges with color, structure, and textless chart data. To handle these complex multimodal scenarios effectively, we propose mChartQA, a framework integrating the advanced language processing of LLMs with a state-of-the-art table-to-text engine. This framework excels in aligning visual and textual data, enhancing deep reasoning and contextual understanding within charts. Experimental results show that mChartQA achieves superior performance across four datasets, with over 20 % overall accuracy improvement on mChartQABench.},
+  archive      = {J_PR},
+  author       = {Jingxuan Wei and Nan Xu and Guiyong Chang and Yin Luo and Bihui Yu and Ruifeng Guo},
+  doi          = {10.1016/j.patcog.2025.112348},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112348},
+  shortjournal = {Pattern Recognition},
+  title        = {MChartQA and mChartQABench: A multimodal-only solution for complex chart question-answering},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Copula-based conformal prediction for prioritized heterogeneous multi-task learning. <em>PR</em>, <em>172</em>, 112347. (<a href='https://doi.org/10.1016/j.patcog.2025.112347'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Conformal prediction (CP) has emerged as a standard for finite-sample and distribution-free uncertainty quantification (UQ). Although CP is widely used as a post-processing step (on the outputs of machine learning models) to produce reliable set-valued predictions, it is still challenging to post-process heterogeneous (i.e., categorical & numerical) predictions since the traditional CP procedures are either exclusively designed for classification or only tailored to regression. This article proposes the use of a simple yet novel copula-based CP method that jointly produces (discrete) set-valued predictions and (continuous) interval-valued predictions. This approach offers flexibility by allowing the prioritization of specific outputs’ reliability and applies to general heterogeneous multi-task problems. We demonstrate its effectiveness in the context of autonomous driving, on two popular multi-class object detection benchmarks, where it effectively infers set values for object classes and bounding boxes with the specified confidence levels. Experimental results validate our method’s ability in handling heterogeneous multi-task conformal predictions: we achieve high confidence levels without losing the informativeness of the prediction regions.},
+  archive      = {J_PR},
+  author       = {Bruce Cyusa Mukama and Soundouss Messoudi and Sébastien Destercke and Sylvain Rousseau},
+  doi          = {10.1016/j.patcog.2025.112347},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112347},
+  shortjournal = {Pattern Recognition},
+  title        = {Copula-based conformal prediction for prioritized heterogeneous multi-task learning},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). A deep spatio-temporal architecture for dynamic ECN analysis with granger causality based causal discovery. <em>PR</em>, <em>172</em>, 112346. (<a href='https://doi.org/10.1016/j.patcog.2025.112346'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neurobrain science provides the motivation for research on causal modeling. The existing causal discovery methods have shown promising results in effective connectivity network analysis, however, they often overlook the dynamics of causality, in addition to the incorporation of spatio-temporal information in data. Dynamic effective connectivity networks (dECNs) reveal the changing directed brain activity and the dynamic causal influences among brain regions, which facilitate the identification of individual differences and enhance the understanding of human brain. To learn dynamic causality, we propose a deep spatio-temporal fusion architecture, which employs a dynamic causal deep encoder to incorporate spatio-temporal information into dynamic causality modeling, and a dynamic causal deep decoder to verify the discovered causality. The effectiveness of the proposed method is first illustrated with simulated data. Then, experimental results from Philadelphia Neurodevelopmental Cohort (PNC) demonstrate the superiority of the proposed method in inferring dECNs, which reveal the dynamic evolution of directed flow between brain regions. The analysis shows the difference of dECNs between young adults and children. Specifically, the directed brain functional networks transit from fluctuating undifferentiated systems to more stable specialized networks as one grows. This observation provides further evidence on the modularization and adaptation of brain networks during development, leading to higher cognitive abilities observed in young adults.},
+  archive      = {J_PR},
+  author       = {Faming Xu and Yiding Wang and Gang Qu and Vince D. Calhoun and Julia M. Stephen and Tony W. Wilson and Yu-Ping Wang and Chen Qiao},
+  doi          = {10.1016/j.patcog.2025.112346},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112346},
+  shortjournal = {Pattern Recognition},
+  title        = {A deep spatio-temporal architecture for dynamic ECN analysis with granger causality based causal discovery},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Unsupervised domain adaptation via style-aware self-intermediate domain. <em>PR</em>, <em>172</em>, 112344. (<a href='https://doi.org/10.1016/j.patcog.2025.112344'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unsupervised Domain Adaptation (UDA) has garnered significant attention for its ability to transfer knowledge from a label-rich source domain to a related but unlabeled target domain, with minimizing inter-domain discrepancies being crucial, especially when a substantial gap exists between the domains. To address this, we introduce the novel Style-aware Self-Intermediate Domain (SSID), which effectively bridges large domain gaps by facilitating knowledge transfer while preserving class-discriminative information. Inspired by human transitive inference and learning capabilities, SSID connects seemingly unrelated concepts through a sequence of intermediate, auxiliary synthesized concepts. Meanwhile, an external memory bank is designed to store and update designated labeled features, ensuring the stability of class-specific and class-wise style features. Additionally, we also proposed a novel intra- and inter-domain loss functions that enhance class recognition and feature compatibility, with their convergence rigorously validated through a novel analytical approach. Comprehensive experiments demonstrate that SSID achieves accuracies of 85.4 % and 85.3 % on two widely recognized UDA benchmarks, outperforming the second-best methods by 0.94 % and 1.17 %, respectively. As a plug-and-play solution, SSID integrates seamlessly with various backbone networks, showcasing its effectiveness and versatility in domain adaptation scenarios.},
+  archive      = {J_PR},
+  author       = {Lianyu Wang and Meng Wang and Daoqiang Zhang and Huazhu Fu},
+  doi          = {10.1016/j.patcog.2025.112344},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112344},
+  shortjournal = {Pattern Recognition},
+  title        = {Unsupervised domain adaptation via style-aware self-intermediate domain},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Enhancing visual representation of untrimmed videos by counteracting visuality threatening content. <em>PR</em>, <em>172</em>, 112343. (<a href='https://doi.org/10.1016/j.patcog.2025.112343'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the remarkable growth of the video platform industry and the surge in video uploads, Content-Based Video Retrieval (CBVR), which finds videos on desired topics from a collection of untrimmed videos using solely the visual modality, is gaining increased attention. However, the challenge of accurate retrieval persists due to the varied and complex content in untrimmed videos, and there has been a lack of discussion on which types of content compromise visual representations. In this paper, we found that text and blur texture are of this nature, grounded in empirical observations. Indeed, in models focusing on the visual modality, both the visual structure of text (without semantics) and the smoothness of blur texture (with few edges and corners) interfere with decision-making. To address them, we propose two strategies: text-masking learning, which excludes the effect of text in the descriptor for inputs that may contain text content, and blur texture filtering, a re-scaling strategy that mitigates the impact of blur textures by exploiting the neural network’s insensitivity to the smoothed pixel-wise gradients. Furthermore, through empirical observations, we demonstrate that our proposed method effectively handles visuality-threatening content. Additionally, we show that our method can lead to state-of-the-art performance across multiple benchmarks of untrimmed videos.},
+  archive      = {J_PR},
+  author       = {Gwangjin Lee and Won Jo and Hyunwoo Kim and Yukyung Choi},
+  doi          = {10.1016/j.patcog.2025.112343},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112343},
+  shortjournal = {Pattern Recognition},
+  title        = {Enhancing visual representation of untrimmed videos by counteracting visuality threatening content},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Texture-aware transformer with pose-patch mapping for occluded person re-identification. <em>PR</em>, <em>172</em>, 112341. (<a href='https://doi.org/10.1016/j.patcog.2025.112341'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Occluded person re-identification (re-ID) aims to retrieve the target person from occluded images captured by different cameras, where the challenges lie in identity loss caused by different types of occlusion. To alleviate the occlusion interference, some methods rely on external clues or generate more occlusion samples. However, these methods fail to address the issues of pose misalignment under extreme occlusion and identity confusion caused by non-target pedestrian occlusion. To solve these problems, we design a novel T exture-Aware T ransformer with P ose-Patch M apping (TTPM), which does not require generating any occlusion samples. Specifically, a Multi-patch Feature Encoder is proposed to encode discriminative features from inter patches and intra patches. Afterwards, the Pose-Patch Mapping is designed to construct a positional mapping between poses and patches, which highlights human patches and weakens the impact of occluded patches. Finally, to mitigate the non-target pedestrian occlusion, a Texture-Aware Decoder is introduced to perceive texture features and leverage their distinctiveness to enhance the representation of important regions. Extensive experiments show that our method achieves state-of-the-art results on Occluded-Duke and Occluded-REID datasets.},
+  archive      = {J_PR},
+  author       = {Dengwen Wang and Guanyu Xing and Yanli Liu},
+  doi          = {10.1016/j.patcog.2025.112341},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112341},
+  shortjournal = {Pattern Recognition},
+  title        = {Texture-aware transformer with pose-patch mapping for occluded person re-identification},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). An efficient community-aware pre-training method for graph neural networks. <em>PR</em>, <em>172</em>, 112340. (<a href='https://doi.org/10.1016/j.patcog.2025.112340'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {While graph neural networks (GNNs) have demonstrated widespread success in various domains, their pre-training techniques lag behind those in computer vision and natural language processing, typically exhibiting limited performance gains and high computational costs. This paper introduces Community-Aware Pre-training (CAP), a novel approach that leverages the inherent community structures prevalent in real-world networks to enhance GNN pre-training efficiency and effectiveness. CAP employs a self-supervised contrastive learning framework to learn node representations that are highly discriminative of their respective communities. To further optimize the pre-training process, we introduce a Monte Carlo Tree Search-based community sampler that efficiently extracts representative subgraphs, mitigating noise and enhancing sample quality. CAP is versatile and can be applied to a broad range of node classification tasks due to the commonly existing community structures within networks. Extensive evaluations on diverse node classification benchmarks demonstrate that CAP consistently outperforms state-of-the-art methods, achieving accuracy improvements of up to 4.34 % while significantly reducing pre-training time by up to 14.87 times compared to existing techniques. Furthermore, CAP enhances the predictive confidence and visualization distinctiveness of node representations, paving a new path for effective and efficient GNN pre-training.},
+  archive      = {J_PR},
+  author       = {Zhenhua Huang and Wenhao Zhou and Yihang Jiang and Zhaohong Jia and Linyuan Lü and Yunjie Ma},
+  doi          = {10.1016/j.patcog.2025.112340},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112340},
+  shortjournal = {Pattern Recognition},
+  title        = {An efficient community-aware pre-training method for graph neural networks},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). DiffTrajectory: Mitigating cumulative errors and enhancing inference efficiency in diffusion-based trajectory prediction. <em>PR</em>, <em>172</em>, 112339. (<a href='https://doi.org/10.1016/j.patcog.2025.112339'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Diffusion models have made significant progress in trajectory prediction tasks but still face several critical challenges. The ordinary differential equation (ODE) solving methods used in standard diffusion models often suffer from error accumulation during multi-step iterations. Additionally, the denoising process is highly time-consuming due to the large number of computational steps, which significantly hinders inference efficiency and makes real-time applications challenging. To address these issues, we propose a diffusion-based method, DiffTrajectory, which integrates the Runge-Kutta (RK4) method, a Leap Initializer Module (LIM), and an Adaptive Dynamic Step-size Strategy (ADSS) to enhance generation accuracy and greatly optimize inference efficiency. Specifically, to tackle the problem of error accumulation, DiffTrajectory formalizes the denoising process as an ODE-solving problem and adopts the RK4 as a numerical solution. By computing multiple intermediate points at each iteration, this approach significantly reduces error accumulation. To improve the efficiency of the denoising process, DiffTrajectory introduces LIM, which leverages a pre-trained initial model to quickly generate a high-quality starting point for denoising, thereby reducing the computational burden during the initial denoising stages. Furthermore, we design the ADSS that adjusts the step size dynamically based on the results of each denoising stage, ensuring the quality of the generated results while substantially shortening inference time. Extensive experiments on the ETH/UCY and NBA datasets demonstrate that DiffTrajectory achieves substantial improvements in both accuracy and efficiency.},
+  archive      = {J_PR},
+  author       = {Chengcheng Li and Luqi Gong and Leiheng Xu and Xin Wang},
+  doi          = {10.1016/j.patcog.2025.112339},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112339},
+  shortjournal = {Pattern Recognition},
+  title        = {DiffTrajectory: Mitigating cumulative errors and enhancing inference efficiency in diffusion-based trajectory prediction},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). A mondrian conformal predictive system with improved decision trees for uncertainty quantification under heteroscedasticity. <em>PR</em>, <em>172</em>, 112338. (<a href='https://doi.org/10.1016/j.patcog.2025.112338'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the increasing application of machine learning in industrial production, model uncertainty quantification has become a critical tool to evaluate the prediction reliability and guide decision-making. The Conformal Predictive System (CPS), which generates Cumulative Distribution Functions (CDFs), provides valuable support for uncertainty quantification. However, CPS faces limitations when addressing heteroskedasticity. This paper proposes a Mondrian Conformal Predictive System (LWT-MCPS) based on an enhanced Decision Tree. The proposed approach constructs decision trees using splitting criteria derived from Levene’s test and Welch’s t -test, ensuring that the variance and mean within each partition remain as homogeneous as possible. Furthermore, it incorporates predicted values and prediction variances estimated using the k -Nearest Neighbors (KNN) as splitting features, effectively mitigating the impact of high-dimensional data on tree partitioning and enhancing the model’s ability to identify heterogeneous regions. Experiments conducted on simulated data, public datasets, and blast furnace ironmaking data demonstrate that LWT-MCPS generates CDFs with lower Continuous Ranked Probability Scores (CRPS) than traditional CPS. These results validate its significant advantages in addressing heteroskedasticity challenges.},
+  archive      = {J_PR},
+  author       = {Ruiyao Zhang and Ping Zhou},
+  doi          = {10.1016/j.patcog.2025.112338},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112338},
+  shortjournal = {Pattern Recognition},
+  title        = {A mondrian conformal predictive system with improved decision trees for uncertainty quantification under heteroscedasticity},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Spatial multi-semantic features guided spectral-friendly transformer network for hyperspectral image classification. <em>PR</em>, <em>172</em>, 112337. (<a href='https://doi.org/10.1016/j.patcog.2025.112337'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hyperspectral image classification (HSIC) is a foundational topic in remote sensing. However, the high correlations between bands and the spectral correlations often result in redundant data. Moreover, traditional convolutional neural networks (CNNs) compress spatial dimensions through pooling layers or strides during spatial information extraction, resulting in the loss of spatial information. To overcome these challenges, we propose a spatial multi-semantic features guided spectral-friendly Transformer network (SFTN), which effectively extracts the spectral and spatial features of HSIs. Specifically, a multi-semantic spatial attention (MsSA) module applies unidirectional spatial compression along the height and width dimensions. Thus, this module maintains spatial structure in one direction while aggregating global spatial information, thereby minimizing information loss during compression. It then employs multi-scale depth-shared 1D convolutions to capture multi-semantic spatial information. Furthermore, the spectral-friendly Transformer replaces the traditional multi-head self-attention (MHSA) with spectral correlation self-attention (ECSa), which effectively captures spectral differences and thus reduces the redundancy of spectral information. Extensive experiments on several HSI datasets show that the proposed SFTN method outperforms other state-of-the-art methods in HSIC applications. The source code for this work will be released later.},
+  archive      = {J_PR},
+  author       = {Xiaoyan Yu and Mingzhu Tai and Yuyang Wang and Zhenqiu Shu and Liehuang Zhu},
+  doi          = {10.1016/j.patcog.2025.112337},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112337},
+  shortjournal = {Pattern Recognition},
+  title        = {Spatial multi-semantic features guided spectral-friendly transformer network for hyperspectral image classification},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Backdoor defense based on adversarial prediction proximity and contrastive knowledge distillation. <em>PR</em>, <em>172</em>, 112336. (<a href='https://doi.org/10.1016/j.patcog.2025.112336'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep neural networks (DNNs) have become indispensable across various fields; however, their susceptibility to backdoor attacks poses significant security risks. In this paper, we propose a backdoor defense scheme based on adversarial prediction proximity and contrastive knowledge distillation. This scheme not only detects poisoned models and labels but also effectively unlearns backdoors while preserving the model’s benign functionality. Based on the observation that untargeted adversarial examples and poisoned samples exhibit proximity in feature space within poisoned models (i.e., adversarial prediction proximity), we first detect backdoors by analyzing changes in the prediction behavior of untargeted adversarial examples for models before and after fine-tuning. Next, we purify the poisoned model using a triplet loss that incorporates clean samples and untargeted adversarial examples. This process is guided by contrastive knowledge distillation, where a fine-tuned model acts as a “benign teacher”, and a backdoor-retained model serves as a “malicious teacher”, encouraging the poisoned model to align its feature representations with clean behavior. Comprehensive experimental results demonstrate that our scheme achieves high accuracy in detecting poisoned models and labels, even with limited access to clean samples. Furthermore, our scheme provides effective backdoor purification, while preserving the integrity and performance of models.},
+  archive      = {J_PR},
+  author       = {Lin Huang and Leo Yu Zhang and Ching-Chun Chang and Wei Wang and Chuan Qin},
+  doi          = {10.1016/j.patcog.2025.112336},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112336},
+  shortjournal = {Pattern Recognition},
+  title        = {Backdoor defense based on adversarial prediction proximity and contrastive knowledge distillation},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Multi-target federated backdoor attack based on feature aggregation. <em>PR</em>, <em>172</em>, 112333. (<a href='https://doi.org/10.1016/j.patcog.2025.112333'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Current federated backdoor attacks focus on collaboratively training backdoor triggers, where multiple compromised clients train their local trigger patches and then merge them into a global trigger during the inference phase. However, these methods require careful design of the shape and position of trigger patches and lack the feature interactions between trigger patches during training, resulting in poor backdoor attack success rates. Moreover, the pixels of the patches remain untruncated, thereby making abrupt areas in backdoor examples easily detectable by the detection algorithm. To this end, we propose a novel benchmark for the federated backdoor attack based on feature aggregation. Specifically, we align the dimensions of triggers with images, constrain the trigger’s pixel boundaries so that it is within a small range to avoid being detected, and aggregate trigger features from multiple compromised clients to enhance the global trigger’s ability to capture distributed data patterns. Furthermore, leveraging the intra-class attack strategy to train specific triggers for each class of samples, we propose the simultaneous generation of backdoor triggers for all target classes, significantly reducing the overall production time for triggers across all target classes and increasing the risk of the federated model being attacked. Experiments demonstrate that our method can not only bypass the detection of defense methods while patch-based methods fail, but also achieve a zero-shot backdoor attack with a success rate of 77.39 %. To the best of our knowledge, our work is the first to implement such a zero-shot attack in federated learning. Finally, we evaluate attack performance by varying the trigger’s training factors, including poison location, ratio, pixel bound, and trigger training duration (local epochs and communication rounds).},
+  archive      = {J_PR},
+  author       = {Lingguag Hao and Kuangrong Hao and Bing Wei and Xue-Song Tang},
+  doi          = {10.1016/j.patcog.2025.112333},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112333},
+  shortjournal = {Pattern Recognition},
+  title        = {Multi-target federated backdoor attack based on feature aggregation},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). A query-driven twin network framework with optimization-based meta-learning for few-shot hyperspectral image classification. <em>PR</em>, <em>172</em>, 112331. (<a href='https://doi.org/10.1016/j.patcog.2025.112331'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep learning has achieved remarkable results in hyperspectral image (HSI) classification due to its powerful deep feature extraction and nonlinear relationship processing capabilities. However, the success of deep learning methods is largely dependent on extensive labeled samples, which is both time-consuming and labor-intensive. To address this issue, a novel query-driven meta-learning twin network (QMTN) framework is proposed for HSI few-shot learning. QMTN uses two meta-learning channels, allowing for the comprehensive learning of meta-knowledge across diverse meta-tasks and enhancing learning efficiency. Within the QMTN framework, a lightweight spectral-spatial attention residual network is proposed for extraction of HSI features. The network incorporates a residual mechanism in both spectral and spatial feature extraction processes and includes an attention block to improve network performance by focusing on key locations in the spatial features. To maximize the use of the limited samples for constructing diverse meta-tasks, two meta-task generation approaches are employed, with and without simulated noise. Experiments on three public HSI datasets demonstrate that the QMTN framework effectively reduces the dependence on labeled samples in a single scene and significantly improves the classification performance and convergence of the internal network. The meta-task generation method with simulated noise can improve the classification performance of the QMTN.},
+  archive      = {J_PR},
+  author       = {Jian Zhu and Pengxin Wang and Jian Hui and Xin Ye},
+  doi          = {10.1016/j.patcog.2025.112331},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112331},
+  shortjournal = {Pattern Recognition},
+  title        = {A query-driven twin network framework with optimization-based meta-learning for few-shot hyperspectral image classification},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Reliable classification through rank-based conformal prediction sets. <em>PR</em>, <em>172</em>, 112330. (<a href='https://doi.org/10.1016/j.patcog.2025.112330'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Machine learning classification tasks often benefit from predicting a set of possible labels with confidence scores to capture uncertainty. However, existing methods struggle with the high-dimensional nature of the data and the lack of well-calibrated probabilities from modern classification models. We propose a novel conformal prediction method that utilizes a rank-based score function suitable for classification models that predict the order of labels correctly, even if not well-calibrated. Our approach constructs prediction sets that achieve the desired coverage rate while managing their size. We provide a theoretical analysis of the expected size of the conformal prediction sets based on the rank distribution of the underlying classifier. Through extensive experiments, we demonstrate that our method outperforms existing techniques on various datasets, providing reliable uncertainty quantification. Our contributions include a novel conformal prediction method, theoretical analysis, and empirical evaluation. This work advances the practical deployment of machine learning systems by enabling reliable uncertainty quantification.},
+  archive      = {J_PR},
+  author       = {Rui Luo and Zhixin Zhou},
+  doi          = {10.1016/j.patcog.2025.112330},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112330},
+  shortjournal = {Pattern Recognition},
+  title        = {Reliable classification through rank-based conformal prediction sets},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Unsupervised domain adaptation for cardiac MRI segmentation via adversarial learning in latent space. <em>PR</em>, <em>172</em>, 112328. (<a href='https://doi.org/10.1016/j.patcog.2025.112328'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Late gadolinium enhancement (LGE) cardiac magnetic resonance (CMR) imaging is crucial for visualizing myocardial infarction (MI), with accurate segmentation of the ventricles and myocardium being essential for effective MI treatment. However, due to the complex myocardial structure and the limited availability of pixel-level annotations in LGE CMR images, accurate segmentation using supervised deep learning methods remains challenging. To address this, we propose an unsupervised domain adaptation framework for LGE CMR segmentation, utilizing CMR images from other modalities. First, we transform balanced Steady-State Free Precession (bSSFP) CMR images, which have abundant annotations, into LGE-like images using an enhanced CycleGAN. This CycleGAN incorporates an adversarial sample mining technique in the latent space to improve the quality of synthetic images. Next, we modify the nnU-Net architecture by introducing non-local blocks to train on these synthetic images, enabling precise segmentation of the myocardium and ventricular regions. We evaluate our method on the MS-CMRSeg 2019 dataset and MyoPS 2020 dataset, achieving an average Dice score of 88.0 % and 82.6 % respectively. Our experimental results demonstrate superior performance compared to state-of-the-art methods. The code for our approach is available at https://github.com/Lucarqi/Adv-CycleGAN .},
+  archive      = {J_PR},
+  author       = {Fan Zheng and Hengfei Cui and Yanning Zhang and Yong Xia},
+  doi          = {10.1016/j.patcog.2025.112328},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112328},
+  shortjournal = {Pattern Recognition},
+  title        = {Unsupervised domain adaptation for cardiac MRI segmentation via adversarial learning in latent space},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Efficacy of varying sensing features for enhanced performance of deep-learning-informed multidimensional force platform. <em>PR</em>, <em>172</em>, 112327. (<a href='https://doi.org/10.1016/j.patcog.2025.112327'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep learning (DL)-informed vision-based 3D force platforms have demonstrated significant potential for simultaneous assessment of pressure and shear stresses. However, the enhancement of force decoupling capacity is widely recognized as a difficult challenge in the field. For vision-based designs, the marker-embedded sensing layer serves as the pivotal element of the force platform, unveiling diverse sensing characteristics throughout the learning process. However, none of the previous studies have thoroughly investigated the differences among these sensing features and leveraged them to optimize DL models for enhanced performance in multidimensional force detection. This study addresses this gap by systematically evaluating five distinct features (including optical flow, original images, and their derivatives) using four classic CNN architectures. Our comparative analysis reveals a clear feature-force specialization: gray images are most effective for pressure decoupling, while arrow images are superior in decoupling shear stress. Based on this finding, we proposed and validated a dual-branch DL model that fuses these two specialized features. The model achieves a strong, comprehensive performance on both tasks simultaneously, demonstrating the efficacy of our evidence-based feature-fusion strategy. This study provides new insights into sensing feature selection and evidence-based neural network design for vision-based multidimensional force platforms. These advancements have the potential to expedite the deployment of high-performance multidimensional force platforms in real-life applications.},
+  archive      = {J_PR},
+  author       = {Hu Luo and Yuxin Ma and Zesheng Wang and Jiewen Li and Xin Ma and Wen-Ming Chen},
+  doi          = {10.1016/j.patcog.2025.112327},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112327},
+  shortjournal = {Pattern Recognition},
+  title        = {Efficacy of varying sensing features for enhanced performance of deep-learning-informed multidimensional force platform},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Zoom-shot: Fast, efficient and unsupervised zero-shot knowledge transfer from CLIP to vision encoders. <em>PR</em>, <em>172</em>, 112323. (<a href='https://doi.org/10.1016/j.patcog.2025.112323'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Foundation models like CLIP demonstrate exceptional capabilities over a broad domain of knowledge, such as with zero-shot classification; however, they also require significant computational resources, narrowing their real-world utility. Recent studies have shown that mapping features from pre-trained vision encoders into CLIP’s latent space can transfer some of CLIP’s abilities to smaller vision encoders, offering a promising alternative. Yet, the performance of these vision encoders still falls short of CLIP’s native capabilities, particularly in low-data regimes. In this work, we argue that enhancing training data coverage/diversity significantly improves mapping efficacy. We achieve this using tailored loss functions rather than relying on data augmentation or increasing training samples. For instance, we exploit the inherent multimodal nature of CLIP’s latent space, by incorporating cycle-consistency loss as one of our loss functions. Moreover, the mapping is learned using entirely unlabelled and unpaired data, eliminating the need for manual labelling or data pairing in novel domains. From these findings, our resulting method (Zoom-shot) offers a viable path to flexible zero-shot models for resource-limited, data-scarce settings. We test Zoom-shot’s zero-shot performance across various pre-trained vision encoders on coarse- and fine-grained datasets and achieve superior performance compared to recent works. In our ablations, we find Zoom-shot allows for a trade-off between data and compute during training; allowing for a significant reduction in required training data. All code and models are available on GitHub.},
+  archive      = {J_PR},
+  author       = {Jordan Shipard and Arnold Wiliem and Kien Nguyen Thanh and Wei Xiang and Clinton Fookes},
+  doi          = {10.1016/j.patcog.2025.112323},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112323},
+  shortjournal = {Pattern Recognition},
+  title        = {Zoom-shot: Fast, efficient and unsupervised zero-shot knowledge transfer from CLIP to vision encoders},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Wavelet-guided diffusion enhancement network with directional learning for single-pixel imaging. <em>PR</em>, <em>172</em>, 112322. (<a href='https://doi.org/10.1016/j.patcog.2025.112322'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Single-pixel imaging provides significant advantages for non-visible wavelength detection and ultra-compressed sensing. However, accurate reconstruction from severely under-sampled measurements remains challenging. To tackle this, we propose a novel wavelet-guided diffusion enhancement network with directional learning for single-pixel imaging (WGDNet), which hierarchically reconstructs images through wavelet component-aware reinforcement. Specifically, we design a sampling-guided model to capture essential textures and produce an initial image decomposed into high- and low-frequency components. The low-frequency part is enhanced with adaptive diffusion to preserve structure, while the high-frequency part is directionally incorporated through a multi-frequency adaptive fusion attention (MAFA) mechanism to refine details. Building on this, we develop a residual spatial adaptive fusion (RSAF) module to effectively combine low-frequency structures and high-frequency details. Extensive experiments on five public datasets demonstrate that our method achieves superior performance in both structural preservation and detail recovery. Successful implementation in the imaging system validates the applicability in real scenarios.},
+  archive      = {J_PR},
+  author       = {Dawei Song and Qiurong Yan and Hui Wang and Jian Yang and Xiaolong Luo},
+  doi          = {10.1016/j.patcog.2025.112322},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112322},
+  shortjournal = {Pattern Recognition},
+  title        = {Wavelet-guided diffusion enhancement network with directional learning for single-pixel imaging},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). GLGF-CR: A gated local-global fusion approach for cloud removal in real-world remote sensing. <em>PR</em>, <em>172</em>, 112319. (<a href='https://doi.org/10.1016/j.patcog.2025.112319'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Optical satellite imagery is a critical data source for Earth observation in remote sensing. However, cloud cover often degrades image quality, hindering its application and analysis. Therefore, effective cloud removal from optical satellite images has become a prominent research direction. In real-world scenarios, thick clouds act as pure noise, completely obscuring underlying information, while thin clouds provide partially beneficial information that can be leveraged for reconstruction. Traditional cloud removal methods often fail to distinguish between these two types of noise, leading to suboptimal performance. To address this limitation, we propose a novel cloud removal model, GLGF-CR, which incorporates a Gated Local-Global Fusion module. This module is designed to effectively separate and process the distinct characteristics of thick and thin clouds. For thick clouds, which contain no recoverable information, the model focuses on robust reconstruction using complementary data sources. For thin clouds, the model extracts and utilizes the beneficial information embedded in the partially obscured regions, enabling more accurate and detailed reconstruction. Additionally, a Dual Cross-Attention mechanism is introduced to establish robust mappings between SAR and optical modalities, further improving fusion accuracy. To handle domain shifts between source and target domains, we incorporate a domain adaptation module, which enhances the model’s ability to generalize across diverse real-world scenarios. The proposed algorithm not only outperforms existing methods on the large-scale real-world dataset SEN12MS-CR but also demonstrates strong cross-domain transferability on the Henan flood dataset. By explicitly addressing the dual nature of cloud noise–pure noise in thick clouds and partially beneficial information in thin clouds–this work advances the field of beneficial noise learning, demonstrating how noise can be systematically analyzed and utilized to improve model performance in complex scenarios.},
+  archive      = {J_PR},
+  author       = {Ganchao Liu and Jiawei Qiu and Jincheng Huang and Yuan Yuan},
+  doi          = {10.1016/j.patcog.2025.112319},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112319},
+  shortjournal = {Pattern Recognition},
+  title        = {GLGF-CR: A gated local-global fusion approach for cloud removal in real-world remote sensing},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Semi-supervised feature selection with concept factorization and robust label learning. <em>PR</em>, <em>172</em>, 112317. (<a href='https://doi.org/10.1016/j.patcog.2025.112317'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Feature selection (FS) is essential for improving model performance in high-dimensional data by identifying the most relevant features. Concept Factorization (CF), building on Non-negative Matrix Factorization (NMF), is valued for revealing meaningful data structure and producing interpretable concept vectors. However, existing CF-based FS methods are typically unsupervised and do not leverage label information, leading to a bias toward high-variance features. This bias can result in the omission of low-variance features that may be highly discriminative, ultimately reducing the effectiveness of FS and compromising model performance, especially in tasks where subtle or rare patterns are important. To address these limitations, this paper proposes SCFLR, a novel semi-supervised FS method that combines CF with robust label learning. SCFLR establishes the CF framework based on the feature space by expressing each concept vector as a conic combination of the feature vectors, thereby leveraging both the underlying data structure and available label information to select a more informative and balanced set of features. To this end, SCFLR defines a linear regression-based loss function derived from the generated concept vectors to leverage information from labeled data. This loss function is further enhanced through a label learning framework based on the L 2 , 1 -norm to ensure a robust label approximation. SCFLR also utilizes the dual-graph regularization to maintain the local geometric structures in both feature and data spaces. In order to tackle the optimization problem of SCFLR, an efficient algorithm, with proof of its convergence, is introduced. Finally, the experimental validation of the SCFLR method on multiple datasets highlights its effectiveness and superior performance compared to other FS methods.},
+  archive      = {J_PR},
+  author       = {Razieh Sheikhpour and Farid Saberi-Movahed and Mahdi Jalili and Kamal Berahmand},
+  doi          = {10.1016/j.patcog.2025.112317},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112317},
+  shortjournal = {Pattern Recognition},
+  title        = {Semi-supervised feature selection with concept factorization and robust label learning},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Deep learning for DBT classification with saliency-guided 2D synthesis. <em>PR</em>, <em>172</em>, 112316. (<a href='https://doi.org/10.1016/j.patcog.2025.112316'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Digital Breast Tomosynthesis (DBT) is a key imaging modality for breast cancer detection, improving lesion visibility by reducing tissue overlap inherent in conventional mammography. In this work, we propose a novel deep learning framework that classifies DBT volumes as malignant or non-malignant, while simultaneously generating a synthetic 2D image to assist diagnostic interpretation. This image is derived from a 3D saliency map computed by the internal attention mechanisms of the model, which highlights and preserves the most diagnostically relevant regions from the original volume. A surface is defined in this saliency space, enabling sampling and projection into a 2D diagnostic representation. This projection offers a compact summary of the volumetric scan, assisting clinicians in diagnostic interpretation and potentially alleviating the cognitive workload. A standard convolutional neural network trained on these synthetic 2D images achieves classification performance comparable to models operating directly on full 3D volumes. We train and evaluate our method on the OPTIMAM dataset and assess generalization through external validation on the independent BCS-DBT dataset without retraining. Results show that the model performs robustly across different clinical sources and provides an interpretable, computationally efficient tool for DBT-based breast cancer diagnosis.},
+  archive      = {J_PR},
+  author       = {Marco Cantone and Ciro Russo and Federico~V.~L. Dell’Ascenza and Claudio Marrocco and Alessandro Bria},
+  doi          = {10.1016/j.patcog.2025.112316},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112316},
+  shortjournal = {Pattern Recognition},
+  title        = {Deep learning for DBT classification with saliency-guided 2D synthesis},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Noise-tolerant scheme and explicit regularizer for deep active learning with noisy oracles. <em>PR</em>, <em>172</em>, 112313. (<a href='https://doi.org/10.1016/j.patcog.2025.112313'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Exploring the query strategies based on deep learning shows promising results in terms of designing the criteria for active learning. However, the labels provided by the oracles might be noisy (inaccurate) due to similarities across several classes causing ambiguity, leading to unreliable results. To address this issue, we propose a noise-tolerant deep active learning method. Specifically, we design a consistency regularization for deep attention network as explicit regularizer, which is used to measure the uncertainty of examples. Besides, we develop the robust model for dealing with the noisy oracles , which first take the associations that make from embeddings of labeled data to those of unlabeled data and back, then we employ the association probability as a weighting fusion schema into angular margin based loss. Moreover, we design the submodular maximization function for reducing the redundancy of selected batch examples. Finally, the formulation is encapsulated into the multi-task framework that helps to adaptive learning towards more generalizable performance. Experimentally, we conduct extensive experiments on classification and segmentation tasks, and the results clearly demonstrate the superiority of the proposed method to the existing state-of-the-art deep active learning approaches.},
+  archive      = {J_PR},
+  author       = {Yanchao Li and Ziteng Xie and Hongwu Zhong and Guangwei Gao},
+  doi          = {10.1016/j.patcog.2025.112313},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112313},
+  shortjournal = {Pattern Recognition},
+  title        = {Noise-tolerant scheme and explicit regularizer for deep active learning with noisy oracles},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). MGFNet: Multi-granularity medical pattern fusion network for patient risk prediction. <em>PR</em>, <em>172</em>, 112302. (<a href='https://doi.org/10.1016/j.patcog.2025.112302'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The goal of patient risk prediction tasks is to predict a patient’s future disease or mortality risk based on his/her historical electronic health record (EHR). Most prior works focus on learning patient evolution patterns from longitudinal EHR data, while ignoring the differences in temporal granularity in medical data, resulting in insufficient information exploitation. To address these limitations, we propose the M ulti- G ranularity Medical Pattern F usion Net work (MGFNet) for patient risk prediction based on temporal data. It learns the evolutionary patterns of medical data at different temporal granularities (both at the vital sign-level and visit-level), and introduces a gated filtering function and a contrastive learning strategy for multi-granularity fusion, which captures fused information from different temporal granularities and supervises each other to obtain a more effective information representation. In addition, for patients with variable visit lengths, we introduce a soft curriculum learning method to learn these patterns by assigning different weights to medical samples to improve prediction accuracy. The final experimental results demonstrate that MGFNet effectively improves the performance of risk prediction compared with state-of-the-art approaches.},
+  archive      = {J_PR},
+  author       = {Lin Cheng and Yuliang Shi and Xiaojing Yu and Xinyu Li and Xinjun Wang and Zhongmin Yan and Zhiyong Chen},
+  doi          = {10.1016/j.patcog.2025.112302},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112302},
+  shortjournal = {Pattern Recognition},
+  title        = {MGFNet: Multi-granularity medical pattern fusion network for patient risk prediction},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Deep intrinsic image decomposition via physics-aware neural networks. <em>PR</em>, <em>172</em>, 112299. (<a href='https://doi.org/10.1016/j.patcog.2025.112299'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Intrinsic image decomposition (IID) aims to separate an observed image into its underlying reflectance and shading components. This task is challenging due to the complex interplay of lighting, surface geometry, and material reflectance in real-world scenes. To address these challenges, this paper proposes a physics-aware deep neural network with a single-encoder, double-decoder architecture. The encoder incorporates an explicit alternating process inspired by a physics-guided model, enabling iterative decoupling of image features into reflectance and shading. Two asymmetric decoders are designed to reconstruct reflectance and shading maps based on their distinct properties. In addition, we introduce a shading loss function leverages spatial distributions of texture and structure. Unlike standard total variation (TV) losses, it employs a texture-likelihood-weighted TV norm, where weights are derived via a patch-matching scheme to distinguish isotropic textures from anisotropic image edges. This design enhances the model’s ability to suppress texture while preserving structure. Experimental results on three datasets (MIT, MPI-Sintel, and IIW) show the effectiveness of our method: on MIT and MPI-Sintel, it reduces the mean-squared-errors of both reflectance and shading by over 40 % compared to existing works, and on IIW, it achieves a superior WHDR score of 13.2, outperforming all existing methods.},
+  archive      = {J_PR},
+  author       = {Yan Huang and Kangjie Liu and Tengyue Chen and Yong Xu and Hui Ji},
+  doi          = {10.1016/j.patcog.2025.112299},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112299},
+  shortjournal = {Pattern Recognition},
+  title        = {Deep intrinsic image decomposition via physics-aware neural networks},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Domain adapter for visual object tracking based on hyperspectral video. <em>PR</em>, <em>172</em>, 112296. (<a href='https://doi.org/10.1016/j.patcog.2025.112296'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Object tracking based on hyperspectral video attracts increasing attention due to the rich material and motion information in the hyperspectral videos. The prevailing hyperspectral methods adapt pretrained RGB-based object tracking networks for hyperspectral tasks by converting the hyperspectral images into false-color images and fine-tuning the whole network on hyperspectral datasets, which achieves impressive results in challenging scenarios. However, the performance of hyperspectral trackers is limited by the spectral information loss during the transformation, and fine-tuning the entire pretrained network is inefficient for practical applications. To address the issues, a new hyperspectral object tracking method based on domain adaption, hyperspectral adapter for tracking (HyA-T), is proposed in this work. The hyperspectral adapter for the self-attention (HAS) and the hyperspectral adapter for the multilayer perceptron (HAM) are proposed to generate the adaption information and to transfer the multi-head self-attention (MSA) module and the multilayer perceptron (MLP) in pretrained network for the hyperspectral object tracking task by augmenting the spectral information in the original hyperspectral images into the calculation of the MSA and MLP. Additionally, the hyperspectral enhancement of input (HEI) is proposed to augment the original spectral information into the input of the tracking network. The proposed methods extract spectral information directly from the hyperspectral images, which reduce the negative impact of the spectral information loss caused by the transformation. Moreover, only the parameters in the proposed methods are fine-tuned, which is more efficient than the existing methods. Extensive experiments were conducted on four datasets with various spectral bands, verifying the effectiveness of the proposed methods. The HyA-T achieves state-of-the-art performance on all the datasets.},
+  archive      = {J_PR},
+  author       = {Long Gao and Yunhe Zhang and Langkun Chen and Yan Jiang and Gang He and Weiying Xie and Yunsong Li},
+  doi          = {10.1016/j.patcog.2025.112296},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112296},
+  shortjournal = {Pattern Recognition},
+  title        = {Domain adapter for visual object tracking based on hyperspectral video},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Few-shot image generation via information transfer from the built geodesic surface. <em>PR</em>, <em>172</em>, 112293. (<a href='https://doi.org/10.1016/j.patcog.2025.112293'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Generative models trained with limited data often struggle with poor fidelity and diversity. While adapting large pre-trained models is a common solution, such an approach requires significant resources and suitable source domains, which are often unavailable. To address these limitations, we propose Information Transfer from the Built Geodesic Surface (ITBGS), a framework that generates high-quality images from scratch. The core of ITBGS is our Feature Augmentation on Geodesic Surface (FAGS) module, which constructs a Geodesic surface to create a diverse pseudo-source domain from the initial samples. By transferring structural information from the augmented domain to guide the generator’s training, our method completely removes the need for pre-trained models. To refine the output, a supporting Interpolation and Regularization (I&R) module is also introduced to enhance the smoothness and perceptual quality of generated images. Extensive experiments demonstrate that ITBGS achieves state-of-the-art or comparable performance on various few-shot datasets, successfully balancing image fidelity and diversity.},
+  archive      = {J_PR},
+  author       = {Yuexing Han and Liheng Ruan and Bing Wang},
+  doi          = {10.1016/j.patcog.2025.112293},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112293},
+  shortjournal = {Pattern Recognition},
+  title        = {Few-shot image generation via information transfer from the built geodesic surface},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). FADMB: Fully attention-based dual memory bank network for weakly supervised video anomaly detection. <em>PR</em>, <em>172</em>, 112288. (<a href='https://doi.org/10.1016/j.patcog.2025.112288'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Video anomaly detection is crucial for analyzing surveillance videos and plays a significant role in maintaining public safety. Recent advances in weakly supervised methods, utilizing video-level labels, have improved performance based on techniques like multi-instance learning and temporal modeling. Furthermore, memory banks demonstrate great potential in unsupervised anomaly detection, prompting their integration into weakly supervised setups. However, these methods depend on the Top- k selection mechanism to update the prototypes within memory banks, which has limitations such as overlooking valuable prototypes, leading to a biased updating process, and requiring hyperparameters. To tackle these challenges, we introduce a novel video anomaly detection model, FADMB ( F ully A ttention-based D ual M emory B ank network), which replaces the Top- k selection mechanism with an innovative attention-based prototype updating paradigm to obtain a more comprehensive and robust memory bank. Additionally, we design a Hybrid Encoder that encodes local and global temporal information to produce superior video representations. Extensive experiments demonstrate the superiority of FADMB, achieving 85.79 % AUC on UCF-Crime dataset and 83.29 % AP on XD-Violence dataset.},
+  archive      = {J_PR},
+  author       = {Zhiming Luo and Shuheng Huang and Kun Yang and Jianzhe Gao and Shaozi Li},
+  doi          = {10.1016/j.patcog.2025.112288},
+  journal      = {Pattern Recognition},
+  month        = {4},
+  pages        = {112288},
+  shortjournal = {Pattern Recognition},
+  title        = {FADMB: Fully attention-based dual memory bank network for weakly supervised video anomaly detection},
+  volume       = {172},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

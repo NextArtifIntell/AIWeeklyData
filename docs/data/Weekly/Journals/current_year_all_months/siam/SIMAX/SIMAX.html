@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SIMAX</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="simax">SIMAX - 77</h2>
+<ul>
+<li><details>
+<summary>
+(2025). On the backward stability of S-step GMRES. <em>SIMAX</em>, <em>46</em>(3), 2008-2040. (<a href='https://doi.org/10.1137/24M1690485'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Communication, i.e., data movement, is a critical bottleneck for the performance of classical Krylov subspace method solvers on modern computer architectures. Variants of these methods which avoid communication have been introduced, which, while equivalent in exact arithmetic, can be unstable in finite precision. In this work, we address the backward stability of -step GMRES, also known as communication-avoiding GMRES. Building upon the “modular framework” proposed in [A. Buttari et al., preprint, hal-04525918v2, 2024.], we present an improved framework for simplifying the analysis of -step GMRES, which includes standard GMRES as a special case, by isolating the effects of rounding errors in the QR factorization and the solution of the least squares problem. The key advantage of this new framework is that it is evident how the orthogonalization method affects the backward error, and it is not necessary to reevaluate anything other than the orthogonalization itself when modifying the orthogonalization used in GMRES. Using this framework, we analyze -step GMRES with popular block orthogonalization methods: block modified Gram–Schmidt and reorthogonalized block classical Gram–Schmidt algorithms. An example illustrates the resulting instability of -step GMRES when paired with the classical -step Arnoldi process and shows the limitations of popular strategies for resolving this instability. To address this issue, we propose a modified -step Arnoldi process that allows for much larger block size while maintaining satisfactory accuracy, as confirmed by our numerical experiments. An example illustrates the resulting instability of s-step GMRES when paired with the classical s-step Arnoldi process and shows the limitations of popular strategies for resolving this instability. To address this issue, we propose a modified Arnoldi process that allows for much larger block size s while maintaining satisfactory accuracy, as confirmed by our numerical experiments.},
+  archive      = {J_SIMAX},
+  author       = {Erin Carson and Yuxin Ma},
+  doi          = {10.1137/24M1690485},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {9},
+  number       = {3},
+  pages        = {2008-2040},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {On the backward stability of S-step GMRES},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Stable rank and intrinsic dimension of real and complex matrices. <em>SIMAX</em>, <em>46</em>(3), 1988-2007. (<a href='https://doi.org/10.1137/24M1681537'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The notion of “stable rank” of a matrix is essential in the analysis of randomized matrix algorithms, covariance estimation, deep neural networks, and recommender systems. We compare the properties of the stable rank of a real or complex matrix and the related concept of “intrinsic dimension” of a Hermitian positive semi-semidefinite matrix to those of the classical rank. Basic proofs and examples illustrate that the stable rank does not satisfy any of the fundamental rank properties, while the intrinsic dimension satisfies a few. In particular, the stable rank and intrinsic dimension of a submatrix can exceed those of the original matrix; adding a Hermitian positive semi-semidefinite matrix can lower the intrinsic dimension of the sum; and multiplication by a nonsingular matrix can drastically change the stable rank and intrinsic dimension. We generalize the concept of stable rank to the -stable rank in a Schatten -norm, thereby unifying the concepts of stable rank and intrinsic dimension: the stable rank is the 2-stable rank, while the intrinsic dimension is the 1-stable rank of a Hermitian positive semi-semidefinite matrix. We derive sum and product inequalities for the th root of the -stable rank and show that it is well-conditioned in the norm-wise absolute sense. The conditioning improves if the matrix and the perturbation are Hermitian positive semidefinite.},
+  archive      = {J_SIMAX},
+  author       = {Ilse C. F. Ipsen and Arvind K. Saibaba},
+  doi          = {10.1137/24M1681537},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {9},
+  number       = {3},
+  pages        = {1988-2007},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Stable rank and intrinsic dimension of real and complex matrices},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Solving singular generalized eigenvalue problems. part III: Structure preservation. <em>SIMAX</em>, <em>46</em>(3), 1964-1987. (<a href='https://doi.org/10.1137/24M1668603'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In Parts I and II of this series of papers, three new methods for the computation of eigenvalues of singular pencils were developed: rank-completing perturbations, rank-projections, and augmentation. It was observed that a straightforward structure-preserving adaption for symmetric pencils was not possible and it was left as an open question how to address this challenge. In this Part III, it is shown how the observed issue can be circumvented by using Hermitian perturbations. This leads to structure-preserving analogs of the three techniques from Parts I and II for Hermitian pencils (including real symmetric pencils) as well as for skew-Hermitian, -even, -odd, and -(anti-)palindromic pencils. It is an important feature of these methods that the sign characteristic of the given pencil is preserved.},
+  archive      = {J_SIMAX},
+  author       = {Michiel E. Hochstenbach and Christian Mehl and Bor Plestenjak},
+  doi          = {10.1137/24M1668603},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {9},
+  number       = {3},
+  pages        = {1964-1987},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Solving singular generalized eigenvalue problems. part III: Structure preservation},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fitting multilevel factor models. <em>SIMAX</em>, <em>46</em>(3), 1930-1963. (<a href='https://doi.org/10.1137/24M1697992'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We examine a special case of the multilevel factor model, with covariance given by multilevel low rank (MLR) matrix [T. Parshakova et al., Factor fitting, rank allocation, and partitioning in multilevel low rank matrices, in Optimization, Discrete Mathematics, and Applications to Data Sciences, SOIA 220, Springer, 2024, pp. 135–173]. We develop a novel, fast implementation of the expectation-maximization algorithm, tailored for multilevel factor models, to maximize the likelihood of the observed data. This method accommodates any hierarchical structure and maintains linear time and storage complexities per iteration. This is achieved through a new efficient technique for computing the inverse of the positive definite MLR matrix. We show that the inverse of positive definite MLR matrix is also an MLR matrix with the same sparsity in factors, and we use the recursive Sherman–Morrison–Woodbury matrix identity to obtain the factors of the inverse. Additionally, we present an algorithm that computes the Cholesky factorization of an expanded matrix with linear time and space complexities, yielding the covariance matrix as its Schur complement. This paper is accompanied by an open-source package that implements the proposed methods. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SIMAX and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/cvxgrp/multilevel_factor_model (see notebooks in /examples folder).},
+  archive      = {J_SIMAX},
+  author       = {Tetiana Parshakova and Trevor Hastie and Stephen Boyd},
+  doi          = {10.1137/24M1697992},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {9},
+  number       = {3},
+  pages        = {1930-1963},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Fitting multilevel factor models},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Unified SMW-like identities of low-rank updates for generalized inverses and pseudoinverses. <em>SIMAX</em>, <em>46</em>(3), 1917-1929. (<a href='https://doi.org/10.1137/25M1723724'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We present new low-rank-update identities for generalized inverses and pseudoinverses of rectangular matrices, unifying previous generalizations of the Sherman–Morrison–Woodbury (SMW) identity and Riedel’s rank-augmentation formulas. First, we establish generalized SMW identities for -inverses and pseudoinverses under less restrictive conditions when the matrix rank is preserved. Second, we further generalize Riedel’s formulas for rank augmentation to pseudoinverses of rectangular matrices and to specific classes of generalized inverses (namely, those involving - and -inverses) when matrix ranges are altered by the update. Finally, we introduce unified low-rank-update identities that encompass both cases. These identities retain SMW’s efficiency, extend its applicability to rectangular matrices, and offer new tools for updating generalized inverses in various applications.},
+  archive      = {J_SIMAX},
+  author       = {Xiangmin Jiao},
+  doi          = {10.1137/25M1723724},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {9},
+  number       = {3},
+  pages        = {1917-1929},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Unified SMW-like identities of low-rank updates for generalized inverses and pseudoinverses},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Obtaining pseudoinverse solutions with MINRES. <em>SIMAX</em>, <em>46</em>(3), 1887-1916. (<a href='https://doi.org/10.1137/24M1638422'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The celebrated minimum residual method (MINRES), proposed in the seminal paper of Paige and Saunders [SIAM J. Numer. Anal., 12 (1975), pp. 617–62951], has seen great success and widespread use in solving Hermitian (and complex-symmetric) systems . Unless the system is consistent, MINRES is not guaranteed to obtain the pseudoinverse solution. We propose a novel and remarkably simple minimum-norm (MN) refinement that seamlessly integrates with the final MINRES iteration, enabling us to obtain the minimum-norm solution with negligible additional computational cost. We extend our MN refinement to complex-symmetric systems, building on S.-C. Choi’s extension of MINRES for solving these systems. Given the flexibility of MINRES to accommodate singular preconditioners, we further investigate the MN refinement in preconditioned settings that involve singular preconditioners. We also provide numerical experiments to support our analysis and showcase the effects of our MN refinement.},
+  archive      = {J_SIMAX},
+  author       = {Yang Liu and Andre Milzarek and Fred Roosta},
+  doi          = {10.1137/24M1638422},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {9},
+  number       = {3},
+  pages        = {1887-1916},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Obtaining pseudoinverse solutions with MINRES},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Inverse eigenvalue problem for laplacian matrices of a graph. <em>SIMAX</em>, <em>46</em>(3), 1866-1886. (<a href='https://doi.org/10.1137/24M1714472'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. For a given graph , we aim to determine the possible realizable spectra for a generalized (or sometimes referred to as a weighted) Laplacian matrix associated with . This new specialized inverse eigenvalue problem is considered for certain families of graphs and graphs on a small number of vertices. Related considerations include studying the possible ordered multiplicity lists associated with stars and complete graphs and graphs with a few vertices. Finally, we present a novel investigation, both theoretically and numerically, regarding the minimum variance over a family of generalized Laplacian matrices with a size-normalized weighting.},
+  archive      = {J_SIMAX},
+  author       = {Shaun Fallat and Himanshu Gupta and Jephian C.-H. Lin},
+  doi          = {10.1137/24M1714472},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {9},
+  number       = {3},
+  pages        = {1866-1886},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Inverse eigenvalue problem for laplacian matrices of a graph},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Near instance optimality of the lanczos method for stieltjes and related matrix functions. <em>SIMAX</em>, <em>46</em>(3), 1846-1865. (<a href='https://doi.org/10.1137/25M1739650'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Polynomial Krylov subspace methods are among the most widely used methods for approximating , the action of a matrix function on a vector, in particular when is large and sparse. When is Hermitian positive definite, the Lanczos method is the standard choice of Krylov method, and despite being very simplistic in nature, it often outperforms other, more sophisticated methods. In fact, one often observes that the error of the Lanczos method behaves almost exactly as the error of the best possible approximation from the Krylov space (which is in general not efficiently computable). However, theoretical guarantees for the deviation of the Lanczos error from the optimal error are mostly lacking so far (except for linear systems and a few other special cases). We prove a rigorous bound for this deviation when belongs to the important class of Stieltjes functions (which, e.g., includes inverse fractional powers as special cases) and a related class (which contains, e.g., the square root and the shifted logarithm), thus providing a near instance optimality guarantee. While the constants in our bounds are likely not optimal, they greatly improve upon the few results that are available in the literature and resemble the actual behavior much better.},
+  archive      = {J_SIMAX},
+  author       = {Marcel Schweitzer},
+  doi          = {10.1137/25M1739650},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {9},
+  number       = {3},
+  pages        = {1846-1865},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Near instance optimality of the lanczos method for stieltjes and related matrix functions},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimization on product manifolds under a preconditioned metric. <em>SIMAX</em>, <em>46</em>(3), 1816-1845. (<a href='https://doi.org/10.1137/24M1643773'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Since optimization on Riemannian manifolds relies on the chosen metric, it is appealing to know how the performance of a Riemannian optimization method varies with different metrics and how to exquisitely construct a metric such that a method can be accelerated. To this end, we propose a general framework for optimization problems on product manifolds endowed with a preconditioned metric, and we develop Riemannian methods under this metric. Generally, the metric is constructed by an operator that aims to approximate the diagonal blocks of the Riemannian Hessian of the cost function. We propose three specific approaches to design the operator: exact block diagonal preconditioning, left and right preconditioning, and Gauss–Newton type preconditioning. Specifically, we tailor new preconditioned metrics and adapt the proposed Riemannian methods to the canonical correlation analysis and the truncated singular value decomposition problems, which provably accelerate the Riemannian methods. Additionally, we adopt the Gauss–Newton type preconditioning to solve the tensor ring completion problem. Numerical results among these applications verify that a delicate metric does accelerate the Riemannian optimization methods.},
+  archive      = {J_SIMAX},
+  author       = {Bin Gao and Renfeng Peng and Ya-xiang Yuan},
+  doi          = {10.1137/24M1643773},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {9},
+  number       = {3},
+  pages        = {1816-1845},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Optimization on product manifolds under a preconditioned metric},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Robust blockwise random pivoting: Fast and accurate adaptive interpolative decomposition. <em>SIMAX</em>, <em>46</em>(3), 1791-1815. (<a href='https://doi.org/10.1137/24M1678027'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The interpolative decomposition (ID) aims to construct a low-rank approximation formed by a basis consisting of row/column skeletons in the original matrix and a corresponding interpolation matrix. This work explores fast and accurate ID algorithms from comprehensive perspectives for empirical performance, including accuracy in both skeleton selection and interpolation matrix construction, efficiency in terms of asymptotic complexity and hardware efficiency, as well as rank-adaptiveness. While many algorithms have been developed to optimize some of these aspects, practical ID algorithms proficient in all aspects remain absent. To fill in the gap, we introduce robust blockwise random pivoting (RBRP) that is asymptotically fast, hardware efficient, and rank-adaptive, providing accurate skeletons and interpolation matrices comparable to the best existing ID algorithms in practice. Through extensive numerical experiments on various synthetic and natural datasets, we demonstrate the appealing empirical performance of RBRP from the aforementioned perspectives, as well as the robustness of RBRP to adversarial inputs. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SIMAX and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/dyjdongyijun/Robust_Blockwise_Random_Pivoting and in the supplemental material (RBRP.zip [3.65MB]).},
+  archive      = {J_SIMAX},
+  author       = {Yijun Dong and Chao Chen and Per-Gunnar Martinsson and Katherine Pearce},
+  doi          = {10.1137/24M1678027},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {9},
+  number       = {3},
+  pages        = {1791-1815},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Robust blockwise random pivoting: Fast and accurate adaptive interpolative decomposition},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimal matrix-mimetic tensor algebras via variable projection. <em>SIMAX</em>, <em>46</em>(3), 1764-1790. (<a href='https://doi.org/10.1137/24M1702635'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Recent advances in matrix-mimetic tensor frameworks have made it possible to preserve linear algebraic properties for multilinear data analysis and, as a result, to obtain optimal representations of multiway data. Matrix mimeticity arises from interpreting tensors as operators that can be multiplied, factorized, and analyzed analogously to matrices. Underlying the tensor operation is an algebraic framework parameterized by an invertible linear transformation. The choice of linear mapping is crucial to representation quality and, in practice, is made heuristically based on expected correlations in the data. However, in many cases, these correlations are unknown and common heuristics lead to suboptimal performance. In this work, we simultaneously learn optimal linear mappings and corresponding tensor representations without relying on prior knowledge of the data. Our new framework explicitly captures the coupling between the transformation and representation using variable projection. We preserve the invertibility of the linear mapping by learning orthogonal transformations with Riemannian optimization. We provide an original theory of the uniqueness of the transformation and convergence analysis of our variable-projection-based algorithm. We demonstrate the generality of our framework through numerical experiments on a wide range of applications, including financial index tracking, image compression, and reduced order modeling. We have published all the code related to this work at https://github.com/elizabethnewman/star-M-opt. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SIMAX and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/elizabethnewman/star-M-opt and in the supplementary materials (ex_supplement_revision.pdf [3.64MB]).},
+  archive      = {J_SIMAX},
+  author       = {Elizabeth Newman and Katherine Keegan},
+  doi          = {10.1137/24M1702635},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {9},
+  number       = {3},
+  pages        = {1764-1790},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Optimal matrix-mimetic tensor algebras via variable projection},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive algebraic optimized schwarz methods. <em>SIMAX</em>, <em>46</em>(3), 1735-1763. (<a href='https://doi.org/10.1137/24M166471X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Optimized Schwarz methods use Fourier analysis to find transmission conditions between subdomains that provide faster convergence over standard Schwarz methods. However, this requires significant upfront analysis of the operator, and may not be straightforward for all problems. This work presents a new class of black box methods for adaptively optimizing the transmission conditions. This class of methods is shown to be part of the Krylov subspace family of methods. Analysis and examples show the effectiveness of these methods, especially in situations with multiple right-hand sides for the same system.},
+  archive      = {J_SIMAX},
+  author       = {Conor McCoid and Felix Kwok},
+  doi          = {10.1137/24M166471X},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {9},
+  number       = {3},
+  pages        = {1735-1763},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Adaptive algebraic optimized schwarz methods},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CholeskyQR with randomization and pivoting for tall matrices (CQRRPT). <em>SIMAX</em>, <em>46</em>(3), 1701-1734. (<a href='https://doi.org/10.1137/24M163712X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper develops and analyzes a new algorithm for QR decomposition with column pivoting (QRCP) of rectangular matrices with many more rows than columns. The algorithm carefully combines methods from randomized numerical linear algebra to accelerate pivot decisions for the input matrix and the process of decomposing the pivoted matrix into the QR form. The source of the latter improvement is CholeskyQR with randomized preconditioning. Comprehensive analysis is provided in both exact and finite-precision arithmetic to characterize the algorithm’s rank-revealing properties and its numerical stability granted probabilistic assumptions of the sketching operator. An implementation of the proposed algorithm is described and made available inside the open-source RandLAPACK library, which itself relies on RandBLAS. Experiments with this implementation on an Intel Xeon Gold 6248R CPU demonstrate order-of-magnitude speedups over LAPACK’s standard function for QRCP, and comparable performance to a specialized algorithm for unpivoted QR of tall matrices, which lacks the strong rank-revealing properties of the proposed method.},
+  archive      = {J_SIMAX},
+  author       = {Maksim Melnichenko and Oleg Balabanov and Riley Murray and James Demmel and Michael W. Mahoney and Piotr Luszczek},
+  doi          = {10.1137/24M163712X},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {9},
+  number       = {3},
+  pages        = {1701-1734},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {CholeskyQR with randomization and pivoting for tall matrices (CQRRPT)},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Numerical solutions for stochastic continuous-time algebraic riccati equations. <em>SIMAX</em>, <em>46</em>(3), 1675-1700. (<a href='https://doi.org/10.1137/24M1635156'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We are concerned with efficient numerical methods for stochastic continuous-time algebraic Riccati equations (SCARE). Such equations frequently arise from the state-dependent Riccati equation approach which is perhaps the only systematic way today to study nonlinear control problems. Often, involved Riccati-type equations are of small scale, but have to be solved repeatedly in real time. A new inner-outer iterative method that combines the fixed-point strategy and the structure-preserving doubling algorithm (SDA) is proposed. It is proved that the method is monotonically convergent to the desired stabilizing solution. Previously, Newton’s method has been called to solve SCARE, but it was mostly investigated from its theoretical aspects rather than numerical aspects in terms of robust and efficient numerical implementation. For that reason, we revisit Newton’s method for SCARE, focusing on how to make Newton’s method practical. Finally numerical experiments are conducted to validate the new method and robust implementations of Newton’s method.},
+  archive      = {J_SIMAX},
+  author       = {Tsung-Ming Huang and Yueh-Cheng Kuo and Ren-Cang Li and Wen-Wei Lin},
+  doi          = {10.1137/24M1635156},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {9},
+  number       = {3},
+  pages        = {1675-1700},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Numerical solutions for stochastic continuous-time algebraic riccati equations},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Posterior covariance structures in gaussian processes. <em>SIMAX</em>, <em>46</em>(2), 1640-1673. (<a href='https://doi.org/10.1137/24M1684918'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this paper, we present a comprehensive analysis of the posterior covariance field in Gaussian processes, with applications to the posterior covariance matrix. The analysis is based on the Gaussian prior covariance but the approach also applies to other covariance kernels. Our geometric analysis reveals how the Gaussian kernel’s bandwidth parameter and the spatial distribution of the observations influence the posterior covariance as well as the corresponding covariance matrix, enabling straightforward identification of areas with high or low covariance in magnitude. Drawing inspiration from the a posteriori error estimation techniques in adaptive finite element methods, we also propose several estimators to efficiently measure the absolute posterior covariance field, which can be used for efficient covariance matrix approximation and preconditioning. We conduct a wide range of experiments to illustrate our theoretical findings and their practical applications.},
+  archive      = {J_SIMAX},
+  author       = {Difeng Cai and Edmond Chow and Yuanzhe Xi},
+  doi          = {10.1137/24M1684918},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1640-1673},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Posterior covariance structures in gaussian processes},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Possible reduced structure of the core problem within the total least square problem. <em>SIMAX</em>, <em>46</em>(2), 1616-1639. (<a href='https://doi.org/10.1137/24M1715209'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Many data analysis models are mathematically equivalent to the classical total least square (TLS) problems. It was shown that all the necessary and sufficient information for solving a TLS problem can be gathered into a minimized subproblem called the core problem. However, it is still possible to divide the core problem into several individual subproblems which can be solved independently. The division problem of the core problem is proved to be characterized by a row separation problem, revealing that the dimension of the individual subproblems is a simple mix of elements within a unique set. A valuable and practical strategy is proposed to solve a simple row separation problem which enriches the composition analysis of the TLS problem.},
+  archive      = {J_SIMAX},
+  author       = {Si-Jia Yu and Yan-Fei Jing},
+  doi          = {10.1137/24M1715209},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1616-1639},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Possible reduced structure of the core problem within the total least square problem},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Randomized low-rank Runge–Kutta methods. <em>SIMAX</em>, <em>46</em>(2), 1587-1615. (<a href='https://doi.org/10.1137/24M1692691'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This work proposes and analyzes a new class of numerical integrators for computing low-rank approximations to solutions of a matrix differential equation. We combine an explicit Runge–Kutta method with repeated randomized low-rank approximation to keep the rank of the stages limited. The so-called generalized Nyström method is particularly well suited for this purpose; it builds low-rank approximations from random sketches of the discretized dynamics. In contrast, all existing dynamical low-rank approximation methods are deterministic and usually perform tangent space projections to limit rank growth. Using such tangential projections can result in a larger error compared to approximating the dynamics directly. Moreover, sketching allows for increased flexibility and efficiency by choosing structured random matrices adapted to the structure of the matrix differential equation. Under suitable assumptions, we establish moment and tail bounds on the error of our randomized low-rank Runge–Kutta methods. When combining the classical Runge–Kutta method with generalized Nyström, we obtain a method called Rand RK4, which exhibits fourth-order convergence numerically—up to the low-rank approximation error. For a modified variant of Rand RK4, we also establish fourth-order convergence theoretically. Numerical experiments for a range of examples from the literature demonstrate that randomized low-rank Runge–Kutta methods compare favorably with two popular dynamical low-rank approximation methods, in terms of robustness and speed of convergence.},
+  archive      = {J_SIMAX},
+  author       = {Hei Yin Lam and Gianluca Ceruti and Daniel Kressner},
+  doi          = {10.1137/24M1692691},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1587-1615},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Randomized low-rank Runge–Kutta methods},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Tree quasi-separable matrices: A simultaneous generalization of sequentially and hierarchically semiseparable representations. <em>SIMAX</em>, <em>46</em>(2), 1562-1586. (<a href='https://doi.org/10.1137/24M1682348'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We present a unification and generalization of what is known in the literature as sequentially and hierarchically semiseparable (SSS and HSS) representations for matrices. These so-called tree quasi-separable (TQS) matrices contain sparse matrices with tree-structured adjacency graphs as an important subcase. TQS matrices inherit all the favorable algebraic properties of SSS and HSS under addition, products, and inversion. To arrive at these properties, we prove a key result that characterizes the conversion of any dense matrix into a TQS representation. Here, we specifically show through an explicit construction that the size of the representation is dictated by the ranks of certain Hankel blocks of the matrix. Analogous to SSS and HSS, TQS matrices admit fast matrix-vector products and direct solvers. A sketch of the associated algorithms is provided. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SIMAX and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/nithingovindarajan/TQSmatrices and in the supplementary materials (Supp_Materials.zip [16.4KB]).},
+  archive      = {J_SIMAX},
+  author       = {Nithin Govindarajan and Shivkumar Chandrasekaran and Patrick Dewilde},
+  doi          = {10.1137/24M1682348},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1562-1586},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Tree quasi-separable matrices: A simultaneous generalization of sequentially and hierarchically semiseparable representations},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Graph \({p}\)-laplacian eigenpairs as saddle points of a family of spectral energy functions. <em>SIMAX</em>, <em>46</em>(2), 1540-1561. (<a href='https://doi.org/10.1137/24M1664769'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We address the problem of computing the graph -Laplacian eigenpairs for . We propose a reformulation of the graph -Laplacian eigenvalue problem in terms of a constrained weighted Laplacian eigenvalue problem and discuss theoretical and computational advantages. We provide a correspondence between -Laplacian eigenpairs and linear eigenpairs of a constrained generalized weighted Laplacian eigenvalue problem. As a result, we can assign an index to any -Laplacian eigenpair that matches the Morse index of the -Rayleigh quotient evaluated at the eigenfunction. In the second part of the paper, we introduce a class of spectral energy functions that depend on edge and node weights. We prove that differentiable saddle points of the th energy function correspond to -Laplacian eigenpairs having index equal to . Moreover, the first energy function is proved to possess a unique saddle point which corresponds to the unique first -Laplacian eigenpair. Finally, we develop novel gradient-based numerical methods suited to compute -Laplacian eigenpairs for any and present some experiments.},
+  archive      = {J_SIMAX},
+  author       = {Piero Deidda and Nicola Segala and Mario Putti},
+  doi          = {10.1137/24M1664769},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1540-1561},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Graph \({p}\)-laplacian eigenpairs as saddle points of a family of spectral energy functions},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Higher-order self-consistent field: Efficient decoupling algorithms for finding the best rank-one approximation of higher-order tensors. <em>SIMAX</em>, <em>46</em>(2), 1518-1539. (<a href='https://doi.org/10.1137/24M1642688'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Best rank-one approximation is one of the most fundamental tasks in tensor computation. In order to fully exploit modern multicore parallel computers, it is necessary to develop decoupling algorithms for computing the best rank-one approximation of higher-order tensors at large scales. In this paper, we first build a bridge between the rank-one approximation of tensors and the eigenvector-dependent nonlinear eigenvalue problem, and then develop an efficient decoupling algorithm, namely, the higher-order self-consistent field (HOSCF) algorithm, inspired by the famous self-consistent field iteration frequently used in computational chemistry. The convergence theory of the HOSCF algorithm and an estimation of the convergence speed are further presented. In addition, we propose an improved HOSCF (iHOSCF) algorithm that incorporates the Rayleigh quotient iteration, which can significantly accelerate the convergence of HOSCF. Numerical experiments show that the proposed algorithms can efficiently converge to the best rank-one approximation of both synthetic and real-world tensors and can scale with high parallel scalability on a modern parallel computer.},
+  archive      = {J_SIMAX},
+  author       = {Chuanfu Xiao and Zeyu Li and Chao Yang},
+  doi          = {10.1137/24M1642688},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1518-1539},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Higher-order self-consistent field: Efficient decoupling algorithms for finding the best rank-one approximation of higher-order tensors},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the numerical approximation of the distance to singularity for matrix-valued functions. <em>SIMAX</em>, <em>46</em>(2), 1484-1517. (<a href='https://doi.org/10.1137/23M1625299'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Given a matrix-valued function , with complex matrices and entire functions for , we discuss a method for the numerical approximation of the distance to singularity of . The closest singular matrix-valued function with respect to the Frobenius norm is approximated using an iterative method. The property of singularity on the matrix-valued function is translated into a numerical constraint for a suitable minimization problem. Unlike the case of matrix polynomials, in the general setting of matrix-valued functions the main issue is that the function may have an infinite number of roots. An important feature of the numerical method consists of the possibility of addressing different structures, such as sparsity patterns induced by the matrix coefficients, in which case the search of the closest singular function is restricted to the class of functions preserving the structure of the matrices.},
+  archive      = {J_SIMAX},
+  author       = {Miryam Gnazzo and Nicola Guglielmi},
+  doi          = {10.1137/23M1625299},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1484-1517},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {On the numerical approximation of the distance to singularity for matrix-valued functions},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Balance with memory in signed networks via mittag-leffler matrix functions. <em>SIMAX</em>, <em>46</em>(2), 1460-1483. (<a href='https://doi.org/10.1137/24M1669372'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Structural balance is an important characteristic of graphs where edges can be positive or negative, or signed graphs, with a direct impact on the study of real-world complex systems. When a graph is not structurally balanced, it is important to know how much balance still exists. Although several measures have been proposed to characterize the degree of balance, the use of matrix functions of the signed adjacency matrix emerges as an up-and-coming area of research. Here, we take a step forward to use Mittag-Leffler (ML) matrix functions to quantify the notion of balance of signed graphs. We show that the ML balance index can be derived from first principles on the basis of a nonconservative diffusion dynamic and that it accounts for the memory of the system about the past, by diminishing the penalization that long cycles typically receive in other matrix functions. Finally, we demonstrate the important information in the ML balance index with both artificial signed networks and real-world networks in various contexts, ranging from biological and ecological to social ones.},
+  archive      = {J_SIMAX},
+  author       = {Yu Tian and Ernesto Estrada},
+  doi          = {10.1137/24M1669372},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1460-1483},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Balance with memory in signed networks via mittag-leffler matrix functions},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Error analysis of the gram low-rank approximation (and why it is not as unstable as one may think). <em>SIMAX</em>, <em>46</em>(2), 1444-1459. (<a href='https://doi.org/10.1137/24M1687649'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Given and its singular value decomposition (SVD) , the eigenvalue decomposition (EVD) of the Gram matrix is . When , it is computationally attractive to compute the truncated SVD of from the truncated EVD of . This idea has in particular been used to efficiently compress low-rank tensors. In finite precision arithmetic, however, there is a good reason to fear instability from this approach, since the Gram matrix has condition number . We carry out an error analysis of this approach that uses eigenvector perturbation theory. We first explain that a naive application of standard results from this theory leads to an error bound proportional to , where is the machine precision, is the matrix truncated to the target rank , and is its generalized condition number. Importantly, this bound is pessimistic and we prove that we can significantly improve it with a more careful analysis. Specifically, we obtain two improvements: First, we show that the error bound is at most proportional to , instead of . Second, we show that regardless of how large is, the error cannot exceed a constant multiple of . Hence our final bound is of order . Moreover, we also propose the use of iterative refinement to further improve the accuracy in some cases. We illustrate the unusual and attractive behavior of this algorithm with numerical experiments that showcase its effectiveness, despite its partial instability. We believe that our results explain the success that this approach has encountered in large scale tensor computations.},
+  archive      = {J_SIMAX},
+  author       = {Theo Mary},
+  doi          = {10.1137/24M1687649},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1444-1459},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Error analysis of the gram low-rank approximation (and why it is not as unstable as one may think)},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Analysis on aggregation and block smoothers in multigrid methods for block toeplitz linear systems. <em>SIMAX</em>, <em>46</em>(2), 1416-1443. (<a href='https://doi.org/10.1137/24M1655147'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We present novel improvements in the context of symbol-based multigrid procedures for solving large block structured linear systems. We study the application of an aggregation-based grid transfer operator that transforms the symbol of a block Toeplitz matrix from matrix-valued to scalar-valued at the coarser level. Our convergence analysis of the two-grid method reveals the connection between the features of the scalar-valued symbol at the coarser level and the properties of the original matrix-valued one. This allows us to prove the convergence of a V-cycle multigrid with standard grid transfer operators for scalar Toeplitz systems at the coarser levels. Consequently, we extend the class of suitable smoothers for block Toeplitz matrices, focusing on the efficiency of block strategies, particularly the relaxed block Jacobi method. General conditions on smoothing parameters are derived, with emphasis on practical applications where these parameters can be calculated with negligible computational cost. We test the proposed strategies on linear systems stemming from the discretization of differential problems with the Lagrangian finite element method or B-spline with nonmaximal regularity. The numerical results show in both cases computational advantages compared to existing methods for block structured linear systems.},
+  archive      = {J_SIMAX},
+  author       = {Matthias Bolten and Marco Donatelli and Paola Ferrari and Isabella Furci},
+  doi          = {10.1137/24M1655147},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1416-1443},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Analysis on aggregation and block smoothers in multigrid methods for block toeplitz linear systems},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Geometry of linear neural networks: Equivariance and invariance under permutation groups. <em>SIMAX</em>, <em>46</em>(2), 1378-1415. (<a href='https://doi.org/10.1137/24M166053X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The set of functions parameterized by a linear fully connected neural network is a determinantal variety. We investigate the subvariety of functions that are equivariant or invariant under the action of a permutation group. Examples of such group actions are translations or 90 degree rotations on images. We describe such equivariant or invariant subvarieties as direct products of determinantal varieties, from which we deduce their dimension, degree, Euclidean distance degree, and their singularities. We fully characterize invariance for arbitrary permutation groups, and equivariance for cyclic groups. We draw conclusions for the parameterization and the design of equivariant and invariant linear networks in terms of sparsity and weight-sharing properties. We prove that all invariant linear functions can be parameterized by a single linear autoencoder with a weight-sharing property imposed by the cycle decomposition of the considered permutation. The space of rank-bounded equivariant functions has several irreducible components, so it cannot be parameterized by a single network—but each irreducible component can. Finally, we show that minimizing the squared-error loss on our invariant or equivariant networks reduces to minimizing the Euclidean distance from determinantal varieties via the Eckart–Young theorem. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SIMAX and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/vahidshahverdi/Equivariant.git and in the supplementary materials (Supp_Materials.zip [1.20MB]).},
+  archive      = {J_SIMAX},
+  author       = {Kathlén Kohn and Anna-Laura Sattelberger and Vahid Shahverdi},
+  doi          = {10.1137/24M166053X},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1378-1415},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Geometry of linear neural networks: Equivariance and invariance under permutation groups},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The interplay between two kinds of hermitian determinantal representations. <em>SIMAX</em>, <em>46</em>(2), 1346-1377. (<a href='https://doi.org/10.1137/24M1646078'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper investigates the interplay between two kinds of Hermitian determinantal representations for multivariate polynomials. The first, Hermitian block determinantal representations, have been studied in relation to stability theory. The second, Hermitian additive determinantal representations, have been studied in relation to hyperbolic polynomials and the Lax conjecture. For each kind of Hermitian determinantal representation, we show necessary and sufficient conditions for a multivariate polynomial to have that representation. In particular, this condition requires that a related polynomial have the other type of Hermitian determinantal representation. Thus, if one can characterize when a polynomial has one of these representations, our results will provide a characterization for when a polynomial has the other type of representation.},
+  archive      = {J_SIMAX},
+  author       = {Sarah Gift and Hugo J. Woerdeman},
+  doi          = {10.1137/24M1646078},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1346-1377},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {The interplay between two kinds of hermitian determinantal representations},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On pairs of spectrum maximizing products with distinct factor multiplicities. <em>SIMAX</em>, <em>46</em>(2), 1328-1345. (<a href='https://doi.org/10.1137/24M1688503'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Recently, Bochi and Laskawiec constructed an example of a set of matrices having two different (up to cyclic permutations of factors) spectrum maximizing products, and . In this paper, we identify a class of matrix sets for which the existence of at least one spectrum maximizing product with an odd number of factors automatically entails the existence of another spectrum maximizing product. Moreover, in addition to the Bochi–Laskawiec example, the number of factors of the same name (factors of the form or ) in these matrix products turns out to be different. The efficiency of the proposed approach is confirmed by constructing an example of a set of matrices that has spectrum maximizing products of the form and .},
+  archive      = {J_SIMAX},
+  author       = {Victor Kozyakin},
+  doi          = {10.1137/24M1688503},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1328-1345},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {On pairs of spectrum maximizing products with distinct factor multiplicities},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Eigenvalue backward errors of rosenbrock systems and optimization of sums of rayleigh quotients. <em>SIMAX</em>, <em>46</em>(2), 1301-1327. (<a href='https://doi.org/10.1137/24M1673115'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We address the problem of computing the eigenvalue backward error of the Rosenbrock system matrix under various types of block perturbations. We establish novel characterizations of these backward errors using a class of minimization problems involving the sum of two generalized Rayleigh quotients (SRQ2). For computational purposes and analysis, we reformulate such optimization problems as minimization of a rational function over the joint numerical range of three Hermitian matrices. This reformulation eliminates certain local minimizers of the original SRQ2 minimization and allows for convenient visualization of the solution. Furthermore, by exploiting the convexity within the joint numerical range, we derive a characterization of the optimal solution using a nonlinear eigenvalue problem with eigenvector dependency (NEPv). The NEPv characterization enables a more efficient solution of the SRQ2 minimization compared to traditional optimization techniques. Our numerical experiments demonstrate the benefits and effectiveness of the NEPv approach for SRQ2 minimization in computing eigenvalue backward errors of Rosenbrock systems.},
+  archive      = {J_SIMAX},
+  author       = {Ding Lu and Anshul Prajapati and Punit Sharma and Shreemayee Bora},
+  doi          = {10.1137/24M1673115},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1301-1327},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Eigenvalue backward errors of rosenbrock systems and optimization of sums of rayleigh quotients},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Stabilization of linear port-hamiltonian descriptor systems via output feedback. <em>SIMAX</em>, <em>46</em>(2), 1280-1300. (<a href='https://doi.org/10.1137/24M1650259'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The structure preserving stabilization of (possibly nonregular) linear port-Hamiltonian descriptor (pHDAE) systems by output feedback is discussed. For general descriptor systems, the characterization when there exist output feedbacks that lead to an asymptotically stable closed-loop system is a very hard and partially an open problem. In contrast to this, it is shown that for systems in pHDAE representation this problem can be completely solved. Necessary and sufficient conditions are presented that guarantee that there exist a proportional and/or derivative output feedback such that the resulting closed-loop port-Hamiltonian descriptor system is asymptotically stable. For this, it is necessary that the output feedback also makes the problem regular and of index at most one. A complete characterization when this is possible is presented as well.},
+  archive      = {J_SIMAX},
+  author       = {Delin Chu and Volker Mehrmann},
+  doi          = {10.1137/24M1650259},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1280-1300},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Stabilization of linear port-hamiltonian descriptor systems via output feedback},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Surrogate-based autotuning for randomized sketching algorithms in regression problems. <em>SIMAX</em>, <em>46</em>(2), 1247-1279. (<a href='https://doi.org/10.1137/23M1597526'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Algorithms from Randomized Numerical Linear Algebra (RandNLA) are known to be effective in handling high-dimensional computational problems, providing high-quality empirical performance as well as strong probabilistic guarantees. However, their practical application is complicated by the fact that the user needs to set various algorithm-specific tuning parameters which are different from those used in traditional NLA. This paper demonstrates how a surrogate-based autotuning approach can be used to address fundamental problems of parameter selection in RandNLA algorithms. In particular, we provide a detailed investigation of surrogate-based autotuning for sketch-and-precondition (SAP)–based randomized least squares methods, which have been one of the great success stories in modern RandNLA. Empirical results show that our surrogate-based autotuning approach can achieve near-optimal performance with much less tuning cost than a random search (up to about 7.6x fewer trials of different parameter configurations). Moreover, while our experiments focus on least squares, our results demonstrate a general-purpose autotuning pipeline applicable to any kind of RandNLA algorithm. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: code and data available”, as a recognition that the authors have followed reproducibility principles valued by SISC and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://gptune.lbl.gov/.},
+  archive      = {J_SIMAX},
+  author       = {Younghyun Cho and James Demmel and Michał Dereziński and Haoyun Li and Hengrui Luo and Michael Mahoney and Riley Murray},
+  doi          = {10.1137/23M1597526},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1247-1279},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Surrogate-based autotuning for randomized sketching algorithms in regression problems},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Global convergence of hessenberg shifted QR III: Approximate ritz values via shifted inverse iteration. <em>SIMAX</em>, <em>46</em>(2), 1212-1246. (<a href='https://doi.org/10.1137/23M1557556'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We give a self-contained randomized algorithm based on shifted inverse iteration which provably computes the eigenvalues of an arbitrary matrix up to backward error in floating point operations using bits of precision. While the complexity is prohibitive for large matrices, the algorithm is simple and may be useful for computing the eigenvalues of small matrices using a controlled amount of precision, in particular, for computing Ritz values in shifted QR algorithms as in [BGVS22b].},
+  archive      = {J_SIMAX},
+  author       = {Jess Banks and Jorge Garza-Vargas and Nikhil Srivastava},
+  doi          = {10.1137/23M1557556},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1212-1246},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Global convergence of hessenberg shifted QR III: Approximate ritz values via shifted inverse iteration},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Global convergence of hessenberg shifted QR II: Finite arithmetic. <em>SIMAX</em>, <em>46</em>(2), 1168-1211. (<a href='https://doi.org/10.1137/23M1557532'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We develop a framework for proving rapid convergence of shifted QR algorithms which use Ritz values as shifts, in finite precision arithmetic. Our key contribution is a dichotomy result which addreses the known forward-instability issues surrounding the shifted QR iteration [B. N. Parlett and J. Le, SIAM J. Matrix Anal. Appl., 14 (1993), pp. 279–316]: we give a procedure which provably either computes a set of approximate Ritz values of a Hessenberg matrix with good forward stability properties or leads to early decoupling of the matrix via a small number of QR steps. Using this framework, we show that the shifting strategy of [J. Banks, J. Garza-Vargas, and N. Srivastava, Global Convergence of Hessenberg Shifted QR I: Dynamics, arXiv:2111.07976, 2022] converges rapidly in finite arithmetic with a polylogarithmic bound on the number of bits of precision required, when invoked on matrices of controlled eigenvector condition number and minimum eigenvalue gap.},
+  archive      = {J_SIMAX},
+  author       = {Jess Banks and Jorge Garza-Vargas and Nikhil Srivastava},
+  doi          = {10.1137/23M1557532},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1168-1211},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Global convergence of hessenberg shifted QR II: Finite arithmetic},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The ultimate upper bound on the injectivity radius of the stiefel manifold. <em>SIMAX</em>, <em>46</em>(2), 1145-1167. (<a href='https://doi.org/10.1137/24M1644808'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We exhibit conjugate points on the Stiefel manifold endowed with any member of the family of Riemannian metrics introduced by Hüper et al. [J. Geom. Mech., 13 (2021), pp. 55–72]. This family contains the well-known canonical and Euclidean metrics. An upper bound on the injectivity radius of the Stiefel manifold in the considered metric is then obtained as the minimum between the length of the geodesic along which the points are conjugate and the length of certain geodesic loops. Numerical experiments support the conjecture that the obtained upper bound is in fact equal to the injectivity radius.},
+  archive      = {J_SIMAX},
+  author       = {P.-A. Absil and Simon Mataigne},
+  doi          = {10.1137/24M1644808},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1145-1167},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {The ultimate upper bound on the injectivity radius of the stiefel manifold},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A comparison of mixed precision iterative refinement approaches for least-squares problems. <em>SIMAX</em>, <em>46</em>(2), 1117-1144. (<a href='https://doi.org/10.1137/24M1664927'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Various approaches to iterative refinement (IR) for least-squares problems have been proposed in the literature and it may not be clear which approach is suitable for a given problem. We consider three approaches to IR for least-squares problems when two precisions are used and review their theoretical guarantees, known shortcomings and when the method can be expected to recognize that the correct solution has been found, and extend uniform precision analysis for an IR approach based on the seminormal equations to the two-precision case. We focus on the situation where it is desired to refine the solution to the working precision level. It is shown that the IR methods exhibit different sensitivities to the conditioning of the problem and the size of the least-squares residual, which should be taken into account when choosing the IR approach. We also discuss a new approach that is based on solving multiple least-squares problems.},
+  archive      = {J_SIMAX},
+  author       = {Erin Carson and Ieva Daužickaitė},
+  doi          = {10.1137/24M1664927},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1117-1144},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {A comparison of mixed precision iterative refinement approaches for least-squares problems},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A semidefinite relaxation for sums of heterogeneous quadratic forms on the stiefel manifold. <em>SIMAX</em>, <em>46</em>(2), 1091-1116. (<a href='https://doi.org/10.1137/23M1545136'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We study the maximization of sums of heterogeneous quadratic forms over the Stiefel manifold, a nonconvex problem that arises in several modern signal processing and machine learning applications such as heteroscedastic probabilistic principal component analysis (HPPCA). In this work, we derive a novel semidefinite program (SDP) relaxation of the original problem and study a few of its theoretical properties. We prove a global optimality certificate for the original nonconvex problem via a dual certificate, which leads to a simple feasibility problem to certify global optimality of a candidate solution on the Stiefel manifold. In addition, our relaxation reduces to an assignment linear program for jointly diagonalizable problems and is therefore known to be tight in that case. We generalize this result to show that it is also tight for close-to jointly diagonalizable problems, and we show that the HPPCA problem has this characteristic. Numerical results validate our global optimality certificate and sufficient conditions for when the SDP is tight in various problem settings.},
+  archive      = {J_SIMAX},
+  author       = {Kyle Gilman and Samuel Burer and Laura Balzano},
+  doi          = {10.1137/23M1545136},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1091-1116},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {A semidefinite relaxation for sums of heterogeneous quadratic forms on the stiefel manifold},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multilinear singular value Decomposition–Based completion with fibers observed in a single mode. <em>SIMAX</em>, <em>46</em>(2), 1061-1090. (<a href='https://doi.org/10.1137/23M1622830'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The multilinear singular value decomposition (MLSVD) extends the properties of the singular value decomposition to the tensor case and is a basic tool for working with tensors that are (approximately) of low multilinear rank. In the context of incomplete data, low multilinear rank tensor completion algorithms are usually optimization-based. In this work, we introduce an algorithm for computing the MLSVD of tensors with fibers that are observed along a single mode. This is important, since in real-life applications it often happens that fibers can be acquired significantly more easily along one mode than along other modes. In addition, this manner of observation allows one to formulate an algebraic algorithm, i.e., involving only standard linear algebra operations. The algorithm is guaranteed to exactly recover a low multilinear rank tensor in the noiseless case if some very reasonable conditions are satisfied. Part of the work consists of the derivation of algebraic algorithms for completing a matrix that is observed through a set of fully available submatrices. Experiments with synthetic data show that the algorithm comes close to algorithms from the literature in terms of accuracy while requiring far less computation time. As a possible use, we obtain a “completion” counterpart of initializing optimization-based low multilinear rank approximation algorithms with a truncated MLSVD. In a completion experiment with traffic speed data, our algorithm achieves a level of accuracy that is comparable to baseline algorithms.},
+  archive      = {J_SIMAX},
+  author       = {Mikael Sørensen and Stijn Hendrikx and Lieven De Lathauwer},
+  doi          = {10.1137/23M1622830},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1061-1090},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Multilinear singular value Decomposition–Based completion with fibers observed in a single mode},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Interior eigensolver based on rational filter with composite rule. <em>SIMAX</em>, <em>46</em>(2), 1037-1060. (<a href='https://doi.org/10.1137/24M1654713'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The contour integral–based rational filter leads to interior eigensolvers for non-Hermitian generalized eigenvalue problems. Based on Zolotarev’s third problem, this paper proves the asymptotic optimality of the trapezoidal quadrature of the contour integral in terms of the spectrum separation. A composite rule of the trapezoidal quadrature is derived, and two interior eigensolvers are proposed based on it. Both eigensolvers adopt direct factorization and the multishift generalized minimal residual method for the inner and outer rational functions, respectively. The first eigensolver fixes the order of the outer rational function and applies subspace iterations to achieve convergence, whereas the second eigensolver doubles the order of the outer rational function every iteration to achieve convergence without subspace iteration. The efficiency and stability of proposed eigensolvers are demonstrated on synthetic and practical sparse matrix pencils.},
+  archive      = {J_SIMAX},
+  author       = {Yuer Chen and Yingzhou Li},
+  doi          = {10.1137/24M1654713},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1037-1060},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Interior eigensolver based on rational filter with composite rule},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Parametric kernel low-rank approximations using tensor train decomposition. <em>SIMAX</em>, <em>46</em>(2), 1006-1036. (<a href='https://doi.org/10.1137/24M1663879'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Computing low-rank approximations of kernel matrices is an important problem with many applications in scientific computing and data science. We propose methods to efficiently approximate and store low-rank approximations to kernel matrices that depend on certain hyperparameters. The main idea behind our method is to use multivariate Chebyshev function approximation along with the tensor train decomposition of the coefficient tensor. The computations are in two stages: an offline stage, which dominates the computational cost and is parameter-independent, and an online stage, which is inexpensive and instantiated for specific hyperparameters. A variation of this method addresses the case that the kernel matrix is symmetric and positive semidefinite. The resulting algorithms have linear complexity in terms of the sizes of the kernel matrices. We investigate the efficiency and accuracy of our method on parametric kernel matrices induced by various kernels, such as the Matérn kernel, through various numerical experiments on problem setups up to three spatial dimensions and two parameter dimensions. Our methods have speedups up to in the online time compared to other methods with similar complexity and comparable accuracy. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SIMAX and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/awkhan3/ParametricTensorTrainKernel and in the supplemental material (Supp_Materials.zip [3.60MB]).},
+  archive      = {J_SIMAX},
+  author       = {Abraham Khan and Arvind K. Saibaba},
+  doi          = {10.1137/24M1663879},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {1006-1036},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Parametric kernel low-rank approximations using tensor train decomposition},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Entrywise tensor-train approximation of large tensors via random embeddings. <em>SIMAX</em>, <em>46</em>(2), 984-1005. (<a href='https://doi.org/10.1137/24M1649186'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The theory of low-rank tensor-train approximation is well understood when the approximation error is measured in the Frobenius norm. The entrywise maximum norm is equally important but is significantly weaker for large tensors, making the estimates obtained via the Frobenius norm and norm equivalence pessimistic or even meaningless. In this article, we derive a direct estimate of the entrywise approximation error that is applicable in some of these cases. The estimate is given in terms of the higher-order generalization of the matrix factorization norm, and its proof is based on the tensor-structured Hanson–Wright inequality. The theoretical results are accompanied by numerical experiments carried out with the method of alternating projections.},
+  archive      = {J_SIMAX},
+  author       = {Stanislav Budzinskiy},
+  doi          = {10.1137/24M1649186},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {984-1005},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Entrywise tensor-train approximation of large tensors via random embeddings},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Solving the parametric eigenvalue problem by taylor series and chebyshev expansion. <em>SIMAX</em>, <em>46</em>(2), 957-983. (<a href='https://doi.org/10.1137/23M1551961'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We discuss two approaches to solving the parametric (or stochastic) eigenvalue problem. One of them uses a Taylor expansion and the other a Chebyshev expansion. The parametric eigenvalue problem assumes that the matrix depends on a parameter , where might be a random variable. Consequently, the eigenvalues and eigenvectors are also functions of . We compute a Taylor approximation of these functions about by iteratively computing the Taylor coefficients. The complexity of this approach is for all eigenpairs if the derivatives of at are given. The Chebyshev expansion works similarly. We first find an initial approximation iteratively, which we then refine with Newton’s method. This second method is more expensive but provides a good approximation over the whole interval of the expansion instead of around a single point. We present numerical experiments confirming the complexity and demonstrating that the approaches are capable of tracking eigenvalues at intersection points. Further experiments shed light on the limitations of the Taylor expansion approach with respect to the distance from the expansion point .},
+  archive      = {J_SIMAX},
+  author       = {Thomas Mach and Melina A. Freitag},
+  doi          = {10.1137/23M1551961},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {957-983},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Solving the parametric eigenvalue problem by taylor series and chebyshev expansion},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A new interpretation of the weighted pseudoinverse and its applications. <em>SIMAX</em>, <em>46</em>(2), 934-956. (<a href='https://doi.org/10.1137/24M1686073'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Consider the generalized linear least squares (GLS) problem such that . The weighted pseudoinverse is the matrix that maps to the minimum 2-norm solution of this GLS problem. By introducing a linear operator induced by between two finite-dimensional Hilbert spaces, we show that the minimum 2-norm solution of the GLS problem is equivalent to the minimum norm solution of a linear least squares problem involving this linear operator, and can be expressed as the composition of the Moore–Penrose pseudoinverse of this linear operator and an orthogonal projector. With this new interpretation, we establish the generalized Moore–Penrose equations that completely characterize the weighted pseudoinverse, give a closed-form expression of the weighted pseudoinverse using the generalized singular value decomposition (GSVD), and propose a generalized LSQR (gLSQR) algorithm for iteratively solving the GLS problem. We construct several numerical examples to test the proposed iterative algorithm for solving GLS problems. Our results highlight the close connections between GLS, weighted pseudoinverse, GSVD, and gLSQR, providing new tools for both analysis and computations.},
+  archive      = {J_SIMAX},
+  author       = {Haibo Li},
+  doi          = {10.1137/24M1686073},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {934-956},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {A new interpretation of the weighted pseudoinverse and its applications},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A newton method for solving locally definite multiparameter eigenvalue problems by multi-index. <em>SIMAX</em>, <em>46</em>(2), 906-933. (<a href='https://doi.org/10.1137/24M1652775'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We present a new approach to compute eigenvalues and eigenvectors of locally definite multiparameter eigenvalue problems by their signed multi-index. The method has the interpretation of a semismooth Newton method applied to certain functions that have a unique zero. We can therefore show local quadratic convergence, and for certain extreme eigenvalues even global linear convergence of the method. Local definiteness is a weaker condition than right and left definiteness, which is often considered for multiparameter eigenvalue problems. These conditions are naturally satisfied for multiparameter Sturm–Liouville problems that arise when separation of variables can be applied to multidimensional boundary eigenvalue problems.},
+  archive      = {J_SIMAX},
+  author       = {Henrik Eisenmann},
+  doi          = {10.1137/24M1652775},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {906-933},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {A newton method for solving locally definite multiparameter eigenvalue problems by multi-index},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An efficient algorithm for the riemannian logarithm on the stiefel manifold for a family of riemannian metrics. <em>SIMAX</em>, <em>46</em>(2), 879-905. (<a href='https://doi.org/10.1137/24M1647801'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Since the popularization of the Stiefel manifold for numerical applications in 1998 in a seminal paper from Edelman et al., it has been exhibited to be a key to solving many problems from optimization, statistics, and machine learning. In 2021, Hüper et al. proposed a one-parameter family of Riemannian metrics on the Stiefel manifold, subsuming the well-known Euclidean and canonical metrics. Since then, several methods have been proposed to obtain a candidate for the Riemannian logarithm given any metric from the family. Most of these methods are based on the shooting method or rely on optimization approaches. For the canonical metric, Zimmermann proposed in 2017 a particularly efficient method based on a pure matrix-algebraic approach. In this paper, we derive a generalization of this algorithm that works for the one-parameter family of Riemannian metrics. The algorithm is proposed in two versions, termed backward and forward, for which we prove that it conserves the local linear convergence previously exhibited in Zimmermann’s algorithm for the canonical metric. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SIMAX and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/smataigne/StiefelLog.jl and in the supplementary materials (supp-materials.zip [1.51MB]).},
+  archive      = {J_SIMAX},
+  author       = {Simon Mataigne and Ralf Zimmermann and Nina Miolane},
+  doi          = {10.1137/24M1647801},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {879-905},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {An efficient algorithm for the riemannian logarithm on the stiefel manifold for a family of riemannian metrics},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Local convergence analysis of a variable projection method for regularized separable nonlinear inverse problems. <em>SIMAX</em>, <em>46</em>(2), 858-878. (<a href='https://doi.org/10.1137/24M1639087'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Variable projection methods prove highly efficient in solving separable nonlinear least squares problems by transforming them into a reduced nonlinear least squares problem, typically solvable via the Gauss–Newton method. When solving large-scale separable nonlinear inverse problems with general-form Tikhonov regularization, the computational demand for computing Jacobians in the Gauss–Newton method becomes very challenging. To mitigate this, iterative methods, specifically LSQR, can be used as inner solvers to compute approximate Jacobians and residuals. This article analyzes the impact of these approximations within the variable projection method and introduces stopping criteria to ensure local convergence. We also present numerical experiments where we apply the proposed method to solve semiblind deconvolution problems to illustrate and confirm our theoretical results and the effectiveness of the method.},
+  archive      = {J_SIMAX},
+  author       = {Malena I. Español and Gabriela Jeronimo},
+  doi          = {10.1137/24M1639087},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {858-878},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Local convergence analysis of a variable projection method for regularized separable nonlinear inverse problems},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Matrix completion and decomposition in phase-bounded cones. <em>SIMAX</em>, <em>46</em>(2), 837-857. (<a href='https://doi.org/10.1137/23M1626529'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The problems of matrix completion and decomposition in the cone of positive semidefinite (PSD) matrices are well-understood problems, with many important applications in areas such as linear algebra, optimization, and control theory. This paper considers the completion and decomposition problems in a broader class of cones, namely, phase-bounded cones. We show that most of the main results from the PSD case carry over to the phase-bounded case. More precisely, this is done by first unveiling a duality between the completion and decomposition problems, using a dual-cone interpretation. Based on this, we then derive necessary and sufficient conditions for the phase-bounded completion and decomposition problems, and also characterize all phase-bounded completions of a completable partial matrix with a block banded pattern.},
+  archive      = {J_SIMAX},
+  author       = {Ding Zhang and Axel Ringh and Li Qiu},
+  doi          = {10.1137/23M1626529},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {6},
+  number       = {2},
+  pages        = {837-857},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Matrix completion and decomposition in phase-bounded cones},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mixed-precision Paterson–Stockmeyer method for evaluating polynomials of matrices. <em>SIMAX</em>, <em>46</em>(1), 811-835. (<a href='https://doi.org/10.1137/24M1675734'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The Paterson–Stockmeyer method is an evaluation scheme for matrix polynomials with scalar coefficients that arise in many state-of-the-art algorithms based on polynomial or rational approximation, for example, those for computing transcendental matrix functions. We derive a mixed-precision version of the Paterson–Stockmeyer method that is particularly useful for evaluating matrix polynomials with scalar coefficients of decaying magnitude. The new method is mainly of interest in the arbitrary-precision arithmetic, and it is attractive for high-precision computations. The key idea is to perform computations on data of small magnitude in low precision, and rounding error analysis is provided for the use of precisions lower than the working precision. We focus on the evaluation of the Taylor approximants of the matrix exponential and show the applicability of our method to the existing scaling and squaring algorithms. We also demonstrate through experiments the general applicability of our method to other problems, such as computing the polynomials from the Padé approximant of the matrix exponential and the Taylor approximant of the matrix cosine. Numerical experiments show our mixed-precision Paterson–Stockmeyer algorithms can be more efficient than its fixed-precision counterpart while delivering the same level of accuracy. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SIMAX and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/xiaobo-liu/mp-ps and in the supplementary materials (Supp_Materials.zip [50.6KB]).},
+  archive      = {J_SIMAX},
+  author       = {Xiaobo Liu},
+  doi          = {10.1137/24M1675734},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {811-835},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Mixed-precision Paterson–Stockmeyer method for evaluating polynomials of matrices},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Accuracy and stability of CUR decompositions with oversampling. <em>SIMAX</em>, <em>46</em>(1), 780-810. (<a href='https://doi.org/10.1137/24M1660346'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This work investigates the accuracy and numerical stability of CUR decompositions with oversampling. The CUR decomposition approximates a matrix using a subset of columns and rows of the matrix. When the number of columns and rows is the same, the CUR decomposition can become unstable and less accurate due to the presence of the matrix inverse in the core matrix. Nevertheless, we demonstrate that the CUR decomposition can be implemented in a numerically stable manner and illustrate that oversampling, which increases the number of either columns or rows in the CUR decomposition, can enhance its accuracy and stability. Additionally, this work devises an algorithm for oversampling motivated by the theory of the CUR decomposition and the cosine-sine decomposition, whose competitiveness is illustrated through experiments.},
+  archive      = {J_SIMAX},
+  author       = {Taejun Park and Yuji Nakatsukasa},
+  doi          = {10.1137/24M1660346},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {780-810},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Accuracy and stability of CUR decompositions with oversampling},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). High curvature means low rank: On the sectional curvature of grassmann and stiefel manifolds and the underlying matrix trace inequalities. <em>SIMAX</em>, <em>46</em>(1), 748-779. (<a href='https://doi.org/10.1137/24M1655755'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Methods and algorithms that work with data on nonlinear manifolds are collectively summarized under the term “Riemannian computing." In practice, curvature can be a key limiting factor for the performance of Riemannian computing methods. Yet curvature can also be a powerful tool in the theoretical analysis of Riemannian algorithms. In this work, we investigate the sectional curvature of the Stiefel and Grassmann manifold. On the Grassmannian, tight curvature bounds have been known since the late 1960s. On the Stiefel manifold under the canonical metric, it was believed that the sectional curvature does not exceed 5/4. Under the Euclidean metric, the maximum was conjectured to be at 1. For both manifolds, the sectional curvature is given by the Frobenius norm of certain structured commutator brackets of skew-symmetric matrices. We provide refined inequalities for such terms and pay special attention to the maximizers of the curvature bounds. In this way, we prove for the Stiefel manifold that the global bounds of 5/4 (canonical metric) and 1 (Euclidean metric) hold indeed. With this addition, a complete account of the curvature bounds in all admissible dimensions is obtained. We observe that “high curvature means low-rank"; more precisely, for the Stiefel and Grassmann manifolds under the canonical metric, the global curvature maximum is attained at tangent plane sections that are spanned by rank-two matrices, while the extreme curvature cases of the Euclidean Stiefel manifold occur for rank-one matrices. Numerical examples are included for illustration purposes. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: code and data available” as a recognition that the authors have followed reproducibility principles valued by SIMAX and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/RalfZimmermannSDU/StiefelCurvatureSIMAX and in the supplementary materials (Curvature_supp.pdf [232KB], StiefelCurvatureSIMAX.zip [46.3KB]).},
+  archive      = {J_SIMAX},
+  author       = {Ralf Zimmermann and Jakob Stoye},
+  doi          = {10.1137/24M1655755},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {748-779},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {High curvature means low rank: On the sectional curvature of grassmann and stiefel manifolds and the underlying matrix trace inequalities},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Rounding error analysis of the inverse compact WY modified Gram–Schmidt algorithms. <em>SIMAX</em>, <em>46</em>(1), 726-747. (<a href='https://doi.org/10.1137/24M1655482'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Modified Gram–Schmidt (MGS) factors a full column rank matrix into , where has orthonormal columns and is upper triangular. The inverse compact WY (ICWY) representation of MGS trades a small increase in computation for significantly reduced communication. However, rigorous rounding error bounds for these variants have not been established. In this paper we provide a detailed stability analysis of the ICWY-based MGS algorithms. We develop a direct approach and prove that the loss of orthogonality of the classical ICWY algorithm can be bounded by , where denotes the unit roundoff and denotes the condition number. Then we generalize this approach to the block and normalization lagging variants and prove the same order of accuracy. For the Cholesky-based block variant, we investigate the causes of instability and suggest a more stable ICWY algorithm. Finally, we discuss some other aspects of rounding errors in order to better understand this subject.},
+  archive      = {J_SIMAX},
+  author       = {Qinmeng Zou},
+  doi          = {10.1137/24M1655482},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {726-747},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Rounding error analysis of the inverse compact WY modified Gram–Schmidt algorithms},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GMRES with randomized sketching and deflated restarting. <em>SIMAX</em>, <em>46</em>(1), 702-725. (<a href='https://doi.org/10.1137/23M1619472'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We present a new Krylov subspace recycling method for solving a linear system of equations, or a sequence of slowly changing linear systems. Our approach is to reduce the computational overhead of recycling techniques while still benefiting from the acceleration afforded by such techniques. As such, this method augments an unprojected Krylov subspace. Furthermore, it combines randomized sketching and deflated restarting in a way that avoids orthogononalizing a full Krylov basis. We call this new method GMRES-SDR (sketched deflated restarting). With this new method, we provide new theory which initially characterizes unaugmented sketched GMRES as a projection method for which the projectors involve the sketching operator. We demonstrate that sketched GMRES and its sibling method sketched FOM are an MR/OR pairing, just like GMRES and FOM. We furthermore obtain residual convergence estimates. Building on this, we characterize GMRES-SDR also in terms of sketching-based projectors. Compression of the augmented Krylov subspace for recycling is performed using a sketched version of harmonic Ritz vectors. We present results of numerical experiments demonstrating the effectiveness of GMRES-SDR over competitor methods such as GMRES-DR and GCRO-DR.},
+  archive      = {J_SIMAX},
+  author       = {Liam Burke and Stefan Güttel and Kirk M. Soodhalter},
+  doi          = {10.1137/23M1619472},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {702-725},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {GMRES with randomized sketching and deflated restarting},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An analysis of the Rayleigh–Ritz and refined Rayleigh–Ritz methods for regular nonlinear eigenvalue problems. <em>SIMAX</em>, <em>46</em>(1), 676-701. (<a href='https://doi.org/10.1137/23M161392X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We establish a general convergence theory of the Rayleigh–Ritz method and the refined Rayleigh–Ritz method for computing some simple eigenpair of a given analytic regular nonlinear eigenvalue problem (NEP). In terms of the deviation of from a given subspace , we establish a priori convergence results on the Ritz value, the Ritz vector, and the refined Ritz vector. The results show that, as , there exists a Ritz value that unconditionally converges to , as does the corresponding refined Ritz vector, but the Ritz vector converges conditionally and may fail to converge and even may not be unique. We also present an error bound for the approximate eigenvector in terms of the computable residual norm of a given approximate eigenpair and give lower and upper bounds for the error of the refined Ritz vector and  the Ritz vector as well as for that of the corresponding residual norms. These results nontrivially extend some convergence results on these two methods for the linear eigenvalue problem to the NEP. Examples are constructed to illustrate the main results.},
+  archive      = {J_SIMAX},
+  author       = {Zhongxiao Jia and Qingqing Zheng},
+  doi          = {10.1137/23M161392X},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {676-701},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {An analysis of the Rayleigh–Ritz and refined Rayleigh–Ritz methods for regular nonlinear eigenvalue problems},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Avoiding discretization issues for nonlinear eigenvalue problems. <em>SIMAX</em>, <em>46</em>(1), 648-675. (<a href='https://doi.org/10.1137/23M1569927'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The first step when solving an infinite-dimensional eigenvalue problem is often to discretize it. We show that one must be extremely careful when discretizing nonlinear eigenvalue problems. Using examples from the NLEVP collection, we demonstrate that discretization can lead to several issues, including (1) introduction of spurious eigenvalues, (2) omission of spectra, (3) severe ill-conditioning, and (4) emergence of ghost essential spectra. While many eigensolvers are available for solving finite matrix nonlinear eigenvalue problems, we propose InfBeyn, a solver for general holomorphic infinite-dimensional nonlinear eigenvalue problems that circumvents these discretization issues. We prove that InfBeyn is stable and converges. Furthermore, we provide an algorithm that computes the problem’s pseudospectra with explicit error control, enabling verification of computed spectra. Both algorithms and numerical examples are publicly available in the infNEP software package, which is written in MATLAB. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SIMAX and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/MColbrook/infNEP and in the supplementary materials (infNEP-main.zip [24.9KB]).},
+  archive      = {J_SIMAX},
+  author       = {Matthew J. Colbrook and Alex Townsend},
+  doi          = {10.1137/23M1569927},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {648-675},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Avoiding discretization issues for nonlinear eigenvalue problems},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A complex-projected rayleigh quotient iteration for targeting interior eigenvalues. <em>SIMAX</em>, <em>46</em>(1), 626-647. (<a href='https://doi.org/10.1137/23M1622155'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We introduce a new projected Rayleigh quotient iteration aimed at improving the convergence behavior of classic Rayleigh quotient iteration (RQI) by incorporating approximate information about the target eigenvector at each step. While classic RQI exhibits local cubic convergence for Hermitian matrices, its global behavior can be unpredictable, whereby it may converge to an eigenvalue far away from the target, even when started with accurate initial conditions. This problem is exacerbated when the eigenvalues are closely spaced. The key idea of the new algorithm is at each step to add a complex-valued projection to the original matrix (that depends on the current eigenvector approximation), such that the unwanted eigenvalues are lifted into the complex plane while the target stays close to the real line, thereby increasing the spacing between the target eigenvalue and the rest of the spectrum. Making better use of the eigenvector approximation leads to more robust convergence behavior, and the new method converges reliably to the correct target eigenpair for a significantly wider range of initial vectors than does classic RQI. We prove that the method converges locally cubically, and we present several numerical examples demonstrating the improved global convergence behavior. In particular, we apply it to compute eigenvalues in a band-gap spectrum of a Sturm–Liouville operator used to model photonic crystal fibers, where the target and unwanted eigenvalues are closely spaced. The examples show that the new method converges to the desired eigenpair even when the eigenvalue spacing is very small, often succeeding when classic RQI fails.},
+  archive      = {J_SIMAX},
+  author       = {Nils Friess and Alexander D. Gilbert and Robert Scheichl},
+  doi          = {10.1137/23M1622155},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {626-647},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {A complex-projected rayleigh quotient iteration for targeting interior eigenvalues},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Randomized algorithms for symmetric nonnegative matrix factorization. <em>SIMAX</em>, <em>46</em>(1), 584-625. (<a href='https://doi.org/10.1137/24M1638355'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Symmetric Nonnegative Matrix Factorization (SymNMF) is a technique in data analysis and machine learning that approximates a symmetric matrix with a product of a nonnegative, low-rank matrix and its transpose. To design faster and more scalable algorithms for SymNMF, we develop two randomized algorithms for its computation. The first algorithm uses randomized matrix sketching to compute an initial low-rank approximation to the input matrix and proceeds to rapidly compute a SymNMF of the approximation. The second algorithm uses randomized leverage score sampling to approximately solve constrained least squares problems. Many successful methods for SymNMF rely on (approximately) solving sequences of constrained least squares problems. We prove theoretically that leverage score sampling can approximately solve nonnegative least squares problems to a chosen accuracy with high probability. Additionally, we prove sampling complexity results for previously proposed hybrid sampling techniques which deterministically include high leverage score rows. This hybrid scheme is crucial for obtaining speedups in practice. Finally, we demonstrate that both methods work well in practice by applying them to graph clustering tasks on large real world data sets. These experiments show that our methods approximately maintain solution quality and achieve significant speedups for both large dense and large sparse problems.},
+  archive      = {J_SIMAX},
+  author       = {Koby Hayashi and Sinan G. Aksoy and Grey Ballard and Haesun Park},
+  doi          = {10.1137/24M1638355},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {584-625},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Randomized algorithms for symmetric nonnegative matrix factorization},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Generalized orthogonal procrustes problem under arbitrary adversaries. <em>SIMAX</em>, <em>46</em>(1), 561-583. (<a href='https://doi.org/10.1137/24M1631122'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The generalized orthogonal Procrustes problem (GOPP) plays a fundamental role in several scientific disciplines including statistics, imaging science, and computer vision. Despite its tremendous practical importance, it is generally an NP-hard problem to find the least squares estimator. We study the semidefinite relaxation (SDR) and an iterative method named generalized power method (GPM) to find the least squares estimator, and we investigate the performance under a signal-plus-noise model. We show that the SDR recovers the least squares estimator exactly, and moreover, the generalized power method with a proper initialization converges linearly to the global minimizer to the SDR, provided that the signal-to-noise ratio is large. The main technique follows from showing the nonlinear mapping involved in the GPM is essentially a local contraction mapping, and then applying the well-known Banach fixed-point theorem finishes the proof. In addition, we analyze the low-rank factorization algorithm and show the corresponding optimization landscape is free of spurious local minimizers under nearly identical conditions that enable the success of the SDR approach. The highlight of our work is that the theoretical guarantees are purely algebraic and do not assume any statistical priors of the additive adversaries, and thus it applies to various interesting settings.},
+  archive      = {J_SIMAX},
+  author       = {Shuyang Ling},
+  doi          = {10.1137/24M1631122},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {561-583},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Generalized orthogonal procrustes problem under arbitrary adversaries},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A stable matrix version of the 2D fast multipole method. <em>SIMAX</em>, <em>46</em>(1), 530-560. (<a href='https://doi.org/10.1137/23M1624580'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The fast multipole method (FMM) is a powerful method for accelerating some kernel matrix-vector multiplications. In this paper, we show an intuitive matrix version of the FMM in two dimensions via degenerate Taylor series expansions and, furthermore, give a simple stabilization strategy to balance relevant low-rank factors so that the factors and some translation operators satisfy certain norm bounds. Based on these, we provide the long-overdue backward stability analysis for the FMM. The matrix version FMM translates the original FMM terminology into simple matrix language with the aim of being more accessible to nonexperts and more convenient to perform backward stability analysis. The stabilization strategy leads to entrywise backward errors that depend only logarithmically on the matrix size, which shows the superior stability benefit of the FMM on top of its efficiency advantage as compared with usual dense matrix-vector multiplications.},
+  archive      = {J_SIMAX},
+  author       = {Xiaofeng Ou and Michelle Michelle and Jianlin Xia},
+  doi          = {10.1137/23M1624580},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {530-560},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {A stable matrix version of the 2D fast multipole method},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MinAres: An iterative solver for symmetric linear systems. <em>SIMAX</em>, <em>46</em>(1), 509-529. (<a href='https://doi.org/10.1137/23M1605454'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We introduce an iterative solver named MinAres for symmetric linear systems , where is possibly singular. MinAres is based on the symmetric Lanczos process, like Minres and Minres-qlp, but it minimizes in each Krylov subspace rather than , where is the current residual vector. When is symmetric, MinAres minimizes the same quantity as Lsmr, but in more relevant Krylov subspaces, and it requires only one matrix-vector product per iteration, whereas Lsmr would need two. Our numerical experiments with Minres-qlp and Lsmr show that MinAres is a pertinent alternative on consistent symmetric systems and the most suitable Krylov method for inconsistent symmetric systems. We derive properties of MinAres from an equivalent solver named CAr that is to MinAres as Cr is to Minres, is not based on the Lanczos process, and minimizes in the same Krylov subspace as MinAres. We establish that MinAres and CAr generate monotonic , and when is positive definite.},
+  archive      = {J_SIMAX},
+  author       = {Alexis Montoison and Dominique Orban and Michael A. Saunders},
+  doi          = {10.1137/23M1605454},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {509-529},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {MinAres: An iterative solver for symmetric linear systems},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multilevel tau preconditioners for symmetrized multilevel toeplitz systems with applications to solving space fractional diffusion equations. <em>SIMAX</em>, <em>46</em>(1), 487-508. (<a href='https://doi.org/10.1137/24M1647096'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this work, we develop a novel multilevel Tau matrix-based preconditioned method for a class of nonsymmetric multilevel Toeplitz systems. This method not only accounts for but also improves upon an ideal preconditioner pioneered by Pestana [SIAM J. Matrix Anal. Appl., 40 (2019), pp. 870–887]. The ideal preconditioning approach was primarily examined numerically in that study, and an effective implementation was not included. To address these issues, we first rigorously show in this study that this ideal preconditioner can indeed achieve optimal convergence when employing the minimal residual (MINRES) method, with a convergence rate that is independent of the mesh size. Then, building on this preconditioner, we develop a practical and optimal preconditioned MINRES method. To further illustrate its applicability and develop a fast implementation strategy, we consider solving Riemann–Liouville fractional diffusion equations as an application. Specifically, following standard discretization on the equation, the resultant linear system is a nonsymmetric multilevel Toeplitz system, affirming the applicability of our preconditioning method. Through a simple symmetrization strategy, we transform the original linear system into a symmetric multilevel Hankel system. Subsequently, we propose a symmetric positive definite multilevel Tau preconditioner for the symmetrized system, which can be efficiently implemented using discrete sine transforms. Theoretically, we demonstrate that mesh-independent convergence can be achieved. In particular, we prove that the eigenvalues of the preconditioned matrix are bounded within disjoint intervals containing , without any outliers. Numerical examples are provided to critically discuss the results, showcase the spectral distribution, and support the efficacy of our preconditioning strategy.},
+  archive      = {J_SIMAX},
+  author       = {Congcong Li and Sean Hon},
+  doi          = {10.1137/24M1647096},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {487-508},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Multilevel tau preconditioners for symmetrized multilevel toeplitz systems with applications to solving space fractional diffusion equations},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Sparse factorization of the square all-ones matrix of arbitrary order. <em>SIMAX</em>, <em>46</em>(1), 466-486. (<a href='https://doi.org/10.1137/24M1633790'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this paper, we study sparse factorization of the (scaled) square all-ones matrix of arbitrary order. We introduce the concept of hierarchically banded matrices and propose two types of hierarchically banded factorization of : the reduced hierarchically banded factorization and the doubly stochastic hierarchically banded (DSHB) factorization. Based on the DSHB factorization, we propose the sequential doubly stochastic factorization, in which is decomposed as a product of sparse, doubly stochastic matrices. Finally, we discuss the application of the proposed sparse factorizations to the decentralized average consensus problem and decentralized optimization.},
+  archive      = {J_SIMAX},
+  author       = {Xin Jiang and Edward Duc Hien Nguyen and César A. Uribe and Bicheng Ying},
+  doi          = {10.1137/24M1633790},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {466-486},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Sparse factorization of the square all-ones matrix of arbitrary order},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Characterizing GSVD by singular value expansion of linear operators and its computation. <em>SIMAX</em>, <em>46</em>(1), 439-465. (<a href='https://doi.org/10.1137/24M1651150'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The generalized singular value decomposition (GSVD) of a matrix pair with and generalizes the singular value decomposition (SVD) of a single matrix. In this paper, we provide a new understanding of GSVD from the viewpoint of SVD, based on which we propose a new iterative method for computing nontrivial GSVD components of a large-scale matrix pair. By introducing two linear operators and induced by between two finite-dimensional Hilbert spaces and applying the theory of singular value expansion (SVE) for linear compact operators, we show that the GSVD of is nothing but the SVEs of and . This result characterizes completely the structure of GSVD for any matrix pair with the same number of columns. As a direct application of this result, we generalize the standard Golub–Kahan bidiagonalization (GKB) that is a basic routine for large-scale SVD computation such that the resulting generalized GKB (gGKB) process can be used to approximate nontrivial extreme GSVD components of , which is named the gGKB_GSVD algorithm. We use the GSVD of to study several basic properties of gGKB and also provide preliminary results about convergence and accuracy of gGKB_GSVD for GSVD computation. Numerical experiments are presented to demonstrate the effectiveness of this method.},
+  archive      = {J_SIMAX},
+  author       = {Haibo Li},
+  doi          = {10.1137/24M1651150},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {439-465},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Characterizing GSVD by singular value expansion of linear operators and its computation},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A class of sparse Johnson–Lindenstrauss transforms and analysis of their extreme singular values. <em>SIMAX</em>, <em>46</em>(1), 416-438. (<a href='https://doi.org/10.1137/23M1605661'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The Johnson–Lindenstrauss (JL) lemma is a powerful tool for dimensionality reduction in modern algorithm design. The lemma states that any set of high-dimensional points in a Euclidean space can be projected into lower dimensions while approximately preserving pairwise Euclidean distances. Random matrices satisfying this lemma are called JL transforms (JLTs). Inspired by existing -hashing JLTs with exactly nonzero elements on each column, the present work introduces an ensemble of sparse matrices encompassing so-called -hashing-like matrices whose expected number of nonzero elements on each column is . The independence of the sub-Gaussian entries of these matrices and the knowledge of their exact distribution play an important role in their analyses. Using properties of independent sub-Gaussian random variables, these matrices are demonstrated to be JLTs, and their smallest nontrivial singular values and largest singular values are estimated nonasymptotically using a technique from geometric functional analysis. As the dimensions of the matrix grow to infinity, these singular values are proved to converge almost surely to fixed quantities (by using the universal Bai–Yin law) and in distribution to the Gaussian orthogonal ensemble Tracy–Widom law after proper rescalings. Understanding the behaviors of extreme singular values is important in general because they are often used to define a measure of stability of matrix algorithms. For example, JLTs were recently used in derivative-free optimization algorithmic frameworks to select random subspaces in which are constructed random models or poll directions to achieve scalability, and hence estimating their smallest singular value in particular helps determine the dimension of these subspaces.},
+  archive      = {J_SIMAX},
+  author       = {K. J. Dzahini and S. M. Wild},
+  doi          = {10.1137/23M1605661},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {416-438},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {A class of sparse Johnson–Lindenstrauss transforms and analysis of their extreme singular values},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Nesting approximate inverses for improved preconditioning and algebraic multigrid smoothing. <em>SIMAX</em>, <em>46</em>(1), 393-415. (<a href='https://doi.org/10.1137/24M1679847'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Approximate inverses are a very powerful tool for both preconditioning and algebraic multigrid smoothing. One of their main features is their high degree of parallelism that makes them extremely effective for high performance computing. One of their main drawbacks, however, is that the set-up cost grows very quickly with the density, so that it is practically impossible to increase their accuracy by just allowing more entries. In this work, we consider approximate inverses in factored form and show that nesting more factors can greatly enhance their effectiveness at a reasonable computational cost. We additionally provide strategies and theoretical insights aimed at mitigating the computational burden associated with the triple matrix product required in the initial stage of nesting. The effectiveness of the proposed approach is demonstrated through numerical experiments arising from a broad spectrum of real-world applications.},
+  archive      = {J_SIMAX},
+  author       = {Carlo Janna and Andrea Franceschini},
+  doi          = {10.1137/24M1679847},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {393-415},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Nesting approximate inverses for improved preconditioning and algebraic multigrid smoothing},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Generalized Golub–Kahan bidiagonalization for nonsymmetric saddle-point systems. <em>SIMAX</em>, <em>46</em>(1), 370-392. (<a href='https://doi.org/10.1137/23M160760X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The generalized Golub–Kahan bidiagonalization has been used to solve saddle-point systems where the leading block is symmetric and positive definite. We extend this iterative method for the case where the symmetry condition no longer holds. We do so by relying on the known connection the algorithm has with the conjugate gradient method and following the line of reasoning that adapts the latter into the full orthogonalization method. We propose appropriate stopping criteria based on the residual and an estimate of the energy norm for the error associated with the primal variable. Numerical comparison with GMRES highlights the advantages of our proposed strategy regarding its low memory requirements and the associated implications.},
+  archive      = {J_SIMAX},
+  author       = {Andrei Dumitrasc and Carola Kruse and Ulrich Rüde},
+  doi          = {10.1137/23M160760X},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {370-392},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Generalized Golub–Kahan bidiagonalization for nonsymmetric saddle-point systems},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Stochastic rounding implicitly regularizes tall-and-thin matrices. <em>SIMAX</em>, <em>46</em>(1), 341-369. (<a href='https://doi.org/10.1137/24M1647679'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Motivated by the popularity of stochastic rounding in the context of machine learning and the training of large-scale deep neural network models, we consider stochastic nearness rounding of real matrices with many more rows than columns. We provide novel theoretical evidence, supported by extensive experimental evaluation, that with high probability, the smallest singular value of a stochastically rounded matrix is well bounded away from zero—regardless of how close is to being rank-deficient and even if is rank-deficient. In other words, stochastic rounding implicitly regularizes tall-and-thin matrices so that the rounded version has full column rank. Our proofs leverage powerful results in random matrix theory, and the idea that stochastic rounding errors do not concentrate in low-dimensional column spaces. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SIMAX and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/cboutsikas/stoch_rounding_iplicit_reg.},
+  archive      = {J_SIMAX},
+  author       = {Gregory Dexter and Christos Boutsikas and Linkai Ma and Ilse C. F. Ipsen and Petros Drineas},
+  doi          = {10.1137/24M1647679},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {341-369},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Stochastic rounding implicitly regularizes tall-and-thin matrices},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reorthogonalized pythagorean variants of block classical Gram–Schmidt. <em>SIMAX</em>, <em>46</em>(1), 310-340. (<a href='https://doi.org/10.1137/24M1658723'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Block classical Gram–Schmidt (BCGS) is commonly used for orthogonalizing a set of vectors in distributed computing environments due to its favorable communication properties relative to other orthogonalization approaches, such as modified Gram–Schmidt or Householder. However, it is known that BCGS (as well as recently developed low-synchronization variants of BCGS) can suffer from a significant loss of orthogonality in finite-precision arithmetic, which can contribute to instability and inaccurate solutions in downstream applications such as -step Krylov subspace methods. A common solution to improve the orthogonality among the vectors is reorthogonalization. Focusing on the “Pythagorean” variant of BCGS, introduced in [E. Carson, K. Lund, and M. Rozložník, SIAM J. Matrix Anal. Appl., 42 (2021), pp. 1365–1380], which guarantees an bound on the loss of orthogonality as long as , where denotes the unit roundoff, we introduce and analyze two reorthogonalized Pythagorean BCGS variants. These variants feature favorable communication properties, with asymptotically two synchronization points per block column, as well as an improved bound on the loss of orthogonality. Our bounds are derived in a general fashion to additionally allow for the analysis of mixed-precision variants. We verify our theoretical results with a panel of test matrices and experiments from a new version of the BlockStab toolbox.},
+  archive      = {J_SIMAX},
+  author       = {Erin Carson and Kathryn Lund and Yuxin Ma and Eda Oktay},
+  doi          = {10.1137/24M1658723},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {310-340},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Reorthogonalized pythagorean variants of block classical Gram–Schmidt},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The injectivity radius of the compact stiefel manifold under the euclidean metric. <em>SIMAX</em>, <em>46</em>(1), 298-309. (<a href='https://doi.org/10.1137/24M1663818'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The injectivity radius of a manifold is an important quantity, both from a theoretical point of view and in terms of numerical applications. It is the largest possible radius within which all geodesics are unique and length-minimizing. In consequence, it is the largest possible radius within which calculations in Riemannian normal coordinates are well-defined. A matrix manifold that arises frequently in a wide range of practical applications is the compact Stiefel manifold of orthogonal -frames in . We observe that geodesics on this manifold are space curves of constant Frenet curvatures. Using this fact, we prove that the injectivity radius on the Stiefel manifold under the Euclidean metric is .},
+  archive      = {J_SIMAX},
+  author       = {Ralf Zimmermann and Jakob Stoye},
+  doi          = {10.1137/24M1663818},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {298-309},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {The injectivity radius of the compact stiefel manifold under the euclidean metric},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient randomized algorithms for fixed precision problem of approximate tucker decomposition. <em>SIMAX</em>, <em>46</em>(1), 256-297. (<a href='https://doi.org/10.1137/23M1594066'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this paper, we focus on the fixed-precision problem for the approximate Tucker decomposition of any tensor. First, we modify several structured matrices for the adaptive randomized range finder algorithm in [W. Yu, Y. Gu, and Y. Li, SIAM J. Matrix Anal. Appl., 39 (2018), pp. 1339–1359], when the standard Gaussian matrices are replaced by uniform random matrices, the Khatri–Rao product of the standard Gaussian matrices (or the uniform random matrices). Second, by using this modified algorithm for each mode unfolding of the input/intermediate tensor, we obtain the adaptive randomized variants for T-HOSVD and ST-HOSVD. Third, we propose theoretical properties for these adaptive randomized variants. Finally, numerical examples illustrate that for a given tolerance, the proposed algorithms are superior to other algorithms in terms of relative error, desired Tucker rank, and running time. Reproducibility of computational results. This paper has been awarded the “SIAM Reproducibility Badge: Code and data available” as a recognition that the authors have followed reproducibility principles valued by SIMAX and the scientific computing community. Code and data that allow readers to reproduce the results in this paper are available at https://github.com/chncml/adaptive-T-HOSVD/tree/chncml-patch-1 and in the supplementary materials (adaptive-T-HOSVD-main.zip [50.7KB]).},
+  archive      = {J_SIMAX},
+  author       = {Maolin Che and Yimin Wei and Hong Yan},
+  doi          = {10.1137/23M1594066},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {256-297},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Efficient randomized algorithms for fixed precision problem of approximate tucker decomposition},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). H-CMRH: An inner product free hybrid krylov method for large-scale inverse problems. <em>SIMAX</em>, <em>46</em>(1), 232-255. (<a href='https://doi.org/10.1137/24M1634874'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This study investigates the iterative regularization properties of two Krylov methods for solving large-scale ill-posed problems: the changing minimal residual Hessenberg method (CMRH) and a new hybrid variant called the hybrid changing minimal residual Hessenberg method (H-CMRH). Both methods share the advantages of avoiding inner products, making them efficient and highly parallelizable, and particularly suited for implementations that exploit low and mixed precision arithmetic. Theoretical results and extensive numerical experiments suggest that H-CMRH exhibits comparable performance to the established hybrid GMRES method in terms of stabilizing semiconvergence, but H-CMRH does not require any inner products, and requires less work and storage per iteration.},
+  archive      = {J_SIMAX},
+  author       = {Ariana N. Brown and Malena Sabaté Landman and James G. Nagy},
+  doi          = {10.1137/24M1634874},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {232-255},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {H-CMRH: An inner product free hybrid krylov method for large-scale inverse problems},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On spectral and nuclear norms of order three tensors with one fixed dimension. <em>SIMAX</em>, <em>46</em>(1), 210-231. (<a href='https://doi.org/10.1137/24M164255X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. The recent decade has witnessed a surge of research in modelling and computing from two-way data (matrices) to multiway data (tensors). However, there is a drastic phase transition for most tensor computation problems when the order of a tensor increases from two to three: Most tensor problems are NP-hard while those for matrices are easy. It triggers a question on where exactly the transition occurs. The paper aims to study the kind of question for the spectral norm and the nuclear norm. Although computing the spectral norm for a general tensor is NP-hard, we show that it can be computed using a number of arithmetic operations which is polynomial in and if is fixed. In other words, the best rank-one approximation of a general tensor can be computed in polynomial time for fixed . Under an assumption of a polynomial-time algorithm for quadratic feasibility problem in the bit complexity, both the spectral norm and the nuclear norm of a general tensor can be computed in polynomial time in the bit complexity for fixed . While these polynomial-time methods are not currently implementable in practice, we propose fully polynomial-time approximation schemes (FPTAS) for the spectral norm based on polytope approximation and for the nuclear norm with further help of duality theory and semidefinite optimization. Numerical experiments show that our FPTAS can compute these tensor norms for small but large and . To the best of our knowledge, this is the first method to compute the nuclear norm of general asymmetric tensors. Both polynomial-time algorithms and FPTAS can be extended to higher-order tensors as well.},
+  archive      = {J_SIMAX},
+  author       = {Haodong Hu and Bo Jiang and Zhening Li},
+  doi          = {10.1137/24M164255X},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {210-231},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {On spectral and nuclear norms of order three tensors with one fixed dimension},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multivariate trace estimation using quantum state space linear algebra. <em>SIMAX</em>, <em>46</em>(1), 172-209. (<a href='https://doi.org/10.1137/24M1654749'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this paper, we present a quantum algorithm for approximating multivariate traces, i.e., the traces of matrix products. Our research is motivated by the extensive utility of multivariate traces in elucidating spectral characteristics of matrices, as well as by recent advancements in leveraging quantum computing for faster numerical linear algebra. Central to our approach is a direct translation of a multivariate trace formula into a quantum circuit, achieved through a sequence of low-level circuit construction operations. To facilitate this translation, we introduce quantum matrix states linear algebra (qMSLA), a framework tailored for the efficient generation of state preparation circuits via primitive matrix algebra operations. Our algorithm relies on sets of state preparation circuits for input matrices as its primary inputs and yields two state preparation circuits encoding the multivariate trace as output. These circuits are constructed utilizing qMSLA operations, which enact the aforementioned multivariate trace formula. We emphasize that our algorithm’s inputs consist solely of state preparation circuits, eschewing harder to synthesize constructs such as block encodings. Furthermore, our approach operates independently of the availability of specialized hardware like QRAM, underscoring its versatility and practicality.},
+  archive      = {J_SIMAX},
+  author       = {Liron Mor-Yosef and Shashanka Ubaru and Lior Horesh and Haim Avron},
+  doi          = {10.1137/24M1654749},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {172-209},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Multivariate trace estimation using quantum state space linear algebra},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The rank-1 completion problem for cubic tensors. <em>SIMAX</em>, <em>46</em>(1), 151-171. (<a href='https://doi.org/10.1137/24M1653793'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper studies the rank-1 tensor completion problem for cubic tensors. First of all, we show that this problem is equivalent to a special rank-1 matrix recovery problem. When the tensor is strongly rank-1 completable, we show that the problem is equivalent to a rank-1 matrix completion problem and it can be solved by an iterative formula. For other cases, we propose both nuclear norm relaxation and moment relaxation methods for solving the resulting rank-1 matrix recovery problem. The nuclear norm relaxation sometimes returns a rank-1 tensor completion, while sometimes it does not. When it fails, we apply the moment hierarchy of semidefinite programming relaxations to solve the rank-1 matrix recovery problem. The moment hierarchy can always get a rank-1 tensor completion, or detect its nonexistence. Numerical experiments are shown to demonstrate the efficiency of these proposed methods.},
+  archive      = {J_SIMAX},
+  author       = {Jinling Zhou and Jiawang Nie and Zheng Peng and Guangming Zhou},
+  doi          = {10.1137/24M1653793},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {151-171},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {The rank-1 completion problem for cubic tensors},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Quotient geometry of bounded or fixed-rank correlation matrices. <em>SIMAX</em>, <em>46</em>(1), 121-150. (<a href='https://doi.org/10.1137/24M1630566'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper studies the quotient geometry of bounded or fixed-rank correlation matrices. We establish a bijection between the set of bounded-rank correlation matrices and a quotient set of a spherical product manifold by an orthogonal group. We show that it forms an orbit space, whose stratification is determined by the rank of the matrices, and the principal stratum has a compatible Riemannian quotient manifold structure. We show that any minimizing geodesic in the orbit space has constant rank on the interior of the segment. We also develop efficient Riemannian optimization algorithms for computing the distance and weighted Fréchet mean in the orbit space. Moreover, we examine geometric properties of the quotient manifold, including horizontal and vertical spaces, Riemannian metric, injectivity radius, exponential and logarithmic map, curvature, gradient, and Hessian. Finally, we apply our approach to a functional connectivity study using the Autism Brain Imaging Data Exchange.},
+  archive      = {J_SIMAX},
+  author       = {Hengchao Chen},
+  doi          = {10.1137/24M1630566},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {121-150},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Quotient geometry of bounded or fixed-rank correlation matrices},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Linear discriminant analysis with the randomized kaczmarz method. <em>SIMAX</em>, <em>46</em>(1), 94-120. (<a href='https://doi.org/10.1137/23M155493X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We present a randomized Kaczmarz method for linear discriminant analysis (rkLDA), an iterative randomized approach to binary-class Gaussian model linear discriminant analysis (LDA) for very large data. We harness a least squares formulation and mobilize the stochastic gradient descent framework to obtain a randomized classifier with performance that can achieve comparable accuracy to that of full data LDA. We present analysis for the expected change in the LDA discriminant function if one employs the randomized Kaczmarz solution in lieu of the full data least squares solution that accounts for both the Gaussian modeling assumptions on the data and algorithmic randomness. Our analysis shows how the expected change depends on quantities inherent in the data such as the scaled condition number and Frobenius norm of the input data, how well the linear model fits the data, and choices from the randomized algorithm. Our experiments demonstrate that rkLDA can offer a viable alternative to full data LDA on a range of step-sizes and numbers of iterations.},
+  archive      = {J_SIMAX},
+  author       = {Jocelyn T. Chi and Deanna Needell},
+  doi          = {10.1137/23M155493X},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {94-120},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Linear discriminant analysis with the randomized kaczmarz method},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient scaling and squaring method for the matrix exponential. <em>SIMAX</em>, <em>46</em>(1), 74-93. (<a href='https://doi.org/10.1137/24M1657250'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This work presents a new algorithm to compute the matrix exponential within a given tolerance. Combined with the scaling and squaring procedure, the algorithm incorporates Taylor, partitioned, and classical Padé methods shown to be superior in performance to the approximants used in state-of-the-art software. The algorithm computes matrix–matrix products and also matrix inverses, but it can be implemented to avoid the computation of inverses, making it convenient for some problems. If the matrix belongs to a Lie algebra, then belongs to its associated Lie group, being a property which is preserved by diagonal Padé approximants, and the algorithm has another option to use only these. Numerical experiments show the superior performance with respect to state-of-the-art implementations.},
+  archive      = {J_SIMAX},
+  author       = {Sergio Blanes and Nikita Kopylov and Muaz Seydaoğlu},
+  doi          = {10.1137/24M1657250},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {74-93},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Efficient scaling and squaring method for the matrix exponential},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EPIC: A provable accelerated eigensolver based on preconditioning and implicit convexity. <em>SIMAX</em>, <em>46</em>(1), 45-73. (<a href='https://doi.org/10.1137/24M1641440'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper is concerned with the extraction of the smallest eigenvalue and its corresponding eigenvector of a symmetric positive definite matrix pencil. We reveal implicit convexity of the eigenvalue problem in Euclidean space. A provable accelerated eigensolver based on preconditioning and implicit convexity (EPIC) is proposed. Theoretical analysis shows the acceleration of EPIC with a rate of convergence resembling the conjectured rate of convergence of the well-known locally optimal preconditioned conjugate gradient. Numerical results confirm our theoretical findings of EPIC.},
+  archive      = {J_SIMAX},
+  author       = {Nian Shao and Wenbin Chen and Zhaojun Bai},
+  doi          = {10.1137/24M1641440},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {45-73},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {EPIC: A provable accelerated eigensolver based on preconditioning and implicit convexity},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A sublinear-time randomized algorithm for column and row subset selection based on strong rank-revealing QR factorizations. <em>SIMAX</em>, <em>46</em>(1), 22-44. (<a href='https://doi.org/10.1137/24M164063X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this work, we analyze a sublinear-time algorithm for selecting a few rows and columns of a matrix for low-rank approximation purposes. The algorithm is based on an initial uniformly random selection of rows and columns, followed by a refinement of this choice using a strong rank-revealing QR factorization. We prove bounds on the error of the corresponding low-rank approximation (more precisely, the CUR approximation error) when the matrix is a perturbation of a low-rank matrix that can be factorized into the product of matrices with suitable incoherence and/or sparsity assumptions.},
+  archive      = {J_SIMAX},
+  author       = {Alice Cortinovis and Lexing Ying},
+  doi          = {10.1137/24M164063X},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {22-44},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {A sublinear-time randomized algorithm for column and row subset selection based on strong rank-revealing QR factorizations},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Algorithm-agnostic low-rank approximation of operator monotone matrix functions. <em>SIMAX</em>, <em>46</em>(1), 1-21. (<a href='https://doi.org/10.1137/23M1619435'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Low-rank approximation of a matrix function, is an important task in computational mathematics. Most methods require direct access to , which is often considerably more expensive than accessing . Persson and Kressner [SIAM J. Matrix Anal., 44 (2023), pp. 415–944] avoid this issue for symmetric positive semidefinite matrices by proposing funNyström, which first constructs a Nyström approximation to using subspace iteration and then uses the approximation to directly obtain a low-rank approximation for . They prove that the method yields a near-optimal approximation whenever is a continuous operator monotone function with . We significantly generalize the results of Persson and Kressner beyond subspace iteration. We show that if is a near-optimal low-rank Nyström approximation to , then is a near-optimal low-rank approximation to , independently of how is computed. Further, we show sufficient conditions for a basis to produce a near-optimal Nyström approximation . We use these results to establish that many common low-rank approximation methods produce near-optimal Nyström approximations to and therefore to .},
+  archive      = {J_SIMAX},
+  author       = {David Persson and Raphael A. Meyer and Christopher Musco},
+  doi          = {10.1137/23M1619435},
+  journal      = {SIAM Journal on Matrix Analysis and Applications},
+  month        = {3},
+  number       = {1},
+  pages        = {1-21},
+  shortjournal = {SIAM J. Matrix Anal. Appl.},
+  title        = {Algorithm-agnostic low-rank approximation of operator monotone matrix functions},
+  volume       = {46},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

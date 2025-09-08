@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JACM</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="jacm">JACM - 3</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Compressing CFI graphs and lower bounds for the weisfeiler-leman refinements. <em>JACM</em>, <em>72</em>(3), 1-27. (<a href='https://doi.org/10.1145/3727978'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The k -dimensional Weisfeiler–Leman ( k -WL) algorithm is a simple combinatorial algorithm that was originally designed as a graph isomorphism heuristic. It naturally finds applications in Babai’s quasipolynomial-time isomorphism algorithm, practical isomorphism solvers, and algebraic graph theory. However, it also has surprising connections to other areas such as logic, proof complexity, combinatorial optimization, and machine learning. The algorithm iteratively computes a coloring of the k -tuples of vertices of a graph. Since Fürer’s linear lower bound [ICALP 2001], it has been an open question whether there is a super-linear lower bound for the iteration number for k -WL on graphs. We answer this question affirmatively, establishing an \(\Omega (n^{k/2})\) -lower bound for all k .},
+  archive      = {J_JACM},
+  author       = {Martin Grohe and Moritz Lichter and Daniel Neuen and Pascal Schweitzer},
+  doi          = {10.1145/3727978},
+  journal      = {Journal of the ACM},
+  month        = {6},
+  number       = {3},
+  pages        = {1-27},
+  shortjournal = {J. ACM},
+  title        = {Compressing CFI graphs and lower bounds for the weisfeiler-leman refinements},
+  volume       = {72},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Settling the sample complexity of online reinforcement learning. <em>JACM</em>, <em>72</em>(3), 1-63. (<a href='https://doi.org/10.1145/3733592'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A central issue lying at the heart of online reinforcement learning (RL) is data efficiency. While a number of recent works achieved asymptotically minimal regret in online RL, the optimality of these results is only guaranteed in a “large-sample” regime, imposing enormous burn-in cost in order for their algorithms to operate optimally. How to achieve minimax-optimal regret without incurring any burn-in cost has been an open problem in RL theory. We settle this problem for finite-horizon inhomogeneous Markov decision processes. Specifically, we prove that a modified version of MVP (Monotonic Value Propagation), an optimistic model-based algorithm proposed by Zhang et al. [ 82 ], achieves a regret on the order of (modulo log factors) \begin{equation*} \min \bigl \lbrace \sqrt {SAH^3K}, \,HK \bigr \rbrace , \end{equation*} where S is the number of states, A is the number of actions, H is the horizon length, and K is the total number of episodes. This regret matches the minimax lower bound for the entire range of sample size \(K\ge 1\) , essentially eliminating any burn-in requirement. It also translates to a PAC sample complexity (i.e., the number of episodes needed to yield \(\varepsilon\) -accuracy) of \(\frac{SAH^3}{\varepsilon ^2}\) up to log factor, which is minimax-optimal for the full \(\varepsilon\) -range. Further, we extend our theory to unveil the influences of problem-dependent quantities like the optimal value/cost and certain variances. The key technical innovation lies in a novel analysis paradigm (based on a new concept called “profiles”) to decouple complicated statistical dependency across the sample trajectories — a long-standing challenge facing the analysis of online RL in the sample-starved regime.},
+  archive      = {J_JACM},
+  author       = {Zihan Zhang and Yuxin Chen and Jason Lee and Simon S. Du},
+  doi          = {10.1145/3733592},
+  journal      = {Journal of the ACM},
+  month        = {6},
+  number       = {3},
+  pages        = {1-63},
+  shortjournal = {J. ACM},
+  title        = {Settling the sample complexity of online reinforcement learning},
+  volume       = {72},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Quantum weakest preconditions for reasoning about expected runtimes of quantum programs. <em>JACM</em>, <em>72</em>(3), 1-51. (<a href='https://doi.org/10.1145/3734516'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study expected runtimes for quantum programs. Inspired by recent work on probabilistic programs, we first define expected runtime as a generalisation of quantum weakest precondition . Then, we show that the expected runtime of a quantum program should be represented as the expectation of an observable (in physics). A method for computing the expected runtimes of quantum programs in finite-dimensional state spaces is developed. Several examples are provided as applications of this method, including computing the expected runtime of quantum Bernoulli Factory —- a quantum algorithm for generating random numbers. In particular, using our new method, an open problem of computing the expected runtime of quantum random walks introduced by Ambainis et al. ( STOC 2001) is solved.},
+  archive      = {J_JACM},
+  author       = {Junyi Liu and Li Zhou and Gilles Barthe and Mingsheng Ying},
+  doi          = {10.1145/3734516},
+  journal      = {Journal of the ACM},
+  month        = {6},
+  number       = {3},
+  pages        = {1-51},
+  shortjournal = {J. ACM},
+  title        = {Quantum weakest preconditions for reasoning about expected runtimes of quantum programs},
+  volume       = {72},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

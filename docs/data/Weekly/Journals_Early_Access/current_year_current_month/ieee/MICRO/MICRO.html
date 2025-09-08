@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MICRO</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="micro">MICRO - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Comparative analysis of loosely and tightly coupled accelerator architectures for machine learning. <em>MICRO</em>, 1-12. (<a href='https://doi.org/10.1109/MM.2025.3603837'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rapid innovation of AI/ML workloads, accelerators have become an important part of the computing resources in datacenters. While characteristics such as performance, power, and efficiency are critical, developer velocity, which dictates how quickly a new workload can be deployed on an accelerator, is equally important. The accelerator architecture and properties it exposes to the higher-level programming model play a key role in determining the programming model and economic viability of the accelerators. We compare two classes of AI/ML accelerator architectures: an efficient loosely coupled accelerator already implemented in silicon and a tightly coupled accelerator with a traditional and user-friendly programming model. Our comparison shows that the performance of the design depends on the amount of hardware resources and not on how they are integrated, concluding that it is possible to architect accelerators in a much simpler and more compiler-friendly manner, while still maintaining the benefits of offload computing.},
+  archive      = {J_MICRO},
+  author       = {Amin Firoozshahian and Joel Coburn and Ajit Punj and Aravind Sukumaran Rajam and Colby Boyer and Rakesh Nattoji and Mahima Bathla and Bob Dreyer and Sujith Srinivasan and Harshitha Pilla and Michael Rotzin and Surendra Rajupalem and K. Rajesh Jagannath and Krishna Noru and Harikrishna Reddy and Chris Yang and Charlie Hong-Men Su and Charlie Cheng},
+  doi          = {10.1109/MM.2025.3603837},
+  journal      = {IEEE Micro},
+  month        = {9},
+  pages        = {1-12},
+  shortjournal = {IEEE Micro},
+  title        = {Comparative analysis of loosely and tightly coupled accelerator architectures for machine learning},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

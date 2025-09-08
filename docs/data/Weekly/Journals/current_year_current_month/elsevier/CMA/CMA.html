@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CMA</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="cma">CMA - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Convergence analysis of a fast ADI compact finite difference method for two-dimensional semi-linear time-fractional reaction-diffusion equations with weak initial singularity. <em>CMA</em>, <em>199</em>, 1-21. (<a href='https://doi.org/10.1016/j.camwa.2025.08.028'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this work, considering the solution's weak initial singularity, a rigorous error analysis of a finite difference method for simulating a two-dimensional semi-linear time-fractional reaction-diffusion equation (TFRDE) is presented. The recently introduced ADI method by Kumari and Roul (2024) [31] for solving a class of linear TFRDEs encounters with problematic mesh parameter adjustments and ignorance of the derivative bounds, potentially rendering the latest methodology deficient and erroneous. The present study aims to design a computationally efficient L1 ADI scheme for semi-linear TFRDEs and provide a comprehensive error analysis. To address intrinsically non-local characteristics of the solution, we employ sum-of-exponential approximation to the singular kernel of time-fractional derivative on a graded mesh with unequal time-steps that yield denser mesh near the initial point. As a result, we effectively mitigate the high storage and computational requirements and return the convergence point to its optimal state. The two spatial variables are treated with a fourth order compact finite difference operator. Moreover, an alternating direction implicit method is utilized to compute the solution of the derived two-dimensional system by splitting it into two separate one-dimensional problems. With the aid of local truncation error estimate and discrete fractional Grönwall inequality, the stability and convergence analysis of the scheme are carried out rigorously through the discrete energy approach. The numerical results corroborate the convergence analysis and highlight the computational efficacy of the numerical scheme. Numerical examples demonstrate the CPU performance of the fast compact ADI method, and presented comparisons distinctly showcases the effectiveness of the graded mesh enhancing convergence order to achieve optimal results.},
+  archive      = {J_CMA},
+  author       = {Priyanka and Sunil Kumar},
+  doi          = {10.1016/j.camwa.2025.08.028},
+  journal      = {Computers & Mathematics with Applications},
+  month        = {12},
+  pages        = {1-21},
+  shortjournal = {Comput. Meth. Appl.},
+  title        = {Convergence analysis of a fast ADI compact finite difference method for two-dimensional semi-linear time-fractional reaction-diffusion equations with weak initial singularity},
+  volume       = {199},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

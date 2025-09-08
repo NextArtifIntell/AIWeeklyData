@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JOMA</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="joma">JOMA - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2026). Matérn and generalized wendland correlation models that parameterize hole effect, smoothness, and support. <em>JOMA</em>, <em>211</em>, 105496. (<a href='https://doi.org/10.1016/j.jmva.2025.105496'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A huge literature in statistics and machine learning is devoted to parametric families of correlation functions, where the correlation parameters are used to understand the properties of an associated spatial random process in terms of smoothness and global or compact support. However, most of current parametric correlation functions attain only non-negative values. This work provides two new families of correlation functions that can have some negative values (aka hole effects), along with smoothness, and global or compact support. They generalize the celebrated Matérn and Generalized Wendland models, respectively, which are obtained as special cases. A link between the two new families is also established, showing that a specific reparameterization of the latter includes the former as a special limit case. Their performance in terms of estimation accuracy and goodness of best linear unbiased prediction is illustrated through synthetic and real data.},
+  archive      = {J_JOMA},
+  author       = {Xavier Emery and Moreno Bevilacqua and Emilio Porcu},
+  doi          = {10.1016/j.jmva.2025.105496},
+  journal      = {Journal of Multivariate Analysis},
+  month        = {1},
+  pages        = {105496},
+  shortjournal = {J. Multi. Anal.},
+  title        = {Matérn and generalized wendland correlation models that parameterize hole effect, smoothness, and support},
+  volume       = {211},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

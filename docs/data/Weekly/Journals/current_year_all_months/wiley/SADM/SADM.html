@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SADM</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="sadm">SADM - 42</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Recursive random binning to detect and display pairwise dependence. <em>SADM</em>, <em>18</em>(5), e70042. (<a href='https://doi.org/10.1002/sam.70042'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Random binnings generated via recursive binary splits are introduced as a way to detect, measure the strength of, and to display the pattern of association between any two variates, whether one or both are continuous or categorical. This provides a single approach to ordering large numbers of variate pairs by their measure of dependence and then to examine any pattern of dependence via a common display, the departure display (coloring bins by a standardized Pearson residual). Continuous variates are first ranked and their rank pairs binned. The Pearson's goodness of fit statistic is applicable but the classic approximation to its null distribution is not. Theoretical and empirical investigations motivate several approximations, including a simple approximation with real-valued, yet intuitive, degrees of freedom. Alternatively, applying an inverse probability transform from the ranks before binning returns a simple Pearson statistic with the classic degrees of freedom. Recursive random binning with different approximations is compared to recent grid-based methods on a variety of non-null dependence patterns; the method with any of these approximations is found to be well-calibrated and relatively powerful against common test alternatives. Method and displays are illustrated by applying the screening methodology to a publicly available data set having several continuous and categorical measurements of each of 6497 Portuguese wines. The software is publicly available as the R package AssocBin .},
+  archive  = {J},
+  author   = {Chris Salahub and R. Wayne Oldford},
+  doi      = {10.1002/sam.70042},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {10},
+  number   = {5},
+  pages    = {e70042},
+  title    = {Recursive random binning to detect and display pairwise dependence},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Nonlinear superpopulation model inference for non-probability samples with nonignorable missingness. <em>SADM</em>, <em>18</em>(5), e70040. (<a href='https://doi.org/10.1002/sam.70040'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In the era of big data and increasing survey costs, non-probability samples become increasingly popular in sampling surveys but may be subject to selection biases with unknown inclusion probabilities. In addition to selection bias, non-probability samples may also suffer from missingness in practice, even nonignorable nonresponse with unknown response probabilities. Superpopulation model methods have been discussed for reducing selection biases from non-probability samples, but not for dealing with nonignorable missingness for non-probability samples yet. In this paper, we propose a nonlinear superpopulation model inference approach for non-probability samples with nonignorable missingness. We develop rigorous procedures for estimating the response probabilities for units in the non-probability sample and the nonlinear superpopulation model parameters, and construct the finite population mean estimator based on the nonlinear superpopulation model, response probabilities, and inclusion probabilities. Asymptotic properties of the proposed estimators and variance estimation are also discussed under the proposed framework. In a simulation study, we compare the proposed method with some existing methods. The real data analysis results using the National Health Interview Survey data illustrate the good performance of the proposed method.},
+  archive  = {J},
+  author   = {Zhan Liu and Jiajing Xu and Ruohan Li and Yingli Pan},
+  doi      = {10.1002/sam.70040},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {10},
+  number   = {5},
+  pages    = {e70040},
+  title    = {Nonlinear superpopulation model inference for non-probability samples with nonignorable missingness},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Model average estimation of parameters in linear model with multiple change points. <em>SADM</em>, <em>18</em>(4), e70043. (<a href='https://doi.org/10.1002/sam.70043'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This paper develops a model averaging framework for segmented linear regression with multiple structural breaks. We establish the asymptotic distribution for estimates of a linear model with gradual parameter changes, presenting the limitations of traditional methods under model misspecification of change points. Based on this, we propose the Mallows Model Average (MMA) method to assign weights to estimators from models with different numbers of change points. The MMA weights are determined by minimizing the Mallows criterion, which is an asymptotically unbiased estimate of the expected squared error plus a constant. When the real model is a change-point model, the resulting MMA estimator is proved to be root- n consistent. We also prove its asymptotic optimality in terms of achieving the lowest squared error, allowing for deviations from the change-point model. Both simulation studies and empirical analyses demonstrate that our method outperforms competitive methods and has promising applications.},
+  archive  = {J},
+  author   = {Haiyue Su and Miaoqi Huang and Zhiming Xia},
+  doi      = {10.1002/sam.70043},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {8},
+  number   = {4},
+  pages    = {e70043},
+  title    = {Model average estimation of parameters in linear model with multiple change points},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Wasserstein centroid-based binary classification for distributional data. <em>SADM</em>, <em>18</em>(4), e70041. (<a href='https://doi.org/10.1002/sam.70041'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We introduce a binary classification method for analyzing random objects in a non-linear space. Unlike traditional classification approaches that maximize the mean difference between groups and minimize within-group variance based on Euclidean distance, we consider the distance that accounts for dissimilarities between two random objects under intrinsic conditions. Accordingly, we need a distinct method for calculating the mean difference between groups, and this requirement poses a challenge in computing group variances because they do not exist in the same space. To address these challenges, we focus on the Wasserstein distance between two random objects measured locally in a tangent space. Additionally, we employ logarithmic mapping and a parallel transport operator to adequately compute the mean difference and variance. Consequently, we can effectively incorporate the central and dispersion characteristics of objects with intrinsic conditions and accurately calculate the distance for classification. Through repeated simulations under various scenarios, we demonstrate the advantages of our proposed approach in terms of classification performance relative to other approaches. Furthermore, we explore its potential in practical applications, such as the classification of glioblastoma multiforme pixel intensity data.},
+  archive  = {J},
+  author   = {Seokgeon Jang and Sanghun Jeong and Hojin Yang and Jeffrey S. Morris},
+  doi      = {10.1002/sam.70041},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {8},
+  number   = {4},
+  pages    = {e70041},
+  title    = {Wasserstein centroid-based binary classification for distributional data},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Counterfactual uncertainty quantification of factual estimand of efficacy from before-and-after treatment repeated measures randomized controlled trials. <em>SADM</em>, <em>18</em>(4), e70039. (<a href='https://doi.org/10.1002/sam.70039'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This article quantifies the uncertainty reduction achievable for counterfactual estimand, and cautions against potential bias when the estimand uses Digital Twins. Posed by Neyman in 1923 (Statistical Science, 1990;5: 465–472) who showed unbiased point estimation from designed factual experiments is possible, counterfactual uncertainty quantification (CUQ) remained an open challenge for about 100 years. The counterfactual efficacy we focus on is the ideal estimand for comparing treatment with control , the expected outcome differential if each patient received both and . Enabled by our new statistical modeling principle called ETZ, we show CUQ is achievable in Randomized Controlled Trials (RCTs) with Before-and-After Repeated Measures, common in many therapeutic areas. The CUQ we are able to achieve typically has lower variability than factual UQ. We caution against using predictors with measurement error, which violates regression assumptions and can cause attenuation bias in estimating treatment effects. For traditional medicine and population-averaged targeted therapy, counterfactual point estimation remains unbiased. However, in both Real Human and Digital Twin approaches, estimating effects in subgroups may suffer attenuation bias.},
+  archive  = {J},
+  author   = {Xingya Wang and Yang Han and Yushi Liu and Szu-Yu Tang and Jason C. Hsu},
+  doi      = {10.1002/sam.70039},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {8},
+  number   = {4},
+  pages    = {e70039},
+  title    = {Counterfactual uncertainty quantification of factual estimand of efficacy from before-and-after treatment repeated measures randomized controlled trials},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Distributionally conservative stochastic dominance via subsampling. <em>SADM</em>, <em>18</em>(4), e70038. (<a href='https://doi.org/10.1002/sam.70038'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This note defines distributionally conservative versions of stochastic dominance relations based on subsampling. It presents a non-asymptotic analysis of the probability of the false dominance (FD) error for the empirical version of the subsampling-based empirical dominance procedure. The analysis is based on the generalization of the McDiarmid's concentration inequality to -mixing processes by Kontorovich and Ramanan. The concentration bounds obtained depend on the entropy characteristics of the problem, such as the Lipschitz coefficients of the utilities involved, the FD parameters involved, and the coefficients that represent temporal dependence at each subsample. The analysis establishes tighter concentration bounds for the conservative procedure in both stationary and nonstationary cases when the subsampling rate is appropriately chosen.},
+  archive  = {J},
+  author   = {Stelios Arvanitis},
+  doi      = {10.1002/sam.70038},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {8},
+  number   = {4},
+  pages    = {e70038},
+  title    = {Distributionally conservative stochastic dominance via subsampling},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Classifier performance on long-tail distributions. <em>SADM</em>, <em>18</em>(4), e70037. (<a href='https://doi.org/10.1002/sam.70037'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This paper introduces a Gaussian mixture model designed to explore the implications of long-tailedness on classification performance. Our study reveals that simple under-specified classifiers are inherently limited in reducing generalization error within this framework, a limitation overcome by well-specified and even more complex over-specified classifiers capable of fitting rare examples. Through theoretical analysis and empirical evaluation on both synthetic and real datasets, we demonstrate how the performance gap between under-specified and well/over-specified classifiers varies with changes in the tail length of the distribution. Our results validate the necessity of fitting rare instances in training datasets to achieve enhanced generalization capabilities in models faced with long-tail distributed data.},
+  archive  = {J},
+  author   = {Artur Pak and Maxat Tezekbayev and Arman Bolatov and Igor Melnykov and Kaisar Dauletbek and Zhenisbek Assylbekov},
+  doi      = {10.1002/sam.70037},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {8},
+  number   = {4},
+  pages    = {e70037},
+  title    = {Classifier performance on long-tail distributions},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Low-dimensional adaptive neural network regression with directional change detection via nuclear norm penalization. <em>SADM</em>, <em>18</em>(4), e70035. (<a href='https://doi.org/10.1002/sam.70035'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This paper reports on our study of a regularized neural network regression method that adapts to the low-dimensional directional structure of a function. The key innovation lies in identifying direction vectors where the function exhibits significant variation and conducting estimation within this reduced-dimensional space. This is achieved through a regularization scheme that controls the nuclear norm of the weight matrix. The nuclear norm penalization approach effectively reduces its rank and allows the model to discover the principal subspace where the function varies. Additionally, an penalty is imposed to introduce node-level sparsity, which further enhances dimension reduction and improves estimation efficiency. The combination of the nuclear norm and norm penalties results in a low-dimensional network structure that strikes a good balance in the bias-variance trade-off and improves estimator performance. An efficient and stable implementation scheme is designed based on the alternating direction method of multipliers and the Levenberg–Marquardt algorithm. The stability of the algorithm is enhanced by using a B-spline activation function with compact support and an initialization strategy based on model-based sliced inverse regression. Numerical experiments on simulated and benchmark datasets demonstrate that our method outperforms several popular machine learning and neural network regression techniques.},
+  archive  = {J},
+  author   = {Yongku Kim and Jae-Hwan Jhong and Ja-Yong Koo and Kwan-Young Bak},
+  doi      = {10.1002/sam.70035},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {8},
+  number   = {4},
+  pages    = {e70035},
+  title    = {Low-dimensional adaptive neural network regression with directional change detection via nuclear norm penalization},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deep learning for variable selection in censored quantile regression models. <em>SADM</em>, <em>18</em>(4), e70034. (<a href='https://doi.org/10.1002/sam.70034'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Censored quantile regression models have emerged as a powerful tool for addressing heterogeneity in survival outcomes, which is a key challenge in survival analysis. In this paper, we propose a novel deep learning–based approach for variable selection in censored quantile regression, providing a flexible and robust alternative to traditional methods that often depend on restrictive model assumptions. The proposed method is supported by strong theoretical guarantees, including non-asymptotic upper bounds on the estimator's excess risk and proof of algorithm selection consistency within the framework of the path norm. To ensure practical applicability, we develop an efficient implementation algorithm that is both scalable and computationally feasible. Extensive simulation studies demonstrate the accuracy and effectiveness of the method across diverse settings. Finally, we apply the methodology to a real-world clinical dataset, highlighting its practical utility and robustness in uncovering complex survival dynamics.},
+  archive  = {J},
+  author   = {Ziqiang Deng and Huiqiong Li and Niansheng Tang},
+  doi      = {10.1002/sam.70034},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {8},
+  number   = {4},
+  pages    = {e70034},
+  title    = {Deep learning for variable selection in censored quantile regression models},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deep symbolic learning for histogram-valued regression data. <em>SADM</em>, <em>18</em>(4), e70033. (<a href='https://doi.org/10.1002/sam.70033'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This paper proposes the Deep Symbolic Learning (DSL) model, a deep learning-based framework for robust regression, specifically designed when both the response and predictors are histogram-valued variables. DSL utilizes cumulative distribution functions (CDFs) of covariate histograms within a one-dimensional convolutional neural network (1D-CNN) to transform the conditional density estimation problem into a multi-class classification task, optimized using the joint binary cross-entropy (JBCE) loss function. Extensive simulations and real-world applications, including air quality, traffic volume, and climate data, demonstrate that the DSL model outperforms existing methods across three key evaluation metrics: CDF distance, empirical coverage of the 90% prediction interval, and average quantile loss. This work contributes to the field of symbolic data analysis and conditional density estimation.},
+  archive  = {J},
+  author   = {Ilsuk Kang and Donghwa Kim and Hosik Choi and Young Joo Yoon and Cheolwoo Park},
+  doi      = {10.1002/sam.70033},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {8},
+  number   = {4},
+  pages    = {e70033},
+  title    = {Deep symbolic learning for histogram-valued regression data},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Computational improvements to the kernel k-means clustering algorithm. <em>SADM</em>, <em>18</em>(4), e70032. (<a href='https://doi.org/10.1002/sam.70032'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Kernel k-means ( k k -means) extends the standard k-means clustering method to identify generally shaped clusters by employing the k -means algorithm in a higher-dimensional space. Current implementations of k k -means are rather naive. We present simplifications that reduce calculations, performing only those that are absolutely necessary, therefore improving the overall algorithm's run time. We also present a sampling-based clustering and classification strategy for employing k k -means clustering for large datasets. Results on 13 data sets illustrate the computational benefits of our new algorithm. Our sampling-based strategy is also applied to investigate the use of -means in the color quantization of images in human perception-based colorspaces.},
+  archive  = {J},
+  author   = {Joshua D. Berlinski and Ranjan Maitra},
+  doi      = {10.1002/sam.70032},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {8},
+  number   = {4},
+  pages    = {e70032},
+  title    = {Computational improvements to the kernel k-means clustering algorithm},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Recovering the number of clusters from a laplacian matrix by nuclear norm penalization. <em>SADM</em>, <em>18</em>(4), e70031. (<a href='https://doi.org/10.1002/sam.70031'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Spectral clustering is a powerful technique for data partitioning, but determining the optimal number of clusters remains challenging. This article introduces ALLE (ALgebraic Laplacian Estimator), an automatic method for estimating the number of clusters within the spectral clustering framework. By formulating the cluster recovery problem as a penalized minimization task, ALLE is able to systematically recover the number of clusters and the embedding space by assuming for the Laplacian matrix a low-rank plus sparse decomposition. Specifically, ALLE recovers the low-rank representation of the Laplacian matrix using nuclear norm plus -norm penalization. ALLE is computed via a proximal gradient algorithm alternating Singular Value Thresholding and Soft Thresholding, and it's very good performance is shown via a simulation study.},
+  archive  = {J},
+  author   = {Cinzia Di Nuzzo and Matteo Farnè},
+  doi      = {10.1002/sam.70031},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {8},
+  number   = {4},
+  pages    = {e70031},
+  title    = {Recovering the number of clusters from a laplacian matrix by nuclear norm penalization},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Testing for the important components of predictive variance. <em>SADM</em>, <em>18</em>(4), e70029. (<a href='https://doi.org/10.1002/sam.70029'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {We give a decomposition of the predictive variance based on the law of total variance by making the response variable dependent on a finite dimensional discrete random variable representing our modeling assumptions. Then, we test which terms in this decomposition are small enough to ignore. This allows us to identify which of the discrete random variables, that is, aspects of modeling, are most important to prediction variance. The terms in the decomposition admit interpretations based on conditional means and variances and are analogous to the terms in a Cochran's theorem decomposition of squared error often used in analysis of variance. Thus, the modeling features are treated as factors in completely randomized design.},
+  archive  = {J},
+  author   = {Dean Dustin and Souparno Ghosh and Bertrand Clarke},
+  doi      = {10.1002/sam.70029},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {8},
+  number   = {4},
+  pages    = {e70029},
+  title    = {Testing for the important components of predictive variance},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Extracting genetically-imputed causal features from ECG data. <em>SADM</em>, <em>18</em>(4), e70026. (<a href='https://doi.org/10.1002/sam.70026'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Atrial fibrillation (AF), a cardiac arrhythmia characterized by an abnormal and rapid heartbeat, has the potential to develop into stroke, heart failure, and, ultimately, mortality. The electrocardiogram (ECG) is a pivotal tool in the diagnosis of AF, offering a quick, cost-effective, and non-invasive mean to record the heart's electrical activity. Recent studies are increasingly engaged in the implementation of deep learning techniques for ECG feature extraction for AF prediction. In addition, the application of Mendelian randomization (MR) methodologies has been investigated to identify causal associations between genetically imputed pre-defined ECG characteristics and cardiovascular diseases, such as AF. DeepFEIVR, a non-linear extension of the classical instrumental variable (IV) regression model, was designed with the objective of extracting disease-associated causal features from high-dimensional data, such as neuroimaging data. In this article, we applied DeepFEIVR as well as its variant (with residual inclusion), DeepFEIVR-RI, to the large UK Biobank dataset. The application of DeepFEIVR and DeepFEIVR-RI showed that the genetic components in ECGs could contribute to the development of AF statistically significantly ( p values < ). Another contribution of this article is an extension to both DeepFEIVR and DeepFEIVR-RI to accommodate a large number of IVs. A comparison of results from DeepFEIVR and DeepFEIVR-RI, based on various choices of IVs, was conducted. Furthermore, we applied a recent algorithm called dnn-loc, enabling a visual examination on specific ECG components as extracted causal features for AF, thus advancing the understanding of the etiology of AF.},
+  archive  = {J},
+  author   = {Yuchen Yao and Zhaotong Lin and Xiaotong Shen and Lin Yee Chen and Wei Pan},
+  doi      = {10.1002/sam.70026},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {8},
+  number   = {4},
+  pages    = {e70026},
+  title    = {Extracting genetically-imputed causal features from ECG data},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Statistical shape analysis of human bodies. <em>SADM</em>, <em>18</em>(4), e70024. (<a href='https://doi.org/10.1002/sam.70024'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Morphological analysis of the human body is crucial for various applications in ergonomics and product design, with significant economic and commercial implications. This paper presents a novel exploration of statistical methods for the analysis of human body shapes based on 3D landmark data. It focuses on the application of well-established statistical methods within the framework of Kendall's 3D shape space. It is well known that Kendall's 3D shape space has non-constant curvature at all points. A key contribution of this study is the detailed examination of the curvature of Kendall's space at points corresponding to human body shapes, highlighting its implications for posterior statistical analysis. A study of the distances in the dataset is also carried out. From this point, we also compare the performance of intrinsic (Riemannian) methods and Euclidean approximations for mean shape estimation, group difference identification, and dimensionality reduction, providing a comprehensive assessment of their respective strengths and limitations in these contexts. These findings aim to improve the statistical understanding of body morphology and provide valuable guidance for applications in fields such as product design and ergonomics.},
+  archive  = {J},
+  author   = {Jorge Valero and M. Victoria Ibáñez and Amelia Simó},
+  doi      = {10.1002/sam.70024},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {8},
+  number   = {4},
+  pages    = {e70024},
+  title    = {Statistical shape analysis of human bodies},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Correspondence analysis from the viewpoint of compositional tables. <em>SADM</em>, <em>18</em>(4), e70023. (<a href='https://doi.org/10.1002/sam.70023'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Correspondence analysis (CA), a well-known method for analyzing the relationships between rows and columns of a table, has been reformulated to link to the logratio methodology of compositional data by using the limiting case of the power transformation. The resulting methodology investigates relative rather than absolute information, and it is invariant with respect to rescaling rows or columns. The latter properties also hold for the analysis of compositional tables, where the table is first decomposed into an independent and an interaction part. It is shown that the analysis of the interaction part is equivalent to CA, but in addition, the variance contributions can be determined. Both concepts also allow for an inclusion of weights to suppress undesirable variance, and it is shown that the equivalence between weighted CA and the analysis of weighted compositional tables again holds. This equivalence allows us to make use of the mathematical framework of weighted compositional tables, the so-called Bayes spaces, to get a deeper understanding of CA and to construct extensions to multi-factorial tables (cubes, etc.).},
+  archive  = {J},
+  author   = {Kamila Fačevicová and Peter Filzmoser and Karel Hron},
+  doi      = {10.1002/sam.70023},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {8},
+  number   = {4},
+  pages    = {e70023},
+  title    = {Correspondence analysis from the viewpoint of compositional tables},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exact score vector and hessian matrix for mixtures of matrix-variate normals. <em>SADM</em>, <em>18</em>(3), e70030. (<a href='https://doi.org/10.1002/sam.70030'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Closed-form expressions for the score vector and the Hessian matrix of the log-likelihood function are derived for mixtures of matrix-variate normal distributions. These results are obtained by exploiting properties of the trace operator and the Kronecker product, enabling fast and reliable computation of standard errors and eliminating the need for costly numerical differentiation. The advantages of the approach are highlighted through a comprehensive simulation study based on synthetic data under different scenarios.},
+  archive  = {J},
+  author   = {Marco Berrettini and Giuliano Galimberti},
+  doi      = {10.1002/sam.70030},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {6},
+  number   = {3},
+  pages    = {e70030},
+  title    = {Exact score vector and hessian matrix for mixtures of matrix-variate normals},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Rank-based inference for conditional independence graph with missing values. <em>SADM</em>, <em>18</em>(3), e70028. (<a href='https://doi.org/10.1002/sam.70028'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Statistical inference for conditional independence among variables is a critical issue in many scientific studies. However, most current methods use marginal and partial correlations, which assume normality and fully observed data. In this paper, we propose an estimator of the nonparanormal (NPN) partial correlations under high-dimensional data with missing values. Nonparanormal partial correlation being zero is equivalent to conditional independence under the nonparanormal model, which relaxes the Gaussian assumption by assuming monotonic transformations of the data are normally distributed. Under the assumption of missing completely at random (MCAR), the NPN partial correlations are estimated by applying regularization methods to the estimated NPN correlation matrix of the normally transformed data from the non-missing values. A multiple testing procedure is then constructed to recover the conditional dependence structure. Numerical simulations are conducted to evaluate the performance of the proposed method. Additionally, a news dataset is analyzed to study word associations in real and fake news passages.},
+  archive  = {J},
+  author   = {Haoyan Hu and Yumou Qiu},
+  doi      = {10.1002/sam.70028},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {6},
+  number   = {3},
+  pages    = {e70028},
+  title    = {Rank-based inference for conditional independence graph with missing values},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Variational autoencoder with gamma mixture for clustering high-dimensional right-skewed data. <em>SADM</em>, <em>18</em>(3), e70027. (<a href='https://doi.org/10.1002/sam.70027'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Variational autoencoders (VAEs) with symmetric mixture priors have shown exceptional performance in clustering applications. However, these methods often struggle with asymmetrical distributions and extreme values. Many fields, such as medical imaging, bioinformatics, finance, and atmospheric science, frequently deal with right-skewed data. To address this, we propose a novel VAE clustering approach that utilizes a gamma mixture prior, effectively accommodating right-skewed distributions. Our findings highlight the significance of selecting an appropriate distribution for the data. The proposed method demonstrates the ability to achieve a more parsimonious model with fewer parameters compared to other deep learning clustering techniques, which is essential for clustering high-dimensional data with small sample sizes. We evaluate our approach on both synthetic and real right-skewed datasets, demonstrating superior clustering performance compared to existing deep generative clustering methods and traditional statistical models.},
+  archive  = {J},
+  author   = {Jinwon Heo and Jangsun Baek},
+  doi      = {10.1002/sam.70027},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {6},
+  number   = {3},
+  pages    = {e70027},
+  title    = {Variational autoencoder with gamma mixture for clustering high-dimensional right-skewed data},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Variable selection in nonparametric additive models via data splitting. <em>SADM</em>, <em>18</em>(3), e70025. (<a href='https://doi.org/10.1002/sam.70025'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In high-dimensional regression settings, variable selection remains a crucial challenge, particularly in the nonparametric additive models. Traditional methods for variable selection in the nonparametric additive models have focused on ensuring selection consistency, which aims to identify significant variables without misclassification. However, recent research trends acknowledge that significant variables may not be entirely separable from noise or insignificant variables and emphasize the importance of accepting some misclassification errors among selected variables. This paper proposes a novel approach that employs the multiple data splitting (MDS) method to select variables in the nonparametric additive models while controlling the false discovery rate (FDR). Our method constructs mirror statistics using the properties of inner products, allowing for measuring variable importance scores even when there are multiple coefficients with varying signs. Through simulation studies and a real data application, we show that our method has superior power in variable selection compared to traditional methods, such as the kernel knockoffs (KKO) and sparse additive models (SpAM) method, while controlling FDR, especially under non-Gaussian design matrices.},
+  archive  = {J},
+  author   = {Kyuhwan Kim and Junyong Park},
+  doi      = {10.1002/sam.70025},
+  journal  = {Statistical Analysis and Data Mining: An ASA Data Science Journal},
+  month    = {6},
+  number   = {3},
+  pages    = {e70025},
+  title    = {Variable selection in nonparametric additive models via data splitting},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Model averaging for regression kink models. <em>SADM</em>, <em>18</em>(2), e70022. (<a href='https://doi.org/10.1002/sam.70022'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This article investigates optimal model averaging for regression kink models with heteroscedasticity. When all candidate models are misspecified, we establish the asymptotic optimality of the corresponding model averaging estimator in the sense of minimizing the squared prediction loss. When correct models exist, we demonstrate that the sum of weights assigned to the correct models converges to one in probability as the sample size increases. Simulation experiments reveal the superiority of our method over other commonly used model averaging methods. Furthermore, we provide an empirical illustration using a dataset of baseball pitcher salaries.},
+  archive  = {J},
+  author   = {Li Xi and Xiyuan Zhang and Yuting Wei and Zhanshou Chen},
+  doi      = {10.1002/sam.70022},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {4},
+  number   = {2},
+  pages    = {e70022},
+  title    = {Model averaging for regression kink models},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A homogeneity test for ordinal receiver operating characteristic regression with application to facial recognition accuracy assessment. <em>SADM</em>, <em>18</em>(2), e70021. (<a href='https://doi.org/10.1002/sam.70021'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Ordinal scores occur commonly in medical imaging studies and more recently in black-box studies on forensic identification accuracy. To assess the accuracy of radiologists in medical imaging studies or the accuracy of forensic examiners in biometric studies, one needs to estimate the accuracy measures such as the receiver operating characteristic (ROC) curves and also account for the covariates related to the radiologists or forensic examiners. The novelty of the paper is twofold. First, we propose a new covariate-adjusted homogeneity test for ordinal ROC curves to determine differences in accuracy among multiple rater groups. Second, since the covariance structure among the ROC regression estimators is not available, we obtained the asymptotic covariance matrix of the ROC estimators and derived theoretical results of the proposed test. We conducted extensive simulation studies to evaluate the finite sample performance of the proposed test. The simulation results show that estimated ROC curves are consistent and the empirical coverage of the confidence intervals is close to the nominal level. Our proposed test is applied to a large-scale face recognition study in which participants include facial examiners, facial reviewers, super-recognizers, fingerprint examiners, and students. The results show differences in accuracy among five rater groups. Ad-hoc pairwise comparison tests are then conducted by establishing confidence bands of differences among ROC curves. Those pairwise tests identify statistically significant differences in ROC curves among five participant groups.},
+  archive  = {J},
+  author   = {Ngoc-Ty Nguyen and Larry Tang and Lulu Chen and P. Jonathon Phillips},
+  doi      = {10.1002/sam.70021},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {4},
+  number   = {2},
+  pages    = {e70021},
+  title    = {A homogeneity test for ordinal receiver operating characteristic regression with application to facial recognition accuracy assessment},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Model-based recursive partitioning for discrete event times. <em>SADM</em>, <em>18</em>(2), e70020. (<a href='https://doi.org/10.1002/sam.70020'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Model-based recursive partitioning (MOB) is used to identify subgroups based on various outcome measures, including time-to-event outcomes. Discrete time-to-event data are typically fitted using the generalized linear model (GLM) framework with binary outcome. However, direct application of MOB with GLMs for binary outcomes needs an augmented data matrix, which violates the assumption of independent observations required for MOB's splitting criterion. We propose a permutation approach tailored to discrete time-to-event data that controls the error rate of MOB's splitting criterion, avoiding spurious subgroup identification. In simulations, we compare this permutation approach to the naïve approach applying MOB with regression models for binary outcomes directly to the augmented data and MOB using the sum of the score contributions. Our experiments showed that MOB using the permutation approach controls the Type I error rate and accurately identifies splitting variables. To illustrate the various MOB approaches for discrete time-to-event data, we apply them to an example data set on unemployment duration.},
+  archive  = {J},
+  author   = {Cynthia Huber and Matthias Schmid and Tim Friede},
+  doi      = {10.1002/sam.70020},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {4},
+  number   = {2},
+  pages    = {e70020},
+  title    = {Model-based recursive partitioning for discrete event times},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Score tests for overdispersion in marginalized zero-inflated poisson regression based on marginalized zero-inflated generalized poisson model. <em>SADM</em>, <em>18</em>(2), e70019. (<a href='https://doi.org/10.1002/sam.70019'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {A marginalized zero-inflated Poisson (MZIP) model has been developed to allow practitioners to make direct inferences about the marginal mean of count data while accounting for the excess zeros in the data. Overdispersion is a well-documented issue in models that include the Poisson distribution, such as the traditional zero-inflated Poisson (ZIP) and MZIP models. When both zero-inflation and overdispersion are present in count data, alternative models like the marginalized zero-inflated negative binomial (MZINB) and marginalized zero-inflated generalized Poisson (MZIGP) can be employed. In choosing between models, the score test has an advantage over the likelihood ratio and Wald tests, as it only requires estimating the parameter of interest under the null hypothesis. Building on the work of Inan et al., which developed a score test for overdispersion in MZIP compared to the MZINB-2 model and inspired by Yang et al., this paper proposes score tests for overdispersion in MZIP regression based on MZIGP models. It also demonstrates that the score statistic derived based on the MZIGP-2 model is identical to that based on the MZINB-2 model. A simulation study was performed to evaluate the proposed score statistic's performance in terms of empirical type I error rates and power. Additionally, a case study is provided to illustrate the data analysis procedures.},
+  archive  = {J},
+  author   = {Yuhe Wang and Yuecai Han},
+  doi      = {10.1002/sam.70019},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {4},
+  number   = {2},
+  pages    = {e70019},
+  title    = {Score tests for overdispersion in marginalized zero-inflated poisson regression based on marginalized zero-inflated generalized poisson model},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Bayesian hybrid model search and averaging for sparse gaussian process regression. <em>SADM</em>, <em>18</em>(2), e70018. (<a href='https://doi.org/10.1002/sam.70018'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Gaussian process (GP) regression has been a popular nonparametric Bayesian approach for nonlinear modeling and prediction in the fields of statistics and machine learning. However, when many predictors are considered for the construction of the kernel function, the GP approach provides unacceptable performance in both estimation and prediction. To overcome this limitation, some attempts have been made to exploit a fully Bayesian model selection approach or a penalized likelihood approach. However, the fully Bayesian framework turns out to be extremely expensive in computational terms, and the penalized likelihood method oversimplifies model uncertainties. In this paper, we propose a new sparse GP method that reduces the computational burden of fully Bayesian inference by incorporating a hybrid deterministic-stochastic search approach into Bayesian model averaging. In addition, we develop a scalable extension of the proposed method to high-dimensional massive data settings. The merits of the proposed methods are demonstrated via simulation experiments and real data applications.},
+  archive  = {J},
+  author   = {Weikang Duan and Gyuhyeong Goh},
+  doi      = {10.1002/sam.70018},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {4},
+  number   = {2},
+  pages    = {e70018},
+  title    = {Bayesian hybrid model search and averaging for sparse gaussian process regression},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Identifying nuclear data correlated through predicting bias in integral experiments via applying principal component analysis to random forest. <em>SADM</em>, <em>18</em>(2), e70014. (<a href='https://doi.org/10.1002/sam.70014'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Nuclear data (ND) are the input data for neutron-transport simulations to answer questions related to nuclear technologies. Subsets of ND, here > 20,000 data points, are validated with respect to thousands of criticality experiments that represent various applications on a small scale. The aim of validation with these experiments is to find errors in ND or methods. The key challenge here is that several hundreds of ND are used to simulate one integral value. Hence, one cannot clearly identify what ND are leading to bias in criticality measurements. In fact, a mistake in one nuclear-data observable can be compensated with an error in another, and the predicted criticality value would still be predicted in agreement with experimental data. Random forest (RF) was previously employed to predict bias in criticality measurements using sensitivities of simulated criticality experiments to ND. The SHapley Additive exPlanations (SHAP) metric was then applied to attribute the importance of each ND experiment and observable to bias prediction. This, however, did not highlight what ND were jointly related to predicting bias. This is important as it could inform us about where compensating errors in ND could hide. We tackle this shortcoming here by first decomposing the ND sensitivities to integral-experiment simulations into principal components. Then we use principal component projections to predict bias via the RF and SHAP. The SHAP values and principal components are employed to reconstruct detailed SHAP values for each ND observable. We demonstrate that these extended SHAP bias predictions are more robust, less noisy, and more efficient. In addition, we show that this approach accounts for covariance in ND sensitivities and automates the identification of where compensating errors could hide in ND.},
+  archive  = {J},
+  author   = {Brian Bell and Denise Neudecker and Michael Grosskopf and Jesson Hutchinson},
+  doi      = {10.1002/sam.70014},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {4},
+  number   = {2},
+  pages    = {e70014},
+  title    = {Identifying nuclear data correlated through predicting bias in integral experiments via applying principal component analysis to random forest},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Triangulation-based spatial clustering for adjacent data with heterogeneous density. <em>SADM</em>, <em>18</em>(2), e70017. (<a href='https://doi.org/10.1002/sam.70017'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In diverse fields such as geography, meteorology, and economics, data often exhibit complex, nonlinear relationships, irregular structures, and are frequently collected over intricate domains. While effectively identifying regularly shaped clusters (e.g., ellipsoidal or spherical) within regular domains, traditional clustering algorithms often struggle with irregular cluster shapes, heterogeneous densities, noisy inter-cluster boundaries, and datasets spread across complex spatial domains. To address these challenges, we introduce a novel Density and Triangulation-based Clustering (DTC) framework, designed to excel in these complex scenarios through three key innovations: (1) density-based separation using an advanced density estimation method tailored for complex domains, (2) Delaunay triangulation-based spatial clustering, effectively managing nonlinear geometries and resolving adjacency issues, and (3) noise mitigation through proximity analysis leveraging nearest neighbors. The DTC framework uniquely integrates graph-based methods with robust density estimation methods, enabling it to handle cases where traditional algorithms fail. Extensive experiments on both synthetic and real-world datasets demonstrate its superior capability to identify nested and contiguous clusters with heterogeneous densities, even in the presence of noise and over complex domains. These findings underscore the practical applicability and versatility of DTC in extracting meaningful insights from challenging datasets.},
+  archive  = {J},
+  author   = {Sihan Zhou and Daniel Vasiliu and Shi Qi and Guannan Wang},
+  doi      = {10.1002/sam.70017},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  number   = {2},
+  pages    = {e70017},
+  title    = {Triangulation-based spatial clustering for adjacent data with heterogeneous density},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Online variable selection and parameter estimation for massive data via square root lasso. <em>SADM</em>, <em>18</em>(2), e70016. (<a href='https://doi.org/10.1002/sam.70016'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Online learning demonstrates significant advantages in handling massive data. In this paper, online variable selection and parameter estimation for massive data are implemented via square root lasso. Specifically, the objective function of the square root lasso is replaced with an online loss function that depends only on the current batch of data and the summary statistics obtained from historical data. An online solution algorithm is then proposed. Moreover, we propose a novel online penalty parameter selection method based on rolling cross-validation and quantile universal threshold. This method is neither as dependent on all data as cross-validation nor as computationally intensive as existing online selection methods. Theoretically, the and prediction estimation error upper bounds are established. Moreover, these properties are always satisfied, regardless of the number of data batches, indicating that our method is adaptive to scenarios where the number of batches continuously increases. We conduct simulation studies to assess the performance of the proposed estimator. And at last, our method is applied to analyze some real datasets for illustration.},
+  archive  = {J},
+  author   = {Yujie Gai and Kang Meng and Xinyi Xu},
+  doi      = {10.1002/sam.70016},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  number   = {2},
+  pages    = {e70016},
+  title    = {Online variable selection and parameter estimation for massive data via square root lasso},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BOSTON-PUPA: A bayesian online spatio-temporal outbreak detection framework with prior updating and p-value adaptation. <em>SADM</em>, <em>18</em>(2), e70015. (<a href='https://doi.org/10.1002/sam.70015'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Early online outbreak detection for an epidemic is vital for disease-control authorities to make policies for the protection of public health and normal socioeconomic functions. Modern public health streaming surveillance data are often collected from multiple data sources, exhibiting spatio-temporal interdependence and imbalance issues. To address those issues, we propose a Bayesian online spatio-temporal outbreak detection with prior updating and p -value adaptation (BOSTON-PUPA) procedure. Using sequential p -value combinations, this iterative procedure involves the generalized Poisson distribution (GPD) model and supports synchronous surveillance over multiple locations, with a controlled false detection rate as well as high sensitivity against outbreaks in a wide range of signal-to-noise ratios. In the simulation study, we employed and compared several popular combined p -value methods in the BOSTON-PUPA procedure based on sensitivity, specificity, false detection rate and delay before making recommendations. We illustrated our method by detecting the outbreaks in the real COVID-19 daily case count data in Massachusetts counties in 2020.},
+  archive  = {J},
+  author   = {Yanzhao Wang and I. M. L. Nadeesha Jayaweera and Jian Zou},
+  doi      = {10.1002/sam.70015},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  number   = {2},
+  pages    = {e70015},
+  title    = {BOSTON-PUPA: A bayesian online spatio-temporal outbreak detection framework with prior updating and p-value adaptation},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Detection of unknown functional departure in generalized functional regression. <em>SADM</em>, <em>18</em>(1), e70013. (<a href='https://doi.org/10.1002/sam.70013'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Detecting statistical differences among functional dataset or streaming signal dataset is of interest to many diverse fields, including neurophysiology, imaging, biomedical engineering, and public health. For example in our study, our interest is to provide the guideline for detecting the lowest drug dosage level for glioblastoma as quickly as possible in which the intensity functional curves are different among dosage groups. However, such functional data often have unknown and nonlinear massive correlated curves that lead to difficulties in detecting their significant differences without explicit likelihood functions. Existing detecting procedures mainly test a linear, quadratic, or specific parametric form of departure and require explicit likelihood functions due to estimating specific models. In this paper, we propose a flexible detecting method to test any unknown functional departure in a generalized functional regression without estimating models. We develop our detecting method under a generalized semiparametric functional model framework in which the explicit likelihood function does not exist. We develop our detecting method using the approximated Bayes factor, a score-type test, and the estimating equations. The decision of rejecting (or not) the null hypothesis is made using the Frequentist p -values. We also studied the asymptotic properties of our method. We compare our detecting method to the alternative method regarding the type-I error and power under various simulation settings. We demonstrate the advantages of our method by applying two real datasets: functional data of drug-exposed glioblastoma cell line and diffusion tensor imaging tractography.},
+  archive  = {J},
+  author   = {Mengkun Chen and Inyoung Kim},
+  doi      = {10.1002/sam.70013},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {2},
+  number   = {1},
+  pages    = {e70013},
+  title    = {Detection of unknown functional departure in generalized functional regression},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Semi-parametric least-area linear-circular regression through möbius transformation. <em>SADM</em>, <em>18</em>(1), e70012. (<a href='https://doi.org/10.1002/sam.70012'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {This paper introduces a novel regression model designed for angular response variables with linear predictors, utilizing a generalized Möbius transformation to define the regression curve. By mapping the real axis to the circle, the model effectively captures the relationship between linear and angular components. A key innovation is the introduction of an area-based loss function, inspired by the geometry of a curved torus, for efficient parameter estimation. The semi-parametric nature of the model eliminates the need for specific distributional assumptions about the angular error, enhancing its versatility. Extensive simulation studies, incorporating von Mises and wrapped Cauchy distributions, highlight the robustness of the framework. The model's practical utility is demonstrated through real-world data analysis of Bitcoin and Ethereum, showcasing its ability to derive meaningful insights from complex data structures.},
+  archive  = {J},
+  author   = {Surojit Biswas and Buddhananda Banerjee},
+  doi      = {10.1002/sam.70012},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {2},
+  number   = {1},
+  pages    = {e70012},
+  title    = {Semi-parametric least-area linear-circular regression through möbius transformation},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Robustifying marginal linear models for correlated responses using a constructive multivariate huber distribution. <em>SADM</em>, <em>18</em>(1), e70011. (<a href='https://doi.org/10.1002/sam.70011'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The marginal regression model is convenient for analyzing correlated responses, including repeated measures and longitudinal data. This paper proposes a robust marginal linear model for analyzing a vector of univariate responses with correlated components by incorporating an innovative multivariate Huber distribution. It employs a flexible parameterization using modified Cholesky decomposition, provides a convenient approach for estimating the covariance matrix, and allows for subject-varying the tuning parameter. Our research introduces a method for estimating parameters by employing the exact likelihood function through the Hamiltonian Monte Carlo algorithm. To highlight the advantage of our model, we carried out a simulation experiment and reanalyzed two real-world case studies in the health and economics fields. The results indicate that our model offers a more robust analysis by assigning appropriate weights to extreme observations, thereby handling outliers more effectively than traditional models.},
+  archive  = {J},
+  author   = {Raziyeh Mohammadi and Iraj Kazemi},
+  doi      = {10.1002/sam.70011},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {2},
+  number   = {1},
+  pages    = {e70011},
+  title    = {Robustifying marginal linear models for correlated responses using a constructive multivariate huber distribution},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Noise-augmented ℓ0 regularization of tensor regression with tucker decomposition. <em>SADM</em>, <em>18</em>(1), e70010. (<a href='https://doi.org/10.1002/sam.70010'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Tensor data are multi-dimensional arrays. Low-rank decomposition-based regression methods with tensor predictors exploit the structural information in tensor predictors while significantly reducing the number of parameters in tensor regression. We propose a method named NA 0 CT 2 $$ {\mathrm{NA}}_0{\mathrm{CT}}^2 $$ (Noise Augmentation for ℓ 0 $$ {\mathrm{\ell}}_0 $$ regularization on Core Tensor in Tucker decomposition) to regularize the parameters in tensor regression (TR), coupled with Tucker decomposition. We establish theoretically that NA 0 CT 2 $$ {\mathrm{NA}}_0{\mathrm{CT}}^2 $$ achieves exact ℓ 0 $$ {\mathrm{\ell}}_0 $$ regularization on the core tensor from the Tucker decomposition in linear TR and generalized linear TR. To our knowledge, NA 0 CT 2 $$ {\mathrm{NA}}_0{\mathrm{CT}}^2 $$ is the first Tucker decomposition-based regularization method in TR to achieve ℓ 0 $$ {\mathrm{\ell}}_0 $$ regularization in core tensors. NA 0 CT 2 $$ {\mathrm{NA}}_0{\mathrm{CT}}^2 $$ is implemented through an iterative procedure and involves two straightforward steps in each iteration—generating noisy data based on the core tensor from the Tucker decomposition of the updated parameter estimate and running a regular GLM on noise-augmented data on vectorized predictors. We demonstrate the implementation of NA 0 CT 2 $$ {\mathrm{NA}}_0{\mathrm{CT}}^2 $$ and its ℓ 0 $$ {\mathrm{\ell}}_0 $$ regularization effect in both simulation studies and real data applications. The results suggest that NA 0 CT 2 $$ {\mathrm{NA}}_0{\mathrm{CT}}^2 $$ can improve predictions compared with other decomposition-based TR approaches, with or without regularization and it identifies important predictors though not designed for that purpose.},
+  archive  = {J},
+  author   = {Tian Yan and Yinan Li and Fang Liu},
+  doi      = {10.1002/sam.70010},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {2},
+  number   = {1},
+  pages    = {e70010},
+  title    = {Noise-augmented ℓ0 regularization of tensor regression with tucker decomposition},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BayesMultiomics: An r package for bayesian shrinkage models for integration and analysis of multi-platform high-dimensional genomics data. <em>SADM</em>, <em>18</em>(1), e70009. (<a href='https://doi.org/10.1002/sam.70009'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {With the growing availability of multi-platform biomedical data—such as epigenomics, gene expression, and clinical features—there is an increasing need for methods that jointly analyze these datasets. We present BayesMultiomics, an R package for integrating and analyzing gene expression, DNA methylation, gene function annotations, and clinical variables using a two-stage hierarchical Bayesian model. Built with user-friendliness in mind, the package caters to multidisciplinary researchers without extensive programming expertise in Bayesian hierarchical models. Its application is demonstrated using an illustrative Glioblastoma (GBM) dataset.},
+  archive  = {J},
+  author   = {Mansoo Cho and Tanujit Dey and Hao Xue and Sounak Chakraborty},
+  doi      = {10.1002/sam.70009},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {2},
+  number   = {1},
+  pages    = {e70009},
+  title    = {BayesMultiomics: An r package for bayesian shrinkage models for integration and analysis of multi-platform high-dimensional genomics data},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Using neural networks to identify mixture components in hyperspectral reflectance data. <em>SADM</em>, <em>18</em>(1), e70008. (<a href='https://doi.org/10.1002/sam.70008'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Neural networks have been employed to identify materials of interest from hyperspectral data (generally imagery) based on their unique spectral signatures. This approach assumes that there is a single material that is standing out from the rest of the spectrum to be identified. However, pixels often contain more than one material, or a material of interest may itself be a mixture of multiple materials. Neural networks are only as good as the data used to train them, and it takes a great deal of work in the laboratory to identify, make, and measure all potential mixtures of interest. Thus, researchers often calculate synthetic spectra using algorithms with varying degrees of fidelity to the physics that govern the interactions between light and multiple materials. In this work, we have (1) adapted a neural network designed to identify mixture components from Raman spectroscopy to work with visible to near-infrared reflectance data and (2) tested three common mixture algorithms to determine the most accurate and least computationally expensive method to build synthetic training datasets. With our initial test dataset, we have achieved accuracies of > 90% and found that the synthetic training dataset produced using the Hapke mixture model provides the best results.},
+  archive  = {J},
+  author   = {Allison M. Zastrow and Eric Flynn},
+  doi      = {10.1002/sam.70008},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {2},
+  number   = {1},
+  pages    = {e70008},
+  title    = {Using neural networks to identify mixture components in hyperspectral reflectance data},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Greenwood statistic under distortion measurement errors. <em>SADM</em>, <em>18</em>(1), e70007. (<a href='https://doi.org/10.1002/sam.70007'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In this paper, we address the crucial necessity of understanding the behavior of the Greenwood statistic when dealing with data corrupted by multiplicative measurement errors. The unobservable variable is subject to a multiplicative distortion influenced by an unknown smoothing function dependent on a confounding variable. We introduce the conditional mean calibrated Greenwood statistic and its variants, including the coefficient of variation, to adapt to this complex situation. The asymptotic results we present showcase their effectiveness even when such distortions are present. Moreover, for general distributions of the unobserved variable, we extend the methodology by proposing calibrated-modified Greenwood statistics and the coefficient of variation. These methods are demonstrated to be asymptotically efficient under various assumptions about the distortion function. Furthermore, we conduct Monte Carlo simulation experiments to assess the performance of the proposed estimators and test statistics, during which we compare our proposed test statistics with existing ones. For illustrative purposes, these methods are then applied to analyze a real-world dataset. MSC2020 Classification: 62G05, 62G08, 62G20},
+  archive  = {J},
+  author   = {Chaolin Yao and Jun Zhang},
+  doi      = {10.1002/sam.70007},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {2},
+  number   = {1},
+  pages    = {e70007},
+  title    = {Greenwood statistic under distortion measurement errors},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An adaptive microbiome-based truncated test. <em>SADM</em>, <em>18</em>(1), e70006. (<a href='https://doi.org/10.1002/sam.70006'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The human microbiome has been demonstrated to be associated with many complex diseases. Identifying the differences in microbial taxa across two different health conditions is clinically important, as it can enhance our understanding of disease pathology from a microbiome perspective and potentially lead to preventive or therapeutic strategies. However, there are three main challenges for analyzing microbiome data, due to compositionality, sparsity, and high dimensionality of the relative abundances. Although a few two-sample tests have been proposed for analyzing microbiome data, the statistical power cannot be guaranteed as the true alternative hypothesis is unknown. To potentially address this issue, we propose an adaptive microbiome-based truncated test (AMTT) that produces high power for various alternative hypotheses. Simulation studies with a wide range of scenarios are conducted, the results indicate that AMTT is not only powerful in almost all the scenarios but also effectively controls type I error rates. Real data about Parkinson's intestinal microbiome is analyzed to demonstrate its practical performance.},
+  archive  = {J},
+  author   = {Hailong Gao and Deliang Bu and Hongping Guo and Xiao Wang},
+  doi      = {10.1002/sam.70006},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {2},
+  number   = {1},
+  pages    = {e70006},
+  title    = {An adaptive microbiome-based truncated test},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A novel approach for APT detection based on ensemble learning model. <em>SADM</em>, <em>18</em>(1), e70005. (<a href='https://doi.org/10.1002/sam.70005'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In recent years, the number and complexity of advanced persistent threat (APT) attacks have significantly increased, posing major challenges for organizations in effectively detecting and mitigating these threats. Although various APT detection methods have been developed, current approaches still face limitations, such as poor generalization leading to high false alarm rates. To address these challenges, this article proposes a novel ensemble learning model called MCG, based on the combination of three main components: multilayer perceptron (MLP), correlated recursion (CR) layer, and graph attention network (GAT). The MLP component extracts flow features from network traffic, the CR layer constructs the IP information network by grouping and linking network behaviors, and finally, the GAT layer analyzes relationships between IPs through an attention mechanism. The MCG model proposed in this article has demonstrated superior performance in APT detection by effectively leveraging the strengths of each component, enabling more accurate identification of abnormal behaviors and reducing false alarms. The experimental results, presented in Section 4.4, show that the MCG model significantly improves accuracy and outperforms traditional methods. This demonstrates that the proposed model not only makes significant theoretical contributions but also offers practical value, providing a more reliable and effective solution for early detection and warning of APT attacks.},
+  archive  = {J},
+  author   = {Nguyen Hoa Cuong and Cho Do Xuan and Vu Thanh Long and Nguyen Duy Dat and Tran Quang Anh},
+  doi      = {10.1002/sam.70005},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {2},
+  number   = {1},
+  pages    = {e70005},
+  title    = {A novel approach for APT detection based on ensemble learning model},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The classification algorithm based on functional logistic regression model with spatial effects and its application in air quality analysis. <em>SADM</em>, <em>18</em>(1), e70004. (<a href='https://doi.org/10.1002/sam.70004'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {With the acceleration of economic development and urbanization, air pollution has become increasingly severe and has been a crucial issue affecting social advancement. Considering the spatial correlation between regions in air quality analysis can improve the accuracy of model estimation for the data on air pollution. First, we propose the functional Logistic regression model with spatial effects. Second, we fit the original data into functional data using B-spline basis functions and apply functional principal component analysis for dimension reduction. Further, the model is estimated using the maximum likelihood method. Finally, the effectiveness of the proposed model is validated through numerical simulations and a real data analysis for PM2.5 air quality in the Sichuan-Chongqing region of China.},
+  archive  = {J},
+  author   = {Cai Xinran and Tian Yuzhu and Yue Wang and Tian Maozai},
+  doi      = {10.1002/sam.70004},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {2},
+  number   = {1},
+  pages    = {e70004},
+  title    = {The classification algorithm based on functional logistic regression model with spatial effects and its application in air quality analysis},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Interaction tests with covariate-adaptive randomization. <em>SADM</em>, <em>18</em>(1), e70003. (<a href='https://doi.org/10.1002/sam.70003'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Treatment-covariate interaction tests are commonly applied by researchers to examine whether the treatment effect varies across patient subgroups defined by baseline characteristics. The objective of this study is to explore treatment-covariate interaction tests involving covariate-adaptive randomization. Without assuming a parametric data-generating model, we investigate usual interaction tests and observe that they tend to be conservative: specifically, their limiting rejection probabilities under the null hypothesis are typically strictly lower than the nominal level. To address this problem, we propose modifications to the usual tests to obtain corresponding valid tests with limiting rejection probabilities equal to the nominal level. Moreover, we introduce a novel class of stratified-adjusted interaction tests that are simple, more powerful than the usual and modified tests, and broadly applicable to most covariate-adaptive randomization methods. The results encompass two types of interaction tests: one involving stratification covariates and the other involving additional covariates that are not used for randomization. Our study clarifies the application of interaction tests in clinical trials and offers valuable tools for revealing treatment heterogeneity, crucial for advancing personalized medicine.},
+  archive  = {J},
+  author   = {Likun Zhang and Wei Ma},
+  doi      = {10.1002/sam.70003},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {2},
+  number   = {1},
+  pages    = {e70003},
+  title    = {Interaction tests with covariate-adaptive randomization},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Sequence outlier detection and application of gated recurrent unit autoencoder gaussian mixture model based on various loss optimization. <em>SADM</em>, <em>18</em>(1), e70001. (<a href='https://doi.org/10.1002/sam.70001'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In the era of big data, detecting outliers in time series data is crucial, particularly in fields such as finance and engineering. This article proposes a novel sequence outlier detection method based on the gated recurrent unit autoencoder with Gaussian mixture model (GRU-AE-GMM), which combines gated recurrent unit (GRU), autoencoder (AE), Gaussian mixture model (GMM), and optimization algorithms. The GRU captures long-term dependencies within the sequence, while the AE measures sequence abnormality. Meanwhile, the GMM models the relationship between the original and reconstructed sequences, employing the Expectation–Maximization (EM) algorithm for parameter estimation to calculate the likelihood of each hidden variable belonging to each Gaussian mixture component. In this article, we first train the model with mean-squared error loss (MSEL), and then further enhanced by substituting it with quantile loss (QL), composite quantile loss (CQL), and Huber loss (HL), respectively. Next, we validate the effectiveness and robustness of the proposed model through Monte Carlo experiments conducted under different error terms. Finally, the method is applied to Amazon stock data for 2022, demonstrating its significant potential for application in dynamic and unpredictable market environments.},
+  archive  = {J},
+  author   = {Ting Xu and Yuzhu Tian and Chunho Wu and Zhibao Mian},
+  doi      = {10.1002/sam.70001},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {2},
+  number   = {1},
+  pages    = {e70001},
+  title    = {Sequence outlier detection and application of gated recurrent unit autoencoder gaussian mixture model based on various loss optimization},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Persistent classification: Understanding adversarial attacks by studying decision boundary dynamics. <em>SADM</em>, <em>18</em>(1), e11716. (<a href='https://doi.org/10.1002/sam.11716'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {There are a number of hypotheses underlying the existence of adversarial examples for classification problems. These include the high-dimensionality of the data, the high codimension in the ambient space of the data manifolds of interest, and that the structure of machine learning models may encourage classifiers to develop decision boundaries close to data points. This article proposes a new framework for studying adversarial examples that does not depend directly on the distance to the decision boundary. Similarly to the smoothed classifier literature, we define a (natural or adversarial) data point to be ( γ , σ)-stable if the probability of the same classification is at least γ $$ \gamma $$ for points sampled in a Gaussian neighborhood of the point with a given standard deviation σ $$ \sigma $$ . We focus on studying the differences between persistence metrics along interpolants of natural and adversarial points. We show that adversarial examples have significantly lower persistence than natural examples for large neural networks in the context of the MNIST and ImageNet datasets. We connect this lack of persistence with decision boundary geometry by measuring angles of interpolants with respect to decision boundaries. Finally, we connect this approach with robustness by developing a manifold alignment gradient metric and demonstrating the increase in robustness that can be achieved when training with the addition of this metric.},
+  archive  = {J},
+  author   = {Brian Bell and Michael Geyer and David Glickenstein and Keaton Hamm and Carlos Scheidegger and Amanda Fernandez and Juston Moore},
+  doi      = {10.1002/sam.11716},
+  journal  = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+  month    = {2},
+  number   = {1},
+  pages    = {e11716},
+  title    = {Persistent classification: Understanding adversarial attacks by studying decision boundary dynamics},
+  volume   = {18},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

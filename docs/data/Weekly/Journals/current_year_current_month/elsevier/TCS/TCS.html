@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TCS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tcs">TCS - 46</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Computing eternal vertex cover number of maximal outerplanar graphs in linear time. <em>TCS</em>, <em>1056</em>, 115530. (<a href='https://doi.org/10.1016/j.tcs.2025.115530'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Eternal vertex cover problem is a variant of the classical vertex cover problem modeled as a two player attacker-defender game. Computing the eternal vertex cover number of graphs is known to be NP-hard in general and even for bipartite graphs. There is a quadratic complexity algorithm known for this problem for chordal graphs. Maximal outerplanar graphs form a subclass of chordal graphs, for which no algorithm of sub-quadratic time complexity is known. In this paper, we obtain a linear time recursive algorithm for computing eternal vertex cover number of maximal outerplanar graphs.},
+  archive      = {J_TCS},
+  author       = {Jasine Babu and K. Murali Krishnan and Veena Prabhakaran and Nandini J. Warrier},
+  doi          = {10.1016/j.tcs.2025.115530},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115530},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Computing eternal vertex cover number of maximal outerplanar graphs in linear time},
+  volume       = {1056},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hypergraph burning, matchings, and zero forcing. <em>TCS</em>, <em>1056</em>, 115529. (<a href='https://doi.org/10.1016/j.tcs.2025.115529'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Lazy burning is a recently introduced variation of burning where only one set of vertices is chosen to burn during the first round. In hypergraphs, lazy burning spreads when all but one vertex in a hyperedge is burned. The lazy burning number is the minimum number of initially burned vertices that eventually burn all vertices. We give several equivalent characterizations of lazy burning on hypergraphs using matchings and zero forcing, and then apply these to establish new bounds and complexity results. We prove that the lazy burning number of a hypergraph H equals its order minus the maximum cardinality of a certain matching on its incidence graph. Using this characterization, we give a formula for the lazy burning number of a dual hypergraph and give new bounds on the lazy burning number based on various hypergraph parameters. We show that the lazy burning number of a hypergraph may be characterized by a maximal subhypergraph that results from iteratively deleting vertices in singleton hyperedges. We prove that lazy burning on a hypergraph is equivalent to zero forcing on its incidence graph and show an equivalence between skew zero forcing on a graph and lazy burning on its neighborhood hypergraph. As a result, we show that the decision problem of computing the lazy burning number of a hypergraph is NP-complete, which solves an open problem in [12] . By applying the results found for lazy burning, we show that the decision problem of computing the skew zero forcing number for bipartite graphs is NP-complete. We finish with open problems.},
+  archive      = {J_TCS},
+  author       = {Anthony Bonato and Caleb Jones and Trent G. Marbach and Teddy Mishura and Zhiyuan Zhang},
+  doi          = {10.1016/j.tcs.2025.115529},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115529},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Hypergraph burning, matchings, and zero forcing},
+  volume       = {1056},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). All for one and one for all: An o(1)-musketeers generic transformation for rotating robots. <em>TCS</em>, <em>1056</em>, 115521. (<a href='https://doi.org/10.1016/j.tcs.2025.115521'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we study the main open question of [Michail, Skretas, Spirakis, ICALP'17], asking what are the families of two-dimensional geometric shapes, drawn on a square grid, that can be transformed into each other by a sequence of rotation operations, none of which disconnects the shape. The model represents programmable matter systems consisting of interconnected robotic modules that perform the minimal mechanical operation of 90° rotations around each other. The goal is to transform an initial connected shape of modules A into a target connected shape B . Under the necessary assumption that the two shapes have identical colour cardinalities on a checkered colouring of the grid, and using at most a constant number of auxiliary modules to trigger the transformation, we prove that almost any pair of such shapes can be transformed into each other within an optimal O ( n 2 ) rotation operations none of which disconnects the shape.},
+  archive      = {J_TCS},
+  author       = {Matthew Connor and Othon Michail and George Skretas},
+  doi          = {10.1016/j.tcs.2025.115521},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115521},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {All for one and one for all: An o(1)-musketeers generic transformation for rotating robots},
+  volume       = {1056},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Decreasing verification radius in local certification. <em>TCS</em>, <em>1056</em>, 115520. (<a href='https://doi.org/10.1016/j.tcs.2025.115520'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper deals with local certification , specifically locally checkable proofs: given a graph property , the task is to certify whether a graph satisfies the property. The verification of this certification needs to be done locally without the knowledge of the whole graph. More precisely, a distributed algorithm, called a verifier , is executed on each vertex. The verifier observes the local neighborhood up to a constant distance and either accepts or rejects. We examine the trade-off between the visibility radius and the size of certificates. We describe a procedure that decreases the radius by encoding the neighborhood of each vertex into its certificate. We also provide a corresponding lower bound on the required certificate size increase, showing that such an approach is close to optimal.},
+  archive      = {J_TCS},
+  author       = {Laurent Feuilloley and Jan Janoušek and Jan Matyáš Křišťan and Josef Erik Sedláček},
+  doi          = {10.1016/j.tcs.2025.115520},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115520},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Decreasing verification radius in local certification},
+  volume       = {1056},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The traveling tournament problem: Improved algorithms based on cycle packing. <em>TCS</em>, <em>1056</em>, 115519. (<a href='https://doi.org/10.1016/j.tcs.2025.115519'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Traveling Tournament Problem (TTP) is a well-known benchmark problem in the field of tournament timetabling, which asks us to design a double round-robin schedule such that each pair of teams plays one game in each other's home venue, minimizing the total distance traveled by all n teams ( n is even). TTP- k is the problem with one more constraint that each team can have at most k -consecutive home games or away games. In this paper, we investigate schedules for TTP- k and analyze the approximation ratio of the solutions. Most previous schedules were constructed based on a Hamiltonian cycle of the graph. We will propose a novel construction based on a k -cycle packing. Then, combining our k -cycle packing schedule with the Hamiltonian cycle schedule, we obtain improved approximation ratios for TTP- k with deep analysis. The case where k = 3 , TTP-3, is one of the most investigated cases. We improve the approximation ratio of TTP-3 from ( 1.667 + ε ) to ( 1.598 + ε ) , for any ε > 0 . For TTP-4, we improve the approximation ratio from ( 1.750 + ε ) to ( 1.700 + ε ) . By a refined analysis of the Hamiltonian cycle construction, we also improve the approximation ratio of TTP- k from ( 5 k − 7 2 k + ε ) to ( 5 k 2 − 4 k + 3 2 k ( k + 1 ) + ε ) for any constant k ≥ 5 .},
+  archive      = {J_TCS},
+  author       = {Jingyang Zhao and Mingyu Xiao and Chao Xu},
+  doi          = {10.1016/j.tcs.2025.115519},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115519},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {The traveling tournament problem: Improved algorithms based on cycle packing},
+  volume       = {1056},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the minimal components of substitution subshifts. <em>TCS</em>, <em>1056</em>, 115517. (<a href='https://doi.org/10.1016/j.tcs.2025.115517'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper we study substitutions on A Z where A is a finite alphabet. We precisely characterize the minimal components of substitution subshifts, give an optimal bound for their number and describe their dynamics. The explicitness of these results provides a method to algorithmically compute and count the minimal components of a given substitution subshift.},
+  archive      = {J_TCS},
+  author       = {Raphaël Henry},
+  doi          = {10.1016/j.tcs.2025.115517},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115517},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {On the minimal components of substitution subshifts},
+  volume       = {1056},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reachability in restricted chemical reaction networks. <em>TCS</em>, <em>1056</em>, 115514. (<a href='https://doi.org/10.1016/j.tcs.2025.115514'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The popularity of molecular computation has given rise to several models of abstraction, one of the more recent ones being Chemical Reaction Networks (CRNs). These are equivalent to other popular computational models, such as Vector Addition Systems and Petri-Nets, and restricted versions are equivalent to Population Protocols. This paper continues the work on core reachability questions related to Chemical Reaction Networks; given two configurations, can one reach the other according to the system's rules? With no restrictions, reachability was recently shown to be Ackermann-complete, which resolved a decades-old problem. In this work, we fully characterize monotone reachability problems based on various restrictions such as the allowed rule size, the number of rules that may create a species ( k -source), the number of rules that may consume a species ( k -consuming), the volume, and whether the rules have an acyclic production order ( feed-forward ). We show PSPACE-completeness of reachability with only bimolecular reactions in two-source and two-consuming rules. This proves hardness of reachability in a restricted form of Population Protocols. This is accomplished using new techniques within the motion planning framework. We give several important results for feed-forward CRNs, where rules are single-source or single-consuming. We show that reachability is solvable in polynomial time as long as the system does not contain special void or autogenesis rules. We then fully characterize all systems of this type and show that with void/autogenesis rules, or more than one source and one consuming, the problems become NP-complete. Finally, we show several interesting special cases of CRNs based on these restrictions or slight relaxations and note future significant open questions related to this taxonomy.},
+  archive      = {J_TCS},
+  author       = {Robert M. Alaniz and Bin Fu and Timothy Gomez and Elise Grizzell and Andrew Rodriguez and Marco Rodriguez and Robert Schweller and Tim Wylie},
+  doi          = {10.1016/j.tcs.2025.115514},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115514},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Reachability in restricted chemical reaction networks},
+  volume       = {1056},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Target influence maximization problem under avoiding unexpected users interruption in online social network. <em>TCS</em>, <em>1056</em>, 115513. (<a href='https://doi.org/10.1016/j.tcs.2025.115513'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The effectiveness of viral marketing lies in the fact that it can activate a “chain-reaction” driven by word-of-mouth. This paper defines unexpected users’ interruption as the unintentional activation of impedimental users who disseminate negative evaluations. Such interruptions may arise during the process of selecting seed nodes intended to maximize influence spread among target users and foster brand awareness. Furthermore, it is typical to tailor promotions for specific user groups. For instance, consider an event organizer who shares an event advertisement on a social platform, aiming to capture the interest of a large local audience. To solve this problem, we devise positive and target influence maximization under the impedimental influence problem (PTIM), aiming to initiate from a set of influential seed users such that eventually, they will trigger the largest positive influence spread among target users. We prove that the objective function is neither submodular nor supermodular. Then, we decompose it into the difference between two submodular functions (DS decomposition). To solve the maximization problem of DS decomposition under cardinality constraint, we provide an explicit DS greedy algorithm with approximation guarantee. Finally, the experimental simulations on three network data sets demonstrate the effectiveness of our method.},
+  archive      = {J_TCS},
+  author       = {Xiaoping Zhu and Jianming Zhu and Priyanshi Garg and Guoqing Wang},
+  doi          = {10.1016/j.tcs.2025.115513},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115513},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Target influence maximization problem under avoiding unexpected users interruption in online social network},
+  volume       = {1056},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Non-overlapping indexing in BWT-runs bounded space. <em>TCS</em>, <em>1056</em>, 115512. (<a href='https://doi.org/10.1016/j.tcs.2025.115512'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We revisit the non-overlapping indexing problem for an efficient repetition-aware solution. The problem is to index a text T [ 1 . . n ] , such that whenever a pattern P [ 1 . . p ] comes as a query, we can report the largest set of non-overlapping occurrences of P in T . A previous index by Cohen and Porat [ISAAC 2009] takes linear space and optimal O ( p + oc c no ) query time, where oc c no denotes the output size. We present an index of size O ( r ) , where r denotes the number of runs in the Burrows Wheeler Transform (BWT) of T . The parameter r is significantly smaller than n for highly repetitive texts. The query time of our index is O ( p log ⁡ log w ⁡ σ + sort ( oc c no ) ) , where σ denotes the alphabet size, w denotes the machine word size in bits and sort ( x ) denotes the time for sorting x integers within the range [ 1 , n ] . We also study the counting version of this problem.},
+  archive      = {J_TCS},
+  author       = {Daniel Gibney and Paul MacNichol and Sharma V. Thankachan},
+  doi          = {10.1016/j.tcs.2025.115512},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115512},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Non-overlapping indexing in BWT-runs bounded space},
+  volume       = {1056},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Temporal graph realization from fastest paths. <em>TCS</em>, <em>1056</em>, 115508. (<a href='https://doi.org/10.1016/j.tcs.2025.115508'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we initiate the study of the temporal graph realization problem with respect to the fastest path durations among its vertices, while we focus on periodic temporal graphs. Given an n × n matrix D and a Δ ∈ N , the goal is to construct a Δ-periodic temporal graph with n vertices such that the duration of a fastest path from v i to v j is equal to D i , j , or to decide that such a temporal graph does not exist. The variations of the problem on static graphs have been well studied and understood since the 1960s (e.g. [Erdős and Gallai, 1960], [Hakimi and Yau, 1965]). As it turns out, the periodic temporal graph realization problem has a very different computational complexity behavior than its static (i.e., non-temporal) counterpart. First, we show that the problem is NP-hard in general, but polynomial-time solvable if the so-called underlying graph is a tree. Building upon those results, we investigate its parameterized computational complexity with respect to structural parameters of the underlying static graph which measure the “tree-likeness”. We prove a tight classification between such parameters that allow fixed-parameter tractability (FPT) and those which imply W[1]-hardness. We show that our problem is W[1]-hard when parameterized by the feedback vertex number (and therefore also any smaller parameter such as treewidth , degeneracy , and cliquewidth ) of the underlying graph, while we show that it is in FPT when parameterized by the feedback edge number (and therefore also any larger parameter such as maximum leaf number ) of the underlying graph.},
+  archive      = {J_TCS},
+  author       = {Nina Klobas and George B. Mertzios and Hendrik Molter and Paul G. Spirakis},
+  doi          = {10.1016/j.tcs.2025.115508},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115508},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Temporal graph realization from fastest paths},
+  volume       = {1056},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Full-grained proxy re-encryption for all circuits. <em>TCS</em>, <em>1056</em>, 115507. (<a href='https://doi.org/10.1016/j.tcs.2025.115507'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we proposed a new concept called Full-Grained PRE (FG-PRE) to which a function set F is attached. With FG-PRE, a delegator authorizes the proxy a full-grained re-encryption capability for F with a single re-encryption key r k i → j . Then, the proxy can use this single re-encryption key to transform c t ( i ) encrypting message m for delegator i into an re-encrypted ciphertext c t ( j ) encrypting f ( m ) with arbitrary f ∈ F for delegatee j . Thus, the proxy has a full-grained (w.r.t. F ) control of the information that can be transmitted to the delegatee j . This is in sharp contrast to fine-grained PRE (Zhou et al. ASIACRYPT 2023), which has to generate different re-encryption keys to support different functions. In their fine-grained PRE, the number of re-encryption keys generated by delegator and stored by the proxy for F is linear to the size | F | . With our full-grained PRE, a single re-encryption key suffices. We formalize the syntax of FG-PRE and define HRA security (security under honest re-encryption attack) and function private HRA security ( FP - HRA ) for FG-PRE. Compared to the CPA security (Zhou et al. ASIACRYPT 2023) and the HRA security (Zhou et al. PKC 2024) defined for the fine-grained PRE, our HRA security not only allows adversary to obtain re-encryption keys from honest users to corrupted users, but also has an enhancement: we even allow the adversary to query full-grained re-encryptions with f for the challenge ciphertext under the condition f ( m 0 ) = f ( m 1 ) . We construct a FG-PRE scheme FG-PRE lin for bounded linear function F lin , enjoying single-hop, unidirectional and non-interactive properties. Our scheme achieves the HRA security and FP - HRA security and can be tightly reduced to the eDBDH assumption. Furthermore, we extend our FG-PRE lin scheme to a new FG-PRE scheme FG-PRE ′ circuit , supporting all circuits of bounded-size with the help of randomized encoding technique. We prove that our FG-PRE ′ circuit scheme also has HRA security and FP - HRA security. With our FG-PRE ′ circuit scheme, the proxy is able to use a single re-encryption key to convert ciphertext under any circuit of polynomial-bounded size.},
+  archive      = {J_TCS},
+  author       = {Yuxin Zhang and Shengli Liu and Yunxiao Zhou and Haibin Zhang},
+  doi          = {10.1016/j.tcs.2025.115507},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115507},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Full-grained proxy re-encryption for all circuits},
+  volume       = {1056},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Approximate cartesian tree pattern matching. <em>TCS</em>, <em>1056</em>, 115506. (<a href='https://doi.org/10.1016/j.tcs.2025.115506'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Cartesian tree of a string is a binary tree, which is useful in capturing minimalities within strings. We study the approximate pattern matching problem for two Cartesian trees of two strings. We design a polynomial-time algorithm that computes the minimum edit cost when a given string is edited to match the Cartesian tree of the other string. We also design a linear-time algorithm that computes the (max,min)-convolution between two sorted arrays, which we use to speed up the algorithm computing the edit cost. Then, we adapt the algorithm that computes the edit cost to the approximate pattern matching problem, where we find all substrings of a given text that match a given Cartesian tree pattern within a given number of edit operations. We also consider variant problems such as the approximate Cartesian matching under Hamming distance, and present polynomial-time algorithms for the considered problems.},
+  archive      = {J_TCS},
+  author       = {Sungmin Kim and Yo-Sub Han},
+  doi          = {10.1016/j.tcs.2025.115506},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115506},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Approximate cartesian tree pattern matching},
+  volume       = {1056},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Online multi-dimensional generalized assignment problem with predictions. <em>TCS</em>, <em>1056</em>, 115505. (<a href='https://doi.org/10.1016/j.tcs.2025.115505'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Online Multi-Dimensional Generalized Assignment Problem (online MDGAP) can model a large number of applications such as parallel machine scheduling, vehicle routing, telecommunication network design, etc. , where a set of jobs have to be assigned to a set of capacitated agents in an online manner such that multi-dimensional capacity constraints can be respected. In this paper, we initiate the study of online MDGAP with predictions — the decision parameters such as coefficients of service (switching) costs and resource consumption can be accurately predicted or error-bounded, with the objective of minimizing the sum of service costs and switching costs in the long run. Furthermore, we design a two-stage online algorithm with performance guarantees. Rigorous theoretical analysis in terms of competitive ratio and regret demonstrates that our algorithm can produce an integer solution in polynomial time with bounded dimension constraints violation, robust to the coefficient variations and resource consumption uncertainty. Finally, trace-driven simulations show that our algorithm can achieve near optimal, high utilization, low constraint violation, and strong robustness.},
+  archive      = {J_TCS},
+  author       = {Yimeng Xu and Jiaqi Zheng and Guihai Chen and Xia Zhu and Zhen Yao},
+  doi          = {10.1016/j.tcs.2025.115505},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115505},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Online multi-dimensional generalized assignment problem with predictions},
+  volume       = {1056},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The local diagnosability of directed interconnection networks. <em>TCS</em>, <em>1056</em>, 115504. (<a href='https://doi.org/10.1016/j.tcs.2025.115504'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The diagnosability is a vital parameter to measure the self-fault diagnosis ability of interconnection networks of computer systems. The local diagnosability is a generalization of diagnosability, which focuses on the fault diagnosability at a given processor. In this paper, we discuss the local diagnosability and the good in-neighbor conditional local diagnosability of directed networks, and present some necessary and sufficient conditions for a directed network to be locally ζ -diagnosable or good in-neighbor conditional locally ζ -diagnosable at a processor. We also present an algorithm under the PMC model to determine the fault or fault-free state of a given processor in a directed network. As an empirical testing, we demonstrate that our algorithm can ascertain the state of each vertex of unidirectional hypercube U Q n if the number of faulty vertices is not more than n − 1 .},
+  archive      = {J_TCS},
+  author       = {Aixia Liu and Shuchang Chai and Lina Li and Chenhui Liang and Jun Yuan},
+  doi          = {10.1016/j.tcs.2025.115504},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115504},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {The local diagnosability of directed interconnection networks},
+  volume       = {1056},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Edge-bipancyclicity of hypercubes with faulty edges. <em>TCS</em>, <em>1056</em>, 115503. (<a href='https://doi.org/10.1016/j.tcs.2025.115503'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we consider the edge-bipancyclicity property of hypercubes with faulty edges. For n ≥ 4 , let Q n be an n -dimensional hypercube, and let F be a set of faulty edges in Q n such that | F | ≤ 3 n − 11 . If every vertex in Q n − F has a degree of at least 2 and no 4-cycle in Q n − F has a pair of non-adjacent vertices both of degree 2, then every edge e in Q n − F lies on a fault-free cycle of every even length from 8 to 2 n , with two exceptions: (1) there exists a 4-cycle in Q n − F containing the edge e such that the vertices on the 4-cycle which are not incident with e both have a degree of 2; (2) there exist two vertices of degree 2 which are not endpoints of edge e but are adjacent to the same endpoint of e in Q n − F . This result improves upon some known results on edge-bipancyclicity of hypercubes with faulty edges.},
+  archive      = {J_TCS},
+  author       = {Qianhong Liu and Fan Wang},
+  doi          = {10.1016/j.tcs.2025.115503},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115503},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Edge-bipancyclicity of hypercubes with faulty edges},
+  volume       = {1056},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The contest game for crowdsourcing reviews. <em>TCS</em>, <em>1055</em>, 115516. (<a href='https://doi.org/10.1016/j.tcs.2025.115516'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider a contest game with discrete strategies, modelling a contest where reviews for a proposal are crowdsourced from n players . Player i has a skill s i , strategically chooses a quality q ∈ { 1 , 2 , … , Q } for her review and pays an effort f q ≥ 0 , strictly increasing with q . Under voluntary participation, a player may opt to not write a review, paying zero effort; mandatory participation excludes this option. For her effort, she is awarded a payment per her payment function , which is either player-invariant , like, e.g., the popular proportional allocation , or player-specific ; it is oblivious when it does not depend on the loads on other qualities. The utility to player i is the difference between her payment and her cost, calculated by a skill-effort function Λ ( s i , f q ) . Skills may vary for arbitrary players ; when players are anonymous , s i = 1 for each player i . In a pure Nash equilibrium, no player could increase her utility by unilaterally switching to another quality. We show the following results about the (in)existence and the computation of a pure Nash equilibrium: • A contest game with arbitrary players and player-invariant and oblivious payments is an unweighted congestion game with player-specific constants on parallel links [42] ; so it has a generalized ordinal potential, the Finite Improvement Property ( FIP ) and a pure Nash equilibrium, which can be computed in PLS . However, under the assumption that the payment function is monotonically nonincreasing, a pure Nash equilibrium can be computed efficiently by resorting to [44, Theorem 2] . In contrast, a pure Nash equilibrium might not exist for (i) anonymous players and player-invariant but not oblivious payments, (ii) arbitrary players and proportionally allocated payments, and (iii) anonymous players and player-specific and oblivious payments; in the latter case, it is NP -hard to decide existence even if players are anonymous. These counterexamples prove the tightness of our existence result and suggest that the decision and search problems for a pure Nash equilibrium are computationally hard. • Under some mild assumptions on the efforts, the contest game with anonymous players and proportional allocation has at least one Nash equilibrium. For arbitrary players, we identify a simple condition involving both skills and efforts that suffices for the existence of a pure Nash equilibrium in the special case where the skill-effort function has the product form Λ ( s i , f q ) = s i f q . In both cases the pure Nash equilibrium is simple and computable in constant time. • Under the assumption that costs are player-consistent, there is a polynomial-time Θ ( n Q ) algorithm to decide the existence and compute a pure Nash equilibrium for constant Q , for the case of arbitrary players and player-invariant payments; so the computational problem is XP -tractable with respect to the parameter Q . Player-consistent costs means that all players are incurred the same relative costs for a given pair of qualities. The computed equilibrium is contiguous by design: players with higher skills are contiguously assigned to lower qualities. Our results indicate that the decision and search problems for pure Nash equilibria are likely to be computationally hard even in the simplest case, but can be made easy even in the hardest case by adopting simple assumptions on efforts, payments or costs, no matter whether participation is mandatory or voluntary.},
+  archive      = {J_TCS},
+  author       = {Vittorio Bilò and Marios Mavronicolas and Paul G. Spirakis},
+  doi          = {10.1016/j.tcs.2025.115516},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115516},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {The contest game for crowdsourcing reviews},
+  volume       = {1055},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). APTAS for bin packing with general cost structures. <em>TCS</em>, <em>1055</em>, 115510. (<a href='https://doi.org/10.1016/j.tcs.2025.115510'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the following generalization of the bin packing problem. We are given a set of items each of which is associated with a rational size in the interval [ 0 , 1 ] , and a monotone non-decreasing non-negative cost function f defined over the cardinalities of the subsets of items. A feasible solution is a partition of the set of items into bins subject to the constraint that the total size of items in every bin is at most 1. Unlike bin packing, the goal function is to minimize the total cost of the bins where the cost of a bin is the value of f applied on the cardinality of the subset of items packed into the bin. We present an APTAS for this strongly NP-hard problem. We also provide a complete complexity classification of the problem with respect to the choice of f .},
+  archive      = {J_TCS},
+  author       = {G. Jaykrishnan and Asaf Levin},
+  doi          = {10.1016/j.tcs.2025.115510},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115510},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {APTAS for bin packing with general cost structures},
+  volume       = {1055},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Eternal connected vertex cover problem in graphs: Complexity and algorithms. <em>TCS</em>, <em>1055</em>, 115509. (<a href='https://doi.org/10.1016/j.tcs.2025.115509'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper deals with a dynamic variant of vertex cover problem, known as the eternal vertex cover problem. This is a two-player (attacker and defender) game, where the defender must allocate guards at specific vertices in order for those vertices to form a vertex cover. The attacker can attack one edge at a time. To defend the attack, the defender must move the guards along the edges so that at least one guard moves through the attacked edge (the guard moves from one end point of the attacked edge to the other end point), and the new configuration still acts as a vertex cover. If the defender can not make such a maneuver, the attacker prevails. If the defender can defend the graph against any infinite sequence of attacks, then the defender wins, and we say the defender can defend the graph. The eternal vertex cover problem is to find the smallest number of guards with which the defender can defend the graph. The same problem is referred to as the eternal connected vertex cover problem if the following additional condition is added: underlying vertices of each defensive configuration form a connected vertex cover. The smallest number of guards that can be used to create a successful defensive strategy, in this case, is known as the eternal connected vertex cover number and is denoted by the e c v c ( G ) . The decision version of the eternal connected vertex cover problem is NP-hard for general graphs and remains NP-hard even for bipartite graphs. In this paper, we propose polynomial time algorithms to find the eternal connected vertex cover number in chain graphs, cographs and certain kinds of bipartite graphs. An efficient algorithm to compute connected vertex cover number for Mycielskian of a Hamiltonian graph G (for which the Hamiltonian cycle is also given as part of the input) is also proposed in this paper. In addition, minimum vertex cover number and eternal connected vertex cover number are also computed for the same graphs. Further, We show the existence of a linear time algorithm to solve the minimum connected vertex cover problem for distance-hereditary graphs.},
+  archive      = {J_TCS},
+  author       = {Kaustav Paul and Arti Pandey},
+  doi          = {10.1016/j.tcs.2025.115509},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115509},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Eternal connected vertex cover problem in graphs: Complexity and algorithms},
+  volume       = {1055},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the complexity of temporal arborescence reconfiguration. <em>TCS</em>, <em>1055</em>, 115502. (<a href='https://doi.org/10.1016/j.tcs.2025.115502'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this contribution we study the Arborescence Reconfiguration on temporal digraphs ( Temporal Arborescence Reconfiguration ). The problem, given two temporal arborescences in a temporal digraph, asks for the minimum number of arc flips, i.e., arc exchanges, that result in a sequence of temporal arborescences transforming one into the other. We analyze the complexity of the problem, taking into account also its approximation and parameterized complexity, even in restricted cases. First, we solve an open problem showing that Temporal Arborescence Reconfiguration is NP-hard for two timestamps. Then we show that even if the two temporal arborescences differ only by two pairs of arcs, then the problem is not approximable within factor b ln ⁡ | V ( D ) | , for any constant 0 < b < 1 , where V ( D ) is the set of vertices of the temporal arborescences. Finally, we prove that Temporal Arborescence Reconfiguration is W[1]-hard when parameterized by the number of arc flips needed to transform one temporal arborescence into the other.},
+  archive      = {J_TCS},
+  author       = {Riccardo Dondi and Manuel Lafond},
+  doi          = {10.1016/j.tcs.2025.115502},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115502},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {On the complexity of temporal arborescence reconfiguration},
+  volume       = {1055},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Visualizing differentially private mechanisms with physical cards. <em>TCS</em>, <em>1055</em>, 115492. (<a href='https://doi.org/10.1016/j.tcs.2025.115492'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Card-based cryptography studies the problem of implementing cryptographic algorithms in a visual way using physical cards to demonstrate their security properties for those who are unfamiliar with cryptography. In this paper, we initiate the study of card-based implementations of differentially private mechanisms, which are a standard privacy-enhancing technique to publish statistics of databases. We start with giving the definition of differential privacy of card-based protocols. As a feasibility result, we present three kinds of protocols using standard binary cards for computing the sum of parties' binary inputs, f ( x 1 , … , x n ) = ∑ i = 1 n x i for , under differential privacy. Our first protocol follows the framework of output perturbation, which provides differential privacy by adding noise to exact aggregation results. The protocol needs only two shuffles, and the overheads in the number of cards and the error bound are independent of the number n of parties. Our second and third protocols are based on Randomized Response, which adds noise to each input before aggregation. Compared to the first protocol, they improve the overheads in the number of cards and the error bound in terms of differential privacy parameters. Furthermore, we show that our card-based noise generation method can be used to compute general functions beyond the binary sum under differential privacy. To address a technical challenge of generating non-uniform noise using a finite number of cards, we propose a novel differentially private mechanism based on the hypergeometric distribution, which we believe may be of independent interest beyond applications to card-based cryptography.},
+  archive      = {J_TCS},
+  author       = {Reo Eriguchi and Kazumasa Shinagawa and Takao Murakami},
+  doi          = {10.1016/j.tcs.2025.115492},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115492},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Visualizing differentially private mechanisms with physical cards},
+  volume       = {1055},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deterministic protocols for voronoi diagrams and triangulations of planar point sets on the congested clique. <em>TCS</em>, <em>1055</em>, 115491. (<a href='https://doi.org/10.1016/j.tcs.2025.115491'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the problems of computing the Voronoi diagram and a triangulation of a set of n 2 points with O ( log ⁡ n ) -bit coordinates in the Euclidean plane in a substantially sublinear in n number of rounds in the congested clique model with n nodes. First, we observe that if the points are uniformly at random distributed in a unit square then their Voronoi diagram within the square can be computed in O ( 1 ) rounds with high probability (w.h.p.). Next, we show that if a very weak smoothness condition is satisfied by an input set of n 2 points with O ( log ⁡ n ) -bit coordinates in the unit square then the Voronoi diagram of the point set within the unit square can be deterministically computed in O ( log ⁡ n ) rounds in this model. Finally, we present a deterministic O ( log ⁡ n ) -round protocol for a triangulation of n 2 points with O ( log ⁡ n ) -bit coordinates in the Euclidean plane. It relies on our novel method for extending triangulations of two planar point sets separated by a straight line to a complete triangulation of the union of the sets in O ( 1 ) rounds.},
+  archive      = {J_TCS},
+  author       = {Jesper Jansson and Christos Levcopoulos and Andrzej Lingas and Valentin Polishchuk and Quan Xue},
+  doi          = {10.1016/j.tcs.2025.115491},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115491},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Deterministic protocols for voronoi diagrams and triangulations of planar point sets on the congested clique},
+  volume       = {1055},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mobile agents on chordal graphs: Maximum independent set and beyond. <em>TCS</em>, <em>1055</em>, 115490. (<a href='https://doi.org/10.1016/j.tcs.2025.115490'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider the problem of finding Maximum Independent Set (MaxIS) for chordal graphs using mobile agents. Suppose n agents are initially placed arbitrarily on the nodes of an n -node chordal graph G = ( V , E ) . Agents need to find a Maximum Independent Set M of G such that each node of M is occupied by at least one agent. Also, each of the n agents must know whether its occupied node is a part of M or not. We provide distributed algorithms for n mobile agents, each having O ( log ⁡ n ) memory, to compute MaxIS of G in O ( m n log ⁡ Δ ) time, where m denotes the number of edges in G , n denotes the number of nodes in G , and Δ is the maximum degree of the graph. At first, we design an algorithm considering the case where all agents are initially placed at the same node (i.e., rooted initial configuration). To run this algorithm, the agents do not require prior knowledge of any global parameter. Then we propose an algorithm for the case where agents are initially distributed arbitrarily across the graph (i.e., arbitrary initial configuration). To run this algorithm, the agents require prior knowledge of certain global parameters. Further, we provide faster algorithms for finding MaxIS in chordal graphs either by increasing the memory available to each agent or by employing more agents. We report that by using a similar approach, it is possible to find the maximum clique in chordal graphs and color any chordal graph with the minimum number of colors. We also provide a dynamic programming-based distributed algorithm to find a Maximum Independent Set for trees in O ( n ) time.},
+  archive      = {J_TCS},
+  author       = {Tanvir Kaur and Kaustav Paul and Kaushik Mondal},
+  doi          = {10.1016/j.tcs.2025.115490},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115490},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Mobile agents on chordal graphs: Maximum independent set and beyond},
+  volume       = {1055},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Ternary is still good for parikh matrices. <em>TCS</em>, <em>1055</em>, 115489. (<a href='https://doi.org/10.1016/j.tcs.2025.115489'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The focus of this work is the study of Parikh matrices with emphasis on two concrete problems. In the first part of our presentation we show that a conjecture by Dick at al. in 2021 only stands in the case of ternary alphabets, while providing counterexamples for larger alphabets. In particular, we show that the only type of distinguishability in the case of 3-letter alphabets is the trivial one. The second part of the paper builds on the notion of Parikh matrices for projections of words, discussed in the former part of this work, and answers, once more in the case of a ternary alphabet, a question posed by Atanasiu et al. in 2022 with regards to the minimal Hamming distance in between words sharing a congruency class.},
+  archive      = {J_TCS},
+  author       = {Robert Mercaş and Wen Chean Teh},
+  doi          = {10.1016/j.tcs.2025.115489},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115489},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Ternary is still good for parikh matrices},
+  volume       = {1055},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Competitive mechanisms for energy-efficient cloud computing. <em>TCS</em>, <em>1055</em>, 115488. (<a href='https://doi.org/10.1016/j.tcs.2025.115488'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a general model for the operation of a cloud computing server comprised of one or more speed-scalable processors. Typically, agents submit tasks to such a cloud computing server in an online fashion, and the server operator has to schedule the tasks and decide on payments without knowledge of tasks arriving in the future. Moreover, the operator should take the different incentives of the agents into account and aim to minimize the energy expenditure. For both the offline and the online setting we provide mechanisms with several desirable properties: The induced game admits a Nash equilibrium, the mechanism is budget balanced, has low communication complexity, is computationally tractable, is intuitive to explain, but above all, has a constant Price of Anarchy. Therefore, the total costs are not too far off from the social optimum. We extend our results to the case of multiple processors and to the Bayesian setting.},
+  archive      = {J_TCS},
+  author       = {Antonios Antoniadis and Andrés Cristi and Tim Oosterwijk and Alkmini Sgouritsa},
+  doi          = {10.1016/j.tcs.2025.115488},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115488},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Competitive mechanisms for energy-efficient cloud computing},
+  volume       = {1055},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Recognizing and eliciting weakly single crossing profiles on trees. <em>TCS</em>, <em>1055</em>, 115487. (<a href='https://doi.org/10.1016/j.tcs.2025.115487'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Single crossing profiles on trees are not downward closed — a sub-profile of a single crossing profile on trees is not necessarily a single crossing profile on trees. We define weakly single-crossing profiles on trees to be all single crossing profiles on trees and their sub-profiles thereby restoring downward closedness. We design a polynomial-time algorithm for recognizing these profiles. We then develop an efficient elicitation algorithm for this domain which works even if the preferences can be accessed only sequentially and the underlying single-crossing tree structure is not known beforehand. We complement our algorithmic results by proving a matching lower bound on the query complexity of our elicitation algorithm when the number of voters is large compared to the number of candidates. We also prove a lower bound of Ω ( m 2 log ⁡ n ) on the number of queries that any algorithm needs to ask to elicit single-crossing profile when random queries are allowed. This resolves an open question in [18] and proves optimality of their preference elicitation algorithm when random queries are allowed.},
+  archive      = {J_TCS},
+  author       = {Palash Dey},
+  doi          = {10.1016/j.tcs.2025.115487},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115487},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Recognizing and eliciting weakly single crossing profiles on trees},
+  volume       = {1055},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Arborescences and shortest path trees when colors matter. <em>TCS</em>, <em>1055</em>, 115486. (<a href='https://doi.org/10.1016/j.tcs.2025.115486'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We are given an edge-colored (directed or undirected) graph and our objective is to find a specific type of subgraph, like a spanning tree, an arborescence, a single-source shortest path tree, a perfect matching etc., with constraints on the number of edges of each color. Some of these problems, like color-constrained spanning tree, have elegant solutions and some of them, like color-constrained perfect matching, are longstanding open questions. In this work, we study color-constrained arborescences and shortest path trees. Computing a color-constrained shortest path tree on weighted digraphs turns out to be NP -hard in general but polynomial-time solvable when all cycles have positive weight. This polynomial-time solvability is due to the fact that the solution space is essentially the set of all color-constrained arborescences of a directed acyclic subgraph of the original graph. While finding color-constrained arborescences of digraphs is NP -hard in general, we give an efficient algorithm when the input digraph is acyclic. Consequently, a color-constrained shortest path tree on weighted digraphs having only positive weight cycles can be efficiently computed. Our algorithm generalizes to the problem of finding a color-constrained shortest path tree with the minimum total weight. Both our algorithms use a single source shortest path algorithm and a (minimum cost) maximum flow algorithm as subroutines. By using the recent algorithm by van den Brand et al. (FOCS 2023) for these subroutines, our algorithms achieve near-linear running time when the edge weights are integral and polynomially-bounded in the size of the graph. En route, we sight nice connections to colored matroids and color-constrained bases. In fact, our approach can be adapted to find a largest common independent set of two generalized partition matroids in near-linear time.},
+  archive      = {J_TCS},
+  author       = {P.S. Ardra and Jasine Babu and Kritika Kashyap and R. Krithika and Sreejith K. Pallathumadam and Deepak Rajendraprasad},
+  doi          = {10.1016/j.tcs.2025.115486},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115486},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Arborescences and shortest path trees when colors matter},
+  volume       = {1055},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A matching-based approximation algorithm for the traveling tournament problem. <em>TCS</em>, <em>1055</em>, 115485. (<a href='https://doi.org/10.1016/j.tcs.2025.115485'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Traveling Tournament Problem (TTP- k ) is a well-known benchmark problem in tournament timetabling. It involves designing a feasible double round-robin tournament for a sports league of n teams under several feasibility requirements, while minimizing the total traveling costs of the teams. The parameter k requires that in the tournament at most k consecutive home games or away games for each team are allowed. TTP- k with a small k , especially for k = 2 , 3 and 4, have been extensively studied in the literature. In this paper, we focus on TTP-4 and design an efficient algorithm for it based on minimum weight matching. In theory, we prove that our algorithm has an approximation ratio of 1.625 + ε for any constant ε > 0 , improving the best-known approximation ratio of 1.7 + ε . In practice, our experimental results indicate an average improvement of 6.65% over the best-known solutions on 9 benchmark instances.},
+  archive      = {J_TCS},
+  author       = {Jingyang Zhao and Mingyu Xiao},
+  doi          = {10.1016/j.tcs.2025.115485},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115485},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {A matching-based approximation algorithm for the traveling tournament problem},
+  volume       = {1055},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Packing internally disjoint steiner paths of modified bubble-sort networks. <em>TCS</em>, <em>1055</em>, 115484. (<a href='https://doi.org/10.1016/j.tcs.2025.115484'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Let G be a connected simple graph with vertex set V ( G ) and edge set E ( G ) . For S ⊆ V ( G ) with | S | ≥ 2 , a path P in G is said to be an S -Steiner path (or S -path for short) if it connects all vertices of S . Two S -paths P 1 and P 2 are internally disjoint if E ( P 1 ) ∩ E ( P 2 ) = ∅ and V ( P 1 ) ∩ V ( P 2 ) = S . The packing number of internally disjoint S -paths, denoted as π G ( S ) , is the maximum number of internally disjoint S -paths in G . For an integer 2 ≤ k ≤ | V ( G ) | , the k -path connectivity of a graph G is defined as π k ( G ) = min { π G ( S ) | S ⊆ V ( G ) and | S | = k } . The modified bubble-sort graph, denoted M B n , is an interconnection network topological model for multiprocessor systems. In this paper, we focus on the 3-path-connectivity of the n -dimensional modified bubble sort graphs. By analyzing the structural properties of M B n , we determine that π 3 ( M B n ) = ⌊ 3 n − 1 4 ⌋ for n ≥ 4 .},
+  archive      = {J_TCS},
+  author       = {Lina Zhao and Shiying Wang and Wei Feng},
+  doi          = {10.1016/j.tcs.2025.115484},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115484},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Packing internally disjoint steiner paths of modified bubble-sort networks},
+  volume       = {1055},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Smaller kernels for 3-leaf power modifications problems. <em>TCS</em>, <em>1055</em>, 115483. (<a href='https://doi.org/10.1016/j.tcs.2025.115483'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A graph G is a 3-leaf power if there is a tree T and a bijective mapping f from V ( G ) to the set of leaves of T such that ( u , v ) ∈ E ( G ) if and only if the distance in T between f ( u ) and f ( v ) is at most 3 for every distinct u , v ∈ V ( G ) . In the 3-Leaf Power Vertex Deletion (resp., 3-Leaf Power Completion ) problem the input is a graph G and an integer k , and the goal is to decide whether G can be transformed into a 3-leaf power graph by deleting at most k vertices (resp., adding at most k edges). In this paper we give a kernel for 3-Leaf Power Vertex Deletion with O ( k 6 ) vertices and a kernel for 3-Leaf Power Completion with O ( k 2 ) vertices. Our results improve the previous O ( k 14 ) -vertices kernel for 3-Leaf Power Vertex Deletion [Ahn et al., 2023 [3] ] and the O ( k 3 ) -vertices kernel for 3-Leaf Power Completion [Bessy et al., 2010 [5] ].},
+  archive      = {J_TCS},
+  author       = {Dekel Tsur},
+  doi          = {10.1016/j.tcs.2025.115483},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115483},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Smaller kernels for 3-leaf power modifications problems},
+  volume       = {1055},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Pairwise rearrangement is fixed-parameter tractable in the single cut-and-join model. <em>TCS</em>, <em>1055</em>, 115481. (<a href='https://doi.org/10.1016/j.tcs.2025.115481'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Genome rearrangement is a common model for molecular evolution. In this paper, we consider the Pairwise Rearrangement problem, which takes as input two genomes and asks for the number of minimum-length sequences of permissible operations transforming the first genome into the second. In the Single Cut-and-Join model (Bergeron et al., 2010 [3] ), Pairwise Rearrangement is # P -complete (Bailey et al., 2024 [1] ), which implies that exact sampling is intractable. In order to cope with this intractability, we investigate the parameterized complexity of this problem. We exhibit a fixed-parameter tractable algorithm with respect to the number of components in the adjacency graph that are not cycles of length 2 or paths of length 1. As a consequence, we obtain that Pairwise Rearrangement in the Single Cut-and-Join model is fixed-parameter tractable by distance. Our results suggest that the number of nontrivial components in the adjacency graph serves as the key obstacle for efficient sampling.},
+  archive      = {J_TCS},
+  author       = {Lora Bailey and Heather Smith Blake and Garner Cochran and Nathan Fox and Michael Levet and Reem Mahmoud and Inne Singgih and Grace Stadnyk and Alexander Wiedemann},
+  doi          = {10.1016/j.tcs.2025.115481},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115481},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Pairwise rearrangement is fixed-parameter tractable in the single cut-and-join model},
+  volume       = {1055},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Faster and space efficient indexing for locality sensitive hashing. <em>TCS</em>, <em>1055</em>, 115479. (<a href='https://doi.org/10.1016/j.tcs.2025.115479'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work suggests faster and space-efficient index construction algorithms for LSH for Euclidean distance ( a.k.a. E2LSH) and cosine similarity ( a.k.a. SRP). The index construction step of these LSHs relies on grouping data points into several bins of hash tables based on their hashcode. To generate an m -dimensional hashcode of the d -dimensional data point, these LSHs first project the data point onto a d -dimensional random Gaussian vector and then discretise the resulting inner product. The time and space complexity of both E2LSH and SRP for computing an m -sized hashcode of a d -dimensional vector is O ( m d ) , which becomes impractical for large values of m and d . To overcome this problem, we propose two alternative LSH hashcode generation algorithms both for Euclidean distance and cosine similarity, namely, CS-E2LSH, HCS-E2LSH and CS-SRP, HCS-SRP, respectively. CS-E2LSH and CS-SRP are based on count sketch [1] and HCS-E2LSH and HCS-SRP utilize higher-order count sketch [2] . These proposals significantly reduce the hashcode computation time from O ( m d ) to O ( d ) . Additionally, both CS-E2LSH and CS-SRP reduce the space complexity from O ( m d ) to O ( d ) ; and HCS-E2LSH, HCS-SRP reduce the space complexity from O ( m d ) to O ( N d N ) respectively, where N ≥ 1 denotes the size of the input/reshaped tensor. Our proposals are backed by strong mathematical guarantees, and we validate their performance through simulations on various real-world datasets.},
+  archive      = {J_TCS},
+  author       = {Bhisham Dev Verma and Rameshwar Pratap},
+  doi          = {10.1016/j.tcs.2025.115479},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115479},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Faster and space efficient indexing for locality sensitive hashing},
+  volume       = {1055},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hybrid encryption in correlated randomness model and KEM combiners. <em>TCS</em>, <em>1054</em>, 115518. (<a href='https://doi.org/10.1016/j.tcs.2025.115518'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hybrid encryption (HE) is an efficient public key encryption system for messages of unrestricted length. Like public key encryption, it does not require the establishment of a shared key, while benefiting from the efficiency and flexibility of symmetric key encryption systems in encrypting messages without length restrictions. An HE system consists of a public key component, called key encapsulation mechanism (KEM) , and a symmetric key component, called data encapsulation mechanism (DEM) . In HE encryption, KEM is used to generate a random key that will be used by DEM algorithm to encrypt the message, and they generate a ciphertext. HE decryption uses the ciphertext to first recover the random key, and then use it to decrypt the message. The KEM/DEM composition theorem proves that if the KEM and DEM components satisfy certain security properties, then the resulting HE will satisfy the well-established security notions of public key encryption systems. KEM/DEM paradigm has been widely studied and used for securing communication over the Internet. We motivate and introduce HE in correlated randomness setting where, instead of public and private key, the HE encryption and decryption algorithms have their respective private correlated random values that are partially leaked to the adversary. We define two types of KEMs, iKEM with information theoretic security and cKEM with computational security , and prove a composition theorem for each of these KEMs and a DEM with computational security. This results in efficient and secure HEs with proved computational CPA (Chosen Plaintext Attack) and CCA (Chosen Ciphertext Attack) security, and in the case of iKEM, without relying on specific computational hardness assumptions beyond general ones, such as the existence of one-way hash functions, or practical assumptions, such as the security of AES. We construct two iKEMs, based on an information theoretic secure one-message key agreement protocol, and prove their security against passive and active adversaries, respectively. The iKEMs are used to construct two efficient quantum-resistant HEs, with post-quantum security , using an AES based DEM. To combine the new KEM/DEM paradigm of HE with the traditional public key based paradigm, we extend KEM combiners to combine a public-key KEM with an iKEM such that the resulting KEM is as secure as any of the two component KEMs. We discuss our results and their applications, and outline directions for future work.},
+  archive      = {J_TCS},
+  author       = {Somnath Panja and Setareh Sharifian and Shaoquan Jiang and Reihaneh Safavi-Naini},
+  doi          = {10.1016/j.tcs.2025.115518},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115518},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Hybrid encryption in correlated randomness model and KEM combiners},
+  volume       = {1054},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On time-travel planning in dynamic graphs. <em>TCS</em>, <em>1054</em>, 115501. (<a href='https://doi.org/10.1016/j.tcs.2025.115501'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the problem of traveling in an unknown dynamic graph to reach a destination with minimum latency. At each step, an agent can (i) move to a neighboring node if an edge exists at that moment, (ii) wait at the current node (e.g., for new links to appear), or (iii) go backward in time using a backward time travel (BTT) device, which incurs a cost. A journey involving backward time travel is referred to as space-time travel. We first examine the case where agents have complete knowledge of the dynamic graph, including future states. We analyze the impact of BTT device pricing policies on travel plan computation and identify the necessary properties for pricing policies to enable this computation. We then propose exact offline polynomial-time algorithms to compute travel plans minimizing travel delay (the difference between arrival and start times), even when subject to constraints on total cost or the maximum backward time travel. We then focus on online scenarios, where the agent discovers the dynamic graph while exploring it. We propose two models for how an agent acquires new knowledge during execution: the T-online model, where upon reaching time t , the agent learns the entire history of the network up to t (including of unvisited nodes), and the S-online model, where the agent learns both the past and future of the node it currently occupies. We present an algorithm with an optimal competitive ratio of 2 for the T-online model. In the S-online model, we prove a lower bound of 2 / 3 n − 7 / 4 and an upper bound of 2 n − 3 on the optimal competitive ratio when the cost function is linear.},
+  archive      = {J_TCS},
+  author       = {Quentin Bramas and Jean-Romain Luttringer and Sébastien Tixeuil},
+  doi          = {10.1016/j.tcs.2025.115501},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115501},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {On time-travel planning in dynamic graphs},
+  volume       = {1054},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A quantitative extension of interval temporal logic over infinite words. <em>TCS</em>, <em>1054</em>, 115493. (<a href='https://doi.org/10.1016/j.tcs.2025.115493'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Model checking (MC) for Halpern and Shoham's interval temporal logic HS has been recently investigated in a systematic way, and it is known to be decidable under three distinct semantics (state-based, trace-based and tree-based semantics), all of them assuming homogeneity in the propositional valuation. Here, we focus on the trace-based semantics , where the main semantic entities are the infinite execution paths (traces) of a given Kripke structure and intervals are fragments of traces. We introduce a quantitative extension of HS over traces, called Difference HS ( DHS ), allowing one to express timing constraints on the difference among interval lengths ( durations ). We show that MC and satisfiability of full DHS are in general undecidable, so, we investigate the decidability border for these problems by considering natural syntactical fragments of DHS . In particular, we identify a maximal decidable fragment DHS s i m p l e of DHS proving in addition that the considered problems for this fragment are at least 2Expspace -hard. Moreover, by exploiting new results on linear-time hybrid logics, we show that for an equally expressive fragment of DHS s i m p l e , the problems are Expspace -complete. Finally, we provide a characterization of HS over traces by means of the one-variable fragment of a novel hybrid logic.},
+  archive      = {J_TCS},
+  author       = {Laura Bozzelli and Adriano Peron},
+  doi          = {10.1016/j.tcs.2025.115493},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115493},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {A quantitative extension of interval temporal logic over infinite words},
+  volume       = {1054},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Proper conflict-free coloring of mycielskians with fast algorithms. <em>TCS</em>, <em>1054</em>, 115482. (<a href='https://doi.org/10.1016/j.tcs.2025.115482'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A proper conflict-free coloring, often termed as PCF-coloring, of a graph refers to a proper vertex coloring wherein each vertex's open neighborhood contains at least one color appearing exactly once. PCF-coloring boasts a wide range of applications, from theoretical graph analysis to practical applications in networking, geographic information systems, scheduling, and constraint satisfaction problems. Caro, Petruševski, and Škrekovski conjectured in 2023 that every graph with maximum degree Δ ≥ 3 has a PCF- ( Δ + 1 ) -coloring. In this paper, we validate this conjecture for the Mycielskians of 1-subdivided graphs. Additionally, we determine the PCF-chromatic number for Mycielskians of paths, cycles, complete graphs, complete bipartite graphs, and wheels, and provide efficient algorithms that produce optimal PCF-colorings for these graphs.},
+  archive      = {J_TCS},
+  author       = {Yali Wu and Xin Zhang},
+  doi          = {10.1016/j.tcs.2025.115482},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115482},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Proper conflict-free coloring of mycielskians with fast algorithms},
+  volume       = {1054},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the weisfeiler algorithm of depth-1 stabilization. <em>TCS</em>, <em>1054</em>, 115460. (<a href='https://doi.org/10.1016/j.tcs.2025.115460'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {An origin of the multidimensional Weisfeiler-Leman algorithm goes back to a refinement procedure of deep stabilization, introduced by B. Weisfeiler in a paper included in the collective monograph “On construction and identification of graphs” (1976). This procedure is recursive and the recursion starts from an algorithm of depth-1 stabilization, which has never been discussed in the literature. A goal of the present paper is to show that a simplified algorithm of the depth-1 stabilization has the same power as the 3-dimensional Weisfeiler-Leman algorithm. It is proved that the class of coherent configurations obtained as the output of this simplified algorithm coincides with the class introduced earlier by the third author. As an application we also prove that if there exist at least two nonisomorphic projective planes of order q , then the Weisfeiler-Leman dimension of the incidence graph of any projective plane of order q is at least 4.},
+  archive      = {J_TCS},
+  author       = {Gang Chen and Qing Ren and Ilia Ponomarenko},
+  doi          = {10.1016/j.tcs.2025.115460},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115460},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {On the weisfeiler algorithm of depth-1 stabilization},
+  volume       = {1054},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Discriminating code and set cover with k-bend paths. <em>TCS</em>, <em>1054</em>, 115458. (<a href='https://doi.org/10.1016/j.tcs.2025.115458'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we explore geometric discriminating code and set cover problems with k -bend paths. We first demonstrate that both the discriminating code problem and the set cover problem with unit 0-bend paths are NP-hard. Additionally, we establish that the set cover problem is NP-hard with unit 1-bend paths restricted to type ⌜, where horizontal segments intersect a vertical line and vertical segments intersect a horizontal line. Furthermore, we show that the discriminating code problem remains NP-hard with unit 1-bend paths of type ⌜, where all vertical segments intersect a horizontal line. Finally, we provide approximation algorithms for these two problems, specifically for 0-bend paths of uniform length and for 1-bend paths of type ⌜, where all horizontal and vertical segments are of equal length.},
+  archive      = {J_TCS},
+  author       = {Yu Yang and Cai-Xia Wang and Shou-Jun Xu},
+  doi          = {10.1016/j.tcs.2025.115458},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115458},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Discriminating code and set cover with k-bend paths},
+  volume       = {1054},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Computable formal contexts. <em>TCS</em>, <em>1054</em>, 115457. (<a href='https://doi.org/10.1016/j.tcs.2025.115457'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper studies effective aspects of mathematical structures in formal concept analysis from the standpoint of computability theory. Firstly, we consider the notion of formal concepts of formal contexts and prove that the first and second derivation of a subset of objects of a computable context are Π 1 0 - and Π 2 0 -complete, respectively. Secondly, we examine the complexity of two representative processes in finding reductions of a context. To study the complexity of the process of merging objects with the same object intents of a context, we define a natural equivalence relation on objects of the context and show that the object equivalence relation of a computable context is Π 1 0 -complete. We directly formalize the other process of removing reducible objects of a context via reducible objects themselves and prove that the set of reducible objects of a computable context is Π 3 0 -complete. The down-left arrow relation is a useful tool to find reducible objects of a context. Lastly, we show that the arrow relation of a computable context is Π 2 0 -complete. By dealing with dual contexts, we obtain the same complexity results on corresponding structures based on attributes of contexts.},
+  archive      = {J_TCS},
+  author       = {Huishan Wu},
+  doi          = {10.1016/j.tcs.2025.115457},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115457},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Computable formal contexts},
+  volume       = {1054},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Path cover using only short paths. <em>TCS</em>, <em>1054</em>, 115455. (<a href='https://doi.org/10.1016/j.tcs.2025.115455'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study a variant of the well-known Path Cover problem where the candidate paths in a solution have orders up to a fixed integer k . In Path Cover, one finds a minimum number of vertex-disjoint paths in an input graph to cover all the vertices; in our variant, not all paths but only those short ones, i.e., containing up to k vertices, can be used as candidates. The problem is NP-hard when k ≥ 3 ; in the literature, there exist quite a number of approximation algorithms, especially for small k 's. We present an improved k 3 -approximation algorithm for k ∈ { 6 , 7 , 8 } , an improved 55 31 -approximation algorithm for k = 5 , and an improved 8 5 -approximation algorithm for k = 4 . The novelty inside these improved algorithms is observing a close connection between an optimal path cover and a certain polynomial-time computed edge set.},
+  archive      = {J_TCS},
+  author       = {Mingyang Gong and Guangting Chen and Zhi-Zhong Chen and Guohui Lin and Riki Uchida},
+  doi          = {10.1016/j.tcs.2025.115455},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115455},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Path cover using only short paths},
+  volume       = {1054},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Non finite axiomatisability of weak bisimulation-based congruences. <em>TCS</em>, <em>1054</em>, 115453. (<a href='https://doi.org/10.1016/j.tcs.2025.115453'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the axiomatisability of CCS parallel composition operator modulo weak bisimulation-based congruences. Specifically, we prove that all congruences that are coarser than rooted branching bisimilarity, and finer than rooted weak bisimilarity, do not admit a finite equational axiomatisation over the recursion, restriction, and relabelling free fragment of CCS.},
+  archive      = {J_TCS},
+  author       = {Luca Aceto and Valentina Castiglioni and Anna Ingólfsdóttir and Bas Luttik},
+  doi          = {10.1016/j.tcs.2025.115453},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115453},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Non finite axiomatisability of weak bisimulation-based congruences},
+  volume       = {1054},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Broadening the applicability of local completeness analysis with intensional and extensional guarantees. <em>TCS</em>, <em>1054</em>, 115452. (<a href='https://doi.org/10.1016/j.tcs.2025.115452'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Local Completeness Logic (LCL) is a proof system for program analysis rooted in abstract interpretation. The program semantics is under-approximated by any provable postcondition, like incorrectness logic does, but it is also over-approximated by a (locally) complete abstraction of such a postcondition, like Hoare logic does. Therefore, any derivable triple will either prove the program to be correct or unveil true bugs. While the completeness of a program's function with respect to an abstract domain is inherently extensional , LCL's rules demand the preservation of local completeness throughout the abstract interpreter's computations. This characteristic renders LCL analysis intensional , meaning it depends on the way the program is written. Consequently, LCL proof system may not derive all the valid triples. This paper addresses this discrepancy by: 1) designing new rules that allow one to perform part of the intensional analysis in different (complete) abstract domains whenever necessary; and 2) to compare their expressiveness. Notably, some of these new rules enable the derivation of all extensionally valid triples, thereby decoupling the set of provable properties from the way the program is written.},
+  archive      = {J_TCS},
+  author       = {Flavio Ascari and Roberto Bruni and Roberta Gori},
+  doi          = {10.1016/j.tcs.2025.115452},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115452},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Broadening the applicability of local completeness analysis with intensional and extensional guarantees},
+  volume       = {1054},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Modular soundness checking of feature model evolution plans. <em>TCS</em>, <em>1054</em>, 115451. (<a href='https://doi.org/10.1016/j.tcs.2025.115451'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Feature model evolution plans (FMEPs) describe how feature models for software product lines (SPLs) evolve over time. While different feature models can exist for different points in time over the lifetime of the product line, an FMEP describes how to compute a feature model for a given time point. SPLs capitalise on the variability and reusability of the software through combining optional and mandatory features. As business requirements change over time, FMEPs should support intermediate update. A plan hence contains updates to an initial model by adding, deleting, moving or changing elements at different points in time, in line with the evolving business requirements on the SPL, potentially affecting feature models that should be derived in the future from the plan. A recurring challenge in maintaining FMEPs is that updates may lead to inconsistent intermediate feature models, most notably so-called paradoxes. A paradox may not materialise at the first point in time an update on the plan is performed to obtain a particular feature model, but may only in combination with a later modification prescribed by the plan create a structurally invalid model. Correspondingly, a single modification to a plan may require multiple checks over the liftetime of the affected elements to rule out paradoxes. Current approaches require the analysis from the point in time an update is applied to an FMEP throughout the entire lifetime of the plan. In this paper, we define a so-called interval-based feature model (IBFM) to represent FMEPs, with a precise definition of spatial and temporal scopes that narrow the time interval and the sub-models that an update can affect. We propose a rule system for updating IBFMs, and also prove the soundness of the proposed rules and show their modularity, i.e., that each rule operates strictly within its temporal and spatial scopes. We have conducted a detailed evaluation on our modular approach and present the experimental results, which show that we outperform an existing linear approach.},
+  archive      = {J_TCS},
+  author       = {Crystal Chang Din and Charaf Eddine Dridi and Ida Sandberg Motzfeldt and Violet Ka I Pun and Volker Stolz and Ingrid Chieh Yu},
+  doi          = {10.1016/j.tcs.2025.115451},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115451},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Modular soundness checking of feature model evolution plans},
+  volume       = {1054},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Bit-array-based alternatives to HyperLogLog. <em>TCS</em>, <em>1054</em>, 115450. (<a href='https://doi.org/10.1016/j.tcs.2025.115450'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a family of algorithms for the problem of estimating the number of distinct items in an input stream that are simple to implement and are appropriate for practical applications. Our algorithms are a logical extension of the series of algorithms developed by Flajolet and his coauthors starting in 1983 that culminated in the widely used HyperLogLog algorithm. These algorithms divide the input stream into M substreams and lead to a time-accuracy tradeoff where a small number of bits per substream are saved to achieve a relative accuracy proportional to 1 / M . Our algorithms use just one or two bits per substream. Their effectiveness is demonstrated by a proof of approximate normality, with explicit expressions for standard errors that inform parameter settings and allow proper quantitative comparisons with other methods. Performance hypotheses are validated through experiments using a realistic input stream, with the general conclusion that our algorithms are significantly more accurate than HyperLogLog when using the same amount of memory, and they use significantly less memory than HyperLogLog to achieve a given accuracy.},
+  archive      = {J_TCS},
+  author       = {Svante Janson and Jérémie Lumbroso and Robert Sedgewick},
+  doi          = {10.1016/j.tcs.2025.115450},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115450},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Bit-array-based alternatives to HyperLogLog},
+  volume       = {1054},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Joint bidding in ad auctions. <em>TCS</em>, <em>1054</em>, 115449. (<a href='https://doi.org/10.1016/j.tcs.2025.115449'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In traditional advertising auctions, commodity suppliers as advertisers compete for adverting positions to display commodities. As e-commerce platforms become more prevalent, offline retailers are also opening online virtual shops, and retailers are starting to pay a fee for extra exposure of their shops. This has led to situations where a single commodity may be sponsored by both the retailer and the supplier, offering opportunities for more profit. In order to explore this novel advertising pattern, we propose a new model called the joint advertising system (JAS), where retailers and suppliers jointly bid for advertising positions. In the context of this realistic scenario, conventional mechanisms such as GFP, GSP and Myerson auction cannot be applied directly. Besides, the VCG mechanism results in negative revenue in JAS. To solve this issue, we modify the payment rule of VCG to create a revised VCG mechanism that guarantees incentive compatible, individually rational and weakly budget-balanced. Additionally, we leverage the structure of the affine maximizer auction (AMA) and the technique of automated mechanism design to train joint AMA. Finally, we conduct several experiments to demonstrate the performance of the joint AMA. It turns out that our mechanism maintains good economic properties and outperforms other mechanisms in various settings.},
+  archive      = {J_TCS},
+  author       = {Yuchao Ma and Weian Li and Wanzhi Zhang and Yahui Lei and Zhicheng Zhang and Qi Qi and Qiang Liu and Xingxing Wang},
+  doi          = {10.1016/j.tcs.2025.115449},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115449},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Joint bidding in ad auctions},
+  volume       = {1054},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Partial permutations comparison, maintenance and applications. <em>TCS</em>, <em>1054</em>, 115433. (<a href='https://doi.org/10.1016/j.tcs.2025.115433'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper studies partial permutations and their use in algorithmic tasks. A partial permutation over Σ is a bijection π p a r : Σ 1 ↦ Σ 2 mapping a subset Σ 1 ⊂ Σ to a subset Σ 2 ⊂ Σ , where | Σ 1 | = | Σ 2 | ( | Σ | denotes the size of a set Σ). Intuitively, two partial permutations agree if their mapping pairs do not form conflicts . We formally define this notion enabling a consistent as well as informatively rich comparison between partial permutations. We define the Partial Permutations Agreement problem (PPA), as follows. Given two sets A 1 , A 2 of partial permutations over alphabet Σ, each of size n , output a pair ( π i , π j ) , where π i ∈ A 1 , π j ∈ A 2 and π i agrees with π j , if exists. We study the existence of a data structure for efficiently maintaining a dynamic set of partial permutations enabling to retrieve agreement of partial permutations giving both negative and positive results. As applications we point out: (1) fruitful/futile methods for efficient genes sequences comparison in database, (2) an automatic color transformation data augmentation technique for image processing through neural networks, (3) negatively answer a recently posed open question on the strict parameterized dictionary matching with one gap (PDMOG) problem over general dictionary alphabets.},
+  archive      = {J_TCS},
+  author       = {Avivit Levy and Ely Porat and B. Riva Shalom},
+  doi          = {10.1016/j.tcs.2025.115433},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115433},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Partial permutations comparison, maintenance and applications},
+  volume       = {1054},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Algorithms for shortest path tour problem. <em>TCS</em>, <em>1054</em>, 115428. (<a href='https://doi.org/10.1016/j.tcs.2025.115428'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Carpooling route planning becomes an important problem with the growth of low-carbon traffic systems. When each passenger has multiple potential pick-up/drop-off locations, the problem will be more challenging. In the paper, we discussed a simplified carpooling route planning problem, namely the Shortest Path Tour Problem (SPTP), whose aim is to find a single-origin single-destination shortest path through an ordered sequence of disjoint node subsets. We propose Stage Dijkstra and Global Dijkstra algorithms to find the optimal shortest path, with the time complexity of O ( l ( n + m ) log ⁡ n ) and O ( l ( n + m ) log ⁡ ( l n ) ) respectively, where l represents the number of node subsets. To the best of our knowledge, O ( l ( n + m ) log ⁡ n ) is the best time complexity of the exact algorithms for SPTP. Besides, the Stage Dijkstra and Global Dijkstra algorithms both have the linear space complexity, which is highly suitable for resource-constrained environments. Experiments conducted on large-scale road networks and synthetic datasets demonstrate the effectiveness and efficiency of our proposed algorithms in terms of running time and memory consumption.},
+  archive      = {J_TCS},
+  author       = {Yucen Gao and Zhuoran Li and Jingyu He and Jun Fang and Hui Gao and Xiaofeng Gao and Guihai Chen},
+  doi          = {10.1016/j.tcs.2025.115428},
+  journal      = {Theoretical Computer Science},
+  month        = {11},
+  pages        = {115428},
+  shortjournal = {Theor. Comput. Sci.},
+  title        = {Algorithms for shortest path tour problem},
+  volume       = {1054},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

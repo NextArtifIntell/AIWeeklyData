@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TMRB</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tmrb">TMRB - 24</h2>
+<ul>
+<li><details>
+<summary>
+(2025). TRAIN-KNEE: Developing a haptic manikin for knee injury assessment training. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604121'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present the design and implementation of a high-fidelity haptic manikin for knee injury assessment training. Currently, such training is conducted through direct instruction on live patients or peer-to-peer practice, which may limit exposure to multiple injury severities and raise ethical concerns. Our manikindevice aims to assist inexperienced practitioners in mastering an injury assessment technique specifically for the medial collateral ligament (MCL). We designed the manikin collaboratively with a certified clinician. Our design incorporates a commercial human knee joint model for accurate anatomical representation, materials that closely mimic human skin properties, an injury simulation mechanism for replicating MCL injuries, and pressure sensors to capture user-applied pressure during manipulation. We conducted threetwo evaluations: an internal test with our collaborating clinician to configure our manikin for four MCL injury conditions (i.e., healthy, grade 1, grade 2, and grade 3) using a psychophysics method; a subsequent study where 6 certified clinicians rated each condition for consistency and a technical evaluation measuring abduction range in the healthy and grade 3 configurations. Results show that our manikin can reliably displaydistinguish between healthy and unhealthy MCLs, with a sensitivity of 0.83 and specificity of 1.00 for healthy condition, and 1.00 and 0.83, respectively, for the unhealthy condition. However, further improvements are needed to accurately distinguish between injury gradesgrade 1, grade 2, and grade 3 injuries. Our manikin’s realistic weight and shape were highly praised, but there is room for improvement in simulating the skin texture. This work shows the potential of realistic simulators to enhance clinical training with standardized and repeatable practice.},
+  archive      = {J_TMRB},
+  author       = {Marco Moran-Ledesma and Robert Burns and Mark Hancock and Oliver Schneider},
+  doi          = {10.1109/TMRB.2025.3604121},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {TRAIN-KNEE: Developing a haptic manikin for knee injury assessment training},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Real-time balancing of stability and plasticity in continual learning enables adaptive speed estimation for lower-limb prostheses. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3597014'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A primary challenge in continual learning (CL) for wearable robotics, especially prosthetics, is balancing the need to retain learned knowledge (stability) with the necessity to adapt to new information (plasticity). This balance is crucial for online adaptation, enabling systems to transition between tasks without losing prior knowledge. In this paper, we introduce a novel online optimizer-based framework designed to manage the stability-plasticity balance through strategic datapoint replay and learning-rate adjustments of a deep neural network. We applied this framework to speed estimation systems for transfemoral prostheses (TFA users), conducting offline validation tests using data from 10 individuals with TFA, and online tests with three TFA and six able-bodied (AB) participants. Our results demonstrate statistically significant improvements: in offline settings, our method showed a 39.2% increase in stability and a 35.2% boost in plasticity over traditional CL approaches during leave-one-subject-out validation. Similarly, in real-time trials with AB participants, we observed statistically significant gains in handling both previously encountered and new walking speeds. Finally, trials with individuals with TFA showed that the system improved the plasticity of the baseline model by 67.45% and the stability of the traditional CL approach by 31.36%; reducing overall average walking speed estimation error by 19.47%.},
+  archive      = {J_TMRB},
+  author       = {Cole B. Johnson and Jairo Maldonado-Contreras and Kinsey R. Herrin and Aaron J. Young},
+  doi          = {10.1109/TMRB.2025.3597014},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {Real-time balancing of stability and plasticity in continual learning enables adaptive speed estimation for lower-limb prostheses},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A task-space control framework for powered ankle prostheses: Design, implementation, and evaluation. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604085'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Powered lower-limb prostheses outperform passive counterparts by generating positive work, but their full potential relies on control frameworks that operate in synergy with the user. This paper introduces a novel control framework that focuses on system-level objectives, such as for ground reaction forces (GRFs) and center of mass (CoM) kinematics, rather than detailed joint-level quantities. This new mechanism of coordinating the user and their device may better align with whole-body coordination mechanisms suggested by past research into human sensorimotor control. The proposed task-space control (TSC) framework is evaluated against a passive controller and a stateof-the-art impedance controller for individuals with and without amputation across varying walking speeds. Results demonstrate that while TSC exclusively considers system-level objectives to compute actuator torques, it still produces normative joint-level kinematic and kinetic outcomes. TSC generated 30% more peak torque, 11. more plantarflexion push-off, and 41% improvement in ankle kinematic symmetry for individuals with amputation at their preferred walking speed compared to the passive control.},
+  archive      = {J_TMRB},
+  author       = {David J. Kelly and Patrick M. Wensing},
+  doi          = {10.1109/TMRB.2025.3604085},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {A task-space control framework for powered ankle prostheses: Design, implementation, and evaluation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Real-time control of ankle orthosis assistance using a locomotion mode prediction tool. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604135'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robotic assistive devices have been equipped with locomotion mode (LM) decoding tools to adapt their assistance according to the users locomotion needs. However, most of the LM decoding tools are insufficient to predict the upcoming LM in advance; and do not consider the typically slow speeds of neurologically impaired users. This study aims to address these shortcomings by introducing an LM decoding tool to predict, in real-time, four LMs (standing, level-ground walking, stair descent, and stair ascent) when using a robotic assistive device (SmartOs system) at slow speeds. Thigh and shank segment angles feeding a Long Short-Term Memory provided the highest performance (accuracies of 98.6% and 97.2%, for able-bodied and stroke subjects, respectively). An LM-driven position control strategy was developed to assist the users based on the decoded LM. Real-time evaluations were performed under different speeds (self-selected and controlled), scenarios (indoor and outdoor), and assistance modes (zero-torque and LM-driven position controls). The proposed LM decoding tool showed low computational loads (1.58 1 0.42 ms). The SmartOs system was able to predict and adapt its assistance by 295 1 170 ms before the user entered the new LM. The proposed control strategy is a step towards LM-based assistance for stroke patients.},
+  archive      = {J_TMRB},
+  author       = {Luís Moreira and Joana Figueiredo and Cristina P. Santos},
+  doi          = {10.1109/TMRB.2025.3604135},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {Real-time control of ankle orthosis assistance using a locomotion mode prediction tool},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Experience-based fuzzy logic framework for robot-assisted endovascular intervention. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604114'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robot-assisted intervention at a higher level of autonomy can reduce the surgical complexity and physician workload. However, as the core requirement, the autonomous delivery of the guidewire remains challenging. The inherent flexibility of the guidewire complicates physical modeling, while existing learning-based approaches require prolonged training and exhibit limited interpretability. To address these issues, this paper proposes a novel method, experience-based Fuzzy LOgic framework for Robot-assisted endovascular Intervention (FLORI). FLORI emulates clinical operator techniques by leveraging a fuzzy logic system. It dynamically computes control parameters by analyzing both real-time guidewire tip positioning within the vascular architecture and historical attempt data. The proposed method maintains interpretability while improving the success rate and efficiency of guidewire delivery. Furthermore, this paper introduces a “macro + micro" human-machine collaborative delivery paradigm that allows physicians to switch between autonomous and manual delivery modes, as well as modify the guidewire delivery path during the surgical procedure. Physical experiments on a coronary artery model have demonstrated the effectiveness of FLORI and the role of the human-machine collaborative paradigm in reducing physician workload and enhancing the success rate of surgical procedures.},
+  archive      = {J_TMRB},
+  author       = {Pei-Liang Wu and Ding-Qian Wang and Xiao-Hu Zhou and Mei-Jiang Gui and Xiao-Liang Xie and Shi-Qi Liu and Shuang-Yi Wang and Hao Li and Zhi-Chao Lai and Zeng-Guang Hou},
+  doi          = {10.1109/TMRB.2025.3604114},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {Experience-based fuzzy logic framework for robot-assisted endovascular intervention},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Controlling robot sliding relying on tactile sensors and computational models of human touch. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604093'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {While sliding a finger over a surface, the perceived hand position results from musculoskeletal proprioception, motor commands, and tactile motion estimate. When the touched surface has parallel raised ridges, tactile estimate is biased toward a direction perpendicular to the ridges, predicted by the tactile flow model. This illusory effect leads to systematic errors in the reaching movement that depends on ridge orientation and tactile sensitivity. This suggests the fascinating hypothesis that reaching tasks can be used for functional assessment of tactile deficit, a common symptom in several neurological diseases, and for therapeutic intervention. Previously, we demonstrated in simulations how this phenomenon can be used to guide the user’s finger sliding on a ridged plate to a target while the user is instructed to move toward another target. This is achieved by designing a Model Predictive Control strategy to estimate optimal ridge orientation at each time instant. In this study, we aim to replicate this behavior with a robotic manipulator endowed with a soft optical tactile sensor to detect surface ridges relying on deep learning techniques to estimate optical flow as tactile flow approximation. A biomimetic robotic architecture replicating in a controllable fashion such behavior represents a unique testbed for neuroscientific investigation and the design of subject-tailored rehabilitation protocols.},
+  archive      = {J_TMRB},
+  author       = {Giulia Pagnanelli and Marco Greco and Paolo Susini and Alessandro Moscatelli and Matteo Bianchi},
+  doi          = {10.1109/TMRB.2025.3604093},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {Controlling robot sliding relying on tactile sensors and computational models of human touch},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Control modes of teleoperated surgical robotic system’s tools in ophthalmic surgery. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604102'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The introduction of a teleoperated surgical robotic system designed for minimally invasive procedures enables the emulation of two distinct control modes through a dedicated input device of the surgical console: (1) Inside Control Mode, which emulates tool manipulation near the distal end (i.e., as if the surgeon was holding the tip of the instrument inside the patient’s body), and (2) Outside Control Mode, which emulates manipulation near the proximal end (i.e., as if the surgeon was holding the tool externally). The overarching aim of this reported research is to study and compare the surgeon’s performance utilizing these two control modes of operation along with various scaling factors in a simulated vitreoretinal surgical setting. The console of Intraocular Robotic Interventional Surgical System (IRISS) was utilized but the surgical robot itself and the human eye anatomy was simulated by a virtual environment (VR) projected microscope view of an intraocular setup to a VR headset. Five experienced vitreoretinal surgeons and five subjects with no surgical experience used the system to perform fundamental tool/tissue tasks common to vitreoretinal surgery including: (1) touch and reset; (2) grasp and drop; (3) inject; (4) circular tracking. The results indicate that Inside Control outperforms Outside Control across multiple tasks and performance metrics. Higher scaling factors (20 and 30) generally provided better performance, particularly for reducing trajectory errors and tissue damage. This improvement suggests that larger scaling factors enable more precise control, making them the preferred option for fine manipulation tasks. However, task completion time was not consistently reduced across all conditions, indicating that surgeons may need to balance speed and accuracy/precision based on specific surgical requirements. By optimizing control dynamics and user interface, robotic teleoperation has the potential to reduce complications, enhance surgical dexterity, and expand the accessibility of high-precision procedures to a broader range of practitioners.},
+  archive      = {J_TMRB},
+  author       = {Haoran Wang and Yasamin Foroutani and Matthew Nepo and Mercedes Rodriguez and Ji Ma and Jean-Pierre Hubschman and Tsu-Chin Tsao and Jacob Rosen},
+  doi          = {10.1109/TMRB.2025.3604102},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {Control modes of teleoperated surgical robotic system’s tools in ophthalmic surgery},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Design and performance investigation of the microanastomosis surgical robot based on the novel dual-triangular RCM mechanism. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604089'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The manual microanastomosis poses significant challenges for surgeons who face inherent limitations in terms of physiological tremor and dexterity constraints. It requires precise repair and reconstruction of small-caliber tissues (0.3-3mm), including vessels, nerves, and lymphatic structures. This study presents a specialized robotic system for microanastomosis based on a 7-degree-of-freedom (DOF) position-orientation decoupled configuration. The system integrates a 3-DOF linear stage for positioning with a novel 3-DOF dual-triangular remote center of motion (RCM) mechanism for orientation control, and a 1-DOF two-finger mimicking end-effector is incorporated to facilitate rapid interchange and precise actuation of different microsurgical instruments. Positioning accuracy was improved through kinematic parameters calibration and RCM point deviation compensation using the linear stage. Experimental results validate the prototype performance in the X-Z plane and Y-Z plane, demonstrating repeatability of 1216μm and 1217μm, respectively, and absolute positioning accuracy of 56115μm and 83135μm. In master-slave control mode, motion accuracy ranges from 14-25μm with a motion scaling ratio between 5x and 20x. Additionally, needle threading and stamen stripping experiments were conducted to validate the robot’s feasibility for microanastomosis surgery.},
+  archive      = {J_TMRB},
+  author       = {Shaoan Chen and Dunfa Long and Kaifeng Wang and Zhengbao Yang and Bo Zhang and Chaoyang Shi},
+  doi          = {10.1109/TMRB.2025.3604089},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {Design and performance investigation of the microanastomosis surgical robot based on the novel dual-triangular RCM mechanism},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). S4RoboFormer: Scribble-supervised surgical robotic segmentation transformer via augmented consistency training. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604103'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Advancements in deep learning for surgical instrument segmentation have notably improved the proficiency, safety, and efficacy of minimally invasive robotic surgeries. The effectiveness of deep learning, however, is contingent upon the availability of large datasets for training, which are often associated with substantial annotation costs. Given the dynamic nature of surgical robots, scribble-based labeling emerges as a more viable and cost-effective alternative to traditional pixel-wise dense labeling. This paper introduces the Scribble-Supervised Surgical Robotic Segmentation Transformer (S4RoboFormer), designed to mitigate the challenges posed by resource-intensive annotations. S4RoboFormer incorporates a Vision Transformer (ViT)-based U-shaped segmentation network, enhanced with a specialized Weakly-Supervised Learning (WSL) strategy that comprises consistency training through (i) data-based perturbation using a data-mixed interpolation technique, and (ii) network-based perturbation via a self-ensembling strategy. This methodology promotes uniform predictions across different levels of perturbation under conditions of limited-signal supervision. S4RoboFormer outperforms existing state-of-the-art baseline WSL frameworks with both convolutional neural network(CNN)-and ViT-based segmentation networks on a pre-processed public dataset. The code of S4RoboFormer, all baseline methods, pre-processed data, and scribble simulation algorithm are all made publicly available at https://github.com/ziyangwang007/CV-WSL-Robot.},
+  archive      = {J_TMRB},
+  author       = {Ziyang Wang and Tianxiang Chen and Zi Ye and Yiyuan Ge and Zhihao Chen and Jiabao Li and Yifan Zhao},
+  doi          = {10.1109/TMRB.2025.3604103},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {S4RoboFormer: Scribble-supervised surgical robotic segmentation transformer via augmented consistency training},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Real-time bidirectional haptic data forecasting in teleoperated telemedicine systems. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604112'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Teleoperation systems play a critical role in telemedicine by addressing the uneven distribution of medical resources and reducing infection risks. However, data transmission delays can cause tactile feedback lag, compromising the real-time performance of remote medical operations. To improve system position tracking accuracy and feedback fidelity, this study explores predictive techniques based on the Long-and Short-term Time-series Network (LSTNet), taking into account the differing characteristics of forward and backward data transmission. For forward transmission, a Soft-Modified Dynamic Time Warping (Soft-MDTW) pose prediction algorithm with a continuously differentiable search process is proposed, resulting in a 9.67% reduction in position tracking error. For backward transmission, a novel Haptic Structural Similarity Index Measure (HSSIM) loss function integrating tactile features is developed, improving the force signal similarity by 5.53%. These methods collectively enhance the real-time performance and safety of remote medical systems.},
+  archive      = {J_TMRB},
+  author       = {Zijun Liao and Li Zheng and Xinru Xie and Hairui Wu and Fangjia Liu},
+  doi          = {10.1109/TMRB.2025.3604112},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {Real-time bidirectional haptic data forecasting in teleoperated telemedicine systems},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Instantaneous and markerless registration for mandible reconstruction robot with fibular holder. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604101'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robotic-assisted mandible reconstruction surgery is reported to achieve a more precise fibula osteotomy. However, intraoperative registration of the fibula with preoperative imaging is the key to achieving precision. Although methods such as probe scanning, optical navigation, and point cloud recognition are available, the reliability and efficiency of registration are low due to the sparse anatomical features and bone membrane covering on the fibular surface. Fibular shaping involves multiple bone segment osteotomies, and therefore, the design of fibular holder is necessary to achieve stable shaping. Based on these facts, an instantaneous and markerless registration based on the fibular holder is proposed, consisting of the initial alignment and refinement. The initial alignment using the point cloud or the holder to locate the fibula. The refinement, based on mechanical constraints, is developed and solved iteratively, utilizing the mechanical constraints between the fibula and the V-shaped mounts of the fibular holder. The accuracy of the approach is evaluated through simulations, model experiments and animal experiments. The results indicated that this algorithm provides higher accuracy and efficiency. This method can achieve non-invasive, efficient, and highly precise fibular registration in mandibular reconstruction surgery.},
+  archive      = {J_TMRB},
+  author       = {Junlei Hu and Xiaoyan Jiang and Gang Zhu and Zhenggang Cao and Yao Gao and Zhaodong Zhang and Jing Han and Jiannan Liu},
+  doi          = {10.1109/TMRB.2025.3604101},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {Instantaneous and markerless registration for mandible reconstruction robot with fibular holder},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-camera visual servoing formulation to control a composite cartesian-delta surgical robotic device. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604086'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {During the past two decades, the utilization of vision systems in neurosurgical procedures has become more important. These systems are crucial in minimizing exposure to inoperative radiological imaging and serve as a valuable tool for identifying and addressing injuries. In addition, virtualized instrumented surgical robots can assess the effectiveness of novel surgical approaches compared to conventional and commercial systems. Our primary objective in this study is to estimate the exact pose of the end effector during neuronavigation. To ensure safe neuronavigation, a multi-camera vision system provides real-time feedback for a composite robotic device, the Cartesian-Delta robot, during simulated neurosurgical procedures. Moreover, our visual servoing scheme is integrated as part of an adaptive control law within a virtual environment to estimate the pose of the surgical tool. This design effectively tracks the positions of colored spherical "landmarks" after an initial calibration, offering a significant advantage as this calibration is a one-time process independent of the specific surgical procedure. The numerical results confirm that the implementation of such a visual system can serve as excellent feedback for supervised surgical robots, particularly in scenarios where precise surgical tasks need to be performed within confined spaces, such as trepanation. Compared to traditional approaches, our research’s primary contributions lie in integrating the vision system into the robot control system, the one-time calibration process, and the potential reduction in intraoperative radiological exposure.},
+  archive      = {J_TMRB},
+  author       = {Karen Jazmín Mendoza-Bautista and L. Abril Torres-Mendez and Isaac Chairez},
+  doi          = {10.1109/TMRB.2025.3604086},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {Multi-camera visual servoing formulation to control a composite cartesian-delta surgical robotic device},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Implantable FPGA-based neuromorphic system for real-time noise detection and correction in neurobionic applications. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604098'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Real-time mitigation of signal noise in neuromorphic systems is a critical requirement for developing reliable implantable bionic interfaces targeting neurological disorders. While prior hardware implementations of neuronal models on FPGA have prioritized efficiency through approximations of nonlinear dynamics, they often neglect the stochastic nature of biological noise. In this work, we present a hardware implementation capable of real-time detection and correction of transient noise events using two well-established algorithms, regardless of their timing or duration. These algorithms were validated on Hodgkin-Huxley and FitzHugh-Nagumo models and synthesized on FPGA, confirming their precision, robustness, and feasibility for real-time deployment. Beyond conventional noise suppression, the proposed system models baseline biological activity and autonomously regulates abnormal deviations, potentially reducing neural dysfunction in implanted bioelectronic devices. This approach provides a foundational step toward adaptive neurobionic systems for therapeutic applications, such as neuroprosthetics or implantable controllers for managing chronic neurological disorders.},
+  archive      = {J_TMRB},
+  author       = {Milad Ghanbarpour and Muhammad Akmal Chaudhary and Maher Assaad and Gilda Ghanbarpour},
+  doi          = {10.1109/TMRB.2025.3604098},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {Implantable FPGA-based neuromorphic system for real-time noise detection and correction in neurobionic applications},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Intraoperative 3D reconstruction and geometric modeling using sensorized microsurgical instruments. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604119'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Precise micrometer-scale tissue manipulation is essential for successful microsurgery. Despite advancements in intraoperative sensing and instrument tracking, providing accurate real-time feedback on instrument positions relative to critical tissue structures remains challenging. This research aims to reliably reconstruct fine-grained anatomical surfaces intraoperatively using a smart instrument with fiber-based distance sensing. First, instrument-integrated optical coherence tomography sensor readings are integrated with instrument tracking to reconstruct accurate surface point clouds. Subsequently, radial basis functions, ordinary Kriging, and B-splines are utilized for surface modeling, employing tailored basis functions and smoothing parameters. The proposed methods are validated in the context of vitreoretinal surgery through simulations and with ex vivo studies involving porcine and human cadaver eyes. In simulations, radial basis function interpolation demonstrates the highest robustness across varying noise levels and eye shapes. In ex vivo studies, ordinary Kriging outperformed, yielding root mean square errors of 14.7 μm for the porcine eye and 38.1 μm for the human eye, with 99.7% and 96.5% of absolute errors below 100 μm. The proposed methods effectively model featurerich micro-anatomical surfaces and enable model-based assistance and automation, ultimately enhancing surgical precision in delicate ophthalmic procedures.},
+  archive      = {J_TMRB},
+  author       = {Marius Briel and Ludwig Haide and Jule Emmrich and Nicola Piccinelli and Gernot Kronreif and Eleonora Tagliabue and Franziska Mathis-Ullrich},
+  doi          = {10.1109/TMRB.2025.3604119},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {Intraoperative 3D reconstruction and geometric modeling using sensorized microsurgical instruments},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Two-stage optimized perturbation design for efficient human arm impedance identification with device dynamics compensation. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604139'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {System identification of human sensorimotor systems requires multiple experimental trials to achieve reliable parameter estimates, yet practical constraints limit the total number of trials possible. While pseudorandom sequence (PRS) perturbations are widely used due to their white noise-like properties, and optimal multisines can theoretically provide better performance when prior system knowledge is available, their implementation on mechanical devices presents significant challenges. Device dynamics can degrade the designed spectral properties of both perturbation types, increasing the number of required trials to achieve desired estimation precision. This paper presents a foundational framework for device-dynamicsaware perturbation design that reduces the necessary number of experimental trials. The framework introduces two key components: a prefilter for PRS to minimize digital-to-analog conversion effects, and a modified cost function for multisine optimization that explicitly compensates for mechanical device dynamics. We propose a two-stage approach where the prefiltered PRS first provides initial estimates that inform subsequent optimal multisine design. Through human arm impedance experiments and devicerendered validation, we demonstrate that our framework achieves much smaller covariance resulting in fewer trials to achieve satisfactory identification performance compared to conventional methods. The optimal multisine stage, enhanced by device dynamics compensation, shows particular effectiveness in reducing parameter covariance. The covariance improvement translates to multiple practical benefits: a potential 62.5% reduction in required trial numbers when full-length signals are used, a 75% reduction in single-trial duration while maintaining estimation quality, or various combinations of these improvements depending on experimental constraints. These results establish a practical path toward more efficient human system identification protocols that minimize experimental burden while maintaining estimation accuracy.},
+  archive      = {J_TMRB},
+  author       = {Yingxin Qiu and Mengnan Wu and Lena H. Ting and Jun Ueda},
+  doi          = {10.1109/TMRB.2025.3604139},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {Two-stage optimized perturbation design for efficient human arm impedance identification with device dynamics compensation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Squat training assisted by a rigid-soft hybrid knee exoskeleton: A preliminary study. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604140'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Knee osteoarthritis (KOA) is a progressive degenerative joint disease that significantly impairs patients’ activities of daily living. Squat training represents a key intervention strategy in KOA management. However, the considerable biomechanical loads on the knee joint during training and associated pain symptoms have been observed alongside consistently low patient adherence. This study proposes an exoskeleton-assisted squat training method aimed at reducing the biomechanical load on the knee joint. A comprehensive biomechanical evaluation, including joint kinematics, joint kinetics, and muscle activation patterns, was conducted in a small sample of 7 healthy male subjects under both exoskeleton-assisted and non-assisted conditions. Preliminary results indicate that exoskeleton assistance significantly reduced biomechanical loads of the knee joint during squat training. While these results highlight the feasibility of the proposed method, further validation in larger, diverse populations, including clinical samples, is warranted to confirm its therapeutic potential.},
+  archive      = {J_TMRB},
+  author       = {Xiaolin Dai and Ming Xu and Heran Zhong and Zhihao Zhou and Rongli Wang and Xuewen Rong and Yibin Li and Qining Wang},
+  doi          = {10.1109/TMRB.2025.3604140},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {Squat training assisted by a rigid-soft hybrid knee exoskeleton: A preliminary study},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Personalized myoelectric control for upper-limb exoskeletons through meta-learning: A few-shot learning approach. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604146'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Personalization in the myoelectric control of robotic exoskeletons is crucial to ensuring accurate interpretation and adaptation to the unique muscle activity patterns and movement intentions of each user. This approach minimizes the risk of incorrect or excessive force application, significantly reducing the likelihood of user discomfort or injury during operation. This study introduces a model-agnostic meta-learning approach for personalizing a soft upper-limb exoskeleton in industrial settings. The framework incorporates an attention-based CNN-LSTM model that predicts future angular positions of the robot using EMG and IMU signals. The MAML framework demonstrates significant adaptability and personalization, efficiently predicting future angular positions with minimal data, approximately 20-25 seconds per task. This approach effectively reduces the necessity for extensive retraining with new users or in new environments by 50%, showcasing real-time task adaptation capabilities. Our findings confirmed a reduced human effort of nearly 13% in load-bearing tasks. Also, the results show that the exerted torque from the exoskeleton was 24% higher while maintaining higher accuracy. A comparison with other deep learning models further emphasizes the enhanced adaptability and accuracy offered by the meta-learning approach.},
+  archive      = {J_TMRB},
+  author       = {Paniz Sedighi and Xingyu Li and Vivian K. Mushahwar and Mahdi Tavakoli},
+  doi          = {10.1109/TMRB.2025.3604146},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {Personalized myoelectric control for upper-limb exoskeletons through meta-learning: A few-shot learning approach},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Semi-autonomous prosthesis control using minimal depth information and vibrotactile feedback. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604104'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Semi-autonomous prosthesis controllers based on computer vision improve performance while reducing cognitive effort. However, controllers relying on full-depth data face challenges in being deployed as embedded prosthesis controllers due to the computational demands of processing point clouds. To address this, the present study proposes a method to reconstruct the shape of various daily objects from minimal depth data. This is achieved using four concurrent laser scanner lines instead of a full point cloud. These lines represent the partial contours of an object’s cross-section, enabling its dimensions and orientation to be reconstructed using simple geometry. A control prototype was implemented using a depth sensor with four laser scanners. Vibrotactile feedback was also designed to help users to correctly aim the sensor at target objects. Ten able-bodied volunteers used a prosthesis equipped with the novel controller to grasp ten objects of varying shapes, sizes, and orientations. For comparison, they also tested an existing benchmark controller that used full-depth information. The results showed that the novel controller handled all objects and, while performance improved with training, it remained slightly below that of the benchmark. This marks an important step towards a compact vision-based system for embedded depth sensing in prosthesis grasping.},
+  archive      = {J_TMRB},
+  author       = {Miguel Nobre Castro and Strahinja Dosen},
+  doi          = {10.1109/TMRB.2025.3604104},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {Semi-autonomous prosthesis control using minimal depth information and vibrotactile feedback},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Design and modeling of a 7-DOF MR-conditional robot for MRI-guided brain stereotactic surgery. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604123'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In brain stereotactic surgery, the operation precision can be significantly improved if real-time magnetic resonance image (MRI) guidance is achieved. However, the limited space inside the MRI bore and the strong magnetic field pose challenges to performing robot-assisted brain stereotactic surgery in the MR environment. In this paper, a 7-degree-of-freedom (DOF) MRconditional robot with ultrasonic actuation is developed to operate inside the MRI bore. The robot consists of a 3-DOF translational positioning module and a 2-DOF remote center of motion (RCM) module for the adjustment of the puncture needle, and a 2-DOF feeding module for needle insertion. A workflow for robot-assisted brain stereotactic surgery is proposed. The performances of the robot are systematically tested. The signal-to-noise ratio (SNR) reduction to the MR images is measured to be below 6%, showing good MR compatibility. The RCM point shift is measured to be 1.01 mm, and the positioning accuracy and repeatability of the robot are measured to be 2.3610.14 mm and 0.3110.21 mm, respectively. Phantom experiments are performed in the MR environment, and the maximum positioning and orientation errors in the phantom are found to be 1.77 mm and 4.330, respectively. The experimental results demonstrate the feasibility of the developed robot in MRI-guided neurosurgery.},
+  archive      = {J_TMRB},
+  author       = {Jianda Han and Longxin Wang and Yueyang Shi and Xiaoxue Sun and Hongpeng Wang and Yanding Qin},
+  doi          = {10.1109/TMRB.2025.3604123},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {8},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {Design and modeling of a 7-DOF MR-conditional robot for MRI-guided brain stereotactic surgery},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An effectiveness study across baseline and learning-based force estimation methods on the da vinci research kit si system. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3589744'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robot-assisted minimally invasive surgery, such as through the da Vinci systems, improves precision and patient outcomes. However, da Vinci systems prior to da Vinci 5 lacked direct force-sensing capabilities, forcing surgeons to operate without the haptic feedback they get through laparoscopy. Our prior work restored force sensing through machine learning-based force estimation for an open-source surgical robotics research platform, the da Vinci Research Kit (dVRK) Classic. This study extends our previous method to the newer dVRK system, the dVRK-Si. Additionally, we benchmark the performance of the learning-based algorithm against baseline methods (which make simplifying assumptions on the torque) to study how the two systems differ. In both systems, the learning-based method outperforms baselines, but the difference is much larger in the dVRK-Si. Nonetheless, dVRK-Si force estimation accuracy lags behind the dVRK Classic, with Root Mean Square Error (RMSE) 2 to 3 times higher. Further analysis reveals suboptimal PID control in the dVRK-Si. We hypothesize that this is because, unlike the dVRK Classic, the dVRK-Si is not mechanically balanced and exhibits more complex internal dynamics. This study advances the understanding of learning-based force estimation and is the first work to implement learning-based dynamics estimation of the new dVRK-Si system.},
+  archive      = {J_TMRB},
+  author       = {Hao Yang and Ayberk Acar and Keshuai Xu and Anton Deguet and Peter Kazanzides and Jie Ying Wu},
+  doi          = {10.1109/TMRB.2025.3589744},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {7},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {An effectiveness study across baseline and learning-based force estimation methods on the da vinci research kit si system},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A pneumatic force sensor for enhanced force feedback in robotic colonoscopy. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3589782'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Colonoscopy is often associated with significant discomfort, which can be mitigated by incorporating haptic feedback into robotic systems. This paper presents the design and experimental evaluation of a force sensing system integrated with haptic feedback for robotic colonoscopy. The system utilizes pneumatic sensing pouches mounted on the tip of a robotic colonoscope to capture contact forces in real-time and provide feedback to the operator via a haptic joystick. The pouch sensor demonstrates accuracy, with a maximum RMS error of 0.2 N during rigid phantom testing, while achieving 85% phase classification accuracy in detecting on-load and off-load states. Haptic force feedback significantly reduces peak interaction forces, lowering the maximum contact force from 1 N to 0.6 N without compromising task duration. Experiments in a soft colon phantom confirm the system’s ability to detect forces in anatomically representative environments, demonstrating its potential for clinical use.},
+  archive      = {J_TMRB},
+  author       = {Korn Borvorntanajanya and Jialei Shi and Jabed F Ahmed and Enrico Franco and Ferdinando Rodriguez y Baena},
+  doi          = {10.1109/TMRB.2025.3589782},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {7},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {A pneumatic force sensor for enhanced force feedback in robotic colonoscopy},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A variable stiffness pneumatic actuator for minimally invasive surgery devices. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3583152'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Soft pneumatic actuators are well-suited for minimally invasive medical procedures due to their inherent compliance. This study presents a dual-chamber soft pneumatic actuator with an inextensible central rod as a potential tool for minimally invasive surgery. To improve actuator stiffness, antagonistic pressurisations were systematically investigated. Finite Element Analysis (FEA) was employed during the design process. Experimental results demonstrated that a specific bending angle could be achieved with various pressure combinations in the two chambers. Compared to single-chamber pressurisation, a statistically significant reaction force increase of up to 47% was observed during antagonistic actuation at a 30∘ bending angle. These findings demonstrate the actuator’s ability to modulate both stiffness and bending angle through antagonistic pressurisation.},
+  archive      = {J_TMRB},
+  author       = {Vani Virdyawan and Muhammad Aldian Salman and Nicolaas George Edward and Sandro Mihradi and Indrawanto},
+  doi          = {10.1109/TMRB.2025.3583152},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {6},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {A variable stiffness pneumatic actuator for minimally invasive surgery devices},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MR-conditional robotic cardiac intervention: Design and validation in patient-specific phantoms. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3573387'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Manual hand-held catheterization by clinicians under Magnetic Resonance Imaging (MRI) has become popular for the treatment of cardiovascular diseases such as pulmonary edema and heart failure. However, the limited space of the MRI bore makes it challenging for clinicians to access the opening, and the prolonged operation can cause back injury. To implement MRI-guided robot-assisted catheterization, this paper presents an MR-conditional robotic system for right heart catheterization (MR-RHC). Our 2-degree-of-freedom (DoF) robotic manipulator is actuated by ultrasonic piezoelectric motors. The highly compact design (D× W× L=11 cm× 8 cm× 18 cm) allows the robot to be positioned in the MRI scanner bore, near the patient’s femoral vein opening. The contribution of this paper lies in the development of an MR-conditional robotic system that clinically required Swan-Ganz catheter movements, including (simultaneous) infinite continuous rotation and translation (i.e., the catheter can perform endless rotation and translation that are not restricted by cable tangling or limited operational motion of the actuators). The MR conditionality of the robotic system is demonstrated in a clinical MR environment. Additionally, the system has been characterized in terms of its force and torque capabilities and verified 100% success rate of tele-intervention within 7 patient specific phantoms. Lastly, the paper reports the intervention of an MRI-guided robot-operated catheter within the water-filled phantoms between the control room and MR scanner.},
+  archive      = {J_TMRB},
+  author       = {Yaxi Wang and Enhui Yong and Wenlong Gaozhang and Vivek Muthurangu and Helge A. Wurdemann},
+  doi          = {10.1109/TMRB.2025.3573387},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {5},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {MR-conditional robotic cardiac intervention: Design and validation in patient-specific phantoms},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Compliant mechanism needle guidance with smartphone magnetic tracking. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3562272'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Precise needle placement is crucial to ensure both safety and efficacy during needle intervention procedures. Traditionally, interventional radiologists conduct cancer biopsies using image guided techniques where images are used to help guide and track needle placement. Such procedures are oftentimes performed freehand and require high-level motor-visual coordination to adequately map needle placement using the medical images. As a result, biopsies are time-consuming, with accuracy heavily dependent on the experience of the operator. In this work, a compliant mechanism-based magnetic tracking device combined with a smartphone has been designed to address the shortcomings of current image-guided needle targeting systems. Smartphones, being ubiquitous, are equipped with sufficient processing power for data analysis, pair well with permanent magnet-based magnetic tracking systems, and do not require an external power supply during operation. In the procedure, the system is placed on the abdomen of the patient. The compliant mechanism can hold the needle such that there is a remote centre of motion (RCM) on the surface of the patient’s skin. This RCM allows for a fixed skin entry point, minimising possible tissue tearing that occurs due to unintended needle translation. In this study, the working principle of the compliant mechanism and the mathematical model for magnetic tracking are introduced. Experimental results show that the device’s average angular tracking errors are 0.96∘( left-to-right), and 0.89∘ (head-to-foot), with standard deviations of 1.09∘ and 0.86∘, respectively. The RCM points are distributed within ranges of 0.52×3.48 mm (left-to-right) and 0.53 × 2.19 mm (head-to-foot).},
+  archive      = {J_TMRB},
+  author       = {Hongguang Li and Haipeng Liang and Zion Tsz Ho Tse},
+  doi          = {10.1109/TMRB.2025.3562272},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {4},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {Compliant mechanism needle guidance with smartphone magnetic tracking},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

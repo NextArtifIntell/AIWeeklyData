@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TETC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tetc">TETC - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Breakout local search solution to the offloading decision problem in a multi-access edge computing cloud-enabled network. <em>TETC</em>, 1-11. (<a href='https://doi.org/10.1109/TETC.2025.3598369'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cloud offloading is an important technique for Internet of Things systems, as it allows devices with limited capabilities to access the powerful resources in the cloud when executing their applications. However, relying solely on the remote cloud is problematic, as the long access time from the far distance to the server makes real-time applications impossible to be executed. Multi-access edge computing addresses this by deploying cloud servers near the devices. The issue then becomes how to allocate devices between either remote cloud and multiaccess edge computing, based on the device requirements. In this paper, we propose a Breakout Local Search-based solution that, given our designed binary integer linear programming model of the offloading problem, finds a near-optimal configuration for allocating devices between the two cloud types. The proposal is based on iterating between exploiting the local optimum found so far and perturbation of the current solution to explore more the search space. A comparison study shows that our proposal is better than baseline and conventional algorithms, speeding up the total service delay of tasks by at least 30ms.},
+  archive      = {J_TETC},
+  author       = {Mina Kato and Tiago Koketsu Rodrigues and Nei Kato},
+  doi          = {10.1109/TETC.2025.3598369},
+  journal      = {IEEE Transactions on Emerging Topics in Computing},
+  month        = {8},
+  pages        = {1-11},
+  shortjournal = {IEEE Trans. Emerg. Topics Comput.},
+  title        = {Breakout local search solution to the offloading decision problem in a multi-access edge computing cloud-enabled network},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

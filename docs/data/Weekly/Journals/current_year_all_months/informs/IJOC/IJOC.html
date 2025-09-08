@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IJOC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ijoc">IJOC - 59</h2>
+<ul>
+<li><details>
+<summary>
+(2025). On discrete subproblems in integer optimal control with total variation regularization in two dimensions. <em>IJOC</em>, <em>37</em>(4), 1121-1141. (<a href='https://doi.org/10.1287/ijoc.2024.0680'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We analyze integer linear programs that we obtain after discretizing two-dimensional subproblems arising from a trust-region algorithm for mixed integer optimal control problems with total variation regularization. We discuss NP-hardness of the discretized problems and the connection to graph-based problems. We show that the underlying polyhedron exhibits structural restrictions in its vertices with regard to which variables can attain fractional values at the same time. Based on this property, we derive cutting planes by employing a relation to shortest-path and minimum bisection problems. We propose a branching rule and a primal heuristic which improves previously found feasible points. We validate the proposed tools with a numerical benchmark in a standard integer programming solver. We observe a significant speedup for medium-sized problems. Our results give hints for scaling toward larger instances in the future. History: Accepted by Andrea Lodi, Area Editor for Design & Analysis of Algorithms–Discrete. Funding: This work was supported by the Deutsche Forschungsgemeinschaft [Grant MA 10080/2-1]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2024.0680 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2024.0680 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2024.0680},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {1121-1141},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {On discrete subproblems in integer optimal control with total variation regularization in two dimensions},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A new approximation algorithm for minimum-weight (1,m)–Connected dominating set. <em>IJOC</em>, <em>37</em>(4), 1106-1120. (<a href='https://doi.org/10.1287/ijoc.2023.0306'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Consider a graph with nonnegative node weight. A vertex subset is called a CDS (connected dominating set) if every other node has at least one neighbor in the subset and the subset induces a connected subgraph. Furthermore, if every other node has at least m neighbors in the subset, then the node subset is called a ( 1 , m ) CDS. The minimum-weight ( 1 , m ) CDS problem aims at finding a ( 1 , m ) CDS with minimum total node weight. In this paper, we present a new polynomial-time approximation algorithm for this problem, which improves previous ratio by a factor of 2/3. History: Accepted by Erwin Pesch, Area Editor for Heuristic Search & Approximation Algorithms. Funding: This work was supported by the National Natural Science Foundation of China [Grant U20A2068] and the National Science Foundation [Grant III-1907472]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0306 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0306 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0306},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {1106-1120},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {A new approximation algorithm for minimum-weight (1,m)–Connected dominating set},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Simulating confidence intervals for conditional value-at-risk via least-squares metamodels. <em>IJOC</em>, <em>37</em>(4), 1087-1105. (<a href='https://doi.org/10.1287/ijoc.2023.0394'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Metamodeling techniques have been applied to approximate portfolio loss as a function of financial risk factors, thus producing point estimates of various measures of portfolio risk based on Monte Carlo samples. Rather than point estimates, this paper focuses on the construction of confidence intervals (CIs) for a widely used risk measure, the so-called conditional value-at-risk (CVaR), when the least-squares method (LSM) is employed as a metamodel in the point estimation. To do so, we first develop lower and upper bounds of CVaR and construct CIs for these bounds. Then, the lower end of the CI for the lower bound and the upper end of the CI for the upper bound together form a CI of CVaR with justifiable statistical guarantee, which accounts for both the metamodel error and the noises of Monte Carlo samples. The proposed CI procedure reuses the samples simulated for LSM point estimation, thus requiring no additional simulation budget. We demonstrate via numerical examples that the proposed procedure may lead to a CI with the desired coverage probability and a much smaller width than that of an existing CI in the literature. History: Accepted by Bruno Tuffin, Area Editor for Simulation. Funding: This research was supported by the National Natural Science Foundation of China (NNSFC) [Grants 72101260 and 72471232], the Research Grants Council of Hong Kong (RGC-HK) [General Research Fund Project 11508620], InnoHK Initiative, the Government of the HKSAR, and Laboratory for AI-Powered Financial Technologies, and NNSFC/RGC-HK Joint Research Scheme [Project N_CityU 105/21]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0394 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0394 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0394},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {1087-1105},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Simulating confidence intervals for conditional value-at-risk via least-squares metamodels},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On interdicting dense clusters in a network. <em>IJOC</em>, <em>37</em>(4), 1069-1086. (<a href='https://doi.org/10.1287/ijoc.2023.0027'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Given a vertex-weighted undirected graph with blocking costs of its vertices and edges, we seek a minimum cost subset of vertices and edges to block such that the weight of any γ -quasi-clique in the interdicted graph is at most some predefined threshold parameter. The value of γ ∈ ( 0 , 1 ] specifies the edge density of cohesive vertex groups of interest in the network. The considered weighted γ-quasi-clique interdiction problem can be viewed as a natural generalization of several variations of the clique blocker problem previously studied in the literature. From the application perspective, this setting is primarily motivated by the problem of disrupting adversarial (“dark”) networks (e.g., social or communication networks), where γ -quasi-cliques represent “tightly knit” groups of adversaries that we aim to dismantle. We first address the theoretical computational complexity of the problem. We then exploit some basic characterization of its feasible solutions to derive a linear integer programming (IP) formulation. This linear IP model can be solved using a lazy-fashioned branch-and-cut scheme. We also propose a combinatorial branch-and-bound algorithm for solving this problem. The computational performance of the developed exact solution schemes is studied using a test bed of randomly generated and real-life networks. Finally, some interesting insights and observations are also provided using a well-known example of a terrorist network. History: Accepted by Russel Bent, Area Editor for Network Optimization: Algorithms & Applications. Funding: The work of S. Butenko was partially supported by the Air Force Office of Scientific Research under Award FA9550-23-1-0300. The work of O. A. Prokopyev was partially supported by the Office of Naval Research under Award ONR N00014-22-1-2678. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0027 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0027 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ . The online appendix is available at https://doi.org/10.1287/ijoc.2023.0027 .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0027},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {1069-1086},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {On interdicting dense clusters in a network},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An algorithm for clustering with confidence-based must-link and cannot-link constraints. <em>IJOC</em>, <em>37</em>(4), 1044-1068. (<a href='https://doi.org/10.1287/ijoc.2023.0419'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study here the semisupervised k -clustering problem where information is available on whether pairs of objects are in the same or different clusters. This information is available either with certainty or with a limited level of confidence. We introduce the pair-wise confidence constraints clustering (PCCC) algorithm, which iteratively assigns objects to clusters while accounting for the information provided on the pairs of objects. Our algorithm uses integer programming for the assignment of objects, which allows us to include relationships as hard constraints that are guaranteed to be satisfied or as soft constraints that can be violated subject to a penalty. This flexibility distinguishes our algorithm from the state of the art, in which all pair-wise constraints are considered hard or all are considered soft. We developed an enhanced multistart approach and a model-size reduction technique for the integer program that contribute to the effectiveness and efficiency of the algorithm. Unlike existing algorithms, our algorithm scales to large-scale instances with up to 60,000 objects, 100 clusters, and millions of cannot-link constraints (which are the most challenging constraints to incorporate). We compare the PCCC algorithm with state-of-the-art approaches in an extensive computational study. Even though the PCCC algorithm is more general than the state-of-the-art approaches in its applicability, it outperforms the state-of-the-art approaches on instances with all hard or all soft constraints in terms of both run time and various metrics of solution quality. The code of the PCCC algorithm is publicly available on GitHub. History: Accepted by Ram Ramesh, Area Editor for Data Science and Machine Learning. Funding: The research of D. S. Hochbaum was supported by the AI Institute NSF Award [Grant 2112533]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0419 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0419 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0419},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {1044-1068},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {An algorithm for clustering with confidence-based must-link and cannot-link constraints},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An efficient optimization model and tabu Search–Based global optimization approach for the continuous p-dispersion problem. <em>IJOC</em>, <em>37</em>(4), 1018-1043. (<a href='https://doi.org/10.1287/ijoc.2023.0089'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Continuous p -dispersion problems with and without boundary constraints are NP-hard optimization problems with numerous real-world applications, notably in facility location and circle packing, which are widely studied in mathematics and operations research. In this work, we concentrate on general cases with a nonconvex multiply connected region that are rarely studied in the literature due to their intractability and the absence of an efficient optimization model. Using the penalty function approach, we design a unified and almost everywhere differentiable optimization model for these complex problems and propose a tabu search–based global optimization (TSGO) algorithm for solving them. Computational results over a variety of benchmark instances show that the proposed model works very well, allowing popular local optimization methods (e.g., the quasi-Newton methods and the conjugate gradient methods) to reach high-precision solutions due to the differentiability of the model. These results further demonstrate that the proposed TSGO algorithm is very efficient and significantly outperforms several popular global optimization algorithms in the literature, improving the best-known solutions for several existing instances in a short computational time. Experimental analyses are conducted to show the influence of several key ingredients of the algorithm on computational performance. History: Accepted by Erwin Pesch, Area Editor for Heuristic Search & Approximation Algorithms. Funding: This work was supported by the National Natural Science Foundation of China [Grants 72122006, 71821001, and 72471100] Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0089 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0089 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0089},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {1018-1043},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {An efficient optimization model and tabu Search–Based global optimization approach for the continuous p-dispersion problem},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fraud detection by integrating multisource heterogeneous presence-only data. <em>IJOC</em>, <em>37</em>(4), 998-1017. (<a href='https://doi.org/10.1287/ijoc.2023.0366'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In credit fraud detection practice, certain fraudulent transactions often evade detection because of the hidden nature of fraudulent behavior. To address this issue, an increasing number of positive-unlabeled (PU) learning techniques have been employed by more and more financial institutions. However, most of these methods are designed for single data sets and do not take into account the heterogeneity of data when they are collected from different sources. In this paper, we propose an integrative PU learning method (I-PU) for pooling information from multiple heterogeneous PU data sets. A novel approach that penalizes group differences is developed to explicitly and automatically identify the cluster structures of coefficients across different data sets, thus offering a plausible interpretation of heterogeneity. Furthermore, we apply a bilevel selection method to detect the sparse structure at both the group level and within-group level. Theoretically, we show that our proposed estimator has the oracle property. Computationally, we design an expectation-maximization (EM) algorithm framework and propose an alternating direction method of multipliers (ADMM) algorithm to solve it. Simulation results show that our proposed method has better numerical performance in terms of variable selection, parameter estimation, and prediction ability. Finally, a real-world application showcases the effectiveness of our method in identifying distinct coefficient clusters and its superior prediction performance compared with direct data merging or separate modeling. This result also offers valuable insights for financial institutions in developing targeted fraud detection systems. History: Accepted by Ram Ramesh, Area Editor for Data Science & Machine Learning. Funding: This work was supported by the National Natural Science Foundation of China [Grants 72071169, 72231005, 72233002, and 72471169], the Fundamental Research Funds for the Central Universities of China [Grant 20720231060], the National Social Science Fund of China [Grant 21&ZD146], and Shuimu Tsinghua Scholar Program. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0366 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0366 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0366},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {998-1017},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Fraud detection by integrating multisource heterogeneous presence-only data},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Domain-independent dynamic programming and constraint programming approaches for assembly line balancing problems with setups. <em>IJOC</em>, <em>37</em>(4), 977-997. (<a href='https://doi.org/10.1287/ijoc.2024.0603'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose domain-independent dynamic programming (DIDP) and constraint programming (CP) models to exactly solve type 1 and type 2 assembly line balancing problem with sequence-dependent setup times (SUALBPs). The goal is to assign tasks to assembly stations and to sequence these tasks within each station while satisfying precedence relations specified between a subset of task pairs. Each task has a given processing time and a setup time dependent on the previous task on the station to which the task is assigned. The sum of the processing and setup times of tasks assigned to each station constitute the station time and the maximum station time is called the cycle time. For the type 1 SUALBP (SUALBP-1), the objective is to minimize the number of stations, given a maximum cycle time. For the type 2 SUALBP (SUALBP-2), the objective is to minimize the cycle time, given the number of stations. On a set of diverse SUALBP instances, experimental results show that our approaches significantly outperform the state-of-the-art mixed integer programming models for SUALBP-1. For SUALBP-2, the DIDP model outperforms the state-of-the-art exact approach based on logic-based Benders decomposition. By closing 76 open instances for SUALBP-2, our results demonstrate the promise of DIDP for solving complex planning and scheduling problems. History: Accepted by Pascal Van Hentenryck, Area Editor for Computational Modeling: Methods and Analysis. Funding: This work was supported by Natural Sciences and Engineering Research Council of Canada [Grant RGPIN-2020-04039]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2024.0603 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2024.0603 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2024.0603},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {977-997},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Domain-independent dynamic programming and constraint programming approaches for assembly line balancing problems with setups},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A peaceman-rachford splitting method for the protein side-chain positioning problem. <em>IJOC</em>, <em>37</em>(4), 962-976. (<a href='https://doi.org/10.1287/ijoc.2023.0094'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper considers the NP-hard protein side-chain positioning ( SCP ) problem, an important final task of protein structure prediction. We formulate the SCP as an integer quadratic program and derive its doubly nonnegative (DNN) (convex) relaxation. Strict feasibility fails for this DNN relaxation. We apply facial reduction to regularize the problem. This gives rise to a natural splitting of the variables. We then use a variation of the Peaceman-Rachford splitting method to solve the DNN relaxation. The resulting relaxation and rounding procedures provide strong approximate solutions. Empirical evidence shows that almost all our instances of this NP-hard SCP problem, taken from the Protein Data Bank, are solved to provable optimality . Our large problems correspond to solving a DNN relaxation with 2,883,601 binary variables to provable optimality. History: Accepted by Paul Brooks, Area Editor for Applications in Biology, Medicine, & Healthcare. Funding: This research was supported by the Natural Sciences and Engineering Research Council of Canada [Grants 50503-10827 and RGPIN-2016-04660]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0094 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0094 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0094},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {962-976},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {A peaceman-rachford splitting method for the protein side-chain positioning problem},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Forecasting urban traffic states with sparse data using hankel temporal matrix factorization. <em>IJOC</em>, <em>37</em>(4), 945-961. (<a href='https://doi.org/10.1287/ijoc.2022.0197'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Forecasting urban traffic states is crucial to transportation network monitoring and management, playing an important role in the decision-making process. Despite the substantial progress that has been made in developing accurate, efficient, and reliable algorithms for traffic forecasting, most existing approaches fail to handle sparsity, high-dimensionality, and nonstationarity in traffic time series and seldom consider the temporal dependence between traffic states. To address these issues, this work presents a Hankel temporal matrix factorization (HTMF) model using the Hankel matrix in the lower dimensional spaces under a matrix factorization framework. In particular, we consider an alternating minimization scheme to optimize the factor matrices in matrix factorization and the Hankel matrix in the lower dimensional spaces simultaneously. To perform traffic state forecasting, we introduce two efficient estimation processes on real-time incremental data, including an online imputation (i.e., reconstruct missing values) and an online forecasting (i.e., estimate future data points). Through extensive experiments on the real-world Uber movement speed data set in Seattle, Washington, we empirically demonstrate the superior forecasting performance of HTMF over several baseline models and highlight the advantages of HTMF for addressing sparsity, nonstationarity, and short time series. History: Accepted by Ram Ramesh, Area Editor for Data Science & Machine Learning. Funding: This research was supported by the Institute for Data Valorisation, the Interuniversity Research Centre on Enterprise Networks, Logistics and Transportation, the National Natural Science Foundation of China [Grants 12371456, 72101049, 72232001], the Sichuan Science and Technology Program [Grant 2024NSFJQ0038], and the Fundamental Research Funds for the Central Universities [Grant DUT23RC(3)045].},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2022.0197},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {945-961},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Forecasting urban traffic states with sparse data using hankel temporal matrix factorization},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Combining precision boosting with LP iterative refinement for exact linear optimization. <em>IJOC</em>, <em>37</em>(4), 933-944. (<a href='https://doi.org/10.1287/ijoc.2023.0409'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article studies a combination of the two state-of-the-art algorithms for the exact solution of linear programs (LPs) over the rational numbers in practice, that is, without any roundoff errors or numerical tolerances. By integrating the method of precision boosting inside an LP iterative refinement loop, the combined algorithm is able to leverage the strengths of both methods: the speed of LP iterative refinement, in particular, in the majority of cases when a double-precision floating-point solver is able to compute approximate solutions with small errors, and the robustness of precision boosting whenever extended levels of precision become necessary. We compare the practical performance of the resulting algorithm with both pure methods on a large set of LPs and mixed-integer programs (MIPs). The results show that the combined algorithm solves more instances than a pure LP iterative refinement approach while being faster than pure precision boosting. When embedded in an exact branch-and-cut framework for MIPs, the combined algorithm is able to reduce the number of failed calls to the exact LP solver to zero while maintaining the speed of the pure LP iterative refinement approach. History: Accepted by Antonio Frangioni, Area Editor for Design and Analysis of Algorithms: Continuous. Funding: The work for this article has been conducted within the Research Campus Modal funded by the German Federal Ministry of Education and Research (BMBF) [Grants 05M14ZAM and 05M20ZBM].},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0409},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {933-944},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Combining precision boosting with LP iterative refinement for exact linear optimization},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Pairwise stability in weighted network formation games: Selection and computation. <em>IJOC</em>, <em>37</em>(4), 917-932. (<a href='https://doi.org/10.1287/ijoc.2024.0546'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper is concerned with the selection and computation of pairwise stable networks when agents have differentiable and concave utility functions. We show that a pairwise stable network can be obtained by finding a Nash equilibrium of a noncooperative game played by the nodes and links in the network. Based on this observation, we introduce a logarithmic tracing procedure and a path-following algorithm for network formation games. We apply the algorithm to several models in the literature and make comparisons with two existing algorithms: a path-following algorithm based on the linear tracing procedure (LinTP) and a decompose and exhaustive search method (DaE). Numerical results indicate that the proposed method is more than four times as efficient as LinTP. Although DaE demonstrates exceptional efficiency for small-scale problems, our method outperforms it significantly for large-scale problems, where DaE may fail to find a solution. We also show that the decomposition technique of DaE can be used to further accelerate our algorithm for a special class of problems. History: Accepted by Antonio Frangioni, Area Editor for Design & Analysis of Algorithms–Continuous. Funding: This work was supported in part by the National Natural Science Foundation of China [Grants 12201289, 12122107, and 72394363/72394360], the Natural Science Foundation of Jiangsu Province [Grant BK20220754], the Guangdong Basic and Applied Basic Research Foundation [Grant 2021A1515110207], the Young Elite Scientists Sponsorship Program by CAST [Grant 2023QNRC001], and the Open Research Fund from the Guangdong Provincial Key Laboratory of Big Data Computing [Grant B10120210117-OF05]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2024.0546 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2024.0546 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2024.0546},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {917-932},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Pairwise stability in weighted network formation games: Selection and computation},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deep stacking kernel machines for the data-driven multi-item, one-warehouse, multiretailer problems with backlog and lost sales. <em>IJOC</em>, <em>37</em>(4), 894-916. (<a href='https://doi.org/10.1287/ijoc.2022.0365'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The data-driven, multi-item, one-warehouse, multiretailer (OWMR) problem is examined by leveraging historical data and using machine learning methods to improve the ordering decisions in a two-echelon supply chain. A deep stacking kernel machine (DSKM) and its adaptive reweighting extension (ARW-DSKM), fusing deep learning and support vector machines, are developed for the data-driven, multi-item OWMR problems with backlog and lost sales. Considering the temporal network structure and the constraints connecting the subproblems for each item and each retailer, a Lagrange relaxation–based, trilevel, optimization algorithm and a greedy heuristic with good theoretical properties are developed to train the proposed DSKM and ARW-DSKM at acceptable computational costs. Empirical studies are conducted on two retail data sets, and the performances of the proposed methods and some benchmark methods are compared. The DSKM and the ARW-DSKM obtained the best results among the proposed and benchmark methods for the applications of ordering decisions with and without censored demands and with and without new items. Moreover, the implications in selecting suitable, that is, prediction-then-optimization and joint-prediction-and-optimization, frameworks, models/algorithms, and features are investigated. History: Accepted by Ram Ramesh, Area Editor for Data Science and Machine Learning. Funding: This work was supported by the National Natural Science Foundation of China [Grant 72371062]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2022.0365 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2022.0365 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2022.0365},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {894-916},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Deep stacking kernel machines for the data-driven multi-item, one-warehouse, multiretailer problems with backlog and lost sales},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Clustering then estimation of spatio-temporal self-exciting processes. <em>IJOC</em>, <em>37</em>(4), 874-893. (<a href='https://doi.org/10.1287/ijoc.2022.0351'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose a new estimation procedure for general spatio-temporal point processes that include a self-exciting feature. Estimating spatio-temporal self-exciting point processes with observed data is challenging, partly because of the difficulty in computing and optimizing the likelihood function. To circumvent this challenge, we employ a Poisson cluster representation for spatio-temporal self-exciting point processes to simplify the likelihood function and develop a new estimation procedure called “clustering-then-estimation” (CTE), which integrates clustering algorithms with likelihood-based estimation methods. Compared with the widely used expectation-maximization (EM) method, our approach separates the cluster structure inference of the data from the model selection. This has the benefit of reducing the risk of model misspecification. Our approach is computationally more efficient because it does not need to recursively solve optimization problems, which would be needed for EM. We also present asymptotic statistical results for our approach as theoretical support. Experimental results on several synthetic and real data sets illustrate the effectiveness of the proposed CTE procedure. History: Accepted by Ram Ramesh, Area Editor for Data Science & Machine Learning. Funding: J. Anderson is supported by NSF [Grant ECCS-2144634]. R. Righter is supported by the Ron Wolff Chaired Professorship. Z. Zheng is supported by NSF [Grant DMS-2220537]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2022.0351 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2022.0351 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2022.0351},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {874-893},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Clustering then estimation of spatio-temporal self-exciting processes},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Decision making under cumulative prospect theory: An alternating direction method of multipliers. <em>IJOC</em>, <em>37</em>(4), 856-873. (<a href='https://doi.org/10.1287/ijoc.2023.0243'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes a novel numerical method for solving the problem of decision making under cumulative prospect theory (CPT), where the goal is to maximize utility subject to practical constraints, assuming only finite realizations of the associated distribution are available. Existing methods for CPT optimization rely on particular assumptions that may not hold in practice. To overcome this limitation, we present the first numerical method with a theoretical guarantee for solving CPT optimization using an alternating direction method of multipliers (ADMM). One of its subproblems involves optimization with the CPT utility subject to a chain constraint, which presents a significant challenge. To address this, we develop two methods for solving this subproblem. The first method uses dynamic programming, whereas the second method is a modified version of the pooling-adjacent-violators algorithm that incorporates the CPT utility function. Moreover, we prove the theoretical convergence of our proposed ADMM method and the two subproblem-solving methods. Finally, we conduct numerical experiments to validate our proposed approach and demonstrate how CPT’s parameters influence investor behavior, using real-world data. History: Accepted by Antonio Frangioni, Area Editor for Design & Analysis of Algorithms: Continuous. Funding: This research was supported by the National Natural Science Foundation of China [Grants 12171100, 71971083, and 72171138], the Natural Science Foundation of Shanghai [Grant 22ZR1405100], the Major Program of the National Natural Science Foundation of China [Grants 72394360, 72394364], the Program for Innovative Research Team of Shanghai University of Finance and Economics [Grant 2020110930], Fundamental Research Funds for the Central Universities, and the Open Research Fund of Key Laboratory of Advanced Theory and Application in Statistics and Data Science, Ministry of Education, East China Normal University. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0243 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0243 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0243},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {856-873},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Decision making under cumulative prospect theory: An alternating direction method of multipliers},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Production planning under demand and endogenous supply uncertainty. <em>IJOC</em>, <em>37</em>(4), 831-855. (<a href='https://doi.org/10.1287/ijoc.2023.0067'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We study the problem of determining how much finished goods inventory to source from different capacitated facilities in order to maximize profits resulting from sales of such inventory. We consider a problem wherein there is uncertainty in demand for finished goods inventory and production yields at facilities. Further, we consider that uncertainty in production yields is endogenous, as it depends on both the facilities where a product is produced and the volumes produced at those facilities. We model the problem as a two stage stochastic program and propose an exact, Benders-based algorithm for solving instances of the problem. We prove the correctness of the algorithm and with an extensive computational study demonstrate that it outperforms known benchmarks. Finally, we establish the value in modeling uncertainty in both demands and production yields. History: Accepted by Andrea Lodi, Area Editor for Design & Analysis of Algorithms–Discrete. Supplemental Material: Software that implements the algorithms found in this paper, as well as the instances used in the computational study, can be found at Hewitt and Pantuso (2024) . The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0067 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0067 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0067},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {831-855},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Production planning under demand and endogenous supply uncertainty},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The electric vehicle routing and overnight charging scheduling problem on a multigraph. <em>IJOC</em>, <em>37</em>(4), 808-830. (<a href='https://doi.org/10.1287/ijoc.2023.0404'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the electric vehicle (EV) routing and overnight charging scheduling problem, a fleet of EVs must serve the demand of a set of customers with time windows. The problem consists in finding a set of minimum cost routes and determining an overnight EV charging schedule that ensures the routes’ feasibility. Because (i) travel time and energy consumption are conflicting resources, (ii) the overnight charging operations take considerable time, and (iii) the charging infrastructure at the depot is limited, we model the problem on a multigraph where each arc between two vertices represents a path with a different resource consumption trade-off. To solve the problem, we design a branch-price-and-cut algorithm that implements state-of-the-art techniques, including the ng -path relaxation, subset-row inequalities, and a specialized labeling algorithm. We report computational results showing that the method solves to optimality instances with up to 50 customers. We also present experiments evaluating the benefits of modeling the problem on a multigraph rather than on the more classical 1-graph representation. History: Accepted by Andra Lodi, Area Editor for Design and Analysis of Algorithms—Discrete. Funding: This work was supported by the Natural Sciences and Engineering Research Council of Canada through the Discovery grants [Grant RGPIN-2023-03791]. It was also partially funded by HEC Montréal through the research professorship on Clean Transportation Analytics. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0404 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0404 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0404},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {808-830},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {The electric vehicle routing and overnight charging scheduling problem on a multigraph},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An efficient node selection policy for monte carlo tree search with neural networks. <em>IJOC</em>, <em>37</em>(4), 785-807. (<a href='https://doi.org/10.1287/ijoc.2023.0307'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Monte Carlo tree search (MCTS) has been gaining increasing popularity, and the success of AlphaGo has prompted a new trend of incorporating a value network and a policy network constructed with neural networks into MCTS, namely, NN-MCTS. In this work, motivated by the shortcomings of the widely used upper confidence bounds applied to trees (UCT) policy, we formulate the node selection problem in NN-MCTS as a multistage ranking and selection (R&S) problem and propose a node selection policy that efficiently allocates a limited search budget to maximize the probability of correctly selecting the best action at the root state. The value and policy networks in NN-MCTS further improve the performance of the proposed node selection policy by providing prior knowledge and guiding the selection of the final action, respectively. Numerical experiments on two board games and an OpenAI task demonstrate that the proposed method outperforms the UCT policy used in AlphaGo Zero and MuZero, implying the potential of constructing node selection policies in NN-MCTS with R&S procedures. History: Accepted by Bruno Tuffin, Area Editor for Simulation. Funding: This work was supported by the National Natural Science Foundation of China [Grants 72325007, 72250065, and 72022001], and a PKU-Boya Postdoctoral Fellowship 2406396158. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0307 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0307 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0307},
+  journal      = {INFORMS Journal on Computing},
+  month        = {7-8},
+  number       = {4},
+  pages        = {785-807},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {An efficient node selection policy for monte carlo tree search with neural networks},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient project scheduling with autonomous learning opportunities. <em>IJOC</em>, <em>37</em>(3), 761-783. (<a href='https://doi.org/10.1287/ijoc.2023.0107'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider novel project scheduling problems in which the experience gained from completing selected activities can be used to accelerate subsequent activities. Given a set of potential learning opportunities, our model aims to identify the opportunities that result in a maximum reduction of the project makespan when scheduled in sequence. Accounting for the impact of such learning opportunities causes significant complications, due to the cyclic nature of the learning relations and their interference with the precedence network. We propose additive and subtractive algorithms that iteratively reschedule the project using an enhanced topological sorting algorithm. Learning opportunities are integrated, activated, and potentially deactivated in each step by maintaining the acyclicity of the combined precedence and learning network. To illustrate the challenges that arise in this setting, we first consider the special case where activities can learn from at most one other activity. Subsequently, we extend our approach to the general case that admits multiple learning opportunities. We show that our approaches guarantee the construction of an optimal solution in polynomial time. In a computational study using 340 small and large resource-unconstrained PSPlib instances, we analyze the model behavior under various scenarios of learning intensity and learning opportunity. We demonstrate that significant project speedups can be obtained when proactively accounting for learning opportunities. History: Accepted by Pascal van Hentenryck, Area Editor for Computational Modeling: Methods & Analysis. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0107 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0107 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0107},
+  journal      = {INFORMS Journal on Computing},
+  month        = {5-6},
+  number       = {3},
+  pages        = {761-783},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Efficient project scheduling with autonomous learning opportunities},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An efficient scenario reduction method for problems with higher moment coherent risk measures. <em>IJOC</em>, <em>37</em>(3), 743-760. (<a href='https://doi.org/10.1287/ijoc.2022.0375'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we present an efficient scenario reduction method for optimization problems whose objective function is the higher moment coherent risk (HMCR) measures. Compared with existing approaches, our method places greater emphasis on the characteristics of optimization problems. Because the value of HMCR measures only depends on a small subset of scenarios that correspond to high cost or loss, our approach is based mostly on the concept of ineffective scenarios previously proposed in the literature, which entails identifying the scenarios whose removal from the problem results in no change of the optimal value. We test our method on a simple portfolio optimization problem with only nine risky assets and a realistic one with 50 risky assets and cardinality constraints. Results show that our scenario reduction method can yield a more accurate optimal solution and optimal value, along with a smaller reduced-scenario set. Even at the same reduction level, our method continues to outperform the existing scenario reduction methods. Interestingly, the portfolio produced by our method is also more diversified than others. History: Accepted by Pascal Van Hentenryck, Area Editor for Computational Modeling: Methods & Analysis. Funding: This work was supported by the National Natural Science Foundation of China [Grants 71720107002 and U1901223]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2022.0375 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2022.0375 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2022.0375},
+  journal      = {INFORMS Journal on Computing},
+  month        = {5-6},
+  number       = {3},
+  pages        = {743-760},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {An efficient scenario reduction method for problems with higher moment coherent risk measures},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient nested simulation experiment design via the likelihood ratio method. <em>IJOC</em>, <em>37</em>(3), 723-742. (<a href='https://doi.org/10.1287/ijoc.2022.0392'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the nested simulation literature, a common assumption is that the experimenter can choose the number of outer scenarios to sample. This paper considers the case when the experimenter is given a fixed set of outer scenarios from an external entity. We propose a nested simulation experiment design that pools inner replications from one scenario to estimate another scenario’s conditional mean via the likelihood ratio method. Given the outer scenarios, we decide how many inner replications to run at each outer scenario as well as how to pool the inner replications by solving a bilevel optimization problem that minimizes the total simulation effort. We provide asymptotic analyses on the convergence rates of the performance measure estimators computed from the optimized experiment design. Under some assumptions, the optimized design achieves O ( Γ − 1 ) mean squared error of the estimators given simulation budget Γ . Numerical experiments demonstrate that our design outperforms a state-of-the-art design that pools replications via regression. History: Accepted by Bruno Tuffin, Area Editor for Simulation. Funding: This work was supported by the National Science Foundation [Grant CMMI-2045400] and the Natural Sciences and Engineering Research Council of Canada [Grant RGPIN-2018-03755]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2022.0392 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2022.0392 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2022.0392},
+  journal      = {INFORMS Journal on Computing},
+  month        = {5-6},
+  number       = {3},
+  pages        = {723-742},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Efficient nested simulation experiment design via the likelihood ratio method},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Ranking model averaging: Ranking based on model averaging. <em>IJOC</em>, <em>37</em>(3), 703-722. (<a href='https://doi.org/10.1287/ijoc.2023.0257'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ranking problems are commonly encountered in practical applications, including order priority ranking, wine quality ranking, and piston slap noise performance ranking. The responses of these ranking applications are often considered as continuous responses, and there is uncertainty on which scoring function is used to model the responses. In this paper, we address the scoring function uncertainty of continuous response ranking problems by proposing a ranking model averaging (RMA) method. With a set of candidate models varied by scoring functions, RMA assigns weights for each model determined by a K -fold crossvalidation criterion based on pairwise loss. We provide two main theoretical properties for RMA. First, we prove that the averaging ranking predictions of RMA are asymptotically optimal in achieving the lowest possible ranking risk. Second, we provide a bound on the difference between the empirical RMA weights and theoretical optimal ones, and we show that RMA weights are consistent. Simulation results validate RMA superiority over competing methods in reducing ranking risk. Moreover, when applied to empirical examples—order priority, wine quality, and piston slap noise—RMA shows its effectiveness in building accurate ranking systems. History: Accepted by Ram Ramesh, Area Editor for Data Science & Machine Learning. Funding: This research was supported by the Beijing Municipal Natural Science Foundation [Grant 1222002], the National Natural Science Foundation of China [Grants 12071457, 12201018, 12301364, 71925007, 72091212, and 72273120], National Quality Infrastructure [Grant 2022YFF0609903], the Chinese Academy of Sciences Project for Young Scientists in Basic Research [Grant YSBR-008], and the Natural Science Foundation of Anhui Province [Grant 2308085QA09]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0257 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0257 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0257},
+  journal      = {INFORMS Journal on Computing},
+  month        = {5-6},
+  number       = {3},
+  pages        = {703-722},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Ranking model averaging: Ranking based on model averaging},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Controlling homophily in social network regression analysis by machine learning. <em>IJOC</em>, <em>37</em>(3), 684-702. (<a href='https://doi.org/10.1287/ijoc.2022.0287'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Across social science disciplines, empirical studies related to social networks have become the most popular research subjects in recent years. A frequently examined topic within these studies is the estimation of peer influence while controlling for homophily effects. However, although researchers may have access to all observable homophily variables, there is scarce literature addressing latent homophily effects stemming from unobservable features. Recent endeavors have demonstrated the efficacy of node embeddings derived from network structure in controlling latent homophily. Inspired by the network embedding research, this study introduces two methods that integrate node embeddings to better control latent homophily, particularly the nonlinear latent homophily effect. The first method uses double machine learning in the partially linear regression literature to alleviate estimation bias. The second method estimates peer influence effects directly by a novel neural network model. Our experimentation results show that our approaches outperform existing estimators in reducing the omitted variable bias due to homophily effects in network regression models. Theoretical analysis of two new estimation methods is also provided in this paper. History: Accepted by Ram Ramesh, Area Editor for Data Science & Machine Learning. Funding: This research is supported by the National Research Foundation, Singapore under its Industry Alignment Fund - Pre-positioning (IAF-PP) Funding Initiative [Grant A-0003504-02-00]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2022.0287 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2022.0287 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2022.0287},
+  journal      = {INFORMS Journal on Computing},
+  month        = {5-6},
+  number       = {3},
+  pages        = {684-702},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Controlling homophily in social network regression analysis by machine learning},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Computing optimal strategies for a search game in discrete locations. <em>IJOC</em>, <em>37</em>(3), 666-683. (<a href='https://doi.org/10.1287/ijoc.2023.0155'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Consider a two-person zero-sum search game between a hider and a searcher. The hider hides among n discrete locations, and the searcher successively visits individual locations until finding the hider. Known to both players, a search at location i takes t i time units and detects the hider—if hidden there—independently with probability α i , for i = 1 , … , n . The hider aims to maximize the expected time until detection, whereas the searcher aims to minimize it. We present an algorithm to compute an optimal strategy for each player. We demonstrate the algorithm’s efficiency in a numerical study, in which we also study the characteristics of the optimal hiding strategy. History: Accepted by Andrea Lodi, Area Editor for Design & Analysis of Algorithms—Discrete. Funding: J. Clarkson is grateful for the support of the Engineering & Physical Sciences Research Council STOR-i Centre for Doctoral Training at Lancaster University [Grant EP/L015692/1]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0155 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0155 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0155},
+  journal      = {INFORMS Journal on Computing},
+  month        = {5-6},
+  number       = {3},
+  pages        = {666-683},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Computing optimal strategies for a search game in discrete locations},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Machine learning for K-adaptability in two-stage robust optimization. <em>IJOC</em>, <em>37</em>(3), 644-665. (<a href='https://doi.org/10.1287/ijoc.2022.0314'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Two-stage robust optimization problems constitute one of the hardest optimization problem classes. One of the solution approaches to this class of problems is K -adaptability. This approach simultaneously seeks the best partitioning of the uncertainty set of scenarios into K subsets and optimizes decisions corresponding to each of these subsets. In a general case, it is solved using the K -adaptability branch-and-bound algorithm, which requires exploration of exponentially growing solution trees. To accelerate finding high-quality solutions in such trees, we propose a machine learning-based node selection strategy. In particular, we construct a feature engineering scheme based on general two-stage robust optimization insights, which allows us to train our machine learning tool on a database of resolved branch-and-bound trees and to apply it as is to problems of different sizes and/or types. We experimentally show that using our learned node selection strategy outperforms a vanilla, random node selection strategy when tested on problems of the same type as the training problems as well as in cases when the K -value or the problem size differs from the training ones. History: Accepted by Andrea Lodi, Area Editor for Design & Analysis of Algorithms—Discrete. Funding: This work was supported by the Nederlandse Organisatie voor Wetenschappelijk Onderzoek [Grants OCENW.GROOT.2019.015 and VI.Veni.191E.035]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2022.0314 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2022.0314 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2022.0314},
+  journal      = {INFORMS Journal on Computing},
+  month        = {5-6},
+  number       = {3},
+  pages        = {644-665},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Machine learning for K-adaptability in two-stage robust optimization},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multiobjective linear ensembles for robust and sparse training of few-bit neural networks. <em>IJOC</em>, <em>37</em>(3), 623-643. (<a href='https://doi.org/10.1287/ijoc.2023.0281'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Training neural networks (NNs) using combinatorial optimization solvers has gained attention in recent years. In low-data settings, the use of state-of-the-art mixed integer linear programming solvers, for instance, has the potential to exactly train an NN while avoiding computing-intensive training and hyperparameter tuning and simultaneously training and sparsifying the network. We study the case of few-bit discrete-valued neural networks, both binarized neural networks (BNNs) whose values are restricted to ±1 and integer-valued neural networks (INNs) whose values lie in the range { − P , … , P } . Few-bit NNs receive increasing recognition because of their lightweight architecture and ability to run on low-power devices: for example, being implemented using Boolean operations. This paper proposes new methods to improve the training of BNNs and INNs. Our contribution is a multiobjective ensemble approach based on training a single NN for each possible pair of classes and applying a majority voting scheme to predict the final output. Our approach results in the training of robust sparsified networks whose output is not affected by small perturbations on the input and whose number of active weights is as small as possible. We empirically compare this BeMi approach with the current state of the art in solver-based NN training and with traditional gradient-based training, focusing on BNN learning in few-shot contexts. We compare the benefits and drawbacks of INNs versus BNNs, bringing new light to the distribution of weights over the { − P , … , P } interval. Finally, we compare multiobjective versus single-objective training of INNs, showing that robustness and network simplicity can be acquired simultaneously, thus obtaining better test performances. Although the previous state-of-the-art approaches achieve an average accuracy of 51.1 % on the Modified National Institute of Standards and Technology data set, the BeMi ensemble approach achieves an average accuracy of 68.4% when trained with 10 images per class and 81.8% when trained with 40 images per class while having up to 75.3% NN links removed. History: Accepted by Andrea Lodi, Area Editor for Design & Analysis of Algorithms—Discrete. Funding: This research was partially supported by the European Union Horizon 2020 Research and Innovation Programme [Grant 952215]. The work of A. M. Bernardelli is supported by a PhD scholarship funded under the “Programma Operativo Nazionale Ricerca e Innovazione” 2014–2020. Supplemental Material: The software that supports the findings of this study is available within the paper as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0281 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0281},
+  journal      = {INFORMS Journal on Computing},
+  month        = {5-6},
+  number       = {3},
+  pages        = {623-643},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Multiobjective linear ensembles for robust and sparse training of few-bit neural networks},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A model-free approach for solving choice-based competitive facility location problems using simulation and submodularity. <em>IJOC</em>, <em>37</em>(3), 603-622. (<a href='https://doi.org/10.1287/ijoc.2023.0280'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper considers facility location problems in which a firm entering a market seeks to open facilities on a subset of candidate locations so as to maximize its expected market share, assuming that customers choose the available alternative that maximizes a random utility function. We introduce a deterministic equivalent reformulation of this stochastic problem as a maximum covering location problem with an exponential number of demand points, each of which is covered by a different set of candidate locations. Estimating the prevalence of these preference profiles through simulation generalizes a sample average approximation method from the literature and results in a maximum covering location problem of manageable size. To solve it, we develop a partial Benders reformulation in which the contribution to the objective of the least influential preference profiles is aggregated and bounded by submodular cuts. This set of profiles is selected by a knee detection method that seeks to identify the best tradeoff between the fraction of the demand that is retained in the master problem and the size of the model. We develop a theoretical analysis of our approach and show that the solution quality it provides for the original stochastic problem, its computational performance, and the automatic profile-retention strategy it exploits are directly connected to the entropy of the preference profiles in the population. Computational experiments on existing and new benchmark sets indicate that our approach dominates the classical sample average approximation method on large instances of the competitive facility location problem, can outperform the best heuristic method from the literature under the multinomial logit model, and achieves state-of-the-art results under the mixed multinomial logit model. We characterize a broader class of problems, which includes assortment optimization, to which the solving methodology and the analyses developed in this paper can be extended. History: Accepted by Andrea Lodi, Area Editor for Design & Analysis of Algorithms—Discrete. Funding: This research was supported by Fonds de Recherche du Québec-Nature et Technologies and Institut de Valorisation des Données through scholarships to R. Legault. E. Frejinger was partially supported by the Canada Research Chair program [Grant 950-232244]. Supplemental Material: The online appendices are available at https://doi.org/10.1287/ijoc.2023.0280 .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0280},
+  journal      = {INFORMS Journal on Computing},
+  month        = {5-6},
+  number       = {3},
+  pages        = {603-622},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {A model-free approach for solving choice-based competitive facility location problems using simulation and submodularity},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exact and approximation algorithms for sparse principal component analysis. <em>IJOC</em>, <em>37</em>(3), 582-602. (<a href='https://doi.org/10.1287/ijoc.2022.0372'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sparse principal component analysis (SPCA) is designed to enhance the interpretability of traditional principal component analysis by optimally selecting a subset of features that comprise the first principal component. Given the NP-hard nature of SPCA, most current approaches resort to approximate solutions, typically achieved through tractable semidefinite programs or heuristic methods. To solve SPCA to optimality, we propose two exact mixed-integer semidefinite programs (MISDPs) and an arbitrarily equivalent mixed-integer linear program. The MISDPs allow us to design an effective branch-and-cut algorithm with closed-form cuts that do not need to solve dual problems. For the proposed mixed-integer formulations, we further derive the theoretical optimality gaps of their continuous relaxations. Besides, we apply the greedy and local search algorithms to solving SPCA and derive their first-known approximation ratios. Our numerical experiments reveal that the exact methods we developed can efficiently find optimal solutions for data sets containing hundreds of features. Furthermore, our approximation algorithms demonstrate both scalability and near-optimal performance when benchmarked on larger data sets, specifically those with thousands of features. History: Accepted by Andrea Lodi, Area Editor for Design & Analysis of Algorithms—Discrete. Funding: This research was supported in part by the Division of Civil, Mechanical and Manufacturing Innovation [Grant 224614], the Division of Computing and Communication Foundations [Grant 2246417], and the Office of Naval Research [Grant N00014-24-1-2066]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2022.0372 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2022.0372 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2022.0372},
+  journal      = {INFORMS Journal on Computing},
+  month        = {5-6},
+  number       = {3},
+  pages        = {582-602},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Exact and approximation algorithms for sparse principal component analysis},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). First-order algorithms for robust optimization problems via convex-concave saddle-point lagrangian reformulation. <em>IJOC</em>, <em>37</em>(3), 557-581. (<a href='https://doi.org/10.1287/ijoc.2022.0200'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robust optimization (RO) is one of the key paradigms for solving optimization problems affected by uncertainty. Two principal approaches for RO, the robust counterpart method and the adversarial approach, potentially lead to excessively large optimization problems. For that reason, first-order approaches, based on online convex optimization, have been proposed as alternatives for the case of large-scale problems. However, existing first-order methods are either stochastic in nature or involve a binary search for the optimal value. We show that this problem can also be solved with deterministic first-order algorithms based on a saddle-point Lagrangian reformulation that avoids both of these issues. Our approach recovers the other approaches’ O ( 1 / ϵ 2 ) convergence rate in the general case and offers an improved O ( 1 / ϵ ) rate for problems with constraints that are affine both in the decision and in the uncertainty. Experiment involving robust quadratic optimization demonstrates the numerical benefits of our approach. History: Accepted by Antonio Frangioni, Area Editor for Design & Analysis of Algorithms–Continuous. Funding: This work was supported by the Nederlandse Organisatie voor Wetenschappelijk Onderzoek [Grant VI.Veni.191E.035] and the Israel Science Foundation [Grant 1460/19]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2022.0200 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2022.0200 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2022.0200},
+  journal      = {INFORMS Journal on Computing},
+  month        = {5-6},
+  number       = {3},
+  pages        = {557-581},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {First-order algorithms for robust optimization problems via convex-concave saddle-point lagrangian reformulation},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Learning hidden markov models with structured transition dynamics. <em>IJOC</em>, <em>37</em>(3), 531-556. (<a href='https://doi.org/10.1287/ijoc.2022.0342'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The hidden Markov model (HMM) provides a natural framework for modeling the dynamic evolution of latent diseases. The unknown probability matrices of HMMs can be learned through the well-known Baum–Welch algorithm, a special case of the expectation-maximization algorithm. In many disease models, the probability matrices possess nontrivial properties that may be represented through a set of linear constraints. In these cases, the traditional Baum–Welch algorithm is no longer applicable because the maximization step cannot be solved by an explicit formula. In this paper, we propose a novel approach to efficiently solve the maximization step problem under linear constraints by providing a Lagrangian dual reformulation that we solve by an accelerated gradient method. The performance of this approach critically depends on devising a fast method to compute the gradient in each iteration. For this purpose, we employ dual decomposition and derive Karush–Kuhn–Tucker conditions to reduce our problem into a set of single variable equations, solved using a simple bisection method. We apply this method to a case study on sports-related concussion and provide an extensive numerical study using simulation. We show that our approach is in orders of magnitude computationally faster and more accurate than other alternative approaches. Moreover, compared with other methods, our approach is far less sensitive with respect to increases in problem size. Overall, our contribution lies in the advancement of accurately and efficiently handling HMM parameter estimation under linear constraints, which comprises a wide range of applications in disease modeling and beyond. History: Accepted by Paul Brooks, Area Editor for Applications in Biology, Medicine, & Healthcare. Funding: This research was funded by [Grant R01DE028283] from the National Institute of Dental and Craniofacial Research, National Institutes of Health. G.-G. Garcia was also funded by the Georgia Clinical & Translational Science Alliance National Institutes of Health award [Grant UL1-TR002378]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2022.0342 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2022.0342 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2022.0342},
+  journal      = {INFORMS Journal on Computing},
+  month        = {5-6},
+  number       = {3},
+  pages        = {531-556},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Learning hidden markov models with structured transition dynamics},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PyJedAI: A library with resolution-related structures and procedures for products. <em>IJOC</em>, <em>37</em>(3), 516-530. (<a href='https://doi.org/10.1287/ijoc.2023.0410'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work presents an open-source Python library, named py J ed AI, which provides functionalities supporting the creation of algorithms related to product entity resolution. Building over existing state-of-the-art resolution algorithms, the tool offers a plethora of important tasks required for processing product data collections. It can be easily used by researchers and practitioners for creating algorithms analyzing products, such as real-time ad bidding, sponsored search, or pricing determination. In essence, it allows users to easily import product data from the possible sources, compare products in order to detect either similar or identical products, generate a graph representation using the products and desired relationships, and either visualize or export the outcome in various forms. Our experimental evaluation on data from well-known online retailers illustrates high accuracy and low execution time for the supported tasks. To the best of our knowledge, this is the first Python package to focus on product entities and provide this range of product entity resolution functionalities. History: Accepted by Ted Ralphs, Area Editor for Software Tools. Funding: This was partially funded by the EU project STELAR (Horizon Europe) [Grant 101070122]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0410 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0410 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0410},
+  journal      = {INFORMS Journal on Computing},
+  month        = {5-6},
+  number       = {3},
+  pages        = {516-530},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {PyJedAI: A library with resolution-related structures and procedures for products},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Microgrid planner: An open-source software platform. <em>IJOC</em>, <em>37</em>(3), 503-515. (<a href='https://doi.org/10.1287/ijoc.2023.0336'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce an open-source software platform for developing microgrid planning tools. Our platform is composed of a computational layer developed in Python; a MySQL database layer; a REST API developed in Flask; a web app front end developed in Flask, HTML templates, and JavaScript; containerized deployment through Docker; and high-performance computing integration using Slurm. Our base capabilities include user accounts with authentication, user-defined distributed energy resource components and microgrids, user uploads of power load data, a core simulation method, and a microgrid sizing method. These capabilities are all integrated into a user-friendly web application, which is designed to be customized and extended. Whereas our platform already includes a useful set of microgrid planning tools, our vision is for it to bridge the active academic analytical modeling research for microgrid planning into deployable software tools that can be readily used by practitioners. In addition to describing our current capabilities, this paper details how our platform design facilitates easy adoption by other researchers developing analytical methods for microgrid planning. History: Accepted by Ted Ralphs, Area Editor for Software Tools. Funding: This research was supported by the NextSTEP Program, sponsored by the Office of Naval Research; by Naval Facilities Engineering Systems Command as part of the Navy Shore Energy Technology Transition and Integration program; and by the Director of Operational Energy, Deputy Assistant Secretary of the U.S. Navy. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0336 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0336 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0336},
+  journal      = {INFORMS Journal on Computing},
+  month        = {5-6},
+  number       = {3},
+  pages        = {503-515},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Microgrid planner: An open-source software platform},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Recognition of meritorious reviewers, 2024. <em>IJOC</em>, <em>37</em>(2), 502. (<a href='https://doi.org/10.1287/ijoc.2025.merits.v37.n2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {All reviewers who contribute their efforts to the INFORMS Journal on Computing are very much appreciated. In 2024, many went beyond the call of duty and submitted reviews that warranted meritorious recognition. These reviews were especially insightful and detailed. The reviewers below were nominated by our editorial team as exemplifying the highest standards of peer review. As we celebrate these reviewers, we will also continue to refine our recognition process to ensure that every individual’s efforts are appropriately acknowledged. We appreciate the entire IJOC community for its work.},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2025.merits.v37.n2},
+  journal      = {INFORMS Journal on Computing},
+  month        = {3-4},
+  number       = {2},
+  pages        = {502},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Recognition of meritorious reviewers, 2024},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An intelligent end-to-end neural architecture search framework for electricity forecasting model development. <em>IJOC</em>, <em>37</em>(2), 480-501. (<a href='https://doi.org/10.1287/ijoc.2023.0034'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent years have witnessed exponential growth in developing deep learning models for time series electricity forecasting in power systems. However, most of the proposed models are designed based on the designers’ inherent knowledge and experience without elaborating on the suitability of the proposed neural architectures. Moreover, these models cannot be self-adjusted to dynamically changed data patterns due to the inflexible design of their structures. Although several recent studies have considered the application of the neural architecture search (NAS) technique for obtaining a network with an optimized structure in the electricity forecasting sector, their training process is computationally expensive and their search strategies are not flexible, indicating that the NAS application in this area is still at an infancy stage. In this study, we propose an intelligent automated architecture search (IAAS) framework for the development of time series electricity forecasting models. The proposed framework contains three primary components, that is, network function–preserving transformation operation, reinforcement learning–based network transformation control, and heuristic network screening, which aim to improve the search quality of a network structure. After conducting comprehensive experiments on two publicly available electricity load data sets and two wind power data sets, we demonstrate that the proposed IAAS framework significantly outperforms the 10 existing models or methods in terms of forecasting accuracy and stability. Finally, we perform an ablation experiment to showcase the importance of critical components in the proposed IAAS framework in improving forecasting accuracy. History: Accepted by Ram Ramesh, Area Editor for Data Science and Machine Learning. Funding: J. Yang, G. Jiang, and Y. Chen were supported by the National Natural Science Foundation of China [Grants 72293562, 72121001, 72101066, 72131005, 71801148, and 72171060]. Y. Chen was supported by the Heilongjiang Natural Science Excellent Youth Fund [YQ2022G004]. Supplemental Material: The software ( Yang et al. 2023 ) that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0034 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0034 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0034},
+  journal      = {INFORMS Journal on Computing},
+  month        = {3-4},
+  number       = {2},
+  pages        = {480-501},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {An intelligent end-to-end neural architecture search framework for electricity forecasting model development},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A fusion pretrained approach for identifying the cause of sarcasm remarks. <em>IJOC</em>, <em>37</em>(2), 465-479. (<a href='https://doi.org/10.1287/ijoc.2022.0285'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sarcastic remarks often appear in social media and e-commerce platforms to express almost exclusively negative emotions and opinions on certain instances, such as dissatisfaction with a purchased product or service. Thus, the detection of sarcasm allows merchants to timely resolve users’ complaints. However, detecting sarcastic remarks is difficult because of its common form of using counterfactual statements. The few studies that are dedicated to detecting sarcasm largely ignore what sparks these sarcastic remarks, which could be because of an empty promise of a merchant’s product description. This study formulates a novel problem of sarcasm cause detection that leverages domain information, dialogue context information, and sarcasm sentences by proposing a pretrained language model-based approach equipped with a novel hybrid multihead fusion-attention mechanism that combines self-attention, target-attention, and a feed-forward neural network. The domain information and the dialogue context information are then interactively fused to obtain the domain-specific dialogue context representation, and bidirectionally enhanced sarcasm-cause pair representations are generated for detecting sarcasm spark. Experimental results on real-world data sets demonstrate the efficacy of the proposed model. The findings of this study contribute to the literature on sarcasm cause detection and provide business value to relevant stakeholders and consumers. History: Accepted by Ram Ramesh, Area Editor for Data Science and Machine Learning. Funding: This work was partially supported by the National Natural Science Foundation of China [Grants 72293575, 62071467, and 62141608] and the Research Grant Council of the Hong Kong Special Administrative Region, China [Grants 11500322 and 11500421]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2022.0285 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2022.0285 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2022.0285},
+  journal      = {INFORMS Journal on Computing},
+  month        = {3-4},
+  number       = {2},
+  pages        = {465-479},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {A fusion pretrained approach for identifying the cause of sarcasm remarks},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient and flexible long-tail recommendation using cosine patterns. <em>IJOC</em>, <em>37</em>(2), 446-464. (<a href='https://doi.org/10.1287/ijoc.2022.0194'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the increasing use of recommender systems in various application domains, many algorithms have been proposed for improving the accuracy of recommendations. Among various dimensions of recommender systems performance, long-tail (niche) recommendation performance remains an important challenge in large part because of the popularity bias of many existing recommendation techniques. In this study, we propose CORE, a cosine pattern–based technique, for effective long-tail recommendation. Comprehensive experimental results compare the proposed approach with a wide variety of classic, widely used recommendation algorithms and demonstrate its practical benefits in accuracy, flexibility, and scalability in addition to the superior long-tail recommendation performance. 1 History: Accepted by Ramaswamy Ramesh, Area Editor for Data Science & Machine Learning. Funding: This work was supported by the National Natural Science Foundation of China [Grants 72031001, 72072091, 72242101]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2022.0194 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2022.0194 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2022.0194},
+  journal      = {INFORMS Journal on Computing},
+  month        = {3-4},
+  number       = {2},
+  pages        = {446-464},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Efficient and flexible long-tail recommendation using cosine patterns},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Robust parallel pursuit for large-scale association network learning. <em>IJOC</em>, <em>37</em>(2), 428-445. (<a href='https://doi.org/10.1287/ijoc.2022.0181'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sparse reduced-rank regression is an important tool to uncover the large-scale response-predictor association network, as exemplified by modern applications such as the diffusion networks, and recommendation systems. However, the association networks recovered by existing methods are either sensitive to outliers or not scalable under the big data setup. In this paper, we propose a new statistical learning method called robust parallel pursuit (ROP) for joint estimation and outlier detection in large-scale response-predictor association network analysis. The proposed method is scalable in that it transforms the original large-scale network learning problem into a set of sparse unit-rank estimations via factor analysis, thus facilitating an effective parallel pursuit algorithm. Furthermore, we provide comprehensive theoretical guarantees including consistency in parameter estimation, rank selection, and outlier detection, and we conduct an inference procedure to quantify the uncertainty of existence of outliers. Extensive simulation studies and two real-data analyses demonstrate the effectiveness and the scalability of the suggested approach. History: Accepted by Ram Ramesh, Area Editor/Data Science & Machine Learning. Funding: This work was supported by the National Key R&D Program of China [Grant 2022YFA1008000], Natural Science Foundation of China [Grants 72071187, 72091212, 71731010, and 71921001], China Postdoctoral Science Foundation [Grant 2023M733402], and Fundamental Research Funds for the Central Universities [Grants WK3470000017, WK2040000027, and WK2040000079]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2022.0181 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2022.0181 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2022.0181},
+  journal      = {INFORMS Journal on Computing},
+  month        = {3-4},
+  number       = {2},
+  pages        = {428-445},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Robust parallel pursuit for large-scale association network learning},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Satisficing approach to on-demand ride matching. <em>IJOC</em>, <em>37</em>(2), 413-427. (<a href='https://doi.org/10.1287/ijoc.2021.0210'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Online ride-hailing platforms have developed into an integral part of the transportation infrastructure in many countries. The primary task of a ride-hailing platform is to match trip requests to drivers in real time. Although both passengers and drivers prefer a prompt pickup to initiate the trips, it is often difficult to find a nearby driver for every passenger. If the driver is far from the pickup point, the passenger may cancel the trip while the driver is heading toward the pickup point. For the platform to be profitable, the trip cancellation rate must be maintained at a low level. We propose a computationally efficient data-driven approach to ride matching, in which a pickup time target is imposed on each trip request and an optimization problem is formulated to maximize the joint probability of all the pickup times meeting the targets. By adjusting pickup time targets individually, this approach may assign more high-value trip requests to nearby drivers, thus boosting the platform’s revenue while maintaining a low cancellation rate. In numerical experiments, the proposed approach outperforms several ride-matching policies used in practice. History: Accepted by Andrea Lodi, Area Editor for Design & Analysis of Algorithms—Discrete. Funding: This work of D. Rong and X. Sun was supported in part by the National Natural Science Foundation of China [Grant 71971165], the National Key Research and Development Program of China [Grant 2021YFB3301801], the MOE Project of Humanities and Social Science of China [Grant 19YJE630002], and the Soft Science Research Program of Shannxi [Grant 2018KRZ005]. The work of S. He was supported in part by the Singapore Ministry of Education Social Science Research Council [Grant MOE2022-SSRTG-029]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2021.0210 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2021.0210 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2021.0210},
+  journal      = {INFORMS Journal on Computing},
+  month        = {3-4},
+  number       = {2},
+  pages        = {413-427},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Satisficing approach to on-demand ride matching},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The terminator: An integration of inner and outer approximations for solving wasserstein distributionally robust chance constrained programs via variable fixing. <em>IJOC</em>, <em>37</em>(2), 381-412. (<a href='https://doi.org/10.1287/ijoc.2023.0299'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a novel approach aimed at enhancing the efficacy of solving both regular and distributionally robust chance constrained programs using an empirical reference distribution. In general, these programs can be reformulated as mixed-integer programs (MIPs) by introducing binary variables for each scenario, indicating whether a scenario should be satisfied. Whereas existing methods have focused predominantly on either inner or outer approximations, this paper bridges this gap by studying a scheme that effectively combines these approximations via variable fixing. By checking the restricted outer approximations and comparing them with the inner approximations, we derive optimality cuts that can notably reduce the number of binary variables by effectively setting them to either one or zero. We conduct a theoretical analysis of variable fixing techniques, deriving an asymptotic closed-form expression. This expression quantifies the proportion of binary variables that should be optimally fixed to zero. Our empirical results showcase the advantages of our approach in terms of both computational efficiency and solution quality. Notably, we solve all the tested instances from literature to optimality, signifying the robustness and effectiveness of our proposed approach. History: Accepted by Andrea Lodi/Design & Analysis of Algorithms — Discrete. Funding: This work was supported by Office of Naval Research [N00014-24-1-2066]; Division of Civil, Mechanical and Manufacturing Innovation [2246414]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0299 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0299 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0299},
+  journal      = {INFORMS Journal on Computing},
+  month        = {3-4},
+  number       = {2},
+  pages        = {381-412},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {The terminator: An integration of inner and outer approximations for solving wasserstein distributionally robust chance constrained programs via variable fixing},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Online integrated production and distribution scheduling: Review and extensions. <em>IJOC</em>, <em>37</em>(2), 360-380. (<a href='https://doi.org/10.1287/ijoc.2022.0305'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As a growing number of manufacturers adopt the make-to-order business mode and a growing number of retailers sell online, we are seeing numerous decision problems that can be modeled as what are known in the literature as integrated production and distribution scheduling (IPDS) problems. In such problems, order processing and delivery must be scheduled jointly in order to achieve an optimal balance between total operational costs and overall customer service. Offline IPDS problems, in which the information about every order is known in advance with certainty, are extensively studied. However, research on online IPDS problems, in which orders arrive randomly with their information unknown until they arrive, is relatively recent but is growing rapidly. In this paper, we first describe several real-world applications to illustrate the importance of studying online IPDS problems from a practical point of view. We then review the existing literature on online IPDS problems with a focus on existing online algorithms for these problems and their theoretical performance. We also derive some new results to fill several gaps left in the literature and discuss possible topics for future research. History: Accepted by Andrea Lodi, Area Editor for Design & Analysis of Algorithms–Discrete. Supplemental Material: The online appendix is available at https://doi.org/10.1287/ijoc.2022.0305 .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2022.0305},
+  journal      = {INFORMS Journal on Computing},
+  month        = {3-4},
+  number       = {2},
+  pages        = {360-380},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Online integrated production and distribution scheduling: Review and extensions},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An enhanced alternating direction method of multipliers-based interior point method for linear and conic optimization. <em>IJOC</em>, <em>37</em>(2), 338-359. (<a href='https://doi.org/10.1287/ijoc.2023.0017'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The alternating-direction-method-of-multipliers-based (ADMM-based) interior point method, or ABIP method, is a hybrid algorithm that effectively combines interior point method (IPM) and first-order methods to achieve a performance boost in large-scale linear optimization. Different from traditional IPM that relies on computationally intensive Newton steps, the ABIP method applies ADMM to approximately solve the barrier penalized problem. However, similar to other first-order methods, this technique remains sensitive to condition number and inverse precision. In this paper, we provide an enhanced ABIP method with multiple improvements. First, we develop an ABIP method to solve the general linear conic optimization and establish the associated iteration complexity. Second, inspired by some existing methods, we develop different implementation strategies for the ABIP method, which substantially improve its performance in linear optimization. Finally, we conduct extensive numerical experiments in both synthetic and real-world data sets to demonstrate the empirical advantage of our developments. In particular, the enhanced ABIP method achieves a 5.8× reduction in the geometric mean of run time on 105 selected linear optimization instances from Netlib, and it exhibits advantages in certain structured problems, such as support vector machine and PageRank. However, the enhanced ABIP method still falls behind commercial solvers in many benchmarks, especially when high accuracy is desired. We posit that it can serve as a complementary tool alongside well-established solvers. History: Accepted by Antonio Frangioni, Area Editor for Design & Analysis of Algorithms—Continuous. Funding: This research was supported by the National Natural Science Foundation of China [Grants 72394360, 72394364, 72394365, 72225009, 72171141, and 72150001] and by the Program for Innovative Research Team of Shanghai University of Finance and Economics. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0017 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0017 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0017},
+  journal      = {INFORMS Journal on Computing},
+  month        = {3-4},
+  number       = {2},
+  pages        = {338-359},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {An enhanced alternating direction method of multipliers-based interior point method for linear and conic optimization},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Transfer reinforcement learning for mixed observability markov decision processes with time-varying interval-valued parameters and its application in pandemic control. <em>IJOC</em>, <em>37</em>(2), 315-337. (<a href='https://doi.org/10.1287/ijoc.2022.0236'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We investigate a novel type of online sequential decision problem under uncertainty, namely mixed observability Markov decision process with time-varying interval-valued parameters (MOMDP-TVIVP). Such data-driven optimization problems with online learning widely have real-world applications (e.g., coordinating surveillance and intervention activities under limited resources for pandemic control). Solving MOMDP-TVIVP is a great challenge as online system identification and reoptimization based on newly observational data are required considering the unobserved states and time-varying parameters. Moreover, for many practical problems, the action and state spaces are intractably large for online optimization. To address this challenge, we propose a novel transfer reinforcement learning (TRL)-based algorithmic approach that ingrates transfer learning (TL) into deep reinforcement learning (DRL) in an offline-online scheme. To accelerate the online reoptimization, we pretrain a collection of promising networks and fine-tune them with newly acquired observational data of the system. The hallmark of our approach comes from combining the strong approximation ability of neural networks with the high flexibility of TL through efficiently adapting the previously learned policy to changes in system dynamics. Computational study under different uncertainty configurations and problem scales shows that our approach outperforms existing methods in solution optimality, robustness, efficiency, and scalability. We also demonstrate the value of fine-tuning by comparing TRL with DRL, in which at least 21% solution improvement can be yielded by TRL with fine-tuning for no more than 0.62% of time spent on pretraining in each period for problem instances with a continuous state-action space of modest dimensionality. A retrospective study on a pandemic control use case in Shanghai, China shows improved decision making via TRL in several public health metrics. Our approach is the first-ever endeavor of employing intensive neural network training in solving Markov decision processes requiring online system identification and reoptimization. History: Accepted by Paul Brooks, Area Editor for Applications in Biology, Medicine, & Healthcare. Funding: This work was supported in part by the National Natural Science Foundation of China [Grants 72371051 and 72201047] to the first and second authors and in part by the National Science Foundation [Grant 1825725] to the third author. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2022.0236 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2022.0236 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2022.0236},
+  journal      = {INFORMS Journal on Computing},
+  month        = {3-4},
+  number       = {2},
+  pages        = {315-337},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Transfer reinforcement learning for mixed observability markov decision processes with time-varying interval-valued parameters and its application in pandemic control},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Coordinating charging request allocation between self-interested navigation service platforms. <em>IJOC</em>, <em>37</em>(2), 293-314. (<a href='https://doi.org/10.1287/ijoc.2022.0269'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Current electric vehicle market trends indicate an increasing adoption rate across several countries. To meet the expected growing charging demand, it is necessary to scale up the current charging infrastructure and to mitigate current reliability deficiencies, for example, due to broken connectors or misreported charging station availability status. However, even within a properly dimensioned charging infrastructure, a risk for local bottlenecks remains if several drivers cannot coordinate their charging station visit decisions. Here, navigation service platforms can optimally balance charging demand over available stations to reduce possible station visit conflicts and increase user satisfaction. Although such fleet-optimized charging station visit recommendations may alleviate local bottlenecks, they can also harm the system if self-interested navigation service platforms seek to maximize their own customers’ satisfaction. To study these dynamics, we model fleet-optimized charging station allocation as a resource allocation game in which navigation platforms constitute players and assign potentially free charging stations to drivers. We show that no pure Nash equilibrium guarantee exists for this game, which motivates us to study VCG mechanisms both in offline and online settings, to coordinate players’ strategies toward a better social outcome. Extensive numerical studies for the city of Berlin show that by coordinating players through VCG mechanisms, the social cost decreases on average by 42% in the online setting and by 52% in the offline setting. History: Accepted by David Alderson, Area Editor for Network Optimization: Algorithms & Applications. Supplemental Material: The online appendix is available at https://doi.org/10.1287/ijoc.2022.0269 .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2022.0269},
+  journal      = {INFORMS Journal on Computing},
+  month        = {3-4},
+  number       = {2},
+  pages        = {293-314},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Coordinating charging request allocation between self-interested navigation service platforms},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Comparisons of two-stage models for flood mitigation of electrical substations. <em>IJOC</em>, <em>37</em>(2), 270-292. (<a href='https://doi.org/10.1287/ijoc.2023.0125'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We compare stochastic programming and robust optimization decision models for informing the deployment of ad hoc flood mitigation measures to protect electrical substations prior to an imminent and uncertain hurricane. In our models, the first stage captures the deployment of a fixed quantity of flood mitigation resources, and the second stage captures the operation of a potentially degraded power grid with the primary goal of minimizing load shed. To model grid operation, we introduce adaptations of the direct current (DC) and linear programming alternating current (LPAC) power flow approximation models that feature relatively complete recourse by way of an indicator variable. We apply our models to a pair of geographically realistic flooding case studies, one based on Hurricane Harvey and the other on Tropical Storm Imelda. We investigate the effect of the mitigation budget, the choice of power flow model, and the uncertainty perspective on the optimal mitigation strategy. Our results indicate the mitigation budget and uncertainty perspective are impactful, whereas choosing between the DC and LPAC power flow models is of little to no consequence. To validate our models, we assess the performance of the mitigation solutions they prescribe in an alternating current (AC) power flow model. History: Accepted by Pascal Van Hentenryck, Area Editor for Computational Modeling: Methods & Analysis. Funding: This work was supported by the Energy Institute, The University of Texas at Austin. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0125 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0125 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0125},
+  journal      = {INFORMS Journal on Computing},
+  month        = {3-4},
+  number       = {2},
+  pages        = {270-292},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Comparisons of two-stage models for flood mitigation of electrical substations},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Models for test cost minimization in database migration. <em>IJOC</em>, <em>37</em>(2), 249-269. (<a href='https://doi.org/10.1287/ijoc.2023.0021'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Database migration is a ubiquitous need faced by enterprises that generate and use vast amounts of data. This is because of database software updates, or it is from changes to hardware, project standards, and other business factors. Migrating a large collection of databases is a way more challenging task than migrating a single database because of the presence of additional constraints. These constraints include capacities of shifts and sizes of databases. In this paper, we present a comprehensive framework that can be used to model database migration problems of different enterprises with customized constraints by appropriately instantiating the parameters of the framework. These parameters are the size of each database, the size of each shift, and the cost of testing each application. Each of these parameters can be either constant or arbitrary. Additionally, the cost of testing an application can be proportional to the number of databases that the application uses. We establish the computational complexities of a number of instantiations of this framework. We present fixed-parameter intractability results for various relevant parameters of the database migration problem. We also provide approximability and inapproximability results as well as lower bounds for the running time of any exact algorithm for the database migration problem. We show that the database migration problem is equivalent to a variation of the classical hypergraph partitioning problem. Our theoretical results also imply new theoretical results for the hypergraph partitioning problem that are interesting in their own right. Finally, we adapt heuristic algorithms devised for the hypergraph partitioning problem to the database migration problem, and we also give experimental results for the adapted heuristics. History: Accepted by Pascal Van Hentenryck, Area Editor for Computational Modeling: Methods & Analysis. Funding: B. Caskurlu and U. U. Acikalin are supported by The Scientific and Technological Research Council of Türkiye [Grant 122E599]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0021 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0021 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0021},
+  journal      = {INFORMS Journal on Computing},
+  month        = {3-4},
+  number       = {2},
+  pages        = {249-269},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Models for test cost minimization in database migration},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Ranking decomposition for the discrete ordered median problem. <em>IJOC</em>, <em>37</em>(2), 230-248. (<a href='https://doi.org/10.1287/ijoc.2023.0059'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Given a set N of size n , a nonnegative, integer-valued distance matrix D of dimensions n × n , an integer p ∈ N and an integer-valued weight vector λ ∈ Z n , the discrete ordered median problem ( DOMP ) consists of selecting a subset C of exactly p points from N (also referred to as the centers ) so as to: 1) assign each point in N to its closest center in C ; 2) rank the resulting distances (between every point and its center) from smallest to largest in a sorted vector that we denote d * ; 3) minimize the scalar product 〈 λ , d * 〉 . The DOMP generalizes several classical location problems such as the p -center, the p -median and the obnoxious median problem. We introduce an exact branch-and-bound algorithm to solve the DOMP . This branch-and-bound decouples the ranking attribute of the problem to form a series of simpler subproblems which are solved using innovative binary search methods. We consider several acceleration techniques such as warm-starts, primal heuristics, variable fixing, and symmetry breaking. We perform a thorough computational analysis and show that the proposed method is competitive against several MIP models from the scientific literature. We also comment on the limitations of our method and propose avenues of future research. History: Accepted by Andrea Lodi, Area Editor for Design & Analysis of Algorithms—Discrete. Funding: This work was supported by the Natural Sciences and Engineering Research Council of Canada [Grants 2017-06106, 2020-06311, and 2021-03327]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2023.0059 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2023.0059 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0059},
+  journal      = {INFORMS Journal on Computing},
+  month        = {3-4},
+  number       = {2},
+  pages        = {230-248},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Ranking decomposition for the discrete ordered median problem},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Stochastic first-order algorithms for constrained distributionally robust optimization. <em>IJOC</em>, <em>37</em>(2), 212-229. (<a href='https://doi.org/10.1287/ijoc.2023.0167'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider distributionally robust optimization (DRO) problems, reformulated as distributionally robust feasibility (DRF) problems, with multiple expectation constraints. We propose a generic stochastic first-order meta-algorithm, where the decision variables and uncertain distribution parameters are each updated separately by applying stochastic first-order methods. We then specialize our results to the case of using two specific versions of stochastic mirror descent (SMD): (i) a novel approximate version of SMD to update the decision variables, and (ii) the bandit mirror descent method to update the distribution parameters in the case of χ 2 -divergence sets. For this specialization, we demonstrate that the total number of iterations is independent of the dimensions of the decision variables and distribution parameters. Moreover, the cost per iteration to update both sets of variables is nearly independent of the dimension of the distribution parameters, allowing for high-dimensional ambiguity sets. Furthermore, we show that the total number of iterations of our algorithm has a logarithmic dependence on the number of constraints. Experiments on logistic regression with fairness constraints, personalized parameter selection in a social network, and the multi-item newsvendor problem verify the theoretical results and show the usefulness of the algorithm, in particular when the dimension of the distribution parameters is large. History: Accepted by Antonio Frangioni, Area Editor for Design & Analysis of Algorithms—Continuous. Funding: This work was supported by the National Science Foundation [Grant 2112533]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/ijoc.2023.0167 .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2023.0167},
+  journal      = {INFORMS Journal on Computing},
+  month        = {3-4},
+  number       = {2},
+  pages        = {212-229},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Stochastic first-order algorithms for constrained distributionally robust optimization},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Solving the minimum sum coloring problem: Alternative models, exact solvers, and metaheuristics. <em>IJOC</em>, <em>37</em>(2), 199-211. (<a href='https://doi.org/10.1287/ijoc.2022.0334'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The minimum sum coloring problem (MSCP), a well-known NP-hard (nondeterministic polynomial time) problem with important practical applications, has been the subject of several papers in recent years. Because of the computational challenge posed by these problems, most solution methods employed are metaheuristics designed to find high-quality solutions with no guarantee of optimality. Exact methods (like Gurobi) and metaheuristic solvers have greatly improved in recent years, enabling high-quality and often optimal solutions to be found to a growing set of MSCPs. Alternative model forms can have a significant impact on the success of exact and heuristic methods in such settings, often providing enhanced performance compared with traditional model forms. In this paper, we introduce several alternative models for MSCP, including the quadratic unconstrained binary problem plus (QUBO-Plus) model for solving problems with constraints that are not folded into the objective function of the basic quadratic unconstrained binary problem (QUBO) model. We provide a computational study using a standard set of test problems from the literature that compares the general purpose exact solver from Gurobi with the leading QUBO metaheuristic solver NGQ and a special solver called Q-Card that belongs to the QUBO-Plus class. Our results highlight the effectiveness of the QUBO and QUBO-Plus models when solved with these metaheuristic solvers on this test bed, showing that the QUBO-Plus solver Q-Card provides the best performance for finding high-quality solutions to these important problems. History: Accepted by Pascal Van Hentenryck, Area Editor for Computational Modeling: Methods & Analysis. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2022.0334 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2022.0334 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2022.0334},
+  journal      = {INFORMS Journal on Computing},
+  month        = {3-4},
+  number       = {2},
+  pages        = {199-211},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Solving the minimum sum coloring problem: Alternative models, exact solvers, and metaheuristics},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Appreciation to reviewers. <em>IJOC</em>, <em>37</em>(1), 189-196. (<a href='https://doi.org/10.1287/ijoc.2025.thx.v37.n1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {On behalf of the Editorial Board, I would like to thank the hundreds of people who acted as reviewers for the INFORMS Journal on Computing during the past year. Reviewers are the cornerstone of the peer review system and give their time and expertise unselfishly. IJOC reviewers, please know you are greatly appreciated! Alice Smith, Editor-in-Chief},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2025.thx.v37.n1},
+  journal      = {INFORMS Journal on Computing},
+  month        = {1-2},
+  number       = {1},
+  pages        = {189-196},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Appreciation to reviewers},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A quantum-inspired bilevel optimization algorithm for the first responder network design problem. <em>IJOC</em>, <em>37</em>(1), 172-188. (<a href='https://doi.org/10.1287/ijoc.2024.0574'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the aftermath of a sudden catastrophe, first responders (FRs) strive to reach and rescue immobile victims. Simultaneously, civilians use the same roads to evacuate, access medical facilities and shelters, or reunite with their relatives via private vehicles. The escalated traffic congestion can significantly hinder critical FR operations. A proposal from the Türkiye Ministry of Transportation and Infrastructure is to allocate a lane on specific road segments exclusively for FR use, mark them clearly, and precommunicate them publicly. For a successful implementation of this proposal, an FR path should exist from designated entry points to each FR demand point in the network. The reserved FR lanes along these paths will be inaccessible to evacuees, potentially increasing evacuation times. Hence, in this study, we aim to determine a subset of links along which an FR lane should be reserved and analyze the resulting evacuation flow under evacuees’ selfish routing behavior. We introduce this problem as the first responder network design problem (FRNDP) and formulate it as a mixed-integer nonlinear program. To efficiently solve FRNDP, we introduce a novel bilevel nested heuristic, the Graver augmented multiseed algorithm (GAMA) within GAMA, called GAGA. We test GAGA on synthetic graph instances of various sizes as well as scenarios related to a potential Istanbul earthquake. Our comparisons with a state-of-the-art exact algorithm for network design problems demonstrate that GAGA offers a promising alternative approach and highlights the need for further exploration of quantum-inspired computing to tackle complex real-world problems. History: Accepted by Giacomo Nannicini, Area Editor for Quantum Computing and Operations Research. Accepted for Special Issue. Funding: S. Tayur and A. Tenneti acknowledge Raytheon BBN (RTX-BBN) for its support through a Carnegie Mellon University-BBN contract as part of a Defense Advanced Research Projects Agency project on quantum-inspired classical computing. A. Karahalios is supported by the National Science Foundation Graduate Research Fellowship Program [Grants DGE1745016, DGE2140739]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2024.0574 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2024.0574 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2024.0574},
+  journal      = {INFORMS Journal on Computing},
+  month        = {1-2},
+  number       = {1},
+  pages        = {172-188},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {A quantum-inspired bilevel optimization algorithm for the first responder network design problem},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the instance dependence of parameter initialization for the quantum approximate optimization algorithm: Insights via instance space analysis. <em>IJOC</em>, <em>37</em>(1), 146-171. (<a href='https://doi.org/10.1287/ijoc.2024.0564'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The quantum approximate optimization algorithm (QAOA) tackles combinatorial optimization problems in a quantum computing context, where achieving globally optimal and exact solutions is not always feasible because of classical computational constraints or problem complexity. The performance of QAOA generally depends on finding sufficiently good parameters that facilitate competitive approximate solutions. However, this is fraught with challenges, such as “barren plateaus,” making the search for effective parameters a nontrivial endeavor. More recently, the question of whether such an optimal parameter search is even necessary has been posed, with some studies showing that optimal parameters tend to be concentrated on certain values for specific types of problem instances. However, these existing studies have only examined specific instance classes of Maximum Cut, so it is uncertain if the claims of instance independence apply to a diverse range of instances. In this paper, we use instance space analysis to study QAOA parameter initialization strategies for the first time, providing a comprehensive study of how instance characteristics affect the performance of initialization strategies across a diverse set of graph types and weight distributions. Unlike previous studies that focused on specific graph classes (e.g., d -regular or Erdős–Rényi), our work examines a much broader range of instance types, revealing insights about parameter transfer between different graph classes. We introduce and evaluate a new initialization strategy, quantum instance-based parameter initialization, that leverages instance-specific information, demonstrating its effectiveness across various instance types. Our analysis at higher QAOA depths ( p = 15) provides insights into the effectiveness of different initialization strategies beyond the low-depth circuits typically studied. History: Accepted by Giacomo Nannicini, Area Editor for Quantum Computing and Operations Research. This article is accepted for Special Issue. Funding: This research was supported by the Australian Research Council [Grant IC200100009 for the Australian Research Council Training Centre in Optimization Technologies, Integrated Methodologies and Applications]. V. Katial is supported by The University of Melbourne [Research Training Program Scholarship]. The authors gratefully acknowledge the information technology infrastructure support provided by The University of Melbourne’s Research Computing Services and the Petascale Campus Initiative. This research was also supported by The University of Melbourne through the establishment of the IBM Quantum Network Hub at the university. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2024.0564 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2024.0564 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2024.0564},
+  journal      = {INFORMS Journal on Computing},
+  month        = {1-2},
+  number       = {1},
+  pages        = {146-171},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {On the instance dependence of parameter initialization for the quantum approximate optimization algorithm: Insights via instance space analysis},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Two-stage estimation and variance modeling for latency-constrained variational quantum algorithms. <em>IJOC</em>, <em>37</em>(1), 125-145. (<a href='https://doi.org/10.1287/ijoc.2024.0575'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The quantum approximate optimization algorithm (QAOA) has enjoyed increasing attention in noisy, intermediate-scale quantum computing with its application to combinatorial optimization problems. QAOA has the potential to demonstrate a quantum advantage for NP-hard combinatorial optimization problems. As a hybrid quantum-classical algorithm, the classical component of QAOA resembles a simulation optimization problem in which the simulation outcomes are attainable only through a quantum computer. The simulation that derives from QAOA exhibits two unique features that can have a substantial impact on the optimization process: (i) the variance of the stochastic objective values typically decreases in proportion to the optimality gap, and (ii) querying samples from a quantum computer introduces an additional latency overhead. In this paper, we introduce a novel stochastic trust-region method derived from a derivative-free, adaptive sampling trust-region optimization method intended to efficiently solve the classical optimization problem in QAOA by explicitly taking into account the two mentioned characteristics. The key idea behind the proposed algorithm involves constructing two separate local models in each iteration: a model of the objective function and a model of the variance of the objective function. Exploiting the variance model allows us to restrict the number of communications with the quantum computer and also helps navigate the nonconvex objective landscapes typical in QAOA optimization problems. We numerically demonstrate the superiority of our proposed algorithm using the SimOpt library and Qiskit when we consider a metric of computational burden that explicitly accounts for communication costs. History: Accepted by Giacomo Nannicini, Area Editor for Quantum Computing and Operations Research. Accepted for Special Issue. Funding: This material is based upon work supported by the U.S. Department of Energy, Office of Science, National Quantum Information Science Research Centers and the Office of Advanced Scientific Computing Research, Accelerated Research for Quantum Computing program under contract number DE-AC02-06CH11357. Y. Ha and S. Shashaani also gratefully acknowledge the U.S. National Science Foundation Division of Civil, Mechanical and Manufacturing Innovation Grant CMMI-2226347 and the U.S. Office of Naval Research [Grant N000142412398]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2024.0575 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2024.0575 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2024.0575},
+  journal      = {INFORMS Journal on Computing},
+  month        = {1-2},
+  number       = {1},
+  pages        = {125-145},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Two-stage estimation and variance modeling for latency-constrained variational quantum algorithms},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). QHDOPT: A software for nonlinear optimization with quantum hamiltonian descent. <em>IJOC</em>, <em>37</em>(1), 107-124. (<a href='https://doi.org/10.1287/ijoc.2024.0587'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We develop an open-source, end-to-end software (named QHDOPT), which can solve nonlinear optimization problems using the quantum Hamiltonian descent (QHD) algorithm. QHDOPT offers an accessible interface and automatically maps tasks to various supported quantum backends (i.e., quantum hardware machines). These features enable users, even those without prior knowledge or experience in quantum computing, to utilize the power of existing quantum devices for nonlinear and nonconvex optimization tasks. In its intermediate compilation layer, QHDOPT employs SimuQ, an efficient interface for Hamiltonian-oriented programming, to facilitate multiple algorithmic specifications and ensure compatible cross-hardware deployment. The detailed documentation of QHDOPT is available at https://github.com/jiaqileng/QHDOPT . History: Accepted by Giacomo Nannicini, Area Editor for Quantum Computing and Operations Research. Accepted for Special Issue. Funding: This work was supported by the U.S. Department of Energy’s Advanced Research Projects Agency–Energy [Grant DE-SC0020273], the Alfred P. Sloan Foundation, the Simons Foundation [Simons Investigator Award 825053], the Simons Quantum Postdoctoral Fellowship, the National Science Foundation [Grants CCF-1816695, CCF-1942837, and ECCS-2045978], the Unitary Fund, and the Air Force Office of Scientific Research [Grant FA95502110051]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2024.0587 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2024.0587 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2024.0587},
+  journal      = {INFORMS Journal on Computing},
+  month        = {1-2},
+  number       = {1},
+  pages        = {107-124},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {QHDOPT: A software for nonlinear optimization with quantum hamiltonian descent},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Binary quantum control optimization with uncertain hamiltonians. <em>IJOC</em>, <em>37</em>(1), 86-106. (<a href='https://doi.org/10.1287/ijoc.2024.0560'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Optimizing the controls of quantum systems plays a crucial role in advancing quantum technologies. The time-varying noises in quantum systems and the widespread use of inhomogeneous quantum ensembles raise the need for high-quality quantum controls under uncertainties. In this paper, we consider a stochastic discrete optimization formulation of a discretized binary optimal quantum control problem involving Hamiltonians with predictable uncertainties. We propose a sample-based reformulation that optimizes both risk-neutral and risk-averse measurements of control policies, and solve these with two gradient-based algorithms using sum-up-rounding approaches. Furthermore, we discuss the differentiability of the objective function and prove upper bounds of the gaps between the optimal solutions to binary control problems and their continuous relaxations. We conduct numerical simulations on various sized problem instances based on two applications of quantum pulse optimization; we evaluate different strategies to mitigate the impact of uncertainties in quantum systems. We demonstrate that the controls of our stochastic optimization model achieve significantly higher quality and robustness compared with the controls of a deterministic model. History: Accepted by Giacomo Nannicini, Area Editor for Quantum Computing and Operations Research. Accepted for Special Issue. Funding: This work was supported by the US Department of Energy, Advanced Scientific Computing Research [Grants DE-AC02-06CH11357, DE-SC0018018]; Defense Sciences Office, DARPA [Grant IAA-8839-annex-130]; the US National Science Foundation, Division of Civil, Mechanical and Manufacturing Innovation [Grant 2041745]; and the US National Aeronautics and Space Administration (NASA) Ames Research Center [Grant 80ARC020D0010]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2024.0560 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2024.0560 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2024.0560},
+  journal      = {INFORMS Journal on Computing},
+  month        = {1-2},
+  number       = {1},
+  pages        = {86-106},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Binary quantum control optimization with uncertain hamiltonians},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A novel noise-aware classical optimizer for variational quantum algorithms. <em>IJOC</em>, <em>37</em>(1), 63-85. (<a href='https://doi.org/10.1287/ijoc.2024.0578'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A key component of variational quantum algorithms (VQAs) is the choice of classical optimizer employed to update the parameterization of an ansatz. It is well recognized that quantum algorithms will, for the foreseeable future, necessarily be run on noisy devices with limited fidelities. Thus, the evaluation of an objective function (e.g., the guiding function in the quantum approximate optimization algorithm (QAOA) or the expectation of the electronic Hamiltonian in variational quantum eigensolver (VQE)) required by a classical optimizer is subject not only to stochastic error from estimating an expected value but also to error resulting from intermittent hardware noise. Model-based derivative-free optimization methods have emerged as popular choices of a classical optimizer in the noisy VQA setting, based on empirical studies. However, these optimization methods were not explicitly designed with the consideration of noise. In this work we adapt recent developments from the “noise-aware numerical optimization” literature to these commonly used derivative-free model-based methods. We introduce the key defining characteristics of these novel noise-aware derivative-free model-based methods that separate them from standard model-based methods. We study an implementation of such noise-aware derivative-free model-based methods and compare its performance on demonstrative VQA simulations to classical solvers packaged in scikit-quant . History: Accepted by Giacomo Nannicini, Area Editor for Quantum Computing and Operations Research. Accepted for Special Issue. Funding: This material is based upon work supported by the U.S. Department of Energy, Office of Science, National Quantum Information Science Research Centers and the Office of Advanced Scientific Computing Research, Accelerated Research for Quantum Computing program under contract number DE-AC02-06CH11357. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2024.0578 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2024.0578 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2024.0578},
+  journal      = {INFORMS Journal on Computing},
+  month        = {1-2},
+  number       = {1},
+  pages        = {63-85},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {A novel noise-aware classical optimizer for variational quantum algorithms},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A new multicommodity network flow model and branch and cut for optimal quantum boolean circuit synthesis. <em>IJOC</em>, <em>37</em>(1), 42-62. (<a href='https://doi.org/10.1287/ijoc.2024.0562'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study introduces a new optimization model and a branch-and-cut approach for synthesizing optimal quantum circuits for reversible Boolean functions, which are pivotal components in quantum algorithms. Although heuristic algorithms have been extensively explored for quantum circuit synthesis, research on exact counterparts remains relatively limited. However, the need to design quantum circuits with guaranteed optimality is increasing, especially for improving computational fidelity on noisy intermediate-scale quantum devices. This study presents mathematical optimization as a viable option for optimal synthesis, with the potential to accommodate practical considerations arising in fast-evolving quantum technologies. We set a demonstrative problem to implement reversible Boolean functions using high-level gates known as multiple control Toffoli gates while minimizing a technology-based proxy called quantum cost—the number of low-level gates used to realize each high-level gate. To address this problem, we propose a discrete optimization model based on a multicommodity network and discuss potential future variations at an abstract level to incorporate technical considerations. A customized branch and cut is then developed upon different aspects of our model, including polyhedron integrality, surrogate constraints, and variable prioritization. Our experiments demonstrate the robustness of the proposed approach in finding cost-optimal circuits for all benchmark instances within a two-hour time frame. Furthermore, we present interesting intuitions from these experiments and compare our computational results with relevant studies, highlighting newly discovered circuits with the lowest quantum costs reported in this paper. History: Accepted by Giacomo Nannicini, Area Editor for Quantum Computing. This paper has been accepted for the INFORMS Journal on Computing Special Issue on Quantum Computing. Funding: This research was supported by the Ministry of Science and Information and Communication Technology, South Korea [Grants 2017R1E1A1A0307098814 and 2020R1A4A307986411]. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2024.0562 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2024.0562 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2024.0562},
+  journal      = {INFORMS Journal on Computing},
+  month        = {1-2},
+  number       = {1},
+  pages        = {42-62},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {A new multicommodity network flow model and branch and cut for optimal quantum boolean circuit synthesis},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimized noise suppression for quantum circuits. <em>IJOC</em>, <em>37</em>(1), 22-41. (<a href='https://doi.org/10.1287/ijoc.2024.0551'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Quantum computation promises to advance a wide range of computational tasks. However, current quantum hardware suffers from noise and is too small for error correction. Thus, accurately utilizing noisy quantum computers strongly relies on noise characterization, mitigation, and suppression. Crucially, these methods must also be efficient in terms of their classical and quantum overhead. Here, we efficiently characterize and mitigate crosstalk noise, which is a severe error source in, for example, cross-resonance based superconducting quantum processors. For crosstalk characterization, we develop a simplified measurement experiment. Furthermore, we analyze the problem of optimal experiment scheduling and solve it for common hardware architectures. After characterization, we mitigate noise in quantum circuits by a noise-aware qubit routing algorithm. Our integer programming algorithm extends previous work on optimized qubit routing by swap insertion. We incorporate the measured crosstalk errors in addition to other, more easily accessible noise data in the objective function. Furthermore, we strengthen the underlying integer linear model by proving a convex hull result about an associated class of polytopes, which has applications beyond this work. We evaluate the proposed method by characterizing crosstalk noise for two chips with up to 127 qubits and leverage the resulting data to improve the approximation ratio of the Quantum Approximate Optimization Algorithm by up to 10% compared with other established noise-aware routing methods. Our work clearly demonstrates the gains of including noise data when mapping abstract quantum circuits to hardware native ones. History: Accepted by Giacomo Nannicini, Area Editor for Quantum Computing and Operations Research. Accepted for Special Issue on Quantum Computing. Funding: This work was supported by Bavarian state government; Bayerische Staatsministerium für Wirtschaft, Landesentwicklung und Energie. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2024.0551 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2024.0551 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2024.0551},
+  journal      = {INFORMS Journal on Computing},
+  month        = {1-2},
+  number       = {1},
+  pages        = {22-41},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Optimized noise suppression for quantum circuits},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient implementation of interior-point methods for quantum relative entropy. <em>IJOC</em>, <em>37</em>(1), 3-21. (<a href='https://doi.org/10.1287/ijoc.2024.0570'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Quantum relative entropy (QRE) programming is a recently popular and challenging class of convex optimization problems with significant applications in quantum computing and quantum information theory. We are interested in modern interior-point (IP) methods based on optimal self-concordant barriers for the QRE cone. A range of theoretical and numerical challenges associated with such barrier functions and the QRE cones have hindered the scalability of IP methods. To address these challenges, we propose a series of numerical and linear algebraic techniques and heuristics aimed at enhancing the efficiency of gradient and Hessian computations for the self-concordant barrier function, solving linear systems, and performing matrix-vector products. We also introduce and deliberate about some interesting concepts related to QRE such as symmetric quantum relative entropy. We design a two-phase method for performing facial reduction that can significantly improve the performance of QRE programming. Our new techniques have been implemented in the latest version (DDS 2.2) of the software package Domain-Driven Solver (DDS). In addition to handling QRE constraints, DDS accepts any combination of several other conic and nonconic convex constraints. Our comprehensive numerical experiments encompass several parts, including (1) a comparison of DDS 2.2 with Hypatia for the nearest correlation matrix problem, (2) using DDS 2.2 for combining QRE constraints with various other constraint types, and (3) calculating the key rate for quantum key distribution (QKD) channels and presenting results for several QKD protocols. History: Accepted by Giacomo Nannicini, Area Editor for Quantum Computing and Operations Research. Accepted for Special Issue. Funding: This work was supported by the National Science Foundation [Grant CMMI-2347120] and Discovery Grants from the Natural Sciences and Engineering Research Council of Canada. Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2024.0570 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2024.0570 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .},
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2024.0570},
+  journal      = {INFORMS Journal on Computing},
+  month        = {1-2},
+  number       = {1},
+  pages        = {3-21},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Efficient implementation of interior-point methods for quantum relative entropy},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Introduction to the special issue on quantum computing and operations research. <em>IJOC</em>, <em>37</em>(1), 2. (<a href='https://doi.org/10.1287/ijoc.2025.ed.v37.n1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_IJOC},
+  doi          = {10.1287/ijoc.2025.ed.v37.n1},
+  journal      = {INFORMS Journal on Computing},
+  month        = {1-2},
+  number       = {1},
+  pages        = {2},
+  shortjournal = {INFORMS J. Comput.},
+  title        = {Introduction to the special issue on quantum computing and operations research},
+  volume       = {37},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SW</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="sw">SW - 6</h2>
+<ul>
+<li><details>
+<summary>
+(2025). HiHo: A hierarchical and homogenous subgraph learning model for knowledge graph relation prediction. <em>SW</em>, <em>16</em>(5). (<a href='https://doi.org/10.1177_22104968251361290'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Relation prediction in knowledge graphs (KGs) aims to anticipate the connections between entities. While both transductive and inductive models are incorporated for context comprehension, we need to focus on two primary issues. First, these models only collate relations at each layer of the subgraph, overlooking the potential sequential relationship between different layers. Second, these methods overlook the homogeneity of subgraphs, thus impeding their ability to effectively learn the importance of relationships within the subgraphs. To address this challenge, we propose a hierarchical and homogenous subgraph learning model for KG relation prediction (HiHo). Specifically, we adopt a subgraph-to-sequence mechanism to learn the potential semantic associations between layers in the subgraph of a single entity, and thus model the hierarchy of the subgraph. Then, we implement a common preference inference mechanism that assigns higher weights to co-occurrence relations while learning the importance of each relation in the subgraphs of two entities, and thus models the homogeneity of the subgraph. In our study, we sequentially employ induction on each layer of subgraphs pertaining to the two entities for relation prediction. To assess the efficacy of our method, we perform experiments on five publicly available datasets. The results of our experiments demonstrate that our method surpasses the current state-of-the-art baselines in both transductive and inductive settings.},
+  archive      = {J_SW},
+  author       = {Jiangtao Ma and Yuke Ma and Fan Zhang and Yanjun Wang and Xiangyang Luo and Chenliang Li and Yaqiong Qiao},
+  doi          = {10.1177_22104968251361290},
+  journal      = {Semantic Web},
+  month        = {9},
+  number       = {5},
+  shortjournal = {Semantic Web},
+  title        = {HiHo: A hierarchical and homogenous subgraph learning model for knowledge graph relation prediction},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Transformer-based architectures versus large language models in semantic event extraction: Evaluating strengths and limitations. <em>SW</em>, <em>16</em>(5). (<a href='https://doi.org/10.1177_22104968251363759'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Understanding complex societal events reported on the Web, such as military conflicts and political elections, is crucial in digital humanities, computational social science, and news analyses. While event extraction is a well-studied problem in natural language processing (NLP), there remains a gap in semantic event extraction methods that leverage event ontologies for capturing multifaceted events in knowledge graphs. In this article, we aim to compare two paradigms to address this task of semantic event extraction: the fine-tuning of traditional transformer-based models versus the use of large language models (LLMs). We exemplify these paradigms with two newly developed approaches: T-SEE for transformer-based and L-SEE for LLM-based semantic event extraction. We discuss their complementary strengths and shortcomings to understand the needs and solutions required for semantic event extraction. For comparison, both approaches employ the same dual-stage architecture; the first stages focus on multilabel event classification, and the second on relation extraction. While T-SEE utilises a span prediction transformer model, L-SEE prompts an LLM for event classification and relation extraction, providing the potential event classes and properties. We assess the performances of T-SEE and L-SEE on two novel datasets sourced from DBpedia and Wikidata, and we perform an extensive error analysis. Our work makes substantial contributions to (i) the integration of Semantic Web technologies and NLP, particularly in the underexplored domain of semantic event extraction, and (ii) the understanding of how LLMs can further enhance semantic event extraction and what challenges need to be considered in comparison to traditional approaches.},
+  archive      = {J_SW},
+  author       = {Tin Kuculo and Sara Abdollahi and Simon Gottschalk},
+  doi          = {10.1177_22104968251363759},
+  journal      = {Semantic Web},
+  month        = {9},
+  number       = {5},
+  shortjournal = {Semantic Web},
+  title        = {Transformer-based architectures versus large language models in semantic event extraction: Evaluating strengths and limitations},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CaLiGraph: A knowledge graph from wikipedia categories and lists. <em>SW</em>, <em>16</em>(5). (<a href='https://doi.org/10.1177_22104968251361349'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Knowledge graphs (KGs) are increasingly used for solving or supporting tasks such as question answering or recommendation. To achieve a useful performance on such tasks, it is important that the knowledge modeled by KGs is as correct and complete as possible. While this is an elusive goal for many domains, techniques for automated KG construction (AKGC) serve as a means to approach it. Yet, AKGC has many open challenges, like learning expressive ontologies or incorporating long-tail entities. With CaLiGraph, we present a KG automatically constructed from categories and lists in Wikipedia, offering a rich taxonomy with semantic class descriptions and a broad coverage of entities. We describe its extraction framework and provide details about its purpose, resources, usage, and quality. Further, we evaluate the performance of CaLiGraph on downstream tasks and compare it to other popular KGs.},
+  archive      = {J_SW},
+  author       = {Nicolas Heist and Heiko Paulheim},
+  doi          = {10.1177_22104968251361349},
+  journal      = {Semantic Web},
+  month        = {9},
+  number       = {5},
+  shortjournal = {Semantic Web},
+  title        = {CaLiGraph: A knowledge graph from wikipedia categories and lists},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GloSIS: The global soil information system web ontology. <em>SW</em>, <em>16</em>(5). (<a href='https://doi.org/10.1177_22104968251363767'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Established in 2012 by members of the Food and Agriculture Organisation of the United Nations, the Global Soil Partnership (GSP) is a global network of stakeholders promoting sound land and soil management practices towards a sustainable world food system. However, soil survey largely remains a local or regional activity, bound to heterogeneous methods and conventions. Recognising the relevance of global and trans-national policies towards sustainable land management practices, the GSP elected data harmonisation and exchange as one of its key lines of action. Building upon international standards and previous work towards a global soil data ontology, an improved domain model was eventually developed within the GSP, the basis for a Global Soil Information System (GloSIS). This work also identified the Semantic Web as a possible avenue to operationalise the domain model. This article presents the GloSIS web ontology, an implementation of the GloSIS domain model with the Web Ontology Language (OWL). Thoroughly employing a host of Semantic Web standards (Sensor, Observation, Sample, and Actuator ontology (SOSA), Simple Knowledge Organisation System (SKOS), GeoSPARQL, QUDT), GloSIS lays out not only a soil data ontology but also an extensive set of ready-to-use code-lists for soil description and physico-chemical analysis. Various examples are provided on the provision and use of GloSIS-compliant linked data, showcasing the contribution of this ontology to the discovery, exploration, integration and access of soil data.},
+  archive      = {J_SW},
+  author       = {Raul Palma and Bogusz Janiak and Luís M de Sousa and Kathi Schleidt and Tomáš Řezník and Fenny van Egmond and Johan Leenaars and Dimitrios Moshou and Abdul Mounem Mouazen and Peter Wilson and David Medyckyj-Scott and Alistair Ritchie and Yusuf Yigini and Ronald Vargas},
+  doi          = {10.1177_22104968251363767},
+  journal      = {Semantic Web},
+  month        = {9},
+  number       = {5},
+  shortjournal = {Semantic Web},
+  title        = {GloSIS: The global soil information system web ontology},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Algebraic mapping operators for knowledge graph generation. <em>SW</em>, <em>16</em>(5). (<a href='https://doi.org/10.1177_22104968251361350'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advancements in declarative knowledge graph generation have introduced multiple mapping languages and engines, causing a shift in studies towards optimizing the knowledge graph generation process. Although these engines commonly generate the knowledge graphs from heterogeneous data sources, sharing the optimization techniques and features remains challenging due to the lack of formal operational semantics. To address this, we propose a set of algebraic mapping operators that define operational semantics for general mapping processes. This algebra, based on the SPARQL algebra, enables reuse of established definitions and strengthens the link between knowledge graph generation and query engines. To evaluate language independence we translated mapping languages ShExML and the RDF Mapping Language (RML) into our algebraic mapping plan. Our completeness evaluation shows that our algebraic operators cover the operational semantics of RML and partially support ShExML. Additional analysis is required to cover additional features of ShExML such as joining data from two input sources. For performance evaluation, our proof-of-concept algebraic mapping engine exhibits consistent and low memory usage across workloads, getting second place in the Knowledge Graph Construction Workshop's performance challenge. Algebraic mapping operators decouple mapping engines from specific languages, enabling multilingual mapping engines and allowing optimization techniques to be applied independently of the mapping process. This work lays the foundation for theoretical analysis of complexity and expressiveness of mapping languages and enforces consistency in execution semantics of mapping engines. Furthermore, aligning our algebra with SPARQL opens the door to advanced methods such as virtualization for querying heterogeneous data sources.},
+  archive      = {J_SW},
+  author       = {Sitt Min Oo and Ben De Meester and Ruben Taelman and Pieter Colpaert},
+  doi          = {10.1177_22104968251361350},
+  journal      = {Semantic Web},
+  month        = {9},
+  number       = {5},
+  shortjournal = {Semantic Web},
+  title        = {Algebraic mapping operators for knowledge graph generation},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RePlanIT ontology for digital product passports of ICT: Laptops and data servers. <em>SW</em>, <em>16</em>(5). (<a href='https://doi.org/10.1177_22104968251361274'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The increasing digitisation that we have witnessed in the past few years has resulted in increased information and communications technology (ICT) hardware manufacturing, which is not sustainable due to the growing demand for critical materials and the greenhouse emissions associated with it. A solution is transitioning to a circular economy (CE). To facilitate this, boost the data economy and digital innovation, the European Union has introduced digital product passports (DPPs), which should provide information about a product’s lifetime to bring more transparency into supply chains. However, several challenges, namely the lack of findable, accessible, interoperable, reusable ICT and materials data and tools to support its interpretation for decision-making, are present. Utilising ontologies and knowledge graphs is a possible solution. Although the ontology work in the ICT and materials domains has been on the rise, there is a lack of a unified semantic model that can capture the complex, heterogeneous cross-domain data needed for building DPPs of ICT devices such as laptops and data servers. Motivated by this, we present the RePlanIT ontology for ICT DPPs, which captures knowledge on several levels – ICT device, hardware components, materials and the CE itself. RePlanIT’s specification is based on a literature survey, interviews and inputs from domain experts from both industry and academia. The ontology, its utilisation for building a knowledge graph of DPPs of laptops and data servers and its application have been successfully validated in a real-world case focusing on supporting more sustainable ICT procurement in government.},
+  archive      = {J_SW},
+  author       = {Anelia Kurteva and Carlo van der Valk and Kathleen McMahon and Alessandro Bozzon and Ruud Balkenende},
+  doi          = {10.1177_22104968251361274},
+  journal      = {Semantic Web},
+  month        = {9},
+  number       = {5},
+  shortjournal = {Semantic Web},
+  title        = {RePlanIT ontology for digital product passports of ICT: Laptops and data servers},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JMIV</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="jmiv">JMIV - 2</h2>
+<ul>
+<li><details>
+<summary>
+(2025). An adaptively inexact method for bilevel learning using Primal–Dual-style differentiation. <em>JMIV</em>, <em>67</em>(5), 1-15. (<a href='https://doi.org/10.1007/s10851-025-01262-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We consider a bilevel learning framework for learning linear operators. In this framework, the learnable parameters are optimized via a loss function that also depends on the minimizer of a convex optimization problem (denoted lower-level problem). We utilize an iterative algorithm called ‘piggyback’ to compute the gradient of the loss and minimizer of the lower-level problem. Given that the lower-level problem is solved numerically, the loss function and thus its gradient can only be computed inexactly. To estimate the accuracy of the computed hypergradient, we derive an a-posteriori error bound, which provides guides for setting the tolerance for the lower-level problem, as well as the piggyback algorithm. To efficiently solve the upper-level optimization, we also propose an adaptive method for choosing a suitable step size. To illustrate the proposed method, we consider a few learned regularizer problems, such as training an input-convex neural network.},
+  archive      = {J_JMIV},
+  author       = {Bogensperger, Lea and Ehrhardt, Matthias J. and Pock, Thomas and Salehi, Mohammad Sadegh and Wong, Hok Shing},
+  doi          = {10.1007/s10851-025-01262-w},
+  journal      = {Journal of Mathematical Imaging and Vision},
+  month        = {10},
+  number       = {5},
+  pages        = {1-15},
+  shortjournal = {J. Math. Imaging Vis.},
+  title        = {An adaptively inexact method for bilevel learning using Primal–Dual-style differentiation},
+  volume       = {67},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Empirical bayesian image restoration by langevin sampling with a denoising diffusion implicit prior. <em>JMIV</em>, <em>67</em>(5), 1-19. (<a href='https://doi.org/10.1007/s10851-025-01265-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Score-based diffusion methods provide a powerful strategy to solve image restoration tasks by flexibly combining a pre-trained foundational prior model with a likelihood function specified during test time . Such methods are predominantly derived from two stochastic processes: reversing Ornstein–Uhlenbeck, which underpins the celebrated denoising diffusion probabilistic models (DDPM) and denoising diffusion implicit models (DDIM), and the Langevin diffusion process. The solutions delivered by DDPM and DDIM are often remarkably realistic, but they are not always consistent with measurements because of likelihood intractability issues and the associated required approximations. Alternatively, using a Langevin process circumvents the intractable likelihood issue, but usually leads to restoration results of inferior quality. This paper presents a novel and highly computationally efficient image restoration method that carefully embeds a foundational DDPM denoiser within an empirical Bayesian Langevin algorithm, which jointly calibrates key model hyper-parameters as it estimates the model’s posterior mean. Extensive experimental results on three canonical tasks (image deblurring, super-resolution, and inpainting) demonstrate that the proposed approach improves on state-of-the-art strategies both in image estimation accuracy and computing time.},
+  archive      = {J_JMIV},
+  author       = {Kemajou Mbakam, Charlesquin and Giovannelli, Jean-Francois and Pereyra, Marcelo},
+  doi          = {10.1007/s10851-025-01265-7},
+  journal      = {Journal of Mathematical Imaging and Vision},
+  month        = {10},
+  number       = {5},
+  pages        = {1-19},
+  shortjournal = {J. Math. Imaging Vis.},
+  title        = {Empirical bayesian image restoration by langevin sampling with a denoising diffusion implicit prior},
+  volume       = {67},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

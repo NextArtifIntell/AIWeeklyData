@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CMAME</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="cmame">CMAME - 16</h2>
+<ul>
+<li><details>
+<summary>
+(2025). A robust-weighted hybrid nonlinear regression for reliability based topology optimization with multi-source uncertainties. <em>CMAME</em>, <em>447</em>, 118360. (<a href='https://doi.org/10.1016/j.cma.2025.118360'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The computational burden in topology optimization (TO) under probabilistic constraints is a major challenge for both topology optimization and reliability analysis methods. The machine learning method can be applied for controlling the computational burden of inverse TO method for approximating the optimal volume fraction (Vf) which is related to max/min a probabilistic constraint. In this current work a hybrid nonlinear modelling training method is proposed by using the exponential nonlinear function and improved harmony search optimization for approximating the optimal Vf applied in reliability-based TO (RBTO) problems. For improving the accuracy predictions of nonlinear model a weighted training scheme is proposed given based on absolute bi-linear loss function applied as robust learning format. The applied weights given from near optimal constraints computed by Vf and loss function is determined based on two absolute function with different slop as 1 and 0.1. The proposed learning approach for nonlinear function is compared with the results of TO-based bisection under multi-source uncertainties for both accuracy and computational burden through four engineering problems. Results indicated that the proposed robust-weighted hybrid learning method computed by hybrid nonlinear regression and harmony search optimization is strongly improved the computational burden for evaluating the optimal Vf in TO and RBTO problems compared to TO and RBTO using bisection while it is more accurate as the nonlinear regression.},
+  archive      = {J_CMAME},
+  author       = {Shiyuan Yang and Debiao Meng and Mahmoud Alfouneh and Behrooz Keshtegar and Shun-Peng Zhu},
+  doi          = {10.1016/j.cma.2025.118360},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {12},
+  pages        = {118360},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {A robust-weighted hybrid nonlinear regression for reliability based topology optimization with multi-source uncertainties},
+  volume       = {447},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Uncertain constitutive model for metals in the presence of inherent defects. <em>CMAME</em>, <em>447</em>, 118355. (<a href='https://doi.org/10.1016/j.cma.2025.118355'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The constitutive model of metals is one of the most important elements in solid mechanics, as the mechanical behavior at different spatial scales is uncertain, and the constitutive model is inevitably subject to uncertainty of defects. The complexity of metal microstructure, coupled with the high cost of numerical simulation, poses a challenge in establishing the correlation between macro and micro uncertainties in metals. This article proposes a new uncertain constitutive model for hexagonal close packing (HCP) polycrystal, integrating Point defect and dislocation into micro-uncertainty analysis and developing a multiscale framework for calculating the uncertain constitutive model of metal. Building on density functional theory and microcrystalline plasticity theory, interval forms are employed as variables for micro-uncertainty, allowing for accurate quantification of uncertainties in parameters such as initial dislocation density. By constructing a surrogate model for cross-scale uncertainty propagation, the performance envelope of metals can be determined. The framework is then applied to engineering case study of α-phase pure titanium to calculate system responses.},
+  archive      = {J_CMAME},
+  author       = {Jiazheng Zhu and Xiaojun Wang and Yanru Mu},
+  doi          = {10.1016/j.cma.2025.118355},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {12},
+  pages        = {118355},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Uncertain constitutive model for metals in the presence of inherent defects},
+  volume       = {447},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A hybrid flux-preserving finite element for coupled flow deformation: Linear formulation. <em>CMAME</em>, <em>447</em>, 118351. (<a href='https://doi.org/10.1016/j.cma.2025.118351'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate modeling of coupled solid-fluid systems in porous media poses intrinsic computational challenges due to the nonlinear interaction between kinematic fields and fluid transport. Although a wide spectrum of finite element formulations is documented in the literature, the majority are based on principles in which solid displacement and fluid pressure fields are treated as primary unknowns, leading to a saddle point problem, thus requiring the satisfaction of the inf-sup condition to ensure the well-posedness and stability of the mixed formulation. Furthermore, in critical scenarios, such as low permeability or small time steps, numerical instabilities, including pressure oscillations, may still occur, requiring the implementation of stabilization techniques or the adoption of high-resolution discretizations to maintain solution accuracy. The present contribution proposes a novel hybrid flux-preserving finite element formulation, designed to preserve mass flux consistency within each element, by adopting an alternative set of primary variables. An original hybrid variational principle is established, wherein the solid deformation and the mass flux fields are adopted as primary unknowns, while the fluid potential acts as a Lagrange multiplier to enforce weak continuity of mass flow across inter-element boundaries, thus avoiding the necessity of globally conforming function spaces. The resulting hybrid element is implemented within the open-source software FEAP. Its performance is assessed through classical benchmark problems in poroelasticity. In particular, the accurate resolution of the fluid pressure field highlights the advantages of the proposed formulation over classical displacement-pressure elements and shows the potential of the proposed method.},
+  archive      = {J_CMAME},
+  author       = {Simona Lo Franco and Michele Terzano and Guido Borino and Gerhard A. Holzapfel and Francesco Parrinello},
+  doi          = {10.1016/j.cma.2025.118351},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {12},
+  pages        = {118351},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {A hybrid flux-preserving finite element for coupled flow deformation: Linear formulation},
+  volume       = {447},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Peridynamic correspondence model for nearly-incompressible finite elasticity. <em>CMAME</em>, <em>447</em>, 118350. (<a href='https://doi.org/10.1016/j.cma.2025.118350'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a correspondence model for use with peridynamic states in the context of nearly incompressible finite elasticity. An isochoric/volumetric decomposition is adopted, enabling the derivation of the peridynamic force state from a purely spherical, pointwise non-local deformation gradient and a deviatoric, bond-level non-local deformation gradient. This approach leads to a stable one-field, state-based peridynamic formulation that is free from zero-energy modes and capable of accurately capturing the mechanical behavior of elastic materials under large deformations, including those with low or negligible compressibility, typical of unfilled elastomers and isotropic soft biological tissues. Notably, the proposed correspondence model, based on a selective bond-associated deformation gradient, avoids the artificial stiffening commonly observed in standard displacement-based formulations near the incompressible limit. Moreover, its performance is shown to be independent of the specific compressibility ratio assumed in the hyperelastic constitutive law. The model has been successfully validated using classical polynomial strain energy functions through a series of illustrative examples involving both homogeneous and inhomogeneous finite deformations in isotropic hyperelastic solids.},
+  archive      = {J_CMAME},
+  author       = {Francesco Scabbia and Vito Diana and Francesca Fantoni and Mirco Zaccariotto and Ugo Galvanetto},
+  doi          = {10.1016/j.cma.2025.118350},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {12},
+  pages        = {118350},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Peridynamic correspondence model for nearly-incompressible finite elasticity},
+  volume       = {447},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Feature preserving data assimilation via feature alignment. <em>CMAME</em>, <em>447</em>, 118345. (<a href='https://doi.org/10.1016/j.cma.2025.118345'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data assimilation combines information from physical observations and numerical simulation results to obtain better estimates of the state and parameters of a physical system. A wide class of physical systems of interest have solutions that exhibit the formation of structures, called features, that have to be accurately captured by the assimilation framework. For example, fluids can develop features such as shock waves and contact discontinuities that need to be tracked and preserved during data assimilation. State-of-the-art data assimilation techniques are agnostic of such features. Current ensemble-based methods construct state estimates by taking linear combinations of multiple ensemble states; repeated averaging tends to smear the features over multiple assimilation cycles, leading to nonphysical state estimates. A novel feature-preserving data assimilation methodology that combines sequence alignment with the ensemble transform particle filter is proposed to overcome this limitation of existing assimilation algorithms. Specifically, optimal transport of particles is performed along feature-aligned characteristics. The strength of the proposed feature-preserving filtering approach is demonstrated on multiple test problems described by the compressible Euler equations.},
+  archive      = {J_CMAME},
+  author       = {Amit~N. Subrahmanya and Adrian Sandu},
+  doi          = {10.1016/j.cma.2025.118345},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {12},
+  pages        = {118345},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Feature preserving data assimilation via feature alignment},
+  volume       = {447},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A meshfree immersed variational multiscale method for perfectly bonded interfaces. <em>CMAME</em>, <em>447</em>, 118344. (<a href='https://doi.org/10.1016/j.cma.2025.118344'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Composites are ubiquitous in many engineering applications, and computing stresses near material interfaces is crucial for predicting and understanding meso- and micro-structural failure in these materials. While many notable approaches to this problem are available, stable interfacial tractions are still difficult to achieve in numerical simulations. This work presents a simplified immersed variational multiscale (SIVMS) method for interfaces that achieves stable, convergent results for the normal traction. The convergence behavior in both the bulk domain fields and interfacial tractions is investigated for SIVMS and is compared to conventional methods such as the Lagrange multiplier method and Nitsche’s method. The difficulty in selecting appropriate values of parameters for Nitsche’s method is highlighted. In contrast, SIVMS provides stabilization that emanates naturally from the assumed fine-scale basis functions. The proposed SIVMS method is free from ad-hoc parameters and provides good accuracy and stability in interfacial tractions. Several benchmark test cases are presented to show the effectiveness and confirm the range of applicability of the proposed method.},
+  archive      = {J_CMAME},
+  author       = {Andrew B. Groeneveld and Michael C. Hillman and Pinlei Chen},
+  doi          = {10.1016/j.cma.2025.118344},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {12},
+  pages        = {118344},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {A meshfree immersed variational multiscale method for perfectly bonded interfaces},
+  volume       = {447},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A velocity-vorticity-pressure formulation for the steady Navier–Stokes–Brinkman–Forchheimer problem. <em>CMAME</em>, <em>447</em>, 118343. (<a href='https://doi.org/10.1016/j.cma.2025.118343'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The flow of incompressible fluid in highly permeable porous media in vorticity - velocity - Bernoulli pressure form leads to a double saddle-point problem in the Navier–Stokes–Brinkman–Forchheimer equations. The paper establishes, for small sources, the existence of solutions on the continuous and discrete level of lowest-order piecewise divergence-free Crouzeix–Raviart finite elements. The vorticity employs a vector version of the pressure space with normal and tangential velocity jump penalisation terms. A simple Raviart–Thomas interpolant leads to pressure-robust a priori error estimates. An explicit residual-based a posteriori error estimate allows for efficient and reliable a posteriori error control. The efficiency for the Forchheimer nonlinearity requires a novel discrete inequality of independent interest. The implementation is based upon a light-weight forest-of-trees data structure handled by a highly parallel set of adaptive mesh refining algorithms. Numerical simulations reveal robustness of the a posteriori error estimates and improved convergence rates by adaptive mesh-refining.},
+  archive      = {J_CMAME},
+  author       = {Santiago Badia and Carsten Carstensen and Alberto F. Martín and Ricardo Ruiz-Baier and Segundo Villa-Fuentes},
+  doi          = {10.1016/j.cma.2025.118343},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {12},
+  pages        = {118343},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {A velocity-vorticity-pressure formulation for the steady Navier–Stokes–Brinkman–Forchheimer problem},
+  volume       = {447},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Analytical hierarchical bayesian modeling framework for model updating and uncertainty propagation utilizing frequency response function data. <em>CMAME</em>, <em>447</em>, 118341. (<a href='https://doi.org/10.1016/j.cma.2025.118341'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Model updating using frequency response functions (FRFs) provides critical advantages in structural dynamics. However, existing probabilistic approaches struggle to balance computational efficiency with comprehensive uncertainty quantification. To this end, this paper introduces an analytical hierarchical Bayesian modeling (HBM) framework that overcomes these limitations through utilization of complex-valued FRF data and variational inference. In particular, the proposed approach incorporates a complex Gaussian likelihood formulation directly into the HBM framework for the FRF experimental data, which allows for a more appropriate and physically consistent treatment of FRF data, particularly when both magnitude and phase information (real and imaginary parts) are essential. Additionally, the proposed approach enables the analytical HBM solution under the complex likelihood setting, improving both the accuracy of parameter estimation and the efficiency of the computation. The framework further propagates the parameter uncertainty to the response predictions and reliability assessment. Numerical and experimental validations on a simply supported beam demonstrate the effectiveness of the proposed approach. Results indicate that the proposed framework provides a reasonable uncertainty estimate of the model parameters as well as the response predictions. Reliability computations on the numerical example also suggest that the proposed framework provides conservative and reliable failure probability estimates, compared to the classical Bayesian modeling which often leads to unsafe engineering decisions.},
+  archive      = {J_CMAME},
+  author       = {Xinyu Jia and Weinan Hou and Shi-Ze Cao and Wang-Ji Yan and Costas Papadimitriou},
+  doi          = {10.1016/j.cma.2025.118341},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {12},
+  pages        = {118341},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Analytical hierarchical bayesian modeling framework for model updating and uncertainty propagation utilizing frequency response function data},
+  volume       = {447},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A unified framework of bond-associated peridynamic material correspondence models: Formulation and evaluation. <em>CMAME</em>, <em>447</em>, 118340. (<a href='https://doi.org/10.1016/j.cma.2025.118340'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The conventional peridynamic material correspondence formulation is known to suffer from issue of material instability or existence of zero-energy modes. This issue arises from the non-unique mapping between the nonlocal deformation gradient and the resulting bond force density state. Among many stabilization techniques proposed to handle this issue, a number of bond-associated models that employ bond-level deformation gradients have emerged as more effective approaches. Although initially developed from different theoretical perspectives, many of these models share underlying structural similarities. This paper aims to unify these differing approaches and introduce a generalized framework for all bond-associated peridynamic material correspondence models. On the basis of formulations proposed in the literature, a unified expression for the bond-associated deformation gradient is developed. Assuming energy equivalence with the local continuum mechanics theory, the unified bond force density state is derived using the Fréchet derivative. In addition, some properties of the bond-associated models, including linear momentum balance, angular momentum balance, and objectivity, are thoroughly examined. To assess and compare the performance of bond-associated models, a series of numerical studies are carried out, including bond mapping analysis, elastic deformation prediction, and elastic wave propagation modeling. It is found that in wave propagation modeling the use of non-constant spherical influence functions, even though this is common in peridynamic models, can lead to phase shift phenomena in certain bond-associated models. Overall, this work provides a comprehensive and unified treatment of bond-associated peridynamic material correspondence models, and it is intended to serve as a valuable reference for further development and application of bond-associated material correspondence formulations in peridynamics.},
+  archive      = {J_CMAME},
+  author       = {Xuan Hu and Hailong Chen and Shaofan Li},
+  doi          = {10.1016/j.cma.2025.118340},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {12},
+  pages        = {118340},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {A unified framework of bond-associated peridynamic material correspondence models: Formulation and evaluation},
+  volume       = {447},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Iterative high-order weakly compressible smoothed particle hydrodynamics model for viscous fluid flows. <em>CMAME</em>, <em>447</em>, 118339. (<a href='https://doi.org/10.1016/j.cma.2025.118339'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Smoothed particle hydrodynamics (SPH) is an efficient and robust particle-based method for large deformation problems such as strongly nonlinear free interface flow and structural damage due to its meshless characteristics. However, achieving consistent high-order accuracy remains a fundamental challenge under irregular particle distributions, which often leads to significant accuracy degradation in conventional SPH interpolation schemes. To address this issue, we propose a novel iterative high-order SPH framework to systematically improve the accuracy of gradient and Laplacian operators through multiple layers of Taylor expansions. An adaptive iteration strategy is introduced at each expansion layer, resulting in a recursive correction that utilizes high-order derivatives to improve low-order estimates, thereby improving consistency and robustness for inhomogeneous particle fields. To maintain accuracy near domain boundaries, a new high-order ghost particle extrapolation scheme is developed to ensure consistency of spatial derivatives. The proposed framework is validated on a series of typical incompressible viscous flow benchmarks, including Taylor-Green vortex, Lamb-Osing vortex, inviscid shear layer, Burggraf flow, and Lid driven flow. Results show that the proposed approach achieves up to fourth-order convergence even with irregular particle arrangements and improves simulation accuracy by two orders of magnitude compared to the conventional SPH formulation. By avoiding the use of high-order kernel functions and large matrix systems, this method provides a scalable approach for high-fidelity particle-based simulations.},
+  archive      = {J_CMAME},
+  author       = {Guixun Zhu and Siming Zheng and Yaru Ren and Yuzhu Pearl Li},
+  doi          = {10.1016/j.cma.2025.118339},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {12},
+  pages        = {118339},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Iterative high-order weakly compressible smoothed particle hydrodynamics model for viscous fluid flows},
+  volume       = {447},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A dual-energy physics-informed multi-material topology optimization method within the phase-field framework. <em>CMAME</em>, <em>447</em>, 118338. (<a href='https://doi.org/10.1016/j.cma.2025.118338'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we propose a dual-energy physics-informed multi-material topology optimization method within the phase-field framework. The method employs a dual-network collaborative architecture, utilizing two fully connected networks incorporating Fourier transformations to approximate the displacement field and the multiphase field, respectively. This approach enables a fully physics-driven optimization process throughout the entire workflow. The displacement field is approximated via the deep energy method, using the principle of minimum potential energy as the driving mechanism. Within the phase-field framework, an energy functional is constructed that incorporates the classical Ginzburg-Landau free energy, elastic strain energy and volume fraction constraints. This functional serves as the loss function that couples the displacement and phase fields, promoting the balancing of mechanical performance, interface thickness, material volume fractions, and phase repulsion during network training. Thus it achieves a deep integration of multi-material physical information. The pretraining strategy effectively reduces convergence time and enhances optimization performance. Automatic differentiation replaces traditional sensitivity analysis, enhancing computational efficiency, while appropriate control of sampling points balances training cost and accuracy. Several numerical experiments validate the effectiveness of the proposed method.},
+  archive      = {J_CMAME},
+  author       = {Sijing Lai and Jiachen Feng and Zhixian Lv and Junseok Kim and Yibao Li},
+  doi          = {10.1016/j.cma.2025.118338},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {12},
+  pages        = {118338},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {A dual-energy physics-informed multi-material topology optimization method within the phase-field framework},
+  volume       = {447},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improving long-term autoregressive spatiotemporal predictions: A proof of concept with fluid dynamics. <em>CMAME</em>, <em>447</em>, 118332. (<a href='https://doi.org/10.1016/j.cma.2025.118332'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Data-driven approaches have emerged as a powerful alternative to traditional numerical methods for forecasting physical systems, offering fast inference and reduced computational costs. However, for complex systems and those without prior knowledge, the accuracy of long-term predictions frequently deteriorates due to error accumulation. Existing solutions often adopt an autoregressive approach that unrolls multiple time steps during each training iteration; although effective for long-term forecasting, this method requires storing entire unrolling sequences in GPU memory, leading to high resource demands. Moreover, optimizing for long-term accuracy in autoregressive frameworks can compromise short-term performance. To address these challenges, we introduce the Stochastic PushForward (SPF) training framework in this paper. SPF preserves the one-step-ahead training paradigm while still enabling multi-step-ahead learning. It dynamically constructs a supplementary dataset from the model’s predictions and uses this dataset in combination with the original training data. By drawing inputs from both the ground truth and model-generated predictions through a stochastic acquisition strategy, SPF naturally balances short- and long-term predictive performance and further reduces overfitting and improves generalization. Furthermore, the training process is executed in a one-step-ahead manner, with multi-step-ahead predictions precomputed between epochs-thus eliminating the need to retain entire unrolling sequences in memory, thus keeping memory usage stable. We demonstrate the effectiveness of SPF on the Burgers’ equation and the Shallow Water benchmark. Experimental results demonstrated that SPF delivers superior long-term accuracy compared to autoregressive approaches while reducing memory consumption. This positions SPF as a promising solution for resource-constrained environments and complex physical simulations.},
+  archive      = {J_CMAME},
+  author       = {Hao Zhou and Sibo Cheng},
+  doi          = {10.1016/j.cma.2025.118332},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {12},
+  pages        = {118332},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Improving long-term autoregressive spatiotemporal predictions: A proof of concept with fluid dynamics},
+  volume       = {447},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive physics-informed system modeling with control for nonlinear structural system estimation. <em>CMAME</em>, <em>447</em>, 118330. (<a href='https://doi.org/10.1016/j.cma.2025.118330'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurately capturing the nonlinear dynamic behavior of structures remains a significant challenge in mechanics and engineering. Traditional physics-based models and data-driven approaches often struggle to simultaneously ensure model interpretability, noise robustness, and estimation optimality. To address this issue, this paper proposes an Adaptive Physics-Informed System Modeling with Control (APSMC) framework. By integrating Kalman filter-based state estimation with physics-constrained proximal gradient optimization, the framework adaptively updates time-varying state-space model parameters while processing real-time input–output data under white noise disturbances. Theoretically, this process is equivalent to real-time tracking of the Jacobian matrix of a nonlinear dynamical system. Within this framework, we leverage the theoretical foundation of stochastic subspace identification to demonstrate that, as observational data accumulates, the APSMC algorithm yields state-space model estimates that converge to the theoretically optimal solution. The effectiveness of the proposed framework is validated through numerical simulations of a Duffing oscillator and the seismic response of a frame structure, as well as experimental tests on a scaled bridge model and real wind turbine health monitoring data. Experimental results show that, under noisy conditions, APSMC successfully predicts 19 consecutive 10-second time series using only a single initial 10-second segment for model updating, achieving a minimum normalized mean square error (NMSE) of 0.398 %. Furthermore, APSMC achieves the best performance among classical time-domain algorithms on measured wind turbine acceleration data. These findings demonstrate that the APSMC framework not only offers superior online identification and denoising performance but also provides a reliable foundation for downstream applications such as structural health monitoring, real-time control, adaptive filtering, and system identification. An open-source Python implementation is available on GitHub .},
+  archive      = {J_CMAME},
+  author       = {Biqi Chen and Chenyu Zhang and Jun Zhang and Ying Wang},
+  doi          = {10.1016/j.cma.2025.118330},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {12},
+  pages        = {118330},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {Adaptive physics-informed system modeling with control for nonlinear structural system estimation},
+  volume       = {447},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A physics-augmented GraphGPS framework for the reconstruction of 3D riemann problems from sparse data. <em>CMAME</em>, <em>447</em>, 118328. (<a href='https://doi.org/10.1016/j.cma.2025.118328'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In compressible fluid flow, reconstructing shocks, discontinuities, rarefactions, and their interactions from sparse measurements is an important inverse problem with practical applications. Moreover, physics-informed machine learning has recently become an increasingly popular approach for performing reconstructions tasks. In this work we explore a machine learning recipe, known as GraphGPS, for reconstructing canonical compressible flows known as 3D Riemann problems from sparse observations, in a physics-informed manner. The GraphGPS framework combines the benefits of positional encodings, local message-passing of graphs, and global contextual awareness, and we explore the latter two components through an ablation study. Furthermore, we modify the aggregation step of message-passing such that it is aware of shocks and discontinuities, resulting in sharper reconstructions of these features. Additionally, we modify message-passing such that information flows strictly from known nodes only, which results in computational savings, better training convergence, and no degradation of reconstruction accuracy. We also show that the GraphGPS framework outperforms numerous machine learning and classical benchmarks.},
+  archive      = {J_CMAME},
+  author       = {Rami Cassia and Rich Kerswell},
+  doi          = {10.1016/j.cma.2025.118328},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {12},
+  pages        = {118328},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {A physics-augmented GraphGPS framework for the reconstruction of 3D riemann problems from sparse data},
+  volume       = {447},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A low-level teamwork hybrid model based swarm intelligent algorithm for engineering design optimization. <em>CMAME</em>, <em>447</em>, 118317. (<a href='https://doi.org/10.1016/j.cma.2025.118317'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce a multi-algorithm hybrid strategy, named WIFN, to mitigate the poor performance of the naked mole-rat algorithm (NMRA). The proposed WIFN algorithm employs the best exploration and exploitation properties of existing algorithms, viz. weighted mean of vectors (INFO), whale optimization algorithm (WOA) and fission fusion optimization (FuFiO). These algorithms are integrated into the worker phase of the NMRA. A new stagnation phase is introduced in WIFN to minimize the effect of local optima stagnation. To add self-adaptivity, five new mutation/inertia weight strategies are added to the parameters of WIFN. To assess its performance, four data sets are used: classical benchmarks, CEC 2014, CEC 2017 and CEC 2019. An experimental study is carried out using i) five constrained engineering design problems and ii) 15 real-world constrained problems from the CEC 2020 benchmark dataset to analyze the applicability of WIFN for computationally expensive problems. In addition, WIFN is applied to multilevel image thresholding with type-II fuzzy sets. It is tested using a real image set that features different histogram distributions for three different threshold numbers. Experimental results suggest that WIFN perform significantly better than the existing state-of-the-art algorithms in terms of quality metrics, viz. mean squared error (MSE), peak signal-to-noise ratio (PSNR), and structural similarity index (SSIM). Wilcoxon’s ranksum and the Friedman test establish the superiority of WIFN statistically.},
+  archive      = {J_CMAME},
+  author       = {Amanjot Kaur Lamba and Rohit Salgotra and Nitin Mittal},
+  doi          = {10.1016/j.cma.2025.118317},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {12},
+  pages        = {118317},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {A low-level teamwork hybrid model based swarm intelligent algorithm for engineering design optimization},
+  volume       = {447},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A dual-stage constitutive modeling framework based on finite strain data-driven identification and physics-augmented neural networks. <em>CMAME</em>, <em>447</em>, 118289. (<a href='https://doi.org/10.1016/j.cma.2025.118289'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this contribution, we present a novel consistent dual-stage approach for the automated generation of hyperelastic constitutive models which only requires experimentally measurable data. As a proof of concept, the present work relies on synthetic data generated through virtual experiments. To generate input data for our approach, an experiment with full-field measurement has to be conducted to gather testing force and corresponding displacement field of the sample. Then, in the first step of the dual-stage framework, a new finite strain Data-Driven Identification (DDI) formulation is applied. This method enables to identify tuples consisting of stresses and strains by only prescribing the applied boundary conditions and the measured displacement field. In the second step, the data set is used to calibrate a Physics-Augmented Neural Network (PANN), which fulfills all common conditions of hyperelasticity by construction and is very flexible at the same time. We demonstrate the applicability of our approach by several descriptive examples. Two-dimensional synthetic data are exemplarily generated in virtual experiments by using a reference constitutive model. The calibrated PANN is then applied in 3D Finite Element simulations. In addition, a real experiment including noisy data is mimicked.},
+  archive      = {J_CMAME},
+  author       = {Lennart Linden and Karl A. Kalina and Jörg Brummund and Brain Riemer and Markus Kästner},
+  doi          = {10.1016/j.cma.2025.118289},
+  journal      = {Computer Methods in Applied Mechanics and Engineering},
+  month        = {12},
+  pages        = {118289},
+  shortjournal = {Comput. Meth. Appl. Mech. Eng.},
+  title        = {A dual-stage constitutive modeling framework based on finite strain data-driven identification and physics-augmented neural networks},
+  volume       = {447},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

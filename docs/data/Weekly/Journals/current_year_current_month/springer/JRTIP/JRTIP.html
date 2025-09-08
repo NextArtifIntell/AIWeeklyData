@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JRTIP</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="jrtip">JRTIP - 19</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Fast coding based on dual-head attention network in 3D-HEVC. <em>JRTIP</em>, <em>22</em>(5), 1-14. (<a href='https://doi.org/10.1007/s11554-025-01684-0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Three-dimensional High-Efficiency Video Coding (3D-HEVC) standard, as the latest 3D video coding standard, has introduced several new coding algorithms for depth map that enables it to have a higher compression ratio compared with previous standards. However, this also leads to a sharp increase in computational complexity, which has become the critical factor to prevent 3D-HEVC from being widely used. To address this problem, a new framework based on Convolutional Neural Networks (CNN) is proposed to achieve fast depth intra-coding in this article. First, we propose an adaptive Quantization Parameter-Attention CNN (QA-CNN) with multiple attention modules to predict the Coding Units (CUs) partition of depth map. After that, according to the relationship between texture map and depth map, we introduce texture map input to form dual-head QA-CNN (DQA-CNN), using texture map CU partition results to correct the depth map results. Finally, we embed DQA-CNN into 3D-HEVC test platform to achieve fast depth intra-coding. Experimental results show that compared with the reference software HTM $$-$$ 16.0, the proposed method can reduce an average of 74.9% of the intra-coding time with the reduction of rate-distortion performance in an acceptable range, outperforming the state-of-the-art methods in reducing coding complexity.},
+  archive      = {J_JRTIP},
+  author       = {Wu, Yueheng and Jia, Kebin},
+  doi          = {10.1007/s11554-025-01684-0},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-14},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {Fast coding based on dual-head attention network in 3D-HEVC},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). QLDNet: A lightweight and efficient network for high-robustness aerial human detection in UAV-based remote sensing. <em>JRTIP</em>, <em>22</em>(5), 1-19. (<a href='https://doi.org/10.1007/s11554-025-01707-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate detection of extremely small targets in aerial high-resolution images is critical for military and civilian applications. However, challenges, such as small target size, complex backgrounds, and target deformation, hinder optimal performance. We propose a lightweight network that addresses these issues through a synergistic combination of non-strided convolution and decoupled large-kernel convolutional attention. Specifically, the non-strided convolution constructs a quadruple aggregate and connection feature extractor (QACFE) module, which maps features into the channel dimension while preserving spatial details. The decoupled large kernel convolutional attention (DLKA) then leverages these channel features to effectively extract structural and edge-related low-frequency information, while simultaneously reducing computational costs and model size caused by the increased channel dimensionality after QACFE. A learnable offset mechanism is introduced, transforming the detection head into a deformable detection head (DDH). Additionally, the network incorporates a PAFPN (Path Aggregation Feature Pyramid Network) structure to efficiently extract multi-scale features. During inference, a tailored approach performs pixel-level multi-scale detection. This enhances small target detection by merging features and pixels through dual-scale fusion, integrating multi-scale feature extraction with multilevel feature integration. QLDNet is a dual multiscale network based on quadruple aggregation and connected feature extract (QACFE), decoupled large kernel convolutional channel attention mechanism (DLKA), and deformable decoupled head (DDH). Experimental results demonstrate that QLDNet achieves efficient and accurate small target detection, with an accuracy rate as high as 94.0% and an inference time of 0.12 s per image, meeting the system’s real-time requirements with fewer parameters and satisfying processing speeds. The code can be find at https://github.com/Sjl185721/QLDNet-v1.git .},
+  archive      = {J_JRTIP},
+  author       = {Zhang, Mandun and Shi, Jiale and Hou, Chenyue and Pang, Yonghui and Zhang, Yiqi and Huang, Xiangsheng},
+  doi          = {10.1007/s11554-025-01707-w},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-19},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {QLDNet: A lightweight and efficient network for high-robustness aerial human detection in UAV-based remote sensing},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PRIME-net: An efficient progressive residual incremental multi-scale estimation network for dynamic ocean wave fields. <em>JRTIP</em>, <em>22</em>(5), 1-13. (<a href='https://doi.org/10.1007/s11554-025-01740-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Real-time estimation of spatio-temporal ocean wave fields is crucial for marine applications but challenged by the limitations of traditional sensors and the computational cost of dense vision-based reconstruction. Existing methods often rely heavily on sparse geometric data, potentially underutilizing rich image information. This paper proposed an efficient deep learning network specifically designed for real-time, sparse-to-dense wave field estimation guided by image features, through the network of Progressive Residual Incremental Multi-scale Estimation (PRIME-Net). PRIME-Net employs an encoder–decoder architecture integrating efficient modules like a Pyramid Pooling Attention Module (PPAM) and modulated decoder blocks (MDBs), along with a multi-scale residual prediction strategy to progressively refine elevation estimates from an input image and an initial sparse or low-quality height map. Experiments conducted on challenging datasets demonstrate that PRIME-Net achieves competitive or superior accuracy in reconstructing wave fields compared to state-of-the-art methods, while exhibiting significant computational efficiency suitable for real-time operation. The results validate the effectiveness of the image-guided approach and the architectural design, positioning PRIME-Net as a promising solution for the awareness of sea state.},
+  archive      = {J_JRTIP},
+  author       = {Wang, Feng and Qiao, Renjie and Wang, Xiaoyu and Meng, Haiyang},
+  doi          = {10.1007/s11554-025-01740-9},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-13},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {PRIME-net: An efficient progressive residual incremental multi-scale estimation network for dynamic ocean wave fields},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Design and optimization of a new corn–weed detection model with YOLOv8–GAS based on artificial intelligence. <em>JRTIP</em>, <em>22</em>(5), 1-16. (<a href='https://doi.org/10.1007/s11554-025-01742-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Crop fertilization, pesticide spraying and weed treatment are crucial links in the process of crop growth, and the effective implementation of these tasks depends on accurate crop and weed identification. The recognition technology based on vision can realize automatic recognition. In this study, a new corn–weed detection model named YOLOv8–GAS-based YOLOv8 was proposed to address the widespread problems of poor recognition performance, difficulty in effectively dealing with complex scenarios, and difficulty in co-existing lightweight detection models and recognition accuracy. First, the newly developed GRCSPESIN (ghost reparameterization cross-stage partial connections stage integration network) module was introduced and integrated into the C2f (channel-to-pixel) feature extraction layer in YOLOv8. Then in the neck of the network, the multi-scale feature extraction by sharing convolution kernels of SPC (Shared Pyramid Convolution) module was introduced and the context-guided feature fusion module, ACFM (Adaptive Context Fusion Module) was employed. Finally, a new corn–weed data set was constructed based on an image acquisition of a complex unmanned farm maize test field, which was used for a comparative analysis of YOLOv8–GAS and the baseline model. The results of comprehensive evaluation of the obtained data set demonstrate that the proposed model has excellent performance, with a 3.2% increase in mAP@0.5, a 10.3% decrease in model parameters, and a 16.05% decrease in calculation amount compared with YOLOv8n.},
+  archive      = {J_JRTIP},
+  author       = {Li, Li and Sun, Rui and Xu, Yifeng},
+  doi          = {10.1007/s11554-025-01742-7},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-16},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {Design and optimization of a new corn–weed detection model with YOLOv8–GAS based on artificial intelligence},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Zero-shot learning with depthwise separable convolution for low-light image enhancement using hybrid perceptual loss. <em>JRTIP</em>, <em>22</em>(5), 1-16. (<a href='https://doi.org/10.1007/s11554-025-01744-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Improving low-light images is challenging due to insufficient lighting, and the task becomes even more difficult when no reference image is available. This limitation has led to the development of zero-shot Low-light image enhancement (LLIE) methods, which do not require paired reference images, making them suitable for real-world applications such as monitoring and autonomous driving. However, many zero-shot LLIE methods aim to adjust illumination, spatial consistency, exposure, and color balancing across all RGB channels. This multi-channel processing increases model complexity, making it harder to handle intricate lighting conditions efficiently. Moreover, models based on standard convolutions have a large number of parameters, resulting in high computational costs. Many methods also fail to prioritize human perception, which is crucial for ensuring perceptual quality and naturalness in enhanced images. To address these challenges, a novel zero-shot LLIE method is proposed that operates on a single channel (the Value channel) in the Hue, Saturation, Value (HSV) color model, simplifying processing and reducing model complexity. This lightweight deep network uses Depthwise Separable Convolution (DSC) to reduce computational costs, with only 4058 parameters, making it suitable for real-time enhancement on resource-constrained devices. The method employs hybrid perceptual losses that combine both computational metrics and human perceptual criteria to guide the enhancement process. It integrates exposure and illumination losses as computational metrics, while the gram matrix texture loss ensures perceptual criteria that aligns with human visual cognition. Extensive experiments validate that our method outperforms existing state-of-the-art approaches.},
+  archive      = {J_JRTIP},
+  author       = {Singh, Supriya and Raj, Deepa},
+  doi          = {10.1007/s11554-025-01744-5},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-16},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {Zero-shot learning with depthwise separable convolution for low-light image enhancement using hybrid perceptual loss},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). USH: An efficient real-time distracted driving detection model. <em>JRTIP</em>, <em>22</em>(5), 1-12. (<a href='https://doi.org/10.1007/s11554-025-01745-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the continuous development of intelligent transportation systems, driving safety has become a core societal concern. Distracted driving, one of the leading factors of traffic accidents, has been directly responsible for over 60% of such incidents. To effectively reduce these accidents, real-time monitoring and early warning of distracted driving have become crucial tasks in enhancing traffic safety. In this paper, we proposes a low-latency, high-efficiency network called USH, aiming to quickly and accurately detect driver distraction behavior on low-computation devices. USH employs a stage-wise hybrid modeling approach, introducing convolutional operations and self-attention at different stages of the model to achieve a balance between model accuracy and efficiency. By injecting local information modeling layers into a Feed Forward Network (FFN), the network complexity is significantly reduced while maintaining high detection accuracy. Additionally, USH introduces a single-head self-attention, effectively avoiding the head redundancy of multi-head self-attention, making the model more lightweight and efficient, meeting the detection needs in resource-constrained environments. Experimental results demonstrate that USH achieves a top-1 accuracy of 98.5% on the StateFarm dateset, with an inference latency of only 4.7 ms. Compared to the original model, the proposed USH achieves a 21.6% improvement in computational efficiency, a 146% reduction in model size. These results indicate that USH not only demonstrates excellent performance and stability, but also exhibits significant potential in the field of distracted driving detection.},
+  archive      = {J_JRTIP},
+  author       = {Wang, He and Li, Yuan},
+  doi          = {10.1007/s11554-025-01745-4},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-12},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {USH: An efficient real-time distracted driving detection model},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Lightweight real-time road defect detection algorithm integrating multi-coordinate aggregation attention and shared convolution. <em>JRTIP</em>, <em>22</em>(5), 1-22. (<a href='https://doi.org/10.1007/s11554-025-01747-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Prolonged road use leads to surface defects that, if undetected, degrade road life and pose safety risks. Conventional detection methods are slow and costly. To address this, LAR-YOLO (Lightweight Aggregate Re-param-YOLO), a lightweight model based on YOLOv8, was developed in this paper, featuring the RGCSPELAN (Re-param Ghost CSP ELAN) module to minimize model size and enhance detection speed. It includes the AMCA (Aggregate Multiple Coordinate Attention) mechanism for more accurate feature extraction and an Attention-Enhanced Screening Pyramid Network for improved feature representation, reduced feature loss, and better detection outcomes. Additionally, a Lightweight Shared Convolutional Detection Head (LSCD) was developed. Experimental results showed LAR-YOLO improved mAP50 (Mean Average Precision) by 4.8% over YOLOv8 on the RDD2022 dataset and reduced parameters and computational needs by 46.40% and 41.54%, respectively, achieving 212 FPS for real-time detection. It also outperformed other models on the VOC2007 and NEU-DET datasets, proving its practical value.},
+  archive      = {J_JRTIP},
+  author       = {Zhang, Yujie and Wang, Tao and Wang, Xueqiu},
+  doi          = {10.1007/s11554-025-01747-2},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-22},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {Lightweight real-time road defect detection algorithm integrating multi-coordinate aggregation attention and shared convolution},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Beyond obstacles: Feather-light YOLO11-LES for real-time ripeness detection of occluded strawberries in greenhouses. <em>JRTIP</em>, <em>22</em>(5), 1-14. (<a href='https://doi.org/10.1007/s11554-025-01748-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As the strawberry industry expands, the inefficiency and cost of manual harvesting have spurred the development of vision-based automated picking systems. Among them, ripeness detection models are crucial for enabling precise and efficient harvesting. However, existing models often struggle in complex greenhouse environments, particularly under occlusion and small-object conditions, leading to reduced accuracy and excessive model size. To address these challenges, this study proposes YOLO11-LES, a novel lightweight strawberry ripeness detection model based on YOLO11n. It integrates three newly designed modules: (1) the Lightweight Adaptive Weighting Downsampling Structure (LAWDS) module replaces standard downsampling convolutions with adaptive weighting to reduce parameters and computation; (2) the Edge-Intensified Feature Extraction Stem (EIEStem) module enhances edge features and mitigates small-object detail loss during early feature extraction; and (3) the Spatial-Enhanced Attention Module Head (SEAMHead) module improves occlusion awareness through integrated spatial and channel attention. Experiments show that YOLO11-LES achieves a compact model size of 4.6 MB, with a precision of 81.5%, recall of 84.1%, and mAP50 of 86.5%. Compared to the baseline YOLO11n, it improves these metrics by 2.9%, 9.0%, and 3.2%, respectively, while reducing the model size by 0.9 MB. YOLO11-LES effectively balances detection accuracy with lightweight design, making it well suited for deployment on real-time edge devices.},
+  archive      = {J_JRTIP},
+  author       = {Li, Zheng and Hu, Xiaonan and Zhao, Xiaobei and Ye, Hao and Chen, Feng and Chen, Xin and Li, Xiang},
+  doi          = {10.1007/s11554-025-01748-1},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-14},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {Beyond obstacles: Feather-light YOLO11-LES for real-time ripeness detection of occluded strawberries in greenhouses},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LAP-net: A lightweight PCB defect detection network combined with attention mechanisms. <em>JRTIP</em>, <em>22</em>(5), 1-14. (<a href='https://doi.org/10.1007/s11554-025-01749-0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rapid development of the electronics manufacturing industry, the defect detection of printed circuit boards (PCBs) plays a crucial role in ensuring product quality. This paper presents a lightweight PCB defect detection model named LAP-Net. This model mainly overcomes the difficulties of parameter redundancy and low detection accuracy in existing methods. Specifically, while maintaining the overall framework of YOLOv8n, LAP-Net incorporates an enhanced ShuffleNetV2 structure in its backbone for efficient feature extraction. Furthermore, a novel method using dual convolution attention mechanism is introduced to effectively enhance the accuracy of small-sized PCB defect detection. Meanwhile, introducing a lightweight feature detection head eliminates redundant parameters and thus reduces the overall complexity of the algorithm. Massive experiments conducted on the public PCB dataset demonstrate the superiority of the presented LAP-Net model, while the balance between algorithm complexity and detection precision outperforms other algorithms. Compared with the baseline algorithm YOLOv8n, the LAP-Net reduces parameters by 11.7% and FLOPs by 22.2%, while the mAP50 improves by 3.2%. Therefore, the proposed LAP-Net is validated as a reliable, competitive, and lightweight PCB defect detection model.},
+  archive      = {J_JRTIP},
+  author       = {Li, Ziqiang and Ai, Qing and Peng, Ende and Mao, Shaoyu and Han, Tao},
+  doi          = {10.1007/s11554-025-01749-0},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-14},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {LAP-net: A lightweight PCB defect detection network combined with attention mechanisms},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FRD-YOLO: A faster real-time object detector for aerial imagery. <em>JRTIP</em>, <em>22</em>(5), 1-15. (<a href='https://doi.org/10.1007/s11554-025-01750-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rapid technological progress, drones, or unmanned aerial vehicles (UAVs), have emerged among the most important artificial intelligence (AI)-powered systems. With their aerial perspective, mobility, and cost-effectiveness, they became crucial for advancing AI-driven visual perception in various sectors. However, implementing generic object detection algorithms on these resource-limited devices remains a complex challenge. Towards efficient and more UAV-adapted systems, this paper introduces the Faster Real-time Detector based on You Only Look Once (FRD-YOLO). FRD-YOLO presents different optimizations on the functional and architectural perspectives. To adapt the model to the vision context of UAVs, our key enhancements include the addition of a new layer for detecting tiny objects and the removal of the detection layer for large objects to emphasize the small and tiny targets. We also introduce a structure-aware integration of C3Ghost blocks, inspired by Ghost Convolutions and Cross Stage Partial Network-based layers, to reduce computational cost, and integrate the Convolutional Block Attention Module to enhance the recall. The FRD-YOLO model demonstrates superior detection performance with reduced size and computations across its five scaled versions. Notably, the evaluation on the challenging VisDroneDet2021 dataset reveals that the FRD-YOLO-x achieves 11.23% higher mean Average Precision (mAP50) than the baseline model, with 25.44% less computational cost, reaching up to 44 Frames Per Second (FPS). Additionally, the FRD-YOLO model showcases reliable embedded inference on the Jetson TX2, with FRD-YOLO-n achieving 25.18 FPS and FRD-YOLO-x reducing model size by 58.1%, confirming the architecture’s strength for UAV deployment.},
+  archive      = {J_JRTIP},
+  author       = {Ben Rouighi, Ines and Chtioui, Hajer and Jegham, Imen and Alouani, Ihsen and Ben Khalifa, Anouar},
+  doi          = {10.1007/s11554-025-01750-7},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-15},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {FRD-YOLO: A faster real-time object detector for aerial imagery},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GF-few: A real-time lightweight gaussian feature enhanced few-shot network for industrial defect detection. <em>JRTIP</em>, <em>22</em>(5), 1-18. (<a href='https://doi.org/10.1007/s11554-025-01751-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep learning-based image segmentation techniques have emerged as a leading approach for detecting industrial defects. However, training deep learning models necessitates a substantial number of defect samples, and the scarcity of negative industrial defect samples complicates their implementation. Additionally, in real industrial environments, defects are often coupled in complex background patterns, making them difficult to identify. To tackle these issues, we propose a Gaussian Feature Augmented Few-Shot Model (GF-Few) for real-time industrial defect detection tasks. By leveraging the generalization ability of the few-shot network structure for images with a limited number of support sets, we introduce an Adaptive Gaussian Membership Feature Module (GM-FE) and a specialized Gaussian Feature Loss Function (GFloss) to enhance the model’s feature extraction process. This combination uses a Gaussian function to adjust the distribution range of the model in the feature space, thereby improving the feature representation of the image. Furthermore, we design a Defect Prototype Alignment Module (DPAM) to compare the differences in defect features between the support set and the query set, which facilitates defect detection by employing a simpler network architecture. This method fully utilizes prior knowledge from a limited number of support sets, enabling more efficient real-time industrial defect detection. We selected three public industrial datasets and collected a Printing-Packaging-Box dataset to evaluate the model. The experimental results demonstrate that the method strikes a balance between detection accuracy and model size, achieving a detection accuracy of 92.21%, with a parameter count of 9.37 M and a detection speed of 183 frames per second, effectively meeting the requirements for industrial environments.},
+  archive      = {J_JRTIP},
+  author       = {Ma, Qiurui and Zhang, Erhu and Chen, Yajun and Duan, Jinghong},
+  doi          = {10.1007/s11554-025-01751-6},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-18},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {GF-few: A real-time lightweight gaussian feature enhanced few-shot network for industrial defect detection},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Lightweight real-time detection transformer with single-head self-attention and feature selection for underwater object detection. <em>JRTIP</em>, <em>22</em>(5), 1-16. (<a href='https://doi.org/10.1007/s11554-025-01752-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Underwater object detection suffers from uneven illumination, low contrast, color distortion, and scattering, while limited onboard computing resources demand a balance between accuracy and speed. However, existing lightweight detectors often sacrifice detection precision in challenging underwater conditions. To address this, we propose a lightweight enhancement of the Real-Time DEtection TRansformer (RT-DETR) tailored for underwater environments. First, a lightweight backbone with enhanced global perception is introduced, leveraging the Cross Stage Partial (CSP) concept to eliminate redundant residual convolutional operations. This is combined with a Single-Head Self-Attention (SHSA) mechanism to strengthen global feature modeling, thereby improving detection accuracy for low-contrast targets. Second, a Feature Selection (FS) module based on Channel-wise Adaptive Attention (CAA) is proposed to filter multi-level features extracted by the backbone within a broader receptive field. In addition, a Select Feature Fusion (SFF) module is introduced for bottom-up feature fusion, simplifying the neck’s feature fusion structure and enhancing real-time performance in underwater object detection. Moreover, a Self-Feature Knowledge Distillation (Self-FKD) strategy is employed to enhance detection performance without increasing inference cost, thereby mitigating the degradation of features caused by underwater image quality. Experimental results demonstrate that the proposed model achieves a superior balance between performance and model size compared to several state-of-the-art object detection models across multiple underwater detection datasets, making it well-suited for real-time underwater object detection scenarios.},
+  archive      = {J_JRTIP},
+  author       = {Peng, Jiawei and Zhou, Zhiyu and Wang, Haiyan},
+  doi          = {10.1007/s11554-025-01752-5},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-16},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {Lightweight real-time detection transformer with single-head self-attention and feature selection for underwater object detection},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EDet-YOLO: An efficient small object detection algorithm for aerial images. <em>JRTIP</em>, <em>22</em>(5), 1-12. (<a href='https://doi.org/10.1007/s11554-025-01753-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In aerial images, the small size, significant scale variation, and dense object distribution often result in low detection accuracy. Therefore, small object detection in aerial images remains a highly challenging task. This paper proposed EDet-YOLO, a small object detection algorithm designed to improve detection precision. Based on YOLO11, several innovations have been introduced. First, the original C3k2 module is restructured into an Efficient Convolutional Feature Extraction module (ECFE), which incorporates a novel Efficient Convolution Module (ECM) to enhance multi-scale feature extraction. Second, a Spatial Bidirectional Attention Module (SBAM) is proposed to establish a bidirectional attention-guided mechanism between high- and low-resolution feature layers, achieving complementary fusion of semantic and detail information. This design effectively enhanced the discriminability and localization accuracy of small objects in complex backgrounds. In addition, a dynamic head is employed to replace the original detection head, enabling adaptive feature enhancement and multi-level feature integration to boost detection performance. A new small object detection layer is also introduced to further improve accuracy. Experimental results on the VisDrone2019 and HIT-UAV datasets demonstrate that the proposed EDet-YOLO outperforms existing models. Compared to the baseline, EDet-YOLO achieves improvements of 10.2% and 1.7% in mAP@50, and 7.6% and 3.4% in mAP@50–95, respectively. Moreover, the detection speed of EDet-YOLO on Jetson Orin Nano reached 24.9 FPS, and this performance met the requirements of real-time detection.},
+  archive      = {J_JRTIP},
+  author       = {Xiao, Linsong and Li, Wenzao and Tang, Ran and Li, Hanyun and Wan, Bing and Ren, Dehao},
+  doi          = {10.1007/s11554-025-01753-4},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-12},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {EDet-YOLO: An efficient small object detection algorithm for aerial images},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An optimized lightweight YOLO-MRC framework for enhanced obstacle detection in service robots. <em>JRTIP</em>, <em>22</em>(5), 1-12. (<a href='https://doi.org/10.1007/s11554-025-01756-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Object detection, particularly for small and deformed targets in complex backgrounds, remains a significant challenge for service robots. To address this, we propose a novel lightweight YOLO-MRC (You Only Look Once-MobileViT-RepPoints-CTAM) network. First, an improved C3-RepPoints module is proposed for finer localization and classification of objects of varying scales and deformations. Second, a lightweight hybrid architecture is presented for efficient small object detection, combining convolutional neural networks (CNNs) and vision transformers (ViTs). Finally, an improved efficient decoupled head (EDH) is used to enhance detection performance by separating classification and regression tasks. Furthermore, the convolutional triplet attention mechanism (CTAM) is introduced to aggregate crucial semantic information. Experimental results on the ODSR-HIS dataset show that YOLO-MRC reduces model parameters by 21.3% while improving mean average precision (mAP@0.5) by 1.3%, with notable gains for small-scale and deformed objects. YOLO-MRC also demonstrates excellent generalization on PASCAL VOC and COCO datasets, improving mAP@0.5 by 4.4% and 10.7%, respectively, compared to YOLOv5n, all achieved with only 1.4M parameters and 5.5G FLOPs. This underscores YOLO-MRC’s balance between model size, latency, and accuracy, making it well suited for service robots. The code is available at https://github.com/lvyongshjd/YOLO-MRC .},
+  archive      = {J_JRTIP},
+  author       = {Tian, Junyan and Ma, Ning and Huang, Keya and Lv, Yong and Chi, Wenzheng and Sun, Lining},
+  doi          = {10.1007/s11554-025-01756-1},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-12},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {An optimized lightweight YOLO-MRC framework for enhanced obstacle detection in service robots},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FRT-DETR: Faster real-time end-to-end detector for industrial surface defects based on transformer. <em>JRTIP</em>, <em>22</em>(5), 1-15. (<a href='https://doi.org/10.1007/s11554-025-01702-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Real-time detection of surface defects in industrial products is pivotal for the efficiency of industrial production processes. Over the last decade, deep learning-based object detection algorithms have shown their remarkable performance in this field, especially those recently suggested transformer-based methods. However, they often face challenges related to high computational complexity and substantial memory usage. To address these issues, we propose a Faster Real-Time Detection Transformer (FRT-DETR), designed explicitly for detecting surface defects in industrial products. Our findings highlight that the high computational load of RT-DETR originates from convolutional layers from multiple RepConv blocks within the RepC3 module. To address this issue, we integrate an aggregated SaE layer with the original RepC3 module, aiming to develop a more streamlined SaERepC3 module. Moreover, we introduce the IoU-aware query mechanism to select higher quality queries from boxes generated by the encoder. Additionally, we incorporate a newly designed Multi-Scale Detail Integration (MSDI) module, which employs skip connections to enhance the integration of details across scales, thus enhancing the detection accuracy of the model. From experimental results on the NEU-DET dataset and DeepPCB dataset, our model achieves an impressive inference speed, making it highly effective for real-time surface defect detection tasks.},
+  archive      = {J_JRTIP},
+  author       = {Xiang, Shuang and Fu, Chong and Song, Wei and Wang, Xingwei and Chen, Junxin and Sham, Chiu-Wing},
+  doi          = {10.1007/s11554-025-01702-1},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-15},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {FRT-DETR: Faster real-time end-to-end detector for industrial surface defects based on transformer},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TRS-YOLO: A lightweight insulator defect detection method based on enhanced YOLOv12. <em>JRTIP</em>, <em>22</em>(5), 1-18. (<a href='https://doi.org/10.1007/s11554-025-01754-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing transmission line insulator diagnostics confront a tripartite challenge: undetected sub-pixel anomalies, interference from heterogeneous backgrounds, and insufficient computational headroom at edge nodes. To address these issues, this study proposes a lightweight detection model named TRS-YOLO, based on YOLOv12. In the TRS-YOLO model, we introduce three key innovations: (1) a receptive field attention convolution module (RFAConv) is proposed to enhance the feature extraction capability of the backbone network; (2) a spatial and channel synergistic attention module (SCSA) is integrated, effectively boosting the model's perception of critical insulator features—particularly improving robustness for small defect detection in complex backgrounds—through a synergistic mechanism combining multi-semantic spatial attention guidance and progressive channel self-attention recalibration; (3) to enhance the detection head's sensitivity to subtle defects while maintaining model efficiency, a mobile inverted bottleneck block (MBConv) is innovatively introduced. Validated on a dataset where small targets constitute 63.96% of samples, TRS-YOLO achieves 90.7% mAP@50—surpassing YOLOv12 by 2.9% and outperforming state-of-the-art YOLOv13 by 4.2%—all while maintaining ultra-efficient deployment with only 2.95 M parameters and 166 FPS real-time inference speed. This demonstrates TRS-YOLO’s unique capability to deliver superior accuracy for critical small targets and exceptional lightweight adaptability for edge-device deployment.},
+  archive      = {J_JRTIP},
+  author       = {Wang, Jiao and Li, Bin},
+  doi          = {10.1007/s11554-025-01754-3},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-18},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {TRS-YOLO: A lightweight insulator defect detection method based on enhanced YOLOv12},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Real-time multi-object detection and tracking in UAV systems: Improved YOLOv11-EFAC and optimized tracking algorithms. <em>JRTIP</em>, <em>22</em>(5), 1-28. (<a href='https://doi.org/10.1007/s11554-025-01758-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Real-time small-object detection and tracking from UAVs is inherently challenging due to tiny object sizes, rapid viewpoint changes, and stringent accuracy–speed constraints, yet remains essential for mission-critical defense, security, and disaster response applications. We propose YOLOv11-EFAC, using YOLOv11n as baseline, a UAV-oriented detection framework employing a multi-level optimization strategy: an EfficientNet-B0 backbone for lightweight, high-quality feature extraction; hybrid FPN+PANet for enhanced multi-scale fusion; Squeeze-and-Excitation attention for adaptive channel weighting; and a custom loss function tailored for small-object localization. For tracking, we comparatively evaluate multiple state-of-the-art algorithms, including DeepSORT, EKF, ByteTrack, SORT, CenterTrack, FairMOT, and the transformer-based TrackFormer under realistic UAV operational conditions. Additionally, we introduce a hybrid DeepSORT+EKF approach to better handle non-linear motion, achieving 89.9% MOTA, an 11.5% improvement over standalone DeepSORT, with reduced identity switches. A 42,500-image hybrid dataset (58.1% small objects) combining COCO, VisDrone, and UAVDT improves robustness and generalization. Experimental results demonstrate 83.7% mAP@0.5 at 89 FPS on embedded hardware with a 21.4% small-object detection improvement, surpassing YOLOv8, YOLOv12, YOLOv13, and multiple YOLOv11 variants. These results position YOLOv11-EFAC as a robust, real-time solution for mission-critical UAV applications under operational constraints.},
+  archive      = {J_JRTIP},
+  author       = {Kıratlı, Rabia and Eroğlu, Alperen},
+  doi          = {10.1007/s11554-025-01758-z},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-28},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {Real-time multi-object detection and tracking in UAV systems: Improved YOLOv11-EFAC and optimized tracking algorithms},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Accurate insulator defect detection in power transmission lines using semi-supervised hybrid DETR with advanced loss methods. <em>JRTIP</em>, <em>22</em>(5), 1-14. (<a href='https://doi.org/10.1007/s11554-025-01760-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The reliability and safety of power transmission grids critically depend on the condition of insulators, making efficient and accurate defect detection essential. While CNN-based object detection frameworks like YOLO offer a reasonable balance between speed and accuracy, they face limitations in handling class imbalance and complex backgrounds. Transformer-based detectors (e.g., DETR) eliminate the need for Non-Maximum Suppression (NMS) but suffer from high computational costs and slower convergence. To address these challenges, the proposed method is a hybrid Detection Transformer (DETR) framework for insulator defect detection, combining semi-supervised learning with advanced loss methods. Our method introduces Stage-wise Hybrid Matching for generating high-quality pseudo-labels, focal loss to address data imbalance, and Cross-view Query Consistency to enhance feature robustness. Additionally, encoder complexity is optimized, ensuring scalability for UAV- based inspections. Experimental results demonstrate that the proposed hybrid DETR achieves 85 FPS, surpasses state-of-the-art detectors, including YOLO and DETR variants, achieving superior accuracy and speed across diverse and challenging datasets.},
+  archive      = {J_JRTIP},
+  author       = {Sankuri, Raja Sekhar and Sristy, Nagesh Bhattu and Karri, Sri Phani Krishna},
+  doi          = {10.1007/s11554-025-01760-5},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-14},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {Accurate insulator defect detection in power transmission lines using semi-supervised hybrid DETR with advanced loss methods},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ELSD-YOLO: An enhanced lightweight ship detection framework based on YOLO11n. <em>JRTIP</em>, <em>22</em>(5), 1-11. (<a href='https://doi.org/10.1007/s11554-025-01757-0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ship detection presents significant challenges, including limited adaptability to complex maritime environments, the trade-off between lightweight design and accuracy, and the degradation of generalization caused by model compression. To address these issues, we propose ELSD-YOLO, a lightweight ship detection algorithm built upon the YOLO11n architecture. A GhostNet-based backbone is constructed to ensure efficient computation while preserving feature representation, depthwise separable convolutions are employed to accelerate inference, and the StarNet block is integrated to enhance nonlinear modeling, thereby improving feature extraction for small and densely distributed ships. In addition, a SimHead module is designed to eliminate redundant computations while maintaining channel-wise parallelism, achieving a balance between efficiency and accuracy. Structural simplification and quantization further enable deployment on resource-constrained edge devices for real-time operation. Experimental results on the SeaShips dataset demonstrate that ELSD-YOLO not only achieves a 1.1% improvement in mAP50-95 compared with the baseline YOLO11n, alongside an 11% reduction in model parameters and a 19% reduction in computational complexity, but also exhibits superior robustness in detecting small vessels and handling complex background interference. These results validate ELSD-YOLO as an efficient and accurate framework, offering strong technical support for maritime traffic safety.},
+  archive      = {J_JRTIP},
+  author       = {Meng, Xue and Bi, Zhenbo and Jia, Lei and Wang, Tianyuan and Meng, Xuejian},
+  doi          = {10.1007/s11554-025-01757-0},
+  journal      = {Journal of Real-Time Image Processing},
+  month        = {10},
+  number       = {5},
+  pages        = {1-11},
+  shortjournal = {J. Real-Time Image Process.},
+  title        = {ELSD-YOLO: An enhanced lightweight ship detection framework based on YOLO11n},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

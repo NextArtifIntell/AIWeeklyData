@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AUTOM</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="autom">AUTOM - 11</h2>
+<ul>
+<li><details>
+<summary>
+(2026). Accelerated primal–dual methods for strongly convex objective functions in continuous and discrete time. <em>AUTOM</em>, <em>183</em>, 112579. (<a href='https://doi.org/10.1016/j.automatica.2025.112579'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we introduce a “second-order primal” + “first-order dual” continuous-time dynamic for linearly constrained optimization problems, where the objective function is μ -strongly convex. We consider a constant damping 2 μ for the second-order ordinary differential equation in the primal variable, following Nesterov’s acceleration for strongly convex optimization. A positive constant scaling is applied to the primal variable, while a positive increasing scaling function is applied to the dual variable. We prove that the proposed dynamic achieves a fast convergence rate for both the objective residual and the feasibility violation, with the decay rate potentially reaching O ( e − μ t ) . Additionally, we show that the dynamic is robust under small perturbations. By discretizing the proposed continuous-time dynamic, we develop an accelerated linearized augmented Lagrangian method for strongly convex composite optimization with linear constraints, where the objective function has a nonsmooth + smooth composite structure. The proposed algorithm achieves a fast convergence rate that matches the one of the continuous-time dynamic. We also consider an inexact version of the proposed algorithm, which can be viewed as a discrete version of the perturbed continuous-time dynamic. Numerical results are provided to verify the practical performances.},
+  archive      = {J_AUTOM},
+  author       = {Xin He and Dong He and Ya-Ping Fang},
+  doi          = {10.1016/j.automatica.2025.112579},
+  journal      = {Automatica},
+  month        = {1},
+  pages        = {112579},
+  shortjournal = {Automatica},
+  title        = {Accelerated primal–dual methods for strongly convex objective functions in continuous and discrete time},
+  volume       = {183},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Intersection-based architectures for decentralized diagnosis of discrete event systems. <em>AUTOM</em>, <em>183</em>, 112576. (<a href='https://doi.org/10.1016/j.automatica.2025.112576'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, two intersection-based architectures, named the normal-state-estimator-intersection-based architecture (N-SEI architecture) and the failure-state-estimator-intersection-based architecture (F-SEI architecture), are examined for decentralized diagnosis of discrete event systems. For each of these architectures, the corresponding notion of codiagnosability is defined. These defined notions of codiagnosability are incomparable with inference diagnosability for the inference-based architecture. In addition, codiagnosability for the N-SEI architecture is weaker than the existing notion of intersection-based codiagnosability, while codiagnosability for the F-SEI architecture is incomparable with it. For each of the N-SEI and F-SEI architectures, a method for verifying the corresponding notion of codiagnosability is developed.},
+  archive      = {J_AUTOM},
+  author       = {Shigemasa Takai and Takashi Yamamoto},
+  doi          = {10.1016/j.automatica.2025.112576},
+  journal      = {Automatica},
+  month        = {1},
+  pages        = {112576},
+  shortjournal = {Automatica},
+  title        = {Intersection-based architectures for decentralized diagnosis of discrete event systems},
+  volume       = {183},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Distributed stochastic constrained optimization with constant step-sizes via saddle-point dynamics. <em>AUTOM</em>, <em>183</em>, 112575. (<a href='https://doi.org/10.1016/j.automatica.2025.112575'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper considers distributed stochastic optimization problems over a multi-agent network, where each agent collaboratively minimizes the sum of individual expectation-valued cost functions subject to nonidentical set constraints. We first recast the distributed constrained optimization as a constrained saddle-point problem. Subsequently, two distributed stochastic algorithms via optimistic gradient descent ascent (SOGDA) and extragradient (SEG) methods are developed with constant step sizes, in which the variable sample-size technique is incorporated to reduce the variance of the sampled gradients. We present the explicit selection criteria of the constant step size, under which the developed algorithms achieve almost sure convergence to an optimal solution. Moreover, the convergence rate is O ( 1 / k ) for merely convex cost functions, which matches the optimal rate of its deterministic counterpart. Finally, a numerical example is provided to reflect the theoretical findings.},
+  archive      = {J_AUTOM},
+  author       = {Yi Huang and Shisheng Cui and Xianlin Zeng and Ziyang Meng},
+  doi          = {10.1016/j.automatica.2025.112575},
+  journal      = {Automatica},
+  month        = {1},
+  pages        = {112575},
+  shortjournal = {Automatica},
+  title        = {Distributed stochastic constrained optimization with constant step-sizes via saddle-point dynamics},
+  volume       = {183},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). A characterization method of terminal ingredients for nonlinear MPC using value-based reinforcement learning. <em>AUTOM</em>, <em>183</em>, 112574. (<a href='https://doi.org/10.1016/j.automatica.2025.112574'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The stability of nonlinear model predictive control (MPC) relies significantly on stabilizing factors such as the terminal region and cost. A larger terminal region not only expands the region of attraction for the closed-loop system but also contributes to reducing online computation costs. However, existing methods in the literature often impose limitations on the degrees of freedom available for characterizing terminal ingredients. This limitation arises from the reliance on either a predetermined linear local controller or a preset control Lyapunov function. This paper introduces an innovative approach to terminal ingredient characterization leveraging value-based reinforcement learning (RL). This method provides ample degrees of freedom for expanding the terminal region. To achieve this, a deep neural network is employed to learn the parametric state value function, serving as the terminal cost for MPC. The local controller adopts a one-step MPC instead of a predetermined linear or nonlinear feedback controller. Subsequently, a terminal set sequence is constructed iteratively through the one-step set expansion. The proposed approach’s effectiveness is validated through simulations.},
+  archive      = {J_AUTOM},
+  author       = {Jinghan Cui and Jinwu Gao and Xiangjie Liu and Yuqi Liu and Shuyou Yu},
+  doi          = {10.1016/j.automatica.2025.112574},
+  journal      = {Automatica},
+  month        = {1},
+  pages        = {112574},
+  shortjournal = {Automatica},
+  title        = {A characterization method of terminal ingredients for nonlinear MPC using value-based reinforcement learning},
+  volume       = {183},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Maximum principle for partial information non-zero sum stochastic differential games with mixed delays. <em>AUTOM</em>, <em>183</em>, 112570. (<a href='https://doi.org/10.1016/j.automatica.2025.112570'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper is concerned with one kind of partial information non-zero sum stochastic differential game with mixed delays. Both the state and control processes contain delays, where the former contains moving-average delay, discrete delay and noisy memory. We establish a necessary as well as two sufficient stochastic maximum principles for the game. As one of the main features of this research, a new kind of sufficient maximum principle is given, where the diffusion term can be controlled with non-convex control domains, and no second-order adjoint equation is needed. The theoretical results are applied to study two examples where the adjoint processes can be derived by two approaches and then the equilibrium points are obtained. This research generalizes those of stochastic optimal control problems.},
+  archive      = {J_AUTOM},
+  author       = {Pan Chen and Feng Zhang},
+  doi          = {10.1016/j.automatica.2025.112570},
+  journal      = {Automatica},
+  month        = {1},
+  pages        = {112570},
+  shortjournal = {Automatica},
+  title        = {Maximum principle for partial information non-zero sum stochastic differential games with mixed delays},
+  volume       = {183},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Interval-constraint multiagent systems: Global attractivity and structural stability of equilibria. <em>AUTOM</em>, <em>183</em>, 112566. (<a href='https://doi.org/10.1016/j.automatica.2025.112566'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper focuses on the dynamic behavior of an interval-constraint multiagent system. Each agent has a constraint interval that limits its potential consensus values, achieved by encoding a nonsmooth piecewise function into the agent. In addition, the underlying graphs considered are strongly connected. First, a dichotomy of equilibria is identified: either a unique non-consensus equilibrium point or multiple consensus points, depending on whether the intersection of the constraint intervals is empty or not. Then, the set of equilibria is proven to be a global attractor. Structural stability of such a system is also proven based on real-analysis methods, showing that the equilibria have continuous dependence on changes of the constraint intervals. Three running examples are used to illustrate the proposed results.},
+  archive      = {J_AUTOM},
+  author       = {Fengqiu Liu and Kuize Zhang and Yuhu Wu and Xiaoping Xue},
+  doi          = {10.1016/j.automatica.2025.112566},
+  journal      = {Automatica},
+  month        = {1},
+  pages        = {112566},
+  shortjournal = {Automatica},
+  title        = {Interval-constraint multiagent systems: Global attractivity and structural stability of equilibria},
+  volume       = {183},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Byzantine-resilient federated online learning for gaussian process regression. <em>AUTOM</em>, <em>183</em>, 112554. (<a href='https://doi.org/10.1016/j.automatica.2025.112554'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we study Byzantine-resilient federated online learning for Gaussian process regression (GPR). We develop a Byzantine-resilient federated GPR algorithm that allows a cloud and a group of agents to collaboratively learn a latent function and improve the learning performances where some agents exhibit Byzantine failures, i.e., arbitrary and potentially adversarial behavior. Each agent-based local GPR sends potentially compromised local predictions to the cloud, and the cloud-based aggregated GPR computes a global model by a Byzantine-resilient product of experts aggregation rule. Then the cloud broadcasts the current global model to all the agents. Agent-based fused GPR refines local predictions by fusing the received global model with that of the agent-based local GPR. Moreover, we quantify the learning accuracy improvements of the agent-based fused GPR over the agent-based local GPR. Experiments on a toy example and two medium-scale real-world datasets are conducted to demonstrate the performances of the proposed algorithm.},
+  archive      = {J_AUTOM},
+  author       = {Xu Zhang and Zhenyuan Yuan and Minghui Zhu},
+  doi          = {10.1016/j.automatica.2025.112554},
+  journal      = {Automatica},
+  month        = {1},
+  pages        = {112554},
+  shortjournal = {Automatica},
+  title        = {Byzantine-resilient federated online learning for gaussian process regression},
+  volume       = {183},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Observer-based asymptotic active fault diagnosis: Separate and joint design of observer gain and input. <em>AUTOM</em>, <em>183</em>, 112548. (<a href='https://doi.org/10.1016/j.automatica.2025.112548'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes observer gain and input design methods for observer-based asymptotic active fault diagnosis, which are based on a newly-defined notion named the excluding degree of the origin from a zonotope. Using the excluding degree, a quantitative specification is obtained to characterize the performance of set-based robust fault diagnosis. Furthermore, a separate gain design method and a joint gain and input design method are proposed, respectively. This is the first work to achieve a joint observer gain and input design for set-based active fault diagnosis. Compared with the existing methods that design gains and input separately, the proposed joint gain and input design method has advantages to exploit the fault diagnosis potential of observer-based schemes. Finally, several examples are used to illustrate the effectiveness of the proposed methods.},
+  archive      = {J_AUTOM},
+  author       = {Feng Xu and Yiming Wan and Ye Wang and Vicenç Puig},
+  doi          = {10.1016/j.automatica.2025.112548},
+  journal      = {Automatica},
+  month        = {1},
+  pages        = {112548},
+  shortjournal = {Automatica},
+  title        = {Observer-based asymptotic active fault diagnosis: Separate and joint design of observer gain and input},
+  volume       = {183},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Revisiting lossless convexification: Theoretical guarantees for discrete-time optimal control problems. <em>AUTOM</em>, <em>183</em>, 112537. (<a href='https://doi.org/10.1016/j.automatica.2025.112537'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Lossless Convexification (LCvx) is a modeling approach that transforms a class of nonconvex optimal control problems, where nonconvexity primarily arises from control constraints, into convex problems through convex relaxations. These convex problems can be solved using polynomial-time numerical methods after discretization, which converts the original infinite-dimensional problem into a finite-dimensional one. However, existing LCvx theory is limited to continuous-time optimal control problems, as the equivalence between the relaxed convex problem and the original nonconvex problem holds only in continuous-time. This paper extends LCvx theory to discrete-time optimal control problems by classifying them into normal and long-horizon cases. For normal cases, after an arbitrarily small perturbation to the system dynamics (recursive equality constraints), applying the existing LCvx method to discrete-time problems results in optimal controls that meet the original nonconvex constraints at all but no more than n x − 1 temporal grid points, where n x is the state dimension. For long-horizon cases, the existing LCvx method fails, but we resolve this issue by integrating it with a bisection search, leveraging the continuity of the value function from the relaxed convex problem to achieve similar results as in normal cases. This paper strengthens the theoretical foundation of LCvx, extending the applicability of LCvx theory to discrete-time optimal control problems.},
+  archive      = {J_AUTOM},
+  author       = {Dayou Luo and Kazuya Echigo and Behçet Açıkmeşe},
+  doi          = {10.1016/j.automatica.2025.112537},
+  journal      = {Automatica},
+  month        = {1},
+  pages        = {112537},
+  shortjournal = {Automatica},
+  title        = {Revisiting lossless convexification: Theoretical guarantees for discrete-time optimal control problems},
+  volume       = {183},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Federated cubic regularized newton learning with sparsification-amplified differential privacy. <em>AUTOM</em>, <em>183</em>, 112531. (<a href='https://doi.org/10.1016/j.automatica.2025.112531'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper explores the cubic-regularized Newton method within a federated learning framework while addressing two major concerns: privacy leakage and communication bottlenecks. We propose the Differentially Private Federated Cubic Regularized Newton (DP-FCRN) algorithm, which leverages second-order techniques to achieve lower iteration complexity than first-order methods. We incorporate noise perturbation during local computations to ensure privacy. Furthermore, we employ sparsification in uplink transmission, which not only reduces the communication costs but also amplifies the privacy guarantee. Specifically, this approach reduces the necessary noise intensity without compromising privacy protection. We analyze the convergence properties of our algorithm and establish the privacy guarantee. Finally, we validate the effectiveness of the proposed algorithm through experiments on a benchmark dataset.},
+  archive      = {J_AUTOM},
+  author       = {Wei Huo and Changxin Liu and Kemi Ding and Karl Henrik Johansson and Ling Shi},
+  doi          = {10.1016/j.automatica.2025.112531},
+  journal      = {Automatica},
+  month        = {1},
+  pages        = {112531},
+  shortjournal = {Automatica},
+  title        = {Federated cubic regularized newton learning with sparsification-amplified differential privacy},
+  volume       = {183},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2026). Fixed-time learning for safe time-critical verification using reachability analysis. <em>AUTOM</em>, <em>183</em>, 112528. (<a href='https://doi.org/10.1016/j.automatica.2025.112528'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we address a safe time-critical control problem using reachability analysis and design a reinforcement learning-based mechanism for learning online and in fixed-time the solution to the safe time-critical control problem. Safety is ensured by determining a set of states for which there exists an admissible control law generating a system trajectory that does not reach a set of forbidden states at a user-prescribed time instant. Specifically, we cast our safe time-critical problem as a Mayer optimal feedback control problem whose solution satisfies the Hamilton–Jacobi–Bellman (HJB) equation and characterizes the set of safe states. Since the HJB equation is generally difficult to solve, we develop an online critic-only reinforcement learning-based algorithm for simultaneously learning the solution to the HJB equation and the safe set in a fixed time. In particular, we introduce a non-Lipschitz experience replay-based learning law utilizing recorded and current data for updating the critic weights to learn the value function and the safe set. The non-Lipschitz property of the dynamics gives rise to fixed-time convergence, whereas the experience replay-based approach eliminates the need to satisfy the persistence of excitation condition provided that a recorded data set is sufficiently rich. Simulation results illustrate the efficacy of the proposed approach to the problem of fixed-wing unmanned aerial vehicle collision avoidance.},
+  archive      = {J_AUTOM},
+  author       = {Nick-Marios T. Kokolakis and Kyriakos G. Vamvoudakis and Wassim M. Haddad},
+  doi          = {10.1016/j.automatica.2025.112528},
+  journal      = {Automatica},
+  month        = {1},
+  pages        = {112528},
+  shortjournal = {Automatica},
+  title        = {Fixed-time learning for safe time-critical verification using reachability analysis},
+  volume       = {183},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

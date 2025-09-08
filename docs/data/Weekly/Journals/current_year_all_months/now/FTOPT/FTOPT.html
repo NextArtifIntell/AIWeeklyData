@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FTOPT</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ftopt">FTOPT - 5</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Riemannian online learning. <em>FTOPT</em>, <em>9</em>(3), 248-406. (<a href='https://doi.org/10.1561/2400000054'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In emerging fields such as machine learning, quantum computing, biomedical imaging, and robotics, data and decisions often exist in curved, non-Euclidean spaces due to physical constraints or underlying symmetries. Riemannian online optimization provides a new framework for handling learning tasks where data arrives sequentially in geometric spaces. This monograph offers a comprehensive overview of online learning over Riemannian manifolds.},
+  archive      = {J_FTOPT},
+  author       = {Xi Wang and Guodong Shi},
+  doi          = {10.1561/2400000054},
+  journal      = {Foundations and Trends® in Optimization},
+  month        = {8},
+  number       = {3},
+  pages        = {248-406},
+  shortjournal = {Found. Trends Optim.},
+  title        = {Riemannian online learning},
+  volume       = {9},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Causal machine learning: A survey and open problems. <em>FTOPT</em>, <em>9</em>(1-2), 1-247. (<a href='https://doi.org/10.1561/2400000052'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Causal Machine Learning (CausalML) is an umbrella term for machine learning methods that formalize the datageneration process as a causal model. This perspective enables one to reason about the effects of changes to this process (interventions) and what would have happened in hindsight (counterfactuals). We categorize work in CausalML into five groups according to the problems they address: (1) causal supervised learning, (2) causal generative modeling, (3) causal explanations, (4) causal fairness, and (5) causal reinforcement learning. We systematically compare approaches in each category and point out open problems. Further, we review field-specific applications in computer vision, natural language processing, and graph representation learning. Finally, we provide an overview of causal benchmarks and a discussion of the state of this nascent field, including recommendations for future work.},
+  archive      = {J_FTOPT},
+  author       = {Jean Kaddour and Aengus Lynch and Qi Liu and Matt J. Kusner and Ricardo Silva},
+  doi          = {10.1561/2400000052},
+  journal      = {Foundations and Trends® in Optimization},
+  month        = {8},
+  number       = {1-2},
+  pages        = {1-247},
+  shortjournal = {Found. Trends Optim.},
+  title        = {Causal machine learning: A survey and open problems},
+  volume       = {9},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AltGDmin: Alternating GD and minimization for partly-decoupled (Federated) optimization. <em>FTOPT</em>, <em>8</em>(4), 333-414. (<a href='https://doi.org/10.1561/2400000051'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This monograph describes a novel optimization solution framework, called alternating gradient descent (GD) and minimization (AltGDmin), that is useful for many problems for which alternating minimization (AltMin) is a popular solution. AltMin is a special case of the block coordinate descent algorithm that is useful for problems in which minimization w.r.t one subset of variables keeping the other fixed is closed form or otherwise reliably solved. Denote the two blocks/subsets of the optimization variables Z by Z slow , Z fast , i.e., Z = {Z slow , Z fast }. AltGDmin is often a faster solution than AltMin for any problem for which (i) the minimization over one set of variables, Z fast , is much quicker than that over the other set, Z slow ; and (ii) the cost function is differentiable w.r.t. Z slow . Often, the reason for one minimization to be quicker is that the problem is "decoupled" for Z fast and each of the decoupled problems is quick to solve. This decoupling is also what makes AltGDmin communication-efficient for federated settings. Important examples where this assumption holds include (a) low rank column-wise compressive sensing (LRCS), low rank matrix completion (LRMC), (b) their outlier-corrupted extensions such as robust PCA, robust LRCS and robust LRMC; (c) phase retrieval and its sparse and low-rank model based extensions; (d) tensor extensions of many of these problems such as tensor LRCS and tensor completion; and (e) many partly discrete problems where GD does not apply – such as clustering, unlabeled sensing, and mixed linear regression. LRCS finds important applications in multi-task representation learning and few shot learning, federated sketching, and accelerated dynamic MRI. LRMC and robust PCA find important applications in recommender systems, computer vision and video analytics.},
+  archive      = {J_FTOPT},
+  author       = {Namrata Vaswani},
+  doi          = {10.1561/2400000051},
+  journal      = {Foundations and Trends® in Optimization},
+  month        = {5},
+  number       = {4},
+  pages        = {333-414},
+  shortjournal = {Found. Trends Optim.},
+  title        = {AltGDmin: Alternating GD and minimization for partly-decoupled (Federated) optimization},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Gradient-based algorithms for zeroth-order optimization. <em>FTOPT</em>, <em>8</em>(1–3), 1-332. (<a href='https://doi.org/10.1561/2400000047'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This monograph deals with methods for stochastic or data-driven optimization. The overall goal in these methods is to minimize a certain parameter-dependent objective function that for any parameter value is an expectation of a noisy sample performance objective whose measurement can be made from a real system or a simulation device depending on the setting used. We present a class of model-free approaches based on stochastic approximation which involve random search procedures to efficiently make use of the noisy observations. The idea here is to simply estimate the minima of the expected objective via an incremental-update or recursive procedure and not to estimate the whole objective function itself. We provide both asymptotic as well as finite sample analyses of the procedures used for convex as well as non-convex objectives. We present algorithms that either estimate the gradient in gradient-based schemes or estimate both the gradient and the Hessian in Newton-type procedures using random direction approaches involving noisy function measurements. Hence the class of approaches that we study fall under the broad category of zeroth order optimization methods. We provide both asymptotic convergence guarantees in the general setup as well as asymptotic normality results for various algorithms. We also provide an introduction to stochastic recursive inclusions as well as their asymptotic convergence analysis. This is necessitated because many of these settings involve set-valued maps for any given parameter. We also present a couple of interesting applications of these methods in the domain of reinforcement learning. Five appendices at the end of this work quickly summarize the basic material. A large portion of this work is driven by our own contributions to this area.},
+  archive      = {J_FTOPT},
+  author       = {Prashanth L. A. and Shalabh Bhatnagar},
+  doi          = {10.1561/2400000047},
+  journal      = {Foundations and Trends® in Optimization},
+  month        = {5},
+  number       = {1–3},
+  pages        = {1-332},
+  shortjournal = {Found. Trends Optim.},
+  title        = {Gradient-based algorithms for zeroth-order optimization},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Integer programming games. <em>FTOPT</em>, <em>7</em>(4), 264-391. (<a href='https://doi.org/10.1561/2400000040'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We provide a comprehensive survey of Integer Programming Games (IPGs), focusing on both simultaneous games and bilevel programs. These games are characterized by integral constraints within the players’ strategy sets. We start from the fundamental definitions of these games and various solution concepts associated with them, and derive the properties of the games and the solution concepts. For each of the two types of games – simultaneous and bilevel – we have one section dedicated to the analysis of the games and another section dedicated to the development and analyses of algorithms to solve them. The analyses sections present results on the computational complexity of the general game as well as various other restricted versions. These sections also discuss the structural properties of the games and the equilibrium concepts associated with them. The algorithm sections, in contrast, present some of the state-of-the-art algorithms developed to solve these games, either exactly, approximately or fast under fixed-parameter assumptions. These sections also contain proofs of the correctness of these algorithms and an assessment of their theoretical run times in the worst-case scenario.},
+  archive      = {J_FTOPT},
+  author       = {Margarida Carvalho and Gabriele Dragotto and Andrea Lodi and Sriram Sankaranarayanan},
+  doi          = {10.1561/2400000040},
+  journal      = {Foundations and Trends® in Optimization},
+  month        = {2},
+  number       = {4},
+  pages        = {264-391},
+  shortjournal = {Found. Trends Optim.},
+  title        = {Integer programming games},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

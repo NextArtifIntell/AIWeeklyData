@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MPC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="mpc">MPC - 6</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Instance-specific linear relaxations of semidefinite optimization problems. <em>MPC</em>, <em>17</em>(2), 385-435. (<a href='https://doi.org/10.1007/s12532-025-00275-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce a generic technique to obtain linear relaxations of semidefinite programs with provable guarantees based on the commutativity of the constraint and the objective matrices. We study conditions under which the optimal value of the SDP and the proposed linear relaxation match, which we then relax to provide a flexible methodology to derive effective linear relaxations. We specialize these results to provide linear programs that approximate well-known semidefinite programs for the max cut problem proposed by Poljak and Rendl, and the Lovász theta number; we prove that the linear program proposed for max cut certifies a known eigenvalue bound for the maximum cut value and is in fact stronger. Our ideas can be used to warm-start algorithms that solve semidefinite programs by iterative polyhedral approximation of the feasible region. We verify this capability through multiple experiments on the max cut semidefinite program, the Lovász theta number and on three families of semidefinite programs obtained as convex relaxations of certain quadratically constrained quadratic problems.},
+  archive      = {J_MPC},
+  author       = {de Roux, Daniel and Carr, Robert and Ravi, R.},
+  doi          = {10.1007/s12532-025-00275-1},
+  journal      = {Mathematical Programming Computation},
+  month        = {6},
+  number       = {2},
+  pages        = {385-435},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Instance-specific linear relaxations of semidefinite optimization problems},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). K-shortest simple paths using biobjective path search. <em>MPC</em>, <em>17</em>(2), 349-384. (<a href='https://doi.org/10.1007/s12532-025-00276-0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper we introduce a new algorithm for the k-Shortest Simple Paths ( $$k$$ -SSP) problem with an asymptotic running time matching the state of the art from the literature. It is based on a black-box algorithm due to Roditty and Zwick [30] that solves at most 2k instances of the Second Shortest Simple Path ( $$2$$ -SSP) problem without specifying how this is done. We fill this gap using a novel approach: we turn the scalar $$2$$ -SSP into instances of the Biobjective Shortest Path problem. Our experiments on grid graphs and on road networks show that the new algorithm is very efficient in practice.},
+  archive      = {J_MPC},
+  author       = {Maristany de las Casas, Pedro and Sedeño-Noda, Antonio and Borndörfer, Ralf and Huneshagen, Max},
+  doi          = {10.1007/s12532-025-00276-0},
+  journal      = {Mathematical Programming Computation},
+  month        = {6},
+  number       = {2},
+  pages        = {349-384},
+  shortjournal = {Math. Program. Comput.},
+  title        = {K-shortest simple paths using biobjective path search},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On o(n) algorithms for projection onto the top-k-sum sublevel set. <em>MPC</em>, <em>17</em>(2), 307-348. (<a href='https://doi.org/10.1007/s12532-024-00273-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The top-k-sum operator computes the sum of the largest k components of a given vector. The Euclidean projection onto the top-k-sum sublevel set serves as a crucial subroutine in iterative methods to solve composite superquantile optimization problems. In this paper, we introduce a solver that implements two finite-termination algorithms to compute this projection. Both algorithms have O(n) complexity of floating point operations when applied to a sorted n-dimensional input vector, where the absorbed constant is independent of k. This stands in contrast to an existing grid-search-inspired method that has $$O(k(n-k))$$ complexity, a partition-based method with $$O(n+D\log D)$$ complexity, where $$D\le n$$ is the number of distinct elements in the input vector, and a semismooth Newton method with a finite termination property but unspecified floating point complexity. The improvement of our methods over the first method is significant when k is linearly dependent on n, which is frequently encountered in practical superquantile optimization applications. In instances where the input vector is unsorted, an additional cost is incurred to (partially) sort the vector, whereas a full sort of the input vector seems unavoidable for the other two methods. To reduce this cost, we further derive a rigorous procedure that leverages approximate sorting to compute the projection, which is particularly useful when solving a sequence of similar projection problems. Numerical results show that our methods solve problems of scale $$n=10^7$$ and $$k=10^4$$ within 0.05 s, whereas the most competitive alternative, the semismooth Newton-based method, takes about 1 s. The existing grid-search method and Gurobi’s QP solver can take from minutes to hours.},
+  archive      = {J_MPC},
+  author       = {Roth, Jake and Cui, Ying},
+  doi          = {10.1007/s12532-024-00273-9},
+  journal      = {Mathematical Programming Computation},
+  month        = {6},
+  number       = {2},
+  pages        = {307-348},
+  shortjournal = {Math. Program. Comput.},
+  title        = {On o(n) algorithms for projection onto the top-k-sum sublevel set},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LinA: A faster approach to piecewise linear approximations using corridors and its application to mixed-integer optimization. <em>MPC</em>, <em>17</em>(2), 265-306. (<a href='https://doi.org/10.1007/s12532-024-00274-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we address the problem of approximating and over/under-estimating univariate functions with piecewise linear (PWL) functions with the minimum number of linear segments given a bound on the allowed pointwise approximation error. Through a new geometric approach and building on the work of Ngueveu (Eur J Oper Res 275:1058–1071, 2019), we develop new algorithms that can solve the problem in quasi-logarithmic time on a very broad class of error types. Such algorithms find many applications, mostly related to solving certain classes of (mixed-integer) nonlinear and nonconvex programming (MINLP) problems by mixed-integer linear programming (MILP) techniques. An efficient implementation of our algorithms is available as a Julia package. Benchmarks are also provided to showcase how our method outperforms the state-of-the-art for this problem. Finally, we show how our algorithms can be used to efficiently solve certain classes of MINLP problems through a case study on multicommodity network design problems with congestion.},
+  archive      = {J_MPC},
+  author       = {Codsi, Julien and Ngueveu, Sandra Ulrich and Gendron, Bernard},
+  doi          = {10.1007/s12532-024-00274-8},
+  journal      = {Mathematical Programming Computation},
+  month        = {6},
+  number       = {2},
+  pages        = {265-306},
+  shortjournal = {Math. Program. Comput.},
+  title        = {LinA: A faster approach to piecewise linear approximations using corridors and its application to mixed-integer optimization},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fix and bound: An efficient approach for solving large-scale quadratic programming problems with box constraints. <em>MPC</em>, <em>17</em>(2), 231-263. (<a href='https://doi.org/10.1007/s12532-024-00270-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we propose a branch-and-bound algorithm for solving nonconvex quadratic programming problems with box constraints (BoxQP). Our approach combines existing tools, such as semidefinite programming (SDP) bounds strengthened through valid inequalities, with a new class of optimality-based linear cuts which leads to variable fixing. The most important effect of fixing the value of some variables is the size reduction along the branch-and-bound tree, allowing to compute bounds by solving SDPs of smaller dimension. Extensive computational experiments over large dimensional (up to $$n=200$$ ) test instances show that our method is the state-of-the-art solver on large-scale BoxQPs. Furthermore, we test the proposed approach on the class of binary QP problems, where it exhibits competitive performance with state-of-the-art solvers.},
+  archive      = {J_MPC},
+  author       = {Locatelli, Marco and Piccialli, Veronica and Sudoso, Antonio M.},
+  doi          = {10.1007/s12532-024-00270-y},
+  journal      = {Mathematical Programming Computation},
+  month        = {6},
+  number       = {2},
+  pages        = {231-263},
+  shortjournal = {Math. Program. Comput.},
+  title        = {Fix and bound: An efficient approach for solving large-scale quadratic programming problems with box constraints},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CDOpt: A python package for a class of riemannian optimization. <em>MPC</em>, <em>17</em>(2), 173-230. (<a href='https://doi.org/10.1007/s12532-025-00277-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Optimization over an embedded submanifold defined by equality constraints $$c(x) = 0$$ has attracted much interest over the past few decades due to its wide applications in various areas, including computer vision, signal processing, numerical linear algebra, and deep learning. For solving such problems, many related optimization packages have been developed based on Riemannian optimization approaches, which rely on some basic geometrical materials of Riemannian manifolds, including Riemannian gradients, retractions, vector transports, etc. These geometrical materials can be challenging to determine in general. In fact, existing packages only accommodate a few well-known manifolds whose geometrical materials are more easily accessible. For other manifolds that are not contained in these packages, the users have to develop the geometric materials by themselves. In addition, it is not always tractable to adapt the advanced features from various state-of-the-art unconstrained optimization solvers to Riemannian optimization approaches. Here we introduce a user-friendly Python package, CDOpt (available at https://cdopt.github.io/ under BSD 3-clause license), for solving a class of Riemannian optimization problems. CDOpt is designed to complement existing Riemannian optimization packages by transforming Riemannian optimization problems into their unconstrained counterparts through the constraint dissolving approach. We prove that the when the penalty parameter in the constraint dissolving approach is sufficiently large, Riemannian optimization problems and their unconstrained counterparts are equivalent. Therefore, solving Riemannian optimization problems through CDOpt can directly benefit from various existing solvers and the rich expertise gained over the past few decades for unconstrained optimization. Moreover, all the computations in CDOpt related to any manifold in question are conducted through its constraints expression, hence users can easily define new manifolds in CDOpt without any background on differential geometry. Furthermore, CDOpt extends the neural layers from PyTorch and Flax, thus allowing users to train manifold constrained neural networks directly by the solvers for unconstrained optimization. Extensive numerical experiments demonstrate that CDOpt is highly efficient and robust in solving various classes of Riemannian optimization problems.},
+  archive      = {J_MPC},
+  author       = {Xiao, Nachuan and Hu, Xiaoyin and Liu, Xin and Toh, Kim-Chuan},
+  doi          = {10.1007/s12532-025-00277-z},
+  journal      = {Mathematical Programming Computation},
+  month        = {6},
+  number       = {2},
+  pages        = {173-230},
+  shortjournal = {Math. Program. Comput.},
+  title        = {CDOpt: A python package for a class of riemannian optimization},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

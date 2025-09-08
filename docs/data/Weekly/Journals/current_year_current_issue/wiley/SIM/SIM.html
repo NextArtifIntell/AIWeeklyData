@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SIM</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="sim">SIM - 6</h2>
+<ul>
+<li><details>
+<summary>
+(2025). A multi-phenotype approach to joint testing of main genetic and gene-environment interaction effects. <em>SIM</em>, <em>44</em>(20-22), e70253. (<a href='https://doi.org/10.1002/sim.70253'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Gene-environment (GxE) interactions crucially contribute to complex phenotypes. The statistical power of a GxE interaction study is limited mainly due to weak GxE interaction effect sizes. Joint tests of the main genetic and GxE effects for a univariate phenotype were proposed to utilize the individually weak GxE effects to improve the discovery of associated genetic loci. We develop a testing procedure to evaluate combined genetic and GxE effects on multiple related phenotypes to enhance the power by merging pleiotropy in the main genetic and GxE effects. We base the approach on a general linear hypothesis testing framework for multivariate regression of continuous phenotypes. We implement the generalized estimating equations (GEE) technique under the seemingly unrelated regressions (SUR) setup for binary or mixed phenotypes. We use extensive simulations to show that the test for joint multi-phenotype genetic and GxE effects outperforms the univariate joint test of genetic and GxE effects and the test for multi-phenotype GxE effect concerning power when there is pleiotropy. The test produces a higher power than the test for the multi-phenotype marginal genetic effect for a weak genetic and substantial GxE effect. For more prominent genetic effects, the latter performs better with a limited increase in power. Overall, the multi-phenotype joint approach offers robust, high power across diverse simulation scenarios. We apply the methods to lipid phenotypes with sleep duration as an environmental factor in the UK Biobank. The proposed approach identified ten independent associated genetic loci missed by other competing methods. In a multi-phenotype analysis of apolipoproteins, ApoA1, and ApoB, our approach discovered two distinct loci considering sleep duration as the environmental factor.},
+  archive      = {J_SIM},
+  author       = {Saurabh Mishra and Arunabha Majumdar},
+  doi          = {10.1002/sim.70253},
+  journal      = {Statistics in Medicine},
+  month        = {9},
+  number       = {20-22},
+  pages        = {e70253},
+  shortjournal = {Stat. Med.},
+  title        = {A multi-phenotype approach to joint testing of main genetic and gene-environment interaction effects},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Modeling joint health effects of environmental exposure mixtures with bayesian additive regression trees. <em>SIM</em>, <em>44</em>(20-22), e70250. (<a href='https://doi.org/10.1002/sim.70250'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Studying the association between mixtures of environmental exposures and health outcomes can be challenging due to issues such as correlation among the exposures and non-linearities or interactions in the exposure-response function. For this reason, one common strategy is to fit flexible nonparametric models to capture the true exposure-response surface. However, once such a model is fit, further decisions are required when it comes to summarizing the marginal and joint effects of the mixture on the outcome. In this work, we describe the use of soft Bayesian additive regression trees (BART) to estimate the exposure-risk surface describing the effect of mixtures of chemical air pollutants and temperature on asthma-related emergency department (ED) visits during the warm season in Atlanta, Georgia, from 2011 to 2018. BART is chosen for its ability to handle large datasets and for its flexibility to be incorporated as a single component of a larger model. We then summarize the results using a strategy known as accumulated local effects to extract meaningful insights into the mixture effects on asthma-related morbidity. Notably, we observe negative associations between and asthma ED visits and harmful associations between ozone and asthma ED visits, both of which are particularly strong on lower temperature days.},
+  archive      = {J_SIM},
+  author       = {Jacob R. Englert and Stefanie T. Ebelt and Howard H. Chang},
+  doi          = {10.1002/sim.70250},
+  journal      = {Statistics in Medicine},
+  month        = {9},
+  number       = {20-22},
+  pages        = {e70250},
+  shortjournal = {Stat. Med.},
+  title        = {Modeling joint health effects of environmental exposure mixtures with bayesian additive regression trees},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A location-scale joint model for studying the link between the time-dependent subject-specific variability of blood pressure and competing events. <em>SIM</em>, <em>44</em>(20-22), e70244. (<a href='https://doi.org/10.1002/sim.70244'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Given the high incidence of cardio and cerebrovascular diseases (CVD), and their association with morbidity and mortality, their prevention is a major public health issue. A high level of blood pressure is a well-known risk factor for these events, and an increasing number of studies suggest that blood pressure variability may also be an independent risk factor. However, these studies suffer from significant methodological weaknesses. In this work, we propose a new location-scale joint model for the repeated measures of a marker and competing events. This joint model combines a mixed model including a subject-specific and time-dependent residual variance modeled through random effects, and cause-specific proportional intensity models for the competing events. The risk of events may depend simultaneously on the current value of the variance, as well as, the current value and the current slope of the marker trajectory. The model is estimated by maximizing the likelihood function using the Marquardt–Levenberg algorithm. The estimation procedure is implemented in an R-package and is validated through a simulation study. This model is applied to study the association between blood pressure variability and the risk of CVD and death from other causes. Using data from a large clinical trial on the secondary prevention of stroke, we find that the current individual variability of blood pressure is associated with the risk of CVD and death. Moreover, the comparison with a model without heterogeneous variance shows the importance of taking into account this variability in the goodness-of-fit and for dynamic predictions.},
+  archive      = {J_SIM},
+  author       = {Léonie Courcoul and Christophe Tzourio and Mark Woodward and Antoine Barbieri and Hélène Jacqmin-Gadda},
+  doi          = {10.1002/sim.70244},
+  journal      = {Statistics in Medicine},
+  month        = {9},
+  number       = {20-22},
+  pages        = {e70244},
+  shortjournal = {Stat. Med.},
+  title        = {A location-scale joint model for studying the link between the time-dependent subject-specific variability of blood pressure and competing events},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RISE: Two-stage rank-based identification of high-dimensional surrogate markers applied to vaccinology. <em>SIM</em>, <em>44</em>(20-22), e70241. (<a href='https://doi.org/10.1002/sim.70241'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In vaccine trials with long-term participant follow-up, it is of great importance to identify surrogate markers that accurately infer long-term immune responses. These markers offer practical advantages such as providing early, indirect evidence of vaccine efficacy, and can accelerate vaccine development while identifying potential biomarkers. High-throughput technologies such as RNA-sequencing have emerged as promising tools for understanding complex biological systems and informing new treatment strategies. However, these data are high-dimensional, presenting unique statistical challenges for existing surrogate marker identification methods. We introduce Rank-based Identification of high-dimensional SurrogatE Markers (RISE), a novel approach designed for small sample, high-dimensional settings typical in modern vaccine experiments. RISE uses a nonparametric univariate test to screen variables for promising candidates, followed by surrogate evaluation on independent data. Our simulation studies demonstrate RISE's desirable properties, including type one error rate control and empirical power under various conditions. Applying RISE to a clinical trial for inactivated influenza vaccination, we sought to identify genes whose expression could serve as a surrogate for the induced immune response. This analysis revealed a signature of genes appearing to function as a reasonable surrogate for the neutralizing antibody response. Pathways related to innate antiviral signaling and interferon stimulation were strongly represented in this derived surrogate, providing a clear immunological interpretation.},
+  archive      = {J_SIM},
+  author       = {Arthur Hughes and Layla Parast and Rodolphe Thiébaut and Boris P. Hejblum},
+  doi          = {10.1002/sim.70241},
+  journal      = {Statistics in Medicine},
+  month        = {9},
+  number       = {20-22},
+  pages        = {e70241},
+  shortjournal = {Stat. Med.},
+  title        = {RISE: Two-stage rank-based identification of high-dimensional surrogate markers applied to vaccinology},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multiplicity control in oncology clinical trials with a binary surrogate endpoint-based drop-the-losers design. <em>SIM</em>, <em>44</em>(20-22), e70209. (<a href='https://doi.org/10.1002/sim.70209'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Typical phase 1 oncology studies identify the maximum tolerated dose as the “optimal” dose for subsequent phases. With the advancement of molecular targeted agents and immunotherapies, however, evaluating two or more doses has become increasingly critical for dose selection. Such evaluation is often done in phase 2 studies in a randomized manner. In this article, we evaluate the strategy of applying an adaptive phase 2/3 seamless design for dose selection in oncology studies. Specifically, we consider the “drop-the-losers” design, where multiple treatment arms and a control arm are administered during the initial stage, and a more effective arm is identified for later stages by a binary surrogate endpoint such as overall response. We derive the theoretical type I error inflation scale and conduct simulation studies to illustrate the impact of various factors on the type I error inflation in such designs. Furthermore, we demonstrate the findings through the design of a lung cancer trial and introduce a software that implements the proposed design.},
+  archive      = {J_SIM},
+  author       = {Weibin Zhong and Jing-ou Liu and Chenguang Wang},
+  doi          = {10.1002/sim.70209},
+  journal      = {Statistics in Medicine},
+  month        = {9},
+  number       = {20-22},
+  pages        = {e70209},
+  shortjournal = {Stat. Med.},
+  title        = {Multiplicity control in oncology clinical trials with a binary surrogate endpoint-based drop-the-losers design},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Incorporating heterogeneity in mixed hidden markov models with an application to the sleep-wake cycle. <em>SIM</em>, <em>44</em>(20-22), e70197. (<a href='https://doi.org/10.1002/sim.70197'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The sleep–wake cycle plays an important and far-reaching role in health. By utilizing personal physical activity monitors (PAMs), inferences about the sleep–wake cycle can be made. Hidden Markov models (HMMs) have been applied in this area as an accurate unsupervised approach. To account for heterogeneity in activity levels, we developed a mixed HMM that allows for individual differences. Through extensive simulations, we quantified the added gains relative to a standard HMM from using a mixed HMM to account for heterogeneity across several realistic scenarios. We found that mixed HMMs are often more accurate than standard HMMs when follow-up times are shorter. In situations with many repeated measurements per individual, a standard and mixed HMM have similar levels of accuracy, although a standard HMM is faster and easier to implement. Afterward, we applied our HMMs to actigraphy data from the National Health and Nutrition Examination Survey. We present results on sleep summary statistics by age and BMI. Summary statistics about the sleep–wake cycle extracted by the standard and mixed HMM were qualitatively similar. Differences in results, however, were likely driven by the heterogeneity in physical activity due to BMI and age, which we identified using a post hoc investigation of the data-driven clusters produced by the mixed HMM.},
+  archive      = {J_SIM},
+  author       = {Jordan Aron and Paul S. Albert and Mark B. Fiecas},
+  doi          = {10.1002/sim.70197},
+  journal      = {Statistics in Medicine},
+  month        = {9},
+  number       = {20-22},
+  pages        = {e70197},
+  shortjournal = {Stat. Med.},
+  title        = {Incorporating heterogeneity in mixed hidden markov models with an application to the sleep-wake cycle},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

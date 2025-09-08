@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MICRO</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="micro">MICRO - 33</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Comparative analysis of loosely and tightly coupled accelerator architectures for machine learning. <em>MICRO</em>, 1-12. (<a href='https://doi.org/10.1109/MM.2025.3603837'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rapid innovation of AI/ML workloads, accelerators have become an important part of the computing resources in datacenters. While characteristics such as performance, power, and efficiency are critical, developer velocity, which dictates how quickly a new workload can be deployed on an accelerator, is equally important. The accelerator architecture and properties it exposes to the higher-level programming model play a key role in determining the programming model and economic viability of the accelerators. We compare two classes of AI/ML accelerator architectures: an efficient loosely coupled accelerator already implemented in silicon and a tightly coupled accelerator with a traditional and user-friendly programming model. Our comparison shows that the performance of the design depends on the amount of hardware resources and not on how they are integrated, concluding that it is possible to architect accelerators in a much simpler and more compiler-friendly manner, while still maintaining the benefits of offload computing.},
+  archive      = {J_MICRO},
+  author       = {Amin Firoozshahian and Joel Coburn and Ajit Punj and Aravind Sukumaran Rajam and Colby Boyer and Rakesh Nattoji and Mahima Bathla and Bob Dreyer and Sujith Srinivasan and Harshitha Pilla and Michael Rotzin and Surendra Rajupalem and K. Rajesh Jagannath and Krishna Noru and Harikrishna Reddy and Chris Yang and Charlie Hong-Men Su and Charlie Cheng},
+  doi          = {10.1109/MM.2025.3603837},
+  journal      = {IEEE Micro},
+  month        = {9},
+  pages        = {1-12},
+  shortjournal = {IEEE Micro},
+  title        = {Comparative analysis of loosely and tightly coupled accelerator architectures for machine learning},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Corsair: An in-memory computing chiplet architecture for inference-time compute acceleration. <em>MICRO</em>, 1-11. (<a href='https://doi.org/10.1109/MM.2025.3593444'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Advances in Generative AI (GenAI) have reinvigorated research into novel computing architectures such as Transformer. Transformer, characterized by low arithmetic intensity during most of the inference time, has become the cornerstone of GenAI underlying Large Language (LLM) and Reasoning Models (RM). Numerous solutions to the intense memory bandwidth problem have been proposed. Corsair is an architecture that targets this need using chiplet design, digital in-memory computing-based matrix engine, efficient die-to-die interconnects, block floating point numerics, and large high-bandwidth on-chip memories. We describe the Corsair chiplet, scaling approaches to compose larger systems, and outline the software stack. We formulate the inference-time requirements of LLM and RM computation, memory bandwidth, memory capacity, and interconnect efficiency for scaling. We also show how Corsair design perfectly fits these workloads. We present benchmark results from Corsair silicon that correlate strongly with the design and preview an estimate of workload-level improvements expected with Corsair.},
+  archive      = {J_MICRO},
+  author       = {Satyam Srivastava and Akhil Arunkumar and Nithesh Kurella and Amrit Panda and Gaurav Jain and Purushotham Kamath and Mark Wutzke and Arun Tiruvur and Mike Gupta and Ilya Soloveychik and Vamsi Darsi and Malav Dalal and Vinayak Patankar and Sasidhar Dudyala and Senthil Duraisamy and Santhosh Ramchandran and Raghav Venkatasubramanian and Yuwei Qin and Xin Wang and Jayaprakash Balachandran and Ali Gok and Piotr Wojciechowski and Saliya Ekanayake and Chris Ng and Ranju Sarma and Shubhankit Rathore and Tristan Trouwen and Siwei Zhuang and Chris Nicol and Sudeep Bhoja},
+  doi          = {10.1109/MM.2025.3593444},
+  journal      = {IEEE Micro},
+  month        = {8},
+  pages        = {1-11},
+  shortjournal = {IEEE Micro},
+  title        = {Corsair: An in-memory computing chiplet architecture for inference-time compute acceleration},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BiFrost: A composable, resilient interconnect network architecture for scalable AI systems. <em>MICRO</em>, 1-11. (<a href='https://doi.org/10.1109/MM.2025.3594150'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large Language Models demand extreme memory bandwidth and compute density, surpassing traditional architectures. Chiplet-based designs and 3D memory stacking offer solutions, but introduce challenges in integration, yield, and software compatibility. We present BiFrost, a composable network architecture that addresses these challenges through three innovations. BiFrost implements a FatTree network on chiplets, enabling intra- and inter-chiplet communication with 820 TB/s aggregate raw bandwidth and sub-100 ns latency in a 24 chiplet setup. A unified address space, enabled by a novel packet address compute unit, ensures compatibility with POSIX shared-memory models. Resilience is achieved through adaptive routing and dynamic memory remapping, ensuring graceful degradation upon faults. Built on a 3nm process, BiFrost features 0.48 mm2 per 16 × 16 router and 17.2 mm2 per chiplet. Flexible routing supports topologies like Dragonfly and HyperX. BiFrost maintains 90% peak bandwidth under uniform random traffic and offers OS-level configurability, enabling seamless scaling from single chiplet to multi-rack systems.},
+  archive      = {J_MICRO},
+  author       = {Gurpreet Singh Kalsi and Hong Wang and Jason M Howard and Joshua B Fryman and Fabrizio Petrini and Daniel S Klowden and Sanjaya Tayal and Anil Rao and Steve Pawlowski},
+  doi          = {10.1109/MM.2025.3594150},
+  journal      = {IEEE Micro},
+  month        = {8},
+  pages        = {1-11},
+  shortjournal = {IEEE Micro},
+  title        = {BiFrost: A composable, resilient interconnect network architecture for scalable AI systems},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Characterizing and efficiently accelerating multimodal generation model inference. <em>MICRO</em>, 1-11. (<a href='https://doi.org/10.1109/MM.2025.3596539'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Generative artificial intelligence (AI) technology is revolutionizing the computing industry, posing new system design and optimization opportunities. In particular, AI’s ability to understand and respond in multiple modalities comes with significant system resource demands. To sustainably scale generative AI capabilities to billions of users in the world, inference must be fast and efficient. This paper pinpoints key system design and optimization opportunities by characterizing a family of emerging multi-modal generation models on real systems. Auto-regressive token generation is a critical latency performance bottleneck, typically dominated by GPU idle time. In addition to memory-intensive attention across the generative AI models, linear operations constitute significant inference latency due to the feed forward networks in Transformer-based models. We demonstrate that state-of-the-art optimization levers, spanning from applications to system software and hardware, set a 3.88× better baseline.},
+  archive      = {J_MICRO},
+  author       = {Yejin Lee and Alicia Golden and Anna Sun and Basil Hosmer and Bilge Acun and Can Balioglu and Changhan Wang and Charles David Hernandez and Christian Puhrsch and Daniel Haziza and Driss Guessous and Francisco Massa and Jacob Kahn and Jeffrey Wan and Jeremy Reizenstein and Jiaqi Zhai and Joe Isaacson and Joel Schlosser and Juan Pino and Kaushik Ram Sadagopan and Leonid Shamis and Linjian Ma and Min-Jae Hwang and Mingda Chen and Mostafa Elhoushi and Pedro Rodriguez and Ram Pasunuru and Samuel Hsia and Scott Yih and Sravya Popuri and Xing Liu and Carole-Jean Wu},
+  doi          = {10.1109/MM.2025.3596539},
+  journal      = {IEEE Micro},
+  month        = {8},
+  pages        = {1-11},
+  shortjournal = {IEEE Micro},
+  title        = {Characterizing and efficiently accelerating multimodal generation model inference},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CXL-GPU: Pushing GPU memory boundaries with the integration of CXL technologies. <em>MICRO</em>, 1-8. (<a href='https://doi.org/10.1109/MM.2025.3582433'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work introduces a GPU storage expansion solution utilizing CXL, featuring a novel GPU system design with multiple CXL root ports for integrating diverse storage media (DRAMs and/or SSDs). We developed and siliconized a custom CXL controller integrated at the hardware RTL level, achieving two-digit nanosecond round-trip latency, the first in the field. This study also includes speculative read and deterministic store mechanisms to efficiently manage read and write operations to hide the endpoint’s backend media latency variation. Performance evaluations reveal our approach significantly outperforms existing methods, marking a substantial advancement in GPU storage technology.},
+  archive      = {J_MICRO},
+  author       = {Donghyun Gouk and Seungkwan Kang and Seungjun Lee and Jiseon Kim and Kyungkuk Nam and Eojin Ryu and Sangwon Lee and Dongpyung Kim and Junhyeok Jang and Hanyeoreum Bae and Myoungsoo Jung},
+  doi          = {10.1109/MM.2025.3582433},
+  journal      = {IEEE Micro},
+  month        = {7},
+  pages        = {1-8},
+  shortjournal = {IEEE Micro},
+  title        = {CXL-GPU: Pushing GPU memory boundaries with the integration of CXL technologies},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). From block to byte: Transforming PCIe SSDs with CXL memory protocol and instruction annotation. <em>MICRO</em>, 1-8. (<a href='https://doi.org/10.1109/MM.2025.3581448'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper explores how Compute Express Link (CXL) can transform PCIe-based block storage into a scalable, byte-addressable working memory. We focus on cacheability as a critical feature for adapting block storage to CXL’s memory-centric architecture and introduce Type 3 endpoint devices, referred to as CXL-SSDs. To validate our approach, we prototype a CXL-SSD on a custom FPGA platform and propose annotation mechanisms, Determinism and Bufferability, to enhance performance while preserving data persistency. Our simulation-based evaluation demonstrates that CXL-SSD achieves 10.9× better performance than PCIe-based memory expanders and further reduces the latency by 5.4× with annotation enhancements. This work demonstrates the feasibility of integrating block storage into CXL’s ecosystem and provides a foundation for future memory-storage convergence.},
+  archive      = {J_MICRO},
+  author       = {Miryeong Kwon and Donghyun Gouk and Junhyeok Jang and Jinwoo Baek and Hyunwoo You and Sangyoon Ji and Hongjoo Jung and Junseok Moon and Seungkwan Kang and Seungjun Lee and Myoungsoo Jung},
+  doi          = {10.1109/MM.2025.3581448},
+  journal      = {IEEE Micro},
+  month        = {7},
+  pages        = {1-8},
+  shortjournal = {IEEE Micro},
+  title        = {From block to byte: Transforming PCIe SSDs with CXL memory protocol and instruction annotation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Automated high-level code optimization for warehouse performance. <em>MICRO</em>, 1-9. (<a href='https://doi.org/10.1109/MM.2025.3590033'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the twilight of Moore’s Law, optimizing program performance has emerged as a central focus in computer architecture research. Yet, high-level source optimization remains challenging due to the intricate nature of understanding code semantics. Our approach unifies machine learning techniques with established insights and tools from computer architecture to tackle the inherent challenges of high-level optimization. In this work, we introduce a framework to harness LLMs for high-level program optimization. We curate a dataset of competitive C++ submissions, each accompanied by extensive unit tests to capture performance-improving patterns. To mitigate the variability of performance measurements, we develop an evaluation harness using the gem5 full system simulator. Our results show a mean speedup of 6.86×, outperforming the average human optimization of 3.66×. We also give an overview of subsequent work in this space, describing how LLM-driven optimization enables autonomously applying performance-improving edits across billions of lines of code in Google data centers.},
+  archive      = {J_MICRO},
+  author       = {Alexander Shypula and Aman Madaan and Yimeng Zeng and Uri Alon and Jacob Gardner and Milad Hashemi and Graham Neubig and Parthasarathy Ranganathan and Osbert Bastani and Amir Yazdanbakhsh},
+  doi          = {10.1109/MM.2025.3590033},
+  journal      = {IEEE Micro},
+  month        = {7},
+  pages        = {1-9},
+  shortjournal = {IEEE Micro},
+  title        = {Automated high-level code optimization for warehouse performance},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). From TeAAL to FuseMax: Separation of concerns for attention accelerator design. <em>MICRO</em>, 1-9. (<a href='https://doi.org/10.1109/MM.2025.3589955'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Attention for transformers has recently received significant ‘attention’ as a target for custom acceleration. Our prior work, TeAAL [4], proposes a new accelerator design methodology that allows architects to reason about and optimize their designs iteratively. With a focus on attention, this work makes contributions to both the theory and practice of TeAAL’s methodology. On the theory side, we propose a set of analyses that can be applied using only the algorithm specification—the cascade of Einsums. On the practice side, we use the new analyses to analyze and taxonomize the space of attention algorithms and to iteratively build up an efficient, high-utilization accelerator. Our resulting design, FuseMax, achieves an average 6.7× speedup on attention and 5.3× speedup on end-to-end transformer inference over the prior state-of-the-art, FLAT [3], while using 79% and 83% of the energy, respectively.},
+  archive      = {J_MICRO},
+  author       = {Nandeeka Nayak and Xinrui Wu and Toluwanimi O. Odemuyiwa and Michael Pellauer and Joel S. Emer and Christopher W. Fletcher},
+  doi          = {10.1109/MM.2025.3589955},
+  journal      = {IEEE Micro},
+  month        = {7},
+  pages        = {1-9},
+  shortjournal = {IEEE Micro},
+  title        = {From TeAAL to FuseMax: Separation of concerns for attention accelerator design},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Delay space arithmetic and architecture. <em>MICRO</em>, 1-7. (<a href='https://doi.org/10.1109/MM.2025.3588787'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {What operations can you perform efficiently when you use the “time of arrival” of a signal’s edge to represent a number? Past work has shown how linear representations can be effectively used to optimize problems expressed in max-plus algebras, but efficient general-purpose arithmetic operations have remained elusive. We present negative-logarithmic delay space arithmetic as a completely new approach to temporal coding. Under this approach, general purpose arithmetic is transformed to a “soft” version of the standard temporal operations in such a way that preserves all of the algebraic identities. We further show that these soft operations can be approximated by composing the original “sharp” temporal operators, resulting in simple, energy efficient implementations. We demonstrate the effectiveness of this novel arithmetic with a near-sensor architecture for energy efficient convolutions. Cycle-over-cycle operation is supported through temporal recurrence, dramatically limiting the need for expensive domain conversions or noise-prone temporal memories.},
+  archive      = {J_MICRO},
+  author       = {Rhys Gretsch and Peiyang Song and Advait Madhavan and Jeremy Lau and Timothy Sherwood},
+  doi          = {10.1109/MM.2025.3588787},
+  journal      = {IEEE Micro},
+  month        = {7},
+  pages        = {1-7},
+  shortjournal = {IEEE Micro},
+  title        = {Delay space arithmetic and architecture},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Waferscale network switches. <em>MICRO</em>, 1-7. (<a href='https://doi.org/10.1109/MM.2025.3589927'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In spite of being a key determinant of latency, cost, power, space, and capability of modern computer systems, network switch radix has not seen much growth over the years due to poor scaling of off-chip IO pitches and switch die sizes. In this work, we show that one could use waferscale integration (WSI) as a way to dramatically increase the size of the switch substrate and build a network switch with 32x higher radix than state-of-the-art network switches. We identified and addressed the limitations of internal bandwidth, external bandwidth, and power density, as the vanilla design would make the benefits of waferscale network switch minimal. We show that the waferscale network switch can be used to enable new computing systems such as single-switch datacenters and massive-scale singular GPUs. It can also lead to a dramatic reduction in datacenter network costs.},
+  archive      = {J_MICRO},
+  author       = {Shuangliang Chen and Saptadeep Pal and Rakesh Kumar},
+  doi          = {10.1109/MM.2025.3589927},
+  journal      = {IEEE Micro},
+  month        = {7},
+  pages        = {1-7},
+  shortjournal = {IEEE Micro},
+  title        = {Waferscale network switches},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Performance characterizations and usage guidelines of samsung CMM-H. <em>MICRO</em>, 1-9. (<a href='https://doi.org/10.1109/MM.2025.3591577'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article presents the first publicly available study for comprehensive characterizations of an FPGA-based Samsung’s CXL Memory Module Hybrid (CMM-H) prototype. It leverages emerging CXL technology to enable high-speed and cacheline-granular communication between CPUs and NAND flash, offering three-fold benefits: byte-addressability, scalable capacity, and persistence at a low cost. Samsung’s CMM-H delivers these benefits through a hardware-only solution, i.e., it does not incur any OS/IO overheads like conventional block devices. In particular, CMM-H integrates a DRAM cache with NAND flash in a single device to deliver near-DRAM latency. Through this study, we address users’ concerns about whether a wide variety of applications can successfully run on a memory device backed by NAND flash medium. Additionally, based on these characterizations, we provide key insights into how to best take advantage of the CMM-H device.},
+  archive      = {J_MICRO},
+  author       = {Jianping Zeng and Shuyi Pei and Da Zhang and Yuchen Zhou and Amir Beygi and Xuebin Yao and Ramdas Kachare and Tong Zhang and Zongwang Li and Marie Nguyen and Rekha Pitchumani and Yang Soek Ki and Changhee Jung},
+  doi          = {10.1109/MM.2025.3591577},
+  journal      = {IEEE Micro},
+  month        = {7},
+  pages        = {1-9},
+  shortjournal = {IEEE Micro},
+  title        = {Performance characterizations and usage guidelines of samsung CMM-H},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An introduction to life-cycle emissions of AI hardware. <em>MICRO</em>, 1-10. (<a href='https://doi.org/10.1109/MM.2025.3592568'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Specialized hardware accelerators aid the rapid advancement of artificial intelligence (AI), and their efficiency impacts AI’s environmental sustainability. This study presents the first publication of a comprehensive AI accelerator life-cycle assessment (LCA) of greenhouse gas emissions, including the first publication of manufacturing emissions of an AI accelerator. Our analysis of five Tensor Processing Units (TPUs) encompasses all stages of the hardware lifespan—from material extraction and manufacturing, to energy consumption during training and serving of AI models. Using first-party data, it offers the most comprehensive evaluation of AI hardware’s environmental impact. We introduce a new metric, compute carbon intensity (CCI), that will help evaluate AI hardware sustainability and estimate the carbon footprint of training and inference. We show that CCI improves 3x from TPU v4i to TPU v6e. Moreover, while this paper’s focus is on hardware, software advancements leverage and amplify these gains.},
+  archive      = {J_MICRO},
+  author       = {Ian Schneider and Hui Xu and Stephan Benecke and David Patterson and Keguo Huang and Parthasarathy Ranganathan and Cooper Elsworth},
+  doi          = {10.1109/MM.2025.3592568},
+  journal      = {IEEE Micro},
+  month        = {7},
+  pages        = {1-10},
+  shortjournal = {IEEE Micro},
+  title        = {An introduction to life-cycle emissions of AI hardware},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Speculative decoding on the SN40L reconfigurable dataflow unit. <em>MICRO</em>, 1-10. (<a href='https://doi.org/10.1109/MM.2025.3592570'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Speculative decoding has emerged as a promising optimization strategy to accelerate generative AI inference. This technique enhances the autoregressive decoding phase by using a smaller draft model to generate a few tokens, which are then validated by a larger model. However, synchronization overheads on both GPUs and hosts limit the performance gains. This article explores the implementation and optimization potential of batched speculative decoding within SambaNova’s SN40L reconfigurable dataflow unit (RDU). We achieve more than 75% of the theoretical maximum performance for speculative decoding and delivering a 6× speedup compared to the baseline model. Furthermore, we demonstrate that a single SN40L rack, containing 16 sockets and offering HBM bandwidth comparable to the DGX H100, outperforms the latter by up to 1.7×. The techniques and models discussed are deployed in SambaNova’s production AI inference cloud, cloud.sambanova.ai, showcasing their tangible impact on large-scale AI applications.},
+  archive      = {J_MICRO},
+  author       = {Pushkar Nandkar and Darshan Gandhi and Nasim Farahini and Håkan Zeffer and John Long and Samuel Rydh and Matheen Musaddiq and Tuowen Zhao and Joshua Brot and Reid Goodbar and Yun Du and Mingran Wang and Raghu Prabhakar},
+  doi          = {10.1109/MM.2025.3592570},
+  journal      = {IEEE Micro},
+  month        = {7},
+  pages        = {1-10},
+  shortjournal = {IEEE Micro},
+  title        = {Speculative decoding on the SN40L reconfigurable dataflow unit},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FlexMem: Tiered cache sharing service for virtual machine images based on memory pool. <em>MICRO</em>, 1-8. (<a href='https://doi.org/10.1109/MM.2025.3574139'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In virtualization-based cloud computing, numerous redundant tiered memory pages exist across independent virtual machines (VMs) deployed on different physical hosts within the data center. For instance, each VM typically loads the data from its virtual disk into its memory (local tier), without considering the existing data in other remote VMs’ memory (remote tier). In this paper, we propose FlexMem, a preliminary architecture designed to eliminate memory redundancy for qcow2-based VMs. First, FlexMem introduces a virtual persistent memory (PMem) device that facilitates cross-host memory consolidation by leveraging Remote Direct Memory Access (RDMA) for fast remote read operations. Second, FlexMem employs flexible backing specifications that are memory-mapped (mmapped) to sparse and layered qcow2 images. By delivering images to VMs through FlexMem and enabling guest Direct Access (DAX), user programs within the guest can directly access identical images already cached in the remote host’s memory. Our evaluation demonstrates that FlexMem significantly improves memory efficiency and the availability of VMs with reduced hardware costs, ultimately enhancing the competitiveness of cloud vendors.},
+  archive      = {J_MICRO},
+  author       = {Zhihao Zhang and Weinan Liu and Zhenlong Song and Xinbiao Gan and Yue Yu and Yiming Zhang},
+  doi          = {10.1109/MM.2025.3574139},
+  journal      = {IEEE Micro},
+  month        = {6},
+  pages        = {1-8},
+  shortjournal = {IEEE Micro},
+  title        = {FlexMem: Tiered cache sharing service for virtual machine images based on memory pool},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Compute-enabled CXL memory expansion for efficient retrieval augmented generation. <em>MICRO</em>, 1-8. (<a href='https://doi.org/10.1109/MM.2025.3575280'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Conventional near-memory processing architectures often strike a trade-off between memory capacity and memory bandwidth, leading to high initial data movement or high capital costs due to memory stranding. In this work, we introduce compute-enabled memory expansion enabled by CXL as a solution for the widespread adoption of near-memory processing at scale. We present the Intelligent Knowledge Store (IKS), which is fundamentally a memory expander with lightweight near-memory accelerators that leverage high internal memory bandwidth to accelerate dense retrieval, a key component of retrieval-augmented generation (RAG). IKS disaggregates its internal memory capacity and supports both spatial and temporal multi-tenancy. It significantly accelerates high-quality dense retrieval while enabling multi-tenancy with modest memory access interference.},
+  archive      = {J_MICRO},
+  author       = {Derrick Quinn and Neel Patel and Mohammad Alian},
+  doi          = {10.1109/MM.2025.3575280},
+  journal      = {IEEE Micro},
+  month        = {6},
+  pages        = {1-8},
+  shortjournal = {IEEE Micro},
+  title        = {Compute-enabled CXL memory expansion for efficient retrieval augmented generation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Splitwise: Efficient generative LLM inference using phase splitting. <em>MICRO</em>, 1-5. (<a href='https://doi.org/10.1109/MM.2025.3575361'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Generative Large Language Model (LLM) applications are rapidly growing, leading to widespread deployment of expensive, power-hungry GPUs. Growing power demands of AI in the cloud industry has become a global problem [5]. Our analysis shows that LLM inference involves two distinct phases: a compute-intensive prefill phase and a memory-intensive decode phase, each with different resource needs. Running them together introduces inefficient scheduling. Furthermore, unlike prefill phase, the decode phase can run on lower-cost and lowerpower hardware. Building on these insights, we propose Splitwise, a scheduling technique that splits prefill and decode phases across different machines to achieve better throughput. Additionally, Splitwise allows phase-specific hardware optimization. By efficiently transferring request state between machines, Splitwise achieves up to 2.35× more throughput within the same power and cost budgets, or 1.4× higher throughput at 20% lower cost and same power.},
+  archive      = {J_MICRO},
+  author       = {Esha Choukse and Pratyush Patel and Chaojie Zhang and Aashaka Shah and Inigo Goiri and Saeed Maleki and Rodrigo Fonseca and Ricardo Bianchini},
+  doi          = {10.1109/MM.2025.3575361},
+  journal      = {IEEE Micro},
+  month        = {6},
+  pages        = {1-5},
+  shortjournal = {IEEE Micro},
+  title        = {Splitwise: Efficient generative LLM inference using phase splitting},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Assessing processor sustainability using the first-order FOCAL carbon model. <em>MICRO</em>, 1-7. (<a href='https://doi.org/10.1109/MM.2025.3576714'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To overcome the inherent data uncertainty regarding the sustainability of computing devices in general and processors in particular, this paper proposes FOCAL, a parameterized first-order carbon model to assess processor sustainability from first principles. FOCAL’s normalized carbon footprint (NCF) metric guides computer architects to holistically optimize chip area, energy and power consumption to reduce a processor’s environmental footprint. We use FOCAL to analyze and categorize a broad set of archetypal processor mechanisms into strongly, weakly or less sustainable design choices, providing insight and intuition into how to reduce a processor’s environmental footprint with implications to both hardware and software. A case study illustrates a pathway for designing strongly sustainable multicore processors delivering high performance while at the same time reducing their environmental footprint.},
+  archive      = {J_MICRO},
+  author       = {Lieven Eeckhout},
+  doi          = {10.1109/MM.2025.3576714},
+  journal      = {IEEE Micro},
+  month        = {6},
+  pages        = {1-7},
+  shortjournal = {IEEE Micro},
+  title        = {Assessing processor sustainability using the first-order FOCAL carbon model},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scalar vector runahead: Removing the shackles of indirect memory chains on in-order cores. <em>MICRO</em>, 1-7. (<a href='https://doi.org/10.1109/MM.2025.3577524'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modern processors often face the memory wall as a significant bottleneck, a problem that becomes particularly severe when using stall-on-use in-order cores. Despite this limitation, there is growing demand for energy-efficient in-order cores due to privacy and sustainability concerns. Scalar Vector Runahead (SVR)1 provides an elegant solution by extracting high memory-level parallelism through piggybacking on existing instructions executed on the processor that lead to future irregular memory accesses. SVR speculatively executes multiple transient, independent, parallel instances of memory accesses and their instruction chains, by initiating memory accesses from many different values of a predicted induction variable. This approach moves mutually independent memory accesses next to each other to hide dependent stalls. With a hardware overhead of only 2 KiB and without the need for hardware vector extensions, SVR delivers 3.2× higher performance than a baseline 3-wide in-order core inspired by an Arm Cortex A510, and 1.3× higher performance than a full out-of-order core, while halving energy consumption.},
+  archive      = {J_MICRO},
+  author       = {Jaime Roelandts and Ajeya Naithani and Sam Ainsworth and Timothy M. Jones and Lieven Eeckhout},
+  doi          = {10.1109/MM.2025.3577524},
+  journal      = {IEEE Micro},
+  month        = {6},
+  pages        = {1-7},
+  shortjournal = {IEEE Micro},
+  title        = {Scalar vector runahead: Removing the shackles of indirect memory chains on in-order cores},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Maximizing interconnect bandwidth and efficiency in NVMe-based key-value SSDs with fine-grained value transfer. <em>MICRO</em>, 1-8. (<a href='https://doi.org/10.1109/MM.2025.3572475'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Key-Value SSD (KV-SSD) redefines storage interfaces by integrating a key-value store directly within the device, offering native support for non-page-aligned key-value pairs. This architectural innovation enables KV-SSDs to offload storage management from the host system, positioning them as ideal candidates for resource disaggregation. However, KV-SSDs face significant challenges, notably I/O amplification caused by conflicts with traditional storage protocols like NVMe, which are designed around memory page units. Specifically, this results in a substantial increase in data traffic over interconnect between the host and SSD. This paper introduces BandSlim, a novel solution addressing these challenges in data transfer by leveraging (i) NVMe command piggybacking for universally compatible, fine-grained transfers without requiring interconnect-level support and (ii) the remote memory access capabilities of emerging Compute eXpress Link (CXL) interconnects for higher-performance fine-grained transfers. Through extensive evaluations, BandSlim achieves up to a 97.9% reduction in PCIe traffic compared to conventional NVMe KV-SSDs.},
+  archive      = {J_MICRO},
+  author       = {Junhyeok Park and Chang-Gyu Lee and Soon Hwang and Seung-Jun Cha and Woosuk Chung and Youngjae Kim},
+  doi          = {10.1109/MM.2025.3572475},
+  journal      = {IEEE Micro},
+  month        = {5},
+  pages        = {1-8},
+  shortjournal = {IEEE Micro},
+  title        = {Maximizing interconnect bandwidth and efficiency in NVMe-based key-value SSDs with fine-grained value transfer},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enabling sustainable cloud computing with low-carbon server design. <em>MICRO</em>, 1-9. (<a href='https://doi.org/10.1109/MM.2025.3572955'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To combat climate change, we must reduce carbon emissions from hyperscale cloud computing. We find that compute servers cause the majority of a general-purpose cloud’s emissions. Thus, we motivate designing carbon-efficient compute server Stock Keeping Units (SKUs), or GreenSKUs, using recently-available low-carbon components. We build three GreenSKU prototypes, integrating energy-efficient CPUs, reused old DRAM via CXL, and reused old SSDs. We reveal challenges that limit GreenSKUs’ carbon savings at scale and may prevent their adoption by cloud providers. To address these challenges, we develop a novel framework, GSF (GreenSKU Framework), that enables cloud providers to systematically evaluate GreenSKUs’ carbon savings at scale. By implementing GSF within Microsoft Azure’s production constraints, we demonstrate that GreenSKUs reduce net cloud emissions by 8%, which is globally significant. This work is the first to demonstrate and quantify how carbon-efficient server designs translate to measurable cloud-scale emissions reductions, enabling meaningful contributions to cloud sustainability goals.},
+  archive      = {J_MICRO},
+  author       = {Jaylen Wang and Daniel S. Berger and Fiodar Kazhamiaka and Celine Irvene and Chaojie Zhang and Esha Choukse and Kali Frost and Rodrigo Fonseca and Brijesh Warrier and Chetan Bansal and Jonathan Stern and Ricardo Bianchini and Akshitha Sriraman},
+  doi          = {10.1109/MM.2025.3572955},
+  journal      = {IEEE Micro},
+  month        = {5},
+  pages        = {1-9},
+  shortjournal = {IEEE Micro},
+  title        = {Enabling sustainable cloud computing with low-carbon server design},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improving SQL join algorithms for distributed systems: A case study of CXL-based multi-host shared memory. <em>MICRO</em>, 1-9. (<a href='https://doi.org/10.1109/MM.2025.3574357'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The advent of Compute Express Link (CXL) has introduced the possibility of multi-host shared memory architectures. Despite this advancement, there has been limited exploration of shared memory at the application layer. Traditional distributed systems typically partition data across multiple servers, enabling independent processing. However, cross-partition operations, such as joins, require data repartitioning, leading to significant communication overhead. To address this challenge, we propose Merge Hash Join (MHJ), a novel SQL join algorithm that leverages shared memory to eliminate the need for repartitioning. By storing the joining table in shared memory and making it directly accessible to all servers, MHJ significantly reduces communication overhead. To validate our approach, we implemented MHJ and the necessary shared memory functionalities on a CXL-based shared memory prototype. Extensive evaluations using the industry-standard TPC-DS benchmark demonstrate that MHJ achieves up to 1.5× performance improvement compared to conventional join algorithms.},
+  archive      = {J_MICRO},
+  author       = {JaeYung Jun and HyunWoong Ahn and Joohee Lee and Jungmin Choi and Byungil Koh and Donguk Moon},
+  doi          = {10.1109/MM.2025.3574357},
+  journal      = {IEEE Micro},
+  month        = {5},
+  pages        = {1-9},
+  shortjournal = {IEEE Micro},
+  title        = {Improving SQL join algorithms for distributed systems: A case study of CXL-based multi-host shared memory},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hardware-assisted virtualization of neural processing units for cloud platforms. <em>MICRO</em>, 1-8. (<a href='https://doi.org/10.1109/MM.2025.3574630'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cloud platforms have deployed hardware accelerators like neural processing units (NPUs) for machine learning (ML) inference services. To maximize resource utilization while ensuring quality of service, a natural approach is to virtualize NPUs for efficient resource sharing for multi-tenant ML services. However, virtualizing NPUs is challenging. This is not only due to the lack of system abstraction support for NPU hardware, but also due to the lack of architectural and ISA support for fine-grained operator scheduling. This article presents Neu10, an NPU virtualization framework consisting of (1) an abstraction called vNPU for fine-grained virtualization of the heterogeneous compute units in a physical NPU (pNPU); (2) a vNPU allocator that enables pay-as-you-go pricing and flexible vNPU-to-pNPU mappings; and (3) an ISA extension of modern NPU architecture for fine-grained tensor operator scheduling for multiple vNPUs. We evaluate Neu10 with a production-level simulator to demonstrate its benefits over state-of-the-art NPU sharing approaches.},
+  archive      = {J_MICRO},
+  author       = {Yuqi Xue and Yiqi Liu and Lifeng Nai and Jian Huang},
+  doi          = {10.1109/MM.2025.3574630},
+  journal      = {IEEE Micro},
+  month        = {5},
+  pages        = {1-8},
+  shortjournal = {IEEE Micro},
+  title        = {Hardware-assisted virtualization of neural processing units for cloud platforms},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FS2: A fast, scalable and flexible switching system for emerging interconnects. <em>MICRO</em>, 1-8. (<a href='https://doi.org/10.1109/MM.2025.3574732'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cache-coherent interconnects such as CXL and CCIX have been introduced thanks to their cache coherence for a shared address space. However, we observe that it is difficult to scale such interconnects with 10-100s devices to fulfill the ever-increasing memory demands of bigdata applications. In this paper, we propose a switch-assisted scalable system architecture on top of those interconnects. Specifically, we introduce shared caches in interconnect-switches to efficiently exploit data reuse opportunities and to overcome the topological limitations by flexibly changing the topologies based on workload patterns. Our evaluation shows that our switch-assisted architecture provides higher scalability and up to 4.4× higher performance than native designs.},
+  archive      = {J_MICRO},
+  author       = {Heetaek Jeong and Kanghyun Choi and Hamin Jang and Donup-Kwon and Eunjin-Baek and Pyeongsu-Park and Jangwoo Kim},
+  doi          = {10.1109/MM.2025.3574732},
+  journal      = {IEEE Micro},
+  month        = {5},
+  pages        = {1-8},
+  shortjournal = {IEEE Micro},
+  title        = {FS2: A fast, scalable and flexible switching system for emerging interconnects},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). From co-location to exfiltration: Practical cache side-channel attacks in the modern public cloud. <em>MICRO</em>, 1-6. (<a href='https://doi.org/10.1109/MM.2025.3574715'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sharing resources among tenants is fundamental to public clouds, enhancing efficiency but also creating opportunities for microarchitectural side-channel attacks. However, cloud vendors remain skeptical about the practicality of these attacks, particularly regarding the ability to co-locate attacker and victm, and to overcome system noise. In this work, we develop a series of techniques for each step of the attack and, for the first time, demonstrate cross-tenant information leakage on the public Google Cloud Run, refuting the belief that such attacks are impractical. Our findings highlight the need to secure public clouds against side-channel attacks.},
+  archive      = {J_MICRO},
+  author       = {Zirui Neil Zhao and Adam Morrison and Christopher W. Fletcher and Josep Torrellas},
+  doi          = {10.1109/MM.2025.3574715},
+  journal      = {IEEE Micro},
+  month        = {5},
+  pages        = {1-6},
+  shortjournal = {IEEE Micro},
+  title        = {From co-location to exfiltration: Practical cache side-channel attacks in the modern public cloud},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Containerized in-storage processing and computing-enabled SSD disaggregation. <em>MICRO</em>, 1-8. (<a href='https://doi.org/10.1109/MM.2025.3574261'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {ISP minimizes data transfer for analytics but faces challenges in adaptation and disaggregation. We propose DockerSSD, an ISP model leveraging OS-level virtualization and lightweight firmware to enable containerized data processing directly on SSDs. Key features include Ethernet over NVMe for network-based ISP management and Virtual Firmware for secure, efficient container execution. DockerSSD supports disaggregated storage pools, reducing host overhead and enhancing large-scale services like LLM inference. It achieves up to 2.0× better performance for I/O-intensive workloads, and 7.9× improvement in distributed LLM inference.},
+  archive      = {J_MICRO},
+  author       = {Miryeong Kwon and Donghyun Gouk and Eunjee Na and Jiseon Kim and Junhee Kim and Hyein Woo and Eojin Ryu and Hyunkyu Choi and Jinwoo Baek and Hanyeoreum Bae and Mahmut Kandemir and Myoungsoo Jung},
+  doi          = {10.1109/MM.2025.3574261},
+  journal      = {IEEE Micro},
+  month        = {5},
+  pages        = {1-8},
+  shortjournal = {IEEE Micro},
+  title        = {Containerized in-storage processing and computing-enabled SSD disaggregation},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BlitzCoin: A decentralized hardware solution for power management of highly-heterogeneous SoCs. <em>MICRO</em>, 1-7. (<a href='https://doi.org/10.1109/MM.2025.3574281'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The increase in both the number and the types of accelerators in modern SoCs necessitates a rethinking of power-management strategies. To overcome the scalability shortcomings of current methods, we propose BlitzCoin a fully decentralized hardware-based power management coupled with optimized unified voltage and frequency regulation. We evaluated BlitzCoin through RTL simulations of multiple SoCs targeted toward different application domains. The results are further validated through silicon measurements of a fabricated 12 nm many-accelerator SoC that includes BlitzCoin. Our evaluations show that BlitzCoin is markedly faster than state-of-the-art centralized power-management strategies, with 8× to 12× lower response times. This results in 25%-34% throughput improvement and allows for scaling to 7× to 13× larger SoCs, all with a small area overhead of <1%. BlitzCoin is an addition to the open-source ESP SoC platform, offering a foundation for further exploration of power-management strategies.},
+  archive      = {J_MICRO},
+  author       = {Martin Cochet and Karthik Swaminathan and Erik Loscalzo and Joseph Zuckerman and Maico Cassel dos Santos and Davide Giri and Alper Buyuktosunoglu and Tianyu Jia and David Brooks and Gu-Yeon Wei and Kenneth Shepard and Luca P. Carloni and Pradip Bose},
+  doi          = {10.1109/MM.2025.3574281},
+  journal      = {IEEE Micro},
+  month        = {5},
+  pages        = {1-7},
+  shortjournal = {IEEE Micro},
+  title        = {BlitzCoin: A decentralized hardware solution for power management of highly-heterogeneous SoCs},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CXL topology-aware and expander-driven prefetching: Unlocking SSD performance. <em>MICRO</em>, 1-9. (<a href='https://doi.org/10.1109/MM.2025.3574293'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Integrating compute express link (CXL) with SSDs allows scalable access to large memory but has slower speeds than DRAMs. We present ExPAND, an expander-driven CXL prefetcher that offloads last-level cache (LLC) prefetching from host CPU to CXL-SSDs. ExPAND uses a heterogeneous prediction algorithm for prefetching and ensures data consistency with CXL.mem’s back-invalidation. We examine prefetch timeliness for accurate latency estimation. ExPAND, being aware of CXL multi-tiered switching, provides end-to-end latency for each CXL-SSD and precise prefetch timeliness estimations. Our method reduces CXL-SSD reliance and enables direct host cache access for most data. ExPAND enhances graph application performance and SPEC CPU’s performance by 9.0× and 14.7×, respectively, surpassing CXL-SSD pools with diverse prefetching strategies.},
+  archive      = {J_MICRO},
+  author       = {Dongsuk Oh and Miryeong Kwon and Jiseon Kim and Eunjee Na and Junseok Moon and Hyunkyu Choi and Seonghyeon Jang and Hanjin Choi and Hongjoo Jung and Sangwon Lee and Myoungsoo Jung},
+  doi          = {10.1109/MM.2025.3574293},
+  journal      = {IEEE Micro},
+  month        = {5},
+  pages        = {1-9},
+  shortjournal = {IEEE Micro},
+  title        = {CXL topology-aware and expander-driven prefetching: Unlocking SSD performance},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient disaggregated cloud storage for cold videos with neural enhancement. <em>MICRO</em>, 1-8. (<a href='https://doi.org/10.1109/MM.2025.3562625'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid growth of video-sharing platforms has driven immense storage demands, with disaggregated cloud storage emerging as a scalable and reliable solution. However, the proportional cost of cloud storage relative to capacity and duration limits the cost-efficiency for managing large-scale video data. This is particularly critical for cold videos, which constitute the majority of video data but are accessed infrequently. To address this challenge, this paper proposes Neural Cloud Storage (NCS), leveraging content-aware super-resolution (SR) powered by deep neural networks. By reducing the resolution of cold videos, NCS decreases file sizes while preserving perceptual quality. optimizing the cost trade-offs in multi-tiered disaggregated storage. This approach extends the cost-efficiency benefits to a greater range of cold videos and achieves up to a 21.2% reduction in total cost of ownership (TCO), providing a scalable, cost-effective solution for video storage.},
+  archive      = {J_MICRO},
+  author       = {Jinyeong Lim and Junhyeok Jang and Myoungsoo Jung and Dongsu Han},
+  doi          = {10.1109/MM.2025.3562625},
+  journal      = {IEEE Micro},
+  month        = {4},
+  pages        = {1-8},
+  shortjournal = {IEEE Micro},
+  title        = {Efficient disaggregated cloud storage for cold videos with neural enhancement},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Ginkgo: A learned index enhanced tiered memory system. <em>MICRO</em>, 1-8. (<a href='https://doi.org/10.1109/MM.2025.3564395'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Compute Express Link (CXL), as an emerging high-speed interconnect protocol, offers a promising approach to memory expansion. Organizing fast DDR DRAM and large CXL memory as a tiered memory system is preferred to obtain the large memory capacity while maintaining high memory performance. Additionally, such a tiered memory system also adopts huge pages to alleviate address translation overhead. However, due to memory bloating issues in huge pages, existing hardware-based tiered memory management systems suffer from severe cache conflicts and DDR DRAM underutilization, resulting in significant performance degradation. We introduce Ginkgo, a learned-index enhanced tiered memory system, which builds a distribution-aware cache index mechanism while leveraging the learned index to minimize metadata overhead. Evaluation reveals that Ginkgo reduces average memory access latency with an average of 3.1% and 13.5% compared to state-of-the-art Alloy Cache and Unison Cache, respectively.},
+  archive      = {J_MICRO},
+  author       = {Xiran Yang and Yifei Yu and Chuandong Li and Jianqiang Zeng and Ke Zhou and Diyu Zhou and Xiaolin Wang and Zhenlin Wang and Yingwei Luo},
+  doi          = {10.1109/MM.2025.3564395},
+  journal      = {IEEE Micro},
+  month        = {4},
+  pages        = {1-8},
+  shortjournal = {IEEE Micro},
+  title        = {Ginkgo: A learned index enhanced tiered memory system},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improving remote file access in distributed object stores by decoupling metadata and data paths using NVMe-oF. <em>MICRO</em>, 1-8. (<a href='https://doi.org/10.1109/MM.2025.3564477'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Storage network protocols such as NVMe-oF operate below the file system layer. Therefore, even when NVMe-oF allows storage volumes to be shared across the network, compute nodes cannot access remote files managed by another node’s file system without a cluster file system. In conventional distributed systems, accessing files owned by a remote node requires communication with the remote node via RPC. The remote node then retrieves the data from a disaggregated storage node and transfers it to the requesting node. To reduce redundant network traffic, this study proposes RDIO, which separates RPC-based remote data access into two distinct planes: a metadata plane for file mapping and a data plane for direct access to remote storage. The data plane ensures data flows only through the storage network. We integrate RDIO into MinIO and show that RDIO significantly improves performance by reducing remote data movement between nodes.},
+  archive      = {J_MICRO},
+  author       = {Daegyu Han and Sungho Moon and Kyeungpyo Kim and Sung-Soon Park and Beomseok Nam},
+  doi          = {10.1109/MM.2025.3564477},
+  journal      = {IEEE Micro},
+  month        = {4},
+  pages        = {1-8},
+  shortjournal = {IEEE Micro},
+  title        = {Improving remote file access in distributed object stores by decoupling metadata and data paths using NVMe-oF},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). MUDDLE: Multi-modal dynamic detector loopback evaluator to expose trojans in zero-trust PCB systems. <em>MICRO</em>, 1-9. (<a href='https://doi.org/10.1109/MM.2024.3520996'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We propose the MUDDLE framework for hardware Trojan detection in Printed Circuit Boards (PCBs) in a golden-free and zero-trust setting (unavailable known-good PCB, measurements from processors on the PCB are not trustworthy). Trojans could be inserted by adversaries during/after manufacturing to impact safety, stability, and performance of cyber-physical systems (CPS). MUDDLE monitors side channels under defender-controlled software-driven excitations and I/O connections to create loopbacks. Side channel measurements are acquired by an external test rig that is configurable (using an FPGA). Using FPGA-based reconfigurable logic, the defender instantiates active dynamic loopbacks crafted to illuminate Trojans. Side channel time series are evaluated against models constructed from golden-free design-based characterizations to probabilistically detect Trojans. We demonstrate efficacy of MUDDLE on a reconfigurable PCB Trojan testbed (built atop the OpenPLC programmable logic controller (PLC) platform) combined with an external configurable test rig.},
+  archive      = {J_MICRO},
+  author       = {Prashanth Krishnamurthy and Hammond Pearce and Virinchi Roy Surabhi and Joshua Trujillo and Ramesh Karri and Farshad Khorrami},
+  doi          = {10.1109/MM.2024.3520996},
+  journal      = {IEEE Micro},
+  month        = {12},
+  pages        = {1-9},
+  shortjournal = {IEEE Micro},
+  title        = {MUDDLE: Multi-modal dynamic detector loopback evaluator to expose trojans in zero-trust PCB systems},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). ReDL: A hybrid memory system with scalable data management strategies for DNN applications. <em>MICRO</em>, 1-7. (<a href='https://doi.org/10.1109/MM.2024.3458992'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Memory resource is a critical bottleneck for large-scale Deep Neural Network (DNN) applications. Hybrid Memory System (HMS) provides a promising solution to increase memory capacity in an affordable way. However, to release the power of HMS, data migration plays an important role. Deploying DNN on HMS imposes enormous challenges on data migration strategy and inspires us to pursue smart solutions. We propose a runtime system for HMS that automatically optimizes scalable data migrations and exploits domain knowledge on DNNs to manage data between fast and slow memory in HMS. We also introduce a reference distance and location based data management strategy (ReDL), treating short-lived and long-lived data objects with Idle and Dynamic migration methods, respectively. The experimental results demonstrate that with configuring the size of fast memory to be 20% of each workload’s peak memory consumption, our work achieves similar performance to the fast memory-only system.},
+  archive      = {J_MICRO},
+  author       = {Ningning Pan and Lei Ma and Xinting Ge and Hang Xiao and Xiaodan Sui and Yanyun Jiang and Yuanjie Zheng and Wei Rang},
+  doi          = {10.1109/MM.2024.3458992},
+  journal      = {IEEE Micro},
+  month        = {9},
+  pages        = {1-7},
+  shortjournal = {IEEE Micro},
+  title        = {ReDL: A hybrid memory system with scalable data management strategies for DNN applications},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2024). CIMNet: Joint search for neural network and computing-in-memory architecture. <em>MICRO</em>, 1-12. (<a href='https://doi.org/10.1109/MM.2024.3409068'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Computing-in-memory (CIM) architecture has been proven to effectively transcend the memory wall bottleneck, expanding the potential of low-power and high-throughput applications such as machine learning. Neural architecture search (NAS) designs ML models to meet a variety of accuracy, latency, and energy constraints. However, integrating CIM into NAS presents a major challenge due to additional simulation overhead from the non-ideal characteristics of CIM hardware. This work introduces a quantization and device aware accuracy predictor that jointly scores quantization policy, CIM architecture, and neural network architecture, eliminating the need for time-consuming simulations in the search process. We also propose reducing the search space based on architectural observations, resulting in a well-pruned search space customized for CIM. These allow for efficient exploration of superior combinations in mere CPU minutes. Our methodology yields CIMNet, which consistently improves the trade-off between accuracy and hardware efficiency on benchmarks, providing valuable architectural insights.},
+  archive      = {J_MICRO},
+  author       = {Xuan-Jun Chen and Chia-Lin Yang},
+  doi          = {10.1109/MM.2024.3409068},
+  journal      = {IEEE Micro},
+  month        = {6},
+  pages        = {1-12},
+  shortjournal = {IEEE Micro},
+  title        = {CIMNet: Joint search for neural network and computing-in-memory architecture},
+  year         = {2024},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

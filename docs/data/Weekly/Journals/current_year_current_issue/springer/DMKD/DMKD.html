@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>DMKD</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="dmkd">DMKD - 13</h2>
+<ul>
+<li><details>
+<summary>
+(2025). TSelect: Selecting relevant and non-redundant channels for multivariate time series classification. <em>DMKD</em>, <em>39</em>(6), 1-62. (<a href='https://doi.org/10.1007/s10618-025-01132-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In many time series classification tasks, each instance is described by multiple channels (i.e., signals). This introduces an additional computational burden as the time and resources to train a classifier increase as more channels become available. This is problematic as some tasks can be described by a huge number of channels. However, not all channels may be necessary as some could be irrelevant or redundant, and including these can (dramatically) increase run time while yielding no benefit in terms of predictive performance. Therefore, it can be useful to automatically select a subset of the channels to include in the analysis. We propose TSelect, a novel scalable and classifier-agnostic approach that automatically selects a relevant and non-redundant subset of the channels for multivariate time series classification (MTSC). Experimentally, we show on a large benchmark suite that TSelect (1) eliminates on average 62% of the channels, (2) significantly improves a classifier’s run time without sacrificing predictive performance, and (3) outperforms the two state-of-the-art channel selectors (ECS and ECP) on the majority of the experiments.},
+  archive      = {J_DMKD},
+  author       = {Nuyts, Loren and Perini, Lorenzo and Davis, Jesse},
+  doi          = {10.1007/s10618-025-01132-4},
+  journal      = {Data Mining and Knowledge Discovery},
+  month        = {11},
+  number       = {6},
+  pages        = {1-62},
+  shortjournal = {Data Mining Knowl. Discov.},
+  title        = {TSelect: Selecting relevant and non-redundant channels for multivariate time series classification},
+  volume       = {39},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Topic-aware influence maximization with deep reinforcement learning and graph attention networks. <em>DMKD</em>, <em>39</em>(6), 1-35. (<a href='https://doi.org/10.1007/s10618-025-01133-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Influence maximization is a fundamental problem in network analysis, focusing on identifying a subset of nodes in a social network to maximize the spread of influence. In this paper, we present an approach for tackling the Influence Maximization (IM) problem, integrating Deep Reinforcement Learning (DRL) techniques with attentive Graph Neural Networks (GATs). Our study builds upon a prior algorithm (S2V-DQN-IM) and progressively refines it towards IM-GNN, ultimately achieving competitive performance against state-of-the-art methods on classic IM. Through experiments on benchmark datasets, we empirically validate the effectiveness of graph attention mechanisms and positional encoding, using the graph magnetic Laplacian, to reach state-of-the-art performance in terms of influence spread. Building on this success, we extend our IM-GNN framework to incorporate topic-awareness in TIM-GNN, recognizing the inherent topical nature of real-world diffusions. By harnessing probabilistic techniques, we construct topic-aware social graphs using real cascades and assess the effectivenesss of TIM-GNN on them. Our extensive experimental results validate the utility of our topic-aware approach, demonstrating significant advances over existing topic-aware IM methods. Finally, in order to improve upon performance (latency) at query time, we develop a variant of TIM-GNN, called TIM-GNN $$^x$$ , by using cross-attention mechanisms. We show it maintains comparable overall spread performance as its predecessor, while achieving a 10x-20x speed-up.},
+  archive      = {J_DMKD},
+  author       = {Halal, Taha and Cautis, Bogdan and Groz, Benoît and Gao, Ruize},
+  doi          = {10.1007/s10618-025-01133-3},
+  journal      = {Data Mining and Knowledge Discovery},
+  month        = {11},
+  number       = {6},
+  pages        = {1-35},
+  shortjournal = {Data Mining Knowl. Discov.},
+  title        = {Topic-aware influence maximization with deep reinforcement learning and graph attention networks},
+  volume       = {39},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive multimodal graph learning for knowledge graph completion. <em>DMKD</em>, <em>39</em>(6), 1-27. (<a href='https://doi.org/10.1007/s10618-025-01139-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multimodal knowledge graphs, which integrate visual and textual data, have been widely utilized in various applications. Despite their potential, they often suffer from incompleteness due to the large amount of undiscovered valuable triple knowledge within the graph. This has led to a surge in research on multimodal knowledge graph completion. However, existing methods often face challenges such as irrelevant noise in multimodal data and limitations of straightforward multimodal fusion, which can lead to suboptimal model performance. In this paper, we propose a novel adaptive multimodal graph learning approach for efficient knowledge graph completion. We first introduce an adaptive multimodal knowledge capture module designed to integrate entity-related multimodal knowledge. This module includes a relation-aware modal view construction process to achieve semantic meaning consistency, along with link-aware point-to-face interactions for coarse-grained multimodal capture and adaptive point-to-point interactions for fine-grained multimodal extraction. We then propose a two-stage multimodal graph fusion module, which includes a cross-modal augmentation module to perform first-stage multimodal fusion between the entity graph and visual/textual graph, as well as a dynamic selection fusion module to conduct the second-stage fusion between entity-visual and entity-textual graphs. Our method demonstrates superior effectiveness through empirical evaluations on three common datasets.},
+  archive      = {J_DMKD},
+  author       = {Peng, Jie and Shan, Yongxue and Zha, Yongfu and Wang, Xiaodong},
+  doi          = {10.1007/s10618-025-01139-x},
+  journal      = {Data Mining and Knowledge Discovery},
+  month        = {11},
+  number       = {6},
+  pages        = {1-27},
+  shortjournal = {Data Mining Knowl. Discov.},
+  title        = {Adaptive multimodal graph learning for knowledge graph completion},
+  volume       = {39},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Detection and evaluation of clusters within sequential data. <em>DMKD</em>, <em>39</em>(6), 1-30. (<a href='https://doi.org/10.1007/s10618-025-01140-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sequential data is ubiquitous—it is routinely gathered to gain insights into complex processes such as behavioral, biological, or physical processes. Challengingly, such data not only has dependencies within the observed sequences, but the observations are also often high-dimensional, sparse, and noisy. These are all difficulties that obscure the inner workings of the complex process under study. One solution is to calculate a low-dimensional representation that describes (characteristics of) the complex process. This representation can then serve as a proxy to gain insight into the original process. However, uncovering such low-dimensional representation within sequential data is nontrivial due to the dependencies, and an algorithm specifically made for sequences is needed to guarantee estimator consistency. Fortunately, recent theoretical advancements on Block Markov Chains have resulted in new clustering algorithms that can provably do just this in synthetic sequential data. This paper presents a first field study of these new algorithms in real-world sequential data; a wide empirical study of clustering within a range of data sequences. We investigate broadly whether, when given sparse high-dimensional sequential data of real-life complex processes, useful low-dimensional representations can in fact be extracted using these algorithms. Concretely, we examine data sequences containing GPS coordinates describing animal movement, strands of human DNA, texts from English writing, and daily yields in a financial market. The low-dimensional representations we uncover are shown to not only successfully encode the sequential structure of the data, but also to enable gaining new insights into the underlying complex processes.},
+  archive      = {J_DMKD},
+  author       = {Van Werde, Alexander and Senen–Cerda, Albert and Kosmella, Gianluca and Sanders, Jaron},
+  doi          = {10.1007/s10618-025-01140-4},
+  journal      = {Data Mining and Knowledge Discovery},
+  month        = {11},
+  number       = {6},
+  pages        = {1-30},
+  shortjournal = {Data Mining Knowl. Discov.},
+  title        = {Detection and evaluation of clusters within sequential data},
+  volume       = {39},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fastere: A fast framework for entity relation extractions. <em>DMKD</em>, <em>39</em>(6), 1-27. (<a href='https://doi.org/10.1007/s10618-025-01146-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Entity Relation Extraction (ERE) aims to identify semantic relations between entities from unstructured texts. Despite achieving promising results, existing methods face significant efficiency challenges due to the overwhelming presence of irrelevant candidate entity pairs–with over 96% of candidate pairs lacking meaningful relations in typical datasets. This computational burden severely limits the practical applicability of ERE systems. To address these limitations, we propose FastERE, a fast framework that introduces three key innovations: (1) a pruner-based Entity Pairs Selection Module that dynamically filters irrelevant entity pairs before relation extraction, reducing computational overhead while improving sample quality; (2) an efficient task reformulation that frames NER as sequence tagging with adjacent attention mechanisms and RE as grouped triplet prediction with masked parallel packing; and (3) a multi-task learning framework with prefix-enhanced shared encoders that enables effective feature interaction while maintaining task independence. Experimental results on benchmark datasets demonstrate that FastERE achieves 6-20 $$\times $$ speedup over state-of-the-art methods while maintaining competitive accuracy, with F1 scores of 69.9% and 67.0% on ACE05 and ACE04 respectively. Our code is available at https://github.com/xerrors/FastERE .},
+  archive      = {J_DMKD},
+  author       = {Zhang, Wenjie and Xu, Tianyang and Hua, Yang and Feng, Zhenhua and Song, Xiaoning},
+  doi          = {10.1007/s10618-025-01146-y},
+  journal      = {Data Mining and Knowledge Discovery},
+  month        = {11},
+  number       = {6},
+  pages        = {1-27},
+  shortjournal = {Data Mining Knowl. Discov.},
+  title        = {Fastere: A fast framework for entity relation extractions},
+  volume       = {39},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Metadata supported scale space attention networks for multivariate timeseries prediction. <em>DMKD</em>, <em>39</em>(6), 1-46. (<a href='https://doi.org/10.1007/s10618-025-01151-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we investigate two problems faced in detecting/predicting intracranial hypertension (ICH) onsets. The first challenge is that intracranial pressure (ICP) can be measured only invasively, drilling a hole in patients skull. To tackle this challenge, we propose a novel metadata supported scale space attention (SSA) network to accurately and non-invasively predict intracranial hypertension (ICH) onsets, relying on supporting multi-variate data streams, including electroencephalogram (EEG), arterial blood pressure (ABP) and electrocardiogram (ECG). In particular, we propose a coupled network, integrating a convolutional neural network with scale space attention (CNN-SSA) and a long short-term memory (LSTM) network. This, however, opens up a new challenge—EEG readings at different health centers may rely on hardware with different numbers of sensors, which would render models not shareable across centers. To tackle this second challenge, we propose two alternative techniques: the first alternative relies on a multi-variate multi-scale neural network (M2NN) to impute missing EEG channels; the second alternative, on the other hand, identifies a core subset of EEG channels, shared by different centers, that can still provide accurate ICH predictions. We conduct rigorous experiments to substantiate our proposed method’s effectiveness—the results show that ICH can be predicted accurataly by relying on supporting data modalities, if we can properly attend the data at multiple scales and across modalities. Additionally, an ablation study demonstrates that the various components of our approach are essential in providing accurate ICH predictions.},
+  archive      = {J_DMKD},
+  author       = {Ravindranath, Manjusha and Candan, K. Selçuk and Appavu, Brian},
+  doi          = {10.1007/s10618-025-01151-1},
+  journal      = {Data Mining and Knowledge Discovery},
+  month        = {11},
+  number       = {6},
+  pages        = {1-46},
+  shortjournal = {Data Mining Knowl. Discov.},
+  title        = {Metadata supported scale space attention networks for multivariate timeseries prediction},
+  volume       = {39},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Overlapping community detection with a new modularity measure in directed weighted networks. <em>DMKD</em>, <em>39</em>(6), 1-37. (<a href='https://doi.org/10.1007/s10618-025-01153-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Identifying overlapping communities in complex networks is an important aspect of network analysis. This task, however, becomes extremely difficult when working with large-scale directed weighted networks, such as social media networks like Facebook, X, LinkedIn, biological systems, collaboration networks, neural networks, etc., which may consist of millions of entities. There are very few algorithms available for this task, and most are merely extensions of well-known algorithms designed for undirected networks. Besides, these algorithms often produce disjoint and low-quality community structures. On the other hand, evaluating overlapping community structures in directed weighted networks is also a major challenge due to the lack of specific quality measure designed for such networks. To address these challenges, we developed an algorithm called Community Detection in Directed And Weighted Networks (CD-DAWN). It is designed to identify overlapping communities in large, complex networks by selecting and expanding seeds, without needing any prior knowledge about the communities. We also developed a directed weighted overlapping modularity ( $$Q_\text {dwo}$$ ) to evaluate overlapping community structures in directed weighted networks, which is the first such measure to the best of our knowledge. To evaluate the effectiveness of CD-DAWN, we performed extensive experiments on both real-world and artificial networks. The results demonstrate that the proposed approach outperforms the baseline algorithms, accurately detecting high-quality and stable overlapping communities in complex networks.},
+  archive      = {J_DMKD},
+  author       = {Kumar, Abhinav and Kumari, Anjali and Kumar, Pawan and Dohare, Ravins},
+  doi          = {10.1007/s10618-025-01153-z},
+  journal      = {Data Mining and Knowledge Discovery},
+  month        = {11},
+  number       = {6},
+  pages        = {1-37},
+  shortjournal = {Data Mining Knowl. Discov.},
+  title        = {Overlapping community detection with a new modularity measure in directed weighted networks},
+  volume       = {39},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Stable graph based decision route explanation in siamese neural networks. <em>DMKD</em>, <em>39</em>(6), 1-32. (<a href='https://doi.org/10.1007/s10618-025-01154-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Siamese Neural Networks (SNNs) have shown promise in addressing a variety of tasks, even with limited data availability. However, their adoption is hindered by the lack of transparency in their decision-making processes. A key challenge in explaining SNNs lies in the absence of an inverse mapping between high-dimensional input feature vectors and the low-dimensional embedding space. Therefore, computing direct distances between input features becomes meaningless. Existing autoencoder-based explanation methods face several limitations. These include poor image reconstruction quality due to insufficient data and the omission of final distance layer of the SNN during the explanation process. While the Siamese Network Explainer (SINEX) can explain audio and grayscale images, it does not support RGB images. To overcome these challenges, we propose a method called Features Distance-based eXplanation (FDbX). This approach identifies salient features using ridge regression, trained on perturbed SLIC-segmented images. To enhance the selection of important features, we incorporate Bayesian analysis, which assigns importance scores to features. To provide a comprehensive explanation of the decision route, we construct a mathematical model that represents important features and their Hamming distances as a bipartite graph. In this graph, nodes represent features and edges denote distances between feature pairs. The resulting explanation heatmaps highlight critical image segments, offering more intuitive and visually informative explanations than existing methods. We evaluate stability and faithfulness of our method using stability indices such as $$R^2$$ and mean squared error. To the best of our knowledge, this is the first work to introduce Variable and Coefficient Stability Indices for image datasets.},
+  archive      = {J_DMKD},
+  author       = {Saleem, Rabia and Anjum, Ashiq and Yuan, Bo and Liu, Lu},
+  doi          = {10.1007/s10618-025-01154-y},
+  journal      = {Data Mining and Knowledge Discovery},
+  month        = {11},
+  number       = {6},
+  pages        = {1-32},
+  shortjournal = {Data Mining Knowl. Discov.},
+  title        = {Stable graph based decision route explanation in siamese neural networks},
+  volume       = {39},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Distilcyphergpt: Enhancing large language models for knowledge graph question answering in cypher through knowledge distillation. <em>DMKD</em>, <em>39</em>(6), 1-36. (<a href='https://doi.org/10.1007/s10618-025-01157-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Knowledge Graph Question Answering (KGQA) systems allow users to interact with knowledge graphs using natural language queries, which are translated into structured database queries like Cypher. Existing KGQA approaches often rely on large language models, leading to high computational costs and slower inference times that impede real-time applications. To address these challenges, DistilCypherGPT is introduced as an efficient KGQA framework employing knowledge distillation in a teacher-student architecture, optimized for Cypher query generation on academic knowledge graphs. DistilCypherGPT significantly reduces computational demands, enabling deployment in resource-constrained environments while retaining high accuracy. Experimental results show that DistilCypherGPT maintains 99.51% accuracy, achieving a 23% reduction in model size and a 30% improvement in inference speed compared to the baseline. These findings corroborate DistilCypherGPT’s potential as a scalable, high-performance solution for KGQA, advancing efficient, real-time query translation with minimal computational overhead.},
+  archive      = {J_DMKD},
+  author       = {Chong, You Li and Lee, Chin Poo and Lim, Kian Ming},
+  doi          = {10.1007/s10618-025-01157-9},
+  journal      = {Data Mining and Knowledge Discovery},
+  month        = {11},
+  number       = {6},
+  pages        = {1-36},
+  shortjournal = {Data Mining Knowl. Discov.},
+  title        = {Distilcyphergpt: Enhancing large language models for knowledge graph question answering in cypher through knowledge distillation},
+  volume       = {39},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HRHE: Hybrid relations-guided multi-modal knowledge graph completion using hierarchical embeddings. <em>DMKD</em>, <em>39</em>(6), 1-31. (<a href='https://doi.org/10.1007/s10618-025-01150-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-modal knowledge graph completion (MKGC) has garnered substantial research interest, particularly in applying multi-modal knowledge graphs (MMKGs). Previous studies have proposed various approaches to address the MKGC problem, including a variety of knowledge graph embedding techniques and approaches based on large language models. However, these methods face two limitations. First, many models embed entities and relations in a regular embedding space, failing to capture multi-modal components’ hierarchical semantics. Second, existing methods struggle to learn hybrid relations between entities of different modalities, which constrains the performance of MKGC models. In this paper, we propose a novel model, Hybrid Relations-guided MKGC with Hierarchical Embeddings (HRHE), to address the aforementioned limitations. Specifically, HRHE projects MMKGs into a polar coordinate system to capture hierarchical semantics and facilitate intra-inter-class interactions. Subsequently, HRHE introduces a general hybrid relations learning approach to discover implicit relations among entities of different modalities. Noting that our work can flexibly employ various neural network architectures, including convolutional neural networks, multi-layer perceptrons, and linear graph networks, to infer the implicit associations of MMKGs. Finally, an objective function is defined to leverage the inferred hybrid relations in guiding the modeling process of MMKGs. We investigate HRHE using two widely evaluated benchmarks and show that HRHE achieves better results than state-of-the-art MKGC baselines. Extensive evaluations demonstrate that constructing hierarchical semantic space and utilizing implicit associations among entities of different modalities can advance MKGC.},
+  archive      = {J_DMKD},
+  author       = {Lu, Xinyu and Li, Hao and Lu, Wei and Chang, Yanshuo and Xue, Feng},
+  doi          = {10.1007/s10618-025-01150-2},
+  journal      = {Data Mining and Knowledge Discovery},
+  month        = {11},
+  number       = {6},
+  pages        = {1-31},
+  shortjournal = {Data Mining Knowl. Discov.},
+  title        = {HRHE: Hybrid relations-guided multi-modal knowledge graph completion using hierarchical embeddings},
+  volume       = {39},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Large language models are zero-shot point-of-interest recommenders. <em>DMKD</em>, <em>39</em>(6), 1-46. (<a href='https://doi.org/10.1007/s10618-025-01148-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Point-of-interest (POI) recommendation systems play an important role in various location-based services by improving the user experience. Previous research has leveraged large-scale visit records to predict a user’s next visit POI based on the behavior of similar users. However, with the increasing emphasis on privacy preservation, there is a shift towards zero-shot recommendation that does not require training and only uses individual visit history data. As a better alternative to traditional zero-shot recommender systems, this paper proposes a novel zero-shot recommender system leveraging the ability of pre-trained large language models (LLMs) to understand human behavior called ZeroPOIRec. ZeroPOIRec involves a profiler module that enables LLMs to extract individual user preferences from multiple aspects, including spatio-temporal patterns and individual characteristics, and a recommender module that enhances the zero-shot POI recommendation performance via candidate refinement and prioritization. Through experiments using a benchmark dataset and a newly introduced real-world dataset with semantic variables, we demonstrate that, despite ZeroPOIRec being a zero-shot approach, it outperforms state-of-the-art methods in terms of recommendation performance.},
+  archive      = {J_DMKD},
+  author       = {Kim, Joeun and Seo, Youngjin and Kim, Yeonsoo and Kang, Junhyeok and Shin, Jeeho and Trirat, Patara and Lee, Jae-Gil},
+  doi          = {10.1007/s10618-025-01148-w},
+  journal      = {Data Mining and Knowledge Discovery},
+  month        = {11},
+  number       = {6},
+  pages        = {1-46},
+  shortjournal = {Data Mining Knowl. Discov.},
+  title        = {Large language models are zero-shot point-of-interest recommenders},
+  volume       = {39},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). JammyTS: Joint attention and memory network for temporal scoping of facts. <em>DMKD</em>, <em>39</em>(6), 1-25. (<a href='https://doi.org/10.1007/s10618-025-01156-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Temporal Scoping of Facts is crucial for completing the temporal dimension of knowledge graphs. Current mainstream methods rely heavily on external resources for mining temporal information. However, the presence of noise in external resources, coupled with limitations in adaptively inferring non-continuous temporal dimensions with multiple temporal ranges, leads to low accuracy in predicting temporal ranges. To address these challenges, a model named JammyTS is proposed, which Joins an attention mechanism and a memory network for Temporal Scoping of facts. Specifically, JammyTS leverages attention to adjust the distribution of weights dynamically in memory networks and builds attention capsule-based networks to reduce the impact of noise in external resources. Furthermore, two linear classifiers are separately trained to infer the end and beginning timestamps of facts for inference of non-continuous temporal ranges. Extensive experiments on three datasets show that JammyTS improves the accuracy by up to 12.29% compared to the state-of-the-art.},
+  archive      = {J_DMKD},
+  author       = {Hu, Chenxi and Wu, Tao and Liu, Chunsheng and Chang, Chao},
+  doi          = {10.1007/s10618-025-01156-w},
+  journal      = {Data Mining and Knowledge Discovery},
+  month        = {11},
+  number       = {6},
+  pages        = {1-25},
+  shortjournal = {Data Mining Knowl. Discov.},
+  title        = {JammyTS: Joint attention and memory network for temporal scoping of facts},
+  volume       = {39},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Detecting and reacting to smart home novelties. <em>DMKD</em>, <em>39</em>(6), 1-32. (<a href='https://doi.org/10.1007/s10618-025-01158-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To be robust, AI systems need to quickly detect and effectively react to novelties in their environments. Novelty is characterized by a sudden change in the environment where this is little time to collect new data and retrain. This is particularly true for smart home systems, where novelties abound and accurate handling is required for reliable health monitoring and home automation that can react quickly and effectively to the novelties. In this paper, we introduce a Bayesian nonparametric method, called OTACON, for novelty handling. OTACON finds surprising situations using change point detection and adapts accordingly. To evaluate this proposed approach, we design a smart home novelty generator that embeds novelties of varying type and difficulty into CASAS real-world smart home datasets. We observe that OTACON outperforms a state-of-the-art method for eight types of novel scenarios, in some cases even outperforming its own pre-novelty baseline. The results provide evidence that this method can boost AI systems in their ability to handle a variety of unexpected situations.},
+  archive      = {J_DMKD},
+  author       = {Holder, Lawrence B. and Eaves, Baxter and Shafto, Patrick and Pereyda, Christopher and Thomas, Brian and Cook, Diane J.},
+  doi          = {10.1007/s10618-025-01158-8},
+  journal      = {Data Mining and Knowledge Discovery},
+  month        = {11},
+  number       = {6},
+  pages        = {1-32},
+  shortjournal = {Data Mining Knowl. Discov.},
+  title        = {Detecting and reacting to smart home novelties},
+  volume       = {39},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TPDS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tpds">TPDS - 9</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Decentralized QoS-aware model inference using federated split learning for cloud-edge medical detection. <em>TPDS</em>, <em>36</em>(10), 2119-2136. (<a href='https://doi.org/10.1109/TPDS.2025.3594694'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The application of federated learning (FL) has been widely extended to medical domains, including medical image analysis and health monitoring. With the increasing computation power demand on edge devices, split federated learning has emerged as a promising FL architecture. In this work, a home healthcare monitoring scenario is explored. Unlike existing split federated learning studies that primarily focus on model-level optimization, this study considers a system-level optimization involving latency, packet error rate, and federated training time. Specifically, a k-means algorithm is presented to select inference nodes, participating training clients, and aggregation servers referring to network conditions and data quality. Furthermore, a reinforcement learning method is utilized to allocate the computation and bandwidth resources during inference, training, and aggregation, thereby further improving the quality of service (QoS) and training efficiency. Simulation results demonstrate that the proposed architecture can achieve the target accuracy while offering the enhanced QoS and reduced the FL training time.},
+  archive      = {J_TPDS},
+  author       = {Yishan Chen and Xiangwei Zeng and Huashuai Cai and Qing Xu and Zhiquan Liu},
+  doi          = {10.1109/TPDS.2025.3594694},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  number       = {10},
+  pages        = {2119-2136},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Decentralized QoS-aware model inference using federated split learning for cloud-edge medical detection},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RL-based hybrid CPU scaling for soft deadline constrained tasks in container clouds. <em>TPDS</em>, <em>36</em>(10), 2104-2118. (<a href='https://doi.org/10.1109/TPDS.2025.3597195'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing CPU scaling approaches have limitations that can lead to inefficient resource allocation and increased penalty costs for tasks with soft deadlines running in container clouds. First, quota allocation based approaches overlook the gap between the obtainable CPU time and allocated quota, causing inefficient CPU utilization and unexpected task behaviors. Second, core allocation based approaches ignore workload dynamics within decision intervals, potentially increasing contention for CPU time among tasks on the same core. Third, existing approaches lack strategies to allocate more resources to critical tasks that incur higher penalty costs when the node’s capacity is insufficient. This article proposes a reinforcement learning based hybrid CPU scaling approach that allocates quota and cores jointly, aiming to minimize penalty costs for timeouts. Based on the embedding generated from a fine-grained CPU demand series, we allocate CPU quotas and determine a dynamic workload-aware core sharing scheme using an attention mechanism that combines respective demands and global criticality regarding penalty costs. Additionally, we integrate the resource gap, CPU time contention, and penalty costs into the reward function to update our model online. The experimental results show the proposed approach achieves state-of-the-art performance.},
+  archive      = {J_TPDS},
+  author       = {Yepeng Zhang and Haitao Zhang and Huadong Ma},
+  doi          = {10.1109/TPDS.2025.3597195},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  number       = {10},
+  pages        = {2104-2118},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {RL-based hybrid CPU scaling for soft deadline constrained tasks in container clouds},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic multiresource fair allocation with time discount utility. <em>TPDS</em>, <em>36</em>(10), 2089-2103. (<a href='https://doi.org/10.1109/TPDS.2025.3594741'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multiresource allocation mechanisms have been studied in many scenarios. A new dynamic multiresource fair allocation model with time discount utility is proposed in this article, where users can arrive and depart at different time slots. We propose a new any price share time discount (APS-TD) mechanism for this model, which accounts for the users’ time discount utility while maintaining desirable properties. We prove that the APS-TD mechanism satisfies cumulative incentive sharing (CSI), i.e., that the cumulative utility of each user is not lower than the cumulative utility generated by evenly allocating the available resources in each time slot; cumulative strategyproofness (CSP), where users cannot increase their cumulative utility by falsely reporting their demands in any time slot; cumulative Pareto optimality (CPO), i.e., where no allocation can increase the cumulative utility of one user without reducing the cumulative utility of another user in any time slot; cumulative envy-freeness (CEF), where users who arrive later should not prefer allocations from other users who arrive first in any time slot; time discount share fairness (TDSF), where users with higher time discount values occupy larger resource shares in each time slot unless the utility levels of both users are generated by evenly allocating resources; and bottleneck fairness (BF), where the allocation should satisfy max-min fairness with respect to the bottleneck resources contained in each time slot. We run the APS-TD mechanism on Alibaba trace-driven data to demonstrate the performance enhancement achieved by our proposed mechanism over the existing mechanism extensions. The results show that the APS-TD mechanism is superior to hybrid multiresource fairness (H-MRF) and stateful dominant resource fairness (SDRF) in many ways.},
+  archive      = {J_TPDS},
+  author       = {Bin Deng and Weidong Li},
+  doi          = {10.1109/TPDS.2025.3594741},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  number       = {10},
+  pages        = {2089-2103},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Dynamic multiresource fair allocation with time discount utility},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Task scheduling in geo-distributed computing: A survey. <em>TPDS</em>, <em>36</em>(10), 2073-2088. (<a href='https://doi.org/10.1109/TPDS.2025.3591010'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Geo-distributed computing, a paradigm that assigns computational tasks to globally distributed nodes, has emerged as a promising approach in cloud computing, edge computing, cloud-edge computing, and supercomputer computing (SC). It enables low-latency services, ensures data locality, and handles large-scale applications. As global computing capacity and task demands increase rapidly, scheduling tasks for efficient execution in geo-distributed computing systems has become an increasingly critical research challenge. It arises from the inherent characteristics of geographic distribution, including heterogeneous network conditions, region-specific resource pricing, and varying computational capabilities across locations. Researchers have developed diverse task scheduling methods tailored to geo-distributed scenarios, aiming to achieve objectives such as performance enhancement, fairness assurance, and fault-tolerance improvement. This survey provides a comprehensive and systematic review of task scheduling techniques across four major distributed computing environments, with an in-depth analysis of these approaches based on their core scheduling objectives. Through our analysis, we identify key research challenges and outline promising directions for advancing task scheduling in geo-distributed computing.},
+  archive      = {J_TPDS},
+  author       = {Yujian Wu and Shanjiang Tang and Ce Yu and Bin Yang and Chao Sun and Jian Xiao and Hutong Wu and Jinghua Feng},
+  doi          = {10.1109/TPDS.2025.3591010},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  number       = {10},
+  pages        = {2073-2088},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Task scheduling in geo-distributed computing: A survey},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MUCVR: Edge computing-enabled high-quality multi-user collaboration for interactive MVR. <em>TPDS</em>, <em>36</em>(10), 2058-2072. (<a href='https://doi.org/10.1109/TPDS.2025.3595801'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mobile Virtual Reality (MVR), which aims to provide high-quality VR services to mobile devices of end users, has become the latest trend in virtual reality developments. The current MVR solution is to remotely render frame data from a cloud server, while the potential of edge computing in MVR is underexploited. In this paper, we propose a new approach named MUCVR to achieve high-quality interactive MVR collaboration for multiple users by exploiting edge computing. First, we design “vertical” edge–cloud collaboration for VR task rendering, in which foreground interaction is offloaded to an edge server for rendering, while the background environment is rendered by the cloud server. Correspondingly, the VR device of a user is only responsible for decoding and displaying. Second, we propose the “horizontal” multi-user collaboration based on edge–edge cooperation, which synchronizes the data among edge servers. Finally, we implement the proposed MUCVR on an MVR device and the Unity VR application engine. The results show that MUCVR can effectively reduce the MVR service latency, improve the rendering performance, reduce the computing load on the VR device, and, ultimately, improve users’ quality of experience.},
+  archive      = {J_TPDS},
+  author       = {Weimin Li and Qin Li and Weihong Tian and Jie Gao and Fan Wu and Jianxun Liu and Ju Ren},
+  doi          = {10.1109/TPDS.2025.3595801},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  number       = {10},
+  pages        = {2058-2072},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {MUCVR: Edge computing-enabled high-quality multi-user collaboration for interactive MVR},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Performance portability assessment in gaia. <em>TPDS</em>, <em>36</em>(10), 2045-2057. (<a href='https://doi.org/10.1109/TPDS.2025.3591452'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modern scientific experiments produce ever-increasing amounts of data, soon requiring ExaFLOPs computing capacities for analysis. Reaching such performance requires purpose-built supercomputers with $O(10^{3})$ nodes, each hosting multicore CPUs and multiple GPUs, and applications designed to exploit this hardware optimally. Given that each supercomputer is generally a one-off project, the need for computing frameworks portable across diverse CPU and GPU architectures without performance losses is increasingly compelling. We investigate the performance portability () of a real-world application: the solver module of the AVU–GSR pipeline for the ESA Gaia mission. This code finds the astrometric parameters of ${\sim} 10^{8}$ stars in the Milky Way using the LSQR iterative algorithm. LSQR is widely used to solve linear systems of equations across a wide range of high-performance computing applications, elevating the study beyond its astrophysical relevance. The code is memory-bound, with six main compute kernels implementing sparse matrix-by-vector products. We optimize the previous CUDA implementation and port the code to further six GPU-acceleration frameworks: C++ PSTL, SYCL, OpenMP, HIP, KOKKOS, and OpenACC. We evaluate each framework’s performance portability across multiple GPUs (NVIDIA and AMD) and problem sizes in terms of application and architectural efficiency. Architectural efficiency is estimated through the roofline model of the six most computationally expensive GPU kernels. Our results show that C++ library-based (C++ PSTL and KOKKOS), pragma-based (OpenMP and OpenACC), and language-specific (CUDA, HIP, and SYCL) frameworks achieve increasingly better performance portability across the supported platforms with larger problem sizes providing better scores due to higher GPU occupancies.},
+  archive      = {J_TPDS},
+  author       = {Giulio Malenza and Valentina Cesare and Marco Edoardo Santimaria and Robert Birke and Alberto Vecchiato and Ugo Becciani and Marco Aldinucci},
+  doi          = {10.1109/TPDS.2025.3591452},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  number       = {10},
+  pages        = {2045-2057},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Performance portability assessment in gaia},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Parallelization of network dynamics computations in heterogeneous distributed environment. <em>TPDS</em>, <em>36</em>(10), 2030-2044. (<a href='https://doi.org/10.1109/TPDS.2025.3593154'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper addresses the problem of parallelizing computations to study nonlinear dynamics in large networks of non-locally coupled oscillators using heterogeneous computing resources. The proposed approach can be applied to a variety of nonlinear dynamics models with runtime specification of parameters and network topologies. Parallelizing the solution of equations for different network elements is performed transparently and, in contrast to available tools, does not require parallel programming from end-users. The runtime scheduler takes into account the performance of computing and communication resources to reduce downtime and to achieve a quasi-optimal parallelizing speed-up. The proposed approach was implemented, and its efficiency is proven by numerous applications for simulating large dynamical networks with 103-108 elements described by Hodgkin–Huxley, FitzHugh–Nagumo, and Kuramoto models, for investigating pathological synchronization during Parkinson’s disease, analyzing multi-stability, for studying chimera and solitary states in 3D networks, etc. All the above computations may be performed using symmetrical multiprocessors, graphic processing units, and a network of workstations within the same run and it was demonstrated that near-linear speed-up can be achieved for large networks. The proposed approach is promising for extension to new hardware like edge-computing devices.},
+  archive      = {J_TPDS},
+  author       = {Oleksandr Sudakov and Volodymyr Maistrenko},
+  doi          = {10.1109/TPDS.2025.3593154},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  number       = {10},
+  pages        = {2030-2044},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Parallelization of network dynamics computations in heterogeneous distributed environment},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). M$^{2}$<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:msup><mml:mrow/><mml:mn>2</mml:mn></mml:msup></mml:math>LLM: A multi-dimensional optimization framework for LLM inference on mobile devices. <em>TPDS</em>, <em>36</em>(10), 2014-2029. (<a href='https://doi.org/10.1109/TPDS.2025.3587445'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large Language Models (LLMs) are reshaping mobile AI. Directly deploying LLMs on mobile devices is an emerging paradigm that can widely support different mobile applications while preserving data privacy. However, intensive memory footprint, long inference latency and high energy consumption severely bottlenecks on-device inference of LLM in real-world scenarios. In response to these challenges, this work introduces m$^{2}$LLM, an innovative framework that performs joint optimization from multiple dimensions for on-device LLM inference in order to strike a balance among performance, realtimeliness and energy efficiency. Specifically, m$^{2}$LLM features the following four core components including : 1) Hardware-aware Model Customization, 2) Elastic Chunk-wise Pipeline, 3) Latency-guided Prompt Compression and 4) Layer-wise Resource Scheduling. These four components interact with each other in order to guide the inference process from the following three dimensions. At the model level, m$^{2}$LLM designs an elastic chunk-wise pipeline to expand device memory and customize the model according to the hardware configuration, maximizing performance within the memory budget. At the prompt level, facing the stochastic input, m$^{2}$LLM judiciously compresses the prompts in order to guarantee the first token can be generated in time while maintaining the semantic information. Additionally, at the system level, the layer-wise resource scheduler is employed in order to complete the token generation process with minimized energy consumption while guaranteeing the realtimeness in the highly dynamic mobile environment. m$^{2}$LLM is evaluated on off-the-shelf smartphone with represented models and datasets. Compared to baseline methods, m$^{2}$LLM delivers 2.99–13.5× TTFT acceleration and 2.28–24.3× energy savings, with only a minimal model performance loss of 2% –7% .},
+  archive      = {J_TPDS},
+  author       = {Kaiyuan Liu and Xiaobo Zhou and Li Li},
+  doi          = {10.1109/TPDS.2025.3587445},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  number       = {10},
+  pages        = {2014-2029},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {M$^{2}$<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:msup><mml:mrow/><mml:mn>2</mml:mn></mml:msup></mml:math>LLM: A multi-dimensional optimization framework for LLM inference on mobile devices},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Accelerating half-precision seismic simulation on neural processing unit. <em>TPDS</em>, <em>36</em>(10), 1998-2013. (<a href='https://doi.org/10.1109/TPDS.2025.3584773'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Due to the superiority of handling irregular regions of interest, the curvilinear grid finite difference method (CGFDM) has become wildely used in seismic simulation for earthquake hazard evaluation and understanding of earthquake physics. This paper proposes a novel approach that optimizes a CGFDM solver on the Ascend, a cutting-edge Neural Processing Unit (NPU) using half-precision storage and mixed-precision arithmetic. The approach increases the data throughput and computing efficiency, enabling more effective seismic modeling. Furthermore, we propose an efficient matrix unit enabled 3D difference algorithm that employs matrix unit on NPU to accelerate the computation. By fully exploiting the capability of matrix unit and wide SIMD lane, our solver on Ascend achieves a speedup of 4.19 × over the performance of parallel solver on two AMD CPUs and has successfully simulated real-world Wenchuan earthquake. To the best of our knowledge, we are the first to conduct seismic simulations on NPU.},
+  archive      = {J_TPDS},
+  author       = {Yinuo Wang and Zeyu Song and Wubing Wan and Xinpeng Zhao and Lin Gan and Ping Gao and Wenqiang Wang and Zhenguo Zhang and Haohuan Fu and Wei Xue and Guangwen Yang},
+  doi          = {10.1109/TPDS.2025.3584773},
+  journal      = {IEEE Transactions on Parallel and Distributed Systems},
+  month        = {10},
+  number       = {10},
+  pages        = {1998-2013},
+  shortjournal = {IEEE Trans. Parallel Distrib. Syst.},
+  title        = {Accelerating half-precision seismic simulation on neural processing unit},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

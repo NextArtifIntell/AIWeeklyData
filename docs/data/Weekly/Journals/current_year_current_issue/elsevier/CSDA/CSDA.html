@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CSDA</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="csda">CSDA - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2026). High-dimensional subgroup functional quantile regression with panel and dependent data. <em>CSDA</em>, <em>214</em>, 108268. (<a href='https://doi.org/10.1016/j.csda.2025.108268'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High-dimensional additive functional partial linear single-index quantile regression with high-dimensional parameters under subgroup panel data is investigated. Based on spline-based approach, we construct oracle estimators of the unknown parameter and functions, and discuss their consistency with rates and asymptotic normality under α -mixing assumptions. A penalized estimation method by using the SCAD technique is introduced to estimate the additive functions and parameter, enabling variable selection and automatic identification of the number of groups. Hypothesis testing for the parameter is also considered, and the asymptotic distributions of the restricted estimators and the test statistic are derived under both the null and local alternative hypotheses. Simulation studies and real data analysis are conducted to verify the validity of the proposed methods and applications.},
+  archive      = {J_CSDA},
+  author       = {Xiao-Ge Yu and Han-Ying Liang},
+  doi          = {10.1016/j.csda.2025.108268},
+  journal      = {Computational Statistics & Data Analysis},
+  month        = {2},
+  pages        = {108268},
+  shortjournal = {Comput. Stat. Data Anal.},
+  title        = {High-dimensional subgroup functional quantile regression with panel and dependent data},
+  volume       = {214},
+  year         = {2026},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

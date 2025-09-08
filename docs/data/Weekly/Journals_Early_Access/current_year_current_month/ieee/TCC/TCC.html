@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TCC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tcc">TCC - 2</h2>
+<ul>
+<li><details>
+<summary>
+(2025). HPCBL: A privacy-preserving data computing model for the supercomputing internet. <em>TCC</em>, 1-14. (<a href='https://doi.org/10.1109/TCC.2025.3604606'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {HPC-cloud is becoming popular as it allows supercomputers to provide computing service with parallelism and high performance based on public cloud technology. Moreover, supercomputers across organizations are forming a network to scale the computational and storage capability of their service. However, the distributed computing process in the supercomputer internet requires a large amount of data transmission and access, arousing privacy and control problems. In this paper, we propose HPCBL, a blockchain-enabled decentralized data computing architecture that ensures private data sharing and computing in the Supercomputer Internet. We also propose a decentralized authentication scheme that entitles users the full control of their anonymous identity to support user private interactions with the Supercomputing Internet. The scheme supports anonymous self-derivative credentials for pair-wised access control and user-optional accountability without a trusted arbiter. We implemented a HPCBL prototype to empirically assess its performance.},
+  archive      = {J_TCC},
+  author       = {Wei Shao and Lianhai Wang and Chunfu Jia and Jinpeng Wang and Shujiang Xu and Shuhui Zhang and Mingyue Li and Qizheng Wang},
+  doi          = {10.1109/TCC.2025.3604606},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {HPCBL: A privacy-preserving data computing model for the supercomputing internet},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Comments on “Blockchain-assisted public-key encryption with keyword search against keyword guessing attacks for cloud storage”. <em>TCC</em>, 1-2. (<a href='https://doi.org/10.1109/TCC.2025.3604552'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As a variant of PEKS (Public key Encryption with Keyword Search), Zhang it al. (IEEE Transactions on Cloud Computing 2021) introduced a secure and efficient PEKS scheme called SEPSE, where servers issue a servers-derived keyword to a sender or a receiver. In this paper, we show that information of keyword is revealed from trapdoor when an adversary is allowed to issue servers-derived keyword queries twice.},
+  archive      = {J_TCC},
+  author       = {Keita Emura},
+  doi          = {10.1109/TCC.2025.3604552},
+  journal      = {IEEE Transactions on Cloud Computing},
+  month        = {9},
+  pages        = {1-2},
+  shortjournal = {IEEE Trans. Cloud Comput.},
+  title        = {Comments on “Blockchain-assisted public-key encryption with keyword search against keyword guessing attacks for cloud storage”},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

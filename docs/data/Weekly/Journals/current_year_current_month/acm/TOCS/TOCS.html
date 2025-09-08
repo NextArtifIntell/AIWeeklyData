@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TOCS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tocs">TOCS - 3</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Validating JIT compilers via compilation space exploration. <em>TOCS</em>, <em>43</em>(3), 1-37. (<a href='https://doi.org/10.1145/3715102'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce the concept of compilation space as a new pivot for the comprehensive validation of just-in-time (JIT) compilers in modern language virtual machines (LVMs). The compilation space of a program encompasses a wide range of equivalent JIT-compilation choices, which can be cross-validated to ensure the correctness of the program’s JIT compilations. To thoroughly explore the compilation space in a lightweight and LVM-agnostic manner, we strategically mutate test programs with JIT-relevant but semantics-preserving code constructs, aiming to provoke diverse JIT compilation optimizations. We primarily implement this approach in Artemis , a tool for validating Java Virtual Machines (JVMs). Within three months, Artemis successfully discovered 85 bugs in three widely used production JVMs—HotSpot, OpenJ9, and the Android Runtime—where 53 were already confirmed or fixed and many of which were classified as critical. It is noteworthy that all reported bugs concern JIT compilers, highlighting the effectiveness and practicality of our technique. Building on the promising results with JVMs, we experimentally applied our technique to a state-of-the-art JavaScript Engine (JSE) fuzzer called Fuzzilli, aiming to augment it to find mis-compilation bugs without significantly sacrificing its ability to detect crashes. Our experiments demonstrate that our enhanced version of Fuzzilli namely Apollo could achieve comparable code coverage with a considerably smaller number of generated programs with a similar number of crashes. Additionally, Apollo successfully uncovered four mis-compilations in JavaScriptCore and SpiderMonkey within seven days. Following Artemis ’ and Apollo ’s success, we are expecting that the generality and practicability of our approach will make it broadly applicable for understanding and validating the JIT compilers of other LVMs.},
+  archive      = {J_TOCS},
+  author       = {Cong Li and Yanyan Jiang and Chang Xu and Zhendong Su},
+  doi          = {10.1145/3715102},
+  journal      = {ACM Transactions on Computer Systems},
+  month        = {7},
+  number       = {3},
+  pages        = {1-37},
+  shortjournal = {ACM Trans. Comput. Syst.},
+  title        = {Validating JIT compilers via compilation space exploration},
+  volume       = {43},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Whole-system persistence made efficient with tree-structured checkpointing on microkernel. <em>TOCS</em>, <em>43</em>(3), 1-29. (<a href='https://doi.org/10.1145/3742425'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Whole-system persistence promises simplified application deployment and near-instantaneous recovery. This can be implemented using single-level store (SLS) through periodic checkpointing of ephemeral state to persistent devices. However, traditional SLSs suffer from two main issues on checkpointing efficiency and external synchrony, which are critical for low-latency services with persistence need. In this article, we note that the decentralized state of microkernel-based systems can be exploited to simplify and optimize state checkpointing. To this end, we propose TreeSLS, a whole-system persistent microkernel that simplifies the whole-system state maintenance to a capability tree and a failure-resilient checkpoint manager. TreeSLS further exploits the emerging non-volatile memory to minimize checkpointing pause time by eliminating the distinction between ephemeral and persistent devices. With efficient state maintenance, TreeSLS further proposes delayed external visibility to provide transparent external synchrony with little overhead. Evaluation on microbenchmarks and real-world applications (e.g., Memcached, Redis, and RocksDB) show that TreeSLS can complete a whole-system persistence in around 100 μs and even take a checkpoint every 1 ms with reasonable overhead to applications.},
+  archive      = {J_TOCS},
+  author       = {Mingkai Dong and Fangnuo Wu and Gequan Mo and Haibo Chen},
+  doi          = {10.1145/3742425},
+  journal      = {ACM Transactions on Computer Systems},
+  month        = {7},
+  number       = {3},
+  pages        = {1-29},
+  shortjournal = {ACM Trans. Comput. Syst.},
+  title        = {Whole-system persistence made efficient with tree-structured checkpointing on microkernel},
+  volume       = {43},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Introduction to the special section on SOSP 2023. <em>TOCS</em>, <em>43</em>(3), 1-2. (<a href='https://doi.org/10.1145/3744676'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_TOCS},
+  author       = {Jason Flinn and Margo Seltzer},
+  doi          = {10.1145/3744676},
+  journal      = {ACM Transactions on Computer Systems},
+  month        = {7},
+  number       = {3},
+  pages        = {1-2},
+  shortjournal = {ACM Trans. Comput. Syst.},
+  title        = {Introduction to the special section on SOSP 2023},
+  volume       = {43},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

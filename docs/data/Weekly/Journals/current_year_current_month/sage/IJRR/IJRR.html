@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IJRR</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ijrr">IJRR - 7</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Magnetic localization during manipulation by two robotized permanent magnets. <em>IJRR</em>, <em>44</em>(9), 1600-1613. (<a href='https://doi.org/10.1177/02783649251317212'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Localization methods for magnetically actuated medical robots have long been a topic of research, as they are fundamental to closed-loop control and delivery of functionalities. However, magnetic localization has mainly been linked to robots under a single permanent magnet control. With the release of multi-magnet actuation systems for increased control and manipulability, new localization methods are needed to account for the added magnetic field sources. This paper presents a six degree of freedom localization method for magnetically actuated robots under two external permanent magnets control. The approach relies on the measurements of an accelerometer and gyroscope for the estimation of orientation in the Special Orthogonal Group SO (3), and the measurements of the actuating magnetic fields for the estimation of position. The observability analysis of the system is presented, and the relationship between the external permanent poses and conditioning of the system is explored. Additionally, a calibration procedure to determine the relative poses between the two external permanent magnets is presented where the path that the magnets travel is optimized for the best results. Lastly, the localization method was implemented in a magnetic soft continuum robot and achieved positional average errors of 3.5 mm in norm, and orientation errors of 2.5°, 1.5°, and 2.8° around x , y , and z , respectively.},
+  archive      = {J_IJRR},
+  author       = {Tomás da Veiga and Michael Brockdorff and Giovanni Pittiglio and James H Chandler and Pietro Valdastri},
+  doi          = {10.1177/02783649251317212},
+  journal      = {The International Journal of Robotics Research},
+  month        = {8},
+  number       = {9},
+  pages        = {1600-1613},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Magnetic localization during manipulation by two robotized permanent magnets},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A flexible framework for accurate LiDAR odometry, map manipulation, and localization. <em>IJRR</em>, <em>44</em>(9), 1553-1599. (<a href='https://doi.org/10.1177/02783649251316881'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Light Detection and Ranging (LiDAR)-based simultaneous localization and mapping (SLAM) is a core technology for autonomous vehicles and robots. One key contribution of this work to 3D LiDAR SLAM and localization is a fierce defense of view-based maps (pose graphs with time-stamped sensor readings) as the fundamental representation of maps. As will be shown, they allow for the greatest flexibility, enabling the posterior generation of arbitrary metric maps optimized for particular tasks, for example, obstacle avoidance and real-time localization. Moreover, this work introduces a new framework in which mapping pipelines can be defined without coding, defining the connections of a network of reusable blocks much like deep-learning networks are designed by connecting layers of standardized elements. We also introduce tightly-coupled estimation of linear and angular velocity vectors within the Iterative Closest Point (ICP)-like optimizer, leading to superior robustness against aggressive motion profiles without the need for an IMU. Extensive experimental validation reveals that the proposal compares well to, or improves, former state-of-the-art (SOTA) LiDAR odometry systems, while also successfully mapping some hard sequences where others diverge. A proposed self-adaptive configuration has been used, without parameter changes, for all 3D LiDAR datasets with sensors between 16 and 128 rings, and has been extensively tested on 83 sequences over more than 250 km of automotive, hand-held, airborne, and quadruped LiDAR datasets, both indoors and outdoors. The system flexibility is demonstrated with additional configurations for 2D LiDARs and for building 3D NDT-like maps. The framework is open-sourced online: https://github.com/MOLAorg/mola .},
+  archive      = {J_IJRR},
+  author       = {Jose Luis Blanco-Claraco},
+  doi          = {10.1177/02783649251316881},
+  journal      = {The International Journal of Robotics Research},
+  month        = {8},
+  number       = {9},
+  pages        = {1553-1599},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {A flexible framework for accurate LiDAR odometry, map manipulation, and localization},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). No-regret path planning for temporal logic tasks in partially-known environments. <em>IJRR</em>, <em>44</em>(9), 1526-1552. (<a href='https://doi.org/10.1177/02783649251315758'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we investigate the graph-based robot path planning problem for high-level specifications described by co-safe linear temporal logic (scLTL) formulae. Our focus is on scenarios where the map geometry of the workspace is only partially-known . Specifically, we assume the existence of unknown regions, where the robot lacks prior knowledge of their successor regions unless it physically reaches these areas. In contrast to the standard non-deterministic synthesis approach that optimizes the worst-case cost, in the paper, we propose using regret as the metric for planning in such partially-known environments. Regret measures the difference between the actual cost incurred and the best-response cost the robot could have achieved if it were aware of the actual environment from the start. We present a formal model for this problem setting and develop an efficient algorithm to find an optimal strategy in the sense that it meets the scLTL specification while minimizing the regret of the strategy. Our approach provides a quantitative method for evaluating the trade-off between exploration and non-exploration, rather than relying on the heuristic determinations used in many existing works. Case studies on firefighting and collaborative robots are provided to illustrate the effectiveness of our framework. Furthermore, we conduct numerical experiments on a large number of randomly generated systems and compare the performance of the regret-based strategy with other path planning strategies. The experimental results indicate that regret is a highly meaningful metric for path planning in partially-unknown environments, especially in cases where no probabilistic a priori knowledge is available.},
+  archive      = {J_IJRR},
+  author       = {Jianing Zhao and Keyi Zhu and Mingyang Feng and Shaoyuan Li and Xiang Yin},
+  doi          = {10.1177/02783649251315758},
+  journal      = {The International Journal of Robotics Research},
+  month        = {8},
+  number       = {9},
+  pages        = {1526-1552},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {No-regret path planning for temporal logic tasks in partially-known environments},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scenario-based motion planning with bounded probability of collision. <em>IJRR</em>, <em>44</em>(9), 1507-1525. (<a href='https://doi.org/10.1177/02783649251315203'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robots will increasingly operate near humans that introduce uncertainties in the motion planning problem due to their complex nature. Optimization-based planners typically avoid humans through collision avoidance chance constraints. This allows the planner to optimize performance while guaranteeing probabilistic safety. However, existing real-time methods do not consider the actual probability of collision for the planned trajectory but rather its marginalization, that is, the independent collision probabilities for each planning step and/or dynamic obstacle, resulting in conservative trajectories. To address this issue, we introduce a novel real-time capable method termed Safe Horizon MPC that explicitly constrains the joint probability of collision with all obstacles over the duration of the motion plan. This is achieved by reformulating the chance-constrained planning problem using scenario optimization and predictive control. Out of sampled realizations of human motion, we identify which cases affect the optimization. This allows us to certify the planned trajectory in real-time. Our method is less conservative than state-of-the-art approaches, applicable to arbitrary probability distributions of the obstacles’ trajectories, computationally tractable and scalable. We demonstrate our proposed approach using a mobile robot and an autonomous vehicle in an environment shared with humans.},
+  archive      = {J_IJRR},
+  author       = {Oscar de Groot and Laura Ferranti and Dariu M. Gavrila and Javier Alonso-Mora},
+  doi          = {10.1177/02783649251315203},
+  journal      = {The International Journal of Robotics Research},
+  month        = {8},
+  number       = {9},
+  pages        = {1507-1525},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Scenario-based motion planning with bounded probability of collision},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mobile robots exploration strategies and requirements: A systematic mapping study. <em>IJRR</em>, <em>44</em>(9), 1461-1506. (<a href='https://doi.org/10.1177/02783649241313471'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {A variety of autonomous exploration tasks have been successfully performed in several types of environments using different types of robotic platforms. The robotic task, the operational environment, and the robot embodiment represent the dimensions of the “problem space” in robot exploration. At the same time, a lot of exploration strategies are documented in the literature that provide partial solutions to the exploration problem. They define the “solution space” in robot exploration. To our knowledge, no previous work has provided a methodical overview of robot exploration strategies from the point of view of both the problem and solution spaces. In this systematic mapping study, we build a taxonomy of autonomous robot exploration strategies and application requirements and classify existing approaches according to it. The goal is to analyze research trends over time, and identify possible research gaps, open challenges, and promising future directions in order to support researchers and practitioners in generalizing, communicating, and applying the findings of the robot exploration knowledge field.},
+  archive      = {J_IJRR},
+  author       = {Davide Brugali and Luca Muratore and Alessio De Luca},
+  doi          = {10.1177/02783649241313471},
+  journal      = {The International Journal of Robotics Research},
+  month        = {8},
+  number       = {9},
+  pages        = {1461-1506},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Mobile robots exploration strategies and requirements: A systematic mapping study},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Shared autonomy policy fine-tuning and alignment for robotic tasks. <em>IJRR</em>, <em>44</em>(9), 1443-1460. (<a href='https://doi.org/10.1177/02783649241312699'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we present a comprehensive shared autonomy framework for human-in-the-loop policy fine-tuning and alignment. Our framework integrates policy adapting algorithms on a multi-agent system foundation tailored for human-robot interaction and decision-making arbitration. This strategy is intended for complex, task-oriented robotic tasks that require cognitive-level human-robot interactions. We design short- and long-horizon fine-tuning algorithms to adapt a policy to different operating conditions and human agents. This is accomplished using Bayesian analysis and custom deep reinforcement learning techniques, through various interaction channels strategically placed at different operational points of the system. To showcase the effectiveness of our algorithms, as well as the strength of our framework, we conduct a human user study involving operation of a laboratory robot in a sequence of high-level pick-and-place tasks. The experiments of the study are designed to demonstrate the interplay between different design elements of our framework, such as, interaction channels and multi-horizon fine-tuning algorithms. By laying out careful hypotheses, we employ objective and subjective metrics to measure the effects of shared autonomy design elements on both the system performance and human user satisfaction. Our human user study reveals significant results related to the complex interplay between shared autonomy design elements, the behavior of the algorithms, and core decision-making and arbitration formulation.},
+  archive      = {J_IJRR},
+  author       = {Ehsan Yousefi and Mo Chen and Inna Sharf},
+  doi          = {10.1177/02783649241312699},
+  journal      = {The International Journal of Robotics Research},
+  month        = {8},
+  number       = {9},
+  pages        = {1443-1460},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Shared autonomy policy fine-tuning and alignment for robotic tasks},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Tracking cloth deformation: A novel dataset for closing the sim-to-real gap for robotic cloth manipulation learning. <em>IJRR</em>, <em>44</em>(9), 1431-1442. (<a href='https://doi.org/10.1177/02783649251317617'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Robotic learning for deformable object manipulation—such as textiles—is often done in simulation due to the current limitation of perception methods to understand cloth’s deformation. For this reason, the robotics community is always on the search for more realistic simulators to reduce as much as possible the sim-to-real gap, which is still quite large especially when dynamic motions are applied. We present a cloth dataset consisting of 120 high-quality recordings of several textiles during dynamic motions. Using a Motion Capture System , we record the location of key-points on the cloth surface of four types of fabrics (cotton, denim, wool and polyester) of two sizes and at different speeds. The scenarios considered are all dynamic and involve rapid shaking and twisting of the textiles, collisions with frictional objects, strong hits with a long and thin rigid object and even self-collisions. We explain in detail the scenarios considered, the collected data and how to read it and use it. In addition, we propose a metric to use the dataset as a benchmark to quantify the sim-to-real gap of any cloth simulator. Finally, we show that the recorded trajectories can be directly executed by a robotic arm, enabling learning by demonstration and other imitation learning techniques. Dataset: https://doi.org/10.5281/zenodo.14644526 Video: https://fcoltraro.github.io/projects/dataset/},
+  archive      = {J_IJRR},
+  author       = {Franco Coltraro and Júlia Borràs and Maria Alberich-Carramiñana and Carme Torras},
+  doi          = {10.1177/02783649251317617},
+  journal      = {The International Journal of Robotics Research},
+  month        = {8},
+  number       = {9},
+  pages        = {1431-1442},
+  shortjournal = {Int. J. Robot. Res.},
+  title        = {Tracking cloth deformation: A novel dataset for closing the sim-to-real gap for robotic cloth manipulation learning},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

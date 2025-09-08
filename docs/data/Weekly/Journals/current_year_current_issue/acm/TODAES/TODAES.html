@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TODAES</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="todaes">TODAES - 10</h2>
+<ul>
+<li><details>
+<summary>
+(2025). ILOSSS - Improved logic synthesis based on several stateful logic gates. <em>TODAES</em>, <em>30</em>(4), 1-23. (<a href='https://doi.org/10.1145/3731245'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Memristor stateful logic is an effective way to achieve the real sense of in-memory computing in memristor-based crossbar array (MCBA). At present, the synthesis tools fall short in conducting a thorough exploration of the optimization potential pertaining to cascading stateful logic gates within MCBA, and the optimization objectives are relatively simple. In this article, a suit of stateful logic synthesis kit, named ILOSSS, improved from the previous LOSSS tool is achieved. Such kit includes two kinds of stateful logic synthesis processes for latency (corresponding to the High Time-Efficiency Synthesis Process (HTESP)) and energy (corresponding to the Low-Energy Synthesis Process (LESP)) optimization, respectively. Both of the synthesis processes are achieved by improving an existing synthesis process of MAGIC (SIMPLER-MAGIC) to support multiple stateful logic gates and inserting a post-processing stage with a well-developed automated optimization algorithm to reduce the number of the gates of the netlist with a corresponding purpose. Comparing to the standard SIMPLER-MAGIC tool, the HTESP achieves arithmetic mean improvements of over 23% in performance, and over 34% in effective lifetime under the EPFL benchmark suit which is also better than the results reported by the state-of-the-art MAGIC synthesis process (X-MAGIC). Meanwhile, the energy-delay product (EDP) of LESP has decreased by an average of over 10% and 42% compared to SIMPLER-MAGIC and HTESP, respectively.},
+  archive      = {J_TODAES},
+  author       = {Nuo Xu and Yihong Hu and Chaochao Feng and Wei Tong and Kang Liu and Liang Fang},
+  doi          = {10.1145/3731245},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {ILOSSS - Improved logic synthesis based on several stateful logic gates},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ChatDSE: A zero-shot microarchitecture design space explorer powered by GPT4.0. <em>TODAES</em>, <em>30</em>(4), 1-24. (<a href='https://doi.org/10.1145/3735640'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Design Space Exploration (DSE) aims at identifying Pareto optimal synthesis configurations. Previous works require microarchitecture samples with key labels, including power and clock cycles, to train their models. However, as the chip design space expands rapidly, the cost of sampling the design space has significantly increased, due to the growing number of samples and time-consuming Very Large Scale Integration (VLSI) implementation flow. Recent advancements in Large Language Models (LLMs) have demonstrated their remarkable power in zero-shot learning tasks, presenting an innovative strategy for accomplishing DSE. Hence, this article presents ChatDSE, a zero-shot framework for DSE that is powered by the advanced capabilities of the LLM GPT4.0. Firstly, this framework analyzes the nature of the target microarchitecture and generates a corresponding system context to provide the prior knowledge of the microarchitecture. Secondly, a proposed sampling algorithm, PriorDC, identifies the most representative samples with pseudo labels. One of these samples is chosen as a baseline, whose power and clock cycles labels are set as 1, and the remaining sample labels are obtained by chatting with GPT4.0. Finally, ChatDSE engages in a dialogue with GPT4.0 to estimate the power and clock cycles of designs within the space, ultimately identifying the Pareto optimal design set. In the DSE for the RISC-V Berkeley Out-of-Order Machine (BOOM), experimental results show that ChatDSE is capable of identifying optimal designs and accelerates the exploration process by 574 times when compared to the state-of-the-art DSE methodologies.},
+  archive      = {J_TODAES},
+  author       = {Mingxin Tang and Wei Chen and Lizhou Wu and Libo Huang and Kun Zeng},
+  doi          = {10.1145/3735640},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {ChatDSE: A zero-shot microarchitecture design space explorer powered by GPT4.0},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ARIANNA: An automatic design flow for fabric customization and eFPGA redaction. <em>TODAES</em>, <em>30</em>(4), 1-23. (<a href='https://doi.org/10.1145/3737287'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the modern global Integrated Circuit (IC) supply chain, protecting intellectual property (IP) is a complex challenge, and balancing IP loss risk and added cost for theft countermeasures is hard to achieve. Using embedded configurable logic allows designers to completely hide the functionality of selected design portions from parties that do not have access to the configuration string (bitstream). However, the design space of redacted solutions is huge, with tradeoffs between the portions selected for redaction and the configuration of the configurable embedded logic. We propose ARIANNA, a complete flow that aids the designer in all the stages, from selecting the logic to be hidden to tailoring the bespoke fabrics for the configurable logic used to hide it. We present a security evaluation of the considered fabrics and introduce two heuristics for the novel bespoke fabric flow. We evaluate the heuristics against an exhaustive approach. We also evaluate the complete flow using a selection of benchmarks. Results show that using ARIANNA to customize the redaction fabrics yields up to 3.3× lower overheads and 4× higher eFPGA fabric utilization than a one-fits-all fabric as proposed in prior works.},
+  archive      = {J_TODAES},
+  author       = {Luca Collini and Jitendra Bhandari and Chiara Muscari Tomajoli and Abdul Moosa and Benjamin Tan and Xifan Tang and Pierre-Emanuel Gaillardon and Ramesh Karri and Christian Pilato},
+  doi          = {10.1145/3737287},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {ARIANNA: An automatic design flow for fabric customization and eFPGA redaction},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HAPE: Hardware-aware LLM pruning for efficient on-device inference optimization. <em>TODAES</em>, <em>30</em>(4), 1-18. (<a href='https://doi.org/10.1145/3744244'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Over the past few years, large language models (LLMs) have demonstrated remarkable performance and versatility across a variety of complex tasks. However, their deployment has been challenged by their substantial model size and computational requirements. Pruning is a effective approach to make the model parameters sparse, thereby acquire inference acceleration. While not everyone requires training or fine-tuning large models, the diverse range of applications necessitates the deployment of LLMs on different devices. Model pruning and compression have emerged as areas of deep research interest to address these challenges. In consideration of versatility and practicality, we have designed a hardware-aware pruning process for general-purpose hardware/edge devices to enable efficient deployment and inference of LLMs. Instead of considering sparse ratio alone, we are motivated to design a pruning framework that incorporates genuine inference speed-up sensitivity from each pruning structure. Moreover, our framework breaks the layer-by-layer pruning setting and fuse several layers into one pruning stage to allow cross-layer optimization. Apart from that, we hold pragmatism by conducting compilation optimization during pruning. This step is critical because most sparsity patterns barely show distinct speed acceleration with corresponding dataflow and memory optimization. Our process operates within a post-training framework, obviating the need for additional training and thereby reducing resource requirements, while ensuring diverse inference speed and accuracy requirements on hardware.},
+  archive      = {J_TODAES},
+  author       = {Wenqian Zhao and Lancheng Zou and Zixiao Wang and Xufeng Yao and Bei Yu},
+  doi          = {10.1145/3744244},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-18},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {HAPE: Hardware-aware LLM pruning for efficient on-device inference optimization},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Interactive visual performance space exploration of operational amplifiers with differentiable neural network surrogate models. <em>TODAES</em>, <em>30</em>(4), 1-33. (<a href='https://doi.org/10.1145/3744245'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To this day, the design of analog integrated circuits is a predominantly manual task, heavily reliant on the knowledge and intuition of human experts. Many current automation approaches aim to be holistic solutions, attempting to take the human out of the loop. This work, in turn, does not intend to replace human designers with algorithms, but support their qualities in the established flow. Here, the performance space of analog ICs is modeled by PVT-aware neural networks and visualized with parallel coordinate plots. Such a responsive visualization gives insights into the relations of parameters through interactive exploration where any parameter can be the cause while all others show the immediate effect. Thus, complex decision-making problems based on the experience of seasoned designers, such as circuit sizing or topology selection, are transformed into intuitive perceptual problems. Through the responsiveness and immediacy of the implementation, designers are encouraged to explore the entire performance space instead of basing all decisions on previous designs, never leaving the beaten path. A data generation and training procedure for surrogate models is outlined. Models for three operational amplifiers in three different technologies illustrate the applicability and feasibility of the presented approach. Additionally, a web-based demo, including all source code, is available for review.},
+  archive      = {J_TODAES},
+  author       = {Yannick Uhlmann and Till Moldenhauer and Juergen Scheible},
+  doi          = {10.1145/3744245},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-33},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Interactive visual performance space exploration of operational amplifiers with differentiable neural network surrogate models},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Securing network-on-chips against trojan-induced packet duplication attacks. <em>TODAES</em>, <em>30</em>(4), 1-28. (<a href='https://doi.org/10.1145/3744645'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The third-party Intellectual Property (IP) supply chain exposes System-on-Chip designs to malicious implants like Hardware Trojans (HTs). With extremely rare trigger conditions, some HTs can evade conventional and even machine learning-based validation methods. Current detection and mitigation approaches fall short, especially against HTs capable of creating detrimental effects on cache and Network-on-Chip (NoC) performance. In this article, we present a novel intermittent and robust HT called LOKI, which primarily operates within the Network Adapter (NA) but can simultaneously impact the performance of the NoC, the shared cache, and the cores. LOKI is implanted in a malicious IP’s NA and triggers packet duplication attacks, leading to increased latency and performance degradation across the system. This action has cascading effects on the system, including increased latency in the NoC, adversely impacting communication efficiency. The duplication also leads to increased cache misses and longer miss penalties, further degrading cache performance. Additionally, LOKI affects the Instruction-Per-Cycle (IPC) of the cores, thus influencing overall processing performance. Our evaluation demonstrates that LOKI causes a 3.53× increase in packet latency, a 15% increase in miss penalty, and a 10% decrease in overall IPC. To neutralize the effects of HT-induced packet duplication, we propose a ubiquitous mitigation framework called HULK. HULK is installed in the NA and monitors all messages going in and out of the NoC, allowing it to address anomalies occurring in the NA, routers, and links. Experimental evaluation shows that HULK can effectively mitigate LOKI’s impact, achieving baseline system-like performance with negligible hardware overhead. Unlike existing HT-specific mitigation proposals, HULK serves as a generic solution to neutralize all types of packet duplication attacks. To promote reproducibility and community adoption, we have open sourced the implementation at https://github.com/itsmanju/hulk .},
+  archive      = {J_TODAES},
+  author       = {Manju Rajan and Abhijit Das and John Jose},
+  doi          = {10.1145/3744645},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-28},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Securing network-on-chips against trojan-induced packet duplication attacks},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Layout synthesis for quantum circuits considering toffoli gate decomposition. <em>TODAES</em>, <em>30</em>(4), 1-21. (<a href='https://doi.org/10.1145/3744646'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {State-of-the-art studies on quantum layout synthesis have proposed various approaches based on the assumption that the input circuit is only composed of single-qubit and two-qubit gates. This assumption greatly simplifies the layout synthesis problem, and thus they only require ensuring that all controlled-NOT (CNOT) gates satisfy the hardware constraints imposed by a given coupling graph. However, during the design of quantum circuits, multi-controlled Toffoli (MCT) gates are usually used to better characterize the function of the circuits. Directly decomposing them into single and two-qubit gates with a fixed routine ignores the flexibility and optimization opportunity provided by various decomposition (i.e., logic synthesis) possibilities and thus suffers from sub-optimal results. This article proposes a co-optimization approach for quantum logic and layout synthesis. The MCT gates are first decomposed into Toffoli gates, and an efficient qubit mapping checking process is proposed to optimally solve the SWAP-free layout synthesis problem by automatically determining the decomposition result of each Toffoli gate. If a SWAP-free result cannot be found, the proposed algorithm flow is then used to obtain a solution that minimizes the total cost that simultaneously counts the cost caused by the different decomposition methods for Toffoli gates and the cost induced by SWAP gates. Compared with a state-of-the-art method, the proposed approach reduces the number of additional CNOT gates by 16% with around 25X runtime speedup for the cases with SWAP-free solutions, which cannot be obtained without the co-optimization approach.},
+  archive      = {J_TODAES},
+  author       = {Po-Wei Chen and Sheng-Tan Huang and Shao-Yun Fang},
+  doi          = {10.1145/3744646},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-21},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Layout synthesis for quantum circuits considering toffoli gate decomposition},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FV-LIDAC: Formally verified library of input data aware approximate arithmetic circuits. <em>TODAES</em>, <em>30</em>(4), 1-23. (<a href='https://doi.org/10.1145/3744710'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Approximate circuits have become ubiquitous in error-resilient applications. These circuits provide large reductions in area, power, and delay at the cost of erroneous computations. The error-resilient applications produce acceptable output quality, even after the introduction of erroneous computations. However, we observed that the error resilience of an application varies widely with respect to the applied inputs. Since prior works have mostly focused on using samples from a uniform distribution while designing the approximate circuits, they are unable to exploit input aware properties to design optimal circuits. Hence, in this work, we bridge this gap and propose Formally Verified Library of Input Data Aware Approximate Circuits (FV-LIDAC). FV-LIDAC is the first formally verified library of input distribution aware approximate arithmetic circuits. We use three of the most widely occurring distributions, namely uniform, normal, and exponential distributions, to show that optimal design sets are heavily dependent on the input data. FV-LIDAC chooses the best designs among millions of functional approximated adder and multiplier circuits, depending upon the inputs. Since there are no existing input-aware approximate circuit libraries, we compared FV-LIDAC against state-of-the-art input-unaware EvoApproxLib, to further highlight the need for FV-LIDAC. Additionally, we perform case studies on real-world applications to further highlight the improvement over state-of-the-art. We aim to make the Pareto-optimal designs available as open source to stimulate further research.},
+  archive      = {J_TODAES},
+  author       = {Sallar Ahmadi-Pour and Sajjad Parvin and Chandan Kumar Jha and Rolf Drechsler},
+  doi          = {10.1145/3744710},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {FV-LIDAC: Formally verified library of input data aware approximate arithmetic circuits},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A CPU+FPGA OpenCL heterogeneous computing platform for multi-kernel pipeline. <em>TODAES</em>, <em>30</em>(4), 1-23. (<a href='https://doi.org/10.1145/3744922'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Over the past decades, Field-Programmable Gate Arrays (FPGAs) have become a choice for heterogeneous computing due to their flexibility, energy efficiency, and processing speed. OpenCL is used in FPGA heterogeneous computing for its high-level abstraction and cross-platform compatibility. Previous works have introduced optimization techniques in OpenCL for FPGAs to leverage FPGA-specific advantages. However, the multi-kernel pipeline technique, which can raise throughput and resource utilization, has not performed well. This article presents a CPU+FPGA heterogeneous platform with a novel execution model to optimize multi-kernel pipeline. Firstly, we extend OpenCL by introducing new APIs and additional functions to represent the execution model. Secondly, a hardware-software co-scheduling scheme is employed to manage execution. Thirdly, we design a holistic development flow and toolkit to facilitate the deployment of algorithms on the platform or the integration of RTL IP cores to the OpenCL environment. We validate the platform using a Range Doppler algorithm. The proposed development flow and integrated toolchain enhance the efficiency of integrating traditional RTL IP cores into the OpenCL environment. Experimental results demonstrate that, with a comparable processing speed (averaging 95%) to traditional RTL implementations, the platform successfully establishes the multi-kernel pipelines. Leveraging the multi-kernel pipeline, the platform achieves a significant improvement in multi-frame processing speed compared to traditional OpenCL.},
+  archive      = {J_TODAES},
+  author       = {Yuefei Wang and Wendong Mao and Lang Feng and Jin Sha and Zhongfeng Wang},
+  doi          = {10.1145/3744922},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A CPU+FPGA OpenCL heterogeneous computing platform for multi-kernel pipeline},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Concurrent prediction of timing and wire length using a multi-task graph neural network. <em>TODAES</em>, <em>30</em>(4), 1-20. (<a href='https://doi.org/10.1145/3747181'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Traditional supervised single-task learning models are used in timing-driven placement exploration to improve both effectiveness and efficiency by predicting wire length, wire delay, and cell delay separately. However, these metrics are interdependent, with the two delays being timing-based and wire length non-timing, which makes it difficult for single-task models to capture their complex relationships. Moreover, the limited existing multi-task learning methods can only predict either multiple timing or non-timing metrics. To address these limitations, this article introduces DLGNN, a novel multi-task graph learning model that simultaneously predicts these three metrics through an embedder-predictor architecture featuring two residual connections, a combination of both soft and hard parameter sharing, and a geometric loss strategy. Cross-design experimental results on the Nangate 45nm library demonstrate that DLGNN outperforms baseline models in terms of both predictive performance and time efficiency. Additionally, ablation studies emphasize the critical roles of the residual connections, the combination of soft and hard parameter sharing, and the geometric loss strategy in improving DLGNN’s predictive performance. The generalization experiment on the ASAP 7nm library further confirms DLGNN’s advantages for more advanced technology nodes.},
+  archive      = {J_TODAES},
+  author       = {Yan Xing and Hongtao Hu and Weijun Li and Shuting Cai and Xiaoming Xiong},
+  doi          = {10.1145/3747181},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-20},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Concurrent prediction of timing and wire length using a multi-task graph neural network},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

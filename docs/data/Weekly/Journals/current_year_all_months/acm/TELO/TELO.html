@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TELO</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="telo">TELO - 15</h2>
+<ul>
+<li><details>
+<summary>
+(2025). First steps toward a runtime analysis when starting with a good solution. <em>TELO</em>, <em>5</em>(2), 1-41. (<a href='https://doi.org/10.1145/3675783'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The mathematical runtime analysis of evolutionary algorithms traditionally regards the time an algorithm needs to find a solution of a certain quality when initialized with a random population. In practical applications it may be possible to guess solutions that are better than random ones. We start a mathematical runtime analysis for such situations. We observe that different algorithms profit to a very different degree from a better initialization. We also show that the optimal parameterization of an algorithm can depend strongly on the quality of the initial solutions. To overcome this difficulty, self-adjusting and randomized heavy-tailed parameter choices can be profitable. Finally, we observe a larger gap between the performance of the best evolutionary algorithm we found and the corresponding black-box complexity. This could suggest that evolutionary algorithms better exploiting good initial solutions are still to be found. These first findings stem from analyzing the performance of the \((1+1)\) evolutionary algorithm and the static, self-adjusting, and heavy-tailed \((1+(\lambda,\lambda))\) genetic algorithms on the OneMax benchmark. We are optimistic that the question of how to profit from good initial solutions is interesting beyond these first examples.},
+  archive  = {J},
+  author   = {Denis Antipov and Maxim Buzdalov and Benjamin Doerr},
+  doi      = {10.1145/3675783},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {5},
+  number   = {2},
+  pages    = {1-41},
+  title    = {First steps toward a runtime analysis when starting with a good solution},
+  volume   = {5},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Explainable optimisation through online and offline hyper-heuristics. <em>TELO</em>, <em>5</em>(2), 1-29. (<a href='https://doi.org/10.1145/3701236'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Research in the explainability of optimisation techniques has largely focused on metaheuristics and their movement of solutions around the search landscape. Hyper-heuristics create a different challenge for explainability as they make use of many more operators, or low-level heuristics and learning algorithms which modify their probability of selection online. This article describes a set of methods for explaining hyper-heuristics decisions in both online and offline scenarios using selection hyper-heuristics as an example. These methods help to explain various aspects of the function of hyper-heuristics both at a particular juncture in the optimisation process and through time. Visualisations of each method acting on sequences provide an understanding of which operators are being utilised and when, and in which combinations to produce a greater understanding of the algorithm-problem nexus in hyper-heuristic search. These methods are demonstrated on a range of problems including those in operational research and water distribution network optimisation. They demonstrate the insight that can be generated from optimisation using selection hyper-heuristics, including building an understanding of heuristic usage, useful combinations of heuristics and heuristic parameterisations. Furthermore the dynamics of heuristic utility are explored throughout an optimisation run and we show that it is possible to cluster problem instances according to heuristic selection alone, providing insight into the perception of problems from a hyper-heuristic perspective.},
+  archive  = {J},
+  author   = {William B. Yates and Edward C. Keedwell and Ahmed Kheiri},
+  doi      = {10.1145/3701236},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {5},
+  number   = {2},
+  pages    = {1-29},
+  title    = {Explainable optimisation through online and offline hyper-heuristics},
+  volume   = {5},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EVOTER: Evolution of transparent explainable rule-sets. <em>TELO</em>, <em>5</em>(2), 1-30. (<a href='https://doi.org/10.1145/3702651'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Most AI systems are black boxes generating reasonable outputs for given inputs. Some domains, however, have explainability and trustworthiness requirements that cannot be directly met by these approaches. Various methods have therefore been developed to interpret black-box models after training. This article advocates an alternative approach where the models are transparent and explainable to begin with. This approach, EVOTER, evolves rule-sets based on extended propositional logic expressions. The approach is evaluated in several prediction/classification and prescription/policy search domains with and without a surrogate. It is shown to discover meaningful rule-sets that perform similarly to black-box models. The rules can provide insight into the domain and make hidden biases explicit. It may also be possible to edit the rules directly to remove biases and add constraints. EVOTER thus forms a promising foundation for building trustworthy AI systems for real-world applications in the future.},
+  archive  = {J},
+  author   = {Hormoz Shahrzad and Babak Hodjat and Risto Miikkulainen},
+  doi      = {10.1145/3702651},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {5},
+  number   = {2},
+  pages    = {1-30},
+  title    = {EVOTER: Evolution of transparent explainable rule-sets},
+  volume   = {5},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-objectivising acquisition functions in bayesian optimisation. <em>TELO</em>, <em>5</em>(2), 1-33. (<a href='https://doi.org/10.1145/3716504'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Bayesian optimisation (BO) is an efficient approach for solving expensive optimisation problems, where acquisition functions play a major role in achieving the tradeoff between exploitation and exploration. The exploitation–exploration tradeoff is challenging; excessive focus on exploitation can stagnate the search, while too much exploration can slow convergence. Multi-objectivisation has been explored as an effective approach to mitigate the exploitation–exploration tradeoff problem. Along this line, in this article, we propose a Multi-Objectivisation-Based Adaptive Exploitation–Exploration Tradeoff Framework (MOEE) to balance exploitation and exploration in BO. MOEE considers the nondominated front formed by the exploitation and exploration objectives and adaptively switches the focus on exploration and exploitation on the basis of the search status. We verify our method on the 19 synthetic and practical problem instances with 1–20 dimensions, and the results show that our proposed multi-objectivisation framework can achieve a good balance between exploitation and exploration.},
+  archive      = {J_TELO},
+  author       = {Chao Jiang and Miqing Li},
+  doi          = {10.1145/3716504},
+  journal      = {ACM Transactions on Evolutionary Learning and Optimization},
+  month        = {5},
+  number       = {2},
+  pages        = {1-33},
+  shortjournal = {ACM Trans. Evol. Learn. Optim.},
+  title        = {Multi-objectivising acquisition functions in bayesian optimisation},
+  volume       = {5},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Explainable benchmarking for iterative optimization heuristics. <em>TELO</em>, <em>5</em>(2), 1-30. (<a href='https://doi.org/10.1145/3716638'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Benchmarking heuristic algorithms is vital to understand under which conditions and on what kind of problems certain algorithms perform well. In most current research into heuristic optimization algorithms, only a very limited number of scenarios, algorithm configurations and hyper-parameter settings are explored, leading to incomplete and often biased insights and results. This article presents a novel approach that we call explainable benchmarking. We introduce the IOHxplainer software library, for systematic analysing the performance of various optimization algorithms and the impact of their different components and hyperparameters. We showcase the methodology in the context of two modular optimization implementations. Through this library, we examine the impact of different algorithmic components and configurations, offering insights into their performance across diverse scenarios. We provide a systematic method for evaluating and interpreting the behaviour and efficiency of iterative optimization heuristics in a more transparent and comprehensible manner, aiming to improve future benchmarking and algorithm design practices.},
+  archive  = {J},
+  author   = {Niki van Stein and Diederick Vermetten and Anna V. Kononova and Thomas Bäck},
+  doi      = {10.1145/3716638},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {5},
+  number   = {2},
+  pages    = {1-30},
+  title    = {Explainable benchmarking for iterative optimization heuristics},
+  volume   = {5},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards explainable metaheuristics: Feature mining of search trajectories through principal component projection. <em>TELO</em>, <em>5</em>(2), 1-30. (<a href='https://doi.org/10.1145/3731456'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {While population-based metaheuristics have proven useful for refining and improving explainable AI systems, they are seldom the focus of explanatory approaches themselves. This stems from their inherently stochastic, population-driven searches, which complicate the use of standard explainability techniques. In this article, we present a method to identify which decision variables have the greatest impact during an algorithm’s trajectory from random initialsation to convergence. We apply Principal Component Analysis to project each population onto a lower-dimensional space, then introduce two metrics—Mean Variable Contribution and Proportion of Aligned Variables—to identify the variables most responsible for guiding the search. Using four different population-based methods (Particle Swarm Optimisation, Genetic Algorithm, Differential Evolution, and Covariance Matrix Adaptation Evolution Strategy) on 24 BBOB benchmark functions in 10 dimensions, we find that these metrics highlight meaningful variable relationships and provide a window into each method’s search dynamics. By comparing the features extracted across algorithms and problems, we illustrate how certain variable subsets consistently drive major improvements in solution quality. In doing so, new evolutionary algorithm variants can be designed to take advantage of these influential variables, while also identifying underutilised variables that may benefit alternative search strategies.},
+  archive  = {J},
+  author   = {Martin Fyvie and John A. W. McCall and Lee A. Christie},
+  doi      = {10.1145/3731456},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {5},
+  number   = {2},
+  pages    = {1-30},
+  title    = {Towards explainable metaheuristics: Feature mining of search trajectories through principal component projection},
+  volume   = {5},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Introduction to the special issue on explainable AI in evolutionary Computation—Part 2. <em>TELO</em>, <em>5</em>(2), 1-2. (<a href='https://doi.org/10.1145/3733611'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive = {J},
+  author  = {Jaume Bacardit and Alexander Brownlee and Stefano Cagnoni and Giovanni Iacca and John McCall and David Walker},
+  doi     = {10.1145/3733611},
+  journal = {ACM Transactions on Evolutionary Learning},
+  month   = {5},
+  number  = {2},
+  pages   = {1-2},
+  title   = {Introduction to the special issue on explainable AI in evolutionary Computation—Part 2},
+  volume  = {5},
+  year    = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Body and brain quality-diversity in robot swarms. <em>TELO</em>, <em>5</em>(1), 1-27. (<a href='https://doi.org/10.1145/3664656'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {In biological societies, complex interactions between the behavior and morphology of evolving organisms and their environment have given rise to a wide range of complex and diverse social structures. Similarly, in artificial counterparts such as swarm robotics systems, collective behaviors emerge via the interconnected dynamics of robot morphology (sensory-motor configuration), behavior (controller), and environment (task). Various studies have demonstrated morphological and behavioral diversity enables biological groups to exhibit adaptive, robust, and resilient collective behavior across changing environments. However, in artificial (swarm robotic) systems there is little research on the impact of changing environments on morphological and behavioral (body-brain) diversity in emergent collective behavior, and the benefits of such diversity. This study uses evolutionary collective robotics as an experimental platform to investigate the impact of increasing task environment complexity (collective behavior task difficulty) on the evolution and benefits of morphological and behavioral diversity in robotic swarms. Results indicate that body-brain evolution using coupled behavior and morphology diversity maintenance yields higher behavioral and morphological diversity, which is beneficial for collective behavior task performance across task environments. Results also indicate that such behavioral and morphological diversity maintenance coupled with body-brain evolution produces neuro-morpho complexity that does not increase concomitantly with task complexity.},
+  archive  = {J},
+  author   = {Sindiso Mkhatshwa and Geoff Nitschke},
+  doi      = {10.1145/3664656},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {3},
+  number   = {1},
+  pages    = {1-27},
+  title    = {Body and brain quality-diversity in robot swarms},
+  volume   = {5},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Covariance matrix adaptation MAP-annealing: Theory and experiments. <em>TELO</em>, <em>5</em>(1), 1-53. (<a href='https://doi.org/10.1145/3665336'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Single-objective optimization algorithms search for the single highest quality solution with respect to an objective. Quality diversity (QD) optimization algorithms, such as Covariance Matrix Adaptation MAP-Elites (CMA-ME), search for a collection of solutions that are both high quality with respect to an objective and diverse with respect to specified measure functions. However, CMA-ME suffers from three major limitations highlighted by the QD community: prematurely abandoning the objective in favor of exploration, struggling to explore flat objectives, and having poor performance for low-resolution archives. We propose a new QD algorithm, CMA MAP-Annealing (CMA-MAE), and its differentiable QD variant, CMA-MAE via a Gradient Arborescence (CMA-MAEGA), that address all three limitations. We provide theoretical justifications for the new algorithm with respect to each limitation. Our theory informs our experiments, which support the theory and show that CMA-MAE achieves state-of-the-art performance and robustness on standard QD benchmark and reinforcement learning domains.},
+  archive  = {J},
+  author   = {Shihan Zhao and Bryon Tjanaka and Matthew C. Fontaine and Stefanos Nikolaidis},
+  doi      = {10.1145/3665336},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {3},
+  number   = {1},
+  pages    = {1-53},
+  title    = {Covariance matrix adaptation MAP-annealing: Theory and experiments},
+  volume   = {5},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MA-BBOB: A problem generator for black-box optimization using affine combinations and shifts. <em>TELO</em>, <em>5</em>(1), 1-19. (<a href='https://doi.org/10.1145/3673908'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Choosing a set of benchmark problems is often a key component of any empirical evaluation of iterative optimization heuristics. In continuous, single-objective optimization, several sets of problems have become widespread, including the well-established BBOB suite. While this suite is designed to enable rigorous benchmarking, it is also commonly used for testing methods such as algorithm selection, which the suite was never designed around. We present the MA-BBOB function generator, which uses the BBOB suite as component functions in an affine combination. In this work, we describe the full procedure to create these affine combinations and highlight the tradeoffs of several design decisions, specifically the choice to place the optimum uniformly at random in the domain. We then illustrate how this generator can be used to gain more low-level insight into the function landscapes through the use of exploratory landscape analysis. Finally, we show a potential use-case of MA-BBOB in generating a wide set of training and testing data for algorithm selectors. Using this setup, we show that the basic scheme of using a set of landscape features to predict the best algorithm does not lead to optimal results, and that an algorithm selector trained purely on the BBOB functions generalizes poorly to the affine combinations.},
+  archive  = {J},
+  author   = {Diederick Vermetten and Furong Ye and Thomas Bäck and Carola Doerr},
+  doi      = {10.1145/3673908},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {3},
+  number   = {1},
+  pages    = {1-19},
+  title    = {MA-BBOB: A problem generator for black-box optimization using affine combinations and shifts},
+  volume   = {5},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Synergizing quality-diversity with descriptor-conditioned reinforcement learning. <em>TELO</em>, <em>5</em>(1), 1-35. (<a href='https://doi.org/10.1145/3696426'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {A hallmark of intelligence is the ability to exhibit a wide range of effective behaviors. Inspired by this principle, Quality-Diversity algorithms, such as MAP-Elites, are evolutionary methods designed to generate a set of diverse and high-fitness solutions. However, as a genetic algorithm, MAP-Elites relies on random mutations, which can become inefficient in high-dimensional search spaces, thus limiting its scalability to more complex domains, such as learning to control agents directly from high-dimensional inputs. To address this limitation, advanced methods like PGA-MAP-Elites and DCG-MAP-Elites have been developed, which combine actor-critic techniques from Reinforcement Learning with MAP-Elites, significantly enhancing the performance and efficiency of Quality-Diversity algorithms in complex, high-dimensional tasks. While these methods have successfully leveraged the trained critic to guide more effective mutations, the potential of the trained actor remains underutilized in improving both the quality and diversity of the evolved population. In this work, we introduce DCRL-MAP-Elites, an extension of DCG-MAP-Elites that utilizes the descriptor-conditioned actor as a generative model to produce diverse solutions, which are then injected into the offspring batch at each generation. Additionally, we present an empirical analysis of the fitness and descriptor reproducibility of the solutions discovered by each algorithm. Finally, we present a second empirical analysis shedding light on the synergies between the different variations operators and explaining the performance improvement from PGA-MAP-Elites to DCRL-MAP-Elites.},
+  archive  = {J},
+  author   = {Maxence Faldor and Félix Chalumeau and Manon Flageat and Antoine Cully},
+  doi      = {10.1145/3696426},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {3},
+  number   = {1},
+  pages    = {1-35},
+  title    = {Synergizing quality-diversity with descriptor-conditioned reinforcement learning},
+  volume   = {5},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CMA-ES with learning rate adaptation. <em>TELO</em>, <em>5</em>(1), 1-28. (<a href='https://doi.org/10.1145/3698203'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {The covariance matrix adaptation evolution strategy (CMA-ES) is one of the most successful methods for solving continuous black-box optimization problems. A practically useful aspect of CMA-ES is that it can be used without hyperparameter tuning. However, the hyperparameter settings still have a considerable impact on performance, especially for difficult tasks, such as solving multimodal or noisy problems. This study comprehensively explores the impact of learning rate on CMA-ES performance and demonstrates the necessity of a small learning rate by considering ordinary differential equations. Thereafter, it discusses the setting of an ideal learning rate. Based on these discussions, we develop a novel learning rate adaptation mechanism for CMA-ES that maintains a constant signal-to-noise ratio. Additionally, we investigate the behavior of CMA-ES with the proposed learning rate adaptation mechanism through numerical experiments and compare the results with those obtained for CMA-ES with a fixed learning rate and with population size adaptation. The results show that CMA-ES with the proposed learning rate adaptation works well for multimodal and/or noisy problems without extremely expensive learning rate tuning.},
+  archive  = {J},
+  author   = {Masahiro Nomura and Youhei Akimoto and Isao Ono},
+  doi      = {10.1145/3698203},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {3},
+  number   = {1},
+  pages    = {1-28},
+  title    = {CMA-ES with learning rate adaptation},
+  volume   = {5},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An evolutionary algorithm for expensive mixed-integer black-box optimization with explicit constraints. <em>TELO</em>, <em>5</em>(1), 1-16. (<a href='https://doi.org/10.1145/3707465'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Determining the feasibility of a candidate solution to a constrained black-box optimization problem may be similarly expensive compared to the process of determining its quality, or it may be much cheaper. Constraints that allow obtaining degrees of feasibility or constraint violation without incurring significant computational costs are referred to as explicit. We present an evolutionary algorithm for solving mixed-integer black-box optimization problems where objective function evaluations are expensive but constraints are explicit. We do not assume relaxability of the constraints. The method wraps active-set evolution strategies, an algorithm for solving continuous black-box problems with explicit constraints, in a branching mechanism that allows enforcing integrality constraints. In computer experiments we demonstrate that the algorithm solves a set of mixed-integer problems with significantly fewer objective function evaluations than several algorithms that do not exploit the explicitness of the constraints.},
+  archive  = {J},
+  author   = {Yuan Hong and Dirk V. Arnold},
+  doi      = {10.1145/3707465},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {3},
+  number   = {1},
+  pages    = {1-16},
+  title    = {An evolutionary algorithm for expensive mixed-integer black-box optimization with explicit constraints},
+  volume   = {5},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fully autonomous programming using iterative multi-agent debugging with large language models. <em>TELO</em>, <em>5</em>(1), 1-37. (<a href='https://doi.org/10.1145/3719351'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract = {Program synthesis with Large Language Models (LLMs) suffers from a “near-miss syndrome”: The generated code closely resembles a correct solution but fails unit tests due to minor errors. We address this with a multi-agent framework called Synthesize, Execute, Instruct, Debug, and Repair (SEIDR). Effectively applying SEIDR to instruction-tuned LLMs requires determining (a) optimal prompts for LLMs, (b) what ranking algorithm selects the best programs in debugging rounds, and (c) balancing the repair of unsuccessful programs with the generation of new ones. We empirically explore these tradeoffs by comparing replace-focused, repair-focused, and hybrid debug strategies. We also evaluate lexicase and tournament selection to rank candidates in each generation. On Program Synthesis Benchmark 2 (PSB2), our framework outperforms both conventional use of OpenAI Codex without a repair phase and traditional genetic programming approaches. SEIDR outperforms the use of an LLM alone, solving 18 problems in C++ and 20 in Python on PSB2 at least once across experiments. To assess generalizability, we employ GPT-3.5 and Llama 3 on the PSB2 and HumanEval-X benchmarks. Although SEIDR with these models does not surpass current state-of-the-art methods on the Python benchmarks, the results on HumanEval-C++ are promising. SEIDR with Llama 3-8B achieves an average pass@100 of 84.2%. Across all SEIDR runs, 163 of 164 problems are solved at least once with GPT-3.5 in HumanEval-C++, and 162 of 164 with the smaller Llama 3-8B. We conclude that SEIDR effectively overcomes the near-miss syndrome in program synthesis with LLMs.},
+  archive  = {J},
+  author   = {Anastasiia Grishina and Vadim Liventsev and Aki Härmä and Leon Moonen},
+  doi      = {10.1145/3719351},
+  journal  = {ACM Transactions on Evolutionary Learning},
+  month    = {3},
+  number   = {1},
+  pages    = {1-37},
+  title    = {Fully autonomous programming using iterative multi-agent debugging with large language models},
+  volume   = {5},
+  year     = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Introduction to the “Best of GECCO 2023” special issue. <em>TELO</em>, <em>5</em>(1), 1-2. (<a href='https://doi.org/10.1145/3721461'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive = {J},
+  author  = {Luís Paquete and Sara Silva},
+  doi     = {10.1145/3721461},
+  journal = {ACM Transactions on Evolutionary Learning},
+  month   = {3},
+  number  = {1},
+  pages   = {1-2},
+  title   = {Introduction to the “Best of GECCO 2023” special issue},
+  volume  = {5},
+  year    = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

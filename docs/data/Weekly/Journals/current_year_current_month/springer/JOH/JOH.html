@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JOH</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="joh">JOH - 6</h2>
+<ul>
+<li><details>
+<summary>
+(2025). A new, efficient approach to speed up local search by estimating the solution quality: An application to stochastic, parallel machine scheduling. <em>JOH</em>, <em>31</em>(3), 1-31. (<a href='https://doi.org/10.1007/s10732-025-09562-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Local search has become a very powerful tool to solve hard optimization problems. One of the key parts here is that you must decide to accept or reject a new solution, for which we compare the objective values of the incumbent and the new solution. Since in general very many iterations are involved, it is important that this comparison can be done efficiently. In case of a stochastic problem, where we want to optimize the expected value, it is often impossible to do the comparison analytically. We can resolve this by simulating a solution, but to find an accurate estimate we need many simulations, which may take a lot of time. In this paper we present an alternative method to estimate the expected value for problems involving waiting relations. To apply this method we must iteratively compute the maximum of several stochastic variables. Thereto, we pretend that all stochastic variables are normally distributed, after which we iteratively estimate the expected value and standard deviation of the maximum of two variables; in the further analysis we pretend this maximum to be normally distributed again. We test the efficiency of this method on a specific scheduling problem with precedence relations. In our experiments we find that this approximation method in many cases produces better solutions than estimating the expected makespan using 1000 independent simulations per iteration, and it always dominates using 300 simulations per iteration, while using only a fraction of the time. Moreover, this method of estimating the distribution of the maximum seems to be widely applicable. For example, we can use it for all kinds of planning problems in which a person/task must wait until at least two other events have been completed, which is a typical situation in which a direct computation of the expected value is intractable.},
+  archive      = {J_JOH},
+  author       = {Passage, Guido and van den Akker, Marjan and Hoogeveen, Han},
+  doi          = {10.1007/s10732-025-09562-5},
+  journal      = {Journal of Heuristics},
+  month        = {9},
+  number       = {3},
+  pages        = {1-31},
+  shortjournal = {J. Heuristics},
+  title        = {A new, efficient approach to speed up local search by estimating the solution quality: An application to stochastic, parallel machine scheduling},
+  volume       = {31},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A tabu-bi-label hybridized branch and price algorithm for just-in-time material handling scheduling problems of mixed-model assembly lines with electric vehicle recharging requirements. <em>JOH</em>, <em>31</em>(3), 1-34. (<a href='https://doi.org/10.1007/s10732-025-09563-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Driven by the highly-diversified customer demand, mixed-model automobile assembly lines (MMAALs) have been widely applied to enable the mass production of customized automobiles. Meanwhile, an inexorable trend in the green and sustainable production has promoted the optimization of material handling scheduling, which constitutes a large proportion of the energy consumption in the automobile production. Therefore, to deal with both manufacturing and energy issues, this article employed electric vehicles (EVs) and proposed a supermarket integrated MMAAL material handling scheduling problem under JIT settings with EV recharging requirements. A mixed integer linear programming model is consequently established, aiming to minimize the number of EVs for reducing cost as well as saving energy. In order to obtain the global optimal solution, a Tabu-Bi-Label Hybridized Branch and Price Algorithm (TBHBP) algorithm is developed, a heuristic Tabu Search algorithm is combined with a modified Bidirectional Labeling for achieving much faster speed while maintaining a high solution quality. Computational experiments on TBHBP along with a case study are carried out and compared with benchmark algorithms, the results of which verified the efficiency and effectiveness of TBHBP in dealing with the proposed problem.},
+  archive      = {J_JOH},
+  author       = {Huang, Yufan and Zhou, Binghai},
+  doi          = {10.1007/s10732-025-09563-4},
+  journal      = {Journal of Heuristics},
+  month        = {9},
+  number       = {3},
+  pages        = {1-34},
+  shortjournal = {J. Heuristics},
+  title        = {A tabu-bi-label hybridized branch and price algorithm for just-in-time material handling scheduling problems of mixed-model assembly lines with electric vehicle recharging requirements},
+  volume       = {31},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Selector: Ensemble-based automated algorithm configuration. <em>JOH</em>, <em>31</em>(3), 1-31. (<a href='https://doi.org/10.1007/s10732-025-09561-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Solvers contain parameters that influence their performance and these must be set by the user to ensure that high-quality solutions are generated, or optimal solutions are found quickly. Manually setting these parameters is tedious and error-prone, since search spaces may be large or even infinite. Existing approaches to automate the task of algorithm configuration (AC) make use of a single machine learning model that is trained on previous runtime data and used to create or evaluate promising new configurations. We combine a variety of successful models from different AC approaches into an ensemble that proposes new configurations. To this end, each model in the ensemble suggests configurations and a hyper-configurable selection algorithm chooses a subset of configurations to match the amount of computational resources available. We call this approach Selector, and we examine its performance against the state-of-the-art AC methods PyDGGA and SMAC, respectively. The new configurator will be made available as an open source software package.},
+  archive      = {J_JOH},
+  author       = {Weiß, Dimitri and Schede, Elias and Tierney, Kevin},
+  doi          = {10.1007/s10732-025-09561-6},
+  journal      = {Journal of Heuristics},
+  month        = {9},
+  number       = {3},
+  pages        = {1-31},
+  shortjournal = {J. Heuristics},
+  title        = {Selector: Ensemble-based automated algorithm configuration},
+  volume       = {31},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient hybridization of quantum annealing and ant colony optimization for coloring DIMACS graph instances. <em>JOH</em>, <em>31</em>(3), 1-44. (<a href='https://doi.org/10.1007/s10732-025-09565-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph coloring problem is a well-known NP-complete combinatorial optimization problem where the goal is to assign colors to the vertices of a graph such that no adjacent vertices share the same color. Despite extensive research, no known polynomial-time algorithm exists for finding the optimal coloring for all the benchmark graph instances. This paper presents a time-efficient effective hybridization of ant colony optimization and quantum annealing algorithms in a single framework to solve graph coloring. The algorithm has been tested on 100 standard DIMACS benchmark graph instances of varying size and complexity. The experimental result shows that quantum annealing outperforms the performances of ant colony optimization in terms of obtaining the optimal/best-known chromatic number. However, the runtime of quantum annealing is too high for some simple graph instances of larger size. On the other hand, ant colony optimization gives faster result than quantum annealing for the simple graphs, but the performance is not satisfactory for some complex benchmark instances. The hybridization approach gives optimal/best-known results for the complex graphs and takes less time for the large-sized instances. By conducting a performance comparison among the individual algorithms with the hybridization using Friedman Test and Nemenyi Post-hoc analysis, the worthiness of the proposed hybrid algorithm is explained, establishing its promising nature.},
+  archive      = {J_JOH},
+  author       = {Kole, Arnab and Pal, Anindya Jyoti},
+  doi          = {10.1007/s10732-025-09565-2},
+  journal      = {Journal of Heuristics},
+  month        = {9},
+  number       = {3},
+  pages        = {1-44},
+  shortjournal = {J. Heuristics},
+  title        = {Efficient hybridization of quantum annealing and ant colony optimization for coloring DIMACS graph instances},
+  volume       = {31},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SolQHealer: Quantum procedures for rendering infeasible solutions feasible: A proof of concept with the maximum independent set problem and 3-SAT. <em>JOH</em>, <em>31</em>(3), 1-28. (<a href='https://doi.org/10.1007/s10732-025-09564-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Over the past decade, the usefulness of quantum annealing hardware for combinatorial optimization has been the subject of active debate. Although current analog quantum machines do not guarantee optimality, operating instead as heuristic solvers, the technology is evolving rapidly. Beyond performance alone, this emerging technologies offers fundamentally new approaches to problem-solving that are not readily accessible to classical exact methods particularly in dynamic environments or online optimization settings. This paper focuses on one such approaches: Reverse Quantum Annealing (RQA). Unlike classical exact methods, RQA allows the optimization process to begin from an initial infeasible solution by embedding it directly into the qubits’ initial state. We leverage this capability by formulating problem constraints as penalty terms within Quadratic Unconstrained Binary Optimization (QUBO) models, thereby preserving infeasible solutions within the quantum search space. We propose iterative strategies that apply RQA in three distinct modes to rapidly repair infeasible solutions. These methods are evaluated on two well-known NP-hard problems: the Maximum Independent Set (MIS) and the 3-SAT problem. Our results demonstrate the effectiveness of RQA in steering infeasible configurations toward feasibility, offering promising potential for real-time applications where problem data may change suddenly and solutions must be repaired swiftly.},
+  archive      = {J_JOH},
+  author       = {Deleplanque, Samuel and Pérez Armas, Luis Fernando and Creemers, Stefan},
+  doi          = {10.1007/s10732-025-09564-3},
+  journal      = {Journal of Heuristics},
+  month        = {9},
+  number       = {3},
+  pages        = {1-28},
+  shortjournal = {J. Heuristics},
+  title        = {SolQHealer: Quantum procedures for rendering infeasible solutions feasible: A proof of concept with the maximum independent set problem and 3-SAT},
+  volume       = {31},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Stochastic capacitated dispersion problems in disaster preparedness for mass casualty incident. <em>JOH</em>, <em>31</em>(3), 1-30. (<a href='https://doi.org/10.1007/s10732-025-09566-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent disasters that cause mass casualty incidents –such as the 2020 Beirut explosion or the 2023 Turkey-Syria earthquake– have shown that critical facilities, which are meant to help the casualties, could be damaged by them. Therefore, it is critical to increase the resiliency of critical facilities by dispersing their locations. This paper proposes a stochastic capacitated dispersion model that considers a scenario in which a disaster can cause mass casualty incidents and damage critical facilities. The extent of damage is modeled as a function of the distance between the site locations of the facility and the epicenter of the disaster, as well as the level of severity of the disaster. The model incorporates a chance constraint to account for supply uncertainty. To solve this stochastic optimisation problem, we propose a new simheuristic algorithm that combines simulation and heuristic optimisation. Experiments show that our algorithm produces solutions that match the quality of the best deterministic solutions reported in the literature. In the stochastic disaster scenario, our algorithm produces solutions that can meet demand 90% of the time, while deterministic solutions fail to meet this demand.},
+  archive      = {J_JOH},
+  author       = {Onggo, B. Stephan and Martin, Xabier A. and Corlu, Canan G. and Panadero, Javier and Juan, Angel A.},
+  doi          = {10.1007/s10732-025-09566-1},
+  journal      = {Journal of Heuristics},
+  month        = {9},
+  number       = {3},
+  pages        = {1-30},
+  shortjournal = {J. Heuristics},
+  title        = {Stochastic capacitated dispersion problems in disaster preparedness for mass casualty incident},
+  volume       = {31},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

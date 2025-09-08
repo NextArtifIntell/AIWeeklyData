@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TACO</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="taco">TACO - 23</h2>
+<ul>
+<li><details>
+<summary>
+(2025). LitTLS: Lightweight thread-level speculation on little cores. <em>TACO</em>, <em>22</em>(2), 1-27. (<a href='https://doi.org/10.1145/3719655'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Thread-Level Speculation (TLS) utilizes speculative parallelization to accelerate hard-to-parallelize serial codes on multi-cores. As the heterogeneous multi-core architecture is becoming ubiquitous, it presents an opportunity for TLS to reorganize little cores for the acceleration of these serial codes instead of a big core with similar or more area and power. However, previous TLS designs significantly suffer from extended hardware overhead and costly speculative forwarding. We present LitTLS, a lightweight TLS design with versioning caches to eliminate significant extended hardware overhead by storing versions in caches without speculative write buffers and memory undo-logs. Additionally, LitTLS introduces the Speculative Address Table, a novel component to accelerate speculative forwarding with a central structure to trace memory dependencies. Evaluations on four little cores show that LitTLS achieves an average performance speedup of 2.87× compared to a little core, outperforming a big core by 94% with similar area and less power. The extended area size is only 0.07 mm 2 , and the maximum increase in dynamic power consumption is limited to 0.3%, compared to four little cores.},
+  archive      = {J_TACO},
+  author       = {Xin Cheng and Jinpeng Ye and Haoyu Deng and Tingting Zhang and Tianyi Liu and Jian Wang},
+  doi          = {10.1145/3719655},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {LitTLS: Lightweight thread-level speculation on little cores},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TSN cache: Exploiting data localities in graph computing applications. <em>TACO</em>, <em>22</em>(2), 1-26. (<a href='https://doi.org/10.1145/3721286'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article finds that the reusability of vertices in the same graph in graph processing differs, and the high-reuse and low-reuse vertices are stored together. These phenomena lead to the inability of existing GPU architectures to capture the reusability of graph processing. The most advanced cache optimization strategies cannot implement different management strategies for data with different reusability, which is an essential reason for graph processing’s poor performance. Therefore, we propose a TSN cache scheme for the GPU platform. This scheme employs distinct management strategies for data with varying reusability in the cache, effectively leveraging the locality of these different data types. In addition, the TSN cache scheme can also reduce the probability of cache thrashing caused by low-reuse data. This article evaluates multiple graph algorithms and datasets and shows that the TSN cache scheme achieves an average speedup of 1.38 compared with the baseline scheme.},
+  archive      = {J_TACO},
+  author       = {Chaoyang Jia and Jingyu Liu and Shi Chen and Kai Lu and Li Shen},
+  doi          = {10.1145/3721286},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {TSN cache: Exploiting data localities in graph computing applications},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PANDA: Adaptive prefetching and decentralized scheduling for dataflow architectures. <em>TACO</em>, <em>22</em>(2), 1-27. (<a href='https://doi.org/10.1145/3721288'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dataflow architectures are considered promising architecture, offering a commendable balance of performance, efficiency, and flexibility. Abundant prior works have been proposed to improve the performance of dataflow architectures. Nevertheless, these solutions can be further improved due to the lack of efficient data prefetching and flexible task scheduling. In this article, we propose a novel dataflow architecture with adaptive p refetching an d d ecentr a lized scheduling (PANDA). First, we present an application-adaptive data prefetching method and on-chip memory microarchitecture designed to overlap memory access latency. Second, we introduce a decentralized dataflow scheduling approach and processing element (PE) microarchitecture aimed at improving hardware utilization. Experimental results show that in a wide range of real-world applications, PANDA attains up to 2.53× performance improvement and 1.79× energy efficiency improvement over the state-of-the-art dataflow architectures.},
+  archive      = {J_TACO},
+  author       = {Shantian Qin and Zhihua Fan and Wenming Li and Zhen Wang and Xuejun An and Xiaochun Ye and Dongrui Fan},
+  doi          = {10.1145/3721288},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {PANDA: Adaptive prefetching and decentralized scheduling for dataflow architectures},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BridgeGC: An efficient cross-level garbage collector for big data frameworks. <em>TACO</em>, <em>22</em>(2), 1-27. (<a href='https://doi.org/10.1145/3722110'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Popular big data frameworks commonly run atop Java Virtual Machine (JVM) and rely on garbage collection (GC) mechanism to automatically allocate/reclaim in-memory objects. Existing garbage collectors are designed based on the hypothesis that most objects are short lived. However, big data frameworks usually generate many long-lived data objects, which can cause heavy GC overhead. Recent approaches have reduced GC overhead in big data frameworks but still suffer from heavy human efforts, additional runtime overhead, or suboptimal GC efficiency. This article describes the design of BridgeGC , a big-data-friendly garbage collector that significantly reduces GC overhead introduced by long-lived data objects. BridgeGC follows a cross-level co-design. At the big data framework level, BridgeGC provides two annotations for framework developers to denote the creation and release of data objects. Based on the annotations, BridgeGC tracks the lifecycles of annotated data objects and optimizes their allocation/reclamation at the GC level. At the GC level, we design a label-based allocator that stores data objects separately from other objects and balances their memory usage in the same JVM, leading to fewer GC cycles. We further design an efficient collector to eliminate unnecessary marking and copying of data objects during GC cycles, lowering the GC time. We have integrated BridgeGC into OpenJDK ZGC. The extensive evaluation, using two popular big data frameworks (Flink and Spark) and a key–value database (Cassandra), shows that BridgeGC achieves 31–82% GC time reduction compared to the baseline ZGC. BridgeGC also outperforms other traditional and academic garbage collectors in end-to-end performance.},
+  archive      = {J_TACO},
+  author       = {Yicheng Wang and Lijie Xu and Tian Guo and Wensheng Dou and Hongbin Zeng and Wei Wang and Jun Wei and Tao Huang},
+  doi          = {10.1145/3722110},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {BridgeGC: An efficient cross-level garbage collector for big data frameworks},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SEED: Speculative security metadata updates for low-latency secure memory. <em>TACO</em>, <em>22</em>(2), 1-27. (<a href='https://doi.org/10.1145/3722111'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Securing systems’ main memory is important for building trusted data centers. To ensure memory security, encryption and integrity verification techniques update the security metadata (e.g., encryption counters and integrity trees) during memory data writes. Existing studies are optimistic about the effect of data writes on system performance since they regard all data writes as background operations. However, we show that security metadata updates significantly increase data write latency. High-latency data writes frequently fill up write buffers in the system, forcing the system to perform the writes in the critical path. As a result, performance-critical data reads need to wait for the execution of these writes, which increases data read latency and degrades system performance. In this article, we propose SEED that improves the performance of secure memory systems by speculatively updating security metadata in the background before data writes arrive. To enable speculative updates, SEED predicts which dirty cache lines will be written to memory through natural evictions. We find that cache evictions depend on multiple factors. To decouple the dependencies for accurate predictions, we devise a two-step eviction prediction method based on our observation that the next eviction victim rarely changes in a set. The first step predicts which cache sets will evict cache lines, whereas the second step predicts which cache lines will be evicted by finding the next eviction victims in the sets. For predicted evictions, we develop a speculative updater to perform speculative updates. We analyze the invariants that must be followed by the updater to ensure the correctness of speculative updates. The updater rolls back the speculatively updated security metadata of inaccurate predictions. To reduce the rollback overhead, we devise a rollback batching and an update pausing optimization for the updater. Experimental results show that SEED reduces data write latency by 39.8%, data read latency by 44.9%, and improves performance by 40.0% on average compared with the state-of-the-art secure memory design.},
+  archive      = {J_TACO},
+  author       = {Xueliang Wei and Dan Feng and Wei Tong and Bing Wu and Xu Jiang},
+  doi          = {10.1145/3722111},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {SEED: Speculative security metadata updates for low-latency secure memory},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A lock-free RDMA-friendly index in CPU-parsimonious environments. <em>TACO</em>, <em>22</em>(2), 1-25. (<a href='https://doi.org/10.1145/3722112'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In CPU-parsimonious environments, such as disaggregated memory systems, the limited CPU power on the memory side constrains the ability to perform more operations. Thus, reducing CPU usage and enhancing concurrency performance are critical for indexing key-value storage in these scenarios. Current hash indexes support one-sided RDMA access and lock-free concurrency control with good performance but lack range query support. In contrast, existing tree indexes support range query but only implement expensive locks for concurrency control. Therefore, designing a tree index that supports lock-free concurrent access and one-sided RDMA is a significant challenge. To address these issues, this paper proposes a lock-free tree index based on the van Emde Boas (vEB) tree, called vBoost. vBoost inherits the vEB tree’s characteristics of index nodes without splitting or merging, and simplifies concurrency control by managing changes at a single node. It redesigns tree nodes with an 8-byte compact data structure, allowing each key-value pair to support RDMA_CAS atomic operations for lock-free concurrency. Additionally, vBoost leverages the RDMA Doorbell technique to reduce RTTs, enhancing range query and write performance. Evaluation results show that, vBoost achieves up to 3.85× higher throughput and better scalability under YCSB workloads compared to state-of-the-art tree indexes.},
+  archive      = {J_TACO},
+  author       = {Yuting Li and Yun Xu and Pengcheng Wang and Yonghui Xu and Weiguang Wang},
+  doi          = {10.1145/3722112},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {A lock-free RDMA-friendly index in CPU-parsimonious environments},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Koala: Efficient pipeline training through automated schedule searching on domain-specific language. <em>TACO</em>, <em>22</em>(2), 1-25. (<a href='https://doi.org/10.1145/3722113'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Pipeline parallelism is a crucial technique for large-scale model training, enabling parameter splitting and performance enhancement. However, creating effective pipeline schedules often requires significant manual effort and coding skills, leading to practical inconveniences and complex debugging. Major frameworks such as DeepSpeed and ColossalAI simplify the process by adopting predefined pipeline schedule strategies, such as GPipe and 1F1B. The use of predefined schedules offers limited flexibility and suboptimal training efficiency, as the limited number of manually set candidates cannot provide the optimal strategy for arbitrary model training. To deal with the issue, this article aims to automatically search for the optimal strategy with high efficiency. Since current frameworks only support a limited set of fixed strategies, lacking the technical capability to create a comprehensive strategy search space, we first design a novel domain-specific language (DSL) for pipeline schedule development. The DSL exhibits great understandability, agility, and reusability, supporting the development of all known pipeline schedule strategies and their variants. Second, we are the first to model the complete pipeline schedule strategy space via the DSL, enabling an automated end-to-end globally optimal pipeline schedule searching, while past work may get stuck in a local optimum. Finally, we propose to optimize pipeline performance by modeling and solving the pipeline schedule as a Binary-Tree-Traversing (BTT) optimization problem. Based on the formalization, we further adopt a Dynamic Try-Test Genetic Algorithm to search for the best pipeline schedule strategy, which overwhelms a variety of pre-defined ones. Experimental results show that Koala achieves an enhanced performance by up to \(1.53\times\) over state-of-the-art approaches. Besides, the pipeline schedule strategy searched by Koala outperforms pre-defined pipeline schedule strategies by \(1.10\times \sim 1.55\times\) . Moreover, Koala has superior scalability and effectiveness in combining with data parallelism and tensor parallelism.},
+  archive      = {J_TACO},
+  author       = {Yu Tang and Lujia Yin and Qiao Li and Hongyu Zhu and Hengjie Li and Xingcheng Zhang and Linbo Qiao and Dongsheng Li and Jiaxin Li},
+  doi          = {10.1145/3722113},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Koala: Efficient pipeline training through automated schedule searching on domain-specific language},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SRSparse: Generating codes for high-performance sparse matrix-vector semiring computations. <em>TACO</em>, <em>22</em>(2), 1-26. (<a href='https://doi.org/10.1145/3722114'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sparse matrix-vector semiring computation is a key operation in sparse matrix computations, with performance strongly dependent on both program design and the features of the sparse matrices. Given the diversity of sparse matrices, designing a tailored program for each matrix is challenging. To address this, we propose SRSparse, 1 a program generator that creates tailored programs by automatically combining program designing methods to fit specific input matrices. It provides two components: the problem definition configuration , which declares the computation, and the scheduling language , which can be leveraged by an auto-tuner to specify the program designs. The two are lowered to the intermediate representations of SRSparse, the Format IR and Kernel IR , which respectively generate format conversion routine and kernel code. We evaluate SRSparse on four representative sparse kernels and three format conversion routines. For sparse kernels, SRSparse achieves median speedups over handwritten programs: COO (3.50×), CSR-Adaptive (5.36×), CSR5 (2.06×), ELL (1.63×), Gunrock (1.57×), and GraphBLAST (1.96×); over an auto-tuner: AlphaSparse (1.16×); and over a compiler: TACO (1.71×). For format conversion routines, SRSparse achieves median speedups over handwritten implementations: Intel MKL (7.60×), SPARSKIT (2.61×), CUSP (2.77×), and Ginkgo (1.74×); and over a compiler: TACO (4.04×).},
+  archive      = {J_TACO},
+  author       = {Zhen Du and Ying Liu and Ninghui Sun and Huimin Cui and Xiaobing Feng and Jiajia Li},
+  doi          = {10.1145/3722114},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {SRSparse: Generating codes for high-performance sparse matrix-vector semiring computations},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Gator: Accelerating graph attention networks by jointly optimizing attention and graph processing. <em>TACO</em>, <em>22</em>(2), 1-24. (<a href='https://doi.org/10.1145/3722219'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph attention networks (GATs) have advanced performance in various application domains by introducing the attention mechanism into the graph neural networks (GNNs). The inefficiency of running GATs on CPUs or GPUs necessitates specialized hardware designs. Unfortunately, previous specialized architecture designs have focused on either the GNN architecture or the attention mechanism, resulting in limited performance and leaving ample room for improvement. This article presents Gator , a joint optimization approach with software–hardware co-designs for GAT inference. On the software level, Gator leverages degree-weighted graph partitioning and parameter-adaptive feature selection techniques to preprocess the input graph data, mining subgraph-level parallelism and mitigating the computation bottleneck of the dedicated dataflow. On the hardware level, Gator designs a unified processing engine to support various kernels by extracting a common computation pattern and a dimension-aware microarchitecture for efficient partial sum reduction. Extensive experiments show that our approach can achieve 11.5× more efficiency compared to NVIDIA RTX 4090 and provide a speedup of 3× to 9.4×, along with a 2.6× to 4.7× reduction in memory traffic, when compared to six state-of-the-art methods, with minimal accuracy loss.},
+  archive      = {J_TACO},
+  author       = {Xiaobo Lu and Jianbin Fang and Lin Peng and Chun Huang and Zixiao Yu and Tiejun Li},
+  doi          = {10.1145/3722219},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Gator: Accelerating graph attention networks by jointly optimizing attention and graph processing},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SnsBooster: Enhancing sampling-based μArch evaluation efficiency through online performance sensitivity analysis. <em>TACO</em>, <em>22</em>(2), 1-27. (<a href='https://doi.org/10.1145/3727637'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sampling-based methods, such as SimPoint, are widely used for efficient pre-silicon μ Arch evaluations, where the costs are the number of simulation points multiplied by the number of evaluated μ Arch designs. However, these costs keep growing with an increasing number of simulation points and expanding μ Arch design space. Although techniques have been developed to accelerate the μ Arch design space exploration, less attention has been given to further reducing the simulation budget of each μ Arch evaluation. Common strategies like reducing simulation coverage or sampling fewer simulation points typically compromise estimation accuracy. Therefore, further reducing the simulation budget without compromising estimation accuracy remains a critical research problem. In this work, we propose SnsBooster to enhance sampling-based μ Arch evaluation efficiency, based on two insights: (a) large portions of simulation points’ performance changes are typically insensitive to the evaluated μ Arch changes, and (b) simulation points’ performance sensitivities under specific μ Arch change correlate with their inherent characteristics. By online building a μ Arch-specific performance sensitivity classifier via progressive simulation and continuous validation, SnsBooster can identify and selectively evaluate only performance-sensitive points, thus reducing the simulation budget without compromising estimation accuracy. When applied across various μ Arch changes, SnsBooster achieves an average simulation budget reduction of 39.04% with an accuracy loss of only 0.14%, compared to simulating all the sampled points. Under the same accuracy loss, SnsBooster’s simulation budgets are only 64.73% and 65.60% of those required by methods of reducing simulation coverage or sampling fewer points. Besides, under identical simulation budgets, the average accuracy losses of these methods are 1.41% and 1.23%, which is substantially higher than that of SnsBooster.},
+  archive      = {J_TACO},
+  author       = {Chenji Han and Zifei Zhang and Feng Xue and Xinyu Li and Yuxuan Wu and Tingting Zhang and Tianyi Liu and Qi Guo and Fuxin Zhang},
+  doi          = {10.1145/3727637},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {SnsBooster: Enhancing sampling-based μArch evaluation efficiency through online performance sensitivity analysis},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Supporting dynamic program sizes in deep learning-based cost models for code optimization. <em>TACO</em>, <em>22</em>(2), 1-25. (<a href='https://doi.org/10.1145/3727638'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Automatic code optimization enables developers to write high-level code relying on compilers to optimize it and generate efficient code for target hardware. State-of-the-art methods for automatic code optimization leverage deep learning to build cost models that predict the impact of code optimizations on execution time. However, these models are typically limited in terms of the size and complexity of the programs they support. This research presents a novel approach to developing deep learning-based cost models that address these limitations. Our approach introduces a new program representation that efficiently represents programs with complex structures and large sizes such as varying loop depths, buffer numbers, and dimensions. Furthermore, we propose a novel deep learning architecture, that can handle this dynamic program representation. This allows the model to work on larger and more complex programs than those it was trained on. We implemented this model in Tiramisu, a state-of-the-art compiler. Our evaluation shows that our proposed model can generalize to programs larger than those seen during training, while the original Tiramisu cost model cannot. We also show that such generality does not lead to a significant increase in our proposed model’s Mean Absolute Percentage Error or a decrease in the quality of code optimizations found when the model is used for automatic code optimization. In contrast, our proposed model on average achieves a 41.89% improvement in speed compared to the original cost model when both models are trained on the same dataset, showing better generalization over unseen programs. This is a significant advantage over previous approaches, which typically do not support program sizes beyond those seen during the training.},
+  archive      = {J_TACO},
+  author       = {Yacine Hakimi and Riyadh Baghdadi and Yacine Challal},
+  doi          = {10.1145/3727638},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Supporting dynamic program sizes in deep learning-based cost models for code optimization},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Unleashing parallelism with elastic-barriers. <em>TACO</em>, <em>22</em>(2), 1-26. (<a href='https://doi.org/10.1145/3727639'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rise of multi-core processors, parallel programming has become essential, and managing synchronization overheads has become crucial for efficiency. Barriers, commonly used to synchronize threads, divide the program into different phases. Existing scheduling schemes address intra-phase load imbalance to some extent but do not fully resolve the issue of thread idling, especially in the context of programs with irregular parallel for-loops. This article proposes an innovative solution called the elastic-barrier , where threads that arrive early at a barrier can execute iterations of the parallel-loop from the next phase, thereby reducing the idle time, and reduce load imbalance. The approach guarantees safety by ensuring that before executing any work W from the subsequent phase, all the works in the current phase that W depends on have been executed. The article presents a compilation scheme that integrates compile-time and runtime techniques to optimize execution. We implemented our proposed scheme in the IMOP framework. Experimental results on graph-based benchmarks show that our approach improves the performance significantly.},
+  archive      = {J_TACO},
+  author       = {Amit Tiwari and V. Krishna Nandivada},
+  doi          = {10.1145/3727639},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Unleashing parallelism with elastic-barriers},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ModNEF: An open source modular neuromorphic emulator for FPGA for low-power in-edge artificial intelligence. <em>TACO</em>, <em>22</em>(2), 1-24. (<a href='https://doi.org/10.1145/3730581'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neuromorphic computing is a novel computational paradigm that draws inspiration from the structure and function of the human brain. Spiking Neural Networks (SNNs) are a promising approach for implementing energy-efficient Artificial Neural Networks (ANNs) in embedded systems. In this article, we present ModNEF, an open-source, neuromorphic digital hardware architecture designed for Field Programmable Gate Arrays (FPGAs). ModNEF is based on a modular architecture, where independent modules communicate via point-to-point connections to emulate SNNs. Our architecture offers two neuron models based on the Leaky Integrate and Fire (LIF) model, with a different emulation strategy. The modular nature of ModNEF allows researchers to extend the architecture by developing new modules to emulate different types of neurons or implement online learning rules. ModNEF is a clock-driven emulator, meaning that the neuron state is updated at regular intervals, even in the absence of input data. We evaluated the performance of the emulator using the MNIST and NMNIST datasets, with offline, full-precision training.},
+  archive      = {J_TACO},
+  author       = {Aurélie Saulquin and Mazdak Fatahi and Pierre Boulet and Samy Meftali},
+  doi          = {10.1145/3730581},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {ModNEF: An open source modular neuromorphic emulator for FPGA for low-power in-edge artificial intelligence},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DCMA: Accelerating parallel DMA transfers with a multi-port direct cached memory access in a massive-parallel vector processor. <em>TACO</em>, <em>22</em>(2), 1-25. (<a href='https://doi.org/10.1145/3730582'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {State-of-the-art applications, such as convolutional neural networks, demand specialized hardware accelerators that address performance and efficiency constraints. An efficient memory hierarchy is mandatory for such hardware systems. While the memory architectures of general-purpose processors (e.g., CPU or GPUs) are based on cache systems, dedicated accelerators have mostly adopted the DMA (Direct Memory Access) concept due to the application field of image processing. DMA features like 2D data transfers or data padding can optimize the memory accesses of image processing. However, DMA lacks the capability to exploit temporal and spatial data reuse, a feature common in cache systems, particularly when multiple DMAs operate in parallel. This article proposes a novel Direct Cached Memory Access (DCMA) architecture, combining both DMA and cache methodologies and their respective advantages. Optimized for image-based AI algorithms, the DCMA architecture facilitates enhanced memory access by integrating multiple, parallel DMA ports with caching capabilities. This design allows for efficient data reuse and parallel memory access. Optimal parameters for the DCMA are determined through a comprehensive design space exploration. The DCMA is evaluated on a state-of-the-art Xilinx UltraScale+ FPGA board coupled with a massive-parallel vertical vector co-processor, called V 2 PRO. The results show the mitigation of the vector processor’s memory bottleneck. By using the proposed DCMA, speedups of up to ×17 for the ResNet-50 CNN can be achieved.},
+  archive      = {J_TACO},
+  author       = {Gia Bao Thieu and Sven Gesper and Guillermo Payá-Vayá},
+  doi          = {10.1145/3730582},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {DCMA: Accelerating parallel DMA transfers with a multi-port direct cached memory access in a massive-parallel vector processor},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GOLDYLOC: Global optimizations & lightweight dynamic logic for concurrency. <em>TACO</em>, <em>22</em>(2), 1-28. (<a href='https://doi.org/10.1145/3730584'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modern accelerators like GPUs increasingly execute independent operations concurrently to improve the device’s compute utilization. However, effectively harnessing it on GPUs for important primitives such as general matrix multiplications (GEMMs) remains challenging. Although modern GPUs have significant hardware and software GEMM support, their kernel implementations and optimizations typically assume each kernel executes in isolation and can utilize all GPU resources. This approach is highly efficient when kernels execute in isolation, but causes significant resource contention and slowdowns when kernels execute concurrently. Moreover, current approaches often only statically expose and control parallelism within an application, without considering runtime information such as varying input size and concurrent applications—often exacerbating contention. These issues limit performance benefits from concurrently executing independent operations. Accordingly, we propose GOLDYLOC, which considers the global resources across all concurrent operations to identify performant GEMM kernels, which we call globally optimized (GO)-Kernels. GOLDYLOC also introduces a lightweight dynamic logic which considers the dynamic execution environment for available parallelism and input sizes to execute performant combinations of concurrent GEMMs on the GPU. Overall, GOLDYLOC improves the performance of concurrent GEMMs on a real GPU by up to 2× (18% geomean per workload) versus the default concurrency approach and provides up to 2.5× (43% geomean per workload) speedup over sequential execution.},
+  archive      = {J_TACO},
+  author       = {Suchita Pati and Shaizeen Aga and Nuwan Jayasena and Matthew Sinclair},
+  doi          = {10.1145/3730584},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-28},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {GOLDYLOC: Global optimizations & lightweight dynamic logic for concurrency},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GNNPilot: A holistic framework for high-performance graph neural network computations on GPUs. <em>TACO</em>, <em>22</em>(2), 1-26. (<a href='https://doi.org/10.1145/3730586'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph Neural Networks (GNNs) have emerged as powerful tools for graph-based machine learning tasks, but their performance is often constrained by inefficient sparse operators and limited hardware utilization during multi-operator workflows. This article presents GNNPilot, a holistic optimization framework that addresses these challenges through three key innovations. First, we introduce two packing strategies for gather operators, including neighbor packing for load balancing in sparser graphs, and bin packing with a new sparse format for enhanced data locality in denser graphs. Second, we propose dynamic parallelization methods and a novel row panel-based kernel fusion technique to optimize complex multi-operator GNN models. Third, we develop a lightweight sampling-based auto-tuning mechanism that adapts the framework’s optimization strategies to varying input characteristics. Built upon tensor expression-based intermediate representations, GNNPilot maintains the flexibility to optimize both popular and customized GNN models. Extensive experiments across diverse GNN models and graph datasets demonstrate that GNNPilot achieves substantial speedups over state-of-the-art implementations in both the performance of single operators and the efficiency of end-to-end inference. These results establish GNNPilot as an efficient and adaptive solution for accelerating GNN computations on modern GPU architectures.},
+  archive      = {J_TACO},
+  author       = {Zhengding Hu and Jingwei Sun and Guangzhong Sun},
+  doi          = {10.1145/3730586},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {GNNPilot: A holistic framework for high-performance graph neural network computations on GPUs},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). 9Ring: A 3D-stacked memory-based accelerator for flexible and efficient deep CNN applications. <em>TACO</em>, <em>22</em>(2), 1-26. (<a href='https://doi.org/10.1145/3732940'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The massive computational and memory requirements of deep convolutional neural networks (DCNNs) have led to the development of neural network (NN) accelerators. However, as DCNN models grow in size, the demands on NN accelerators in terms of performance, memory bandwidth, and power efficiency continue to increase. We, therefore, present 9Ring , a flexible and efficient DCNN accelerator that takes full advantage of 3D-stacked memory, focusing on its hardware architecture, software scheduling, and optimization strategy. In particular, we first show that the mismatch between DCNN accelerators and DCNN models can lead to increased energy consumption and performance bottlenecks. We then present three flexible dataflow scheduling strategies to mitigate this mismatch. Afterward, we introduce an energy efficiency analysis tool that can automatically search for the optimal scheduling scheme with respect to different DCNN models for energy efficiency. Finally, we conduct an empirical study showing that 9Ring can reduce energy consumption by 31.4% and 43.9% on average, and improve performance by 12% and 10% on average, compared with Tetris and the NN accelerators on conventional low-power DRAM memory systems, respectively.},
+  archive      = {J_TACO},
+  author       = {Wen Cheng and Qianya Cheng and Yi Liu and Lingfang Zeng and Andre Brinkmann and Yang Wang},
+  doi          = {10.1145/3732940},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {9Ring: A 3D-stacked memory-based accelerator for flexible and efficient deep CNN applications},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ShuffleInfer: Disaggregate LLM inference for mixed downstream workloads. <em>TACO</em>, <em>22</em>(2), 1-24. (<a href='https://doi.org/10.1145/3732941'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Transformer-based large language model (LLM) inference serving is now the backbone of many cloud services. LLM inference consists of a prefill phase and a decode phase. However, existing LLM deployment practices often overlook the distinct characteristics of these phases, leading to significant interference. To mitigate interference, our insight is to carefully schedule and group inference requests based on their characteristics. We realize this idea in ShuffleInfer through three pillars. First, it partitions prompts into fixed-size chunks so that the accelerator always runs close to its computation-saturated limit. Second, it disaggregates prefill and decode instances so each can run independently. Finally, it uses a smart two-level scheduling algorithm augmented with predicted resource usage to avoid decode scheduling hotspots. Results show that ShuffleInfer improves time-to-first-token (TTFT), job completion time (JCT), and inference efficiency in terms of performance per dollar by a large margin, e.g., it uses 38% less resources all the while lowering average TTFT and average JCT by 97% and 47%, respectively.},
+  archive      = {J_TACO},
+  author       = {Cunchen Hu and Heyang Huang and Liangliang Xu and Xusheng Chen and Chenxi Wang and Jiang Xu and Shuang Chen and Hao Feng and Sa Wang and Yungang Bao and Ninghui Sun and Yizhou Shan},
+  doi          = {10.1145/3732941},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {ShuffleInfer: Disaggregate LLM inference for mixed downstream workloads},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HEngine: A high performance optimization framework on a GPU for homomorphic encryption. <em>TACO</em>, <em>22</em>(2), 1-23. (<a href='https://doi.org/10.1145/3732942'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Homomorphic encryption (HE) represents an encryption technology that allows for direct computation on encrypted data without requiring decryption. However, the substantial computational complexity and significant latency associated with HE has impeded its broader adoption in practical applications. To address these challenges, we propose a GPU-based acceleration framework, namely HEngine, tailored for homomorphic encryption tasks. Specifically, we first propose a warp shuffle-based optimization method for two key phases, i.e., inverse Chinese Remainder Theorem (ICRT) and number theoretic transformation (NTT), to mitigate synchronization overhead in homomorphic encryption. Secondly, we propose to fuse the NTT kernel with the inner product kernel to address the imbalance between memory access and computation. Thirdly, considering the potential difference in the amount of tasks of users in the real-world, we design two different encoding methods for small batch and large batch inference tasks to improve computational efficiency. Finally, experiments demonstrate that our proposed framework achieves a 218× speedup on homomorphic multiplication tasks compared with the CPU-based SEAL library. In addition, for convolutional neural network inference tasks on shallow network structures, our proposed framework achieves amortized inference performance at the millisecond level and sub-millisecond level on small batch and large batch data, respectively. For convolutional neural network inference tasks on deeper network structures (i.e., ResNet-20), our proposed framework achieves second-level inference.},
+  archive      = {J_TACO},
+  author       = {Jinghao Zhao and Hongwei Yang and Meng Hao and Weizhe Zhang and Hui He and Desheng Wang},
+  doi          = {10.1145/3732942},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {HEngine: A high performance optimization framework on a GPU for homomorphic encryption},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AOBO: A fast-switching online binary optimizer on AArch64. <em>TACO</em>, <em>22</em>(2), 1-27. (<a href='https://doi.org/10.1145/3736170'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As the complexity of real-world server applications continues to grow, performance optimizations for large-scale applications are becoming increasingly challenging. The success of online optimization offered by OCOLOS and Dynimize proves that binary rewriting based on edge profiling data can significantly accelerate these applications. However, no similar online binary optimizer is currently available on the AArch64 platform. In response to the growing adoption of the AArch64 platform, this article introduces AOBO, a fast-switching online binary optimizer specifically designed for AArch64. In addition to providing practical and efficient engineering support for AArch64-specific features, AOBO overcomes the challenge of lacking hardware counters for edge profiling on most commercially available AArch64 servers. In particular, AOBO embraces a novel edge weight estimation scheme to deliver more accurate edge estimation, which in turn allows AOBO’s binary rewriter to generate more efficient code. Furthermore, time spent on AOBO’s online code replacement stage is optimized to work at a subsecond level, thus enabling a fast switch from running the original binary to running the optimized one. We evaluate AOBO with CINT2017, GCC, MySQL and MongoDB, measuring the accuracy and coverage of the estimated edge weights, the performance improvements of the optimized binaries, and the online optimization cost. To make a fair comparison, we are using the performance data of the binaries generated by the default compilation scripts in the software packages as a baseline. Experimental data shows that AOBO can offer a more accurate edge weight estimation and generate binaries with superior performance. Furthermore, AOBO achieves online optimization with a very small overhead and significantly improves the performance of large-scale applications. Compared with the baselines, AOBO’s online optimization can achieve 24.7% and 31.11% performance improvement respectively for MySQL and MongoDB. Notably, application pause time is reduced from 1,599.8 milliseconds to 462.1 milliseconds for MySQL, and from 1,765.9 milliseconds to 507.1 milliseconds for MongoDB.},
+  archive      = {J_TACO},
+  author       = {Wenlong Mu and Yue Tang and Bo Huang and Jianmei Guo},
+  doi          = {10.1145/3736170},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {AOBO: A fast-switching online binary optimizer on AArch64},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Cheetah: Accelerating dynamic graph mining with grouping updates. <em>TACO</em>, <em>22</em>(2), 1-26. (<a href='https://doi.org/10.1145/3736173'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph pattern mining is essential for deciphering complex networks. In the real world, graphs are dynamic and evolve over time, necessitating updates in mining patterns to reflect these changes. Traditional methods use fine-grained incremental computation to avoid full re-mining after each update, which improves speed but often overlooks potential gains from examining inter-update interactions holistically, thus missing out on overall efficiency improvements. In this article, we introduce Cheetah, a dynamic graph mining system that processes updates in a coarse-grained manner by leveraging exploration domains . These domains exploit the community structure of real-world graphs to uncover data reuse opportunities typically missed by existing approaches. Exploration domains, which encapsulate extensive portions of the graph relevant to updates, allow multiple updates to explore the same regions efficiently. Cheetah dynamically constructs these domains using a management module that identifies and maintains areas of redundancy as the graph changes. By grouping updates within these domains and employing a neighbor-centric expansion strategy, Cheetah minimizes redundant data accesses. Our evaluation of Cheetah across five real-world datasets shows it outperforms current leading systems by an average factor of 2.63×.},
+  archive      = {J_TACO},
+  author       = {Yi Zhang and Xiaomeng Yi and Yu Huang and Jingrui Yuan and Chuangyi Gui and Dan Chen and Long Zheng and Jianhui Yue and Xiaofei Liao and Hai Jin and Jingling Xue},
+  doi          = {10.1145/3736173},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-26},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Cheetah: Accelerating dynamic graph mining with grouping updates},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Performance, energy and NVM lifetime-aware data structure refinement and placement for heterogeneous memory systems. <em>TACO</em>, <em>22</em>(2), 1-27. (<a href='https://doi.org/10.1145/3736174'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The need for increased memory capacity, which also needs to be affordable and sustainable, leads to the adoption of heterogeneous memory hierarchies, combining DRAM and NVM technologies. This work proposes a memory management methodology that relies on multi-objective optimization in terms of performance, energy consumption and impact on NVM’s lifetime, for applications deployed on heterogeneous (i.e., DRAM/NVM) memory systems. We propose a scalable and lightweight data structure exploration flow for supporting data type refinement based on access pattern analysis, enhanced with a weighted-based data placement decision support for multi-objective exploration and optimization. The evaluation of the methodology was performed both on emulated and real DRAM/NVM hardware for different applications and data placement algorithms. The experimental results show up to 58.7% lower execution time and 48.3% less energy consumption compared with the results obtained by the initial versions of the applications. Moreover, we observed 72.6% less NVM write operations, which can significantly extend the lifetime of the NVM memory. Finally, thorough evaluation shows that the methodology is flexible and scalable, as it can integrate different data placement algorithms and NVM technologies and requires reasonable exploration time.},
+  archive      = {J_TACO},
+  author       = {Manolis Katsaragakis and Christos Baloukas and Lazaros Papadopoulos and Francky Catthoor and Dimitrios Soudris},
+  doi          = {10.1145/3736174},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Performance, energy and NVM lifetime-aware data structure refinement and placement for heterogeneous memory systems},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deep learning workload mapping optimization on jetson platforms. <em>TACO</em>, <em>22</em>(2), 1-23. (<a href='https://doi.org/10.1145/3736175'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To improve the performance and energy efficiency of deep learning (DL) applications, recent edge computing platforms have built-in heterogeneous accelerators, such as general-purpose graphics processing units (GPUs) and neural processing units (NPUs). For example, widely used NVIDIA Jetson platforms contain CPU, GPU, and deep learning accelerator (DLA), a type of NPU. It is non-trivial to map DL workloads to suitable accelerators to improve performance, energy efficiency, or even both. This article presents JDIMO, 1 a Jetson-aware deep-learning inference workload mapping optimization framework, to simultaneously improve energy efficiency and performance. JDIMO first measures energy-performance data of the fundamental nodes and the sub-networks with energy-efficiency improvement potential according to the topology structure of a DL network. Then, under the guidance of an analytical energy-performance model, the framework exploits an algorithm based on the variable-length sliding window to find the optimal mapping configuration and the optimal number of CUDA streams. We evaluate JDIMO by applying it to seven DL applications on a Jetson Orin NX (16GB) platform. JDIMO saves 47.5% EDP (energy delay product) and 22.6% energy and improves 138.3% QPS (queries per second) on average compared to the DLA-possible configuration. JDIMO saves 22.5% EDP and 12.6% energy and improves 13.5% QPS on average compared to JEDI, the most similar work to ours. Meanwhile, JDIMO also reduces 93.8% optimization time on average compared to JEDI.},
+  archive      = {J_TACO},
+  author       = {Farui Wang and Meng Hao and Siyu Yang and Weizhe Zhang},
+  doi          = {10.1145/3736175},
+  journal      = {ACM Transactions on Architecture and Code Optimization},
+  month        = {7},
+  number       = {2},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Archit. Code Optim.},
+  title        = {Deep learning workload mapping optimization on jetson platforms},
+  volume       = {22},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SIM</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="sim">SIM - 3</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Bayesian generalized linear models for analyzing compositional and sub-compositional microbiome data via EM algorithm. <em>SIM</em>, <em>44</em>(7), e70084. (<a href='https://doi.org/10.1002/sim.70084'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The study of compositional microbiome data is critical for exploring the functional roles of microbial communities in human health and disease. Recent advances have shifted from traditional log-ratio transformations of compositional covariates to zero constraint on the sum of the corresponding coefficients. Various approaches, including penalized regression and Markov Chain Monte Carlo (MCMC) algorithms, have been extended to enforce this sum-to-zero constraint. However, these methods exhibit limitations: penalized regression yields only point estimates, limiting uncertainty assessment, while MCMC methods, although reliable, are computationally intensive, particularly in high-dimensional data settings. To address the challenges posed by existing methods, we proposed Bayesian generalized linear models for analyzing compositional and sub-compositional microbiome data. Our model employs a spike-and-slab double-exponential prior on the microbiome coefficients, inducing weak shrinkage on large coefficients and strong shrinkage on irrelevant ones, making it ideal for high-dimensional microbiome data. The sum-to-zero constraint is handled through soft-centers by applying prior distribution on the sum of compositional or subcompositional coefficients. To alleviate computational intensity, we have developed a fast and stable algorithm incorporating expectation–maximization (EM) steps into the routine iteratively weighted least squares (IWLS) algorithm for fitting GLMs. The performance of the proposed method was assessed by extensive simulation studies. The simulation results show that our approach outperforms existing methods with higher accuracy of coefficient estimates and lower prediction error. We also applied the proposed method to one microbiome study to find microorganisms linked to inflammatory bowel disease (IBD). The methods have been implemented in a freely available R package BhGLM https://github.com/nyiuab/BhGLM .},
+  archive      = {J_SIM},
+  author       = {Li Zhang and Zhenying Ding and Jinhong Cui and Xiaoxiao Zhou and Nengjun Yi},
+  doi          = {10.1002/sim.70084},
+  journal      = {Statistics in Medicine},
+  number       = {7},
+  pages        = {e70084},
+  shortjournal = {Stat. Med.},
+  title        = {Bayesian generalized linear models for analyzing compositional and sub-compositional microbiome data via EM algorithm},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Single-index measurement error jump regression model in alzheimer's disease studies. <em>SIM</em>, <em>44</em>(7), e70081. (<a href='https://doi.org/10.1002/sim.70081'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Alzheimer's disease (AD) is the major cause of dementia in the elderly, and investigations on the impact of risk factors on neurocognitive performance are crucial in preventative treatment. While existing statistical regression models, such as single-index models, have proven effective tools for uncovering the relationship between the neurocognitive scores and covariates of interest such as demographic information, clinical variables, and neuroimaging features, limited research has explored scenarios where jump discontinuities exist in the regression patterns and the covariates are unobservable but measured with errors, which are common in real applications. To address these challenges, we propose a single-index measurement error jump regression model (SMEJRM) that can handle both jump discontinuities and measurement errors in image covariates introduced by different image processing software. This development is motivated by data from 168 patients in the Alzheimer's Disease Neuroimaging Initiative. We establish both the estimation procedure and the corresponding asymptotic results. Simulation studies are conducted to evaluate the finite sample performance of our SMEJRM and the estimation procedure. The real application reveals that jump discontinuities do exist in the relationship between neurocognitive scores and some covariates of interest in this study.},
+  archive      = {J_SIM},
+  author       = {Yan-Yong Zhao and Kaizhou Lei and Yuan Liu and Yuanyao Tan and Noriszura Ismail and Razik Ridzuan Mohd Tajuddin and Rongjie Liu and Chao Huang},
+  doi          = {10.1002/sim.70081},
+  journal      = {Statistics in Medicine},
+  number       = {7},
+  pages        = {e70081},
+  shortjournal = {Stat. Med.},
+  title        = {Single-index measurement error jump regression model in alzheimer's disease studies},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Combining straight-line and map-based distances to investigate the connection between proximity to healthy foods and disease. <em>SIM</em>, <em>44</em>(7), e70054. (<a href='https://doi.org/10.1002/sim.70054'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Healthy foods are essential for a healthy life, but accessing healthy food can be more challenging for some people than others. This disparity in food access may lead to disparities in well-being, potentially with disproportionate rates of diseases in communities that face more challenges in accessing healthy food (i.e., low-access communities). Identifying low-access, high-risk communities for targeted interventions is a public health priority, but current methods to quantify food access rely on distance measures that are either computationally simple (like the length of the shortest straight-line route) or accurate (like the length of the shortest map-based driving route), but not both. We propose a multiple imputation approach to combine these distance measures, allowing researchers to harness the computational ease of one with the accuracy of the other. The approach incorporates straight-line distances for all neighborhoods and map-based distances for just a subset, offering comparable estimates to the “gold standard” model using map-based distances for all neighborhoods and improved efficiency over the “complete case” model using map-based distances for just the subset. Through the adoption of a measurement error framework, information from the straight-line distances can be leveraged to compute informative placeholders (i.e., impute) for any neighborhoods without map-based distances. Using simulations and data for the Piedmont Triad region of North Carolina, we quantify and compare the associations between two health outcomes (diabetes and obesity) and neighborhood-level access to healthy foods. The imputation procedure also makes it possible to predict the full landscape of food access in an area without requiring map-based measurements for all neighborhoods.},
+  archive      = {J_SIM},
+  author       = {Sarah C. Lotspeich and Ashley E. Mullan and Lucy D'Agostino McGowan and Staci A. Hepler},
+  doi          = {10.1002/sim.70054},
+  journal      = {Statistics in Medicine},
+  number       = {7},
+  pages        = {e70054},
+  shortjournal = {Stat. Med.},
+  title        = {Combining straight-line and map-based distances to investigate the connection between proximity to healthy foods and disease},
+  volume       = {44},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

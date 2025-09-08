@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>EVOLS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="evols">EVOLS - 33</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Information diffusion prediction using hybrid GCNN–LSTM and stock market based sentiment analysis in social media. <em>EVOLS</em>, <em>16</em>(3), 1-23. (<a href='https://doi.org/10.1007/s12530-025-09694-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the advancement of social media, the information diffusion popularity prediction has attracted wide attention in many applications. However, due to the real-time changes in networks and the complexity of social interactions, analyzing the exact mechanism of the information dissemination process remains extremely difficult. However, conventional popularity prediction methods rely heavily on human expertise to create features and define the generative model, or completely depend on the underlying user relation network for embedding learning. To address these concerns, this proposed work designed an information diffusion prediction model using a Hybrid Graph Convolutional Neural Network–Long Short Term Memory (GCNN–LSTM). The sentiment of the diffused information is analyzed through a hybrid Long Short Term Memory–Support Vector Machine (LSTM–SVM) in social media applications. The proposed work comprises two phases: the first phase is for effective popularity prediction of information diffusion, and the second phase is for analyzing the users' sentiment based on the influence of diffused information. In the detection of the information diffusion phase, the user data from social media is gathered to make a graphical representation based on the comment node attributes, and the effective features are extracted with the assistance of the graph convolutional neural network. After that, the features are given in the LSTM model for the detection of popularity. The diffused information in social media is considered in the sentimental analysis phase; initially, the data is subjected to preprocessing, and features are extracted with Term Frequency Inverse Document Frequency (TFIDF). Finally, with the help of a hybrid LSTM–SVM, the sentiment of the social media data is detected. The proposed model is implemented in MATLAB software and achieved 96% accuracy for phase 1 and 96% for phase 2. Thus, the proposed model effectively detects the spread of information in social media, which can assist various applications.},
+  archive      = {J_EVOLS},
+  author       = {Sabharwal, Shweta Mayor and Aggrawal, Niyati},
+  doi          = {10.1007/s12530-025-09694-w},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-23},
+  shortjournal = {Evol. Syst.},
+  title        = {Information diffusion prediction using hybrid GCNN–LSTM and stock market based sentiment analysis in social media},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Carbon price volatility prediction using a hybrid CEEMDAN-attention-LSTM approach. <em>EVOLS</em>, <em>16</em>(3), 1-15. (<a href='https://doi.org/10.1007/s12530-025-09704-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Carbon price volatility is a critical indicator of the carbon trading market, characterized by its phase-wise variation. However, conventional forecasting methods frequently struggle to address the substantial noise and non-linear dynamics inherent in these sequences. To address these challenges, this study proposes a novel hybrid model, CEEMDAN-At-LSTM, which combines complete ensemble empirical mode decomposition with adaptive noise (CEEMDAN) and an attention-enhanced long short-term memory network (LSTM). The model decomposes complex volatility sequences and captures hidden temporal features within each subsequence. Forecasting performance was evaluated using metrics including MAE, MSE, HMAE, and HMSE, and further validated through the model confidence set (MCS) test to ensure robustness. Experiments were conducted on datasets from the Hubei Carbon Emissions Trading Center and the EU ETS, representing emerging and developed markets, respectively. CEEMDAN-At-LSTM achieved at least a 38.87% reduction in forecasting error compared to baseline models, demonstrating its effectiveness in managing nonlinearity and noise. This approach provides a reliable framework for carbon market volatility forecasting, supporting informed policymaking and the advancement of a low-carbon economy.},
+  archive      = {J_EVOLS},
+  author       = {Yao, Junxuan and Wang, Heping and Mao, Suzhen},
+  doi          = {10.1007/s12530-025-09704-x},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-15},
+  shortjournal = {Evol. Syst.},
+  title        = {Carbon price volatility prediction using a hybrid CEEMDAN-attention-LSTM approach},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HC-DMAformer: Hybrid convolutional-dynamic multi-level attention transformer for efficient and accurate EEG-based autism detection. <em>EVOLS</em>, <em>16</em>(3), 1-16. (<a href='https://doi.org/10.1007/s12530-025-09705-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Autism spectrum disorder is a neurological condition that significantly impacts communication and social interactions. Psychological tests and neuroimaging are frequently used in traditional autism spectrum disorder detection techniques. However, electroencephalogram is an effective tool for identifying neurological disorders like autism spectrum disorder because it has the ability to capture real-time brain activity. Therefore, this paper introduces a novel framework called a hybrid convolutional-dynamic multi-level attention transformer model. The proposed framework integrates convolutional neural networks with a dynamic multi-level attention mechanism, which replaces the traditional self-attention layer in transformers, significantly reducing computational complexity while maintaining high detection accuracy. The electroencephalogram data recordings are initially preprocessed through re-referencing, filtering, and normalization procedures. The pre-processed data signals are segmented and transformed into spectrograms using the short-time Fourier transform technique. These spectrograms are used as model input for the training approach. The proposed model used VGG-16 and ResNet-50 to extract features, while attention-based transformer captures complex temporal patterns in the electroencephalogram spectrograms. Following feature extraction, the model refines the representation before classification by applying a dense layer to refine the combined feature set. The feature maps obtained from triple-stream modules are fused to form hybrid features and are classified into two distinct classes: non-autistic and autistic cases using the softmax classifier. The evaluation of the HC-DMAformer model attained a higher accuracy of 99.23%, across various Electroencephalogram datasets. Furthermore, the model is computationally efficient, with a training duration of 1 h 29 min, and a computation time of 13.18 s. The result demonstrates that the proposed method outperforms than other methods.},
+  archive      = {J_EVOLS},
+  author       = {Kavitha, V. and Vidhya, R. and Swathi Mirthika, G. L. and Suresh, K. and Hemavathi, S},
+  doi          = {10.1007/s12530-025-09705-w},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-16},
+  shortjournal = {Evol. Syst.},
+  title        = {HC-DMAformer: Hybrid convolutional-dynamic multi-level attention transformer for efficient and accurate EEG-based autism detection},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Evolving security measures for IoT medical data in cloud environments. <em>EVOLS</em>, <em>16</em>(3), 1-17. (<a href='https://doi.org/10.1007/s12530-025-09706-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Internet of Medical Things (IoMT) consists of interconnected devices such as wearable sensors, medical monitors, and diagnostic tools that collect and transmit real-time health data. These networks play a crucial role in modern healthcare by enabling continuous patient monitoring and data-driven decision-making. However, the increasing reliance on medical IoT devices exposes them to various cybersecurity threats, such as data breaches, unauthorized access, and denial-of-service attacks. The sensitive nature of healthcare data makes these networks attractive targets for malicious actors, which compromise patient safety and privacy. Existing approaches to attack detection in medical IoT networks often struggle to provide accurate and timely detection of cyber-attacks due to the uncertainty and dynamic nature of IoT data. This paper addresses these limitations by introducing a novel Fuzzy Adaptive Support Vector Machine (F-ASVM) that combines fuzzy logic with adaptive SVM to detect attacks accurately. The integration of fuzzy logic allows the model to handle uncertainty in sensor data, providing a more accurate classification of normal behavior and potential attacks. Meanwhile, the adaptive SVM ensures that the model adjusts to new attack patterns over time, making it adaptable to emerging threats. The study also incorporates the Seagull Optimization Algorithm (SOA) with a local strategy to fine-tune the hyperparameters of the SVM, improving the model’s performance and ensuring efficient convergence. The effectiveness of the proposed approach is evaluated using a diabetic patient dataset, with simulation results showing its ability to detect attacks with high accuracy, enhancing the security and reliability of critical medical IoT infrastructure.},
+  archive      = {J_EVOLS},
+  author       = {Dhaya, C. and Niranjana, G. and Prakash, B.},
+  doi          = {10.1007/s12530-025-09706-9},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-17},
+  shortjournal = {Evol. Syst.},
+  title        = {Evolving security measures for IoT medical data in cloud environments},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A hybrid jumping swarm optimization based local search approach for minimum weighted dominating set problem. <em>EVOLS</em>, <em>16</em>(3), 1-15. (<a href='https://doi.org/10.1007/s12530-025-09707-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The Minimum Weighted Dominating Set (MWDS) problem is a challenging hard graph optimization problem and it has various real-world applications, particularly in network design and communications. In this paper, a novel, discrete swarm optimization-based local search algorithm is developed for MWDS. This approach integrates the jumping particle swarm optimization approach with two new local search strategies based on cost ratio and neighbourhood search, with this, the proposed JPSWD efficiently identifies the solution space by avoiding local optimum. Simulation results carried out on extensive datasets suggest that the performance of JPSWD is better than that of the existing algorithms. This notable improvement is particularly evident in the context of execution time and computational cost, which are critical factors we have considered over other algorithms. A statistical analysis based on algorithms’ ranking further substantiates the better performance of JPSWD, and marking it as a better alternative for tackling the MWDS problem.},
+  archive      = {J_EVOLS},
+  author       = {Maheswari, G. and Balaji, S.},
+  doi          = {10.1007/s12530-025-09707-8},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-15},
+  shortjournal = {Evol. Syst.},
+  title        = {A hybrid jumping swarm optimization based local search approach for minimum weighted dominating set problem},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An efficient lung disease classification using dove swarm optimization based multi-scale faster-RCNN model. <em>EVOLS</em>, <em>16</em>(3), 1-22. (<a href='https://doi.org/10.1007/s12530-025-09708-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Respiratory illness remains a significant cause of increased morbidity and mortality rates, particularly in developing countries. To conduct an in-depth analysis an efficient machine-learning technique is essential. Various approaches including computed tomography (CT) have evolved in this domain to detect lung diseases but have several disadvantages such as the usage of ionization and inevitable radiation exposure by which the overall results get diminished. In response to this limitation, this paper proposes a novel approach called “Enhanced Multi-Scale Faster Recurrent Convolutional Neural Network based on Dove Swarm Optimization” (EMFRCNN-DSO). The DSO is an effective and time-efficient algorithm for solving several optimization problems. The proposed EMFRCNN-DSO algorithm addresses the demerits of several existing methods and demonstrates enhanced accuracy in classifying the classes of lung disease. The proposed EMFRCNN-DSO algorithm follows a structured process. It begins by preprocessing raw chest X-ray images through enhancement and normalization tasks. Subsequently, a set of significant features, including texture-based, shape-based, and histograms of oriented gradient features, are extracted from the preprocessed data. Based on these extracted feature vectors, the EMFRCNN-DSO classifier accurately categorizes multiple lung disease classes, including healthy, pneumonia, COPD, COVID-19, tuberculosis, and lung opacity. To enhance the classification performance further, the loss functions of the enhanced multi-scale Faster RCNN are normalized and weighted by tuning optimal values for the balancing parameter using the dove swarm optimization algorithm. This step significantly improves the accuracy of classifying lung disease classes. Experimental investigations validate the superiority of the proposed EMFRCNN-DSO algorithm, demonstrating an enhanced classification accuracy of approximately 97.5%. This achievement marks a notable improvement thus paving the way for more effective and timely interventions to combat respiratory illnesses.},
+  archive      = {J_EVOLS},
+  author       = {Varadharajan, Indumathi and Rathinavelayutham, Siva},
+  doi          = {10.1007/s12530-025-09708-7},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-22},
+  shortjournal = {Evol. Syst.},
+  title        = {An efficient lung disease classification using dove swarm optimization based multi-scale faster-RCNN model},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive algorithms for YouTube channel analysis and revenue enhancement. <em>EVOLS</em>, <em>16</em>(3), 1-23. (<a href='https://doi.org/10.1007/s12530-025-09709-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Due to increasing competition and evolving viewer preferences, content creators on YouTube face challenges in optimizing revenue generation. To address these challenges, this study proposes a novel framework comprising three algorithms namely, Similar Channels algorithm, Rank Score algorithm, and Video Analysis algorithm with Long Short-Term Memory. The Similar Channels algorithm introduces a multidimensional similarity assessment that integrates content features, video tags, and engagement metrics such as likes, views, and subscribers for accurately identifying the channels with comparable performance and audience engagement. In addition, the Similar Channel algorithm dynamically adjusts weightage for different metrics based on content type. The Rank Score algorithm enhances competitor analysis by implementing a weighted ranking system that assigns adaptive weights to engagement metrics, providing creators with actionable insights into their competitive landscape. The Video Analysis algorithm employs a Long Short-Term Memory-based Recurrent Neural Network to capture temporal trends in engagement metrics and effectively identify the top-performing videos that drive audience engagement and revenue. Further, the Video Analysis algorithm leverages sequential engagement data to predict video success with greater accuracy. Experimental evaluations demonstrate the effectiveness of the proposed algorithms, achieving a high ranking accuracy of 0.98 for competitor channel analysis and precisely identifying top-performing videos based on engagement scores. By leveraging big data analysis and novel algorithmic improvements, content creators optimize revenue generation on YouTube channels by making data-driven decisions. The Similar Channel and Rank Score algorithms provide insights into competitor performance, while the Video Analysis algorithm with Long Short-Term Memory enables the identification of top-performing videos.},
+  archive      = {J_EVOLS},
+  author       = {Subha, K. and Bharathi, N.},
+  doi          = {10.1007/s12530-025-09709-6},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-23},
+  shortjournal = {Evol. Syst.},
+  title        = {Adaptive algorithms for YouTube channel analysis and revenue enhancement},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A novel approach for classifying LEV motor bearing faults using a PSO-optimized CNN model and parameters based on transfer learning. <em>EVOLS</em>, <em>16</em>(3), 1-23. (<a href='https://doi.org/10.1007/s12530-025-09710-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Light Electric Vehicles (LEVs) have recently become a popular choice for transportation due to their environmental and economic benefits. This growing interest necessitates LEV motors to operate with higher performance and reliability. In recent years, Brushless Direct Current (BLDC) electric motors have been preferred as LEV motors to meet this need. Failures occur over time in LEV motors operating in outdoor environments. In this study, a new novel method based on CEEMDAN (Complete Ensemble Empirical Mode Decomposition with Adaptive Noise)—STFT (Short Time Fourier Transform) and hybrid PSO (Particle Swarm Optimization)—CNN (Convolutional Neural Networks)—TL (Transfer Learning) is proposed to diagnose LEV bearing failure. In this new method, the IMFs (Intrinsic Mode Function) of one-dimensional time series vibration signals are obtained with CEEMDAN. Each IMF matrix was converted into spectrograms using STFT. Data augmentation methods enhanced these spectrograms. Using this data set, CNN model design was performed with the PSO algorithm. Parameters were optimized with the CNN model that gave the highest accuracy. Using the fine-tuning method, which is part of the transfer learning process, the performance of the obtained hyperparameters was measured with a five-fold cross-validation on GoogleNet, ResNet-50, DarkNet-53, MobileNet-v2 and Xception deep learning architectures. These architectures were evaluated with metrics such as accuracy, precision, recall and F1 score and the DarkNet-53 model gave the highest classification accuracy of 99.53%. The results show that the proposed new method is robust for diagnosing bearing failures in LEVs with limited data.},
+  archive      = {J_EVOLS},
+  author       = {Esmeray, Hadi and Dogan, Zafer and İşeri, İsmail},
+  doi          = {10.1007/s12530-025-09710-z},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-23},
+  shortjournal = {Evol. Syst.},
+  title        = {A novel approach for classifying LEV motor bearing faults using a PSO-optimized CNN model and parameters based on transfer learning},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Recursive methods for updating consequent parameters in evolving fuzzy systems: A comprehensive review with computational experiments. <em>EVOLS</em>, <em>16</em>(3), 1-30. (<a href='https://doi.org/10.1007/s12530-025-09711-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Evolving (Fuzzy and Neuro-Fuzzy) Systems are known for expanding or contracting their structure and updating their parameters on the fly in a single pass, eventually in real-time, to react to process drifts while obtaining the output. The system’s structure can be adjusted by creating, merging, splitting, deleting, or updating its structural components, such as rules, clusters, neurons, granules, leaves, or clouds. On the other hand, the consequent (output weight) parameters can be updated using modeling and optimization methods. Typically, in an Evolving System, the consequent parameters are updated using the recursive least square algorithm or its variations. This paper provides a comprehensive analysis of recursive learning methods used to update the consequent parameters in Evolving Systems. Seven methods are detailed and revisited, namely Recursive Least Squares (RLS), Weighted Recursive Least Squares (WRLS), Recursive Weighted Total Least Squares (RWTLS), Multi-Innovations Recursive Weighted Least Squares (MI), Kernel Recursive Least Squares (KRLS), Recursive Maximum Correntropy (RMC), and Gradient Descent (GD). These seven approaches were implemented in three distinct Evolving Systems and compared in ten data stream regression tasks. The experimental results suggest that the WRLS achieved the average best performance, followed by RMC and RLS. The study also indicates that there is no one-size-fits-all or universally optimal method for updating consequent parameters across all Evolving Systems and datasets. Future work should prioritize developing methods focusing on accuracy and computational efficiency, especially in high-dimensional data streams. Additionally, research should explore robust approaches to handle noise and context changes, ensuring consistent performance across various conditions.},
+  archive      = {J_EVOLS},
+  author       = {Rodrigues, Fernanda P. S. and Silva, Alisson Marques},
+  doi          = {10.1007/s12530-025-09711-y},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-30},
+  shortjournal = {Evol. Syst.},
+  title        = {Recursive methods for updating consequent parameters in evolving fuzzy systems: A comprehensive review with computational experiments},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dual attention-based CNN-LSTM framework for session-based recommendations. <em>EVOLS</em>, <em>16</em>(3), 1-17. (<a href='https://doi.org/10.1007/s12530-025-09712-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Session-based recommendation systems (SRS) are essential in dynamic environments where user preferences evolve over time. This paper proposes a Hybrid session-based recommendation (HSRec) model that integrates "Convolutional Neural Networks" (CNN) with "Long Short-Term Memory" (LSTM) networks to enhance recommendations within session contexts. The CNN is employed to capture local interaction patterns between items within the session, whereas the LSTM component captures the sequential flow of user behaviour across items. In addition, the model introduces a dual attention mechanism, comprising item-level attention to focus on key interactions within the session and session-level attention to capture long-term preferences by weighting past sessions based on relevance. The proposed hybrid model utilizes item embeddings to represent items in dense vectors and applies CNN filters to capture short-term patterns in sessions, such as frequent item co-occurrences. The LSTM processes the output of the CNN to model long-term dependencies across the entire session. A final prediction layer with softmax activation predicts the next item in the session. The results indicate that HSRec outperforms traditional models by effectively learning both local and global dependencies in session data. The model’s effectiveness is assessed on different datasets, and the findings indicate that HSRec surpasses traditional methods, delivering greater efficiency in offering personalized recommendations to users.},
+  archive      = {J_EVOLS},
+  author       = {Jangid, Manisha and Kumar, Rakesh},
+  doi          = {10.1007/s12530-025-09712-x},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-17},
+  shortjournal = {Evol. Syst.},
+  title        = {Dual attention-based CNN-LSTM framework for session-based recommendations},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Evolving interval-based time series clustering for streaming industrial data. <em>EVOLS</em>, <em>16</em>(3), 1-17. (<a href='https://doi.org/10.1007/s12530-025-09713-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate clustering of time series data is crucial for extracting meaningful insights from streaming sensor data in industrial applications. To address the challenges of dynamic and unlabeled data streams, we introduce Interval ERAL (iERAL), an enhancement of the Error in Aligned Series (ERAL) framework. iERAL is a time series alignment and averaging method designed for online analysis, incorporating an interval band to represent variance in the underlying data. We pair iERAL with an evolving time series clustering algorithm, capable of automatically detecting, adapting to, and merging clusters in real-time. This evolving approach enables the algorithm to dynamically adjust to new patterns, promote or demote clusters based on their relevance, and handle data variability with interval-based analysis. Unlike previous methods, our approach not only computes the time series prototype for each cluster but also provides a variance band for interval-based analysis. We demonstrate the effectiveness of our method by applying it to line pressure measurements in a real-world industrial setting. The algorithm achieves promising results in clustering unlabeled data streams, highlighting its potential for anomaly detection and adaptive monitoring of industrial processes in evolving operating conditions.},
+  archive      = {J_EVOLS},
+  author       = {Stržinar, Žiga and Škrjanc, Igor and Pregelj, Boštjan},
+  doi          = {10.1007/s12530-025-09713-w},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-17},
+  shortjournal = {Evol. Syst.},
+  title        = {Evolving interval-based time series clustering for streaming industrial data},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On resolving the out of vocabulary problem in DisCoCat-based quantum natural language processing. <em>EVOLS</em>, <em>16</em>(3), 1-15. (<a href='https://doi.org/10.1007/s12530-025-09714-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The field of quantum computing has evolved a lot in the past few years with doors opening for novel applications in a variety of fields. Consequently, natural language processing (NLP) has also been affected due to this disruption, leading to various proposals for doing NLP on a quantum computer. One such promising framework is DisCoCat, a linguistics-oriented model designed to capture the meaning of language without compromising its structural information. Recently, DisCoCat models have been run on real quantum hardware. However, a few issues in the current formulation have led to problems like the out-of-vocabulary (OOV) problem. In this work, our aim is to tackle this OOV problem with respect to DisCoCat-based quantum natural language processing. We first design a novel functor mapping from string diagrams, a primary construction in DisCoCat, to quantum circuits. Later, we test the correctness and validity of this new technique on state-of-the-art datasets for tasks such as sentence similarity and paraphrase identification. We present clear empirical evidence that this novel functor mapping not only performs better than the pre-existing technique in most cases, but also it does so with relatively fewer parameters, thus ensuring better scalability with improved performance.},
+  archive      = {J_EVOLS},
+  author       = {Bhatuse, Amey and Khandelwal, Ankit and Udmale, Sandeep S. and Chandra, M Girish and Kolte, Sopan},
+  doi          = {10.1007/s12530-025-09714-9},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-15},
+  shortjournal = {Evol. Syst.},
+  title        = {On resolving the out of vocabulary problem in DisCoCat-based quantum natural language processing},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimization of bound-constrained and constrained optimization problems with interval coefficients via extended tournament differential evolution. <em>EVOLS</em>, <em>16</em>(3), 1-43. (<a href='https://doi.org/10.1007/s12530-025-09715-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The aim of this work is to develop a hybrid algorithm for solving bound constrained and constrained optimization problems with interval coefficients. The proposed algorithm is based on tournamenting process and differential evolution algorithm popularly known as tournament differential evolution. In this work, the said algorithm is extended using interval mathematics and interval ranking in order to make this algorithm compatible of solving optimization problems in interval environment. In this connection, ten bound constrained optimization problems with interval coefficients and ten constrained optimization problems with interval coefficients are considered and solved by the proposed algorithm. The results obtained from different variants of this algorithm are compared with each other. Also, to test the efficiency, two different variants of tournamenting adaptive Gaussian quantum particle swarm optimization algorithm, are used to compare the results obtained from different variants of tournament differential evolution algorithm. Finally, analysis of variance test is performed.},
+  archive      = {J_EVOLS},
+  author       = {Akhtar, Md and Mandal, Goutam and Bhunia, Asoke Kumar},
+  doi          = {10.1007/s12530-025-09715-8},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-43},
+  shortjournal = {Evol. Syst.},
+  title        = {Optimization of bound-constrained and constrained optimization problems with interval coefficients via extended tournament differential evolution},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CRCNet: Convolutional multi-layer perceptron encoder with attention module for colorectal cancer segmentation. <em>EVOLS</em>, <em>16</em>(3), 1-13. (<a href='https://doi.org/10.1007/s12530-025-09716-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Colorectal cancer (CRC) segmentation is a difficult task because of the structural complexity of polyps in colonoscopy and endoscopy imaging. This paper proposes CRCNet, a novel deep learning (DL) framework to address these challenges using specifically designed components that improve feature learning and localization precision. CRCNet combines a convolutional multi-layer perceptron (MLP) encoder that preserves both spatial and contextual representations; a synchronized feature boost (SFB) module to maintain fine-grained low-level features usually lost during downsampling. A convolutional block attention module (CBAM) to focus on diagnostically relevant areas using spatial and channel-wise attention. Further, a semantic-local feature aggregation (SLFA) block merges semantic context with localized information to enhance boundary clarity in the decoder. CRCNet is evaluated on four benchmark datasets: CVC-ClinicDB, ETIS, CVC-ColonDB, and CVC-300. It achieves dice coefficient of 0.9519, 0.9139, 0.8677, and 0.9421 intersection over union scores of 0.9083, 0.8438, 0.7692, and 0.8909, respectively. The model also demonstrates exceptional boundary accuracy and lowers mean absolute error ( $$\le 0.0180$$ ) with a structure measure (Sm) above 0.93 and an enhanced measure above 0.95 across all datasets. The lightweight architecture (1.18 M parameters) of CRCNet ensures computational efficiency by preserving detailed anatomy details in low-contrast areas. These experimental results show the superior performance of CRCNet over existing techniques by focusing on its adaptability in managing various polyp shapes, scale modifications, and imaging artefacts. CRCNet improves the accuracy of CRC diagnosis by fusing attention systems and advanced feature enhancement.},
+  archive      = {J_EVOLS},
+  author       = {Singh, Manoj Kumar and Chand, Satish and Kumar, Devender},
+  doi          = {10.1007/s12530-025-09716-7},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-13},
+  shortjournal = {Evol. Syst.},
+  title        = {CRCNet: Convolutional multi-layer perceptron encoder with attention module for colorectal cancer segmentation},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). YOLOv8n-EggplantDiseases: An enhanced model for accurate disease detection in eggplants. <em>EVOLS</em>, <em>16</em>(3), 1-18. (<a href='https://doi.org/10.1007/s12530-025-09717-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To address issues such as rot, disease, and low detection accuracy in eggplant production, this paper proposes an improved detection model based on YOLOv8n, named YOLOv8n-EggplantDiseases (YOLOv8n-ED). The model enhances target detection by redesigning the feature extraction network and optimizing the detection architecture. Specifically, it integrates C2f_CGA and Swin Transformer into the backbone to improve semantic representation and small-object recognition in complex backgrounds. Additionally, the SimAM attention-free mechanism is incorporated to further enhance contextual understanding. The original convolution layers are replaced with the ADown module, and BoTNet is introduced to strengthen target identification. In the Neck, ODConv (omni-dimensional dynamic convolution) and C2f_SimAM modules are employed to improve feature expressiveness. Moreover, the WIoU loss function is adopted to address class imbalance and scale variation, accelerate convergence, and enhance regression accuracy. The proposed YOLOv8n-ED achieves 73.2% Precision, 66.5% Recall, 70.4% mAP@.5, and 39.5% mAP@.5-.95, outperforming baseline models by + 2.5% Recall, + 1.9% mAP@.5, and + 1% mAP@.5-.95.},
+  archive      = {J_EVOLS},
+  author       = {Yao, Qingan and Zhang, Congmin and Feng, Yuncong and Wang, Xuexiao},
+  doi          = {10.1007/s12530-025-09717-6},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-18},
+  shortjournal = {Evol. Syst.},
+  title        = {YOLOv8n-EggplantDiseases: An enhanced model for accurate disease detection in eggplants},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A method for predicting key bogie component status under limited and non-stationary data conditions. <em>EVOLS</em>, <em>16</em>(3), 1-21. (<a href='https://doi.org/10.1007/s12530-025-09718-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The normal operation of the bogie is essential for ensuring the safety and stability of high-speed trains. Due to the insufficiency and non-stationarity of operational data from key bogie components, this study proposes a state prediction method that integrates a diffusion model, variational autoencoder (VAE), and attention mechanism. Firstly, the DM-VAE data augmentation method is employed, leveraging the generative capability of the VAE and the data enhancement strength of the diffusion model to mitigate data scarcity. Secondly, an improved Transformer algorithm is designed to adaptively capture non-stationary features, improving prediction accuracy. Finally, the proposed method is validated through a case study on the bogie's air spring. The results demonstrate that the proposed approach achieves improved predictive performance and accuracy.},
+  archive      = {J_EVOLS},
+  author       = {Zhang, Kai and Wei, Zhe and Wang, Lei and Xu, Duo and Huang, Guotian},
+  doi          = {10.1007/s12530-025-09718-5},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-21},
+  shortjournal = {Evol. Syst.},
+  title        = {A method for predicting key bogie component status under limited and non-stationary data conditions},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A blockchain–enabled quaternion evolutionary gravitational neocognitron neural network for securing IoT healthcare data in cloud environment. <em>EVOLS</em>, <em>16</em>(3), 1-21. (<a href='https://doi.org/10.1007/s12530-025-09719-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Combining traditional healthcare systems with the Internet of Things (IoT) has significantly improved healthcare service quality. However, continuous monitoring and data transmission by wearable devices and sensors in such environments often occur over unsecured open channels, making the system vulnerable to cyberattacks, especially in critical care situations. To address these concerns, a novel solution leveraging Deep Learning (DL) and Blockchain technologies is proposed for secure data sharing in IoT-enabled medical facilities. The model combines an Encoder-Elliptic Curve Deep Neural Network (EECDNN) with blockchain technology and a Quaternion Evolutionary Gravitational Neocognitron Neural Network (QEGNNnet) for intrusion detection and secure cloud-based healthcare data. The system encrypts medical information using EECDNN, with the encryption key managed securely within a blockchain system where it is segmented into blocks for increased security. Authorized users, such as patients and healthcare providers, can retrieve and decrypt data using the secret key. The model’s efficiency was tested on public datasets like ToN-IoT, CIC-IDS 2017, and CIC-IDS 2018, and was compared to other DL models. Results demonstrated substantial improvements, achieving an impressive 99.9% accuracy and a reduced error rate of 2%. The model also exhibited reduced execution time and block access time, significantly enhancing intrusion detection performance.},
+  archive      = {J_EVOLS},
+  author       = {Taluja, Anuradha and Kumar, Harish and Thangarasu, Jackulin and Pingle, Yogesh Prabhakar},
+  doi          = {10.1007/s12530-025-09719-4},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-21},
+  shortjournal = {Evol. Syst.},
+  title        = {A blockchain–enabled quaternion evolutionary gravitational neocognitron neural network for securing IoT healthcare data in cloud environment},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TransDense121-UNet: A multi-scale transformer-based approach for accurate liver tumor segmentation. <em>EVOLS</em>, <em>16</em>(3), 1-21. (<a href='https://doi.org/10.1007/s12530-025-09720-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Liver tumor segmentation and diagnosis from medical images play an important role in treatment planning. However, the conventional process of detecting and segmenting liver tumors is a time-consuming and highly observer-dependent task. Therefore this study develops a multi-scale transformer-based neural network method called TransDense121-UNet for accurate detection and segmentation of liver tumors. This method includes data preprocessing, detection, and segmentation phases. The proposed method is evaluated on various datasets such as 3DIRCADb, LiTS2017, and liver tumor segmentation dataset. Multi-scale Axis Attention is used to extract various features of different scales including intensity, size, shape, and location during liver tumor segmentation. This model applies a multi-path framework that combines multi-scale atrous convolutions in parallel with an axis attention layer. It increases effectiveness as retains a broad receptive field at various dilation rates and provides enhanced features without compromising resolution, resulting in the accurate detection of small tumors. In contrast, the axis attention mechanism is used to capture long-range dependencies for better integration of contextual information which is useful in segmenting complex liver images. In the detection and segmentation phase, TransDense121-UNet is employed which encompasses utilized UNet, DenseNet121, and Enhanced Transformer. By leveraging the unique capabilities of dense block relevant features are extracted, while robust enhanced transformer systems address issues of computational complexity. Through the experimental validation, the proposed approach achieved an accuracy of 98.78% and a Dice coefficient of 0.989, demonstrating its effectiveness in precisely detecting and segmenting liver tumors.},
+  archive      = {J_EVOLS},
+  author       = {Mayuri, A. V. R. and Maniraj, S. P. and Duraisamy, M. and Murthy, G. L. N. and Garg, Kanika and Sangeetha, M.},
+  doi          = {10.1007/s12530-025-09720-x},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-21},
+  shortjournal = {Evol. Syst.},
+  title        = {TransDense121-UNet: A multi-scale transformer-based approach for accurate liver tumor segmentation},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). 3D NoC-enabled spiking neural networks: A high-performance computing paradigm. <em>EVOLS</em>, <em>16</em>(3), 1-18. (<a href='https://doi.org/10.1007/s12530-025-09721-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Spiking Neural Networks (SNNs), best known for their complex spatial–temporal dynamics, event-driven features, and compatibility with neuromorphic hardware, are gaining popularity in brain-inspired intelligence. As a developing paradigm for artificial general intelligence (AGI), SNNs can potentially create more biologically plausible neural computation models. However, current artificial neural network circuit topologies struggle to accurately replicate the brain's sparse global and dense local connection patterns, also known as a small-world network. A new 3D Network-on-Chip (NoC) architecture and a hybrid wired-wireless NoC router are presented in this study to address this problem and facilitate effective on-chip connectivity in large-scale SNN simulations. The 3D NoC architecture is intended to deliver an accessible and high-performance architecture for mimicking brain-like connectivity inside a reconfigurable hardware environment. The system uses a Neural Tile (NT), which contains a 64:64 fully connected feed-forward SNN framework and incorporates a 3D mesh topology NoC connectivity framework. The hybrid NoC router, which combines wired and wireless routing paradigms, is developed to achieve high speed, reduced area, and increased reliability over standard wired or wireless-only systems. This design provides a viable method for effectively simulating large-scale SNNs and is demonstrated to be a more stable platform for high-performance neuromorphic computing. It addresses the challenge of delivering highly dynamic neural connectivity while maintaining efficient hardware usage. The paper offers a scalable platform for advancing the field of brain-inspired intelligence and neuro-engineering, which is essential for simulating and optimizing Spiking Neural Networks on neuromorphic hardware. The suggested framework has been assessed on a Xilinx Virtex-4 FPGA and synthesized using 90 nm low-power CMOS technology. The presented hybrid NoC router and 3D NoC-enabled architecture are thoroughly evaluated through simulation and synthesis. The proposed design with 64 neurons per chip achieves a silicon area of 3.072 mm2 on a Virtex-4 FPGA, compared to the 3.18 mm2 occupied by the 2D EMBRACE monolithic SNN architecture. This represents a 3.4% reduction in chip area, highlighting the space efficiency of the 3D NoC-based MCNT design, which is particularly impactful given the added scalability and vertical integration benefits of 3D architectures. The findings demonstrate that, compared to previous designs, the suggested architecture offers better performance, including lower latency, reduced chip area, and lower power consumption.},
+  archive      = {J_EVOLS},
+  author       = {Karthikeyan, V. and Subbulakshmi, K.},
+  doi          = {10.1007/s12530-025-09721-w},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-18},
+  shortjournal = {Evol. Syst.},
+  title        = {3D NoC-enabled spiking neural networks: A high-performance computing paradigm},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi kernel polar code using nut cracker optimization based GAN for successive cancellation decoder to attain low latency and high efficiency. <em>EVOLS</em>, <em>16</em>(3), 1-17. (<a href='https://doi.org/10.1007/s12530-025-09722-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-Kernel Polar Code is a type of polar code that utilizes multiple kernels for information encoding and decoding. The selection and optimization of multiple kernels can be challenging. Previous research has demonstrated that existing deep learning models may achieve high decoding accuracy and speed for polar code when the block length can be very tiny. Its speed, however, dramatically drops with longer codes because of the huge network structure. A successful Generative Artificial Intelligence (GEN AI) is developed in this work for decoding polar codes. The input sequence has been encoded using multiple kernel polar codes, giving a polar encoded output. After encoding the message using the multi-kernel polar encoder, the resulting bits are mapped to binary phase-shift keying (BPSK) symbols prior to transmission. The Gaussian noise term with zero mean and variance in additive white Gaussian noise (AWGN) is used to receive the signal. The improved Generative Adversarial Network (GAN) improves the decoder performance under different channel conditions after the signals have been transmitted via the channel. Computation is employed to determine the approximate reliability of the bit channel. The proposed approach achieves 95.30% of accuracy, 4.70% error, 91.70% precision and 96.80% specificity. Thus, the designed optimized GAN model is the best option for successive cancellation in the decoder.},
+  archive      = {J_EVOLS},
+  author       = {Pushpa, B. Yamini and Panda, Sunita},
+  doi          = {10.1007/s12530-025-09722-9},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-17},
+  shortjournal = {Evol. Syst.},
+  title        = {Multi kernel polar code using nut cracker optimization based GAN for successive cancellation decoder to attain low latency and high efficiency},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Evolving fault-tolerant control models for optimized big data transmission in power systems using crossover-based chimp optimization. <em>EVOLS</em>, <em>16</em>(3), 1-23. (<a href='https://doi.org/10.1007/s12530-025-09723-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The current parallel data transmission method faces challenges such as low data transfer rates and compromised data integrity, leading to node congestion, instability, prolonged processing times, and inefficient data switching during big data scheduling processes. To address these issues, this paper proposes a Cluster Scheduling Fault-Tolerant Control method tailored for transmitting big data within new power systems. The method integrates a crossover-based Chimp optimization to enhance fault control performance in power system operations. The approach analyzes the integrity control principles of Parallel Data Transmission and employs a hybrid queuing model combining a single service window and raster analysis method to regulate Parallel Data Transmission rates. Additionally, a 3 + 1 integration framework adjusts the signal intensity fluctuations to optimize data clustering computations and stabilize nonlinear switched systems within large data clusters. In a closed-loop system configuration, data switching operations are orchestrated to achieve Fault-Tolerant Control in the scheduling of big data clusters. Experimental findings demonstrate the proposed model significantly improves data transmission rates, integrity, and network resource utilization. The developed method enhances efficiency as evidenced by improvements in precision, accuracy, recall, and throughput metrics, validating its effectiveness in real-world applications.},
+  archive      = {J_EVOLS},
+  author       = {Zhu, Chenfeng and Babu, B. Ravindra and Ramaiah, Gurumurthy B.},
+  doi          = {10.1007/s12530-025-09723-8},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-23},
+  shortjournal = {Evol. Syst.},
+  title        = {Evolving fault-tolerant control models for optimized big data transmission in power systems using crossover-based chimp optimization},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Research on the application of an improved autoformer model integrating CNN-attention-BiGRU in short-term power load forecasting. <em>EVOLS</em>, <em>16</em>(3), 1-17. (<a href='https://doi.org/10.1007/s12530-025-09724-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate short-term load forecasting is essential for power system reliability and the integration of renewable energy. However, existing models often fail to simultaneously capture long-term dependencies and local fluctuations in load data. This study proposes CA-BiGRU+Autoformer, a hybrid model that combines Convolutional Neural Networks (CNN), Multi-Head Attention, Bidirectional Gated Recurrent Units (BiGRU), and the Autoformer framework. The model is designed to enhance multi-scale feature extraction by integrating local detail perception, bidirectional temporal modeling, and trend-seasonal decomposition. Experiments were conducted on two public datasets—GEFCom2014-E and the Australian Electricity Load and Price Forecasting dataset—to validate the model’s performance across different time resolutions and regional patterns. Compared with state-of-the-art baselines such as Autoformer, Informer, and LSTM, the proposed model achieves superior accuracy. On the GEFCom2014-E dataset, it reduces MSE by 11.4% in 96-step forecasting, while on the Australian dataset, it lowers MSE by 13.6% in 24-step tasks. Ablation studies confirm the effectiveness of each component. The results demonstrate that CA-BiGRU+Autoformer effectively captures complex temporal patterns and offers a robust solution for real-world short-term load forecasting.},
+  archive      = {J_EVOLS},
+  author       = {Tie, Ruijun and Li, Ming and Zhou, Cong and Ding, Nanwei},
+  doi          = {10.1007/s12530-025-09724-7},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-17},
+  shortjournal = {Evol. Syst.},
+  title        = {Research on the application of an improved autoformer model integrating CNN-attention-BiGRU in short-term power load forecasting},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhancing security in cloud computing systems using hybrid feature selection and ensemble-based machine learning for intrusion detection. <em>EVOLS</em>, <em>16</em>(3), 1-27. (<a href='https://doi.org/10.1007/s12530-025-09725-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cloud computing has become essential for organizations to efficiently store, process, and share data while accessing diverse services. However, the increasing volume of data stored and processed in the cloud exposes it to significant security risks, including unauthorized access and cyber threats. Therefore, this study introduces a novel Hybrid Red Panda Simulated Feature Selection with a Machine Learning-Based Intrusion Detection method for enhancing security in cloud infrastructure. The model collects network traffic data from diverse datasets, including UNSW-NB15, Edge IIoT, TON-IoT, NSL-KDD, Cryptojacking attack time series, and BoT-IoT. To address class imbalance, these datasets are balanced using the Synthetic Minority Over-sampling Technique. The steps taken during preprocessing, such as cleaning the data, applying one-hot encoding, and performing Z-score normalization, is crucial for providing high-quality data. The proposed hybrid optimization method combines Red Panda Optimizer and Simulated Annealing to select optimal features, reducing computational complexity and improving detection efficiency. An Ensemble-based Gradient Boosting Regression Tree is employed for anomaly detection, fine-tuned through grid search to achieve robust performance. To enhance decision-making transparency, Shapley Additive Explanations and Local Interpretable Model-Agnostic Explanations are utilized, offering feature-level and instance-specific insights. A comprehensive evaluation of the proposed framework significantly outperforms existing methods, achieving an accuracy of 99.6% and a precision of 99.35%, demonstrating superior reliability. This work provides a robust and interpretable approach to enhancing cloud security and offers a scalable solution for mitigating cyber threats in diverse cloud environments.},
+  archive      = {J_EVOLS},
+  author       = {Aswini, J. and Rekha, K. Sashi and Rosaline, R. Anto Arockia and Sivaneshkumar, A.},
+  doi          = {10.1007/s12530-025-09725-6},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-27},
+  shortjournal = {Evol. Syst.},
+  title        = {Enhancing security in cloud computing systems using hybrid feature selection and ensemble-based machine learning for intrusion detection},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Biometric fingerprint identification in low-quality samples using a hybrid features extraction method with deep learning. <em>EVOLS</em>, <em>16</em>(3), 1-19. (<a href='https://doi.org/10.1007/s12530-025-09726-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Fingerprint recognition is essential element of biometric security, yet it faces challenges related to accuracy, robustness, and latency. One significant issue is that the performance of fingerprint authentication systems significantly decreases when faced with low-quality fingerprints. In this paper, two new hybrid approaches are suggested to enhance the accuracy of fingerprint verification and create a reliable identification system. The first approach, SIFT-Descriptor-SCNN, combines the scale-invariant feature transform (SIFT) method with the proposed Siamese convolutional neural network model. First, we compute the SIFT feature descriptors and then pass them to the SCNN for further feature extraction and matching. This increases the system’s ability to distinguish between various patterns for accurate identification. The second novel approach combines oriented FAST with a dense grid, the SIFT algorithm, and the SCNN, named oriented FAST-Dense-SIFT-Descriptor-SCNN. In this work oriented FAST with a dense method is implemented for the detection of keypoints and then the detected keypoints are fed into SIFT algorithm to compute the descriptors. The integration of these algorithms with the SCNN model enhances the performance of the fingerprint identification system. We test the performance of the two hybridization models, the SOCOFing dataset, which includes 6000 real fingerprint and 49,270 synthetically altered versions organized into easy, medium and hard was used. The first model provides an accuracy of 97.57, 96.72, and 95.61 for the easy, medium, and hard datasets, while the validation accuracy is 97.49, 96.14, and 96.07. The second model has a faster prediction time and a higher training and validation accuracy for all three sets. The training accuracy is 98.37, 98.08, and 97.86 and the validation accuracy is 98.55, 97.40, and 98.31.},
+  archive      = {J_EVOLS},
+  author       = {Haleem, Alyaa and Ben Jabra, Saoussen and Chainbi, Walid},
+  doi          = {10.1007/s12530-025-09726-5},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-19},
+  shortjournal = {Evol. Syst.},
+  title        = {Biometric fingerprint identification in low-quality samples using a hybrid features extraction method with deep learning},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A physical dynamical evolution learning model for human pose estimation network. <em>EVOLS</em>, <em>16</em>(3), 1-11. (<a href='https://doi.org/10.1007/s12530-025-09727-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Human pose estimation can accurately identify and locate the key points and motion of each joint on the human body from images or videos, and abstract an arbitrary human pose skeleton, which has important application prospects in computer vision tasks. Currently, human pose estimation mainly relies on data-driven deep learning models, usually facing problems such as difficulty in training, inefficient learning, and limited generalization ability. Thereby, a physical dynamic evolution learning model for human posture estimation network is proposed to optimize the nonlinear learning property of the deep learning model using physical dynamics. The core of physical dynamic evolution learning model lies in the construction of Hamiltonian dynamical neural network evolution model (HDNE), which mainly consists of alignment network and Hamiltonian neural network (HNN). The alignment network can adapt to the output heads of any different human pose estimation models. HNN learns the Hamilton function that approximates the dynamical system to simulate and predict the evolutionary behavior of high-dimensional features for deep learning based on Hamiltonian canonical equations. Experimental results demonstrate a significant improvement in human pose detection accuracy and training efficiency under the evolutionary learning of HDNE.},
+  archive      = {J_EVOLS},
+  author       = {Qian, Kui and Deng, Yue and Li, Zhengyan and Wen, Xiulan},
+  doi          = {10.1007/s12530-025-09727-4},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-11},
+  shortjournal = {Evol. Syst.},
+  title        = {A physical dynamical evolution learning model for human pose estimation network},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Design of an iterative method for enhanced disease detection and feature selection using particle swarm optimization, genetic algorithms, and convolutional neural networks. <em>EVOLS</em>, <em>16</em>(3), 1-16. (<a href='https://doi.org/10.1007/s12530-025-09728-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The necessity for advanced methodologies in fruit grading and disease detection is underscored by the increasing demand for food safety and quality in the agricultural sector. Traditional methods often fail to accurately identify and classify diseases due to their inability to handle high-dimensional data and complex feature interactions. This work addresses these limitations by proposing an innovative framework that integrates multiple optimization techniques for enhanced feature selection and disease detection in fruits. The proposed model combines Particle Swarm Optimization (PSO), Genetic Algorithms (GA), Simulated Annealing (SA), and Coot Optimization (CO) for superior feature selection. This amalgamation leverages the unique exploration capabilities of each algorithm, thus facilitating a more comprehensive evaluation of the feature space and enabling the model to overcome local optima and navigate complex feature landscapes more effectively. The integration improves feature selection accuracy by 5–10% and reduce computational time by 10–20% compared to utilizing CO alone. Furthermore, the framework enhances deep learning algorithms for disease detection by integrating Convolutional Neural Networks (CNNs) with attention mechanisms and Quad Long Short-Term Memory networks (QLSTMs) with a Graph-based Generative Adversarial Network (Graph GAN). This integration allows for the effective capture of spatial relationships and temporal dependencies within thermal image datasets, leading to significant improvements in disease detection accuracy and a reduction in false-negative rates. To enhance the robustness and generalizability of the model, an extensive dataset comprising diverse fruit types, disease severities, and environmental conditions has been curated, including thermal sample images that depict various disease stages. This comprehensive dataset ensures that the model is well-equipped to detect both external and internal symptoms of diseases, resulting in an anticipated increase of 10–15% in model accuracy and a reduction of 20–30% in false-positive rates. The impacts of this work are multifaceted, offering significant advancements in the accuracy, efficiency, and applicability of fruit grading and disease detection methodologies. By addressing the limitations of existing techniques and introducing a robust, integrated framework, this research paves the way for safer and more reliable agricultural practices, ultimately contributing to enhanced food safety and quality.},
+  archive      = {J_EVOLS},
+  author       = {Said, Archana Ganesh and Jawale, Deepali},
+  doi          = {10.1007/s12530-025-09728-3},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-16},
+  shortjournal = {Evol. Syst.},
+  title        = {Design of an iterative method for enhanced disease detection and feature selection using particle swarm optimization, genetic algorithms, and convolutional neural networks},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deep autoencoder-driven feature learning and meta-heuristic optimized machine learning modelling for crop water stress identification. <em>EVOLS</em>, <em>16</em>(3), 1-19. (<a href='https://doi.org/10.1007/s12530-025-09729-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate identification of water stress in crops is essential for maintaining sustainable, high-quality crop production and minimizing the risk of severe crop losses. The erroneous and subjective nature of human expert-based crop stress identification can be effectively replaced by machine learning (ML) and deep learning models (DL) due to their remarkable ability to perform complex data analysis. The objective of the present study is to develop a framework for the accurate identification of crop water stress using a hybrid DL-ML approach. The study proposes a novel method utilizing the feature representation capabilities of a sparse autoencoder (SAE) to extract latent space features and optimize the ML models (XGB, RF, LGB) using the Bat Algorithm to create a strong predictive model through a soft voting ensemble (SAE-BAT-ENS). The performance of optimized models viz., SAE-BAT-XGB, SAE-BAT-RF, and SAE-BAT-LGB were compared with the state-of-the-art (SOTA) models. Although the SAE-BAT-XGB model showed strong predictive power with an accuracy 97.08%, the soft voting ensemble model, SAE-BAT-ENS, enhanced the performance, by taking the prediction probabilities into account, thus balancing out the weaknesses of individual models. Additionally, the proposed approach was compared with the standard majority voting ensemble (MAJ_VOTE_ENS), and the SAE-BAT-ENS achieved superior results. The proposed approach outperformed the SOTA ML models with an accuracy of 97.81%, precision 98.50%, recall 97.05%, and F1-score 97.77%. The approach employed in the study has shown an increment of 3.94% compared to RF, 3.01% compared to model XGB, and 4.71% compared to LGB model. The study finds applications in developing precision crop water stress management, decision support systems, and mobile applications for automating field crop management.},
+  archive      = {J_EVOLS},
+  author       = {Subeesh, A. and Chauhan, Naveen and Chandel, Narendra Singh and Rajwade, Yogesh},
+  doi          = {10.1007/s12530-025-09729-2},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-19},
+  shortjournal = {Evol. Syst.},
+  title        = {Deep autoencoder-driven feature learning and meta-heuristic optimized machine learning modelling for crop water stress identification},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Parameter estimation based IIR system identification using improved arithmetic optimization algorithm. <em>EVOLS</em>, <em>16</em>(3), 1-13. (<a href='https://doi.org/10.1007/s12530-025-09730-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {System identification plays a crucial role in various fields like control systems, communication networks, biomedical signal processing, and many more. Among the different system identification techniques, infinite impulse response (IIR) system offer flexibility in capturing complex dynamics. However, accurately estimating the parameters of an IIR model can be challenging due to its inherent nonlinearity and potential instability. This paper presents a novel method for IIR system identification utilizing an enhanced arithmetic optimization algorithm (IAOA) in order to overcome this problem. The IAOA leverage the strengths of evolutionary computation and numerical optimization techniques to improve the precision and efficacy of the parameter estimation process. By combining concepts from genetic algorithms, particle swarm optimization, and simulated annealing, the proposed algorithm aims to overcome the limitations of traditional optimization methods and provide a more robust and effective solution. The performance of the IAOA is evaluated through comprehensive comparisons and simulations with existing optimization methods on various benchmark IIR system identification problems. The results demonstrate its superiority in terms of parameter estimation and convergence.},
+  archive      = {J_EVOLS},
+  author       = {Goyal, Deepak and Khanna, Puneet and Singh, Sandeep},
+  doi          = {10.1007/s12530-025-09730-9},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-13},
+  shortjournal = {Evol. Syst.},
+  title        = {Parameter estimation based IIR system identification using improved arithmetic optimization algorithm},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Automatic segmentation and detection of renal cyst using AMS-PAN and RFN-PINN approach based on ultrasound image. <em>EVOLS</em>, <em>16</em>(3), 1-21. (<a href='https://doi.org/10.1007/s12530-025-09731-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cysts are the most common structural injury observed in adult kidneys. Rarely, these are the result of hereditary conditions such as von Hippel Lindau disease, autosomal dominant polycystic kidney disease, and tuberous sclerosis; however, most of the time, cysts are isolated or limited in number and have no known cause. The development of cysts, stones, and tumors causes chronic kidney disorders, which frequently impede renal function. At first, kidney disorders don't exhibit any noticeable signs and are asymptomatic. To avoid renal failure and the loss of kidney function, kidney illnesses must be diagnosed at an earlier stage. In this paper, renal cyst segmentation and classification is performed using AMS-PAN and hybrid RFN-PINN approaches. Renal ultrasound image is provided as a source for this proposed approach. These raw pictures entered are blurred and poor calibre. The supplied image is pre-processed to improve image quality and eliminate noise. Pre-processing techniques such as Dualistic Sub-Image Histogram Equalization and Logical-Pool Recurrent Neural Network are used to improve and reduce noise in images. After processing, the images are input into the Pyramid Attention Network, which uses a combination of attention mechanisms and a segmentation technique based on Multi-Scale features (AMS-PAN) to identify the affected areas of the image. Finally, this segmented images are given to Hybrid ReducedFireNet and Physics Informed Neural Network algorithm based classifier to predict the renal cyst. The proposed algorithm achieves 97% accuracy, 96.7% specificity, and 91.8% NPV. Consequently, our suggested model is the most effective way to divide and categorize renal cyst sickness.},
+  archive      = {J_EVOLS},
+  author       = {Reddy, Viswanathan Ramasamy and Jasti, V. Durga Prasad and Rajkumar, K. and Kuchipudi, Ramu and Muthukumaran, N.},
+  doi          = {10.1007/s12530-025-09731-8},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-21},
+  shortjournal = {Evol. Syst.},
+  title        = {Automatic segmentation and detection of renal cyst using AMS-PAN and RFN-PINN approach based on ultrasound image},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An overview of tensor and matrix decomposition methods, applied to deep neural networks. <em>EVOLS</em>, <em>16</em>(3), 1-18. (<a href='https://doi.org/10.1007/s12530-025-09733-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Convolutional neural networks (CNNs) are indispensable for feature extraction in various Artificial Intelligence tasks. However, their computational complexity and memory requirements pose significant challenges. To address these issues, there is a growing need for CNN simplification techniques. One promising approach involves compressing the weight matrices of fully connected layers and the tensors of convolutional layers using several decompositions into matrix products. To this end we investigate the effectiveness of several relevant techniques and their impact on the achieved accuracy, applying the techniques on already trained networks, or during their training, when applicable.},
+  archive      = {J_EVOLS},
+  author       = {Vorgiazidou, Eleftheria and Delibasis, Konstantinos and Maglogiannis, Ilias},
+  doi          = {10.1007/s12530-025-09733-6},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-18},
+  shortjournal = {Evol. Syst.},
+  title        = {An overview of tensor and matrix decomposition methods, applied to deep neural networks},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Indoor fire danger tracking method with fusion of image difference and smart optimization. <em>EVOLS</em>, <em>16</em>(3), 1-15. (<a href='https://doi.org/10.1007/s12530-025-09734-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To realize accurate and fast fire danger tracking in complex application scenes, a fusion method with aid of image gray value difference technique and Moth-flame optimization algorithm is developed. The method has two advantages. First, with this method, the critical image gray value difference can be employed to capture the dynamic characteristics of flames, thereby enhancing accuracy. It can overcome the interferences of complex fire scenes with many similar flame colors and provide a stable video-based fire tracking result. The method can successfully predict all our test cases with 100% prediction precision. Second, the method does not need prior data training. It can achieve fire danger tracking solely by relying on the currently monitored frame image within 11 s. These advantages make the method significantly superior to traditional data-driven methods in terms of calculation accuracy and efficiency, especially for small flames whose area occupies less than 0.1% of the image. Traditional data-driven methods usually require hours of training and exhibit a low detection rate in such scenarios. Three numerical cases are implemented to validate the method. The results indicate that the method can successfully distinguish the fire danger zone from areas with similar flame colors in the monitored video, and even small flames in the early stage of a fire can also be tracked based on the method. Moreover, when compared with previous fire detection methods, the proposed method demonstrates significantly higher fire tracking accuracy. This advancement offers a critical technical solution for achieving fast and precise fire tracking in real-world applications.},
+  archive      = {J_EVOLS},
+  author       = {Sun, Bin},
+  doi          = {10.1007/s12530-025-09734-5},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-15},
+  shortjournal = {Evol. Syst.},
+  title        = {Indoor fire danger tracking method with fusion of image difference and smart optimization},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dual attention-based hybrid deep learning framework for short text classification. <em>EVOLS</em>, <em>16</em>(3), 1-12. (<a href='https://doi.org/10.1007/s12530-025-09735-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In digital communication, persistent spam poses significant risks to user privacy and security. Classifying short texts (e.g., SMS, tweets) is challenging due to their brevity, ambiguity, and lack of contextual depth. To address this, we propose a novel dual-attention-based hybrid deep learning framework that synergistically integrates Convolutional Neural Networks (CNN) and Bidirectional Long Short-Term Memory Networks (BiLSTM). The CNN branch employs location-based attention to highlight spatially significant features. In contrast, the BiLSTM branch uses co-attention to model sequential relationships, enabling comprehensive feature extraction from sparse, noisy short texts. The fused features are classified through an optimized, fully connected layer, achieving state-of-the-art accuracy of 99.74% (SMS) and 99.36% (Twitter) while maintaining computational efficiency (12ms latency, 8.5G FLOPs). Our model’s parallel architecture and attention mechanisms uniquely balance accuracy and deployability, outperforming transformers (e.g., BERT) with 10 × fewer computational resources. This work advances spam detection by addressing feature sparsity and real-time processing constraints, offering a robust solution for practical applications.},
+  archive      = {J_EVOLS},
+  author       = {Alkaabi, Hussein Ala’a and Abed, Russul Hazim},
+  doi          = {10.1007/s12530-025-09735-4},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-12},
+  shortjournal = {Evol. Syst.},
+  title        = {Dual attention-based hybrid deep learning framework for short text classification},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Investigating U-net variants for satellite image object detection: Towards an ensemble method and performance evaluation. <em>EVOLS</em>, <em>16</em>(3), 1-20. (<a href='https://doi.org/10.1007/s12530-025-09736-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the current era, object detection from satellite images has become essential in various applications, from environmental surveillance to urban development. U-Net, one of the popular encoder-decoder architectures, has proven to be a strong performer in segmentation tasks. Different U-Net variants, such as the baseline U-Net, Attention U-Net, and Attention Res-UNet (Attention Deep Residual U-Net), offer architectural innovations that yield higher segmentation accuracy in specific contexts. This research presents an ensemble approach that combines the benefits of various U-Net models to refine overall segmentation quality. U-Net variants are comprehensively explored for segmentation on satellite images, emphasising how they perform in the semantic segmentation of an aerial images dataset. Interestingly, the ensemble model outperforms single models considering IoU and dice score, delivering a staggering IoU of 93.2 percent, 90 percent pixel accuracy, and a dice score of 94.1 percent, accentuating its outstanding performance. The findings indicate the potential of the suggested ensemble method, that integrates complementary U-Net architectures to deliver state-of-the-art results in satellite image analysis.},
+  archive      = {J_EVOLS},
+  author       = {Malik, Sunesh and Nandal, Priyanka and Pahal, Sudesh and Parikh, Jolly and Jain, Rachna},
+  doi          = {10.1007/s12530-025-09736-3},
+  journal      = {Evolving Systems},
+  month        = {9},
+  number       = {3},
+  pages        = {1-20},
+  shortjournal = {Evol. Syst.},
+  title        = {Investigating U-net variants for satellite image object detection: Towards an ensemble method and performance evaluation},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

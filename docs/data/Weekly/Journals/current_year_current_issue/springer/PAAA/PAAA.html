@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PAAA</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="paaa">PAAA - 12</h2>
+<ul>
+<li><details>
+<summary>
+(2025). ViTGuard: A synergistic approach to malware detection using vision transformers and genetic algorithms optimization. <em>PAAA</em>, <em>28</em>(4), 1-20. (<a href='https://doi.org/10.1007/s10044-025-01516-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the realm of cybersecurity, malware detection stands at the forefront of defense against malicious software. This study introduces an innovative strategy to tackle the ever-evolving cyber threats that characterize the current landscape, transcending traditional methodologies. We present a hybridized approach that combines the advanced capabilities of Vision Transformer (ViT) model, genetic algorithms, and cutting-edge deep learning techniques, marking a new era in cybersecurity. The proposed process begins by transforming complex malware source code into grayscale images, effectively bridging the gap between linear code analysis and spatial image recognition. These grayscale images are analyzed using the ViT_b16 model, renowned for its exceptional ability to uncover subtle intricacies within images. The next steps involve leveraging deep learning to scrutinize the features identified by the ViT, facilitating precise detection of malicious code. To enhance the efficiency of the proposed deep learning model, a genetic algorithm is employed for end-to-end hyperparameter optimization for both ViT and deep learning phases. this process aims at calibrating essential parameters such as the Image Size, Number of Attention Heads, Hidden Size (Embedding Dimension), MLP (Feedforward) Dimension, activation function, architectural depth, neuron count, optimizers, initializers, dropout layers, batch normalization, and learning rates of the ViT_b16 and deep learning models. After extensive training on a dataset comprising 25 diverse malware families, the proposed model exhibits remarkable performance, consistently achieving an accuracy rate exceeding 99% in differentiating among these malware variants. A comprehensive evaluation and benchmarking against both state-of-the-art malware detection methodologies and widely used baseline models, including CNNs and traditional machine learning algorithms, demonstrating superior detection performance across all metrics.},
+  archive      = {J_PAAA},
+  author       = {Bakır, Halit and Bakır, Rezan and Alkhaldi, Tareq and Darem, Abdulbasit A. and Alhashmi, Asma A. and Alqhatani, Abdulmajeed},
+  doi          = {10.1007/s10044-025-01516-8},
+  journal      = {Pattern Analysis and Applications},
+  month        = {12},
+  number       = {4},
+  pages        = {1-20},
+  shortjournal = {Pattern Anal. Appl.},
+  title        = {ViTGuard: A synergistic approach to malware detection using vision transformers and genetic algorithms optimization},
+  volume       = {28},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MDUA-YOLO: An advanced deep learning approach for PCB surface defect detection. <em>PAAA</em>, <em>28</em>(4), 1-14. (<a href='https://doi.org/10.1007/s10044-025-01526-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The surface defects of printed circuit boards (PCB) that occur during the manufacturing process seriously affect product quality. So it is important to detect PCB surface defects quickly and accurately. However, existing defect detection methods still have room to be improved for PCB surface defect detection. This paper proposes an advanced model, MDUA-YOLO, based on YOLOv5 to increase the detection accuracy of defects on PCB surface. Firstly, we introduce the C3 Mobile Vision Transformer (C3MobileViT) module in the backbone of YOLOv5, improving the feature extraction capability of the model. Secondly, the Deformable Convolutional-Receptive Field Block (DC-RFB) module is incorporated into the neck of YOLOv5 to dynamically expands the receptive field and more accurately capture the location information of small defects. Additionally, we design the Union Attention Block (UAB) module in the neck of YOLOv5 to optimize the fusion of low-level and high-level feature maps. Finally, an extra prediction head and new feature fusion layer are also added to enhance the ability of the model to detect small defects. On the benchmark PKU-PCB and DeepPCB datasets, numerous experimental results show that the MDUA-YOLO surpasses other comparison state-of-the-art models and meets the real-time detection requirement of industrial environment.},
+  archive      = {J_PAAA},
+  author       = {Liu, Xiaowei and Wang, Haichao},
+  doi          = {10.1007/s10044-025-01526-6},
+  journal      = {Pattern Analysis and Applications},
+  month        = {12},
+  number       = {4},
+  pages        = {1-14},
+  shortjournal = {Pattern Anal. Appl.},
+  title        = {MDUA-YOLO: An advanced deep learning approach for PCB surface defect detection},
+  volume       = {28},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhancing video salient object detection via SAM-based multimodal energy prompting. <em>PAAA</em>, <em>28</em>(4), 1-13. (<a href='https://doi.org/10.1007/s10044-025-01531-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Video Salient Object Detection (VSOD) aims to identify the most visually conspicuous objects in videos and extract key information from complex visual scenes. Recent studies combine optical flow (OF) and depth for complementary feature extraction. However, suboptimal fusion strategies often treat these modalities merely as extensions of the RGB stream, failing to fully leverage their unique semantic contributions. To address this limitation, we propose a novel SAM-based Multimodal Energy Prompting Network (MEPNet), which utilizes implicit prompts derived from OF and depth within a pre-trained Segment Anything Model (SAM). This approach enhances VSOD by effectively integrating the complementary dynamic and structural information from these modalities. Particularly, we introduce a Spectrogram Energy Generator to extract Spectrogram Energy from OF and depth. These energy-driven prompts fine-tune SAM via the Modality Energy Adapter, effectively mitigating noise interference and improving segmentation accuracy. In addition, we propose a Circular High-frequency Filter to enhance RGB modality details using an adaptive circular mask. Extensive experiments on five VSOD benchmark datasets demonstrate that our MEPNet outperforms state-of-the-art approaches. Furthermore, our MEPNet generalizes effectively to the Video-Camouflaged Object Detection task and achieves competitive results. The module and predicted maps are publicly available at https://github.com/TOMMYWHY/MEPNet .},
+  archive      = {J_PAAA},
+  author       = {Jiang, Tao and Wang, Yi and Hou, Feng and Liu, Li-li},
+  doi          = {10.1007/s10044-025-01531-9},
+  journal      = {Pattern Analysis and Applications},
+  month        = {12},
+  number       = {4},
+  pages        = {1-13},
+  shortjournal = {Pattern Anal. Appl.},
+  title        = {Enhancing video salient object detection via SAM-based multimodal energy prompting},
+  volume       = {28},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Personalized federated learning with adaptive aggregation within clusters. <em>PAAA</em>, <em>28</em>(4), 1-14. (<a href='https://doi.org/10.1007/s10044-025-01533-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated learning allows clients to collaboratively train models while keeping client data local. Initially, it trains a global model to serve all clients, but when the distribution of each local dataset differs significantly from the global dataset, the local objectives of each client may diverge from the globally optimal values, leading to drift in local updates. This phenomenon greatly impacts model performance. The primary purpose of client participation in federated learning is to obtain personalized models with better local performance. In order to solve this problem, this paper proposes a new federated learning algorithm - Federated Learning with Adaptive Intra - cluster Aggregation (FedACC). This algorithm utilizes the inference correlation of client-uploaded models to the server and divides clients with similar data distributions into clusters. During the weighted aggregation of models within each cluster, we introduce an adaptive weight learning algorithm and use the obtained weights to perform the weighted aggregation of cluster models. The algorithm can cluster clients with similar data distributions and utilize adaptive weight learning within the cluster to obtain optimal aggregation weights, enabling more efficient and personalized federated learning through a weighted aggregation cluster model. Our experiments are conducted on three public image datasets, namely MNIST, Fashion - MNIST, and CIFAR − 10, and in a data - heterogeneous environment. Compared with three baseline algorithms, the Federated Averaging algorithm (FedAvg), the Federated Proximal algorithm (FedProx), and the Federated Learning with Intra - cluster Similarity algorithm (FLIS), the global model of the FedACC algorithm proposed in this paper converges faster and has a higher accuracy. On the Fashion - MNIST dataset, compared with FedAvg, FedProx, and FLIS algorithms, the accuracy of FedACC is improved by 11.6%, 10.5%, and 3.0% respectively, which proves the effectiveness of the FedACC algorithm.},
+  archive      = {J_PAAA},
+  author       = {Ding, Shiyuan and Liu, Yanhong and Shi, Haobin and Gao, Yingying},
+  doi          = {10.1007/s10044-025-01533-7},
+  journal      = {Pattern Analysis and Applications},
+  month        = {12},
+  number       = {4},
+  pages        = {1-14},
+  shortjournal = {Pattern Anal. Appl.},
+  title        = {Personalized federated learning with adaptive aggregation within clusters},
+  volume       = {28},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A novel hybrid approach for retinal vessel segmentation with dynamic long-range dependency and multi-scale retinal edge fusion enhancement. <em>PAAA</em>, <em>28</em>(4), 1-19. (<a href='https://doi.org/10.1007/s10044-025-01534-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate retinal vessel segmentation is crucial for ophthalmic image analysis, providing key structural information for diagnosis and treatment planning. However, existing methods struggle with multi-scale vessel variability, complex curvatures, and ambiguous boundaries. CNNs, Transformer, and Mamba-based approaches have shown promise, yet still struggle to maintain vascular continuity and accurately delineate fine vessel boundaries, especially in thin or tortuous regions, leading to structural discontinuities and edge ambiguity. To address these limitations, we propose a novel hybrid framework that synergistically integrates CNNs and Mamba for high-precision retinal vessel segmentation. Our approach introduces three key innovations: (1) The proposed High-Resolution Edge Fuse Network is a high-resolution preserving hybrid segmentation framework that enhances edge features to ensure accurate and robust vessel segmentation. (2) The Dynamic Snake Visual State Space block is designed to adaptively capture vessel curvature details and long-range dependencies. An improved eight-directional 2D Snake-Selective Scan mechanism and a dynamic weighting strategy enhance the perception of complex vascular topologies. (3) The MREF module enhances boundary precision through multi-scale edge feature aggregation, suppressing noise while emphasizing critical vessel structures across scales. Experiments on DRIVE, STARE, and CHASE_DB1 demonstrate the robust and effective performance of our method. Specifically, our approach attains Dice scores of 82.14%, 76.29%, and 80.46%; clDice scores of 82.40%, 80.30%, and 82.93%; and AUC values of 98.56%, 98.05%, and 98.78%, respectively. This work provides a robust method for clinical applications requiring accurate retinal vessel analysis. The code is available at https://github.com/frank-oy/HREFNet .},
+  archive      = {J_PAAA},
+  author       = {Ouyang, Yihao and Kuang, Xunheng and Xiong, Mengjia and Wang, Zhida and Wang, Yuanquan},
+  doi          = {10.1007/s10044-025-01534-6},
+  journal      = {Pattern Analysis and Applications},
+  month        = {12},
+  number       = {4},
+  pages        = {1-19},
+  shortjournal = {Pattern Anal. Appl.},
+  title        = {A novel hybrid approach for retinal vessel segmentation with dynamic long-range dependency and multi-scale retinal edge fusion enhancement},
+  volume       = {28},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adversarial translucent patch: A robust physical attack technique against object detectors. <em>PAAA</em>, <em>28</em>(4), 1-16. (<a href='https://doi.org/10.1007/s10044-025-01535-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The increasing use of computer vision-based autonomous driving technology in daily life necessitates further evaluation of its safety. Current physical attack techniques, using non-transparent stickers as perturbations, lack stealth and therefore may not be effective in real-world applications. Some studies use translucent patches on camera lenses to attack deep neural networks (DNNs), but accessing a victim’s camera is impractical. Light-based attacks also struggle to achieve robust effects under varying environmental conditions. To address these issues within the domain of applied pattern recognition, we propose Adversarial Translucent Patch (AdvTP). This method utilizes translucent color patches optimized with a differential evolution algorithm to create effective physical perturbations. These patches are applied to target objects for black-box attacks on object detectors, a key area in computer vision and image processing. Extensive experiments validate the method’s effectiveness, stealth, and robustness. The proposed method achieves a 91.04% success rate in digital attacks and a 100% success rate in most physical attack cases. It demonstrates superior stealth compared to baseline methods and achieves an average attack success rate of 94.04% against advanced object detectors. We also analyze the method’s generalization capabilities across different pattern recognition tasks, including attacking image classifiers and vehicle detectors, as well as its performance in transfer attacks and against adversarial defenses. Given the significant security threats posed by this method to vision-based applications, which are critical in various applied domains, we believe this work will attract considerable attention from the pattern recognition community. The code can be found in https://github.com/kalbinur90/AdvTP.git .},
+  archive      = {J_PAAA},
+  author       = {Tiliwalidi, Kalibinuer and Hu, Chengyin and Shi, Weiwen and Lu, Guangxi and Wu, Hao},
+  doi          = {10.1007/s10044-025-01535-5},
+  journal      = {Pattern Analysis and Applications},
+  month        = {12},
+  number       = {4},
+  pages        = {1-16},
+  shortjournal = {Pattern Anal. Appl.},
+  title        = {Adversarial translucent patch: A robust physical attack technique against object detectors},
+  volume       = {28},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). High-capacity reversible data hiding in encrypted HDR images with multiple data hiders. <em>PAAA</em>, <em>28</em>(4), 1-14. (<a href='https://doi.org/10.1007/s10044-025-01536-4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study proposes a reversible data hiding algorithm for encrypted high-dynamic-range images, with the potential to significantly impact the field. The algorithm supports high embedding capacity, high embedding rate, and allows for multiple data hiders. It begins by using a median edge detector to predict the value of each processing pixel, and determines the embedding capacity through multi-MSB prediction and leading zero count prediction strategies. Multiple label maps are generated and encoded using Huffman coding to reduce transmission overhead. Furthermore, secret sharing is employed to generate several image shares containing pre-embedded label maps, which are distributed to participants who can independently embed secret message. The proposed algorithm enhances the confidentiality of high-dynamic-range images through secret sharing and improves robustness by using multiple image shares, preventing a single image attack from compromising message recovery. Overall, the algorithm significantly increases embedding capacity. Experimental results demonstrate that this approach makes substantial contributions to reversible data hiding in encrypted high-dynamic-range images.},
+  archive      = {J_PAAA},
+  author       = {Lin, Alfrindo and Lin, Yun-Ting and Jao, Wen-Ting and Tsai, Yuan-Yu},
+  doi          = {10.1007/s10044-025-01536-4},
+  journal      = {Pattern Analysis and Applications},
+  month        = {12},
+  number       = {4},
+  pages        = {1-14},
+  shortjournal = {Pattern Anal. Appl.},
+  title        = {High-capacity reversible data hiding in encrypted HDR images with multiple data hiders},
+  volume       = {28},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Boostis:boosting image semi-supervised learning through pseudo-label quality assessment. <em>PAAA</em>, <em>28</em>(4), 1-13. (<a href='https://doi.org/10.1007/s10044-025-01537-3'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, significant progress has been made in semi-supervised learning methods that leverage pseudo-labels and consistency regularization. However, two key issues with existing approaches have been identified. Firstly, these methods often focus on maintaining inter-class consistency between strong and weak augmentations, but they tend to overlook intra-class differences. This oversight results in a waste of valuable intra-class information. Secondly, the selection of a fixed high threshold for pseudo-label confidence restricts the quantity and utilization of pseudo-labels. On the contrary, using an initial low threshold introduces a large number of erroneous pseudo-labels, resulting in a degradation of the model’s performance. To address these issues, we propose a novel semi-supervised learning framework that combines contrastive learning and feature discrepancy loss. Our approach introduces a new loss function that facilitates intra-class discrimination by emphasizing inter-class differences. Additionally, we tackle the threshold problem in pseudo-label consistency loss by introducing dynamic weighting coefficients. These coefficients help balance the impact of both the quantity and quality of pseudo-labels on the model. Our experimental results demonstrate that our method effectively harnesses the feature differences among samples with different perturbations. This enhancement boosts the model’s feature generation capability while mitigating the negative effects of erroneous pseudo-labels on model’s performance. Overall, our proposed framework provides a more comprehensive and effective solution to semi-supervised learning in classification applications by addressing the issues of intra-class differences and the selection of pseudo-label thresholds.},
+  archive      = {J_PAAA},
+  author       = {Liu, Pingping and Chen, Pengfei and Liu, Xiaofeng and Zhou, Qiuzhan},
+  doi          = {10.1007/s10044-025-01537-3},
+  journal      = {Pattern Analysis and Applications},
+  month        = {12},
+  number       = {4},
+  pages        = {1-13},
+  shortjournal = {Pattern Anal. Appl.},
+  title        = {Boostis:boosting image semi-supervised learning through pseudo-label quality assessment},
+  volume       = {28},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhancing multi-view deep image clustering via contrastive learning for global and local consistency. <em>PAAA</em>, <em>28</em>(4), 1-14. (<a href='https://doi.org/10.1007/s10044-025-01538-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-view clustering (MVC) is a data clustering method with many applications, including but not limited to image and video analysis, text and language processing, bioinformatics, and signal processing. The objective of multi-view deep clustering is to enhance the efficacy of clustering algorithms by integrating data from disparate views. However, discrepancies and inconsistencies between different views frequently reduce the precision of the clustering outcomes. In the recent popular contrastive learning, it has been observed that the processing of positive and negative samples does not consider the multi-view consistency information, ultimately resulting in a decline in clustering accuracy. In this paper, we put forth a global and local consistency-based contrastive learning framework to enhance the efficacy of multi-view deep clustering. First, a global consistency constraint is designed to ensure that the global representations of different views can be aligned to capture the data’s main features. Secondly, we introduce a local consistency mechanism, which aims to preserve the unique local information in each view and obtain efficient, positive samples to improve the complementarity and robustness of the inter-view representations through contrastive learning. The experimental results demonstrate that the proposed method markedly enhances the clustering performance on several real benchmark datasets, mainly when dealing with multi-view data with incompleteness.},
+  archive      = {J_PAAA},
+  author       = {Shi, Fuhao and Lu, Hu},
+  doi          = {10.1007/s10044-025-01538-2},
+  journal      = {Pattern Analysis and Applications},
+  month        = {12},
+  number       = {4},
+  pages        = {1-14},
+  shortjournal = {Pattern Anal. Appl.},
+  title        = {Enhancing multi-view deep image clustering via contrastive learning for global and local consistency},
+  volume       = {28},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Edge-preserving image smoothing via sparse gradient enhancement. <em>PAAA</em>, <em>28</em>(4), 1-21. (<a href='https://doi.org/10.1007/s10044-025-01539-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Edge-preserving image smoothing is fundamental in the fields of computer vision and image processing. The primary challenge is to smooth low-amplitude details while retaining critical structural information. Existing global filtering methods typically incorporate a data fidelity term and a gradient smoothness term. However, preserving the full semantic information of an image solely through data fidelity remains difficult. To address this, we propose a novel generalized smoothing model that integrates a data fidelity term, a structural fidelity term, and a sparse smoothing term to enhance edge-preserving smoothing performance. The structural fidelity term is designed to ensure that the gradient of the output image closely matches the preprocessed gradient of the input image, thereby achieving structural fidelity. Simultaneously, the smoothing term with sparse regularity constraints is employed to smooth detailed information while preserving significant structural elements. Extensive experimental validation demonstrates that our proposed method outperforms existing techniques and is applicable across various fields, including image smoothing, detail enhancement, edge extraction, HDR tone mapping, clip-art compression artifact removal, and image abstraction. The source code is available at: https://github.com/kxZhang1016/EPSGEF .},
+  archive      = {J_PAAA},
+  author       = {Long, Jianwu and Zhang, Kaixin and Liu, Yuanqin and Chen, Shuang and Luo, Qi},
+  doi          = {10.1007/s10044-025-01539-1},
+  journal      = {Pattern Analysis and Applications},
+  month        = {12},
+  number       = {4},
+  pages        = {1-21},
+  shortjournal = {Pattern Anal. Appl.},
+  title        = {Edge-preserving image smoothing via sparse gradient enhancement},
+  volume       = {28},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Stain normalization of pathological images using self-attention based cycleGAN with grey scale consistency loss. <em>PAAA</em>, <em>28</em>(4), 1-19. (<a href='https://doi.org/10.1007/s10044-025-01540-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The appearance of stains in digital pathological images is prone to be affected by variations in imaging protocols, dyes, scanners, and illumination conditions. This inconsistency will prevent robustness and generalization of computer-aided diagnostic algorithms. Thus, many researchers have proposed efficient methods to normalize different stained images, among which the CycleGAN method prevails. In practice, we have found that this method can cause the background region to be mistaken for the foreground region or can result in the nucleus being considered cytoplasm, a phenomenon we refer to as Stain Region Inversion (SRI). To address the problem and improve its structure-preserving performance in stain normalization tasks, this paper proposes a novel stain normalization method called Structure-Preserving Self-Attention CycleGAN (SPSA-CycleGAN), which enhances the performance of CycleGAN in processing histological and cytological images. We demonstrate how to utilize multi-head self-attention to capture local features and use grey-scaled images to address the issue of SRI, enhancing the pixel-level structure-preserving capability of the original CycleGAN model. Our method is then verified in five experiments and compared with six other state-of-the-art stain normalization methods. The experimental results demonstrated that our SPSA-CycleGAN has better or comparable performance compared to all the other methods. Code available at: https://github.com/Smile-We/SPSA-CycleGAN},
+  archive      = {J_PAAA},
+  author       = {Chen, Zheng and Jiang, Peng and Duan, Wensi and Wang, Lang and Li, Cheng and Wang, Junfeng and Liu, Juan},
+  doi          = {10.1007/s10044-025-01540-8},
+  journal      = {Pattern Analysis and Applications},
+  month        = {12},
+  number       = {4},
+  pages        = {1-19},
+  shortjournal = {Pattern Anal. Appl.},
+  title        = {Stain normalization of pathological images using self-attention based cycleGAN with grey scale consistency loss},
+  volume       = {28},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Balanced group convolution: An improved group convolution based on approximability estimates. <em>PAAA</em>, <em>28</em>(4), 1-13. (<a href='https://doi.org/10.1007/s10044-025-01542-6'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The performance of neural networks has been significantly improved by increasing the number of channels in convolutional layers. However, this increase in performance comes with a higher computational cost, resulting in numerous studies focused on reducing it. One promising approach to address this issue is group convolution, which effectively reduces the computational cost by grouping channels. However, to the best of our knowledge, there has been no theoretical analysis on how well the group convolution approximates the standard convolution. In this paper, we mathematically analyze the approximation of the group convolution to the standard convolution with respect to the number of groups. Furthermore, we propose a novel variant of the group convolution called balanced group convolution, which shows a higher approximation with a small additional computational cost. We provide experimental results that validate our theoretical findings and demonstrate the superior performance of the balanced group convolution over other variants of group convolution.},
+  archive      = {J_PAAA},
+  author       = {Lee, Youngkyu and Park, Jongho and Lee, Chang-Ock},
+  doi          = {10.1007/s10044-025-01542-6},
+  journal      = {Pattern Analysis and Applications},
+  month        = {12},
+  number       = {4},
+  pages        = {1-13},
+  shortjournal = {Pattern Anal. Appl.},
+  title        = {Balanced group convolution: An improved group convolution based on approximability estimates},
+  volume       = {28},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

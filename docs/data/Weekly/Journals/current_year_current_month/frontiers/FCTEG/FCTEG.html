@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FCTEG</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="fcteg">FCTEG - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Conflict-based model predictive control for multi-agent path finding experimentally validated on a magnetic planar drive system. <em>FCTEG</em>, <em>6</em>, 1645918. (<a href='https://doi.org/10.3389/fcteg.2025.1645918'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {IntroductionThis work presents an approach to collision avoidance in multi-agent systems (MAS) by integrating Conflict-Based Search (CBS) with Model Predictive Control (MPC), referred to as Conflict-Based Model Predictive Control (CB-MPC).MethodsThe proposed method leverages the conflict-avoidance strengths of CBS to generate collision-free paths, which are then refined into dynamic reference trajectories using a minimum jerk trajectory optimizer and then used inside a MPC to follow the trajectories and to avoid collisions. This integration ensures real-time trajectory execution, preventing collisions and adapting to online changes. The approach is evaluated using a magnetic planar drive system for realistic multi-agent scenarios, demonstrating enhanced real-time responsiveness and adaptability. The focus is on the development of a motion planning algorithm and its validation in dynamic environments, which are becoming increasingly relevant in modern adaptive production sites.ResultsOn the MAS demonstrator with four active agents, ten different scenarios were created with varying degrees of complexity in terms of route planning. In addition, external disturbances that hinder the execution of the paths were simulated. All calculation and solution times were recorded and discussed. The result show that all scenarios could be successfully solved and executed., and the CB-MPC is therefore suitable for motion planning on the presented MAS demonstrator.DiscussionThe results show, that the CB-MPC is suitable for motion planning on the presented MAS demonstrator. The greatest limitation of the approach lies in scalability with regard to increasing the number of agents.},
+  archive      = {J_FCTEG},
+  author       = {Janning, Kai and Housin, Abdalsalam and Schulte, Christopher and Erkens, Frederik and Frenken, Luca and Herbst, Laura and Nießing, Bastian and Schmitt, Robert H.},
+  doi          = {10.3389/fcteg.2025.1645918},
+  journal      = {Frontiers in Control Engineering},
+  month        = {7},
+  pages        = {1645918},
+  shortjournal = {Front. Control Eng.},
+  title        = {Conflict-based model predictive control for multi-agent path finding experimentally validated on a magnetic planar drive system},
+  volume       = {6},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

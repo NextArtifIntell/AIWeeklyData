@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MVA</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="mva">MVA - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). ConcatPhys: A dual-channel path data concatenation network for robust remote heart rate estimation. <em>MVA</em>, <em>36</em>(6), 1-13. (<a href='https://doi.org/10.1007/s00138-025-01737-1'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Facial video-based Blood Volume Pulse (BVP) signal extraction technology has demonstrated significant potential in remote health monitoring. However, most current methods are susceptible to interference from lighting changes and have limited generalization ability in dynamic or complex environments. This paper proposes a dual-channel path data concatenation network called ConcatPhys to improve the accuracy and robustness of remote heart rate (HR) estimation. First, a region-focus (RF) block is introduced to concentrate on spatial attention mechanisms, focusing on physiologically relevant regions. This approach effectively uncovers subtle local feature changes and suppresses irrelevant features, reducing sensitivity to background noise and lighting variations. Second, a dual-path framework is constructed for remote photoplethysmography (rPPG) signal prediction. By incorporating dual-path frequency-domain consistency loss and adjacent-frame similarity loss, the network’s anti-interference capability against illumination variations such as lighting changes is strengthened. Finally, leveraging the temporal correlation between adjacent video frames over short intervals, three consecutive feature image segments are concatenated. By averaging the HR values of these three adjacent segments, the video-level HR is computed. This approach enables efficient reconstruction of rPPG signals and accurate HR estimation using only a 6-s facial video segment. Experimental results demonstrate that ConcatPhys achieves state-of-the-art performance across multiple public datasets (VIPL-HR, OBF, UBFC-rPPG), highlighting its significant potential for remote health monitoring applications.},
+  archive      = {J_MVA},
+  author       = {Ge, Xiaorui and Xing, Jiahe and Li, Bin},
+  doi          = {10.1007/s00138-025-01737-1},
+  journal      = {Machine Vision and Applications},
+  month        = {11},
+  number       = {6},
+  pages        = {1-13},
+  shortjournal = {Mach. Vis. Appl.},
+  title        = {ConcatPhys: A dual-channel path data concatenation network for robust remote heart rate estimation},
+  volume       = {36},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

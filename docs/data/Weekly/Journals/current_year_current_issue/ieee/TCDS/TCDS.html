@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TCDS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tcds">TCDS - 26</h2>
+<ul>
+<li><details>
+<summary>
+(2025). DG-NBV: A cognitive framework for direct generation of next best view in continuous view space. <em>TCDS</em>, <em>17</em>(4), 1035-1045. (<a href='https://doi.org/10.1109/TCDS.2024.3521438'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The next best view (NBV) plays an important role in the 3-D object reconstruction. Existing NBV methods mainly adopt the generate-and-test strategy to select the best view in the discrete view space. This affects the adaptation to diverse objects. To solve this problem, a new NBV paradigm to directly generate the NBV in the continuous view space according to the input point cloud is proposed. Specifically, a point cloud feature extraction module with learnable view and position tokens is presented. These tokens are added to the neighborhood and the position features of the point cloud to fully mine global contextual information, enhancing the feature representation. The predicted view from the proposed network is linked to a pretrained view evaluation network. By duplicating this prediction view and then concatenating the duplication result with the extracted point cloud feature, the evaluation network is endowed with the ability to evaluate arbitrary views. Take the evaluation score of the evaluation network corresponding to the predicted view as the supervision signal, the network is trained. In this way, an effective solution of the NBV selection in the continuous view space is obtained. Accordingly, the adaptability to different objects is reinforced. Experimental results on the ShapeNet and MIT CSAIL datasets demonstrate the effectiveness of the proposed method.},
+  archive      = {J_TCDS},
+  author       = {Zhicheng Liu and Zhiqiang Cao and Jianjie Li and Peiyu Guan and Junzhi Yu},
+  doi          = {10.1109/TCDS.2024.3521438},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1035-1045},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {DG-NBV: A cognitive framework for direct generation of next best view in continuous view space},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Decentralized reinforcement learning for multiple robotic fish in cooperative pursuit task. <em>TCDS</em>, <em>17</em>(4), 1022-1034. (<a href='https://doi.org/10.1109/TCDS.2025.3540071'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The control of multirobot systems, particularly in the pursuit-evasion (PE) with multiple robots, has gained significant attention in both academic and nonacademic settings. However, the collaborative operation of multirobotic fish systems encounters substantial challenges due to the complex underwater environment and unique movement mode. In this article, we propose a multiagent reinforcement learning (MARL) approach to develop a viable strategy for underwater cooperative pursuit. Initially, considering the hydrodynamic model and motion characteristics of robotic fish, we construct a specific simulation environment with multiple fish-like agents, which provides a highly realistic state transition model. Next, we develop a MARL-based strategy learning framework that incorporates appropriate reward functions and agent actions for policy learning. Finally, a series of comprehensive simulations and practical experiments are conducted to validate the effectiveness of the proposed method and confirm its successful application in underwater pursuit scenarios. These findings offer valuable insights for further research in underwater multiple robot systems.},
+  archive      = {J_TCDS},
+  author       = {Yukai Feng and Zhengxing Wu and Jian Wang and Sijie Li and Yupei Huang and Junzhi Yu and Min Tan},
+  doi          = {10.1109/TCDS.2025.3540071},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1022-1034},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Decentralized reinforcement learning for multiple robotic fish in cooperative pursuit task},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Visual reinforcement learning based on multiview optimization aggregation. <em>TCDS</em>, <em>17</em>(4), 1011-1021. (<a href='https://doi.org/10.1109/TCDS.2025.3540115'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Although recent research has made some progress in deep reinforcement learning based on raw pixels, the low sample efficiency remains a key challenge in this field. Existing solutions often focus solely on extracting more effective state representations in the representation learning stage and overlook how to better utilize these state representations in the policy learning stage. To address this, a simple and sample-efficient visual reinforcement learning method based on multiview optimization aggregation (MVOA-VRL) is proposed for pixel-based off-policy reinforcement learning frameworks. This method enables the agent to concurrently focus on learning and utilizing state representations. Specifically, MVOA-VRL acquires multiple views of samples through random crop and adaptive intensity adjustment. It then introduces optimization aggregation methods separately in the representation learning and reinforcement learning modules to aggregate the similarities, actions, and state values of multiple samples from different views. MVOA-VRL aims to promote the agent's learning of effective representations and stable policies. Experimental results on continuous control tasks in the DMControl environment show that, compared with state-of-the-art methods, MVOA-VRL achieves higher scores and significantly improves sample efficiency.},
+  archive      = {J_TCDS},
+  author       = {Xuesong Wang and Ruyi Lu and Hengrui Zhang and Yuhu Cheng},
+  doi          = {10.1109/TCDS.2025.3540115},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1011-1021},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Visual reinforcement learning based on multiview optimization aggregation},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Automated mental fatigue detection from electroencephalogram using joint time-frequency representation based on multivariate iterative filtering. <em>TCDS</em>, <em>17</em>(4), 1000-1010. (<a href='https://doi.org/10.1109/TCDS.2025.3538947'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Driver drowsiness detection is a crucial technology for enhancing road safety and preventing accidents caused by fatigue. This article proposes a method for analyzing electroencephalogram (EEG) signals during driving tasks to assess the driver's mental state. Due to the nonstationary nature of EEG, the conventional Fourier spectrum is not well suited for spectral estimation of EEG. To address this, the study employs a multivariate iterative filtering (MIF) technique to decompose multichannel EEG signals into narrowband amplitude-frequency modulated components. The instantaneous amplitude and frequency are estimated using the discrete energy separation algorithm (DESA), and a joint time-frequency representation (JTFR) based on DESA is applied to estimate the spectral content of multichannel EEG. Mental states associated with drowsiness are identified using the joint marginal spectrum and an artificial neural network classifier. The proposed MIF-based framework was validated on two EEG datasets, achieving classification accuracies of 95.03$\pm$1.08% and 98.33$\pm$1.51%, respectively. These results demonstrate the potential of the method in preventing accidents caused by drowsy or distracted driving.},
+  archive      = {J_TCDS},
+  author       = {Kritiprasanna Das and Ram Bilas Pachori},
+  doi          = {10.1109/TCDS.2025.3538947},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {1000-1010},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Automated mental fatigue detection from electroencephalogram using joint time-frequency representation based on multivariate iterative filtering},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Improved few-shot learning based on triplet metric for motor imagery EEG classification. <em>TCDS</em>, <em>17</em>(4), 987-999. (<a href='https://doi.org/10.1109/TCDS.2025.3539398'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Motor imagery-based brain–computer interface (MI-BCI) technology establishes a connection between human intention and external devices in active rehabilitation. However, obtaining a mass of labeled EEG data is often difficult due to the strict requirement of experimental environment and the necessity for highly cooperative subjects, which makes the application of few-shot learning of EEG classification particularly important. Therefore, we propose a method that combines few-shot learning with triplet metric learning, aiming to maintain strong generalization capabilities of the model with limited samples. First, we pretrain a base model using large auxiliary dataset, and then fine-tune it with a small number of labeled samples from the test subjects to obtain a specific model. During the training process, metric learning between anchor samples and positive/negative samples are employed to gradually converge similar samples, creating clearer class boundaries. Then the feature information of the samples is enhanced through an attention mechanism to obtain their essential features. The proposed framework was evaluated using two publicly available datasets and obtained classification accuracies of 68.29% and 84.40%, respectively, representing enhancements of 1.04% and 1.28% over existing state-of-the-art methods. In conclusion, experimental results indicate that our proposed approach can improve the effectiveness of MI-BCI rehabilitation training.},
+  archive      = {J_TCDS},
+  author       = {Qingshan She and Chengjun Li and Tongcai Tan and Feng Fang and Yingchun Zhang},
+  doi          = {10.1109/TCDS.2025.3539398},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {987-999},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Improved few-shot learning based on triplet metric for motor imagery EEG classification},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MAST: Multiagent safe transformer for reinforcement learning. <em>TCDS</em>, <em>17</em>(4), 976-986. (<a href='https://doi.org/10.1109/TCDS.2025.3533744'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Safety remains a crucial challenge in the application of reinforcement learning. Multiagent safe reinforcement learning (MASRL) is an emerging field aiming to learn safe control policies that maximize cumulative rewards while satisfying the safety constraints of multiagent systems. However, existing research is limited and faces challenges such as environmental nonstationarity and the curse of dimensionality in action spaces, hindering the balance between performance and safety. To address these, this article proposes a multiagent safe reinforcement learning algorithm based on Transformer (MAST). The constrained optimization problem is transformed into an unconstrained one using the Lagrangian method. We also propose the multiagent total advantage decomposition theorem, establishing the connection between MASRL and sequence models. A Transformer-based framework is proposed, where a Transformer-based actor network generates joint actions in parallel during training while producing actions autoregressively during inference. Empirical evaluations on the safe multiagent MuJoCo (MAMuJoCo) benchmark show that MAST outperforms state-of-the-art algorithms by 13.06%. Our attention-based reward and safety critics achieve a 22.10% increase in rewards and an 83.58% reduction in safety costs. Additionally, the Transformer-based actor improves performance by 53.60%–111.93% compared to RNN-based methods.},
+  archive      = {J_TCDS},
+  author       = {Suhang Wei and Xianwei Wang and Xiang Feng and Huiqun Yu},
+  doi          = {10.1109/TCDS.2025.3533744},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {976-986},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {MAST: Multiagent safe transformer for reinforcement learning},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exploring supervised contrastive learning for skeleton-based temporal action segmentation. <em>TCDS</em>, <em>17</em>(4), 964-975. (<a href='https://doi.org/10.1109/TCDS.2025.3532694'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Skeleton-based temporal action segmentation (STAS) takes long human skeleton sequences as input and predicts action categories at the frame level. Current STAS methods primarily use frame-wise cross-entropy loss, which focuses only on the relationships among one-hot label logits and overlooks the importance of the quality of frame-wise representations. To this end, we propose a novel framework called supervised contrastive skeleton-based temporal action segmentation (SCSAS) that optimizes representation learning. Specifically, our framework constructs a frame-level embedding space using a simple projection head and optimizes this space using three novel contrastive losses. These losses enhance the semantic relationships at the frame and segment levels by pulling together representations of the same activities and pushing apart those of different actions. Moreover, we introduce a confidence-based hard anchor sampling strategy to enhance the efficiency of contrastive learning. Finally, a boundary refinement module is also introduced to fully exploit the advantages of optimized representation. Our method seamlessly integrates with existing STAS methods and consistently enhances their performance across various datasets, without additional inference costs. With the incorporation of the boundary refinement branch, early STAS methods even achieve performance comparable to the state-of-the-art methods.},
+  archive      = {J_TCDS},
+  author       = {Bowen Chen and Haoyu Ji and Hanwei Ma and Ruihan Lin and Wei Nie and Weihong Ren and Zhiyong Wang and Honghai Liu},
+  doi          = {10.1109/TCDS.2025.3532694},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {964-975},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Exploring supervised contrastive learning for skeleton-based temporal action segmentation},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Lightweight facial attractiveness prediction using dual label distribution. <em>TCDS</em>, <em>17</em>(4), 953-963. (<a href='https://doi.org/10.1109/TCDS.2025.3529177'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Facial attractiveness prediction (FAP) aims to assess facial attractiveness automatically based on human esthetic perception. Previous methods using deep convolutional neural networks have improved the performance, but their large-scale models have led to a deficiency in efficiency. In addition, most methods fail to take full advantage of the dataset. In this article, we present a novel end-to-end FAP approach that integrates dual label distribution and lightweight design. The manual ratings, attractiveness score, and standard deviation are aggregated explicitly to construct a dual-label distribution to make the best use of the dataset, including the attractiveness distribution and the rating distribution. Such distributions, as well as the attractiveness score, are optimized under a joint learning framework based on the label distribution learning (LDL) paradigm. The data processing is simplified to a minimum for a lightweight design, and MobileNetV2 is selected as our backbone. Extensive experiments are conducted on two benchmark datasets, where our approach achieves promising results and succeeds in balancing performance and efficiency. Ablation studies demonstrate that our delicately designed learning modules are indispensable and correlated. Additionally, the visualization indicates that our approach can perceive facial attractiveness and capture attractive facial regions to facilitate semantic predictions. The code is available at https://github.com/enquan/2D_FAP.},
+  archive      = {J_TCDS},
+  author       = {Shu Liu and Enquan Huang and Ziyu Zhou and Yan Xu and Xiaoyan Kui and Tao Lei and Hongying Meng},
+  doi          = {10.1109/TCDS.2025.3529177},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {953-963},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Lightweight facial attractiveness prediction using dual label distribution},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SELM: From efficient autonomous exploration to long-term monitoring in semantic level. <em>TCDS</em>, <em>17</em>(4), 938-952. (<a href='https://doi.org/10.1109/TCDS.2025.3531367'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Maintaining up-to-date environmental models from initial deployment through long-term autonomy in service is critical for applications such as navigation and task planning. To address the challenges of persistent monitoring in unknown environments, we introduce a two-stage monitoring strategy, termed the semantic-level autonomous exploration and long-term environment monitoring (SELM) framework. In the first stage, we introduce a novel semantic exploration method to adapt to new environments quickly. Leveraging the semantic information within the incrementally constructed 3-D scene graph (3-DSG), we combine the next-best-view (NBV) selection with room semantics, introducing a more efficient and comprehensive approach for multiroom indoor environment exploration. In addition, the exploration provides patrol routes, the room distance–connectivity graph, and complete environment initial states for subsequential monitoring. The monitoring stage aims to persistently patrol to update the world model in the presence of dynamic changes, including changes in objects’ positions. We formulate the long-term monitoring problem as the partially observable Markov decision process (POMDP) to cope with the environmental uncertainty. To solve the POMDP, we propose the graph attention bidirectional long short-term memory proximal policy optimization (GABPPO) algorithm for the optimal patrol strategy. The feasibility and effectiveness of the proposed SELM framework are verified through extensive experiments.},
+  archive      = {J_TCDS},
+  author       = {Fang Lang and Yongsen Qin and Yinchuan Wang and Jin Liu and Chaoqun Wang and Wei Song and Qiuguo Zhu and Rui Song},
+  doi          = {10.1109/TCDS.2025.3531367},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {938-952},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {SELM: From efficient autonomous exploration to long-term monitoring in semantic level},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TRANSIT-EEG—A framework for cross-subject classification with subject specific adaptation. <em>TCDS</em>, <em>17</em>(4), 923-937. (<a href='https://doi.org/10.1109/TCDS.2025.3529669'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Electroencephalography (EEG) is pivotal in monitoring and analyzing cerebral activity across diverse domains, including medical diagnostics, cognitive neuroscience, and brain–computer interfaces. However, the inherent intricacy of EEG signals and their subject-specific characteristics pose formidable challenges in devising robust and generalizable classification models. Traditional EEG signal classification paradigms rely on extensive subject-specific datasets. Also, the domain adaption for new subjects often leads to “catastrophic forgetting,” thereby diminishing the performance of model trained on prior subjects. This article proposes a novel framework, transfer, and robust adaptation of new subjects in EEG technology (TRANSIT-EEG), designed to adapt adeptly to new subjects. TRANSIT-EEG demonstrates resilience to subject-specific artifacts by integrating synthetic data generation using the proposed subject-specific augmentation model - individualized diffusion probabilistic model (IDPM). Also, it employs a robust self organising graph attention transformer (SOGAT) that dynamically constructs a graph for each subject, fostering a more accurate classification. Moreover, TRANSIT-EEG introduces adapter-based finetuning using low-rank adaptation (LoRA) for new subjects, enriching the adaptation process. The TRANSIT-EEG framework presents a promising avenue for advancing the realm of EEG signal classification. Evaluation of widely studied datasets, specifically focusing on two significant tasks, SEED for emotion recognition and PhyAat for auditory activity recognition, substantiates the efficacy and versatility of TRANSIT-EEG. This validation indicates a substantial stride toward achieving more generalizable and accurate EEG signal classification.},
+  archive      = {J_TCDS},
+  author       = {Chirag Ahuja and Divyashikha Sethia},
+  doi          = {10.1109/TCDS.2025.3529669},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {923-937},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {TRANSIT-EEG—A framework for cross-subject classification with subject specific adaptation},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DTAS: An adaptive critical scenarios generation method for decision boundary assessment. <em>TCDS</em>, <em>17</em>(4), 908-922. (<a href='https://doi.org/10.1109/TCDS.2025.3527639'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Intelligent algorithms have been widely applied in autonomous decision-making systems (ADMSs). Despite the success of these technologies in practical applications, our understanding of the underlying mechanisms of system decisions remains limited. A key factor in studying the decision of ADMSs is the decision boundary (DB), which helps us understand the decision behavior and reflects the safety-critical aspects and decision robustness of the system. However, this depends on the ability to generate critical scenarios near the system's DB. To address this issue, this study proposes a critical boundary scenarios (CBSs) generation method called decision tree-assisted adaptive sampling (DTAS), these CBSs effectively cover the DB of the ADMSs, thereby fully characterizing the DB. In this study, we focus solely on the input and output of the system, treating the ADMS as a completely black-box, making DTAS suitable to any black-box ADMSs with discrete outputs. Additionally, we propose a local DB description method based on decision rule optimization. These decision rules improve the interpretability of complex DB by describing parameter regions. The proposed methods are conducted extensive experiments on standard benchmarks and actual autonomous systems. The experiment performance exhibits the effectiveness of our approaches.},
+  archive      = {J_TCDS},
+  author       = {Hui Lu and Yuanhang Hu and Shiqi Wang and Ping Zhou and Shi Cheng},
+  doi          = {10.1109/TCDS.2025.3527639},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {908-922},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {DTAS: An adaptive critical scenarios generation method for decision boundary assessment},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Brain–Eye collaboration target detection and localization in remote sensing image. <em>TCDS</em>, <em>17</em>(4), 896-907. (<a href='https://doi.org/10.1109/TCDS.2024.3523018'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Electroencephalography (EEG) reflects brain mechanisms, and existing research leverages EEG-based brain–computer interfaces for remote sensing image target detection. While most studies focus on achieving target image recognition, there has been less emphasis on target localization, which explores spatial information to enhance detection efficiency. An effective approach for target localization is through eye tracking. In this article, we propose a brain-eye collaboration framework (BECF) that enables both target image recognition and localization. We begin by decoding EEG-based event-related potential (ERP) features using the xDAWN+RG method for target image recognition. Additionally, we implement a region division strategy to achieve both target image recognition and coarse-grained localization, which subsequently guides fine-grained localization. To effectively leverage spatial attention information from the EEG modality and positional information from the EYE modality, we introduced a multimodal network to integrate EEG and EYE modalities into the multimodal messages. Furthermore, we achieve fine-grained target localization through a matching process between multimodal-based potential areas and eye-tracking-based potential areas. For evaluation, we conducted target image detection tasks on our dataset. Notably, the balanced accuracy (BA) of target detection using the division strategy reached 81.32%, with a BA-based information transfer rate of 76.32 bits/min, outperforming other methods and significantly improving detection efficiency.},
+  archive      = {J_TCDS},
+  author       = {Jianan Han and Longjie Ma and Li Zhu and Jiajia Tang and Wanzeng Kong},
+  doi          = {10.1109/TCDS.2024.3523018},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {896-907},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Brain–Eye collaboration target detection and localization in remote sensing image},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Visual memory schemas for localized image memorability prediction. <em>TCDS</em>, <em>17</em>(4), 884-895. (<a href='https://doi.org/10.1109/TCDS.2025.3533112'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Visual memory schemas (VMS) capture the regions of scene images that cause that scene to be remembered, providing a two-dimensional memorability map that indicates the parts of a given scene that match to mental schemas held in the mind. Despite the advantage of determining which parts of an image lead to remembering said image, VMS prediction capabilities lag behind those of single-score memorability. Compared with predicting single-score ratings for the likelihood of a person remembering an image, VMS prediction is a significantly harder task, due to increased computational complexity, minimal model development compared with single score, and lack of relevant data. In this work, we aim to improve methods for two-dimensional memorability prediction. We first significantly increase the size of a database containing VMS maps obtained from participants in a scene memorization experiment, and then we develop an architecture that leverages existing single-score image memorability datasets to predict VMS maps. Our final model, dual-feedback VMS (DF-VMS) significantly outperforms existing VMS prediction models, with a performance increase of 11.8%. Additionally, we explore the semantic structures that are actually captured by visual memory schemas, determining the combination of scene elements that lead to remembering that scene.},
+  archive      = {J_TCDS},
+  author       = {Cameron Kyle-Davidson and Adrian G. Bors and Karla K. Evans},
+  doi          = {10.1109/TCDS.2025.3533112},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {884-895},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Visual memory schemas for localized image memorability prediction},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Uncovering brain network modules in major depression during naturalistic music perception with block term decomposition. <em>TCDS</em>, <em>17</em>(4), 874-883. (<a href='https://doi.org/10.1109/TCDS.2024.3523020'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Major depressive disorder (MDD) has been linked to altered brain networks and might be relieved by music therapy. Yet, the neurophysiological basis, especially the functional network mechanism, of music therapy on depression remains poorly understood. Here, we apply a novel dynamic module detection method based on block term decomposition (BTD) to examine the reorganization of time-varying topological network structures during music listening in MDD using electroencephalography (EEG). Specifically, temporal adjacency matrices generated using a sliding-window technique form a three-way tensor. The multilinear rank-$(L,L,1)$ BTD is applied to directly derive hidden network modules with specific time evolution from the temporally concatenated tensors for each frequency band. After temporal correlation analysis with musical features extracted from music stimuli, we identify several frequency-dependent network modules with specific temporal patterns modulated by musical features. These modular networks encompass subnetworks of default mode, frontoparietal, language, and sensorimotor networks involved in the delta, alpha, and beta bands, exhibiting significantly different modulations by music between healthy control and MDD groups. These results implicate that the altered oscillatory modular networks might affect the dynamic processing of musical features for MDD patients, which could offer valuable perspectives on revealing the neural mechanisms of music therapy for MDD.},
+  archive      = {J_TCDS},
+  author       = {Yongjie Zhu and Yuxing Hao and Jia Liu and Fengyu Cong},
+  doi          = {10.1109/TCDS.2024.3523020},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {874-883},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Uncovering brain network modules in major depression during naturalistic music perception with block term decomposition},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MDAG-net: Multidomain association-guided network for image-based long-term visual localization. <em>TCDS</em>, <em>17</em>(4), 859-873. (<a href='https://doi.org/10.1109/TCDS.2024.3525180'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the case of long-term changing environment, long-term visual localization is a challenging problem in autonomous driving and mobile robots. Due to the influence of season, illumination and other changing weather conditions, the traditional image retrieval methods are difficult to achieve ideal results in long-term visual localization. Therefore, inspired by the human brain associative recognition function, an image retrieval based on a multidomain association-guided network is proposed to solve the long-term visual localization problem. The key idea is to extract the discriminative domain-invariant features in different scenes through multidomain image transformation of the perceptual network and the conceptual network. In addition, in order to better associate image features of different scenes in the conceptual network and guide the perceptual network to obtain more robust domain invariant features, an association-guided module is designed without the need for external datasets. On this basis, the domain feature loss function and the guidance mechanism of the loss function are introduced to assist these two network models training to obtain better performance. Finally, experiments are carried out on the CMU-Seasons dataset and the RobotCar-Seasons dataset. Compared with some state-of-the-art methods, the proposed method improved the high-precision localization result of urban, suburban, and park scenes in the CMU-Seasons dataset by 1.5%, 0.5%, and 0.7%, respectively, which also can verify the effectiveness of the proposed method under various seasonal and illumination conditions.},
+  archive      = {J_TCDS},
+  author       = {Fawei Ge and Yunzhou Zhang and Li Wang and Yanhai Tan and Sonya Coleman and Dermot Kerr},
+  doi          = {10.1109/TCDS.2024.3525180},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {859-873},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {MDAG-net: Multidomain association-guided network for image-based long-term visual localization},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multiobject graph affordance network: Goal-oriented planning through learned compound object affordances. <em>TCDS</em>, <em>17</em>(4), 847-858. (<a href='https://doi.org/10.1109/TCDS.2024.3520086'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Learning object affordances is an effective tool in the field of robot learning. While the data-driven models investigate affordances of single or paired objects, there is a gap in the exploration of affordances of compound objects composed of an arbitrary number of objects. We propose the multiobject graph affordance network, which models complex compound object affordances by learning the outcomes of robot actions that facilitate interactions between an object and a compound. Given the depth images of the objects, the object features are extracted via convolution operations and encoded in the nodes of graph neural networks. Graph convolution operations are used to encode the state of the compounds, which are used as input to decoders to predict the outcome of the object-compound interactions. After learning the compound object affordances, given different tasks, the learned outcome predictors are used to plan sequences of stack actions that involve stacking objects on top of each other, inserting smaller objects into larger containers, and passing through ringlike objects through poles. We showed that our system successfully modeled the affordances of compound objects that include concave and convex objects, in both simulated and real-world environments. We benchmarked our system with a baseline model to highlight its advantages.},
+  archive      = {J_TCDS},
+  author       = {Tuba Girgin and Emre Uğur},
+  doi          = {10.1109/TCDS.2024.3520086},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {847-858},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Multiobject graph affordance network: Goal-oriented planning through learned compound object affordances},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Robust gaze-based intention prediction for real-world scenarios. <em>TCDS</em>, <em>17</em>(4), 835-846. (<a href='https://doi.org/10.1109/TCDS.2024.3519904'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing intention prediction scenarios in daily life primarily focus on 2-D screens, while the process of intention expression in 3-D scenarios remains largely unexplored. We first analyze eye-tracking data from both 2-D and 3-D scenarios to reveal differences in cognitive load. To address the increased error and redundant gaze points in 3-D scenarios, we propose a gaze region model combined with a clustering method based on density and ordering principles, providing a robust representation of visual attention. Additionally, we integrate this visual attention representation with advanced classifiers for intention prediction. The results indicate that when intentions are expressed in a 3-D scenario, subjects’ cognitive load is reduced, facilitating their understanding and expression of intentions, ultimately improving the accuracy of intention prediction. Simultaneously, an evaluation of existing visual attention representation models related to intention prediction is conducted. Our proposed 3-D visual attention model, as part of the intention prediction framework, improves accuracy to 94.50%. To validate the theory and model, we introduce the ADLIP Gaze dataset, which consists of data from 102 individuals. These findings are expected to provide theoretical explanations and methods for intention prediction and efficient human–robot interaction in 3-D scenarios.},
+  archive      = {J_TCDS},
+  author       = {Zihang Yin and Zhonghua Wan and Mingxuan Yang and Yi Xiong and Wei Wang and Shiqian Wu},
+  doi          = {10.1109/TCDS.2024.3519904},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {835-846},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Robust gaze-based intention prediction for real-world scenarios},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A neurodynamic-diversity-based spiking network model for text classification. <em>TCDS</em>, <em>17</em>(4), 823-834. (<a href='https://doi.org/10.1109/TCDS.2024.3523338'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Language models have been undergoing rapid growth and remarkable success, while requiring massive computing resource. The brain-inspired spiking neural networks (SNNs), with advantages of better biological interpretability and less energy consumption, provides a likely alternative to process language tasks in a more sustainable way. However, there are still major difficulties in representing and processing text information with SNN-based models. Comprehensively exploring the neurodynamic diversity, we propose a spiking neural network model that could taking respective advantages from both integrator and resonator neurons to address text classification tasks. With collaborations of these two dynamically different spiking neurons, our network model outperforms previous SNN-based text classification model in an all-round way with much less time steps, and even shows some extent of potential to reach the performance of a topologically equivalent artificial neural network.},
+  archive      = {J_TCDS},
+  author       = {Yuguo Liu and Wenyu Chen and Hanwen Liu and Yun Zhang and Malu Zhang and Hong Qu},
+  doi          = {10.1109/TCDS.2024.3523338},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {823-834},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {A neurodynamic-diversity-based spiking network model for text classification},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Exploring the mechanisms of bidirectional plasticity from temporal feature stimuli in cerebellar motor learning: A ca2+-mediated simulation. <em>TCDS</em>, <em>17</em>(4), 809-822. (<a href='https://doi.org/10.1109/TCDS.2024.3517694'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The cerebellum plays a vital role in motor learning. The delay eyeblink conditioning is a standard protocol for studying cerebellar function from both computational and experimental perspectives. Ca2+-mediated bidirectional plastic changes between parallel fibers and Purkinje cells are regarded as the most important modulation that can dominate cerebellar motor learning. However, the mechanism of such modulation is unclear and difficult to uncover with experimental methods in vivo. In this study, we propose a biologically plausible learning rule for parallel fibers-Purkinje cells (PFs-PCs) bidirectional synaptic plasticity based on the inositol 1,4,5-trisphosphate (IP3)-βCaMKII-AMPAR cascade mediated by Ca2+. We simulate the process of AMPA receptor phosphorylation and dephosphorylation which are influenced by the concentration of regenerative Ca2+ and IP3 mediated by the coactivation of parallel fiber and climbing fiber to Purkinje cell. Using this model, Purkinje cells can not only learn the responses of single interstimulus interval (ISI), sequential double ISIs, and two sessions of different ISIs, but also show excitatory responses after short ISI afferents, consistent with our observation. In addition, the conditioned response maxima of the simulation results all appear before the expected unconditioned stimulus input, which confirms the biological experimental findings. These results suggest that PF-PC plasticity based on the IP3-Ca2+-AMPAR cascade may be the key to revealing unknown mechanisms of cerebellar motor learning and our model can reproduce subtle details of the motor learning process of delay eyeblink conditioning.},
+  archive      = {J_TCDS},
+  author       = {Tao Xu and Zhikun Wang and Jiaqing Chen and Jiajia Huang and Guosong Wu and Ya Ke and Wing Ho Yung},
+  doi          = {10.1109/TCDS.2024.3517694},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {809-822},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Exploring the mechanisms of bidirectional plasticity from temporal feature stimuli in cerebellar motor learning: A ca2+-mediated simulation},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Performer: A high-performance global-local model-augmented with dual network interaction mechanism. <em>TCDS</em>, <em>17</em>(4), 794-808. (<a href='https://doi.org/10.1109/TCDS.2024.3519629'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In deep learning, convolutional neural networks (CNNs) focus on local information through convolutional kernels, while transformers attend to global information using self-attention mechanisms. The union of these distinct approaches enables a more comprehensive extraction of image features. However, the feature map dimensions of CNN and Transformer differ, leading to dimension mismatch issues when combining these architectures. Additionally, the parameter size of the hybrid model integrating both architectures remains large, making it difficult to train. To further augmenting the interpretation of complex image patterns, we present Performer, a dual-network architecture that seamlessly combines CNNs and transformers, resulting in a novel and efficient representation learning model. In the Performer model, we innovate by devising a unique interaction methodology for CNN and transformer architectures to enhance the image feature extraction capabilities mutually. To counteract issue of dimensionality mismatch, we also introduce a refined transformer block, a advancement over the transformer block of ViT. To validate the effectiveness of Performer, we conduct extensive experiments on both classification and segmentation tasks. Performer achieve an accuracy of 83.37% on the ImageNet-200 dataset. For semantic segmentation, Performer excels on the CamVid and Hippocampus datasets. On CamVid, our model achieves a mean intersection over union (mIoU) of 63.27% and pixel accuracy of 92.11%, demonstrating superior performance in capturing fine details and handling complex scenes effectively. The code is available at https://github.com/hlf-thh/Performer.},
+  archive      = {J_TCDS},
+  author       = {Dayu Tan and Linfeng Hua and Rui Hao and Qi Xu and Yansen Su and Chunhou Zheng and Weimin Zhong},
+  doi          = {10.1109/TCDS.2024.3519629},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {794-808},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Performer: A high-performance global-local model-augmented with dual network interaction mechanism},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A gradient descent-based backend feedback adaptive motion planning algorithm for autonomous mobile robots. <em>TCDS</em>, <em>17</em>(4), 784-793. (<a href='https://doi.org/10.1109/TCDS.2024.3519319'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This article introduces an innovative motion planning algorithm for autonomous mobile robots, specifically focusing on quadrotor unmanned aerial vehicles (UAVs), utilizing a gradient descent-enhanced frontend and backend architecture. A trajectory planning algorithm is proposed for the front-end part. It relies on backend optimization feedback and memorized jump points. The algorithm builds on the jump point search (JPS) algorithm and introduces an obstacle table and jump point table. A new heuristic function is proposed, which emphasizes the weight of obstacle proportion in order to avoid getting stuck in local optimal paths. In the backend trajectory optimization part, a backend space-time trajectory optimization method based on gradient descent is proposed, and an optimization objective function is designed to ensure the smoothness and safety of the UAV trajectory. The simulation results show that the algorithm proposed in this article has significant advantages for improving real-time performance and environmental adaptability compared with the method based on ESDF and the EGO-planner. The actual flight experiments show that the proposed algorithm can avoid UAVs getting stuck in local optima during path planning. Notably, the proposed methodology also holds promise for application in path planning for other autonomous robots.},
+  archive      = {J_TCDS},
+  author       = {Gang Li and Si-Cheng Wang and Bin Cheng and Zhong-Pan Zhu},
+  doi          = {10.1109/TCDS.2024.3519319},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {784-793},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {A gradient descent-based backend feedback adaptive motion planning algorithm for autonomous mobile robots},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EEG-based cognitive load estimation of acoustic parameters for data sonification. <em>TCDS</em>, <em>17</em>(4), 771-783. (<a href='https://doi.org/10.1109/TCDS.2025.3525492'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sonification is a data visualization technique which expresses data attributes via psychoacoustic parameters, which are nonspeech audio signals used to convey information. This article investigates the binary estimation of cognitive load induced by psychoacoustic parameters conveying the focus level of an astronomical image via electroencephalogram (EEG) embeddings. Employing machine learning and deep learning methodologies, we demonstrate that EEG signals are reliable for 1) binary estimation of cognitive load; 2) isolating easy versus difficult visual-to-auditory perceptual mappings; and 3) capturing perceptual similarities among psychoacoustic parameters. Our key findings reveal that 1) EEG embeddings can reliably measure cognitive load, achieving a peak F1-score of 0.98; 2) extreme focus levels are easier to detect via auditory mappings than intermediate ones; and 3) psychoacoustic parameters inducing comparable cognitive load levels tend to generate similar EEG encodings.},
+  archive      = {J_TCDS},
+  author       = {Gulshan Sharma and Surbhi Madan and Maneesh Bilalpur and Abhinav Dhall and Ramanathan Subramanian},
+  doi          = {10.1109/TCDS.2025.3525492},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {771-783},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {EEG-based cognitive load estimation of acoustic parameters for data sonification},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive multidocument summarization via graph representation learning. <em>TCDS</em>, <em>17</em>(4), 759-770. (<a href='https://doi.org/10.1109/TCDS.2024.3519181'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The goal of multidocument summarization (MDS) is to generate a comprehensive and concise summary from multiple documents, which should not only be grammatically correct but also semantically contains the refined content of the overall texts. Existing summarizers based on sequential pretrained large language models often cognize documents as linear sequences, which overlook the hierarchical structure correlations of sentences and paragraphs within or between documents. Additionally, those models also have limitations in handling long text input. To alleviate these two problems, a multidocument summarization model is proposed, with a heterogeneous graph of sentences, paragraphs and documents, called HeterMDS, to uncover deep semantic meanings and local–global context within documents. By integrating large language model and graph encoder with bootstrapped graph latents, the proposed HeterMDS can learn a semantically rich document representation and generate a coherent, concise and fact-consistent summary. It can be flexibly applied to current pretrained language models, effectively improving their performance in MDS. Extensive experiment results can verify the effectiveness of the proposed HeterMDS and its contained modules, and demonstrate its competitiveness against the state-of-the-art models.},
+  archive      = {J_TCDS},
+  author       = {Gui-Huang Zeng and Yan-Qin Liu and Chun-Yang Zhang and Hai-Chun Cai and C. L. Philip Chen},
+  doi          = {10.1109/TCDS.2024.3519181},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {759-770},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Adaptive multidocument summarization via graph representation learning},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Integrating human intention into multirobot decision making via Brain–Computer interface enabled shared autonomy. <em>TCDS</em>, <em>17</em>(4), 746-758. (<a href='https://doi.org/10.1109/TCDS.2024.3518544'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multirobot systems tend to have higher execution efficiency when performing tasks such as mapping, search, and space exploration. Still, due to the influence of sensor measurement error, the decision-making of multirobot systems usually has deviations that are difficult to eliminate. In this unfavorable situation, the advantage of human experience can generally guide the multirobot system in making the correct decision. This study proposed a high-resolution brain–computer interface (BCI) paradigm and constructed a human intention probability model through graph neural networks. This allows for the preservation of richer interactive information, capturing the inherent uncertainty and preference features of human intention. Meanwhile, a BCI-enabled shared autonomy strategy integrating probabilistic human intention through opinion dynamics is introduced, ensuring the collaborative participation of humans and robots in decision-making. Experimental results show that the shared autonomy approach significantly improves decision-making accuracy compared to the initial multirobot estimate. Further analysis shows that this approach greatly outperforms traditional BCI strategies, showing promise for human–multirobot cooperation in complex task environments.},
+  archive      = {J_TCDS},
+  author       = {Wei Dai and Yaru Liu and Huimin Lu and Zongtan Zhou},
+  doi          = {10.1109/TCDS.2024.3518544},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {746-758},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Integrating human intention into multirobot decision making via Brain–Computer interface enabled shared autonomy},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Advancements in automated assessment and diagnosis of autism spectrum disorder through multimodality sensing technologies: Survey of the last decade. <em>TCDS</em>, <em>17</em>(4), 727-745. (<a href='https://doi.org/10.1109/TCDS.2025.3574145'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Autism spectrum disorder (ASD) is a complex neurodevelopmental disorder characterized by difficulties in social interaction, communication, and repetitive behavior patterns. Traditional research approaches have primarily focused on studying autism using single-modal data analysis, such as relying solely on audio, video, and neuro signals. However, recent advancements in technology, cognitive science, and artificial intelligence (AI) have provided opportunities to explore the potential benefits of multisensory integration and fusion of modalities in understanding autism patterns. This survey makes three key contributions to advancing the future of ASD diagnosis and intervention. First, it provides a comprehensive review of recent advancements in multimodal sensing technologies, detailing primary modalities, data cleaning and synchronization techniques, feature extraction, and fusion methodologies to integrate diverse sensory data. Second, it classifies assistive technologies into three major categories: 1) computer-based systems; 2) virtual reality simulations; and 3) robotic interactions, analyzing their applications for cross-referencing symptoms and enabling real-time interventions in skills assessment and therapy. Third, it identifies critical challenges related to data collection, sensor synchronization, standardizing assessment paradigms, and real-time processing demands, proposing actionable future directions to improve diagnostic precision, scalability, and adaptability. These contributions underscore the transformative potential of multimodal sensing systems to revolutionize ASD assessment and diagnosis by enabling comprehensive, objective, and tailored solutions for diverse individuals across the autism spectrum.},
+  archive      = {J_TCDS},
+  author       = {Athmar N. M. Shamhan and Marwa Qaraqe and Dena Al-Thani},
+  doi          = {10.1109/TCDS.2025.3574145},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {727-745},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Advancements in automated assessment and diagnosis of autism spectrum disorder through multimodality sensing technologies: Survey of the last decade},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Bridging the gap: Cognitive science perspectives and artificial intelligence for prediction and detection of specific learning disabilities. <em>TCDS</em>, <em>17</em>(4), 711-726. (<a href='https://doi.org/10.1109/TCDS.2025.3562665'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Specific learning disabilities are complex neurodevelopmental disorders that significantly impact an individual’s academic achievements, social interactions, and overall well-being. Both cognitive science and technological developments geared toward artificial intelligence have helped us better understand and serve people with specific learning disabilities. This review article examines cognitive science and artificial intelligence studies, focusing on predicting and detecting the most prevalent specific learning disabilities, namely dyslexia, dysgraphia, and dyscalculia in children. It aims to establish a correlation between cognitive research and artificial intelligence techniques that can benefit the affected population. Understanding both domains enables the development of more effective artificial intelligence technologies grounded in cognitive science principles. Artificial intelligence can revolutionize early prediction, detection, and interventions for specific learning disabilities. The success of this effort lies in the collaboration among data scientists, clinicians, and domain experts.},
+  archive      = {J_TCDS},
+  author       = {Subha Sreekumar and Lijiya A and Rajith K Ravindren},
+  doi          = {10.1109/TCDS.2025.3562665},
+  journal      = {IEEE Transactions on Cognitive and Developmental Systems},
+  month        = {8},
+  number       = {4},
+  pages        = {711-726},
+  shortjournal = {IEEE Trans. Cogn. Develop. Syst.},
+  title        = {Bridging the gap: Cognitive science perspectives and artificial intelligence for prediction and detection of specific learning disabilities},
+  volume       = {17},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

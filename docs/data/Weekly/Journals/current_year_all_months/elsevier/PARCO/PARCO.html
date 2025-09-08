@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PARCO</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="parco">PARCO - 15</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Software acceleration of multi-user MIMO uplink detection on GPU. <em>PARCO</em>, <em>125</em>, 103150. (<a href='https://doi.org/10.1016/j.parco.2025.103150'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents the exploration of GPU-accelerated block-wise decompositions for zero-forcing (ZF) based QR and Cholesky methods applied to massive multiple-input multiple-output (MIMO) uplink detection algorithms. Three algorithms are evaluated: ZF with block Cholesky decomposition, ZF with block QR decomposition (QRD), and minimum mean square error (MMSE) with block Cholesky decomposition. The latter was the only one previously explored, but it used standard Cholesky decomposition. Our approach achieves an 11% improvement over the previous GPU-accelerated MMSE study. Through performance analysis, we observe a trade-off between precision and execution time. Reducing precision from FP64 to FP32 improves execution time but increases bit error rate (BER), with ZF-based QRD reducing execution time from 2 . 04 μ s to 1 . 24 μ s for a 128 × 8 MIMO size. The study also highlights that larger MIMO sizes, particularly 2048 × 32, require GPUs to fully utilize their computational and memory capabilities, especially under FP64 precision. In contrast, smaller matrices are compute-bound. Our results recommend GPUs for larger MIMO sizes, as they offer the parallelism and memory resources necessary to efficiently handle the computational demands of next-generation networks. This work paves the way for scalable, GPU-based massive MIMO uplink detection systems.},
+  archive      = {J_PARCO},
+  author       = {Ali Nada and Hazem Ismail Ali and Liang Liu and Yousra Alkabani},
+  doi          = {10.1016/j.parco.2025.103150},
+  journal      = {Parallel Computing},
+  month        = {9},
+  pages        = {103150},
+  shortjournal = {Parallel Comput.},
+  title        = {Software acceleration of multi-user MIMO uplink detection on GPU},
+  volume       = {125},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enable cross-iteration parallelism for PIM-based graph processing with vertex-level synchronization. <em>PARCO</em>, <em>125</em>, 103149. (<a href='https://doi.org/10.1016/j.parco.2025.103149'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Processing-in-memory (PIM) architectures have emerged as a promising solution for accelerating graph processing by enabling computation in memory and minimizing data movement. However, most existing PIM-based graph processing systems rely on the Bulk Synchronous Parallel (BSP) model, which frequently enforces global barriers that limit cross-iteration computational parallelism and introduce significant synchronization and communication overheads. To address these limitations, we propose the Cross Iteration Parallel (CIP) model, a novel vertex-level synchronization approach that eliminates global barriers by independently tracking the synchronization states of vertices. The CIP model enables concurrent execution across iterations, enhancing computational parallelism, overlapping communication and computation, improving core utilization, and increasing resilience to workload imbalance. We implement the CIP model in a PIM-based graph processing system, GraphDF, which features a few specially designed function units to support vertex-level synchronization. Evaluated on a PyMTL3-based cycle-accurate simulator using four real-world graphs and four graph algorithms, CIP running on GraphDF achieves an average speedup of 1.8 × and a maximum of 2.3 × compared to Dalorex, the state-of-the-art PIM-based graph processing system.},
+  archive      = {J_PARCO},
+  author       = {Xiang Zhao and Haitao Du and Yi Kang},
+  doi          = {10.1016/j.parco.2025.103149},
+  journal      = {Parallel Computing},
+  month        = {9},
+  pages        = {103149},
+  shortjournal = {Parallel Comput.},
+  title        = {Enable cross-iteration parallelism for PIM-based graph processing with vertex-level synchronization},
+  volume       = {125},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-workflow fault-tolerance scheduling strategy considering resources supply delay in WaaS platforms. <em>PARCO</em>, <em>125</em>, 103148. (<a href='https://doi.org/10.1016/j.parco.2025.103148'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Workflow as a Service (WaaS) platforms rent virtual machines (VMs) from IaaS providers to run scientific workflows for users. However, current researches on workflow scheduling in WaaS platforms did not consider the possibility of VMs downtime leading to task failures or the resources (such as VMs and containers) supply delay affecting scheduling efficiency. To address this issue, this paper proposes a multi-workflow fault-tolerance scheduling strategy for WaaS platforms. Firstly, since WaaS platforms do not manage hardware directly but schedule workflows at the level of VMs and containers, we establish a workflow scheduling model suitable for WaaS platforms, taking into account the impact of resources supply delay on workflow scheduling. Secondly, we propose a multi-workflow fault-tolerance scheduling strategy for WaaS platforms, which includes preprocessing, fault-tolerance selection, task assignment, and resource adjustment. It involves an improved deadline division algorithm to determine the scheduling order, a fault-tolerance selection algorithm combining two fault-tolerance strategies (replication and re-submission), task assignment algorithm considering task attributes and resource supply delay to schedule tasks, and a resource adjustment algorithm to pre-deploy resources for upcoming tasks. Finally, we compare the proposed scheduling strategy with three other algorithms, and the results also demonstrate its effectiveness.},
+  archive      = {J_PARCO},
+  author       = {Hui Zhao and Wentao Zhi and Xiaoqin Lu and Jing Wang and Nan Luo and Bo Wan and Quan Wang},
+  doi          = {10.1016/j.parco.2025.103148},
+  journal      = {Parallel Computing},
+  month        = {9},
+  pages        = {103148},
+  shortjournal = {Parallel Comput.},
+  title        = {Multi-workflow fault-tolerance scheduling strategy considering resources supply delay in WaaS platforms},
+  volume       = {125},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ALBBA: An efficient ALgebraic bypass BFS algorithm on long vector architectures. <em>PARCO</em>, <em>125</em>, 103147. (<a href='https://doi.org/10.1016/j.parco.2025.103147'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Breadth First Search (BFS) is a fundamental algorithm in scientific computing, databases, and network analysis applications. In the algebraic BFS paradigm, each BFS iteration is expressed as a sparse matrix–vector multiplication, allowing BFS to be accelerated and analyzed through well-established linear algebra primitives. Although much effort has been made to optimize algebraic BFS on parallel platforms such as CPUs, GPUs, and distributed memory systems, vector architectures that exploit Single Instruction Multiple Data (SIMD) parallelism, particularly with their high performance on sparse workloads, remain relatively underexplored for BFS. In this paper, we propose the ALgebraic Bypass BFS Algorithm (ALBBA), a novel and efficient algebraic BFS implementation optimized for long vector architectures. ALBBA utilizes a customized variant of the SELL- C - σ data structure to fully exploit the SIMD capabilities. By integrating a vectorization-friendly search method alongside a two-level bypass strategy, we enhance both sparse matrix-sparse vector multiplication (SpMSpV) and sparse matrix-dense vector multiplication (SpMV) algorithms, which are crucial for algebraic BFS operations. We further incorporate merge primitives and adopt an efficient selection method for each BFS iteration. Our experiments on an NEC VE20B processor demonstrate that ALBBA achieves average speedups of 3.91 × , 2.88 × , and 1.46 × over Enterprise, GraphBLAST, and Gunrock running on an NVIDIA H100 GPU, respectively.},
+  archive      = {J_PARCO},
+  author       = {Yuyao Niu and Marc Casas},
+  doi          = {10.1016/j.parco.2025.103147},
+  journal      = {Parallel Computing},
+  month        = {9},
+  pages        = {103147},
+  shortjournal = {Parallel Comput.},
+  title        = {ALBBA: An efficient ALgebraic bypass BFS algorithm on long vector architectures},
+  volume       = {125},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Using java to create and analyze models of parallel computing systems. <em>PARCO</em>, <em>125</em>, 103146. (<a href='https://doi.org/10.1016/j.parco.2025.103146'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The purpose of the study is to develop optimal solutions for models of parallel computing systems using the Java language. During the study, programs were written for the examined models of parallel computing systems. The result of the parallel sorting code is the output of a sorted array of random numbers. When processing data in parallel, the time spent on processing and the first elements of the list of squared numbers are displayed. When processing requests asynchronously, processing completion messages are displayed for each task with a slight delay. The main results include the development of optimization methods for algorithms and processes, such as the division of tasks into subtasks, the use of non-blocking algorithms, effective memory management, and load balancing, as well as the construction of diagrams and comparison of these methods by characteristics, including descriptions, implementation examples, and advantages. In addition, various specialized libraries were analyzed to improve the performance and scalability of the models. The results of the work performed showed a substantial improvement in response time, bandwidth, and resource efficiency in parallel computing systems. Scalability and load analysis assessments were conducted, demonstrating how the system responds to an increase in data volume or the number of threads. Profiling tools were used to analyze performance in detail and identify bottlenecks in models, which improved the architecture and implementation of parallel computing systems. The obtained results emphasize the importance of choosing the right methods and tools for optimizing parallel computing systems, which can substantially improve their performance and efficiency.},
+  archive      = {J_PARCO},
+  author       = {Harish Padmanaban and Nurkasym Arkabaev and Maher Ali Rusho and Vladyslav Kozub and Yurii Kozub},
+  doi          = {10.1016/j.parco.2025.103146},
+  journal      = {Parallel Computing},
+  month        = {9},
+  pages        = {103146},
+  shortjournal = {Parallel Comput.},
+  title        = {Using java to create and analyze models of parallel computing systems},
+  volume       = {125},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EESF: Energy-efficient scheduling framework for deadline-constrained workflows with computation speed estimation method in cloud. <em>PARCO</em>, <em>124</em>, 103139. (<a href='https://doi.org/10.1016/j.parco.2025.103139'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Substantial amount of energy consumed by rapidly growing cloud data centers is a major hindrance to sustainable cloud computing. Therefore, this paper proposes a scheduling framework named EESF aiming at minimizing the energy consumption and makespan of workflow execution under deadline and dependency constraints. The novel aspects of the proposed EESF are outlined as follows: 1) it first estimates the computation speed requirements of the entire workflow application before beginning the execution. Then, it estimates the computation speed requirements of individual tasks dynamically during execution. 2) Different from existing approaches that mainly assign tasks to virtual machines (VMs) with lower energy consumption or use DVFS to lower the frequency or voltage of hosts/VMs leading to longer makespan, EESF considers the degree of dependency of the tasks along with estimated speed for task-VM assignment. 3) Based on the fact that scheduling dependent tasks on same VM is not always energy-efficient, a new concept of virtual task clustering is introduced to schedule the tasks with dependencies in an energy-efficient manner. 4) EESF deploys VMs dynamically as per the necessary computation speed requirements of the tasks to prevent over-provisioning/under-provisioning of computational power. 5) In general, task reassignment causes huge data transfer which also consumes energy, but EESF reassigns tasks to more-energy efficient VMs running on the same host, thereby zeroing the data transfer time. Experiments performed using four real-world scientific workflows and 10 random workflows illustrate that EESF reduces energy consumption by 6%-44% than related algorithms while significantly reducing the makespan.},
+  archive      = {J_PARCO},
+  author       = {Rupinder Kaur and Gurjinder Kaur and Major Singh Goraya},
+  doi          = {10.1016/j.parco.2025.103139},
+  journal      = {Parallel Computing},
+  month        = {6},
+  pages        = {103139},
+  shortjournal = {Parallel Comput.},
+  title        = {EESF: Energy-efficient scheduling framework for deadline-constrained workflows with computation speed estimation method in cloud},
+  volume       = {124},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FPGA-based accelerator for YOLOv5 object detection with optimized computation and data access for edge deployment. <em>PARCO</em>, <em>124</em>, 103138. (<a href='https://doi.org/10.1016/j.parco.2025.103138'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the realm of object detection, advancements in convolutional neural networks have been substantial. However, their high computational and data access demands complicate the deployment of these algorithms on edge devices. To mitigate these challenges, field-programmable gate arrays have emerged as an ideal hardware platform for executing the parallel computations inherent in convolutional neural networks, owing to their low power consumption and rapid response capabilities. We have developed a field-programmable gate array-based accelerator for the You Only Look Once version 5 (YOLOv5) object detection network, implemented using Verilog Hardware Description Language on the Xilinx XCZU15EG chip. This accelerator efficiently processes the convolutional layers, batch normalization fusion layers, and tensor addition operations of the Yolov5 network. Our architecture segregates the convolution computations into two computing units: multiplication and addition. The addition operations are significantly accelerated by the introduction of compressor adders and ternary adder trees. Additionally, off-chip bandwidth pressure is alleviated through the use of dual-input single-output buffers and dedicated data access units. Experimental results demonstrate that the power consumption of the accelerator is 13.021 watts at a central frequency of 200 megahertz. Experiment results indicate that our accelerator outperforms Amazon Web Services Graviton2 central processing units and Jetson Nano graphics processing units. Ablation experiments validate the enhancements provided by our innovative designs. Ultimately, our approach significantly boosts the inference speed of the Yolov5 network, with improvements of 61.88%, 69.1%, 59.36%, 64.07%, and 65.92%, thereby dramatically enhancing the performance of the accelerator and surpassing existing methods.},
+  archive      = {J_PARCO},
+  author       = {Wei Qian and Zhengwei Zhu and Chenyang Zhu and Yanping Zhu},
+  doi          = {10.1016/j.parco.2025.103138},
+  journal      = {Parallel Computing},
+  month        = {6},
+  pages        = {103138},
+  shortjournal = {Parallel Comput.},
+  title        = {FPGA-based accelerator for YOLOv5 object detection with optimized computation and data access for edge deployment},
+  volume       = {124},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-level parallelism optimization for two-dimensional convolution vectorization method on multi-core vector accelerator. <em>PARCO</em>, <em>124</em>, 103137. (<a href='https://doi.org/10.1016/j.parco.2025.103137'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The widespread application of convolutional neural network across diverse domains has highlighted the growing significance of accelerating convolutional computations. In this work, we design a multi-level parallelism optimization method for direct convolution vectorization algorithm based on a channel-first data layout on a multi-core vector accelerator. This method calculates based on the input row and weight column in a single core, and achieves the simultaneous computation of more elements, thereby effectively hiding the latency of instructions and improving the degree of parallelism at instruction-level. This method can also substantially eliminates data overlap caused by convolutional windows sliding. Among multiple cores, the data flow is optimized with various data reuse methods for different situations. Experimental results show that the computational efficiency on multi-core can be improved greatly, up to 80.2%. For the typical network ResNet18, compared with existing method on the accelerator, a performance acceleration of 4.42-5.63 times can be achieved.},
+  archive      = {J_PARCO},
+  author       = {Siyang Xing and Youmeng Li and Zikun Deng and Qijun Zheng and Zeyu Lu and Qinglin Wang},
+  doi          = {10.1016/j.parco.2025.103137},
+  journal      = {Parallel Computing},
+  month        = {6},
+  pages        = {103137},
+  shortjournal = {Parallel Comput.},
+  title        = {Multi-level parallelism optimization for two-dimensional convolution vectorization method on multi-core vector accelerator},
+  volume       = {124},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Byzantine-tolerant detection of causality: There is no holy grail. <em>PARCO</em>, <em>124</em>, 103136. (<a href='https://doi.org/10.1016/j.parco.2025.103136'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Detecting causality or the “happened before” relation between events in an asynchronous distributed system is a widely used building block in distributed applications. To the best of our knowledge, this problem has not been examined in a system with Byzantine processes. We prove the following results for an asynchronous system with Byzantine processes. (1) We prove that it is impossible to determine causality between events in the presence of even a single Byzantine process when processes communicate by unicasting. (2) We also prove a similar impossibility result when processes communicate by broadcasting. (3) We also prove a similar impossibility result when processes communicate by multicasting. (4–5) In an execution where there exists a causal path between two events passing through only correct processes, we prove that it is possible to detect causality between such a pair of events when processes communicate by unicasting or broadcasting. (6) However, when processes communicate by multicasting and there exists a causal path between two events passing through only correct processes, we prove that it is impossible to detect causality between such a pair of events. (7–9) Even with the use of cryptography, we prove that the impossibility results of (1–3) for unicasts, broadcasts, and multicasts, respectively, hold. (10–12) With the use of cryptography, when there exists a causal path between two events passing through only correct processes, we prove it is possible to detect causality between such a pair of events, irrespective of whether the communication is by unicasts, broadcasts, or multicasts. Our results are significant because Byzantine systems mirror the real world.},
+  archive      = {J_PARCO},
+  author       = {Anshuman Misra and Ajay D. Kshemkalyani},
+  doi          = {10.1016/j.parco.2025.103136},
+  journal      = {Parallel Computing},
+  month        = {6},
+  pages        = {103136},
+  shortjournal = {Parallel Comput.},
+  title        = {Byzantine-tolerant detection of causality: There is no holy grail},
+  volume       = {124},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Estimating resource budgets to ensure autotuning efficiency. <em>PARCO</em>, <em>123</em>, 103126. (<a href='https://doi.org/10.1016/j.parco.2025.103126'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Many state-of-the-art HPC applications rely on autotuning to maintain peak performance. Autotuning allows a program to be re-optimized for new hardware, settings, or input — even during execution. However, the approach has an inherent problem that has yet to be properly addressed: since the autotuning process itself requires computational resources, it is also subject to optimization. In other words, while autotuning aims to decrease a program’s run time by improving its efficiency, it also introduces additional overhead that can extend the overall run time. To achieve optimal performance, both the application and the autotuning process should be optimized together, treating them as a single optimization criterion. This framing allows us to determine a reasonable tuning budget to avoid both undertuning, where insufficient autotuning leads to suboptimal performance, and overtuning, where excessive autotuning imposes overhead that outweighs the benefits of program optimization. In this paper, we explore the tuning budget optimization problem in detail, highlighting its interesting properties and implications, which have largely been overlooked in the literature. Additionally, we present several viable solutions for tuning budget optimization and evaluate their efficiency across a range of commonly used HPC kernels.},
+  archive      = {J_PARCO},
+  author       = {Jaroslav Olha and Jana Hozzová and Matej Antol and Jiří Filipovič},
+  doi          = {10.1016/j.parco.2025.103126},
+  journal      = {Parallel Computing},
+  month        = {3},
+  pages        = {103126},
+  shortjournal = {Parallel Comput.},
+  title        = {Estimating resource budgets to ensure autotuning efficiency},
+  volume       = {123},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Lowering entry barriers to developing custom simulators of distributed applications and platforms with SimGrid. <em>PARCO</em>, <em>123</em>, 103125. (<a href='https://doi.org/10.1016/j.parco.2025.103125'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Researchers in parallel and distributed computing (PDC) often resort to simulation because experiments conducted using a simulator can be for arbitrary experimental scenarios, are less resource-, labor-, and time-consuming than their real-world counterparts, and are perfectly repeatable and observable. Many frameworks have been developed to ease the development of PDC simulators, and these frameworks provide different levels of accuracy, scalability, versatility, extensibility, and usability. The SimGrid framework has been used by many PDC researchers to produce a wide range of simulators for over two decades. Its popularity is due to a large emphasis placed on accuracy, scalability, and versatility, and is in spite of shortcomings in terms of extensibility and usability. Although SimGrid provides sensible simulation models for the common case, it was difficult for users to extend these models to meet domain-specific needs. Furthermore, SimGrid only provided relatively low-level simulation abstractions, making the implementation of a simulator of a complex system a labor-intensive undertaking. In this work we describe developments in the last decade that have contributed to vastly improving extensibility and usability, thus lowering or removing entry barriers for users to develop custom SimGrid simulators.},
+  archive      = {J_PARCO},
+  author       = {Henri Casanova and Arnaud Giersch and Arnaud Legrand and Martin Quinson and Frédéric Suter},
+  doi          = {10.1016/j.parco.2025.103125},
+  journal      = {Parallel Computing},
+  month        = {3},
+  pages        = {103125},
+  shortjournal = {Parallel Comput.},
+  title        = {Lowering entry barriers to developing custom simulators of distributed applications and platforms with SimGrid},
+  volume       = {123},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scalable tasking runtime with parallelized builders for explicit message passing architectures. <em>PARCO</em>, <em>123</em>, 103124. (<a href='https://doi.org/10.1016/j.parco.2024.103124'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The sequential task flow (STF) model introduces implicit data dependences to exploit task-based parallelism, simplifying programming but also introducing non-negligible runtime overhead. On emerging cache-less, explicit inter-core message passing (EMP) architectures, the long latency of memory access further amplifies the runtime overhead of the traditional STF model, resulting in unsatisfactory performance. This paper addresses two main components in the STF tasking runtime. We uncover abundant concurrency in the task dependence graph (TDG) building process through three sufficient conditions, put forward PBH, a parallelized TDG building algorithm with helpers which mixes pipeline parallelism and data parallelism to overcome the TDG building bottleneck for fine-grained tasks. We also introduce a centralized, lock-less task scheduler, EMP-C, based on the EMP interface, and propose three optimizations. These two techniques are implemented and evaluated on a product processor with EMP support, i.e. SW26010. Experimental results show that compared to traditional techniques, PBH achieves an average speedup of 1.55 for fine-grained task workloads, and the EMP-C scheduler brings speedups as high as 1.52 and 2.38 for fine-grained and coarse-grained task workloads, respectively. And the combination of these two techniques significantly improves the granularity scalability of the runtime, reducing the minimum effective task granularity (METG) to 0.1 ms and achieving an order of magnitude decrease in some cases.},
+  archive      = {J_PARCO},
+  author       = {Xiran Gao and Li Chen and Haoyu Wang and Huimin Cui and Xiaobing Feng},
+  doi          = {10.1016/j.parco.2024.103124},
+  journal      = {Parallel Computing},
+  month        = {3},
+  pages        = {103124},
+  shortjournal = {Parallel Comput.},
+  title        = {Scalable tasking runtime with parallelized builders for explicit message passing architectures},
+  volume       = {123},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Iterative methods in GPU-resident linear solvers for nonlinear constrained optimization. <em>PARCO</em>, <em>123</em>, 103123. (<a href='https://doi.org/10.1016/j.parco.2024.103123'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Linear solvers are major computational bottlenecks in a wide range of decision support and optimization computations. The challenges become even more pronounced on heterogeneous hardware, where traditional sparse numerical linear algebra methods are often inefficient. For example, methods for solving ill-conditioned linear systems have relied on conditional branching, which degrades performance on hardware accelerators such as graphical processing units (GPUs). To improve the efficiency of solving ill-conditioned systems, our computational strategy separates computations that are efficient on GPUs from those that need to run on traditional central processing units (CPUs). Our strategy maximizes the reuse of expensive CPU computations. Iterative methods, which thus far have not been broadly used for ill-conditioned linear systems, play an important role in our approach. In particular, we extend ideas from Arioli et al., (2007) to implement iterative refinement using inexact LU factors and flexible generalized minimal residual (FGMRES), with the aim of efficient performance on GPUs. We focus on solutions that are effective within broader application contexts, and discuss how early performance tests could be improved to be more predictive of the performance in a realistic environment.},
+  archive      = {J_PARCO},
+  author       = {Kasia Świrydowicz and Nicholson Koukpaizan and Maksudul Alam and Shaked Regev and Michael Saunders and Slaven Peleš},
+  doi          = {10.1016/j.parco.2024.103123},
+  journal      = {Parallel Computing},
+  month        = {3},
+  pages        = {103123},
+  shortjournal = {Parallel Comput.},
+  title        = {Iterative methods in GPU-resident linear solvers for nonlinear constrained optimization},
+  volume       = {123},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards resilient and energy efficient scalable krylov solvers. <em>PARCO</em>, <em>123</em>, 103122. (<a href='https://doi.org/10.1016/j.parco.2024.103122'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Exascale computing must simultaneously address both energy efficiency and resilience as power limits impact scalability and faults are more common. Unfortunately, energy efficiency and resilience have been traditionally studied in isolation and optimizing one typically detrimentally impacts the other. To deliver the promised performance within the given power budget, exascale computing mandates a deep understanding of the interplay among energy efficiency, resilience, and scalability. In this work, we propose novel methods to analyze and optimize the costs of common resilience techniques including checkpoint-restart and forward recovery. We focus on sparse linear solvers as they are the fundamental kernels in many scientific applications. In particular, we present generalized analytical and experimental methods to analyze and quantify the time and energy costs of various recovery schemes on computer clusters, and develop and prototype performance optimization and power management strategies to improve energy efficiency. Moreover, we take a deep dive into the forward recovery that recently started to draw attention from researchers, and propose a practical matrix-aware optimization technique to reduce its recovery time. This work shows that while the time and energy costs of various resilience techniques are different, they share the common components and can be quantitatively evaluated with a generalized framework. This analysis framework can be used to guide the design of performance and energy optimization technologies. While each resilience technique has its advantages depending on the fault rate, system size, and power budget, the forward recovery can further benefit from matrix-aware optimizations for large-scale computing.},
+  archive      = {J_PARCO},
+  author       = {Zheng Miao and Jon C. Calhoun and Rong Ge},
+  doi          = {10.1016/j.parco.2024.103122},
+  journal      = {Parallel Computing},
+  month        = {3},
+  pages        = {103122},
+  shortjournal = {Parallel Comput.},
+  title        = {Towards resilient and energy efficient scalable krylov solvers},
+  volume       = {123},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Seesaw: A 4096-bit vector processor for accelerating kyber based on RISC-V ISA extensions. <em>PARCO</em>, <em>123</em>, 103121. (<a href='https://doi.org/10.1016/j.parco.2024.103121'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The ML-KEM standard based on Kyber algorithm is one of the post-quantum cryptography (PQC) standards released by the National Institute of Standards and Technology (NIST) to withstand quantum attacks. To increase throughput and reduce the execution time that is limited by the high computational complexity of the Kyber algorithm, an RISC-V-based processor Seesaw is designed to accelerate the Kyber algorithm. The 32 specialized extension instructions are mainly designed to enhance the parallel computing ability of the processor and accelerate all the processes of the Kyber algorithm by thoroughly analyzing its characteristics. Subsequently, by carefully designing hardware such as poly vector registers and algorithm execution units on the RISC-V processor, the support of microarchitecture for extension instructions was achieved. Seesaw supports 4096-bit vector calculations through its poly vector registers and execution unit to meet high-throughput requirements and is implemented on the field-programmable gate array (FPGA). In addition, we modify the compiler simultaneously to adapt to the instruction extension and execution of Seesaw. Experimental results indicate that the processor achieves a speed-up of 432 × and 18864 × for hash and NTT, respectively, compared with that without extension instructions and a speed-up of 5.6 × for the execution of the Kyber algorithm compared with the advanced hardware design.},
+  archive      = {J_PARCO},
+  author       = {Xiaofeng Zou and Yuanxi Peng and Tuo Li and Lingjun Kong and Lu Zhang},
+  doi          = {10.1016/j.parco.2024.103121},
+  journal      = {Parallel Computing},
+  month        = {3},
+  pages        = {103121},
+  shortjournal = {Parallel Comput.},
+  title        = {Seesaw: A 4096-bit vector processor for accelerating kyber based on RISC-V ISA extensions},
+  volume       = {123},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

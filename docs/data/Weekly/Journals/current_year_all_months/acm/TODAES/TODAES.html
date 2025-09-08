@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TODAES</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="todaes">TODAES - 54</h2>
+<ul>
+<li><details>
+<summary>
+(2025). ILOSSS - Improved logic synthesis based on several stateful logic gates. <em>TODAES</em>, <em>30</em>(4), 1-23. (<a href='https://doi.org/10.1145/3731245'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Memristor stateful logic is an effective way to achieve the real sense of in-memory computing in memristor-based crossbar array (MCBA). At present, the synthesis tools fall short in conducting a thorough exploration of the optimization potential pertaining to cascading stateful logic gates within MCBA, and the optimization objectives are relatively simple. In this article, a suit of stateful logic synthesis kit, named ILOSSS, improved from the previous LOSSS tool is achieved. Such kit includes two kinds of stateful logic synthesis processes for latency (corresponding to the High Time-Efficiency Synthesis Process (HTESP)) and energy (corresponding to the Low-Energy Synthesis Process (LESP)) optimization, respectively. Both of the synthesis processes are achieved by improving an existing synthesis process of MAGIC (SIMPLER-MAGIC) to support multiple stateful logic gates and inserting a post-processing stage with a well-developed automated optimization algorithm to reduce the number of the gates of the netlist with a corresponding purpose. Comparing to the standard SIMPLER-MAGIC tool, the HTESP achieves arithmetic mean improvements of over 23% in performance, and over 34% in effective lifetime under the EPFL benchmark suit which is also better than the results reported by the state-of-the-art MAGIC synthesis process (X-MAGIC). Meanwhile, the energy-delay product (EDP) of LESP has decreased by an average of over 10% and 42% compared to SIMPLER-MAGIC and HTESP, respectively.},
+  archive      = {J_TODAES},
+  author       = {Nuo Xu and Yihong Hu and Chaochao Feng and Wei Tong and Kang Liu and Liang Fang},
+  doi          = {10.1145/3731245},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {ILOSSS - Improved logic synthesis based on several stateful logic gates},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ChatDSE: A zero-shot microarchitecture design space explorer powered by GPT4.0. <em>TODAES</em>, <em>30</em>(4), 1-24. (<a href='https://doi.org/10.1145/3735640'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Design Space Exploration (DSE) aims at identifying Pareto optimal synthesis configurations. Previous works require microarchitecture samples with key labels, including power and clock cycles, to train their models. However, as the chip design space expands rapidly, the cost of sampling the design space has significantly increased, due to the growing number of samples and time-consuming Very Large Scale Integration (VLSI) implementation flow. Recent advancements in Large Language Models (LLMs) have demonstrated their remarkable power in zero-shot learning tasks, presenting an innovative strategy for accomplishing DSE. Hence, this article presents ChatDSE, a zero-shot framework for DSE that is powered by the advanced capabilities of the LLM GPT4.0. Firstly, this framework analyzes the nature of the target microarchitecture and generates a corresponding system context to provide the prior knowledge of the microarchitecture. Secondly, a proposed sampling algorithm, PriorDC, identifies the most representative samples with pseudo labels. One of these samples is chosen as a baseline, whose power and clock cycles labels are set as 1, and the remaining sample labels are obtained by chatting with GPT4.0. Finally, ChatDSE engages in a dialogue with GPT4.0 to estimate the power and clock cycles of designs within the space, ultimately identifying the Pareto optimal design set. In the DSE for the RISC-V Berkeley Out-of-Order Machine (BOOM), experimental results show that ChatDSE is capable of identifying optimal designs and accelerates the exploration process by 574 times when compared to the state-of-the-art DSE methodologies.},
+  archive      = {J_TODAES},
+  author       = {Mingxin Tang and Wei Chen and Lizhou Wu and Libo Huang and Kun Zeng},
+  doi          = {10.1145/3735640},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {ChatDSE: A zero-shot microarchitecture design space explorer powered by GPT4.0},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ARIANNA: An automatic design flow for fabric customization and eFPGA redaction. <em>TODAES</em>, <em>30</em>(4), 1-23. (<a href='https://doi.org/10.1145/3737287'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the modern global Integrated Circuit (IC) supply chain, protecting intellectual property (IP) is a complex challenge, and balancing IP loss risk and added cost for theft countermeasures is hard to achieve. Using embedded configurable logic allows designers to completely hide the functionality of selected design portions from parties that do not have access to the configuration string (bitstream). However, the design space of redacted solutions is huge, with tradeoffs between the portions selected for redaction and the configuration of the configurable embedded logic. We propose ARIANNA, a complete flow that aids the designer in all the stages, from selecting the logic to be hidden to tailoring the bespoke fabrics for the configurable logic used to hide it. We present a security evaluation of the considered fabrics and introduce two heuristics for the novel bespoke fabric flow. We evaluate the heuristics against an exhaustive approach. We also evaluate the complete flow using a selection of benchmarks. Results show that using ARIANNA to customize the redaction fabrics yields up to 3.3× lower overheads and 4× higher eFPGA fabric utilization than a one-fits-all fabric as proposed in prior works.},
+  archive      = {J_TODAES},
+  author       = {Luca Collini and Jitendra Bhandari and Chiara Muscari Tomajoli and Abdul Moosa and Benjamin Tan and Xifan Tang and Pierre-Emanuel Gaillardon and Ramesh Karri and Christian Pilato},
+  doi          = {10.1145/3737287},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {ARIANNA: An automatic design flow for fabric customization and eFPGA redaction},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HAPE: Hardware-aware LLM pruning for efficient on-device inference optimization. <em>TODAES</em>, <em>30</em>(4), 1-18. (<a href='https://doi.org/10.1145/3744244'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Over the past few years, large language models (LLMs) have demonstrated remarkable performance and versatility across a variety of complex tasks. However, their deployment has been challenged by their substantial model size and computational requirements. Pruning is a effective approach to make the model parameters sparse, thereby acquire inference acceleration. While not everyone requires training or fine-tuning large models, the diverse range of applications necessitates the deployment of LLMs on different devices. Model pruning and compression have emerged as areas of deep research interest to address these challenges. In consideration of versatility and practicality, we have designed a hardware-aware pruning process for general-purpose hardware/edge devices to enable efficient deployment and inference of LLMs. Instead of considering sparse ratio alone, we are motivated to design a pruning framework that incorporates genuine inference speed-up sensitivity from each pruning structure. Moreover, our framework breaks the layer-by-layer pruning setting and fuse several layers into one pruning stage to allow cross-layer optimization. Apart from that, we hold pragmatism by conducting compilation optimization during pruning. This step is critical because most sparsity patterns barely show distinct speed acceleration with corresponding dataflow and memory optimization. Our process operates within a post-training framework, obviating the need for additional training and thereby reducing resource requirements, while ensuring diverse inference speed and accuracy requirements on hardware.},
+  archive      = {J_TODAES},
+  author       = {Wenqian Zhao and Lancheng Zou and Zixiao Wang and Xufeng Yao and Bei Yu},
+  doi          = {10.1145/3744244},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-18},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {HAPE: Hardware-aware LLM pruning for efficient on-device inference optimization},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Interactive visual performance space exploration of operational amplifiers with differentiable neural network surrogate models. <em>TODAES</em>, <em>30</em>(4), 1-33. (<a href='https://doi.org/10.1145/3744245'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {To this day, the design of analog integrated circuits is a predominantly manual task, heavily reliant on the knowledge and intuition of human experts. Many current automation approaches aim to be holistic solutions, attempting to take the human out of the loop. This work, in turn, does not intend to replace human designers with algorithms, but support their qualities in the established flow. Here, the performance space of analog ICs is modeled by PVT-aware neural networks and visualized with parallel coordinate plots. Such a responsive visualization gives insights into the relations of parameters through interactive exploration where any parameter can be the cause while all others show the immediate effect. Thus, complex decision-making problems based on the experience of seasoned designers, such as circuit sizing or topology selection, are transformed into intuitive perceptual problems. Through the responsiveness and immediacy of the implementation, designers are encouraged to explore the entire performance space instead of basing all decisions on previous designs, never leaving the beaten path. A data generation and training procedure for surrogate models is outlined. Models for three operational amplifiers in three different technologies illustrate the applicability and feasibility of the presented approach. Additionally, a web-based demo, including all source code, is available for review.},
+  archive      = {J_TODAES},
+  author       = {Yannick Uhlmann and Till Moldenhauer and Juergen Scheible},
+  doi          = {10.1145/3744245},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-33},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Interactive visual performance space exploration of operational amplifiers with differentiable neural network surrogate models},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Securing network-on-chips against trojan-induced packet duplication attacks. <em>TODAES</em>, <em>30</em>(4), 1-28. (<a href='https://doi.org/10.1145/3744645'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The third-party Intellectual Property (IP) supply chain exposes System-on-Chip designs to malicious implants like Hardware Trojans (HTs). With extremely rare trigger conditions, some HTs can evade conventional and even machine learning-based validation methods. Current detection and mitigation approaches fall short, especially against HTs capable of creating detrimental effects on cache and Network-on-Chip (NoC) performance. In this article, we present a novel intermittent and robust HT called LOKI, which primarily operates within the Network Adapter (NA) but can simultaneously impact the performance of the NoC, the shared cache, and the cores. LOKI is implanted in a malicious IP’s NA and triggers packet duplication attacks, leading to increased latency and performance degradation across the system. This action has cascading effects on the system, including increased latency in the NoC, adversely impacting communication efficiency. The duplication also leads to increased cache misses and longer miss penalties, further degrading cache performance. Additionally, LOKI affects the Instruction-Per-Cycle (IPC) of the cores, thus influencing overall processing performance. Our evaluation demonstrates that LOKI causes a 3.53× increase in packet latency, a 15% increase in miss penalty, and a 10% decrease in overall IPC. To neutralize the effects of HT-induced packet duplication, we propose a ubiquitous mitigation framework called HULK. HULK is installed in the NA and monitors all messages going in and out of the NoC, allowing it to address anomalies occurring in the NA, routers, and links. Experimental evaluation shows that HULK can effectively mitigate LOKI’s impact, achieving baseline system-like performance with negligible hardware overhead. Unlike existing HT-specific mitigation proposals, HULK serves as a generic solution to neutralize all types of packet duplication attacks. To promote reproducibility and community adoption, we have open sourced the implementation at https://github.com/itsmanju/hulk .},
+  archive      = {J_TODAES},
+  author       = {Manju Rajan and Abhijit Das and John Jose},
+  doi          = {10.1145/3744645},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-28},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Securing network-on-chips against trojan-induced packet duplication attacks},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Layout synthesis for quantum circuits considering toffoli gate decomposition. <em>TODAES</em>, <em>30</em>(4), 1-21. (<a href='https://doi.org/10.1145/3744646'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {State-of-the-art studies on quantum layout synthesis have proposed various approaches based on the assumption that the input circuit is only composed of single-qubit and two-qubit gates. This assumption greatly simplifies the layout synthesis problem, and thus they only require ensuring that all controlled-NOT (CNOT) gates satisfy the hardware constraints imposed by a given coupling graph. However, during the design of quantum circuits, multi-controlled Toffoli (MCT) gates are usually used to better characterize the function of the circuits. Directly decomposing them into single and two-qubit gates with a fixed routine ignores the flexibility and optimization opportunity provided by various decomposition (i.e., logic synthesis) possibilities and thus suffers from sub-optimal results. This article proposes a co-optimization approach for quantum logic and layout synthesis. The MCT gates are first decomposed into Toffoli gates, and an efficient qubit mapping checking process is proposed to optimally solve the SWAP-free layout synthesis problem by automatically determining the decomposition result of each Toffoli gate. If a SWAP-free result cannot be found, the proposed algorithm flow is then used to obtain a solution that minimizes the total cost that simultaneously counts the cost caused by the different decomposition methods for Toffoli gates and the cost induced by SWAP gates. Compared with a state-of-the-art method, the proposed approach reduces the number of additional CNOT gates by 16% with around 25X runtime speedup for the cases with SWAP-free solutions, which cannot be obtained without the co-optimization approach.},
+  archive      = {J_TODAES},
+  author       = {Po-Wei Chen and Sheng-Tan Huang and Shao-Yun Fang},
+  doi          = {10.1145/3744646},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-21},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Layout synthesis for quantum circuits considering toffoli gate decomposition},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FV-LIDAC: Formally verified library of input data aware approximate arithmetic circuits. <em>TODAES</em>, <em>30</em>(4), 1-23. (<a href='https://doi.org/10.1145/3744710'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Approximate circuits have become ubiquitous in error-resilient applications. These circuits provide large reductions in area, power, and delay at the cost of erroneous computations. The error-resilient applications produce acceptable output quality, even after the introduction of erroneous computations. However, we observed that the error resilience of an application varies widely with respect to the applied inputs. Since prior works have mostly focused on using samples from a uniform distribution while designing the approximate circuits, they are unable to exploit input aware properties to design optimal circuits. Hence, in this work, we bridge this gap and propose Formally Verified Library of Input Data Aware Approximate Circuits (FV-LIDAC). FV-LIDAC is the first formally verified library of input distribution aware approximate arithmetic circuits. We use three of the most widely occurring distributions, namely uniform, normal, and exponential distributions, to show that optimal design sets are heavily dependent on the input data. FV-LIDAC chooses the best designs among millions of functional approximated adder and multiplier circuits, depending upon the inputs. Since there are no existing input-aware approximate circuit libraries, we compared FV-LIDAC against state-of-the-art input-unaware EvoApproxLib, to further highlight the need for FV-LIDAC. Additionally, we perform case studies on real-world applications to further highlight the improvement over state-of-the-art. We aim to make the Pareto-optimal designs available as open source to stimulate further research.},
+  archive      = {J_TODAES},
+  author       = {Sallar Ahmadi-Pour and Sajjad Parvin and Chandan Kumar Jha and Rolf Drechsler},
+  doi          = {10.1145/3744710},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {FV-LIDAC: Formally verified library of input data aware approximate arithmetic circuits},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A CPU+FPGA OpenCL heterogeneous computing platform for multi-kernel pipeline. <em>TODAES</em>, <em>30</em>(4), 1-23. (<a href='https://doi.org/10.1145/3744922'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Over the past decades, Field-Programmable Gate Arrays (FPGAs) have become a choice for heterogeneous computing due to their flexibility, energy efficiency, and processing speed. OpenCL is used in FPGA heterogeneous computing for its high-level abstraction and cross-platform compatibility. Previous works have introduced optimization techniques in OpenCL for FPGAs to leverage FPGA-specific advantages. However, the multi-kernel pipeline technique, which can raise throughput and resource utilization, has not performed well. This article presents a CPU+FPGA heterogeneous platform with a novel execution model to optimize multi-kernel pipeline. Firstly, we extend OpenCL by introducing new APIs and additional functions to represent the execution model. Secondly, a hardware-software co-scheduling scheme is employed to manage execution. Thirdly, we design a holistic development flow and toolkit to facilitate the deployment of algorithms on the platform or the integration of RTL IP cores to the OpenCL environment. We validate the platform using a Range Doppler algorithm. The proposed development flow and integrated toolchain enhance the efficiency of integrating traditional RTL IP cores into the OpenCL environment. Experimental results demonstrate that, with a comparable processing speed (averaging 95%) to traditional RTL implementations, the platform successfully establishes the multi-kernel pipelines. Leveraging the multi-kernel pipeline, the platform achieves a significant improvement in multi-frame processing speed compared to traditional OpenCL.},
+  archive      = {J_TODAES},
+  author       = {Yuefei Wang and Wendong Mao and Lang Feng and Jin Sha and Zhongfeng Wang},
+  doi          = {10.1145/3744922},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A CPU+FPGA OpenCL heterogeneous computing platform for multi-kernel pipeline},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Concurrent prediction of timing and wire length using a multi-task graph neural network. <em>TODAES</em>, <em>30</em>(4), 1-20. (<a href='https://doi.org/10.1145/3747181'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Traditional supervised single-task learning models are used in timing-driven placement exploration to improve both effectiveness and efficiency by predicting wire length, wire delay, and cell delay separately. However, these metrics are interdependent, with the two delays being timing-based and wire length non-timing, which makes it difficult for single-task models to capture their complex relationships. Moreover, the limited existing multi-task learning methods can only predict either multiple timing or non-timing metrics. To address these limitations, this article introduces DLGNN, a novel multi-task graph learning model that simultaneously predicts these three metrics through an embedder-predictor architecture featuring two residual connections, a combination of both soft and hard parameter sharing, and a geometric loss strategy. Cross-design experimental results on the Nangate 45nm library demonstrate that DLGNN outperforms baseline models in terms of both predictive performance and time efficiency. Additionally, ablation studies emphasize the critical roles of the residual connections, the combination of soft and hard parameter sharing, and the geometric loss strategy in improving DLGNN’s predictive performance. The generalization experiment on the ASAP 7nm library further confirms DLGNN’s advantages for more advanced technology nodes.},
+  archive      = {J_TODAES},
+  author       = {Yan Xing and Hongtao Hu and Weijun Li and Shuting Cai and Xiaoming Xiong},
+  doi          = {10.1145/3747181},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {7},
+  number       = {4},
+  pages        = {1-20},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Concurrent prediction of timing and wire length using a multi-task graph neural network},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Bridging hotspot detection and mask optimization via domain-crossing masked layout modeling. <em>TODAES</em>, <em>30</em>(4), 1-20. (<a href='https://doi.org/10.1145/3728468'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rapid development of semiconductors, the size of transistors is continuously scaling down. The shrinking circuit size poses great challenges to optical proximity correction (OPC) and hotspot detection (HSD). Recent advancements in OPC and HSD commonly employ deep neural networks, achieving impressive performance within a limited runtime. Based on these achievements, we observe that deep-learning-based models of both HSD and OPC require knowledge of layout structure information. Furthermore, these two tasks are closely related to the lithography process during chip manufacturing. Observing such strong relationships, we propose that integrating OPC and HSD into a unified deep learning model will contribute to the performance of both tasks. To bridge the relationship between OPC and HSD, we first pre-train a layout understanding model built on the mask modeling technique, which effectively captures the layout geometric information, and then the pre-trained model can be easily fine-tuned on HSD and OPC with limited data. To fully pre-train the layout understanding model (LUM), we create a large layout dataset using layout generation techniques, solving the data-hungry issues. Experimental results show that the fine-tuned LUM model achieves remarkable performance on both OPC and HSD tasks.},
+  archive      = {J_TODAES},
+  author       = {Binwu Zhu and Su Zheng and Yuzhe Ma and Bei Yu and Martin Wong},
+  doi          = {10.1145/3728468},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {6},
+  number       = {4},
+  pages        = {1-20},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Bridging hotspot detection and mask optimization via domain-crossing masked layout modeling},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Early stage DRC hotspot prediction for mixed-size designs through an efficient graph-based deep learning. <em>TODAES</em>, <em>30</em>(4), 1-21. (<a href='https://doi.org/10.1145/3733236'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Predicting hotspot locations in the early stage of Design Rule Check (DRC) is crucial for designers to proactively prevent design rule violations. However, obtaining an accurate and efficient predictor faces significant challenges due to the influence of available information and severe data imbalance. In this study, we investigate the potential of utilizing Graph Neural networks (GNN) to address this challenge. Our focus is specifically on accurately predicting DRC hotspot locations without relying on global routing techniques. We consider the presence of macros in mixed-size designs. We propose an adaptive adjacency matrix that demonstrates superior application effectiveness compared with traditional adjacency matrices. Furthermore, experimental results on benchmark circuits show significant improvements in the true positive rate (22.38% for the RouteNet model and 26.90% for the GNN model) and accuracy (6.97% and 6.76%, respectively) compared with these models. Our proposed model also maintains a low false positive rate and outperforms other Convolutional Neural Network and GNN models. Additionally, its efficient learning capability and lower computational time contribute to its outstanding training performance, with training time being approximately 10% of that required by other models.},
+  archive      = {J_TODAES},
+  author       = {Jingui Lin and Shiyan Liang and Wenxiong Lin and Peng Gao and Yan Xing and Tingting Wu and Xiaoming Xiong and Shuting Cai},
+  doi          = {10.1145/3733236},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {6},
+  number       = {4},
+  pages        = {1-21},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Early stage DRC hotspot prediction for mixed-size designs through an efficient graph-based deep learning},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FixRTL: Auto-correction of multiple RTL bugs by a new feature burst clustering algorithm and mutation. <em>TODAES</em>, <em>30</em>(4), 1-21. (<a href='https://doi.org/10.1145/3733238'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing debugging and correction approaches suffer from weaknesses such as scalability, reproducing new bugs, and lacking a strategy to deal with multiple bugs. Hence, this article proposes FixRTL, a fully automated scalable methodology for localizing and correcting multiple bugs in Register-Transfer level (RTL) designs. FixRTL consists of three phases: (1) Constructing Samples , (2) Debugging , and (3) Correction . First, we simulate the design under verification (DUV), extract coverage data, and construct our samples. Since we are looking for buggy hit-statements, we use the proposed feature burst (FB) clustering algorithm in the Debugging Phase . The algorithm applies samples as train data, categorizes the encoded hit-statements into bursts, and uses them as test data to predict their cluster. Then we rank hit-statements based on their probability of containing bugs per cluster. In the Correction Phase , we apply a proposed mutation-based framework to correct high-ranked hit-statements. The results show that FixRTL reduces the percentage of hit-statements that must be examined to localize bugs on average by 44.3%. The results also demonstrate that FixRTL corrects 67% of injected bugs while recent existing works correct up to 25%. Moreover, unlike recent works, FixRTL offers corrections that match the grand truth.},
+  archive      = {J_TODAES},
+  author       = {Mahsa Heidari and Bijan Alizadeh},
+  doi          = {10.1145/3733238},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {6},
+  number       = {4},
+  pages        = {1-21},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {FixRTL: Auto-correction of multiple RTL bugs by a new feature burst clustering algorithm and mutation},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An analytical solution for transient electromigration stress in multisegment straight-line interconnects based on a stress-wave model. <em>TODAES</em>, <em>30</em>(4), 1-31. (<a href='https://doi.org/10.1145/3734796'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This work presents an analytical approach for analyzing electromigration (EM) in modern technologies that use copper dual damascene (Cu DD) interconnects. In these technologies, due to design rule and methodology constraints, wires are typically laid out unidirectionally in each metal layer; since EM in Cu DD interconnects do not cross layer boundaries, the problem reduces to one of analyzing EM in multisegment interconnect lines. In contrast with traditional empirical methodologies, our approach is based on physics-based modeling, directly solving the differential equations that model EM-induced stress. This article places a focus on interconnect lines, for reasons described above, and introduces the new concept of boundary reflections of stress flux that ascribes a physical (wave-like) analogy to the transient stress behavior in a finite multisegment line. This framework is used to derive analytical expressions of transient EM stress for lines with any number of segments, which can also be tailored to include the appropriate number of terms for any desired level of accuracy. The approach is applied to both the nucleation phase and the postvoiding phase on large power grid benchmarks. These experiments demonstrate excellent accuracy as compared to accurate numerical solution, as well as linear complexity with the number of segments for evaluating stress at a specified point and time.},
+  archive      = {J_TODAES},
+  author       = {Mohammad Abdullah Al Shohel and Vidya A. Chhabria and Nestor Evmorfopoulos and Sachin S. Sapatnekar},
+  doi          = {10.1145/3734796},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {6},
+  number       = {4},
+  pages        = {1-31},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {An analytical solution for transient electromigration stress in multisegment straight-line interconnects based on a stress-wave model},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Sorting it out in hardware: A state-of-the-art survey. <em>TODAES</em>, <em>30</em>(4), 1-31. (<a href='https://doi.org/10.1145/3734797'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sorting is a fundamental operation in various applications and a traditional research topic in computer science. Improving the performance of sorting operations can have a significant impact on many application domains. Much attention has been paid to hardware-based solutions for high-performance sorting. These are often realized with application-specific integrated circuits (ASICs) or field-programmable gate arrays (FPGAs). Recently, in-memory sorting solutions have also been proposed to address the movement cost issue between memory and processing units, also known as the Von Neumann bottleneck. Due to the complexity of the sorting algorithms, achieving an efficient hardware implementation for sorting data is challenging. A large body of prior solutions is built on compare-and-swap (CAS) units. These are categorized as comparison-based sorting. Some recent solutions offer comparison-free sorting. In this survey, we review the latest works in the area of hardware-based sorting. We also discuss the recent hardware solutions for partial and stream sorting. Finally, we discuss some important concerns that need to be considered in the future designs of sorting systems.},
+  archive      = {J_TODAES},
+  author       = {Amir Jalilvand and Faeze S. Banitaba and S. Newsha Estiri and Sercan Aygun and M. Hassan Najafi},
+  doi          = {10.1145/3734797},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {6},
+  number       = {4},
+  pages        = {1-31},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Sorting it out in hardware: A state-of-the-art survey},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DTGx2: Dual target diagnostic test generation. <em>TODAES</em>, <em>30</em>(4), 1-15. (<a href='https://doi.org/10.1145/3735131'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Logic diagnosis is important for deriving information about defects that are present in fabricated units when they are found to be faulty. This information can assist in yield learning and improvement. When needed, the accuracy of logic diagnosis can be improved by using diagnostic tests to complement fault detection tests. Diagnostic test generation for logic faults is the process that produces diagnostic tests. Diagnostic test generation procedures target fault pairs that are not distinguished by a fault detection test set. However, an improvement in diagnostic accuracy is not guaranteed as diagnostic tests are added to the test set, and some tests may cause the diagnostic accuracy to decrease. This article is the first to suggest a second target for diagnostic test generation based on the results of logic diagnosis for simulated faulty units. The second target attempts to predict when a diagnostic test will have a negative effect on the diagnostic accuracy, and helps exclude such a test from the test set. An attempt to generate an alternate test for the same fault pair is made in a later iteration of diagnostic test generation. The dual target diagnostic test generation procedure suggested in this article was implemented in an academic simulation environment and applied to benchmark circuits. Experimental results demonstrate the ability of the procedure to identify diagnostic tests that should be avoided. The tests typically have alternates that can be found in later iterations.},
+  archive      = {J_TODAES},
+  author       = {Irith Pomeranz},
+  doi          = {10.1145/3735131},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {6},
+  number       = {4},
+  pages        = {1-15},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {DTGx2: Dual target diagnostic test generation},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PSCaps: High-performance pose-sensitive layout hotspot detector based on CapsNet. <em>TODAES</em>, <em>30</em>(4), 1-21. (<a href='https://doi.org/10.1145/3735132'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Advanced technology nodes face challenges with Design Rule Violations (DRVs), primarily due to the possibility of nm-level small variations that can lead to the occurrence of DRVs. Various Machine Learning (ML) techniques have been introduced to detect whether the layout design conforms to manufacturing rules, thus alleviating the time-consuming challenge associated with traditional lithography simulations. However, existing ML models still face challenges in detecting layout violations where there are pose variations among geometric shapes in the layout. In this study, we propose a hotspot detector called PSCaps based on the CapsNet, which considers the pose information of geometric shapes in the layout. The method effectively captures spatial information and hierarchical structures between geometric shapes in the layout. Through the dynamic routing mechanism, the model adaptively learns the relationships and weight allocations between different capsules. Additionally, we employ multiple data augmentation methods to alleviate the problem of imbalanced hotspot and non-hotspot data in the open-source dataset. The benchmarks of ICCAD-2012 and ICCAD-2019 are used to validate our method. The experimental results demonstrate that our proposed hotspot detector outperforms other state-of-the-art works.},
+  archive      = {J_TODAES},
+  author       = {Ying Wang and Haopeng Yan and Yiwen Zhang and Peng Gao and Fei Yu and Xiaoming Xiong and Shuting Cai},
+  doi          = {10.1145/3735132},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {6},
+  number       = {4},
+  pages        = {1-21},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {PSCaps: High-performance pose-sensitive layout hotspot detector based on CapsNet},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A systematic mapping study on SystemC/TLM modeling capabilities in new research domains. <em>TODAES</em>, <em>30</em>(4), 1-41. (<a href='https://doi.org/10.1145/3735641'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With increasingly complex circuits and systems, the need for advanced design methodologies is growing. These methodologies shift the designers’ focus from technology-specific implementations to more abstract electronic system design (ESL). SystemC was developed to address this need. Being an open standard based on C++, SystemC facilitates hardware and software modeling across multiple levels of abstraction, with a particular emphasis on ESL. It is further enhanced by including the transaction-level modeling (TLM) layer, strengthening its capability to model communication between components, and even full-system simulators. Traditionally, SystemC/TLM has been deployed to provide hardware prototypes for software development early in the design process. However, surveys and literature reviews showing other capabilities of SystemC/TLM are scarce. Hence, it is essential to explore SystemC/TLM’s new capabilities in different domains such as in-circuit fault propagation, security assessment, and verification. In this article, we conduct a systematic mapping study (SMS) of SystemC/TLM modeling capabilities in certain research domains. We elaborate on the state-of-the-art ESL with an emphasis on SystemC/TLM-based system modeling. Subsequently, we present how such technologies can be applied to the new research domains within the field of circuit and system modeling, namely: (D.1) architecture exploration, (D.2) power estimation, (D.3) fault-injection analysis, (D.4) functional and security verification, and (D.5) side-channel analysis. This SMS highlights the advantages and disadvantages of the investigated SystemC/TLM capabilities and addresses the open challenges in these domains, concluding that SystemC/TLM offers significant potential in performance evaluation, verification, and security assessment of circuits and systems at ESL.},
+  archive      = {J_TODAES},
+  author       = {Ahmed Mahmoudi and Andrija Nešković and Celine Thermann and Robin Sehm and Christoph Hübner and Tavia Plattenteich and Rolf Meyer and Rainer Buchty and Mladen Berekovic and Saleh Mulhem},
+  doi          = {10.1145/3735641},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {6},
+  number       = {4},
+  pages        = {1-41},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A systematic mapping study on SystemC/TLM modeling capabilities in new research domains},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Design space exploration for scalable DNN accelerators using a memory-centric analytical model for HW/SW co-design. <em>TODAES</em>, <em>30</em>(3), 1-29. (<a href='https://doi.org/10.1145/3729227'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As Deep Neural Network (DNN) models became more complex, the escalating computational demands on hardware made DNN accelerators a critical research topic. The rapid growth of DNN models required DNN accelerators to keep pace with these computational demands. However, the cost of hardware design was significant, and hardware and software were tightly coupled in the design of DNN accelerators. Much research on HW/SW co-design was evident, highlighting the importance of having a comprehensive framework to help find the optimal hardware and software design during the design phase. The cost models used in most of the current research relied on data reuse and mathematical estimation to calculate costs, an approach that was fast but inaccurate. In this article, we propose a framework for HW/SW co-design and introduce a hybrid cost model based on Gem5 that provides fast and precise performance evaluation. The framework uses a memory-centric approach to accurately model off-chip memory behavior. In addition, we discuss how to find the best design in a large co-design space and integrate a design point through a traffic generator and a cost model. Finally, we demonstrate that our framework can accurately assist DNN accelerator developers in exploring the optimal hardware and software co-design quickly and efficiently.},
+  archive      = {J_TODAES},
+  author       = {Wei-Chun Huang and Chih-Wei Tang and Kuei-Chung Chang and Tien-Fu Chen and Hsiang-Cheng Hsieh and Ming-Hsuan Tsai},
+  doi          = {10.1145/3729227},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {5},
+  number       = {3},
+  pages        = {1-29},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Design space exploration for scalable DNN accelerators using a memory-centric analytical model for HW/SW co-design},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A heterogeneous chiplet architecture for accelerating end-to-end transformer models. <em>TODAES</em>, <em>30</em>(3), 1-24. (<a href='https://doi.org/10.1145/3718487'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Transformers have revolutionized deep learning and generative modeling, enabling advancements in natural language processing tasks. However, the size of transformer models is increasing continuously, driven by enhanced capabilities across various deep learning tasks. This trend of ever-increasing model size has given rise to new challenges in terms of memory and compute requirements. Conventional computing platforms, including GPUs, suffer from suboptimal performance due to the memory demands imposed by models with millions/billions of parameters. The emerging chiplet-based platforms provide a new avenue for compute- and data-intensive machine learning applications enabled by a Network-on-Interposer (NoI). However, designing suitable hardware accelerators for executing Transformer inference workloads is challenging due to a wide variety of complex computing kernels in the Transformer architecture. In this article, we leverage chiplet-based heterogeneous integration to design a high-performance and energy-efficient multichiplet platform to accelerate transformer workloads. We demonstrate that the proposed NoI architecture caters to the data access patterns inherent in a transformer model. The optimized placement of the chiplets and the associated NoI links and routers enable superior performance compared to the state-of-the-art hardware accelerators. The proposed NoI-based architecture demonstrates scalability across varying transformer models and improves latency and energy efficiency by up to 11.8× and 2.36×, respectively when compared with the existing state-of-the-art architecture HAIMA.},
+  archive      = {J_TODAES},
+  author       = {Harsh Sharma and Pratyush Dhingra and Jana Doppa and Umit Ogras and Partha Pratim Pande},
+  doi          = {10.1145/3718487},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {4},
+  number       = {3},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A heterogeneous chiplet architecture for accelerating end-to-end transformer models},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EasyMRC: Efficient mask rule checking via representative edge sampling. <em>TODAES</em>, <em>30</em>(3), 1-19. (<a href='https://doi.org/10.1145/3723044'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The photolithography process is getting more sophisticated with technology node scaling down and VLSI designs becoming complex. As photomask patterns get finer, mask rule checks are inevitable to avoid discrepancies in the layout and to ensure manufacturability. This article introduces an efficient mask rule checking approach that utilizes a representative edge sampling scheme. The representative edge sampling scheme selects a subset of edges and points of each polygon that capture its contour, meanwhile greatly reducing the number of edges involved in actual checking. Experimental results demonstrate that the proposed approach achieves significant speedup compared with the state-of-the-art academic tool.},
+  archive      = {J_TODAES},
+  author       = {Jiahao Xu and Zhuolun He and Shuo Yin and Yuan Pu and Wenjian Yu and Bei Yu},
+  doi          = {10.1145/3723044},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {4},
+  number       = {3},
+  pages        = {1-19},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {EasyMRC: Efficient mask rule checking via representative edge sampling},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hierarchical integration of reinforcement learning and optimization algorithms for time-efficient design automation of complex analog circuit. <em>TODAES</em>, <em>30</em>(3), 1-22. (<a href='https://doi.org/10.1145/3723162'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Design automation of complex analog circuits (CAC) with multiple sub-blocks is challenging mainly due to large design search space, uncertain intermediate subgoal creation, and lengthy CAC simulation runtime. In this work, we propose a hierarchical and heterogeneous integration framework as a fully automated and time-efficient CAC design optimization solution. In Particularly, we (i) decompose CAC into two levels hierarchically and for the first time introduce hierarchical RL agents with hindsight and subgoal testing to automate the subgoal creation between these two levels. The subgoal converges to the optimal value through algorithm interactions. (ii) We enable high-level design space dimensionality reduction, minimize CAC simulation runs through a buffer hold, and employ low-level sub-block execution parallelization to reduce overall runtime. (iii) We construct a heterogeneous integration of different RL algorithms and black-box optimization algorithms in hierarchy to further boost the speed by benefiting both from the hierarchical structure and the advantages of each different algorithm. Experiments on four CAC topologies demonstrate that this framework achieves a maximum of 11.4× speed up compared to existing methods at the desired figure-of-merit. This work opens up a time efficient design automation route for complex analog circuits and systems.},
+  archive      = {J_TODAES},
+  author       = {Xingwei Feng and Yifan Xu and Zhangcheng Huang and Wuyi Xu and Zhaori Bi and Fan Yang and Xuan Zeng and Ye Lu},
+  doi          = {10.1145/3723162},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {4},
+  number       = {3},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Hierarchical integration of reinforcement learning and optimization algorithms for time-efficient design automation of complex analog circuit},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fault-tolerant cyclic queuing and forwarding with fast ACK in time-sensitive networking. <em>TODAES</em>, <em>30</em>(3), 1-18. (<a href='https://doi.org/10.1145/3723163'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {TSN is widely used in industrial automation networks because it can provide deterministic transmission services for critical data. Cyclic Queuing and Forwarding (CQF) is used to shape critical data. However, unexpected data errors may occur due to transient failures like electromagnetic interference. IEEE 802.1CB provides a solution to tolerate such failures by transmitting multiple replicas of data over disjoint paths. However, this solution introduces network resources wastage. Compared to redundant transmission, retransmission can reduce resource waste, but may violate the determinism in TSN. To address this issue, we propose a fault-tolerant mechanism for CQF that supports retransmission, called fault-tolerant CQF (FT-CQF). FT-CQF adopts the Go-Back-N concept to resist failure. Therefore, it does not violate the original transmission sequence of frames. On the basis of standard CQF, FT-CQF occupies an additional queue to cache replicas of Time-Trigger (TT) flows and reserves time slots to forward them. FT-CQF will forward or remove these replicas based on the ACK information. Non-TT flows can use this time slot to transmit when replicas are removed. We implemented FT-CQF on OMNeT++ and verified the performance of FT-CQF. Simulation experiments show that FT-CQF is effective in terms of reliability, bandwidth consumption, and delay.},
+  archive      = {J_TODAES},
+  author       = {Liwei Zhang and Tong Zhang and Xiaoqin Feng and Yanying Ma and Hao Yang and Fengyuan Ren},
+  doi          = {10.1145/3723163},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {4},
+  number       = {3},
+  pages        = {1-18},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Fault-tolerant cyclic queuing and forwarding with fast ACK in time-sensitive networking},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). HNM-CIM: An algorithm-hardware co-designed SRAM-based CIM for transformer acceleration exploiting hybrid N:M sparsity. <em>TODAES</em>, <em>30</em>(3), 1-22. (<a href='https://doi.org/10.1145/3724394'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {SRAM-based computing-in-memory (CIM) is an efficient technology for computing neural networks where matrix operations are dominated. However, leveraging sparsity in CIM presents challenges due to the crossbar architecture, which complicates the avoidance of zero element calculations. Previous CIM designs have demonstrated that sparsity can improve energy efficiency, but these approaches often lead to non-negligible accuracy loss or substantial hardware overhead. To address this challenge, we propose a hybrid N:M CIM (HNM-CIM), an algorithm-architecture co-design framework for accelerating Transformers. At the algorithm level, we propose a hybrid N:M pruning (HNMP), a method that combines structured and unstructured sparsity. This approach maintains regularity while preserving the random distributions of sparsity, thereby enhancing model sparsity with negligible accuracy loss and ensuring CIM compatibility. At the hardware level, we introduce a hybrid N:M sparse digital CIM (HNM-CIM) to support HNMP, which can accelerate Transformers with hybrid N:M sparsity patterns. Experimental results show that HNMP can reduce Transformer models by about 3.1× on model size with negligible accuracy loss. Compared with state-of-the-art references, HNM-CIM yields about 2.46× speed up and 1.43× area savings.},
+  archive      = {J_TODAES},
+  author       = {Yuang Ma and Yulong Meng and Zihao Xuan and Song Chen and Yi Kang},
+  doi          = {10.1145/3724394},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {4},
+  number       = {3},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {HNM-CIM: An algorithm-hardware co-designed SRAM-based CIM for transformer acceleration exploiting hybrid N:M sparsity},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Test templates to guide test generation for single-cycle gate-exhaustive faults. <em>TODAES</em>, <em>30</em>(3), 1-17. (<a href='https://doi.org/10.1145/3724395'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Advanced fault models, such as the defect-aware, cell-aware, and gate-exhaustive fault models, associate several faults with each standard cell or gate of a design. Test generation procedures, including ones that target advanced fault models, produce incompletely specified tests, or test cubes, to support test compaction and test data compression. The key contribution of this article is to generalize the concept of a test cube into that of a test template for fault models where several faults are associated with the same standard cell or gate. Considering single-cycle gate-exhaustive faults as an example, a test template π i for a gate G i with a set of faults F i captures input values that are common to all the tests for the faults in F i while allowing other input values to be different for different faults in F i . A new value, denoted by v , designates a value that is not common to all the inputs. A test template is useful, since faults in F i share many of the same activation and propagation conditions, and learning the common input values of their tests can reduce the search space for test generation. The effectiveness of using test templates to guide test generation is demonstrated by considering single-cycle gate-exhaustive faults that are not detected by a given test set. Such faults are hard to detect. As part of the test generation procedure developed in this article, merging of test templates is carried out for increasing the fault coverage, and additional tests are generated by specifying the v values of test templates. The implementation of the test generation procedure was performed in an academic simulation environment using academic software tools, and the results are reported for benchmark circuits.},
+  archive      = {J_TODAES},
+  author       = {Irith Pomeranz},
+  doi          = {10.1145/3724395},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {4},
+  number       = {3},
+  pages        = {1-17},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Test templates to guide test generation for single-cycle gate-exhaustive faults},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CRM_BF: A low-overhead, high-efficient and reconfigurable operation unit design approach using the customized reed-muller unit for boolean functions of sequence cipher algorithms. <em>TODAES</em>, <em>30</em>(3), 1-30. (<a href='https://doi.org/10.1145/3725869'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sequence ciphers algorithms encrypt or decrypt information at a low cost and high speed compared to other cryptographic algorithms, which are widely applied to critical applications and sensitive fields. As the core component of sequence ciphers, Boolean functions generate the random number or implement the update process of random numbers. The existing implementations of Boolean functions cause a great waste of area resources and generate several long critical paths that limit the hardware performance of sequence ciphers. To address this issue, a 64-bit Boolean Function Reconfigurable Operation Unit (BFROU) is proposed to reduce the area overhead, lower the delay latency, and enhance the operation efficacy of Boolean functions. Through statistical characterization analysis and cutting experiments of Boolean functions, a 64-bit BFROU based on Customized Reed–Muller 3 units has been designed, which has the advantage of being low cost and highly efficient. The Customized Reed-Muller (CRM) unit is customized based on RM logic. A theoretical framework for Boolean functions is proposed by combining CRM units with mathematical expressions, which encompasses Boolean functions for any variable. On the platform of synthesis software, based the theoretical architecture, a CRM-OPT optimization algorithm is proposed, which can achieve the conversion of And Inverter Graph (AIG) to Customized Reed-Muller Graph (CRMG). This CRM unit achieved at least 22.4% and 25.1% optimization in delay and area compared to Universal Reed--Muller (URM) units. The experimental results show that the Area Delay Product (ADP) is minimized when the CRM-3 unit is the optimal maximum cutting size. Ultimately, the BFROU design was realized utilizing CRM units, achieving an area of 195.4 μm² and a critical path delay of 0.35 ns. This BFROU can achieve special Boolean functions involving 64 variables at maximum, with 91% of these functions being mapped within two iterations. Moreover, this BFROU has significant advantages over other known schemes regarding area, critical path delay, ADP, and number of iterations consumed.},
+  archive      = {J_TODAES},
+  author       = {Zhaoxu Zhou and Zihang Huang and Junwei Li and Yanjiang Liu and Zibin Dai},
+  doi          = {10.1145/3725869},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {4},
+  number       = {3},
+  pages        = {1-30},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {CRM_BF: A low-overhead, high-efficient and reconfigurable operation unit design approach using the customized reed-muller unit for boolean functions of sequence cipher algorithms},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Context-aware data augmentation for hardware code fault localization. <em>TODAES</em>, <em>30</em>(3), 1-20. (<a href='https://doi.org/10.1145/3725889'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The maintenance of quality and reliability in hardware products inherently relies on the verification of hardware code. Despite being a time-consuming process, the localization of faults in hardware code is essential for effective hardware verification. Dynamic fault localization (DFL) is considered one of the most effective methods for localizing faults. It utilizes coverage information, known as the coverage matrix, which is obtained from both passing and failing tests, to identify the program elements that are most likely responsible for observed failures in hardware programming languages such as VHDL or Verilog. However, the presence of error propagation, numerous fault-irrelevant statements, and highly imbalanced coverage information pose significant challenges for DFL. In this article, we propose Canal, a C ontext- a ware data augme n tation a pproach for dynamic fau l t localization in hardware code, to address these challenges. Canal effectively overcomes these challenges by leveraging in-time detection to prevent error propagation and utilizing program slicing to construct a semantic context that filters out fault-irrelevant statements. Additionally, it employs over-sampling techniques to balance the coverage information of passing and failing tests. Finally, the balanced coverage matrix is fed into DFL to compute the suspiciousness value of each statement. To evaluate the effectiveness of Canal, we conduct large-scale experiments on 10 programs and compare our method with 10 dynamic fault localizations. The experimental results clearly demonstrate that Canal surpasses the performance of all the compared DFL methods; e.g., Canal achieves an average improvement of 148.2% in Top-1 accuracy compared to the evaluation formulas.},
+  archive      = {J_TODAES},
+  author       = {Jian Hu and Zhenlei Liu},
+  doi          = {10.1145/3725889},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {4},
+  number       = {3},
+  pages        = {1-20},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Context-aware data augmentation for hardware code fault localization},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deep reinforcement learning-based resource allocation with enhanced perception and low-latency for autonomous driving in ISAC-aided VEC. <em>TODAES</em>, <em>30</em>(3), 1-34. (<a href='https://doi.org/10.1145/3727146'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As autonomous driving technology advances, the intelligence levels of vehicles continue to increase. However, meeting the demands of autonomous driving in various scenarios requires improved wireless communication and vehicle perception capabilities. Integrated sensing and vehicular edge computing (VEC) technology can provide collaborative perception and computing resources for vehicles. Nevertheless, the high-speed mobility of vehicles leads to frequent changes in channel state information and distances between vehicles and roadside units (RSUs), which poses challenges for low-latency perception processing. Additionally, most research overlooks the impact of vehicle mobility on perception accuracy and lacks effective resource allocation strategies for multi-source perception data fusion tasks. Addressing existing research shortcomings, this paper proposes a deep reinforcement learning(DRL)-based resource allocation method. It first adopts Integrated Sensing and Communication (ISAC) technology in the same frequency band to improve spectrum efficiency and integration. Secondly, it constructs a data fusion model to enhance vehicle perception capabilities and describes the data fusion process between vehicle terminals and RSU terminals. Furthermore, this paper designs a resource allocation algorithm for multi-source perception data fusion tasks with the optimization goal of minimizing task completion delay and system average energy consumption. Considering the mobility of vehicles and the frequent changes in communication channel states, this paper transforms the constructed problem into a Markov decision process (MDP). It solves it using the Improved Dueling Twin Delayed Deep Deterministic policy gradient (ID-TD3) algorithm. Experiment results demonstrate that the proposed strategy can reasonably allocate system resources, effectively reducing task completion delay and system average energy consumption.},
+  archive      = {J_TODAES},
+  author       = {Chunlin Li and Long Chai and Yong Zhang and Mengjie Yang and Ruidong Zhao and Zihao Zhang and Denghua Li and Shaohua Wan},
+  doi          = {10.1145/3727146},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {4},
+  number       = {3},
+  pages        = {1-34},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Deep reinforcement learning-based resource allocation with enhanced perception and low-latency for autonomous driving in ISAC-aided VEC},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimizing FPGA routing with explainable co-learning of congestion and wirelength. <em>TODAES</em>, <em>30</em>(3), 1-22. (<a href='https://doi.org/10.1145/3728467'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In FPGA routing, machine learning-based optimization methods have achieved improved routing solutions by integrating traditional heuristics with predictive capabilities. However, these approaches mostly relied on single-task learning models with black-box nature and often neglected the complex tradeoffs and inter-dependencies between routing metrics. To address these limitations, this article introduces a novel multi-task learning-based routing optimization method. In the congestion-wirelength co-learning stage, the simultaneous prediction of congestion and wirelength is formulated as a multi-task learning problem. A multi-task learning model, named CWNet, is proposed to tackle this challenge effectively. During the congestion-wirelength impact interpretation, the contribution of congestion to wirelength is quantified using an XAI technique known as DeepSHAP, producing a congestion-wirelength impact map. In the congestion-wirelength co-guided routing optimization (CWRO) stage, the VTR router’s lookahead map is enhanced based on the impact map, guiding the router to avoid locations where congestion significantly affect wirelength. Experimental results demonstrate that CWNet outperforms most baseline learning models in terms of both prediction performance and computational efficiency. Additionally, the impact map visually illustrates the complex and nonlinear relationship between congestion and wirelength. Ultimately, CWRO significantly reduces congestion, wirelength, and critical path delay, while maintaining a competitive runtime compared to baseline routers.},
+  archive      = {J_TODAES},
+  author       = {Wenhao Liu and Yan Xing and Shuting Cai and Weijun Li and Xiaoming Xiong},
+  doi          = {10.1145/3728467},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {4},
+  number       = {3},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Optimizing FPGA routing with explainable co-learning of congestion and wirelength},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Secure & reliable 10T SRAM cell during read, write and hold operations against power analysis attack. <em>TODAES</em>, <em>30</em>(3), 1-19. (<a href='https://doi.org/10.1145/3718086'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cryptography is essential to ensure data security in embedded devices that handle sensitive data. SRAM boosts overall performance by temporarily storing cryptographic keys. However, attackers can use side-channel, such as Power Analysis, to exploit power consumption patterns and extract secret keys. Once a key is compromised, encrypted data becomes vulnerable. There are many secure SRAM cell designs available in the literature, but they often degrade other performance parameters. This article presents a novel 10-T SRAM cell design that provides protection against power analysis side-channel attacks (SCA) across all three cell operations, while also maintaining the performance of other key parameters. Monte Carlo simulations were conducted on 1,000 samples each for case when BL = Q and BL ≠ Q during reading, writing, and holding data, using Cadence Virtuoso with a 45-nm technology node at 1V/270°C. Based on these simulations, the mean power difference was evaluated. The proposed P-10T SRAM cell exhibits a 0% mean power difference in all three modes of operation, demonstrating complete resilience to power analysis SCA. The design achieves 84.87% reliability with hold stability, read stability, and write ability values of 429 mV, 242 mV, and 250 mV, respectively. Furthermore, the write power dissipation of P-10T cell is 57.44 μW, which is 1.80 × lower than the power consumed by the conventional 6T cell.},
+  archive      = {J_TODAES},
+  author       = {Aastha Gupta and Ravi Sindal and Vaibhav Neema},
+  doi          = {10.1145/3718086},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {1-19},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Secure & reliable 10T SRAM cell during read, write and hold operations against power analysis attack},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic per-flow queues in shared buffer TSN switches. <em>TODAES</em>, <em>30</em>(3), 1-21. (<a href='https://doi.org/10.1145/3718087'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Time-Sensitive Networking (TSN), as an enhancement based on Ethernet, can ensure deterministic traffic transmission with low delays and minimal jitters. However, TSN switches have only eight priority queues inherited from Ethernet at each egress port, which limits the flexibility and efficiency of traffic scheduling, as well as the support for developing traffic management mechanisms. Although per-flow queues boost scheduling and Quality of Service (QoS), static per-flow hardware queues in switches are considered unpractical due to resource limits. In this article, we leverage the limitation of buffer size on the number of concurrent flows in shared buffer TSN switches to design Dynamic Per-Flow Queues (DFQ). DFQ only maintains a fixed number of virtual queues determined by the buffer size and dynamically manages the mapping between virtual queues and active flows to provide the capability of per-flow queuing. By constructing Flow Mapping Table (FMT) with content-addressable memory (or hash bucket), DFQ can quickly match, create, and recycle queues to multiplex limited switch resource. We prototype DFQ on an FPGA switch and evaluate its performance in different scenarios. Experimental results show that DFQ can decrease the overhead of per-flow isolation with minimal impact on delay and throughput, indicating that DFQ is an effective per-flow queues solution.},
+  archive      = {J_TODAES},
+  author       = {Wenxue Wu and Tong Zhang and Zhen Li and Xiaoqin Feng and Liwei Zhang and Fengyuan Ren},
+  doi          = {10.1145/3718087},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {1-21},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Dynamic per-flow queues in shared buffer TSN switches},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LithoExp: Explainable two-stage CNN-based lithographic hotspot detection with layout defect localization. <em>TODAES</em>, <em>30</em>(3), 1-25. (<a href='https://doi.org/10.1145/3721129'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Convolutional neural networks (CNNs) successfully detect lithographic hotspots by learning from hand-designed features of layout patterns or entire layouts, as images, in an end-to-end fashion. However, compared to lithography simulation, CNN-based solutions demonstrate inferior hotspot detection accuracy and a high false-alarm rate. Moreover, the interpretability of the hotspot prediction process has yet to be considered due to the “black-box” nature of CNNs. In this work, inspired by conventional lithography simulation where defect regions are simulated as direct evidence for hotspot identification, we propose an explainable two-stage CNN-based hotspot detector that considers both the accuracy and interpretability of hotspot detection. Our architecture learns to locate the defect areas in the first stage as extracted hotspot features. In the second stage, we combine the strength of feature engineering and end-to-end learning, incorporating the original layout input, the learned defect location map from the first stage, and a fixed auxiliary region of interest (ROI) map for final hotspot detection. Experimental results for our technique exhibit the highest hotspot accuracy (98.1%) and the lowest false-alarm rate (4.0%) thus far compared to all prior CNN solutions. We also demonstrate the best overall qualitative and quantitative interpretability results with the highest increase in confidence (IC) and the lowest average drop (AD) in scores when CNN interpretation methods such as Grad-CAM-based approaches are applied. We further demonstrate use cases of our technique for successfully justifying and pinpointing hotspot mispredictions by examining the prediction evidence from our learned defect locations.},
+  archive      = {J_TODAES},
+  author       = {Cong Jiang and Haoyang Sun and Dan Feng and Zhiyao Xie and Benjamin Tan and Kang Liu},
+  doi          = {10.1145/3721129},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {3},
+  number       = {3},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {LithoExp: Explainable two-stage CNN-based lithographic hotspot detection with layout defect localization},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MESSI: Task mapping and scheduling strategy for FPGA-based heterogeneous real-time systems. <em>TODAES</em>, <em>30</em>(3), 1-29. (<a href='https://doi.org/10.1145/3715323'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Continuous demands for improved performance within constrained resource budgets are driving a move from homogeneous to heterogeneous processing platforms for the implementation of today’s Real-Time (RT) embedded systems. The applications executing on such systems are typically represented as a Precedence Task Graph (PTG), where a node represents a task or algorithm for one functionality and edges represent the complex interactions between multiple functionalities. Due to RT constraints, the task graph needs to be executed within a specified deadline. Although some existing studies have looked into solving this challenge, comprehensive studies that combine the theoretical features of RT task-graph mapping and scheduling with practical runtime architectural characteristics have mostly been ignored to date. Hence, in this article, we consider the challenge of scheduling an RT application modeled as a single PTG, with the objective of minimizing the overall execution time under Hardware (HW) resource and deadline constraints for heterogeneous Central Processing Unit (CPU) + Field Programmable Gate Array (FPGA) architectures. First, we introduce an optimal solution using Integer Linear Programming (ILP). However, this ILP-based optimal solution suffers from computational complexity and does not scale well even for moderately large problem sizes. Hence, we additionally propose heuristic algorithms for task mapping and scheduling. The efficiency of the proposed scheme, named MESSI, has been evaluated through experiments using PTG on a practical CPU+FPGA system regarding current technology restrictions. Our experiments demonstrate that performance gains of 55.6% and area usage reductions of 46.3% are possible compared to full Software (SW) and HW execution, respectively.},
+  archive      = {J_TODAES},
+  author       = {Sallar Ahmadi-Pour and Sangeet Saha and Klaus McDonald-Maier and Rolf Drechsler},
+  doi          = {10.1145/3715323},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {3},
+  pages        = {1-29},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {MESSI: Task mapping and scheduling strategy for FPGA-based heterogeneous real-time systems},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A survey of research in large language models for electronic design automation. <em>TODAES</em>, <em>30</em>(3), 1-21. (<a href='https://doi.org/10.1145/3715324'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Within the rapidly evolving domain of Electronic Design Automation (EDA), Large Language Models (LLMs) have emerged as transformative technologies, offering unprecedented capabilities for optimizing and automating various aspects of electronic design. This survey provides a comprehensive exploration of LLM applications in EDA, focusing on advancements in model architectures, the implications of varying model sizes, and innovative customization techniques that enable tailored analytical insights. By examining the intersection of LLM capabilities and EDA requirements, the article highlights the significant impact these models have on extracting nuanced understandings from complex datasets. Furthermore, it addresses the challenges and opportunities in integrating LLMs into EDA workflows, paving the way for future research and application in this dynamic field. Through this detailed analysis, the survey aims to offer valuable insights to professionals in the EDA industry, AI researchers, and anyone interested in the convergence of advanced AI technologies and electronic design.},
+  archive      = {J_TODAES},
+  author       = {Jingyu Pan and Guanglei Zhou and Chen-Chia Chang and Isaac Jacobson and Jiang Hu and Yiran Chen},
+  doi          = {10.1145/3715324},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {3},
+  pages        = {1-21},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A survey of research in large language models for electronic design automation},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Data privacy made easy: Enhancing applications with homomorphic encryption. <em>TODAES</em>, <em>30</em>(3), 1-31. (<a href='https://doi.org/10.1145/3715877'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Homomorphic encryption is a powerful privacy-preserving technology that is notoriously difficult to configure and use, even for experts. The key difficulties include restrictive programming models of homomorphic schemes and choosing suitable parameters for an application. In this tutorial, we outline methodologies to solve these issues and allow for conversion of any application to the encrypted domain using both leveled and fully homomorphic encryption. The first approach, called Walrus, is suitable for arithmetic-intensive applications with limited depth and applications with high throughput requirements. Walrus provides an intuitive programming interface and handles parameterization automatically by analyzing the application and gathering statistics such as homomorphic noise growth to derive a parameter set tuned specifically for the application. We provide an in-depth example of this approach in the form of a neural network inference as well as guidelines for using Walrus effectively. Conversely, the second approach (HELM) takes existing HDL designs and converts them to the encrypted domain for secure outsourcing on powerful cloud servers. Unlike Walrus, HELM supports FHE backends and is well-suited for complex applications. At a high level, HELM consumes netlists and is capable of performing logic gate operations homomorphically on encryptions of individual bits. HELM incorporates both CPU and GPU acceleration by taking advantage of the inherent parallelism provided by Boolean circuits. As a case study, we walk through the process of taking an off-the-shelf HDL design in the form of AES-128 decryption and running it in the encrypted domain with HELM.},
+  archive      = {J_TODAES},
+  author       = {Charles Gouert and Nektarios Georgios Tsoutsos},
+  doi          = {10.1145/3715877},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {3},
+  pages        = {1-31},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Data privacy made easy: Enhancing applications with homomorphic encryption},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A new dynamic countermeasure to strengthen design obfuscation in FPGAs. <em>TODAES</em>, <em>30</em>(3), 1-25. (<a href='https://doi.org/10.1145/3716502'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {FPGAs are being challenged by various security threats, including reverse engineering attacks, hardware tampering, and side-channel analysis attacks. Although the existing static obfuscation methods can protect FPGA systems from IP piracy and hardware tampering, limited work is available to improve the attack resilience of obfuscation modules. As hardware Trojans are one of the most significant hardware tampering attacks on FPGAs, this work aims for the specific hardware Trojan that attempts to nullify design obfuscation. To address this need, we leverage the advanced function of FPGA CAD tools to propose a Dynamic Partial Reconfiguration enabled Design Obfuscation (DPReDO) method. Our method partially modifies the FPGA bitstream at runtime to remove the sabotaged obfuscation variant, thus offering enhanced attack resilience against hardware Trojans. Experimental results based on ISCAS and ITC-99 benchmark circuits show that the DPReDO method reduces the Trojan hit rate by up to 80% over existing static obfuscation with less than 3% hardware overhead. To test the practical feasibility of the proposed countermeasure, we further apply DPReDO to an FPGA-accelerated computation engine for a financial application. Compared to static obfuscation, the proposed DPReDO only incurs 2.6% and 1.2% more FPGA LUTs and slices, respectively.},
+  archive      = {J_TODAES},
+  author       = {Sandeep Sunkavilli and Nishanth Chennagouni and Qiaoyan Yu},
+  doi          = {10.1145/3716502},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {3},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {A new dynamic countermeasure to strengthen design obfuscation in FPGAs},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). : A hybrid time-amplitude analog optical accelerator with flexible dataflows for energy-efficient CNN inference. <em>TODAES</em>, <em>30</em>(2), 1-37. (<a href='https://doi.org/10.1145/3711845'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Several photonic microring resonator (MRR)-based analog accelerators have been proposed to accelerate the inference of integer-quantized Convolutional Neural Networks (CNNs) with remarkably higher throughput and energy efficiency compared to their electronic counterparts. However, the existing analog photonic accelerators suffer from three shortcomings: (1) severe hampering of wavelength parallelism due to various crosstalk effects, (2) inflexibility of supporting various dataflows with temporal accumulations, and (3) failure in fully leveraging the ability of photodetectors to perform in situ accumulations. These shortcomings collectively hamper the performance and energy efficiency of prior accelerators. To tackle these shortcomings, we present a novel H ybrid tim E - A mplitude a N alog optical A ccelerator, called HEANA. HEANA employs hybrid time-amplitude analog optical modulators (TAOMs) in a spectrally hitless arrangement, which significantly reduces optical signal losses and crosstalk effects, thereby increasing the wavelength parallelism in HEANA. HEANA employs our invented balanced photo-charge accumulators (BPCAs) that enable buffer-less, in situ, spatio-temporal accumulations to eliminate the need to use reduction networks in HEANA, relieving it from related latency and energy overheads. Moreover, TAOMs and BPCAs increase the flexibility of HEANA to efficiently support spatio-temporal accumulations for various dataflows. Our evaluation for the inference of four modern CNNs indicates that HEANA provides improvements of at least 25× and 32× in frames per second (FPS) and FPS/W (energy efficiency), respectively, for equal-area comparisons on gmean over two MRR-based analog CNN accelerators from prior work.},
+  archive      = {J_TODAES},
+  author       = {Sairam Sri Vatsavai and Venkata Sai Praneeth Karempudi and Ishan Thakkar},
+  doi          = {10.1145/3711845},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-37},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {: A hybrid time-amplitude analog optical accelerator with flexible dataflows for energy-efficient CNN inference},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Algorithm-hardware co-design for accelerating depthwise separable CNNs. <em>TODAES</em>, <em>30</em>(2), 1-22. (<a href='https://doi.org/10.1145/3711846'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Depthwise separable convolution (DSC) is a popular method for constructing lightweight neural networks. However, the pointwise convolution (PWC) has a much larger number of parameters than the depthwise convolution (DWC), causing the imbalanced parameter ratio of PWC to DWC. In this article, we propose an efficient and hardware-efficiency convolution (Shared Kernel sliding on channel Convolution, SKC) to replace the redundant PWC in DSC for a balanced parameter ratio, where SKC customizes the sharing kernel in the channel dimension to reduce the number of parameters, and the local connection in the channel dimension reduces the computation. Furthermore, the proposed SKC is suitable for Winograd acceleration, and the large kernel decomposition method is introduced to facilitate its use. We implement the first Winograd-based FPGA hardware accelerator for DSCNets. The shared 1D and 2D Winograd convolution computing engine is proposed to compute the proposed DSC consisting of DWC and SKC efficiently. An alternating loading and reusing storage approach is developed to efficiently load SKC input feature maps. Experimental results show our DSC-based accelerator can achieve 20× higher power efficiency at the cost of a small loss of accuracy by algorithm-hardware co-design compared with traditional accelerators.},
+  archive      = {J_TODAES},
+  author       = {Guoqing Li and Rengang Li and Tuo Li and Tinghuan Chen and Meng Zhang and Henk Corporaal},
+  doi          = {10.1145/3711846},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Algorithm-hardware co-design for accelerating depthwise separable CNNs},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Automatic hardware pragma insertion in high-level synthesis: A non-linear programming approach. <em>TODAES</em>, <em>30</em>(2), 1-44. (<a href='https://doi.org/10.1145/3711847'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {High-Level Synthesis enables the rapid prototyping of hardware accelerators, by combining a high-level description of the functional behavior of a kernel with a set of micro-architecture optimizations as inputs. Such optimizations can be described by inserting pragmas e.g., pipelining and replication of units, or even higher level transformations for HLS such as automatic data caching using the AMD/Xilinx Merlin compiler. Selecting the best combination of pragmas, even within a restricted set, remains particularly challenging and the typical state-of-practice uses design-space exploration to navigate this space. But due to the highly irregular performance distribution of pragma configurations, typical DSE approaches are either extremely time consuming, or operating on a severely restricted search space. This work proposes a framework to automatically insert HLS pragmas in regular loop-based programs, supporting pipelining, unit replication, and data caching. We develop an analytical performance and resource model as a function of the input program properties and pragmas inserted, using non-linear constraints and objectives. We prove this model provides a lower bound on the actual performance after HLS. We then encode this model as a Non-Linear Program, by making the pragma configuration unknowns of the system, which is computed optimally by solving this NLP. This approach can also be used during DSE, to quickly prune points with a (possibly partial) pragma configuration, driven by lower bounds on achievable latency. We extensively evaluate our end-to-end, fully implemented system, showing it can effectively manipulate spaces of billions of designs in seconds to minutes for the kernels evaluated.},
+  archive      = {J_TODAES},
+  author       = {Stéphane Pouget and Louis-Noël Pouchet and Jason Cong},
+  doi          = {10.1145/3711847},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-44},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Automatic hardware pragma insertion in high-level synthesis: A non-linear programming approach},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LOGIC: Logic synthesis for digital in-memory computing. <em>TODAES</em>, <em>30</em>(2), 1-27. (<a href='https://doi.org/10.1145/3711848'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In-memory processing offers a promising solution for enhancing the performance of data-intensive applications. While analog in-memory computing demonstrates remarkable efficiency, its limited precision is suitable only for approximate computing tasks. In contrast, digital in-memory computing delivers the deterministic precision necessary to accelerate high-assurance applications. Current digital in-memory computing methods typically involve manually breaking down arithmetic operations into in-memory compute kernels. In contrast, traditional digital circuits are synthesized through intricate and automated design workflows. In this article, we introduce a logic synthesis framework called LOGIC, which facilitates the translation of high-level applications into digital in-memory compute kernels that can be executed using non-volatile memory. We propose techniques for decomposing element-wise arithmetic operations into in-memory kernels while minimizing the number of in-memory operations. Additionally, we optimize the sequence of in-memory operations to reduce non-volatile memory utilization. To address the NP-hard execution sequencing optimization problem, we have developed two look-ahead algorithms that offer practical solutions. Additionally, we leverage data layout reorganization to efficiently accelerate applications that heavily rely on sparse matrix-vector multiplication operations. Our experimental evaluations demonstrate that our proposed synthesis approach improves the area and latency of fixed-point multiplication by 84% and 20% compared to the state-of-the-art, respectively. Moreover, when applied to scientific computing applications sourced from the SuiteSparse Matrix Collection, our design achieves remarkable improvements in area, latency, and energy efficiency by factors of 4.8×, 2.6×, and 11×, respectively.},
+  archive      = {J_TODAES},
+  author       = {Muhammad Rashedul Haq Rashed and Sven Thijssen and Sumit Jha and Rickard Ewetz},
+  doi          = {10.1145/3711848},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {LOGIC: Logic synthesis for digital in-memory computing},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Non-preemptive scheduling of periodic tasks with data dependencies in heterogeneous multiprocessor embedded systems. <em>TODAES</em>, <em>30</em>(2), 1-25. (<a href='https://doi.org/10.1145/3711849'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Heterogeneous multiprocessor architecture is frequently employed as an economical and efficient means of providing excellent parallel processing capabilities while keeping production cost and power consumption under control. Although this architecture achieves significant performance enhancement and cost reduction, it results in a serious task allocation and scheduling problem, especially for periodic tasks with data dependencies, all of which should be reasonably scheduled and executed in a timely manner such that their deadlines and dependence requirements could be satisfied even if the worst happens. In this article, we concentrate on the non-preemptive scheduling problem of periodic tasks with data dependencies upon heterogeneous multiprocessor platforms. First, with models of data-dependent tasks and heterogeneous processors, we analyze the time, space, precedence, and data dependence constraints of tasks and design an exact formulation based on the mixed integer linear programming to completely explore the solution space and produce the optimal solutions. Then, by constructing a directed acyclic graph to depict the dependence relationship of jobs generated by tasks, we propose an efficient off-line list-based scheduling algorithm to provide a reasonable time and processor allocation for each job, with a view to minimizing the completion time of jobs. Experiments with randomly generated tasks are performed to evaluate the effectiveness and efficiency of the proposed algorithm, and the experimental results show that our algorithm can averagely enhance the scheduling success ratio by 28.5%, and, respectively, reduce the task completion time and the deviation ratio by 23.3% and 17.2%, on average.},
+  archive      = {J_TODAES},
+  author       = {Jinchao Chen and Yang Wang and Ying Zhang and Yantao Lu and Qing Li and Qiuhao Shu},
+  doi          = {10.1145/3711849},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Non-preemptive scheduling of periodic tasks with data dependencies in heterogeneous multiprocessor embedded systems},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-row guiding template design for lamellar directed self-assembly with self-aligned via process. <em>TODAES</em>, <em>30</em>(2), 1-17. (<a href='https://doi.org/10.1145/3711851'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Directed self-assembly (DSA) of block copolymers can generate tiny and dense layout features, holding great potential for patterning vias and contacts at advanced nodes. Existing studies mainly focused on guiding template design for cylindrical DSA, but by leveraging self-aligned via process, lamellar DSA can form vias to be immune to placement errors and free of a uniform pitch between vias, which cylindrical DSA suffers from. The state-of-the-art guiding template design for lamellar DSA can handle only single-row templates, thus limiting the flexibility of via grouping. Therefore, in this article, we explore further and propose a novel and general multi-row guiding template design approach. Experimental results show that our approach outperforms the state-of-the-art work on both mask conflicts and short guiding templates, and requires much less computation time.},
+  archive      = {J_TODAES},
+  author       = {Yi-Ting Lin and Kang-Ting Fan and Iris Hui-Ru Jiang},
+  doi          = {10.1145/3711851},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-17},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Multi-row guiding template design for lamellar directed self-assembly with self-aligned via process},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SPTA 2.0: Enhanced scalable parallel track assignment algorithm with two-stage partition considering timing delay. <em>TODAES</em>, <em>30</em>(2), 1-23. (<a href='https://doi.org/10.1145/3712009'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Routability has always been a significant challenge in Very Large Scale Integration (VLSI) design. To overcome the potential mismatch between the global routing results and the detailed routing requirements, track assignment is introduced to achieve an efficient routability estimation. Moreover, with the increasing scale of circuits, the intricate interconnections among the components on the chip lead to increased timing delay in signal transmission, thereby significantly impacting the performance and reliability of the circuit. Thus, to further improve the routability of the circuit, it is also critical to realize an accurate estimation of the timing delay within the track assignment stage. Existing heuristic track assignment algorithms, however, are prone to local optimality, and thus fail to provide accurate routability estimations. In this article, we propose an enhanced scalable parallel track assignment algorithm called SPTA 2.0 for VLSI design, employing a two-stage partition strategy and considering timing delay. First, the proposed algorithm achieves efficient assignment of all wires by considering the routing information from both the global and local nets. Second, the overlap cost, the blockage cost, and the wirelength cost can be minimized to significantly improve the routability. Third, a critical wire controlling strategy is proposed to optimize signal timing delays inside nets. Finally, a two-stage partition strategy and a panel-subpanel-level parallelism are designed to further reduce the runtime, improving the scalability of the proposed methodology. Experimental results on multiple benchmarks demonstrate that the proposed method provides better routability estimations, and leads to superior track assignment solutions compared with existing algorithms.},
+  archive      = {J_TODAES},
+  author       = {Huayang Cai and Pengcheng Huang and Genggeng Liu and Xing Huang and Yidan Jing and Wenhao Liu and Ting-Chi Wang},
+  doi          = {10.1145/3712009},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {SPTA 2.0: Enhanced scalable parallel track assignment algorithm with two-stage partition considering timing delay},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An efficient area and reliability optimization method for MPRM circuits based on high-dimensional genetic algorithm. <em>TODAES</em>, <em>30</em>(2), 1-22. (<a href='https://doi.org/10.1145/3712591'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Area and reliability optimization have become the primary constraints in circuits logic synthesis. To address the increasing area and transient fault susceptibility in combinational circuits, we propose a high-dimensional genetic algorithm (HGA). HGA adopts an evolutionary scheme based on ternary tree, and uses adaptive crossover operator and flight operator to jump out of local optimum. Moreover, based on the HGA, we propose an area and reliability optimization method (AROM) for mixed polarity Reed-Muller logic circuits, which searches the best polarity with minimum area and soft error rate. The experimental results confirm that AROM can search for more desirable nondominated solutions in less time compared to existing optimization methods, and can be used as an effective electronic design automation tool for multi-objective optimization.},
+  archive      = {J_TODAES},
+  author       = {Yuhao Zhou and Jianhui Jiang and Zhenxue He and Ying Zhang and Chengcheng Chen and Zhanhui Shi and Wei Zhang and Keying Yang},
+  doi          = {10.1145/3712591},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {An efficient area and reliability optimization method for MPRM circuits based on high-dimensional genetic algorithm},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Unveiling cross-checking opportunities in verilog compilers. <em>TODAES</em>, <em>30</em>(2), 1-23. (<a href='https://doi.org/10.1145/3715325'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The landscape of Verilog toolchains for electronic design automation (EDA) is diverse, and their reliability is crucial, as errors can lead to significant debugging challenges and delays in development. Methodologies such as testing and formal verification have been applied to identify and eliminate defects in these toolchains. We propose a framework named VeriXmith to interconnect design tools involved in logical synthesis and simulation for cross-checking. These tools process circuit designs and produce outputs in different languages, such as Verilog netlists from synthesizers and C++ programs from simulators. Since these outputs represent the same circuit semantics, we can leverage this semantic consistency to verify the tools that translate one representation into another. Our approach involves creating semantics extractors to extend the range of circuit representations available for semantic equivalence checking by converting them into a canonical and comparable form. Additionally, we develop mutation operators for Verilog designs to introduce new data/control paths and language constructs, enhancing the diversity of circuit designs as test inputs. By validating semantic equivalence, our framework successfully identifies defects in existing Verilog toolchains. An exploratory experiment uncovers 31 previously unknown bugs in well-known open-source Verilog tools, including Verilator and Yosys.},
+  archive      = {J_TODAES},
+  author       = {Yike Zhou and Yanyan Jiang and Jian Lu},
+  doi          = {10.1145/3715325},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Unveiling cross-checking opportunities in verilog compilers},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Effective fault effects evaluation for permanent faults in GPUs executing DNNs. <em>TODAES</em>, <em>30</em>(2), 1-33. (<a href='https://doi.org/10.1145/3715327'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep Neural Networks (DNNs) have permeated multiple applications, including cutting-edge safety-critical domains, which require relevant computational power, often provided by Graphic Processing Units (GPUs). GPUs are manufactured with advanced semiconductor technologies that can be affected by faults during the operational phase (e.g., due to wear-out, aging, or environmental harshness), whose effects possibly reach the DNN outputs, in some cases leading to catastrophic consequences. Hence, hardware-aware reliability assessments of DNNs are crucial to be considered in the context of safety-critical systems (following regulations/standards of specific application domains). Application-level fault injection (FI) techniques (i.e., DNN parameter corruption) are often adopted for the reliability evaluation of DNNs; unfortunately, these approaches hardly represent fault effects from GPU hardware. This work proposes an FI strategy based on Hardware-Injection-Through-Program-Transformation (HITPT) to mimic the effect of permanent faults (PFs) at the GPU instruction level, enabling effective assessment of PFs on DNN’s reliability. Our approach provides a good trade-off between the fault effect evaluation’s accuracy and the required computational time. Using the proposed approach, for the first time, we systematically assessed the effects of PF in GPUs executing some DNN sample cases. The results indicate that the faults injected closer to the hardware, using our evaluation strategy, can produce a higher accuracy degradation than the evaluations performed by the typical application-level FI that modify only the DNN parameters. Furthermore, the proposed FI methodology provides insightful results to identify the most suitable fault-tolerance solutions (e.g., selective hardening or design diversity) for their application at thread levels inside GPU’s kernels.},
+  archive      = {J_TODAES},
+  author       = {Juan David Guerrero Balaguera and Josie Esteban Rodriguez Condia and Matteo Sonza Reorda},
+  doi          = {10.1145/3715327},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {2},
+  number       = {2},
+  pages        = {1-33},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Effective fault effects evaluation for permanent faults in GPUs executing DNNs},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). STRIVE: Empowering a low power tensor processing unit with fault detection and error resilience. <em>TODAES</em>, <em>30</em>(2), 1-25. (<a href='https://doi.org/10.1145/3705003'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Rapid growth in Deep Neural Network (DNN) workloads has increased the energy footprint of the Artificial Intelligence (AI) computing realm. For optimum energy efficiency, we propose operating a DNN hardware in the Low-Power Computing (LPC) region. However, operating at LPC causes increased delay sensitivity to Process Variation (PV). Delay faults are an intriguing consequence of PV. In this article, we demonstrate the vulnerability of DNNs to delay variations, substantially lowering the prediction accuracy. To overcome delay faults, we present STRIVE—a post-fabrication fault detection and reactive error reduction technique. We also introduce a time-borrow correction technique to ensure error-free DNN computation.},
+  archive      = {J_TODAES},
+  author       = {Noel Daniel Gundi and Sanghamitra Roy and Koushik Chakraborty},
+  doi          = {10.1145/3705003},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {1},
+  number       = {2},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {STRIVE: Empowering a low power tensor processing unit with fault detection and error resilience},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Global placement exploiting soft 2D regularity. <em>TODAES</em>, <em>30</em>(2), 1-21. (<a href='https://doi.org/10.1145/3705729'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cell placement is a step of paramount importance in chip physical design and requests relentless effort for continuous improvement. Recently, designs with two-dimensional (2D) processing element arrays have become popular primarily due to their deep neural network hardware applications. The 2D array regularity is similar to but different from the regularity of conventional datapath designs. To exploit the 2D array regularity, this work develops a new global placement technique, Placement of Arrays with SOft Regularity (PASOR), built upon RePlAce, the state-of-the-art placement framework. Experimental results from various designs show that the proposed approach can reduce global routing wirelength by 11% and 6% compared to RePlAce and a previous work on datapath driven placement, respectively.},
+  archive      = {J_TODAES},
+  author       = {Donghao Fang and Boyang Zhang and Hailiang Hu and Wuxi Li and Bo Yuan and Jiang Hu},
+  doi          = {10.1145/3705729},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {1},
+  number       = {2},
+  pages        = {1-21},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Global placement exploiting soft 2D regularity},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SIMTAM: Generation diversity test programs for FPGA simulation tools testing via timing area mutation. <em>TODAES</em>, <em>30</em>(2), 1-25. (<a href='https://doi.org/10.1145/3705730'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Field-Programmable Gate Array (FPGA) timing simulation is essential in electronic circuit design, allowing for the verification of timing characteristics like delays and clock frequencies. However, bugs in timing simulation tools can lead to inaccurate results, potentially causing designers to miss critical issues in chip performance. Traditional testing methods often fall short in thoroughly assessing these tools, as current FPGA testing primarily focuses on synthesis and behavioral simulation, neglecting timing aspects. To address this issue, we propose SIMTAM for testing timing simulation tools. Specifically, SIMTAM consists of three components: equivalent delay region construction, diversity program segment generation, and differential testing. Given a seed circuit design file written by hardware description language such as Verilog, the delay region construction component randomly identifies delay structures for inertial delay in the design file to construct equivalent delay sleep regions. In the sleep region, the simulator skips the signal pulse whose width is less than the specified delay, thus ensuring the equivalence of the variations. The diversity program segment generation component combines Verilog expressions using generation operators and injects them into the sleep region to generate diverse design files. The differential testing component compares the seed and variant design files to find compilation inconsistency issues. In 5 months, SIMTAM reported 16 bugs to developers in two popular timing simulation tools, Iverilog and Vivado, 10 of which are confirmed.},
+  archive      = {J_TODAES},
+  author       = {Zhihao Xu and Shikai Guo and Xiaochen Li and Zun Wang and He Jiang},
+  doi          = {10.1145/3705730},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {1},
+  number       = {2},
+  pages        = {1-25},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {SIMTAM: Generation diversity test programs for FPGA simulation tools testing via timing area mutation},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Physics-informed learning based multiphysics simulation for fast transient TSV electromigration analysis. <em>TODAES</em>, <em>30</em>(2), 1-22. (<a href='https://doi.org/10.1145/3706106'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Through Silicon Vias (TSVs) are vulnerable to electromigration (EM) degradation due to their high local current densities, thereby reducing the reliability of 3D ICs with stack dies and TSVs. Due to the broad application of 3D ICs, it is necessary to analyze the electromigration reliability of TSVs. To overcome the weakness of traditional method for EM modeling of TSVs, we propose a physics-informed learning approach for transient analysis of electromigration modeling in TSV by solving the conventional mass balance equation. The proposed method allows simultaneous consideration of atomic depletion and accumulation, effective resistance degradation, electric current evolution, and stress distribution. In particular, we propose a customized neural network to simulate the EM process in TSV without the need for fine grid meshing and temporal iteration in traditional methods. Considering that the loss function of the proposed model is a combination of different loss terms, we propose a modified self-adaptive loss balanced method to automatically adjust the weights of multiple loss terms to enhance network performance. Given the prediction uncertainty due to data randomness or model architecture constraints, Gaussian probabilistic model is constructed to define the self-adaptive weights and update the dynamic weights per epoch built on maximum likelihood estimation. Compared with the finite element method, the proposed physics informed neural network method can lead to a speedup with less than 0.1% mean square error. Experimental results also show that the proposed model achieves excellent performance over other competing methods and high robustness under values of initial weights, different numbers of hidden layers and neurons per layer.},
+  archive      = {J_TODAES},
+  author       = {Xiaoman Yang and Haibao Chen and Yuhan Zhang and Tianshu Hou and Pengpeng Ren and Runsheng Wang and Zhigang Ji and Ru Huang},
+  doi          = {10.1145/3706106},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {1},
+  number       = {2},
+  pages        = {1-22},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Physics-informed learning based multiphysics simulation for fast transient TSV electromigration analysis},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PACE: A piece-wise approximate floating-point divider with runtime configurability and high energy efficiency. <em>TODAES</em>, <em>30</em>(2), 1-23. (<a href='https://doi.org/10.1145/3706634'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Approximate computing emerges as a viable solution to enhance energy efficiency in applications sensitive to human perception, particularly on edge devices. This work introduces a novel piece-wise approximate floating-point divider that boasts resource efficiency and runtime configurability. Our method leverages a piece-wise approximation algorithm for computing 1/ y by exploiting powers of 2, complemented by an error compensation technique grounded in thorough mathematical analysis. This approach facilitates the realization of a reciprocal-based floating-point divider devoid of multipliers, which not only mitigates hardware resource consumption but also reduces latency. Additionally, we unveil a multi-level runtime configurable hardware architecture that significantly improves flexibility across diverse application contexts. Compared to the existing state-of-the-art approximate dividers and truncated exact dividers, our proposed solution achieves a superior compromise between precision and resource efficiency. Application-level evaluations reveal that our design provides over 87.7% energy saving while maintaining a negligible impact on output quality.},
+  archive      = {J_TODAES},
+  author       = {Chenyi Wen and Haonan Du and Jiayi Wang and Zhengrui Chen and Li Zhang and Qi Sun and Cheng Zhuo},
+  doi          = {10.1145/3706634},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {1},
+  number       = {2},
+  pages        = {1-23},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {PACE: A piece-wise approximate floating-point divider with runtime configurability and high energy efficiency},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhancing the effectiveness of STLs for GPUs via bounded model checking. <em>TODAES</em>, <em>30</em>(2), 1-24. (<a href='https://doi.org/10.1145/3706635'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graphics Processing Units (GPUs) are becoming widespread, even in safety-critical applications. In that case, it is imperative to guarantee that the probability of producing critical failures due to hardware faults is lower than a given threshold. To detect possible permanent hardware faults as soon as they appear during the operational phase (e.g., due to aging), Software Test Libraries (STLs) have gained significant traction as a widely adopted test solution due to their effectiveness in terms of fault detection capabilities, test application time, and flexibility. However, a major drawback of this solution is the lack of automation in the STL generation phase. As a result, high manual labor is required for their generation. This becomes even more arduous in complex architectures that require in-depth knowledge to cover hard-to-test faults. In this article, we introduce a methodology based on Bounded Model Checking to support the generation and improvement of stuck-at-oriented STLs for hard-to-test units in GPUs, showing that we can enhance the test coverage achieved by pre-existing STLs while also identifying a set of functionally untestable faults. To experimentally validate the proposed method’s effectiveness, we use the FlexGripPlus GPU model to target two hard-to-test units, one medium to low complexity sub-unit and one high complexity sub-unit, as study cases. For both units, we had pre-existing STLs written for the stuck-at model. Resorting to the proposed method, the STLs’ test coverage was increased by 9.57% and 2.19%, respectively. In addition, the method also identified a significant number of functionally untestable faults.},
+  archive      = {J_TODAES},
+  author       = {Nikolaos Deligiannis and Tobias Faller and Josie Esteban Rodriguez Condia and Riccardo Cantoro and Bernd Becker and Matteo Sonza Reorda},
+  doi          = {10.1145/3706635},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {1},
+  number       = {2},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Enhancing the effectiveness of STLs for GPUs via bounded model checking},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). ISOAcc: In-situ shift operation-based accelerator for efficient in-SRAM multiplication. <em>TODAES</em>, <em>30</em>(2), 1-24. (<a href='https://doi.org/10.1145/3707205'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Digital SRAM-based CIM architectures must balance three critical factors: quantized neural network bitwidth, accuracy loss, and computational efficiency, each crucial to optimizing performance and efficiency. In Domain Specific Accelerators (DSAs), flexible and specific hardware design, when incorporated with tailored Power-of-2 (P-2) quantization schemes, addresses this issue. However, in CIMs, the absence of flexible and specific hardware to support dynamic switching between general and tailored quantization schemes hinders the adoption of efficient quantization methods. In this article, we propose the I n-situ S hift O peration based Acc elerator ( ISOAcc ) for efficient SRAM-based multiplication. The key idea is to introduce transmission gates near the SRAM array to enable the selection of bits from either the same or the neighbor line when data flows from one row to another. This functionally equals a shift operation. By configuring the transmission gates array in a cascade manner, ISOAcc can support 0 to 15-bit shift with a negligible overhead. The ISOAcc can directly leverage P-2 quantization schemes in hardware, thereby greatly reducing multiplication cycles. We have chosen five well-known neural networks to evaluate ISOAcc. The evaluations show that ISOAcc achieves an average performance improvement of 3.24× and an energy reduction of 75%, compared with the state-of-the-art (SOTA) SRAM-based CIM design, Bit-Parallel.},
+  archive      = {J_TODAES},
+  author       = {Gaoyang Zhao and Junzhong Shen and Rongzhen Lin and Hua Li and Yaohua Wang},
+  doi          = {10.1145/3707205},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {1},
+  number       = {2},
+  pages        = {1-24},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {ISOAcc: In-situ shift operation-based accelerator for efficient in-SRAM multiplication},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Harnessing machine learning in dynamic thermal management in embedded CPU-GPU platforms. <em>TODAES</em>, <em>30</em>(2), 1-32. (<a href='https://doi.org/10.1145/3708890'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With increasing transistor density, modern heterogeneous embedded processors often exhibit high temperature gradients due to complex application scheduling scenarios which may have missed design considerations. In many use cases, off-chip ”active” cooling solutions are considered prohibitive in such reduced form factors. Core frequency throttling by existing dynamic thermal management techniques often compromises the Quality-of-Service (QoS) and violates real-time deadlines. This necessitates the adoption of intelligent resource management that simultaneously manages both thermal and latency performance. Coupled with the complexity of modern heterogeneous multi-cores, the periodic application updates that cater to ever-changing user requirements often render model-driven thermal-aware resource allocation approaches unsuitable for heterogeneous multi-core systems. For such application-architecture scenarios, we propose a novel self-learning based resource manager using Reinforcement Learning that intelligently manipulates core frequencies and task set mappings to fulfill thermal and latency objectives. Our framework employs a data-driven system modeling technique using Gaussian Process Regression to enable efficient offline training of this learning-based resource manager to avoid challenges associated with initial online training. We evaluate the approach on a heterogeneous embedded CPU-GPU platform with real workloads and observe a significant reduction in peak operating temperature when compared to the default onboard frequency governor as well as other learning-based state-of-the-art approaches.},
+  archive      = {J_TODAES},
+  author       = {Srijeeta Maity and Anirban Majumder and Rudrajyoti Roy and Ashish Hota and Soumyajit Dey},
+  doi          = {10.1145/3708890},
+  journal      = {ACM Transactions on Design Automation of Electronic Systems},
+  month        = {1},
+  number       = {2},
+  pages        = {1-32},
+  shortjournal = {ACM Trans. Des. Autom. Electron. Syst.},
+  title        = {Harnessing machine learning in dynamic thermal management in embedded CPU-GPU platforms},
+  volume       = {30},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

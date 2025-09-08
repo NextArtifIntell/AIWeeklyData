@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SW</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="sw">SW - 21</h2>
+<ul>
+<li><details>
+<summary>
+(2025). HiHo: A hierarchical and homogenous subgraph learning model for knowledge graph relation prediction. <em>SW</em>, <em>16</em>(5). (<a href='https://doi.org/10.1177_22104968251361290'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Relation prediction in knowledge graphs (KGs) aims to anticipate the connections between entities. While both transductive and inductive models are incorporated for context comprehension, we need to focus on two primary issues. First, these models only collate relations at each layer of the subgraph, overlooking the potential sequential relationship between different layers. Second, these methods overlook the homogeneity of subgraphs, thus impeding their ability to effectively learn the importance of relationships within the subgraphs. To address this challenge, we propose a hierarchical and homogenous subgraph learning model for KG relation prediction (HiHo). Specifically, we adopt a subgraph-to-sequence mechanism to learn the potential semantic associations between layers in the subgraph of a single entity, and thus model the hierarchy of the subgraph. Then, we implement a common preference inference mechanism that assigns higher weights to co-occurrence relations while learning the importance of each relation in the subgraphs of two entities, and thus models the homogeneity of the subgraph. In our study, we sequentially employ induction on each layer of subgraphs pertaining to the two entities for relation prediction. To assess the efficacy of our method, we perform experiments on five publicly available datasets. The results of our experiments demonstrate that our method surpasses the current state-of-the-art baselines in both transductive and inductive settings.},
+  archive      = {J_SW},
+  author       = {Jiangtao Ma and Yuke Ma and Fan Zhang and Yanjun Wang and Xiangyang Luo and Chenliang Li and Yaqiong Qiao},
+  doi          = {10.1177_22104968251361290},
+  journal      = {Semantic Web},
+  month        = {9},
+  number       = {5},
+  shortjournal = {Semantic Web},
+  title        = {HiHo: A hierarchical and homogenous subgraph learning model for knowledge graph relation prediction},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Transformer-based architectures versus large language models in semantic event extraction: Evaluating strengths and limitations. <em>SW</em>, <em>16</em>(5). (<a href='https://doi.org/10.1177_22104968251363759'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Understanding complex societal events reported on the Web, such as military conflicts and political elections, is crucial in digital humanities, computational social science, and news analyses. While event extraction is a well-studied problem in natural language processing (NLP), there remains a gap in semantic event extraction methods that leverage event ontologies for capturing multifaceted events in knowledge graphs. In this article, we aim to compare two paradigms to address this task of semantic event extraction: the fine-tuning of traditional transformer-based models versus the use of large language models (LLMs). We exemplify these paradigms with two newly developed approaches: T-SEE for transformer-based and L-SEE for LLM-based semantic event extraction. We discuss their complementary strengths and shortcomings to understand the needs and solutions required for semantic event extraction. For comparison, both approaches employ the same dual-stage architecture; the first stages focus on multilabel event classification, and the second on relation extraction. While T-SEE utilises a span prediction transformer model, L-SEE prompts an LLM for event classification and relation extraction, providing the potential event classes and properties. We assess the performances of T-SEE and L-SEE on two novel datasets sourced from DBpedia and Wikidata, and we perform an extensive error analysis. Our work makes substantial contributions to (i) the integration of Semantic Web technologies and NLP, particularly in the underexplored domain of semantic event extraction, and (ii) the understanding of how LLMs can further enhance semantic event extraction and what challenges need to be considered in comparison to traditional approaches.},
+  archive      = {J_SW},
+  author       = {Tin Kuculo and Sara Abdollahi and Simon Gottschalk},
+  doi          = {10.1177_22104968251363759},
+  journal      = {Semantic Web},
+  month        = {9},
+  number       = {5},
+  shortjournal = {Semantic Web},
+  title        = {Transformer-based architectures versus large language models in semantic event extraction: Evaluating strengths and limitations},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CaLiGraph: A knowledge graph from wikipedia categories and lists. <em>SW</em>, <em>16</em>(5). (<a href='https://doi.org/10.1177_22104968251361349'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Knowledge graphs (KGs) are increasingly used for solving or supporting tasks such as question answering or recommendation. To achieve a useful performance on such tasks, it is important that the knowledge modeled by KGs is as correct and complete as possible. While this is an elusive goal for many domains, techniques for automated KG construction (AKGC) serve as a means to approach it. Yet, AKGC has many open challenges, like learning expressive ontologies or incorporating long-tail entities. With CaLiGraph, we present a KG automatically constructed from categories and lists in Wikipedia, offering a rich taxonomy with semantic class descriptions and a broad coverage of entities. We describe its extraction framework and provide details about its purpose, resources, usage, and quality. Further, we evaluate the performance of CaLiGraph on downstream tasks and compare it to other popular KGs.},
+  archive      = {J_SW},
+  author       = {Nicolas Heist and Heiko Paulheim},
+  doi          = {10.1177_22104968251361349},
+  journal      = {Semantic Web},
+  month        = {9},
+  number       = {5},
+  shortjournal = {Semantic Web},
+  title        = {CaLiGraph: A knowledge graph from wikipedia categories and lists},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GloSIS: The global soil information system web ontology. <em>SW</em>, <em>16</em>(5). (<a href='https://doi.org/10.1177_22104968251363767'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Established in 2012 by members of the Food and Agriculture Organisation of the United Nations, the Global Soil Partnership (GSP) is a global network of stakeholders promoting sound land and soil management practices towards a sustainable world food system. However, soil survey largely remains a local or regional activity, bound to heterogeneous methods and conventions. Recognising the relevance of global and trans-national policies towards sustainable land management practices, the GSP elected data harmonisation and exchange as one of its key lines of action. Building upon international standards and previous work towards a global soil data ontology, an improved domain model was eventually developed within the GSP, the basis for a Global Soil Information System (GloSIS). This work also identified the Semantic Web as a possible avenue to operationalise the domain model. This article presents the GloSIS web ontology, an implementation of the GloSIS domain model with the Web Ontology Language (OWL). Thoroughly employing a host of Semantic Web standards (Sensor, Observation, Sample, and Actuator ontology (SOSA), Simple Knowledge Organisation System (SKOS), GeoSPARQL, QUDT), GloSIS lays out not only a soil data ontology but also an extensive set of ready-to-use code-lists for soil description and physico-chemical analysis. Various examples are provided on the provision and use of GloSIS-compliant linked data, showcasing the contribution of this ontology to the discovery, exploration, integration and access of soil data.},
+  archive      = {J_SW},
+  author       = {Raul Palma and Bogusz Janiak and Luís M de Sousa and Kathi Schleidt and Tomáš Řezník and Fenny van Egmond and Johan Leenaars and Dimitrios Moshou and Abdul Mounem Mouazen and Peter Wilson and David Medyckyj-Scott and Alistair Ritchie and Yusuf Yigini and Ronald Vargas},
+  doi          = {10.1177_22104968251363767},
+  journal      = {Semantic Web},
+  month        = {9},
+  number       = {5},
+  shortjournal = {Semantic Web},
+  title        = {GloSIS: The global soil information system web ontology},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Algebraic mapping operators for knowledge graph generation. <em>SW</em>, <em>16</em>(5). (<a href='https://doi.org/10.1177_22104968251361350'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advancements in declarative knowledge graph generation have introduced multiple mapping languages and engines, causing a shift in studies towards optimizing the knowledge graph generation process. Although these engines commonly generate the knowledge graphs from heterogeneous data sources, sharing the optimization techniques and features remains challenging due to the lack of formal operational semantics. To address this, we propose a set of algebraic mapping operators that define operational semantics for general mapping processes. This algebra, based on the SPARQL algebra, enables reuse of established definitions and strengthens the link between knowledge graph generation and query engines. To evaluate language independence we translated mapping languages ShExML and the RDF Mapping Language (RML) into our algebraic mapping plan. Our completeness evaluation shows that our algebraic operators cover the operational semantics of RML and partially support ShExML. Additional analysis is required to cover additional features of ShExML such as joining data from two input sources. For performance evaluation, our proof-of-concept algebraic mapping engine exhibits consistent and low memory usage across workloads, getting second place in the Knowledge Graph Construction Workshop's performance challenge. Algebraic mapping operators decouple mapping engines from specific languages, enabling multilingual mapping engines and allowing optimization techniques to be applied independently of the mapping process. This work lays the foundation for theoretical analysis of complexity and expressiveness of mapping languages and enforces consistency in execution semantics of mapping engines. Furthermore, aligning our algebra with SPARQL opens the door to advanced methods such as virtualization for querying heterogeneous data sources.},
+  archive      = {J_SW},
+  author       = {Sitt Min Oo and Ben De Meester and Ruben Taelman and Pieter Colpaert},
+  doi          = {10.1177_22104968251361350},
+  journal      = {Semantic Web},
+  month        = {9},
+  number       = {5},
+  shortjournal = {Semantic Web},
+  title        = {Algebraic mapping operators for knowledge graph generation},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RePlanIT ontology for digital product passports of ICT: Laptops and data servers. <em>SW</em>, <em>16</em>(5). (<a href='https://doi.org/10.1177_22104968251361274'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The increasing digitisation that we have witnessed in the past few years has resulted in increased information and communications technology (ICT) hardware manufacturing, which is not sustainable due to the growing demand for critical materials and the greenhouse emissions associated with it. A solution is transitioning to a circular economy (CE). To facilitate this, boost the data economy and digital innovation, the European Union has introduced digital product passports (DPPs), which should provide information about a product’s lifetime to bring more transparency into supply chains. However, several challenges, namely the lack of findable, accessible, interoperable, reusable ICT and materials data and tools to support its interpretation for decision-making, are present. Utilising ontologies and knowledge graphs is a possible solution. Although the ontology work in the ICT and materials domains has been on the rise, there is a lack of a unified semantic model that can capture the complex, heterogeneous cross-domain data needed for building DPPs of ICT devices such as laptops and data servers. Motivated by this, we present the RePlanIT ontology for ICT DPPs, which captures knowledge on several levels – ICT device, hardware components, materials and the CE itself. RePlanIT’s specification is based on a literature survey, interviews and inputs from domain experts from both industry and academia. The ontology, its utilisation for building a knowledge graph of DPPs of laptops and data servers and its application have been successfully validated in a real-world case focusing on supporting more sustainable ICT procurement in government.},
+  archive      = {J_SW},
+  author       = {Anelia Kurteva and Carlo van der Valk and Kathleen McMahon and Alessandro Bozzon and Ruud Balkenende},
+  doi          = {10.1177_22104968251361274},
+  journal      = {Semantic Web},
+  month        = {9},
+  number       = {5},
+  shortjournal = {Semantic Web},
+  title        = {RePlanIT ontology for digital product passports of ICT: Laptops and data servers},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhancing ontology matching: Lexically and syntactically standardizing ontologies through customized lexical analyzers. <em>SW</em>, <em>16</em>(4). (<a href='https://doi.org/10.1177_22104968251344447'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ontology matching approaches commonly leverage similarity metrics to establish mappings between entities in the ontologies participating in the process. However, the lack of standardized entity names across these ontologies can cause such metrics to overlook correct mappings. Generally, existing approaches that focus on standardizing entity names neglect the ongoing matching process, leading to inaccurate results, and fail to address the syntactic standardization of entity names. To address these issues, we introduce a novel process that standardizes entity names both lexically and syntactically through a customized lexical analyzer tailored to the ontologies participating in the process. We evaluate this process efficacy using Alin and AML , ontology matching systems, along with the Anatomy and Conference tracks of OAEI, demonstrating an improvement in matching results.},
+  archive      = {J_SW},
+  author       = {Jomar Silva and Kate Revoredo and Fernanda Araujo Baião and Cabral Lima},
+  doi          = {10.1177_22104968251344447},
+  journal      = {Semantic Web},
+  month        = {7},
+  number       = {4},
+  shortjournal = {Semantic Web},
+  title        = {Enhancing ontology matching: Lexically and syntactically standardizing ontologies through customized lexical analyzers},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The ANthropological notation ontology (ANNO): A core ontology for annotating human bones and deriving phenotypes. <em>SW</em>, <em>16</em>(4). (<a href='https://doi.org/10.1177_22104968251344452'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The ANthropological Notation Ontology (ANNO) allows the systematic and standardized classification of recovered bone finds into the skeletal system, the description of the skeletal pieces, and the definition of functions for deriving different phenotypes of humans in forensic and historical anthropology. ANNO consists of two components: ANNOdc, a domain-core ontology providing core entities such as basic anatomical categories, and ANNOds, a domain-specific ontology used for annotating structures of the human skeleton. ANNO is integrated into AnthroWorks3D, a photogrammetry pipeline and application for the creation and analysis of 3D-models of human skeletal remains. The integration is based on the three-ontology method with the General Formal Ontology as the top-level ontology, ANNOdc as the task ontology and ANNOds as the domain ontology. Thus, AnthroWorks3D only needs to implement access to the entities (classes and properties) of the task ontology, whereas the entities of the corresponding domain ontology are imported dynamically. ANNO supports the analysis of skeletal and bone finds in forensic and historical anthropology, facilitating the standardization of data annotation and ensuring accurate preservation of information for posterity.},
+  archive      = {J_SW},
+  author       = {Marie Heuschkel and Konrad Höffner and Fabian Schmiedel and Dirk Labudde and Alexandr Uciteli},
+  doi          = {10.1177_22104968251344452},
+  journal      = {Semantic Web},
+  month        = {7},
+  number       = {4},
+  shortjournal = {Semantic Web},
+  title        = {The ANthropological notation ontology (ANNO): A core ontology for annotating human bones and deriving phenotypes},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A concise ontological model of the design and optoelectronic properties in the quantum cascade laser domain. <em>SW</em>, <em>16</em>(4). (<a href='https://doi.org/10.1177_22104968251359870'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Terahertz quantum cascade lasers (QCLs) are semiconductor laser devices that operate in the far infrared range (frequency range from about 100 GHz to 10 THz). QCL properties can be categorized as follows: design of the laser (heterostructure properties capturing the various materials used in the laser structure and the various laser design types) and the laser Optoelectronic properties (laser performance behavior as a result of injection of current into the laser device). Maintaining ontologies with this information is useful in supporting data mining activities that seek to retrieve useful information on the various QCL designs and their respective performance, together with provenance information. This provides a platform to share and interact with QCL data by both machines and humans in a Findable, Accessible, Interoperable, and Reusable manner. The existing ontologies in the material design domain do not capture this crucial information. This is due to a lack of formal definitions for the QCL property concepts. In this paper, we address the issue of formal representation of the specified QCL properties and the relationships among them. We propose a semantically enriched ontological model of properties in the QCL domain. We evaluate the ability of ontological representation to model the QCL properties using an inheritance richness metric-based evaluation and the ontology validation technique. Experimental evaluation indicates the consistency of the ontology, its ability to answer 100% of the competency questions by QCL domain experts, and an inheritance richness metric of 0.133, indicating a detailed level of the ontology in capturing the domain requirements.},
+  archive      = {J_SW},
+  author       = {Deperias Kerre and Anne Laurent and Kenneth Maussang and Dickson Owuor},
+  doi          = {10.1177_22104968251359870},
+  journal      = {Semantic Web},
+  month        = {7},
+  number       = {4},
+  shortjournal = {Semantic Web},
+  title        = {A concise ontological model of the design and optoelectronic properties in the quantum cascade laser domain},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SPARQL federated query debugging tool. <em>SW</em>, <em>16</em>(4). (<a href='https://doi.org/10.1177_22104968251361286'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Gaining insight into a complex problem often requires combining data from multiple datasets. For this reason, SPARQL query support within a federated environment is an important feature. However, several pitfalls have been encountered in practice, significantly complicating the use of SPARQL queries in such setups. These challenges include uninformative error responses, performance bottlenecks and unintended semantic changes introduced by SPARQL endpoints. To address these pitfalls, this paper introduces a newly implemented SPARQL query debugger, which is available as a web application at https://sparql-debugger.elixir-czech.cz . It has been developed for the purpose of monitoring, in real time, the execution of SPARQL queries that incorporate the service pattern. This monitoring is crucial for error detection and performance optimization. Detailed service execution data (such as SPARQL requests and responses, durations, etc.) can help identify the specific instance of a service responsible for a problem, even if it is deeply nested within the service execution tree. The tool is based on the principle of redirecting all requests to a debugging proxy server, so it can be used with all SPARQL-compliant endpoints without the need for their modification. The debugging tool presented in the paper enables the identification and resolution of issues that are otherwise difficult to address and has proven its effectiveness in practice.},
+  archive      = {J_SW},
+  author       = {Marek Moos and Jakub Galgonek},
+  doi          = {10.1177_22104968251361286},
+  journal      = {Semantic Web},
+  month        = {7},
+  number       = {4},
+  shortjournal = {Semantic Web},
+  title        = {SPARQL federated query debugging tool},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The epistemology of fine-grained news classification. <em>SW</em>, <em>16</em>(3). (<a href='https://doi.org/10.1177_22104968251344461'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The process of news digitalization over the past decades has released massive amounts of news content, revolutionizing consumer access to news and disrupting traditional business models. These radical changes have also introduced new opportunities for media content analysis, opening up new scenarios for ambitious large-scale media analytics initiatives, which can go well beyond the relatively small-scale studies currently carried out by media scholars and practitioners. However, take-up of computational methods to support media content analysis activities has been rather modest, reflecting a degree of disconnect between the needs of scholars and practitioners for task-specific and usable software solutions and the state of the art in computational techniques for news media analysis. In this article, we perform an initial step toward bridging this gap, by looking in detail at the task of fine-grained news classification . In particular, we propose a typology of news topics, which is formally specified and realized into a family of reusable ontologies. The proposed model has been validated empirically, through an analysis of a multilingual news corpus, as well as formally, in terms of the functional and logical properties of the ontologies. Our analysis brings together the media and computer science literature, connecting the formal definitions provided in this article to the concepts used by media scholars.},
+  archive      = {J_SW},
+  author       = {Enrico Motta and Enrico Daga and Aldo Gangemi and Maia Lunde Gjelsvik and Francesco Osborne and Angelo Salatino},
+  doi          = {10.1177_22104968251344461},
+  journal      = {Semantic Web},
+  month        = {5},
+  number       = {3},
+  shortjournal = {Semantic Web},
+  title        = {The epistemology of fine-grained news classification},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AgreementMakerLight. <em>SW</em>, <em>16</em>(2). (<a href='https://doi.org/10.3233_SW-233304'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Ontology matching establishes correspondences between entities of related ontologies, with applications ranging from enabling semantic interoperability to supporting ontology and knowledge graph development. Its demand within the Semantic Web community is on the rise, as the popularity of knowledge graph supporting information systems or artificial intelligence applications continues to increase. In this article, we showcase AgreementMakerLight (AML), an ontology matching system in continuous development since 2013, with demonstrated performance over nine editions of the Ontology Alignment Evaluation Initiative (OAEI), and a history of real-world applications across a variety of domains. We overview AML’s architecture and algorithms, its user interfaces and functionalities, its performance, and its impact. AML has participated in more OAEI tracks since 2013 than any other matching system, has a median rank by F-measure between 1 and 2 across all tracks in every year since 2014, and a rank by run time between 3 and 4. Thus, it offers a combination of range, quality and efficiency that few matching systems can rival. Moreover, AML’s impact can be gauged by the 263 (non-self) publications that cite one or more of its papers, among which we count 34 real-world applications.},
+  archive      = {J_SW},
+  author       = {Daniel Faria and Emanuel Santos and Booma Sowkarthiga Balasubramani and Marta C Silva and Francisco M Couto and Catia Pesquita},
+  doi          = {10.3233_SW-233304},
+  journal      = {Semantic Web},
+  month        = {3},
+  number       = {2},
+  shortjournal = {Semantic Web},
+  title        = {AgreementMakerLight},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). InterpretME: A tool for interpretations of machine learning models over knowledge graphs. <em>SW</em>, <em>16</em>(2). (<a href='https://doi.org/10.3233_SW-233511'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, knowledge graphs (KGs) have been considered pyramids of interconnected data enriched with semantics for complex decision-making. The potential of KGs and the demand for interpretability of machine learning (ML) models in diverse domains (e.g., healthcare) have gained more attention. The lack of model transparency negatively impacts the understanding and, in consequence, interpretability of the predictions made by a model. Data-driven models should be empowered with the knowledge required to trace down their decisions and the transformations made to the input data to increase model transparency. In this paper, we propose InterpretME, a tool that using KGs, provides fine-grained representations of trained ML models. An ML model description includes data – (e.g., features’ definition and SHACL validation) and model-based characteristics (e.g., relevant features and interpretations of prediction probabilities and model decisions). InterpretME allows for defining a model’s features over data collected in various formats, e.g., RDF KGs, CSV, and JSON. InterpretME relies on the SHACL schema to validate integrity constraints over the input data. InterpretME traces the steps of data collection, curation, integration, and prediction; it documents the collected metadata in the InterpretME KG. InterpretME is published in GitHub and Zenodo. The InterpretME framework includes a pipeline for enhancing the interpretability of ML models, the InterpretME KG, and an ontology to describe the main characteristics of trained ML models; a PyPI library of InterpretME is also provided. Additionally, a live code, and a video demonstrating InterpretME in several use cases are also available.},
+  archive      = {J_SW},
+  author       = {Yashrajsinh Chudasama and Disha Purohit and Philipp D. Rohde and Julian Gercke and Maria-Esther Vidal},
+  doi          = {10.3233_SW-233511},
+  journal      = {Semantic Web},
+  month        = {3},
+  number       = {2},
+  shortjournal = {Semantic Web},
+  title        = {InterpretME: A tool for interpretations of machine learning models over knowledge graphs},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). When one logic is not enough: Integrating first-order annotations in OWL ontologies. <em>SW</em>, <em>16</em>(2). (<a href='https://doi.org/10.3233_SW-243440'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In ontology development, there is a gap between domain ontologies which mostly use the Web Ontology Language, OWL, and foundational ontologies written in first-order logic, FOL. To bridge this gap, we present Gavel, a tool that supports the development of heterogeneous ‘FOWL’ ontologies that extend OWL with FOL annotations, and is able to reason over the combined set of axioms. Since FOL annotations are stored in OWL annotations, FOWL ontologies remain compatible with the existing OWL infrastructure. We show that for the OWL domain ontology OBI, the stronger integration with its FOL top-level ontology BFO via our approach enables us to detect several inconsistencies. Furthermore, existing OWL ontologies can benefit from FOL annotations. We illustrate this with FOWL ontologies containing mereotopological axioms that enable additional, useful inferences. Finally, we show that even for large domain ontologies such as ChEBI, automatic reasoning with FOL annotations can be used to detect previously unnoticed errors in the classification.},
+  archive      = {J_SW},
+  author       = {Simon Flügel and Martin Glauer and Fabian Neuhaus and Janna Hastings},
+  doi          = {10.3233_SW-243440},
+  journal      = {Semantic Web},
+  month        = {3},
+  number       = {2},
+  shortjournal = {Semantic Web},
+  title        = {When one logic is not enough: Integrating first-order annotations in OWL ontologies},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). TermIt: Managing normative thesauri. <em>SW</em>, <em>16</em>(2). (<a href='https://doi.org/10.3233_SW-243547'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Thesauri are popular, as they represent a manageable compromise – they are well-understood by domain experts, yet formal enough to boost use cases like semantic search. Still, as the thesauri size and complexity grow in a domain, proper tracking of the concept references to their definitions in normative documents, interlinking concepts defined in different documents, and keeping all the concepts semantically consistent and ready for subsequent conceptual modeling, is difficult and requires adequate tool support. We present TermIt, a web-based thesauri manager aimed at supporting the creation of thesauri based on decrees, directives, standards, and other normative documents. In addition to common editing capabilities, TermIt offers term extraction from documents, including a web document annotation browser plug-in, tracking term definitions in documents, term quality and ontological correctness checking, community discussions over term meanings, and seamless interlinking of concepts across different thesauri. We also show that TermIt features better fit the E-government scenarios in the Czech Republic than other tools. Additionally, we present the feasibility of TermIt for these scenarios by preliminary user experience evaluation.},
+  archive      = {J_SW},
+  author       = {Petr Křemen and Michal Med and Miroslav Blaško and Lama Saeeda and Martin Ledvinka and Alan Buzek},
+  doi          = {10.3233_SW-243547},
+  journal      = {Semantic Web},
+  month        = {3},
+  number       = {2},
+  shortjournal = {Semantic Web},
+  title        = {TermIt: Managing normative thesauri},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Empowering the SDM-RDFizer tool for scaling up to complex knowledge graph creation pipelines1. <em>SW</em>, <em>16</em>(2). (<a href='https://doi.org/10.3233_SW-243580'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The significant increase in data volume in recent years has prompted the adoption of knowledge graphs as valuable data structures for integrating diverse data and metadata. However, this surge in data availability has brought to light challenges related to standardization, interoperability, and data quality. Knowledge graph creation faces complexities from large data volumes, data heterogeneity, and high duplicate rates. This work addresses these challenges and proposes data management techniques to scale up the creation of knowledge graphs specified using the RDF Mapping Language (RML). These techniques are integrated into SDM-RDFizer, transforming it into a two-fold solution designed to address the complexities of generating knowledge graphs. Firstly, we introduce a reordering approach for RML triples maps, prioritizing the evaluation of the most selective maps first to reduce memory usage. Secondly, we employ an RDF compression strategy, along with optimized data structures and novel operators, to prevent the generation of duplicate RDF triples and optimize the execution of RML operators. We assess the performance of SDM-RDFizer through established benchmarks. The evaluation showcases the effectiveness of SDM-RDFizer compared to state-of-the-art RML engines, emphasizing the benefits of our techniques. Furthermore, the paper presents real-world projects where SDM-RDFizer has been utilized, providing insights into the advantages of declaratively defining knowledge graphs and efficiently executing these specifications using this engine.},
+  archive      = {J_SW},
+  author       = {Enrique Iglesias and Maria-Esther Vidal and Diego Collarana and David Chaves-Fraga},
+  doi          = {10.3233_SW-243580},
+  journal      = {Semantic Web},
+  month        = {3},
+  number       = {2},
+  shortjournal = {Semantic Web},
+  title        = {Empowering the SDM-RDFizer tool for scaling up to complex knowledge graph creation pipelines1},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PAPAYA: A library for performance analysis of SQL-based RDF processing systems. <em>SW</em>, <em>16</em>(2). (<a href='https://doi.org/10.3233_SW-243582'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Prescriptive Performance Analysis (PPA) has shown to be more useful than traditional descriptive and diagnostic analyses for making sense of Big Data (BD) frameworks’ performance. In practice, when processing large (RDF) graphs on top of relational BD systems, several design decisions emerge and cannot be decided automatically, e.g., the choice of the schema, the partitioning technique, and the storage formats. PPA, and in particular ranking functions, helps enable actionable insights on performance data, leading practitioners to an easier choice of the best way to deploy BD frameworks, especially for graph processing. However, the amount of experimental work required to implement PPA is still huge. In this paper, we present PAPAYA, a library for implementing PPA that allows (1) preparing RDF graphs data for a processing pipeline over relational BD systems, (2) enables automatic ranking of the performance in a user-defined solution space of experimental dimensions; (3) allows user-defined flexible extensions in terms of systems to test and ranking methods. We showcase PAPAYA on a set of experiments based on the SparkSQL framework. PAPAYA simplifies the performance analytics of BD systems for processing large (RDF) graphs. We provide PAPAYA as a public open-source library under an MIT license that will be a catalyst for designing new research prescriptive analytical techniques for BD applications.},
+  archive      = {J_SW},
+  author       = {Mohamed Ragab and Adam Satria Adidarma and Riccardo Tommasini},
+  doi          = {10.3233_SW-243582},
+  journal      = {Semantic Web},
+  month        = {3},
+  number       = {2},
+  shortjournal = {Semantic Web},
+  title        = {PAPAYA: A library for performance analysis of SQL-based RDF processing systems},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Declarative generation of RDF-star graphs from heterogeneous data. <em>SW</em>, <em>16</em>(2). (<a href='https://doi.org/10.3233_SW-243602'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {RDF-star has been proposed as an extension of RDF to make statements about statements. Libraries and graph stores have started adopting RDF-star, but the generation of RDF-star data remains largely unexplored. To allow generating RDF-star from heterogeneous data, RML-star was proposed as an extension of RML. However, no system has been developed so far that implements the RML-star specification. In this work, we present Morph-KGC star , which extends the Morph-KGC materialization engine to generate RDF-star datasets. We validate Morph-KGC star by running test cases derived from the N-Triples-star syntax tests and we apply it to two real-world use cases from the biomedical and open science domains. We compare the performance of our approach against other RDF-star generation methods (SPARQL-Anything), showing that Morph-KGC star scales better for large input datasets, but it is slower when processing multiple smaller files.},
+  archive      = {J_SW},
+  author       = {Julián Arenas-Guerrero and Ana Iglesias-Molina and David Chaves-Fraga and Daniel Garijo and Oscar Corcho and Anastasia Dimou},
+  doi          = {10.3233_SW-243602},
+  journal      = {Semantic Web},
+  month        = {3},
+  number       = {2},
+  shortjournal = {Semantic Web},
+  title        = {Declarative generation of RDF-star graphs from heterogeneous data},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Testing prompt engineering methods for knowledge extraction from text. <em>SW</em>, <em>16</em>(2). (<a href='https://doi.org/10.3233_SW-243719'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The capabilities of Large Language Models (LLMs,) such as Mistral 7B, Llama 3, GPT-4, present a significant opportunity for knowledge extraction (KE) from text. However, LLMs’ context-sensitivity can hinder obtaining precise and task-aligned outcomes, thereby requiring prompt engineering. This study explores the efficacy of five prompt methods with different task demonstration strategies across 17 different prompt templates, utilizing a relation extraction dataset (RED-FM) with the aforementioned LLMs. To facilitate evaluation, we introduce a novel framework grounded in Wikidata’s ontology. The findings demonstrate that LLMs are capable of extracting a diverse array of facts from text. Notably, incorporating a simple instruction accompanied by a task demonstration – comprising three examples selected via a retrieval mechanism – significantly enhances performance across Mistral 7B, Llama 3, and GPT-4. The effectiveness of reasoning-oriented prompting methods such as Chain-of-Thought, Reasoning and Acting, while improved with task demonstrations, does not surpass alternative methods. This suggests that framing extraction as a reasoning task may not be necessary for KE. Notably, task demonstrations leveraging examples selected via retrieval mechanisms facilitate effective knowledge extraction across all tested prompting strategies and LLMs.},
+  archive      = {J_SW},
+  author       = {Fina Polat and Ilaria Tiddi and Paul Groth},
+  doi          = {10.3233_SW-243719},
+  journal      = {Semantic Web},
+  month        = {3},
+  number       = {2},
+  shortjournal = {Semantic Web},
+  title        = {Testing prompt engineering methods for knowledge extraction from text},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimising the ShExML engine through code profiling: From turtle’s pace to state-of-the-art performance. <em>SW</em>, <em>16</em>(2). (<a href='https://doi.org/10.3233_SW-243736'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The ShExML language was born as a more user-friendly approach for knowledge graph construction. However, a recent study has highlighted that its companion engine suffers from serious performance issues. Thus, in this paper I undertake the optimisation of the engine by means of a code profiling analysis. The improvements are then measured as part of a performance evaluation whose results are statistically analysed. Upon this analysis, the effectiveness of each proposed enhancement is discussed. Moreover, the optimised version of ShExML is compared against similar engines, delivering a comparable performance to its alternatives. As a direct result of this work, the ShExML engine offers a much more optimised version which can cope better with users’ demands.},
+  archive      = {J_SW},
+  author       = {Herminio García-González},
+  doi          = {10.3233_SW-243736},
+  journal      = {Semantic Web},
+  month        = {3},
+  number       = {2},
+  shortjournal = {Semantic Web},
+  title        = {Optimising the ShExML engine through code profiling: From turtle’s pace to state-of-the-art performance},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Publishing and using parliamentary linked data on the semantic web: ParliamentSampo system for parliament of finland. <em>SW</em>, <em>16</em>(1). (<a href='https://doi.org/10.3233_SW-243683'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents a new infrastructure and semantic portal called ParliamentSampo for studying parliamentary speeches, culture, language, and activities in Finland. For the first time, the entire time series of some million plenary speeches of the Parliament of Finland (PoF) since 1907 have been converted from text into knowledge graphs and data services in unified formats, including CSV, Parla-CLARIN, ParlaMint, and RDF Linked Open Data (LOD). The speech data have been interlinked with a semi-automatically created ontology and a knowledge graph about the activities of over 2800 Members of Parliament (MP) and other speakers in the plenary sessions of the PoF. The data was enriched by data linking to external data sources and by reasoning into a broader LOD service. Knowledge extraction techniques based on Natural Language Processing (NLP) were used for automatic semantic annotations and topical classification of the speeches. The data and data services have been used in Digital Humanities (DH) research projects and for application development, especially for developing the in-use semantic portal ParliamentSampo . The infrastructure and the portal were published on February 14th 2023 on the Web using the open CC BY 4.0 license, and quickly gathered thousands of users, including citizens, media, politicians, and researchers of politics. ParliamentSampo is a new member in the “Sampo” series of over 20 interlinked LOD services and semantic portals in Finland, based on a national Semantic Web infrastructure. Although the paper uses Finnish parliamentary data as a case study, the approach, methods, and tools presented can be adapted also to other parliamentary datasets in other countries.},
+  archive      = {J_SW},
+  author       = {Eero Hyvönen and Laura Sinikallio and Petri Leskinen and Senka Drobac and Rafael Leal and Matti La Mela and Jouni Tuominen and Henna Poikkimäki and Heikki Rantala},
+  doi          = {10.3233_SW-243683},
+  journal      = {Semantic Web},
+  month        = {1},
+  number       = {1},
+  shortjournal = {Semantic Web},
+  title        = {Publishing and using parliamentary linked data on the semantic web: ParliamentSampo system for parliament of finland},
+  volume       = {16},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

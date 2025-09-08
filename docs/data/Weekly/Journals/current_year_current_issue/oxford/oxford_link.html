@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>oxford_link</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h1 id="oxford">OXFORD</h1>
+<ul>
+<li><a
+href="data/Weekly/Journals/current_year_current_issue/oxford/oxford_all.html">All
+Journals</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_issue/oxford/BIOMET/BIOMET.html">BIOMET</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_issue/oxford/BIOMTC/BIOMTC.html">BIOMTC</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_issue/oxford/BIOSTAT/BIOSTAT.html">BIOSTAT</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_issue/oxford/COMJNL/COMJNL.html">COMJNL</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_issue/oxford/EVLETT/EVLETT.html">EVLETT</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_issue/oxford/JRSSIG/JRSSIG.html">JRSSIG</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_issue/oxford/JRSSSA/JRSSSA.html">JRSSSA</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_issue/oxford/JRSSSB/JRSSSB.html">JRSSSB</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_issue/oxford/JRSSSC/JRSSSC.html">JRSSSC</a></li>
+<li><a
+href="data/Weekly/Journals/current_year_current_issue/oxford/NSR/NSR.html">NSR</a></li>
+</ul>
+
+</body>
+</html>

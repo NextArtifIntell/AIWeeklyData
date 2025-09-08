@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JUQ</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="juq">JUQ - 20</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Bayesian emulation of grey-box multimodel ensembles exploiting known interior structure. <em>JUQ</em>, <em>13</em>(3), 1501-1542. (<a href='https://doi.org/10.1137/24M1669037'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Computer models are widely used to study complex real world physical systems. However, there are major limitations to their direct use including their complex structure; large numbers of inputs and outputs; and long evaluation times. Bayesian emulators are an effective means of addressing these challenges providing fast and efficient statistical approximation for computer model outputs. It is commonly assumed that computer models behave like a “black-box” function with no knowledge of the output prior to its evaluation. This ensures that emulators are generalizable but potentially limits their accuracy compared with exploiting such knowledge of constrained or structured output behavior. We assume a “grey-box” computer model and develop a methodological toolkit for its analysis. This includes multimodel ensemble subsampling to identifying a representative model subset to reduce computational expense; constructing a targeted Bayesian design for optimization or decision support; a “divide-and-conquer” approach to emulating sums of outputs; structured emulators exploiting known constrained and structured behavior of constituent outputs through splitting the parameter space and imposing truncations; emulation of sums of time series outputs; and emulation of multimodel ensemble outputs. Combining these methods establishes a hierarchical emulation framework which achieves greater physical interpretability and more accurate emulator predictions. This research is motivated by and applied to the commercially important TNO OLYMPUS Well Control Optimization Challenge from the petroleum industry which we re-express as a decision support under uncertainty problem. We thus encourage users to examine their “black-box” simulators to achieve superior emulator accuracy.},
+  archive      = {J_JUQ},
+  author       = {Jonathan Owen and Ian Vernon},
+  doi          = {10.1137/24M1669037},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {1501-1542},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Bayesian emulation of grey-box multimodel ensembles exploiting known interior structure},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Building population-informed priors for bayesian inference using data-consistent stochastic inversion. <em>JUQ</em>, <em>13</em>(3), 1475-1500. (<a href='https://doi.org/10.1137/24M1678234'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Bayesian inference provides a powerful tool for leveraging observational data to inform model predictions and uncertainties. However, when such data are limited, Bayesian inference may not adequately constrain uncertainty without the use of highly informative priors. Common approaches for constructing informative priors typically rely on either assumptions or knowledge of the underlying physics, which is not always available. In this work, we consider the scenario where data are available on a population of assets/individuals, which occurs in many problem domains such as biomedical or digital twin applications, and leverage this population-level data to systematically constrain the Bayesian prior and subsequently improve individualized inferences. The approach proposed in this paper is based upon a recently developed technique known as data-consistent inversion (DCI) for constructing a pullback probability measure. Succinctly, we utilize DCI to build population-informed priors for subsequent Bayesian inference on individuals. While the approach is general and applies to nonlinear maps and arbitrary priors, we prove that for linear inverse problems with Gaussian priors, the population-informed prior produces an increase in the information gain as measured by the determinant and trace of the inverse posterior covariance. We also demonstrate that the Kullback–Leibler divergence often improves with high probability. Numerical results, including linear-Gaussian examples and one inspired by digital twins for additively manufactured assets, indicate that there is significant value in using these population-informed priors.},
+  archive      = {J_JUQ},
+  author       = {Rebekah D. White and John D. Jakeman and Tim Wildey and Troy Butler},
+  doi          = {10.1137/24M1678234},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {1475-1500},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Building population-informed priors for bayesian inference using data-consistent stochastic inversion},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Low-dimensional subspace regularization through structured tensor priors. <em>JUQ</em>, <em>13</em>(3), 1452-1474. (<a href='https://doi.org/10.1137/24M1688497'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Specifying a prior distribution is an essential part of solving Bayesian inverse problems. The prior encodes a belief on the nature of the solution and this regularizes the problem. In this article we completely characterize a Gaussian prior that encodes the belief that the solution is a structured tensor that lies in a low-dimensional subspace. We define the notion of -constrained tensors and show that they describe a large variety of different structures such as Hankel, circulant, triangular, symmetric, and so on. We prove that the low-dimensional subspace defined by this prior is the right nullspace of the matrix that defines the tensor structure. We completely characterize the Gaussian probability distribution of such tensors by specifying its mean vector and covariance matrix in terms of and . Furthermore, explicit expressions are proved for the covariance matrix of tensors whose entries are invariant under a permutation. These results unlock a whole new class of priors for Bayesian inverse problems. We illustrate how new kernel functions can be designed and efficiently computed and apply our results on two particular Bayesian inverse problems: completing a Hankel matrix from a few noisy measurements and learning an image classifier of handwritten digits. The effectiveness of the proposed priors is demonstrated for both problems. All applications have been implemented as reactive Pluto notebooks in Julia.},
+  archive      = {J_JUQ},
+  author       = {Kim Batselier},
+  doi          = {10.1137/24M1688497},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {1452-1474},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Low-dimensional subspace regularization through structured tensor priors},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Covariance-free bifidelity control variates importance sampling for rare event reliability analysis. <em>JUQ</em>, <em>13</em>(3), 1406-1451. (<a href='https://doi.org/10.1137/24M1658498'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Multifidelity modeling has been steadily gaining attention as a tool to address the problem of exorbitant model evaluation costs that makes the estimation of failure probabilities a significant computational challenge for complex real-world problems, particularly when failure is a rare event. To implement multifidelity modeling, estimators that efficiently combine information from multiple models/sources are necessary. In past works, the variance reduction techniques of control variates (CV) and importance sampling (IS) have been leveraged for this task. In this paper, we present the CVIS framework—a creative take on a coupled CV and IS estimator for bifidelity reliability analysis. The framework addresses some of the practical challenges of the CV method by using an estimator for the control variate mean and sidestepping the need to estimate the covariance between the original estimator and the control variate through a clever choice for the tuning constant. The task of selecting an efficient IS distribution is also considered, with a view towards maximally leveraging the bifidelity structure and maintaining expressivity. Additionally, a diagnostic is provided that indicates both the efficiency of the algorithm as well as the relative predictive quality of the models utilized. Finally, the behavior and performance of the framework is explored through analytical and numerical examples.},
+  archive      = {J_JUQ},
+  author       = {Promit Chakroborty and Somayajulu L. N. Dhulipala and Michael D. Shields},
+  doi          = {10.1137/24M1658498},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {1406-1451},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Covariance-free bifidelity control variates importance sampling for rare event reliability analysis},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Sampling parameters of ordinary differential equations with constrained langevin dynamics. <em>JUQ</em>, <em>13</em>(3), 1374-1405. (<a href='https://doi.org/10.1137/24M1691569'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Fitting models to data to obtain distributions of consistent parameter values is important for uncertainty quantification, model comparison, and prediction. Standard Markov chain Monte Carlo (MCMC) approaches for fitting ordinary differential equations (ODEs) to time-series data involve proposing trial parameter sets, numerically integrating the ODEs forward in time, and accepting or rejecting the trial parameter sets. When the model dynamics depend nonlinearly on the parameters, as is generally the case, trial parameter sets are often rejected, and MCMC approaches become prohibitively computationally costly to converge. Here, we build on methods for numerical continuation and trajectory optimization to introduce an approach in which we use Langevin dynamics in the joint space of variables and parameters to sample models that satisfy constraints on the dynamics. We demonstrate the method by sampling Hopf bifurcations and limit cycles of a model of a biochemical oscillator in a Bayesian framework for parameter estimation, and we attain performance that matches or exceeds the performance of leading MCMC approaches that require numerically integrating the ODEs forward in time. We describe numerical experiments that provide insight into the speedup. The method is general and can be used in any framework for parameter estimation and model selection.},
+  archive      = {J_JUQ},
+  author       = {Chris Chi and Jonathan Weare and Aaron R. Dinner},
+  doi          = {10.1137/24M1691569},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {1374-1405},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Sampling parameters of ordinary differential equations with constrained langevin dynamics},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Stochastic convergence analysis of the inverse potential problem. <em>JUQ</em>, <em>13</em>(3), 1334-1373. (<a href='https://doi.org/10.1137/24M1703422'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this work, we investigate the inverse problem of recovering a potential coefficient in an elliptic partial differential equation from the observations at deterministic sampling points in the domain subject to random noise. We employ a least squares formulation with an penalty on the potential in order to obtain a numerical reconstruction and the Galerkin finite element method for the spatial discretization. Under mild regularity assumptions on the problem data, we provide a stochastic convergence analysis on the regularized solution and the finite element approximation in a high-probability sense. The obtained error bounds depend explicitly on the regularization parameter , the number of observation points, and the mesh size . These estimates provide a useful guideline for choosing relevant algorithmic parameters. Furthermore, we develop a monotonically convergent adaptive algorithm for determining a suitable regularization parameter in the absence of a priori knowledge. Numerical experiments are also provided to complement the theoretical results.},
+  archive      = {J_JUQ},
+  author       = {Bangti Jin and Qimeng Quan and Wenlong Zhang},
+  doi          = {10.1137/24M1703422},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {1334-1373},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Stochastic convergence analysis of the inverse potential problem},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Non-convergence to global minimizers for adam and stochastic gradient descent optimization and constructions of local minimizers in the training of artificial neural networks. <em>JUQ</em>, <em>13</em>(3), 1294-1333. (<a href='https://doi.org/10.1137/24M1639464'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Stochastic gradient descent (SGD) optimization methods such as the plain vanilla SGD method and the popular Adam optimizer are nowadays the method of choice in the training of artificial neural networks (ANNs). Despite the remarkable success of SGD methods in the ANN training in numerical simulations, it remains in essentially all practical relevant scenarios an open problem to rigorously explain why SGD methods seem to succeed to train ANNs. In particular, in most practically relevant supervised learning problems, it seems that SGD methods do with high probability not converge to global minimizers in the optimization landscape of the ANN training problem. Nevertheless, it remains an open problem of research to disprove the convergence of SGD methods to global minimizers. In this work, we solve this research problem in the situation of shallow ANNs with the rectified linear unit (ReLU) and related activations with the standard mean square error loss by disproving in the training of such ANNs that SGD methods (such as the plain vanilla SGD, the momentum SGD, the AdaGrad, the RMSprop, and the Adam optimizer) can find a global minimizer with high probability. Even stronger, we reveal in the training of such ANNs that SGD methods do with high probability fail to converge to global minimizers in the optimization landscape. The findings of this work do, however, not disprove that SGD methods succeed to train ANNs since they do not exclude the possibility that SGD methods find good local minimizers whose risk values are close to the risk values of the global minimizers. In this context, another key contribution of this work is to establish the existence of a hierarchical structure of local minimizers with distinct risk values in the optimization landscape of ANN training problems with ReLU and related activations.},
+  archive      = {J_JUQ},
+  author       = {Arnulf Jentzen and Adrian Riekert},
+  doi          = {10.1137/24M1639464},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {1294-1333},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Non-convergence to global minimizers for adam and stochastic gradient descent optimization and constructions of local minimizers in the training of artificial neural networks},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Accelerate langevin sampling with birth-death process and exploration component. <em>JUQ</em>, <em>13</em>(3), 1265-1293. (<a href='https://doi.org/10.1137/23M1577584'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Sampling a probability distribution with known likelihood is a fundamental task in computational science and engineering. Aiming at multimodality, we propose a new sampling method that takes advantage of both the birth-death process and exploration component. The main idea of this method is look before you leap. We keep two sets of samplers, one at a warmer temperature and one at the original temperature. The former one serves as the pioneer in exploring new modes and passing useful information to the other, while the latter one samples the target distribution after receiving the information. We derive a mean-field limit and show how the exploration component accelerates the sampling process. Moreover, we prove exponential asymptotic convergence under mild assumption. Finally, we test this on experiments from previous literature and compare our methodology to previous ones.},
+  archive      = {J_JUQ},
+  author       = {Lezhi Tan and Jianfeng Lu},
+  doi          = {10.1137/23M1577584},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {1265-1293},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Accelerate langevin sampling with birth-death process and exploration component},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Quasi–Monte carlo integration for feedback control under uncertainty. <em>JUQ</em>, <em>13</em>(3), 1228-1264. (<a href='https://doi.org/10.1137/24M1695531'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. A control in feedback form is derived for linear quadratic, time-invariant optimal control problems subject to parabolic partial differential equations with coefficients depending on a countably infinite number of uncertain parameters. It is shown that the Riccati-based feedback operator depends analytically on the parameters provided that the system operator depends analytically on the parameters, as is the case, for instance, in diffusion problems when the diffusion coefficient is parameterized by a Karhunen–Loève expansion. These novel parametric regularity results allow the application of quasi–Monte Carlo (QMC) methods to efficiently compute an a priori chosen feedback law based on the expected value. Moreover, under moderate assumptions on the input random field, QMC methods achieve superior error rates compared to ordinary Monte Carlo methods, independently of the stochastic dimension of the problem. Indeed, our paper for the first time studies Banach space–valued integration by higher-order QMC methods.},
+  archive      = {J_JUQ},
+  author       = {Philipp A. Guth and Peter Kritzer and Karl Kunisch},
+  doi          = {10.1137/24M1695531},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {1228-1264},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Quasi–Monte carlo integration for feedback control under uncertainty},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Statistical finite elements via interacting particle langevin dynamics. <em>JUQ</em>, <em>13</em>(3), 1200-1227. (<a href='https://doi.org/10.1137/24M1693593'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this paper, we develop a class of interacting particle Langevin algorithms to solve inverse problems for partial differential equations (PDEs). In particular, we leverage the statistical finite element method (statFEM) formulation to obtain a finite-dimensional latent variable statistical model where the parameter is that of the (discretized) forward map and the latent variable is the statFEM solution of the PDE which is assumed to be partially observed. We then adapt a recently proposed expectation-maximization–like scheme, interacting particle Langevin algorithm (IPLA), for this problem and obtain a joint estimation procedure for the parameters and the latent variables. We consider three main examples: (i) estimating the forcing for a linear Poisson PDE, (ii) estimating diffusivity for a linear Poisson PDE, and (iii) estimating the forcing for a nonlinear Poisson PDE. We provide computational complexity estimates for forcing estimation in the linear case. We also provide comprehensive numerical experiments and preconditioning strategies that significantly improve the performance, showing that the proposed class of methods can be the choice for parameter inference in PDE models.},
+  archive      = {J_JUQ},
+  author       = {Alex Glyn-Davies and Connor Duffin and Ieva Kazlauskaite and Mark Girolami and Ö. Deniz Akyildiz},
+  doi          = {10.1137/24M1693593},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {1200-1227},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Statistical finite elements via interacting particle langevin dynamics},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Unbiased markov chain quasi-monte carlo for gibbs samplers. <em>JUQ</em>, <em>13</em>(3), 1174-1199. (<a href='https://doi.org/10.1137/24M1660747'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In statistical analysis, Monte Carlo (MC) is a classical numerical integration method. When faced with challenging sampling problems, Markov chain Monte Carlo (MCMC) is a commonly employed method. However, the MCMC estimator is biased after a fixed number of iterations. Unbiased MCMC, an advancement achieved through coupling techniques, addresses this bias issue in MCMC and allows us to run many short chains in parallel. Quasi-Monte Carlo (QMC), known for its high order of convergence, is an alternative to MC. By incorporating the idea of QMC into MCMC, Markov chain quasi-Monte Carlo (MCQMC) effectively reduces the variance of MCMC, especially in Gibbs samplers. This work presents a novel approach that integrates unbiased MCMC with MCQMC, referred to as an unbiased MCQMC method. This method renders unbiased estimators while improving the rate of convergence significantly. Numerical experiments demonstrate that for Gibbs sampling, unbiased MCQMC with a sample size of can yield a faster root mean square error (RMSE) rate than the rate of unbiased MCMC, approaching an RMSE rate of for low-dimensional problems. Surprisingly, in a challenging problem of a 1049-dimensional Pólya Gamma Gibbs sampler, the RMSE can still be reduced by several times for moderate sample sizes.},
+  archive      = {J_JUQ},
+  author       = {Jiarui Du and Zhijian He},
+  doi          = {10.1137/24M1660747},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {1174-1199},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Unbiased markov chain quasi-monte carlo for gibbs samplers},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Error bounds for a kernel-based constrained optimal smoothing approximation. <em>JUQ</em>, <em>13</em>(3), 1145-1173. (<a href='https://doi.org/10.1137/24M1676491'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper establishes error bounds for the convergence of a piecewise linear approximation of the constrained optimal smoothing problem posed in a reproducing kernel Hilbert space (RKHS). This problem can be reformulated as a Bayesian estimation problem involving a Gaussian process related to the kernel of the RKHS. Consequently, error bounds can be interpreted as a quantification of the maximum a posteriori (MAP) accuracy. To the best of our knowledge, no error bounds have been proposed for this type of problem so far. The convergence results are provided as a function of the grid size, the regularity of the kernel, and the distance from the kernel interpolant of the approximation to the set of constraints. Inspired by the MaxMod algorithm from recent literature, which sequentially allocates knots for the piecewise linear approximation, we conduct our analysis for nonequispaced knots. These knots are even allowed to be nondense, which impacts the definition of the optimal smoothing solution and our error bound quantifiers. Finally, we illustrate our theorems through several numerical experiments involving constraints such as boundedness and monotonicity.},
+  archive      = {J_JUQ},
+  author       = {Laurence Grammont and François Bachoc and Andrés F. López-Lopera},
+  doi          = {10.1137/24M1676491},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {1145-1173},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Error bounds for a kernel-based constrained optimal smoothing approximation},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Consistency of bayesian inference for a subdiffusion equation. <em>JUQ</em>, <em>13</em>(3), 1116-1144. (<a href='https://doi.org/10.1137/24M1707419'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. In this work, we consider the inverse problem of determining an unknown potential in a subdiffusion equation from its solution using a nonparametric Bayesian approach. Our aim is to establish the consistency of the posterior distribution with Gaussian priors. To do so, we need some key estimates of the forward problem. For the forward problem, we have to overcome the fact that the solution of the subdiffusion equation is less regular than that of the classical heat equation. The main ingredient is the maximum principle for the subdiffusion equation. We show that the posterior contracts to the ground truth at a polynomial rate.},
+  archive      = {J_JUQ},
+  author       = {Pu-Zhao Kow and Jenn-Nan Wang},
+  doi          = {10.1137/24M1707419},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {1116-1144},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Consistency of bayesian inference for a subdiffusion equation},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Precision and cholesky factor estimation for gaussian processes. <em>JUQ</em>, <em>13</em>(3), 1085-1115. (<a href='https://doi.org/10.1137/24M1717282'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper studies the estimation of large precision matrices and Cholesky factors obtained by observing a Gaussian process at many locations. Under general assumptions on the precision and the observations, we show that the sample complexity scales poly-logarithmically with the size of the precision matrix and its Cholesky factor. The key challenge in these estimation tasks is the polynomial growth of the condition number of the target matrices with their size. For precision estimation, our theory hinges on an intuitive local regression technique on the lattice graph which exploits the approximate sparsity implied by the screening effect. For Cholesky factor estimation, we leverage a block-Cholesky decomposition recently used to establish complexity bounds for sparse Cholesky factorization.},
+  archive      = {J_JUQ},
+  author       = {Jiaheng Chen and Daniel Sanz-Alonso},
+  doi          = {10.1137/24M1717282},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {1085-1115},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Precision and cholesky factor estimation for gaussian processes},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Enhancing gaussian process surrogates for optimization and posterior approximation via random exploration. <em>JUQ</em>, <em>13</em>(3), 1054-1084. (<a href='https://doi.org/10.1137/24M1677009'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper proposes novel noise-free Bayesian optimization strategies that rely on a random exploration step to enhance the accuracy of Gaussian process surrogate models. The new algorithms retain the ease of implementation of the classical GP-UCB algorithm, but the additional random exploration step accelerates their convergence, nearly achieving the optimal convergence rate. Furthermore, to facilitate Bayesian inference with intractable likelihoods, we propose to utilize optimization iterates for maximum a posteriori estimation to build a Gaussian process surrogate model for the unnormalized log-posterior density. We provide bounds for the Hellinger distance between the true and the approximate posterior distributions in terms of the number of design points. We demonstrate the effectiveness of our Bayesian optimization algorithms in nonconvex benchmark objective functions, in a machine learning hyperparameter tuning problem, and in a black-box engineering design problem. The effectiveness of our posterior approximation approach is demonstrated in two Bayesian inference problems for parameters of dynamical systems.},
+  archive      = {J_JUQ},
+  author       = {Hwanwoo Kim and Daniel Sanz-Alonso},
+  doi          = {10.1137/24M1677009},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {1054-1084},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Enhancing gaussian process surrogates for optimization and posterior approximation via random exploration},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimal control under uncertainty with joint chance state constraints: Almost-everywhere bounds, variance reduction, and application to (Bi)linear elliptic PDEs. <em>JUQ</em>, <em>13</em>(3), 1028-1053. (<a href='https://doi.org/10.1137/24M171557X'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We study optimal control of partial differential equations (PDEs) under uncertainty with the state variable subject to joint chance constraints. The controls are deterministic, but the states are probabilistic due to random variables in the governing equation. Joint chance constraints ensure that the random state variable meets pointwise bounds with high probability. For linear governing PDEs and elliptically distributed random parameters, we prove existence and uniqueness results for almost-everywhere state bounds. Using the spherical-radial decomposition (SRD) of the uncertain variable, we prove that when the probability is very large or small, the resulting Monte Carlo estimator for the chance constraint probability exhibits substantially reduced variance compared to the standard Monte Carlo estimator. We further illustrate how the SRD can be leveraged to efficiently compute derivatives of the probability function, and we discuss different expansions of the uncertain variable in the governing equation. Numerical examples for linear and bilinear PDEs compare the performance of Monte Carlo and quasi-Monte Carlo sampling methods, examining probability estimation convergence as the number of samples increases. We also study how the accuracy of the probabilities depends on the truncation of the random variable expansion, and we numerically illustrate the variance reduction of the SRD.},
+  archive      = {J_JUQ},
+  author       = {René Henrion and Georg Stadler and Florian Wechsung},
+  doi          = {10.1137/24M171557X},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {1028-1053},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Optimal control under uncertainty with joint chance state constraints: Almost-everywhere bounds, variance reduction, and application to (Bi)linear elliptic PDEs},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multilevel monte carlo metamodeling for variance function estimation. <em>JUQ</em>, <em>13</em>(3), 980-1027. (<a href='https://doi.org/10.1137/24M1689740'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This work introduces a novel multilevel Monte Carlo (MLMC) metamodeling approach for variance function estimation. Although devising an efficient experimental design for simulation metamodeling can be elusive, the MLMC-based approach addresses this challenge by dynamically adjusting the number of design points and budget allocation at each level, thereby automatically creating an efficient design. Theoretical analyses show that, under mild conditions, the proposed MLMC metamodeling approach for variance function estimation can achieve superior computational efficiency compared to standard Monte Carlo metamodeling while achieving the desired level of accuracy. Additionally, this work establishes the asymptotic normality of the MLMC metamodeling estimator under certain sufficient conditions, providing valuable insights for uncertainty quantification. Finally, two MLMC metamodeling procedures are proposed for variance function estimation: one to achieve a target accuracy level and another to efficiently utilize a fixed computational budget. Numerical evaluations support the theoretical results and demonstrate the potential of the proposed approach in facilitating global sensitivity analysis.},
+  archive      = {J_JUQ},
+  author       = {Jingtao Zhang and Xi Chen},
+  doi          = {10.1137/24M1689740},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {980-1027},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Multilevel monte carlo metamodeling for variance function estimation},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Regularization for the approximation of functions by mollified discretization methods. <em>JUQ</em>, <em>13</em>(3), 957-979. (<a href='https://doi.org/10.1137/24M1678210'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. Some prominent discretization methods such as finite elements provide a way to approximate a function of variables from values it takes on the nodes of the corresponding mesh. The accuracy is in -norm, where is the order of the underlying method. When the data are measured or computed with systematical experimental noise, some statistical regularization might be desirable, with a smoothing method of order (like the number of vanishing moments of a kernel). This idea is behind the use of some regularized discretization methods, whose approximation properties are the subject of this paper. We decipher the interplay of and for reconstructing a smooth function on regular bounded domains from measurements with noise of order . We establish that for certain regimes with small noise depending on , when , statistical smoothing is not necessarily the best option and no regularization is more beneficial than statistical regularization. We precisely quantify this phenomenon and show that the gain can achieve a multiplicative order . We illustrate our estimates by numerical experiments conducted in dimension with and finite elements.},
+  archive      = {J_JUQ},
+  author       = {Marc Hoffmann and Camille Pouchol},
+  doi          = {10.1137/24M1678210},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {957-979},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Regularization for the approximation of functions by mollified discretization methods},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Shape optimization under constraints on the probability of a quadratic functional to exceed a given threshold. <em>JUQ</em>, <em>13</em>(3), 931-956. (<a href='https://doi.org/10.1137/23M1605107'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This article is dedicated to shape optimization of elastic materials under random loadings where the particular focus is on the minimization of failure probabilities. Our approach relies on the fact that the area of integration is an ellipsoid in the high-dimensional parameter space when the shape functional of interest is quadratic. We derive the respective expressions for the shape functional and the related shape gradient. As showcase for the numerical implementation, we assume that the random loading of the state equation under consideration is a Gaussian random field. By exploiting the specialities of this setting, we derive an efficient shape optimization algorithm. Numerical results in three spatial dimensions validate the feasibility of our approach.},
+  archive      = {J_JUQ},
+  author       = {Marc Dambrine and Giulio Gargantini and Helmut Harbrecht and Jérôme Maynadier},
+  doi          = {10.1137/23M1605107},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {931-956},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {Shape optimization under constraints on the probability of a quadratic functional to exceed a given threshold},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). On the mean field theory of ensemble kalman filters for SPDEs. <em>JUQ</em>, <em>13</em>(3), 891-930. (<a href='https://doi.org/10.1137/24M1658954'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. This paper is concerned with the mathematical analysis of continuous time ensemble Kalman filters (EnKBFs) and their mean field limit in an infinite dimensional setting. The signal is determined by a nonlinear stochastic partial differential equation (SPDE), which is posed in the standard variational setting. Assuming global one-sided Lipschitz conditions and finite dimensional observations, we first prove the well posedness of both the EnKBF and its corresponding mean field version. We then investigate the quantitative convergence of the EnKBF towards its mean field limit, recovering the rates suggested by the law of large numbers for bounded observation functions. The main tool hereby are exponential moment estimates for the empirical covariance of the EnKBF, which may be of independent interest. In the appendix of the paper we investigate the connection of the mean field EnKBF and the stochastic filtering problem. In particular we derive the feedback particle filter for infinite dimensional signals and show that the mean field EnKBF can viewed as its constant gain approximation.},
+  archive      = {J_JUQ},
+  author       = {Sebastian W. Ertel},
+  doi          = {10.1137/24M1658954},
+  journal      = {SIAM/ASA Journal on Uncertainty Quantification},
+  month        = {9},
+  number       = {3},
+  pages        = {891-930},
+  shortjournal = {SIAM/ASA J. Uncertainty Quantification},
+  title        = {On the mean field theory of ensemble kalman filters for SPDEs},
+  volume       = {13},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

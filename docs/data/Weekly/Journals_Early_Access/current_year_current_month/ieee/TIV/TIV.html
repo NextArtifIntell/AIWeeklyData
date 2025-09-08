@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TIV</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tiv">TIV - 2</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Securing end-to-end reinforcement learning-driven autonomous driving: A control command utility-based intrusion response system. <em>TIV</em>, 1-11. (<a href='https://doi.org/10.1109/TIV.2025.3598768'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {End-to-end autonomous driving with deep reinforcement learning (DRL) encounters significant challenges in security and safety, which are critical for the automotive industry's adoption of autonomous technologies. This paper introduces a novel intrusion response system (IRS), called the control command utility-based IRS (CCU), specifically designed for DRLbased autonomous systems. The CCU provides a lightweight yet powerful defense against false data injection attacks on the invehicle CAN (control area network) bus, enhancing both security and driving performance by making intelligent, context-aware decisions based on control command utilities derived from DRL outputs. We rigorously evaluated CCU against other state-ofthe-art IRSs based on DRL autonomous driving models, Rails and Roach. Equipped with an additional confidence score-based filter, CCU effectively minimizes false alarms, demonstrating superior performance in improving critical driving metrics such as driving score, route completion, and infraction penalties, all while lowering defense costs. Furthermore, CCU exhibits robust resilience in hostile environments with varying attack probabilities, underscoring its reliability in complex scenarios. This contribution represents a significant advancement in autonomous driving, addressing essential security and safety challenges and accelerating the path toward safer, more reliable autonomous vehicle deployment.},
+  archive      = {J_TIV},
+  author       = {Qisheng Zhang and Han Jun Yoon and Terrence J. Moore and Seunghyun Yoon and Dan Dongseong Kim and Hyuk Lim and Frederica Nelson and Jin-Hee Cho},
+  doi          = {10.1109/TIV.2025.3598768},
+  journal      = {IEEE Transactions on Intelligent Vehicles},
+  month        = {8},
+  pages        = {1-11},
+  shortjournal = {IEEE Trans. Intell. Intell. Veh.},
+  title        = {Securing end-to-end reinforcement learning-driven autonomous driving: A control command utility-based intrusion response system},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SAEV-FL: Lightweight secure aggregation and efficient verification scheme for federated learning in cloud-edge collaborative environment. <em>TIV</em>, 1-17. (<a href='https://doi.org/10.1109/TIV.2025.3599909'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In a cloud-edge collaborative environment, especially for the Internet of Vehicles, federated learning (FL) has garnered widespread attention due to its unique training process, where users solely upload trained parameters yet do not transmit their local data, demonstrating that FL is a promising privacy-preserving distributed machine learning paradigm. However, FL still faces challenges, such as the local gradients and global parameters (i.e., global model, global weights, or global gradients) transmitted by users may leak the users' private information, and malicious or lazy aggregation servers may forge or tamper with the parameters uploaded by users, thereby generating incorrect aggregated results, ultimately reducing the availability of the global model. Moreover, network fluctuations or device failures may cause user dropouts during training. Although existing works address these challenges, privacy protection schemes based on complex cryptographic primitives are costly and lack research on protecting global parameters. Additionally, verification schemes for aggregation results face overhead and security challenges. For such, we propose a lightweight secure aggregation and efficient verification scheme for federated learning, namely SAEV-FL. We design a single-masking protocol based on the Chinese Remainder Theorem (CRT) and perturbation technique to achieve privacy protection for local gradients and global parameters with lower overhead. To verify the correctness of the aggregated results, we have combined homomorphic hash functions and random number technology to design a secure verification mechanism that does not disclose users' privacy. Detailed theoretical analysis and comprehensive experiments establish that the proposed scheme outperforms other similar works in terms of security and efficiency.},
+  archive      = {J_TIV},
+  author       = {Shiwen Zhang and Feixiang Ren and Wei Liang and Kuanching Li and Nam Ling},
+  doi          = {10.1109/TIV.2025.3599909},
+  journal      = {IEEE Transactions on Intelligent Vehicles},
+  month        = {8},
+  pages        = {1-17},
+  shortjournal = {IEEE Trans. Intell. Intell. Veh.},
+  title        = {SAEV-FL: Lightweight secure aggregation and efficient verification scheme for federated learning in cloud-edge collaborative environment},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

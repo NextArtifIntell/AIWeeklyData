@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TOCS</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tocs">TOCS - 7</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Validating JIT compilers via compilation space exploration. <em>TOCS</em>, <em>43</em>(3), 1-37. (<a href='https://doi.org/10.1145/3715102'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We introduce the concept of compilation space as a new pivot for the comprehensive validation of just-in-time (JIT) compilers in modern language virtual machines (LVMs). The compilation space of a program encompasses a wide range of equivalent JIT-compilation choices, which can be cross-validated to ensure the correctness of the program’s JIT compilations. To thoroughly explore the compilation space in a lightweight and LVM-agnostic manner, we strategically mutate test programs with JIT-relevant but semantics-preserving code constructs, aiming to provoke diverse JIT compilation optimizations. We primarily implement this approach in Artemis , a tool for validating Java Virtual Machines (JVMs). Within three months, Artemis successfully discovered 85 bugs in three widely used production JVMs—HotSpot, OpenJ9, and the Android Runtime—where 53 were already confirmed or fixed and many of which were classified as critical. It is noteworthy that all reported bugs concern JIT compilers, highlighting the effectiveness and practicality of our technique. Building on the promising results with JVMs, we experimentally applied our technique to a state-of-the-art JavaScript Engine (JSE) fuzzer called Fuzzilli, aiming to augment it to find mis-compilation bugs without significantly sacrificing its ability to detect crashes. Our experiments demonstrate that our enhanced version of Fuzzilli namely Apollo could achieve comparable code coverage with a considerably smaller number of generated programs with a similar number of crashes. Additionally, Apollo successfully uncovered four mis-compilations in JavaScriptCore and SpiderMonkey within seven days. Following Artemis ’ and Apollo ’s success, we are expecting that the generality and practicability of our approach will make it broadly applicable for understanding and validating the JIT compilers of other LVMs.},
+  archive      = {J_TOCS},
+  author       = {Cong Li and Yanyan Jiang and Chang Xu and Zhendong Su},
+  doi          = {10.1145/3715102},
+  journal      = {ACM Transactions on Computer Systems},
+  month        = {7},
+  number       = {3},
+  pages        = {1-37},
+  shortjournal = {ACM Trans. Comput. Syst.},
+  title        = {Validating JIT compilers via compilation space exploration},
+  volume       = {43},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Whole-system persistence made efficient with tree-structured checkpointing on microkernel. <em>TOCS</em>, <em>43</em>(3), 1-29. (<a href='https://doi.org/10.1145/3742425'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Whole-system persistence promises simplified application deployment and near-instantaneous recovery. This can be implemented using single-level store (SLS) through periodic checkpointing of ephemeral state to persistent devices. However, traditional SLSs suffer from two main issues on checkpointing efficiency and external synchrony, which are critical for low-latency services with persistence need. In this article, we note that the decentralized state of microkernel-based systems can be exploited to simplify and optimize state checkpointing. To this end, we propose TreeSLS, a whole-system persistent microkernel that simplifies the whole-system state maintenance to a capability tree and a failure-resilient checkpoint manager. TreeSLS further exploits the emerging non-volatile memory to minimize checkpointing pause time by eliminating the distinction between ephemeral and persistent devices. With efficient state maintenance, TreeSLS further proposes delayed external visibility to provide transparent external synchrony with little overhead. Evaluation on microbenchmarks and real-world applications (e.g., Memcached, Redis, and RocksDB) show that TreeSLS can complete a whole-system persistence in around 100 μs and even take a checkpoint every 1 ms with reasonable overhead to applications.},
+  archive      = {J_TOCS},
+  author       = {Mingkai Dong and Fangnuo Wu and Gequan Mo and Haibo Chen},
+  doi          = {10.1145/3742425},
+  journal      = {ACM Transactions on Computer Systems},
+  month        = {7},
+  number       = {3},
+  pages        = {1-29},
+  shortjournal = {ACM Trans. Comput. Syst.},
+  title        = {Whole-system persistence made efficient with tree-structured checkpointing on microkernel},
+  volume       = {43},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Introduction to the special section on SOSP 2023. <em>TOCS</em>, <em>43</em>(3), 1-2. (<a href='https://doi.org/10.1145/3744676'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_TOCS},
+  author       = {Jason Flinn and Margo Seltzer},
+  doi          = {10.1145/3744676},
+  journal      = {ACM Transactions on Computer Systems},
+  month        = {7},
+  number       = {3},
+  pages        = {1-2},
+  shortjournal = {ACM Trans. Comput. Syst.},
+  title        = {Introduction to the special section on SOSP 2023},
+  volume       = {43},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient fault tolerance for stateful serverless computing with asymmetric logging. <em>TOCS</em>, <em>43</em>(1-2), 1-43. (<a href='https://doi.org/10.1145/3725985'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Serverless computing separates function execution from state management. Simple retry-based fault tolerance might corrupt the shared state with duplicate updates. Existing solutions employ log-based fault tolerance to achieve exactly-once semantics, where every single read or write to the external state is associated with a log for deterministic replay. However, logging is not a free lunch, which introduces considerable overhead to stateful serverless applications. We present Halfmoon, a serverless runtime system for fault-tolerant stateful serverless computing. Our key insight is that it is unnecessary to symmetrically log both reads and writes. Instead, it suffices to log either reads or writes, i.e., asymmetrically. We design two logging protocols that enforce exactly-once semantics while providing log-free reads and writes, which are suitable for read- and write-intensive workloads, respectively. We theoretically prove that the two protocols are log-optimal , i.e., no other protocols can achieve lower logging overhead than our protocols. We provide a criterion for choosing the right protocol for a given workload, and a pauseless switching mechanism to switch protocols for dynamic workloads. We implement a prototype of Halfmoon. Experiments show that Halfmoon achieves 20%–40% lower latency and 1.5–4.0× lower logging overhead than the state-of-the-art solution Boki.},
+  archive      = {J_TOCS},
+  author       = {Sheng Qi and Haoyu Feng and Xuanzhe Liu and Xin Jin},
+  doi          = {10.1145/3725985},
+  journal      = {ACM Transactions on Computer Systems},
+  month        = {6},
+  number       = {1-2},
+  pages        = {1-43},
+  shortjournal = {ACM Trans. Comput. Syst.},
+  title        = {Efficient fault tolerance for stateful serverless computing with asymmetric logging},
+  volume       = {43},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RegVault II: Achieving hardware-assisted selective kernel data randomization for multiple architectures. <em>TOCS</em>, <em>43</em>(1-2), 1-34. (<a href='https://doi.org/10.1145/3734521'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Memory corruption vulnerabilities pose a significant threat to system security. The traditional paging-based approach cannot protect fine-grained runtime data (e.g., function pointers), which are often mixed with other data in memory. To protect the runtime data, data space randomization is proposed to encrypt the in-memory data so that the attacker cannot control the decrypted result. Unfortunately, current hardware does not provide dedicated support for fine-grained data encryption. This article presents RegVault II, a cross-architectural hardware-assisted lightweight data randomization scheme for OS kernels. To achieve robust, fine-grained, and lightweight data protection, we first identify five required capabilities for efficient and secure data randomization. Guided by these requirements, we design and implement novel hardware primitives that provide cryptographically strong encryption and decryption, thus ensuring both confidentiality and integrity for register-grained data. At the software level, we propose identification- and annotation-based approaches to automatically mark sensitive data and instrument the corresponding load and store operations. We also introduce new techniques to protect the interrupt context and safeguard the sensitive data spilling. We implement RegVault II on an actual FPGA hardware board for RISC-V and on QEMU for Arm, applying it to protect six types of sensitive data in the Linux kernel. Our thorough security and performance evaluations show that RegVault II effectively defends against a broad range of kernel data attacks while incurring minimal performance overhead.},
+  archive      = {J_TOCS},
+  author       = {Ruorong Guo and Yangye Zhou and Jinyan Xu and Wenbo Shen and Yajin Zhou and Rui Chang},
+  doi          = {10.1145/3734521},
+  journal      = {ACM Transactions on Computer Systems},
+  month        = {6},
+  number       = {1-2},
+  pages        = {1-34},
+  shortjournal = {ACM Trans. Comput. Syst.},
+  title        = {RegVault II: Achieving hardware-assisted selective kernel data randomization for multiple architectures},
+  volume       = {43},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Freezing-based memory and process co-design for user experience on resource-limited mobile devices. <em>TOCS</em>, <em>43</em>(1-2), 1-29. (<a href='https://doi.org/10.1145/3714409'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mobile devices with limited resources are prevalent, as they have a relatively low price. Providing a good user experience with limited resources has been a big challenge. This work finds that foreground applications are often unexpectedly interfered by background applications’ memory activities. Improving user experience on resource-limited mobile devices calls for a strong collaboration between memory and process management. This article proposes Ice , a framework to optimize the user experience on resource-limited mobile devices. With Ice, processes that will cause frequent refaults in the background are identified and frozen accordingly. The frozen application will be thawed when memory condition allows. Based on the proposed Ice, this work shows that the refault can be further reduced by revisiting the LRU lists in the original kernel with app-freezing awareness (called Ice + ). Evaluation of resource-limited mobile devices demonstrates that the user experience is effectively improved with Ice. Specifically, Ice boosts the frame rate by 1.57x on average over the state of the art. The frame rate is further enhanced by 5.14% on average with Ice + .},
+  archive      = {J_TOCS},
+  author       = {Changlong Li and Zongwei Zhu and Chun Jason Xue and Yu Liang and Rachata Ausavarungnirun and Liang Shi and Xuehai Zhou},
+  doi          = {10.1145/3714409},
+  journal      = {ACM Transactions on Computer Systems},
+  month        = {4},
+  number       = {1-2},
+  pages        = {1-29},
+  shortjournal = {ACM Trans. Comput. Syst.},
+  title        = {Freezing-based memory and process co-design for user experience on resource-limited mobile devices},
+  volume       = {43},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). XpuTEE: A high-performance and practical heterogeneous trusted execution environment for GPUs. <em>TOCS</em>, <em>43</em>(1-2), 1-27. (<a href='https://doi.org/10.1145/3719653'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {AI applications are employed in diverse scenarios, including data centers, personal computers, smart cars, and so on. Their privacy is threatened by the intricate software stacks and the potential malfeasance of system maintainers. The Trusted Execution Environment (TEE) has become popular for safeguarding applications from untrusted system software. However, AI applications are always speeded up with heterogeneous accelerators, e.g., GPU, which requires the TEE to be heterogeneous. A heterogeneous TEE should satisfy three requirements: (1) the joint heterogeneous abstraction that covers the CPU and GPUs and minimizes cooperation overhead among enclaves on them; (2) the high performance for supporting high-speed GPUs and introducing limited performance overhead; and (3) the compatibility with existing CPUs and GPUs so that existing machines can directly benefit from it. To meet the above requirements, this article introduces XpuTEE, a practical and high-performance heterogeneous TEE system. XpuTEE provides a new abstraction called XpuEnclave, comprising the CEnclave to protect CPU-side logic and numerous XEnclaves to guard GPU tasks. XpuEnclave is a joint TEE crossing the CPU and connected GPUs, and it removes all cryptographic operations and extra memory copies for CPU-GPU communication, which allows XpuTEE to achieve high performance. The results demonstrate that XpuTEE has an average performance overhead of 2.48% for common AI applications.},
+  archive      = {J_TOCS},
+  author       = {Shulin Fan and Zhichao Hua and Yubin Xia and Haibo Chen},
+  doi          = {10.1145/3719653},
+  journal      = {ACM Transactions on Computer Systems},
+  month        = {4},
+  number       = {1-2},
+  pages        = {1-27},
+  shortjournal = {ACM Trans. Comput. Syst.},
+  title        = {XpuTEE: A high-performance and practical heterogeneous trusted execution environment for GPUs},
+  volume       = {43},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

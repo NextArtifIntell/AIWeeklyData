@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SINUM</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="sinum">SINUM - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Space-time FEM-BEM couplings for parabolic transmission problems. <em>SINUM</em>, <em>63</em>(5), 1909-1932. (<a href='https://doi.org/10.1137/24M1695646'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Abstract. We develop couplings of a recent space-time first-order system least-squares method for parabolic problems and space-time boundary element methods for the heat equation to numerically solve a parabolic transmission problem on the full space and a finite time interval. In particular, we demonstrate coercivity of the couplings under certain restrictions and validate our theoretical findings by numerical experiments.},
+  archive      = {J_SINUM},
+  author       = {Thomas Führer and Gregor Gantner and Michael Karkulik},
+  doi          = {10.1137/24M1695646},
+  journal      = {SIAM Journal on Numerical Analysis},
+  month        = {10},
+  number       = {5},
+  pages        = {1909-1932},
+  shortjournal = {SIAM J. Numer. Anal.},
+  title        = {Space-time FEM-BEM couplings for parabolic transmission problems},
+  volume       = {63},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

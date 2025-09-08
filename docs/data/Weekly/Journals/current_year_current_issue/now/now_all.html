@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>now</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ftml">FTML - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Continual learning as computationally constrained reinforcement learning. <em>FTML</em>, <em>18</em>(5), 913-1053. (<a href='https://doi.org/10.1561/2200000116'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {An agent that accumulates knowledge to develop increasingly sophisticated skills over a long lifetime could advance the frontier of artificial intelligence capabilities. The design of such agents, which remains a long-standing challenge, is addressed by the subject of continual learning. This monograph clarifies and formalizes concepts of continual learning, introducing a framework and tools to stimulate further research. We also present a range of empirical case studies to illustrate the roles of forgetting, relearning, exploration, and auxiliary learning. Metrics presented in previous literature for evaluating continual learning agents tend to focus on particular behaviors that are deemed desirable, such as avoiding catastrophic forgetting, retaining plasticity, relearning quickly, and maintaining low memory or compute footprints. In order to systematically reason about design choices and compare agents, a coherent, holistic objective that encompasses all such requirements would be helpful. To provide such an objective, we cast continual learning as reinforcement learning with limited compute resources. In particular, we pose the continual learning objective to be the maximization of infinite-horizon average reward subject to a computational constraint. Continual supervised learning, for example, is a special case of our general formulation where the reward is taken to be negative log-loss or accuracy. Among the implications of maximizing average reward are that remembering all information from the past is unnecessary, forgetting nonrecurring information is not “catastrophic,” and learning about how an environment changes over time is useful. Computational constraints give rise to informational constraints in the sense that they limit the amount of information used to make decisions. A consequence is that, unlike in more common framings of machine learning in which per-timestep regret vanishes as an agent accumulates information, the regret experienced in continual learning typically persists. Related to this is that even in stationary environments, informational constraints can incentivize perpetual adaptation. Informational constraints also give rise to the familiar stability-plasticity dilemma, which we formalize in information-theoretic terms.},
+  archive      = {J_FTML},
+  author       = {Saurabh Kumar and Henrik Marklund and Ashish Rao and Yifan Zhu and Hong Jun Jeon and Yueyang Liu and Benjamin Van Roy},
+  doi          = {10.1561/2200000116},
+  journal      = {Foundations and Trends® in Machine Learning},
+  month        = {8},
+  number       = {5},
+  pages        = {913-1053},
+  shortjournal = {Found. Trends Mach. Learn.},
+  title        = {Continual learning as computationally constrained reinforcement learning},
+  volume       = {18},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+<h2 id="ftopt">FTOPT - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Riemannian online learning. <em>FTOPT</em>, <em>9</em>(3), 248-406. (<a href='https://doi.org/10.1561/2400000054'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In emerging fields such as machine learning, quantum computing, biomedical imaging, and robotics, data and decisions often exist in curved, non-Euclidean spaces due to physical constraints or underlying symmetries. Riemannian online optimization provides a new framework for handling learning tasks where data arrives sequentially in geometric spaces. This monograph offers a comprehensive overview of online learning over Riemannian manifolds.},
+  archive      = {J_FTOPT},
+  author       = {Xi Wang and Guodong Shi},
+  doi          = {10.1561/2400000054},
+  journal      = {Foundations and Trends® in Optimization},
+  month        = {8},
+  number       = {3},
+  pages        = {248-406},
+  shortjournal = {Found. Trends Optim.},
+  title        = {Riemannian online learning},
+  volume       = {9},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+<h2 id="ftsp">FTSP - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Zero-shot visual deepfake detection: Can AI predict and prevent fake content before it is created?. <em>FTSP</em>, <em>19</em>(3), 212-370. (<a href='https://doi.org/10.1561/2000000136'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Generative adversarial networks (GANs) and diffusion models have dramatically advanced deepfake technology, and its threats to digital security, media integrity, and public trust have increased rapidly. This research explored zero-shot deepfake detection – an emerging method even when the models have never seen a particular deepfake variation. In this work, we studied self-supervised learning, transformer-based zero-shot classifier, generative model fingerprinting, and meta-learning techniques that better adapt to the ever-evolving deepfake threat. In addition, we suggested AI-driven prevention strategies that mitigated the underlying generation pipeline of the deepfakes before they occurred. They consisted of adversarial perturbations for creating deepfake generators, digital watermarking for content authenticity verification, real-time AI monitoring for content creation pipelines, and blockchain-based content verification frameworks. Despite these advancements, zero-shot detection and prevention faced critical challenges such as adversarial attacks, scalability constraints, ethical dilemmas, and the absence of standardized evaluation benchmarks. These limitations were addressed by discussing future research directions on explainable AI for deepfake detection, multimodal fusion based on image, audio, and text analysis, quantum AI for enhanced security, and federated learning for privacy-preserving deepfake detection. This further highlighted the need for an integrated defense framework for digital authenticity that utilized zero-shot learning in combination with preventive deepfake mechanisms. Finally, we highlighted the important role of interdisciplinary collaboration between AI researchers, cybersecurity experts, and policymakers to create resilient defenses against the rising tide of deepfake attacks.},
+  archive      = {J_FTSP},
+  author       = {Ayan Sar and Sampurna Roy and Tanupriya Choudhury and Ajith Abraham},
+  doi          = {10.1561/2000000136},
+  journal      = {Foundations and Trends® in Signal Processing},
+  month        = {8},
+  number       = {3},
+  pages        = {212-370},
+  shortjournal = {Found. Trends Signal Process.},
+  title        = {Zero-shot visual deepfake detection: Can AI predict and prevent fake content before it is created?},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

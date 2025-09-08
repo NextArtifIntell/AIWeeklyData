@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TMRB</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tmrb">TMRB - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). TRAIN-KNEE: Developing a haptic manikin for knee injury assessment training. <em>TMRB</em>, 1. (<a href='https://doi.org/10.1109/TMRB.2025.3604121'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present the design and implementation of a high-fidelity haptic manikin for knee injury assessment training. Currently, such training is conducted through direct instruction on live patients or peer-to-peer practice, which may limit exposure to multiple injury severities and raise ethical concerns. Our manikindevice aims to assist inexperienced practitioners in mastering an injury assessment technique specifically for the medial collateral ligament (MCL). We designed the manikin collaboratively with a certified clinician. Our design incorporates a commercial human knee joint model for accurate anatomical representation, materials that closely mimic human skin properties, an injury simulation mechanism for replicating MCL injuries, and pressure sensors to capture user-applied pressure during manipulation. We conducted threetwo evaluations: an internal test with our collaborating clinician to configure our manikin for four MCL injury conditions (i.e., healthy, grade 1, grade 2, and grade 3) using a psychophysics method; a subsequent study where 6 certified clinicians rated each condition for consistency and a technical evaluation measuring abduction range in the healthy and grade 3 configurations. Results show that our manikin can reliably displaydistinguish between healthy and unhealthy MCLs, with a sensitivity of 0.83 and specificity of 1.00 for healthy condition, and 1.00 and 0.83, respectively, for the unhealthy condition. However, further improvements are needed to accurately distinguish between injury gradesgrade 1, grade 2, and grade 3 injuries. Our manikin’s realistic weight and shape were highly praised, but there is room for improvement in simulating the skin texture. This work shows the potential of realistic simulators to enhance clinical training with standardized and repeatable practice.},
+  archive      = {J_TMRB},
+  author       = {Marco Moran-Ledesma and Robert Burns and Mark Hancock and Oliver Schneider},
+  doi          = {10.1109/TMRB.2025.3604121},
+  journal      = {IEEE Transactions on Medical Robotics and Bionics},
+  month        = {9},
+  pages        = {1},
+  shortjournal = {IEEE Tran. Med. Robot. Bionics},
+  title        = {TRAIN-KNEE: Developing a haptic manikin for knee injury assessment training},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

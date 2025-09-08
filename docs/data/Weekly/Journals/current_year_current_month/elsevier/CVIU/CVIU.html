@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CVIU</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="cviu">CVIU - 29</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Comprehensive regional guidance for attention map semantics in text-to-image diffusion models. <em>CVIU</em>, <em>260</em>, 104492. (<a href='https://doi.org/10.1016/j.cviu.2025.104492'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Diffusion models have shown remarkable success in image generation tasks. However, accurately interpreting and translating the semantic meaning of input text into coherent visuals remains a significant challenge. We observe that existing approaches often rely on enhancing attention maps in a pixel-based or patch-based manner, which can lead to issues such as non-contiguous regions, unintended region leakage, eventually causing attention maps with limited semantic richness, degrade output quality. To address these limitations, we propose CoRe Diffusion, a novel method that provides comprehensive regional guidance throughout the generation process. Our approach introduces a region-assignment mechanism coupled with a tailored optimization strategy, enabling attention maps to better capture and express semantic information of concepts. Additionally, we incorporate mask guidance during the denoising steps to mitigate region leakage. Through extensive comparisons with state-of-the-art methods and detailed visual analyses, we demonstrate that our approach achieves superior performance, offering a more faithful image generation framework with semantically accurate procedure. Furthermore, our framework offers flexibility by supporting both automatic region assignment and user-defined spatial inputs as conditional guidance, enhancing its adaptability for diverse applications.},
+  archive      = {J_CVIU},
+  author       = {Haoxuan Wu and Lai-Man Po and Xuyuan Xu and Kun Li and Yuyang Liu and Zeyu Jiang},
+  doi          = {10.1016/j.cviu.2025.104492},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104492},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Comprehensive regional guidance for attention map semantics in text-to-image diffusion models},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive bias learning via gradient-based reweighting and constrained pruning for robust visual question answering. <em>CVIU</em>, <em>260</em>, 104484. (<a href='https://doi.org/10.1016/j.cviu.2025.104484'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Visual Question Answering (VQA) presents significant challenges in cross-modal reasoning due to susceptibility to dataset biases, spurious correlations, and shortcuts learning, which undermine model robustness. While ensemble methods mitigate bias via joint optimization of a bias model and a target model during training, their efficacy remains limited by suboptimal bias exploitation and model capacity imbalances. To address this, we propose the Adaptive Bias Learning Network (ABLNet), a novel framework that systematically enhances bias capture for improved generalization. Our approach introduces two key innovations: (1) Gradient-driven sample reweighting, which quantifies per-sample bias magnitude via training gradients and prioritizes low-bias samples to refine bias model training; (2) Constrained network pruning, deliberately restricting bias model capacity to amplify its focus on bias patterns. Extensive evaluations on VQA-CPv1, VQA-CPv2, and VQA-v2 benchmarks confirm our ABLNet’s superiority, demonstrating generalizability across diverse question types. The code will be released at https://github.com/runminwang/ABLNet .},
+  archive      = {J_CVIU},
+  author       = {Zukun Wan and Runmin Wang and Xingdong Song and Juan Xu and Xiaofei Cao and Jielei Hei and Shengrong Yuan and Yajun Ding and Changxin Gao},
+  doi          = {10.1016/j.cviu.2025.104484},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104484},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Adaptive bias learning via gradient-based reweighting and constrained pruning for robust visual question answering},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimizing ambiguous speech emotion recognition through spatial–temporal parallel network with label correction strategy. <em>CVIU</em>, <em>260</em>, 104483. (<a href='https://doi.org/10.1016/j.cviu.2025.104483'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Speech emotion recognition is of great significance for improving the human–computer interaction experience. However, traditional methods based on hard labels have difficulty dealing with the ambiguity of emotional expression. Existing studies alleviate this problem by redefining labels, but still rely on the subjective emotional expression of annotators and fail to consider the truly ambiguous speech samples without dominant labels fully. To solve the problems of insufficient expression of emotional labels and ignoring ambiguous undominantly labeled speech samples, we propose a label correction strategy that uses a model with exact sample knowledge to modify inappropriate labels for ambiguous speech samples, integrating model training with emotion cognition, and considering the ambiguity without dominant label samples. It is implemented on a spatial–temporal parallel network, which adopts a temporal pyramid pooling (TPP) to process the variable-length features of speech to improve the recognition efficiency of speech emotion. Through experiments, it has been shown that ambiguous speech after label correction has a more promoting effect on the recognition performance of speech emotions.},
+  archive      = {J_CVIU},
+  author       = {Chenquan Gan and Daitao Zhou and Kexin Wang and Qingyi Zhu and Deepak Kumar Jain and Vitomir Štruc},
+  doi          = {10.1016/j.cviu.2025.104483},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104483},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Optimizing ambiguous speech emotion recognition through spatial–temporal parallel network with label correction strategy},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EntroFormer: An entropy-based sparse vision transformer for real-time semantic segmentation. <em>CVIU</em>, <em>260</em>, 104482. (<a href='https://doi.org/10.1016/j.cviu.2025.104482'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Image semantic segmentation plays a fundamental role in a wide range of pixel-level scene understanding tasks. State-of-the-art segmentation methods often leverage sparse attention mechanisms to identify informative patches for modeling long-range dependencies, significantly reducing the computational complexity of Vision Transformers. Most of these methods focus on selecting regions that are highly relevant to the queries, achieving strong performance in tasks like classification and object detection. However, in the semantic segmentation task, current sparse attention methods are limited by their query-based focus, overlooking the importance of interactions between different objects. In this paper, we propose Sparse Entropy Attention (SEA) to select regions with higher informational content for long-range dependency capture. Specifically, the information entropy of each region is computed to assess its uncertainty in semantic prediction. Regions with high information entropy are considered informative and selected to explore sparse global semantic dependencies. Based on SEA, we present an entropy-based sparse Vision Transformer (EntroFormer) network for real-time semantic segmentation. EntroFormer integrates sparse global semantic features with dense local ones, enhancing the network’s ability to capture both the interaction of image contents and specific semantics. Experimental results show that the proposed real-time network outperforms state-of-the-art methods with similar parameters and computational costs on the Cityscapes, COCO-Stuff, and Bdd100K datasets. Ablation studies further demonstrate that SEA outperforms other sparse attention mechanisms in semantic segmentation.},
+  archive      = {J_CVIU},
+  author       = {Zhiyan Wang and Song Wang and Lin Yuanbo Wu and Deyin Liu and Lei Gao and Lin Qi and Guanghui Wang},
+  doi          = {10.1016/j.cviu.2025.104482},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104482},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {EntroFormer: An entropy-based sparse vision transformer for real-time semantic segmentation},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive DETR: A framework with dynamic sampling points and feature-guided adaptive attention updates. <em>CVIU</em>, <em>260</em>, 104481. (<a href='https://doi.org/10.1016/j.cviu.2025.104481'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, DETR-based models have advanced object detection but still face key challenges: the encoder’s high complexity and limited adaptability, and the decoder’s slow convergence due to query initialization. We propose Adaptive DETR, a framework with dynamic sampling and adaptive feature encoding. First, we design an attention update strategy that computes weights based on image features, enhancing detection accuracy. Second, we enable dynamic adjustment of sampling points in deformable attention, improving adaptability in complex scenes. Finally, we optimize the decoder by performing attention between bounding-box and semantic queries during initialization, effectively injecting semantics, accelerating convergence, and improving localization. Experiments on COCO, UAVDT, VisDrone, and RSOD confirm that Adaptive DETR achieves superior accuracy and generalization with improved efficiency.},
+  archive      = {J_CVIU},
+  author       = {Botao Li and Huguang Yang and Chenglong Xia and Han Zheng and Aziguli Wulamu and Taohong Zhang},
+  doi          = {10.1016/j.cviu.2025.104481},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104481},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Adaptive DETR: A framework with dynamic sampling points and feature-guided adaptive attention updates},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multimodal vs. unimodal approaches to uncertainty in 3D image segmentation under distribution shifts. <em>CVIU</em>, <em>260</em>, 104473. (<a href='https://doi.org/10.1016/j.cviu.2025.104473'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Machine learning has been widely adopted across sectors, yet its application in medical imaging remains challenging due to distribution shifts in real-world data. Deployed models often encounter samples that differ from the training dataset, particularly in the health domain, leading to performance issues. This limitation hinders the expressiveness and reliability of deep learning models in health applications. Thus, it becomes crucial to identify methods capable of producing reliable uncertainty estimation in the context of distribution shifts in the health sector. In this paper, we explore the feasibility of using cutting-edge Bayesian and non-Bayesian methods to detect distributionally shifted samples, aiming to achieve reliable and trustworthy diagnostic predictions in segmentation task. Specifically, we compare three distinct uncertainty estimation methods, each designed to capture either unimodal or multimodal aspects in the posterior distribution. Our findings demonstrate that methods capable of addressing multimodal characteristics in the posterior distribution, offer more dependable uncertainty estimates. This research contributes to enhancing the utility of deep learning in healthcare, making diagnostic predictions more robust and trustworthy.},
+  archive      = {J_CVIU},
+  author       = {Masoumeh Javanbakhat and Md Tasnimul Hasan and Cristoph Lippert},
+  doi          = {10.1016/j.cviu.2025.104473},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104473},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Multimodal vs. unimodal approaches to uncertainty in 3D image segmentation under distribution shifts},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CCANet: A cross-scale context aggregation network for UAV object detection. <em>CVIU</em>, <em>260</em>, 104472. (<a href='https://doi.org/10.1016/j.cviu.2025.104472'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the rapid advancement of deep learning technology, Unmanned Aerial Vehicle (UAV) object detection demonstrates significant potential across various fields. However, multi-scale object variations and complex environmental interference in UAV images present considerable challenges. This paper proposes a new UAV object detection network named Cross-scale Context Aggregation Network (CCANet), which contains Multi-scale Convolution Aggregation Darknet (MCADarknet) and Cross-scale Context Aggregation Feature Pyramid Network (CCA-FPN). First, MCADarknet serves as a multi-scale feature extraction network. It employs parallel multi-scale convolutional kernels and depth-wise strip convolution techniques to expand the network’s receptive field, extracting feature maps at four different scales layer by layer. Second, to address interference in complex scenes, a Context Enhanced Fusion method enhances the interaction between adjacent features extracted by MCADarknet and higher-level features to form intermediate features. Finally, CCA-FPN employs a cross-scale fusion strategy to deeply integrate shallow, intermediate, and deep feature information, thereby enhancing object representation in complex scenarios. Experimental results indicate that CCANet performs well on three public datasets. In particular, mAP 50 and mAP 50 − 95 can reach 47.4% and 29.4% respectively on the VisDrone dataset. Compared to the baseline model, it achieves improvements of 6.2% and 4.3%.},
+  archive      = {J_CVIU},
+  author       = {Lei Shang and Qihan He and Huan Lei and Wenyuan Yang},
+  doi          = {10.1016/j.cviu.2025.104472},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104472},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {CCANet: A cross-scale context aggregation network for UAV object detection},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). EGLC: Enhancing global localization capability for medical image segmentation. <em>CVIU</em>, <em>260</em>, 104471. (<a href='https://doi.org/10.1016/j.cviu.2025.104471'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Medical image segmentation plays a vital role in computer-aided diagnosis and treatment planning. Traditional convolutional networks excel at capturing local patterns, while Transformer-based models are effective at modeling global context. We observe that this advantage arises from the global model’s sensitivity to boundary information, whereas local modeling tends to focus on regional consistency. Based on this insight, we propose EGLC, a novel global-local collaborative segmentation framework. During global modeling, we progressively discard inattentive patches and apply wavelet transform to extract multi-frequency boundary features. These boundary features are then used as guidance to enhance local representations. To implement this strategy, we introduce a new encoder, Boundary PVT, which incorporates both global semantics and boundary cues. In the decoding phase, we design a Reverse Progressive Locality Decoder to redirect attention to the peripheral edges of the lesion, thereby improving boundary delineation. Extensive experiments on multiple public medical image datasets demonstrate that our EGLC framework consistently outperforms existing state-of-the-art methods, especially in preserving fine-grained boundary details. The proposed approach offers a promising direction for precise and robust medical image segmentation.},
+  archive      = {J_CVIU},
+  author       = {Yulong Wan and Dongming Zhou and Ran Yan},
+  doi          = {10.1016/j.cviu.2025.104471},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104471},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {EGLC: Enhancing global localization capability for medical image segmentation},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Physics-guided human interaction generation via motion diffusion model. <em>CVIU</em>, <em>260</em>, 104470. (<a href='https://doi.org/10.1016/j.cviu.2025.104470'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Denoising diffusion model significantly boosts the generation of two-person interactions conditioned on textual descriptions. However, due to the complexity of interactions and the diversity of textual descriptions, motion generation still faces two critical challenges: The self-induced motion and the increasing error accumulation with more denoised steps. To address these issues, we propose a novel Physics-guided human Interaction generation framework based on motion diffusion model, named PhyInter. It can synthesize contextually appropriate motion, automatically learn the dynamic states of the other participant without additional annotation, and also optimize the errors of generation by guiding the next denoising diffusion step. Specifically, PhyInter integrates physical principles from two perspectives: (1) Defining a stochastic differential equation based on human kinematics to model the physical states of interaction; (2) Employing an interactive attention module to share physical information between intra- and inter-human motions. Additionally, we design a sampling strategy to facilitate motion generation and avoid unnecessary computation, ensuring realistic, physically-plausible interactions. Extensive experiments demonstrate that our method surpasses previous approaches on the InterHuman dataset, achieving the state-of-the-art performance.},
+  archive      = {J_CVIU},
+  author       = {Dahua Gao and Wenlong Wang and Xinyu Liu and Yuxi Hu and Danhua Liu},
+  doi          = {10.1016/j.cviu.2025.104470},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104470},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Physics-guided human interaction generation via motion diffusion model},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Unified learning for image–text alignment via multi-scale feature fusion. <em>CVIU</em>, <em>260</em>, 104468. (<a href='https://doi.org/10.1016/j.cviu.2025.104468'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Cross-modal retrieval, particularly image–text retrieval, aims to achieve efficient matching and retrieval between images and text. With the continuous advancement of deep learning technologies, numerous innovative models and algorithms have emerged. However, existing methods still face some limitations: (1) Most models overly focus on either global or local correspondences, failing to fully integrate global and local information; (2) They typically emphasize cross-modal similarity optimization while neglecting the relationships among samples within the same modality; (3) They struggle to effectively handle noise in image–text pairs, negatively impacting model performance due to noisy negative samples. To address these challenges, this paper proposes a dual-branch structured model that combines global and local matching—Momentum-Augmented Transformer Encoder (MATE). The model aligns closely with human cognitive processes by integrating global and local features and leveraging an External Spatial Attention aggregation (ESA) mechanism and a Multi-modal Fusion Transformer Encoder, significantly enhancing feature representation capabilities. Furthermore, this work introduces a Hard Enhanced Contrastive Triplet Loss (HECT Loss), which effectively optimizes the model’s ability to distinguish positive and negative samples. A self-supervised learning method based on momentum distillation is also employed to further improve image–text matching performance. The experimental results demonstrate that the MATE model outperforms the vast majority of existing state-of-the-art methods on both Flickr30K and MS-COCO datasets. The code is available at https://github.com/wangmeng-007/MATE/tree/master .},
+  archive      = {J_CVIU},
+  author       = {Jing Zhou and Meng Wang},
+  doi          = {10.1016/j.cviu.2025.104468},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104468},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Unified learning for image–text alignment via multi-scale feature fusion},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Representation learning of point cloud upsampling in global and local inputs. <em>CVIU</em>, <em>260</em>, 104467. (<a href='https://doi.org/10.1016/j.cviu.2025.104467'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In recent years, point cloud upsampling has been widely applied in tasks such as 3D reconstruction and object recognition. This study proposed a novel framework, ReLPU, which enhances upsampling performance by explicitly learning from both global and local structural features of point clouds. Specifically, we extracted global features from uniformly segmented inputs (Average Segments) and local features from patch-based inputs of the same point cloud. These two types of features were processed through parallel autoencoders, fused, and then fed into a shared decoder for upsampling. This dual-input design improved feature completeness and cross-scale consistency, especially in sparse and noisy regions. Our framework was applied to several state-of-the-art autoencoder-based networks and validated on standard datasets. Experimental results demonstrated consistent improvements in geometric fidelity and robustness. In addition, saliency maps confirmed that parallel global-local learning significantly enhanced the interpretability and performance of point cloud upsampling.},
+  archive      = {J_CVIU},
+  author       = {Tongxu Zhang and Bei Wang},
+  doi          = {10.1016/j.cviu.2025.104467},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104467},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Representation learning of point cloud upsampling in global and local inputs},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive illumination and noise-free detail recovery via visual decomposition for low-light image enhancement. <em>CVIU</em>, <em>260</em>, 104466. (<a href='https://doi.org/10.1016/j.cviu.2025.104466'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing low-light image enhancement methods often struggle with precise brightness control and frequently introduce noise during the enhancement process. To address these limitations, we propose BVILLIE, a novel biologically inspired visual model. BVILLIE employs a visual decomposition network that separates low-light images into low-frequency and high-frequency components, with the low-frequency path focused on brightness management and the high-frequency path enhancing details without amplifying noise. In the low-frequency path, inspired by the biological visual system’s adaptive response to varying light conditions, BVILLIE incorporates a custom-designed luminance curve based on the Naka–Rushton equation. This equation models the nonlinear response of retinal neurons to light intensity, simulating human perceptual adaptation to different brightness levels. Additionally, a convolutional enhancement module corrects color shifts resulting from luminance adjustments. In the high-frequency path, an innovative fusion module integrates a preliminary denoiser with an adaptive enhancement mechanism to improve detail preservation and texture refinement. Extensive experiments across multiple benchmark datasets demonstrate that BVILLIE significantly outperforms state-of-the-art techniques. For instance, on the LOLv2-Real dataset, BVILLIE achieves a PSNR of 25.335 dB, SSIM of 0.866, LPIPS of 0.106, and LOE of 0.208. These results, consistently observed across various metrics, highlight BVILLIE’s superior performance in terms of image quality, perceptual similarity, preservation of lightness order, detail enhancement, and noise suppression.},
+  archive      = {J_CVIU},
+  author       = {Tianqi Li and Pingping Liu and Qiuzhan Zhou and Tongshun Zhang},
+  doi          = {10.1016/j.cviu.2025.104466},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104466},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Adaptive illumination and noise-free detail recovery via visual decomposition for low-light image enhancement},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PConvSRGAN: Real-world super-resolution reconstruction with pure convolutional networks. <em>CVIU</em>, <em>260</em>, 104465. (<a href='https://doi.org/10.1016/j.cviu.2025.104465'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Image super-resolution (SR) reconstruction technology faces numerous challenges in real-world applications: image degradation types are diverse, complex, and unknown; the diversity of imaging devices increases the complexity of image degradation in the super-resolution reconstruction process; SR requires substantial computational resources, especially with the latest significantly effective Transformer-based SR methods. To address these issues, we improved the ESRGAN model by implementing the following: first, a probabilistic degradation model was added to simulate the degradation process, preventing overfitting to specific degradations; second, BiFPN was introduced in the generator to fuse multi-scale features; lastly, inspired by the ConvNeXt network, the discriminator was redesigned as a pure convolutional network built entirely from standard CNN modules, which matches Transformer performance across various aspects. Experimental results demonstrate that our approach achieves the best PI and LPIPS performance compared to state-of-the-art SR methods, with PSNR,SSIM and NIQE being on par. Visualization results show that our method not only generates natural SR images but also excels in restoring structures.},
+  archive      = {J_CVIU},
+  author       = {Zuopeng Zhao and Yumeng Gao and Bingbing Min and Xiaoran Miao and Jianfeng Hu and Ying Liu and Kanyaphakphachsorn Pharksuwan},
+  doi          = {10.1016/j.cviu.2025.104465},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104465},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {PConvSRGAN: Real-world super-resolution reconstruction with pure convolutional networks},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Context perturbation: A consistent alignment approach for domain adaptive semantic segmentation. <em>CVIU</em>, <em>260</em>, 104464. (<a href='https://doi.org/10.1016/j.cviu.2025.104464'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Domain Adaptive Semantic Segmentation (DASS) aims to adapt a pre-trained segmentation model from a labeled source domain to an unlabeled target domain. Previous approaches usually address the domain gap by consistency regularization which is implemented based on the augmented data. However, as the augmentations are often performed at the input level with simple linear transformations, the feature representations suffer limited perturbation from these augmented views. As a result, they are not effective for cross-domain consistency learning. In this work, we propose a new augmentation method, namely contextual augmentation, and combine it with contrastive learning approaches from both the pixel and class levels to achieve consistency regularization. We term this methodology as Context Perturbation for DASS (CoPDASeg). Specifically, contextual augmentation first combines domain information by class mix and then randomly crops two patches with an overlapping region. To achieve consistency regularization with the two augmented patches, we focus on both pixel and class perspectives and propose two parallel contrastive learning paradigms ( i.e. , pixel-level contrastive learning and class-level contrastive learning). The former aligns the pixel-to-pixel feature representations, and later aligns class prototypes across domains. Experimental results on representative benchmarks ( i.e. , GTA5 → Cityscapes and SYNTHIA → Cityscapes ) demonstrate that CoPDASeg improves the segmentation performance over state-of-the-arts by a large margin.},
+  archive      = {J_CVIU},
+  author       = {Meiqin Liu and Zilin Wang and Chao Yao and Yao Zhao and Wei Wang and Yunchao Wei},
+  doi          = {10.1016/j.cviu.2025.104464},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104464},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Context perturbation: A consistent alignment approach for domain adaptive semantic segmentation},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). GaitBranch: A multi-branch refinement model combined with frame-channel attention mechanism for gait recognition. <em>CVIU</em>, <em>260</em>, 104463. (<a href='https://doi.org/10.1016/j.cviu.2025.104463'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurately representing human motion in video-based gait recognition is challenging due to the difficulty in obtaining an ideal gait silhouette sequence that captures comprehensive information. To address this challenge, we propose GaitBranch, a novel method that emphasizes local key information of human motion in different layers of the neural network. It divides the neural network into multiple branches using the multi-branch refinement (MBR) module and extracts local key frames from various body parts through the frame-channel attention mechanism (FCAM) to form a comprehensive representation of human motion patterns. GaitBranch achieves high gait recognition accuracy on the CASIA-B (98.6%, 96.1%, and 85.5% for normal walking, carrying a bag, and wearing a coat conditions), OU-MVLP (92.3%), and GREW (79.8%) datasets, demonstrating its robustness across different environments. Ablation experiments confirm the efficacy of our method and demonstrate that the performance gains result from the optimized model structure rather than simply increasing parameters.},
+  archive      = {J_CVIU},
+  author       = {Huakang Li and Yidan Qiu and Huimin Zhao and Jin Zhan and Rongjun Chen and Jinchang Ren and Ying Gao and Wing W.Y. Ng},
+  doi          = {10.1016/j.cviu.2025.104463},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104463},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {GaitBranch: A multi-branch refinement model combined with frame-channel attention mechanism for gait recognition},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multiscale spatio-temporal fusion network for video dehazing. <em>CVIU</em>, <em>260</em>, 104462. (<a href='https://doi.org/10.1016/j.cviu.2025.104462'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Video dehazing aims to restore high-resolution and high-contrast haze-free frames, which is crucial in engineering applications such as intelligent traffic monitoring systems. These monitoring systems heavily rely on clear visual information to ensure accurate decision-making and reliable operation. However, despite significant advances achieved by deep learning methods, they still face challenges when dealing with diverse real-world scenarios. To address these issues, we propose a Multi-Scale Spatio-Temporal Fusion Network (MSTF-Net), a novel framework designed to enhance video dehazing performance in complex engineering environments. Specifically, the MainAux Encoder integrates multi-source information through a progressively enhanced feature fusion mechanism, improving the representation of both global dynamics and local details. Furthermore, the Spatio-Temporal Adaptive Fusion (STAF) module ensures robust temporal consistency and spatial clarity by leveraging multi-level spatio-temporal information fusion. To evaluate our framework, we constructed a challenging dataset named “DarkRoad”, which includes low-light, uneven lighting, and dynamic outdoor scenarios, addressing the key limitations of existing datasets in video dehazing tasks. Extensive experiments demonstrate that MSTF-Net achieves state-of-the-art performance, excelling particularly in applications requiring high clarity, strong contrast, and detailed preservation, providing a reliable solution to video dehazing problems in practical engineering scenarios.},
+  archive      = {J_CVIU},
+  author       = {Qingru Zhang and Guorong Chen and Yixuan Zhang and Jinmei Zhang and Shaofeng Liu and Jian Wang},
+  doi          = {10.1016/j.cviu.2025.104462},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104462},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Multiscale spatio-temporal fusion network for video dehazing},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DBiSeNet: Dual bilateral segmentation network for real-time semantic segmentation. <em>CVIU</em>, <em>260</em>, 104461. (<a href='https://doi.org/10.1016/j.cviu.2025.104461'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Bilateral networks have shown effectiveness and efficiency for real-time semantic segmentation. However, the single bilateral architecture exhibits limitations in capturing multi-scale feature representations and addressing misalignment issues during spatial and contextual feature fusion, thereby constraining segmentation accuracy. To address these challenges, we propose a novel dual bilateral segmentation network (DBiSeNet) that incorporates an additional bilateral branch into the original architecture. The additional (high-scale) bilateral operating at high resolution to preserve fine-grained details and responsible for thin object prediction, while the original (low-scale) bilateral maintains an enlarged receptive field to capture global context for large object segmentation. Furthermore, we introduce an aligned and refined feature fusion module to mitigate feature misalignment within each bilateral branch. To optimize the final prediction, we design a dual prediction fusion module that utilizes the low-scale segmentation results as a baseline and adaptively incorporates complementary information from high-scale predictions. Extensive experiments on the Cityscapes and CamVid datasets validate the effectiveness of DBiSeNet in achieving an optimal balance between accuracy and inference speed. In particular, on a single RTX3090 GPU, DBiSeNet2 yields 75.6% mIoU at 225.9 FPS on Cityscapes test set and 75.7% mIoU at 203.4 FPS on CamVid test set.},
+  archive      = {J_CVIU},
+  author       = {Xiaobo Hu and Hongbo Zhu and Ning Su and Taosheng Xu},
+  doi          = {10.1016/j.cviu.2025.104461},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104461},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {DBiSeNet: Dual bilateral segmentation network for real-time semantic segmentation},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SAVE: Segment audio-visual easy way using the segment anything model. <em>CVIU</em>, <em>260</em>, 104460. (<a href='https://doi.org/10.1016/j.cviu.2025.104460'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Audio-visual segmentation (AVS) primarily aims to accurately detect and pinpoint sound elements in visual contexts by predicting pixel-level segmentation masks. To address this task effectively, it is essential to thoroughly consider both the data and model aspects. This study introduces a streamlined approach, SAVE, which directly modifies the pretrained segment anything model (SAM) for the AVS task. By integrating an image encoder adapter within the transformer blocks for improved dataset-specific information capture and introducing a residual audio encoder adapter to encode audio features as a sparse prompt, our model achieves robust audio-visual fusion and interaction during encoding. Our method enhances the training and inference speeds by reducing the input resolution from 1024 to 256 pixels while still surpassing the previous state-of-the-art (SOTA) in performance. Extensive experiments validated our approach, indicating that our model significantly outperforms other SOTA methods. Additionally, utilizing the pretrained model on synthetic data enhances performance on real AVSBench data, attaining mean intersection over union (mIoU) of 84.59 on the S4 (V1S) subset and 70.28 on the MS3 (V1M) set with image inputs of 256 pixels. This performance increases to 86.16 mIoU on the S4 (V1S) and 70.83 mIoU on the MS3 (V1M) with 1024-pixel inputs. These findings show that simple adaptations of pretrained models can enhance AVS and support real-world applications.},
+  archive      = {J_CVIU},
+  author       = {Khanh-Binh Nguyen and Chae Jung Park},
+  doi          = {10.1016/j.cviu.2025.104460},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104460},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {SAVE: Segment audio-visual easy way using the segment anything model},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Robust cross-image adversarial watermark with JPEG resistance for defending against deepfake models. <em>CVIU</em>, <em>260</em>, 104459. (<a href='https://doi.org/10.1016/j.cviu.2025.104459'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The widespread convenience of generative models has exacerbated the misuse of attribute-editing-based Deepfake technologies, leading to the proliferation of illegally generated content that severely threatens personal privacy and security. Existing proactive defense strategies mitigate Deepfake attacks by embedding imperceptible adversarial watermarks into the spatial-domain of protected images. However, spatial-domain adversarial watermarks are inherently sensitive to lossy compression operations, which significantly degrades their defense efficacy. To address this limitation, we propose a frequency-domain cross-image adversarial watermark generation scheme to enhance robustness toward JPEG compression. In the proposed method, the adversarial watermark training process is migrated to the frequency domain using a differentiable JPEG module, which explicitly simulates the impact of quantization and compression on perturbation distributions. Furthermore, a fusion module is incorporated to coordinate watermark distributions across images, thereby enhancing the generalization of the defense. Experimental results demonstrate that the generated adversarial watermarks exhibit strong robustness against JPEG compression and effectively disrupt the outputs of Deepfake models. Moreover, the proposed scheme can be directly applied to diverse facial images without retraining, thereby providing reliable protection for real-world image application scenarios.},
+  archive      = {J_CVIU},
+  author       = {Zhiyu Lin and Hanbin Lin and Liqiang Lin and Shuwu Chen and Xiaolong Liu},
+  doi          = {10.1016/j.cviu.2025.104459},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104459},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Robust cross-image adversarial watermark with JPEG resistance for defending against deepfake models},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PakSign: Advancing dynamic pakistani sign language recognition with a novel skeleton-based dataset and graph-enhanced architectures. <em>CVIU</em>, <em>260</em>, 104458. (<a href='https://doi.org/10.1016/j.cviu.2025.104458'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Sign Language Recognition (SLR) is a critical yet complex task in pattern recognition and computer vision due to the visual-gestural nature of sign languages. While regional variants like American, British, and Chinese Sign Languages have seen significant research advancements, Pakistani Sign Language (PSL) remains underexplored, mostly limited to static Urdu alphabet recognition rather than dynamic gestures used in daily communication. The scarcity of large-scale PSL datasets further hinders the training of deep learning models, which require extensive data. This work addresses these gaps by introducing a novel skeleton-based PSL dataset comprising over 1280 pose sequences of 52 Urdu signs, each performed five times by five different signers. We detail the data collection protocol and evaluate lightweight, pose-based baseline models using a K-fold cross-validation protocol. Furthermore, we propose Efficient-Sign, a novel recognition pipeline with two variants: B0, achieving a 2.28% accuracy gain with 35.37% fewer FLOPs and 63.55% fewer parameters, and B4, yielding a 3.48% accuracy improvement and 14.95% fewer parameters when compared to state-of-the-art model. We also conduct cross-dataset evaluations on widely-used benchmarks such as WLASL-100 and MINDS-Libras, where Efficient-Sign maintains competitive accuracy with substantially fewer parameters and computational overhead. These results confirm the model’s generalizability and robustness across diverse sign languages and signer populations. This work contributes significantly by providing a publicly available pose-based PSL dataset, strong baseline evaluations, and an efficient architecture for benchmarking future research, marking a critical advancement in dynamic PSL recognition and establishing a foundation for scalable, real-world SLR systems.},
+  archive      = {J_CVIU},
+  author       = {Neelma Naz and Maheen Salman and Fiza Ayub and Zawata Afnan Asif and Sara Ali},
+  doi          = {10.1016/j.cviu.2025.104458},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104458},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {PakSign: Advancing dynamic pakistani sign language recognition with a novel skeleton-based dataset and graph-enhanced architectures},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Parametric kernels for artifact mitigation in patch-based image aggregation using generative models. <em>CVIU</em>, <em>260</em>, 104457. (<a href='https://doi.org/10.1016/j.cviu.2025.104457'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent advancements in artificial intelligence applications have highlighted the effectiveness of generative models for domain transfer, image enhancement and simulation. However, when applied to large-scale gigapixel images, the use of traditional patch-based image aggregation methods introduces checkerboard or blocking artifacts, which compromises image quality and fidelity. In this paper, we propose a parametric kernel that is specifically designed to target the underlying grid structure to mitigate these artifacts. With the use of adjustable zero-padding and linear-padding parameters, our kernel provides fine control over the fusion process by combining a central area of constant weights with border regions of gradually decreasing weights. The proposed method was validated using three medical imaging modalities (digital pathology, fluorescence microscopy and ultrasound imaging) for different generative model tasks. The results showed statistically significant improvements (p < 0.0001) in artifact removal when compared to state-of-the-art methods. Quantitative analysis revealed improvements in fusion quality measures for digital pathology, fluorescence microscopy and ultrasound imaging of 7.1%, 27.4% and 20.0%, respectively. Additionally, expert evaluators confirmed superior visual quality and reduced artifacts in blind assessments of reconstructed images, with our method achieving significantly higher scores across all modalities. Our method is versatile, compatible with various generative models and can be easily adjusted by modifying kernel parameters. This kernel-based approach significantly advances the quality of synthesized medical images, directly supporting more reliable clinical assessment and automated analysis.},
+  archive      = {J_CVIU},
+  author       = {Nicola Michielli and Francesco Marzola and Francesco Branciforti and Kristen M. Meiburger and Alessandro Gambella and Massimo Salvi},
+  doi          = {10.1016/j.cviu.2025.104457},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104457},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Parametric kernels for artifact mitigation in patch-based image aggregation using generative models},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). UniMultNet: Action recognition method based on multi-scale feature fusion and video-text constraint guidance. <em>CVIU</em>, <em>260</em>, 104456. (<a href='https://doi.org/10.1016/j.cviu.2025.104456'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Existing methods in action recognition primarily focus on the extraction of local and global features but neglect their complementarity. Moreover, the difference in spatial distribution between visual and textual features frequently results in information loss in mainstream fusion methods. To address these issues, this paper proposes an action recognition method based on multi-scale feature fusion and video-text constraint guidance (UniMultNet), designed to ensure the effective fusion of local and global features as well as a tight coupling of visual and textual information. The UniMultNet consists of two principal components: the Local-Global Feature Fusion Block (LGFB) and the Cross-Modal Adaptive Constraint Fusion Module (ACCF). The LGFB utilizes a self-attention mechanism to aggregate multi-scale information and capture correlations between local and global features, while the ACCF employs constraint learning strategies to learn global representations of visual-textual interactions, thereby supervising the learning process of visual features. Extensive experiments on several benchmark datasets (MOD-20, HMDB-51, UCF-101, and Something V1 & V2) demonstrate that UniMultNet achieves significant improvements in accuracy, ranging from 0.3% to 1.04%, compared to state-of-the-art methods.},
+  archive      = {J_CVIU},
+  author       = {Qiuhong Tian and Fei Zeng and Junxiao Ning and Lizao Zhang},
+  doi          = {10.1016/j.cviu.2025.104456},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104456},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {UniMultNet: Action recognition method based on multi-scale feature fusion and video-text constraint guidance},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Adaptive margin for unsupervised domain adaptation without source data. <em>CVIU</em>, <em>260</em>, 104455. (<a href='https://doi.org/10.1016/j.cviu.2025.104455'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Unsupervised domain adaptation (UDA) methods aim to transfer the knowledge acquired from labeled source data to unlabeled target data. However, these methods are often inefficient and impractical due to concerns related to data privacy and memory storage. As a result, source-free domain adaptation (SFDA) was introduced as a solution, which involves deploying a well-trained source model to the target domain, while the source data are unavailable for optimization. Existing pseudo-label based SFDA methods suffer from two issues: (1) they do not well leverage the discriminating power of the model at the early step of the training; (2) they do not well prevent memorization of the noisy labels at the late step of the training. In this paper, we propose a novel method called AM-SFDA to address SFDA issue via A daptive M argin. AM-SFDA combines the information maximization and the commonly used standard cross-entropy loss, which can make the source and target outputs closer. Furthermore, inspired by the early-learning phenomenon, we propose to prevent the memorization of the noisy samples, where large values are assigned to the samples with moderate margins, and small values are assigned to the samples with small margins. Extensive experiments on several source-free benchmarks under different settings illustrate that AM-SFDA exceeds the existing state-of-the-art SFDA methods successfully.},
+  archive      = {J_CVIU},
+  author       = {Ziyun Cai and Yawen Huang and Tengfei Zhang and Changhui Hu and Xiao-Yuan Jing},
+  doi          = {10.1016/j.cviu.2025.104455},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104455},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Adaptive margin for unsupervised domain adaptation without source data},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Made-in: An immersive human-in-the-loop analytics platform for enhancing creative processes in fashion. <em>CVIU</em>, <em>260</em>, 104454. (<a href='https://doi.org/10.1016/j.cviu.2025.104454'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The fashion industry is undergoing a digital transformation, driven by growing demands for sustainability, personalization and immersive experiences. In this paper, we present Made-In (Multimodal and Collaborative Artificial Intelligence for the Design of Inclusive and Sustainable Fashion): an immersive, human-in-the-loop analytics system designed to support fashion professionals in exploring, comparing and contextualizing product data across digital and social platforms. Unlike generative or simulation-based approaches, Made-In provides creative decision support by aggregating real-world data from luxury brand websites and social media. This enables designers and merchandisers to make informed, context-aware choices. The system comprises three core modules: a 3D configurator for visualizing product assortments; a collection grid interface for the comparative analysis of e-commerce data; and a social media trend detector based on deep learning pipelines for image classification, object detection and color clustering. Two curated datasets, one derived from Instagram and the other from fashion e-tailers, provide the system with analytics. A user study with domain experts confirms the platform’s usability and relevance for trend forecasting, sustainability evaluation and visual merchandising strategy. The results demonstrate that Made-In effectively bridges the gap between data analytics and human creativity in fashion, offering a scalable solution that aligns with EU goals for digital sustainability and inclusivity.},
+  archive      = {J_CVIU},
+  author       = {Emanuele Balloni and Rocco Pietrini and Michele Sasso and Emanuele Frontoni and Marina Paolanti},
+  doi          = {10.1016/j.cviu.2025.104454},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104454},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Made-in: An immersive human-in-the-loop analytics platform for enhancing creative processes in fashion},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Crack segmentation in roads using synthetic data and RGB-D data fusion. <em>CVIU</em>, <em>260</em>, 104452. (<a href='https://doi.org/10.1016/j.cviu.2025.104452'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In this paper, we use deep learning on the task of crack segmentation using a novel data fusion approach with RGB-D data. We use an existing architecture with DeepLabV3 and synthetic data to address the issue of limited availability for real-world data. The synthetic data is generated with Blender and BlenSor to accurately model the real-world crack scenarios. We train the model with a mixture of real-world data and synthetic data and evaluate it on a real-world dataset. The results show significant improvements over baseline models that only use the RGB data when evaluated with the IoU and F1-score. This demonstrates the success of using synthetic data for crack segmentation with data fusion and suggests a promising direction for future crack detection research to provide increased accuracy in automated maintenance and monitoring applications.},
+  archive      = {J_CVIU},
+  author       = {Benedict Marsh and Ruiheng Wu},
+  doi          = {10.1016/j.cviu.2025.104452},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104452},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Crack segmentation in roads using synthetic data and RGB-D data fusion},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). LEAF: Unveiling two sides of the same coin in semi-supervised facial expression recognition. <em>CVIU</em>, <em>260</em>, 104451. (<a href='https://doi.org/10.1016/j.cviu.2025.104451'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Semi-supervised learning has emerged as a promising approach to tackle the challenge of label scarcity in facial expression recognition (FER) task. However, current state-of-the-art methods primarily focus on one side of the coin, i.e., generating high-quality pseudo-labels , while overlooking the other side: enhancing expression-relevant representations . In this paper, we unveil both sides of the coin by proposing a unified framework termed hierarchica L d E coupling A nd F using (LEAF) to coordinate expression-relevant representations and pseudo-labels for semi-supervised FER. LEAF introduces a hierarchical expression-aware aggregation strategy that operates at three levels: semantic, instance, and category. (1) At the semantic and instance levels, LEAF decouples representations into expression-agnostic and expression-relevant components, and adaptively fuses them using learnable gating weights. (2) At the category level, LEAF assigns ambiguous pseudo-labels by decoupling predictions into positive and negative parts, and employs a consistency loss to ensure agreement between two augmented views of the same image. Extensive experiments on benchmark datasets demonstrate that by unveiling and harmonizing both sides of the coin, LEAF outperforms state-of-the-art semi-supervised FER methods, effectively leveraging both labeled and unlabeled data. Moreover, the proposed expression-aware aggregation strategy can be seamlessly integrated into existing semi-supervised frameworks, leading to significant performance gains. Our code is available at https://github.com/zfkarl/LEAF .},
+  archive      = {J_CVIU},
+  author       = {Fan Zhang and Zhi-Qi Cheng and Jian Zhao and Xiaojiang Peng and Xuelong Li},
+  doi          = {10.1016/j.cviu.2025.104451},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104451},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {LEAF: Unveiling two sides of the same coin in semi-supervised facial expression recognition},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Training-free diffusion for controlling illumination conditions in images. <em>CVIU</em>, <em>260</em>, 104450. (<a href='https://doi.org/10.1016/j.cviu.2025.104450'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper introduces a novel approach to illumination manipulation in diffusion models, addressing the gap in conditional image generation with a focus on lighting conditions. While most of methods employ ControlNet and its variants to address the illumination-aware guidance in diffusion models. In contrast, We conceptualize the diffusion model as a black-box image render and strategically decompose its energy function in alignment with the image formation model. Our method effectively separates and controls illumination-related properties during the generative process. It generates images with realistic illumination effects, including cast shadow, soft shadow, and inter-reflections. Remarkably, it achieves this without the necessity for learning intrinsic decomposition, finding directions in latent space, or undergoing additional training with new datasets.},
+  archive      = {J_CVIU},
+  author       = {Xiaoyan Xing and Tao Hu and Jan Hendrik Metzen and Konrad Groh and Sezer Karaoglu and Theo Gevers},
+  doi          = {10.1016/j.cviu.2025.104450},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104450},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Training-free diffusion for controlling illumination conditions in images},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). FCEGNet: Feature calibration and edge-guided MLP decoder network for RGB-D semantic segmentation. <em>CVIU</em>, <em>260</em>, 104448. (<a href='https://doi.org/10.1016/j.cviu.2025.104448'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The references from depth image data provide rich geometric information for traditional RGB semantic segmentation, which effectively improves the performance of semantic segmentation. However, during the process of feature fusion, there are feature biases between RGB features and depth features, which negatively affect cross-modal feature fusion. In this paper, we propose a novel RGB-D network, FCEGNet, consisting of a Feature Calibration Interaction Module (FCIM), a Three-Stream Fusion Extraction Module(TFEM), and an edge-guided MLP decoder. FCIM processes features in different orientations and scales by balancing features across modalities, and exchanges spatial information to allow RGB and depth features to be calibrated and interact with cross-modal features. TFEM performs feature extraction on cross-modal features and combines them with unimodal features to improve the accuracy of enhanced semantic understanding and fine-grained recognition. Dual-stream edge guidance module (DEGM) is designed in the edge-guided MLP decoder to protect the consistency and disparity of cross-modal features while enhancing the edge information and preserving the spatial information, which helps to obtain more accurate segmentation results. Experimental results on the RGB-D dataset show that the proposed FCFGNet is superior and more efficient than several state-of-the-art methods. The generalised validation of FCEGNet on the RGB-T semantic segmentation dataset also achieves better results.},
+  archive      = {J_CVIU},
+  author       = {Yiming Lu and Bin Ge and Chenxing Xia and Xu Zhu and Mengge Zhang and Mengya Gao and Ningjie Chen and Jianjun Hu and Junjie Zhi},
+  doi          = {10.1016/j.cviu.2025.104448},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104448},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {FCEGNet: Feature calibration and edge-guided MLP decoder network for RGB-D semantic segmentation},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Separable distributed local thickness algorithm for efficient morphological characterization of terapixel-scale volume images. <em>CVIU</em>, <em>260</em>, 104443. (<a href='https://doi.org/10.1016/j.cviu.2025.104443'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Thickness of structures is a fundamental quantity in the morphometric study of volumetric datasets. The local thickness transform allows to quantify the local structure thickness in a model-independent and direct way. However, till now implementations of local thickness algorithms suffer from very high computational cost when applied to multi-dimensional image data with structure sizes extending over several orders of magnitude. We show that this bottleneck can be addressed, albeit on the expense of increased memory requirements, thus rendering the problem as a typical case example of a time-memory trade-off. We propose a new separable algorithm for local thickness transformation with a potential performance increase of up to several orders of magnitude. By distributing the processing into smaller tasks, the algorithm can be executed on a computer cluster in a fully parallelized manner as well as on a computer with limited memory by executing each of the tasks sequentially. We further propose an approximation of the original local thickness and show that an additional increase in computation speed is possible, at the expense of error that is often negligible. To demonstrate the performance of the algorithm, we use computer-generated images as well as a real terapixel-scale tomographic volume. All the algorithms are published in the open source pi2 software package as well as integrated in the popular ImageJ image processing framework.},
+  archive      = {J_CVIU},
+  author       = {Arttu Miettinen and Elena Borisova and Marco Stampanoni and Goran Lovric},
+  doi          = {10.1016/j.cviu.2025.104443},
+  journal      = {Computer Vision and Image Understanding},
+  month        = {10},
+  pages        = {104443},
+  shortjournal = {Comput. Vis. Image Understanding},
+  title        = {Separable distributed local thickness algorithm for efficient morphological characterization of terapixel-scale volume images},
+  volume       = {260},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

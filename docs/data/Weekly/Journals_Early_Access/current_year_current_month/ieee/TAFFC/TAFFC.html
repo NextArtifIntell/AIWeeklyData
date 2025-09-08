@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TAFFC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="taffc">TAFFC - 3</h2>
+<ul>
+<li><details>
+<summary>
+(2025). A multi-scale feature refinement and dual-attention enhanced dynamic convolutional network for speech-based depression and ADHD assessment. <em>TAFFC</em>, 1-16. (<a href='https://doi.org/10.1109/TAFFC.2025.3604562'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the area of affective computing, speech has been identified as a promising biomarker for assessing depression and attention deficit hyperactivity disorder (ADHD). These disorders manifest as abnormalities in speech across various frequency bands and exhibit temporal variations. Most existing work on speech features relies on the magnitude spectrogram, which discards phase information and also does not consider the impact of different frequency bands on depression and ADHD detection. Inspired by these, we propose a novel multi-scale complex feature refinement and dynamic convolution attention-aware network to enhance speech-based assessment of depression and ADHD. Our approach incorporates three key components: multi-scale complex feature refinement (MSFR), dynamic convolutional neural network (Dy-CNN), and dual-attention feature enhancement (DAFE) module. The MSFR module utilizes depth-wise convolutional networks to process both magnitude and phase input, selectively emphasizing frequency bands associated with depression and ADHD. Importantly, the Dy-CNN module employs an attention mechanism to autonomously generate multiple convolution kernels that adapt to input features and capture relevant temporal dynamics linked to depression and ADHD. Additionally, the DAFE module enhances feature representation and detection performance by incorporating channel shuffle attention (CSA) and spatial axial attention (SAA) mechanisms, which leverage both inter- and intra-channel relationships and examine time-frequency characteristics of the feature map. Extensive experiments conducted on four publicly available datasets, i.e., AVEC2013, AVEC2014, E-DAIC, and a self-collected authentic ADHD dataset demonstrated that the proposed method outperforms previous approaches and exhibits superior generalization capabilities across different language settings (i.e., English, German) for speech-based depression and ADHD assessment.},
+  archive      = {J_TAFFC},
+  author       = {Shuanglin Li and Siyang Song and Syed Mohsen Naqvi},
+  doi          = {10.1109/TAFFC.2025.3604562},
+  journal      = {IEEE Transactions on Affective Computing},
+  month        = {9},
+  pages        = {1-16},
+  shortjournal = {IEEE Trans. Affect. Comput.},
+  title        = {A multi-scale feature refinement and dual-attention enhanced dynamic convolutional network for speech-based depression and ADHD assessment},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hypercomplex neural network and cross-modal attention for multi-modal emotion recognition using physiological signals. <em>TAFFC</em>, 1-14. (<a href='https://doi.org/10.1109/TAFFC.2025.3605133'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-modal emotion recognition plays a crucial role in human-computer interaction. Nowadays, many studies have developed fusion algorithms for this purpose. However, two challenges are still present, i.e., insufficient cross-modal information sharing and weak fusion feature representations. To this end, we develop a novel framework, namely CH-Net, for multi-modal emotion recognition with physiological signals. It is based on cross-modal attention and hypercomplex domain fusion. First, our learnable cross-modal attention mechanism adaptively aligns features across modalities, enhancing both complementarity and modality-specific discrepancies. Second, a hypercomplex fusion module encodes these features, yielding more robust representations while reducing parameter overhead. Two benchmark datasets, i.e., MAHNOB-HCI and DEAP, are utilized to train and test our model. Extensive experiments demonstrate that CH-Net is effective and outperforms state-of-the-art (SOTA) methods. Our code will be available at https://github.com/xuxusky/CH-Net.},
+  archive      = {J_TAFFC},
+  author       = {Xu Xu and Junxin Chen and Chong Fu and Zhihan Lyu},
+  doi          = {10.1109/TAFFC.2025.3605133},
+  journal      = {IEEE Transactions on Affective Computing},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Affect. Comput.},
+  title        = {Hypercomplex neural network and cross-modal attention for multi-modal emotion recognition using physiological signals},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SarcasmBench: Towards evaluating large language models on sarcasm understanding. <em>TAFFC</em>, 1-20. (<a href='https://doi.org/10.1109/TAFFC.2025.3604806'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the era of large language models (LLMs), tasks associated with “System I” cognition—those that are fast, automatic, and intuitive, such as sentiment analysis and text classification—are often considered effectively solved. However, sarcasm remains a persistent challenge. As a subtle and complex linguistic phenomenon, sarcasm frequently involves rhetorical devices such as hyperbole and figurative language to express implicit sentiments and intentions, demanding a higher level of abstraction and pragmatic reasoning than standard sentiment analysis. This raises concerns about whether current claims of LLM success extend robustly to the domain of sarcasm understanding. To systematically investigate this issue, we introduce a new high-quality multi-modal sarcasm detection dataset, termed AMSD, and construct a comprehensive evaluation benchmark, SarcasmBench. Our benchmark encompasses 16 state-of-the-art (SOTA) LLMs and 8 strong pretrained language models (PLMs), evaluated across six widely-used textual sarcasm datasets and three multi-modal sarcasm benchmarks. We adopt three popular prompting paradigms: zero-shot input/output (IO) prompting, few-shot IO prompting, and chain-of-thought (CoT) prompting. Our extensive experiments yield three key findings: (1) current LLMs underperform supervised PLMs based sarcasm detection baselines. This suggests that significant efforts are still required to improve LLMs' understanding of human sarcasm. (2) GPT-4 and Gemini 2.0 consistently and significantly outperforms other LLMs across various prompting methods. (3) Few-shot IO prompting method outperforms the other two methods: zero-shot IO and few-shot CoT. We hope this benchmark will serve as a valuable resource for the research community and inspire future work toward more robust and human-aligned sarcasm understanding.},
+  archive      = {J_TAFFC},
+  author       = {Yazhou Zhang and Chunwang Zou and Zheng Lian and Prayag Tiwari and Jing Qin},
+  doi          = {10.1109/TAFFC.2025.3604806},
+  journal      = {IEEE Transactions on Affective Computing},
+  month        = {9},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Affect. Comput.},
+  title        = {SarcasmBench: Towards evaluating large language models on sarcasm understanding},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

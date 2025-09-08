@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IETCV</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="ietcv">IETCV - 2</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Structure-based uncertainty estimation for source-free active domain adaptation. <em>IETCV</em>, <em>19</em>(1), e70020. (<a href='https://doi.org/10.1049/cvi2.70020'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Active domain adaptation (active DA) provides an effective solution by selectively labelling a limited number of target samples to significantly enhance adaptation performance. However, existing active DA methods often struggle in real-world scenarios where, due to data privacy concerns, only a pre-trained source model is available, rather than the source samples. To address this issue, we propose a novel method called the structure-based uncertainty estimation model (SUEM) for source-free active domain adaptation (SFADA). To be specific, we introduce an innovative active sample selection strategy that combines both uncertainty and diversity sampling to identify the most informative samples. We assess the uncertainty in target samples using structure-wise probabilities and implement a diversity selection method to minimise redundancy. For the selected samples, we not only apply standard-supervised loss but also conduct interpolation consistency training to further explore the structural information of the target domain. Extensive experiments across four widely used datasets demonstrate that our method is comparable to or outperforms current UDA and active DA methods.},
+  archive      = {J_IETCV},
+  author       = {Jihong Ouyang and Zhengjie Zhang and Qingyi Meng and Jinjin Chi},
+  doi          = {10.1049/cvi2.70020},
+  journal      = {IET Computer Vision},
+  number       = {1},
+  pages        = {e70020},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Structure-based uncertainty estimation for source-free active domain adaptation},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Synchronised and fine-grained head for skeleton-based ambiguous action recognition. <em>IETCV</em>, <em>19</em>(1), e70016. (<a href='https://doi.org/10.1049/cvi2.70016'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Skeleton-based action recognition using Graph Convolutional Networks (GCNs) has achieved remarkable performance, but recognising ambiguous actions, such as ‘waving’ and ‘saluting’, remains a significant challenge. Existing methods typically rely on a serial combination of GCNs and Temporal Convolutional Networks (TCNs), where spatial and temporal features are extracted independently, leading to an unbalanced spatial-temporal information, which hinders accurate action recognition. Moreover, existing methods for ambiguous actions often overemphasise local details, resulting in the loss of crucial global context, which further complicates the task of differentiating ambiguous actions. To address these challenges, the authors propose a lightweight plug-and-play module called Synchronised and Fine-grained Head (SF-Head), inserted between GCN and TCN layers. SF-Head first conducts Synchronised Spatial-Temporal Extraction (SSTE) with a Feature Redundancy Loss (F-RL), ensuring a balanced interaction between the two types of features. It then performs Adaptive Cross-dimensional Feature Aggregation (AC-FA), with a Feature Consistency Loss (F-CL), which aligns the aggregated feature with their original spatial-temporal feature. This aggregation step effectively combines both global context and local details, enhancing the model's ability to classify ambiguous actions. Experimental results on NTU RGB + D 60, NTU RGB + D 120, NW-UCLA and PKU-MMD I datasets demonstrate significant improvements in distinguishing ambiguous actions. Our code will be made available at https://github.com/HaoHuang2003/SFHead .},
+  archive      = {J_IETCV},
+  author       = {Hao Huang and Yujie Lin and Siyu Chen and Haiyang Liu},
+  doi          = {10.1049/cvi2.70016},
+  journal      = {IET Computer Vision},
+  number       = {1},
+  pages        = {e70016},
+  shortjournal = {IET Comput. Vis.},
+  title        = {Synchronised and fine-grained head for skeleton-based ambiguous action recognition},
+  volume       = {19},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

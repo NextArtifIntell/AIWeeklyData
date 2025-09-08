@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>NATMI</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="natmi">NATMI - 16</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Electron-density-informed effective and reliable de novo molecular design and optimization with ED2Mol. <em>NATMI</em>, <em>7</em>(8), 1355-1368. (<a href='https://doi.org/10.1038/s42256-025-01095-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Generative drug design opens avenues for discovering novel compounds within the vast chemical space rather than conventional screening against limited libraries. However, the practical utility of the generated molecules is frequently constrained, as many designs prioritize a narrow range of pharmacological properties and neglect physical reliability, which hinders the success rate of subsequent wet-laboratory evaluations. Here, to address this, we propose ED2Mol, a deep learning-based approach that leverages fundamental electron density information to improve de novo molecular generation and optimization. The extensive evaluations across multiple benchmarks demonstrate that ED2Mol surpasses existing methods in terms of the generation success rate and &gt;97% physical reliability. It also facilitates automated hit optimization that is not fully implemented by other methods using fragment-based strategies. Furthermore, ED2Mol exhibits generalizability to more challenging, unseen allosteric pocket benchmarks, attaining consistent performance. More importantly, ED2Mol has been applied to various real-world essential targets, successfully identifying wet-laboratory-validated bioactive compounds, ranging from FGFR3 orthosteric inhibitors to CDC42 allosteric inhibitors, GCK and GPRC5A allosteric activators. The directly generated binding modes of these compounds are close to predictions through molecular docking and further validated via the X-ray co-crystal structure. All these results highlight ED2Mol’s potential as a useful tool in drug design with enhanced effectiveness, physical reliability and practical applicability. A deep generative model is developed for de novo molecular design and optimization by leveraging electron density. Wet-laboratory assays validated its reliability to generate diverse bioactive molecules—orthosteric and allosteric, inhibitors and activators.},
+  archive      = {J_NATMI},
+  author       = {Li, Mingyu and Song, Kun and He, Jixiao and Zhao, Mingzhu and You, Gengshu and Zhong, Jie and Zhao, Mengxi and Li, Arong and Chen, Yu and Li, Guobin and Kong, Ying and Wei, Jiacheng and Wang, Zhaofu and Zhou, Jiamin and Yang, Hongbing and Ma, Shichao and Zhang, Hailong and Mélita, Irakoze Loïca and Lin, Weidong and Lu, Yuhang and Yu, Zhengtian and Lu, Xun and Zhao, Yujun and Zhang, Jian},
+  doi          = {10.1038/s42256-025-01095-7},
+  journal      = {Nature Machine Intelligence},
+  month        = {8},
+  number       = {8},
+  pages        = {1355-1368},
+  shortjournal = {Nat. Mach. Intell.},
+  title        = {Electron-density-informed effective and reliable de novo molecular design and optimization with ED2Mol},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Kolmogorov–Arnold graph neural networks for molecular property prediction. <em>NATMI</em>, <em>7</em>(8), 1346-1354. (<a href='https://doi.org/10.1038/s42256-025-01087-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Graph neural networks (GNNs) have shown remarkable success in molecular property prediction as key models in geometric deep learning. Meanwhile, Kolmogorov–Arnold networks (KANs) have emerged as powerful alternatives to multi-layer perceptrons, offering improved expressivity, parameter efficiency and interpretability. To combine the strengths of both frameworks, we propose Kolmogorov–Arnold GNNs (KA-GNNs), which integrate KAN modules into the three fundamental components of GNNs: node embedding, message passing and readout. We further introduce Fourier-series-based univariate functions within KAN to enhance function approximation and provide theoretical analysis to support their expressiveness. Two architectural variants, KA-graph convolutional networks and KA-augmented graph attention networks, are developed and evaluated across seven molecular benchmarks. Experimental results show that KA-GNNs consistently outperform conventional GNNs in terms of both prediction accuracy and computational efficiency. Moreover, our models exhibit improved interpretability by highlighting chemically meaningful substructures. These findings demonstrate that KA-GNNs offer a powerful and generalizable framework for molecular data modelling, drug discovery and beyond. Li et al. developed KA-GNNs, graph neural network architectures enhanced by Kolmogorov–Arnold networks, which improve accuracy and interpretability in molecular property prediction and extend geometric deep learning to scientific domains.},
+  archive      = {J_NATMI},
+  author       = {Li, Longlong and Zhang, Yipeng and Wang, Guanghui and Xia, Kelin},
+  doi          = {10.1038/s42256-025-01087-7},
+  journal      = {Nature Machine Intelligence},
+  month        = {8},
+  number       = {8},
+  pages        = {1346-1354},
+  shortjournal = {Nat. Mach. Intell.},
+  title        = {Kolmogorov–Arnold graph neural networks for molecular property prediction},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deep learning-based prediction of the selection factors for quantifying selection in immune receptor repertoires. <em>NATMI</em>, <em>7</em>(8), 1331-1345. (<a href='https://doi.org/10.1038/s42256-025-01085-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {T cell selection is a vital process in which precursor T cells mature into functional cells. Accurately modelling and quantifying T cell selection utilizing high-throughput T cell receptor (TCR) sequencing data presents an important computational challenge in immunology. Statistical modelling of TCR repertoires allows the assessment of selection force through the selection factor that bridges the pre- and post-selection distributions. Current tools derive the principles underlying this selection factor through weakly supervised learning, limiting the effective use of available data. To overcome this shortcoming, we introduce TCRsep, a deep learning framework designed to directly learn the selection factor in a supervised training context. The performance and advantage of TCRsep were extensively validated across various scenarios using both simulated and real datasets. By applying TCRsep to over 1,500 repertoire samples, we elucidate the correlation between selection and repertoire diversities in aging, explore the stability and individuality of selection over short time frames, investigate the role of selection in defining TCR sharing profiles and demonstrate its efficiency in identifying candidate-disease-associated TCRs based on their sharing profiles. In particular, these identified TCRs were further utilized for diagnosing cytomegalovirus infection, achieving high predictive accuracy. In conclusion, TCRsep substantially improves the selection factor prediction and serves as a valuable discovery tool for clinical applications. TCRsep, a deep learning model for predicting selection factors that quantifies the T cell selection process, is introduced. Also, various benchmarks are designed to evaluate the selection models, demonstrating that TCRsep outperforms state-of-the-art models.},
+  archive      = {J_NATMI},
+  author       = {Jiang, Yuepeng and Zhang, Pingping and Huo, Miaozhe and Li, Shuai Cheng},
+  doi          = {10.1038/s42256-025-01085-9},
+  journal      = {Nature Machine Intelligence},
+  month        = {8},
+  number       = {8},
+  pages        = {1331-1345},
+  shortjournal = {Nat. Mach. Intell.},
+  title        = {Deep learning-based prediction of the selection factors for quantifying selection in immune receptor repertoires},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards generalizable and interpretable three-dimensional tracking with inverse neural rendering. <em>NATMI</em>, <em>7</em>(8), 1322-1330. (<a href='https://doi.org/10.1038/s42256-025-01083-x'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Today, the most successful methods for image-understanding tasks rely on feed-forward neural networks. Although this approach offers empirical accuracy, efficiency and task adaptation through fine-tuning, it also comes with fundamental disadvantages. Existing networks often struggle to generalize across different datasets, even on the same task. By design, these networks ultimately reason about high-dimensional scene features, which are challenging to analyse. This is true especially when attempting to predict three-dimensional (3D) information based on two-dimensional images. We propose to recast vision problems with RGB inputs as an inverse rendering problem by optimizing through a differentiable rendering pipeline over the latent space of pretrained 3D object representations and retrieving latents that best represent object instances in a given input image. Specifically, we solve the task of 3D multi-object tracking by optimizing an image loss over generative latent spaces that inherently disentangle shape and appearance properties. Not only do we investigate an alternative take on tracking but our method also enables us to examine the generated objects, reason about failure situations and resolve ambiguous cases. We validate the generalization and scaling capabilities of our method by learning the generative prior exclusively from synthetic data and assessing camera-based 3D tracking on two large-scale autonomous robot datasets. Both datasets are completely unseen to our method and do not require fine-tuning. Ost et al. present a method that recasts vision problems with RGB inputs as an inverse rendering problem, optimizing over the latent variables of pretrained three-dimensional object models through a differentiable rendering pipeline.},
+  archive      = {J_NATMI},
+  author       = {Ost, Julian and Banerjee, Tanushree and Bijelic, Mario and Heide, Felix},
+  doi          = {10.1038/s42256-025-01083-x},
+  journal      = {Nature Machine Intelligence},
+  month        = {8},
+  number       = {8},
+  pages        = {1322-1330},
+  shortjournal = {Nat. Mach. Intell.},
+  title        = {Towards generalizable and interpretable three-dimensional tracking with inverse neural rendering},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Protein–peptide docking with a rational and accurate diffusion generative model. <em>NATMI</em>, <em>7</em>(8), 1308-1321. (<a href='https://doi.org/10.1038/s42256-025-01077-9'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Therapeutic peptides represent the forefront of drug discovery, offering potent and safe alternatives to traditional small molecules. However, their weak and context-dependent nature complicates the efficient virtual screening and structural characterization of protein–peptide patterns. Here we introduce RAPiDock, a diffusion generative model designed for rational, accurate and rapid protein–peptide docking at an all-atomic level. RAPiDock efficiently reduces the sampling space by incorporating physical constraints and uses a bi-scale graph to effectively capture multidimensional structural information while balancing efficiency. In addition, the model uses a Clebsch–Gordan tensor product-based architecture to ensure physical symmetry. RAPiDock outperforms existing tools in prediction of protein–peptide-binding patterns, achieving a 93.7% success rate at top-25 predictions (13.4% higher than AlphaFold2-Multimer), with an execution speed of 0.35 seconds per complex (~270 times faster than AlphaFold2-Multimer). Extensive experiments demonstrate RAPiDock’s remarkable ability to handle 92 types of residue including posttranslational modifications, accurately predict subtle docking patterns, successfully identify multiple potential peptide-binding sites in global docking and serve as a powerful tool for high-throughput virtual screening with structural precision. All these push the boundaries of efficient protein–peptide docking in multiple real-application scenarios. Zhao et al. present RAPiDock, an all-atom diffusion model that predicts peptide–protein binding patterns across 92 amino acid types, enabling high-throughput virtual screening for advancing therapeutic peptide design.},
+  archive      = {J_NATMI},
+  author       = {Zhao, Huifeng and Zhang, Odin and Jiang, Dejun and Wu, Zhenxing and Du, Hongyan and Wang, Xiaorui and Zhao, Yihao and Huang, Yuansheng and Ge, Jingxuan and Hou, Tingjun and Kang, Yu},
+  doi          = {10.1038/s42256-025-01077-9},
+  journal      = {Nature Machine Intelligence},
+  month        = {8},
+  number       = {8},
+  pages        = {1308-1321},
+  shortjournal = {Nat. Mach. Intell.},
+  title        = {Protein–peptide docking with a rational and accurate diffusion generative model},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Histopathology-based protein multiplex generation using deep learning. <em>NATMI</em>, <em>7</em>(8), 1292-1307. (<a href='https://doi.org/10.1038/s42256-025-01074-y'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multiplexed protein imaging offers valuable insights into interactions between tumours and their surrounding tumour microenvironment, but its widespread use is limited by cost, time and tissue availability. Here we present HistoPlexer, a deep learning framework that generates spatially resolved protein multiplexes directly from standard haematoxylin and eosin (H&amp;E) histopathology images. HistoPlexer jointly predicts multiple tumour and immune markers using a conditional generative adversarial architecture with custom loss functions designed to ensure pixel- and embedding-level similarity while mitigating slice-to-slice variations. A comprehensive evaluation of metastatic melanoma samples demonstrates that HistoPlexer-generated protein maps closely resemble real maps, as validated by expert assessment. They preserve crucial biological relationships by capturing spatial co-localization patterns among proteins. The spatial distribution of immune infiltration from HistoPlexer-generated protein multiplex enables stratification of tumours into immune subtypes. In an independent cohort, integration of HistoPlexer-derived features into predictive models enhances performance in survival prediction and immune subtype classification compared to models using H&amp;E features alone. To assess broader applicability, we benchmarked HistoPlexer on publicly available pixel-aligned datasets from different cancer types. In all settings, HistoPlexer consistently outperformed baseline methods, demonstrating robustness across diverse tissue types and imaging conditions. By enabling whole-slide protein multiplex generation from routine H&amp;E images, HistoPlexer offers a cost- and time-efficient approach to tumour microenvironment characterization with strong potential to advance precision oncology. HistoPlexer, a deep learning model, generates multiplexed protein expression maps from H&amp;E images, capturing tumour–immune cell interactions. It outperforms baselines, enhances immune subtyping and survival prediction and offers a cost-effective tool for precision oncology.},
+  archive      = {J_NATMI},
+  author       = {Andani, Sonali and Chen, Boqi and Ficek-Pascual, Joanna and Heinke, Simon and Casanova, Ruben and Hild, Bernard Friedrich and Sobottka, Bettina and Bodenmiller, Bernd and Koelzer, Viktor H. and Rätsch, Gunnar},
+  doi          = {10.1038/s42256-025-01074-y},
+  journal      = {Nature Machine Intelligence},
+  month        = {8},
+  number       = {8},
+  pages        = {1292-1307},
+  shortjournal = {Nat. Mach. Intell.},
+  title        = {Histopathology-based protein multiplex generation using deep learning},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Type II mechanoreceptors and cuneate spiking neuronal network enable touch localization on a large-area e-skin. <em>NATMI</em>, <em>7</em>(8), 1278-1291. (<a href='https://doi.org/10.1038/s42256-025-01076-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The sense of touch is essential for humans to perceive, locate and react to physical stimuli. Notwithstanding the substantial advancements in e-skin research and related applications with collaborative robots and bionic prostheses, biomimetic intelligence remains a challenge in the attempt to understand and mimic somatosensory processing schemes. In this work, we present a large-area e-skin embedded with photonic fibre Bragg gratings, capable of decoding touch localization through a bioinspired two-layered spiking neuronal network. The implemented biomimicry of slowly adapting and fast-adapting type II primary afferents, cuneate neurons with overlapping receptive fields and neuroplasticity, enable unsupervised learning in localizing tactile stimuli with an error lower than 10 mm, and two-point discrimination thresholds matching human psychophysical thresholds in the forearm. These results align with biological findings and offer a promising step towards the development of bionic systems, opening new avenues for both practical applications and scientific explorations of somatosensation. Tactile sensing is essential for interacting with the environment. A bioinspired spiking neuronal network and large-area e-skin is presented, which enables unsupervised learning of touch localization and two-point discrimination.},
+  archive      = {J_NATMI},
+  author       = {Pereira Resende da Costa, Ana Clara and Filosa, Mariangela and Barbosa Soares, Alcimar and Oddo, Calogero Maria},
+  doi          = {10.1038/s42256-025-01076-w},
+  journal      = {Nature Machine Intelligence},
+  month        = {8},
+  number       = {8},
+  pages        = {1278-1291},
+  shortjournal = {Nat. Mach. Intell.},
+  title        = {Type II mechanoreceptors and cuneate spiking neuronal network enable touch localization on a large-area e-skin},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Deep-learning-aided dismantling of interdependent networks. <em>NATMI</em>, <em>7</em>(8), 1266-1277. (<a href='https://doi.org/10.1038/s42256-025-01070-2'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Identifying the minimal set of nodes whose removal breaks a complex network apart, also referred as the network dismantling problem, is a highly non-trivial task with applications in multiple domains. Whereas network dismantling has been extensively studied over the past decade, research has primarily focused on the optimization problem for single-layer networks, neglecting that many, if not all, real networks display multiple layers of interdependent interactions. In such networks, the optimization problem is fundamentally different as the effect of removing nodes propagates within and across layers in a way that can not be predicted using a single-layer perspective. Here we propose a dismantling algorithm named MultiDismantler, which leverages multiplex network representation and deep reinforcement learning to optimally dismantle multilayer interdependent networks. MultiDismantler is trained on small synthetic graphs; when applied to large, either real or synthetic, networks, it displays exceptional dismantling performance, clearly outperforming all existing benchmark algorithms. We show that MultiDismantler is effective in guiding strategies for the containment of diseases in social networks characterized by multiple layers of social interactions. Also, we show that MultiDismantler is useful in the design of protocols aimed at delaying the onset of cascading failures in interdependent critical infrastructures. The dismantling problem of removing the smallest set of nodes so that a given network breaks into disconnected components is hard to solve exactly. Gu and colleagues use deep reinforcement learning and a multiplex network representation to avoid the heavy computational cost.},
+  archive      = {J_NATMI},
+  author       = {Gu, Weiwei and Yang, Chen and Li, Lei and Hou, Jinqiang and Radicchi, Filippo},
+  doi          = {10.1038/s42256-025-01070-2},
+  journal      = {Nature Machine Intelligence},
+  month        = {8},
+  number       = {8},
+  pages        = {1266-1277},
+  shortjournal = {Nat. Mach. Intell.},
+  title        = {Deep-learning-aided dismantling of interdependent networks},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Self-iterative multiple-instance learning enables the prediction of CD4+ t cell immunogenic epitopes. <em>NATMI</em>, <em>7</em>(8), 1250-1265. (<a href='https://doi.org/10.1038/s42256-025-01073-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate prediction of antigen presentation to CD4+ T cells and subsequent induction of immune response are fundamentally important for vaccine development, autoimmune disease treatment and cancer neoepitope discovery. In immunopeptidomics, single-allelic data offer high specificity but limited allele coverage, whereas multi-allelic data provide broader representation at the expense of weak labelling. Current computational approaches either overlook the abundance of multi-allelic data or suffer from label ambiguity due to inadequate modelling strategies. To address these limitations, we present ImmuScope, a weakly supervised deep learning framework that integrates major histocompatibility complex class II (MHC-II) antigen presentation, CD4+ T cell epitopes and immunogenicity assessment. ImmuScope leverages self-iterative multiple-instance learning with positive-anchor triplet loss to decipher peptide-MHC-II binding from weakly labelled multi-allelic data and high-confidence single-allelic data. The training dataset comprises over 600,000 ligands across 142 alleles. Additionally, ImmuScope enables the interpretation of MHC-II binding specificity and motif deconvolution of immunopeptidomics data. We successfully applied ImmuScope to identify melanoma neoantigens, uncovering mutation-driven variations in peptide-MHC-II binding and immunogenicity. Furthermore, we employed ImmuScope to evaluate the effects of SARS-CoV-2 epitope mutations associated with immune escape, with predictions well aligned with experimentally observed immune escape dynamics. Overall, by offering a unified solution for CD4+ T cell antigen recognition and immunogenicity assessment, ImmuScope holds substantial promise for accelerating vaccine design and advancing personalized immunotherapy. ImmuScope, a weakly supervised deep learning model capable of analysing multi- and single-allelic data, is introduced, facilitating interpretable neoantigen discovery and immune escape analysis.},
+  archive      = {J_NATMI},
+  author       = {Shen, Long-Chen and Zhang, Yumeng and Wang, Zhikang and Littler, Dene R. and Liu, Yan and Tang, Jinhui and Rossjohn, Jamie and Yu, Dong-Jun and Song, Jiangning},
+  doi          = {10.1038/s42256-025-01073-z},
+  journal      = {Nature Machine Intelligence},
+  month        = {8},
+  number       = {8},
+  pages        = {1250-1265},
+  shortjournal = {Nat. Mach. Intell.},
+  title        = {Self-iterative multiple-instance learning enables the prediction of CD4+ t cell immunogenic epitopes},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A semantic-enhanced multi-modal remote sensing foundation model for earth observation. <em>NATMI</em>, <em>7</em>(8), 1235-1249. (<a href='https://doi.org/10.1038/s42256-025-01078-8'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Remote sensing foundation models, pretrained on massive remote sensing data, have shown impressive performance in several Earth observation (EO) tasks. These models usually use single-modal temporal data for pretraining, which is insufficient for multi-modal applications. Moreover, these models require a considerable number of samples for fine-tuning in downstream tasks, posing challenges in time-sensitive scenarios, such as rapid flood mapping. We present SkySense++, a multi-modal remote sensing foundation model for diverse EO tasks. SkySense++ has a factorized architecture to accommodate multi-modal images acquired by diverse sensors. We adopt progressive pretraining, which involves two stages, on meticulously curated datasets of 27 million multi-modal remote sensing images. The first representation-enhanced pretraining stage uses multi-granularity contrastive learning to obtain general representations. The second semantic-enhanced pretraining stage leverages masked semantic learning to learn semantically enriched representations, enabling few-shot capabilities. This ability allows the model to handle unseen tasks with minimal labelled data, alleviating the need for fine-tuning on extensive annotated data. SkySense++ demonstrates consistent improvements in classification, detection and segmentation over previous state-of-the-art models across 12 EO tasks in 7 domains: agriculture, forestry, oceanography, atmosphere, biology, land surveying and disaster management. This generalizability may lead to a new chapter of remote sensing foundation model applications for EO tasks at scale. Wu et al. developed SkySense++, a multi-modal remote sensing foundation model pretrained on 27 million multi-modal images, which achieved robust generalization and few-shot capabilities across several Earth observation tasks and domains, including agriculture and disaster management.},
+  archive      = {J_NATMI},
+  author       = {Wu, Kang and Zhang, Yingying and Ru, Lixiang and Dang, Bo and Lao, Jiangwei and Yu, Lei and Luo, Junwei and Zhu, Zifan and Sun, Yue and Zhang, Jiahao and Zhu, Qi and Wang, Jian and Yang, Ming and Chen, Jingdong and Zhang, Yongjun and Li, Yansheng},
+  doi          = {10.1038/s42256-025-01078-8},
+  journal      = {Nature Machine Intelligence},
+  month        = {8},
+  number       = {8},
+  pages        = {1235-1249},
+  shortjournal = {Nat. Mach. Intell.},
+  title        = {A semantic-enhanced multi-modal remote sensing foundation model for earth observation},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). High-level visual representations in the human brain are aligned with large language models. <em>NATMI</em>, <em>7</em>(8), 1220-1234. (<a href='https://doi.org/10.1038/s42256-025-01072-0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The human brain extracts complex information from visual inputs, including objects, their spatial and semantic interrelations, and their interactions with the environment. However, a quantitative approach for studying this information remains elusive. Here we test whether the contextual information encoded in large language models (LLMs) is beneficial for modelling the complex visual information extracted by the brain from natural scenes. We show that LLM embeddings of scene captions successfully characterize brain activity evoked by viewing the natural scenes. This mapping captures selectivities of different brain areas and is sufficiently robust that accurate scene captions can be reconstructed from brain activity. Using carefully controlled model comparisons, we then proceed to show that the accuracy with which LLM representations match brain representations derives from the ability of LLMs to integrate complex information contained in scene captions beyond that conveyed by individual words. Finally, we train deep neural network models to transform image inputs into LLM representations. Remarkably, these networks learn representations that are better aligned with brain representations than a large number of state-of-the-art alternative models, despite being trained on orders-of-magnitude less data. Overall, our results suggest that LLM embeddings of scene captions provide a representational format that accounts for complex information extracted by the brain from visual inputs. Doerig, Kietzmann and colleagues show that the brain’s response to visual scenes can be modelled using language-based AI representations. By linking brain activity to caption-based embeddings from large language models, the study reveals a way to quantify complex visual understanding.},
+  archive      = {J_NATMI},
+  author       = {Doerig, Adrien and Kietzmann, Tim C. and Allen, Emily and Wu, Yihan and Naselaris, Thomas and Kay, Kendrick and Charest, Ian},
+  doi          = {10.1038/s42256-025-01072-0},
+  journal      = {Nature Machine Intelligence},
+  month        = {8},
+  number       = {8},
+  pages        = {1220-1234},
+  shortjournal = {Nat. Mach. Intell.},
+  title        = {High-level visual representations in the human brain are aligned with large language models},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Training data composition determines machine learning generalization and biological rule discovery. <em>NATMI</em>, <em>7</em>(8), 1206-1219. (<a href='https://doi.org/10.1038/s42256-025-01089-5'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Supervised machine learning models depend on training datasets containing positive and negative examples: dataset composition directly impacts model performance and bias. Given the importance of machine learning for immunotherapeutic design, we examined how different negative class definitions affect model generalization and rule discovery for antibody–antigen binding. Using synthetic-structure-based binding data, we evaluated models trained with various definitions of negative sets. Our findings reveal that high out-of-distribution performance can be achieved when the negative dataset contains more similar samples to the positive dataset, despite lower in-distribution performance. Furthermore, by leveraging ground-truth information, we show that binding rules associated with positive data change based on the negative data used. Validation on experimental data supported simulation-based observations. This work underscores the role of dataset composition in creating robust, generalizable and biology-aware sequence-based ML models. Negative data composition critically shapes machine learning robustness in sequence-based biological tasks. Training data composition and its implications are investigated on biological rule discoveries.},
+  archive      = {J_NATMI},
+  author       = {Ursu, Eugen and Minnegalieva, Aygul and Rawat, Puneet and Chernigovskaya, Maria and Tacutu, Robi and Sandve, Geir Kjetil and Robert, Philippe A. and Greiff, Victor},
+  doi          = {10.1038/s42256-025-01089-5},
+  journal      = {Nature Machine Intelligence},
+  month        = {8},
+  number       = {8},
+  pages        = {1206-1219},
+  shortjournal = {Nat. Mach. Intell.},
+  title        = {Training data composition determines machine learning generalization and biological rule discovery},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Quantifying artificial intelligence through algorithmic generalization. <em>NATMI</em>, <em>7</em>(8), 1195-1205. (<a href='https://doi.org/10.1038/s42256-025-01092-w'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid development of artificial intelligence (AI) systems has created an urgent need for their scientific quantification. While their fluency across a variety of domains is impressive, AI systems fall short on tests requiring algorithmic reasoning—a glaring limitation, given the necessity for interpretable and reliable technology. Despite a surge in reasoning benchmarks emerging from the academic community, no theoretical framework exists to quantify algorithmic reasoning in AI systems. Here we adopt a framework from computational complexity theory to quantify algorithmic generalization using algebraic expressions: algebraic circuit complexity. Algebraic circuit complexity theory—the study of algebraic expressions as circuit models—is a natural framework for studying the complexity of algorithmic computation. Algebraic circuit complexity enables the study of generalization by defining benchmarks in terms of the computational requirements for solving a problem. Moreover, algebraic circuits are generic mathematical objects; an arbitrarily large number of samples can be generated for a specified circuit, making it an ideal experimental sandbox for the data-hungry models that are used today. In this Perspective, we adopt tools from algebraic circuit complexity, apply them to formalize a science of algorithmic generalization, and address key challenges for its successful application to AI science. Despite impressive performances of current large AI models, symbolic and abstract reasoning tasks often elicit failure modes in these systems. In this Perspective, Ito et al. propose to make use of computational complexity theory, formulating algebraic problems as computable circuits to address the challenge of mathematical and symbolic reasoning in AI systems.},
+  archive      = {J_NATMI},
+  author       = {Ito, Takuya and Campbell, Murray and Horesh, Lior and Klinger, Tim and Ram, Parikshit},
+  doi          = {10.1038/s42256-025-01092-w},
+  journal      = {Nature Machine Intelligence},
+  month        = {8},
+  number       = {8},
+  pages        = {1195-1205},
+  shortjournal = {Nat. Mach. Intell.},
+  title        = {Quantifying artificial intelligence through algorithmic generalization},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The importance of negative training data for robust antibody binding prediction. <em>NATMI</em>, <em>7</em>(8), 1192-1194. (<a href='https://doi.org/10.1038/s42256-025-01080-0'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Thoughtfully designed negative training datasets may hold the key to more robust machine learning models. Ursu et al. reveal how negative training data composition shapes antibody prediction models and their generalizability. Sometimes, the best way to get better is to train harder.},
+  archive      = {J_NATMI},
+  author       = {Ta, Wesley and Stokes, Jonathan M.},
+  doi          = {10.1038/s42256-025-01080-0},
+  journal      = {Nature Machine Intelligence},
+  month        = {8},
+  number       = {8},
+  pages        = {1192-1194},
+  shortjournal = {Nat. Mach. Intell.},
+  title        = {The importance of negative training data for robust antibody binding prediction},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Mapping t helper cell targets with deep learning. <em>NATMI</em>, <em>7</em>(8), 1190-1191. (<a href='https://doi.org/10.1038/s42256-025-01081-z'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {By integrating multi-dimensional data with deep learning, a new method known as ImmuScope predicts both major histocompatibility complex class II (MHC-II) presentation and T helper cell immunogenicity. ImmuScope shows potential to accelerate neoantigen discovery and vaccine design.},
+  archive      = {J_NATMI},
+  author       = {Liu, Yuan and Han, Leng},
+  doi          = {10.1038/s42256-025-01081-z},
+  journal      = {Nature Machine Intelligence},
+  month        = {8},
+  number       = {8},
+  pages        = {1190-1191},
+  shortjournal = {Nat. Mach. Intell.},
+  title        = {Mapping t helper cell targets with deep learning},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Towards responsible geospatial foundation models. <em>NATMI</em>, <em>7</em>(8), 1189. (<a href='https://doi.org/10.1038/s42256-025-01106-7'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Recent years have seen a surge in geospatial artificial intelligence models, with promising applications in ecological and environmental monitoring tasks. Further work should also focus on the sustainable development of such models.},
+  archive      = {J_NATMI},
+  doi          = {10.1038/s42256-025-01106-7},
+  journal      = {Nature Machine Intelligence},
+  month        = {8},
+  number       = {8},
+  pages        = {1189},
+  shortjournal = {Nat. Mach. Intell.},
+  title        = {Towards responsible geospatial foundation models},
+  volume       = {7},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

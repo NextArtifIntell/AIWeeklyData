@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TROB</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="trob">TROB - 3</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Integration of robot and scene kinematics for sequential mobile manipulation planning. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3605261'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {We present a Sequential Mobile Manipulation Planning (SMMP) framework that can solve long-horizon multi-step mobile manipulation tasks with coordinated whole-body motion, even when interacting with articulated objects. By abstracting environmental structures as kinematic models and integrating them with the robot's kinematics, we construct an Augmented Configuration Apace (A-Space) that unifies the previously separate task constraints for navigation and manipulation, while accounting for the joint reachability of the robot base, arm, and manipulated objects. This integration facilitates efficient planning within a tri-level framework: a task planner generates symbolic action sequences to model the evolution of A-Space, an optimization-based motion planner computes continuous trajectories within A-Space to achieve desired configurations for both the robot and scene elements, and an intermediate plan refinement stage selects action goals that ensure long-horizon feasibility. Our simulation studies first confirm that planning in A-Space achieves an 84.6% higher task success rate compared to baseline methods. Validation on real robotic systems demonstrates fluid mobile manipulation involving (i) seven types of rigid and articulated objects across 17 distinct contexts, and (ii) long-horizon tasks of up to 14 sequential steps. Our results highlight the significance of modeling scene kinematics into planning entities, rather than encoding task-specific constraints, offering a scalable and generalizable approach to complex robotic manipulation.},
+  archive      = {J_TROB},
+  author       = {Ziyuan Jiao and Yida Niu and Zeyu Zhang and Yangyang Wu and Yao Su and Yixin Zhu and Hangxin Liu and Song-Chun Zhu},
+  doi          = {10.1109/TRO.2025.3605261},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {9},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Integration of robot and scene kinematics for sequential mobile manipulation planning},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Design, modeling, and experiment of a 3-DoF miniature plate piezoelectric robot. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3605254'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The piezoelectric plate robot driven by traveling waves (TWs) boasts a compact structure and excellent load-bearing capacity. However, vibration coupling across the plate restricts its freedom of movement, along with issues such as poor straight-line motion and a large turning radius. Inspired by octopus locomotion, we designed a three-degree-of-freedom (3-DoF) piezoelectric plate robot using a 0.7 mm metal plate. Through drive region division and dynamic modeling, our design achieves fully controllable motion in any planar direction, providing the highest DoF among TW driven plate robots. Weighing just 14.2g, it is lighter and easier to fabricate compared to other 3-DoF piezoelectric robots. The robot demonstrated 3-DoF movement capabilities, climbing (16.5°), dragging (20 g), and carrying (180 g), and can bear over 5,000 times its own body weight. A wireless drive prototype with closed-loop control reduced trajectory errors by more than 80% compared to open-loop control. Experiments involving high-curvature path movement, confined-space “search and rescue” and light focusing highlight its potential in extreme environments and high-precision tasks.},
+  archive      = {J_TROB},
+  author       = {Yuanshuai Ding and Yongmao Pei},
+  doi          = {10.1109/TRO.2025.3605254},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {9},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {Design, modeling, and experiment of a 3-DoF miniature plate piezoelectric robot},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RUMI: Rummaging using mutual information. <em>TROB</em>, 1-20. (<a href='https://doi.org/10.1109/TRO.2025.3605251'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents Rummaging Using Mutual Information (RUMI), a method for online generation of robot action sequences to gather information about the pose of a known movable object in visually-occluded environments. Focusing on contact-rich rummaging, our approach leverages mutual information between the object pose distribution and robot trajectory for action planning. From an observed partial point cloud, RUMI deduces the compatible object pose distribution and approximates the mutual information of it with workspace occupancy in real time. Based on this, we develop an information gain cost function and a reachability cost function to keep the object within the robot's reach. These are integrated into a model predictive control (MPC) framework with a stochastic dynamics model, updating the pose distribution in a closed loop. Key contributions include a new belief framework for object pose estimation, an efficient information gain computation strategy, and a robust MPC-based control scheme. RUMI demonstrates superior performance in both simulated and real tasks compared to baseline methods.},
+  archive      = {J_TROB},
+  author       = {Sheng Zhong and Nima Fazeli and Dmitry Berenson},
+  doi          = {10.1109/TRO.2025.3605251},
+  journal      = {IEEE Transactions on Robotics},
+  month        = {9},
+  pages        = {1-20},
+  shortjournal = {IEEE Trans. Robot.},
+  title        = {RUMI: Rummaging using mutual information},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

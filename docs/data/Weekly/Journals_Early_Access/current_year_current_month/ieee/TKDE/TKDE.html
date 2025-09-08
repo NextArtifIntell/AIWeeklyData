@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TKDE</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tkde">TKDE - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Semi-supervised short text stream classification based on drift-aware incremental deep learning. <em>TKDE</em>, 1-14. (<a href='https://doi.org/10.1109/TKDE.2025.3605389'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Real-world applications have produced massive short text streams. Contrary to the traditional normal texts, they present the characteristics such as short length, only having few labeled data, high-velocity, high-volume and dynamic data distributions, which deteriorate the issues of data sparseness, label missing and concept drift. Obviously, it is a huge challenge for existing short text (stream) classification algorithms due to the poor effectiveness, where they always assume all short texts are completely labeled and little attention is paid on the concept drift issue hidden in short text streams. Therefore, we propose a novel semi-supervised short text steam classification method based on the drift-aware incremental deep learning ensemble model. Specifically, with the sliding window mechanism, we firstly fuse three types of statistical, semantic and structure information to solve the data sparseness issue. Secondly, a semi-supervised incremental deep learning ensemble model based on GCN and the refined LSTM is developed to adapt to the high-volume, high-velocity and label missing short text streams. Thirdly, a label-probability distribution based concept drift detector is introduced to distinguish concept drifts. Finally, as compared with eleven well-known classification methods, extensive experiments demonstrate the effectiveness of the proposed method in the handling of short text streams with limited labeled data.},
+  archive      = {J_TKDE},
+  author       = {Peipei Li and Shiying Yu and Jiajun Li and Xuegang Hu},
+  doi          = {10.1109/TKDE.2025.3605389},
+  journal      = {IEEE Transactions on Knowledge and Data Engineering},
+  month        = {9},
+  pages        = {1-14},
+  shortjournal = {IEEE Trans. Knowl. Data Eng.},
+  title        = {Semi-supervised short text stream classification based on drift-aware incremental deep learning},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

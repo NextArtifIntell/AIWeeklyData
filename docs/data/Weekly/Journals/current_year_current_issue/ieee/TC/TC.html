@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="tc">TC - 29</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Hybrid redundancy for reliable task offloading in collaborative edge computing. <em>TC</em>, <em>74</em>(9), 3238-3250. (<a href='https://doi.org/10.1109/TC.2025.3587620'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Collaborative edge computing enables task execution on the computing resources of geo-distributed edge nodes. One of the key challenges in this field is to realize reliable task offloading by deciding whether to execute tasks locally or delegate them to neighboring nodes while ensuring task reliability. Achieving reliable task offloading is essential for preventing task failures and maintaining optimal system performance. Existing works commonly rely on task redundancy strategies, such as active or passive redundancy. However, these approaches lack adaptive redundancy mechanisms to respond to changes in the network environment, potentially resulting in resource wastage from excessive redundancy or task failures due to insufficient redundancy. In this work, we introduce a novel approach called Hybrid Redundancy for Task Offloading (HRTO) to optimize task latency and reliability. Specifically, HRTO utilizes deep reinforcement learning (DRL) to learn a task offloading policy that maximizes task success rates. With this policy, edge nodes dynamically adjust task redundancy levels based on real-time network load conditions and meanwhile assess whether the task instance is necessary for re-execution in case of task failure. Extensive experiments on real-world network topologies and a Kubernetes-based testbed evaluate the effectiveness of HRTO, showing a 14.6% increase in success rate over the benchmarks.},
+  archive      = {J_TC},
+  author       = {Hao Guo and Lei Yang and Qingfeng Zhang and Jiannong Cao},
+  doi          = {10.1109/TC.2025.3587620},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3238-3250},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Hybrid redundancy for reliable task offloading in collaborative edge computing},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An efficient LUT6-based montgomery modular multiplication using radix-16 booth method. <em>TC</em>, <em>74</em>(9), 3223-3237. (<a href='https://doi.org/10.1109/TC.2025.3587619'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper explores more efficient LUT6-Based multiplier for Montgomery Modular Multiplication (MMM) on FPGA. Firstly, we analyze and compare the LUT6-Cost of multipliers using previous Radix-4/8/16 Booth methods. Based on the LUT6, we propose an improved LUT6-Based Radix-16 Booth method for Coarsely Integrated Operand Scanning (CIOS) MMM. When the value of multiples remains unchanged for a period of time, this method uses LUT6-Based SDP-RAM to store multiples instead of MUX to select, which effectively reduces the LUT6-Cost of Decode. Secondly, we propose a new LUT6-Based CIOS MMM using the proposed method. Finally, we explore the trade-off between area and latency, present an efficient LUT6-Based MMM hardware design (LUT6-MM) to accelerate CIOS MMM. The LUT6-MM is a scalable, parametric, and reconfigurable design, it is implemented on Xilinx Virtex-7 FPGA. When performing 1024/2048-bit MMM, the results show that the area*latency products (ALPs) of LUT6-MM ($w_{1}$ =32, $w_{2}$ =128) are 51.1%/48.8% of the previous state-of-art scalable and parametric LUT6-Based reference (Non-Reconfigurable, Not using DSP).},
+  archive      = {J_TC},
+  author       = {Yujun Xie and Yuan Liu},
+  doi          = {10.1109/TC.2025.3587619},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3223-3237},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {An efficient LUT6-based montgomery modular multiplication using radix-16 booth method},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DNA: A general dynamic neural network accelerator. <em>TC</em>, <em>74</em>(9), 3210-3222. (<a href='https://doi.org/10.1109/TC.2025.3587617'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Due to the demonstrated superiority, dynamic neural networks (NNs), which adapt their network structures to different inputs, have been recognized as an optimized alternative to conventional static NNs. However, researchers have not explored the implications of dynamic NN on neural processing unit (NPU) architecture design. Consequently, we analyze the characteristics and inefficient sources of executing dynamic NNs on existing hardware. From our analysis, existing NPUs, designed for static NNs, cannot effectively handle the execution of dynamic operator and agent-dependent data loading in dynamic NNs. To this end, we present DNA, an efficient accelerator optimized to deal with the challenges of running general dynamic NNs. Firstly, to improve the execution efficiency of dynamic operators, we propose a transverter-based online scheduling strategy to rapidly generate efficient scheduling for each dynamic operator. Secondly, to mitigate hardware idleness caused by the non-deterministic and agent-dependent data access patterns in dynamic NNs, we propose a novel predictor-based prefetching strategy that achieves effective data preloading with negligible cost. We implemented our accelerator, DNA, by integrating an additional online scheduler into a typical many-core baseline accelerator. According to our evaluation of various dynamic NNs, DNA achieves $3.48\boldsymbol\times$ speedup and $3.03\boldsymbol\times$ energy savings over the baseline accelerator.},
+  archive      = {J_TC},
+  author       = {Lian Liu and Jinxin Yu and Mengdi Wang and Xiaowei Li and Yinhe Han and Ying Wang},
+  doi          = {10.1109/TC.2025.3587617},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3210-3222},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {DNA: A general dynamic neural network accelerator},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Automatic generation of system-level test for un-core logic of large automotive SoC. <em>TC</em>, <em>74</em>(9), 3195-3209. (<a href='https://doi.org/10.1109/TC.2025.3587515'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Traditional structural tests are powerful automatic approaches for capturing faulty behavior in integrated circuits. Besides the ease of generating test patterns, structural methods are known to be able to cover a vast but incomplete spectrum of all possible faults in a System-on-Chip (SoC). A new step in the manufacturing test flow has been added to fill the leftover gaps of structural tests, called the System-Level Test (SLT), which resembles the final workload, and environment. This work illustrates how to build up an automated generation engine to synthesize SLT programs that effectively attack structural test weaknesses from both a holistic and an analytical perspective. The methodology targets the crossbar module, as one of the most critical areas in the SoC, and it simultaneously creates a ripple effect across the un-core logic. Experimental results are conducted on an automotive SoC manufactured by STMicroelectronics.},
+  archive      = {J_TC},
+  author       = {Francesco Angione and Paolo Bernardi and Giusy Iaria and Claudia Bertani and Vincenzo Tancorre},
+  doi          = {10.1109/TC.2025.3587515},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3195-3209},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Automatic generation of system-level test for un-core logic of large automotive SoC},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). PolyLUT: Ultra-low latency polynomial inference with hardware-aware structured pruning. <em>TC</em>, <em>74</em>(9), 3181-3194. (<a href='https://doi.org/10.1109/TC.2025.3586311'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Standard deep neural network inference involves the computation of interleaved linear maps and nonlinear activation functions. Prior work for ultra-low latency implementations has hardcoded these operations inside FPGA lookup tables (LUTs). However, FPGA LUTs can implement a much greater variety of functions. In this paper, we propose a novel approach to training DNNs for FPGA deployment using multivariate polynomials as the basic building block. Our method takes advantage of the flexibility offered by the soft logic, hiding the polynomial evaluation inside the LUTs with minimal overhead. By using polynomial building blocks, we achieve the same accuracy using considerably fewer layers of soft logic than by using linear functions, leading to significant latency and area improvements. LUT-based implementations also face a significant challenge: the LUT size grows exponentially with the number of inputs. Prior work relies on a priori fixed sparsity, with results heavily dependent on seed selection. To address this, we propose a structured pruning strategy using a bespoke hardware-aware group regularizer that encourages a particular sparsity pattern that leads to a small number of inputs per neuron. We demonstrate the effectiveness of PolyLUT on three tasks: network intrusion detection, jet identification at the CERN Large Hadron Collider, and MNIST.},
+  archive      = {J_TC},
+  author       = {Marta Andronic and Jiawen Li and George A. Constantinides},
+  doi          = {10.1109/TC.2025.3586311},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3181-3194},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {PolyLUT: Ultra-low latency polynomial inference with hardware-aware structured pruning},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Synergistic memory optimisations: Precision tuning in heterogeneous memory hierarchies. <em>TC</em>, <em>74</em>(9), 3168-3180. (<a href='https://doi.org/10.1109/TC.2025.3586025'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Balancing energy efficiency and high performance in embedded systems requires fine-tuning hardware and software components to co-optimize their interaction. In this work, we address the automated optimization of memory usage through a compiler toolchain that leverages DMA-aware precision tuning and mathematical function memorization. The proposed solution extends the llvm infrastructure, employing the taffo plugins for precision tuning, with the SeTHet extension for DMA-aware precision tuning and luTHet for automated, DMA-aware mathematical function memorization. We performed an experimental assessment on hero, a heterogeneous platform employing risc-v cores as a parallel accelerator. Our solution enables speedups ranging from $1.5\boldsymbol{\times}$ to $51.1\boldsymbol{\times}$ on AxBench benchmarks that employ trigonometrical functions and $4.23-48.4\boldsymbol{\times}$ on Polybench benchmarks over the baseline hero platform.},
+  archive      = {J_TC},
+  author       = {Gabriele Magnani and Daniele Cattaneo and Lev Denisov and Giuseppe Tagliavini and Giovanni Agosta and Stefano Cherubin},
+  doi          = {10.1109/TC.2025.3586025},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3168-3180},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Synergistic memory optimisations: Precision tuning in heterogeneous memory hierarchies},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Task optimization allocation in vehicle based edge computing systems with deep reinforcement learning. <em>TC</em>, <em>74</em>(9), 3156-3167. (<a href='https://doi.org/10.1109/TC.2025.3585630'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {With the recent advancement in network technologies, the vehicle based medical networks extend medical services to mobile vehicles, thereby offering flexible and efficient healthcare services for vehicle users in need. The integration of vehicle based medical network and edge computing enables computation intensive medical service tasks to be offloaded on edge servers, to provide fast service response for vehicle users. An efficient task offloading and resource allocation strategy is critical for Vehicle based Medical Edge Computing System (VMECS) to satisfy real-time and reliability requirements while ensuring service performance. To this end, in this paper, we investigate the problem of task computation allocation in VMECS networks. By introducing deep reinforcement learning, we first present a novel VMECS architecture to automatically achieve the optimal task offloading and resource allocation through the multi-agent collaboration, thereby improving service performance. Then, we formulate the problem of task offloading and resource allocation in VMECS networks as an optimization model with the aim of maximizing task success rate by jointly considering communication interferences, resource allocation and delay requirements. To solve it, we further devise a Distributed distributional deterministic policy gradients based Task offloading and Resource allocation (DTR) algorithm. Final simulation results demonstrate that compared with benchmark algorithms, DTR algorithm can obtain higher task success rate, smaller service time, and less task processing time.},
+  archive      = {J_TC},
+  author       = {Qiang He and Quanwei Li and Chuangchuang Zhang and Xingwei Wang and Yuanguo Bi and Liang Zhao and Ammar Hawbani and Keping Yu},
+  doi          = {10.1109/TC.2025.3585630},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3156-3167},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Task optimization allocation in vehicle based edge computing systems with deep reinforcement learning},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Reconfigurable intelligent surface assisted UAV-MCS based on transformer enhanced deep reinforcement learning. <em>TC</em>, <em>74</em>(9), 3143-3155. (<a href='https://doi.org/10.1109/TC.2025.3585361'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Mobile crowd sensing (MCS) is an emerging paradigm that enables participants to collaborate on various sensing tasks. UAVs are increasingly integrated into MCS systems to provide more reliable, accurate and cost-effective sensing services. However, optimizing UAV trajectories and communication efficiency, especially under non-line-of-sight (NLoS) channel conditions, remains a significant challenge. This paper proposes TRAIL, a Transformer-enhanced deep reinforcement Learning (DRL) algorithm. TRAIL aims to jointly optimize UAV trajectories and Reconfigurable Intelligent Surface (RIS) phase shifts to maximize data throughput while minimizing UAV energy consumption. The optimization problem is modeled as a Markov Decision Process (MDP), where the Transformer architecture captures long-term dependencies in UAV trajectories, and these features are input into a Double Deep Q-Network with Prioritized Experience Replay (PER-DDQN) to guide the agent in learning the optimal strategy. Simulation results demonstrate that TRAIL significantly outperforms state-of-the-art methods in both data throughput and energy efficiency.},
+  archive      = {J_TC},
+  author       = {Qianqian Wu and Qiang Liu and Ying He and Zefan Wu},
+  doi          = {10.1109/TC.2025.3585361},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3143-3155},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Reconfigurable intelligent surface assisted UAV-MCS based on transformer enhanced deep reinforcement learning},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A high-intensity solution of hardware accelerator for sparse and redundant computations in semantic segmentation models. <em>TC</em>, <em>74</em>(9), 3129-3142. (<a href='https://doi.org/10.1109/TC.2025.3585354'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid development of artificial intelligence (AI) has met people's personalized needs. However, with the increase of data capacities and computing requirements, the imbalance between large-scale data transmission and limited network bandwidth has become increasingly prominent. To improve the speed of embedded system, real-time intelligent computing is gradually moving from the cloud to the edge. Traditional FPGA-based AI accelerators mainly utilize PE architecture, but the low computing throughput and resource utilization make it difficult to meet the power requirement of edge AI application scenarios such as image segmentation. In recent years, AI accelerators based on streaming architecture have become a trend, and it is necessary to customize high-performance streaming accelerators for specific segmentation algorithms. In this paper, we design a high-intensity pixel-level fully pipelined accelerator with customized strategies to eliminate the sparse and redundant computations in specific algorithms of semantic segmentation, which significantly improve the accelerator's computing throughput and hardware resources utilization. On Xilinx FPGA, our acceleration of two typical semantic segmentation networks-ESPNet and DeepLabV3, achieves optimized throughputs of 171.3 GOPS and 1324.8 GOPS, and computing efficiency of 9.26 and 9.01, respectively. It provides the possibility of hardware deployment in real-time application with high computing intensity.},
+  archive      = {J_TC},
+  author       = {Jiahui Huang and Zhan Li and Yuxian Jiang and Zhihan Zhang and Hao Wang and Sheng Chang},
+  doi          = {10.1109/TC.2025.3585354},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3129-3142},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {A high-intensity solution of hardware accelerator for sparse and redundant computations in semantic segmentation models},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RO(SE)${}^{2}$<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:msup><mml:mrow><mml:mn> </mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:math>: Search-efficient robust searchable encryption with forward and backward security. <em>TC</em>, <em>74</em>(9), 3114-3128. (<a href='https://doi.org/10.1109/TC.2025.3585349'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Dynamic searchable symmetric encryption (DSSE) enables clients to store encrypted data on untrusted servers while retaining the ability to search and update the data efficiently. However, most existing DSSE schemes are vulnerable to incorrect update queries, such as duplicated insertions or invalid deletions, which can compromise both security and availability. Although existing robust schemes have made progress in addressing these issues, they still suffer from significant search inefficiencies, particularly when handling large numbers of updates. To overcome these limitations, we propose RO(SE)${}^{2}$<mml:math><mml:msup><mml:mrow><mml:mn> </mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:math>, a novel robust DSSE scheme that simultaneously achieves robustness, forward-and-Type-III-backward security, and optimal search performance. RO(SE)${}^{2}$<mml:math><mml:msup><mml:mrow><mml:mn> </mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:math> introduces a hierarchical binary tree structure combined with an oblivious map (OMAP) to handle incorrect updates during the update phase, eliminating the need for filtering during search queries and significantly improving search efficiency. Additionally, RO(SE)${}^{2}$<mml:math><mml:msup><mml:mrow><mml:mn> </mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:math> employs a two-layer encryption mechanism to ensure forward security and supports efficient search result verification through its verifiable extension, RO(SE)${}^{2}$<mml:math><mml:msup><mml:mrow><mml:mn> </mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:math>-v. Rigorous security analysis proves that RO(SE)${}^{2}$<mml:math><mml:msup><mml:mrow><mml:mn> </mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:math> can achieve not only robustness, forward and backward security but optimal search efficiency as well. Comparative analysis reveals that RO(SE)${}^{2}$<mml:math><mml:msup><mml:mrow><mml:mn> </mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:math> outperforms existing robust schemes in terms of search performance, while RO(SE)${}^{2}$<mml:math><mml:msup><mml:mrow><mml:mn> </mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:math>-v outperforms the state-of-the-art verifiable robust schemes in verification performance.},
+  archive      = {J_TC},
+  author       = {Xu Yang and Qiuhao Wang and Saiyu Qi and Ke Li and Yong Qi},
+  doi          = {10.1109/TC.2025.3585349},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3114-3128},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {RO(SE)${}^{2}$<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mml:msup><mml:mrow><mml:mn> </mml:mn></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msup></mml:math>: Search-efficient robust searchable encryption with forward and backward security},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). COFFA: A co-design framework for fused-grained reconfigurable architecture towards efficient irregular loop handling. <em>TC</em>, <em>74</em>(9), 3099-3113. (<a href='https://doi.org/10.1109/TC.2025.3585345'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Coarse-Grained Reconfigurable Architecture (CGRA) emerges as a competitive accelerator due to its high flexibility and energy efficiency. However, most CGRAs are effective for computation-intensive applications with regular loops but struggle with irregular loops containing control flows. These loops introduce fine-grained logic operations and are costly to execute by coarse-grained arithmetic units in CGRA. Efficiently handling such logic operations necessitates incorporating Boolean algebra optimization, which can improve logic density and reduce logic depth. Unfortunately, no previous research has incorporated it into the compilation flow to support irregular loops efficiently. We propose COFFA, an open-source framework for heterogeneous architecture with a RISC-V CPU and a fused-grained reconfigurable accelerator, which integrates coarse-grained arithmetic and fine-grained logic units, along with flexible IO units and distributed interconnects. As a software/hardware co-design framework, COFFA has a powerful compiler that extracts and optimizes fine-grained logic operations from irregular loops, performs coarse-grained arithmetic and memory optimizations, and offloads the loops to the accelerator. Across various challenging benchmarks with irregular loops, COFFA achieves significant performance and energy efficiency improvements over an in-order, an out-of-order RISC-V CPUs, and a recent FPGA, respectively. Moreover, compared with the state-of-the-art CGRA UE-CGRA and Hycube, COFFA can achieve 2.5$\times$ and 3.5$\times$ performance gains, respectively.},
+  archive      = {J_TC},
+  author       = {Yuan Dai and Xuchen Gao and Yunhui Qiu and Jingyuan Li and Yuhang Cao and Yiqing Mao and Sichao Chen and Wenbo Yin and Wai-Shing Luk and Lingli Wang},
+  doi          = {10.1109/TC.2025.3585345},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3099-3113},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {COFFA: A co-design framework for fused-grained reconfigurable architecture towards efficient irregular loop handling},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Evaluating robustness of subnetworks for the split-star network. <em>TC</em>, <em>74</em>(9), 3087-3098. (<a href='https://doi.org/10.1109/TC.2025.3584558'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The robustness of subnetworks for the interconnection network of a computer system is an important consideration for the system performance. It can be measured by the extent to which subnetworks can stay fault-free when faults are present in the system. In this paper, we evaluate the subnetwork robustness for the n-dimensional split-star network $S_{n}^{2}$. Let $S_{n-m}^{2}$, $1\leq m\leq n-3$, be a subnetwork of $S_{n}^{2}$, and let p be the node reliability, the probability that a single node remains fault-free. We determine two values that reflect how robust $S_{n-m}^{2}$ subnetworks are, from two perspectives. We first establish the upper/lower bounds for $\mathcal{F}_{m}(S_{n}^{2})$, the minimum number of faulty nodes to make all $S_{n-m}^{2}$ subnetworks faulty. Then, we determine the subnetwork reliability, denoted by $\mathcal{R}_{m}(S_{n}^{2},p)$, which is the probability that at least one fault-free $S_{n-m}^{2}$ subnetwork exists in $S_{n}^{2}$, given the node reliability p. The upper/lower bounds and an approximation expression for $\mathcal{R}_{m}(S_{n}^{2},p)$ are obtained. We also propose a simulation method to estimate $\mathcal{R}_{m}(S_{n}^{2},p)$. The experimental results show that a) when p is relatively low, $\mathcal{R}_{m}(S_{n}^{2},p)$ can be approximated by the mean value of its upper and lower bounds, or the estimation value by the approximation expression; b) when p is high, $\mathcal{R}_{m}(S_{n}^{2},p)$ can be more accurately estimated by our simulation method.},
+  archive      = {J_TC},
+  author       = {Kai Feng and Guodong Xie and Zhangjian Ji and Dajin Wang},
+  doi          = {10.1109/TC.2025.3584558},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3087-3098},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Evaluating robustness of subnetworks for the split-star network},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). AXI-REALM: Safe, modular and lightweight traffic monitoring and regulation for heterogeneous mixed-criticality systems. <em>TC</em>, <em>74</em>(9), 3072-3086. (<a href='https://doi.org/10.1109/TC.2025.3584530'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The automotive industry is transitioning from federated, homogeneous, interconnected devices to integrated, heterogeneous, mixed-criticality systems (MCS). This leads to challenges in achieving timing predictability techniques due to access contention on shared resources, which can be mitigated using hardware-based spatial and temporal isolation techniques. Focusing on the interconnect as the point of access for shared resources, we propose AXI-REALM, a lightweight, modular, technology-independent, and open-source real-time extension to AXI4 interconnects. AXI-REALM uses a budget-based mechanism enforced on periodic time windows and transfer fragmentation to provide fair arbitration, coupled with execution predictability on real-time workloads. AXI-REALM features a comprehensive bandwidth and latency monitor at both the ingress and egress of the interconnect system. Latency information is also used to detect and reset malfunctioning subordinates, preventing missed deadlines. We provide a detailed cost assessment in a $12\,$nm node and an end-to-end case study implementing AXI-REALM into an open-source MCS, incurring an area overhead of less than $2\,\%$. When running a mixed-criticality workload, with a time-critical application sharing the interconnect with non-critical applications, we demonstrate that the critical application can achieve up to $68.2\,\%$ of the isolated performance by enforcing fairness on the interconnect traffic through burst fragmentation, thus reducing the subordinate access latency by up to 24 times. Near-ideal performance, (above $95\,\%$ of the isolated performance) can be achieved by distributing the available bandwidth in favor of the critical application.},
+  archive      = {J_TC},
+  author       = {Thomas Benz and Alessandro Ottaviano and Chaoqun Liang and Robert Balas and Angelo Garofalo and Francesco Restuccia and Alessandro Biondi and Davide Rossi and Luca Benini},
+  doi          = {10.1109/TC.2025.3584530},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3072-3086},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {AXI-REALM: Safe, modular and lightweight traffic monitoring and regulation for heterogeneous mixed-criticality systems},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). MDC+: A cooperative approach to memory-efficient fork-based checkpointing for in-memory database systems. <em>TC</em>, <em>74</em>(9), 3059-3071. (<a href='https://doi.org/10.1109/TC.2025.3584520'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Consistent checkpointing is a critical for in-memory databases (IMDBs) but its resource-intensive nature poses challenges for small- and medium-sized deployments in cloud environments, where memory utilization directly affects operational costs. Although traditional fork-based checkpointing offers merits in terms of performance and implementation simplicity, it incurs a considerable rise in memory footprint during checkpointing, particularly under update-intensive workloads. Memory provisioning emerges as a practical remedy to handle peak demands without compromising performance, albeit with potential concerns related to memory over-provisioning. In this article, we propose MDC+, a memory-efficient fork-based checkpointing scheme designed to maintain a reasonable memory footprint during checkpointing by leveraging collaboration among an IMDB, a user-level memory allocator, and the operating system. We explore two key techniques within the checkpointing scheme: (1) memory dump-based checkpointing, which enables early memory release, and (2) hint-based segregated memory allocation, which isolates immutable and updatable data to minimize page duplication. Our evaluation demonstrates that MDC+ significantly lowers peak memory footprint during checkpointing without affecting throughput or checkpointing time.},
+  archive      = {J_TC},
+  author       = {Cheolgi Min and Jiwoong Park and Heon Young Yeom and Hyungsoo Jung},
+  doi          = {10.1109/TC.2025.3584520},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3059-3071},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {MDC+: A cooperative approach to memory-efficient fork-based checkpointing for in-memory database systems},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Dynamic DPU offloading and computational resource management in heterogeneous systems. <em>TC</em>, <em>74</em>(9), 3046-3058. (<a href='https://doi.org/10.1109/TC.2025.3584501'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {DPU offloading has emerged as a promising way to enhance data processing efficiency and free up host CPU resources. However, unsuitable offloading may overwhelm the hardware and hurt overall system performance. It is still unclear how to make full use of the shared hardware resources and select optimal execution units for each tenant application. In this paper, we propose DORM, a dynamic DPU offloading and resource management architecture for multi-tenant cloud environments with CPU-DPU heterogeneous platforms. The primary goal of DORM is to minimize host resource consumption and maximize request processing efficiency. By establishing a joint optimization model for offloading decision and resource allocation, we abstract the problem into a mixed integer programming mathematical model. To simplify the complexity of model-solving, we decompose the model into two subproblems: a 0-1 integer programming model for offloading decision-making and a convex optimization problem for fine-grained resource allocation. Besides, DORM presents an orchestrator agent to detect load changes and dynamically adjust the scheduling strategy. Experimental results demonstrate that DORM significantly improves resource efficiency, reducing host CPU core usage by up to 83.3%, increasing per-core throughput by up to 4.61x, and lowering the latency by up to 58.5% compared to baseline systems.},
+  archive      = {J_TC},
+  author       = {Zhaoyang Huang and Yanjie Tan and Yifu Zhu and Huailiang Tan and Keqin Li},
+  doi          = {10.1109/TC.2025.3584501},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3046-3058},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Dynamic DPU offloading and computational resource management in heterogeneous systems},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Hypercall-oriented abnormal VM status detection system: A non-intrusive solution for both hypervisor and guests. <em>TC</em>, <em>74</em>(9), 3032-3045. (<a href='https://doi.org/10.1109/TC.2025.3584274'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hypervisor is a VMM (Virtual Machine Monitor) that creates and runs multiple VMs (Virtual Machines) through abstracting resources from a physical machine. Hypercall is a special and crucial call used in virtualized systems as it serves as a main communication channel between VMs and the hypervisor. However, hypercall attacks occur when an attacker manipulates the communication channel, and it could cause abnormal VM status, potentially leading to the abnormal resource allocation of the host OS (Operating System) and crash of VMs. Therefore, the virtualized system should execute abnormal VM status detection to identify potential abnormal behaviors to protect VMs and the host OS; however, existing works are either for reconstructing the hypervisor or hardware isolation, not for the VM status detection for abnormal hypercall. This study develops a hypercall-oriented abnormal VM status detection system called HypercallDetector based on the following three innovations: 1) we implement a hypercall tracing based on eBPF to obtain the hypercall-related running status (including CPU usage, memory usage, network traffic, etc.) of each VM; 2) we implement a window division technology to divide the VM status into multiple status windows of the same size, and appropriate window size with balanced detection precision (95.0%) and latency (within 8.8 ms) obtained by proposing the window regulator; and 3) we implement a CS-H algorithm (Compressing Sensing for Hypercall) to distinguish whether the VM status is abnormal. HypercallDetector shows higher precision and lower latency than its opponent and consumes only 8.6% CPU of single core and 0.3% memory usage when starting 240 VMs.},
+  archive      = {J_TC},
+  author       = {Fangqi Bi and Guoqi Xie and Yuan Wang and Hao Wen and Zhenli He and Shaowen Yao and Sirong Zhao and Chenglai Xiong and Xingyu Hu and Bo Wan and Yiwen Jiang},
+  doi          = {10.1109/TC.2025.3584274},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3032-3045},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Hypercall-oriented abnormal VM status detection system: A non-intrusive solution for both hypervisor and guests},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Fed-OGD: Mitigating straggler effects in federated learning via orthogonal gradient descent. <em>TC</em>, <em>74</em>(9), 3018-3031. (<a href='https://doi.org/10.1109/TC.2025.3584272'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated Learning (FL) faces challenges due to straggler clients that impede timely parameter uploads, potentially leading to suboptimal global model performance. Existing approaches using synchronous and asynchronous communication suffer from long waiting times or convergence issues. We propose Fed-OGD, a novel asynchronous FL method addressing the straggler problem through gradient orthogonalization. Our approach innovatively frames the straggler issue using catastrophic forgetting theory, viewing stragglers as instances of the global model “forgetting” to aggregate their parameters. Fed-OGD introduces an Orthogonal Gradient Descent (OGD) technique that caches straggler gradients and orthogonalizes the difference between these and current active client gradients. By projecting active gradients onto straggler orthogonal bases and subtracting the resulting components, we obtain orthogonalized gradients guiding the model towards optimality. We provide theoretical convergence guarantees and demonstrate Fed-OGD’s effectiveness through extensive experiments. Our method achieves state-of-the-art performance across multiple datasets among SOTA FL baselines, with notable improvements in non-IID (non-Independent and identically distributed) scenarios: there are few main categories with many samples while other categories hold few samples in a client. Fed-OGD achieves that 16.66% increase in accuracy on CIFAR-10, and significant gains on CIFAR-100 (5.37%), Tiny-ImageNet (38.51%), and AG_NEWS (16.30%).},
+  archive      = {J_TC},
+  author       = {Wei Li and Zicheng Shen and Xiulong Liu and Chuntao Ding and Jiaxing Shen},
+  doi          = {10.1109/TC.2025.3584272},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3018-3031},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Fed-OGD: Mitigating straggler effects in federated learning via orthogonal gradient descent},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Intra- and inter-layer scheduling exploration and optimization for ReRAM-based DNN accelerators. <em>TC</em>, <em>74</em>(9), 3003-3017. (<a href='https://doi.org/10.1109/TC.2025.3584270'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Resistive Random Access Memory (ReRAM) based architectures have shown great potential for realizing energy-efficient Deep Neural Network (DNN) acceleration. When deploying a DNN, the ReRAM-based designs need a scheduling scheme to translate massive hardware resources into actual performance. Different scheduling schemes would lead to different levels of data reuse and computational parallelism, resulting in different energy efficiency and performance. However, the ReRAM-based scheduling scheme faces the following limitations. First, current studies mainly focus on intra-layer scheduling scheme optimizations by using the Weight Stationary (WS) data flow. These studies ignore the difference between layers and limit optimization opportunities. Second, there is no systematic definition and analysis for inter-layer scheduling schemes. Third, there is no co-optimization study on intra- and inter-layer scheduling schemes. Fourth, the complex network structure leads to intricate inter-layer data dependency, making the optimization of the scheduling scheme more challenging. These limitations restrict the comprehensive understanding of the scheduling schemes. Inspired by these observations, we identify the fundamental impact of intra-layer scheduling schemes on ReRAM-based designs, including the WS and Input Stationary (IS) data flows. We also systematically define and analyze inter-layer scheduling schemes according to different combinations of data flows, including the WS-WS, IS-IS, WS-IS, and IS-WS data flows. We analyze and explore different resource allocation strategies for these schemes. We also propose the intra- and inter-layer co-optimization to further improve performance and energy efficiency. Then, we propose a method for building a hybrid scheduling scheme by flexibly combining these inter-layer scheduling schemes for complex networks. Finally, we seek the potential to improve performance and energy efficiency for hybrid scheduling schemes. For deploying the MobileNet-V1, ResNet-18, VGG-16, and AlexNet, the hybrid scheduling scheme improves performance by $10.2\times$ $\sim$ $130.7\times$, $1.9\times$ $\sim$ $16.5\times$, $7.0\times$ $\sim$ $56\times$, and $1\times$ $\sim$ $153.1\times$ than the WS-WS, IS-IS, IS-WS, and WS-IS based scheduling schemes, respectively. Similarly, the power efficiency can also be increased by $15\times$ and $26\times$ than the WS-WS and IS-IS based scheduling schemes, respectively.},
+  archive      = {J_TC},
+  author       = {Yunping Zhao and Sheng Ma and Tiejun Li and Jianmin Zhang and Yuhua Tang},
+  doi          = {10.1109/TC.2025.3584270},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {3003-3017},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Intra- and inter-layer scheduling exploration and optimization for ReRAM-based DNN accelerators},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). STEMS: Spatial-temporal mapping for spiking neural networks. <em>TC</em>, <em>74</em>(9), 2991-3002. (<a href='https://doi.org/10.1109/TC.2025.3584201'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Spiking Neural Networks (SNNs) are event-driven bio-inspired neural networks. Recent research has trained SNN models with accuracy on par with Artificial Neural Networks (ANNs) on computer vision tasks. Due to their sparse, event-based computation, SNNs are particularly promising for energy-efficient processing, especially in event-based vision applications. However, neurons have internal states which evolve over time and keeping track of them can be costly. Hence, efficiently deploying them, especially on memory-constrained edge devices, requires careful mapping of their computation across both spatial and temporal dimensions. To address this issue, we introduce STEMS, Spatial-Temporal Mapping for SNNs. STEMS supports inter-layer mapping exploration, as well as loop tiling optimizations. By applying STEMS inter-layer exploration, we show up to 12× reduction in external memory traffic and up-to 5× reduction in energy consumption. Finally, we show that neuron states may not be needed in early SNN layers. By optimizing neuron states in one of our benchmarks, we reduced neuron states by 20x and improved energy performance by 1.4x saving without sacrificing accuracy.},
+  archive      = {J_TC},
+  author       = {Sherif Eissa and Sander Stuijk and Floran de Putter and Andrea Nardi-Dei and Federico Corradi and Henk Corporaal},
+  doi          = {10.1109/TC.2025.3584201},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {2991-3002},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {STEMS: Spatial-temporal mapping for spiking neural networks},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). BHerd: Accelerating federated learning by selecting beneficial herd of local gradients. <em>TC</em>, <em>74</em>(9), 2977-2990. (<a href='https://doi.org/10.1109/TC.2025.3583827'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {In the domain of computer architecture, Federated Learning (FL) is a paradigm of distributed machine learning in edge systems. However, the systems’ Non-Independent and Identically Distributed (Non-IID) data negatively affect the convergence efficiency of the global model, since only a subset of these data samples is beneficial for accelerating model convergence. In pursuit of this subset, a reliable approach involves determining a measure of validity to rank the samples within the dataset. In this paper, we propose the BHerd strategy, which selects a beneficial herd of local gradients to accelerate the convergence of the FL model. Specifically, we map the distribution of the local dataset to the local gradients and use the Herding strategy to obtain a permutation of the set of gradients, where the more advanced gradients in the permutation are closer to the average of the set of gradients. These top portions of the gradients will be selected and sent to the server for global aggregation. We conduct experiments on different datasets, models, and scenarios by building a prototype system, and experimental results demonstrate that our BHerd strategy is effective in selecting beneficial local gradients to mitigate the effects brought by the Non-IID dataset.},
+  archive      = {J_TC},
+  author       = {Ping Luo and Xiaoge Deng and Ziqing Wen and Tao Sun and Dongsheng Li},
+  doi          = {10.1109/TC.2025.3583827},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {2977-2990},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {BHerd: Accelerating federated learning by selecting beneficial herd of local gradients},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CROSC: Compilation-runtime joint optimization for fast smart contract execution. <em>TC</em>, <em>74</em>(9), 2962-2976. (<a href='https://doi.org/10.1109/TC.2025.3583734'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {State access is a critical part of smart contract execution which seriously affects the efficiency of smart contract execution in the mainstream Ethereum blockchain. To reduce state access latency, existing studies typically require manual source code modifications, which in practice may deliver limited performance gains and shift the burden to developers. In this paper, we propose CROSC to reduce state access latency and improve smart contract execution efficiency by a compilation-runtime joint optimization approach. CROSC consists of three key parts: 1) a runtime memory management mechanism named Fast State Memory (FastSM) to fully utilize the working memory and provide the context for the contract compiler; 2) a State Variable Address Relocation (SVAR) strategy to minimize costly persistent storage operations by precisely redirecting state variable access targets during compilation; 3) a one-shot unpacking design that eliminates frequent decoding overhead for low-bitwidth state variables. Preliminary experimental results highlight that, compared with the baseline compilation and runtime system of Ethereum, CROSC can achieve 2.5$\times$ and 7.5$\times$ speedups for single state load and store operations, respectively. CROSC reduces state access latency by up to 81.3%, and overall contract execution latency by 32.9% on average across 14 typical types of smart contracts. Extended evaluations on ERC20 and ERC721 token standard contracts show that CROSC delivers significant benefits in critical areas while remaining unobtrusive for less intensive state operations.},
+  archive      = {J_TC},
+  author       = {Surong Dai and Jinni Yang and Wenyang Cui and Yaozheng Fang and Ye Lu},
+  doi          = {10.1109/TC.2025.3583734},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {2962-2976},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {CROSC: Compilation-runtime joint optimization for fast smart contract execution},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Human-inspired computing for robust and efficient audio-visual speech recognition. <em>TC</em>, <em>74</em>(9), 2950-2961. (<a href='https://doi.org/10.1109/TC.2025.3582069'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Humans excel at audiovisual speech recognition (AVSR), motivating the development of human-inspired computing for robust and efficient AVSR models. Spiking neural networks (SNNs), mimicking the brain’s information-processing mechanisms, offer a promising foundation. However, research on SNN-based AVSR remains limited, with most audio-visual methods focusing on object or digit recognition. These methods oversimplify multimodal fusion, neglecting modality-specific characteristics and interactions. Additionally, they often rely on future information, increasing recognition latency and limiting real-time applicability. Inspired by human speech perception, this paper proposes a novel human-inspired SNN named HI-AVSNN for AVSR, incorporating three computing characteristics: spike activity, cueing interaction, and causal processing. For cueing interaction, we introduce a Spike-Driven Visual-Cued Speech Processing (sVCSP) scheme, where visual features hierarchically guide speech processing to enhance critical features. For causal processing, we align the temporal dimension of SNN with that of audio-visual inputs and apply temporal masking to ensure only past and current information is used. For spike activity, in addition to SNNs, we incorporate event cameras to capture lip movements as spikes, efficiently encoding visual data like the human retina. Experiments on two event-based AVSR datasets demonstrate our method outperforms existing audio-visual SNN fusion techniques, showcasing the effectiveness, robustness, and efficiency achieved through our human-inspired computing.},
+  archive      = {J_TC},
+  author       = {Qianhui Liu and Jiadong Wang and Yang Wang and Xin Yang and Gang Pan and Haizhou Li},
+  doi          = {10.1109/TC.2025.3582069},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {2950-2961},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Human-inspired computing for robust and efficient audio-visual speech recognition},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An energy-efficient and privacy-aware MEC-enabled IoMT health monitoring system. <em>TC</em>, <em>74</em>(9), 2936-2949. (<a href='https://doi.org/10.1109/TC.2025.3576944'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Advancements in the Internet of Medical Things (IoMT) have made remote patient monitoring increasingly viable. However, challenges persist in safeguarding sensitive data, optimizing resources, and addressing the energy constraints of patient devices. This paper presents a health monitoring framework integrating Mobile Edge Computing (MEC) and sixth-generation (6G) technologies, structured into internal Medical Body Area Networks (int-MBANs) and external communications beyond MBANs (ext-MBANs). For int-MBANs, the proposed OptiBand algorithm optimizes energy consumption, extends device standby time, and considers message timeliness and medical criticality. A key innovation of OptiBand is its incorporation of patient’s device standby time into the resource allocation strategy to address real-world patient needs. For ext-MBANs, the DynaMEC algorithm dynamically balances energy efficiency, privacy protection, latency, and fairness, even under varying patient scales. A latency-aware scheduling mechanism also be introduced to guarantee timely completion of emergency tasks. Theoretical analysis and experimental results confirm the feasibility, convergence, and optimality of both algorithms. These characteristics and advantages of the proposed system make remote patient monitoring through IoMT more feasible and effective.},
+  archive      = {J_TC},
+  author       = {Xiaolu Cheng and Xiaoshuang Xing and Wei Li and Hong Xue and Tong Can},
+  doi          = {10.1109/TC.2025.3576944},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {2936-2949},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {An energy-efficient and privacy-aware MEC-enabled IoMT health monitoring system},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). High-performance in-memory bayesian inference with multi-bit ferroelectric FET. <em>TC</em>, <em>74</em>(9), 2923-2935. (<a href='https://doi.org/10.1109/TC.2025.3576941'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Conventional neural network-based machine learning algorithms often encounter difficulties in data-limited scenarios or where interpretability is critical. Conversely, Bayesian inference-based models excel with reliable uncertainty estimates and explainable predictions. Recently, many in-memory computing (IMC) architectures achieve exceptional computing capacity and efficiency for neural network tasks leveraging emerging non-volatile memory (NVM) technologies. However, their application in Bayesian inference remains limited because the operations in Bayesian inference differ substantially from those in neural networks. In this article, we introduce a compact in-memory Bayesian inference engine with high efficiency and performance utilizing a multi-bit ferroelectric field-effect transistor (FeFET). This design encodes a Bayesian model within a compact FeFET-based crossbar by mapping quantized probabilities to discrete FeFET states. Consequently, the crossbar’s outputs naturally represent the output posteriors of the Bayesian model. Our design facilitates efficient Bayesian inference, accommodating various input types and probability precisions, without additional calculation circuitry. As the first FeFET-based in-memory Bayesian inference engine, our design demonstrates a notable storage density of 26.32 Mb/mm2 and a computing efficiency of 581.40 TOPS/W in a representative Bayesian classification task, indicating a 10.7×/43.4× compactness/efficiency improvement compared to the state-of-the-art alternative. Utilizing the proposed Bayesian inference engine, we develop a feature selection system that efficiently addresses a representative NP-hard optimization problem, showcasing our design’s capability and potential to enhance various Bayesian inference-based applications. Test results suggest that our design identifies the essential features, enhancing the model’s performance while reducing its complexity, surpassing the latest implementation in operation speed and algorithm efficiency by 2.9×/2.0×, respectively.},
+  archive      = {J_TC},
+  author       = {Chao Li and Xuchu Huang and Zhicheng Xu and Bo Wen and Ruibin Mao and Min Zhou and Thomas Kämpfe and Kai Ni and Can Li and Xunzhao Yin and Cheng Zhuo},
+  doi          = {10.1109/TC.2025.3576941},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {2923-2935},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {High-performance in-memory bayesian inference with multi-bit ferroelectric FET},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). SAL-PIM: A subarray-level processing-in-memory architecture with LUT-based linear interpolation for transformer-based text generation. <em>TC</em>, <em>74</em>(9), 2909-2922. (<a href='https://doi.org/10.1109/TC.2025.3576935'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Text generation is a compelling sub-field of natural language processing, aiming to generate human-readable text from input words. Although many deep learning models have been proposed, the recent emergence of transformer-based large language models advances its academic research and industry development, showing remarkable qualitative results in text generation. In particular, the decoder-only generative models, such as generative pre-trained transformer (GPT), are widely used for text generation, with two major computational stages: summarization and generation. Unlike the summarization stage, which can process the input tokens in parallel, the generation stage is difficult to accelerate due to its sequential generation of output tokens through iteration. Moreover, each iteration requires reading a whole model with little data reuse opportunity. Therefore, the workload of transformer-based text generation is severely memory-bound, making the external memory bandwidth system bottleneck. In this paper, we propose a subarray-level processing-in-memory (PIM) architecture named SAL-PIM, the first HBM-based PIM architecture for the end-to-end acceleration of transformer-based text generation. With optimized data mapping schemes for different operations, SAL-PIM utilizes higher internal bandwidth by integrating multiple subarray-level arithmetic logic units (S-ALUs) next to memory subarrays. To minimize the area overhead for S-ALU, it uses shared MACs leveraging slow clock frequency of commands for the same bank. In addition, a few subarrays in the bank are used as look-up tables (LUTs) to handle non-linear functions in PIM, supporting multiple addressing to select sections for linear interpolation. Lastly, the channel-level arithmetic logic unit (C-ALU) is added in the buffer die of HBM to perform the accumulation and reduce-sum operations of data across multiple banks, completing end-to-end inference on PIM. To validate the SAL-PIM architecture, we built a cycle-accurate simulator based on Ramulator. We also implemented the SAL-PIM’s logic units in 28-nm CMOS technology and scaled the results to DRAM technology to verify its feasibility. We measured the end-to-end latency of SAL-PIM when it runs various text generation workloads on the GPT-2 medium model (with 345 million parameters), in which the input and output token numbers vary from 32 to 128 and from 1 to 256, respectively. As a result, with 4.81% area overhead, SAL-PIM achieves up to 4.72× speedup (1.83× on average) over the Nvidia Titan RTX GPU running Faster Transformer Framework.},
+  archive      = {J_TC},
+  author       = {Wontak Han and Hyunjun Cho and Donghyuk Kim and Joo-Young Kim},
+  doi          = {10.1109/TC.2025.3576935},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {2909-2922},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {SAL-PIM: A subarray-level processing-in-memory architecture with LUT-based linear interpolation for transformer-based text generation},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). High-performance hardware implementation of crystals-dilithium based on improved MDC-NTT. <em>TC</em>, <em>74</em>(9), 2896-2908. (<a href='https://doi.org/10.1109/TC.2025.3576934'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The growing threat of quantum computing to traditional cryptographic systems has necessitated the development of robust post-quantum algorithms. Crystal-Dilithium, recently standardized by NIST after a three-round competition, is a leading lattice-based digital signature algorithm designed to meet this need. However, conventional hardware implementations of Dilithium often suffer from inefficiencies and performance bottlenecks. To address these weaknesses, this work presents an optimized hardware design for Dilithium across all security levels. The proposed design features a parallel modular multiplication unit, and an enhanced scaling method to reduce bit width and minimize calibration. Additionally, an improved radix-2 Multipath Delay Commutator Number Theoretic Transform (MDC-NTT) and pipelined parallelization using FIFO and BRAM-based buffers are integrated to maximize operating frequency. Evaluated on the Xilinx Artix-7 platform, our implementation achieves a peak frequency of 191 MHz, delivering speedups of 26.3%, 32.5% and 29.6% for key generation, signature generation and signature verification respectively, compared with state-of-the-art works at the highest security level, along with superior hardware efficiency.},
+  archive      = {J_TC},
+  author       = {Yijun Cui and Junjie Zhong and Bei Wang and Tianyu Xu and Chenghua Wang and Weiqiang Liu},
+  doi          = {10.1109/TC.2025.3576934},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {2896-2908},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {High-performance hardware implementation of crystals-dilithium based on improved MDC-NTT},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient static schedules for fault-tolerant transmissions on shared media. <em>TC</em>, <em>74</em>(9), 2882-2895. (<a href='https://doi.org/10.1109/TC.2025.3576908'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Shared communication media are widely used in many applications including safety-critical applications. However, noise and transient errors can cause transmission failures. We consider the problem of designing and minimizing the length of fault-tolerant static schedules for transmitting messages in these media provided the number of errors fall below some upper bound. To transmit n messages in a medium while tolerating a maximum of f faults, prior work had shown how to construct schedules which had a fault tolerance overhead of $nf/2$. In this paper, we provide an efficient constructive algorithm for producing a schedule for n messages with total length $n\,+\,O(f^{2}\,\mathbf{\log}^{2}\,n)$ that can tolerate f medium errors. We also provide an algorithm for randomly generating fault-tolerant schedules with length $n\,+\,O(f\,\mathbf{\log}(f)\mathbf{\log}(n))$ as well as a technique for quickly verifying these on reasonably small inputs.},
+  archive      = {J_TC},
+  author       = {Scott Sirri and Zhe Wang and Netanel Raviv and Jeremy Fineman and Kunal Agrawal},
+  doi          = {10.1109/TC.2025.3576908},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {2882-2895},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {Efficient static schedules for fault-tolerant transmissions on shared media},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). CBuild: Cluster-oriented collaborative image building for containers. <em>TC</em>, <em>74</em>(9), 2870-2881. (<a href='https://doi.org/10.1109/TC.2025.3575912'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Starting a container needs to build a container image layer-by-layer if the required image is not available. However, the image building involves downloading a large amount of data, which significantly delays the development and deployment of containerized services. To reduce data downloads and accelerate image building, current methods typically focus on improving data sharing through reconstructing images. Unfortunately, these approaches show limited performance improvement in clusters as they only improve data sharing on a single node. In this paper, we find that there are significant duplicated remote file downloads between nodes in a cluster. Accordingly, we propose cBuild, a distributed file cache to minimize costly image data downloads in cluster environments. Specifically, to enable inter-node image data sharing, cBuild designs a non-intrusive interception mechanism based on network namespace, instead of directly detecting building instructions that dirty images. Based on the distribution characteristics of duplicated files in layers, cBuild places image files among nodes in a balanced manner to prevent transfer bottlenecks caused by hotspot nodes and employs a layer-aware searching strategy to quickly locate the desired files. We implement cBuild on the basis of Docker. Experiments show that cBuild improves building speed by up to 15.3$\times$ and reduces the data downloading by 80%.},
+  archive      = {J_TC},
+  author       = {Zhuo Huang and Hao Fan and Bin Tang and Song Wu and Chen Yu and Hai Jin},
+  doi          = {10.1109/TC.2025.3575912},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {2870-2881},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {CBuild: Cluster-oriented collaborative image building for containers},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). In-situ NAS: A plug-and-search neural architecture search framework across hardware platforms. <em>TC</em>, <em>74</em>(9), 2856-2869. (<a href='https://doi.org/10.1109/TC.2025.3569161'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Hardware-aware Neural Architecture Search (HW-NAS) has garnered significant research interest due to its ability to automate the design of neural networks for various hardware platforms. Prevalent HW-NAS frameworks often use fast predictors to estimate network performance, bypassing the time-consuming actual profiling step. However, the resource-intensive nature of building these predictors and their accuracy limitations hinder their practical use in diverse deployment scenarios. In response, we emphasize the indispensable role of actual profiling in HW-NAS and explore efficiency optimization possibilities within the HW-NAS framework. We provide a systematic analysis of profiling overhead in HW-NAS and identify many redundant and unnecessary operations during the search phase. We then optimize the workflow and present In-situ NAS, which leverages similarity features and exploration history to eliminate redundancy and improve runtime efficiency. In-situ NAS also offers simplified interfaces to ease the user’s effort in managing the complex device-dependent profiling flow, enabling plug-and-search functionality across diverse hardware platforms. Experimental results show that In-situ NAS achieves an average 10x speedup across different hardware platforms while reducing the search overhead by 8x compared to predictor-based approaches in various deployment scenarios. Additionally, In-situ NAS consistently discovers networks with better accuracy (about 1.5%) across diverse hardware platforms compared to predictor-based NAS.},
+  archive      = {J_TC},
+  author       = {Hao Lv and Lei Zhang and Ying Wang},
+  doi          = {10.1109/TC.2025.3569161},
+  journal      = {IEEE Transactions on Computers},
+  month        = {9},
+  number       = {9},
+  pages        = {2856-2869},
+  shortjournal = {IEEE Trans. Comput.},
+  title        = {In-situ NAS: A plug-and-search neural architecture search framework across hardware platforms},
+  volume       = {74},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

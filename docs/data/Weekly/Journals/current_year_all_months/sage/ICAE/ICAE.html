@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ICAE</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="icae">ICAE - 19</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Models and tools for supporting sustainability assessment in systems engineering. <em>ICAE</em>, <em>32</em>(3), 326-342. (<a href='https://doi.org/10.1177/10692509251352461'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Since several years, sustainability has become a very important challenge for our societies. Our lifestyles are in the process of making our planet uninhabitable because of the various impacts that we, as human beings, are inflicting on it. As part of these impacts, we focus on Complex Systems designed by humans. It is of uttermost importance to be able to analyze and design complex systems so that the sustainability features are taken into account. More specifically, the contribution of this article is to propose models and tools for the assessment of systems sustainability during the analysis and design phases. The analysis and design of systems may be difficult tasks. It is even more so for complex systems. Since decades, the System Engineering (SE) field has given birth to a family of systemic and multidisciplinary approaches for the design of systems. Among SE approaches, Model-Based System Engineering (MBSE) is a special kind of SE that relies on formalized models as first-class citizens deliverables for all analysis and design activities from requirements elicitation to final design and validation. SysML (Systems Modelling Language) is one of these MBSE approaches. SysML is a well-known, general purpose graphical systems modelling language that supports SE approaches. In addition, SysML allows its own language extension by the creation of new concepts and diagrams. This extension mechanism is known as Domain Specific Modelling Language (DSML). The contributions presented in this paper consist in the definition of an extension of SysML that provides models and tools in order to assess the sustainability of systems during analysis and design. This extension of SysML is based upon a technique, named profile, and proposes new modelling concepts for taking into consideration sustainability issues during systems engineering. Moreover, these new model elements are supported by software tools issued from the MBSE domain and allow the development of ad-hoc software tooling support.},
+  archive      = {J_ICAE},
+  author       = {Vincent Hilaire and Alexis Lalevée},
+  doi          = {10.1177/10692509251352461},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {8},
+  number       = {3},
+  pages        = {326-342},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Models and tools for supporting sustainability assessment in systems engineering},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Design and implementation of an internet of things automatic solar shading system. <em>ICAE</em>, <em>32</em>(3), 309-325. (<a href='https://doi.org/10.1177/10692509251318454'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The implementation of energy-saving solutions becomes increasingly crucial as global energy reserves decline. The integration of automated solar shading systems not only improves living conditions, but also reduces energy costs. This work presents the design and implementation of an Internet of Things (IoT) automatic solar shading system. The developed solar shading includes custom-made louvers that are able to reflect the external light, while being transparent. Moreover, the system is equipped with a microcontroller and appropriate sensors that enable its automated operation based on measurements of the internal and external environmental conditions. A Raspberry Pi acts as a server, enabling the communication between the shading devices and the users, through an open-source home automation operating system (Home Assistant OS). The user-friendly interface, accessible via a web browser or a mobile application, provides essential data such as temperature, humidity, and device status. Alert notifications are sent when specific conditions are met. The overall system is enclosed in two 3D-printed units, ensuring its durability and easy integration into existing or new installations. In summary, this system combines the advantages of automatic solar shadings, including energy efficiency and improved occupant comfort, with smart features for remote control and monitoring through a user-friendly interface. The proposed system has been installed in a window of our laboratory, performing successfully in real-life conditions.},
+  archive      = {J_ICAE},
+  author       = {Georgia Stamou and Spyridon Angelopoulos and Nikolaos Stefanakis and Evangelos Hristoforou},
+  doi          = {10.1177/10692509251318454},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {8},
+  number       = {3},
+  pages        = {309-325},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Design and implementation of an internet of things automatic solar shading system},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Digital shielding for cross-domain wi-fi signal adaptation using relativistic average generative adversarial network. <em>ICAE</em>, <em>32</em>(3), 292-308. (<a href='https://doi.org/10.1177/10692509251339913'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Wi-Fi sensing exploits radio-frequency signals emitted by Wi-Fi devices to analyze environments, enabling tasks such as people tracking, intruder detection, and gesture recognition. Its growing diffusion is driven by the IEEE 802.11bf standard, which facilitates environmental monitoring, and the increasing demand for tools capable of penetrating obstacles while preserving privacy. However, the performance of Wi-Fi-based sensing solutions is influenced by the environment in which signals are acquired. This is critical when extracting spatial and temporal information from the surrounding scene, as such data reflect both environmental structure and interference sources. A main challenge is achieving generalization across domains, that is, ensuring consistent performance under varying conditions, such as different rooms or buildings, without significant accuracy loss. This paper presents a deep model for domain adaptation of Wi-Fi signals by simulating a digital shielding mechanism. The model is based on a Relativistic average Generative Adversarial Network (RaGAN), which mimics physical shielding to suppress domain-specific features while preserving signal integrity. Both the generator and discriminator use Bidirectional Long Short-Term Memory (Bi-LSTM) architectures, enabling modeling of waveform and time-dimension signal characteristics. To support training, an acrylic box lined with electromagnetic shielding fabric, replicating a Faraday cage, was constructed. Spectra from same-sized objects made of different materials were acquired both inside (domain-free) and outside (domain-dependent) the box. A multi-class Support Vector Machine (SVM), trained on shielded spectra and tested on RaGAN-denoised data, achieved 96 percent accuracy. The SVM also distinguished materials, suggesting a promising approach for security systems aimed at identifying the nature and composition of potentially dangerous objects.},
+  archive      = {J_ICAE},
+  author       = {Danilo Avola and Federica Bruni and Gian Luca Foresti and Daniele Pannone and Amedeo Ranaldi},
+  doi          = {10.1177/10692509251339913},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {8},
+  number       = {3},
+  pages        = {292-308},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Digital shielding for cross-domain wi-fi signal adaptation using relativistic average generative adversarial network},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). An automated workflow based on UAV imagery and deep learning methods for monitoring excavation area work. <em>ICAE</em>, <em>32</em>(3), 272-291. (<a href='https://doi.org/10.1177/10692509251340464'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The rapid advancement of Artificial Intelligence (AI) is transforming the construction sector, particularly in site monitoring and safety management. Real-time monitoring enables the automatic detection of work progress issues, anomalies, and hazardous situations. However, no existing Deep Learning (DL)-based system is specifically designed to utilize Unmanned Aerial Vehicles (UAVs) for excavation area monitoring. This study presents an automated workflow that integrates UAV imagery with DL architectures, featuring a 1D Convolutional Neural Network (1D-CNN) for classifying excavation work phases and a VGG16 network for detecting safety fences. These technologies are incorporated into a Decision Support System (DSS), which automates report generation and enhances decision-making by providing structured, data-driven insights. The system was validated in a real-world case study involving an oil and gas construction company, demonstrating its ability to streamline site management tasks and improve safety oversight. Compared to traditional monitoring methods, our approach leverages UAV technology and DL methodologies to provide higher accuracy, efficiency, and scalability in excavation site monitoring. This contribution supports the digital transformation of construction management, offering a practical and innovative solution for real-time progress tracking and compliance verification.},
+  archive      = {J_ICAE},
+  author       = {Riccardo Rosati and Matteo Fabiani and Roberto Pierdicca and Adriano Mancini},
+  doi          = {10.1177/10692509251340464},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {8},
+  number       = {3},
+  pages        = {272-291},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {An automated workflow based on UAV imagery and deep learning methods for monitoring excavation area work},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A cost-effective autonomous underwater system for small size object detection. <em>ICAE</em>, <em>32</em>(3), 258-271. (<a href='https://doi.org/10.1177/10692509251336668'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {According to US National Oceanic and Atmospheric Administration (NOAA), we have only explored five percent of our world ocean. Among the ocean exploration tasks, underwater object detection is a multidisciplinary challenge that extends beyond engineering into fields such as oceanography, marine biology, and environmental science. Scientifically, it involves understanding the complex interactions between sound waves, light, and water, as well as the navigation dynamics within marine environments. The underwater environment presents unique physical challenges for object detection due to factors like light attenuation, turbidity, and the variability of acoustic propagation. This paper introduces a cost-effective autonomous underwater prototype for real-time detection, and localization of small underwater objects (e.g., archaeological artifacts, parts of infrastructures, wreckage debris, but also life forms like fishes, corals etc.) in shallow waters. The system combines object identification with autonomous navigation capabilities. It consists of an autonomous underwater vehicle equipped with sensors, cameras, and localization tools, as well as a ground control station for monitoring and intervention. In particular, we focus on a case study about detecting and reporting the locations of unexploded ordnance materials, contributing to the monitoring of underwater hazards in conflict-affected regions. Key contributions include the integration of a cost-effective autonomous remotely operated vehicle with sensors and software for real-time detection and localization of small underwater objects, as well as an annotated dataset of UXO images, usable as a benchmark.},
+  archive      = {J_ICAE},
+  author       = {Denis Tavaris and Leonardo Scandino and Gian Luca Foresti and Ivan Scagnetto},
+  doi          = {10.1177/10692509251336668},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {8},
+  number       = {3},
+  pages        = {258-271},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {A cost-effective autonomous underwater system for small size object detection},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Segmentation networks for detecting overlapping screws in 3D and color images for industrial quality control. <em>ICAE</em>, <em>32</em>(3), 244-257. (<a href='https://doi.org/10.1177/10692509251328780'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study explores cost-effective, real-time strategies for bin picking in industrial quality control. An anomaly detection solution was developed for a screw production plant, utilizing machine vision and AI to identify overlapping screws as anomalies. Two improvements are proposed to a basic solution initially relying on a laser profiler for depth images. The first improvement applies a Convolutional Neural Network (CNN) to the laser profiler's output, and the second replaces the laser profiler with a camera that captures color images, applying a CNN to its output. The first improvement was tested with real laser profiler data using YOLOv8 and Mask R-CNN segmentation models. After achieving comparable results on the real dataset, the second improvement was tested on multiple synthetic datasets, simulating different scenarios, including setups with mixed screws. Results demonstrated that model performance on color images, represented in the RGB color space (red, green, and blue), was comparable to depth images, validating color cameras as an appropriate alternative. Since color cameras are cheaper and capture images faster, they are well-suited for high-speed quality control systems, offering significant cost and performance advantages. Code is available at: https://github.com/enmarchi/overlapping_screws_geneneration_code .},
+  archive      = {J_ICAE},
+  author       = {Enrico Marchi and Daniele Fornasier and Alberto Miorin and Gian Luca Foresti},
+  doi          = {10.1177/10692509251328780},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {8},
+  number       = {3},
+  pages        = {244-257},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Segmentation networks for detecting overlapping screws in 3D and color images for industrial quality control},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Gravity-constrained simultaneous localization and mapping for suppressing map warping in complex large-scale environments. <em>ICAE</em>, <em>32</em>(3), 229-243. (<a href='https://doi.org/10.1177/10692509251331372'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Simultaneous Localization and Mapping (SLAM) serves as a foundational technology for autonomous systems operating within large-scale, complex environments. Traditional SLAM methodologies, however, are prone to altitude-axis distortions resulting from cumulative errors. To mitigate these issues, Gravity-Constrained SLAM (GC-SLAM) is introduced as a novel computational method that integrates gravity constraints and incremental optimisation to enhance mapping accuracy and computational efficiency. GC-SLAM incorporates a gravity constraint handling actor within the global optimisation algorithm, effectively reducing vertical-axis errors caused by accumulated drift during mapping. Furthermore, an incremental optimisation strategy is employed to manage the computational complexity associated with increasing map size. Performance evaluations of GC-SLAM are conducted on the KITTI dataset and large-scale environments, comparing its effectiveness against state-of-the-art SLAM-based algorithms, including FAST-LIO2, LIO-SAM (Lidar Inertial Odometry and SLAM), Lego-LOAM (Lightweight and Ground-optimised Lidar Odometry and Mapping), and A-LOAM (Advanced Lidar Odometry and Mapping). Experimental results demonstrate that GC-SLAM effectively suppresses vertical-axis distortions, significantly enhances localisation accuracy, and outperforms competing methods.},
+  archive      = {J_ICAE},
+  author       = {Kaiyi Xian and Duo Liu and Gexiang Zhang and Ferrante Neri and Song Chen},
+  doi          = {10.1177/10692509251331372},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {8},
+  number       = {3},
+  pages        = {229-243},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Gravity-constrained simultaneous localization and mapping for suppressing map warping in complex large-scale environments},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Optimizing snake robot locomotion with decomposed gait pattern representation. <em>ICAE</em>, <em>32</em>(2), 196-225. (<a href='https://doi.org/10.1177/10692509251316676'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents novel Gait Decomposition (GD) and Gait Parameter Gradient (GPG) methods for enhancing snake robot control and optimization. Snake robots face challenges in parameter tuning due to their complex dynamics and the need to preserve gait characteristics during control. GD fine-tunes gait parameters while maintaining their characteristics to prevent unintended changes during the application of serpenoid curves, typical in snake robots. A key feature of GD is the use of a motion matrix to represent joint movements, ensuring the preservation of gait characteristics. This methodology classifies the robot’s gait as a motion matrix, aiding in addressing the common challenge of parameter tuning in real-world scenarios. Furthermore, we introduce the GPG algorithm, designed to efficiently optimize gait parameters by adjusting both the curve function parameters and the motion matrix. Simulations validate the effectiveness of our methods, showing that the decomposed gait closely retains the original gait’s characteristics and achieves stable optimization under various conditions. Together, GD and GPG offer significant improvements in the control, adaptability, and practical deployment of snake robots, potentially expanding their applications across various domains.},
+  archive      = {J_ICAE},
+  author       = {Bongsub Song and Insung Ju and Dongwon Yun},
+  doi          = {10.1177/10692509251316676},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {5},
+  number       = {2},
+  pages        = {196-225},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Optimizing snake robot locomotion with decomposed gait pattern representation},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Attention-based hybrid convolutional-long short-term memory network for bridge pier hysteresis and backbone curves prediction. <em>ICAE</em>, <em>32</em>(2), 176-195. (<a href='https://doi.org/10.1177_10692509241301240'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes a solution to the problem of automatically predicting hysteresis and backbone curves of bridge piers under seismic loads. The proposed solution utilizes a stacked hybrid Convolutional Neural Network-bidirectional Cuda Deep Neural Network Long Short Term Memory layer benefiting from the skip connections technique and incorporates a custom task-specific attention layer to enhance its performance. The proposed framework borrows the functional API provided by the Keras library in Python to construct a model taking into account horizontal and vertical ground accelerations, actuator loads in both horizontal and vertical directions, the effective pier height, the second moment of area, and the superstructure mass as input features. The deep learning model demands a substantial amount of data for effective training, validation, and testing. An error-sensitive analysis suggests that a comprehensive dataset should consist of a minimum of 12 sets of pier data for real-time hybrid simulations and 17 sets for cyclic experiments (10 for high-speed and seven for low-speed scenarios). This extensive dataset is deemed essential for the optimal performance of the model. The same deep learning framework and optimization of hyperparameters apply when training real-time hybrid simulations and conducting cyclic tests. After 5000 epochs, the proposed hybrid loss function, combining mean square and mean absolute errors, exhibits a steady and gradual decrease toward near-zero values within the datasets used for training and validation. Additionally, over 93% correlation exists between the predicted unseen time series responses and those derived from empirical measurements. Overall, the proposed deep learning model offers significant advantages, notably in terms of time and cost savings associated with experimental endeavors for new tests. By providing a rapid and accurate understanding of the hysteretic behavior of bridge piers, this model contributes to more efficient bridge design processes. Ultimately, it facilitates precision in design decisions, leading to enhanced accuracy and effectiveness in bridge engineering.},
+  archive      = {J_ICAE},
+  author       = {Omid Yazdanpanah and Minwoo Chang and Ensieh Ali Bakhshi},
+  doi          = {10.1177_10692509241301240},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {5},
+  number       = {2},
+  pages        = {176-195},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Attention-based hybrid convolutional-long short-term memory network for bridge pier hysteresis and backbone curves prediction},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A new methodology for monocular depth estimation with attention mechanisms. <em>ICAE</em>, <em>32</em>(2), 158-175. (<a href='https://doi.org/10.1177/10692509241301587'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Depth estimation from images is fundamental for autonomous navigation of robots, vehicles, drones, and integrating navigation aid systems for people with visual impairments. Despite the challenges of obtaining depth information from complex scenes, advancements in Deep Learning have opened new possibilities. Thus, this work introduces an approach based on recent Convolutional Neural Network architectures and attention mechanisms to enhance monocular image depth estimation, with potential applications in navigation aid systems for the visually impaired. The proposal focuses on implementing a Convolutional Neural Network model with an attention mechanism configuration that has not yet been tested in the literature, primarily integrating the Convolutional Block Attention Module and the Modified Global Context Network in the encoder and decoder, respectively. Unlike stereo camera-based systems, which require complex setups and image pairs, this model simplifies data collection and processing, although it still faces the challenge of requiring large datasets and significant computational capacity. However, it is experimentally possible to demonstrate that these limitations can be overcome by using reduced-resolution images and resizing techniques. The evaluation of the proposed model indicated satisfactory performance compared to state-of-the-art works that use images with resolutions identical to those in this work, validating the comparative tests. It presented an improvement in the Absolute Relative Error of 25.22% and 6.28% in relation to the Root Mean Squared Error. The results highlight the feasibility of conducting Deep Learning research, even with limited hardware resources.},
+  archive      = {J_ICAE},
+  author       = {Ricardo S Casado and Emerson C Pedrino},
+  doi          = {10.1177/10692509241301587},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {5},
+  number       = {2},
+  pages        = {158-175},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {A new methodology for monocular depth estimation with attention mechanisms},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Rapid simulation method for assessing seismic damage to building curtain walls on a regional scale using designed wind load capacity. <em>ICAE</em>, <em>32</em>(2), 143-157. (<a href='https://doi.org/10.3233/ICA-240746'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study introduces a rapid simulation method for assessing seismic damage to building curtain walls at a regional scale. Although the results are approximate, this approach enables quick evaluations, making it an important instrument for emergency responses during disaster situations. This method’s independence from numerical models is a noteworthy advantage. Unlike conventional approaches, it eliminates the need for structural analysis models when evaluating the seismic capacities of curtain walls regionally. Creating reliable structural analysis models is both time-consuming and labor-intensive, primarily due to the detailed design information they require. In contrast, the presented method leverages the wind load capacities for which curtain walls are designed. It is based on the core premise that most curtain walls, primarily designed for wind resistance, possess wind load capacities that could serve as substitutes for their seismic capacities, even if they are not explicitly designed for such seismic loads. To assess the method’s effectiveness, it was applied to seismic damage assessments across regions experiencing varying wind intensities: weak, moderate, and strong. The results suggest the likelihood of curtain walls sustaining seismic damage in regions with weak wind could be five times higher than in regions with strong wind. This underscores the importance of seismic design considerations for curtain walls. Moreover, the findings closely match the actual seismic damage assessment data from a region with a moderate to strong wind intensity.},
+  archive      = {J_ICAE},
+  author       = {Jun Su Park and Insub Choi and JunHee Kim and Hyo Seon Park},
+  doi          = {10.3233/ICA-240746},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {5},
+  number       = {2},
+  pages        = {143-157},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Rapid simulation method for assessing seismic damage to building curtain walls on a regional scale using designed wind load capacity},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Identification and explanation of disinformation in wiki data streams. <em>ICAE</em>, <em>32</em>(2), 126-142. (<a href='https://doi.org/10.1177/10692509241306580'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Social media platforms, increasingly used as news sources for varied data analytics, have transformed how information is generated and disseminated. However, the unverified nature of this content raises concerns about trustworthiness and accuracy, potentially negatively impacting readers’ critical judgment due to disinformation. This work aims to contribute to the automatic data quality validation field, addressing the rapid growth of online content on wiki pages. Our scalable solution includes stream-based data processing with feature engineering, feature analysis and selection, stream-based classification, and real-time explanation of prediction outcomes. The explainability dashboard is designed for the general public, who may need more specialized knowledge to interpret the model’s prediction. Experimental results on two datasets attain approximately 90% values across all evaluation metrics, demonstrating robust and competitive performance compared to works in the literature. In summary, the system assists editors by reducing their effort and time in detecting disinformation.},
+  archive      = {J_ICAE},
+  author       = {Francisco de Arriba-Pérez and Silvia García-Méndez and Fátima Leal and Benedita Malheiro and Juan C Burguillo},
+  doi          = {10.1177/10692509241306580},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {5},
+  number       = {2},
+  pages        = {126-142},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Identification and explanation of disinformation in wiki data streams},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Evading model poisoning attacks in federated learning by a long-short-term-memory-based approach. <em>ICAE</em>, <em>32</em>(2), 111-125. (<a href='https://doi.org/10.1177/10692509241301588'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Federated Learning is designed to build a global model from a set of local learning tasks carried out by several clients. Each client trains the global model on local data and sends back only the computed model updates. Although this approach preserves data privacy, several issues arise, and model poisoning is one of the most significant issues. According to this attack, a limited number of compromised clients cooperate to cause the corruption of the global model by sending back malicious model updates. A common countermeasure to model poisoning involves discarding model updates that differ from the majority more than a suitable threshold. However, several attacks still occur that elude this countermeasure, such as LIE attack, which aims to introduce an error in the model that is less than the threshold. In this paper, we propose a new approach to detect malicious updates that is based on the use of an LSTM network suitably built and trained. The experimental validation shows that our approach is able to disarm LIE and Fang attacks, which are the most effective in this context.},
+  archive      = {J_ICAE},
+  author       = {Marco Arazzi and Gianluca Lax and Antonino Nocera},
+  doi          = {10.1177/10692509241301588},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {5},
+  number       = {2},
+  pages        = {111-125},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Evading model poisoning attacks in federated learning by a long-short-term-memory-based approach},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Combining deep learning methods and rule-based systems for automatic parking space detection. <em>ICAE</em>, <em>32</em>(1), 97-108. (<a href='https://doi.org/10.3233/ICA-240745'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper presents an Automatic Parking Space Detection (APSD) algorithm designed to reduce traffic in cities while offering an information system of available parking zones. The main aim of such a system lies in its ability to identify parking spaces in a distributed manner, achieved by installing multiple APSD systems across a fleet of vehicles. This fleet, during its regular operations, communicates the availability of parking spaces to a centralized information system. Our methodology employs a rule-based system that seamlessly integrates a variety of neural networks for different specific tasks. These tasks include depth estimation, road segmentation, and vehicle detection. This approach would fall into a modular category instead of an end-to-end solution, using the Málaga Urban Dataset in the experiments. We present a preliminary experiment for parameter settings and an ablation study to quantify each subsystem contribution to the results. The proposed system achieves a parking space detection F1 score of 0.726.},
+  archive      = {J_ICAE},
+  author       = {Susana P. De Luelmo and Francisco J. Garcia-Espinosa and Antonio S. Montemayor and Juan José Pantrigo},
+  doi          = {10.3233/ICA-240745},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {2},
+  number       = {1},
+  pages        = {97-108},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Combining deep learning methods and rule-based systems for automatic parking space detection},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A parametric and feature-based CAD dataset to support human-computer interaction for advanced 3D shape learning. <em>ICAE</em>, <em>32</em>(1), 75-96. (<a href='https://doi.org/10.3233/ICA-240744'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {3D shape learning is an important research topic in computer vision, in which the datasets play a critical role. However, most of the existing 3D datasets use voxels, point clouds, mesh, and B-rep, which are not parametric and feature-based. Thus they can not support the generation of real-world engineering computer-aided design (CAD) models with complicated shape features. Furthermore, they are based on 3D geometry results without human-computer interaction (HCI) history. This work is the first to provide a full parametric and feature-based CAD dataset with a selection mechanism to support HCI in 3D learning. First, unlike existing datasets, mainly composed of simple features (typical sketch and extrude), we devise complicated engineering features, such as fillet, chamfer, mirror, pocket, groove, and revolve. Second, different from the monotonous combination of features, we invent a select mechanism to mimic how human focuses on and selects a particular topological entity. The proposed mechanism establishes the relationships among complicated engineering features, which fully express the design intention and design knowledge of human CAD engineers. Therefore, it can process advanced 3D features for real-world engineering shapes. The experiments show that the proposed dataset outperforms existing CAD datasets in both reconstruction and generation tasks. In quantitative experiment, the proposed dataset demonstrates better prediction accuracy than other parametric datasets. Furthermore, CAD models generated from the proposed dataset comply with semantics of the human CAD engineers and can be edited and redesigned via mainstream industrial CAD software.},
+  archive      = {J_ICAE},
+  author       = {Rubin Fan and Fazhi He and Yuxin Liu and Yupeng Song and Linkun Fan and Xiaohu Yan},
+  doi          = {10.3233/ICA-240744},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {2},
+  number       = {1},
+  pages        = {75-96},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {A parametric and feature-based CAD dataset to support human-computer interaction for advanced 3D shape learning},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A high-level simulator for network-on-chip. <em>ICAE</em>, <em>32</em>(1), 57-73. (<a href='https://doi.org/10.3233/ICA-240743'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This study presents a high-level simulator for Network-on-Chip (NoC), designed for many-core architectures, and integrated with the PlatEMO platform. The motivation for developing this tool arose from the need to evaluate the behavior of application mapping algorithms and the routing, both aspects are essential in the implementation and design of NoC architectures. This analysis underscored the importance of having effective NoC simulators as tools that allow for studying and comparing various network technologies while ensuring a controlled simulation environment. During this investigation and evaluation, some simulators, such as Noxim, NoCTweak, and NoCmap, among others, offered configurable parameters for application traffic, options to synthetically define topology and packet traffic patterns. Additionally, they include mapping options that optimize latency and energy consumption, routing algorithms, technological settings such as the CMOS process, and measurement options for evaluating performance metrics such as throughput and power usage. However, while these simulators meet detailed technical demands, they are mostly restricted to analyzing the low-level elements of the architecture, thus hindering quick and easy under- standing for non-specialists. This insight underscored the challenge in developing a tool that balances detailed analysis with a comprehensive learning perspective, considering the specific restrictions of each simulator analyzed. Experiments demonstrated the proposed simulator efficacy in handling algorithms like GA, PSO, and SA variant, and, surprisingly, revealed limitations of the XY algorithm in Mesh topologies, indicating the need for further investigation to confirm these findings. Future work will expand the simulator functionalities, incorporating a broader range of algorithms and performance metrics, to establish it as an indispensable tool for research and development in NoCs.},
+  archive      = {J_ICAE},
+  author       = {Paulo Cesar Donizeti Paris and Emerson Carlos Pedrino},
+  doi          = {10.3233/ICA-240743},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {2},
+  number       = {1},
+  pages        = {57-73},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {A high-level simulator for network-on-chip},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A weakly supervised active learning framework for non-intrusive load monitoring. <em>ICAE</em>, <em>32</em>(1), 39-56. (<a href='https://doi.org/10.3233/ICA-240738'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Energy efficiency is at a critical point now with rising energy prices and decarbonisation of the residential sector to meet the global NetZero agenda. Non-Intrusive Load Monitoring is a software-based technique to monitor individual appliances inside a building from a single aggregate meter reading and recent approaches are based on supervised deep learning. Such approaches are affected by practical constraints related to labelled data collection, particularly when a pre-trained model is deployed in an unknown target environment and needs to be adapted to the new data domain. In this case, transfer learning is usually adopted and the end-user is directly involved in the labelling process. Unlike previous literature, we propose a combined weakly supervised and active learning approach to reduce the quantity of data to be labelled and the end user effort in providing the labels. We demonstrate the efficacy of our method comparing it to a transfer learning approach based on weak supervision. Our method reduces the quantity of weakly annotated data required by up to 82.6–98.5% in four target domains while improving the appliance classification performance.},
+  archive      = {J_ICAE},
+  author       = {Giulia Tanoni and Tamara Sobot and Emanuele Principi and Vladimir Stankovic and Lina Stankovic and Stefano Squartini},
+  doi          = {10.3233/ICA-240738},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {2},
+  number       = {1},
+  pages        = {39-56},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {A weakly supervised active learning framework for non-intrusive load monitoring},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Multi-label classification with imbalanced classes by fuzzy deep neural networks. <em>ICAE</em>, <em>32</em>(1), 25-38. (<a href='https://doi.org/10.3233/ICA-240736'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Multi-label classification is an advantageous technique for managing uncertainty in classification problems where each data instance is associated with several labels simultaneously. Such situations are frequent in real-world scenarios, where decisions rely on imprecise or noisy data and adaptable classification methods are preferred. However, the problem of class imbalance represents a common characteristic of several multi-label datasets, in which the distribution of samples and their corresponding labels is non-uniform across the data space. In this paper, we propose a multi-label classification approach utilizing fuzzy logic in order to deal with the class imbalance problem. To eliminate the need for an expert to determine the logical rules of inference, deep neural networks are adopted, which have proven to be exceptionally effective for such problems. By combining both fuzzy inference systems and deep neural networks, the strengths and weaknesses of each approach can be mitigated. As a further development, a symbolic representation of time series is put in place to reduce data dimensionality and speed up the training procedure. This allows for more flexibility in model application, in particular with respect to time constraints arising from the causality of observed time series. Tests carried out on a multi-label classification dataset related to the current and voltage profiles of several household appliances show that the proposed model outperforms four baseline models for time series classification.},
+  archive      = {J_ICAE},
+  author       = {Federico Succetti and Antonello Rosato and Massimo Panella},
+  doi          = {10.3233/ICA-240736},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {2},
+  number       = {1},
+  pages        = {25-38},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Multi-label classification with imbalanced classes by fuzzy deep neural networks},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Efficient surface defect detection in industrial screen printing with minimized labeling effort. <em>ICAE</em>, <em>32</em>(1), 3-23. (<a href='https://doi.org/10.3233/ICA-240742'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {As part of the evolving Industry 4.0 landscape, machine learning-based visual inspection plays a key role in enhancing production efficiency. Screen printing, a versatile and cost-effective manufacturing technique, is widely applied in industries like electronics, textiles, and automotive. However, the production of complex multilayered designs is error-prone, resulting in a variety of defect appearances and classes. These defects can be characterized as small in relation to large sample areas and weakly pronounced. Sufficient defect visualization and robust defect detection methods are essential to address these challenges, especially considering the permitted design variability. In this work, we present a novel automatic visual inspection system for surface defect detection on decorated foil plates. Customized optical modalities, integrated into a sequential inspection procedure, enable defect visualization of production-related defect classes. The introduced patch-wise defect detection methods, designed to leverage less labeled data, prove effective for industrial defect detection, meeting the given process requirements. In this context, we propose an industry-applicable and scalable data preprocessing workflow that minimizes the overall labeling effort while maintaining high detection performance, as known in supervised settings. Moreover, the presented methods, not relying on any labeled defective training data, outperformed a state-of-the-art unsupervised anomaly detection method in terms of defect detection performance and inference speed.},
+  archive      = {J_ICAE},
+  author       = {Paul Josef Krassnig and Matthias Haselmann and Michael Kremnitzer and Dieter Paul Gruber},
+  doi          = {10.3233/ICA-240742},
+  journal      = {Integrated Computer-Aided Engineering},
+  month        = {2},
+  number       = {1},
+  pages        = {3-23},
+  shortjournal = {Integrated Computer-Aided Engineering},
+  title        = {Efficient surface defect detection in industrial screen printing with minimized labeling effort},
+  volume       = {32},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

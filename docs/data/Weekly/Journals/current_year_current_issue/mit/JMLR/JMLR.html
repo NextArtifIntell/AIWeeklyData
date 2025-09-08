@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JMLR</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="jmlr">JMLR - 1</h2>
+<ul>
+<li><details>
+<summary>
+(2025). DRM revisited: A complete error analysis. <em>JMLR</em>, <em>26</em>(115), 1-76. (<a href='https://jmlr.org/papers/v26/24-1258.html'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {It is widely known that the error analysis for deep learning involves approximation, statistical, and optimization errors. However, it is challenging to combine them together due to overparameterization. In this paper, we address this gap by providing a comprehensive error analysis of the Deep Ritz Method (DRM). Specifically, we investigate a foundational question in the theoretical analysis of DRM under the overparameterized regime: given a target precision level, how can one determine the appropriate number of training samples, the key architectural parameters of the neural networks, the step size for the projected gradient descent optimization procedure, and the requisite number of iterations, such that the output of the gradient descent process closely approximates the true solution of the underlying partial differential equation to the specified precision?},
+  archive      = {J_JMLR},
+  author       = {Yuling Jiao and Ruoxuan Li and Peiying Wu and Jerry Zhijian Yang and Pingwen Zhang},
+  journal      = {Journal of Machine Learning Research},
+  number       = {115},
+  pages        = {1-76},
+  shortjournal = {J. Mach. Learn. Res.},
+  title        = {DRM revisited: A complete error analysis},
+  url          = {https://jmlr.org/papers/v26/24-1258.html},
+  volume       = {26},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

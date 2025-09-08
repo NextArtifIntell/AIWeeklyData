@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FDATA</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="fdata">FDATA - 7</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Editorial: Interdisciplinary approaches to complex systems: Highlights from FRCCS 2023/24. <em>FDATA</em>, <em>8</em>, 1666305. (<a href='https://doi.org/10.3389/fdata.2025.1666305'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {The study of complex systems has emerged as one of the most compelling and transformative fields in contemporary science, offering profound insights into the fundamental nature of organization, emergence, and adaptation across scales—from molecular networks to global ecosystems, from neural circuits to social institutions. This research topic presents a curated selection of research contributions that exemplify the rich interdisciplinary dialogue fostered by the France’s International Conference on Complex Systems (FRCCS) through its third and fourth editions, held in Le Havre (2023) and Montpellier (2024). The contributions in this special issue exemplify the evolution of complexity science toward data-driven, computationally sophisticated, and socially relevant research. The selected articles demonstrate how traditional complexity science foundations are being enhanced by cutting-edge computational methods and applied to pressing contemporary challenges.For instance, the exploration of physics-guided machine learning approaches for predicting chaotic system dynamics illustrates how domain knowledge can enhance data-driven methods, offering new pathways for understanding and forecasting complex behaviors. Feng et al. introduce a Physics-Guided Learning (PGL) approach that combines empirical observations with fundamental physical principles to improve prediction accuracy in chaotic systems over extended time horizons. Rather than relying solely on data patterns or physical equations, the method creates a hybrid framework that integrates three complementary components: a Data-Driven Component (for extracting patterns and relationships from historical observations), a Physics-Guided Component (that incorporates physical laws to guide and constrain the learning process) and a Nonlinear Learning Component to combines insights from both data and physics. Evaluation on six dynamical systems, each exhibiting unique chaotic behaviors, show the significance of the proposed approach. Always at the edge between complex systems and AI, the evaluation of fine-tuning versus prompting strategies for knowledge graph construction using large language models demonstrates how modern AI architectures can be leveraged to extract and represent complex relationships from unstructured data. Ghanem and Cruz focus on how to exploit Large Language Models (LLMs) for a Text-to-Knowledge Graph (T2KG) construction task. By testing different strategies (Zero-Shot Prompting, Few-Shot Prompting, and Fine-Tuning) on three LLMs (Llama2, Mistral, and Starling) they show the potential of these techniques in the context of Knowledge Graph construction. While, also through the introduction of nuanced evaluation metrics, the authors show how Fine-Tuning tends to outperform other strategies, they also emphasize how this approach can limit generalization capablities of the resulting model.Urban Systems and Spatial Complexity emerge as a central theme, reflecting the growing recognition of cities as archetypal complex systems. Bogomolov et al. develop a methodological framework for urban delineation using passive mobile phone data to analyze commute patterns in the city of Brno (Czech Republic). The authors focus on the analysis of bidirectional commute flows, by examining movement patterns in urban and suburban networks, creating a comprehensive view of mobility that spans city boundaries. This allows to identify mobility patterns and communities (based on clustering techniques) that are based on actual movements, rather than on road networks or administrative boundaries. The results show how this framework can be helpful for urban planners, since it allows to assess the centrality of certain zones regardless of their geographical location (e.g., areas with shopping centers being considered central for their economic activity, even if geographically peripheral). Complementing this, the analysis of city composition and accessibility statistics in and around Paris provides concrete insights into how urban complexity manifests in terms of spatial organization and resource distribution. Thaury et al. examine whether Paris truly functions as a “15-minute city” where residents can access essential amenities within a 15-minute walk or bike ride, using a combination of open-source mapping data and official socio-economic statistics. The authors developed a comprehensive accessibility framework that goes beyond simply counting nearby amenities to measure actual accessibility based on supply, demand, and distance factors. The analysis reveals a stark dichotomy within Paris itself, with a highly accessible and well-equipped center contrasting sharply with less-served peripheral neighborhoods. A significant finding concerns socio- economic inequalities in accessibility. Poorer neighborhoods, predominantly located on the city’s edges, have substantially less access to amenities. The key takeaway message of the work is that, starting from the observation that Paris fails to meet the 15-minute city ideal due to persistent center-periphery inequalities, successful implementation of this concept requires addressing existing socio-economic disparities and adopting a metropolitan-scale perspective rather than focusing solely on the central municipality.Technological Integrity and Security in complex systems has gained paramount importance in our interconnected world. hrefhttps://doi.org/10.3389/fdata.2025.1521653Rani et al. address the growing threat of deepfake technology, which has reached alarming levels with approximately 71% of people falling victim to fake video-based blackmail and manipulation. The researchers developed a hybrid architecture that combines transformer and Linformer models (i.e., transformer variants optimized for computational efficiency) to create a more efficient and accurate deepfake detection system. The research demonstrates that the use of larger patch sizes improve performance by enabling better capture of fine-grained features and spatial details, which enhances the model’s ability to distinguish between authentic and manipulated content. This approach addresses the critical need for detection systems that are both highly accurate and computationally feasible for real-world deployment.Sustainable Development and Knowledge Systems represent an increasingly crucial application domain. Paletta et al. introduce a methodological framework for visualizing the alignment between complex research systems and the Sustainable Development Goals (SDGs). The authors use a French research institute, namely CIRAD (French Agricultural Research Centre for International Development) as case in point, showing how the proposed visualization allows to explore thematic priorities and institutional collaborations. The integration of complex systems theory and network analysis enhances understanding of SDG interlinkages and provides actionable insights for strategic decision-making in research governance.The emphasis on research with high societal impact has been a distinguishing feature of FRCCS. The contributions in this special issue demonstrate how complexity science is moving beyond academic discourse to inform policy, guide intervention strategies, and shape technological development. This applied dimension does not diminish the theoretical rigor of the work but rather enhances its relevance and validates its insights.},
+  archive      = {J_FDATA},
+  author       = {Interdonato, Roberto and Cherifi, Hocine},
+  doi          = {10.3389/fdata.2025.1666305},
+  journal      = {Frontiers in Big Data},
+  month        = {8},
+  pages        = {1666305},
+  shortjournal = {Front. Big Data},
+  title        = {Editorial: Interdisciplinary approaches to complex systems: Highlights from FRCCS 2023/24},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Automated road surface classification in OpenStreetMap using MaskCNN and aerial imagery. <em>FDATA</em>, <em>8</em>, 1657320. (<a href='https://doi.org/10.3389/fdata.2025.1657320'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {IntroductionOpenStreetMap (OSM) road surface data is critical for navigation, infrastructure monitoring, and urban planning but is often incomplete or inconsistent. This study addresses the need for automated validation and classification of road surfaces by leveraging high-resolution aerial imagery and deep learning techniques.MethodsWe propose a MaskCNN-based deep learning model enhanced with attention mechanisms and a hierarchical loss function to classify road surfaces into four types: asphalt, concrete, gravel, and dirt. The model uses NAIP (National Agriculture Imagery Program) aerial imagery aligned with OSM labels. Preprocessing includes georeferencing, data augmentation, label cleaning, and class balancing. The architecture comprises a ResNet-50 encoder with squeeze-and-excitation blocks and a U-Net-style decoder with spatial attention. Evaluation metrics include accuracy, mIoU, precision, recall, and F1-score.ResultsThe proposed model achieved an overall accuracy of 92.3% and a mean Intersection over Union (mIoU) of 83.7%, outperforming baseline models such as SVM (81.2% accuracy), Random Forest (83.7%), and standard U-Net (89.6%). Class-wise performance showed high precision and recall even for challenging surface types like gravel and dirt. Comparative evaluations against state-of-the-art models (COANet, SA-UNet, MMFFNet) also confirmed superior performance.DiscussionThe results demonstrate that combining NAIP imagery with attention-guided CNN architectures and hierarchical loss functions significantly improves road surface classification. The model is robust across varied terrains and visual conditions and shows potential for real-world applications such as OSM data enhancement, infrastructure analysis, and autonomous navigation. Limitations include label noise in OSM and class imbalance, which can be addressed through future work involving semi-supervised learning and multimodal data integration.},
+  archive      = {J_FDATA},
+  author       = {Parvathi, R. and Pattabiraman, V. and Saxena, Nancy and Mishra, Aakarsh and Mishra, Utkarsh and Pandey, Ansh},
+  doi          = {10.3389/fdata.2025.1657320},
+  journal      = {Frontiers in Big Data},
+  month        = {8},
+  pages        = {1657320},
+  shortjournal = {Front. Big Data},
+  title        = {Automated road surface classification in OpenStreetMap using MaskCNN and aerial imagery},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Basrah score: A novel machine learning-based score for differentiating iron deficiency anemia and beta thalassemia trait using RBC indices. <em>FDATA</em>, <em>8</em>, 1634133. (<a href='https://doi.org/10.3389/fdata.2025.1634133'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Iron deficiency anemia (IDA) and beta-thalassemia trait (BTT) are prevalent causes of microcytic anemia, often presenting overlapping hematological features that pose diagnostic challenges and necessitate prompt and precise management. Traditional discrimination indices—such as the Mentzer Index, Ihsan's formula, and the England and Fraser criteria—have been extensively applied in both research and clinical settings; however, their diagnostic performance varies considerably across different populations and datasets. This study proposes a novel and interpretable diagnostic model, the Basrah Score, developed using Elastic Net Logistic Regression (ENLR). This machine learning–based approach yields a flexible discrimination function that adapts to variations in clinical and environmental factors. The model was trained and validated on a local dataset of 2,120 individuals (1,080 with IDA and 1,040 with BTT), and was benchmarked against eight conventional indices. The Basrah Score demonstrated superior diagnostic performance, with an accuracy of 96.7%, a sensitivity of 95.0%, and a specificity of 98.6%. These results underscore the importance of incorporating advanced pre-processing techniques, class balancing, hyperparameter optimization, and rigorous cross-validation to ensure the robustness of diagnostic models. Overall, this research highlights the potential of integrating interpretable machine learning models with established clinical parameters to improve diagnostic accuracy in hematological disorders, particularly in resource-constrained settings.},
+  archive      = {J_FDATA},
+  author       = {Mahmood, Salma A. and Khalaf, Asaad A. and Hamadi, Saad S.},
+  doi          = {10.3389/fdata.2025.1634133},
+  journal      = {Frontiers in Big Data},
+  month        = {8},
+  pages        = {1634133},
+  shortjournal = {Front. Big Data},
+  title        = {Basrah score: A novel machine learning-based score for differentiating iron deficiency anemia and beta thalassemia trait using RBC indices},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Artificial intelligence for surgical outcome prediction in glaucoma: A systematic review. <em>FDATA</em>, <em>8</em>, 1605018. (<a href='https://doi.org/10.3389/fdata.2025.1605018'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {IntroductionGlaucoma is a leading cause of irreversible blindness, and its rising global prevalence has led to a significant increase in glaucoma surgeries. However, predicting postoperative outcomes remains challenging due to the complex interplay of patient factors, surgical techniques, and postoperative care. Artificial intelligence (AI) has emerged as a promising tool for enhancing predictive accuracy in clinical decision-making.MethodsThis systematic review was conducted to evaluate the current evidence on the use of AI to predict surgical outcomes in glaucoma patients. A comprehensive search of Medline, Embase, Web of Science, and Scopus was performed. Studies were included if they applied AI models to glaucoma surgery outcome prediction.ResultsSix studies met inclusion criteria, collectively analyzing 4,630 surgeries. A variety of algorithms were applied, including random forests, support vector machines, and neural networks. Overall, AI models consistently outperformed traditional statistical approaches, with the best-performing model achieving an accuracy of 87.5%. Key predictors of outcomes included demographic factors (e.g., age), systemic health indicators (e.g., smoking status and body mass index), and ophthalmic parameters (e.g., baseline intraocular pressure, central corneal thickness, mitomycin C use).DiscussionWhile AI models demonstrated superior performance to traditional statistical approaches, the lack of external validation and standardized surgical success definitions limit their clinical applicability. This review highlights both the promise and the current limitations of artificial intelligence in glaucoma surgery outcome prediction, emphasizing the need for prospective, multicenter studies, publicly available datasets, and standardized evaluation metrics to enhance the generalizability and clinical utility of future models.Systematic review registrationhttps://www.crd.york.ac.uk/PROSPERO/view/CRD42024621758, identifier: CRD42024621758.},
+  archive      = {J_FDATA},
+  author       = {Kailani, Zeena and Kim, Lauren and Bierbrier, Joshua and Balas, Michael and Mathew, David J.},
+  doi          = {10.3389/fdata.2025.1605018},
+  journal      = {Frontiers in Big Data},
+  month        = {8},
+  pages        = {1605018},
+  shortjournal = {Front. Big Data},
+  title        = {Artificial intelligence for surgical outcome prediction in glaucoma: A systematic review},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). The global burden of adverse effects of medical treatment: A 30-year socio-demographic and geographic analysis using GBD 2021 data. <em>FDATA</em>, <em>8</em>, 1590551. (<a href='https://doi.org/10.3389/fdata.2025.1590551'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {BackgroundAdverse effects of medical treatment (AEMT) pose critical global health challenges, yet comprehensive analyses of their long-term burden across socio-demographic contexts remain limited. This study evaluates 30-year trends (1990–2021) in AEMT-related mortality, disability-adjusted life years (DALYs), years lived with disability (YLDs), and years of life lost (YLLs) across 204 countries using Global Burden of Disease (GBD) 2021 data.MethodsAge-standardized rates (ASRs) were stratified by sociodemographic index (SDI) quintiles. Frontier efficiency analysis quantified health loss boundaries relative to SDI, while concentration (C) and slope indices of inequality (SII) assessed health inequities. Predictive models projected trends to 2035.ResultsGlobal age-standardized mortality rates (ASDR) declined by 36.3%, with low-SDI countries achieving the steepest reductions (5.31 to 3.71/100,000) but remaining 3.9-fold higher than high-SDI nations. DALYs decreased by 39.7% (106.49 to 64.19/100,000), driven by infectious disease control in low-SDI regions. High-SDI countries experienced post-2010 mortality rebounds (0.86 to 0.95/100,000), linked to aging and complex interventions. YLLs declined by 40.3% (104.87 to 62.66/100,000), while YLDs peaked transiently (2010: 1.95/100,000). Frontier analysis revealed low-SDI countries lagged furthest from optimal health outcomes, and inequality indices highlighted entrenched disparities (C: −0.34 for premature mortality). Projections suggest continued declines in ASDR, DALYs, and YLLs by 2035, contingent on addressing antimicrobial resistance and surgical overuse.ConclusionsSDI-driven inequities necessitate tailored interventions: low-SDI regions require strengthened infection control and primary care, while high-SDI systems must mitigate overmedicalization risks. Hybrid strategies integrating digital health and cross-sector collaboration are critical for equitable burden reduction.},
+  archive      = {J_FDATA},
+  author       = {Lu, Hanxin and Cheng, Xinyan and Xiong, Jun},
+  doi          = {10.3389/fdata.2025.1590551},
+  journal      = {Frontiers in Big Data},
+  month        = {8},
+  pages        = {1590551},
+  shortjournal = {Front. Big Data},
+  title        = {The global burden of adverse effects of medical treatment: A 30-year socio-demographic and geographic analysis using GBD 2021 data},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Toward more realistic career path prediction: Evaluation and methods. <em>FDATA</em>, <em>8</em>, 1564521. (<a href='https://doi.org/10.3389/fdata.2025.1564521'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Predicting career trajectories is a complex yet impactful task, offering significant benefits for personalized career counseling, recruitment optimization, and workforce planning. However, effective career path prediction (CPP) modeling faces challenges including highly variable career trajectories, free-text resume data, and limited publicly available benchmark datasets. In this study, we present a comprehensive comparative evaluation of CPP models—linear projection, multilayer perceptron (MLP), LSTM, and large language models (LLMs)—across multiple input settings and two recently introduced public datasets. Our contributions are threefold: (1) we propose novel model variants, including an MLP extension and a standardized LLM approach, (2) we systematically evaluate model performance across input types (titles only vs. title+description, standardized vs. free-text), and (3) we investigate the role of synthetic data and fine-tuning strategies in addressing data scarcity and improving model generalization. Additionally, we provide a detailed qualitative analysis of prediction behaviors across industries, career lengths, and transitions. Our findings establish new baselines, reveal the trade-offs of different modeling strategies, and offer practical insights for deploying CPP systems in real-world settings.},
+  archive      = {J_FDATA},
+  author       = {Senger, Elena and Campbell, Yuri and van der Goot, Rob and Plank, Barbara},
+  doi          = {10.3389/fdata.2025.1564521},
+  journal      = {Frontiers in Big Data},
+  month        = {8},
+  pages        = {1564521},
+  shortjournal = {Front. Big Data},
+  title        = {Toward more realistic career path prediction: Evaluation and methods},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). A fashion product recommendation based on adaptive VPKNN-NET algorithm without fuzzy similar image. <em>FDATA</em>, <em>8</em>, 1557779. (<a href='https://doi.org/10.3389/fdata.2025.1557779'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {IntroductionRecommender systems are essential in e-commerce for assisting users in navigating large product catalogs, particularly in visually driven domains like fashion. Traditional keyword-based systems often struggle to capture subjective style preferences.MethodsThis study proposes a novel fashion recommendation framework using an Adaptive VPKNN-net algorithm. The model integrates deep visual feature extraction using a pre-trained VGG16 Convolutional Neural Network (CNN), dimensionality reduction through Principal Component Analysis (PCA), and a modified K-Nearest Neighbors (KNN) algorithm that combines Euclidean and cosine similarity metrics to enhance visual similarity assessment.ResultsExperiments were conducted using the “Fashion Product Images (Small)” dataset from Kaggle. The proposed system achieved high accuracy (98.69%) and demonstrated lower RMSE (0.8213) and MAE (0.6045) compared to baseline models such as Random Forest, SVM, and standard KNN.DiscussionThe proposed Adaptive VPKNN-net framework significantly improves the precision, interpretability, and efficiency of visual fashion recommendations. It eliminates the limitations of fuzzy similarity models and offers a scalable solution for visually oriented e-commerce platforms, particularly in cold-start scenarios and low-data conditions.},
+  archive      = {J_FDATA},
+  author       = {Sabitha, R. and Sundar, D.},
+  doi          = {10.3389/fdata.2025.1557779},
+  journal      = {Frontiers in Big Data},
+  month        = {8},
+  pages        = {1557779},
+  shortjournal = {Front. Big Data},
+  title        = {A fashion product recommendation based on adaptive VPKNN-NET algorithm without fuzzy similar image},
+  volume       = {8},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

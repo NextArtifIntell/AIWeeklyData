@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SROB</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="srob">SROB - 2</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Optogenetic neuromuscular actuation of a miniature electronic biohybrid robot. <em>SROB</em>, <em>10</em>(106), eadu5830. (<a href='https://doi.org/10.1126/scirobotics.adu5830'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Neuronal control of skeletal muscle function is ubiquitous across species for locomotion and doing work. In particular, emergent behaviors of neurons in biohybrid neuromuscular systems can advance bioinspired locomotion research. Although recent studies have demonstrated that chemical or optogenetic stimulation of neurons can control muscular actuation through the neuromuscular junction (NMJ), the correlation between neuronal activities and resulting modulation in the muscle responses is less understood, hindering the engineering of high-level functional biohybrid systems. Here, we developed NMJ-based biohybrid crawling robots with optogenetic mouse motor neurons, skeletal muscles, 3D-printed hydrogel scaffolds, and integrated onboard wireless micro–light-emitting diode (μLED)–based optoelectronics. We investigated the coupling of the light stimulation and neuromuscular actuation through power spectral density (PSD) analysis. We verified the modulation of the mechanical functionality of the robot depending on the frequency of the optical stimulation to the neural tissue. We demonstrated continued muscle contraction up to 20 minutes after a 1-minute-long pulsed 2-hertz optical stimulation of the neural tissue. Furthermore, the robots were shown to maintain their mechanical functionality for more than 2 weeks. This study provides insights into reliable neuronal control with optoelectronics, supporting advancements in neuronal modulation, biohybrid intelligence, and automation.},
+  archive      = {J_SROB},
+  author       = {Hyegi Min and Yue Wang and Jiaojiao Wang and Xiuyuan Li and Woong Kim and Onur Aydin and Sehong Kang and Jae-Sung You and Jongwon Lim and Katy Wolhaupter and Yikang Xu and Zhengguang Zhu and Jianyu Gu and Xinming Li and Yongdeok Kim and Tarun Rao and Hyun Joon Kong and Taher A. Saif and Yonggang Huang and John A. Rogers and Rashid Bashir},
+  doi          = {10.1126/scirobotics.adu5830},
+  journal      = {Science Robotics},
+  month        = {9},
+  number       = {106},
+  pages        = {eadu5830},
+  shortjournal = {Sci. Robot.},
+  title        = {Optogenetic neuromuscular actuation of a miniature electronic biohybrid robot},
+  volume       = {10},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). RoboBallet: Planning for multirobot reaching with graph neural networks and reinforcement learning. <em>SROB</em>, <em>10</em>(106), eads1204. (<a href='https://doi.org/10.1126/scirobotics.ads1204'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Modern robotic manufacturing requires collision-free coordination of multiple robots to complete numerous tasks in shared, obstacle-rich workspaces. Although individual tasks may be simple in isolation, automated joint task allocation, scheduling, and motion planning under spatiotemporal constraints remain computationally intractable for classical methods at real-world scales. Existing multiarm systems deployed in industry rely on human intuition and experience to design feasible trajectories manually in a labor-intensive process. To address this challenge, we propose a reinforcement learning (RL) framework to achieve automated task and motion planning, tested in an obstacle-rich environment with eight robots performing 40 reaching tasks in a shared workspace, where any robot can perform any task in any order. Our approach builds on a graph neural network (GNN) policy trained via RL on procedurally generated environments with diverse obstacle layouts, robot configurations, and task distributions. It uses a graph representation of scenes and a graph policy neural network trained through RL to generate trajectories of multiple robots, jointly solving the subproblems of task allocation, scheduling, and motion planning. Trained on large randomly generated task sets in simulation, our policy generalizes zero-shot to unseen settings with varying robot placements, obstacle geometries, and task poses. We further demonstrate that the high-speed capability of our solution enables its use in workcell layout optimization, improving solution times. The speed and scalability of our planner also open the door to capabilities such as fault-tolerant planning and online perception-based replanning, where rapid adaptation to dynamic task sets is required.},
+  archive      = {J_SROB},
+  author       = {Matthew Lai and Keegan Go and Zhibin Li and Torsten Kröger and Stefan Schaal and Kelsey Allen and Jonathan Scholz},
+  doi          = {10.1126/scirobotics.ads1204},
+  journal      = {Science Robotics},
+  month        = {9},
+  number       = {106},
+  pages        = {eads1204},
+  shortjournal = {Sci. Robot.},
+  title        = {RoboBallet: Planning for multirobot reaching with graph neural networks and reinforcement learning},
+  volume       = {10},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>

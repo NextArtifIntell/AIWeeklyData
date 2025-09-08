@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>TRSC</title>
+  <style>
+    html {font-size: 22px;}
+    body {margin: 0 auto; max-width: 76em;}
+    #copyID {font-size: 18px;}
+  </style>
+  <script>
+    function copy(element) {
+      if (element.type == "button"){
+      element.type="text";
+      }
+      element.style.color="black";
+      element.style.backgroundColor="#C7EDCC";
+      element.select();
+      element.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(element.value);
+      window.getSelection().removeAllRanges();
+      element.type="button";
+    }
+  </script>
+</head>
+<body>
+
+<h2 id="trsc">TRSC - 10</h2>
+<ul>
+<li><details>
+<summary>
+(2025). Special issue on machine learning methods for urban passenger mobility. <em>TRSC</em>, <em>59</em>(4), iii-vi. (<a href='https://doi.org/10.1287/trsc.2025.intro.v59.n4'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2025.intro.v59.n4},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {iii-vi},
+  shortjournal = {Trans. Sci.},
+  title        = {Special issue on machine learning methods for urban passenger mobility},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). End-to-end learning of user equilibrium: Expressivity, generalization, and optimization. <em>TRSC</em>, <em>59</em>(4), 853-882. (<a href='https://doi.org/10.1287/trsc.2023.0489'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper establishes an end-to-end learning framework for constructing transportation network equilibrium models. The proposed framework directly learns supply and demand components as well as equilibrium states from multiday traffic state observations. Specifically, it parameterizes unknown model components with neural networks and embeds them in an implicit layer to enforce user equilibrium conditions. By minimizing the differences between the predicted and observed traffic states, parameters for supply and demand components are simultaneously estimated. We demonstrate that the end-to-end framework is expressive: when parameterized with sufficiently large neural networks, it can replicate any unique, differentiable equilibrium state that solves a well-posed variational inequality. Moreover, it can generalize to new, unseen data when trained with sufficient observations. For efficient training, we design an autodifferentiation-based gradient descent algorithm that handles link- and path-based user equilibrium constraints and ensures local convergence. The proposed framework is demonstrated using three synthesized data sets. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: This work described in this paper was partly supported by research grants from the USDOT Center for Connected and Automated Transportation and the National Science Foundation, Division of Civil, Mechanical and Manufacturing Innovation [Grant CMMI-2233057].},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0489},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {853-882},
+  shortjournal = {Trans. Sci.},
+  title        = {End-to-end learning of user equilibrium: Expressivity, generalization, and optimization},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Toward human-like trajectory prediction for autonomous driving: A behavior-centric approach. <em>TRSC</em>, <em>59</em>(4), 823-852. (<a href='https://doi.org/10.1287/trsc.2023.0366'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Predicting the trajectories of vehicles is crucial for the development of autonomous driving systems, particularly in complex and dynamic traffic environments. In this study, we introduce human-like trajectory prediction (HiT), a novel model designed to enhance trajectory prediction by incorporating behavior-aware modules and dynamic centrality measures. Unlike traditional methods that primarily rely on static graph structures, HiT leverages a dynamic framework that accounts for both direct and indirect interactions among traffic participants. This allows the model to capture the subtle, yet significant, influences of surrounding vehicles, enabling more accurate and human-like predictions. To evaluate HiT’s performance, we conducted extensive experiments using diverse and challenging real-world data sets, including NGSIM, HighD, RounD, ApolloScape, and MoCAD++. The results demonstrate that HiT consistently outperforms state-of-the-art models across multiple metrics, particularly excelling in scenarios involving aggressive driving behaviors. This research presents a significant step forward in trajectory prediction, offering a more reliable and interpretable approach for enhancing the safety and efficiency of autonomous driving systems. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: This work was supported by the Shenzhen-Hong Kong-Macau Science and Technology Program Category C [SGDX20230821095159012], University of Macau [SRG2023-00037-IOTSC, MYRG-GRG2024-00284-IOTSC], the Science and Technology Development Fund of Macau [0021/2022/ITP, 0122/2024/RIB2 and 001/2024/SKL], the State Key Lab of Intelligent Transportation System [2024-B001], and the Jiangsu Provincial Science and Technology Program [BZ2024055]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2023.0366 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0366},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {823-852},
+  shortjournal = {Trans. Sci.},
+  title        = {Toward human-like trajectory prediction for autonomous driving: A behavior-centric approach},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Modeling metro passenger routing choices with a fully differentiable end-to-end simulation-based optimization (SBO) approach. <em>TRSC</em>, <em>59</em>(4), 802-822. (<a href='https://doi.org/10.1287/trsc.2024.0557'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Metro systems in densely populated urban areas are often complicated, with some origin-destinations (OD) having multiple routes with similar travel times, leading to complex passenger routing behaviors. To improve modeling and calibration, this paper proposes a novel passenger route choice model with a metro simulator that accounts for passenger flows, queueing, congestion, and transfer delays. A novel, data-driven approach that utilizes a fully differentiable end-to-end simulation-based optimization (SBO) framework is proposed to calibrate the model, with the gradients calculated automatically and analytically using the iterative backpropagation (IB) algorithm. The SBO framework integrates data from multiple sources, including smart card data and train loadings, to calibrate the route choice parameters that best match the observed data. The full differentiability of the proposed framework enables it to calibrate for more than 20,000 passenger route choice ratios, covering every OD pair. To further improve the efficiency of the framework, a matrix-based optimization (MBO) mechanism is proposed, which provides better initial values for the SBO and ensures high efficiency with large datasets. A hybrid optimization algorithm combining MBO and SBO effectively calibrates the model, demonstrating high accuracy with synthetic data from actual passenger OD demands, where hypothesis tests are conducted for accuracies and significances. The accuracies and robustness are validated by experiments with synthetic passenger flow data, offering potential for optimizing passenger flow management in densely populated urban metro systems. Then, the SBO framework is extended for user equilibrium formulations with a crowding-aware route choice model and iterative metro simulations, calibrated by the hybrid optimization algorithm with additional matrix operations. Case studies with actual observed passenger flows are conducted to illustrate the proposed framework with multiple setups, exhibiting the heterogeneity of passenger route choice preferences and providing insights for operation management in the Hong Kong Mass Transit Railway system. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: This work was supported by the General Research Fund of the Research Grants Council of Hong Kong [Grant 16219224], the Key Research and Development Program of Hubei Province [Grant 2023BAB076], and the National Natural Science Foundation of China [Grant 72001162]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2024.0557 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0557},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {802-822},
+  shortjournal = {Trans. Sci.},
+  title        = {Modeling metro passenger routing choices with a fully differentiable end-to-end simulation-based optimization (SBO) approach},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). DiffIRM: A diffusion-augmented invariant risk minimization framework for spatiotemporal prediction over graphs. <em>TRSC</em>, <em>59</em>(4), 782-801. (<a href='https://doi.org/10.1287/trsc.2024.0562'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Spatiotemporal prediction over graphs (STPG) is challenging because real-world data suffer from the out-of-distribution (OOD) generalization problem, where test data follow different distributions from training ones. To address this issue, invariant risk minimization (IRM) has emerged as a promising approach for learning invariant representations across different environments. However, IRM and its variants are originally designed for Euclidean data, such as images, and may not generalize well to graph-structure data, such as spatiotemporal graphs, because of spatial correlations in graphs. To overcome the challenge posed by graph-structure data, the existing graph OOD methods adhere to the principles of invariance existence (i.e., there exist invariant features that consistently relate to the label across various environments) or environment diversity (i.e., diversifying training environments increases the likelihood that test environments align with training ones). However, there is little research that combines both principles in the STPG problem. A combination of the two is crucial for efficiently distinguishing between invariant features and spurious ones. In this study, we fill in this research gap and propose a diffusion-augmented invariant risk minimization (diffIRM) framework that combines these two principles for the STPG problem. Our diffIRM contains two processes: (1) data augmentation, and (2) invariant learning. In the data augmentation process, a causal mask generator identifies causal features, and a graph-based diffusion model acts as an environment augmentor to generate augmented spatiotemporal graph data. In the invariant learning process, an invariance penalty is designed using the augmented data and then serves as a regularizer for training the spatiotemporal prediction model. We provide theoretical evidence supporting diffIRM’s ability to identify invariant features. The effectiveness of diffIRM is further demonstrated through experiments on both numerical and real-world data. The numerical data are generated from a known structural causal model (SCM), and our proposed diffIRM successfully identifies the true invariant features. The real-world experiment uses three human mobility data sets, that is, SafeGraph, PeMS04, and PeMS08. Our proposed diffIRM outperforms baselines. Furthermore, our model demonstrates interpretability by discerning invariant features while making predictions. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: This work was supported by the National Science Foundation [Grant 2218809].},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0562},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {782-801},
+  shortjournal = {Trans. Sci.},
+  title        = {DiffIRM: A diffusion-augmented invariant risk minimization framework for spatiotemporal prediction over graphs},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Simultaneous multimodal demand imputation and forecasting via graph-guided generative and adversarial network. <em>TRSC</em>, <em>59</em>(4), 763-781. (<a href='https://doi.org/10.1287/trsc.2023.0326'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Accurate prediction of multimodal transport demand is essential for effective transport planning and management and enables service optimization based on historical and (predicted) future demand. However, dealing with missing data remains a common challenge in multimodal demand analytics. Furthermore, the potential benefits of knowledge sharing across different modes for simultaneous imputation and forecasting have not been thoroughly explored. This study introduces the Graph-guided Generative-Adversarial Imputation and Forecasting Network (GIF) to tackle these challenges. GIF utilizes a Generative Adversarial Network with a generator and a discriminator. The generator simultaneously fills in missing values and predicts future demand, whereas the discriminator differentiates between synthetic and real data. An Encoder-Decoder framework is employed to reconstruct the generated data to the original data to ensure that the important information is preserved. Spatiotemporal features of each mode’s demand are captured via Transformer-encoder layers, whereas the knowledge sharing among multiple modes is facilitated by graph-guided feature fusion of different modes. The proposed method is evaluated on three real-world transport data sets, demonstrating its potential to address forecasting tasks with missing data in multimodal transport systems. Overall, this study provides insights into the effectiveness of cross-modal knowledge sharing and joint imputation and prediction in enhancing the accuracy of multimodal demand prediction. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: Financial support from the National Natural Science Foundation of China [Grants 52325210, 52131204, 52402407, and 72301228], the Research Grants Council of Hong Kong, University Grants Committee [Grants T41-603/20R and N_PolyU521/22], and Hong Kong Polytechnic University [Grants P0039246, P0040900, and P0041316] is gratefully acknowledged.},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0326},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {763-781},
+  shortjournal = {Trans. Sci.},
+  title        = {Simultaneous multimodal demand imputation and forecasting via graph-guided generative and adversarial network},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Using multiple biased data sets to recover missing trips with a behaviorally informed model. <em>TRSC</em>, <em>59</em>(4), 743-762. (<a href='https://doi.org/10.1287/trsc.2024.0550'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Trip generation, a critical first step in travel demand forecasting, requires not only estimating trips from the observed sample data, but also calculating the total number of trips in the population, including both the observed trips and the trips missed from the sample (we call them missing trips in this paper). The latter, how to recover missing trips, is scarcely studied in the academic literature, and the state-of-the-art practice is through the application of sample weights to extrapolate from observed trips to the population total. In recent years, big location-based service (LBS) has become a promising alternative data source (in addition to household travel survey data) in trip generation. Because users self-select into using different mobile services that result in LBS data, selection bias exists in the LBS data, and the kinds of trips excluded or included differ systematically among data sources. This study addresses this issue and develops a behaviorally informed approach to quantify the selection biases and recover missing trips. The key idea is that because biases reflected in different data sources are likely different, the integration of multiple biased data sources will mitigate biases. This is achieved by formulating a capture probability that specifies the probability of capturing a trip in a data set as a function of various behavioral factors (e.g., socio-demographics and area-related factors) and estimating the associated parameters through maximum likelihood or Bayesian methods. This approach is evaluated through experimental studies that test the effects of data and model uncertainty on its ability of recovering missing trips. The model is also applied to two real-world case studies: one using the 2017 National Household Travel Survey data and the other using two LBS data sets. Our results demonstrate the robustness of the model in recovering missing trips, even when the analyst completely mis-specifies the underlying trip generation process and the capture probability functions (for quantifying selection biases). The developed methodology can be scalable to any number of data sets and is applicable to both big and small data sets. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: This work was supported by the Division of Civil, Mechanical and Manufacturing Innovation [Grant 2114260], the National Institute of General Medical Sciences [Grant 1R01GM108731-01A1], and the U.S. Department of Transportation [Grant 69A3551747116]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2024.0550 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0550},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {743-762},
+  shortjournal = {Trans. Sci.},
+  title        = {Using multiple biased data sets to recover missing trips with a behaviorally informed model},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Estimating erratic measurement errors in network-wide traffic flow via virtual balance sensors. <em>TRSC</em>, <em>59</em>(4), 721-742. (<a href='https://doi.org/10.1287/trsc.2023.0493'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Large-scale traffic flow data are collected by numerous sensors for managing and operating transport systems. However, various measurement errors exist in the sensor data and their distributions or structures are usually not known in the real world, which diminishes the reliability of the collected data and impairs the performance of smart mobility applications. Such irregular error is referred to as the erratic measurement error and has not been well investigated in existing studies. In this research, we propose to estimate the erratic measurement errors in networked traffic flow data. Different from existing studies that mainly focus on measurement errors with known distributions or structures, we allow the distributions and structures of measurement errors to be unknown except that measurement errors occur based on a Poisson process. By exploiting the flow balance law, we first introduce the concept of virtual balance sensors and develop a mixed integer nonlinear programming model to simultaneously estimate sensor error probabilities and recover traffic flow. Under suitable assumptions, the complex integrated problem can be equivalently viewed as an estimate-then-optimize problem: first, estimation using machine learning (ML) methods, and then optimization with mathematical programming. When the assumptions fail in more realistic scenarios, we further develop a smart estimate-then-optimize (SEO) framework that embeds the optimization model into ML training loops to solve the problem. Compared with the two-stage method, the SEO framework ensures that the optimization process can recognize and compensate for inaccurate estimations caused by ML methods, which can produce more reliable results. Finally, we conduct numerical experiments using both synthetic and real-world examples under various scenarios. Results demonstrate the effectiveness of our decomposition approach and the superiority of the SEO framework. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: The work described in this paper was supported by the National Natural Science Foundation of China [Grant Project No. 72288101, 72101012, 72301023] and a grant from the Research Grants Council of the Hong Kong Special Administrative Region, China [Grant Project No. PolyU/15206322]. Supplemental Material: The online appendix is available at https://doi.org/10.1287/trsc.2023.0493 .},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2023.0493},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {721-742},
+  shortjournal = {Trans. Sci.},
+  title        = {Estimating erratic measurement errors in network-wide traffic flow via virtual balance sensors},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Scalable dynamic mixture model with full covariance for probabilistic traffic forecasting. <em>TRSC</em>, <em>59</em>(4), 708-720. (<a href='https://doi.org/10.1287/trsc.2024.0547'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {Deep-learning-based multivariate and multistep-ahead traffic forecasting models are typically trained with the mean squared error (MSE) or mean absolute error (MAE) as the loss function in a sequence-to-sequence setting, simply assuming that the errors follow an independent and isotropic Gaussian or Laplacian distributions. However, such assumptions are often unrealistic for real-world traffic forecasting tasks, where the probabilistic distribution of spatiotemporal forecasting is very complex with strong concurrent correlations across both sensors and forecasting horizons in a time-varying manner. In this paper, we model the time-varying distribution for the matrix-variate error process as a dynamic mixture of zero-mean Gaussian distributions. To achieve efficiency, flexibility, and scalability, we parameterize each mixture component using a matrix normal distribution and allow the mixture weight to change and be predictable over time. The proposed method can be seamlessly integrated into existing deep-learning frameworks with only a few additional parameters to be learned. We evaluate the performance of the proposed method on a traffic speed forecasting task and find that our method not only improves model performance but also provides interpretable spatiotemporal correlation structures. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: This work was supported by Institut de Valorisation des Données (IVADO) through its Fundamental Research Funding Program.},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0547},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {708-720},
+  shortjournal = {Trans. Sci.},
+  title        = {Scalable dynamic mixture model with full covariance for probabilistic traffic forecasting},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+<li><details>
+<summary>
+(2025). Probabilistic traffic forecasting with dynamic regression. <em>TRSC</em>, <em>59</em>(4), 689-707. (<a href='https://doi.org/10.1287/trsc.2024.0560'>www</a>)
+</summary>
+<textarea id="copyID" onclick="copy(this)" rows="16" cols="145">
+@article{ ,
+  abstract     = {This paper proposes a dynamic regression (DR) framework that enhances existing deep spatiotemporal models by incorporating structured learning for the error process in traffic forecasting. The framework relaxes the assumption of time independence by modeling the error series of the base model (i.e., a well-established traffic forecasting model) using a matrix-variate autoregressive (AR) model. The AR model is integrated into training by redesigning the loss function. The newly designed loss function is based on the likelihood of a nonisotropic error term, enabling the model to generate probabilistic forecasts while preserving the original outputs of the base model. Importantly, the additional parameters introduced by the DR framework can be jointly optimized alongside the base model. Evaluation on state-of-the-art traffic forecasting models using speed and flow data sets demonstrates improved performance, with interpretable AR coefficients and spatiotemporal covariance matrices enhancing the understanding of the model. History: This paper has been accepted for the Transportation Science Special Issue on Machine Learning Methods for Urban Passenger Mobility. Funding: Financial support from the Natural Sciences and Engineering Research Council of Canada [Discovery Grant RGPIN 2019-05950] is gratefully acknowledged. In addition, V. Z. Zheng received financial support from the FRQNT B2X Doctoral Scholarship Program.},
+  archive      = {J_TRSC},
+  doi          = {10.1287/trsc.2024.0560},
+  journal      = {Transportation Science},
+  month        = {7-8},
+  number       = {4},
+  pages        = {689-707},
+  shortjournal = {Trans. Sci.},
+  title        = {Probabilistic traffic forecasting with dynamic regression},
+  volume       = {59},
+  year         = {2025},
+}
+</textarea>
+</details></li>
+</ul>
+
+</body>
+</html>
